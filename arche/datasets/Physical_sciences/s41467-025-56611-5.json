@@ -1,0 +1,872 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Bubbles often appear to have a life of their own. Da Vinci [1] was a pioneer in documenting their capricious behavior, observing how rising bubbles spontaneously abandon straight paths for mesmerizing helices—a paradox that has persisted for centuries [2] , [3] . When exposed to acoustic excitations, bubbles may also transition from in-place pulsations, opting instead to ‘dance’ along zigzag paths reminiscent of Brownian motion [4] , [5] . Bubbles can exhibit violent dynamics: under sudden pressure changes, they may swiftly collapse, giving rise to shock waves that pose significant harm to machinery—a phenomenon known as cavitation [6] , [7] , which some crustaceans even leverage to stun prey [8] . In some instances, the implosion may become so intense that the bubbles emit a spark of light [9] . Bubbles may also appear to violate Archimedes’ principle [10] , e.g., bubbles in vertically oscillating baths may overcome buoyancy and sink contradicting common intuition [11] , [12] , [13] . Waves of bubbles surging downwards may be also observed in carbonated drinks [14] , resulting from convection currents in the core of the glass [15] , [16] . Additional examples showcasing the fascinating dynamics of bubbles can be found in innumerable settings, spanning soft and biological matter [17] , geophysical flows [18] , and industrial processes [19] . Here, we demonstrate that a bubble inside a vertically vibrated fluid chamber may spontaneously break symmetry and start to ‘gallop’ along the upper wall, self-propelled through a resonant interaction between its vibration modes (Fig. 1 a, Supplementary Movie 1 ). By adjusting the vibrational forcing, these galloping bubbles may be tuned to transition between different domain exploration modes, including rectilinear, orbital, and run-and-tumble motion (Fig. 1 b–d). Moreover, similar to jellyfish and other marine invertebrates that deform their bodies to swim without vortex shedding [20] , [21] , [22] , we show that galloping bubbles leverage inertial fluid forces to advance, thus enabling propulsion in inviscid flows where viscous traction is not possible [23] . Fig. 1: Galloping bubbles. a Time sequence illustrating a self-propelling bubble under the upper boundary of a vertically vibrating fluid chamber (Supplementary Movie 1 ), exhibiting shape oscillations reminiscent of galloping motion. The inset includes a schematic of the setup, and T =  2 π / ω is the oscillation period. The bubbles were backlit through a gradient filter to enhance their aesthetic appeal. Different bubble sizes and vibrational forcings produce diverse domain exploration modes, observed from the top view ( b – d ), Supplementary Movie 2 ). A bubble may gallop in ( b ) steady rectilinear motion in an infinite bath, with its trajectory becoming circular here due to the chamber’s boundary (dashed line, see Methods, Experiments). Time progression is indicated by the green arrow, with increasing opacity indicating later times, and the image sequence intervals are 20 T . Depending on the bubble volume, increasing the forcing amplitude A may cause the bubble’s trajectory to curve, leading to orbital states ( c ), which can develop anywhere within the chamber, or become jagged with random sharp turns ( d ) reminiscent of ‘run-and-tumble’ motion [36] , [37] . e A phase map at f = 40 Hz illustrates the dependence of the bubble’s dynamics on the driving acceleration and bubble volume, which also includes detachment from the wall for smaller bubbles and breakup for large amplitudes. Full size image Given the multifaceted physics of bubbles, harnessing their dynamics may be challenging but holds significant potential rewards. Actuated-bubble technologies have been developed for various purposes across numerous fields. In medicine, bubbles have been used for manipulating and assessing the mechanical properties of cells [24] , as well as for drug and gene delivery [25] . Also, bubbles have been exploited as a cleaning tool to treat wastewater [26] , prevent biofouling [27] , and clear bacteria from narrow conduits [28] , [29] . Manipulating bubble motion is particularly valuable in boiling-based heat transfer, a common method for cooling electronic microdevices, where unremoved bubbles near the heat source can significantly reduce heat transfer efficiency [30] . This challenge is exacerbated in micro-gravity settings, such as those encountered by microchips in satellites and spacecrafts, where the absence of buoyancy complicates bubble evacuation [31] , [32] , [33] . To foster new bubble-based technologies, we present a series of proof-of-concept experiments that showcase the versatility of the galloping dynamics and inform new methods for producing bubbles with tunable size, sorting and removal of bubbles, navigating fluid networks, and cleaning surfaces.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Bubbles often appear to have a life of their own.",
+        "references": {},
+        "viewpoints": [
+          "Bubbles often appear to behave autonomously."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Da Vinci [1] was a pioneer in documenting their capricious behavior, observing how rising bubbles spontaneously abandon straight paths for mesmerizing helices—a paradox that has persisted for centuries [2] , [3].",
+        "references": {
+          "1": {
+            "1": "The review focuses on Leonardo da Vinci's work related to fluid mechanics.",
+            "2": "Leonardo da Vinci's thought related to fluid mechanics is presented in his lifetime of notebooks, letters, and artwork.",
+            "3": "Leonardo's remaining works offer a complicated picture of unfinished hypotheses.",
+            "4": "Leonardo's remaining works offer a complicated picture of scattered hypotheses.",
+            "5": "Leonardo's remaining works offer a complicated picture of frequently revisited hypotheses.",
+            "6": "Leonardo's remaining works offer a complicated picture of unfinished conclusions.",
+            "7": "Leonardo's remaining works offer a complicated picture of scattered conclusions.",
+            "8": "Leonardo's remaining works offer a complicated picture of frequently revisited conclusions.",
+            "9": "Experimentation formed an important mechanism for Leonardo's thought about natural fluid flows.",
+            "10": "Experimentation was an innovation to the scientific thinking of Leonardo's day.",
+            "11": "Experimentation did not always lead Leonardo to the conclusions of modern fluid mechanics.",
+            "12": "Leonardo's works contain multiple meanings of turbulence.",
+            "13": "Leonardo's works contain ambiguous meanings of turbulence.",
+            "14": "Leonardo's thinking is suggestive of the modern concept of the no-slip condition.",
+            "15": "Leonardo's thinking is suggestive of the modern concept of the hydraulic jump.",
+            "16": "Leonardo's thinking is suggestive of the modern concept of cardiovascular vortices.",
+            "17": "Leonardo's thinking is suggestive of the modern concept of conservation of volume.",
+            "18": "Leonardo's thinking is suggestive of the modern concept of the distinctive path of ascending bubbles, termed Leonardo's paradox.",
+            "19": "Leonardo thought through analogies.",
+            "20": "Leonardo thought through building-block flow patterns.",
+            "21": "Leonardo thought through synthesis.",
+            "22": "Leonardo's thinking through these methods led to successes, especially in the management of water.",
+            "23": "Leonardo's thinking through these methods led to failures, perhaps most obviously in his pursuit of human flight."
+          },
+          "2": {
+            "1": "Path instabilities of buoyancy-driven oblate spheroidal bubbles with a prescribed shape rising freely in a viscous fluid at rest are studied using global stability analysis.",
+            "2": "Wake instabilities of buoyancy-driven oblate spheroidal bubbles with a prescribed shape rising freely in a viscous fluid at rest are studied using global stability analysis.",
+            "3": "The study follows the technique recently developed for a coupled fluid–body system by Tchoufag, Fabre & Magnaudet.",
+            "4": "The wake plays an essential role in the path instability of buoyancy-driven oblate spheroidal bubbles.",
+            "5": "The essential role of the wake is evidenced by comparing the shape of the global stability diagram with that obtained in the case of a fixed bubble.",
+            "6": "Dramatic differences are found between the coupled system and the fixed bubble in terms of the critical curve.",
+            "7": "The critical curve of the coupled system mostly involves low- and high-frequency oscillating modes.",
+            "8": "The critical curve of a fixed bubble only involves stationary modes.",
+            "9": "The present predictions are compared with results obtained through direct numerical simulation in several regimes.",
+            "10": "The comparison confirms the predictions of the linear approach.",
+            "11": "The comparison highlights some limitations of the linear approach when the system encounters several unstable modes successively."
+          },
+          "3": {
+            "1": "Since the Renaissance, it has been documented that an air bubble rising in water will deviate from its straight, steady path once the bubble is above a critical size.",
+            "2": "An air bubble rising in water will perform a periodic zigzag or spiral motion once the bubble is above a critical size.",
+            "3": "Unsteady bubble rise has resisted quantitative description.",
+            "4": "The physical mechanism behind unsteady bubble rise remains in dispute.",
+            "5": "A numerical mapping technique was used to find quantitative agreement with high-precision measurements of the instability for the first time.",
+            "6": "Linear stability analysis shows that the straight path of an air bubble in water becomes unstable to a periodic perturbation above a critical spherical radius of R = 0.926 mm.",
+            "7": "The instability of the straight path of an air bubble corresponds to a Hopf bifurcation.",
+            "8": "The critical spherical radius of R = 0.926 mm is within 2% of the experimental value.",
+            "9": "It was previously believed that the bubble's wake becomes unstable.",
+            "10": "A new mechanism is demonstrated, based on the interplay between flow and bubble deformation."
+          }
+        },
+        "viewpoints": [
+          "Da Vinci was a pioneer in documenting the capricious behavior of bubbles.",
+          "Da Vinci observed that rising bubbles spontaneously abandon straight paths for mesmerizing helices.",
+          "The spontaneous deviation of bubbles from straight paths to helices is a paradox that has persisted for centuries."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "When exposed to acoustic excitations, bubbles may also transition from in-place pulsations, opting instead to ‘dance’ along zigzag paths reminiscent of Brownian motion [4] , [5].",
+        "references": {
+          "4": {
+            "1": "The theory aims to explain erratic motions experimentally observed in small bubbles in liquids irradiated by sound.",
+            "2": "An exact relation between dynamic and kinematic integral properties of any bubble is used to calculate the propulsive effects of deformations from the spherical shape.",
+            "3": "The analysis first deals with arbitrary axisymmetric perturbations of the bubble's surface.",
+            "4": "The equation of the bubble's surface with arbitrary axisymmetric perturbations is representable in terms of zonal spherical harmonics.",
+            "5": "The analysis then expands to treat more general deformations.",
+            "6": "Self-propulsion of bubbles is wholly accountable to interactions of surface modes n and n+1 where n = 2, 3, etc.",
+            "7": "The velocity W of the bubble's centroid depends on the relative orientation of the interacting modes.",
+            "8": "The magnitude of the velocity |W| is greatest when interacting modes are coaxial.",
+            "9": "The direction of the velocity W has a more sensitive dependence on the orientation of the interacting modes.",
+            "10": "An interpretation of the observed erratic motions is presented, supported by the theoretical results.",
+            "11": "A few experimental observations are noted."
+          },
+          "5": {
+            "1": "There has been intense investigation into the inertia-dominated dynamics of a single gas bubble in an incompressible liquid for many years.",
+            "2": "There has been intense investigation into the inertia-dominated dynamics of a single vapor bubble in an incompressible liquid for many years.",
+            "3": "There has been intense investigation into the inertia-dominated dynamics of a single gas bubble in a nearly incompressible liquid for many years.",
+            "4": "There has been intense investigation into the inertia-dominated dynamics of a single vapor bubble in a nearly incompressible liquid for many years.",
+            "5": "Plesset & Prosperetti thoroughly reviewed studies of bubble dynamics prior to 1976.",
+            "6": "The review by Plesset & Prosperetti was published in 1977 in Volume 9 of the series.",
+            "7": "The current review fills the gap between the review by Plesset & Prosperetti and current research.",
+            "8": "The current review focuses on new understandings of bubble dynamics.",
+            "9": "The current review uses a nonlinear dynamical systems approach to understand bubble dynamics."
+          }
+        },
+        "viewpoints": [
+          "When bubbles are exposed to acoustic excitations, they may transition from in-place pulsations.",
+          "Bubbles exposed to acoustic excitations may 'dance' along zigzag paths reminiscent of Brownian motion."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Bubbles can exhibit violent dynamics: under sudden pressure changes, they may swiftly collapse, giving rise to shock waves that pose significant harm to machinery—a phenomenon known as cavitation [6] , [7] , which some crustaceans even leverage to stun prey [8].",
+        "references": {
+          "6": [],
+          "7": [],
+          "8": {
+            "1": "The snapping shrimp (*Alpheus heterochaelis*) produces a loud snapping sound.",
+            "2": "The loud snapping sound is produced by an extremely rapid closure of the snapper claw of the snapping shrimp (*Alpheus heterochaelis*).",
+            "3": "One of the effects of the snapping sound produced by the snapping shrimp (*Alpheus heterochaelis*) is to stun or kill prey animals.",
+            "4": "During the rapid closure of the snapper claw of the snapping shrimp (*Alpheus heterochaelis*), a high-velocity water jet is emitted from the claw.",
+            "5": "The speed of the emitted high-velocity water jet exceeds cavitation conditions.",
+            "6": "Hydrophone measurements and time-controlled high-speed imaging are used to study the claw closure of the snapping shrimp (*Alpheus heterochaelis*).",
+            "7": "Hydrophone measurements and time-controlled high-speed imaging demonstrate that the sound is emitted at the cavitation bubble collapse.",
+            "8": "The sound produced by the snapping shrimp (*Alpheus heterochaelis*) is not emitted on claw closure but at the cavitation bubble collapse.",
+            "9": "A model for the bubble dynamics is based on a Rayleigh–Plesset-type equation.",
+            "10": "The model quantitatively accounts for the time dependence of the bubble radius.",
+            "11": "The model quantitatively accounts for the emitted sound from the snapping shrimp (*Alpheus heterochaelis*)."
+          }
+        },
+        "viewpoints": [
+          "Under sudden pressure changes, bubbles may swiftly collapse.",
+          "The swift collapse of bubbles under sudden pressure changes can give rise to shock waves.",
+          "Shock waves from collapsing bubbles can pose significant harm to machinery.",
+          "The phenomenon of bubbles collapsing and causing shock waves is known as cavitation.",
+          "Some crustaceans leverage cavitation to stun prey."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In some instances, the implosion may become so intense that the bubbles emit a spark of light [9].",
+        "references": {
+          "9": {
+            "1": "Single-bubble sonoluminescence occurs under conditions where a gas bubble is acoustically trapped and periodically driven.",
+            "2": "Energy focusing during the collapse of the gas bubble leads to light emission in the process of single-bubble sonoluminescence.",
+            "3": "Experiments have shown that the spectrum of light emitted during single-bubble sonoluminescence tends to peak in the ultraviolet.",
+            "4": "The spectrum of emitted light in single-bubble sonoluminescence strongly depends on the type of gas dissolved in the liquid.",
+            "5": "Trace amounts of noble gases or other impurities can dramatically change the amount of light emission in single-bubble sonoluminescence.",
+            "6": "The amount of light emission in single-bubble sonoluminescence is affected by small changes in operating parameters, including forcing pressure, dissolved gas concentration, and liquid temperature.",
+            "7": "The article reviews experimental efforts to understand single-bubble sonoluminescence.",
+            "8": "The article reviews theoretical efforts to understand single-bubble sonoluminescence.",
+            "9": "Available information favors a description of sonoluminescence being caused by adiabatic heating of the bubble at collapse.",
+            "10": "Adiabatic heating of the bubble at collapse leads to partial ionization of the gas inside the bubble in sonoluminescence.",
+            "11": "Adiabatic heating of the bubble at collapse leads to thermal emission such as bremsstrahlung in sonoluminescence.",
+            "12": "The authors provide a brief historical review before surveying the major areas of research on sonoluminescence.",
+            "13": "Section II describes the classical theory of bubble dynamics as developed by Rayleigh, Plesset, Prosperetti, and others.",
+            "14": "Section III describes research on the gas dynamics inside the bubble.",
+            "15": "Shock waves inside the bubble do not seem to play a prominent role in single-bubble sonoluminescence.",
+            "16": "Section IV discusses the hydrodynamic stability of the bubble in single-bubble sonoluminescence.",
+            "17": "Section IV discusses the chemical stability of the bubble in single-bubble sonoluminescence.",
+            "18": "Stable single-bubble sonoluminescence requires the bubble to be shape stable.",
+            "19": "Stable single-bubble sonoluminescence requires the bubble to be diffusively stable.",
+            "20": "An energy focusing condition is required for stable single-bubble sonoluminescence.",
+            "21": "The parameter space where light emission occurs in single-bubble sonoluminescence is fixed by shape stability, diffusive stability, and an energy focusing condition.",
+            "22": "Section V describes experiments addressing the origin of light emission in single-bubble sonoluminescence.",
+            "23": "Section V describes models addressing the origin of light emission in single-bubble sonoluminescence.",
+            "24": "The final section presents an overview of what is known about single-bubble sonoluminescence.",
+            "25": "The final section outlines some directions for future research on single-bubble sonoluminescence."
+          }
+        },
+        "viewpoints": [
+          "In some instances, the implosion of bubbles may become intense enough for the bubbles to emit a spark of light."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Bubbles may also appear to violate Archimedes’ principle [10], e.g., bubbles in vertically oscillating baths may overcome buoyancy and sink contradicting common intuition [11], [12], [13].",
+        "references": {
+          "10": {
+            "1": "A liquid layer will typically collapse downwards when placed over a less dense medium if it exceeds a certain size.",
+            "2": "Gravity acting on the lower liquid interface triggers a destabilizing effect called a Rayleigh–Taylor instability.",
+            "3": "Vertical shaking has proved to be efficient in preventing the liquid from falling.",
+            "4": "Vertical shaking preventing liquid from falling has been studied in detail.",
+            "5": "Stabilization of the liquid layer is the result of the dynamical averaging effect of the oscillating effective gravity.",
+            "6": "Vibrations of liquids induce the paradoxical phenomenon of sinking air bubbles.",
+            "7": "Vibrations of liquids induce the paradoxical phenomenon of stabilization of heavy objects in columns of fluid at unexpected heights.",
+            "8": "Experiments are performed with large levitating liquid layers of up to half a litre in volume.",
+            "9": "Experiments are performed with large levitating liquid layers up to 20 centimetres in width.",
+            "10": "The excitation resonance of the supporting air layer is used to perform these experiments.",
+            "11": "Vertical shaking creates stable buoyancy positions on the lower interface of the liquid.",
+            "12": "These stable buoyancy positions behave as though the gravitational force were inverted.",
+            "13": "Stable buoyancy positions created by vertical shaking on the lower interface of the liquid are predicted theoretically.",
+            "14": "Stable buoyancy positions created by vertical shaking on the lower interface of the liquid are shown experimentally.",
+            "15": "Bodies can float upside down on the lower interface of levitating liquid layers.",
+            "16": "The model predicts the minimum excitation needed to withstand the falling of an inverted floater.",
+            "17": "The minimum excitation needed to withstand the falling of an inverted floater depends on the floater's mass.",
+            "18": "Experimental observations confirm the possibility of selective falling of heavy bodies.",
+            "19": "The findings invite a rethinking of all interfacial phenomena in this exotic and counter-intuitive stable configuration."
+          },
+          "11": {
+            "1": "A new procedure has been developed to bring gas, liquid, or solid phases into contact.",
+            "2": "The new procedure aims to promote exchange phenomena.",
+            "3": "Subjecting liquid columns to high-amplitude low-frequency vertical vibrations causes bubbles to migrate cyclically.",
+            "4": "Bubbles migrate from the surface to the bottom of the liquid column under high-amplitude low-frequency vertical vibrations.",
+            "5": "Bubbles aggregate at the bottom of the liquid column before moving back up under high-amplitude low-frequency vertical vibrations.",
+            "6": "The migration and aggregation of bubbles result in violent and rapid mixing of gas with liquid.",
+            "7": "The migration and aggregation of bubbles result in violent and rapid mixing with suspended solids.",
+            "8": "An equation is derived that allows accurate prediction of the minimum frequency for cyclic migration in the air-water system.",
+            "9": "The derived equation applies to the air-water system at atmospheric pressure for cyclic migration prediction.",
+            "10": "Deviation in the prediction occurs for liquids with properties markedly different from water using the derived equation.",
+            "11": "Deviation in the prediction occurs at pressures other than atmospheric using the derived equation."
+          },
+          "12": {
+            "1": "The paper analyzes the motion of a gas bubble in a uniformly oscillating incompressible fluid.",
+            "2": "A theoretical model explains the sinking of gas bubbles in the absence of a standing pressure wave.",
+            "3": "The theoretical model is validated experimentally.",
+            "4": "The conditions under which the sinking effect of gas bubbles occurs are determined.",
+            "5": "A simple formula is derived for the average velocity of a gas bubble in the fluid."
+          },
+          "13": {
+            "1": "Sinking bubbles exhibit a special nonlinear effect.",
+            "2": "The special nonlinear effect of sinking bubbles is observed when a container partially filled with liquid is excited by vibration.",
+            "3": "The paper studies the phenomenon of sinking bubbles in an incompressible viscous fluid under vertical vibration.",
+            "4": "The theoretical model is constructed from the perspective of vibration mechanics and fluid mechanics.",
+            "5": "Theoretical analysis derives an accurate model of a bubble moving in the liquid.",
+            "6": "Theoretical analysis derives the added mass caused by a bubble moving in the liquid.",
+            "7": "The control equation of the bubble is provided through force analysis.",
+            "8": "The control equation of the bubble is based on the differential equation of variable-mass systems.",
+            "9": "The critical depth of the sinking bubble is derived using the method of direct separation of motions.",
+            "10": "The specific reasons why bubbles sink are explored and analyzed.",
+            "11": "The conditions under which variable mass significantly influences the motion of the object are provided.",
+            "12": "The effect of density on the sinking of bubbles is numerically simulated and analyzed under different conditions.",
+            "13": "The effect of frequency on the sinking of bubbles is numerically simulated and analyzed under different conditions.",
+            "14": "The effect of amplitude on the sinking of bubbles is numerically simulated and analyzed under different conditions.",
+            "15": "Feasible approaches are proposed to prevent the effect of sinking bubbles in oscillating fluid.",
+            "16": "Feasible approaches are proposed to weaken the effect of sinking bubbles in oscillating fluid.",
+            "17": "The theory is validated through experimental methods."
+          }
+        },
+        "viewpoints": [
+          "Bubbles may appear to violate Archimedes’ principle.",
+          "In vertically oscillating baths, bubbles may overcome buoyancy and sink.",
+          "The sinking of bubbles in vertically oscillating baths contradicts common intuition."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Waves of bubbles surging downwards may be also observed in carbonated drinks [14], resulting from convection currents in the core of the glass [15], [16].",
+        "references": {
+          "14": {
+            "1": "A simple model of a bubbly two-phase flow can explain why waves propagate downward when a pint of Guinness is poured.",
+            "2": "A simple model of a bubbly two-phase flow can explain how the waves are generated when a pint of Guinness is poured.",
+            "3": "The theory involves a physically based regularization of the basic equations of two-phase flow.",
+            "4": "The regularization involves using interphasic pressure difference terms.",
+            "5": "The regularization involves using virtual mass terms.",
+            "6": "The regularization involves using bulk or eddy viscosity terms.",
+            "7": "Waves can occur through an instability analogous to that which forms roll waves in inclined fluid flows.",
+            "8": "The form of these waves is described in the research.",
+            "9": "The waves are compared to observations.",
+            "10": "The theory provides a platform for the description of waves in more general bubbly two-phase flows.",
+            "11": "The theory provides insight into how the flow breaks down to form slug flow."
+          },
+          "15": {
+            "1": "Stout beers display the counter-intuitive phenomenon of sinking bubbles during the settling of the beer.",
+            "2": "The phenomenon of sinking bubbles in stout beers is suggested to be due to the small size of the bubbles.",
+            "3": "The phenomenon of sinking bubbles in stout beers is suggested to be due to the presence of a circulatory current in the glass.",
+            "4": "The circulatory current in the glass is directed downwards near the side of the wall.",
+            "5": "The circulatory current in the glass is directed upwards in the interior.",
+            "6": "The mechanism by which the circulatory current is established in stout beers has not been clarified.",
+            "7": "The conditions under which the circulatory current in stout beers will occur have not been clarified.",
+            "8": "The flow in a glass of stout beer depends on the shape of the glass.",
+            "9": "Simulations and experiments are used in this paper to demonstrate the dependence of beer flow on glass shape.",
+            "10": "If the glass narrows downwards, the flow is directed downwards near the wall.",
+            "11": "If the glass narrows downwards, the flow is directed upwards in the interior.",
+            "12": "If the glass narrows downwards, sinking bubbles will be observed.",
+            "13": "If the container widens downwards, the flow is directed upwards near the wall.",
+            "14": "If the container widens downwards, the flow is directed downwards in the interior.",
+            "15": "If the container widens downwards, only rising bubbles will be seen."
+          },
+          "16": {
+            "1": "The downward movement of the bubble-texture in a glass of Guinness beer is a fascinating fluid flow.",
+            "2": "The downward movement of the bubble-texture in a glass of Guinness beer is driven by the buoyant force of a large number of small-diameter bubbles.",
+            "3": "The texture motion in a glass of Guinness beer is a frequently observed phenomenon on pub tables.",
+            "4": "The physical mechanism of the texture-formation in a glass of Guinness beer has been discussed previously.",
+            "5": "Inconsistencies exist between previous studies discussing the physical mechanism of the texture-formation in a glass of Guinness beer.",
+            "6": "Experiments were performed on the bubble distribution in Guinness poured in an inclined container.",
+            "7": "Observations were made on how the texture in a glass of Guinness beer forms.",
+            "8": "The texture-formation in controllable experiments using particle suspensions with precisely specified diameters and volume-concentrations is reported.",
+            "9": "Specific measurement methods based on laser-induced-fluorescence provide details of the spatio-temporal profile of the liquid phase velocity.",
+            "10": "The hydrodynamic condition for the texture-formation is analogous to the critical point of the roll-wave instability in a fluid film.",
+            "11": "The roll-wave instability in a fluid film can be commonly observed in water films sliding downhill on a rainy day.",
+            "12": "The critical condition for the texture-formation in a glass of Guinness beer is identified.",
+            "13": "The roll-wave instability of the gravity current is concluded to be responsible for the texture-formation in a glass of Guinness beer."
+          }
+        },
+        "viewpoints": [
+          "Waves of bubbles surging downwards may be observed in carbonated drinks.",
+          "Waves of bubbles in carbonated drinks result from convection currents in the core of the glass."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Additional examples showcasing the fascinating dynamics of bubbles can be found in innumerable settings, spanning soft and biological matter [17], geophysical flows [18], and industrial processes [19].",
+        "references": {
+          "17": {
+            "1": "Bubbles are present in a large variety of emerging applications.",
+            "2": "Bubbles are present in advanced materials as either laser-generated or acoustically driven bubbles.",
+            "3": "Bubbles are present in biology and medicine as either laser-generated or acoustically driven bubbles.",
+            "4": "In these applications, bubbles undergo oscillatory dynamics inside or near soft and biological materials.",
+            "5": "In these applications, bubbles collapse inside soft materials.",
+            "6": "In these applications, bubbles collapse near soft materials.",
+            "7": "In these applications, bubbles collapse inside biological materials.",
+            "8": "In these applications, bubbles collapse near biological materials.",
+            "9": "The presence of a soft, viscoelastic medium strongly affects bubble dynamics.",
+            "10": "A soft, viscoelastic medium strongly affects the linear resonance properties of bubbles.",
+            "11": "A soft, viscoelastic medium strongly affects the nonlinear behavior of bubbles.",
+            "12": "Surfactant molecules adsorbed on a bubble surface can modify bubble dynamics.",
+            "13": "Solid particles adsorbed on a bubble surface can modify bubble dynamics.",
+            "14": "The rheological properties of the interfacial layer can modify bubble dynamics.",
+            "15": "The interaction of bubbles with biological cells is highly dependent on the mechanical properties of soft deformable media.",
+            "16": "The interaction of bubbles with biological tissues is highly dependent on the mechanical properties of soft deformable media.",
+            "17": "This review covers recent developments in bubble dynamics in soft matter.",
+            "18": "This review covers recent developments in bubble dynamics in biological matter.",
+            "19": "The review includes recent developments for bubbles in a viscoelastic medium.",
+            "20": "The review includes recent developments for bubbles coated by a viscoelastic layer.",
+            "21": "The review includes recent developments for bubbles in the vicinity of soft confinement.",
+            "22": "The review includes recent developments for bubbles in the vicinity of soft objects.",
+            "23": "The review surveys current work in the field of bubble dynamics.",
+            "24": "The review illustrates open questions for future research in bubble dynamics."
+          },
+          "18": {
+            "1": "Bubble plumes are commonly found in nature.",
+            "2": "Methane can be released from the seabed or the bottom of a lake, creating bubble plumes.",
+            "3": "Carbon dioxide can be released from the seabed or the bottom of a lake, resulting in bubble plumes.",
+            "4": "Bubble plumes occur from a subsea oil well blowout.",
+            "5": "This review describes the dynamics of bubble plumes.",
+            "6": "This review describes the various spreading patterns of bubble plumes in the surrounding environment.",
+            "7": "The motion of the bubble plume is affected by density stratification in the external environment.",
+            "8": "The motion of the bubble plume is affected by internal processes of dissolution of the bubbles.",
+            "9": "The motion of the bubble plume is affected by chemical reactions.",
+            "10": "This review discusses natural disasters as an example related to bubble plumes.",
+            "11": "This review discusses global warming as an example related to bubble plumes.",
+            "12": "This review discusses fishing techniques used by some whales and dolphins as an example related to bubble plumes."
+          },
+          "19": {
+            "1": "For centuries, bubbles have fascinated artists.",
+            "2": "For centuries, bubbles have fascinated engineers.",
+            "3": "For centuries, bubbles have fascinated scientists.",
+            "4": "Century-long research has been conducted on bubbles.",
+            "5": "New bubble phenomena continue to emerge despite extensive research.",
+            "6": "New bubble features continue to emerge despite extensive research.",
+            "7": "New bubble applications continue to emerge despite extensive research.",
+            "8": "The author sketches their personal scientific bubble journey in the paper.",
+            "9": "The author's scientific bubble journey starts with single-bubble sonoluminescence.",
+            "10": "The author's scientific bubble journey continues with sound emission of bubbles.",
+            "11": "The author's scientific bubble journey continues with scattering of bubbles.",
+            "12": "The author's scientific bubble journey continues with cavitation.",
+            "13": "The author's scientific bubble journey continues with snapping shrimp.",
+            "14": "The author's scientific bubble journey continues with impact events.",
+            "15": "The author's scientific bubble journey continues with air entrainment.",
+            "16": "The author's scientific bubble journey continues with surface microbubbles.",
+            "17": "The author's scientific bubble journey continues with surface nanobubbles.",
+            "18": "The author's scientific bubble journey finally arrives at effective force models for bubbles.",
+            "19": "The author's scientific bubble journey finally arrives at effective force models for dispersed bubbly two-phase flow.",
+            "20": "The author covers various applications of bubbles in the paper.",
+            "21": "Bubbles are applied in ultrasound diagnostics.",
+            "22": "Bubbles are applied in drug and gene delivery.",
+            "23": "Bubbles are applied in piezoacoustic inkjet printing.",
+            "24": "Bubbles are applied in immersion lithography.",
+            "25": "Bubbles are applied in sonochemistry.",
+            "26": "Bubbles are applied in electrolysis.",
+            "27": "Bubbles are applied in catalysis.",
+            "28": "Bubbles are applied in acoustic marine geophysical survey.",
+            "29": "Bubbles are applied in bubble drag reduction for naval vessels.",
+            "30": "The author shows how bubble applications crossed their way.",
+            "31": "The author tries to show that good and interesting fundamental science and relevant applications are not contradictory.",
+            "32": "Good and interesting fundamental science and relevant applications mutually stimulate each other."
+          }
+        },
+        "viewpoints": [
+          "Examples of the fascinating dynamics of bubbles can be found in soft and biological matter.",
+          "Examples of the fascinating dynamics of bubbles can be found in geophysical flows.",
+          "Examples of the fascinating dynamics of bubbles can be found in industrial processes."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Here, we demonstrate that a bubble inside a vertically vibrated fluid chamber may spontaneously break symmetry and start to ‘gallop’ along the upper wall, self-propelled through a resonant interaction between its vibration modes (Fig. 1 a, Supplementary Movie 1).",
+        "references": {},
+        "viewpoints": [
+          "A bubble inside a vertically vibrated fluid chamber may spontaneously break symmetry.",
+          "The bubble may start to ‘gallop’ along the upper wall.",
+          "The bubble is self-propelled through a resonant interaction between its vibration modes."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "By adjusting the vibrational forcing, these galloping bubbles may be tuned to transition between different domain exploration modes, including rectilinear, orbital, and run-and-tumble motion (Fig. 1 b–d).",
+        "references": {},
+        "viewpoints": [
+          "By adjusting the vibrational forcing, galloping bubbles may be tuned to transition between different domain exploration modes.",
+          "The domain exploration modes for galloping bubbles include rectilinear motion, orbital motion, and run-and-tumble motion."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Moreover, similar to jellyfish and other marine invertebrates that deform their bodies to swim without vortex shedding [20], [21], [22], we show that galloping bubbles leverage inertial fluid forces to advance, thus enabling propulsion in inviscid flows where viscous traction is not possible [23].",
+        "references": {
+          "20": {
+            "1": "The research paper aims to identify transverse oscillatory movements that slender fish can employ to achieve high Froude propulsive efficiency.",
+            "2": "It is recommended for a slender fish to pass a wave down its body at a speed of around 5/4 of the desired swimming speed to achieve high Froude propulsive efficiency.",
+            "3": "The amplitude of the wave should increase from zero at the front portion of the fish's body to a maximum at the tail.",
+            "4": "The span of the tail should exceed a certain critical value.",
+            "5": "The waveform should include both a positive and a negative phase to minimize angular recoil.",
+            "6": "The Appendix provides a review of slender-body theory for deformable bodies."
+          },
+          "21": {
+            "1": "Inertial aquatic swimmers use undulatory gaits and range in length from a few millimetres to 30 metres.",
+            "2": "Inertial aquatic swimmers that use undulatory gaits are found across a wide array of biological taxa.",
+            "3": "Elementary hydrodynamic arguments help uncover a unifying mechanistic principle characterizing the locomotion of inertial aquatic swimmers.",
+            "4": "A scaling relation links the swimming speed of inertial aquatic swimmers to body kinematics, which includes tail beat amplitude and frequency, and fluid properties, which include kinematic viscosity.",
+            "5": "The unifying mechanistic principle for the locomotion of inertial aquatic swimmers can be expressed as the power law Re ∼ Sw α.",
+            "6": "In the power law Re ∼ Sw α, Re is defined as UL/ν ≫ 1 and Sw is defined as ωAL/ν.",
+            "7": "In the power law Re ∼ Sw α, α equals 4/3 for laminar flows.",
+            "8": "In the power law Re ∼ Sw α, α equals 1 for turbulent flows.",
+            "9": "Existing data from over 1,000 measurements on fish, amphibians, larvae, reptiles, mammals, and birds are consistent with the derived scaling relation.",
+            "10": "Direct numerical simulations are consistent with the derived scaling relation.",
+            "11": "The results are interpreted as a consequence of the convergence of aquatic gaits to performance limits imposed by hydrodynamics."
+          },
+          "22": {
+            "1": "Elasticity contributes to the remarkable propulsive efficiency of pulse-jet animals such as squid and jellyfish.",
+            "2": "Reports quantifying the underlying dynamics of elasticity in pulse-jet propulsion are rare.",
+            "3": "Reports demonstrating the application of elasticity in robotic systems are rare.",
+            "4": "The pulse-jet propulsion mode used by squid and jellyfish is identified as a coupled mass-spring-mass oscillator.",
+            "5": "Identifying the propulsion mode as a coupled mass-spring-mass oscillator enables the design of a flexible self-propelled robot.",
+            "6": "Resonance greatly benefits pulse-jet swimming speed.",
+            "7": "Resonance greatly benefits pulse-jet swimming efficiency.",
+            "8": "The robot's optimal cost of transport matches that of the most efficient biological swimmers in nature, such as the jellyfish *Aurelia aurita*.",
+            "9": "The robot exhibits a preferred Strouhal number for efficient swimming.",
+            "10": "The preferred Strouhal number bridges the gap between pulse-jet propulsion and established findings in efficient fish swimming.",
+            "11": "Extensions of the current robotic framework to larger amplitude oscillations could combine resonance effects with optimal vortex formation.",
+            "12": "Combining resonance effects with optimal vortex formation could further increase propulsive performance.",
+            "13": "The increased propulsive performance could potentially allow robotic systems to outperform biological swimmers altogether."
+          },
+          "23": {
+            "1": "A deformable body can move persistently from rest through a perfect fluid.",
+            "2": "A deformable body does not have to produce vorticity in the fluid to move persistently from rest through a perfect fluid."
+          }
+        },
+        "viewpoints": [
+          "Jellyfish and other marine invertebrates swim without vortex shedding by deforming their bodies.",
+          "Galloping bubbles leverage inertial fluid forces to advance.",
+          "Galloping bubbles are enabled to propel in inviscid flows where viscous traction is not possible."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Fig. 1: Galloping bubbles. a Time sequence illustrating a self-propelling bubble under the upper boundary of a vertically vibrating fluid chamber (Supplementary Movie 1), exhibiting shape oscillations reminiscent of galloping motion.",
+        "references": {},
+        "viewpoints": [
+          "A time sequence illustrates a self-propelling bubble under the upper boundary of a vertically vibrating fluid chamber.",
+          "The bubble exhibits shape oscillations reminiscent of galloping motion."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The inset includes a schematic of the setup, and T = 2π/ω is the oscillation period.",
+        "references": {},
+        "viewpoints": [
+          "The inset includes a schematic of the setup.",
+          "T = 2π/ω is the oscillation period."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The bubbles were backlit through a gradient filter to enhance their aesthetic appeal.",
+        "references": {},
+        "viewpoints": [
+          "The bubbles were backlit through a gradient filter.",
+          "The use of a gradient filter enhanced the aesthetic appeal of the bubbles."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Different bubble sizes and vibrational forcings produce diverse domain exploration modes, observed from the top view (b–d, Supplementary Movie 2).",
+        "references": {},
+        "viewpoints": [
+          "Different bubble sizes and vibrational forcings produce diverse domain exploration modes.",
+          "The domain exploration modes were observed from the top view."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "A bubble may gallop in (b) steady rectilinear motion in an infinite bath, with its trajectory becoming circular here due to the chamber’s boundary (dashed line, see Methods, Experiments).",
+        "references": {},
+        "viewpoints": [
+          "A bubble may gallop in steady rectilinear motion in an infinite bath.",
+          "The bubble's trajectory becomes circular due to the chamber’s boundary."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Time progression is indicated by the green arrow, with increasing opacity indicating later times, and the image sequence intervals are 20T.",
+        "references": {},
+        "viewpoints": [
+          "Time progression is indicated by the green arrow.",
+          "Increasing opacity indicates later times.",
+          "The image sequence intervals are 20T."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Depending on the bubble volume, increasing the forcing amplitude A may cause the bubble’s trajectory to curve, leading to orbital states (c), which can develop anywhere within the chamber, or become jagged with random sharp turns (d) reminiscent of ‘run-and-tumble’ motion [36], [37].",
+        "references": {
+          "36": [],
+          "37": {
+            "1": "The ability to navigate is a hallmark of single cells.",
+            "2": "The ability to navigate is a hallmark of higher animals.",
+            "3": "The ability to navigate is a hallmark of living systems.",
+            "4": "Searching for targets is one of the fundamental navigational tasks many organisms must execute to survive.",
+            "5": "Searching for targets is one of the fundamental navigational tasks many organisms must execute to reproduce.",
+            "6": "Searching for food is a fundamental navigational task for many organisms to survive and reproduce.",
+            "7": "Searching for mates is a fundamental navigational task for many organisms to survive and reproduce.",
+            "8": "A recent surge of studies of the proximate mechanisms that underlie search behavior offers a new opportunity to integrate the biophysics and neuroscience of sensory systems with ecological and evolutionary processes.",
+            "9": "Integrating the biophysics and neuroscience of sensory systems with ecological and evolutionary processes closes a feedback loop.",
+            "10": "Closing this feedback loop promises exciting new avenues of scientific exploration at the frontier of systems biology.",
+            "11": "There is a recent surge of studies on the proximate mechanisms that underlie search behavior."
+          }
+        },
+        "viewpoints": [
+          "Depending on the bubble volume, increasing the forcing amplitude A may cause the bubble’s trajectory to curve.",
+          "The curve in the bubble's trajectory may lead to orbital states.",
+          "Orbital states can develop anywhere within the chamber.",
+          "The bubble's trajectory can become jagged with random sharp turns reminiscent of ‘run-and-tumble’ motion."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "e A phase map at f= 40 Hz illustrates the dependence of the bubble’s dynamics on the driving acceleration and bubble volume, which also includes detachment from the wall for smaller bubbles and breakup for large amplitudes.",
+        "references": {},
+        "viewpoints": [
+          "A phase map at f= 40 Hz illustrates the dependence of the bubble’s dynamics on the driving acceleration and bubble volume.",
+          "Small bubbles may detach from the wall.",
+          "Large amplitudes may cause bubble breakup."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Given the multifaceted physics of bubbles, harnessing their dynamics may be challenging but holds significant potential rewards.",
+        "references": {},
+        "viewpoints": [
+          "The physics of bubbles are multifaceted.",
+          "Harnessing the dynamics of bubbles may be challenging.",
+          "Harnessing the dynamics of bubbles holds significant potential rewards."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Actuated-bubble technologies have been developed for various purposes across numerous fields.",
+        "references": {},
+        "viewpoints": [
+          "Actuated-bubble technologies have been developed for various purposes.",
+          "Actuated-bubble technologies are used across numerous fields."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "In medicine, bubbles have been used for manipulating and assessing the mechanical properties of cells [24], as well as for drug and gene delivery [25].",
+        "references": {
+          "24": {
+            "1": "Collapsing (cavitating) bubbles have the ability to focus and concentrate energy.",
+            "2": "Collapsing (cavitating) bubbles have the ability to focus and concentrate forces.",
+            "3": "Collapsing (cavitating) bubbles have the ability to focus and concentrate stresses.",
+            "4": "The focusing and concentrating ability of collapsing bubbles is at the root of cavitation damage.",
+            "5": "The focusing and concentrating ability of collapsing bubbles is at the root of sonochemistry.",
+            "6": "The focusing and concentrating ability of collapsing bubbles is at the root of sonoluminescence.",
+            "7": "Ultrasound-driven microbubbles have been used to enhance contrast in ultrasonic images.",
+            "8": "The use of ultrasound-driven microbubbles to enhance contrast in ultrasonic images is a biomedical application.",
+            "9": "Bubble-enhanced sonoporation is the acoustically induced rupture of membranes.",
+            "10": "The observation of bubble-enhanced sonoporation has opened up possibilities for the therapeutic application of sonoporation.",
+            "11": "Sonoporation can be an alternative to cell-wall permeation techniques such as electroporation.",
+            "12": "Sonoporation can be an alternative to cell-wall permeation techniques such as particle guns.",
+            "13": "Pioneering experiments have not been able to pinpoint the mechanism by which violently collapsing bubbles open pores in membranes.",
+            "14": "Pioneering experiments have not been able to pinpoint the mechanism by which violently collapsing bubbles open larger holes in membranes.",
+            "15": "Gentle (linear) bubble oscillations are sufficient to achieve rupture of lipid membranes in the presented experiment.",
+            "16": "In the regime of gentle (linear) bubble oscillations, bubble dynamics can be accurately controlled.",
+            "17": "In the regime of gentle (linear) bubble oscillations, the ensuing sonoporation can be accurately controlled.",
+            "18": "The use of microbubbles as focusing agents makes microacoustics a viable tool.",
+            "19": "Microacoustics has possible applications in cell manipulation.",
+            "20": "Microacoustics has possible applications in cell-wall permeation.",
+            "21": "Microacoustics has possible applications in microfluidic devices."
+          },
+          "25": {
+            "1": "Ultrasound contrast agents, in the form of gas-filled microbubbles, are becoming popular in perfusion monitoring.",
+            "2": "Gas-filled microbubbles are employed as molecular imaging agents.",
+            "3": "Microbubbles are manufactured from biocompatible materials.",
+            "4": "Microbubbles can be injected intravenously.",
+            "5": "Some microbubbles are approved for clinical use.",
+            "6": "Microbubbles can be destroyed by ultrasound irradiation.",
+            "7": "The destruction of microbubbles by ultrasound irradiation can be applied to targeted drug delivery.",
+            "8": "The destruction of microbubbles by ultrasound irradiation can lead to the enhancement of drug action.",
+            "9": "The ultrasonic field can be focused at the target tissues and organs.",
+            "10": "Focusing the ultrasonic field at target tissues and organs improves the selectivity of the treatment.",
+            "11": "Improved selectivity of the treatment reduces undesirable side effects.",
+            "12": "Microbubbles enhance ultrasound energy deposition in the tissues.",
+            "13": "Microbubbles serve as cavitation nuclei.",
+            "14": "Serving as cavitation nuclei, microbubbles increase intracellular drug delivery.",
+            "15": "DNA delivery is observed in areas of the body where ultrasound is applied after intravascular administration of microbubbles and plasmid DNA.",
+            "16": "Successful tissue transfection is observed in areas of the body where ultrasound is applied after intravascular administration of microbubbles and plasmid DNA.",
+            "17": "Accelerated blood clot dissolution in the areas of insonation is demonstrated by the cooperative action of thrombolytic agents and microbubbles in several clinical trials."
+          }
+        },
+        "viewpoints": [
+          "In medicine, bubbles have been used for manipulating the mechanical properties of cells.",
+          "In medicine, bubbles have been used for assessing the mechanical properties of cells.",
+          "In medicine, bubbles have been used for drug delivery.",
+          "In medicine, bubbles have been used for gene delivery."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Also, bubbles have been exploited as a cleaning tool to treat wastewater [26], prevent biofouling [27], and clear bacteria from narrow conduits [28], [29].",
+        "references": {
+          "26": {
+            "1": "The review article organizes studies conducted on microbubbles.",
+            "2": "The review article organizes studies conducted on nanobubbles.",
+            "3": "The review article places special emphasis on water treatment in the context of microbubbles and nanobubbles.",
+            "4": "The review article presents the basic definitions of bubble types based on the explanations of different researchers.",
+            "5": "The review article presents the size ranges of bubble types based on the explanations of different researchers.",
+            "6": "The review article summarizes characterization parameters of microbubble technologies.",
+            "7": "The review article summarizes state-of-the-art measuring and analysis techniques of microbubble technologies.",
+            "8": "The review article summarizes characterization parameters of nanobubble technologies.",
+            "9": "The review article summarizes state-of-the-art measuring and analysis techniques of nanobubble technologies.",
+            "10": "Major applications of microbubble technologies in water-treatment processes are reviewed.",
+            "11": "Major applications of microbubble technologies in water-treatment processes are briefly discussed.",
+            "12": "Major applications of nanobubble technologies in water-treatment processes are reviewed.",
+            "13": "Major applications of nanobubble technologies in water-treatment processes are briefly discussed.",
+            "14": "The review identifies potential areas for research in water treatment technologies.",
+            "15": "The review identifies potential areas for research in wastewater treatment technologies.",
+            "16": "Bubble application gaps in water treatment technologies are identified for further study.",
+            "17": "Bubble application gaps in wastewater treatment technologies are identified for further study.",
+            "18": "The review article is prepared to provide a step-by-step acquaintance with microbubble applications in water-treatment technology.",
+            "19": "The review article is prepared to provide a step-by-step acquaintance with nanobubble applications in water-treatment technology.",
+            "20": "The objective of the review article is to focus on the application of microbubbles in water-treatment technology.",
+            "21": "The objective of the review article is to focus on the application of nanobubbles in water-treatment technology."
+          },
+          "27": {
+            "1": "Significant shear stresses are needed to remove established biofouling organisms from a ship hull.",
+            "2": "There is a link between the amount of time that fouling accumulates on a ship hull and the stress required to remove it.",
+            "3": "More frequent grooming of a ship hull requires less shear stress to remove biofouling organisms.",
+            "4": "It is unclear if there is a minimum stress needed to prevent the growth of macrofouling during continuous grooming of a ship hull.",
+            "5": "Single bubble stream aeration provides continuous grooming of a ship hull.",
+            "6": "Single bubble stream aeration prevents biofouling accumulation in regions where the average wall stress exceeds ~0.01 Pa.",
+            "7": "The 0.01 Pa average wall stress value was found by comparing observations of biofouling growth from field studies.",
+            "8": "The 0.01 Pa average wall stress value was found by using complementary laboratory measurements that probe the associated flow fields.",
+            "9": "Aeration systems must exceed a wall stress of 0.01 Pa to prevent macrofouling accumulation.",
+            "10": "Other continuous grooming systems must exceed a wall stress of 0.01 Pa to prevent macrofouling accumulation."
+          },
+          "28": {
+            "1": "Air–liquid interfaces such as bubbles significantly contribute to the detachment and transport of colloids in confined systems.",
+            "2": "Air–liquid interfaces such as bubbles significantly contribute to the detachment and transport of microorganisms in confined systems.",
+            "3": "Air–liquid interfaces such as bubbles significantly contribute to the detachment and transport of colloids in unsaturated porous media.",
+            "4": "Air–liquid interfaces such as bubbles significantly contribute to the detachment and transport of microorganisms in unsaturated porous media.",
+            "5": "Moving air–liquid interfaces can effectively prevent the development of mature biofilms on surfaces colonized by bacteria.",
+            "6": "Moving air–liquid interfaces can effectively postpone the development of mature biofilms on surfaces colonized by bacteria.",
+            "7": "The study demonstrates the dynamics of the bubble-driven detachment process for the bacterial strain *Staphylococcus aureus*.",
+            "8": "The study quantifies the effectiveness of the bubble-driven detachment process for the bacterial strain *Staphylococcus aureus*.",
+            "9": "The study investigates the effects of interface velocity through microfluidic experiments.",
+            "10": "The study investigates the effects of geometrical factors through microfluidic experiments.",
+            "11": "Microfluidic experiments in the study mimic confinement features of pore-scale geometries.",
+            "12": "At least three different flow regimes are found depending on the bubble velocity U.",
+            "13": "The operating flow regimes affect the efficiency of the detachment process.",
+            "14": "The operating flow regimes modify the final distribution of the bacteria on the surface.",
+            "15": "Results are organized according to the capillary number Ca = μU/γ.",
+            "16": "μ represents viscosity in the equation for capillary number.",
+            "17": "γ represents surface tension in the equation for capillary number.",
+            "18": "Bubbles at very low velocities (Ca < 5 × 10⁻⁵) exhibit detachment efficiencies of up to 80%.",
+            "19": "The high detachment efficiency of bubbles at very low velocities occurs at the early stage of bacterial adhesion.",
+            "20": "Faster bubbles (Ca > 10⁻³) have lower detachment efficiencies.",
+            "21": "Faster bubbles (Ca > 10⁻³) cause significant nonuniformities in the final distribution of cells on the substrate.",
+            "22": "The formation of a thin liquid film around the bubble at higher Ca is associated with the effect of lower detachment efficiencies and nonuniform cell distribution.",
+            "23": "At higher bubble velocities, bacterial cells in the corners of the geometry are less influenced by the bubble passage.",
+            "24": "Bacterial cells in the central region of the geometry are more influenced by the bubble passage compared to the corners at higher bubble velocities."
+          },
+          "29": {
+            "1": "The dynamics of a bubble impacting and sliding on a tilted surface has been studied using experimental methods.",
+            "2": "The dynamics of a bubble impacting and sliding on a tilted surface has been studied using computational methods.",
+            "3": "In experiments, bubble-wall interaction has been characterized with an air bubble of about 550 μm in radius.",
+            "4": "The air bubble has a rising speed of about 30 cm/s.",
+            "5": "The solid substrate has a wall angle between 0° and 60°.",
+            "6": "Shear stress generated on the wall has been calculated.",
+            "7": "Shear stress generated on the wall has been compared with bacterium adhesion force.",
+            "8": "The comparison of shear stress and bacterium adhesion force aims to evaluate a potential sanitization function.",
+            "9": "A force balance including buoyancy has been numerically solved to determine bubble motion.",
+            "10": "A force balance including hydrodynamic inertia and drag has been numerically solved to determine bubble motion.",
+            "11": "A force balance including lift and thin film force has been numerically solved to determine bubble motion.",
+            "12": "The shear stress increases with the wall inclination.",
+            "13": "The maximum shear stress is more than 300 Pa when a single bubble impacts and scrubs a tilted wall.",
+            "14": "High shear stress is attributed to a rapid change in thin film curvature during the bouncing stage.",
+            "15": "The rapid change in thin film curvature involves a flipping bubble-water interface.",
+            "16": "During the sliding stage, a smaller shear stress of around 45 Pa is generated.",
+            "17": "The smaller shear stress is generated for a longer period during the sliding stage.",
+            "18": "The shear stress generated during the bouncing stage is high enough to remove bacteria from a surface.",
+            "19": "The shear stress generated during the sliding stage is high enough to remove bacteria from a surface.",
+            "20": "Removing bacteria from tilted surfaces is a potential method achieved by the shear stress generated during the bouncing and sliding stages."
+          }
+        },
+        "viewpoints": [
+          "Bubbles have been exploited as a cleaning tool to treat wastewater.",
+          "Bubbles have been exploited as a cleaning tool to prevent biofouling.",
+          "Bubbles have been exploited as a cleaning tool to clear bacteria from narrow conduits."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Manipulating bubble motion is particularly valuable in boiling-based heat transfer, a common method for cooling electronic microdevices, where unremoved bubbles near the heat source can significantly reduce heat transfer efficiency [30].",
+        "references": {
+          "30": {
+            "1": "The rapid growth of surface modification technologies has facilitated boiling heat transfer enhancement on micro/nanostructured surfaces.",
+            "2": "The rapid growth of fabrication technologies has facilitated boiling heat transfer enhancement on micro/nanostructured surfaces.",
+            "3": "Several researches on micro/nanostructured surfaces designed to enhance boiling heat transfer are introduced in this paper.",
+            "4": "Several researches on micro/nanostructured surfaces designed to enhance boiling heat transfer are closely reviewed in this paper.",
+            "5": "Theoretical researches on nucleate boiling heat transfer (NBHT) are introduced in the outline.",
+            "6": "Experimental researches on nucleate boiling heat transfer (NBHT) are introduced in the outline.",
+            "7": "Theoretical researches on critical heat flux (CHF) are introduced in the outline.",
+            "8": "Experimental researches on critical heat flux (CHF) are introduced in the outline.",
+            "9": "Fabrication techniques for achieving engineered surfaces are described in detail in the paper.",
+            "10": "Fabrication techniques for achieving engineered surfaces are classified into machining.",
+            "11": "Fabrication techniques for achieving engineered surfaces are classified into coating.",
+            "12": "Fabrication techniques for achieving engineered surfaces are classified into chemical process.",
+            "13": "Fabrication techniques for achieving engineered surfaces are classified into micro/nanoelectromechanical systems.",
+            "14": "Explanations of the results of boiling heat transfer enhancement tests are presented in view of nucleate boiling heat transfer (NBHT).",
+            "15": "Analysis of the results of boiling heat transfer enhancement tests are presented in view of nucleate boiling heat transfer (NBHT).",
+            "16": "Explanations of the results of boiling heat transfer enhancement tests are presented in view of critical heat flux (CHF).",
+            "17": "Analysis of the results of boiling heat transfer enhancement tests are presented in view of critical heat flux (CHF).",
+            "18": "The special features of existing surfaces capable of enhancing boiling heat transfer are summarized.",
+            "19": "The need for future research on surfaces capable of enhancing boiling heat transfer is presented."
+          }
+        },
+        "viewpoints": [
+          "Manipulating bubble motion is particularly valuable in boiling-based heat transfer.",
+          "Boiling-based heat transfer is a common method for cooling electronic microdevices.",
+          "Unremoved bubbles near the heat source can significantly reduce heat transfer efficiency."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "This challenge is exacerbated in micro-gravity settings, such as those encountered by microchips in satellites and spacecrafts, where the absence of buoyancy complicates bubble evacuation [31], [32], [33].",
+        "references": {
+          "31": {
+            "1": "A series of boiling experiments was carried out in the Boiling Experimental Facility (BXF) during March–May 2011.",
+            "2": "The Boiling Experimental Facility (BXF) is located in the Microgravity Science Glovebox (MSG) of the International Space Station (ISS).",
+            "3": "The Boiling Experimental Facility (BXF) was carried to the International Space Station on Space Shuttle Mission STS–133 on February 24, 2011.",
+            "4": "Nucleate Pool Boiling Experiment (NPBX) was one of the two experiments housed in the Boiling Experimental Facility (BXF).",
+            "5": "The results of experiments on single bubble dynamics, including inception and growth, are described.",
+            "6": "The results of experiments on multiple bubble dynamics, including lateral merger and departure (if any), are described.",
+            "7": "The results of experiments on nucleate pool boiling heat transfer are described.",
+            "8": "The results of experiments on critical heat flux are described.",
+            "9": "Perfluoro-n-hexane was used as the test liquid in the experiments.",
+            "10": "The system pressure was varied from 51 to 243 kPa in the experiments.",
+            "11": "The pool temperature was varied from 30° to 59°C in the experiments.",
+            "12": "The test surface temperature was varied from 40° to 80°C in the experiments.",
+            "13": "The test surface was a polished aluminum disc.",
+            "14": "The test surface was 1 mm thick.",
+            "15": "The test surface had a diameter of 89.5 mm.",
+            "16": "The test surface was heated from below with strain gage heaters.",
+            "17": "Five cylindrical cavities were formed on the test surface.",
+            "18": "Four cavities were located at the corners of a square on the test surface.",
+            "19": "One cavity was located in the middle of the test surface.",
+            "20": "During experiments, the magnitude of mean gravity level normal to the heater surface varied from 1.2 × 10^{-7}g_e to 6 × 10^{-7}g_e.",
+            "21": "A single bubble continues to grow to occupy the size of the chamber without departing from the heater surface, according to the results of the experiments.",
+            "22": "During lateral merger of bubbles, at high superheats, a large bubble may lift off from the surface.",
+            "23": "During lateral merger of bubbles, even at high superheats, a large bubble continues to hover near the surface.",
+            "24": "Neighboring bubbles are continuously pulled into the large bubble.",
+            "25": "At low superheats, bubbles at neighboring sites simply merge to yield a larger bubble.",
+            "26": "The larger bubble mostly locates in the middle of the heated surface.",
+            "27": "The larger bubble serves as a vapor sink.",
+            "28": "When boiling is occurring all over the heater surface, the mode of the larger bubble serving as a vapor sink and mostly located in the middle of the heated surface continues to persist.",
+            "29": "Heat fluxes for steady state nucleate boiling are found to be much lower than those obtained under earth normal gravity conditions.",
+            "30": "Critical heat fluxes are found to be much lower than those obtained under earth normal gravity conditions.",
+            "31": "The data from the experiments are useful for calibration of results of numerical simulations.",
+            "32": "Any correlations developed for nucleate boiling heat transfer under microgravity condition must account for the existence of vapor escape path (sink) from the heater.",
+            "33": "Any correlations developed for nucleate boiling heat transfer under microgravity condition must account for the size of the heater.",
+            "34": "Any correlations developed for nucleate boiling heat transfer under microgravity condition must account for the size and geometry of the chamber."
+          },
+          "32": {
+            "1": "Space agencies worldwide are actively exploring the implementation of two-phase thermal management systems.",
+            "2": "The purpose of exploring two-phase thermal management systems is to support astronaut life onboard future space vehicles and planetary bases.",
+            "3": "One key motivation for exploring two-phase thermal management systems is to increase the efficiency of power utilization.",
+            "4": "Another key motivation for exploring two-phase thermal management systems is to reduce overall weight.",
+            "5": "Another key motivation for exploring two-phase thermal management systems is to reduce overall volume.",
+            "6": "Two-phase thermal management systems realize advantages through magnitudes of enhancement in heat transfer coefficients.",
+            "7": "The enhancement in heat transfer coefficient is achieved with flow boiling and condensation.",
+            "8": "Flow boiling and condensation achieve better performance in heat transfer coefficient compared to single-phase systems.",
+            "9": "The study will review published literature concerning two-phase flow in reduced gravity.",
+            "10": "The study will review published literature concerning heat transfer in reduced gravity.",
+            "11": "Different methods and platforms are dedicated to exploring the influence of reduced gravity.",
+            "12": "Ground flow boiling experiments are performed at different orientations relative to Earth gravity to explore the influence of reduced gravity.",
+            "13": "Reduced gravity adiabatic two-phase flow experiments explore the influence of reduced gravity.",
+            "14": "Pool boiling experiments in reduced gravity explore the influence of reduced gravity.",
+            "15": "Flow boiling experiments in reduced gravity explore the influence of reduced gravity.",
+            "16": "Critical Heat Flux (CHF) experiments in reduced gravity explore the influence of reduced gravity.",
+            "17": "There is extensive data available in the literature concerning two-phase flow and heat transfer in reduced gravity.",
+            "18": "There are extensive flow visualization results available in the literature concerning two-phase flow and heat transfer in reduced gravity.",
+            "19": "There is a severe shortage of useful correlations for two-phase flow and heat transfer in reduced gravity.",
+            "20": "There is a severe shortage of mechanistic models for two-phase flow and heat transfer in reduced gravity.",
+            "21": "There is a severe shortage of computational models for two-phase flow and heat transfer in reduced gravity.",
+            "22": "The shortage of models and correlations compromises readiness to adopt flow boiling in future space systems.",
+            "23": "Key recommendations are provided concerning platforms for future studies.",
+            "24": "Key recommendations are provided concerning heater design for future studies.",
+            "25": "Key recommendations are provided concerning operating conditions for future studies.",
+            "26": "Recommendations are aimed to expedite the deployment of two-phase thermal management in future space missions."
+          },
+          "33": {
+            "1": "The continuous development of space science and technology has made the expansion of astronaut planetary bases possible.",
+            "2": "The continuous development of space science and technology has made the utilization of extraterrestrial resources possible.",
+            "3": "Space thermal management systems are essential for astronaut survival.",
+            "4": "Life support systems are essential for astronaut survival.",
+            "5": "Space thermal management systems are essential for the stable operation of space platforms.",
+            "6": "Life support systems are essential for the stable operation of space platforms.",
+            "7": "This paper reviews literature on two-phase flow under microgravity.",
+            "8": "This paper reviews literature on heat transfer performance under microgravity.",
+            "9": "The purpose of the present work is to collect and collate key data of microgravity pool boiling in the literature.",
+            "10": "The purpose of the present work is to collect and collate key data of microgravity flow boiling in the literature.",
+            "11": "The purpose of the present work is to summarize typical differences in two-phase boiling between normal gravity and microgravity conditions.",
+            "12": "The differences in two-phase boiling include two-phase flow pressure drop between normal gravity and microgravity conditions.",
+            "13": "The differences in two-phase boiling include heat transfer coefficient between normal gravity and microgravity conditions.",
+            "14": "The differences in two-phase boiling include critical heat flux between normal gravity and microgravity conditions.",
+            "15": "The differences in two-phase boiling include flow patterns between normal gravity and microgravity conditions.",
+            "16": "A general deterioration in heat transfer in pool boiling was observed under microgravity.",
+            "17": "A general deterioration in heat transfer in flow boiling was observed under microgravity.",
+            "18": "The deterioration in heat transfer under microgravity may be caused by an increase in bubble size.",
+            "19": "The deterioration in heat transfer under microgravity may be caused by a delayed detachment period.",
+            "20": "Larger pressure drops were observed under microgravity diabatic conditions.",
+            "21": "Thicker liquid films were observed under microgravity diabatic conditions.",
+            "22": "There are abundant experimental data in microgravity.",
+            "23": "The lack of correlations and mechanistic models of related theories has compromised the process of establishing space thermal management systems.",
+            "24": "Inconsistent experimental conclusions have compromised the process of establishing space thermal management systems.",
+            "25": "The conclusion of the present review is expected to provide insights into the efficient utilization of microgravity pool boiling.",
+            "26": "The conclusion of the present review is expected to provide insights into the efficient utilization of microgravity flow boiling.",
+            "27": "The conclusion of the present review is expected to provide reliable recommendations for future space thermal management systems with higher energy efficiency.",
+            "28": "The conclusion of the present review is expected to provide reliable recommendations for future space thermal management systems with smaller weight and volume."
+          }
+        },
+        "viewpoints": [
+          "The challenge of bubble evacuation is exacerbated in micro-gravity settings.",
+          "Microchips in satellites and spacecrafts encounter micro-gravity settings.",
+          "The absence of buoyancy in micro-gravity settings complicates bubble evacuation."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "To foster new bubble-based technologies, we present a series of proof-of-concept experiments that showcase the versatility of the galloping dynamics and inform new methods for producing bubbles with tunable size, sorting and removal of bubbles, navigating fluid networks, and cleaning surfaces.",
+        "references": {},
+        "viewpoints": [
+          "A series of proof-of-concept experiments showcases the versatility of the galloping dynamics.",
+          "The proof-of-concept experiments inform new methods for producing bubbles with tunable size.",
+          "The proof-of-concept experiments inform new methods for sorting and removal of bubbles.",
+          "The proof-of-concept experiments inform new methods for navigating fluid networks.",
+          "The proof-of-concept experiments inform new methods for cleaning surfaces."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56611-5_with_abstracts",
+    "base_id": "s41467-025-56611-5",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56611-5_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

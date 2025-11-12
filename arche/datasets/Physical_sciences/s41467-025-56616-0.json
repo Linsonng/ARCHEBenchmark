@@ -1,0 +1,657 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Multiprincipal element alloys (MPEAs), also known as high entropy alloys, have garnered attention in recent years due to their excellent mechanical and physical properties stemming from their unique chemical complexity. Unlike conventional alloys, MPEAs are composed of multiple elements in high concentration. MPEAs comprising 3d transition metals have been widely explored due to their extraordinary strength and ductility at room [1] , [2] , [3] and cryogenic temperatures [4] owing to their low stacking fault energies and consequent additional deformation mechanisms [5] . In the context of additive manufacturing (AM), MPEAs offer a compelling avenue for the fabrication of high-performance components. Processing MPEAs via AM has led to improvements in properties such as strength [6] , [7] and corrosion resistance [8] compared to parts fabricated by conventional manufacturing methods such as casting. However, the AM processing of MPEAs presents challenges, just like in conventional alloys, particularly in material systems that solidify along preferred crystal orientations [9] . The high thermal gradients, rapid cooling rates, and partial remelting of previous layers can lead to the growth of columnar grains, resulting in highly textured microstructures. Previous investigations have highlighted the potential of composition as a parameter to alter microstructures in AM [10] , [11] . However, a deeper understanding of the composition-driven process-structure-property relationships in MPEAs will enable the strategic use of targeted compositions at specified locations to enhance the strength and performance of printed components [12] . Successful examples of alloy design strategies for grain refinement in AM include combining pre-existing alloys such as titanium alloys, nickel-based superalloys, and stainless steels to create new materials [13] , [14] , decorating the powder feedstock with nucleant particles [15] , and adding alloying elements to increase constitutional supercooling ahead of the solidification front [16] . In MPEAs, one effective method for changing the microstructure is to introduce a secondary phase by varying the composition of the alloy, such as adding aluminum, titanium, and niobium to MPEAs with 3d transition metals [17] , [18] , [19] , [20] , [21] , [22] . Secondary phases such as body-centered cubic (bcc), Huesler-like ordered L2 1 phase, and Laves phase emerge to pin grain boundaries and break down epitaxial grain growth [23] . However, these additional elements may lead to the formation of brittle intermetallics, which can result in significant cracking during solidification as they cannot accommodate the high residual stresses in AM. In addition, the underlying mechanism by which phase transformation leads to grain refinement remains elusive due to challenges with measuring and interpreting the spatiotemporal evolution of microstructures and defects during and after solidification has finished [24] , [25] . The current study aims to illuminate a new grain refinement mechanism in MPEAs by combining thermodynamic modeling, operando X-ray diffraction (XRD) studies, and multiscale microstructural evaluation to develop a comprehensive understanding of the intricate microstructural changes occurring during the AM process. We demonstrate an alloy design concept and adaptation for AM using a Fe 80-x Mn x Co 10 Cr 10 (at. %, x = 40, 45, and 50) MPEAs. These samples will henceforth be referred to by their Mn content, namely, Mn40, Mn45, and Mn50. In conventionally processed FeMnCoCr, decreasing the Mn content has shown a combination of exceptional strength and ductility due to the lowered stacking fault energy difference between the stable face-centered cubic (fcc) phase and deformation-induced hexagonal close-packed (hcp) phase [1] . Instead, we increase the Mn content to destabilize the primary fcc phase during solidification to enable microstructure control in a direct energy deposition (DED) system where the microstructure generally tends to be more columnar due to its lower scanning speeds compared to powder-bed fusion (PBF) [10] . FeMnCoCr enables us to shed light on the complex relationship of composition, phase stability, process, microstructure, and properties to achieve a crack-free, refined microstructure in AM.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Multiprincipal element alloys (MPEAs), also known as high entropy alloys, have garnered attention in recent years due to their excellent mechanical and physical properties stemming from their unique chemical complexity.",
+        "references": {},
+        "viewpoints": [
+          "Multiprincipal element alloys are also known as high entropy alloys.",
+          "Multiprincipal element alloys have garnered attention in recent years.",
+          "Multiprincipal element alloys are of interest due to their excellent mechanical and physical properties.",
+          "The excellent properties of multiprincipal element alloys stem from their unique chemical complexity."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Unlike conventional alloys, MPEAs are composed of multiple elements in high concentration.",
+        "references": {},
+        "viewpoints": [
+          "Multiprincipal element alloys are composed of multiple elements in high concentration.",
+          "Conventional alloys are not composed of multiple elements in high concentration."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "MPEAs comprising 3d transition metals have been widely explored due to their extraordinary strength and ductility at room [1], [2], [3] and cryogenic temperatures [4] owing to their low stacking fault energies and consequent additional deformation mechanisms [5].",
+        "references": {
+          "1": {
+            "1": "Metals have been mankind's most essential materials for thousands of years.",
+            "2": "The use of metals is affected by ecological concerns.",
+            "3": "The use of metals is affected by economical concerns.",
+            "4": "Alloys with higher strength and ductility could alleviate ecological concerns by reducing weight.",
+            "5": "Alloys with higher strength and ductility could alleviate ecological concerns by improving energy efficiency.",
+            "6": "Alloys with higher strength and ductility could alleviate economical concerns by reducing weight.",
+            "7": "Alloys with higher strength and ductility could alleviate economical concerns by improving energy efficiency.",
+            "8": "Most metallurgical mechanisms for increasing strength lead to ductility loss.",
+            "9": "The effect where increasing strength leads to ductility loss is referred to as the strength–ductility trade-off.",
+            "10": "A metastability-engineering strategy is presented.",
+            "11": "The metastability-engineering strategy involves designing nanostructured, bulk high-entropy alloys.",
+            "12": "These high-entropy alloys have multiple compositionally equivalent high-entropy phases.",
+            "13": "High-entropy alloys were originally proposed to benefit from phase stabilization.",
+            "14": "Phase stabilization in high-entropy alloys was proposed to occur through entropy maximization.",
+            "15": "Recent work has relaxed the strict restrictions on high-entropy alloy compositions.",
+            "16": "The recent work demonstrates the weakness of the connection between entropy maximization and phase stabilization.",
+            "17": "The concept of high-entropy alloys benefiting from phase stabilization through entropy maximization is overturned.",
+            "18": "Phase stability is decreased to achieve interface hardening.",
+            "19": "Interface hardening is due to a dual-phase microstructure.",
+            "20": "The dual-phase microstructure results from reduced thermal stability of the high-temperature phase.",
+            "21": "Phase stability is decreased to achieve transformation-induced hardening.",
+            "22": "Transformation-induced hardening results from the reduced mechanical stability of the room-temperature phase.",
+            "23": "Extensive hardening is due to decreased phase stability known from advanced steels.",
+            "24": "Massive solid-solution strengthening occurs in high-entropy alloys.",
+            "25": "The strategy combines extensive hardening from advanced steels with solid-solution strengthening from high-entropy alloys.",
+            "26": "In the transformation-induced plasticity-assisted, dual-phase high-entropy alloy (TRIP-DP-HEA), interface hardening and transformation-induced hardening lead to enhanced trans-grain slip resistance.",
+            "27": "Interface hardening and transformation-induced hardening lead to enhanced inter-grain slip resistance in the TRIP-DP-HEA.",
+            "28": "Enhanced trans-grain and inter-grain slip resistance lead to increased strength in the TRIP-DP-HEA.",
+            "29": "Increased strain hardening capacity is enabled by dislocation hardening of the stable phase.",
+            "30": "Increased strain hardening capacity is enabled by transformation-induced hardening of the metastable phase.",
+            "31": "The increased strain hardening capacity produces increased ductility.",
+            "32": "The combined increase in strength and ductility distinguishes the TRIP-DP-HEA alloy from other recently developed structural materials.",
+            "33": "The metastability-engineering strategy should guide design in the near-infinite compositional space of high-entropy alloys."
+          },
+          "2": {
+            "1": "Multicomponent alloys containing several components in equal atomic proportions have been manufactured by casting.",
+            "2": "Multicomponent alloys containing several components in equal atomic proportions have been manufactured by melt spinning.",
+            "3": "The microstructures and properties of these multicomponent alloys have been investigated.",
+            "4": "These investigations used a combination of optical microscopy, scanning electron microscopy, electron probe microanalysis, X-ray diffractometry, and microhardness measurements.",
+            "5": "Alloys containing 16 components in equal proportions are multiphase, crystalline, and brittle in the as-cast state.",
+            "6": "Alloys containing 16 components in equal proportions are multiphase, crystalline, and brittle after melt spinning.",
+            "7": "Alloys containing 20 components in equal proportions are multiphase, crystalline, and brittle in the as-cast state.",
+            "8": "Alloys containing 20 components in equal proportions are multiphase, crystalline, and brittle after melt spinning.",
+            "9": "A five component Fe20Cr20Mn20Ni20Co20 alloy forms a single fcc solid solution.",
+            "10": "The Fe20Cr20Mn20Ni20Co20 alloy solidifies dendritically.",
+            "11": "Six to nine component late transition metal-rich multicomponent alloys exhibit a majority fcc primary dendritic phase.",
+            "12": "The fcc primary dendritic phase in these alloys can dissolve substantial amounts of other transition metals such as Nb, Ti, and V.",
+            "13": "More electronegative elements such as Cu and Ge are less stable in the fcc dendrites.",
+            "14": "More electronegative elements such as Cu and Ge are rejected into the interdendritic regions.",
+            "15": "The total number of phases in the alloys is always well below the maximum equilibrium number allowed by the Gibbs phase rule.",
+            "16": "The total number of phases in the alloys is even further below the maximum number allowed under non-equilibrium solidification conditions.",
+            "17": "Glassy structures are not formed by casting of late transition metal-rich multicomponent alloys.",
+            "18": "Glassy structures are not formed by melt spinning of late transition metal-rich multicomponent alloys.",
+            "19": "The absence of glassy structures indicates that the confusion principle does not apply to these alloys.",
+            "20": "Other factors are more important in promoting glass formation than the confusion principle for these alloys."
+          },
+          "3": {
+            "1": "A new approach for the design of alloys is being presented.",
+            "2": "High-entropy alloys with multi-principal elements were synthesized.",
+            "3": "The synthesis of high-entropy alloys used well-developed processing technologies.",
+            "4": "Preliminary results demonstrate examples of alloys with simple crystal structures.",
+            "5": "Preliminary results demonstrate examples of alloys with nanostructures.",
+            "6": "Preliminary results demonstrate examples of alloys with promising mechanical properties.",
+            "7": "The approach for the design of high-entropy alloys may be opening a new era in materials science and engineering."
+          },
+          "4": [],
+          "5": {
+            "1": "Microstructural length-scale refinement is an efficient approach to strengthen metallic materials.",
+            "2": "Conventional methods for refining microstructures involve grain size reduction.",
+            "3": "Grain size reduction is achieved via heavy cold working in conventional methods.",
+            "4": "Heavy cold working compromises the material's ductility.",
+            "5": "A fundamentally new approach allows load-driven formation of a hierarchical nanolaminate structure.",
+            "6": "The approach enables permanent refinement of a hierarchical nanolaminate structure.",
+            "7": "The hierarchical nanolaminate structure is formed in a novel high-entropy alloy.",
+            "8": "The high-entropy alloy contains multiple principal elements.",
+            "9": "Dynamic forward transformation from a face-centered-cubic γ matrix into a hexagonal-close-packed ε nanolaminate structure is triggered.",
+            "10": "Dynamic reverse transformation from hexagonal-close-packed ε into face-centered-cubic γ is triggered.",
+            "11": "The new mechanism is referred to as the \"bidirectional transformation induced plasticity\" (B-TRIP) effect.",
+            "12": "The B-TRIP effect is enabled through a near-zero yet positive stacking fault energy of face-centered-cubic γ.",
+            "13": "Local dissipative heating triggers modulation of directionality in the transformation.",
+            "14": "Local micromechanical fields trigger modulation of directionality in the transformation.",
+            "15": "The B-TRIP effect has simple thermodynamic and kinetic foundations.",
+            "16": "The approach is generally suited for designing metastable strong bulk materials with hierarchical nanolaminate substructures.",
+            "17": "The approach is generally suited for designing ductile bulk materials with hierarchical nanolaminate substructures."
+          }
+        },
+        "viewpoints": [
+          "Multiprincipal element alloys comprising 3d transition metals have been widely explored.",
+          "Multiprincipal element alloys comprising 3d transition metals have extraordinary strength at room and cryogenic temperatures.",
+          "Multiprincipal element alloys comprising 3d transition metals have extraordinary ductility at room and cryogenic temperatures.",
+          "The extraordinary properties of multiprincipal element alloys with 3d transition metals are due to low stacking fault energies.",
+          "Low stacking fault energies in multiprincipal element alloys enable additional deformation mechanisms."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "In the context of additive manufacturing (AM), MPEAs offer a compelling avenue for the fabrication of high-performance components.",
+        "references": {},
+        "viewpoints": [
+          "In the context of additive manufacturing, multiprincipal element alloys offer a compelling avenue for fabricating high-performance components."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Processing MPEAs via AM has led to improvements in properties such as strength [6], [7] and corrosion resistance [8] compared to parts fabricated by conventional manufacturing methods such as casting.",
+        "references": {
+          "6": [],
+          "7": {
+            "1": "An equiatomic FeCoCrNi high-entropy alloy is used in the process of selective laser melting.",
+            "2": "X-ray diffraction is used to characterize the equiatomic FeCoCrNi high-entropy alloy.",
+            "3": "Scanning electron microscopy is used to characterize the equiatomic FeCoCrNi high-entropy alloy.",
+            "4": "Thermal analysis is used to characterize the equiatomic FeCoCrNi high-entropy alloy.",
+            "5": "Mechanical testing is used to characterize the equiatomic FeCoCrNi high-entropy alloy.",
+            "6": "Characterization of the equiatomic FeCoCrNi high-entropy alloy is performed to investigate the feasibility of using high-entropy alloys in additive manufacturing.",
+            "7": "Characterization of the equiatomic FeCoCrNi high-entropy alloy is performed to investigate the tensile properties resulting from using high-entropy alloys in additive manufacturing.",
+            "8": "The equiatomic FeCoCrNi high-entropy alloy preserves its single-phase solid-solution state after selective laser melting.",
+            "9": "The equiatomic FeCoCrNi high-entropy alloy exhibits high strength after selective laser melting.",
+            "10": "The equiatomic FeCoCrNi high-entropy alloy exhibits ductility that is comparable to engineering materials like stainless steels after selective laser melting."
+          },
+          "8": {
+            "1": "A CoCrFeMnNi high-entropy alloy (HEA) was fabricated by selective laser melting (SLM).",
+            "2": "Selective laser melting (SLM) is a method of additive manufacturing.",
+            "3": "The corrosion behavior of the SLM-produced CoCrFeMnNi HEA in 3.5 wt.% NaCl solution was analyzed.",
+            "4": "The corrosion behavior of the as-cast CoCrFeMnNi HEA in 3.5 wt.% NaCl solution was analyzed.",
+            "5": "The corrosion behavior of the SLM-produced and as-cast CoCrFeMnNi HEAs was comparatively analyzed.",
+            "6": "More uniform composition was observed in the SLMed HEA compared to the as-cast HEA.",
+            "7": "Finer grains were observed in the SLMed HEA compared to the as-cast HEA.",
+            "8": "The passive film formed on the SLMed HEA had more stable properties.",
+            "9": "The passive film formed on the SLMed HEA had stronger protective properties.",
+            "10": "The corrosion current density of the SLMed CoCrFeMnNi HEA dropped by 58% compared to that of the as-cast HEA.",
+            "11": "The SLMed CoCrFeMnNi HEA had better corrosion resistance than the as-cast alloy."
+          }
+        },
+        "viewpoints": [
+          "Processing multiprincipal element alloys via additive manufacturing improves strength compared to conventional manufacturing methods such as casting.",
+          "Processing multiprincipal element alloys via additive manufacturing improves corrosion resistance compared to conventional manufacturing methods such as casting."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "However, the AM processing of MPEAs presents challenges, just like in conventional alloys, particularly in material systems that solidify along preferred crystal orientations [9].",
+        "references": {
+          "9": {
+            "1": "Significant progress has been made in understanding additive manufacturing processes since its inception.",
+            "2": "Significant progress has been made in understanding the structure and properties of metallic components fabricated through additive manufacturing since its inception.",
+            "3": "The field of additive manufacturing is rapidly evolving.",
+            "4": "A periodic critical assessment of our understanding of additive manufacturing is useful because the field is rapidly evolving.",
+            "5": "This paper seeks to address the need for a periodic critical assessment of our understanding of additive manufacturing.",
+            "6": "This paper covers the emerging research on additive manufacturing of metallic materials.",
+            "7": "This paper provides a comprehensive overview of the physical processes involved in additive manufacturing of metallic materials.",
+            "8": "This paper provides a comprehensive overview of the underlying science of metallurgical structure of deposited parts in additive manufacturing of metallic materials.",
+            "9": "This paper provides a comprehensive overview of the properties of deposited parts in additive manufacturing of metallic materials.",
+            "10": "The uniqueness of this review includes substantive discussions on refractory alloys in additive manufacturing.",
+            "11": "The uniqueness of this review includes substantive discussions on precious metals in additive manufacturing.",
+            "12": "The uniqueness of this review includes substantive discussions on compositionally graded alloys in additive manufacturing.",
+            "13": "The uniqueness of this review includes a succinct comparison of additive manufacturing with welding.",
+            "14": "The uniqueness of this review includes a critical examination of the printability of various engineering alloys based on experiments and theory.",
+            "15": "An assessment of the status of the field of additive manufacturing of metallic components is provided.",
+            "16": "An assessment of the gaps in the scientific understanding of additive manufacturing of metallic components is provided.",
+            "17": "An assessment of the research needs for the expansion of additive manufacturing of metallic components is provided."
+          }
+        },
+        "viewpoints": [
+          "Additive manufacturing processing of multiprincipal element alloys presents challenges.",
+          "Conventional alloys also present challenges during additive manufacturing processing.",
+          "Challenges are particularly present in material systems that solidify along preferred crystal orientations."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The high thermal gradients, rapid cooling rates, and partial remelting of previous layers can lead to the growth of columnar grains, resulting in highly textured microstructures.",
+        "references": {},
+        "viewpoints": [
+          "High thermal gradients can lead to the growth of columnar grains.",
+          "Rapid cooling rates can lead to the growth of columnar grains.",
+          "Partial remelting of previous layers can lead to the growth of columnar grains.",
+          "Columnar grains result in highly textured microstructures."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Previous investigations have highlighted the potential of composition as a parameter to alter microstructures in AM [10], [11].",
+        "references": {
+          "10": {
+            "1": "Additive manufacturing has disruptive potential.",
+            "2": "The disruptive potential of additive manufacturing relies on its ability to make customized products.",
+            "3": "Additive manufacturing enables considerable weight savings in products.",
+            "4": "Additive manufacturing can create geometries that are difficult or impossible to produce by conventional methods.",
+            "5": "Applications of additive manufacturing have been restricted despite its versatility.",
+            "6": "The restriction in applications of additive manufacturing is due to the formation of columnar grains.",
+            "7": "Columnar grains in additive manufacturing result in solidification defects.",
+            "8": "Columnar grains in additive manufacturing lead to anisotropy in properties.",
+            "9": "Fine equiaxed grains in additive manufacturing are achieved through optimized alloy design.",
+            "10": "Fine equiaxed grains in additive manufacturing are achieved through optimized solidification conditions.",
+            "11": "Alloy design and solidification conditions have been optimized in various alloy systems for additive manufacturing.",
+            "12": "The review paper investigates the microstructure of high-entropy alloy parts.",
+            "13": "The high-entropy alloy parts investigated are produced by selective laser melting.",
+            "14": "The high-entropy alloy parts investigated are produced by powder-based directed energy deposition.",
+            "15": "Solidification maps for high-entropy alloys are based on laser process parameters.",
+            "16": "The solidification maps constructed are based on laser process parameters instead of solidification velocity and temperature gradient.",
+            "17": "The solidification maps for high-entropy alloys are compiled from available literature.",
+            "18": "The solidification maps are constructed for single-phase face-centered cubic high-entropy alloys.",
+            "19": "The solidification maps are constructed for body-centered cubic high-entropy alloys.",
+            "20": "The solidification maps are constructed for multiphase high-entropy alloys.",
+            "21": "Solidification maps could guide the printing of high-entropy alloys.",
+            "22": "Solidification maps could provide insight into the design of novel high-entropy alloys for additive manufacturing."
+          },
+          "11": []
+        },
+        "viewpoints": [
+          "Previous investigations have shown composition has the potential to alter microstructures in additive manufacturing."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "However, a deeper understanding of the composition-driven process-structure-property relationships in MPEAs will enable the strategic use of targeted compositions at specified locations to enhance the strength and performance of printed components [12].",
+        "references": {
+          "12": []
+        },
+        "viewpoints": [
+          "A deeper understanding of the composition-driven process-structure-property relationships in multiprincipal element alloys is needed.",
+          "Understanding composition-driven relationships will enable the use of targeted compositions at specified locations.",
+          "Targeted compositions can enhance the strength and performance of printed components."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Successful examples of alloy design strategies for grain refinement in AM include combining pre-existing alloys such as titanium alloys, nickel-based superalloys, and stainless steels to create new materials [13], [14], decorating the powder feedstock with nucleant particles [15], and adding alloying elements to increase constitutional supercooling ahead of the solidification front [16].",
+        "references": {
+          "13": {
+            "1": "Additive manufacturing is a revolutionary technology.",
+            "2": "Additive manufacturing offers a different pathway for material processing.",
+            "3": "Additive manufacturing offers a different pathway for design.",
+            "4": "Innovations in new materials can seldom be successful without a synergistic combination with processing technologies.",
+            "5": "Innovations in new processing technologies can seldom be successful without a synergistic combination with new materials.",
+            "6": "An in situ design approach can be used to make alloys spatially modulated in concentration.",
+            "7": "Laser-powder bed fusion is used as a technique in the in situ design approach to make alloys spatially modulated in concentration.",
+            "8": "Partial homogenization of two dissimilar alloy melts—Ti-6Al-4V and a small amount of 316L stainless steel—allows the production of micrometer-scale concentration modulations.",
+            "9": "Elements contained in 316L stainless steel are modulated in concentration within the Ti-6Al-4V matrix through partial homogenization.",
+            "10": "Phase stability modulation creates a fine-scale modulated β + α′ dual-phase microstructure.",
+            "11": "The β + α′ dual-phase microstructure exhibits a progressive transformation-induced plasticity effect.",
+            "12": "The progressive transformation-induced plasticity effect leads to a high tensile strength of ~1.3 gigapascals.",
+            "13": "The progressive transformation-induced plasticity effect leads to a uniform elongation of ~9%.",
+            "14": "The progressive transformation-induced plasticity effect leads to an excellent work-hardening capacity of >300 megapascals.",
+            "15": "The in situ design approach creates a pathway for concentration-modulated heterogeneous alloy design for structural applications.",
+            "16": "The in situ design approach creates a pathway for concentration-modulated heterogeneous alloy design for functional applications."
+          },
+          "14": {
+            "1": "Additive manufacturing (AM) is a tool for rapid prototyping.",
+            "2": "Additive manufacturing (AM) allows for prototyping with complex geometry.",
+            "3": "The cyclic heating and cooling in laser melting processes often cause large columnar grains in the as-printed microstructure.",
+            "4": "Large columnar grains result in a strong texture in the as-printed microstructure.",
+            "5": "Large columnar grains result in anisotropic properties in the as-printed microstructure.",
+            "6": "The strong texture and anisotropic properties in the as-printed microstructure limit the application of additive manufacturing (AM).",
+            "7": "This work applies powder-based directed energy deposition to discover new alloys.",
+            "8": "The new alloys are discovered using mixtures of Inconel 718 (IN718) and Stainless Steel 316L (SS316L).",
+            "9": "The 77 wt.% IN718 alloy mixture exhibited the highest configurational entropy among the tested mixtures.",
+            "10": "The 77 wt.% IN718 alloy mixture demonstrated an intriguingly fine grain structure in the as-built condition.",
+            "11": "The 77 wt.% IN718 alloy mixture demonstrated an intriguingly fine grain structure after homogenization at 1180°C.",
+            "12": "Residual stress from the laser melting process was identified as the primary cause of the grain refinement phenomenon.",
+            "13": "A quantitative analysis of the changes in grain size after homogenization in the alloy mixtures of IN718 and SS316L requires further research.",
+            "14": "The discovery of this unique microstructural behavior demonstrates that in-situ mixing of commercially available powders can be used to develop next-generation feedstock materials for additive manufacturing (AM).",
+            "15": "The discovery enhances the understanding of fundamental process-microstructure-property relationships."
+          },
+          "15": {
+            "1": "Metal-based additive manufacturing is a potentially disruptive technology across multiple industries.",
+            "2": "Metal-based additive manufacturing is also known as three-dimensional (3D) printing.",
+            "3": "Industries potentially affected by metal-based additive manufacturing include aerospace, biomedical, and automotive industries.",
+            "4": "Building up metal components layer by layer increases design freedom in metal-based additive manufacturing.",
+            "5": "Building up metal components layer by layer increases manufacturing flexibility in metal-based additive manufacturing.",
+            "6": "Metal-based additive manufacturing enables complex geometries.",
+            "7": "Metal-based additive manufacturing enables increased product customization.",
+            "8": "Metal-based additive manufacturing enables shorter time to market.",
+            "9": "Metal-based additive manufacturing eliminates traditional economy-of-scale constraints.",
+            "10": "Currently, only a few alloys can be reliably printed using metal-based additive manufacturing.",
+            "11": "The most relevant alloys that can be reliably printed are AlSi10Mg, TiAl6V4, CoCr, and Inconel 718.",
+            "12": "The vast majority of the more than 5,500 alloys in use today cannot be additively manufactured.",
+            "13": "The melting and solidification dynamics during the printing process lead to intolerable microstructures with large columnar grains and periodic cracks.",
+            "14": "Introducing nanoparticles of nucleants can resolve issues related to intolerable microstructures in metal-based additive manufacturing.",
+            "15": "Nanoparticles of nucleants control solidification during additive manufacturing.",
+            "16": "The nucleants were selected based on crystallographic information.",
+            "17": "The nucleants were assembled onto 7075 series aluminium alloy powders.",
+            "18": "The nucleants were assembled onto 6061 series aluminium alloy powders.",
+            "19": "Functionalization with the nucleants allowed high-strength aluminium alloys to be processed successfully using selective laser melting.",
+            "20": "High-strength aluminium alloys were previously incompatible with additive manufacturing.",
+            "21": "Crack-free microstructures were achieved in high-strength aluminium alloys after functionalization with nucleants.",
+            "22": "Equiaxed microstructures (with grains roughly equal in length, width, and height) were achieved in high-strength aluminium alloys.",
+            "23": "Fine-grained microstructures were achieved in high-strength aluminium alloys.",
+            "24": "The material strengths of these microstructures are comparable to wrought material.",
+            "25": "The approach to metal-based additive manufacturing is applicable to a wide range of alloys.",
+            "26": "The approach to metal-based additive manufacturing can be implemented using a range of additive machines.",
+            "27": "The approach provides a foundation for broad industrial applicability in metal-based additive manufacturing.",
+            "28": "The approach is applicable where electron-beam melting techniques are used instead of selective laser melting.",
+            "29": "The approach is applicable where directed-energy-deposition techniques are used instead of selective laser melting.",
+            "30": "The approach will enable additive manufacturing of non-weldable nickel superalloys.",
+            "31": "The approach will enable additive manufacturing of intermetallics.",
+            "32": "The technology could be used in conventional processing such as joining.",
+            "33": "The technology could be used in conventional processing such as casting.",
+            "34": "The technology could be used in conventional processing such as injection moulding.",
+            "35": "Solidification cracking and hot tearing are common issues in joining, casting, and injection moulding."
+          },
+          "16": {
+            "1": "Additive manufacturing is also known as three-dimensional (3D) printing.",
+            "2": "In additive manufacturing, a part is built layer-by-layer.",
+            "3": "Additive manufacturing is a promising approach for creating components close to their final (net) shape.",
+            "4": "Additive manufacturing is challenging the dominance of conventional manufacturing processes.",
+            "5": "Additive manufacturing is especially challenging the dominance for products with high complexity.",
+            "6": "Additive manufacturing is especially challenging the dominance for products with low material waste.",
+            "7": "Titanium alloys made by additive manufacturing have been used in various industries.",
+            "8": "The fusion-based metal additive manufacturing process has intrinsic high cooling rates.",
+            "9": "The fusion-based metal additive manufacturing process has a high thermal gradient.",
+            "10": "The high cooling rates and thermal gradient often lead to a very fine microstructure in titanium-based alloys.",
+            "11": "There is a tendency towards almost exclusively columnar grains in titanium-based alloys made by fusion-based metal additive manufacturing.",
+            "12": "Columnar grains in additively manufactured titanium components can result in anisotropic mechanical properties.",
+            "13": "Anisotropic mechanical properties are undesirable in additively manufactured titanium components.",
+            "14": "Attempts to optimize processing parameters of additive manufacturing show difficulty in altering conditions.",
+            "15": "It is difficult to promote equiaxed growth of titanium grains through altering the processing conditions.",
+            "16": "Other common engineering alloys, such as aluminium, have commercial grain refiners.",
+            "17": "There is no commercial grain refiner for titanium.",
+            "18": "A commercial grain refiner for titanium would effectively refine the microstructure.",
+            "19": "The paper reports on the development of titanium–copper alloys.",
+            "20": "Titanium–copper alloys have a high constitutional supercooling capacity.",
+            "21": "The high constitutional supercooling capacity is due to the partitioning of the alloying element during solidification.",
+            "22": "The high constitutional supercooling capacity can override the negative effect of a high thermal gradient.",
+            "23": "The negative effect of a high thermal gradient occurs in the laser-melted region during additive manufacturing.",
+            "24": "The as-printed titanium–copper alloy specimens have a fully equiaxed fine-grained microstructure.",
+            "25": "The fully equiaxed fine-grained microstructure is achieved without any special process control.",
+            "26": "The fully equiaxed fine-grained microstructure is achieved without any additional treatment.",
+            "27": "Titanium–copper alloy specimens display promising mechanical properties such as high yield strength.",
+            "28": "Titanium–copper alloy specimens display promising mechanical properties such as uniform elongation.",
+            "29": "The mechanical properties are compared to conventional alloys under similar processing conditions.",
+            "30": "The promising mechanical properties are due to the formation of an ultrafine eutectoid microstructure.",
+            "31": "The ultrafine eutectoid microstructure results from exploiting high cooling rates and multiple thermal cycles of the manufacturing process.",
+            "32": "The approach using titanium–copper alloys is anticipated to be applicable to other eutectoid-forming alloy systems.",
+            "33": "The approach is anticipated to have applications in the aerospace industry.",
+            "34": "The approach is anticipated to have applications in the biomedical industry."
+          }
+        },
+        "viewpoints": [
+          "Successful alloy design strategies for grain refinement in additive manufacturing include combining pre-existing alloys to create new materials.",
+          "Titanium alloys, nickel-based superalloys, and stainless steels can be combined to create new materials.",
+          "Decorating the powder feedstock with nucleant particles is a successful strategy for grain refinement.",
+          "Adding alloying elements is a strategy to increase constitutional supercooling ahead of the solidification front."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "In MPEAs, one effective method for changing the microstructure is to introduce a secondary phase by varying the composition of the alloy, such as adding aluminum, titanium, and niobium to MPEAs with 3d transition metals [17], [18], [19], [20], [21], [22].",
+        "references": {
+          "17": {
+            "1": "Hot tearing is a major hindrance for alloy design in additive manufacturing.",
+            "2": "Previous works have tried to reduce the solidification range to prevent hot tearing.",
+            "3": "Previous works have tried to introduce grain refinement to prevent hot tearing.",
+            "4": "The current work presents a new approach using segregation engineering to alter residual stress states at interdendritic and grain boundary regions.",
+            "5": "The current work aims to prevent hot tearing by altering residual stress states through segregation engineering.",
+            "6": "In situ Al alloying is introduced in a high-entropy alloy CoCrFeNi that is susceptible to hot-cracking.",
+            "7": "Within a certain range of compositions including Al0.5CoCrFeNi, the hot crack density is drastically decreased.",
+            "8": "During solidification of the alloy composition, Al is ejected from the primary dendritic FCC phase.",
+            "9": "Al segregates into the interdendritic regions during solidification of the alloy composition.",
+            "10": "Spinodal decomposition occurs in Al-enriched regions to form the ordered B2 NiAl phase.",
+            "11": "Spinodal decomposition occurs in Al-enriched regions to form the disordered body-centred cubic (BCC) Cr phase.",
+            "12": "The B2/BCC phases have higher molar volume and lower homologous temperatures than other phases.",
+            "13": "The inherent residual strain is transformed from a maximum 0.006 tensile strain in CoCrFeNi to a compressive strain of ~0.001 in Al0.5CoCrFeNi.",
+            "14": "The grain boundary segregation engineering method could provide a new pathway to counteract the hot tearing problem in additive manufacturing.",
+            "15": "Available thermodynamic and kinetic database information can be used in applying the grain boundary segregation engineering method."
+          },
+          "18": {
+            "1": "Ordered L21 Huesler phases exhibit interesting magnetic properties.",
+            "2": "Ordered L21 Huesler phases are known to substantially enhance creep resistance in multi-phase alloys.",
+            "3": "Experimental evidence of a Huesler-like ordered L21 phase in a multicomponent High Entropy Alloy (HEA) is presented.",
+            "4": "The titanium induced stabilization of the Huesler-like ordered L21 phase is rationalized based on first principles calculations.",
+            "5": "The composition of High Entropy Alloys (HEAs) can be tuned to obtain the desired microstructure.",
+            "6": "The composition of High Entropy Alloys (HEAs) can potentially be tailored to obtain desired properties."
+          },
+          "19": [],
+          "20": {
+            "1": "An interstitial solute strengthened high entropy alloy (iHEA), Fe49.5Mn30Co10Cr10C0.5 (at.%), was successfully manufactured additively.",
+            "2": "The manufacturing method used for iHEA was selective laser melting.",
+            "3": "The as-built iHEA exhibits a hierarchically heterogeneous microstructure.",
+            "4": "The microstructure of iHEA spans several orders of magnitude in length scales.",
+            "5": "The hierarchically heterogeneous microstructure of as-built iHEA leads to an enhanced strength–ductility combination.",
+            "6": "The strength–ductility combination of the as-built iHEA is enhanced compared to high entropy alloys fabricated by conventional processing routes.",
+            "7": "The high yield strength of as-built iHEA mainly stems from dislocation strengthening.",
+            "8": "The high yield strength of as-built iHEA is also supported by friction stress.",
+            "9": "Grain boundary strengthening contributes to the high yield strength of the as-built iHEA.",
+            "10": "The steady work-hardening behavior at high stress levels in as-built iHEA is maintained by the joint activation of multiple deformation mechanisms.",
+            "11": "The deformation mechanisms involved in maintaining work-hardening behavior include dislocation slip.",
+            "12": "Deformation twinning is one of the mechanisms involved in maintaining work-hardening behavior.",
+            "13": "Phase transformation contributes as a mechanism to maintain work-hardening behavior.",
+            "14": "The maintenance of steady work-hardening behavior at high stress levels leads to high ductility in as-built iHEA."
+          },
+          "21": {
+            "1": "Additive manufacturing produces net-shaped components layer by layer.",
+            "2": "Additive manufacturing is used for engineering applications.",
+            "3": "The additive manufacture of metal alloys by laser powder bed fusion (L-PBF) involves large temperature gradients.",
+            "4": "The additive manufacture of metal alloys by laser powder bed fusion (L-PBF) involves rapid cooling.",
+            "5": "Large temperature gradients and rapid cooling enable microstructural refinement at the nanoscale.",
+            "6": "Microstructural refinement at the nanoscale achieves high strength in metal alloys.",
+            "7": "High-strength nanostructured alloys produced by laser additive manufacturing often have limited ductility.",
+            "8": "L-PBF is used to print dual-phase nanolamellar high-entropy alloys (HEAs) of AlCoCrFeNi₂.₁.",
+            "9": "The nanolamellar high-entropy alloys (HEAs) of AlCoCrFeNi₂.₁ exhibit a high yield strength of about 1.3 gigapascals.",
+            "10": "The nanolamellar high-entropy alloys (HEAs) of AlCoCrFeNi₂.₁ exhibit a large uniform elongation of about 14 per cent.",
+            "11": "The combination of high yield strength and large uniform elongation in AlCoCrFeNi₂.₁ surpasses those of other state-of-the-art additively manufactured metal alloys.",
+            "12": "High yield strength stems from the strong strengthening effects of dual-phase structures.",
+            "13": "Dual-phase structures consist of alternating face-centred cubic and body-centred cubic nanolamellae.",
+            "14": "Body-centred cubic nanolamellae exhibit higher strengths than face-centred cubic nanolamellae.",
+            "15": "Body-centred cubic nanolamellae exhibit higher hardening rates than face-centred cubic nanolamellae.",
+            "16": "Large tensile ductility arises owing to the high work-hardening capability of as-printed hierarchical microstructures.",
+            "17": "Hierarchical microstructures are in the form of dual-phase nanolamellae embedded in microscale eutectic colonies.",
+            "18": "Microscale eutectic colonies have nearly random orientations.",
+            "19": "Nearly random orientations promote isotropic mechanical properties.",
+            "20": "Mechanistic insights into the deformation behaviour of additively manufactured HEAs have broad implications for developing nanostructured alloys.",
+            "21": "Mechanistic insights into the deformation behaviour are relevant for developing hierarchical structures.",
+            "22": "Mechanistic insights into the deformation behaviour are relevant for developing dual-phase structures.",
+            "23": "Mechanistic insights into the deformation behaviour are relevant for developing multi-phase structures.",
+            "24": "Mechanistic insights into the deformation behaviour are relevant for developing alloys with exceptional mechanical properties."
+          },
+          "22": {
+            "1": "Bulk CoCrFeNiNbx high entropy alloys were fabricated successfully.",
+            "2": "The fabrication method used was direct laser deposition.",
+            "3": "The microstructures of the as-deposited CoCrFeNiNbx high entropy alloys were investigated.",
+            "4": "The mechanical properties of the as-deposited CoCrFeNiNbx high entropy alloys were investigated.",
+            "5": "The work-hardening behavior of the as-deposited CoCrFeNiNbx high entropy alloys was investigated.",
+            "6": "Uniform microstructures were characterized in longitudinal sections of the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "7": "Fully compact microstructures were characterized in longitudinal sections of the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "8": "Uniform microstructures were characterized in transverse sections of the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "9": "Fully compact microstructures were characterized in transverse sections of the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "10": "No apparent pores were observed in any samples of the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "11": "No microcracks were observed in any samples of the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "12": "A transition from columnar to equiaxed grain structures was noted in the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "13": "The transition from columnar to equiaxed grain structures was associated with increasing Nb content.",
+            "14": "Room temperature tensile tests demonstrated an excellent combination of strength and ductility in the as-deposited CoCrFeNiNbx high entropy alloys.",
+            "15": "The combination of strength and ductility in the as-deposited CoCrFeNiNbx high entropy alloys was superior compared to as-cast counterparts.",
+            "16": "The CoCrFeNiNbx high entropy alloys exhibited better printability than other high entropy alloys processed via direct laser deposition.",
+            "17": "The CoCrFeNiNbx high entropy alloys exhibited superior mechanical properties than other high entropy alloys processed via direct laser deposition."
+          }
+        },
+        "viewpoints": [
+          "Introducing a secondary phase is an effective method for changing the microstructure in multiprincipal element alloys.",
+          "Varying the composition of multiprincipal element alloys can introduce a secondary phase.",
+          "Adding aluminum, titanium, and niobium to multiprincipal element alloys with 3d transition metals can introduce a secondary phase."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Secondary phases such as body-centered cubic (bcc), Huesler-like ordered L2 1 phase, and Laves phase emerge to pin grain boundaries and break down epitaxial grain growth [23].",
+        "references": {
+          "23": {
+            "1": "High Entropy Alloys are inherently complex.",
+            "2": "High Entropy Alloys span a vast composition space.",
+            "3": "The inherent complexity and vast composition space of High Entropy Alloys make their research challenging.",
+            "4": "The inherent complexity and vast composition space of High Entropy Alloys make their discovery challenging.",
+            "5": "Developing quantitative predictions of phase selection for High Entropy Alloys requires a large quantity of experimental data.",
+            "6": "The experimental data required for phase selection predictions for High Entropy Alloys must be consistently determined.",
+            "7": "Combinatorial methods are used to fabricate and characterize 2478 quinary alloys.",
+            "8": "The 2478 quinary alloys fabricated and characterized are based on Al and transition metals.",
+            "9": "Phase selection for considered alloys can be predicted by combining the content of FCC elements and BCC elements.",
+            "10": "Phase selection for considered alloys can be predicted by combining the constituents' atomic size difference.",
+            "11": "High Entropy Alloys with increasing atomic size difference prefer BCC structure over FCC.",
+            "12": "Data mining reveals the preference of High Entropy Alloys with increasing atomic size difference for BCC structure over FCC.",
+            "13": "The preference for BCC structure over FCC in High Entropy Alloys with increasing atomic size difference is typically overshadowed by other selection motifs.",
+            "14": "Other selection motifs dominate during close-to-equilibrium processing of High Entropy Alloys.",
+            "15": "The preference for BCC structure in High Entropy Alloys with a large atomic size difference is not suggested by the Hume-Rothery rules.",
+            "16": "The preference for BCC structure originates from its ability to accommodate a large atomic size difference with lower strain energy penalty.",
+            "17": "The ability to accommodate a large atomic size difference with lower strain energy penalty can be practically realized only in High Entropy Alloys."
+          }
+        },
+        "viewpoints": [
+          "Body-centered cubic phase is a secondary phase that can emerge in multiprincipal element alloys.",
+          "Huesler-like ordered L2 1 phase is a secondary phase that can emerge in multiprincipal element alloys.",
+          "Laves phase is a secondary phase that can emerge in multiprincipal element alloys.",
+          "Secondary phases can pin grain boundaries.",
+          "Secondary phases can break down epitaxial grain growth."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "However, these additional elements may lead to the formation of brittle intermetallics, which can result in significant cracking during solidification as they cannot accommodate the high residual stresses in AM.",
+        "references": {},
+        "viewpoints": [
+          "Additional elements in multiprincipal element alloys may lead to the formation of brittle intermetallics.",
+          "Brittle intermetallics can result in significant cracking during solidification.",
+          "Brittle intermetallics cannot accommodate high residual stresses in additive manufacturing."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "In addition, the underlying mechanism by which phase transformation leads to grain refinement remains elusive due to challenges with measuring and interpreting the spatiotemporal evolution of microstructures and defects during and after solidification has finished [24], [25].",
+        "references": {
+          "24": [],
+          "25": []
+        },
+        "viewpoints": [
+          "The mechanism by which phase transformation leads to grain refinement is not well understood.",
+          "Challenges exist in measuring and interpreting the spatiotemporal evolution of microstructures and defects.",
+          "Challenges in understanding grain refinement occur during and after solidification."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The current study aims to illuminate a new grain refinement mechanism in MPEAs by combining thermodynamic modeling, operando X-ray diffraction (XRD) studies, and multiscale microstructural evaluation to develop a comprehensive understanding of the intricate microstructural changes occurring during the AM process.",
+        "references": {},
+        "viewpoints": [
+          "The study aims to illuminate a new grain refinement mechanism in multiprincipal element alloys.",
+          "The study combines thermodynamic modeling, operando X-ray diffraction studies, and multiscale microstructural evaluation.",
+          "The study aims to develop a comprehensive understanding of microstructural changes during the additive manufacturing process."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "We demonstrate an alloy design concept and adaptation for AM using a Fe 80-x Mn x Co 10 Cr 10 (at. %, x = 40, 45, and 50) MPEAs.",
+        "references": {},
+        "viewpoints": [
+          "The study demonstrates an alloy design concept for additive manufacturing.",
+          "The study demonstrates adaptation for additive manufacturing using Fe 80-x Mn x Co 10 Cr 10 multiprincipal element alloys with x = 40, 45, and 50."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "These samples will henceforth be referred to by their Mn content, namely, Mn40, Mn45, and Mn50.",
+        "references": {},
+        "viewpoints": [
+          "The samples will be referred to by their Mn content: Mn40, Mn45, and Mn50."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "In conventionally processed FeMnCoCr, decreasing the Mn content has shown a combination of exceptional strength and ductility due to the lowered stacking fault energy difference between the stable face-centered cubic (fcc) phase and deformation-induced hexagonal close-packed (hcp) phase [1].",
+        "references": {
+          "1": {
+            "1": "Metals have been mankind's most essential materials for thousands of years.",
+            "2": "The use of metals is affected by ecological concerns.",
+            "3": "The use of metals is affected by economical concerns.",
+            "4": "Alloys with higher strength and ductility could alleviate ecological concerns by reducing weight.",
+            "5": "Alloys with higher strength and ductility could alleviate ecological concerns by improving energy efficiency.",
+            "6": "Alloys with higher strength and ductility could alleviate economical concerns by reducing weight.",
+            "7": "Alloys with higher strength and ductility could alleviate economical concerns by improving energy efficiency.",
+            "8": "Most metallurgical mechanisms for increasing strength lead to ductility loss.",
+            "9": "The effect where increasing strength leads to ductility loss is referred to as the strength–ductility trade-off.",
+            "10": "A metastability-engineering strategy is presented.",
+            "11": "The metastability-engineering strategy involves designing nanostructured, bulk high-entropy alloys.",
+            "12": "These high-entropy alloys have multiple compositionally equivalent high-entropy phases.",
+            "13": "High-entropy alloys were originally proposed to benefit from phase stabilization.",
+            "14": "Phase stabilization in high-entropy alloys was proposed to occur through entropy maximization.",
+            "15": "Recent work has relaxed the strict restrictions on high-entropy alloy compositions.",
+            "16": "The recent work demonstrates the weakness of the connection between entropy maximization and phase stabilization.",
+            "17": "The concept of high-entropy alloys benefiting from phase stabilization through entropy maximization is overturned.",
+            "18": "Phase stability is decreased to achieve interface hardening.",
+            "19": "Interface hardening is due to a dual-phase microstructure.",
+            "20": "The dual-phase microstructure results from reduced thermal stability of the high-temperature phase.",
+            "21": "Phase stability is decreased to achieve transformation-induced hardening.",
+            "22": "Transformation-induced hardening results from the reduced mechanical stability of the room-temperature phase.",
+            "23": "Extensive hardening is due to decreased phase stability known from advanced steels.",
+            "24": "Massive solid-solution strengthening occurs in high-entropy alloys.",
+            "25": "The strategy combines extensive hardening from advanced steels with solid-solution strengthening from high-entropy alloys.",
+            "26": "In the transformation-induced plasticity-assisted, dual-phase high-entropy alloy (TRIP-DP-HEA), interface hardening and transformation-induced hardening lead to enhanced trans-grain slip resistance.",
+            "27": "Interface hardening and transformation-induced hardening lead to enhanced inter-grain slip resistance in the TRIP-DP-HEA.",
+            "28": "Enhanced trans-grain and inter-grain slip resistance lead to increased strength in the TRIP-DP-HEA.",
+            "29": "Increased strain hardening capacity is enabled by dislocation hardening of the stable phase.",
+            "30": "Increased strain hardening capacity is enabled by transformation-induced hardening of the metastable phase.",
+            "31": "The increased strain hardening capacity produces increased ductility.",
+            "32": "The combined increase in strength and ductility distinguishes the TRIP-DP-HEA alloy from other recently developed structural materials.",
+            "33": "The metastability-engineering strategy should guide design in the near-infinite compositional space of high-entropy alloys."
+          }
+        },
+        "viewpoints": [
+          "In conventionally processed FeMnCoCr, decreasing Mn content shows exceptional strength.",
+          "In conventionally processed FeMnCoCr, decreasing Mn content shows exceptional ductility.",
+          "The exceptional properties are due to a lowered stacking fault energy difference between the stable face-centered cubic phase and deformation-induced hexagonal close-packed phase."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Instead, we increase the Mn content to destabilize the primary fcc phase during solidification to enable microstructure control in a direct energy deposition (DED) system where the microstructure generally tends to be more columnar due to its lower scanning speeds compared to powder-bed fusion (PBF) [10].",
+        "references": {
+          "10": {
+            "1": "Additive manufacturing has disruptive potential.",
+            "2": "The disruptive potential of additive manufacturing relies on its ability to make customized products.",
+            "3": "Additive manufacturing enables considerable weight savings in products.",
+            "4": "Additive manufacturing can create geometries that are difficult or impossible to produce by conventional methods.",
+            "5": "Applications of additive manufacturing have been restricted despite its versatility.",
+            "6": "The restriction in applications of additive manufacturing is due to the formation of columnar grains.",
+            "7": "Columnar grains in additive manufacturing result in solidification defects.",
+            "8": "Columnar grains in additive manufacturing lead to anisotropy in properties.",
+            "9": "Fine equiaxed grains in additive manufacturing are achieved through optimized alloy design.",
+            "10": "Fine equiaxed grains in additive manufacturing are achieved through optimized solidification conditions.",
+            "11": "Alloy design and solidification conditions have been optimized in various alloy systems for additive manufacturing.",
+            "12": "The review paper investigates the microstructure of high-entropy alloy parts.",
+            "13": "The high-entropy alloy parts investigated are produced by selective laser melting.",
+            "14": "The high-entropy alloy parts investigated are produced by powder-based directed energy deposition.",
+            "15": "Solidification maps for high-entropy alloys are based on laser process parameters.",
+            "16": "The solidification maps constructed are based on laser process parameters instead of solidification velocity and temperature gradient.",
+            "17": "The solidification maps for high-entropy alloys are compiled from available literature.",
+            "18": "The solidification maps are constructed for single-phase face-centered cubic high-entropy alloys.",
+            "19": "The solidification maps are constructed for body-centered cubic high-entropy alloys.",
+            "20": "The solidification maps are constructed for multiphase high-entropy alloys.",
+            "21": "Solidification maps could guide the printing of high-entropy alloys.",
+            "22": "Solidification maps could provide insight into the design of novel high-entropy alloys for additive manufacturing."
+          }
+        },
+        "viewpoints": [
+          "The study increases Mn content to destabilize the primary face-centered cubic phase during solidification.",
+          "Destabilizing the primary face-centered cubic phase enables microstructure control in a direct energy deposition system.",
+          "In a direct energy deposition system, the microstructure tends to be more columnar due to lower scanning speeds compared to powder-bed fusion."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "FeMnCoCr enables us to shed light on the complex relationship of composition, phase stability, process, microstructure, and properties to achieve a crack-free, refined microstructure in AM.",
+        "references": {},
+        "viewpoints": [
+          "FeMnCoCr helps to understand the complex relationship between composition, phase stability, process, microstructure, and properties.",
+          "Understanding these relationships helps achieve a crack-free, refined microstructure in additive manufacturing."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56616-0_with_abstracts",
+    "base_id": "s41467-025-56616-0",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56616-0_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

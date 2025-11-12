@@ -1,0 +1,1243 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Twinning of tetrahedra to form decahedra or icosahedra with fivefold symmetry is common in multiply twinned particles (MTPs). Fivefold twinned structures in nanoparticles have attracted continuous attention in the field not only of crystal growth [1] , [2] , [3] , [4] , but also of cluster physics [5] , [6] , [7] , [8] , [9] , [10] , crystallography [11] , [12] , [13] , [14] , physical chemistry [15] , [16] , surface science [17] , [18] , and materials [19] , [20] . For example, Wu et al. reported that the icosahedral Pt alloy catalysts have superior activity toward oxygen reduction reaction compared to single-crystalline octahedra, which may arise from strain-induced electronic effects [16] . Han et al. found that Au icosahedral particles show more efficient surface-enhanced Raman scattering properties compared to spherical particles with similar sizes [18] . The distinct physical and chemical properties of MTPs are largely due to their chemical sites and associated lattice-misfit strain, which makes the knowledge of their full atomic structures essential. Face-centered cubic (fcc) crystals, having co-planar twin planes enclosing an angle of 70.53° (close to 360°/5), can form fivefold twinned structures including decahedron and icosahedron. To fill the concomitant space gaps between two adjacent (111) faces of the fcc regular tetrahedron with an angle of 70.53°, internal distortion needs to be incorporated to form decahedral or icosahedral MTPs [21] , [22] , [23] , [24] . Different competing strain models including homogeneous and inhomogeneous strain models have been proposed mostly based on elastic theory to explain the internal distortion and space-filling mechanism. Homogeneous strain model [25] suggests the existence of simple linear displacement in crystal lattice. On the other hand, inhomogeneous strain distributions have been observed with evidence of dislocations [26] , [27] , [28] and disclinations [20] , [29] . In addition to the internal strain, the final crystallographic symmetry is further determined by a subtle balance between surface and volume contributions to the total energy of the MTPs [30] , [31] . The elastic strain energy resulting from the atomic distortion can be compensated by reducing surface energy through optimal surface atomic arrangements [31] . Ino and Marks proposed extra crystal planes on the classical decahedron models to reduce surface energy. They achieved the energy balance either by exposing more (100) faces [32] or introducing re-entrant planes on the twin boundaries [33] . Both models have been recently confirmed in core-shell decahedral MTPs, where extra high-index crystal planes at the corners or edges further reduce the surface energy [14] . During the growth of icosahedra, faulted islands and grooves have been observed [1] , [3] . These structures form curved surfaces that lower the surface energy and relieve strain [31] . Despite a number of experimental and computational studies have been done on the formation mechanisms [34] , [35] , stability [23] , [24] , [36] , [37] and lattice defects [20] , [21] , [22] of fivefold twinned structures, the 3D atomic structures and associated local strain of icosahedra are still long-standing problems because the embedded internal structures including distribution of dislocations or disclinations remain unclear due to their structural complexity and limitation of conventional projection imaging techniques. The high-resolution electron microscopy images of atomic columns or lattice fringes from the fivefold directions are commonly employed to elucidate the atomic structures of MTPs. Johnson et al. confirmed the presence of disclinations and inhomogeneous strain distribution with shear gradients through geometric phase analysis based on two-dimensional (2D) projection images [20] . Narayan et al. found the boundaries of fivefold diamond microcrystallites contain coherent twins with occasional presence of dislocations to accommodate the misfit [38] . Li et al. proposed oriented attachment of small crystal domains induces fivefold twins using in situ electron microscopy [4] . While these experimental observations are predominantly based on 2D projections, the internal structures were not obtained. Recent advances in the atomic resolution electron tomography (AET) [39] , [40] , [41] , [42] offer a method to visualize the internal atomic structures of nanomaterials in 3D and even in 4D. Chen et al. observed the 3D core structure of edge and screw dislocations releasing strain in Pt decahedral MTP [11] . More recently, Peltz et al. studied the transient 3D structures of a Pd MTP, in which a large number of defects have been revealed qualitatively including disordered regions present mostly on the particle surface [13] . However, although experimental studies show that the strains are inhomogeneous in fivefold MTPs, quantitative measurements of 3D inherent atomic misfit and strain were not obtained, further precluding a thorough understanding of the phenomenon. Here, by determining the 3D atomic coordinates of gold-palladium MTPs, we show that the 3D angular deficiency in fivefold twinned icosahedral nanoparticles (ICNPs) is compensated by the insertion of edge dislocations and amorphization of several tetrahedra. A geometrically fivefold face (C5 side) consistently corresponds to a less-ordered face (C5′ side), forming two structurally distinct hemispheres. The solid angles of disordered amorphous domains are significantly larger than those of the ideal fcc domains, relaxing a large amount of strain and filling up the angular defects. We also discover a two-sided heterogeneity in a variety of structural characteristics including local bond orientation order (BOO), bond length, distribution of dislocations, and solid angle and size of tetrahedra. The observations of Janus-like structural heterogeneity are corroborated with molecular dynamics (MD) simulations of the atomic structures of Au nanoparticles after annealing in liquid–solid phase transitions. Our research has unveiled a strain model in which some tetrahedra on one side of the ICNP are transformed to disordered structures to release the intrinsic strain, while the rest of tetrahedra on the other side remain almost ideal fcc. This work provides insight into atomistic models for understanding the formation mechanisms of fivefold and icosahedral twinned structures.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Twinning of tetrahedra to form decahedra or icosahedra with fivefold symmetry is common in multiply twinned particles (MTPs).",
+        "references": {},
+        "viewpoints": [
+          "Twinning of tetrahedra to form decahedra or icosahedra with fivefold symmetry is common in multiply twinned particles."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Fivefold twinned structures in nanoparticles have attracted continuous attention in the field not only of crystal growth [1], [2], [3], [4], but also of cluster physics [5], [6], [7], [8], [9], [10], crystallography [11], [12], [13], [14], physical chemistry [15], [16], surface science [17], [18], and materials [19], [20].",
+        "references": {
+          "1": {
+            "1": "Silver nanocrystals can be synthesized by reducing AgNO₃ in N,N-dimethylformamide (DMF) solution.",
+            "2": "In addition to decahedral and icosahedral nanoparticles, intermediate particles consisting of a combination of two and more tetrahedra were obtained.",
+            "3": "Decahedral and icosahedral nanoparticles are not formed through the assembly of separately formed tetrahedra.",
+            "4": "Decahedral and icosahedral nanoparticles are produced through the stepwise growth of tetrahedral units on specific facets in DMF.",
+            "5": "The growth position of the fourth tetrahedral unit determines whether a decahedron or icosahedron is finally produced.",
+            "6": "The formation of an icosahedron involves crystal growth occurring inside of decahedral units.",
+            "7": "There is no further growth from a decahedron to an icosahedron.",
+            "8": "There is a large energy barrier for the addition of a tetrahedron unit to a decahedron.",
+            "9": "The study provides new information on the stepwise growth mechanism of decahedra and icosahedra in DMF solution."
+          },
+          "2": {
+            "1": "It is important to understand the factors that influence the growth of noble metal nanostructures to control their properties.",
+            "2": "It is important to understand the factors that influence the final shape of noble metal nanostructures to control their properties.",
+            "3": "The growth of nanoparticles that contain twin defects is more difficult to control than the growth of single-crystalline nanoparticles.",
+            "4": "Multiple competitive growth pathways can yield nanoparticles that contain twin defects.",
+            "5": "Spherical, cubic, and octahedral single-crystalline gold nanoparticles were used as dual electron microscopy labels to track the growth of multiply twinned silver nanostructures.",
+            "6": "Spherical, cubic, and octahedral single-crystalline gold nanoparticles were used as plasmonic seeds to track the growth of multiply twinned silver nanostructures.",
+            "7": "As the bimetallic nanostructures grew, they successively developed twin planes.",
+            "8": "Bimetallic nanostructures ultimately formed multiply twinned nanoparticles from single-crystalline seeds.",
+            "9": "Data demonstrate that a series of nanoparticles of different shapes are interrelated.",
+            "10": "Data demonstrate that a series of nanoparticles of different internal crystal structures are interrelated.",
+            "11": "Data demonstrate how nanoparticles of different shapes and internal crystal structures develop from one another."
+          },
+          "3": {
+            "1": "Understanding the growth of multiply twinned nanoparticles (MTPs) is crucial for precisely controlled syntheses.",
+            "2": "Understanding the growth of multiply twinned nanoparticles (MTPs) is crucial for applications.",
+            "3": "No consensus has been reached regarding the multiple competing growth pathways for multiply twinned nanoparticles.",
+            "4": "The lack of information about the nucleation and growth dynamics of multiply twinned nanoparticles partially contributes to the absence of consensus on their growth pathways.",
+            "5": "Decahedral and icosahedral gold nanoparticles were used as a model system to investigate the nucleation and growth dynamics of multiply twinned nanoparticles.",
+            "6": "In situ liquid cell transmission electron microscopy (LCTEM) was used to study the nucleation and growth dynamics of multiply twinned nanoparticles in aqueous solution.",
+            "7": "Two growth pathways for multiply twinned nanoparticles were identified: nucleation-based layer-by-layer growth from a rounded multiply twinned seed.",
+            "8": "Two growth pathways for multiply twinned nanoparticles were identified: the successive twinning and growth of tetrahedra.",
+            "9": "LCTEM results enabled the direct identification of the growth behaviors of intermediate products.",
+            "10": "LCTEM results enabled the conclusive identification of the growth behaviors of intermediate products.",
+            "11": "The internal strain relaxation mechanisms differ for the two growth pathways of multiply twinned nanoparticles.",
+            "12": "The growth kinetics differ for the two growth pathways of multiply twinned nanoparticles.",
+            "13": "In pathway A, multiply twinned nanoparticles grow by the opening and closing of re-entrant grooves at the twin boundaries.",
+            "14": "Opening and closing of re-entrant grooves at the twin boundaries were not found in pathway B.",
+            "15": "Different multiply twinned nanoparticles growth pathways were analyzed from an energetic perspective.",
+            "16": "The preferred growth pathway for multiply twinned nanoparticles is related to the initial seed yield.",
+            "17": "The preferred growth pathway for multiply twinned nanoparticles is related to size-dependent formation.",
+            "18": "The preferred growth pathway for multiply twinned nanoparticles is related to morphology-dependent formation.",
+            "19": "The research results contextualize the current understanding of multiply twinned nanoparticles formation mechanisms.",
+            "20": "The research results provide guidance for the precisely controlled synthesis of multiply twinned nanoparticles.",
+            "21": "The guidance can be used for practical applications of multiply twinned nanoparticles."
+          },
+          "4": {
+            "1": "Natural nanoparticles composed of fivefold twinned crystal domains have distinct properties.",
+            "2": "Synthetic nanoparticles composed of fivefold twinned crystal domains have distinct properties.",
+            "3": "The formation mechanism of fivefold twinned nanoparticles is poorly understood.",
+            "4": "In situ high-resolution transmission electron microscopy and molecular dynamics simulations were used to study fivefold twinning.",
+            "5": "Fivefold twinning occurs through repeated oriented attachment of ~3-nanometer gold nanoparticles.",
+            "6": "Fivefold twinning occurs through repeated oriented attachment of ~3-nanometer platinum nanoparticles.",
+            "7": "Fivefold twinning occurs through repeated oriented attachment of ~3-nanometer palladium nanoparticles.",
+            "8": "Two different mechanisms for forming fivefold twinned nanoparticles were discovered.",
+            "9": "The two mechanisms for forming fivefold twinned nanoparticles are driven by the accumulation of strain.",
+            "10": "The two mechanisms for forming fivefold twinned nanoparticles are driven by the elimination of strain.",
+            "11": "The formation mechanisms of fivefold twinned nanoparticles involve decomposition of grain boundaries.",
+            "12": "The formation mechanisms of fivefold twinned nanoparticles involve the formation of a special class of twins with a net strain of zero.",
+            "13": "Observations from the study allowed the development of a quantitative picture of the twinning process.",
+            "14": "The discovered mechanisms provide guidance for controlling twin structures across a wide range of materials.",
+            "15": "The discovered mechanisms provide guidance for controlling morphologies across a wide range of materials."
+          },
+          "5": {
+            "1": "Determining the structures of nanoparticles at atomic resolution is vital.",
+            "2": "Understanding the structure–property correlations of nanoparticles requires determining their atomic resolution structures.",
+            "3": "Large metal nanoparticles with core diameters beyond 2 nm have eluded characterization by single-crystal X-ray analysis to date.",
+            "4": "The chemical syntheses and structures of two giant thiolated Ag nanoparticles containing 136 and 374 Ag atoms are reported.",
+            "5": "The core diameters of the reported Ag nanoparticles are up to 3 nm.",
+            "6": "These Ag nanoparticles are the largest thiolated metal nanoparticles crystallographically determined so far.",
+            "7": "These Ag nanoparticles enter the truly metallic regime.",
+            "8": "The emergence of surface plasmon resonance indicates that these Ag nanoparticles enter the truly metallic regime.",
+            "9": "These Ag nanoparticles are miniatures of fivefold twinned nanostructures.",
+            "10": "The structures of these Ag nanoparticles demonstrate a subtle distortion within fivefold twinned nanostructures of face-centred cubic metals.",
+            "11": "The Ag nanoparticles reported in this work serve as excellent models to understand detailed structure distortion within twinned metal nanostructures.",
+            "12": "The Ag nanoparticles reported in this work serve as excellent models to understand how silver nanoparticles can span from the molecular to the metallic regime."
+          },
+          "6": {
+            "1": "Nanoparticle self-assembly can reach the same level of hierarchy as biomolecules.",
+            "2": "Nanoparticle self-assembly can reach the same level of complexity as biomolecules.",
+            "3": "Nanoparticle self-assembly can reach the same level of accuracy as biomolecules.",
+            "4": "The assembly structures of gold nanoparticles with 246 gold core atoms and 80 p-methylbenzenethiolate surface ligands were determined at the atomic level.",
+            "5": "The assembly structures of gold nanoparticles with 246 gold core atoms and 80 p-methylbenzenethiolate surface ligands were determined at the molecular level.",
+            "6": "The assembly structures of gold nanoparticles with 246 gold core atoms and 80 p-methylbenzenethiolate surface ligands were determined at the nanoscale level.",
+            "7": "The determination of the assembly structures at the atomic, molecular, and nanoscale levels was conducted using x-ray diffraction studies.",
+            "8": "The driving forces that guide the multiscale assembly behavior of gold nanoparticles were identified.",
+            "9": "The rules that guide the multiscale assembly behavior of gold nanoparticles were identified.",
+            "10": "The protecting ligands on the nanoparticle surface self-organize into rotational patterns via C-H⋅⋅⋅π interaction.",
+            "11": "The protecting ligands on the nanoparticle surface self-organize into parallel patterns via C-H⋅⋅⋅π interaction.",
+            "12": "The symmetry of surface patterns dictates the directional packing of nanoparticles into crystals.",
+            "13": "The density of surface patterns dictates the directional packing of nanoparticles into crystals.",
+            "14": "The directional packing of nanoparticles into crystals results in orientational order.",
+            "15": "The directional packing of nanoparticles into crystals results in rotational order.",
+            "16": "The directional packing of nanoparticles into crystals results in translational order.",
+            "17": "Hierarchical interactions contribute to the evolution of simple building blocks into complex structures.",
+            "18": "Symmetry matching contributes to the evolution of simple building blocks into complex structures.",
+            "19": "The evolution of simple building blocks into complex structures represents an emergent phenomenon in the nanoparticle system."
+          },
+          "7": {
+            "1": "The synthesis of the cluster-assembled [Au60Se2(Ph3P)10(SeR)15]+ material is reported.",
+            "2": "The atomic structure of the cluster-assembled [Au60Se2(Ph3P)10(SeR)15]+ material is reported.",
+            "3": "Five icosahedral Au13 building blocks form a closed gold ring.",
+            "4": "Au–Se–Au linkages are present in the closed gold ring formed by the icosahedral Au13 building blocks.",
+            "5": "Two Se atoms without the phenyl tail are located in the center of the cluster.",
+            "6": "The two Se atoms in the center of the cluster are stabilized by Se-(Au)5 interactions.",
+            "7": "The ring-like nanocluster has not been observed in previous experimental studies of gold nanocluster structures.",
+            "8": "The ring-like nanocluster has not been observed in previous theoretical studies of gold nanocluster structures.",
+            "9": "Optical studies show that the electronic properties of the icosahedral Au13 units remain unchanged in the penta-twinned Au60 nanocluster.",
+            "10": "Electrochemical studies show that the electronic properties of the icosahedral Au13 units remain unchanged in the penta-twinned Au60 nanocluster.",
+            "11": "The new penta-twinned Au60 nanocluster material might be promising in optical limiting applications.",
+            "12": "This work offers a basis for a deeper understanding of controlling cluster-assembled materials.",
+            "13": "This work offers a basis for tailoring the functionalities of cluster-assembled materials."
+          },
+          "8": {
+            "1": "Gold-copper alloys exist in diverse forms.",
+            "2": "An atomically resolved [Au52Cu72(p-MBT)55]+Cl− nanoalloy has been identified and reported.",
+            "3": "The [Au52Cu72(p-MBT)55]+Cl− nanoalloy has unusual structural patterns.",
+            "4": "Two Cu atoms are located in the inner 7-atom decahedral kernel of the nanoalloy.",
+            "5": "The 7-atom decahedral kernel is enclosed by a second shell of homogold (Au47).",
+            "6": "The enclosure of the homogold shell results in a two-shelled M54 (i.e. Au52Cu2) full decahedron.",
+            "7": "Comparing the non-truncated M54 decahedron with the truncated homogold Au49 kernel in similar-sized gold nanoparticles explains Marks decahedron truncation for the first time.",
+            "8": "A Cu70(SR)55 exterior cage resembling a 3D Penrose tiling protects the M54 decahedral kernel.",
+            "9": "The Cu-thiolate surface of Au52Cu72 forms an extended cage.",
+            "10": "The Cu-thiolate surface of Au52Cu72 differs from the discrete staple motifs in gold:thiolate nanoparticles.",
+            "11": "The Cu-SR Penrose tiling retains the high symmetry (D5h) of the M54 kernel.",
+            "12": "Interparticle interactions in the assembly are closely related to the symmetry of the particle.",
+            "13": "A “quadruple-gear-like” interlocking pattern is observed in the assembly."
+          },
+          "9": {
+            "1": "Icosahedral quasicrystals exhibit long-range order.",
+            "2": "Icosahedral quasicrystals lack periodicity in any direction.",
+            "3": "Icosahedral quasicrystals were the first reported quasicrystals.",
+            "4": "Icosahedral quasicrystals have been experimentally observed only in metallic alloys.",
+            "5": "Icosahedral quasicrystals have not been experimentally observed in other materials besides metallic alloys.",
+            "6": "Quasicrystals with dodecagonal symmetry have been found in several soft-matter systems.",
+            "7": "Quasicrystals with other symmetries besides icosahedral have been found in several soft-matter systems.",
+            "8": "A class of icosahedral quasicrystals is introduced that is built from model patchy colloids.",
+            "9": "The introduced class of icosahedral quasicrystals could be realized experimentally using DNA origami particles.",
+            "10": "The rational design strategy leads to systems that robustly assemble in simulations.",
+            "11": "The systems assemble in simulations into a target icosahedral quasicrystal through directional bonding.",
+            "12": "The assembly into a target icosahedral quasicrystal is illustrated for both body-centred and primitive icosahedral quasicrystals.",
+            "13": "The simplest systems for assembling into a target icosahedral quasicrystal involve just two particle types.",
+            "14": "The geometry of the interparticle interactions is a key design feature for the assembly into icosahedral quasicrystals.",
+            "15": "The geometry of the interparticle interactions favours the propagation of an icosahedral network of bonds.",
+            "16": "The propagation of an icosahedral network of bonds leads to many particles not being fully bonded.",
+            "17": "The approach provides model systems to explore the fundamental physics of icosahedral quasicrystals.",
+            "18": "The approach provides a potential route towards creating functional quasicrystalline materials."
+          },
+          "10": {
+            "1": "The synthesis of novel nanoclusters of noble metals (Au, Ag) can be controlled.",
+            "2": "The determination of atomically precise structures of novel nanoclusters of noble metals provides opportunities for investigation.",
+            "3": "Investigating specific properties and applications of novel nanoclusters of noble metals is enabled by their controlled synthesis and precise structural determination.",
+            "4": "A novel silver nanocluster [Ag₃₀₇Cl₆₂(SPhᵗBu)₁₁₀] (Ag₃₀₇) is reported.",
+            "5": "The structure of the novel silver nanocluster Ag₃₀₇ is determined by X-ray single crystal diffraction.",
+            "6": "The structure of nanocluster Ag₃₀₇ includes a core of Ag₁₆₇.",
+            "7": "Nanocluster Ag₃₀₇ has a surface shell of [Ag₁₄₀Cl₂S₁₁₀].",
+            "8": "Nanocluster Ag₃₀₇ contains a Cl₆₀ intermediate layer located between the core Ag₁₆₇ and the surface shell [Ag₁₄₀Cl₂S₁₁₀].",
+            "9": "Nanocluster Ag₃₀₇ is the first example where such a large number of chlorides are intercalated into a silver nanocluster.",
+            "10": "Chlorides in nanocluster Ag₃₀₇ are released in situ from the solvent CHCl₃.",
+            "11": "Nanocluster Ag₃₀₇ exhibits superstability.",
+            "12": "Differential pulse voltammetry experiment reveals that nanocluster Ag₃₀₇ has continuous charging/discharging behavior.",
+            "13": "Nanocluster Ag₃₀₇ has a capacitance value of 1.39 aF.",
+            "14": "Nanocluster Ag₃₀₇ exhibits a surface plasmonic feature.",
+            "15": "The characteristics observed in nanocluster Ag₃₀₇ show that it has metallic behavior.",
+            "16": "The electron paramagnetic resonance spectra of nanocluster Ag₃₀₇ display spin magnetic behavior.",
+            "17": "The spin magnetic behavior could originate from the unpassivated dangling bonds of surface atoms in nanocluster Ag₃₀₇.",
+            "18": "The direct capture of electron paramagnetic resonance signals in nanocluster Ag₃₀₇ can be attributed to the Cl⁻ intercalating layer.",
+            "19": "The Cl⁻ intercalating layer partly suppresses electronic interactions between core and surface atoms in nanocluster Ag₃₀₇.",
+            "20": "The suppression of electronic interactions by the Cl⁻ intercalating layer results in relatively independent electronic states for core and surface atoms."
+          },
+          "11": {
+            "1": "Dislocations and their interactions strongly influence the strength of metals.",
+            "2": "Dislocations and their interactions strongly influence the strength of alloys.",
+            "3": "Dislocations and their interactions strongly influence the efficiency of light-emitting diodes.",
+            "4": "Dislocations and their interactions strongly influence the efficiency of laser diodes.",
+            "5": "Several experimental methods can be used to visualize dislocations.",
+            "6": "Transmission electron microscopy (TEM) has long been used to image dislocations in materials.",
+            "7": "High-resolution electron microscopy can reveal dislocation core structures in high detail.",
+            "8": "The annular dark-field mode in high-resolution electron microscopy is particularly effective in revealing dislocation core structures.",
+            "9": "A TEM image represents a two-dimensional projection of a three-dimensional object.",
+            "10": "Stereo TEM provides limited information about 3D dislocations.",
+            "11": "X-ray topography can image dislocations in three dimensions.",
+            "12": "X-ray topography images dislocations with reduced resolution.",
+            "13": "Electron tomography has been used to image 3D dislocations using weak-beam dark-field TEM.",
+            "14": "Electron tomography has been used to image 3D dislocations using scanning TEM.",
+            "15": "Electron tomography images 3D dislocations at a resolution of about five nanometres.",
+            "16": "Atom probe tomography can offer higher-resolution 3D characterization of dislocations.",
+            "17": "Atom probe tomography requires needle-shaped samples.",
+            "18": "Atom probe tomography can detect only about 60 per cent of the atoms in a sample.",
+            "19": "3D imaging of dislocations in materials at atomic resolution by electron tomography is reported.",
+            "20": "3D Fourier filtering was applied together with equal-slope tomographic reconstruction.",
+            "21": "Nearly all the atoms in a multiply twinned platinum nanoparticle were observed using 3D Fourier filtering and equal-slope tomographic reconstruction.",
+            "22": "Atomic steps at 3D twin boundaries were observed.",
+            "23": "The 3D core structure of edge dislocations was imaged at atomic resolution.",
+            "24": "The 3D core structure of screw dislocations was imaged at atomic resolution.",
+            "25": "Dislocations and atomic steps at the twin boundaries appear to be stress-relief mechanisms.",
+            "26": "Dislocations and atomic steps at the twin boundaries are not visible in conventional two-dimensional projections.",
+            "27": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in materials science.",
+            "28": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in nanoscience.",
+            "29": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in solid-state physics.",
+            "30": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in chemistry."
+          },
+          "12": {
+            "1": "The three-dimensional atomic structure of nanomaterials is crucial to understand the properties of nanomaterials.",
+            "2": "Strain within the three-dimensional atomic structure of nanomaterials is crucial to understand the properties of nanomaterials.",
+            "3": "Lattice strain in Au nanodecahedra is investigated.",
+            "4": "Electron tomography is used to investigate lattice strain in Au nanodecahedra.",
+            "5": "Different electron tomography techniques have enabled three-dimensional characterizations of nanostructures at the atomic level.",
+            "6": "A reliable determination of lattice strain is not straightforward despite the use of different electron tomography techniques.",
+            "7": "A novel model-based approach is proposed.",
+            "8": "Atomic coordinates are measured using the novel model-based approach.",
+            "9": "The findings of the research demonstrate the importance of investigating lattice strain in three dimensions."
+          },
+          "13": {
+            "1": "Shape-controlled synthesis of multiply twinned nanostructures is heavily emphasized in nanoscience.",
+            "2": "There is a desire to control the size, shape, and terminating facets of metal nanoparticles for applications in catalysis.",
+            "3": "Direct control of the size and shape of solution-grown nanoparticles relies on understanding how synthetic parameters alter nanoparticle structures during synthesis.",
+            "4": "Outcome populations of nanoparticles can be effectively studied with standard electron microscopy methods.",
+            "5": "Transient structures that appear during some synthetic routes are difficult to study using conventional high-resolution imaging methods.",
+            "6": "The difficulty in studying transient structures using conventional high-resolution imaging methods is due to the high complexity of the 3D nanostructures.",
+            "7": "The study focused on the prevalence of transient structures during the growth of multiply twinned particles.",
+            "8": "Atomic electron tomography was employed to reveal the atomic-scale three-dimensional structure of a Pd nanoparticle undergoing a shape transition.",
+            "9": "Over 20,000 atoms within the nanoparticle structure were identified.",
+            "10": "The identified atoms were classified according to their local crystallographic environment.",
+            "11": "A multiply twinned structure consistent with a simultaneous successive twinning from a decahedral to icosahedral structure was observed."
+          },
+          "14": {
+            "1": "Understanding the three-dimensional atomic structure of solid-solid interfaces in core-shell nanomaterials is essential for understanding their catalytical properties.",
+            "2": "Understanding the three-dimensional atomic structure of solid-solid interfaces in core-shell nanomaterials is essential for understanding their optical properties.",
+            "3": "Understanding the three-dimensional atomic structure of solid-solid interfaces in core-shell nanomaterials is essential for understanding their electronic properties.",
+            "4": "The study examines the three-dimensional atomic structures of palladium-platinum core-shell nanoparticles at the single-atom level.",
+            "5": "The method used to examine the three-dimensional atomic structures is atomic resolution electron tomography.",
+            "6": "The study quantifies the rich structural variety of core-shell nanoparticles with heteroepitaxy in three dimensions at atomic resolution.",
+            "7": "The core-shell interface is atomically diffuse instead of forming an atomically-sharp boundary.",
+            "8": "The average thickness of the atomically diffuse core-shell interface is 4.2 Å.",
+            "9": "The atomically diffuse nature of the core-shell interface is consistent irrespective of the particle’s morphology.",
+            "10": "The atomically diffuse nature of the core-shell interface is consistent irrespective of the particle’s crystallographic texture.",
+            "11": "The high concentration of palladium in the diffusive interface is related to the free palladium atoms dissolved from the palladium seeds.",
+            "12": "This relationship is confirmed by atomic images of palladium and platinum single atoms and sub-nanometer clusters.",
+            "13": "The confirmation is achieved using cryogenic electron microscopy.",
+            "14": "The results advance the understanding of core-shell structures at the fundamental level.",
+            "15": "The understanding of core-shell structures at the fundamental level provides potential strategies for precise nanomaterial manipulation.",
+            "16": "The understanding of core-shell structures at the fundamental level provides potential strategies for chemical property regulation."
+          },
+          "15": {
+            "1": "Fivefold and icosahedral symmetries are induced by multiply twinned crystal structures.",
+            "2": "The symmetries induced by multiply twinned crystal structures have been studied extensively for their role in influencing the shape of synthetic nanoparticles.",
+            "3": "Solution chemistry is widely considered to be essential in influencing the shape of synthetic nanoparticles.",
+            "4": "Geometric confinement is widely considered to be essential in influencing the shape of synthetic nanoparticles.",
+            "5": "The formation of fivefold and icosahedral twinned clusters of particles is purely entropy-driven.",
+            "6": "The formation of fivefold and icosahedral twinned clusters occurs in molecular simulation without geometric confinement.",
+            "7": "The formation of fivefold and icosahedral twinned clusters occurs in molecular simulation without chemistry.",
+            "8": "Hard truncated tetrahedra self-assemble into cubic diamond colloidal crystals.",
+            "9": "Hard truncated tetrahedra self-assemble into hexagonal diamond colloidal crystals.",
+            "10": "The self-assembly into cubic or hexagonal diamond colloidal crystals depends on the amount of edge truncation.",
+            "11": "The self-assembly into cubic or hexagonal diamond colloidal crystals depends on the amount of vertex truncation.",
+            "12": "Engineering particle shape to achieve a negligible entropy difference between the two diamond phases facilitates the formation of multiply twinned clusters.",
+            "13": "The formation of the multiply twinned clusters is easily induced by engineering particle shape.",
+            "14": "The twinned clusters are entropically stabilized within a dense fluid.",
+            "15": "The stabilization of twinned clusters is facilitated by strong fluid-crystal interfacial tension.",
+            "16": "Strong fluid-crystal interfacial tension arises from strong entropic bonding.",
+            "17": "The findings provide a strategy for engineering twinning behavior in colloidal systems with explicit bonding elements between particles.",
+            "18": "The findings provide a strategy for engineering twinning behavior in colloidal systems without explicit bonding elements between particles."
+          },
+          "16": {
+            "1": "The synthesis method described involves Pt–M (M = Au, Ni, Pd) icosahedral nanocrystals.",
+            "2": "The synthesis method is based on the gas reducing agent in a liquid solution.",
+            "3": "CO gas plays a critical role in stabilizing the icosahedral shape with {111} surfaces.",
+            "4": "Organic surface capping agents play a critical role in stabilizing the icosahedral shape with {111} surfaces.",
+            "5": "Pt₃Ni icosahedral nanocrystals showed an impressive ORR specific activity.",
+            "6": "The ORR specific activity of Pt₃Ni was measured to be 1.83 mA/cm²ₚₜ.",
+            "7": "The ORR specific activity of Pt₃Ni was measured to be 0.62 A/mgₚₜ.",
+            "8": "The area-specific activity of icosahedral Pt₃Ni catalysts was about 50% higher than that of octahedral Pt₃Ni catalysts.",
+            "9": "The area-specific activity of octahedral Pt₃Ni catalysts was measured to be 1.26 mA/cm²ₚₜ.",
+            "10": "Both icosahedral and octahedral Pt₃Ni catalysts are bound by {111} facets.",
+            "11": "Density functional theory calculations suggest that the improvement in activity may arise from strain-induced electronic effects.",
+            "12": "Molecular dynamics simulations suggest that the improvement in activity may arise from strain-induced electronic effects."
+          },
+          "17": {
+            "1": "A facile synthesis of multiply twinned Pd@Pt core–shell concave decahedra was achieved.",
+            "2": "The synthesis was controlled by the deposition of Pt on preformed Pd decahedral seeds.",
+            "3": "Pt atoms are initially deposited on the vertices of a decahedral seed.",
+            "4": "After initial deposition, Pt atoms undergo surface diffusion to other regions along the edges/ridges.",
+            "5": "Pt atoms eventually diffuse across the faces after deposition.",
+            "6": "Pt atoms prefer to stay at the vertices and edges/ridges of a decahedral seed when coating, unlike with a Pd icosahedral seed.",
+            "7": "During the deposition at 200 °C, Pt atoms stay at the vertices and edges/ridges.",
+            "8": "The staying of Pt atoms at the vertices and edges/ridges results in a naturally generated core–shell structure covered by concave facets.",
+            "9": "Nonuniformity in the Pt coating is attributed to the presence of twin boundaries at the vertices.",
+            "10": "The {100} facets along the edges/ridges contribute to trapping Pt adatoms.",
+            "11": "Twin defects along the edges/ridges help trap Pt adatoms at high-energy sites.",
+            "12": "The Pd@Pt concave decahedra show substantial enhancement in catalytic activity toward the oxygen reduction reaction compared to a commercial Pt/C catalyst.",
+            "13": "The Pd@Pt concave decahedra demonstrate substantial enhancement in durability toward the oxygen reduction reaction compared to a commercial Pt/C catalyst.",
+            "14": "Concave decahedra with 29.6% Pt by weight have specific ORR activities of 1.66 mA/cm²Pt.",
+            "15": "Concave decahedra with 29.6% Pt by weight improve specific ORR activities by 4.4 times compared to a Pt/C catalyst.",
+            "16": "The mass ORR activities of concave decahedra with 29.6% Pt by weight amount to 1.60 A/mgPt.",
+            "17": "The mass ORR activities are enhanced by 6.6 times compared to those of the Pt/C catalyst.",
+            "18": "After 10,000 cycles of accelerated durability test, the concave decahedra exhibit a mass activity of 0.69 A/mgPt.",
+            "19": "The mass activity of 0.69 A/mgPt after 10,000 cycles is more than twice that of the pristine Pt/C catalyst."
+          },
+          "18": {
+            "1": "The synthesis of icosahedral gold nanoparticles was conducted in aqueous-phase conditions.",
+            "2": "The diameters of the synthesized icosahedral gold nanoparticles are controlled and range from 10 to 90 nm.",
+            "3": "The icosahedral gold nanoparticles were prepared using a seed-mediated growth approach.",
+            "4": "Citrate-capped 3.5 nm gold nanoparticles are used as seeds in the synthesis process.",
+            "5": "The citrate-capped 3.5 nm gold nanoparticles were prepared by reducing HAuCl₄ with sodium borohydride.",
+            "6": "Cetyltrimethylammonium bromide molecules served as a capping agent.",
+            "7": "Cetyltrimethylammonium bromide restricted the size of the gold nanoparticles.",
+            "8": "The synthesized gold nanoparticles were characterized by UV−vis spectroscopy.",
+            "9": "The synthesized gold nanoparticles were characterized by transmission electron microscopy (TEM).",
+            "10": "The synthesized gold nanoparticles were characterized by scanning electron microscopy.",
+            "11": "The synthesized gold nanoparticles were characterized by X-ray diffraction (XRD).",
+            "12": "The crystal structure of the gold nanoparticles consists mostly of {111} surfaces.",
+            "13": "TEM results revealed that the crystal structure of the gold nanoparticles consists mostly of {111} surfaces.",
+            "14": "XRD results revealed that the crystal structure of the gold nanoparticles consists mostly of {111} surfaces.",
+            "15": "The prepared icosahedral gold nanoparticles demonstrate efficient surface-enhanced Raman scattering properties."
+          },
+          "19": {
+            "1": "Monodisperse decahedral silver nanoparticles have been synthesized with excellent shape selectivity (>99%).",
+            "2": "The synthesis process involves a novel photochemical transformation of aqueous silver nanoparticle precursors.",
+            "3": "The procedure uses intense white light.",
+            "4": "The procedure is very robust.",
+            "5": "The procedure is reproducible.",
+            "6": "The precursor solution initially consists of a mixture of shapes dominated by small silver platelets.",
+            "7": "The precursor solution transforms into decahedra.",
+            "8": "The transformation is driven by the superior stability of decahedral seeds.",
+            "9": "The size of the decahedra can be varied.",
+            "10": "Decahedra size variation is achieved by adjusting the intensity and spectral properties of the irradiating light.",
+            "11": "The decahedra can be controllably photochemically regrown to larger sizes.",
+            "12": "The monodispersity of the decahedra is fully preserved during regrowth.",
+            "13": "Silver decahedra exhibit remarkable optical properties.",
+            "14": "The optical properties include a bicolored appearance.",
+            "15": "The bicolored appearance is due to the interplay between plasmonic adsorption and scattering.",
+            "16": "The sharp plasmon resonances of silver decahedra can be tuned from 455 to 570 nm.",
+            "17": "The tuning of plasmon resonances is achieved through size variation.",
+            "18": "Silver decahedra exhibit greatly superior enhancement of Raman scattering.",
+            "19": "The enhancement of Raman scattering by silver decahedra is superior compared to other silver nanoparticles.",
+            "20": "The findings highlight the importance of pentagonal symmetry in metal nanoparticles.",
+            "21": "The findings offer a powerful general approach to achieving monodisperse shapes.",
+            "22": "The approach involves selective regrowth of appropriately identified and stabilized intermediates."
+          },
+          "20": {
+            "1": "Metallic nanoparticles exhibit exceptional optoelectronic properties.",
+            "2": "Metallic nanoparticles have applications in plasmonics.",
+            "3": "Metallic nanoparticles have applications in biosensing.",
+            "4": "Metallic nanoparticles have applications in nanomedicine.",
+            "5": "New synthesis techniques have enabled precise control over the sizes of metal nanoparticles.",
+            "6": "New synthesis techniques have enabled precise control over the shapes of metal nanoparticles.",
+            "7": "The new synthesis techniques occasionally lead to morphologies of metal nanoparticles that cannot be properly characterized using standard techniques.",
+            "8": "Five-fold-twinned decahedral Au nanoparticles are intrinsically strained.",
+            "9": "The intrinsic strain in five-fold-twinned decahedral Au nanoparticles results from their unique geometry.",
+            "10": "Various competing models have been proposed to predict the strain states of five-fold-twinned decahedral Au nanoparticles.",
+            "11": "A detailed analysis of the internal structure of a decahedral Au nanoparticle is presented.",
+            "12": "The analysis of the decahedral Au nanoparticle uses aberration-corrected high-resolution electron microscopy.",
+            "13": "The analysis of the decahedral Au nanoparticle uses strain mapping.",
+            "14": "The measurements confirm the presence of a disclination in the decahedral Au nanoparticle.",
+            "15": "The presence of a disclination is consistent with the commonly accepted strain model.",
+            "16": "Shear gradients were observed in the decahedral Au nanoparticle.",
+            "17": "Shear gradients are absent from the commonly accepted strain models of decahedral Au nanoparticles.",
+            "18": "Local strain determinations were compared with finite-element calculations.",
+            "19": "The comparison shows the effect of elastic anisotropy on the strain state in decahedral Au nanoparticles."
+          }
+        },
+        "viewpoints": [
+          "Fivefold twinned structures in nanoparticles have attracted continuous attention in the field of crystal growth.",
+          "Fivefold twinned structures in nanoparticles have attracted continuous attention in the field of cluster physics.",
+          "Fivefold twinned structures in nanoparticles have attracted continuous attention in the field of crystallography.",
+          "Fivefold twinned structures in nanoparticles have attracted continuous attention in the field of physical chemistry.",
+          "Fivefold twinned structures in nanoparticles have attracted continuous attention in the field of surface science.",
+          "Fivefold twinned structures in nanoparticles have attracted continuous attention in the field of materials science."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "For example, Wu et al. reported that the icosahedral Pt alloy catalysts have superior activity toward oxygen reduction reaction compared to single-crystalline octahedra, which may arise from strain-induced electronic effects [16].",
+        "references": {
+          "16": {
+            "1": "The synthesis method described involves Pt–M (M = Au, Ni, Pd) icosahedral nanocrystals.",
+            "2": "The synthesis method is based on the gas reducing agent in a liquid solution.",
+            "3": "CO gas plays a critical role in stabilizing the icosahedral shape with {111} surfaces.",
+            "4": "Organic surface capping agents play a critical role in stabilizing the icosahedral shape with {111} surfaces.",
+            "5": "Pt₃Ni icosahedral nanocrystals showed an impressive ORR specific activity.",
+            "6": "The ORR specific activity of Pt₃Ni was measured to be 1.83 mA/cm²ₚₜ.",
+            "7": "The ORR specific activity of Pt₃Ni was measured to be 0.62 A/mgₚₜ.",
+            "8": "The area-specific activity of icosahedral Pt₃Ni catalysts was about 50% higher than that of octahedral Pt₃Ni catalysts.",
+            "9": "The area-specific activity of octahedral Pt₃Ni catalysts was measured to be 1.26 mA/cm²ₚₜ.",
+            "10": "Both icosahedral and octahedral Pt₃Ni catalysts are bound by {111} facets.",
+            "11": "Density functional theory calculations suggest that the improvement in activity may arise from strain-induced electronic effects.",
+            "12": "Molecular dynamics simulations suggest that the improvement in activity may arise from strain-induced electronic effects."
+          }
+        },
+        "viewpoints": [
+          "Icosahedral Pt alloy catalysts have superior activity toward oxygen reduction reactions compared to single-crystalline octahedra.",
+          "The superior activity of icosahedral Pt alloy catalysts toward oxygen reduction reactions may arise from strain-induced electronic effects."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Han et al. found that Au icosahedral particles show more efficient surface-enhanced Raman scattering properties compared to spherical particles with similar sizes [18].",
+        "references": {
+          "18": {
+            "1": "The synthesis of icosahedral gold nanoparticles was conducted in aqueous-phase conditions.",
+            "2": "The diameters of the synthesized icosahedral gold nanoparticles are controlled and range from 10 to 90 nm.",
+            "3": "The icosahedral gold nanoparticles were prepared using a seed-mediated growth approach.",
+            "4": "Citrate-capped 3.5 nm gold nanoparticles are used as seeds in the synthesis process.",
+            "5": "The citrate-capped 3.5 nm gold nanoparticles were prepared by reducing HAuCl₄ with sodium borohydride.",
+            "6": "Cetyltrimethylammonium bromide molecules served as a capping agent.",
+            "7": "Cetyltrimethylammonium bromide restricted the size of the gold nanoparticles.",
+            "8": "The synthesized gold nanoparticles were characterized by UV−vis spectroscopy.",
+            "9": "The synthesized gold nanoparticles were characterized by transmission electron microscopy (TEM).",
+            "10": "The synthesized gold nanoparticles were characterized by scanning electron microscopy.",
+            "11": "The synthesized gold nanoparticles were characterized by X-ray diffraction (XRD).",
+            "12": "The crystal structure of the gold nanoparticles consists mostly of {111} surfaces.",
+            "13": "TEM results revealed that the crystal structure of the gold nanoparticles consists mostly of {111} surfaces.",
+            "14": "XRD results revealed that the crystal structure of the gold nanoparticles consists mostly of {111} surfaces.",
+            "15": "The prepared icosahedral gold nanoparticles demonstrate efficient surface-enhanced Raman scattering properties."
+          }
+        },
+        "viewpoints": [
+          "Au icosahedral particles show more efficient surface-enhanced Raman scattering properties compared to spherical particles with similar sizes."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "The distinct physical and chemical properties of MTPs are largely due to their chemical sites and associated lattice-misfit strain, which makes the knowledge of their full atomic structures essential.",
+        "references": {},
+        "viewpoints": [
+          "The distinct physical and chemical properties of multiply twinned particles are largely due to their chemical sites.",
+          "The distinct physical and chemical properties of multiply twinned particles are largely due to their associated lattice-misfit strain.",
+          "Knowledge of the full atomic structures of multiply twinned particles is essential."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Face-centered cubic (fcc) crystals, having co-planar twin planes enclosing an angle of 70.53° (close to 360°/5), can form fivefold twinned structures including decahedron and icosahedron.",
+        "references": {},
+        "viewpoints": [
+          "Face-centered cubic crystals have co-planar twin planes enclosing an angle of 70.53°.",
+          "Face-centered cubic crystals can form fivefold twinned structures including decahedron.",
+          "Face-centered cubic crystals can form fivefold twinned structures including icosahedron."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "To fill the concomitant space gaps between two adjacent (111) faces of the fcc regular tetrahedron with an angle of 70.53°, internal distortion needs to be incorporated to form decahedral or icosahedral MTPs [21], [22], [23], [24].",
+        "references": {
+          "21": [],
+          "22": {
+            "1": "A comprehensive review is provided on experimental studies of small particles with fivefold symmetry.",
+            "2": "The review is accompanied by an in-depth theoretical description of the characteristics of small particles with fivefold symmetry.",
+            "3": "The review includes computer modeling of the characteristics of small particles with fivefold symmetry.",
+            "4": "The review discusses cases of uniform deformations in the disclination model.",
+            "5": "The review discusses cases of nonuniform deformations in the disclination model.",
+            "6": "Stability of elastic stresses in pentagonal particles and needle-like crystals is discussed.",
+            "7": "Relaxation of elastic stresses in pentagonal particles and needle-like crystals is discussed.",
+            "8": "Models of the formation of pentagonal particles and needle-like crystals are discussed."
+          },
+          "23": {
+            "1": "The energetics of multiply twinned particles (MTPs) can be investigated using elasticity theory.",
+            "2": "The homogeneous strain models can be critically compared with the disclination model for the strains in decahedral particles using elasticity theory.",
+            "3": "The homogeneous strain models can be compared with a new model for the strains in icosahedral particles based on inhomogeneous elasticity using elasticity theory.",
+            "4": "The overall energy balance between multiply twinned particles (MTPs) and single crystals is evaluated.",
+            "5": "The evaluation of the energy balance includes the significant cost of elastically distorting the surface.",
+            "6": "The evaluation of the energy balance uses two extreme models of the faceting.",
+            "7": "Icosahedral multiply twinned particles (MTPs) are more stable than single crystals for small sizes only under strong faceting conditions.",
+            "8": "Decahedral multiply twinned particles (MTPs) are intermediaries between icosahedral MTPs and single crystals in terms of stability.",
+            "9": "Experimentally observed stress-relief mechanisms provide indirect evidence for the inhomogeneous strain models."
+          },
+          "24": []
+        },
+        "viewpoints": [
+          "To fill the space gaps between two adjacent (111) faces of the fcc regular tetrahedron with an angle of 70.53°, internal distortion needs to be incorporated.",
+          "Internal distortion needs to be incorporated to form decahedral MTPs.",
+          "Internal distortion needs to be incorporated to form icosahedral MTPs."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Different competing strain models including homogeneous and inhomogeneous strain models have been proposed mostly based on elastic theory to explain the internal distortion and space-filling mechanism.",
+        "references": {},
+        "viewpoints": [
+          "Different competing strain models have been proposed to explain the internal distortion and space-filling mechanism.",
+          "Homogeneous strain models have been proposed mostly based on elastic theory to explain the internal distortion and space-filling mechanism.",
+          "Inhomogeneous strain models have been proposed mostly based on elastic theory to explain the internal distortion and space-filling mechanism."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Homogeneous strain model [25] suggests the existence of simple linear displacement in crystal lattice.",
+        "references": {
+          "25": {
+            "1": "The orientation and structure of gold particles formed by evaporation on rocksalt cleaved in ultrahigh vacuum have been studied.",
+            "2": "The studies were conducted at various stages of the nucleation and growth process.",
+            "3": "Four 200 spots indicate the presence of the (001) orientation.",
+            "4": "Twenty-four 220 spots indicate the presence of the (111) orientation.",
+            "5": "Twenty-four abnormal 111 spots have been observed in electron diffraction patterns at earlier stages of growth.",
+            "6": "Various unusual contrasts have been observed in dark field electron micrographs using one of the 111 spots.",
+            "7": "The present author proposes a multiply twinned particle model.",
+            "8": "The appearance of the 111 spots can be satisfactorily explained by the multiply twinned particle model.",
+            "9": "The dark field image contrasts can be satisfactorily explained by the multiply twinned particle model.",
+            "10": "With increasing thickness, particles with the (111) orientation and without multiple twinning exclusively grow up.",
+            "11": "Multiply twinned particles seem to stop their growth with increasing thickness.",
+            "12": "Particles with the (001) orientation seem to stop their growth with increasing thickness.",
+            "13": "A continuous gold film with the (111) fibrous structure is formed at a thickness of about 500 Å."
+          }
+        },
+        "viewpoints": [
+          "The homogeneous strain model suggests the existence of simple linear displacement in the crystal lattice."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "On the other hand, inhomogeneous strain distributions have been observed with evidence of dislocations [26], [27], [28] and disclinations [20], [29].",
+        "references": {
+          "26": [],
+          "27": {
+            "1": "Anomalous structures can occur in the early stages of particulate growth.",
+            "2": "This occurrence of anomalous structures in early particulate growth has been known for several years.",
+            "3": "Ino and Ino and Ogawa found small polycrystalline nuclei in gold on rocksalt.",
+            "4": "Allpress and Sanders found small polycrystalline nuclei in nickel on mica.",
+            "5": "Ino, Ino and Ogawa interpreted the small polycrystalline nuclei as multiply-twinned particles.",
+            "6": "Allpress and Sanders interpreted the small polycrystalline nuclei as multiply-twinned particles.",
+            "7": "Multiply-twinned particles can be considered as 5 f.c.c. tetrahedra joined by twin boundaries to give decahedra.",
+            "8": "Multiply-twinned particles can be considered as 20 f.c.c. tetrahedra joined by twin boundaries to give icosahedra.",
+            "9": "The tetrahedra do not assemble to a completely space filling structure.",
+            "10": "Elastic strains or grain boundaries are required to complete the particles because the tetrahedra do not assemble to a completely space filling structure.",
+            "11": "Multiply-twinned particles have been observed in the early stages of growth for all f.c.c. metals.",
+            "12": "Observation of multiply-twinned particles in early growth stages occurs under certain conditions.",
+            "13": "Gillet has recently reviewed the field of multiply-twinned particles.",
+            "14": "Hayashi et al. provide extensive results for multiply-twinned particles in f.c.c. metals in argon smokes.",
+            "15": "Allpress and Sanders first suggested the possible significance of multiply-twinned particles in heterogeneous catalysts.",
+            "16": "Avery and Sanders investigated the possible significance of multiply-twinned particles in heterogeneous catalysts.",
+            "17": "At most 2% of particles 100–350 Å in size for nickel on γ-alumina were found to be multiply twinned.",
+            "18": "At most 2% of particles 100–350 Å in size for gold on γ-alumina were found to be multiply twinned.",
+            "19": "At most 2% of particles 100–350 Å in size for platinum on γ-alumina were found to be multiply twinned.",
+            "20": "At most 2% of particles 100–350 Å in size for palladium on γ-alumina were found to be multiply twinned.",
+            "21": "The presence of considerable numbers of multiply-twinned particles is reported in various heterogeneous metal catalysts.",
+            "22": "Considerable numbers of multiply-twinned particles are found in silver on α-alumina.",
+            "23": "Multiply-twinned particles can have large dimensions up to approximately 2,000 Å.",
+            "24": "There may be a significant role of some special sites on multiply-twinned particles which have no counterpart on single crystal surfaces.",
+            "25": "The distribution of surface faces on multiply-twinned particles is unusual."
+          },
+          "28": {
+            "1": "The paper considers the evidence for strains in small particles.",
+            "2": "The paper briefly reviews the dynamical electron diffraction theory for dark field imaging of small particles.",
+            "3": "The review considers primarily the effects of strain on wedge crystals.",
+            "4": "The review identifies the fingerprint of strain contrast effects under strong beam conditions.",
+            "5": "Evidence included in the paper shows inhomogeneous strain effects in multiply twinned particles.",
+            "6": "Evidence from published papers by other authors shows inhomogeneous strain effects in multiply twinned particles.",
+            "7": "Evidence included in the paper shows inhomogeneous strain effects in single crystals.",
+            "8": "Evidence from published papers by other authors shows inhomogeneous strain effects in single crystals.",
+            "9": "There are problems with the uniqueness of analysis for strain evidence in small particles.",
+            "10": "Strains in small single crystals are thought more likely to be due to interfacial stresses than any intrinsic particle effect.",
+            "11": "Strains in small single crystals are thought more likely to be due to contaminants than any intrinsic particle effect.",
+            "12": "There are many different origins of this type of strain.",
+            "13": "It is not possible to isolate a unique source of strain with confidence.",
+            "14": "The uniqueness of any interpretation of experimental results from small particles must be very carefully considered."
+          },
+          "20": {
+            "1": "Metallic nanoparticles exhibit exceptional optoelectronic properties.",
+            "2": "Metallic nanoparticles have applications in plasmonics.",
+            "3": "Metallic nanoparticles have applications in biosensing.",
+            "4": "Metallic nanoparticles have applications in nanomedicine.",
+            "5": "New synthesis techniques have enabled precise control over the sizes of metal nanoparticles.",
+            "6": "New synthesis techniques have enabled precise control over the shapes of metal nanoparticles.",
+            "7": "The new synthesis techniques occasionally lead to morphologies of metal nanoparticles that cannot be properly characterized using standard techniques.",
+            "8": "Five-fold-twinned decahedral Au nanoparticles are intrinsically strained.",
+            "9": "The intrinsic strain in five-fold-twinned decahedral Au nanoparticles results from their unique geometry.",
+            "10": "Various competing models have been proposed to predict the strain states of five-fold-twinned decahedral Au nanoparticles.",
+            "11": "A detailed analysis of the internal structure of a decahedral Au nanoparticle is presented.",
+            "12": "The analysis of the decahedral Au nanoparticle uses aberration-corrected high-resolution electron microscopy.",
+            "13": "The analysis of the decahedral Au nanoparticle uses strain mapping.",
+            "14": "The measurements confirm the presence of a disclination in the decahedral Au nanoparticle.",
+            "15": "The presence of a disclination is consistent with the commonly accepted strain model.",
+            "16": "Shear gradients were observed in the decahedral Au nanoparticle.",
+            "17": "Shear gradients are absent from the commonly accepted strain models of decahedral Au nanoparticles.",
+            "18": "Local strain determinations were compared with finite-element calculations.",
+            "19": "The comparison shows the effect of elastic anisotropy on the strain state in decahedral Au nanoparticles."
+          },
+          "29": []
+        },
+        "viewpoints": [
+          "Inhomogeneous strain distributions have been observed with evidence of dislocations.",
+          "Inhomogeneous strain distributions have been observed with evidence of disclinations."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "In addition to the internal strain, the final crystallographic symmetry is further determined by a subtle balance between surface and volume contributions to the total energy of the MTPs [30], [31].",
+        "references": {
+          "30": {
+            "1": "Nanometer-sized copper particles in a molecular beam of inert carrier gas have been studied using electron diffraction.",
+            "2": "These nanometer-sized copper particles are unsupported.",
+            "3": "There is a distinct separation in the size distributions of fcc and icosahedral copper particles.",
+            "4": "Icosahedral copper particles occur at sizes well below a diameter limit of 3.8 nm, as predicted for copper by molecular dynamics simulations.",
+            "5": "Fcc copper particles occur close to a diameter limit of 3.8 nm or above.",
+            "6": "Molecular dynamics simulations have provided information about the temperature of copper particles.",
+            "7": "Molecular dynamics simulations have provided information via thermal expansion about the temperature of copper particles.",
+            "8": "Molecular dynamics simulations have provided information via atomic dynamics about the temperature of copper particles."
+          },
+          "31": []
+        },
+        "viewpoints": [
+          "In addition to the internal strain, the final crystallographic symmetry is determined by a balance between surface contributions to the total energy of the MTPs.",
+          "In addition to the internal strain, the final crystallographic symmetry is determined by a balance between volume contributions to the total energy of the MTPs."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "The elastic strain energy resulting from the atomic distortion can be compensated by reducing surface energy through optimal surface atomic arrangements [31].",
+        "references": {
+          "31": []
+        },
+        "viewpoints": [
+          "The elastic strain energy resulting from the atomic distortion can be compensated by reducing surface energy.",
+          "Reducing surface energy can be achieved through optimal surface atomic arrangements."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Ino and Marks proposed extra crystal planes on the classical decahedron models to reduce surface energy.",
+        "references": {},
+        "viewpoints": [
+          "Ino and Marks proposed extra crystal planes on the classical decahedron models to reduce surface energy."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "They achieved the energy balance either by exposing more (100) faces [32] or introducing re-entrant planes on the twin boundaries [33].",
+        "references": {
+          "32": {
+            "1": "A theory is developed to discuss the stability of multiply-twinned particles.",
+            "2": "The theory allows for the calculation of critical sizes for stable and quasi-stable states of multiply-twinned particles.",
+            "3": "An icosahedral particle is essentially stable for r ≤ r_{iw}^{*}.",
+            "4": "An icosahedral particle is quasi-stable for r_{iw}^{*} < r ≤ r_{it}^{0}.",
+            "5": "An icosahedral particle is unstable for r > r_{it}^{0}.",
+            "6": "A decahedral particle is not essentially stable.",
+            "7": "A decahedral particle is quasi-stable for r ≤ r_{dt}^{0}.",
+            "8": "A decahedral particle is unstable for r > r_{dt}^{0}.",
+            "9": "The critical size r_{iw}^{*} is formulated as a function of the specific surface energy γ_{hkl}, the twin boundary energy γ_{t}, the elastic strain energy W, and the adhesive energy γ_{a}.",
+            "10": "The critical size r_{it}^{0} is formulated as a function of the specific surface energy γ_{hkl}, the twin boundary energy γ_{t}, the elastic strain energy W, and the adhesive energy γ_{a}.",
+            "11": "The critical size r_{dt}^{0} is formulated as a function of the specific surface energy γ_{hkl}, the twin boundary energy γ_{t}, the elastic strain energy W, and the adhesive energy γ_{a}.",
+            "12": "Calculated critical diameters 2r_{iw}^{*} for icosahedral particles grown in free space for several elements range between 15.5 Å and 106.8 Å.",
+            "13": "Calculated critical diameters 2r_{it}^{0} for icosahedral particles grown in free space for several elements range between 109.8 Å and 486.1 Å.",
+            "14": "Calculated critical diameters 2r_{dt}^{0} for decahedral particles grown in free space for several elements range between 725 Å and 3961 Å.",
+            "15": "The calculated critical diameters for particles are in good agreement with experimental results."
+          },
+          "33": {
+            "1": "Thermally annealed particles of silver in the size range 10–50 nm show the presence of re-entrant surfaces on the decahedral MTPs.",
+            "2": "Thermally annealed particles of gold in the size range 10–50 nm show the presence of re-entrant surfaces on the decahedral MTPs.",
+            "3": "A theoretical model is developed to explain the presence of re-entrant surfaces on the decahedral MTPs.",
+            "4": "The theoretical model is based on the Wulff construction modified to include twin-boundaries.",
+            "5": "The theoretical model reproduces the re-entrant surfaces on the decahedral MTPs.",
+            "6": "The theoretical model suggests that the total surface energy of the decahedral form is between the surface energies of a single crystal and an icosahedral MTP.",
+            "7": "The theoretical model explains the stability of decahedral particles in a certain size range relative to single crystals.",
+            "8": "A useful perturbation modification is outlined which enables qualitative comparisons of surface energies.",
+            "9": "The perturbation modification shows that the twin boundaries in MTPs limit the possible surface facets.",
+            "10": "Explicit shapes are presented for two extreme models of the faceting.",
+            "11": "Energies are presented for two extreme models of the faceting.",
+            "12": "A model is outlined to justify the difference between the thermally annealed particles' structures and the more common decahedra and icosahedra structures.",
+            "13": "The standard forms of decahedra and icosahedra are artefacts of the growth process.",
+            "14": "The standard forms of decahedra and icosahedra are not the thermodynamically most stable structures."
+          }
+        },
+        "viewpoints": [
+          "Ino and Marks achieved the energy balance by exposing more (100) faces.",
+          "Ino and Marks achieved the energy balance by introducing re-entrant planes on the twin boundaries."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Both models have been recently confirmed in core-shell decahedral MTPs, where extra high-index crystal planes at the corners or edges further reduce the surface energy [14].",
+        "references": {
+          "14": {
+            "1": "Understanding the three-dimensional atomic structure of solid-solid interfaces in core-shell nanomaterials is essential for understanding their catalytical properties.",
+            "2": "Understanding the three-dimensional atomic structure of solid-solid interfaces in core-shell nanomaterials is essential for understanding their optical properties.",
+            "3": "Understanding the three-dimensional atomic structure of solid-solid interfaces in core-shell nanomaterials is essential for understanding their electronic properties.",
+            "4": "The study examines the three-dimensional atomic structures of palladium-platinum core-shell nanoparticles at the single-atom level.",
+            "5": "The method used to examine the three-dimensional atomic structures is atomic resolution electron tomography.",
+            "6": "The study quantifies the rich structural variety of core-shell nanoparticles with heteroepitaxy in three dimensions at atomic resolution.",
+            "7": "The core-shell interface is atomically diffuse instead of forming an atomically-sharp boundary.",
+            "8": "The average thickness of the atomically diffuse core-shell interface is 4.2 Å.",
+            "9": "The atomically diffuse nature of the core-shell interface is consistent irrespective of the particle’s morphology.",
+            "10": "The atomically diffuse nature of the core-shell interface is consistent irrespective of the particle’s crystallographic texture.",
+            "11": "The high concentration of palladium in the diffusive interface is related to the free palladium atoms dissolved from the palladium seeds.",
+            "12": "This relationship is confirmed by atomic images of palladium and platinum single atoms and sub-nanometer clusters.",
+            "13": "The confirmation is achieved using cryogenic electron microscopy.",
+            "14": "The results advance the understanding of core-shell structures at the fundamental level.",
+            "15": "The understanding of core-shell structures at the fundamental level provides potential strategies for precise nanomaterial manipulation.",
+            "16": "The understanding of core-shell structures at the fundamental level provides potential strategies for chemical property regulation."
+          }
+        },
+        "viewpoints": [
+          "Both models have been recently confirmed in core-shell decahedral MTPs.",
+          "Extra high-index crystal planes at the corners of core-shell decahedral MTPs further reduce the surface energy.",
+          "Extra high-index crystal planes at the edges of core-shell decahedral MTPs further reduce the surface energy."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "During the growth of icosahedra, faulted islands and grooves have been observed [1], [3].",
+        "references": {
+          "1": {
+            "1": "Silver nanocrystals can be synthesized by reducing AgNO₃ in N,N-dimethylformamide (DMF) solution.",
+            "2": "In addition to decahedral and icosahedral nanoparticles, intermediate particles consisting of a combination of two and more tetrahedra were obtained.",
+            "3": "Decahedral and icosahedral nanoparticles are not formed through the assembly of separately formed tetrahedra.",
+            "4": "Decahedral and icosahedral nanoparticles are produced through the stepwise growth of tetrahedral units on specific facets in DMF.",
+            "5": "The growth position of the fourth tetrahedral unit determines whether a decahedron or icosahedron is finally produced.",
+            "6": "The formation of an icosahedron involves crystal growth occurring inside of decahedral units.",
+            "7": "There is no further growth from a decahedron to an icosahedron.",
+            "8": "There is a large energy barrier for the addition of a tetrahedron unit to a decahedron.",
+            "9": "The study provides new information on the stepwise growth mechanism of decahedra and icosahedra in DMF solution."
+          },
+          "3": {
+            "1": "Understanding the growth of multiply twinned nanoparticles (MTPs) is crucial for precisely controlled syntheses.",
+            "2": "Understanding the growth of multiply twinned nanoparticles (MTPs) is crucial for applications.",
+            "3": "No consensus has been reached regarding the multiple competing growth pathways for multiply twinned nanoparticles.",
+            "4": "The lack of information about the nucleation and growth dynamics of multiply twinned nanoparticles partially contributes to the absence of consensus on their growth pathways.",
+            "5": "Decahedral and icosahedral gold nanoparticles were used as a model system to investigate the nucleation and growth dynamics of multiply twinned nanoparticles.",
+            "6": "In situ liquid cell transmission electron microscopy (LCTEM) was used to study the nucleation and growth dynamics of multiply twinned nanoparticles in aqueous solution.",
+            "7": "Two growth pathways for multiply twinned nanoparticles were identified: nucleation-based layer-by-layer growth from a rounded multiply twinned seed.",
+            "8": "Two growth pathways for multiply twinned nanoparticles were identified: the successive twinning and growth of tetrahedra.",
+            "9": "LCTEM results enabled the direct identification of the growth behaviors of intermediate products.",
+            "10": "LCTEM results enabled the conclusive identification of the growth behaviors of intermediate products.",
+            "11": "The internal strain relaxation mechanisms differ for the two growth pathways of multiply twinned nanoparticles.",
+            "12": "The growth kinetics differ for the two growth pathways of multiply twinned nanoparticles.",
+            "13": "In pathway A, multiply twinned nanoparticles grow by the opening and closing of re-entrant grooves at the twin boundaries.",
+            "14": "Opening and closing of re-entrant grooves at the twin boundaries were not found in pathway B.",
+            "15": "Different multiply twinned nanoparticles growth pathways were analyzed from an energetic perspective.",
+            "16": "The preferred growth pathway for multiply twinned nanoparticles is related to the initial seed yield.",
+            "17": "The preferred growth pathway for multiply twinned nanoparticles is related to size-dependent formation.",
+            "18": "The preferred growth pathway for multiply twinned nanoparticles is related to morphology-dependent formation.",
+            "19": "The research results contextualize the current understanding of multiply twinned nanoparticles formation mechanisms.",
+            "20": "The research results provide guidance for the precisely controlled synthesis of multiply twinned nanoparticles.",
+            "21": "The guidance can be used for practical applications of multiply twinned nanoparticles."
+          }
+        },
+        "viewpoints": [
+          "During the growth of icosahedra, faulted islands have been observed.",
+          "During the growth of icosahedra, grooves have been observed."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "These structures form curved surfaces that lower the surface energy and relieve strain [31].",
+        "references": {
+          "31": []
+        },
+        "viewpoints": [
+          "Faulted islands and grooves form curved surfaces that lower the surface energy.",
+          "Faulted islands and grooves form curved surfaces that relieve strain."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Despite a number of experimental and computational studies have been done on the formation mechanisms [34], [35], stability [23], [24], [36], [37] and lattice defects [20], [21], [22] of fivefold twinned structures, the 3D atomic structures and associated local strain of icosahedra are still long-standing problems because the embedded internal structures including distribution of dislocations or disclinations remain unclear due to their structural complexity and limitation of conventional projection imaging techniques.",
+        "references": {
+          "34": {
+            "1": "The structure of monometallic decahedral multiply twinned nanoparticles (MTPs) has been extensively studied.",
+            "2": "Less is known about the structure of intermetallic MTPs.",
+            "3": "The mechanism of formation of multiply twinned structures in intermetallic MTPs remains to be understood.",
+            "4": "A detailed structural study of AuCu decahedral intermetallic MTPs is presented.",
+            "5": "The study uses aberration-corrected scanning transmission electron microscopy.",
+            "6": "Surface segregation in AuCu decahedral intermetallic MTPs has been revealed on the atomic level.",
+            "7": "The multiply twinned structure of AuCu decahedral intermetallic MTPs was studied systematically.",
+            "8": "The intermetallic AuCu MTP has a solid-angle deficiency of −13.35°, which represents an overlap.",
+            "9": "Au and Cu MTP have a +7.35° gap in their solid-angle.",
+            "10": "The solid-angle deficiency of AuCu MTP is significantly different from that of monometallic Au and Cu MTPs.",
+            "11": "The differences and similarities among AuCu and other monometallic/intermetallic MTPs have been analysed and summarized.",
+            "12": "The formation mechanism of AuCu MTPs has been investigated from an energetic perspective.",
+            "13": "The formation mechanism of AuCu MTPs has been investigated from a geometric perspective.",
+            "14": "A general framework for decahedral MTPs has been proposed.",
+            "15": "Unknown MTPs could be predicted based on the proposed general framework for decahedral MTPs."
+          },
+          "35": {
+            "1": "The growth pathways from tetrahedral to multiply twinned gold nanoparticles in the gas phase are studied by molecular dynamics simulations.",
+            "2": "The growth pathways from tetrahedral to multiply twinned gold nanoparticles in the gas phase are supported by density functional theory calculations.",
+            "3": "The growth from a tetrahedron to a multiple twin can take place directly from a tetrahedron to a decahedron (Th → Dh pathway).",
+            "4": "The growth from a tetrahedron to a multiple twin can take place directly from a tetrahedron to an icosahedral fragment (Th → Ih).",
+            "5": "The growth from a tetrahedron to a multiple twin can take place from a tetrahedron to an icosahedron passing through an intermediate decahedron (Th → Dh → Ih).",
+            "6": "Simulations allow the determination of the key atomic-level growth mechanism at the origin of twinning in metal nanoparticles.",
+            "7": "The key atomic-level growth mechanism is common to all growth pathways from tetrahedral to multiply twinned gold nanoparticles.",
+            "8": "The atomic-level growth mechanism starts from the preferential nucleation of faulted atomic islands in the vicinity of facet edges.",
+            "9": "The preferential nucleation of faulted atomic islands leads to the formation and stabilization of twin planes.",
+            "10": "The preferential nucleation of faulted atomic islands leads to the formation and stabilization of fivefold symmetry axes."
+          },
+          "23": {
+            "1": "The energetics of multiply twinned particles (MTPs) can be investigated using elasticity theory.",
+            "2": "The homogeneous strain models can be critically compared with the disclination model for the strains in decahedral particles using elasticity theory.",
+            "3": "The homogeneous strain models can be compared with a new model for the strains in icosahedral particles based on inhomogeneous elasticity using elasticity theory.",
+            "4": "The overall energy balance between multiply twinned particles (MTPs) and single crystals is evaluated.",
+            "5": "The evaluation of the energy balance includes the significant cost of elastically distorting the surface.",
+            "6": "The evaluation of the energy balance uses two extreme models of the faceting.",
+            "7": "Icosahedral multiply twinned particles (MTPs) are more stable than single crystals for small sizes only under strong faceting conditions.",
+            "8": "Decahedral multiply twinned particles (MTPs) are intermediaries between icosahedral MTPs and single crystals in terms of stability.",
+            "9": "Experimentally observed stress-relief mechanisms provide indirect evidence for the inhomogeneous strain models."
+          },
+          "24": [],
+          "36": {
+            "1": "Decahedral morphology is one of the common structures observed in nanoparticles.",
+            "2": "Re-entrant surface modifications are part of the decahedral morphology observed in nanoparticles.",
+            "3": "Decahedral motifs are thermodynamically stable only at very small size ranges.",
+            "4": "Decahedral motifs have been experimentally observed to grow up to much larger sizes, ranging from 100 nm to several micrometers.",
+            "5": "Surface energy plays an important role in the growth of decahedral morphology with re-entrant surface modifications.",
+            "6": "The contributions of the elastic strain energy are nonnegligible at larger sizes of nanoparticles with decahedral morphology.",
+            "7": "The effect of stress relaxation due to re-entrant surface faceting in nanoparticles with decahedral morphology is poorly understood.",
+            "8": "The volumetric strain energy due to the disclination defect is computed using finite element analysis.",
+            "9": "The relaxation due to the formation of re-entrant surfaces is shown in this article.",
+            "10": "The disclination strain energy is a nontrivial function of the geometry.",
+            "11": "The disclination strain energy generally increases with increasing aspect ratio.",
+            "12": "The computed strain energies result in approximately 50% increase in the stability regime compared to previously reported results.",
+            "13": "Previous results on stability regime were obtained using thermodynamical analysis.",
+            "14": "Finite element analyses are utilized to explain the commonly observed defect configurations in nanoparticles.",
+            "15": "Finite element analyses are utilized to compute the internal rigid body rotations in nanoparticles."
+          },
+          "37": {
+            "1": "Icosahedral and decahedral nanoparticles have defect structures.",
+            "2": "Icosahedral and decahedral nanoparticles provide higher functionality than single-crystal Wulff counterparts.",
+            "3": "Icosahedral and decahedral nanoparticles are used in nanoparticle technologies such as SERS, fuel cell catalysis, and data storage.",
+            "4": "Precise control on the yield of multiply twinned structures during solution synthesis is challenging.",
+            "5": "It is difficult to synthesize icosahedral structures.",
+            "6": "The difficulty in synthesizing icosahedral structures is due to high volumetric strain energy.",
+            "7": "High volumetric strain energy is associated with disclination defects.",
+            "8": "High volumetric strain energy leads to a transition to decahedral morphologies.",
+            "9": "The Letter elucidates the role of surface stresses in influencing the thermodynamic stability of multiply twinned particles.",
+            "10": "Increasing the surface stresses inhibits the formation of decahedral structures.",
+            "11": "Increasing the surface stresses increases the likelihood of synthesizing metastable icosahedral particles.",
+            "12": "Large decahedral particles may be stabilized by decreasing the surface stresses.",
+            "13": "Tailoring the solution chemistry to influence the surface stresses can achieve greater control over the synthesis of multiply twinned structures."
+          },
+          "20": {
+            "1": "Metallic nanoparticles exhibit exceptional optoelectronic properties.",
+            "2": "Metallic nanoparticles have applications in plasmonics.",
+            "3": "Metallic nanoparticles have applications in biosensing.",
+            "4": "Metallic nanoparticles have applications in nanomedicine.",
+            "5": "New synthesis techniques have enabled precise control over the sizes of metal nanoparticles.",
+            "6": "New synthesis techniques have enabled precise control over the shapes of metal nanoparticles.",
+            "7": "The new synthesis techniques occasionally lead to morphologies of metal nanoparticles that cannot be properly characterized using standard techniques.",
+            "8": "Five-fold-twinned decahedral Au nanoparticles are intrinsically strained.",
+            "9": "The intrinsic strain in five-fold-twinned decahedral Au nanoparticles results from their unique geometry.",
+            "10": "Various competing models have been proposed to predict the strain states of five-fold-twinned decahedral Au nanoparticles.",
+            "11": "A detailed analysis of the internal structure of a decahedral Au nanoparticle is presented.",
+            "12": "The analysis of the decahedral Au nanoparticle uses aberration-corrected high-resolution electron microscopy.",
+            "13": "The analysis of the decahedral Au nanoparticle uses strain mapping.",
+            "14": "The measurements confirm the presence of a disclination in the decahedral Au nanoparticle.",
+            "15": "The presence of a disclination is consistent with the commonly accepted strain model.",
+            "16": "Shear gradients were observed in the decahedral Au nanoparticle.",
+            "17": "Shear gradients are absent from the commonly accepted strain models of decahedral Au nanoparticles.",
+            "18": "Local strain determinations were compared with finite-element calculations.",
+            "19": "The comparison shows the effect of elastic anisotropy on the strain state in decahedral Au nanoparticles."
+          },
+          "21": [],
+          "22": {
+            "1": "A comprehensive review is provided on experimental studies of small particles with fivefold symmetry.",
+            "2": "The review is accompanied by an in-depth theoretical description of the characteristics of small particles with fivefold symmetry.",
+            "3": "The review includes computer modeling of the characteristics of small particles with fivefold symmetry.",
+            "4": "The review discusses cases of uniform deformations in the disclination model.",
+            "5": "The review discusses cases of nonuniform deformations in the disclination model.",
+            "6": "Stability of elastic stresses in pentagonal particles and needle-like crystals is discussed.",
+            "7": "Relaxation of elastic stresses in pentagonal particles and needle-like crystals is discussed.",
+            "8": "Models of the formation of pentagonal particles and needle-like crystals are discussed."
+          }
+        },
+        "viewpoints": [
+          "A number of experimental studies have been done on the formation mechanisms of fivefold twinned structures.",
+          "A number of experimental studies have been done on the stability of fivefold twinned structures.",
+          "A number of experimental studies have been done on the lattice defects of fivefold twinned structures.",
+          "The 3D atomic structures of icosahedra remain a long-standing problem.",
+          "The associated local strain of icosahedra remains a long-standing problem.",
+          "The embedded internal structures of icosahedra remain unclear due to their structural complexity.",
+          "The embedded internal structures of icosahedra remain unclear due to the limitation of conventional projection imaging techniques."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The high-resolution electron microscopy images of atomic columns or lattice fringes from the fivefold directions are commonly employed to elucidate the atomic structures of MTPs.",
+        "references": {},
+        "viewpoints": [
+          "High-resolution electron microscopy images of atomic columns from the fivefold directions are commonly employed to elucidate the atomic structures of MTPs.",
+          "High-resolution electron microscopy images of lattice fringes from the fivefold directions are commonly employed to elucidate the atomic structures of MTPs."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Johnson et al. confirmed the presence of disclinations and inhomogeneous strain distribution with shear gradients through geometric phase analysis based on two-dimensional (2D) projection images [20].",
+        "references": {
+          "20": {
+            "1": "Metallic nanoparticles exhibit exceptional optoelectronic properties.",
+            "2": "Metallic nanoparticles have applications in plasmonics.",
+            "3": "Metallic nanoparticles have applications in biosensing.",
+            "4": "Metallic nanoparticles have applications in nanomedicine.",
+            "5": "New synthesis techniques have enabled precise control over the sizes of metal nanoparticles.",
+            "6": "New synthesis techniques have enabled precise control over the shapes of metal nanoparticles.",
+            "7": "The new synthesis techniques occasionally lead to morphologies of metal nanoparticles that cannot be properly characterized using standard techniques.",
+            "8": "Five-fold-twinned decahedral Au nanoparticles are intrinsically strained.",
+            "9": "The intrinsic strain in five-fold-twinned decahedral Au nanoparticles results from their unique geometry.",
+            "10": "Various competing models have been proposed to predict the strain states of five-fold-twinned decahedral Au nanoparticles.",
+            "11": "A detailed analysis of the internal structure of a decahedral Au nanoparticle is presented.",
+            "12": "The analysis of the decahedral Au nanoparticle uses aberration-corrected high-resolution electron microscopy.",
+            "13": "The analysis of the decahedral Au nanoparticle uses strain mapping.",
+            "14": "The measurements confirm the presence of a disclination in the decahedral Au nanoparticle.",
+            "15": "The presence of a disclination is consistent with the commonly accepted strain model.",
+            "16": "Shear gradients were observed in the decahedral Au nanoparticle.",
+            "17": "Shear gradients are absent from the commonly accepted strain models of decahedral Au nanoparticles.",
+            "18": "Local strain determinations were compared with finite-element calculations.",
+            "19": "The comparison shows the effect of elastic anisotropy on the strain state in decahedral Au nanoparticles."
+          }
+        },
+        "viewpoints": [
+          "Johnson et al. confirmed the presence of disclinations through geometric phase analysis based on two-dimensional (2D) projection images.",
+          "Johnson et al. confirmed the presence of inhomogeneous strain distribution with shear gradients through geometric phase analysis based on two-dimensional (2D) projection images."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Narayan et al. found the boundaries of fivefold diamond microcrystallites contain coherent twins with occasional presence of dislocations to accommodate the misfit [38].",
+        "references": {
+          "38": {
+            "1": "The formation of <110> oriented fivefold diamond microcrystallites on {001} silicon substrates has been investigated.",
+            "2": "High-resolution transmission electron microscopy (HRTEM) was used to investigate the formation of fivefold diamond microcrystallites.",
+            "3": "HRTEM micrographs show that fivefold symmetry in diamond microcrystallites results from twinning in {111} planes.",
+            "4": "The finding that fivefold symmetry in diamond microcrystallites results from twinning in {111} planes is supported by electron diffraction data.",
+            "5": "The five <110> oriented microcrystallites that provide fivefold symmetry are enclosed by {111} planes.",
+            "6": "The angles between various planes in microcrystallites can be directly measured in HRTEM micrographs.",
+            "7": "The angles between {111} planes in microcrystallites are found to vary from 70.5° to as much as 74°.",
+            "8": "The boundaries of microcrystallites contain coherent twins.",
+            "9": "There is only an occasional presence of dislocations at the boundaries of microcrystallites to accommodate the misfit.",
+            "10": "A model for the nucleation and formation of fivefold diamond microcrystallites is proposed.",
+            "11": "The proposed model is based upon the presence of a/2<110>{001} edge dislocations.",
+            "12": "The proposed model is found to be consistent with HRTEM observations."
+          }
+        },
+        "viewpoints": [
+          "The boundaries of fivefold diamond microcrystallites contain coherent twins.",
+          "The boundaries of fivefold diamond microcrystallites occasionally contain dislocations to accommodate the misfit."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Li et al. proposed oriented attachment of small crystal domains induces fivefold twins using in situ electron microscopy [4].",
+        "references": {
+          "4": {
+            "1": "Natural nanoparticles composed of fivefold twinned crystal domains have distinct properties.",
+            "2": "Synthetic nanoparticles composed of fivefold twinned crystal domains have distinct properties.",
+            "3": "The formation mechanism of fivefold twinned nanoparticles is poorly understood.",
+            "4": "In situ high-resolution transmission electron microscopy and molecular dynamics simulations were used to study fivefold twinning.",
+            "5": "Fivefold twinning occurs through repeated oriented attachment of ~3-nanometer gold nanoparticles.",
+            "6": "Fivefold twinning occurs through repeated oriented attachment of ~3-nanometer platinum nanoparticles.",
+            "7": "Fivefold twinning occurs through repeated oriented attachment of ~3-nanometer palladium nanoparticles.",
+            "8": "Two different mechanisms for forming fivefold twinned nanoparticles were discovered.",
+            "9": "The two mechanisms for forming fivefold twinned nanoparticles are driven by the accumulation of strain.",
+            "10": "The two mechanisms for forming fivefold twinned nanoparticles are driven by the elimination of strain.",
+            "11": "The formation mechanisms of fivefold twinned nanoparticles involve decomposition of grain boundaries.",
+            "12": "The formation mechanisms of fivefold twinned nanoparticles involve the formation of a special class of twins with a net strain of zero.",
+            "13": "Observations from the study allowed the development of a quantitative picture of the twinning process.",
+            "14": "The discovered mechanisms provide guidance for controlling twin structures across a wide range of materials.",
+            "15": "The discovered mechanisms provide guidance for controlling morphologies across a wide range of materials."
+          }
+        },
+        "viewpoints": [
+          "The oriented attachment of small crystal domains induces fivefold twins according to Li et al.",
+          "Li et al. used in situ electron microscopy to propose that oriented attachment of small crystal domains induces fivefold twins."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "While these experimental observations are predominantly based on 2D projections, the internal structures were not obtained.",
+        "references": {},
+        "viewpoints": [
+          "Experimental observations are predominantly based on 2D projections.",
+          "The internal structures were not obtained in these experimental observations."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Recent advances in the atomic resolution electron tomography (AET) [39], [40], [41], [42] offer a method to visualize the internal atomic structures of nanomaterials in 3D and even in 4D.",
+        "references": {
+          "39": {
+            "1": "Crystallography has been fundamental to the development of many fields of science over the last century.",
+            "2": "Much of modern science and technology relies on materials with defects and disorders.",
+            "3": "The three-dimensional (3D) atomic structures of materials with defects and disorders are not accessible to crystallography.",
+            "4": "Atomic electron tomography is a method capable of addressing the challenge of determining the 3D atomic structures of materials with defects and disorders.",
+            "5": "Combining advanced electron microscopes and detectors with powerful data analysis and tomographic reconstruction algorithms makes it possible to determine the 3D atomic structure of crystal defects.",
+            "6": "The crystal defects include grain boundaries, stacking faults, dislocations, and point defects.",
+            "7": "It is now possible to precisely localize the 3D coordinates of individual atoms in materials without assuming crystallinity.",
+            "8": "The recent advances enabled by atomic electron tomography are reviewed.",
+            "9": "The interdisciplinary science enabled by atomic electron tomography is reviewed.",
+            "10": "Further research is needed for atomic electron tomography to address long-standing unresolved problems in the physical sciences.",
+            "11": "The paper outlines the further research needed for atomic electron tomography."
+          },
+          "40": {
+            "1": "Nucleation plays a critical role in crystallization.",
+            "2": "Nucleation plays a critical role in melting.",
+            "3": "Nucleation plays a critical role in evaporation.",
+            "4": "Nucleation plays a critical role in the formation of clouds.",
+            "5": "Nucleation plays a critical role in the initiation of neurodegenerative diseases.",
+            "6": "Nucleation is a challenging process to study experimentally.",
+            "7": "The early stages of nucleation, when several atoms or molecules start to form a new phase from a parent phase, are especially challenging to study experimentally.",
+            "8": "A number of experimental methods have been used to investigate nucleation processes.",
+            "9": "A number of computational methods have been used to investigate nucleation processes.",
+            "10": "Experimental determination of the three-dimensional atomic structure of early-stage nuclei has been unachievable.",
+            "11": "Experimental determination of the dynamics of early-stage nuclei has been unachievable.",
+            "12": "Atomic electron tomography is used to study early-stage nucleation in four dimensions.",
+            "13": "The study of early-stage nucleation using atomic electron tomography is conducted at atomic resolution.",
+            "14": "FePt nanoparticles are used as a model system.",
+            "15": "Early-stage nuclei are irregularly shaped.",
+            "16": "Each early-stage nucleus has a core of one to a few atoms with the maximum order parameter.",
+            "17": "The order parameter gradient of each early-stage nucleus points from the core to the boundary of the nucleus.",
+            "18": "The structure and dynamics of nuclei undergoing growth are captured.",
+            "19": "The structure and dynamics of nuclei undergoing fluctuation are captured.",
+            "20": "The structure and dynamics of nuclei undergoing dissolution are captured.",
+            "21": "The structure and dynamics of nuclei undergoing merging are captured.",
+            "22": "The structure and dynamics of nuclei undergoing division are captured.",
+            "23": "The processes of growth, fluctuation, dissolution, merging, and/or division of nuclei are regulated by the order parameter distribution and its gradient.",
+            "24": "Experimental observations are corroborated by molecular dynamics simulations.",
+            "25": "Molecular dynamics simulations focus on heterogeneous nucleation in liquid-solid phase transitions of Pt.",
+            "26": "Molecular dynamics simulations focus on homogeneous nucleation in liquid-solid phase transitions of Pt.",
+            "27": "A theory beyond classical nucleation theory is needed to describe early-stage nucleation at the atomic scale, according to experimental and molecular dynamics results.",
+            "28": "The reported approach is anticipated to open the door to the study of many fundamental problems in materials science, nanoscience, condensed matter physics, and chemistry.",
+            "29": "The problems that can potentially be studied with the reported approach include phase transition, atomic diffusion, grain boundary dynamics, interface motion, defect dynamics, and surface reconstruction.",
+            "30": "The reported approach involves four-dimensional atomic resolution."
+          },
+          "41": {
+            "1": "Amorphous solids such as glass, plastics, and amorphous thin films are common in daily life.",
+            "2": "Amorphous solids such as glass, plastics, and amorphous thin films have broad applications.",
+            "3": "Amorphous solids are used in telecommunications, electronics, and solar cells.",
+            "4": "The 3D atomic structure of amorphous solids has eluded direct experimental determination.",
+            "5": "The elusiveness of the 3D atomic structure determination is due to the lack of long-range order in amorphous solids.",
+            "6": "An atomic electron tomography reconstruction method has been developed to experimentally determine the 3D atomic positions of an amorphous solid.",
+            "7": "A multi-component glass-forming alloy is used as proof of principle.",
+            "8": "The short-range order of the 3D atomic arrangement is quantitatively characterized.",
+            "9": "The medium-range order of the 3D atomic arrangement is quantitatively characterized.",
+            "10": "The 3D atomic packing of the short-range order is geometrically disordered.",
+            "11": "Some short-range-order structures connect to form crystal-like superclusters.",
+            "12": "The connection of short-range-order structures into superclusters gives rise to medium-range order.",
+            "13": "Four types of crystal-like medium-range order coexist in the amorphous sample.",
+            "14": "The types of crystal-like medium-range order identified are face-centred cubic, hexagonal close-packed, body-centred cubic, and simple cubic.",
+            "15": "The crystal-like medium-range order shows translational order.",
+            "16": "The crystal-like medium-range order does not show orientational order.",
+            "17": "The observations provide direct experimental evidence for the efficient cluster packing model for metallic glasses.",
+            "18": "This work is expected to pave the way for determining the 3D structure of a wide range of amorphous solids.",
+            "19": "Determining the 3D structure of amorphous solids could transform the fundamental understanding of non-crystalline materials.",
+            "20": "Determining the 3D structure of amorphous solids could transform the understanding of related phenomena."
+          },
+          "42": {
+            "1": "Liquids are a fundamental state of matter.",
+            "2": "Solids are a fundamental state of matter.",
+            "3": "The understanding of the three-dimensional atomic structure of liquids is mostly based on physical models.",
+            "4": "The understanding of the three-dimensional atomic structure of solids is mostly based on physical models.",
+            "5": "Atomic electron tomography was used to experimentally determine the three-dimensional atomic positions of monatomic amorphous solids.",
+            "6": "A Ta thin film was used as an example of a monatomic amorphous solid in the experiment.",
+            "7": "Two Pd nanoparticles were used as examples of monatomic amorphous solids in the experiment.",
+            "8": "Pentagonal bipyramids are the most abundant atomic motifs in a Ta thin film.",
+            "9": "Pentagonal bipyramids are the most abundant atomic motifs in two Pd nanoparticles.",
+            "10": "The majority of pentagonal bipyramids in monatomic amorphous solids do not form icosahedra.",
+            "11": "The majority of pentagonal bipyramids in monatomic amorphous solids arrange into pentagonal bipyramid networks with medium-range order.",
+            "12": "Pentagonal bipyramid networks are prevalent in monatomic metallic liquids according to molecular dynamics simulations.",
+            "13": "During the quench from the liquid to the glass state, pentagonal bipyramid networks rapidly grow in size in monatomic metallic liquids.",
+            "14": "During the quench from the liquid to the glass state, pentagonal bipyramid networks form more icosahedra in monatomic metallic liquids.",
+            "15": "These results expand the understanding of the atomic structures of amorphous solids.",
+            "16": "These results will encourage future studies on amorphous-crystalline phase transitions in non-crystalline materials with three-dimensional atomic resolution.",
+            "17": "These results will encourage future studies on glass transitions in non-crystalline materials with three-dimensional atomic resolution."
+          }
+        },
+        "viewpoints": [
+          "Recent advances in atomic resolution electron tomography offer a method to visualize the internal atomic structures of nanomaterials in 3D.",
+          "Recent advances in atomic resolution electron tomography offer a method to visualize the internal atomic structures of nanomaterials in 4D."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Chen et al. observed the 3D core structure of edge and screw dislocations releasing strain in Pt decahedral MTP [11].",
+        "references": {
+          "11": {
+            "1": "Dislocations and their interactions strongly influence the strength of metals.",
+            "2": "Dislocations and their interactions strongly influence the strength of alloys.",
+            "3": "Dislocations and their interactions strongly influence the efficiency of light-emitting diodes.",
+            "4": "Dislocations and their interactions strongly influence the efficiency of laser diodes.",
+            "5": "Several experimental methods can be used to visualize dislocations.",
+            "6": "Transmission electron microscopy (TEM) has long been used to image dislocations in materials.",
+            "7": "High-resolution electron microscopy can reveal dislocation core structures in high detail.",
+            "8": "The annular dark-field mode in high-resolution electron microscopy is particularly effective in revealing dislocation core structures.",
+            "9": "A TEM image represents a two-dimensional projection of a three-dimensional object.",
+            "10": "Stereo TEM provides limited information about 3D dislocations.",
+            "11": "X-ray topography can image dislocations in three dimensions.",
+            "12": "X-ray topography images dislocations with reduced resolution.",
+            "13": "Electron tomography has been used to image 3D dislocations using weak-beam dark-field TEM.",
+            "14": "Electron tomography has been used to image 3D dislocations using scanning TEM.",
+            "15": "Electron tomography images 3D dislocations at a resolution of about five nanometres.",
+            "16": "Atom probe tomography can offer higher-resolution 3D characterization of dislocations.",
+            "17": "Atom probe tomography requires needle-shaped samples.",
+            "18": "Atom probe tomography can detect only about 60 per cent of the atoms in a sample.",
+            "19": "3D imaging of dislocations in materials at atomic resolution by electron tomography is reported.",
+            "20": "3D Fourier filtering was applied together with equal-slope tomographic reconstruction.",
+            "21": "Nearly all the atoms in a multiply twinned platinum nanoparticle were observed using 3D Fourier filtering and equal-slope tomographic reconstruction.",
+            "22": "Atomic steps at 3D twin boundaries were observed.",
+            "23": "The 3D core structure of edge dislocations was imaged at atomic resolution.",
+            "24": "The 3D core structure of screw dislocations was imaged at atomic resolution.",
+            "25": "Dislocations and atomic steps at the twin boundaries appear to be stress-relief mechanisms.",
+            "26": "Dislocations and atomic steps at the twin boundaries are not visible in conventional two-dimensional projections.",
+            "27": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in materials science.",
+            "28": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in nanoscience.",
+            "29": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in solid-state physics.",
+            "30": "The ability to image 3D disordered structures such as dislocations at atomic resolution is expected to find applications in chemistry."
+          }
+        },
+        "viewpoints": [
+          "Chen et al. observed the 3D core structure of edge dislocations releasing strain in Pt decahedral MTP.",
+          "Chen et al. observed the 3D core structure of screw dislocations releasing strain in Pt decahedral MTP."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "More recently, Peltz et al. studied the transient 3D structures of a Pd MTP, in which a large number of defects have been revealed qualitatively including disordered regions present mostly on the particle surface [13].",
+        "references": {
+          "13": {
+            "1": "Shape-controlled synthesis of multiply twinned nanostructures is heavily emphasized in nanoscience.",
+            "2": "There is a desire to control the size, shape, and terminating facets of metal nanoparticles for applications in catalysis.",
+            "3": "Direct control of the size and shape of solution-grown nanoparticles relies on understanding how synthetic parameters alter nanoparticle structures during synthesis.",
+            "4": "Outcome populations of nanoparticles can be effectively studied with standard electron microscopy methods.",
+            "5": "Transient structures that appear during some synthetic routes are difficult to study using conventional high-resolution imaging methods.",
+            "6": "The difficulty in studying transient structures using conventional high-resolution imaging methods is due to the high complexity of the 3D nanostructures.",
+            "7": "The study focused on the prevalence of transient structures during the growth of multiply twinned particles.",
+            "8": "Atomic electron tomography was employed to reveal the atomic-scale three-dimensional structure of a Pd nanoparticle undergoing a shape transition.",
+            "9": "Over 20,000 atoms within the nanoparticle structure were identified.",
+            "10": "The identified atoms were classified according to their local crystallographic environment.",
+            "11": "A multiply twinned structure consistent with a simultaneous successive twinning from a decahedral to icosahedral structure was observed."
+          }
+        },
+        "viewpoints": [
+          "Peltz et al. studied the transient 3D structures of a Pd MTP.",
+          "A large number of defects have been revealed qualitatively in the transient 3D structures of a Pd MTP.",
+          "Disordered regions are mostly present on the particle surface of a Pd MTP."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "However, although experimental studies show that the strains are inhomogeneous in fivefold MTPs, quantitative measurements of 3D inherent atomic misfit and strain were not obtained, further precluding a thorough understanding of the phenomenon.",
+        "references": {},
+        "viewpoints": [
+          "Experimental studies show that the strains are inhomogeneous in fivefold MTPs.",
+          "Quantitative measurements of 3D inherent atomic misfit were not obtained.",
+          "Quantitative measurements of 3D inherent strain were not obtained.",
+          "The lack of quantitative measurements precludes a thorough understanding of the phenomenon."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Here, by determining the 3D atomic coordinates of gold-palladium MTPs, we show that the 3D angular deficiency in fivefold twinned icosahedral nanoparticles (ICNPs) is compensated by the insertion of edge dislocations and amorphization of several tetrahedra.",
+        "references": {},
+        "viewpoints": [
+          "The 3D atomic coordinates of gold-palladium MTPs have been determined.",
+          "The 3D angular deficiency in fivefold twinned icosahedral nanoparticles is compensated by the insertion of edge dislocations.",
+          "The 3D angular deficiency in fivefold twinned icosahedral nanoparticles is compensated by the amorphization of several tetrahedra."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "A geometrically fivefold face (C5 side) consistently corresponds to a less-ordered face (C5′ side), forming two structurally distinct hemispheres.",
+        "references": {},
+        "viewpoints": [
+          "A geometrically fivefold face (C5 side) consistently corresponds to a less-ordered face (C5′ side).",
+          "The geometrically fivefold face and less-ordered face form two structurally distinct hemispheres."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "The solid angles of disordered amorphous domains are significantly larger than those of the ideal fcc domains, relaxing a large amount of strain and filling up the angular defects.",
+        "references": {},
+        "viewpoints": [
+          "The solid angles of disordered amorphous domains are significantly larger than those of the ideal fcc domains.",
+          "The larger solid angles of disordered amorphous domains relax a large amount of strain.",
+          "The larger solid angles of disordered amorphous domains fill up the angular defects."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "We also discover a two-sided heterogeneity in a variety of structural characteristics including local bond orientation order (BOO), bond length, distribution of dislocations, and solid angle and size of tetrahedra.",
+        "references": {},
+        "viewpoints": [
+          "There is a two-sided heterogeneity in local bond orientation order (BOO).",
+          "There is a two-sided heterogeneity in bond length.",
+          "There is a two-sided heterogeneity in the distribution of dislocations.",
+          "There is a two-sided heterogeneity in the solid angle of tetrahedra.",
+          "There is a two-sided heterogeneity in the size of tetrahedra."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "The observations of Janus-like structural heterogeneity are corroborated with molecular dynamics (MD) simulations of the atomic structures of Au nanoparticles after annealing in liquid–solid phase transitions.",
+        "references": {},
+        "viewpoints": [
+          "Observations of Janus-like structural heterogeneity are corroborated with molecular dynamics simulations.",
+          "Molecular dynamics simulations involve the atomic structures of Au nanoparticles after annealing in liquid–solid phase transitions."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Our research has unveiled a strain model in which some tetrahedra on one side of the ICNP are transformed to disordered structures to release the intrinsic strain, while the rest of tetrahedra on the other side remain almost ideal fcc.",
+        "references": {},
+        "viewpoints": [
+          "Some tetrahedra on one side of the ICNP are transformed to disordered structures to release the intrinsic strain.",
+          "The rest of the tetrahedra on the other side of the ICNP remain almost ideal fcc."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "This work provides insight into atomistic models for understanding the formation mechanisms of fivefold and icosahedral twinned structures.",
+        "references": {},
+        "viewpoints": [
+          "This work provides insight into atomistic models for understanding the formation mechanisms of fivefold twinned structures.",
+          "This work provides insight into atomistic models for understanding the formation mechanisms of icosahedral twinned structures."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56842-6_with_abstracts",
+    "base_id": "s41467-025-56842-6",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56842-6_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Spinons are well-established quasiparticles in one-dimensional (1D) systems [1] , [2] , but their presence in dimensions higher than one remains a contentious topic [3] , [4] . In particular, spin-1/2 Heisenberg AFs on quasi-2D square lattices have been the subject of tremendous research effort in connection with high-temperature superconductivity (HTSC) in cuprates [5] . Despite the presence of Néel AF orders and the absence of apparent frustrations in these systems, earlier theoretical and experimental works have indicated that they can accommodate gapped spinon modes [6] , [7] , [8] . Indeed, the broad continua observed across many copper-based square-lattice AFs [7] , [9] , [10] , known as the ‘( π , 0) anomaly’, have been attributed to spinon excitations. Theoretically, their weights should increase in systems with enhanced long-range, multi-spin interactions competing with nearest-neighbor (NN) Heisenberg exchange ( J ) [11] , [12] , such as four-spin exchanges ( Q ) [8] , [13] , [14] , which can destabilize the Néel AF order in favor of more exotic phases. However, these parameters are difficult to control experimentally and the existence of spinons in square lattices remains unsettled. The realization of spin-orbit-entangled pseudospin-1/2 square-lattice AFs in iridates offers novel material platforms for exploring the problem in an uncharted parameter regime. The strong spin-orbit coupling in iridates imparts unique properties to their exchange interactions, ranging from a nearly isotropic Heisenberg to a bond-directional Ising-like exchange interaction [15] . This leads to a variety of theoretical predictions for novel quantum magnets, including Kitaev spin liquid in honeycomb compounds [15] , [16] , [17] , [18] , [19] , U (1) or Z 2 quantum spin liquid in hyperkagome compounds [20] , [21] . Similarly, in square-lattice iridates, enhanced higher-order spin interactions from spatially extended 5 d orbitals and increased virtual charge fluctuations due to a small charge gap [22] underlie the strong deviation of the single-layer (SL) Sr 2 IrO 4 from the NN Heisenberg model [23] and the exceptionally large spin gap in the double-layer (DL) Sr 3 Ir 2 O 7 [24] , [25] . Thus, the nature of exchange interactions in iridates varies widely even within the Ruddlesden-Popper (R-P) series Sr n +1 Ir n O 3 n +1 . This allows for the possibility of heterointerfacing different types of magnetism in a superlattice, which may induce magnetic frustration through proximity coupling of symmetry-distinct orders [26] . In this article, we demonstrate a heterostructure-based strategy to frustrate the Néel AF order in square-lattice iridates. We use time-resolved resonant x-ray diffraction (RXD) to measure the degree of quantum fluctuations through the recovery dynamics of the AF order after its transient suppression by an optical pump, which significantly slows down with enhanced frustration. We use polarization-resolved resonant inelastic x-ray scattering (RIXS) and high-energy-resolution RIXS to reveal the absence of single magnons in most part of the Brillouin zone away from the immediate vicinity of the ordering wavevector. Instead, the spectra are dominated by isotropic continua, which provide compelling evidence for spinons in a square-lattice Heisenberg AF.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Spinons are well-established quasiparticles in one-dimensional (1D) systems [1], [2], but their presence in dimensions higher than one remains a contentious topic [3], [4].",
+        "references": {
+          "1": {
+            "1": "A detailed experimental investigation into the spin dynamics of the quasi-one-dimensional S=1/2 Heisenberg antiferromagnet KCuF₃ is presented in this paper.",
+            "2": "A detailed experimental investigation into the spin dynamics of the quasi-one-dimensional S=1/2 Heisenberg antiferromagnet KCuF₃ is presented in the following paper.",
+            "3": "This paper reports results of inelastic neutron-scattering measurements made using the MARI time-of-flight spectrometer at the Rutherford Appleton Laboratory.",
+            "4": "Measurement of the magnetic excitation spectrum was made in the low-temperature phase where the chains are ordered together.",
+            "5": "Measurement of the magnetic excitation spectrum was made in the high-temperature phase where the correlations between chains become unimportant.",
+            "6": "Our measurements are compared with the Müller ansatz, which is identified with a two-spinon cross section.",
+            "7": "There is excellent agreement between our measurements and the Müller ansatz.",
+            "8": "The effect of temperature on the excitation continuum was investigated.",
+            "9": "Measurements were made at temperatures ranging from 20 to 200 K.",
+            "10": "The results are compared to the predictions of field theory for the one-dimensional Heisenberg chain.",
+            "11": "Good agreement is found between the results and the theoretical predictions of field theory for the one-dimensional Heisenberg chain.",
+            "12": "The following paper presents measurements of the low-energy scattering in the ordered phase made on a triple-axis spectrometer."
+          },
+          "2": {
+            "1": "The spin-1/2 Heisenberg antiferromagnetic chain is one of the simplest quantum many-body systems.",
+            "2": "The spin-1/2 Heisenberg antiferromagnetic chain is a linear array of interacting magnetic moments.",
+            "3": "The exact ground state of the spin-1/2 Heisenberg antiferromagnetic chain is a macroscopic singlet entangling all spins in the chain.",
+            "4": "The elementary excitations of the spin-1/2 Heisenberg antiferromagnetic chain are called spinons.",
+            "5": "Spinons are fractional spin-1/2 quasiparticles.",
+            "6": "Spinons are created in pairs by neutron scattering.",
+            "7": "Spinons are detected in pairs by neutron scattering.",
+            "8": "Theoretical predictions show that two-spinon states exhaust only 71% of the spectral weight.",
+            "9": "Higher-order spinon states are predicted to participate in the remaining spectral weight.",
+            "10": "Higher-order spinon states are yet to be experimentally located.",
+            "11": "Accurate absolute normalization of inelastic neutron scattering data on a spin-1/2 Heisenberg antiferromagnetic chain compound allows accounting for the full spectral weight to within 99(8)%.",
+            "12": "The data establish the existence of higher-order spinon states.",
+            "13": "The data quantify the existence of higher-order spinon states.",
+            "14": "The experimental line shape, within error bars, resembles a rescaled two-spinon one with similar boundaries.",
+            "15": "The resemblance of the experimental line shape to a rescaled two-spinon one allows developing a simple picture for understanding multi-spinon excitations."
+          },
+          "3": {
+            "1": "There is a possibility of a new kind of electronic state in metals.",
+            "2": "This new kind of electronic state corresponds roughly to Pauling's idea of \"resonating valence bonds.\"",
+            "3": "A pure state of the resonating valence bonds type would be insulating.",
+            "4": "The pure state of the resonating valence bonds type would represent an alternative state to the Néel antiferromagnetic state for S = 1/2.",
+            "5": "An estimate of the energy of the new kind of electronic state is made in one case."
+          },
+          "4": {
+            "1": "The article reviews the physics of high-temperature superconductors.",
+            "2": "The review is from the point of view of the doping of a Mott insulator.",
+            "3": "The basic electronic structure of cuprates is reviewed.",
+            "4": "The review emphasizes the physics of strong correlation.",
+            "5": "The review establishes the model of a doped Mott insulator as a starting point.",
+            "6": "A variety of experiments are discussed in the article.",
+            "7": "The experiments focus on the region of the phase diagram close to the Mott insulator, known as the underdoped region, where the behavior is most anomalous.",
+            "8": "The normal state in the underdoped region exhibits the pseudogap phenomenon.",
+            "9": "The quasiparticles in the superconducting state are well defined.",
+            "10": "The quasiparticles in the superconducting state behave according to theory.",
+            "11": "The review introduces Anderson’s idea of the resonating valence bond.",
+            "12": "The review argues that the resonating valence bond gives a qualitative account of the data.",
+            "13": "The importance of phase fluctuations is discussed.",
+            "14": "The discussion leads to a theory of the transition temperature.",
+            "15": "The theory of the transition temperature is driven by phase fluctuations and the thermal excitation of quasiparticles.",
+            "16": "Phase fluctuations can only explain pseudogap phenomenology over a limited temperature range.",
+            "17": "Additional physics is needed to explain the onset of singlet formation at very high temperatures.",
+            "18": "A description of the numerical method of the projected wave function is presented.",
+            "19": "The projected wave function method is a very useful technique for implementing the strong correlation constraint.",
+            "20": "The projected wave function method leads to a number of predictions which are in agreement with experiments.",
+            "21": "The remainder of the paper deals with an analytic treatment of the t-J model.",
+            "22": "The goal of the analytic treatment is to put the resonating valence bond idea on a more formal footing.",
+            "23": "The slave boson is introduced to enforce the constraint against double occupation.",
+            "24": "The implementation of the local constraint against double occupation leads naturally to gauge theories.",
+            "25": "The review follows the historical order.",
+            "26": "The review first examines the U(1) formulation of the gauge theory.",
+            "27": "Some inadequacies of the U(1) formulation for underdoping are discussed.",
+            "28": "The inadequacies of the U(1) formulation lead to the SU(2) formulation.",
+            "29": "A thorough discussion of the role of gauge theory in describing the spin-liquid phase of the undoped Mott insulator follows.",
+            "30": "The difference between the high-energy gauge group in the formulation of the problem and the low-energy gauge group, which is an emergent phenomenon, is emphasized.",
+            "31": "Several possible routes to deconfinement based on different emergent gauge groups are discussed.",
+            "32": "The discussion leads to the physics of fractionalization and spin-charge separation.",
+            "33": "The extension of the SU(2) formulation to nonzero doping is described.",
+            "34": "The description focuses on a part of the mean-field phase diagram called the staggered flux liquid phase.",
+            "35": "Inclusion of the gauge fluctuation provides a reasonable description of the pseudogap phase.",
+            "36": "d-wave superconductivity can be considered as evolving from a stable U(1) spin liquid.",
+            "37": "These ideas are applied to the high-Tc cuprates.",
+            "38": "The implications of these ideas for the vortex structure and the phase diagram are discussed.",
+            "39": "A possible test of the topological structure of the pseudogap phase is described."
+          }
+        },
+        "viewpoints": [
+          "Spinons are well-established quasiparticles in one-dimensional (1D) systems.",
+          "The presence of spinons in dimensions higher than one remains a contentious topic."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "In particular, spin-1/2 Heisenberg antiferromagnets (AFs) on quasi-2D square lattices have been the subject of tremendous research effort in connection with high-temperature superconductivity (HTSC) in cuprates [5].",
+        "references": {
+          "5": {
+            "1": "The discovery of high-temperature superconductivity in copper oxides occurred in 1986.",
+            "2": "The discovery of high-temperature superconductivity in copper oxides triggered a huge amount of innovative scientific inquiry.",
+            "3": "In the almost three decades since 1986, much has been learned about novel forms of quantum matter.",
+            "4": "The novel forms of quantum matter are exhibited in strongly correlated electron systems.",
+            "5": "A qualitative understanding of the nature of the superconducting state itself has been achieved.",
+            "6": "Unresolved issues include the astonishing complexity of the phase diagram.",
+            "7": "Unresolved issues include the unprecedented prominence of various forms of collective fluctuations.",
+            "8": "Unresolved issues include the simplicity of the 'normal' state at elevated temperatures.",
+            "9": "Unresolved issues include the insensitivity of the 'normal' state to material details at elevated temperatures."
+          }
+        },
+        "viewpoints": [
+          "Spin-1/2 Heisenberg AFs on quasi-2D square lattices have been the subject of tremendous research effort.",
+          "There is a connection between spin-1/2 Heisenberg AFs on quasi-2D square lattices and high-temperature superconductivity in cuprates."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Despite the presence of Néel AF orders and the absence of apparent frustrations in these systems, earlier theoretical and experimental works have indicated that they can accommodate gapped spinon modes [6], [7], [8].",
+        "references": {
+          "6": {
+            "1": "Vortex-condensation-driven Mott insulating behavior is central to the theory of the nodal liquid.",
+            "2": "The previous description of vortex condensation in 2D electronic systems is expanded upon.",
+            "3": "Vortex condensation in 2D electronic systems is a natural extension of 1D Mott insulating behavior.",
+            "4": "Vortex condensation in 2D electronic systems is a natural extension of 2D bosonic Mott insulating behavior.",
+            "5": "There is an important distinction between the condensation of flux hc/2e vortices and flux hc/e vortices in a superconducting pair field.",
+            "6": "Condensation of flux hc/2e vortices leads to spin-charge confinement.",
+            "7": "Spin-charge confinement is exemplified by the band insulator.",
+            "8": "Spin-charge confinement is exemplified by the charge-density wave.",
+            "9": "Condensation of flux hc/e vortices leads to the liberation of spin and charge.",
+            "10": "Liberation of spin and charge leads directly to a 2D Mott insulator.",
+            "11": "A 2D Mott insulator resulting from condensation of flux hc/e vortices exhibits spin-charge separation.",
+            "12": "A possible result of vortex condensation leading to spin-charge separation is the development of the nodal liquid.",
+            "13": "A possible result of vortex condensation leading to spin-charge separation is the development of an undoped antiferromagnetic insulating phase.",
+            "14": "An undoped antiferromagnetic insulating phase resulting from vortex condensation leading to spin-charge separation has gapped excitations.",
+            "15": "An undoped antiferromagnetic insulating phase resulting from vortex condensation leading to spin-charge separation exhibits spin-charge separation."
+          },
+          "7": {
+            "1": "Quantum magnets have been a central topic in many-body theory.",
+            "2": "Quantum magnets have been a central topic in low-temperature experiments on real materials.",
+            "3": "Quantum magnets have been a central topic since the early days of quantum mechanics.",
+            "4": "The understanding of deceptively simple systems of interacting spin-1/2 particles is far from complete.",
+            "5": "The quantum square-lattice Heisenberg antiferromagnet exhibits a striking anomaly in its magnetic excitation spectrum.",
+            "6": "The origin of the anomaly in the magnetic excitation spectrum of the quantum square-lattice Heisenberg antiferromagnet is unknown.",
+            "7": "The anomaly in the magnetic excitation spectrum of the quantum square-lattice Heisenberg antiferromagnet manifests for excitations propagating with the wavevector (π, 0).",
+            "8": "Polarized neutron spectroscopy is used to fully characterize the magnetic fluctuations in the metal-organic compound Cu(DCOO)₂·4D₂O.",
+            "9": "Cu(DCOO)₂·4D₂O is a known realization of the quantum square-lattice Heisenberg antiferromagnet model.",
+            "10": "Experiments reveal an isotropic excitation continuum at the anomaly in the quantum square-lattice Heisenberg antiferromagnet.",
+            "11": "The isotropic excitation continuum at the anomaly is analyzed theoretically using Gutzwiller-projected trial wavefunctions.",
+            "12": "The isotropic excitation continuum at the anomaly is explained by the existence of spatially extended pairs of fractional S = 1/2 quasiparticles.",
+            "13": "The spatially extended pairs of fractional S = 1/2 quasiparticles are 2D analogues of 1D spinons.",
+            "14": "Away from the anomalous wavevector, the fractional excitations are bound.",
+            "15": "Away from the anomalous wavevector, the fractional excitations form conventional magnons.",
+            "16": "The results establish the existence of fractional quasiparticles in the high-energy spectrum of a quasi-two-dimensional antiferromagnet.",
+            "17": "The existence of fractional quasiparticles in the high-energy spectrum of a quasi-two-dimensional antiferromagnet is established even in the absence of frustration."
+          },
+          "8": []
+        },
+        "viewpoints": [
+          "There are Néel AF orders and an absence of apparent frustrations in spin-1/2 Heisenberg AFs on quasi-2D square lattices.",
+          "Earlier theoretical and experimental works have indicated that spin-1/2 Heisenberg AFs on quasi-2D square lattices can accommodate gapped spinon modes."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Indeed, the broad continua observed across many copper-based square-lattice AFs [7], [9], [10], known as the ‘(π, 0) anomaly’, have been attributed to spinon excitations.",
+        "references": {
+          "7": {
+            "1": "Quantum magnets have been a central topic in many-body theory.",
+            "2": "Quantum magnets have been a central topic in low-temperature experiments on real materials.",
+            "3": "Quantum magnets have been a central topic since the early days of quantum mechanics.",
+            "4": "The understanding of deceptively simple systems of interacting spin-1/2 particles is far from complete.",
+            "5": "The quantum square-lattice Heisenberg antiferromagnet exhibits a striking anomaly in its magnetic excitation spectrum.",
+            "6": "The origin of the anomaly in the magnetic excitation spectrum of the quantum square-lattice Heisenberg antiferromagnet is unknown.",
+            "7": "The anomaly in the magnetic excitation spectrum of the quantum square-lattice Heisenberg antiferromagnet manifests for excitations propagating with the wavevector (π, 0).",
+            "8": "Polarized neutron spectroscopy is used to fully characterize the magnetic fluctuations in the metal-organic compound Cu(DCOO)₂·4D₂O.",
+            "9": "Cu(DCOO)₂·4D₂O is a known realization of the quantum square-lattice Heisenberg antiferromagnet model.",
+            "10": "Experiments reveal an isotropic excitation continuum at the anomaly in the quantum square-lattice Heisenberg antiferromagnet.",
+            "11": "The isotropic excitation continuum at the anomaly is analyzed theoretically using Gutzwiller-projected trial wavefunctions.",
+            "12": "The isotropic excitation continuum at the anomaly is explained by the existence of spatially extended pairs of fractional S = 1/2 quasiparticles.",
+            "13": "The spatially extended pairs of fractional S = 1/2 quasiparticles are 2D analogues of 1D spinons.",
+            "14": "Away from the anomalous wavevector, the fractional excitations are bound.",
+            "15": "Away from the anomalous wavevector, the fractional excitations form conventional magnons.",
+            "16": "The results establish the existence of fractional quasiparticles in the high-energy spectrum of a quasi-two-dimensional antiferromagnet.",
+            "17": "The existence of fractional quasiparticles in the high-energy spectrum of a quasi-two-dimensional antiferromagnet is established even in the absence of frustration."
+          },
+          "9": {
+            "1": "Inelastic neutron scattering is used to investigate the collective magnetic excitations of La₂CuO₄.",
+            "2": "La₂CuO₄ is the parent antiferromagnet of a high-temperature superconductor.",
+            "3": "Lower energy excitations in La₂CuO₄ are well described by spin-wave theory.",
+            "4": "Spin-wave theory includes one-magnon scattering processes.",
+            "5": "Spin-wave theory includes two-magnon scattering processes.",
+            "6": "High-energy spin waves in La₂CuO₄ are strongly damped near the (1/2,0) position in reciprocal space.",
+            "7": "High-energy spin waves in La₂CuO₄ merge into a momentum dependent continuum.",
+            "8": "Anomalous damping of high-energy spin waves in La₂CuO₄ indicates the decay of spin waves into other excitations.",
+            "9": "Other excitations may include unbound spinon pairs."
+          },
+          "10": []
+        },
+        "viewpoints": [
+          "Broad continua observed across many copper-based square-lattice AFs are known as the ‘(π, 0) anomaly’.",
+          "The ‘(π, 0) anomaly’ in copper-based square-lattice AFs has been attributed to spinon excitations."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Theoretically, their weights should increase in systems with enhanced long-range, multi-spin interactions competing with nearest-neighbor (NN) Heisenberg exchange (J) [11], [12], such as four-spin exchanges (Q) [8], [13], [14], which can destabilize the Néel AF order in favor of more exotic phases.",
+        "references": {
+          "11": {
+            "1": "Both exact diagonalizations and diagonalizations in a subset of short-range valence-bond singlets are used to address the nature of the groundstate of the Heisenberg spin-1/2 antiferromagnet on the square lattice.",
+            "2": "The Heisenberg spin-1/2 antiferromagnet on the square lattice includes competing next-nearest and next-next-nearest neighbor antiferromagnetic couplings (J1−J2−J3 model).",
+            "3": "A detailed comparison of exact diagonalizations and diagonalizations in a subset of short-range valence-bond singlets reveals a region along the line (J2+J3)/J1=1/2.",
+            "4": "The description in terms of nearest-neighbor singlet coverings is excellent in the region along the line (J2+J3)/J1=1/2.",
+            "5": "The excellent description in terms of nearest-neighbor singlet coverings provides evidence for a magnetically disordered region.",
+            "6": "A careful analysis of dimer-dimer correlation functions, dimer structure factors, and plaquette-plaquette correlation functions provides striking evidence for plaquette valence bond crystal order.",
+            "7": "Plaquette valence bond crystal order is present in part of the magnetically disordered region."
+          },
+          "12": {
+            "1": "The spin-1/2 J1-J2 Heisenberg model on the square lattice is one of the simplest examples demonstrating the suppression of magnetic order by magnetic interactions.",
+            "2": "The J1-J2 Heisenberg model can lead to a pure quantum phase with no local order parameters.",
+            "3": "The spin-1/2 J1-J2 Heisenberg model has been extensively studied over the last three decades.",
+            "4": "There have been conflicting results from studies on the spin-1/2 J1-J2 Heisenberg model.",
+            "5": "Gutzwiller-projected wave functions and recently developed methods are used to assess the low-energy spectrum of the model.",
+            "6": "There is a level crossing between the lowest-energy triplet and singlet excitations for J2/J1≈0.54 in the model.",
+            "7": "The level crossing supports the existence of a phase transition between a gapless spin liquid and a valence-bond solid.",
+            "8": "The gapless spin liquid is stable for 0.48≲J2/J1≲0.54.",
+            "9": "The valence-bond solid is stable for 0.54≲J2/J1≲0.6.",
+            "10": "No clear sign of dimer order is visible in the correlation functions.",
+            "11": "The results confirm recent density-matrix renormalization calculations on cylindrical clusters.",
+            "12": "The results reconcile the contradicting results obtained within different approaches over the years."
+          },
+          "8": [],
+          "13": {
+            "1": "The focus is on four-spin cyclic-exchange interactions on a two-dimensional square lattice of spin-1/2 Heisenberg antiferromagnetic.",
+            "2": "The system studied involves two-spin interactions between nearest and next-nearest neighbors.",
+            "3": "The goal is to study the effect of four-spin cyclic-exchange interactions on magnetic properties.",
+            "4": "The four-spin exchange competes with the effects of frustration in the system.",
+            "5": "This competition leads to a very rich phase diagram of the system.",
+            "6": "The standard spin-wave formalism is used to study the locations of different phases of the model.",
+            "7": "Perturbative expansions around various dimerized states are used to study the locations of different phases of the model.",
+            "8": "Finite-cluster calculations are used to study the locations of different phases of the model.",
+            "9": "The phase diagram in the frustration-cyclic exchange plane involves two collinear phases: (π,π) and (0,π).",
+            "10": "The phase diagram in the frustration-cyclic exchange plane involves three canted states.",
+            "11": "The phase diagram in the frustration-cyclic exchange plane involves two different dimerized configurations."
+          },
+          "14": {
+            "1": "The pseudogap metal phase of the hole-doped cuprate superconductors has a gap in the electronic spectrum in the \"antinodal\" region of the square lattice Brillouin zone.",
+            "2": "The pseudogap metal phase of the hole-doped cuprate superconductors has discrete broken symmetries.",
+            "3": "The gap in the electronic spectrum in the \"antinodal\" region of the square lattice Brillouin zone and discrete broken symmetries are seemingly unrelated characteristics of the pseudogap metal phase.",
+            "4": "The authors present a SU(2) gauge theory of quantum fluctuations of magnetically ordered states.",
+            "5": "Magnetically ordered states appear in a classical theory of square lattice antiferromagnets.",
+            "6": "Magnetically ordered states appear in a spin-density wave mean field theory of the square lattice Hubbard model.",
+            "7": "Magnetically ordered states appear in a CP^{1} theory of spinons.",
+            "8": "The SU(2) gauge theory leads to metals with an antinodal gap.",
+            "9": "The SU(2) gauge theory leads to metals with topological order.",
+            "10": "The topological order from the SU(2) gauge theory intertwines with the observed broken symmetries."
+          }
+        },
+        "viewpoints": [
+          "The weights of spinon excitations should increase in systems with enhanced long-range, multi-spin interactions competing with nearest-neighbor (NN) Heisenberg exchange (J).",
+          "Four-spin exchanges (Q) can destabilize the Néel AF order in favor of more exotic phases."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "However, these parameters are difficult to control experimentally and the existence of spinons in square lattices remains unsettled.",
+        "references": {},
+        "viewpoints": [
+          "The parameters affecting the weights of spinon excitations are difficult to control experimentally.",
+          "The existence of spinons in square lattices remains unsettled."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The realization of spin-orbit-entangled pseudospin-1/2 square-lattice AFs in iridates offers novel material platforms for exploring the problem in an uncharted parameter regime.",
+        "references": {},
+        "viewpoints": [
+          "Spin-orbit-entangled pseudospin-1/2 square-lattice AFs in iridates offer novel material platforms for exploring the problem of spinons in square lattices in an uncharted parameter regime."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "The strong spin-orbit coupling in iridates imparts unique properties to their exchange interactions, ranging from a nearly isotropic Heisenberg to a bond-directional Ising-like exchange interaction [15].",
+        "references": {
+          "15": {
+            "1": "The study focuses on magnetic interactions in Mott-Hubbard systems.",
+            "2": "The Mott-Hubbard systems have partially filled t_{2g} levels.",
+            "3": "The Mott-Hubbard systems have strong spin-orbit coupling.",
+            "4": "Strong spin-orbit coupling entangles the spin and orbital spaces.",
+            "5": "Strong spin-orbit coupling leads to a variety of low energy Hamiltonians.",
+            "6": "The variety of low energy Hamiltonians extrapolates from the Heisenberg model to a quantum compass model.",
+            "7": "The extrapolation of low energy Hamiltonians depends on lattice geometry.",
+            "8": "The entanglement of spin and orbital spaces and low energy Hamiltonian variety allow the engineering of an exactly solvable spin model in Mott insulators.",
+            "9": "The exactly solvable spin model by Kitaev is relevant for quantum computation.",
+            "10": "The study explains \"weak\" ferromagnetism in Sr2IrO4.",
+            "11": "The weak ferromagnetism in Sr2IrO4 has an anomalously large ferromagnetic moment."
+          }
+        },
+        "viewpoints": [
+          "Strong spin-orbit coupling in iridates imparts unique properties to their exchange interactions.",
+          "The exchange interactions in iridates range from a nearly isotropic Heisenberg to a bond-directional Ising-like exchange interaction."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "This leads to a variety of theoretical predictions for novel quantum magnets, including Kitaev spin liquid in honeycomb compounds [15], [16], [17], [18], [19], U(1) or Z2 quantum spin liquid in hyperkagome compounds [20], [21].",
+        "references": {
+          "15": {
+            "1": "The study focuses on magnetic interactions in Mott-Hubbard systems.",
+            "2": "The Mott-Hubbard systems have partially filled t_{2g} levels.",
+            "3": "The Mott-Hubbard systems have strong spin-orbit coupling.",
+            "4": "Strong spin-orbit coupling entangles the spin and orbital spaces.",
+            "5": "Strong spin-orbit coupling leads to a variety of low energy Hamiltonians.",
+            "6": "The variety of low energy Hamiltonians extrapolates from the Heisenberg model to a quantum compass model.",
+            "7": "The extrapolation of low energy Hamiltonians depends on lattice geometry.",
+            "8": "The entanglement of spin and orbital spaces and low energy Hamiltonian variety allow the engineering of an exactly solvable spin model in Mott insulators.",
+            "9": "The exactly solvable spin model by Kitaev is relevant for quantum computation.",
+            "10": "The study explains \"weak\" ferromagnetism in Sr2IrO4.",
+            "11": "The weak ferromagnetism in Sr2IrO4 has an anomalously large ferromagnetic moment."
+          },
+          "16": [],
+          "17": {
+            "1": "Heisenberg interactions are ubiquitous in magnetic materials.",
+            "2": "Heisenberg interactions play a central role in modelling quantum magnets.",
+            "3": "Heisenberg interactions play a central role in designing quantum magnets.",
+            "4": "Bond-directional interactions offer a novel alternative to Heisenberg exchange.",
+            "5": "Bond-directional interactions provide the building blocks of the Kitaev model.",
+            "6": "The Kitaev model has a quantum spin liquid as its exact ground state.",
+            "7": "Honeycomb iridates, A₂IrO₃ (A = Na, Li), offer potential realizations of the Kitaev magnetic exchange coupling.",
+            "8": "The reported magnetic behaviour of honeycomb iridates, A₂IrO₃ (A = Na, Li), may be interpreted within the Kitaev framework.",
+            "9": "The extent of the relevance of honeycomb iridates to the Kitaev model remains unclear.",
+            "10": "Evidence for bond-directional interactions in honeycomb iridates has so far been indirect.",
+            "11": "There is direct evidence for dominant bond-directional interactions in antiferromagnetic Na₂IrO₃.",
+            "12": "Dominant bond-directional interactions in antiferromagnetic Na₂IrO₃ lead to strong magnetic frustration.",
+            "13": "Diffuse magnetic X-ray scattering reveals broken spin-rotational symmetry even above the Néel temperature.",
+            "14": "The three spin components exhibit short-range correlations along distinct crystallographic directions.",
+            "15": "The spin- and real-space entanglement directly uncovers the bond-directional nature of these interactions.",
+            "16": "The spin- and real-space entanglement provides a direct connection between honeycomb iridates and Kitaev physics."
+          },
+          "18": {
+            "1": "Phenomena arise from the combined influence of electron correlation and spin-orbit coupling (SOC).",
+            "2": "The discussion emphasizes emergent quantum phases and transitions in heavy transition metal compounds with 4d and 5d elements.",
+            "3": "Spin-orbital entanglement produced by SOC influences the electronic structure.",
+            "4": "Spin-orbital entanglement produced by SOC influences the magnetic structure.",
+            "5": "In the weak-to-intermediate correlation regime, nontrivial band-like topology leads to a plethora of phases related to topological insulators (TIs).",
+            "6": "The example of pyrochlore iridates is used to expound on nontrivial band-like topology leading to phases related to topological insulators (TIs).",
+            "7": "In the context of pyrochlore iridates, novel phases such as the Weyl semimetal, axion insulator, topological Mott insulator, and TIs may arise.",
+            "8": "In the strong correlation regime, spin-orbital entanglement fully removes orbital degeneracy.",
+            "9": "In the strong correlation regime, spin-orbital entanglement partially removes orbital degeneracy.",
+            "10": "Removing or reducing orbital degeneracy reduces or avoids the normally ubiquitous Jahn-Teller effect.",
+            "11": "Spin-orbital entanglement in honeycomb-lattice iridates leads to enhanced quantum fluctuations of the spin-orbital entangled states.",
+            "12": "Spin-orbital entanglement in double perovskites leads to enhanced quantum fluctuations of the spin-orbital entangled states.",
+            "13": "Enhanced quantum fluctuations of the spin-orbital entangled states provide the chance to promote exotic spin liquid ground states.",
+            "14": "Enhanced quantum fluctuations of the spin-orbital entangled states provide the chance to promote multipolar ordered ground states.",
+            "15": "Connections to experiments are discussed.",
+            "16": "Connections to materials are discussed.",
+            "17": "Future directions are discussed."
+          },
+          "19": {
+            "1": "The effects of spin-orbit coupling (SOC) in correlated materials have recently become a major research focus in condensed matter physics.",
+            "2": "Correlations and spin-orbit coupling (SOC) together can lead to the discovery of new phases in condensed matter physics.",
+            "3": "Unconventional magnetism is an example of a new phase that can emerge from the combination of correlations and spin-orbit coupling in condensed matter physics.",
+            "4": "Spin liquids are an example of a new phase that can emerge from the combination of correlations and spin-orbit coupling in condensed matter physics.",
+            "5": "Strongly correlated topological phases such as topological superconductivity are examples of new phases that can emerge from the combination of correlations and spin-orbit coupling in condensed matter physics.",
+            "6": "Iridium oxides (iridates) are among the candidate materials for studying the novel phenomena emerging from correlations and spin-orbit coupling.",
+            "7": "Iridium oxides (iridates) have been an excellent playground to uncover novel phenomena related to correlations and spin-orbit coupling.",
+            "8": "The review discusses recent progress in iridates and related materials.",
+            "9": "The review focuses on the basic concepts of iridates and related materials.",
+            "10": "The review focuses on the relevant microscopic Hamiltonians of iridates and related materials.",
+            "11": "The review focuses on the unusual properties of iridates in perovskite-based structures.",
+            "12": "The review focuses on the unusual properties of iridates in honeycomb-based structures.",
+            "13": "The review discusses perspectives on spin-orbit coupling and correlation physics beyond iridates."
+          },
+          "20": {
+            "1": "Na₄Ir₃O₈, a spinel related oxide, has a three dimensional network of corner shared Ir⁴⁺ (t₂g⁵) triangles.",
+            "2": "Na₄Ir₃O₈'s structure gives rise to an antiferromagnetically coupled S = 1/2 spin system.",
+            "3": "The spin system of Na₄Ir₃O₈ is formed on a geometrically frustrated hyperkagome lattice.",
+            "4": "Magnetization and magnetic specific heat data showed the absence of long range magnetic ordering in Na₄Ir₃O₈ at least down to 2 K.",
+            "5": "The large magnetic specific heat at low temperatures in Na₄Ir₃O₈ is independent of applied magnetic field up to 12 T.",
+            "6": "The behavior of Na₄Ir₃O₈'s magnetic specific heat is parallel to that seen in triangular and kagome antiferromagnets with a spin-liquid ground state.",
+            "7": "The results suggest that the ground state of Na₄Ir₃O₈ is a three dimensional manifestation of a spin liquid."
+          },
+          "21": {
+            "1": "The complex iridium oxide Na₃Ir₃O₈ has a B-site ordered spinel structure.",
+            "2": "Na₃Ir₃O₈ was synthesized in single crystalline form.",
+            "3": "The chiral hyper-kagome lattice of Ir ions was identified in Na₃Ir₃O₈.",
+            "4": "The chiral hyper-kagome lattice of Ir ions is similar to that observed in the spin-liquid candidate Na₄Ir₃O₈.",
+            "5": "The average valence of Ir in Na₃Ir₃O₈ is 4.33+.",
+            "6": "Na₃Ir₃O₈ can be viewed as a doped analogue of the hyper-kagome spin liquid with Ir⁴⁺.",
+            "7": "Transport measurements indicate that the ground state of Na₃Ir₃O₈ is a low carrier density semi-metal.",
+            "8": "Electronic structure calculations indicate that the ground state of Na₃Ir₃O₈ is a low carrier density semi-metal.",
+            "9": "The semi-metallic state of Na₃Ir₃O₈ is produced by a competition of the molecular orbital splitting of t₂g orbitals on Ir₃ triangles.",
+            "10": "The semi-metallic state of Na₃Ir₃O₈ is influenced by strong spin-orbit coupling inherent to heavy Ir ions."
+          }
+        },
+        "viewpoints": [
+          "The unique properties of iridate exchange interactions lead to a variety of theoretical predictions for novel quantum magnets.",
+          "Kitaev spin liquid is a predicted novel quantum magnet in honeycomb compounds.",
+          "U(1) or Z2 quantum spin liquid is a predicted novel quantum magnet in hyperkagome compounds."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Similarly, in square-lattice iridates, enhanced higher-order spin interactions from spatially extended 5d orbitals and increased virtual charge fluctuations due to a small charge gap [22] underlie the strong deviation of the single-layer (SL) Sr2IrO4 from the NN Heisenberg model [23] and the exceptionally large spin gap in the double-layer (DL) Sr3Ir2O7 [24], [25].",
+        "references": {
+          "22": {
+            "1": "The electronic structures of the 5d Ruddlesden-Popper series Sr_{n+1}Ir_{n}O_{3n+1} (n=1, 2, and ∞) were investigated.",
+            "2": "Optical spectroscopy and first-principles calculations were used to investigate the electronic structures.",
+            "3": "5d orbitals are spatially more extended than 3d or 4d orbitals.",
+            "4": "It has been widely accepted that correlation effects are minimal in 5d compounds.",
+            "5": "A Mott insulator-metal transition was observed with a change of bandwidth as n was increased.",
+            "6": "The artificially synthesized perovskite SrIrO_{3} showed a very large mass enhancement of about 6.",
+            "7": "The large mass enhancement of SrIrO_{3} indicates that it was in a correlated metallic state."
+          },
+          "23": {
+            "1": "Resonant inelastic x-ray scattering was used to reveal the nature of magnetic interactions in Sr₂IrO₄.",
+            "2": "Sr₂IrO₄ is a 5d transition-metal oxide with a spin-orbit entangled ground state.",
+            "3": "Sr₂IrO₄ has J_eff = 1/2 magnetic moments.",
+            "4": "The magnon dispersion in Sr₂IrO₄ is well-described by an antiferromagnetic Heisenberg model with an effective spin one-half on a square lattice.",
+            "5": "The low-energy effective physics of Sr₂IrO₄ is much akin to that in superconducting cuprates.",
+            "6": "The similarity between Sr₂IrO₄ and superconducting cuprates is supported by the observation of exciton modes in Sr₂IrO₄.",
+            "7": "The dispersion of exciton modes in Sr₂IrO₄ is strongly renormalized by magnons.",
+            "8": "The renormalization of exciton modes by magnons in Sr₂IrO₄ can be understood by analogy to hole propagation in the background of antiferromagnetically ordered spins in the cuprates."
+          },
+          "24": {
+            "1": "Resonant inelastic x-ray scattering is used to observe the bilayer iridate Sr₃Ir₂O₇.",
+            "2": "Sr₃Ir₂O₇ is a spin-orbit coupling driven magnetic insulator.",
+            "3": "Sr₃Ir₂O₇ has a small charge gap.",
+            "4": "A magnon gap of ≈92 meV is observed in Sr₃Ir₂O₇ for both acoustic and optical branches.",
+            "5": "The magnon gap of ≈92 meV in Sr₃Ir₂O₇ exceeds the total magnon bandwidth of ≈70 meV.",
+            "6": "The magnon gap observation in Sr₃Ir₂O₇ implies a marked departure from the Heisenberg model.",
+            "7": "The magnon gap in Sr₃Ir₂O₇ is in stark contrast to the magnon gap in the single-layer iridate Sr₂IrO₄.",
+            "8": "The giant magnon gap in Sr₃Ir₂O₇ results from bond-directional pseudodipolar interactions.",
+            "9": "Bond-directional pseudodipolar interactions are strongly enhanced near the metal-insulator transition boundary.",
+            "10": "Novel magnetism may emerge in small charge-gap iridates.",
+            "11": "The novel magnetism in small charge-gap iridates may be inspired by the Kitaev model.",
+            "12": "The novel magnetism in small charge-gap iridates may be built on pseudodipolar interactions."
+          },
+          "25": {
+            "1": "The magnetic excitation spectrum in the bilayer iridate Sr₃Ir₂O₇ has been investigated.",
+            "2": "High-resolution resonant inelastic x-ray scattering (RIXS) performed at the iridium L₃ edge was used in the investigation.",
+            "3": "Theoretical techniques were used in the investigation.",
+            "4": "The study of the systematic dependence of the RIXS spectrum on the orientation of the wave-vector transfer Q revealed information about the magnon dispersion.",
+            "5": "The magnon dispersion in the RIXS spectrum is comprised of two branches.",
+            "6": "The two branches in the magnon dispersion are well separated in energy.",
+            "7": "The magnon dispersion is gapped across the entire Brillouin zone.",
+            "8": "The results of the current study contrast with those of an earlier study.",
+            "9": "The earlier study reported the existence of a single dominant branch in the magnon dispersion.",
+            "10": "The earlier results were interpreted as two overlapping modes.",
+            "11": "The earlier results were interpreted within a spin-wave model of weakly coupled iridium-oxide planes.",
+            "12": "The current results are more reminiscent of those expected for a system of weakly coupled dimers.",
+            "13": "In the weakly coupled dimer system approach, the lower-energy mode corresponds to transverse fluctuations.",
+            "14": "In the weakly coupled dimer system approach, the higher-energy mode corresponds to longitudinal fluctuations.",
+            "15": "A bond-operator theory has been developed.",
+            "16": "The bond-operator theory describes the magnetic dispersion in Sr₃Ir₂O₇ in terms of quantum dimer excitations.",
+            "17": "In the model, dimerization is produced by the leading Heisenberg exchange Jc.",
+            "18": "The Heisenberg exchange Jc couples iridium ions in adjacent planes of the bilayer.",
+            "19": "The Hamiltonian includes in-plane exchange J.",
+            "20": "The Hamiltonian includes further neighbor couplings.",
+            "21": "The Hamiltonian includes relevant anisotropies.",
+            "22": "The bond-operator theory provides an excellent account of the dispersion of both modes.",
+            "23": "The measured Q dependence of the RIXS intensities is in reasonable qualitative accord with the spin-spin correlation function calculated from the theory.",
+            "24": "The results are discussed in the context of the quantum criticality of bilayer dimer systems.",
+            "25": "The discussion considers the presence of anisotropic interactions derived from strong spin-orbit coupling."
+          }
+        },
+        "viewpoints": [
+          "Enhanced higher-order spin interactions from spatially extended 5d orbitals in square-lattice iridates lead to a strong deviation of the single-layer (SL) Sr2IrO4 from the NN Heisenberg model.",
+          "Increased virtual charge fluctuations due to a small charge gap result in the exceptionally large spin gap in the double-layer (DL) Sr3Ir2O7."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Thus, the nature of exchange interactions in iridates varies widely even within the Ruddlesden-Popper (R-P) series Srn+1ArnO3n+1.",
+        "references": {},
+        "viewpoints": [
+          "The nature of exchange interactions in iridates varies widely even within the Ruddlesden-Popper (R-P) series Srn+1ArnO3n+1."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "This allows for the possibility of heterointerfacing different types of magnetism in a superlattice, which may induce magnetic frustration through proximity coupling of symmetry-distinct orders [26].",
+        "references": {
+          "26": {
+            "1": "There is a subtle balance between competing interactions in iron-based superconductors (FeSCs).",
+            "2": "Additional interfacial interactions in a heterostructure can tip the balance between competing interactions in FeSCs.",
+            "3": "Tipping the balance between competing interactions in FeSCs often induces exotic phases with unprecedented properties.",
+            "4": "Rich phase diagrams are expected in FeSCs when the proximity-coupled layer is magnetically active.",
+            "5": "The exploration of rich phase diagrams in FeSCs with magnetically active proximity-coupled layers has not been conducted yet.",
+            "6": "High-accuracy ^{75}As and ^{51}V nuclear magnetic resonance measurements are used in the investigation.",
+            "7": "The investigation focuses on an electronic phase that emerges in the FeAs layer below T _{0} ~ 155 K of Sr_{2}VO_{3}FeAs.",
+            "8": "Sr_{2}VO_{3}FeAs is a naturally assembled heterostructure of an FeSC and a Mott-insulating vanadium oxide.",
+            "9": "Frustration of the otherwise dominant Fe stripe and V Neel fluctuations via interfacial coupling induces a charge/orbital order in the FeAs layers.",
+            "10": "The induced charge/orbital order in the FeAs layers occurs without static magnetism or broken C _{4} symmetry.",
+            "11": "Frustration via interfacial coupling suppresses the Neel antiferromagnetism in the SrVO_{3} layers.",
+            "12": "The magnetic proximity coupling stabilizes a hidden order in FeSCs.",
+            "13": "The stabilization of a hidden order by magnetic proximity coupling may apply to other strongly correlated heterostructures."
+          }
+        },
+        "viewpoints": [
+          "The varied nature of exchange interactions in iridates allows for the possibility of heterointerfacing different types of magnetism in a superlattice.",
+          "Heterointerfacing different types of magnetism in a superlattice may induce magnetic frustration through proximity coupling of symmetry-distinct orders."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "In this article, we demonstrate a heterostructure-based strategy to frustrate the Néel AF order in square-lattice iridates.",
+        "references": {},
+        "viewpoints": [
+          "The article demonstrates a heterostructure-based strategy to frustrate the Néel AF order in square-lattice iridates."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "We use time-resolved resonant x-ray diffraction (RXD) to measure the degree of quantum fluctuations through the recovery dynamics of the AF order after its transient suppression by an optical pump, which significantly slows down with enhanced frustration.",
+        "references": {},
+        "viewpoints": [
+          "Time-resolved resonant x-ray diffraction (RXD) is used to measure the degree of quantum fluctuations in square-lattice iridates.",
+          "RXD measures the recovery dynamics of the AF order after its transient suppression by an optical pump.",
+          "The recovery dynamics significantly slow down with enhanced frustration."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "We use polarization-resolved resonant inelastic x-ray scattering (RIXS) and high-energy-resolution RIXS to reveal the absence of single magnons in most part of the Brillouin zone away from the immediate vicinity of the ordering wavevector.",
+        "references": {},
+        "viewpoints": [
+          "Polarization-resolved resonant inelastic x-ray scattering (RIXS) and high-energy-resolution RIXS are used to study square-lattice iridates.",
+          "RIXS reveals the absence of single magnons in most of the Brillouin zone away from the immediate vicinity of the ordering wavevector."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Instead, the spectra are dominated by isotropic continua, which provide compelling evidence for spinons in a square-lattice Heisenberg AF.",
+        "references": {},
+        "viewpoints": [
+          "The spectra in square-lattice iridates are dominated by isotropic continua.",
+          "Isotropic continua provide compelling evidence for spinons in a square-lattice Heisenberg AF."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56635-x_with_abstracts",
+    "base_id": "s41467-025-56635-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56635-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

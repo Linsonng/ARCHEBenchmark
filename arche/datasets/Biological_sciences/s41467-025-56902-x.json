@@ -1,0 +1,736 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "The COVID-19 pandemic has accelerated antiviral and vaccine development [1] . Drug repurposing was the primary strategy early in the pandemic, but genuinely new strategies have also emerged [2] , [3] . One of the ultimate goals is to develop broad-spectrum oral antivirals that can be used to prevent and treat pathogens with pandemic potential [4] . Priorities have been given to conserved viral targets, including polymerases and proteases. The SARS-CoV-2 RNA-dependent RNA polymerase (RdRp) inhibitors remdesivir and molnupiravir are known to have broad-spectrum antiviral activities against viruses in different families. For example, remdesivir, developed initially against the hepatitis C virus, has well-documented antiviral efficacy against filoviruses (e.g., Ebola, Marburg), coronaviruses (e.g., MERS-CoV, SARS-CoV, and SARS-CoV-2), Pneumoviridae (e.g., respiratory syncytial virus), and paramyxoviruses (e.g., Nipah, Hendra, measles, and mumps) [5] , [6] . Molnupiravir is effective against influenza viruses and coronaviruses [7] . Similarly, the SARS-CoV-2 main protease (M pro ) inhibitor nirmatrelvir has broad-spectrum antiviral activity against SARS-CoV, MERS-CoV, SARS-CoV-2, and common human coronaviruses HCoV-OC43, 229E, NL63, and HKU1 [8] , [9] . Additional antivirals with alternative mechanisms of action are needed to combat viruses for which no antivirals are available or for which drug resistance issues with current antivirals are associated. Structurally disparate compounds have been developed as SARS-CoV-2 M pro inhibitors through high-throughput screening (HTS), fragment-based and structure-based design [1] , [10] . Paxlovid, a combination of the M pro inhibitor nirmatrelvir and metabolic enhancer ritonavir, is approved by the FDA [9] . Ensitrelvir is a noncovalent M pro inhibitor approved in Japan and Singapore [11] . Several additional M pro inhibitors are at different stages of clinical trials, including Pfizer’s second-generation inhibitor PF-07817883 (Ibuzatrelvir) [12] and Merck’s MK-7845 [13] . Mutations have emerged in M pro among circulating strains [14] , including the predominant mutation P132H [15] . Fortunately, the P132H mutant remains sensitive to nirmatrelvir [15] , and drug-resistant variants have yet to become prevalent in the clinic. Nevertheless, nirmatrelvir-resistant mutants have been identified from in vitro viral passage and enzymatic assay experiments [16] , [17] , [18] , [19] . The M pro L50F/E166A/L167F triple mutant is of particular concern as the corresponding recombinant virus showed a high level of drug resistance while maintaining similar fitness of replication in cell culture and animals [19] , [20] . The Nsp5-L50F/E166V mutant was found in an immunocompromised human patient who underwent prolonged Paxlovid treatment [21] . The SARS-CoV-2 papain-like protease (PL pro ) is the second cysteine protease expressed by SARS-CoV-2 in addition to M pro during viral replication. PL pro is part of the non-structural protein 3 (nsp3) and cleaves viral polyproteins at the nsp1/2, nsp2/3, and nsp3/4 junctions [22] . PL pro also has deubiquitinase and deISGylase activities and cleaves ubiquitin and ISG15 conjugates from host proteins, a mechanism to antagonize host immune responses [23] , [24] . Since the COVID-19 pandemic, the interest in developing PL pro inhibitors has resurged, and several PL pro inhibitors have been identified from HTS, drug repurposing, and virtual screening [25] . PL pro is a cysteine protease with shallow S1 and S2 substrate binding sites (corresponds to Gly-Gly in substrates) [22] , which accounts for the challenges in designing covalent and noncovalent PL pro inhibitors [26] . The noncovalent naphthalene compound GRL0617 and its analogs are the major PL pro inhibitors with a validated mechanism of action [25] , [27] . Our recent study revealed a first-in-class rationally designed noncovalent inhibitor Jun12682 showing in vivo antiviral efficacy in a mouse model of SARS-CoV-2 infection [28] . Jun12682 binds to the same site as GRL0617 in the blocking loop 2 (BL2) region. In addition, Jun12682 extends to a previously unexplored binding site, Val70 Ub , which accounts for its high potency. In this work, we design a series of quinoline analogs to similarly target the Val70 Ub site. The X-ray crystal structures of PL pro with six lead compounds reveal interesting findings: while five compounds, Jun13317, Jun13306, Jun13307, Jun13308 , and Jun13296 have their 2-aryl substituent occupying the Val70 Ub site as expected, Jun12665 adopts a flipped orientation with the 2-pyrazolyl substitution fitting in the BL2 groove site. The in vivo lead Jun13296 displays more potent enzymatic inhibition and antiviral activity than the previously reported biarylphenyl inhibitor Jun12682 . In a SARS-CoV-2 infection mouse model, oral treatment of Jun13296 displays improved in vivo antiviral efficacy than Jun12682 . Collectively, Jun13296 represents a promising PL pro antiviral drug candidate for further development.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "The COVID-19 pandemic has accelerated antiviral and vaccine development [1].",
+        "references": {
+          "1": {
+            "1": "The COVID-19 pandemic has stimulated tremendous efforts to develop therapeutic strategies targeting SARS-CoV-2.",
+            "2": "The COVID-19 pandemic has stimulated efforts to develop therapeutic strategies targeting human proteins to control viral infection.",
+            "3": "Efforts to develop therapeutic strategies for COVID-19 include hundreds of potential drugs.",
+            "4": "Efforts to develop therapeutic strategies for COVID-19 involve thousands of patients in clinical trials.",
+            "5": "A few small-molecule antiviral drugs, including nirmatrelvir-ritonavir, remdesivir, and molnupiravir, have been marketed for the treatment of COVID-19.",
+            "6": "11 monoclonal antibodies have been marketed for the treatment of COVID-19.",
+            "7": "The marketed small-molecule antiviral drugs and monoclonal antibodies for COVID-19 mostly require administration within 10 days of symptom onset.",
+            "8": "Hospitalized patients with severe or critical COVID-19 may benefit from treatment with previously approved immunomodulatory drugs.",
+            "9": "Previously approved immunomodulatory drugs include glucocorticoids such as dexamethasone, cytokine antagonists such as tocilizumab, and Janus kinase inhibitors such as baricitinib.",
+            "10": "The paper summarizes progress with COVID-19 drug discovery.",
+            "11": "The summary is based on accumulated findings since the COVID-19 pandemic began.",
+            "12": "The summary is based on a comprehensive list of clinical and preclinical inhibitors with anti-coronavirus activities.",
+            "13": "The paper discusses lessons learned from COVID-19 regarding drug repurposing strategies.",
+            "14": "Lessons from COVID-19 include insights related to pan-coronavirus drug targets.",
+            "15": "Lessons from COVID-19 include insights related to in vitro assays and animal models.",
+            "16": "The paper discusses platform trial design for the development of therapeutics to tackle COVID-19, long COVID, and pathogenic coronaviruses.",
+            "17": "The paper addresses lessons learned from other infectious diseases in addition to COVID-19."
+          }
+        },
+        "viewpoints": [
+          "The COVID-19 pandemic has accelerated antiviral development.",
+          "The COVID-19 pandemic has accelerated vaccine development."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Drug repurposing was the primary strategy early in the pandemic, but genuinely new strategies have also emerged [2], [3].",
+        "references": {
+          "2": {
+            "1": "Lead drugs are emerging to treat COVID-19.",
+            "2": "New drugs are being identified as potential treatments for COVID-19."
+          },
+          "3": {
+            "1": "The COVID Moonshot is a fully open-science drug discovery campaign.",
+            "2": "The COVID Moonshot is crowdsourced.",
+            "3": "The COVID Moonshot is structure-enabled.",
+            "4": "The COVID Moonshot targets the SARS-CoV-2 main protease.",
+            "5": "A noncovalent, nonpeptidic inhibitor scaffold with lead-like properties was discovered.",
+            "6": "The discovered inhibitor scaffold is differentiated from current main protease inhibitors.",
+            "7": "The approach leveraged crowdsourcing.",
+            "8": "The approach leveraged machine learning.",
+            "9": "The approach leveraged exascale molecular simulations.",
+            "10": "The approach leveraged high-throughput structural biology and chemistry.",
+            "11": "A detailed map of the structural plasticity of the SARS-CoV-2 main protease was generated.",
+            "12": "Extensive structure-activity relationships for multiple chemotypes were generated.",
+            "13": "A wealth of biochemical activity data was generated.",
+            "14": "All compound designs (>18,000 designs) for the campaign were shared rapidly and openly.",
+            "15": "All crystallographic data (>490 ligand-bound x-ray structures) for the campaign were shared rapidly and openly.",
+            "16": "All assay data (>10,000 measurements) for the campaign were shared rapidly and openly.",
+            "17": "All synthesized molecules (>2400 compounds) for the campaign were shared rapidly and openly.",
+            "18": "The rapid and open sharing of data created a rich, open, and intellectual property-free knowledge base.",
+            "19": "The rich, open, and intellectual property-free knowledge base supports future anticoronavirus drug discovery."
+          }
+        },
+        "viewpoints": [
+          "Drug repurposing was the primary strategy early in the COVID-19 pandemic.",
+          "Genuinely new strategies for antiviral development have emerged during the COVID-19 pandemic."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "One of the ultimate goals is to develop broad-spectrum oral antivirals that can be used to prevent and treat pathogens with pandemic potential [4].",
+        "references": {
+          "4": {
+            "1": "There is a large global unmet need for the development of countermeasures to combat viruses known to cause human disease.",
+            "2": "There is a large global unmet need for the establishment of a therapeutic portfolio for future pandemic preparedness.",
+            "3": "Most approved antiviral therapeutics target proteins encoded by a single virus.",
+            "4": "The targeting of proteins encoded by a single virus by most approved antiviral therapeutics provides a narrow spectrum of coverage.",
+            "5": "The targeting of proteins encoded by a single virus combined with the slow pace of drug development limits the scalability of the direct-acting antiviral (DAA) approach.",
+            "6": "The targeting of proteins encoded by a single virus combined with the high cost of drug development limits the scalability of the direct-acting antiviral (DAA) approach.",
+            "7": "Progress and challenges exist in the development of broad-spectrum antivirals that target viral elements such as proteins, genome structures, and lipid envelopes.",
+            "8": "Progress and challenges exist in the development of broad-spectrum antivirals that target cellular proviral factors co-opted by multiple viruses.",
+            "9": "Broad-spectrum antivirals can be developed via newly discovered compounds.",
+            "10": "Broad-spectrum antivirals can be developed via repurposing of approved drugs.",
+            "11": "Strategies that target viral elements or cellular proviral factors offer new means for developing therapeutics against existing viral threats.",
+            "12": "Strategies that target viral elements or cellular proviral factors offer new means for developing therapeutics against emerging viral threats.",
+            "13": "These strategies complement direct-acting antivirals (DAAs)."
+          }
+        },
+        "viewpoints": [
+          "The ultimate goal is to develop broad-spectrum oral antivirals.",
+          "Broad-spectrum oral antivirals can be used to prevent pathogens with pandemic potential.",
+          "Broad-spectrum oral antivirals can be used to treat pathogens with pandemic potential."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Priorities have been given to conserved viral targets, including polymerases and proteases.",
+        "references": {},
+        "viewpoints": [
+          "Conserved viral targets have been prioritized in antiviral development.",
+          "Polymerases are included in the conserved viral targets.",
+          "Proteases are included in the conserved viral targets."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "The SARS-CoV-2 RNA-dependent RNA polymerase (RdRp) inhibitors remdesivir and molnupiravir are known to have broad-spectrum antiviral activities against viruses in different families.",
+        "references": {},
+        "viewpoints": [
+          "Remdesivir is a SARS-CoV-2 RNA-dependent RNA polymerase (RdRp) inhibitor.",
+          "Molnupiravir is a SARS-CoV-2 RNA-dependent RNA polymerase (RdRp) inhibitor.",
+          "Remdesivir is known to have broad-spectrum antiviral activity against viruses in different families.",
+          "Molnupiravir is known to have broad-spectrum antiviral activity against viruses in different families."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "For example, remdesivir, developed initially against the hepatitis C virus, has well-documented antiviral efficacy against filoviruses (e.g., Ebola, Marburg), coronaviruses (e.g., MERS-CoV, SARS-CoV, and SARS-CoV-2), Pneumoviridae (e.g., respiratory syncytial virus), and paramyxoviruses (e.g., Nipah, Hendra, measles, and mumps) [5], [6].",
+        "references": {
+          "5": {
+            "1": "Remdesivir is a single diastereomer monophosphoramidate prodrug.",
+            "2": "Remdesivir is a prodrug of an adenosine analog named GS-441524.",
+            "3": "Remdesivir is taken up by target cells.",
+            "4": "Remdesivir is metabolized in multiple steps.",
+            "5": "The metabolism of Remdesivir forms the active nucleoside triphosphate GS-443902.",
+            "6": "GS-443902 acts as a potent inhibitor of viral RNA-dependent RNA polymerases.",
+            "7": "Remdesivir has antiviral activity against multiple RNA viruses.",
+            "8": "GS-441524 has antiviral activity against multiple RNA viruses.",
+            "9": "The evaluation of remdesivir's antiviral activity is expanded to Flaviviridae, Picornaviridae, Filoviridae, Orthomyxoviridae, and Hepadnaviridae.",
+            "10": "Cell-based assays show that remdesivir can inhibit infection of flaviviruses, such as dengue 1-4, West Nile, yellow fever, and Zika viruses.",
+            "11": "Cell-based assays show that remdesivir can inhibit infection of picornaviruses, such as enterovirus and rhinovirus.",
+            "12": "Cell-based assays show that remdesivir can inhibit infection of filoviruses, such as various Ebola, Marburg, and Sudan virus isolates, including novel geographic isolates.",
+            "13": "Remdesivir is ineffective or significantly less effective against orthomyxoviruses, including influenza A and B viruses.",
+            "14": "Remdesivir is ineffective or significantly less effective against hepadnaviruses B, D, and E.",
+            "15": "Remdesivir shows no antagonistic effect when combined with favipiravir.",
+            "16": "Favipiravir is another broadly acting antiviral nucleoside analog.",
+            "17": "Remdesivir has minimal interaction with a panel of concomitant medications.",
+            "18": "Data support remdesivir as a broad-spectrum antiviral agent.",
+            "19": "Remdesivir has the potential to address multiple unmet medical needs.",
+            "20": "Remdesivir has the potential to address medical needs related to antiviral pandemic preparedness."
+          },
+          "6": {
+            "1": "Patients worldwide are facing tremendous health care hazards due to the SARS-CoV-2 pandemic.",
+            "2": "Physicians worldwide are facing tremendous health care hazards due to the SARS-CoV-2 pandemic.",
+            "3": "Remdesivir (GS-5734) is the first approved treatment for severe COVID-19.",
+            "4": "Remdesivir is a novel nucleoside analog.",
+            "5": "Remdesivir has a broad antiviral activity spectrum among RNA viruses.",
+            "6": "Remdesivir is active against ebolavirus (EBOV).",
+            "7": "Remdesivir is active against Middle East respiratory syndrome coronavirus (MERS-CoV).",
+            "8": "Remdesivir is active against SARS-CoV.",
+            "9": "Remdesivir is active against SARS-CoV-2.",
+            "10": "Remdesivir was first described in 2016.",
+            "11": "Remdesivir was derived from an antiviral library of small molecules.",
+            "12": "The antiviral library from which Remdesivir was derived was intended to target emerging pathogenic RNA viruses."
+          }
+        },
+        "viewpoints": [
+          "Remdesivir was initially developed against the hepatitis C virus.",
+          "Remdesivir has well-documented antiviral efficacy against filoviruses, including Ebola and Marburg.",
+          "Remdesivir has well-documented antiviral efficacy against coronaviruses, including MERS-CoV, SARS-CoV, and SARS-CoV-2.",
+          "Remdesivir has well-documented antiviral efficacy against Pneumoviridae, including the respiratory syncytial virus.",
+          "Remdesivir has well-documented antiviral efficacy against paramyxoviruses, including Nipah, Hendra, measles, and mumps."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Molnupiravir is effective against influenza viruses and coronaviruses [7].",
+        "references": {
+          "7": {
+            "1": "<The Start of the section>",
+            "2": "Molnupiravir is an orally available antiviral drug candidate currently in phase III trials for the treatment of patients with COVID-19.",
+            "3": "Molnupiravir is an orally available antiviral drug candidate.",
+            "4": "Molnupiravir is currently in phase III trials.",
+            "5": "Molnupiravir is intended for the treatment of patients with COVID-19.",
+            "6": "Molnupiravir increases the frequency of viral RNA mutations.",
+            "7": "Molnupiravir impairs SARS-CoV-2 replication in animal models.",
+            "8": "Molnupiravir impairs SARS-CoV-2 replication in humans.",
+            "9": "The study establishes the molecular mechanisms underlying molnupiravir-induced RNA mutagenesis by viral RNA-dependent RNA polymerase (RdRp).",
+            "10": "(The rest of the sentence is missing in the input. The extraction of viewpoints from this sentence is incomplete due to insufficient information.)"
+          }
+        },
+        "viewpoints": [
+          "Molnupiravir is effective against influenza viruses.",
+          "Molnupiravir is effective against coronaviruses."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Similarly, the SARS-CoV-2 main protease (M pro) inhibitor nirmatrelvir has broad-spectrum antiviral activity against SARS-CoV, MERS-CoV, SARS-CoV-2, and common human coronaviruses HCoV-OC43, 229E, NL63, and HKU1 [8], [9].",
+        "references": {
+          "8": {
+            "1": "The rapid development of effective vaccines to combat the SARS-CoV-2 virus has decreased hospitalization in many countries.",
+            "2": "The rapid development of effective vaccines to combat the SARS-CoV-2 virus has decreased the mortality rate in many countries.",
+            "3": "The risk of mutated strains may decrease the efficacy of the vaccine.",
+            "4": "There has been an increasing demand for antivirals to treat COVID-19 due to the risk of mutated strains decreasing the efficacy of the vaccine.",
+            "5": "Antivirals such as remdesivir have had some success treating COVID-19 patients in hospital settings.",
+            "6": "There is a need for orally bioavailable, cost-effective antivirals that can be administered in outpatient settings.",
+            "7": "Orally bioavailable, cost-effective antivirals administered in outpatient settings can minimize COVID-19-related hospitalizations.",
+            "8": "Orally bioavailable, cost-effective antivirals administered in outpatient settings can minimize COVID-19-related deaths.",
+            "9": "Nirmatrelvir (PF-07321332) is orally bioavailable."
+          },
+          "9": {
+            "1": "The outbreak of COVID-19 is caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).",
+            "2": "The outbreak of COVID-19 has become a global pandemic.",
+            "3": "Antiviral therapeutics are an important part of the healthcare response to countering the ongoing threat of COVID-19.",
+            "4": "Vaccines are an important part of the healthcare response to countering the ongoing threat of COVID-19.",
+            "5": "PF-07321332 is an orally bioavailable SARS-CoV-2 main protease inhibitor.",
+            "6": "PF-07321332 has in vitro pan-human coronavirus antiviral activity.",
+            "7": "PF-07321332 has excellent off-target selectivity.",
+            "8": "PF-07321332 has in vivo safety profiles.",
+            "9": "PF-07321332 has demonstrated oral activity in a mouse-adapted SARS-CoV-2 model.",
+            "10": "PF-07321332 has achieved oral plasma concentrations exceeding in vitro antiviral cell potency in a phase 1 clinical trial in healthy human participants."
+          }
+        },
+        "viewpoints": [
+          "Nirmatrelvir is a SARS-CoV-2 main protease (M pro) inhibitor.",
+          "Nirmatrelvir has broad-spectrum antiviral activity against SARS-CoV.",
+          "Nirmatrelvir has broad-spectrum antiviral activity against MERS-CoV.",
+          "Nirmatrelvir has broad-spectrum antiviral activity against SARS-CoV-2.",
+          "Nirmatrelvir has broad-spectrum antiviral activity against common human coronaviruses HCoV-OC43, 229E, NL63, and HKU1."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Additional antivirals with alternative mechanisms of action are needed to combat viruses for which no antivirals are available or for which drug resistance issues with current antivirals are associated.",
+        "references": {},
+        "viewpoints": [
+          "Additional antivirals with alternative mechanisms of action are needed to combat viruses for which no antivirals are available.",
+          "Additional antivirals with alternative mechanisms of action are needed to combat viruses for which drug resistance issues with current antivirals are associated."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Structurally disparate compounds have been developed as SARS-CoV-2 M pro inhibitors through high-throughput screening (HTS), fragment-based and structure-based design [1], [10].",
+        "references": {
+          "1": {
+            "1": "The COVID-19 pandemic has stimulated tremendous efforts to develop therapeutic strategies targeting SARS-CoV-2.",
+            "2": "The COVID-19 pandemic has stimulated efforts to develop therapeutic strategies targeting human proteins to control viral infection.",
+            "3": "Efforts to develop therapeutic strategies for COVID-19 include hundreds of potential drugs.",
+            "4": "Efforts to develop therapeutic strategies for COVID-19 involve thousands of patients in clinical trials.",
+            "5": "A few small-molecule antiviral drugs, including nirmatrelvir-ritonavir, remdesivir, and molnupiravir, have been marketed for the treatment of COVID-19.",
+            "6": "11 monoclonal antibodies have been marketed for the treatment of COVID-19.",
+            "7": "The marketed small-molecule antiviral drugs and monoclonal antibodies for COVID-19 mostly require administration within 10 days of symptom onset.",
+            "8": "Hospitalized patients with severe or critical COVID-19 may benefit from treatment with previously approved immunomodulatory drugs.",
+            "9": "Previously approved immunomodulatory drugs include glucocorticoids such as dexamethasone, cytokine antagonists such as tocilizumab, and Janus kinase inhibitors such as baricitinib.",
+            "10": "The paper summarizes progress with COVID-19 drug discovery.",
+            "11": "The summary is based on accumulated findings since the COVID-19 pandemic began.",
+            "12": "The summary is based on a comprehensive list of clinical and preclinical inhibitors with anti-coronavirus activities.",
+            "13": "The paper discusses lessons learned from COVID-19 regarding drug repurposing strategies.",
+            "14": "Lessons from COVID-19 include insights related to pan-coronavirus drug targets.",
+            "15": "Lessons from COVID-19 include insights related to in vitro assays and animal models.",
+            "16": "The paper discusses platform trial design for the development of therapeutics to tackle COVID-19, long COVID, and pathogenic coronaviruses.",
+            "17": "The paper addresses lessons learned from other infectious diseases in addition to COVID-19."
+          },
+          "10": {
+            "1": "SARS-CoV-2 is the etiological pathogen of the COVID-19 pandemic.",
+            "2": "The COVID-19 pandemic led to more than 6.5 million deaths since December 2019.",
+            "3": "COVID-19 caused unprecedented disruption of social life and public health.",
+            "4": "The disruption caused by COVID-19 calls for fast-track development of diagnostic kits, vaccines, and antiviral drugs.",
+            "5": "Small molecule antivirals are essential complements of vaccines.",
+            "6": "Small molecule antivirals can be used for the treatment of SARS-CoV-2 infections.",
+            "7": "There are currently three FDA-approved antiviral drugs for SARS-CoV-2: remdesivir, molnupiravir, and paxlovid.",
+            "8": "Remdesivir has moderate clinical efficacy.",
+            "9": "Molnupiravir has moderate clinical efficacy.",
+            "10": "Paxlovid has issues with drug-drug interactions.",
+            "11": "SARS-CoV-2 variants with potential drug-resistant mutations are emerging.",
+            "12": "There is a pressing need for additional antivirals to combat current and future coronavirus outbreaks due to the moderate efficacy of some existing drugs and the emergence of resistant variants."
+          }
+        },
+        "viewpoints": [
+          "Structurally disparate compounds have been developed as SARS-CoV-2 M pro inhibitors.",
+          "These compounds have been developed through high-throughput screening (HTS).",
+          "These compounds have been developed through fragment-based design.",
+          "These compounds have been developed through structure-based design."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Paxlovid, a combination of the M pro inhibitor nirmatrelvir and metabolic enhancer ritonavir, is approved by the FDA [9].",
+        "references": {
+          "9": {
+            "1": "The outbreak of COVID-19 is caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).",
+            "2": "The outbreak of COVID-19 has become a global pandemic.",
+            "3": "Antiviral therapeutics are an important part of the healthcare response to countering the ongoing threat of COVID-19.",
+            "4": "Vaccines are an important part of the healthcare response to countering the ongoing threat of COVID-19.",
+            "5": "PF-07321332 is an orally bioavailable SARS-CoV-2 main protease inhibitor.",
+            "6": "PF-07321332 has in vitro pan-human coronavirus antiviral activity.",
+            "7": "PF-07321332 has excellent off-target selectivity.",
+            "8": "PF-07321332 has in vivo safety profiles.",
+            "9": "PF-07321332 has demonstrated oral activity in a mouse-adapted SARS-CoV-2 model.",
+            "10": "PF-07321332 has achieved oral plasma concentrations exceeding in vitro antiviral cell potency in a phase 1 clinical trial in healthy human participants."
+          }
+        },
+        "viewpoints": [
+          "Paxlovid is a combination of the M pro inhibitor nirmatrelvir and the metabolic enhancer ritonavir.",
+          "Paxlovid is approved by the FDA."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Ensitrelvir is a noncovalent M pro inhibitor approved in Japan and Singapore [11].",
+        "references": {
+          "11": {
+            "1": "The coronavirus disease 2019 (COVID-19) pandemic has resulted in millions of deaths.",
+            "2": "The coronavirus disease 2019 (COVID-19) pandemic threatens public health and safety.",
+            "3": "The coronavirus disease 2019 (COVID-19) is caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).",
+            "4": "COVID-19 vaccines have rapidly spread globally.",
+            "5": "Effective oral antiviral drugs for COVID-19 are urgently needed.",
+            "6": "The paper will describe the discovery of an unspecified subject."
+          }
+        },
+        "viewpoints": [
+          "Ensitrelvir is a noncovalent M pro inhibitor.",
+          "Ensitrelvir is approved in Japan.",
+          "Ensitrelvir is approved in Singapore."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Several additional M pro inhibitors are at different stages of clinical trials, including Pfizer’s second-generation inhibitor PF-07817883 (Ibuzatrelvir) [12] and Merck’s MK-7845 [13].",
+        "references": {
+          "12": {},
+          "13": {
+            "1": "Antiviral treatments are needed to complement vaccines as SARS-CoV-2 continues to circulate.",
+            "2": "The virus's main protease, 3CLPro, is an attractive drug target.",
+            "3": "The virus's main protease, 3CLPro, recognizes a unique cleavage site.",
+            "4": "The unique cleavage site of 3CLPro features a glutamine residue at the P1 position.",
+            "5": "The unique cleavage site recognized by 3CLPro is not utilized by human proteases.",
+            "6": "MK-7845 is a novel reversible covalent 3CLPro inhibitor.",
+            "7": "The invention of MK-7845 is reported in this document.",
+            "8": "Most covalent inhibitors of SARS-CoV-2 3CLPro reported to date contain an amide as a Gln mimic at P1.",
+            "9": "MK-7845 bears a difluorobutyl substituent at the P1 position.",
+            "10": "SAR analysis indicates that the difluorobutyl group of MK-7845 interacts with His163.",
+            "11": "X-ray crystallographic studies indicate that the difluorobutyl group of MK-7845 interacts with His163.",
+            "12": "His163 is the same residue that forms a hydrogen bond with the amide substituents typically found at P1.",
+            "13": "MK-7845 has promising in vivo efficacy.",
+            "14": "MK-7845 has an acceptable projected human dose with unboosted pharmacokinetics.",
+            "15": "MK-7845 exhibits favorable properties for solubility.",
+            "16": "MK-7845 exhibits favorable properties for absorption.",
+            "17": "The favorable properties for solubility and absorption of MK-7845 may be attributable to the unusual difluorobutyl substituent."
+          }
+        },
+        "viewpoints": [
+          "Several additional M pro inhibitors are at different stages of clinical trials.",
+          "Pfizer’s second-generation inhibitor PF-07817883 (Ibuzatrelvir) is at a stage of clinical trials.",
+          "Merck’s MK-7845 is at a stage of clinical trials."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Mutations have emerged in M pro among circulating strains [14], including the predominant mutation P132H [15].",
+        "references": {
+          "14": {},
+          "15": []
+        },
+        "viewpoints": [
+          "Mutations have emerged in M pro among circulating strains.",
+          "The predominant mutation in M pro among circulating strains is P132H."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Fortunately, the P132H mutant remains sensitive to nirmatrelvir [15], and drug-resistant variants have yet to become prevalent in the clinic.",
+        "references": {
+          "15": []
+        },
+        "viewpoints": [
+          "The P132H mutant remains sensitive to nirmatrelvir.",
+          "Drug-resistant variants have yet to become prevalent in the clinic."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Nevertheless, nirmatrelvir-resistant mutants have been identified from in vitro viral passage and enzymatic assay experiments [16], [17], [18], [19].",
+        "references": {
+          "16": {
+            "1": "Nirmatrelvir is an oral antiviral that targets the 3CL protease of SARS-CoV-2.",
+            "2": "Nirmatrelvir has been demonstrated to be clinically useful against COVID-19."
+          },
+          "17": {
+            "1": "Nirmatrelvir, an oral protease inhibitor, is crucial for preventing severe COVID-19.",
+            "2": "Studying SARS-CoV-2 escape from nirmatrelvir in cell culture facilitates resistance monitoring.",
+            "3": "Resistant SARS-CoV-2 variants contained combinations of substitutions in the main protease (Mpro).",
+            "4": "The E166V substitution conferred high resistance in infectious culture, replicon, and Mpro systems according to reverse genetics.",
+            "5": "The combination of L50F + E166V substitutions conferred high resistance in infectious culture, replicon, and Mpro systems according to reverse genetics.",
+            "6": "The L50F, E166V, and L50F + E166V substitutions decreased replication and Mpro activity.",
+            "7": "The L50F variant had high fitness in the infectious system.",
+            "8": "The L50F + E166V variant had high fitness in the infectious system.",
+            "9": "The naturally occurring L50F substitution compensated for the fitness cost of the E166V substitution.",
+            "10": "The naturally occurring L50F substitution promoted viral escape.",
+            "11": "Molecular dynamics simulations showed that the E166V substitution weakened nirmatrelvir-Mpro binding.",
+            "12": "Molecular dynamics simulations showed that the L50F + E166V substitutions weakened nirmatrelvir-Mpro binding.",
+            "13": "Remdesivir retained activity against nirmatrelvir-resistant variants.",
+            "14": "Bebtelovimab retained activity against nirmatrelvir-resistant variants.",
+            "15": "The combination of remdesivir or bebtelovimab with nirmatrelvir enhanced treatment efficacy compared to using these compounds individually.",
+            "16": "The findings have implications for monitoring treatments with efficacy against SARS-CoV-2.",
+            "17": "The findings have implications for ensuring treatments with efficacy against SARS-CoV-2.",
+            "18": "The findings have implications for monitoring treatments with efficacy against emerging sarbecoviruses.",
+            "19": "The findings have implications for ensuring treatments with efficacy against emerging sarbecoviruses."
+          },
+          "18": [],
+          "19": {
+            "1": "Nirmatrelvir is an oral antiviral agent.",
+            "2": "Nirmatrelvir targets the SARS-CoV-2 main protease (3CLpro).",
+            "3": "Nirmatrelvir is clinically useful against infection with SARS-CoV-2.",
+            "4": "Nirmatrelvir is effective against SARS-CoV-2 omicron variants.",
+            "5": "Most omicron subvariants have reduced sensitivity to many monoclonal antibody therapies.",
+            "6": "Potential SARS-CoV-2 resistance to nirmatrelvir is a major public health concern.",
+            "7": "Several amino acid substitutions are responsible for reduced susceptibility to nirmatrelvir.",
+            "8": "Several amino acid substitutions have been identified as responsible for reduced susceptibility to nirmatrelvir.",
+            "9": "L50F/E166V and L50F/E166A/L167F in the 3CLpro have been selected for study.",
+            "10": "These combinations of amino acid substitutions are unlikely to affect virus fitness.",
+            "11": "Delta variants possessing Nsp5-L50F/E166V have been prepared and characterized.",
+            "12": "Delta variants possessing Nsp5-L50F/E166A/L167F have been prepared and characterized.",
+            "13": "Both mutant viruses showed decreased susceptibility to nirmatrelvir.",
+            "14": "The growth of both mutant viruses in VeroE6/TMPRSS2 cells was delayed.",
+            "15": "Both mutant viruses showed attenuated phenotypes in a male hamster infection model.",
+            "16": "Both mutant viruses maintained airborne transmissibility.",
+            "17": "Both mutant viruses were outcompeted by wild-type virus in co-infection experiments in the absence of nirmatrelvir.",
+            "18": "Both mutant viruses were less outcompeted by wild-type virus in co-infection experiments in the presence of nirmatrelvir.",
+            "19": "Viruses possessing Nsp5-L50F/E166V do not become dominant in nature.",
+            "20": "Viruses possessing Nsp5-L50F/E166A/L167F do not become dominant in nature.",
+            "21": "It is important to closely monitor the emergence of nirmatrelvir-resistant SARS-CoV-2 variants.",
+            "22": "Resistant viruses with additional compensatory mutations could emerge.",
+            "23": "Resistant viruses with additional compensatory mutations could outcompete the wild-type virus.",
+            "24": "Resistant viruses with additional compensatory mutations could become dominant."
+          }
+        },
+        "viewpoints": [
+          "Nirmatrelvir-resistant mutants have been identified from in vitro viral passage experiments.",
+          "Nirmatrelvir-resistant mutants have been identified from enzymatic assay experiments."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "The M pro L50F/E166A/L167F triple mutant is of particular concern as the corresponding recombinant virus showed a high level of drug resistance while maintaining similar fitness of replication in cell culture and animals [19], [20].",
+        "references": {
+          "19": {
+            "1": "Nirmatrelvir is an oral antiviral agent.",
+            "2": "Nirmatrelvir targets the SARS-CoV-2 main protease (3CLpro).",
+            "3": "Nirmatrelvir is clinically useful against infection with SARS-CoV-2.",
+            "4": "Nirmatrelvir is effective against SARS-CoV-2 omicron variants.",
+            "5": "Most omicron subvariants have reduced sensitivity to many monoclonal antibody therapies.",
+            "6": "Potential SARS-CoV-2 resistance to nirmatrelvir is a major public health concern.",
+            "7": "Several amino acid substitutions are responsible for reduced susceptibility to nirmatrelvir.",
+            "8": "Several amino acid substitutions have been identified as responsible for reduced susceptibility to nirmatrelvir.",
+            "9": "L50F/E166V and L50F/E166A/L167F in the 3CLpro have been selected for study.",
+            "10": "These combinations of amino acid substitutions are unlikely to affect virus fitness.",
+            "11": "Delta variants possessing Nsp5-L50F/E166V have been prepared and characterized.",
+            "12": "Delta variants possessing Nsp5-L50F/E166A/L167F have been prepared and characterized.",
+            "13": "Both mutant viruses showed decreased susceptibility to nirmatrelvir.",
+            "14": "The growth of both mutant viruses in VeroE6/TMPRSS2 cells was delayed.",
+            "15": "Both mutant viruses showed attenuated phenotypes in a male hamster infection model.",
+            "16": "Both mutant viruses maintained airborne transmissibility.",
+            "17": "Both mutant viruses were outcompeted by wild-type virus in co-infection experiments in the absence of nirmatrelvir.",
+            "18": "Both mutant viruses were less outcompeted by wild-type virus in co-infection experiments in the presence of nirmatrelvir.",
+            "19": "Viruses possessing Nsp5-L50F/E166V do not become dominant in nature.",
+            "20": "Viruses possessing Nsp5-L50F/E166A/L167F do not become dominant in nature.",
+            "21": "It is important to closely monitor the emergence of nirmatrelvir-resistant SARS-CoV-2 variants.",
+            "22": "Resistant viruses with additional compensatory mutations could emerge.",
+            "23": "Resistant viruses with additional compensatory mutations could outcompete the wild-type virus.",
+            "24": "Resistant viruses with additional compensatory mutations could become dominant."
+          },
+          "20": []
+        },
+        "viewpoints": [
+          "The M pro L50F/E166A/L167F triple mutant is of particular concern.",
+          "The M pro L50F/E166A/L167F triple mutant showed a high level of drug resistance.",
+          "The corresponding recombinant virus of the M pro L50F/E166A/L167F mutant maintains similar fitness of replication in cell culture.",
+          "The corresponding recombinant virus of the M pro L50F/E166A/L167F mutant maintains similar fitness of replication in animals."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "The Nsp5-L50F/E166V mutant was found in an immunocompromised human patient who underwent prolonged Paxlovid treatment [21].",
+        "references": {
+          "21": {
+            "1": "Resistance of SARS-CoV-2 to antivirals can develop in immunocompromised individuals.",
+            "2": "Immunocompromised individuals receiving remdesivir can develop resistance to SARS-CoV-2.",
+            "3": "An immunocompromised patient was treated with repeated and prolonged courses of nirmatrelvir.",
+            "4": "The immunocompromised patient developed de-novo E166V/L50F mutations in the Mpro region.",
+            "5": "The E166V/L50F mutations in the Mpro region were associated with clinical treatment failure.",
+            "6": "The E166V/L50F mutations in the Mpro region were associated with virological treatment failure."
+          }
+        },
+        "viewpoints": [
+          "The Nsp5-L50F/E166V mutant was found in an immunocompromised human patient.",
+          "The patient with the Nsp5-L50F/E166V mutant underwent prolonged Paxlovid treatment."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The SARS-CoV-2 papain-like protease (PL pro) is the second cysteine protease expressed by SARS-CoV-2 in addition to M pro during viral replication.",
+        "references": {},
+        "viewpoints": [
+          "The SARS-CoV-2 papain-like protease (PL pro) is the second cysteine protease expressed by SARS-CoV-2.",
+          "The SARS-CoV-2 papain-like protease (PL pro) is expressed in addition to M pro during viral replication."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "PL pro is part of the non-structural protein 3 (nsp3) and cleaves viral polyproteins at the nsp1/2, nsp2/3, and nsp3/4 junctions [22].",
+        "references": {
+          "22": {
+            "1": "Viral papain-like cysteine protease (PLpro, NSP3) is essential for SARS-CoV-2 replication.",
+            "2": "Viral papain-like cysteine protease (PLpro, NSP3) represents a promising target for the development of antiviral drugs.",
+            "3": "A combinatorial substrate library was used to profile the activity of SARS-CoV-2 papain-like cysteine protease (PLpro).",
+            "4": "Comprehensive activity profiling of SARS-CoV-2 papain-like cysteine protease (PLpro) was performed.",
+            "5": "Optimal fluorogenic substrates were designed using the scaffold of the best hits from positional scanning.",
+            "6": "Irreversible inhibitors with a high degree of selectivity for SARS papain-like cysteine protease (PLpro) were designed using the scaffold of the best hits from positional scanning.",
+            "7": "Crystal structures of two inhibitors in complex with SARS-CoV-2 papain-like cysteine protease (PLpro) were determined.",
+            "8": "The crystal structures reveal the inhibitory mechanisms of the two inhibitors.",
+            "9": "The crystal structures provide a molecular basis for the observed substrate specificity profiles.",
+            "10": "SARS-CoV-2 papain-like cysteine protease (PLpro) harbors deISGylating activity similar to SARS-CoV-1 papain-like cysteine protease (PLpro).",
+            "11": "SARS-CoV-2 papain-like cysteine protease (PLpro) has a diminished ability to hydrolyze K48-linked ubiquitin chains compared to SARS-CoV-1 papain-like cysteine protease (PLpro).",
+            "12": "Sequence and structure analysis provides a basis for the diminished ability of SARS-CoV-2 papain-like cysteine protease (PLpro) to hydrolyze K48-linked ubiquitin chains.",
+            "13": "The work has revealed the molecular rules governing papain-like cysteine protease (PLpro) substrate specificity.",
+            "14": "The work provides a framework for the development of inhibitors with potential therapeutic value.",
+            "15": "The work provides a framework for drug repurposing."
+          }
+        },
+        "viewpoints": [
+          "PL pro is part of the non-structural protein 3 (nsp3).",
+          "PL pro cleaves viral polyproteins at the nsp1/2 junctions.",
+          "PL pro cleaves viral polyproteins at the nsp2/3 junctions.",
+          "PL pro cleaves viral polyproteins at the nsp3/4 junctions."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "PL pro also has deubiquitinase and deISGylase activities and cleaves ubiquitin and ISG15 conjugates from host proteins, a mechanism to antagonize host immune responses [23], [24].",
+        "references": {
+          "23": {
+            "1": "The papain-like protease PLpro is an essential coronavirus enzyme.",
+            "2": "The papain-like protease PLpro is required for processing viral polyproteins.",
+            "3": "The processing of viral polyproteins by the papain-like protease PLpro is necessary to generate a functional replicase complex.",
+            "4": "The papain-like protease PLpro enables viral spread by processing viral polyproteins to generate a functional replicase complex."
+          },
+          "24": {
+            "1": "Papain-like protease (PLpro) is a domain of a multi-functional, non-structural protein 3 in coronaviruses.",
+            "2": "Papain-like protease (PLpro) cleaves viral polyproteins.",
+            "3": "Papain-like protease (PLpro) cleaves posttranslational conjugates with poly-ubiquitin.",
+            "4": "Papain-like protease (PLpro) cleaves posttranslational conjugates with protective ISG15.",
+            "5": "Protective ISG15 is composed of two ubiquitin-like (UBL) domains.",
+            "6": "Across coronaviruses, Papain-like protease (PLpro) showed divergent selectivity for recognition of posttranslational conjugates.",
+            "7": "Across coronaviruses, Papain-like protease (PLpro) showed divergent selectivity for cleavage of posttranslational conjugates.",
+            "8": "Papain-like protease (PLpro) showed divergent selectivity for recognition and cleavage of posttranslational conjugates despite sequence conservation.",
+            "9": "SARS-CoV-2 Papain-like protease (PLpro) binds human ISG15.",
+            "10": "SARS-CoV-2 Papain-like protease (PLpro) binds K48-linked di-ubiquitin (K48-Ub)."
+          }
+        },
+        "viewpoints": [
+          "PL pro has deubiquitinase activities.",
+          "PL pro has deISGylase activities.",
+          "PL pro cleaves ubiquitin conjugates from host proteins.",
+          "PL pro cleaves ISG15 conjugates from host proteins.",
+          "Cleaving ubiquitin and ISG15 conjugates antagonizes host immune responses."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Since the COVID-19 pandemic, the interest in developing PL pro inhibitors has resurged, and several PL pro inhibitors have been identified from HTS, drug repurposing, and virtual screening [25].",
+        "references": {
+          "25": {}
+        },
+        "viewpoints": [
+          "Since the COVID-19 pandemic, interest in developing PL pro inhibitors has resurged.",
+          "Several PL pro inhibitors have been identified from high-throughput screening (HTS).",
+          "Several PL pro inhibitors have been identified from drug repurposing.",
+          "Several PL pro inhibitors have been identified from virtual screening."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "PL pro is a cysteine protease with shallow S1 and S2 substrate binding sites (corresponds to Gly-Gly in substrates) [22], which accounts for the challenges in designing covalent and noncovalent PL pro inhibitors [26].",
+        "references": {
+          "22": {
+            "1": "Viral papain-like cysteine protease (PLpro, NSP3) is essential for SARS-CoV-2 replication.",
+            "2": "Viral papain-like cysteine protease (PLpro, NSP3) represents a promising target for the development of antiviral drugs.",
+            "3": "A combinatorial substrate library was used to profile the activity of SARS-CoV-2 papain-like cysteine protease (PLpro).",
+            "4": "Comprehensive activity profiling of SARS-CoV-2 papain-like cysteine protease (PLpro) was performed.",
+            "5": "Optimal fluorogenic substrates were designed using the scaffold of the best hits from positional scanning.",
+            "6": "Irreversible inhibitors with a high degree of selectivity for SARS papain-like cysteine protease (PLpro) were designed using the scaffold of the best hits from positional scanning.",
+            "7": "Crystal structures of two inhibitors in complex with SARS-CoV-2 papain-like cysteine protease (PLpro) were determined.",
+            "8": "The crystal structures reveal the inhibitory mechanisms of the two inhibitors.",
+            "9": "The crystal structures provide a molecular basis for the observed substrate specificity profiles.",
+            "10": "SARS-CoV-2 papain-like cysteine protease (PLpro) harbors deISGylating activity similar to SARS-CoV-1 papain-like cysteine protease (PLpro).",
+            "11": "SARS-CoV-2 papain-like cysteine protease (PLpro) has a diminished ability to hydrolyze K48-linked ubiquitin chains compared to SARS-CoV-1 papain-like cysteine protease (PLpro).",
+            "12": "Sequence and structure analysis provides a basis for the diminished ability of SARS-CoV-2 papain-like cysteine protease (PLpro) to hydrolyze K48-linked ubiquitin chains.",
+            "13": "The work has revealed the molecular rules governing papain-like cysteine protease (PLpro) substrate specificity.",
+            "14": "The work provides a framework for the development of inhibitors with potential therapeutic value.",
+            "15": "The work provides a framework for drug repurposing."
+          },
+          "26": {
+            "1": "Direct-acting antivirals are needed to combat COVID-19.",
+            "2": "COVID-19 is caused by SARS-CoV-2.",
+            "3": "The papain-like protease (PLpro) domain of Nsp3 from SARS-CoV-2 is essential for viral replication.",
+            "4": "PLpro dysregulates the host immune response.",
+            "5": "PLpro cleaves ubiquitin from host proteins.",
+            "6": "PLpro cleaves interferon-stimulated gene 15 protein from host proteins.",
+            "7": "PLpro is a promising target for inhibition by small-molecule therapeutics.",
+            "8": "A series of covalent inhibitors is designed by introducing a peptidomimetic linker onto analogs of the noncovalent PLpro inhibitor GRL0617.",
+            "9": "A series of covalent inhibitors is designed by introducing a reactive electrophile onto analogs of the noncovalent PLpro inhibitor GRL0617."
+          }
+        },
+        "viewpoints": [
+          "PL pro is a cysteine protease with shallow S1 substrate binding sites.",
+          "PL pro is a cysteine protease with shallow S2 substrate binding sites.",
+          "The shallow S1 site corresponds to Gly-Gly in substrates.",
+          "The shallow S2 site corresponds to Gly-Gly in substrates.",
+          "Shallow S1 and S2 substrate binding sites account for the challenges in designing covalent PL pro inhibitors.",
+          "Shallow S1 and S2 substrate binding sites account for the challenges in designing noncovalent PL pro inhibitors."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "The noncovalent naphthalene compound GRL0617 and its analogs are the major PL pro inhibitors with a validated mechanism of action [25], [27].",
+        "references": {
+          "25": {},
+          "27": {
+            "1": "COVID-19 is caused by SARS-CoV-2 infection.",
+            "2": "COVID-19 continues to be a major public health crisis around the globe.",
+            "3": "The development of vaccines has brought promise and hope for the prevention of severe coronavirus disease.",
+            "4": "The development of vaccines has brought promise and hope for the treatment of severe coronavirus disease.",
+            "5": "The development of the first cluster of antiviral drugs has brought promise and hope for the prevention of severe coronavirus disease.",
+            "6": "The development of the first cluster of antiviral drugs has brought promise and hope for the treatment of severe coronavirus disease.",
+            "7": "The continued development of newer antiviral drugs is critically important to combat COVID-19.",
+            "8": "The continued development of safer antiviral drugs is critically important to combat COVID-19.",
+            "9": "The continued development of more effective antiviral drugs is critically important to combat COVID-19.",
+            "10": "The continued development of newer antiviral drugs is critically important to counter looming pathogenic variants of COVID-19.",
+            "11": "The continued development of safer antiviral drugs is critically important to counter looming pathogenic variants of COVID-19.",
+            "12": "The continued development of more effective antiviral drugs is critically important to counter looming pathogenic variants of COVID-19.",
+            "13": "Studies of the coronavirus life cycle revealed several important biochemical targets for drug development.",
+            "14": "The present review focuses on recent drug design efforts in small molecule drug discovery.",
+            "15": "The present review focuses on recent medicinal chemistry efforts in small molecule drug discovery.",
+            "16": "Nirmatrelvir development targets viral protein synthesis.",
+            "17": "Remdesivir development targets viral RdRp.",
+            "18": "Molnupiravir development targets viral RdRp.",
+            "19": "Nirmatrelvir is a recent FDA-approved drug for the treatment of COVID-19.",
+            "20": "Remdesivir is a recent FDA-approved drug for the treatment of COVID-19.",
+            "21": "Molnupiravir is a recent FDA-approved drug for the treatment of COVID-19."
+          }
+        },
+        "viewpoints": [
+          "GRL0617 is a noncovalent naphthalene compound.",
+          "GRL0617 is a major PL pro inhibitor.",
+          "GRL0617 has a validated mechanism of action.",
+          "Analogs of GRL0617 are major PL pro inhibitors.",
+          "Analogs of GRL0617 have a validated mechanism of action."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Our recent study revealed a first-in-class rationally designed noncovalent inhibitor Jun12682 showing in vivo antiviral efficacy in a mouse model of SARS-CoV-2 infection [28].",
+        "references": {
+          "28": {}
+        },
+        "viewpoints": [
+          "A recent study revealed a first-in-class rationally designed noncovalent inhibitor Jun12682.",
+          "Jun12682 shows in vivo antiviral efficacy in a mouse model of SARS-CoV-2 infection."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Jun12682 binds to the same site as GRL0617 in the blocking loop 2 (BL2) region.",
+        "references": {},
+        "viewpoints": [
+          "Jun12682 binds to the same site as GRL0617 in the blocking loop 2 (BL2) region."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "In addition, Jun12682 extends to a previously unexplored binding site, Val70 Ub , which accounts for its high potency.",
+        "references": {},
+        "viewpoints": [
+          "Jun12682 extends to a previously unexplored binding site, Val70 Ub.",
+          "Jun12682’s extension to the Val70 Ub site accounts for its high potency."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "In this work, we design a series of quinoline analogs to similarly target the Val70 Ub site.",
+        "references": {},
+        "viewpoints": [
+          "A series of quinoline analogs have been designed to target the Val70 Ub site."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "The X-ray crystal structures of PL pro with six lead compounds reveal interesting findings: while five compounds, Jun13317, Jun13306, Jun13307, Jun13308, and Jun13296 have their 2-aryl substituent occupying the Val70 Ub site as expected, Jun12665 adopts a flipped orientation with the 2-pyrazolyl substitution fitting in the BL2 groove site.",
+        "references": {},
+        "viewpoints": [
+          "X-ray crystal structures of PL pro with six lead compounds have been revealed.",
+          "Jun13317, Jun13306, Jun13307, Jun13308, and Jun13296 have their 2-aryl substituent occupying the Val70 Ub site.",
+          "Jun12665 adopts a flipped orientation.",
+          "Jun12665's 2-pyrazolyl substitution fits in the BL2 groove site."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "The in vivo lead Jun13296 displays more potent enzymatic inhibition and antiviral activity than the previously reported biarylphenyl inhibitor Jun12682.",
+        "references": {},
+        "viewpoints": [
+          "Jun13296 displays more potent enzymatic inhibition than the previously reported biarylphenyl inhibitor Jun12682.",
+          "Jun13296 displays more potent antiviral activity than the previously reported biarylphenyl inhibitor Jun12682."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "In a SARS-CoV-2 infection mouse model, oral treatment of Jun13296 displays improved in vivo antiviral efficacy than Jun12682.",
+        "references": {},
+        "viewpoints": [
+          "In a SARS-CoV-2 infection mouse model, oral treatment of Jun13296 displays improved in vivo antiviral efficacy compared to Jun12682."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Collectively, Jun13296 represents a promising PL pro antiviral drug candidate for further development.",
+        "references": {},
+        "viewpoints": [
+          "Jun13296 represents a promising PL pro antiviral drug candidate for further development."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56902-x_with_abstracts",
+    "base_id": "s41467-025-56902-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56902-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

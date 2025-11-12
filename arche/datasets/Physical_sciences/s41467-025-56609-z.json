@@ -1,0 +1,1001 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Gas sensors, enhancing our olfactory capabilities, are prized for their reliability and sensitivity, with critical roles in air quality [1] , [2] , [3] , [4] , medical analysis [5] , [6] , [7] , and industrial monitoring [8] , [9] , [10] . Among gas sensors, the chemiresistive sensors are favored due to their small size, ease of manufacturing, simple operation, and their cost-effectiveness. Nonetheless, the principle that enables chemiresistive sensors to detect gases is based on alterations of resistance in different gaseous environments, which makes them vulnerable to temperature changes [11] , [12] , [13] , [14] . Such variations will cause a drift in the baseline resistance of R 0 , thereby compromising the precision of the sensor. Incorporating temperature compensation components into the sensor can mitigate issues arising from temperature variations [15] , [16] . However, this approach typically requires extra circuitry or complex algorithms, rasing cost of the overall device. Incorporating a self-tuning technique into a single material to achieve temperature compensated detection represents a formidable challenge. Ratiometry measurement is an analytical technique that enhances measurement precision by comparing the ratio of signal intensities from two or more distinct signals [17] , [18] , [19] . This approach effectively reduces errors due to varying experimental conditions. Therefore, incorporating ratiometry measurement into gas-sensitive sensors presents a promising strategy to overcome the challenge of device accuracy loss due to baseline drift from temperature changes. Indeed, discovering a suitable reference factor that neutralizes baseline drift is essential for the ratiometric-gas sensor. In this regard, we present a ratiometric approach that cleverly employs the photoelectric response (R ph ) of a material as an internal reference to its gas-sensitive response (R gas ). This innovative strategy relies on the synthesis of a material that exhibits high activity to both light of particular wavelength and target gaseous molecules, traditionally a challenging task given the contrasting design principles of gas and light sensing materials. Gas sensors typically depend on defects for sensing activity [20] , [21] , [22] , [23] , whereas light sensors are designed to minimize defects to improve photoelectric performance [24] , [25] , [26] , [27] . A thorough comprehension to harmonize the competing demands of gas sensing and photoelectric functionality in one material is still out of reach. Emerging as a promising class of gas sensing materials, organic-inorganic hybrid covalent superlattice materials [28] , [29] are poised to redefine the balance between gas sensitivity and photoelectric performance. This is due to: (1) The distinctive multi-quantum well structure of the superlattice, which gives rise to quantum confinement effects, and amplifies the photoelectric response [30] , [31] , [32] , [33] , [34] , [35] . (2) The surface of the organic-inorganic hybrid covalent superlattice is covered with long-range ordered functional groups, which can replace the defects of traditional materials, provide abundant active sites for gas detection, and significantly improve the sensitivity of the gas sensor [36] . Thus, organic-inorganic hybrid covalent superlattices are anticipated to deliver both robust photoelectric and gas sensing responses. Consequently, the application of this material for ratiometric-gas sensing could mitigate temperature-dependent interference. Here, we introduce an organic-inorganic hybrid covalent superlattice material AgBDT (BDT = 1,4-benzenedithiol), which functions as a high-efficiency ratiometric gas sensing material. The two-dimensional continuous inorganic [AgS] n layers are interspersed by organic benzene rings, creating a distinctive multi-quantum well structure that lays the platform for an enhanced photoelectric response. The surface of AgBDT covered with long range ordered sulfhydryl functional groups endows it with exceptional sensitivity to nitrogen dioxide (NO 2 ). Specifically, NO 2 can be stably adsorbed on AgBDT nanosheets through Lewis acid-base interaction and hydrogen bonding with thiol groups. For the strong electron-withdrawing ability of NO 2 , electrons can be extracted from AgBDT and transferred to NO 2 , leading to a resistivity change of AgBDT. Leveraging its superior photoelectric and gas sensitivity properties, a ratiometric approach was formulated to gas sensing analysis (Fig. 1 ). This method shows that the ratio values are highly responsive to changes in gas concentration indicating the potential of NO 2 gas detecting capability of AgBDT. The detection limit of ratiometric gas sensor is 3.06 ppb. Notably, this ratiometric gas sensing is impervious to operational temperature fluctuations, achieving a substantial reduction in the coefficient of variation (CV) value from 21.81% to 7.81%, greatly refining the precision of gas detection (limit of detection, LOD). Fig. 1: Schematic design of superlattice materials for ratiometric-gas sensing detection. a The gas sensing response process. The concentration of hole carriers is influenced by gas concentration, which is depended on temperature changes. b The photo-response process. The concentration of hole carriers is affected by optical excitation, which is affected by temperature. c The ratiometric-gas sensing detection. The ratiometric-gas sensing response is the ratio of the gas-sensitive response to the photoelectric response, which is virtually unaffected by temperature changes. Ag: red; S: blue; C: gray; H: green. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Gas sensors, enhancing our olfactory capabilities, are prized for their reliability and sensitivity, with critical roles in air quality [1], [2], [3], [4], medical analysis [5], [6], [7], and industrial monitoring [8], [9], [10].",
+        "references": {
+          "1": {
+            "1": "Concerns over indoor air quality, outdoor air quality, industrial gas leakage, food freshness, and medical diagnosis are increasing.",
+            "2": "There is a requirement for miniaturized gas sensors due to these concerns.",
+            "3": "Miniaturized gas sensors need to have excellent sensitivity.",
+            "4": "Miniaturized gas sensors need to have excellent selectivity.",
+            "5": "Miniaturized gas sensors need to have excellent stability.",
+            "6": "Miniaturized gas sensors need to have low power consumption.",
+            "7": "Miniaturized gas sensors need to be cost-effective.",
+            "8": "Miniaturized gas sensors need to have a long lifetime.",
+            "9": "Metal-organic frameworks (MOFs) feature structural diversity.",
+            "10": "Metal-organic frameworks (MOFs) have a large specific surface area.",
+            "11": "Metal-organic frameworks (MOFs) offer controllable pore size and geometry.",
+            "12": "Metal-organic frameworks (MOFs) exhibit host-guest interactions.",
+            "13": "Metal-organic frameworks (MOFs) hold great promises for fabricating various devices.",
+            "14": "Metal-organic frameworks (MOFs) can be used for diverse applications including gas sensing.",
+            "15": "Tremendous progress has been made on the fabrication of MOF-based sensors in the past decade.",
+            "16": "MOF-based sensors have elevated sensitivity toward various analytes.",
+            "17": "MOF-based sensors have elevated selectivity toward various analytes.",
+            "18": "The elevated sensitivity and selectivity of MOF-based sensors are due to their preconcentrating effects.",
+            "19": "The elevated sensitivity and selectivity of MOF-based sensors are due to their molecule-sieving effects.",
+            "20": "Several reviews have recently summarized different aspects of the field of MOF-based sensors.",
+            "21": "A comprehensive review focusing specifically on MOF-based gas sensors is absent.",
+            "22": "The latest advance of MOF-based gas sensors is summarized in this review.",
+            "23": "MOF-based gas sensors rely on different transduction mechanisms.",
+            "24": "Examples of these transduction mechanisms include chemiresistive, capacitive/impedimetric, field-effect transistor-based, Kelvin probe-based, mass-sensitive, and optical mechanisms.",
+            "25": "The review includes the latest progress on making large-area MOF films.",
+            "26": "Large-area MOF films are essential to the mass-production of relevant gas sensors.",
+            "27": "The structural features of MOFs are correlated with the sensing performance.",
+            "28": "The compositional features of MOFs are correlated with the sensing performance.",
+            "29": "These correlations are intentional.",
+            "30": "Challenges for the further development of MOF-based gas sensors are given.",
+            "31": "Opportunities for further development of MOF-based gas sensors are given.",
+            "32": "Challenges for the practical applications of MOF-based gas sensors are given.",
+            "33": "Opportunities for the practical applications of MOF-based gas sensors are given."
+          },
+          "2": {
+            "1": "The review examines the use of amperometric electrochemical gas sensors for monitoring inorganic gases.",
+            "2": "Amperometric electrochemical gas sensors are used for monitoring inorganic gases that affect urban air quality.",
+            "3": "The review considers amperometric gas sensor technology.",
+            "4": "The review considers the development of amperometric gas sensor technology toward specifically designed air quality sensors.",
+            "5": "Recent academic and research organizations' studies have trialed amperometric gas sensor technology for air quality monitoring applications.",
+            "6": "Early studies showed the potential of electrochemical gas sensors for air quality monitoring.",
+            "7": "Electrochemical gas sensors showed potential when colocated with reference Air Quality Monitoring stations.",
+            "8": "Spatially dense networks with fast temporal resolution provide information not available from sparse AQMs.",
+            "9": "Sparse AQMs with longer recording intervals lack certain information provided by spatially dense networks.",
+            "10": "The review examines how amperometric gas sensor technology is being offered as commercial urban air quality networks.",
+            "11": "The review considers the remaining challenges in offering amperometric gas sensor technology as commercial urban air quality networks.",
+            "12": "Sensors must be sensitive.",
+            "13": "Sensors must be selective.",
+            "14": "Sensors must be stable.",
+            "15": "Air quality monitors or nodes must be electronically well designed.",
+            "16": "Air quality monitors or nodes must be mechanically well designed.",
+            "17": "Data correction is required for amperometric gas sensor technology.",
+            "18": "Models with differing levels of sophistication are being designed for data correction.",
+            "19": "Data analysis and validation is possibly the biggest remaining hurdle for delivering reliable concentration readings.",
+            "20": "The review considers the roles of companies in the development of amperometric gas sensor technology.",
+            "21": "The review considers the urban infrastructure requirements for the development of amperometric gas sensor technology.",
+            "22": "The review considers the roles of public research in the development of amperometric gas sensor technology."
+          },
+          "3": {
+            "1": "Developing efficient sensing materials for chemiresistor gas sensors is necessary for applications in toxic gas monitoring, smart homes, non-traumatic disease markers, and wearable electronics.",
+            "2": "Developing high-performance sensors for chemiresistor gas sensors is necessary for applications in toxic gas monitoring, smart homes, non-traumatic disease markers, and wearable electronics.",
+            "3": "Conducting a detailed mechanism study of chemiresistor gas sensors is necessary for applications in toxic gas monitoring, smart homes, non-traumatic disease markers, and wearable electronics.",
+            "4": "Two-dimensional materials are attractive for the fabrication of chemiresistor gas sensors.",
+            "5": "Graphene is a two-dimensional material attractive for the fabrication of chemiresistor gas sensors.",
+            "6": "Transition metal dichalcogenides are two-dimensional materials attractive for the fabrication of chemiresistor gas sensors.",
+            "7": "Black phosphorus is a two-dimensional material attractive for the fabrication of chemiresistor gas sensors.",
+            "8": "Graphitic carbon nitride is a two-dimensional material attractive for the fabrication of chemiresistor gas sensors.",
+            "9": "MXenes are two-dimensional materials attractive for the fabrication of chemiresistor gas sensors.",
+            "10": "Metal-organic frameworks are two-dimensional materials attractive for the fabrication of chemiresistor gas sensors.",
+            "11": "Boron nitride is a two-dimensional material attractive for the fabrication of chemiresistor gas sensors.",
+            "12": "Two-dimensional materials have unique structures and remarkable characteristics.",
+            "13": "A major focus of this paper is the advances in gas sensors based on two-dimensional materials.",
+            "14": "A major focus of this paper is the challenges in gas sensors based on two-dimensional materials.",
+            "15": "The electronic structure of two-dimensional materials is described.",
+            "16": "The physical properties of two-dimensional materials are described.",
+            "17": "The chemical properties of two-dimensional materials are described.",
+            "18": "The semiconductor properties of two-dimensional materials are described.",
+            "19": "The synthesis methods of two-dimensional materials-based gas sensors are introduced.",
+            "20": "The gas-sensitive properties of two-dimensional materials-based gas sensors are introduced.",
+            "21": "Strategies for improving gas sensors based on two-dimensional materials are discussed.",
+            "22": "The development trend for two-dimensional materials-based gas sensors involves the regulation of microstructure.",
+            "23": "The development trend for two-dimensional materials-based gas sensors involves the contact between two-dimensional materials and substrates.",
+            "24": "The development trend for two-dimensional materials-based gas sensors involves microelectromechanical systems-based gas sensors and gas sensor arrays.",
+            "25": "The development trend for two-dimensional materials-based gas sensors involves flexible and wearable gas sensors.",
+            "26": "The development trend for two-dimensional materials-based gas sensors involves smart self-power and wireless gas sensors.",
+            "27": "The development trend for two-dimensional materials-based gas sensors involves theoretical calculation and in-situ characterization.",
+            "28": "The development trend for two-dimensional materials-based gas sensors involves the influence of humidity on gas sensitivity."
+          },
+          "4": {
+            "1": "N-n homotypic heterogeneous junctions are an efficient method to improve the sensitive performance of metal oxide-based gas sensors.",
+            "2": "The improvement of sensitive performance is due to the generation of charge accumulation regions in n-n homotypic heterogeneous junctions.",
+            "3": "The goal was to further enhance nitrogen dioxide (NO₂) sensing properties of sensors based on reduced graphene oxide (RGO) at room temperature (RT).",
+            "4": "N-type ZnO nanoparticles (NPs) decorated n-type SnO₂ NPs heterojunctions were successfully constructed on RGO nanosheets (NSs).",
+            "5": "The construction was achieved by combining the hydrothermal method and the wet-chemical deposition method.",
+            "6": "The formation of heterostructures between ZnO NPs and SnO₂ NPs was confirmed.",
+            "7": "The confirmation of heterostructures was done by observing the nonlinear behavior of the current versus voltage (I–V) curve of ZnO/SnO₂-RGO.",
+            "8": "ZnO/SnO₂-RGO based sensor displayed a remarkably enhanced response of 141.0% for detecting 5 ppm of NO₂ at room temperature (RT).",
+            "9": "The response of ZnO/SnO₂-RGO based sensor is almost 4 times higher than that of SnO₂-RGO, which is 34.8%.",
+            "10": "The response of ZnO/SnO₂-RGO based sensor is almost 3 times higher than that of ZnO-RGO, which is 43.3%.",
+            "11": "For the ZnO/SnO₂-RGO-based sensor, the response time is significantly decreased to 33 seconds.",
+            "12": "For the ZnO/SnO₂-RGO-based sensor, the recovery time is significantly decreased to 92 seconds.",
+            "13": "The response time of ZnO/SnO₂-RGO-based sensor is significantly shorter than that of SnO₂-RGO-based sensor, which is 70 seconds.",
+            "14": "The recovery time of ZnO/SnO₂-RGO-based sensor is significantly shorter than that of SnO₂-RGO-based sensor, which is 39 seconds.",
+            "15": "The response time of ZnO/SnO₂-RGO-based sensor is significantly shorter than that of ZnO-RGO-based sensor, which is 272 seconds.",
+            "16": "The recovery time of ZnO/SnO₂-RGO-based sensor is significantly shorter than that of ZnO-RGO-based sensor, which is 1297 seconds.",
+            "17": "The improved NO₂ sensing properties of the sensors based on RGO benefit from the effects of the heterostructures between SnO₂ and ZnO.",
+            "18": "The improved NO₂ sensing properties of the sensors based on RGO derive from the superior electrical characteristics of RGO.",
+            "19": "N-n heterojunctions offer facile access to effective electronic interaction.",
+            "20": "N-n heterojunctions improve the transfer efficiency of charges at the interface to adsorbed oxygen.",
+            "21": "N-n heterojunctions provide additional reaction centers for adsorbing gas."
+          },
+          "5": {
+            "1": "Polyoxometalates (POMs) are molecular metal compounds based on tungsten (W) and molybdenum (Mo) elements.",
+            "2": "Polyoxometalates (POMs) exhibit excellent physical properties.",
+            "3": "Polyoxometalates (POMs) exhibit excellent chemical properties.",
+            "4": "Polyoxometalates (POMs) have been widely used in the field of photoelectric materials.",
+            "5": "Polyoxometalates (POMs) have been widely used in the field of catalytic materials.",
+            "6": "Polyoxometalates (POMs) have been widely used in the field of coordination chemistry.",
+            "7": "In recent years, polyoxometalates (POMs) have emerged in the field of chemiresistive gas sensors.",
+            "8": "Polyoxometalates (POMs) can work as electron acceptors.",
+            "9": "Polyoxometalates (POMs) improve the gas-sensing performance of traditional sensing materials by capturing electrons from semiconductors.",
+            "10": "Polyoxometalates (POMs) improve the gas-sensing performance of traditional sensing materials by separating electrons produced by light excitation.",
+            "11": "Polyoxometalates (POMs) improve the gas-sensing performance of traditional sensing materials by separating electrons produced by thermal excitation.",
+            "12": "Polyoxometalates (POMs) improve the gas-sensing performance of traditional sensing materials by delaying the recombination of electrons and holes.",
+            "13": "The highest sensing sensitivity response of polyoxometalates (POMs)-based chemiresistive gas sensor is 231 to 1 parts per million nitric dioxide (NO₂) gas.",
+            "14": "The review investigates how polyoxometalates (POMs) have evolved as sensing materials in gas sensors.",
+            "15": "Some polyoxometalates (POMs) and POMs-based sensing materials in recent years are introduced.",
+            "16": "Some polyoxometalates (POMs) and POMs-based sensing materials in recent years are classified.",
+            "17": "Brief analyses for each kind of sensing materials are provided.",
+            "18": "The review compares the reported polyoxometalates (POMs)-based sensors in different sensing parameters.",
+            "19": "The future outlooks for polyoxometalates (POMs)-based chemiresistive gas sensors are discussed on the basis of current developments.",
+            "20": "This work is the first comprehensive overview of polyoxometalates (POMs)-based chemiresistive gas sensors.",
+            "21": "This work can provide valuable information for developing high-performance polyoxometalates (POMs)-based gas sensors."
+          },
+          "6": {
+            "1": "Different important parameters have significant effects on the sensing behavior of semiconductor metal oxide (SMO) based chemiresistive gas sensors.",
+            "2": "The review discusses these parameters in detail.",
+            "3": "SMO based chemiresistive sensors have immense potential in multifarious applications.",
+            "4": "SMO based chemiresistive sensors have shown immense potential in human volatilome-based disease detection.",
+            "5": "SMO based chemiresistive sensors have shown immense potential in health monitoring.",
+            "6": "The work selects specific materials and operating condition aspects that affect SMO sensor performance.",
+            "7": "Particle size and morphology are aspects that affect SMO sensor performance.",
+            "8": "Porosity is an aspect that affects SMO sensor performance.",
+            "9": "Doping by noble metals and aliovalent ions affects SMO sensor performance.",
+            "10": "Crystal phases and selectively exposed highly reactive crystalline planes affect SMO sensor performance.",
+            "11": "Humidity affects the gas sensing performance of SMO sensors.",
+            "12": "Operating temperature affects the gas sensing performance of SMO sensors.",
+            "13": "Oxide heterojunction affects the gas sensing performance of SMO sensors.",
+            "14": "Homojunction and complex oxides affect the gas sensing performance of SMO sensors.",
+            "15": "Acid-base interaction between an oxide and a gas affects the gas sensing performance of SMO sensors.",
+            "16": "Gas molecule reformation inside sensing layer affects SMO sensor performance.",
+            "17": "Gas molecule reformation inside catalytic overlayer affects SMO sensor performance.",
+            "18": "Interface gas filtration affects SMO sensor performance.",
+            "19": "Light activation affects SMO sensor performance.",
+            "20": "These aspects are systematically reviewed for their effects on the gas sensing performance of SMO sensors.",
+            "21": "The review elaborates on long-term stability from the perspective of practical applications of SMO sensors.",
+            "22": "The review elaborates on high-throughput synthesis techniques from the perspective of practical applications of SMO sensors.",
+            "23": "The future scope of SMO-based breath and skin gas sensors has been elucidated in the context of skin mounted/wearable devices for personalized healthcare.",
+            "24": "The discussions have been summarized with the major takeaways of the work."
+          },
+          "7": {
+            "1": "Real-time monitoring of health-threatening gases is necessary for chemical safety and human health protection.",
+            "2": "Detection and discrimination of trace gases require proper gas sensors.",
+            "3": "Costly, bulky, and power-hungry devices are used in many applications for detecting and discriminating trace gases.",
+            "4": "Optical gas sensors and electrochemical gas sensors are commonly employed in costly, bulky, and power-hungry devices used for detecting and discriminating trace gases.",
+            "5": "It is hardly possible to use a single miniature low-power semiconductor gas sensor to detect and discriminate trace gases.",
+            "6": "The selectivity issue of a single miniature low-power semiconductor gas sensor is a major reason why it cannot be used to detect and discriminate trace gases effectively.",
+            "7": "A dual-mode microheater integrated nanotube array gas sensor (MINA sensor) is reported.",
+            "8": "The MINA sensor can detect hydrogen, acetone, toluene, and formaldehyde.",
+            "9": "The lowest measured limits of detection (LODs) for the MINA sensor in continuous heating (CH) mode are 40 parts-per-trillion (ppt).",
+            "10": "The theoretical limits of detection (LODs) for the MINA sensor are approximately 7 ppt.",
+            "11": "The nanotubular architecture contributes to the large sensing area and excellent surface catalytic activity of the MINA sensor.",
+            "12": "The large sensing area and excellent surface catalytic activity enable the MINA sensor to have low limits of detection in the continuous heating (CH) mode.",
+            "13": "Conventional electronic noses use arrays of gas sensors for gas discrimination.",
+            "14": "When driven by the pulse heating (PH) mode, a single MINA sensor can discriminate multiple gases.",
+            "15": "The discrimination capability of a single MINA sensor in pulse heating (PH) mode is achieved through a transient feature extraction method.",
+            "16": "The features of the MINA sensors make them highly attractive for distributed low-power sensor networks.",
+            "17": "The features of the MINA sensors make them highly attractive for battery-powered mobile sensing systems.",
+            "18": "The MINA sensors are suitable for chemical/environmental safety applications.",
+            "19": "The MINA sensors are suitable for healthcare applications."
+          },
+          "8": {
+            "1": "Modern gas monitoring scenarios for medical diagnostics demand new sensing capabilities.",
+            "2": "Modern gas monitoring scenarios for environmental surveillance demand new sensing capabilities.",
+            "3": "Modern gas monitoring scenarios for industrial safety demand new sensing capabilities.",
+            "4": "Modern gas monitoring scenarios for other applications demand new sensing capabilities.",
+            "5": "The Review provides analysis of the development of a new generation of gas sensors.",
+            "6": "The new generation of gas sensors are based on the multivariable response principles.",
+            "7": "The design criteria of these individual sensors involve a sensing material with multiresponse mechanisms to different gases.",
+            "8": "The design criteria of these individual sensors involve a multivariable transducer with independent outputs.",
+            "9": "The transducer's independent outputs are used to recognize different gas responses.",
+            "10": "The new sensors quantify individual components in mixtures.",
+            "11": "The new sensors reject interferences.",
+            "12": "The new sensors offer a more stable response over sensor arrays.",
+            "13": "The performance of the new sensors is attractive when the selectivity advantages of classic gas chromatography instruments are canceled by requirements for no consumables, low power, low cost, and unobtrusive form factors.",
+            "14": "The performance of the new sensors is attractive when the selectivity advantages of ion mobility instruments are canceled by requirements for no consumables, low power, low cost, and unobtrusive form factors.",
+            "15": "The performance of the new sensors is attractive when the selectivity advantages of mass spectrometry instruments are canceled by requirements for no consumables, low power, low cost, and unobtrusive form factors.",
+            "16": "The requirements for no consumables, low power, low cost, and unobtrusive form factors are important for applications in Internet of Things, Industrial Internet, and other applications.",
+            "17": "The Review is concluded with a perspective for future needs in fundamental aspects of gas sensing.",
+            "18": "The Review is concluded with a perspective for future needs in applied aspects of gas sensing.",
+            "19": "The Review is concluded with the 2025 roadmap for ubiquitous gas monitoring."
+          },
+          "9": {
+            "1": "Gas-sensing devices are being popularly used in many distinct areas due to tremendous advances in technology.",
+            "2": "Gas-sensing devices are used in indoor environments.",
+            "3": "Gas-sensing devices are used in industries.",
+            "4": "Gas-sensing devices are used in aviation.",
+            "5": "Gas-sensing devices are used as detectors for various toxic domestic gases and vapors.",
+            "6": "Resistive-based gas sensors are the most popular type of gas sensor.",
+            "7": "Resistive-based gas sensors have many advantages over other types of gas sensors.",
+            "8": "The high working temperatures of resistive-based gas sensors lead to high energy consumption.",
+            "9": "High energy consumption limits the practical applications of resistive-based gas sensors.",
+            "10": "The practical applications of resistive-based gas sensors are especially limited in mobile and portable devices.",
+            "11": "Different strategies have been introduced in recent years to deal with the high power consumption of resistance-based sensors.",
+            "12": "Self-heating is a strategy introduced to reduce high power consumption in resistance-based sensors.",
+            "13": "MEMS technology is a strategy introduced to reduce high power consumption in resistance-based sensors.",
+            "14": "Room-temperature operation using special morphologies is a strategy introduced to reduce high power consumption in resistance-based sensors.",
+            "15": "The review discusses different types of energy-saving chemisresistive gas sensors.",
+            "16": "The review includes self-heated gas sensors among the types of energy-saving chemisresistive gas sensors.",
+            "17": "The review includes MEMS-based gas sensors among the types of energy-saving chemisresistive gas sensors.",
+            "18": "The review includes room temperature operated flexible/wearable sensors among the types of energy-saving chemisresistive gas sensors.",
+            "19": "The review discusses the application of energy-saving chemisresistive gas sensors in the fields of environmental monitoring.",
+            "20": "The review will be concluded by providing a summary.",
+            "21": "The review will be concluded by discussing challenges.",
+            "22": "The review will be concluded by discussing recent trends.",
+            "23": "The review will be concluded by discussing future perspectives."
+          },
+          "10": {
+            "1": "The trace-level detection of harmful NO₂ gas at room temperature is very important for environmental protection.",
+            "2": "The trace-level detection of harmful NO₂ gas at room temperature is very important for public health.",
+            "3": "The resonant-gravimetric detection of ppb-level NO₂ at room temperature is reported in this paper.",
+            "4": "Two-dimensional porous TiO₂ nanosheets (PTNSs) are used as highly active sensing materials for the detection of ppb-level NO₂ at room temperature.",
+            "5": "Two-dimensional porous TiO₂ nanosheets (PTNSs) are synthesized by a facile high-temperature calcination approach.",
+            "6": "The facile high-temperature calcination approach for synthesizing PTNSs is based on a graphene oxide self-sacrificial template.",
+            "7": "The PTNS sample prepared at 500 °C (TiO₂-500 °C) shows an anatase structure.",
+            "8": "The PTNS sample prepared at 800 °C (TiO₂-800 °C) contains an impurity rutile phase.",
+            "9": "Loading pure anatase PTNSs onto resonant microcantilevers results in sensors that exhibit high sensitivity to NO₂ gas.",
+            "10": "The sensors have a limit of detection for NO₂ gas as low as 15 ppb.",
+            "11": "The TiO₂-500 °C sample has much higher sensitivity to NO₂ gas compared to the TiO₂-800 °C sample.",
+            "12": "The higher sensitivity of the TiO₂-500 °C sample is attributed to the bigger adsorption enthalpy (–ΔH°) of pure anatase TiO₂ to NO₂ gas molecules.",
+            "13": "The adsorption enthalpy (–ΔH°) of pure anatase TiO₂ to NO₂ gas molecules is 21.7 and 57.8 kJ mol⁻¹, respectively.",
+            "14": "Density functional theory calculations demonstrate that the existence of the rutile impurity phase in the TiO₂-800 °C sample results in significantly decreased adsorption activity to NO₂.",
+            "15": "This work approves the great application potential of anatase PTNSs for the highly sensitive resonant-gravimetric detection of NO₂ gas at room temperature."
+          }
+        },
+        "viewpoints": [
+          "Gas sensors enhance our olfactory capabilities.",
+          "Gas sensors are prized for their reliability.",
+          "Gas sensors are prized for their sensitivity.",
+          "Gas sensors have critical roles in air quality monitoring.",
+          "Gas sensors have critical roles in medical analysis.",
+          "Gas sensors have critical roles in industrial monitoring."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Among gas sensors, the chemiresistive sensors are favored due to their small size, ease of manufacturing, simple operation, and their cost-effectiveness.",
+        "references": {},
+        "viewpoints": [
+          "Chemiresistive sensors are favored among gas sensors due to their small size.",
+          "Chemiresistive sensors are favored among gas sensors due to their ease of manufacturing.",
+          "Chemiresistive sensors are favored among gas sensors due to their simple operation.",
+          "Chemiresistive sensors are favored among gas sensors due to their cost-effectiveness."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Nonetheless, the principle that enables chemiresistive sensors to detect gases is based on alterations of resistance in different gaseous environments, which makes them vulnerable to temperature changes [11], [12], [13], [14].",
+        "references": {
+          "11": {
+            "1": "Improving the sensing performances of gas sensors can enhance quality of life.",
+            "2": "Diversifying the sensing performances of gas sensors can enhance quality of life.",
+            "3": "Enhancing quality of life is achieved by ensuring health, safety, and convenience through improved sensing performances of gas sensors.",
+            "4": "Metal–organic frameworks (MOFs) exhibit an extremely high surface area.",
+            "5": "Metal–organic frameworks (MOFs) exhibit abundant porosity.",
+            "6": "Metal–organic frameworks (MOFs) exhibit unique surface chemistry.",
+            "7": "Metal–organic frameworks (MOFs) provide a promising framework for facilitating gas-sensor innovations.",
+            "8": "Enhanced understanding of conduction mechanisms of MOFs has facilitated their use as gas-sensing materials.",
+            "9": "Various types of MOFs have been developed by examining the compositional and morphological dependences.",
+            "10": "Various types of MOFs have been developed by implementing catalyst incorporation.",
+            "11": "Various types of MOFs have been developed by implementing light activation.",
+            "12": "MOFs have inherent separation properties.",
+            "13": "MOFs have inherent absorption properties.",
+            "14": "MOFs have catalytic activity.",
+            "15": "MOFs are applied as molecular sieves.",
+            "16": "MOFs are applied as absorptive filtering layers.",
+            "17": "MOFs are applied as heterogeneous catalysts.",
+            "18": "Oxide-based sensing materials with complex structures can be derived by the appropriate post-treatment of MOFs.",
+            "19": "Carbon-based sensing materials with complex structures can be derived by the appropriate post-treatment of MOFs.",
+            "20": "Catalytic composites can be derived by the appropriate post-treatment of MOFs.",
+            "21": "This review discusses effective techniques to design optimal MOFs in terms of computational screening methods.",
+            "22": "This review discusses effective techniques to design optimal MOFs in terms of synthesis methods.",
+            "23": "The mechanisms through which the distinctive functionalities of MOFs as sensing materials can be incorporated in gas-sensor applications are presented.",
+            "24": "The mechanisms through which the distinctive functionalities of MOFs as heterostructures can be incorporated in gas-sensor applications are presented.",
+            "25": "The mechanisms through which the distinctive functionalities of MOFs as derivatives can be incorporated in gas-sensor applications are presented."
+          },
+          "12": {
+            "1": "Two-dimensional layered materials such as MoS₂ and WS₂ are being used as sensing layers in chemoresistive gas sensors.",
+            "2": "Two-dimensional layered materials like MoS₂ and WS₂ suffer from poor sensitivity when used as sensing layers in chemoresistive gas sensors.",
+            "3": "Two-dimensional layered materials like MoS₂ and WS₂ suffer from poor selectivity when used as sensing layers in chemoresistive gas sensors.",
+            "4": "Surface functionalization by decorating the material surface with metal nanoparticles might not improve the performance of chemoresistive gas sensors significantly.",
+            "5": "Doping of two-dimensional layered materials can play a significant role in improving the performance of chemoresistive gas sensors.",
+            "6": "The authors report a simple yet effective substitutional doping technique to dope MoS₂ with noble metals.",
+            "7": "The authors used various material characterization techniques like X-ray diffraction, scanning tunneling spectroscopy images, and selected area electron diffraction pattern.",
+            "8": "These techniques allowed the authors to differentiate between surface decoration and substitutional doping by Au at S-vacancy sites of MoS₂.",
+            "9": "Lattice strain was found in Au-doped MoS₂ samples.",
+            "10": "Lattice strain was absent in Au NP-decorated MoS₂ samples.",
+            "11": "Surface chemistry studies were performed using X-ray photoelectron spectroscopy.",
+            "12": "These studies showed a shift of Mo 3d peaks to lower binding energies.",
+            "13": "The shift of Mo 3d peaks to lower binding energies realizes p-type doping due to Au.",
+            "14": "A blue shift of peaks was observed in Raman spectroscopy.",
+            "15": "The blue shift of peaks in Raman spectroscopy further confirmed the p-type doping.",
+            "16": "Gold-doped MoS₂ was found to be more sensitive toward ammonia than gold NP-decorated MoS₂.",
+            "17": "Gold-doped MoS₂ was found to be more selective toward ammonia than gold NP-decorated MoS₂.",
+            "18": "Gold-doped MoS₂ produced a response of 150% for 500 ppm of ammonia at 90 °C.",
+            "19": "The advantages of substitutional doping were explained by the density functional theory study.",
+            "20": "The gas-sensing mechanism was explained by the density functional theory study.",
+            "21": "The first principles study showed the adsorption of Au atoms on the S-vacancy site of a monolayer of the MoS₂ sheet was thermodynamically favorable.",
+            "22": "The adsorption energy for Au atoms on the S-vacancy site was found to be 2.39 eV.",
+            "23": "The authors successfully doped MoS₂ with Pt using the same substitutional doping technique.",
+            "24": "Pt-doped MoS₂ was found to give a huge response toward humidity.",
+            "25": "Pt-doped MoS₂ showed a response of 60,000% at 80% relative humidity.",
+            "26": "Noble metal doping of MoS₂ selectively improved the sensing response toward specific analytes.",
+            "27": "The authors believe that the substitutional doping method could be useful for doping other layered nanomaterials.",
+            "28": "The authors suggest that this method could help in designing gas sensors with improved selectivity."
+          },
+          "13": {
+            "1": "Two standard methods for gas detection have been developed in recent years.",
+            "2": "Utilizing metal oxide semiconductors for the chemisorption of gas is a widely used approach for gas sensing.",
+            "3": "Monitoring the conductivity change is a widely used approach for gas sensing.",
+            "4": "An electrochemical sensing platform is an alternative method for gas detection.",
+            "5": "Finding a way to benefit from both the advantages of metal oxide semiconductors and electrochemical techniques is considered a better approach for gas sensing.",
+            "6": "Two-dimensional (2D) borophene sheets have unique properties.",
+            "7": "Two-dimensional (2D) borophene sheets are promising materials for utilizing in the fabrication of the next generation of electronic devices.",
+            "8": "Utilizing borophene sheets in the fabrication of gas sensors opens a new world of gas sensor design.",
+            "9": "Utilizing borophene sheets in the fabrication of gas sensors opens a new world of gas sensor technology.",
+            "10": "This work reports the fabrication of a borophene-based electrochemoresistance (ECR) sensor.",
+            "11": "The borophene-based ECR sensor benefits both chemoresistance performance and the advantages of electrochemical sensors.",
+            "12": "A sensor with a new design is introduced in this work.",
+            "13": "The new sensor design is based on the high electrochemical activity of borophene.",
+            "14": "The new sensor design is based on the unique electrical properties of borophene.",
+            "15": "The electrical conductivity of borophene changes when exposed to gas agents.",
+            "16": "The electrochemical activity of borophene changes when exposed to gas agents.",
+            "17": "The use of the exceptional capability of borophene opens up a pathway to develop a new type of gas sensor.",
+            "18": "The sensitivity of the ECR sensor was compared with conventional electrochemical sensors.",
+            "19": "The sensitivity of the ECR sensor was found to be 10 times more than conventional electrochemical sensors.",
+            "20": "The sensitivity of the ECR sensor was compared with chemoresistance sensors.",
+            "21": "The sensitivity of the ECR sensor was found to be 4 times more than chemoresistance sensors."
+          },
+          "14": {
+            "1": "Highly efficient gas sensors that can detect and identify hazardous gases are crucial for numerous applications.",
+            "2": "Conventional single-output sensors currently have limitations due to drift.",
+            "3": "Conventional single-output sensors currently have limitations due to large size.",
+            "4": "Conventional single-output sensors currently have limitations due to high cost.",
+            "5": "A sensor with multiple chemiresistive outputs is reported for discriminative gas detection.",
+            "6": "A sensor with multiple potentiometric outputs is reported for discriminative gas detection.",
+            "7": "The reported sensor is applicable to a wide range of semiconducting electrodes.",
+            "8": "The reported sensor is applicable to a wide range of solid electrolytes.",
+            "9": "The applicability to various semiconducting electrodes and solid electrolytes allows the tailoring and optimization of the sensing pattern.",
+            "10": "The tailoring and optimization of the sensing pattern is achieved by tuning the material combination and conditions.",
+            "11": "Sensor performance is boosted by using a mixed-conducting perovskite electrode.",
+            "12": "The mixed-conducting perovskite electrode is equipped with reverse potentiometric polarity to boost sensor performance.",
+            "13": "A conceptual sensor with dual sensitive electrodes achieves superior three-dimensional (sub)ppm sensing.",
+            "14": "A conceptual sensor with dual sensitive electrodes achieves the discrimination of humidity.",
+            "15": "A conceptual sensor with dual sensitive electrodes achieves the discrimination of seven hazardous gases: 2-Ethylhexanol, ethanol, acetone, toluene, ammonia, carbon monoxide, and nitrogen dioxide.",
+            "16": "A conceptual sensor with dual sensitive electrodes enables accurate early warning of fire hazards.",
+            "17": "The findings offer possibilities to design simple multivariate gas sensors.",
+            "18": "The findings offer possibilities to design compact multivariate gas sensors.",
+            "19": "The findings offer possibilities to design inexpensive multivariate gas sensors.",
+            "20": "The findings offer possibilities to design highly efficient multivariate gas sensors."
+          }
+        },
+        "viewpoints": [
+          "The principle that enables chemiresistive sensors to detect gases is based on alterations of resistance in different gaseous environments.",
+          "Chemiresistive sensors are vulnerable to temperature changes due to their detection principle."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Such variations will cause a drift in the baseline resistance of R0, thereby compromising the precision of the sensor.",
+        "references": {},
+        "viewpoints": [
+          "Temperature variations will cause a drift in the baseline resistance of R0.",
+          "A drift in the baseline resistance of R0 compromises the precision of gas sensors."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Incorporating temperature compensation components into the sensor can mitigate issues arising from temperature variations [15], [16].",
+        "references": {
+          "15": {
+            "1": "Expanding current atmospheric methane monitoring capabilities is a goal of the research.",
+            "2": "The research investigated the performance of a low-cost, metal oxide based methane (CH₄) gas sensor.",
+            "3": "The methane gas sensor is off-the-shelf.",
+            "4": "A sensor assembly was designed to power the methane gas sensor and its resistive heater.",
+            "5": "The sensor assembly provided ancillary temperature (T) measurements.",
+            "6": "The sensor assembly provided ancillary relative humidity (rH) measurements.",
+            "7": "The sensor assembly controlled sensor read-out.",
+            "8": "The sensor assembly controlled data storage.",
+            "9": "The gas sensor was calibrated with respect to methane concentration ([CH₄]).",
+            "10": "The gas sensor was calibrated with respect to temperature (T).",
+            "11": "The gas sensor was calibrated with respect to relative humidity (rH).",
+            "12": "The calibrated gas sensor was able to estimate the methane concentration ([CH₄]) of lab air over 31 days.",
+            "13": "The estimation was conducted over a large range of temperature (T) and relative humidity (rH) conditions.",
+            "14": "The methane concentration estimation showed a systematic error of −1.0 ppm.",
+            "15": "The methane concentration estimation had a variable error within ±1.7 ppm.",
+            "16": "The methane gas sensor showed no significant drift in methane concentration ([CH₄]) estimate.",
+            "17": "Sensor accuracy can likely be improved by optimizing the voltage regulator that powers the gas sensor’s heater.",
+            "18": "Sensor accuracy can likely be improved by measuring the difference in partial oxygen pressure of the air sampled during calibration and validation experiments.",
+            "19": "Sensor accuracy can likely be improved by compensating for the difference in partial oxygen pressure of the air sampled during calibration and validation experiments.",
+            "20": "Improvements in sensor accuracy are expected to allow the use of the sensor assembly for fence-line methane monitoring.",
+            "21": "Fence-line methane monitoring includes monitoring near fossil fuel extraction sites.",
+            "22": "The current form of the sensor assembly is suitable for detecting fugitive methane.",
+            "23": "The sensor assembly can detect fugitive methane from leak-prone equipment."
+          },
+          "16": []
+        },
+        "viewpoints": [
+          "Incorporating temperature compensation components into gas sensors can mitigate issues arising from temperature variations."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "However, this approach typically requires extra circuitry or complex algorithms, raising cost of the overall device.",
+        "references": {},
+        "viewpoints": [
+          "Incorporating temperature compensation components typically requires extra circuitry or complex algorithms.",
+          "Incorporating temperature compensation components raises the cost of the overall device."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Incorporating a self-tuning technique into a single material to achieve temperature compensated detection represents a formidable challenge.",
+        "references": {},
+        "viewpoints": [
+          "Incorporating a self-tuning technique into a single material to achieve temperature compensated detection represents a formidable challenge."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Ratiometry measurement is an analytical technique that enhances measurement precision by comparing the ratio of signal intensities from two or more distinct signals [17], [18], [19].",
+        "references": {
+          "17": {
+            "1": "Mitochondria-associated ER membrane (MAM) is a structure where mitochondria and endoplasmic reticulum organelles form close physical contact sites.",
+            "2": "The close physical contact sites in the mitochondria-associated ER membrane (MAM) facilitate efficient Ca²⁺ crosstalk.",
+            "3": "MAM Ca²⁺ dynamics are centrally important in diverse biological processes.",
+            "4": "Directly and specifically measuring Ca²⁺ concentrations inside MAM is technically challenging.",
+            "5": "The development of MAM-Calflux provides a MAM-specific BRET-based Ca²⁺ indicator.",
+            "6": "The bimolecular fluorescence complementation (BiFC) concept is successfully applied to highlight Ca²⁺-responsive BRET signals in MAM.",
+            "7": "The BiFC strategy imparts dual functionality as a Ca²⁺ indicator specific for MAM.",
+            "8": "The BiFC strategy imparts dual functionality as a quantitative structural marker specific for MAM.",
+            "9": "MAM-Calflux, as a ratiometric Ca²⁺ indicator, estimates steady-state MAM Ca²⁺ levels.",
+            "10": "MAM-Calflux enables the visualization of uneven intracellular distribution of MAM Ca²⁺.",
+            "11": "MAM-Calflux allows the elucidation of abnormally accumulated MAM Ca²⁺ in the neurons of Parkinson’s disease mouse model in steady-state conditions.",
+            "12": "MAM-Calflux allows the elucidation of abnormally accumulated MAM Ca²⁺ in the neurons of Parkinson’s disease mouse model in stimulated conditions.",
+            "13": "MAM-Calflux can be a versatile tool for ratiometrically measuring dynamic inter-organellar Ca²⁺ communication."
+          },
+          "18": {
+            "1": "Nanoscale ratiometric techniques capable of biochemical response are significant for precise applications with stringent spatial restrictions.",
+            "2": "Nanoscale ratiometric techniques capable of biochemical response are significant for precise applications with stringent biological restrictions.",
+            "3": "The concept of θ-nanopore ratiometry is presented and devised.",
+            "4": "θ-nanopore ratiometry uses ratiometric signals to address concerns about device deviation in fabrication.",
+            "5": "θ-nanopore ratiometry uses ratiometric signals to address concerns about nonspecific adsorption in detection.",
+            "6": "A 200 nm θ-nanopore exemplifies the application of θ-nanopore ratiometry toward miRNA detection.",
+            "7": "The ±20 nm aperture drift could be mitigated using θ-nanopore ratiometry.",
+            "8": "The issue of nonspecific adsorption could be minimized in a complex cytosolic environment using θ-nanopore ratiometry.",
+            "9": "The practical application of θ-nanopore ratiometry realizes the measurements of cytosolic miRNA-10b.",
+            "10": "This work has established a nanoscopic ratiometric technique.",
+            "11": "This work has enriched the extant armory of nanotools for single-cell studies.",
+            "12": "This work has enriched the extant armory of nanotools beyond single-cell studies."
+          },
+          "19": {
+            "1": "A new colorimetric platform using NIR plasmonic Cu₂₋ₓSe nanoparticles as reporters has been reported for sensitive and selective sensing of Hg²⁺.",
+            "2": "There is an ultrahigh affinity between Hg²⁺ and Se²⁻.",
+            "3": "The added Hg²⁺ can react with Cu₂₋ₓSe nanoparticles and exchange their Cu⁺/Cu²⁺.",
+            "4": "The reaction between Hg²⁺ and Cu₂₋ₓSe nanoparticles yields a HgSe layer around the host nanoparticles.",
+            "5": "The absorption profiles of the Cu₂₋ₓSe nanoparticles are modulated substantially after the reaction with Hg²⁺.",
+            "6": "The absorbance of Cu₂₋ₓSe nanoparticles at 400–600 nm is increased.",
+            "7": "The NIR localized surface plasmon resonance of Cu₂₋ₓSe nanoparticles dramatically decreases with a more than 150 nm bathochromic shift.",
+            "8": "The system possesses triple signal responses to the analytes, namely, ratiometry, wavelength, and intensity, simultaneously.",
+            "9": "The uniquely multiple signal output provides more choices for the quantification.",
+            "10": "The uniquely multiple signal output enhances the reliability in the analyte detection.",
+            "11": "Poly(allylamine hydrochloride) is chosen as the NP template.",
+            "12": "Choosing poly(allylamine hydrochloride) as the NP template allows Hg²⁺ ions to be determined as ranging from 0–800 nM.",
+            "13": "The detection limit for Hg²⁺ ions is as low as 2.7 nM.",
+            "14": "The detection limit of 2.7 nM for Hg²⁺ ions is nearly 4 times lower than the limit value defined by the U.S. Environmental Protection Agency for drinking water.",
+            "15": "Other heavy/transition metal ions, such as Cu²⁺, Ag⁺, Pb²⁺, Cd²⁺, Ni²⁺, Co²⁺, Mn²⁺, Zn²⁺, Cr³⁺, Fe²⁺, and FeF₆³⁻, do not interfere with the sensing of Hg²⁺.",
+            "16": "Hg²⁺ contents can be quantified in tap water and common environmental water samples even if their concentrations are as low as 10 nM.",
+            "17": "The proposed Cu₂₋ₓSe nanoparticles-based system has favorable analytical performance.",
+            "18": "The proposed Cu₂₋ₓSe nanoparticles-based system has potential applications in monitoring trace Hg²⁺ in various real samples.",
+            "19": "The proposed Cu₂₋ₓSe nanoparticles-based system has potential applications in monitoring trace Hg²⁺ in drinking water."
+          }
+        },
+        "viewpoints": [
+          "Ratiometry measurement is an analytical technique.",
+          "Ratiometry measurement enhances measurement precision.",
+          "Ratiometry measurement enhances precision by comparing the ratio of signal intensities from two or more distinct signals."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "This approach effectively reduces errors due to varying experimental conditions.",
+        "references": {},
+        "viewpoints": [
+          "Ratiometry measurement effectively reduces errors due to varying experimental conditions."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Therefore, incorporating ratiometry measurement into gas-sensitive sensors presents a promising strategy to overcome the challenge of device accuracy loss due to baseline drift from temperature changes.",
+        "references": {},
+        "viewpoints": [
+          "Incorporating ratiometry measurement into gas-sensitive sensors presents a promising strategy to overcome device accuracy loss.",
+          "Ratiometry measurement helps to overcome device accuracy loss due to baseline drift from temperature changes."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Indeed, discovering a suitable reference factor that neutralizes baseline drift is essential for the ratiometric-gas sensor.",
+        "references": {},
+        "viewpoints": [
+          "Discovering a suitable reference factor that neutralizes baseline drift is essential for the ratiometric-gas sensor."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "In this regard, we present a ratiometric approach that cleverly employs the photoelectric response (Rph) of a material as an internal reference to its gas-sensitive response (Rgas).",
+        "references": {},
+        "viewpoints": [
+          "A ratiometric approach is presented that employs the photoelectric response of a material as an internal reference to its gas-sensitive response."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "This innovative strategy relies on the synthesis of a material that exhibits high activity to both light of particular wavelength and target gaseous molecules, traditionally a challenging task given the contrasting design principles of gas and light sensing materials.",
+        "references": {},
+        "viewpoints": [
+          "This ratiometric strategy relies on the synthesis of a material that exhibits high activity to light of a particular wavelength.",
+          "This ratiometric strategy relies on the synthesis of a material that exhibits high activity to target gaseous molecules.",
+          "Synthesis of a material with high activity to both light and gases is traditionally a challenging task due to contrasting design principles of gas and light sensing materials."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Gas sensors typically depend on defects for sensing activity [20], [21], [22], [23], whereas light sensors are designed to minimize defects to improve photoelectric performance [24], [25], [26], [27].",
+        "references": {
+          "20": {
+            "1": "The emergence of the Internet of Things has led to the extensive application of chemiresistive gas sensors in industrial production.",
+            "2": "The emergence of the Internet of Things has led to the extensive application of chemiresistive gas sensors in food safety.",
+            "3": "The emergence of the Internet of Things has led to the extensive application of chemiresistive gas sensors in medical diagnosis.",
+            "4": "The emergence of the Internet of Things has led to the extensive application of chemiresistive gas sensors in environment detection.",
+            "5": "Considerable efforts have been devoted to improving the gas‐sensing performance through tailoring the structure of sensitive materials.",
+            "6": "Considerable efforts have been devoted to improving the gas‐sensing performance through tailoring the functions of sensitive materials.",
+            "7": "Considerable efforts have been devoted to improving the gas‐sensing performance through tailoring the defects of sensitive materials.",
+            "8": "Considerable efforts have been devoted to improving the gas‐sensing performance through tailoring the electrical conductivity of sensitive materials.",
+            "9": "Mesoporous semiconductor metal oxides possess unparalleled properties including tunable pore size.",
+            "10": "Mesoporous semiconductor metal oxides possess unparalleled properties including high specific surface area.",
+            "11": "Mesoporous semiconductor metal oxides possess unparalleled properties including abundant metal–oxygen bonds.",
+            "12": "Mesoporous semiconductor metal oxides possess unparalleled properties including rapid mass transfer/diffusion behavior, known as Knudsen diffusion.",
+            "13": "Mesoporous semiconductor metal oxides have been regarded as the most potential sensitive materials.",
+            "14": "The paper overviews the synthesis strategies for mesoporous metal oxides.",
+            "15": "The paper summarizes classical functionalization techniques of sensitive materials.",
+            "16": "The construction of mesoporous structure is a classical functionalization technique for sensitive materials.",
+            "17": "The regulation of micro‐nano structure, such as heterojunctions, is a classical functionalization technique for sensitive materials.",
+            "18": "Noble metal sensitization, involving metals like Au, Pt, Ag, and Pd, is a classical functionalization technique for sensitive materials.",
+            "19": "Heteroatomic doping, involving elements like C, N, Si, and S, is a classical functionalization technique for sensitive materials.",
+            "20": "The paper discusses the structure–function relationship of sensitive materials at the molecular‐atomic level.",
+            "21": "The paper especially discusses the chemical sensitization effect in the context of sensitive materials at the molecular‐atomic level.",
+            "22": "The paper elucidates the interface adsorption mechanism in sensitive materials.",
+            "23": "The paper elucidates the catalytic mechanism at the interface in sensitive materials.",
+            "24": "The paper proposes challenges for the development of intelligent gas sensors in various applications.",
+            "25": "The paper proposes perspectives that will open a new door for the development of intelligent gas sensors in various applications."
+          },
+          "21": {
+            "1": "Sn(4+) -O2 (-•) centers are created intentionally in SnO2 nanoflowers.",
+            "2": "SnO2 nanoflowers with Sn(4+) -O2 (-•) centers are produced by a thermodynamically instable synthetic process.",
+            "3": "The SnO2 nanoflower-based sensor is the most sensitive ppb-level chemiresistor NO2 sensor to date.",
+            "4": "The sensitivity of the SnO2 nanoflower-based sensor has been confirmed.",
+            "5": "The Sn(4+) -O2 (-•) centers have strong gas-adsorbing capability towards NO2 molecules.",
+            "6": "The Sn(4+) -O2 (-•) centers have high electron-donating capability towards NO2 molecules.",
+            "7": "The gas-adsorbing and electron-donating capabilities of Sn(4+) -O2 (-•) centers decisively determine the sensor sensitivity."
+          },
+          "22": [],
+          "23": [],
+          "24": {
+            "1": "Unipolar barrier structures suppress dark current in photodetectors.",
+            "2": "Unipolar barrier structures suppress dark current by blocking majority carriers.",
+            "3": "Designing unipolar barriers with conventional materials is challenging.",
+            "4": "Conventional materials for designing unipolar barriers have strict requirements of lattice matching.",
+            "5": "Conventional materials for designing unipolar barriers have strict requirements of band matching.",
+            "6": "Two-dimensional materials have self-passivated surfaces.",
+            "7": "Two-dimensional materials have tunable band structures.",
+            "8": "Two-dimensional materials can be used to design unipolar barriers.",
+            "9": "Using two-dimensional materials avoids lattice mismatch in the design of unipolar barriers.",
+            "10": "Using two-dimensional materials avoids interface defects in the design of unipolar barriers.",
+            "11": "Band-engineered van der Waals heterostructures can be used to build visible unipolar barrier photodetectors.",
+            "12": "Band-engineered van der Waals heterostructures can be used to build mid-wavelength infrared unipolar barrier photodetectors.",
+            "13": "The nBn unipolar barrier photodetectors are based on a tungsten disulfide/hexagonal boron nitride/palladium diselenide heterostructure.",
+            "14": "The nBn unipolar barrier photodetectors exhibit a low dark current of 15 pA.",
+            "15": "The nBn unipolar barrier photodetectors exhibit a photocurrent of 20 μA.",
+            "16": "The nBn unipolar barrier photodetectors exhibit a detectivity of 2.7 × 10¹² cm Hz¹/² W⁻¹.",
+            "17": "The pBp unipolar barrier photodetectors are based on a black phosphorus/molybdenum disulfide/graphene heterostructure.",
+            "18": "The pBp unipolar barrier photodetectors exhibit a room-temperature detectivity of 2.3 × 10¹⁰ cm Hz¹/² W⁻¹.",
+            "19": "The pBp unipolar barrier photodetectors exhibit the detectivity of 2.3 × 10¹⁰ cm Hz¹/² W⁻¹ in the mid-wavelength infrared region under blackbody radiation.",
+            "20": "The pBp devices show a dichroic ratio of 4.9 under blackbody radiation.",
+            "21": "The pBp devices show a response time of 23 μs under 2 μm laser illumination.",
+            "22": "Band-engineered van der Waals heterostructures block dark current without suppressing photocurrent.",
+            "23": "Band-engineered van der Waals heterostructures can be used to build detectors with high room-temperature detectivity for visible light.",
+            "24": "Band-engineered van der Waals heterostructures can be used to build detectors with high room-temperature detectivity for blackbody infrared light."
+          },
+          "25": {
+            "1": "Low dimensional materials, including quantum dots, nanowires, and 2D materials, have attracted increasing research interest.",
+            "2": "Low dimensional materials are being researched for applications in electronic devices.",
+            "3": "Low dimensional materials are being researched for applications in optoelectronic devices.",
+            "4": "Research interest in low dimensional materials for electronic and optoelectronic devices has increased in recent years.",
+            "5": "Photogating is usually observed in photodetectors based on low dimensional materials.",
+            "6": "Photogating is usually observed in photodetectors based on hybrid structures of low dimensional materials.",
+            "7": "Photogating is demonstrated to play an important role in photodetectors based on low dimensional materials and their hybrid structures.",
+            "8": "Photogating modulates conductance through photoinduced gate voltage.",
+            "9": "Photogating is not simply and totally attributed to trap states.",
+            "10": "The review first focuses on the gain of photogating.",
+            "11": "The review reveals the distinction between photogating and the conventional photoconductive effect.",
+            "12": "The review discusses the origins of trap-induced photogating.",
+            "13": "The review discusses the formations of trap-induced photogating.",
+            "14": "The review discusses the characteristics of trap-induced photogating.",
+            "15": "The review discusses the origins of hybrid-induced photogating.",
+            "16": "The review discusses the formations of hybrid-induced photogating.",
+            "17": "The review discusses the characteristics of hybrid-induced photogating.",
+            "18": "The review elaborates on the recent progress on trap-induced photogating in low dimensional photodetectors.",
+            "19": "The review elaborates on the recent progress on hybrid-induced photogating in low dimensional photodetectors.",
+            "20": "A high gain bandwidth product as high as 10⁹ Hz is reported in several cases of photogating.",
+            "21": "A trade‐off between gain and bandwidth has to be made for photogating.",
+            "22": "The concept of general photogating is put forward based on three recent reported studies.",
+            "23": "General photogating may enable simultaneous high gain and high bandwidth.",
+            "24": "General photogating paves the way to explore novel high‐performance photodetectors."
+          },
+          "26": {
+            "1": "Defect-induced trap states play a crucial role in determining the performance of semiconductor photodetectors.",
+            "2": "The de-trap time of carriers from a deep trap can be prolonged by several orders of magnitude compared to shallow traps.",
+            "3": "A prolonged de-trap time from deep traps results in additional decay/response time of the semiconductor photodetector.",
+            "4": "The trap states in 2D ReS₂ can be efficiently modulated by defect engineering.",
+            "5": "Molecule decoration is a method used in defect engineering to modulate trap states in 2D ReS₂.",
+            "6": "Deep traps that greatly prolong the response time can be mostly filled by protoporphyrin molecules.",
+            "7": "Carrier recombination plays a dominant role in determining the decay time of the semiconductor photodetector.",
+            "8": "Shallow traps play a dominant role in determining the decay time of the semiconductor photodetector.",
+            "9": "The decay time of the device, influenced by carrier recombination and shallow traps, can be several orders of magnitude faster than the as-prepared device.",
+            "10": "The specific detectivity of the semiconductor photodetector is enhanced to as high as ≈1.89 × 10¹³ Jones.",
+            "11": "The enhancement in specific detectivity is due to the significant reduction of the dark current.",
+            "12": "The significant reduction of the dark current is achieved through charge transfer between ReS₂ and molecules.",
+            "13": "Defect engineering of trap states provides a solution to achieve photodetectors with high responsivity.",
+            "14": "Defect engineering of trap states provides a solution to achieve photodetectors with fast response."
+          },
+          "27": {
+            "1": "Semiconductor-based photodetectors convert light signals into electrical signals via the photoelectric effect.",
+            "2": "The photoelectric effect involves the generation, separation, and transportation of photoinduced charge carriers.",
+            "3": "The photoelectric effect involves the extraction of photoinduced charge carriers to external circuits.",
+            "4": "Metal oxide semiconductors have specific electronic and optoelectronic properties.",
+            "5": "Metal oxide semiconductors are widely used building blocks in photoelectric devices.",
+            "6": "The compromise between enhancing the photoresponse and reducing the rise/decay times limits the practical applications of photodetectors based on metal oxide semiconductors.",
+            "7": "The behaviors of charge carriers play important roles in the photoelectric conversion process of photodetectors based on metal oxide semiconductors.",
+            "8": "Researchers have proposed strategies to modulate charge-carrier behaviors and improve the photoelectric performance of photodetectors.",
+            "9": "Proposed strategies include modification of light absorption.",
+            "10": "Proposed strategies include the design of novel photodetector heterostructures.",
+            "11": "Proposed strategies include the construction of specific geometries.",
+            "12": "Proposed strategies include the adoption of specific electrode configurations.",
+            "13": "The review aims to introduce and summarize the latest research on enhancing the photoelectric performance of photodetectors based on metal oxide semiconductors via charge-carrier engineering.",
+            "14": "The review proposes possible opportunities and directions for the future developments of photodetectors based on metal oxide semiconductors in the last section."
+          }
+        },
+        "viewpoints": [
+          "Gas sensors typically depend on defects for sensing activity.",
+          "Light sensors are designed to minimize defects to improve photoelectric performance."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "A thorough comprehension to harmonize the competing demands of gas sensing and photoelectric functionality in one material is still out of reach.",
+        "references": {},
+        "viewpoints": [
+          "A thorough comprehension to harmonize the competing demands of gas sensing and photoelectric functionality in one material is still out of reach."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Emerging as a promising class of gas sensing materials, organic-inorganic hybrid covalent superlattice materials [28], [29] are poised to redefine the balance between gas sensitivity and photoelectric performance.",
+        "references": {
+          "28": {
+            "1": "The core appeal of a modern sustainable society is energy storage and conversion in a clean, efficient, and safe way.",
+            "2": "A modern sustainable society is built on the development of multifunctional materials.",
+            "3": "Superlattice structures can integrate the advantages of their sublayers.",
+            "4": "New phenomena may arise from the interface of superlattice structures.",
+            "5": "The integration of advantages and new phenomena from superlattice structures play key roles in modern semiconductor technology.",
+            "6": "Stability challenges the large-scale applications of superlattice structures in industrial products.",
+            "7": "Yield challenges the large-scale applications of superlattice structures in industrial products.",
+            "8": "The Perspective focuses on a distinctive category of easily available multilayered inorganic materials.",
+            "9": "These multilayered inorganic materials have well-defined subunit structures.",
+            "10": "These multilayered inorganic materials can be regarded as bulk superlattice analogues.",
+            "11": "The Perspective illustrates several specific combining forms of subunits in bulk superlattice analogues.",
+            "12": "Combining forms of subunits in bulk superlattice analogues include soft/rigid sublayers.",
+            "13": "Combining forms of subunits in bulk superlattice analogues include electron/phonon transport sublayers.",
+            "14": "Combining forms of subunits in bulk superlattice analogues include quasi-two-dimensional layers.",
+            "15": "Combining forms of subunits in bulk superlattice analogues include intercalated metal layers.",
+            "16": "The authors hope to provide insights into material design by integrating the versatility of subunits into these bulk superlattice analogues.",
+            "17": "The authors hope to broaden the application scope in the field of energy conversion by integrating the versatility of subunits into these bulk superlattice analogues."
+          },
+          "29": {
+            "1": "Layer-number modulation in graphene offers a superior degree of freedom.",
+            "2": "Layer-number modulation in graphene is a recent focus of research.",
+            "3": "The superior degree of freedom in layer-number modulation in graphene can be achieved in terms of magic-angle.",
+            "4": "The superior degree of freedom in layer-number modulation in graphene can be achieved in terms of wettability.",
+            "5": "The superior degree of freedom in layer-number modulation in graphene can be achieved in terms of superconductivity.",
+            "6": "The superior degree of freedom in layer-number modulation in graphene can be achieved in terms of superlattices.",
+            "7": "The intrinsic transport of multilayer graphene is indistinguishable in atmospheric adsorbates and supporting environment.",
+            "8": "The underlying charge transfer mechanism of multilayer graphene has not yet been thoroughly determined.",
+            "9": "A shift in the charge neutrality point of trilayer graphene is regulated by oxygen gas.",
+            "10": "A shift in the charge neutrality point of trilayer graphene is regulated by water molecules.",
+            "11": "A shift in the charge neutrality point of trilayer graphene is regulated by thermally activated electrons.",
+            "12": "Absorbed oxygen gas induces a high work function in semimetallic trilayer graphene.",
+            "13": "Water molecules are not an evident dopant in semimetallic trilayer graphene.",
+            "14": "Water molecules can strengthen binding against oxygen gas desorption in semimetallic trilayer graphene.",
+            "15": "A simplified model is developed to elucidate the competitive mechanism and charge transfer among oxygen gas, water molecules, and thermal electrons.",
+            "16": "The model is demonstrated by work function regulation based on density functional theory calculations.",
+            "17": "The model is demonstrated by Bader charge transfer based on density functional theory calculations.",
+            "18": "This study provides a strategy to explore transport modulation of multilayer graphene in the field of ballistic transport.",
+            "19": "This study provides a strategy to explore transport modulation of multilayer graphene in the field of low power consumption of graphene field-effect transistors."
+          }
+        },
+        "viewpoints": [
+          "Organic-inorganic hybrid covalent superlattice materials are emerging as a promising class of gas sensing materials.",
+          "Organic-inorganic hybrid covalent superlattice materials are poised to redefine the balance between gas sensitivity and photoelectric performance."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "This is due to: (1) The distinctive multi-quantum well structure of the superlattice, which gives rise to quantum confinement effects, and amplifies the photoelectric response [30], [31], [32], [33], [34], [35].",
+        "references": {
+          "30": [],
+          "31": {
+            "1": "Doping Zn²⁺ in CuS nanoflowers into a chemically homogeneous superlattice crystal structure is proposed.",
+            "2": "The purpose of doping Zn²⁺ in CuS nanoflowers is to convert p-type CuS semiconductor to an n-type CuS semiconductor.",
+            "3": "Converting p-type CuS semiconductor to n-type CuS semiconductor is for significantly enhanced photoelectric response performance.",
+            "4": "Chemically homogeneous Zn-doped CuS nanoflowers were synthesized.",
+            "5": "Zn-doped CuS nanoflowers synthesized include compositions Zn₀.₀₆Cu₀.₉₄S, Zn₀.₂₆Cu₀.₇₃S₁.₀₁, Zn₀.₃₆Cu₀.₆₂S₁.₀₂, Zn₀.₄₉Cu₀.₅₀S₁.₀₁, Zn₀.₅₈Cu₀.₄₀S₁.₀₂.",
+            "6": "CuCl and Zn(Ac)₂·2H₂O were reacted with sulfur powders to synthesize Zn-doped CuS nanoflowers.",
+            "7": "The synthesis of Zn-doped CuS nanoflowers was conducted in an ethanol solvothermal process.",
+            "8": "Tuning the Zn/Cu atomic ratios to ∼1:1 can convert Zn-doped CuS nanoflowers to the perfect Zn₀.₄₉Cu₀.₅₀S₁.₀₁ superlattice structure.",
+            "9": "The Zn₀.₄₉Cu₀.₅₀S₁.₀₁ superlattice structure corresponds to periodic Cu–S–Zn atom arrangements in the entire crystal lattice.",
+            "10": "The periodic Cu–S–Zn atom arrangements induce an effective built-in electric field with n-type semiconductor characteristics.",
+            "11": "The n-type semiconductor characteristics significantly improve the photoelectric response performance.",
+            "12": "The improved photoelectric response performance includes the lifetime of photogenerated charge carriers up to 6 × 10⁻⁸–6 × 10⁻⁴ s.",
+            "13": "The improved photoelectric response performance includes the transient photovoltage (TPV) response intensity to ∼44 mV.",
+            "14": "Zn²⁺ doping in CuS nanoflowers is a key factor in determining the superlattice structure.",
+            "15": "Zn²⁺ doping in CuS nanoflowers is a key factor in determining the semiconductor type.",
+            "16": "Zn²⁺ doping in CuS nanoflowers is a key factor in determining the dynamic behaviors of charge carriers."
+          },
+          "32": {
+            "1": "Size quantization effects have created significant interest recently.",
+            "2": "Thin layered semiconductor structures in the form of multiple-quantum-wells (MQW) or superlattices (SL) exhibit novel effects.",
+            "3": "The novel effects exhibited by MQW or SL structures are under intense study in solid state physics.",
+            "4": "Quantum-size effects produced by very small (<100 Å) semiconductor particles have been analyzed in photoelectrochemistry.",
+            "5": "This is the first report of quantum size effects produced in a photo-electrochemical system using a superlattice photoelectrode.",
+            "6": "The superlattice photoelectrode contained 40 alternating layers of undoped GaAs and GaAs_{0.5}P_{0.5}.",
+            "7": "Each layer in the superlattice photoelectrode was 250 Å thick.",
+            "8": "The structure produces a strained-layer superlattice (SLS).",
+            "9": "The SLS contains 20 GaAs quantum wells.",
+            "10": "Each GaAs quantum well in the SLS has a well width of 250 Å.",
+            "11": "The GaAs_{0.5}P_{0.5} barrier widths in the SLS are 250 Å thick.",
+            "12": "The barrier height for electrons in the conduction band for the SLS is 0.28 eV.",
+            "13": "The barrier height for holes in the valence band for the SLS is 0.30 eV.",
+            "14": "The photocurrent–wavelength response shows remarkable structure at room temperature.",
+            "15": "The remarkable structure of the photocurrent–wavelength response arises from the presence of discrete energy levels in the GaAs quantum wells.",
+            "16": "The structure of the photocurrent–wavelength response is resolvable into multiple photocurrent peaks.",
+            "17": "The multiple photocurrent peaks are in excellent agreement with theoretical predictions of the discrete energy levels in the GaAs quantum wells.",
+            "18": "The results have important implications for photoelectrochemical energy conversion.",
+            "19": "The results have important implications for the characterization and analysis of superlattice (SL) structures.",
+            "20": "The results have important implications for the characterization and analysis of multiple-quantum-well (MQW) structures."
+          },
+          "33": {
+            "1": "Two-dimensional materials have received extensive interest.",
+            "2": "Two-dimensional materials have exceptional properties.",
+            "3": "Assembling two-dimensional materials in bulk quantities is strongly required for macroscopic applications.",
+            "4": "The aggregation of two-dimensional materials highly restricts the ability to assemble them in bulk quantities.",
+            "5": "Constructing three-dimensional hybrid superlattices of alternating two-dimensional materials and organic molecule layers provides a new path.",
+            "6": "This new path allows access to the exceptional properties of two-dimensional materials in bulk quantities.",
+            "7": "The emerging concept of hybrid inorganic/organic superlattices is systematically illustrated in this tutorial review.",
+            "8": "The abundant compositions of inorganic and organic sublattices in hybrid superlattices are presented.",
+            "9": "The various structures of inorganic and organic sublattices in hybrid superlattices are presented.",
+            "10": "A summary of the chemical interactions between inorganic and organic sublattices in hybrid superlattices is presented.",
+            "11": "Many facile techniques have been developed for hybrid superlattices.",
+            "12": "These techniques enable precise control of the structure of hybrid superlattices.",
+            "13": "There are various interesting mechanisms inside unique hybrid inorganic/organic superlattices.",
+            "14": "These mechanisms can help tune the properties of hybrid inorganic/organic superlattices.",
+            "15": "Mechanisms include electron transfer in hybrid inorganic/organic superlattices.",
+            "16": "Mechanisms include quantum confinement in hybrid inorganic/organic superlattices.",
+            "17": "Mechanisms include interlayer coupling in hybrid inorganic/organic superlattices.",
+            "18": "Mechanisms include multiple interface effects in hybrid inorganic/organic superlattices.",
+            "19": "The rich chemistry of hybrid superlattices can enhance performance beyond the reach of existing materials.",
+            "20": "The abundant mechanisms of hybrid superlattices can enhance performance beyond the reach of existing materials.",
+            "21": "Enhanced performance of hybrid superlattices provides new opportunities in various applications.",
+            "22": "Applications of enhanced hybrid superlattices include rechargeable batteries.",
+            "23": "Applications of enhanced hybrid superlattices include catalysis.",
+            "24": "Applications of enhanced hybrid superlattices include thermoelectrics.",
+            "25": "Applications of enhanced hybrid superlattices include advanced electronics.",
+            "26": "Applications of enhanced hybrid superlattices include superconductors.",
+            "27": "Applications of enhanced hybrid superlattices include optoelectronics."
+          },
+          "34": {
+            "1": "Two-dimensional (2D) nanomaterials, particularly the inorganic ultrathin nanosheets with single or few-atomic layers, have been extensively studied.",
+            "2": "The special structures and rich physical properties of 2D nanomaterials come from the quantum confinement of electrons.",
+            "3": "2D nanomaterials have atomic-scale thickness.",
+            "4": "2D nanomaterials have an extremely high specific surface area.",
+            "5": "The surface phase of 2D nanomaterials is as important as the bulk counterparts.",
+            "6": "2D nanomaterials provide an alternative way of modifying the surface phase for engineering the intrinsic physical properties of inorganic 2D nanomaterials.",
+            "7": "The review focuses on recent research concerning surface chemical modification strategies.",
+            "8": "The surface chemical modification strategies aim to effectively engineer the intrinsic physical properties of inorganic 2D nanomaterials.",
+            "9": "The review highlights newly developed regulation strategies for surface incorporation, defect engineering, and structure modulation of inorganic 2D nanomaterials.",
+            "10": "Surface incorporation strategies influence the intrinsic conductivity of inorganic 2D nanomaterials.",
+            "11": "Defect engineering strategies influence the band structure of inorganic 2D nanomaterials.",
+            "12": "Structure modulation strategies influence the magnetism of inorganic 2D nanomaterials.",
+            "13": "The regulatory strategies maintain the primary 2D freestanding structures of inorganic 2D nanomaterials.",
+            "14": "The primary 2D freestanding structures of inorganic 2D nanomaterials are vital for ultrasensitive electronic response.",
+            "15": "The primary 2D freestanding structures of inorganic 2D nanomaterials are vital for enhanced catalytic capabilities.",
+            "16": "The primary 2D freestanding structures of inorganic 2D nanomaterials are vital for enhanced magnetocaloric capabilities."
+          },
+          "35": {
+            "1": "The great success of ultrathin two-dimensional (2D) layered crystals has inspired increased attention to preparing 2D nanostructures from non-layered materials.",
+            "2": "2D nanostructures from non-layered materials can significantly enrich the 2D materials family.",
+            "3": "2D nanostructures from non-layered materials can significantly enrich the 2D heterostructures family.",
+            "4": "2D nanostructures from non-layered materials can extend the application prospects of 2D materials.",
+            "5": "2D nanostructures from non-layered materials can bring distinct properties from their bulk counterparts due to the strong 2D confinement effect.",
+            "6": "The realization of 2D non-layered semiconductors with strong light-harvesting capability is still a critical challenge.",
+            "7": "The realization of 2D non-layered semiconductors with the ability to construct high-performance 2D heterostructures is still a critical challenge.",
+            "8": "2D PbSe semiconductors with a large lateral dimension and ultrathin thickness were successfully synthesized via van der Waals epitaxy.",
+            "9": "The fabricated 2D PbSe device exhibits good electrical conductivity.",
+            "10": "The fabricated 2D PbSe device exhibits superior multi-wavelength photoresponse performance.",
+            "11": "The fabricated 2D PbSe device has high responsivity (∼10³ A/W).",
+            "12": "The fabricated 2D PbSe device has impressive detectivity (∼2 × 10¹¹ Jones).",
+            "13": "2D PbSe nanosheets can serve as component units for constructing high-performance heterostructure devices.",
+            "14": "Ultrahigh current on/off ratio (∼10⁸) can be achieved in PbSe/MoS₂ back-gated transistors with the strategy used.",
+            "15": "Ultrahigh rectification ratio (∼10⁶) can be achieved in PbSe/MoS₂ back-gated transistors with the strategy used.",
+            "16": "High responsivity (∼3 × 10³ A/W) can be achieved in PbSe/MoS₂ back-gated transistors with the strategy used.",
+            "17": "High detectivity (∼7 × 10¹² Jones) can be achieved in PbSe/MoS₂ back-gated transistors with the strategy used.",
+            "18": "2D PbSe nanosheets have tremendous applications potential in electrical devices.",
+            "19": "2D PbSe nanosheets have tremendous applications potential in optoelectronic devices.",
+            "20": "Heterostructures of 2D PbSe nanosheets have tremendous applications potential in electrical devices.",
+            "21": "Heterostructures of 2D PbSe nanosheets have tremendous applications potential in optoelectronic devices."
+          }
+        },
+        "viewpoints": [
+          "The distinctive multi-quantum well structure of organic-inorganic hybrid covalent superlattice materials gives rise to quantum confinement effects.",
+          "The distinctive multi-quantum well structure of organic-inorganic hybrid covalent superlattice materials amplifies the photoelectric response."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "(2) The surface of the organic-inorganic hybrid covalent superlattice is covered with long-range ordered functional groups, which can replace the defects of traditional materials, provide abundant active sites for gas detection, and significantly improve the sensitivity of the gas sensor [36].",
+        "references": {
+          "36": {
+            "1": "Organic-inorganic hybrid superlattices (OIHSLs) have attractive physical properties.",
+            "2": "Organic-inorganic hybrid superlattices (OIHSLs) have attractive chemical properties.",
+            "3": "The construction of single-crystal covalent organic-inorganic hybrid superlattices has not been achieved.",
+            "4": "A coordination assembly strategy was proposed to create a single-crystal covalent organic-inorganic hybrid superlattice PbBDT.",
+            "5": "In the single-crystal covalent organic-inorganic hybrid superlattice PbBDT, a layered [PbS₂] sublattice covalently connects with a benzene sublattice.",
+            "6": "BDT refers to 1,4-benzenedithiolate in the context of single-crystal covalent organic-inorganic hybrid superlattice PbBDT.",
+            "7": "Covalent bonding in single-crystal covalent organic-inorganic hybrid superlattice PbBDT offers better thermo-stability than non-covalent organic-inorganic hybrid superlattices.",
+            "8": "Covalent bonding in single-crystal covalent organic-inorganic hybrid superlattice PbBDT offers better chemi-stability than non-covalent organic-inorganic hybrid superlattices.",
+            "9": "Covalent bonding in single-crystal covalent organic-inorganic hybrid superlattice PbBDT offers better inter-sublattice electron transport than non-covalent organic-inorganic hybrid superlattices.",
+            "10": "Covalent bonding in single-crystal covalent organic-inorganic hybrid superlattice PbBDT offers a unique organic-group-functionalized surface which may enable better performances in chemical applications than non-covalent organic-inorganic hybrid superlattices.",
+            "11": "The features of single-crystal covalent organic-inorganic hybrid superlattice PbBDT endow it with the highest sensitivity towards NO₂ at room temperature among all chemiresistive gas-sensing materials with a reported response time less than 2 minutes.",
+            "12": "The features of single-crystal covalent organic-inorganic hybrid superlattice PbBDT endow it with the lowest detection limit towards NO₂ at room temperature among all chemiresistive gas-sensing materials with a reported response time less than 2 minutes.",
+            "13": "The features of single-crystal covalent organic-inorganic hybrid superlattice PbBDT endow it with excellent selectivity towards NO₂ at room temperature among all chemiresistive gas-sensing materials with a reported response time less than 2 minutes.",
+            "14": "The performance of PbBDT in gas sensing does not require light assistance."
+          }
+        },
+        "viewpoints": [
+          "The surface of organic-inorganic hybrid covalent superlattice materials is covered with long-range ordered functional groups.",
+          "Long-range ordered functional groups can replace the defects of traditional materials.",
+          "Long-range ordered functional groups provide abundant active sites for gas detection.",
+          "Long-range ordered functional groups significantly improve the sensitivity of the gas sensor."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Thus, organic-inorganic hybrid covalent superlattices are anticipated to deliver both robust photoelectric and gas sensing responses.",
+        "references": {},
+        "viewpoints": [
+          "Organic-inorganic hybrid covalent superlattices are anticipated to deliver robust photoelectric responses.",
+          "Organic-inorganic hybrid covalent superlattices are anticipated to deliver robust gas sensing responses."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Consequently, the application of this material for ratiometric-gas sensing could mitigate temperature-dependent interference.",
+        "references": {},
+        "viewpoints": [
+          "The application of organic-inorganic hybrid covalent superlattices for ratiometric-gas sensing could mitigate temperature-dependent interference."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Here, we introduce an organic-inorganic hybrid covalent superlattice material AgBDT (BDT = 1,4-benzenedithiol), which functions as a high-efficiency ratiometric gas sensing material.",
+        "references": {},
+        "viewpoints": [
+          "The organic-inorganic hybrid covalent superlattice material AgBDT functions as a high-efficiency ratiometric gas sensing material."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The two-dimensional continuous inorganic [AgS]n layers are interspersed by organic benzene rings, creating a distinctive multi-quantum well structure that lays the platform for an enhanced photoelectric response.",
+        "references": {},
+        "viewpoints": [
+          "Two-dimensional continuous inorganic [AgS]n layers in AgBDT are interspersed by organic benzene rings.",
+          "The structure of AgBDT creates a distinctive multi-quantum well structure.",
+          "The multi-quantum well structure of AgBDT lays the platform for an enhanced photoelectric response."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The surface of AgBDT covered with long range ordered sulfhydryl functional groups endows it with exceptional sensitivity to nitrogen dioxide (NO2).",
+        "references": {},
+        "viewpoints": [
+          "The surface of AgBDT is covered with long-range ordered sulfhydryl functional groups.",
+          "The long-range ordered sulfhydryl functional groups endow AgBDT with exceptional sensitivity to nitrogen dioxide (NO2)."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Specifically, NO2 can be stably adsorbed on AgBDT nanosheets through Lewis acid-base interaction and hydrogen bonding with thiol groups.",
+        "references": {},
+        "viewpoints": [
+          "Nitrogen dioxide (NO2) can be stably adsorbed on AgBDT nanosheets through Lewis acid-base interaction.",
+          "Nitrogen dioxide (NO2) can be stably adsorbed on AgBDT nanosheets through hydrogen bonding with thiol groups."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "For the strong electron-withdrawing ability of NO2, electrons can be extracted from AgBDT and transferred to NO2, leading to a resistivity change of AgBDT.",
+        "references": {},
+        "viewpoints": [
+          "NO2 has a strong electron-withdrawing ability.",
+          "Electrons can be extracted from AgBDT and transferred to NO2.",
+          "The transfer of electrons from AgBDT to NO2 leads to a resistivity change in AgBDT."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Leveraging its superior photoelectric and gas sensitivity properties, a ratiometric approach was formulated to gas sensing analysis (Fig. 1).",
+        "references": {},
+        "viewpoints": [
+          "A ratiometric approach to gas sensing analysis was formulated by leveraging the superior photoelectric and gas sensitivity properties of AgBDT."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "This method shows that the ratio values are highly responsive to changes in gas concentration indicating the potential of NO2 gas detecting capability of AgBDT.",
+        "references": {},
+        "viewpoints": [
+          "The ratio values in the ratiometric approach are highly responsive to changes in gas concentration.",
+          "The ratiometric approach indicates the potential NO2 gas detecting capability of AgBDT."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "The detection limit of ratiometric gas sensor is 3.06 ppb.",
+        "references": {},
+        "viewpoints": [
+          "The detection limit of the ratiometric gas sensor is 3.06 ppb."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Notably, this ratiometric gas sensing is impervious to operational temperature fluctuations, achieving a substantial reduction in the coefficient of variation (CV) value from 21.81% to 7.81%, greatly refining the precision of gas detection (limit of detection, LOD).",
+        "references": {},
+        "viewpoints": [
+          "The ratiometric gas sensing is impervious to operational temperature fluctuations.",
+          "The ratiometric gas sensing achieves a substantial reduction in the coefficient of variation value from 21.81% to 7.81%.",
+          "The ratiometric gas sensing greatly refines the precision of gas detection."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56609-z_with_abstracts",
+    "base_id": "s41467-025-56609-z",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56609-z_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

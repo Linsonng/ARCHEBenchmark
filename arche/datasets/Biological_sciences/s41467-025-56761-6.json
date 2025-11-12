@@ -1,0 +1,146 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Most bacteria exhibit little growth in their natural environments, with nutrient limitation being a typical causative factor [1] . Therefore, how bacteria catabolise environmental macromolecules and import the resulting nutrients is of general importance for a broader understanding of microbial growth [2] , [3] . Bacteria typically transport small peptides into the cell to serve as a source of fixed nitrogen and amino acids [4] . This transport is exploited in laboratory microbial culture when casein (the predominant protein component of milk) degraded with enzymes (a casein hydrolysate) is used as a source of nutrients for growth. Prior degradation is necessary because whole proteins are typically too large for bacterial uptake, enzyme degradation produces amino acids and small peptides that can be transported into the bacterium to be used for growth, for example in the almost universally used LB broth culture medium [5] . Casein hydrolysate gives a dose-dependent enhancement of wild type Escherichia coli growth when used as an additive to minimal media with glycerol as a carbon source (Fig. 1a ). In line with this observation, one may expect that the proteins released from the lysis of dead bacteria in the environment must be catabolised to small peptides before they can support the growth of other live cells. Here, we show that this is indeed the case and demonstrate the Lon protease released from dead cells catabolises co-released proteins to small peptide nutrients. Further, we suggest how such post-mortem protein lysate processing could have evolved. Fig. 1: Lon protease derived from dead bacteria is required for nutrient recycling. a Plot of the change in cell density for E. coli BW25113 grown at 37 °C in M9/1% (v/v) glycerol media for 20 hrs against varying addition of casein hydrolysate ( n = 6, mean ± 95% C.I.). b Plot of the change in cell density of E. coli BW25113 grown at 37 °C in M9/1% (v/v) glycerol media for 20 hrs in the presence or absence of lysate derived from the indicated E. coli strains (Lon-null, n = 9; BL21, n = 8; OmpT-null, WT, H 2 O, n = 10; mean ± 95% C.I., p values - one-way ANOVA with post hoc Tukey’s multiple comparisons test, F (DFn = 4, DFd = 42) = 100.3). WT vs Lon-null, WT vs BL21, and WT vs H 2 O p < 0.0001; WT vs OmpT-null p = 0.9788; Lon-null vs H 2 O p = 0.056. Source data are provided as a Source Data file. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Most bacteria exhibit little growth in their natural environments, with nutrient limitation being a typical causative factor [1].",
+        "references": {
+          "1": {
+            "1": "Most bacteria are in prolonged states of very low metabolic activity and little or no growth for the majority of their time.",
+            "2": "In prolonged states of low activity, electron donors, electron acceptors, and/or nutrients are limited for most bacteria.",
+            "3": "Cells in prolonged states of low metabolic activity are poised to undergo rapid division cycles when resources become available.",
+            "4": "Non-growing states of bacteria are far less studied than other growth states.",
+            "5": "There are many unanswered questions regarding basic bacterial physiology because non-growing states are less studied.",
+            "6": "The Review discusses findings from a small but diverse set of systems used to investigate how growth-arrested bacteria adjust metabolism.",
+            "7": "The Review discusses findings from a small but diverse set of systems used to investigate how growth-arrested bacteria regulate transcription and translation.",
+            "8": "The Review discusses findings from a small but diverse set of systems used to investigate how growth-arrested bacteria maintain their chromosomes.",
+            "9": "The Review highlights major questions regarding bacterial growth-arrested states that remain to be addressed.",
+            "10": "Progress in answering major questions about non-growing bacterial states may be aided by recent methodological advances.",
+            "11": "Progress in answering major questions about non-growing bacterial states may be aided by dialectic between environmental and molecular microbiology perspectives."
+          }
+        },
+        "viewpoints": [
+          "Most bacteria exhibit little growth in their natural environments.",
+          "Nutrient limitation is a typical causative factor for the limited growth of most bacteria in their natural environments."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Therefore, how bacteria catabolise environmental macromolecules and import the resulting nutrients is of general importance for a broader understanding of microbial growth [2], [3].",
+        "references": {
+          "2": [],
+          "3": []
+        },
+        "viewpoints": [
+          "Understanding how bacteria catabolize environmental macromolecules is of general importance for a broader understanding of microbial growth.",
+          "Understanding how bacteria import resulting nutrients after macromolecule catabolism is of general importance for a broader understanding of microbial growth."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Bacteria typically transport small peptides into the cell to serve as a source of fixed nitrogen and amino acids [4].",
+        "references": {
+          "4": {
+            "1": "Cellular uptake of small peptides is an important physiological process.",
+            "2": "The PTR family of proton-coupled peptide transporters mediates the cellular uptake of small peptides.",
+            "3": "In bacteria, peptides can be used as a source of amino acids.",
+            "4": "In bacteria, peptides can be used as a source of nitrogen.",
+            "5": "In humans, peptide transport is the principal route for the uptake of dietary protein in the form of short di-peptides and tri-peptides.",
+            "6": "In humans, peptide transport is the principal route for the retention of dietary protein in the form of short di-peptides and tri-peptides for cellular metabolism.",
+            "7": "Recent crystal structures of bacterial PTR family transporters have revealed key molecular details underpinning ligand promiscuity within the PTR family.",
+            "8": "Recent crystal structures of bacterial PTR family transporters have revealed the mechanism of proton-coupled transport within the PTR family.",
+            "9": "Biochemical studies of transport have contributed to revealing key molecular details underpinning ligand promiscuity within the PTR family.",
+            "10": "Biochemical studies of transport have contributed to revealing the mechanism of proton-coupled transport within the PTR family.",
+            "11": "Pairs of salt bridge interactions between transmembrane helices work in tandem to orchestrate alternating access transport within the PTR family.",
+            "12": "Key roles for residues conserved between bacterial and eukaryotic homologues suggest a conserved mechanism of peptide recognition.",
+            "13": "Key roles for residues conserved between bacterial and eukaryotic homologues suggest a conserved mechanism of peptide transport.",
+            "14": "In some cases, the conserved mechanism of peptide recognition and transport has been subtly modified in individual species.",
+            "15": "Physiological studies on PepT1 and PepT2 have identified these transporters as being responsible for the uptake of many pharmaceutically important drug molecules.",
+            "16": "Physiological studies have identified PepT1 and PepT2 as being responsible for the uptake of antibiotics.",
+            "17": "Physiological studies have identified PepT1 and PepT2 as being responsible for the uptake of antiviral medications.",
+            "18": "The promiscuity of PepT1 and PepT2 can be used for improving the oral bioavailability of poorly absorbed compounds.",
+            "19": "Insights gained from recent structural studies are rapidly advancing our understanding of the medically important transporter superfamily.",
+            "20": "Insights gained from previous physiological analyses are rapidly advancing our understanding of the medically important transporter superfamily.",
+            "21": "Insights gained from previous biochemical analyses are rapidly advancing our understanding of the medically important transporter superfamily.",
+            "22": "This article is part of a Special Issue entitled \"Structural biochemistry and biophysics of membrane proteins.\""
+          }
+        },
+        "viewpoints": [
+          "Bacteria typically transport small peptides into the cell.",
+          "Small peptides serve as a source of fixed nitrogen for bacteria.",
+          "Small peptides serve as a source of amino acids for bacteria."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "This transport is exploited in laboratory microbial culture when casein (the predominant protein component of milk) degraded with enzymes (a casein hydrolysate) is used as a source of nutrients for growth.",
+        "references": {},
+        "viewpoints": [
+          "The transport of small peptides into bacterial cells is exploited in laboratory microbial culture.",
+          "Casein, the predominant protein component of milk, is degraded with enzymes.",
+          "Casein hydrolysate, resulting from enzyme degradation of casein, is used as a source of nutrients for bacterial growth in laboratory microbial culture."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Prior degradation is necessary because whole proteins are typically too large for bacterial uptake, enzyme degradation produces amino acids and small peptides that can be transported into the bacterium to be used for growth, for example in the almost universally used LB broth culture medium [5].",
+        "references": {
+          "5": []
+        },
+        "viewpoints": [
+          "Prior degradation of whole proteins is necessary because whole proteins are typically too large for bacterial uptake.",
+          "Enzyme degradation of whole proteins produces amino acids.",
+          "Enzyme degradation of whole proteins produces small peptides.",
+          "Amino acids produced by enzyme degradation can be transported into the bacterium to be used for growth.",
+          "Small peptides produced by enzyme degradation can be transported into the bacterium to be used for growth.",
+          "LB broth culture medium is an example of a medium where enzyme-degraded amino acids and small peptides are used for bacterial growth."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Casein hydrolysate gives a dose-dependent enhancement of wild type Escherichia coli growth when used as an additive to minimal media with glycerol as a carbon source (Fig. 1a).",
+        "references": {},
+        "viewpoints": [
+          "Casein hydrolysate gives a dose-dependent enhancement of wild-type Escherichia coli growth.",
+          "Casein hydrolysate is used as an additive to minimal media with glycerol as a carbon source to enhance Escherichia coli growth."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "In line with this observation, one may expect that the proteins released from the lysis of dead bacteria in the environment must be catabolised to small peptides before they can support the growth of other live cells.",
+        "references": {},
+        "viewpoints": [
+          "Proteins released from the lysis of dead bacteria in the environment must be catabolized to small peptides before they can support the growth of other live cells."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Here, we show that this is indeed the case and demonstrate the Lon protease released from dead cells catabolises co-released proteins to small peptide nutrients.",
+        "references": {},
+        "viewpoints": [
+          "Proteins released from the lysis of dead bacteria are catabolized to small peptides.",
+          "Lon protease released from dead cells catalyzes co-released proteins into small peptide nutrients."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Further, we suggest how such post-mortem protein lysate processing could have evolved.",
+        "references": {},
+        "viewpoints": [
+          "The study suggests how post-mortem protein lysate processing could have evolved."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56761-6_with_abstracts",
+    "base_id": "s41467-025-56761-6",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56761-6_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

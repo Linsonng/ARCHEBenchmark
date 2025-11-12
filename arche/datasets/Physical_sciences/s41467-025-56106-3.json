@@ -1,0 +1,1004 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Developing carbon capture, utilization, and storage technologies is crucial for managing anthropogenic carbon dioxide (CO 2 ) emissions while providing sources of sustainable chemicals and fuels. However, direct air capture is energy-intensive and costly [1] , [2] . In comparison, dissolved inorganic carbon in seawater has a bicarbonate molarity that is ~ 140 times higher than the 420 ppm of atmospheric CO 2 . Furthermore, seawater is a natural carbon sink of net ~ 0.4 giga-ton CO 2 per year via the flux exchange between the seawater and atmosphere, potentially supporting trillion-ton-scale CO 2 capture, utilization, and sequestration via engineering solutions [3] , [4] . In particular, the conversion of dissolved carbon in seawater into carbon-based fuels or chemical products can be entirely powered by sunlight using photoelectrochemical (PEC) devices. Such solar-powered chemical devices, floating on the ocean, could utilize ocean current, tidal energy, and sunlight to generate dissolved CO 2 on demand via bicarbonate acidification, i.e., HCO 3 − + H + → CO 2 (aq) + H 2 O. Then, the CO 2 reduction (CO 2 R) reaction converts the dissolved CO 2 , i.e., CO 2 (aq), to gaseous carbon products, such as CO or C 2 H 4 , for subsequent synthesis of liquid fuels or chemicals. These PEC devices employ pairs of photoanodes and photocathodes designed to drive water oxidation and fuel-forming CO 2 R reactions, respectively, with sunlight as the only energy inputs [5] , [6] , [7] . In a stepwise fashion, CO 2 can be captured from dissolved carbon in seawater as the carbon source for the subsequent PEC CO 2 R conversion [8] , [9] . Despite established technology, stepwise capture and conversion have rarely been demonstrated due to the challenges mentioned below. Alternatively, an integrated PEC process for the direct utilization of dissolved carbon for solar fuel production is expected to consume much less energy and be more economically viable than the stepwise approach such as PV-driven CO 2 capture and CO 2 electrolysis. Figure 1a illustrates a conventional PEC device configuration for unbiased CO 2 reduction and water oxidation, which operates in static electrolytes. In this design, the anodes and cathodes are arranged back-to-back in a tandem configuration [10] , [11] , which maximizes light absorption. Fuel-forming reactions, including CO 2 reduction and H 2 evolution, proceed at the cathode, and water oxidation reactions proceed at the anode. Because the electrolyte of the PEC device is static, diffusion is the dominant transport mechanism, subsequently generating an ionic current that is carried with H + , HCO 3 − , and other major ionic species. As shown in Fig. 1c , acid-base reactions occur during the diffusional transport of CO 2 (aq), H + , and HCO 3 − . The pH gradient, ion transport, and acid-base buffer reactions between the anodes and cathodes are the major transport losses. Seawater, with its ionic strength of ~ 0.7 M, is a good ionic conductor [12] , [13] , which means the electrolyte resistance has minimal contribution to the transport losses under solar illumination. CO 2 reduction or H 2 evolution consumes H + , and net produces OH − . The pH gradient typically contributes to notable transport loss in the PEC device. Diffusion-dominant transport creates a pH gradient in the buffered electrolyte (Fig. 1c), e.g ., from 10 to 4, for a current density of 0.5 mA/cm 2 in a static 2 mM HCO 3 − buffer electrolyte, which leads to a higher pH at the cathode and reducing local CO 2 (aq). The pH difference between the cathodes and anodes adds to the device’s potential loss, which can be as high as 500 mV, due to pH-dependent thermodynamic potentials [14] , [15] . Because of this, the solar-to-fuel (STF) conversion efficiency for CO 2 reduction, or water splitting broadly, is low: e.g., photoabsorbers of SrTiO 3 /BiVO 4 , amorphous-Si/BiVO 4 , and perovskite/BiVO 4 (with BiVO 4 the photocurrent-limiting absorber) have achieved STF efficiency of 0.08% [16] , 0.43% [17] , and 0.63% [18] respectively. Fig. 1: Comparison of a conventional device with a photoelectrocatalytic CO 2 R device employing the concept of CO 2 (aq) molecular flux. a Schematic of the conventional PEC device employing a static solution where diffusion dominates the transport mechanism. b Schematic of CO 2 (aq) molecular flux catalysis with a well-defined boundary layer shear flow, ( c ) 2D conceptual layout of the coupled catalysis, acid-base buffer reaction, and diffusion processes between anodes and cathodes, ( d ) 2D conceptual layout of the molecular flux catalysis, acid-base buffer reaction, and convective flow processes from the anode to the cathode along the flow pathway. The arrows in Fig. 1d represent CO 2 flux, and the light green area represents the spatial distribution of CO 2 produced at the anode underflow. The pH ranges in ( c and d ) are derived from the pH map and modeling in Fig. 5 . Full size image The conventional diffusion transport of H + and HCO 3 − in a pH-neutral and buffered electrolyte leads to a high pH near the CO 2 R cathodes. As shown in Fig. 1c , CO 2 (aq) is constantly consumed by OH − near the cathode. As a result, there is insufficient reactant for PEC CO 2 R. This continuous CO 2 -OH − reaction (Fig. 1c ) depletes the CO 2 (aq) concentration to near zero, eliminating selectivity for carbon products such as CO and C 2 H 4 . Thus, another challenge of utilizing seawater arises from the low concentration of dissolved carbon species including HCO 3 - and CO 2 (aq). Among these species, HCO 3 − is not considered an active species during (photo-)electrochemical CO 2 reduction. However, seawater contains only 2.3 mM bicarbonate, and the concentration of electrochemically active CO 2 (aq) species is near zero. To utilize seawater for liquid solar fuel production, one typically takes a stepwise approach of first acidifying seawater to convert the HCO 3 − to pure CO 2 and then bubbling the pure CO 2 continuously into a conventional PEC device to increase the reactant concentrations. To improve the selectivity for carbon products, it is necessary to ensure sufficient CO 2 (aq) reactants by constantly bubbling CO 2 gas. However, this approach is costly and is limited by low energy and carbon utilization efficiency (continuous CO 2 bubbling and CO 2 -OH - reaction), and thus not economically viable. In addition, it is impractical to scale such CO 2 bubbling schemes for large-area PEC reactors situated on the ocean. Overall, the combined challenge in reaction engineering and CO 2 R catalysis motivates new ways of effectively managing diffusion-based transport losses and performance degradation due to the depletion of CO 2 (aq) local to photocathodes. Thus far, reported PEC devices that leverage flowing seawater with 2.3 mM bicarbonate and without CO 2 bubbling remain largely unexplored. In this case, flow replaces diffusion to dominate the transport. Besides, the complex multi-species composition and chemical equilibrium of seawater is a notable challenge for direct ocean CO 2 capture and conversion, including major mineral species, i.e., Na + , Cl − , Mg 2+ , and Ca 2+ [8] , [19] , and organic carbon and microbial species. Chemical selective coatings are needed to permeate active reactants and prevent catalyst poisoning by minerals or other impurities in seawater [20] . For proof-of-concept, simulated seawater was used. We demonstrate an understudied regime of molecular flux catalysis in which CO 2 (aq) reactants continuously flow to the catalysts within a boundary layer flow (Fig. 1 b and d ). This boundary layer flow is generated by a custom-designed and 3D-printed PEC device, which has tandem pairs of BiVO 4 photoanodes to Si photocathodes that are arranged in parallel (Fig. 1b ). PEC CO 2 R catalysis coupled with the boundary flow transport enables the conversion of the naturally low concentration of dissolved inorganic carbon found in seawater (2.3 mM HCO 3 − ) to a flux of CO 2 (aq) (Fig. 1d ). In this work, we make four parallel configurations for the Fig. 1b design, which in practice can be repeated periodically to achieve scaled-up, solar-driven, direct ocean CO 2 conversion. The boundary-layer shear flow confines a continuous flux of CO 2 (aq) molecules near the surface from the photoanode to the photocathode. The BiVO 4 photoanode generates H + thus acidifying HCO 3 − in flowing seawater under sunlight. The flow also prevents the out-diffusion of the CO 2 (aq) to the bulk seawater, increasing the transport flux of CO 2 (aq) and H + and simultaneously reducing the CO 2 (aq)’s residence time to achieve its efficient utilization at each photocathode downstream. Notably, the flow energy can be readily harvested from tidal waves and ocean currents, making such a boundary layer flow scheme possible. The CO 2 (aq) flux, in situ, generated by the BiVO 4 photoanode, arrives at the catalyst of the Si photocathode and then gets converted to gaseous CO products which accumulate at the device headspace. Besides the CO 2 (aq) flux, the H + flux is enhanced by the flow. This boundary layer flow reduces the pH gradient (supported by Fig. 5 data) and other concentration-limited transport losses (supported by Fig. 6 simulation) to improve PEC device efficiency of CO 2 reduction, water splitting, and other fuel-forming photocatalysis broadly. Compared to conventional static PEC devices, the STF efficiency of our flow device increased from 0.4% to 0.71%, which is the highest efficiency among reported BiVO 4 -based CO 2 -reduction devices. This molecular flux approach tunes the CO 2 R catalytic selectivity via flow velocities. We also conducted modeling and numerical simulations to quantify the effect of flow vectors on the selectivity and rates of the PEC device. According to the simulation and experimental outcome, this molecular flux catalysis approach through boundary layer flow drastically increased the selectivity of carbon-based products such as CO from 3% to 21%—approaching the theoretical limit of utilizing seawater under the solar flux, whereas conventional static device (Fig. 1c ) requires constant bubbling of CO 2 gas to achieve a comparable selectivity level. Resources such as seawater, air, and waste streams are typically low in the active species of CO 2 (aq) but high in bicarbonates and carbonates due to their much higher solubility. This molecular flux catalysis concept has the potential to enable the solar-driven direct conversion of low-concentration reactants or improve the utilization efficiency of dilute reactants.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Developing carbon capture, utilization, and storage technologies is crucial for managing anthropogenic carbon dioxide (CO2) emissions while providing sources of sustainable chemicals and fuels.",
+        "references": {},
+        "viewpoints": [
+          "Carbon capture, utilization, and storage technologies are crucial for managing anthropogenic carbon dioxide emissions.",
+          "Carbon capture, utilization, and storage technologies provide sources of sustainable chemicals and fuels."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "However, direct air capture is energy-intensive and costly [1], [2].",
+        "references": {
+          "1": {
+            "1": "Direct air capture (DAC) shows exceptional promise for carbon dioxide removal.",
+            "2": "The scale of direct air capture (DAC) is required to fulfill the Paris Agreement.",
+            "3": "Planetary limitations do not constrain the scale of direct air capture (DAC).",
+            "4": "The currently high cost of direct air capture (DAC) puts its feasibility in question.",
+            "5": "The paper explores cost reduction opportunities for direct air capture (DAC) that result from learning-by-doing.",
+            "6": "The cost reduction pathways of similar technologies were observed to explore cost reduction opportunities for direct air capture (DAC).",
+            "7": "An analytical buy-down model was developed to investigate what it would take to lower the cost of direct air capture (DAC) to $100/ton CO₂.",
+            "8": "The goal is not to accurately predict future costs of direct air capture (DAC).",
+            "9": "The analysis demonstrates that if direct air capture (DAC) follows a path similar to that of comparable, successful technologies, a capital investment of several hundred million dollars could buy down the cost of DAC.",
+            "10": "The buy-down effort at a relatively low cost will quantify the learning potential of direct air capture (DAC).",
+            "11": "The buy-down effort will show whether the costs of direct air capture (DAC) can be reduced like solar photovoltaic modules.",
+            "12": "The buy-down effort will show whether, despite the investment, the costs of direct air capture (DAC) remain expensive like nuclear power generation."
+          },
+          "2": {
+            "1": "Climate change necessitates the adaptation of negative emission technologies.",
+            "2": "Direct air capture (DAC) of carbon dioxide is a type of negative emission technology.",
+            "3": "Negative emission technologies like DAC can lower the global warming impacts of greenhouse gases.",
+            "4": "There has been an increase in global interest in DAC technologies.",
+            "5": "The elevated global interest in DAC technologies prompted the implementation of new tax credits and policies worldwide.",
+            "6": "The implementation of new tax credits and policies worldwide motivated existing DAC companies.",
+            "7": "New tax credits and policies worldwide prompted a startup boom in the DAC sector.",
+            "8": "Presently, there are 19 DAC plants operating worldwide.",
+            "9": "The 19 DAC plants worldwide capture more than 0.01 Mt CO₂ annually.",
+            "10": "DAC plants capture an average of 10,000 tons of CO₂ annually.",
+            "11": "DAC plants are still in their infancy.",
+            "12": "DAC plants are expensive.",
+            "13": "DAC technologies need to improve in the area of contactor.",
+            "14": "DAC technologies need to improve in the area of sorbent.",
+            "15": "DAC technologies need to improve in the area of regeneration.",
+            "16": "Improvements in contactor, sorbent, and regeneration are needed to drive down the costs of DAC technologies.",
+            "17": "Technology-based economic development in the area of contactor is required to achieve less than $100/ton of CO₂.",
+            "18": "Technology-based economic development in the area of sorbent is required to achieve less than $100/ton of CO₂.",
+            "19": "Technology-based economic development in the area of regeneration is required to achieve less than $100/ton of CO₂.",
+            "20": "Achieving less than $100/ton of CO₂ is necessary to make DAC economically viable.",
+            "21": "The current DAC cost is about 2–6 times higher than the desired cost.",
+            "22": "The current DAC cost depends highly on the source of energy used.",
+            "23": "This review presents the current status of commercial DAC technologies.",
+            "24": "The review elucidates the five pillars of technology: capture technologies, their energy demand, final costs, environmental impacts, and political support.",
+            "25": "The review explains the processing steps for liquid carbon capture technologies.",
+            "26": "The review explains the processing steps for solid carbon capture technologies.",
+            "27": "The review indicates the specific energy requirements for liquid carbon capture technologies.",
+            "28": "The review indicates the specific energy requirements for solid carbon capture technologies.",
+            "29": "The review discusses DAC capital and operational costs based on plant power energy sources.",
+            "30": "The review discusses the land needs of DAC technologies.",
+            "31": "The review discusses the water needs of DAC technologies.",
+            "32": "At 0.01 Mt CO₂/year capture capacity, DAC alone faces a challenge to meet the carbon capture rates described in the Paris Agreement goals.",
+            "33": "The Paris Agreement goals describe carbon capture rates for limiting global warming to 1.5–2°C.",
+            "34": "DAC may partially help to offset annual emissions from concrete.",
+            "35": "Concrete accounts for approximately 8% of annual emissions.",
+            "36": "DAC may partially help to offset annual emissions from transportation.",
+            "37": "Transportation accounts for approximately 24% of annual emissions.",
+            "38": "DAC may partially help to offset annual emissions from the iron-steel industry.",
+            "39": "The iron-steel industry accounts for approximately 11% of annual emissions.",
+            "40": "DAC may partially help to offset annual emissions from wildfires.",
+            "41": "Wildfires account for approximately 0.8% of annual emissions."
+          }
+        },
+        "viewpoints": [
+          "Direct air capture is energy-intensive.",
+          "Direct air capture is costly."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In comparison, dissolved inorganic carbon in seawater has a bicarbonate molarity that is ~ 140 times higher than the 420 ppm of atmospheric CO2.",
+        "references": {},
+        "viewpoints": [
+          "Dissolved inorganic carbon in seawater has a bicarbonate molarity that is approximately 140 times higher than the 420 ppm of atmospheric CO2."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Furthermore, seawater is a natural carbon sink of net ~ 0.4 giga-ton CO2 per year via the flux exchange between the seawater and atmosphere, potentially supporting trillion-ton-scale CO2 capture, utilization, and sequestration via engineering solutions [3], [4].",
+        "references": {
+          "3": {
+            "1": "Electrochemical CO₂ capture technologies are gaining attention for their flexibility.",
+            "2": "Electrochemical CO₂ capture technologies are gaining attention for their ability to address decentralized emissions, such as those from the ocean and atmosphere.",
+            "3": "Electrochemical CO₂ capture technologies are gaining attention for their fit in an electrified industry.",
+            "4": "The present work reviews recent progress made in electrochemical CO₂ capture.",
+            "5": "The majority of electrochemical CO₂ capture methods rely on the concept of \"pH-swing.\"",
+            "6": "The majority of electrochemical CO₂ capture methods rely on the effect \"pH-swing\" has on the CO₂ hydration/dehydration equilibrium.",
+            "7": "CO₂ can be captured through a pH-swing by shifting the pH of a working fluid between acidic and basic pH.",
+            "8": "CO₂ can be recovered through a pH-swing by shifting the pH of a working fluid between acidic and basic pH.",
+            "9": "A pH-swing can be applied electrochemically through electrolysis.",
+            "10": "A pH-swing can be applied electrochemically through bipolar membrane electrodialysis.",
+            "11": "A pH-swing can be applied electrochemically through reversible redox reactions.",
+            "12": "A pH-swing can be applied electrochemically through capacitive deionization.",
+            "13": "This review summarizes the main parameters governing electrochemical pH-swing processes.",
+            "14": "This review puts the concept of electrochemical pH-swing processes in the framework of available worldwide capture technologies.",
+            "15": "The review analyses the energy efficiency of electrochemical CO₂ capture systems.",
+            "16": "The review analyses the energy consumption of electrochemical CO₂ capture systems.",
+            "17": "The review provides recommendations for further improvements in electrochemical CO₂ capture systems.",
+            "18": "Electrochemical CO₂ capture technologies are rather costly compared to amine-based capture technologies.",
+            "19": "Electrochemical CO₂ capture technologies can become particularly interesting if more affordable renewable electricity becomes widely available.",
+            "20": "Electrochemical CO₂ capture technologies can become particularly interesting if more affordable materials, such as electrodes and membranes, become widely available.",
+            "21": "Electrochemical methods have the ability to directly convert captured CO₂ to value-added chemicals.",
+            "22": "Electrochemical methods have the ability to directly convert captured CO₂ to fuels.",
+            "23": "Electrochemical methods prepare for a fully electrified circular carbon economy by converting captured CO₂ to value-added chemicals and fuels."
+          },
+          "4": []
+        },
+        "viewpoints": [
+          "Seawater is a natural carbon sink of net approximately 0.4 giga-ton CO2 per year via the flux exchange between the seawater and atmosphere.",
+          "Seawater potentially supports trillion-ton-scale CO2 capture, utilization, and sequestration via engineering solutions."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In particular, the conversion of dissolved carbon in seawater into carbon-based fuels or chemical products can be entirely powered by sunlight using photoelectrochemical (PEC) devices.",
+        "references": {},
+        "viewpoints": [
+          "The conversion of dissolved carbon in seawater into carbon-based fuels or chemical products can be entirely powered by sunlight using photoelectrochemical devices."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Such solar-powered chemical devices, floating on the ocean, could utilize ocean current, tidal energy, and sunlight to generate dissolved CO2 on demand via bicarbonate acidification, i.e., HCO3− + H+ → CO2 (aq) + H2O.",
+        "references": {},
+        "viewpoints": [
+          "Solar-powered chemical devices floating on the ocean could utilize ocean current, tidal energy, and sunlight to generate dissolved CO2 on demand via bicarbonate acidification.",
+          "Bicarbonate acidification involves the reaction HCO3− + H+ → CO2 (aq) + H2O."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Then, the CO2 reduction (CO2R) reaction converts the dissolved CO2, i.e., CO2 (aq), to gaseous carbon products, such as CO or C2H4, for subsequent synthesis of liquid fuels or chemicals.",
+        "references": {},
+        "viewpoints": [
+          "The CO2 reduction reaction converts the dissolved CO2 to gaseous carbon products, such as CO or C2H4.",
+          "Gaseous carbon products from the CO2 reduction reaction can be used for the subsequent synthesis of liquid fuels or chemicals."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "These PEC devices employ pairs of photoanodes and photocathodes designed to drive water oxidation and fuel-forming CO2R reactions, respectively, with sunlight as the only energy inputs [5], [6], [7].",
+        "references": {
+          "5": {
+            "1": "Solar water splitting is a promising approach to transform sunlight into renewable hydrogen energy.",
+            "2": "Solar water splitting is a promising approach to transform sunlight into sustainable hydrogen energy.",
+            "3": "Solar water splitting is a promising approach to transform sunlight into green hydrogen energy.",
+            "4": "There are three representative ways of transforming solar radiation into molecular hydrogen: photocatalytic (PC) route.",
+            "5": "There are three representative ways of transforming solar radiation into molecular hydrogen: photoelectrochemical (PEC) route.",
+            "6": "There are three representative ways of transforming solar radiation into molecular hydrogen: photovoltaic–electrolysis (PV–EC) route.",
+            "7": "The review article discusses devices and systems for solar-to-hydrogen production.",
+            "8": "The review article includes a comparison of the photocatalytic (PC), photoelectrochemical (PEC), and photovoltaic–electrolysis (PV–EC) solar water splitting systems.",
+            "9": "The discussion is made with the future perspective of a green hydrogen economy in mind.",
+            "10": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: materials efficiency.",
+            "11": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: cost.",
+            "12": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: elemental abundancy.",
+            "13": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: stability.",
+            "14": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: fuel separation.",
+            "15": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: device operability.",
+            "16": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: cell architecture.",
+            "17": "The review focuses on a critical assessment of key components needed to scale up PEC water splitting systems: techno-economic aspects.",
+            "18": "The review follows a stepwise approach.",
+            "19": "The review provides a summary of the basic principles for PEC water splitting.",
+            "20": "The review provides a summary of the photocatalytic materials employed for PEC water splitting.",
+            "21": "The review provides an extensive discussion of technologies for PEC water splitting.",
+            "22": "The review provides an extensive discussion of procedures for PEC water splitting.",
+            "23": "The review provides an extensive discussion of system designs for PEC water splitting.",
+            "24": "The review provides an introduction to international demonstration projects related to PEC water splitting.",
+            "25": "The review provides an introduction to the development of benchmarked devices for PEC water splitting.",
+            "26": "The review provides an introduction to the development of large-scale prototype systems for PEC water splitting.",
+            "27": "The task of scaling up laboratory overall water splitting devices to practical systems may be called “an artificial photosynthetic leaf-to-farm challenge”."
+          },
+          "6": {
+            "1": "Surface passivation of the CdS/Cu₂ZnSnS₄ photocathode by a HfO₂ layer enhances the photoelectrochemical stability of the photocathode.",
+            "2": "The photoelectrochemical performance of the Cu₂ZnSnS₄-based photocathode depends on the thickness of the HfO₂ film.",
+            "3": "The stability of the Cu₂ZnSnS₄-based photocathode depends on the thickness of the HfO₂ film.",
+            "4": "The thickness of the HfO₂ layer influences the PEC stability of the Cu₂ZnSnS₄-based photocathode.",
+            "5": "The thickness of the HfO₂ layer influences the PEC efficiency of the Cu₂ZnSnS₄-based photocathode.",
+            "6": "A 6 nm thick HfO₂ layer on the CdS/Cu₂ZnSnS₄ photocathode provides long-term PEC photocurrent stability of over 10 hours.",
+            "7": "A 6 nm thick HfO₂ layer on the CdS/Cu₂ZnSnS₄ photocathode retains a high half-cell solar-to-hydrogen efficiency (HC-STH) of 2.7%.",
+            "8": "An unbiased solar water splitting device was fabricated based on the Pt/HfO₂/CdS/Cu₂ZnSnS₄ photocathode in tandem with a BiVO₄ photoanode.",
+            "9": "The tandem device exhibited an unassisted STH conversion efficiency of 1.046%.",
+            "10": "The tandem device showed high long-term stability of over 10 hours."
+          },
+          "7": {
+            "1": "A CuIn_{1−x}Ga_{x}Se_{2} (CIGS) photocathode with a specific composition promotes hydrogen evolution from water remarkably.",
+            "2": "The CIGS photocathode exhibits a half-cell solar-to-hydrogen conversion efficiency of 12.5%.",
+            "3": "CIGS thin films with various compositions were prepared via a three-stage method.",
+            "4": "The composition of the CIGS thin films is defined by x = Ga/(In + Ga).",
+            "5": "The CIGS thin films were prepared using a vacuum evaporation system.",
+            "6": "The photocurrent from CIGS photocathode surfaces modified with CdS and Pt significantly increased along with x.",
+            "7": "The increase in photocurrent is a result of a reduction in the conduction band offset at the CIGS/CdS interface.",
+            "8": "Using an optimized aqueous electrolyte resulted in enhanced photocurrents of 28 mA cm^{−2} at 0 V_{RHE}.",
+            "9": "Using an optimized aqueous electrolyte resulted in enhanced photocurrents of 18 mA cm^{−2} at 0.6 V_{RHE}.",
+            "10": "The measurements of enhanced photocurrents were conducted under simulated AM1.5G sunlight.",
+            "11": "A tandem-type PEC cell containing the newly developed CIGS photocathode and a BiVO_{4} semi-transparent photoanode demonstrated stoichiometric hydrogen evolution.",
+            "12": "The tandem-type PEC cell demonstrated stoichiometric oxygen evolution.",
+            "13": "The tandem-type PEC cell achieved a solar-to-hydrogen conversion efficiency of 3.7%.",
+            "14": "The tandem-type PEC cell operated without the application of an external bias voltage."
+          }
+        },
+        "viewpoints": [
+          "Photoelectrochemical devices employ pairs of photoanodes and photocathodes designed to drive water oxidation and fuel-forming CO2 reduction reactions.",
+          "Sunlight is the only energy input for these photoelectrochemical devices."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "In a stepwise fashion, CO2 can be captured from dissolved carbon in seawater as the carbon source for the subsequent PEC CO2R conversion [8], [9].",
+        "references": {
+          "8": {
+            "1": "Capture and conversion of CO₂ from oceanwater can lead to net-negative emissions.",
+            "2": "CO₂ captured and converted from oceanwater can provide a carbon source for synthetic fuels at the gigaton per year scale.",
+            "3": "CO₂ captured and converted from oceanwater can provide a carbon source for chemical feedstocks at the gigaton per year scale.",
+            "4": "A direct coupled, proof-of-concept electrochemical system is reported.",
+            "5": "The electrochemical system uses a bipolar membrane electrodialysis (BPMED) cell to capture and convert CO₂ from oceanwater.",
+            "6": "The electrochemical system uses a vapor-fed CO₂ reduction (CO₂R) cell to capture and convert CO₂ from oceanwater.",
+            "7": "The BPMED cell replaces the commonly used water-splitting reaction with one-electron, reversible redox couples at the electrodes.",
+            "8": "The BPMED cell demonstrates the ability to capture CO₂ at an electrochemical energy consumption of 155.4 kJ mol⁻¹.",
+            "9": "The BPMED cell demonstrates the ability to capture CO₂ at an electrochemical energy consumption of 0.98 kWh kg⁻¹ of CO₂.",
+            "10": "The BPMED cell demonstrates a CO₂ capture efficiency of 71%.",
+            "11": "The direct coupled, vapor-fed CO₂R cell yields a total Faradaic efficiency of up to 95% for electrochemical CO₂ reduction to CO.",
+            "12": "The proof-of-concept system provides a unique technological pathway for CO₂ capture from oceanwater with only electrochemical processes.",
+            "13": "The proof-of-concept system provides a unique technological pathway for CO₂ conversion from oceanwater with only electrochemical processes."
+          },
+          "9": {
+            "1": "Increasing concentrations of atmospheric CO₂ are leading to rising global temperatures.",
+            "2": "Increasing concentrations of atmospheric CO₂ are leading to extreme weather events.",
+            "3": "The most prominent method of removing CO₂ via direct air capture remains cost-prohibitive.",
+            "4": "Oceans sequester carbon through several naturally occurring carbon dioxide removal (CDR) processes.",
+            "5": "One naturally occurring carbon dioxide removal process in oceans includes microorganisms that utilize dissolved inorganic carbon (DIC) in their metabolic processes.",
+            "6": "Atmospheric CO₂ is in dynamic equilibrium with dissolved inorganic carbon (DIC) at the ocean's surface.",
+            "7": "Ocean-based carbon dioxide removal (CDR) can function to capture carbon from the air indirectly.",
+            "8": "This work discusses a hybrid method that combines primary CO₂ capture via the growth of autotrophic microorganisms.",
+            "9": "The hybrid method involves photosynthetic cyanobacteria.",
+            "10": "The hybrid method involves microbially induced carbonate precipitation.",
+            "11": "Carbon fixation and carbonate precipitation can be co-optimized using bipolar membrane electrodialysis (BPMED) devices.",
+            "12": "Bipolar membrane electrodialysis (BPMED) devices generate seawater with an adjustable pH.",
+            "13": "The scale-up potential for naturally produced bio-carbonate composite material is examined.",
+            "14": "The production of naturally produced bio-carbonate composite material is compared with published ocean carbon dioxide removal (CDR) strategies.",
+            "15": "The comparison focuses on reducing anthropogenic CO₂ emissions."
+          }
+        },
+        "viewpoints": [
+          "CO2 can be captured from dissolved carbon in seawater in a stepwise fashion for subsequent photoelectrochemical CO2 reduction conversion."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Despite established technology, stepwise capture and conversion have rarely been demonstrated due to the challenges mentioned below.",
+        "references": {},
+        "viewpoints": [
+          "Stepwise capture and conversion have rarely been demonstrated despite being established technology.",
+          "Challenges exist that hinder the demonstration of stepwise capture and conversion."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Alternatively, an integrated PEC process for the direct utilization of dissolved carbon for solar fuel production is expected to consume much less energy and be more economically viable than the stepwise approach such as PV-driven CO2 capture and CO2 electrolysis.",
+        "references": {},
+        "viewpoints": [
+          "An integrated photoelectrochemical process for the direct utilization of dissolved carbon for solar fuel production is expected to consume much less energy than the stepwise approach.",
+          "An integrated photoelectrochemical process for the direct utilization of dissolved carbon for solar fuel production is expected to be more economically viable than the stepwise approach.",
+          "The stepwise approach includes PV-driven CO2 capture and CO2 electrolysis."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Figure 1a illustrates a conventional PEC device configuration for unbiased CO2 reduction and water oxidation, which operates in static electrolytes.",
+        "references": {},
+        "viewpoints": [
+          "Figure 1a illustrates a conventional photoelectrochemical device configuration for unbiased CO2 reduction and water oxidation.",
+          "The conventional photoelectrochemical device operates in static electrolytes."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "In this design, the anodes and cathodes are arranged back-to-back in a tandem configuration [10], [11], which maximizes light absorption.",
+        "references": {
+          "10": [],
+          "11": []
+        },
+        "viewpoints": [
+          "In this design, the anodes and cathodes are arranged back-to-back in a tandem configuration.",
+          "The tandem configuration of anodes and cathodes maximizes light absorption."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Fuel-forming reactions, including CO2 reduction and H2 evolution, proceed at the cathode, and water oxidation reactions proceed at the anode.",
+        "references": {},
+        "viewpoints": [
+          "Fuel-forming reactions, including CO2 reduction and H2 evolution, proceed at the cathode.",
+          "Water oxidation reactions proceed at the anode."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Because the electrolyte of the PEC device is static, diffusion is the dominant transport mechanism, subsequently generating an ionic current that is carried with H+, HCO3−, and other major ionic species.",
+        "references": {},
+        "viewpoints": [
+          "The electrolyte of the photoelectrochemical device is static.",
+          "Diffusion is the dominant transport mechanism in the static electrolyte.",
+          "The diffusion generates an ionic current carried with H+, HCO3−, and other major ionic species."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "As shown in Fig. 1c, acid-base reactions occur during the diffusional transport of CO2 (aq), H+, and HCO3−.",
+        "references": {},
+        "viewpoints": [
+          "Acid-base reactions occur during the diffusional transport of CO2 (aq), H+, and HCO3−."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "The pH gradient, ion transport, and acid-base buffer reactions between the anodes and cathodes are the major transport losses.",
+        "references": {},
+        "viewpoints": [
+          "The pH gradient between the anodes and cathodes is a major transport loss.",
+          "Ion transport between the anodes and cathodes is a major transport loss.",
+          "Acid-base buffer reactions between the anodes and cathodes are a major transport loss."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Seawater, with its ionic strength of ~ 0.7 M, is a good ionic conductor [12], [13], which means the electrolyte resistance has minimal contribution to the transport losses under solar illumination.",
+        "references": {
+          "12": {
+            "1": "The experiments were conducted to characterize the influence of ionic strength on the kinetics of calcite precipitation from seawater solutions.",
+            "2": "Experiments were conducted at four different ionic strengths (I = 0.10; 0.34; 0.55; 0.93 m).",
+            "3": "The experiments were conducted in NaCl-CaCl₂ solutions.",
+            "4": "The experiments were conducted at 298.15 K.",
+            "5": "The experiments were conducted at a CO₂ partial pressure of 100 Pa.",
+            "6": "The constant addition technique was used to maintain [Ca²⁺] at approximately 10.5 mmol/kg.",
+            "7": "The concentration of [CO₃²⁻] was varied to isolate its effect on the precipitation rate of calcite.",
+            "8": "Calcite precipitation in this solution is assumed to be dominated by the reaction Ca²⁺ + CO₃²⁻ ⇔ CaCO₃.",
+            "9": "The reaction dominating calcite precipitation is Ca²⁺ + CO₃²⁻ ⇔ CaCO₃.",
+            "10": "k_f is the forward reaction rate constant.",
+            "11": "k_b is the reverse reaction rate constant.",
+            "12": "The net precipitation rate, R, can be described at any ionic strength by the given formula.",
+            "13": "The net precipitation rate, R, is given by the formula R = k_f (a_Ca²⁺)ⁿ¹ (a_CO₃²⁻)ⁿ² - k_b.",
+            "14": "The net precipitation rate, R, can be expressed in a logarithmic form.",
+            "15": "The logarithmic form of the net precipitation rate, R, is Log (R + k_b) = Log K_f + n₂ Log [CO₃²⁻].",
+            "16": "n_i are the partial reaction orders with respect to the participating ions.",
+            "17": "a represents the ion activities.",
+            "18": "γ represents the activity coefficients.",
+            "19": "K_f is a constant at a given ionic strength and is given by K_f = k_f (a_Ca²⁺)ⁿ¹ (γ_CO₃²⁻)ⁿ².",
+            "20": "Increasing the ionic strength from 0.10 to 0.93 m leads to an increase in the partial reaction order with respect to CO₃²⁻ concentration from 1 to 3.",
+            "21": "The forward reaction rate constant, k_f, increases by several orders of magnitude with increasing ionic strength.",
+            "22": "A change in the calcite precipitation mechanism is suggested.",
+            "23": "A catalytic effect induced by inert electrolytes is suggested.",
+            "24": "The model was applied to rate measurements in seawater solutions at various salinities under the condition [Ca²⁺] ≫ [CO₃²⁻].",
+            "25": "The partial reaction order with respect to the carbonate ion increases as a function of the total ionic strength of the seawater solutions.",
+            "26": "The forward reaction rate constant increases as a function of the total ionic strength of the seawater solutions.",
+            "27": "A 50% increase in the total ionic strength of the parent solution results in a two-order-of-magnitude increase in the precipitation rate.",
+            "28": "Ion interactions in solution may contribute to the development of nonequivalent kink sites of different sizes on the surface of the growing crystal.",
+            "29": "A concomitant change in the precipitation mechanism may contribute to the development of nonequivalent kink sites on the surface of the growing crystal.",
+            "30": "The nonequivalent kink sites on the surface of the growing crystal still satisfy symmetry.",
+            "31": "Variations in the amount of foreign ions adsorbed and incorporated into marine calcites could be determined by the density of less constrained sites.",
+            "32": "The density of less constrained sites depends on the total ionic strength of the solution."
+          },
+          "13": []
+        },
+        "viewpoints": [
+          "Seawater has an ionic strength of approximately 0.7 M.",
+          "Seawater is a good ionic conductor.",
+          "Electrolyte resistance has minimal contribution to transport losses under solar illumination in seawater."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "CO2 reduction or H2 evolution consumes H+, and net produces OH−.",
+        "references": {},
+        "viewpoints": [
+          "CO2 reduction consumes H+.",
+          "H2 evolution consumes H+.",
+          "CO2 reduction produces OH−.",
+          "H2 evolution produces OH−."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The pH gradient typically contributes to notable transport loss in the PEC device.",
+        "references": {},
+        "viewpoints": [
+          "The pH gradient typically contributes to notable transport loss in the photoelectrochemical device."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Diffusion-dominant transport creates a pH gradient in the buffered electrolyte (Fig. 1c), e.g., from 10 to 4, for a current density of 0.5 mA/cm2 in a static 2 mM HCO3− buffer electrolyte, which leads to a higher pH at the cathode and reducing local CO2 (aq).",
+        "references": {},
+        "viewpoints": [
+          "Diffusion-dominant transport creates a pH gradient in the buffered electrolyte.",
+          "The pH gradient in the buffered electrolyte is exemplified from 10 to 4 for a current density of 0.5 mA/cm2 in a static 2 mM HCO3− buffer electrolyte.",
+          "The pH gradient leads to a higher pH at the cathode.",
+          "The pH gradient reduces local CO2 (aq)."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The pH difference between the cathodes and anodes adds to the device’s potential loss, which can be as high as 500 mV, due to pH-dependent thermodynamic potentials [14], [15].",
+        "references": {
+          "14": {
+            "1": "The efficiency limits of an integrated solar-driven water-splitting system have been evaluated experimentally and through multi-physics modeling and simulation.",
+            "2": "The gas-crossover behavior of an integrated solar-driven water-splitting system has been evaluated experimentally and through multi-physics modeling and simulation.",
+            "3": "The formation of local pH gradients near the electrode surfaces in an integrated solar-driven water-splitting system has been evaluated experimentally and through multi-physics modeling and simulation.",
+            "4": "The safety characteristics of an integrated solar-driven water-splitting system have been evaluated experimentally and through multi-physics modeling and simulation.",
+            "5": "The integrated solar-driven water-splitting system operates with bulk electrolyte solutions buffered at near-neutral pH.",
+            "6": "The integrated membrane-free system utilized a triple-junction amorphous hydrogenated Si (a-Si:H) cell as the light absorber.",
+            "7": "Pt was used as an electrocatalyst for the hydrogen-evolution reaction (HER) in the integrated membrane-free system.",
+            "8": "Cobalt phosphate (Co–Pi) was used as an electrocatalyst for the oxygen-evolution reaction (OER) in the integrated membrane-free system.",
+            "9": "The integrated membrane-free system used a bulk aqueous solution buffered at pH = 9.2 by 1.0 M of boric acid/borate as an electrolyte.",
+            "10": "The solar-to-electrical efficiency of the stand-alone triple-junction a-Si:H photovoltaic cell was 7.7%.",
+            "11": "The solar-to-hydrogen (STH) conversion efficiency for the integrated membrane-free water-splitting system was limited under steady-state operation to 3.2%.",
+            "12": "The formation of pH gradients near the electrode surfaces accounted for the largest voltage loss in the integrated membrane-free water-splitting system.",
+            "13": "The membrane-free system exhibited negligible product-recombination loss while operating at current densities near 3.0 mA cm^(−2).",
+            "14": "The membrane-free system exhibited significant crossover of products (up to 40% H₂ in the O₂ chamber).",
+            "15": "The significant crossover of products in the membrane-free system indicates that the system was not intrinsically safe.",
+            "16": "A system containing a membrane to minimize gas crossover yielded very low energy-conversion efficiencies at steady state.",
+            "17": "The system with a membrane was otherwise identical to the membrane-free system.",
+            "18": "Very low energy-conversion efficiencies in the system with a membrane were due to low transference numbers for protons across the membranes.",
+            "19": "Low transference numbers for protons across the membranes resulted in electrodialysis of the solution in the system with a membrane.",
+            "20": "Electrodialysis of the solution in the system with a membrane led to the formation of large concentration gradients of both protons and buffer counterions near the electrode surfaces.",
+            "21": "Modeling and simulation results showed significant pH gradients developed near the surfaces of the electrodes during operation.",
+            "22": "Significant pH gradients developed even with the addition of 1.0 M of buffering agent to the bulk of the solution.",
+            "23": "The bulk electrolyte was buffered to near-neutral pH.",
+            "24": "The electrode surfaces and electrocatalysts experienced local environments that were either highly acidic or highly alkaline under steady-state operation.",
+            "25": "Highly acidic or highly alkaline local environments changed the chemical form of the electrocatalysts.",
+            "26": "The electrodes were exposed to potentially corrosive local pH conditions due to highly acidic or highly alkaline local environments.",
+            "27": "Significant pH gradients existed in both types of systems.",
+            "28": "The solar-to-hydrogen conversion efficiency of both types of systems was limited by the mass transport of ionic species to the electrode surfaces.",
+            "29": "At operating current densities of <3 mA cm^(−2), the voltage drops due to pH gradients exceeded the combined electrocatalyst overpotentials for the hydrogen- and oxygen-evolution reactions.",
+            "30": "The combined electrocatalyst overpotentials for hydrogen- and oxygen-evolution reactions are at current densities of 10 mA cm^(−2).",
+            "31": "Near-neutral pH solar-driven water-splitting systems were fundamentally limited in efficiency.",
+            "32": "Near-neutral pH solar-driven water-splitting systems co-evolved explosive mixtures of H₂(g) and O₂(g).",
+            "33": "The systems co-evolved H₂(g) and O₂(g) in the presence of active catalysts for the recombination of H₂(g) and O₂(g)."
+          },
+          "15": {
+            "1": "Carbon dioxide must be removed from the atmosphere to mitigate the negative effects of climate change.",
+            "2": "The most scalable methods for removing carbon dioxide from the air require heat from fossil-fuel combustion.",
+            "3": "Heat from fossil-fuel combustion is needed to produce pure carbon dioxide.",
+            "4": "Heat from fossil-fuel combustion is needed to continuously regenerate the sorbent.",
+            "5": "Bipolar-membrane electrodialysis is a promising technology.",
+            "6": "Bipolar-membrane electrodialysis uses renewable electricity to dissociate water into acid and base.",
+            "7": "The dissociation of water into acid and base regenerates bicarbonate-based carbon dioxide capture solutions.",
+            "8": "Bicarbonate-based carbon dioxide capture solutions are used in chemical loops of direct-air-capture processes.",
+            "9": "Bicarbonate-based carbon dioxide capture solutions are used in direct-ocean capture to promote atmospheric carbon dioxide drawdown via decarbonization of the shallow ocean.",
+            "10": "The study develops an experimentally validated 1D model for the electrochemical regeneration of carbon dioxide from bicarbonate-based carbon capture solutions using bipolar-membrane electrodialysis.",
+            "11": "The study develops an experimentally validated 1D model for the electrochemical regeneration of carbon dioxide from seawater using bipolar-membrane electrodialysis.",
+            "12": "For direct-air-capture, pH swings induced by bipolar-membrane water dissociation drive the formation of carbon dioxide at the cation-exchange layer|catholyte interface.",
+            "13": "The formation of carbon dioxide at the cation-exchange layer|catholyte interface has energy intensities of less than 150 kJ mol⁻¹.",
+            "14": "High rates of bubble formation increase energy intensity.",
+            "15": "Energy intensity increases at current densities greater than 100 mA cm⁻².",
+            "16": "Accelerating water dissociation catalysis could enable carbon dioxide recovery at energy intensities less than 100 kJ mol⁻¹.",
+            "17": "Enacting bubble removal could enable carbon dioxide recovery at energy intensities less than 100 kJ mol⁻¹.",
+            "18": "Carbon dioxide recovery could be achieved at current densities greater than 100 mA cm⁻² by accelerating water dissociation catalysis.",
+            "19": "Carbon dioxide recovery could be achieved at current densities greater than 100 mA cm⁻² by enacting bubble removal.",
+            "20": "For direct-ocean capture, mass transport limitations are associated with low carbon concentrations in oceanwater.",
+            "21": "Direct-ocean capture is best suited for clean production of acid usable in downstream processes.",
+            "22": "Direct-ocean capture is best suited for clean production of base usable in downstream processes.",
+            "23": "The results provide design principles for industrial-scale carbon dioxide recovery using bipolar-membrane electrodialysis."
+          }
+        },
+        "viewpoints": [
+          "The pH difference between the cathodes and anodes adds to the device’s potential loss.",
+          "The potential loss can be as high as 500 mV due to pH-dependent thermodynamic potentials."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Because of this, the solar-to-fuel (STF) conversion efficiency for CO2 reduction, or water splitting broadly, is low: e.g., photoabsorbers of SrTiO3/BiVO4, amorphous-Si/BiVO4, and perovskite/BiVO4 (with BiVO4 the photocurrent-limiting absorber) have achieved STF efficiency of 0.08% [16], 0.43% [17], and 0.63% [18] respectively.",
+        "references": {
+          "16": {
+            "1": "Harvesting solar energy to convert CO₂ into chemical fuels is a promising technology to curtail growing atmospheric CO₂ levels.",
+            "2": "Harvesting solar energy to convert CO₂ into chemical fuels is a promising technology to alleviate global dependence on fossil fuels.",
+            "3": "The assembly of efficient and robust systems for the selective photoconversion of CO₂ without sacrificial reagents and external bias remains a challenge.",
+            "4": "A photocatalyst sheet is presented that converts CO₂ and H₂O into formate and O₂.",
+            "5": "The photocatalyst sheet presents a potentially scalable technology for CO₂ utilization.",
+            "6": "The technology integrates lanthanum- and rhodium-doped SrTiO₃ (SrTiO₃:La,Rh) onto a gold layer.",
+            "7": "The technology integrates molybdenum-doped BiVO₄ (BiVO₄:Mo) light absorbers onto a gold layer.",
+            "8": "The technology modifies these light absorbers with phosphonated Co(II) bis(terpyridine) and RuO₂ catalysts.",
+            "9": "The monolithic device provides a solar-to-formate conversion efficiency of 0.08 ± 0.01%.",
+            "10": "The monolithic device provides a selectivity for formate of 97 ± 3%.",
+            "11": "The device operates wirelessly.",
+            "12": "The device uses water as an electron donor.",
+            "13": "The device offers a versatile strategy toward scalable and sustainable CO₂ reduction.",
+            "14": "The device uses molecular-based hybrid photocatalysts for CO₂ reduction."
+          },
+          "17": {
+            "1": "A photoelectrochemical CO₂ reduction reaction in an aqueous medium is among the most promising methods to produce renewable fuels.",
+            "2": "The energy and electron source for the photoelectrochemical CO₂ reduction reaction is the sun and water.",
+            "3": "A high negative bias is currently a prerequisite to achieve appreciable conversion in CO₂ reduction.",
+            "4": "The necessity of a high negative bias is due to the large overpotential of CO₂ reduction.",
+            "5": "This communication describes a photoelectrochemical CO₂ reduction reaction with low onset potential.",
+            "6": "The low onset potential is achieved on an amorphous silicon photocathode.",
+            "7": "The amorphous silicon photocathode is decorated with grain-boundary-rich gold catalysts.",
+            "8": "Syngas with high throughput was produced in a wide photoelectrochemical range.",
+            "9": "The range for syngas production was from the equilibrium potential E⁰(CO₂/CO) of −0.1 V vs. the reversible hydrogen electrode to as positive as 0.4 V_RHE.",
+            "10": "Desirable CO/H₂ ratios such as 1:2 and 1:1 were achieved in syngas production.",
+            "11": "The production led to a half-cell conversion efficiency of 0.42%.",
+            "12": "The performance achieved represents the highest half-cell efficiency ever reported for CO₂ reduction among aqueous photoelectrochemical cathodes under 1 sun illumination.",
+            "13": "The performance represents the lowest onset potential for CO₂ reduction ever reported among aqueous PEC cathodes under 1 sun illumination.",
+            "14": "The a-Si/TiO₂/Au photocathodes exhibit excellent stability in a wide potential range.",
+            "15": "The a-Si/TiO₂/Au photocathodes have a high CO mass activity up to 180 ampere per gram of gold at −0.1 V_RHE.",
+            "16": "Controlling the grain boundary provides powerful potential to adjust product selectivity in photoelectrochemical CO₂ reduction."
+          },
+          "18": {
+            "1": "Photoelectrochemical (PEC) artificial leaves have the potential to lower costs of sustainable solar fuel production.",
+            "2": "Photoelectrochemical (PEC) artificial leaves integrate light harvesting and catalysis within one compact device.",
+            "3": "Current deposition techniques limit the scalability of photoelectrochemical (PEC) artificial leaves.",
+            "4": "Fragile and heavy bulk materials can affect the transport of photoelectrochemical (PEC) artificial leaves.",
+            "5": "Fragile and heavy bulk materials can affect the deployment of photoelectrochemical (PEC) artificial leaves.",
+            "6": "Lightweight artificial leaves are fabricated by employing thin, flexible substrates.",
+            "7": "Lightweight artificial leaves are fabricated by employing carbonaceous protection layers.",
+            "8": "Lead halide perovskite photocathodes deposited onto indium tin oxide-coated polyethylene terephthalate achieved an activity of 4,266 µmol H₂ g⁻¹ h⁻¹ using a platinum catalyst.",
+            "9": "Photocathodes with a molecular Co catalyst for CO₂ reduction attained a high CO:H₂ selectivity of 7.2 under lower (0.1 sun) irradiation.",
+            "10": "Lightweight perovskite-BiVO₄ PEC devices showed an unassisted solar-to-fuel efficiency of 0.58% for H₂.",
+            "11": "Lightweight perovskite-BiVO₄ PEC devices showed an unassisted solar-to-fuel efficiency of 0.053% for CO.",
+            "12": "The potential for scalability of artificial leaves is demonstrated by 100 cm² stand-alone designs.",
+            "13": "100 cm² stand-alone artificial leaves sustained a comparable performance to 1.7 cm² counterparts.",
+            "14": "100 cm² stand-alone artificial leaves sustained a comparable stability of approximately 24 hours to 1.7 cm² counterparts.",
+            "15": "Bubbles formed under operation enabled 30–100 mg cm⁻² devices to float.",
+            "16": "Lightweight reactors facilitated gas collection during outdoor testing on a river.",
+            "17": "The leaf-like photoelectrochemical (PEC) device bridges the gulf in weight between traditional solar fuel approaches.",
+            "18": "The leaf-like photoelectrochemical (PEC) device showcases activities per gram comparable to those of photocatalytic suspensions.",
+            "19": "The leaf-like photoelectrochemical (PEC) device showcases activities per gram comparable to those of plant leaves.",
+            "20": "The presented lightweight, floating systems may enable open-water applications.",
+            "21": "The presented lightweight, floating systems may avoid competition with land use."
+          }
+        },
+        "viewpoints": [
+          "The solar-to-fuel conversion efficiency for CO2 reduction is low.",
+          "The solar-to-fuel conversion efficiency for water splitting is low.",
+          "Photoabsorbers of SrTiO3/BiVO4 have achieved an STF efficiency of 0.08%.",
+          "Photoabsorbers of amorphous-Si/BiVO4 have achieved an STF efficiency of 0.43%.",
+          "Photoabsorbers of perovskite/BiVO4 have achieved an STF efficiency of 0.63%.",
+          "BiVO4 is the photocurrent-limiting absorber in these photoabsorbers."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Fig. 1: Comparison of a conventional device with a photoelectrocatalytic CO2R device employing the concept of CO2 (aq) molecular flux.",
+        "references": {},
+        "viewpoints": [
+          "The figure compares a conventional device with a photoelectrocatalytic CO2R device employing the concept of CO2 (aq) molecular flux."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "a Schematic of the conventional PEC device employing a static solution where diffusion dominates the transport mechanism.",
+        "references": {},
+        "viewpoints": [
+          "The schematic shows a conventional photoelectrochemical device employing a static solution where diffusion dominates the transport mechanism."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "b Schematic of CO2 (aq) molecular flux catalysis with a well-defined boundary layer shear flow.",
+        "references": {},
+        "viewpoints": [
+          "The schematic shows CO2 (aq) molecular flux catalysis with a well-defined boundary layer shear flow."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "( c ) 2D conceptual layout of the coupled catalysis, acid-base buffer reaction, and diffusion processes between anodes and cathodes.",
+        "references": {},
+        "viewpoints": [
+          "The 2D conceptual layout shows the coupled catalysis, acid-base buffer reaction, and diffusion processes between anodes and cathodes."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "( d ) 2D conceptual layout of the molecular flux catalysis, acid-base buffer reaction, and convective flow processes from the anode to the cathode along the flow pathway.",
+        "references": {},
+        "viewpoints": [
+          "The 2D conceptual layout shows the molecular flux catalysis, acid-base buffer reaction, and convective flow processes from the anode to the cathode along the flow pathway."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "The arrows in Fig. 1d represent CO2 flux, and the light green area represents the spatial distribution of CO2 produced at the anode underflow.",
+        "references": {},
+        "viewpoints": [
+          "The arrows in the figure represent CO2 flux.",
+          "The light green area in the figure represents the spatial distribution of CO2 produced at the anode underflow."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "The pH ranges in ( c and d ) are derived from the pH map and modeling in Fig. 5.",
+        "references": {},
+        "viewpoints": [
+          "The pH ranges in figures (c) and (d) are derived from the pH map and modeling in Figure 5."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "The conventional diffusion transport of H+ and HCO3− in a pH-neutral and buffered electrolyte leads to a high pH near the CO2R cathodes.",
+        "references": {},
+        "viewpoints": [
+          "In conventional diffusion transport, H+ and HCO3− in a pH-neutral and buffered electrolyte lead to a high pH near the CO2 reduction cathodes."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "As shown in Fig. 1c, CO2 (aq) is constantly consumed by OH− near the cathode.",
+        "references": {},
+        "viewpoints": [
+          "CO2 (aq) is constantly consumed by OH− near the cathode."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "As a result, there is insufficient reactant for PEC CO2R.",
+        "references": {},
+        "viewpoints": [
+          "There is insufficient reactant for photoelectrochemical CO2 reduction."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "This continuous CO2-OH− reaction (Fig. 1c) depletes the CO2 (aq) concentration to near zero, eliminating selectivity for carbon products such as CO and C2H4.",
+        "references": {},
+        "viewpoints": [
+          "The continuous CO2-OH− reaction depletes the CO2 (aq) concentration to near zero.",
+          "The depletion of CO2 (aq) concentration eliminates selectivity for carbon products such as CO and C2H4."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Thus, another challenge of utilizing seawater arises from the low concentration of dissolved carbon species including HCO3- and CO2 (aq).",
+        "references": {},
+        "viewpoints": [
+          "Another challenge of utilizing seawater arises from the low concentration of dissolved carbon species including HCO3- and CO2 (aq)."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Among these species, HCO3− is not considered an active species during (photo-)electrochemical CO2 reduction.",
+        "references": {},
+        "viewpoints": [
+          "HCO3− is not considered an active species during (photo-)electrochemical CO2 reduction."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "However, seawater contains only 2.3 mM bicarbonate, and the concentration of electrochemically active CO2 (aq) species is near zero.",
+        "references": {},
+        "viewpoints": [
+          "Seawater contains only 2.3 mM bicarbonate.",
+          "The concentration of electrochemically active CO2 (aq) species in seawater is near zero."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "To utilize seawater for liquid solar fuel production, one typically takes a stepwise approach of first acidifying seawater to convert the HCO3− to pure CO2 and then bubbling the pure CO2 continuously into a conventional PEC device to increase the reactant concentrations.",
+        "references": {},
+        "viewpoints": [
+          "To utilize seawater for liquid solar fuel production, one typically acidifies seawater to convert HCO3− to pure CO2.",
+          "The resulting pure CO2 is then bubbled continuously into a conventional photoelectrochemical device to increase the reactant concentrations."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "To improve the selectivity for carbon products, it is necessary to ensure sufficient CO2 (aq) reactants by constantly bubbling CO2 gas.",
+        "references": {},
+        "viewpoints": [
+          "To improve the selectivity for carbon products, it is necessary to ensure sufficient CO2 (aq) reactants by constantly bubbling CO2 gas."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "However, this approach is costly and is limited by low energy and carbon utilization efficiency (continuous CO2 bubbling and CO2-OH- reaction), and thus not economically viable.",
+        "references": {},
+        "viewpoints": [
+          "This approach is costly.",
+          "This approach is limited by low energy and carbon utilization efficiency due to continuous CO2 bubbling and CO2-OH- reaction.",
+          "This approach is not economically viable."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "In addition, it is impractical to scale such CO2 bubbling schemes for large-area PEC reactors situated on the ocean.",
+        "references": {},
+        "viewpoints": [
+          "It is impractical to scale CO2 bubbling schemes for large-area photoelectrochemical reactors situated on the ocean."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "Overall, the combined challenge in reaction engineering and CO2R catalysis motivates new ways of effectively managing diffusion-based transport losses and performance degradation due to the depletion of CO2 (aq) local to photocathodes.",
+        "references": {},
+        "viewpoints": [
+          "Challenges in reaction engineering and CO2 reduction catalysis motivate new ways of managing diffusion-based transport losses.",
+          "Challenges in reaction engineering and CO2 reduction catalysis motivate new ways of managing performance degradation due to the depletion of CO2 (aq) local to photocathodes."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "Thus far, reported PEC devices that leverage flowing seawater with 2.3 mM bicarbonate and without CO2 bubbling remain largely unexplored.",
+        "references": {},
+        "viewpoints": [
+          "Reported photoelectrochemical devices that leverage flowing seawater with 2.3 mM bicarbonate and without CO2 bubbling remain largely unexplored."
+        ]
+      },
+      {
+        "idx": 44,
+        "sentence": "In this case, flow replaces diffusion to dominate the transport.",
+        "references": {},
+        "viewpoints": [
+          "Flow replaces diffusion to dominate the transport in photoelectrochemical devices with flowing seawater."
+        ]
+      },
+      {
+        "idx": 45,
+        "sentence": "Besides, the complex multi-species composition and chemical equilibrium of seawater is a notable challenge for direct ocean CO2 capture and conversion, including major mineral species, i.e., Na+, Cl−, Mg2+, and Ca2+ [8], [19], and organic carbon and microbial species.",
+        "references": {
+          "8": {
+            "1": "Capture and conversion of CO₂ from oceanwater can lead to net-negative emissions.",
+            "2": "CO₂ captured and converted from oceanwater can provide a carbon source for synthetic fuels at the gigaton per year scale.",
+            "3": "CO₂ captured and converted from oceanwater can provide a carbon source for chemical feedstocks at the gigaton per year scale.",
+            "4": "A direct coupled, proof-of-concept electrochemical system is reported.",
+            "5": "The electrochemical system uses a bipolar membrane electrodialysis (BPMED) cell to capture and convert CO₂ from oceanwater.",
+            "6": "The electrochemical system uses a vapor-fed CO₂ reduction (CO₂R) cell to capture and convert CO₂ from oceanwater.",
+            "7": "The BPMED cell replaces the commonly used water-splitting reaction with one-electron, reversible redox couples at the electrodes.",
+            "8": "The BPMED cell demonstrates the ability to capture CO₂ at an electrochemical energy consumption of 155.4 kJ mol⁻¹.",
+            "9": "The BPMED cell demonstrates the ability to capture CO₂ at an electrochemical energy consumption of 0.98 kWh kg⁻¹ of CO₂.",
+            "10": "The BPMED cell demonstrates a CO₂ capture efficiency of 71%.",
+            "11": "The direct coupled, vapor-fed CO₂R cell yields a total Faradaic efficiency of up to 95% for electrochemical CO₂ reduction to CO.",
+            "12": "The proof-of-concept system provides a unique technological pathway for CO₂ capture from oceanwater with only electrochemical processes.",
+            "13": "The proof-of-concept system provides a unique technological pathway for CO₂ conversion from oceanwater with only electrochemical processes."
+          },
+          "19": {
+            "1": "Photocatalytic CO₂ reduction (CO₂R) in ∼0 mM CO₂(aq) concentration is challenging.",
+            "2": "Photocatalytic CO₂ reduction (CO₂R) in ∼0 mM CO₂(aq) concentration is relevant for capturing CO₂.",
+            "3": "Photocatalytic CO₂ reduction is relevant for achieving a circular carbon economy.",
+            "4": "Recent advances have been made in photocatalytic CO₂ reduction.",
+            "5": "The interplay between CO₂ catalytic reduction and oxidative redox processes is less studied.",
+            "6": "Oxidative redox processes are arranged on photocatalyst surfaces with nanometer-scale distances.",
+            "7": "Mechanistic investigation on interdependent processes involved in photocatalysis is urgently needed.",
+            "8": "Processes requiring investigation include CO₂ adsorption.",
+            "9": "Processes requiring investigation include charge separation.",
+            "10": "Processes requiring investigation include long-range chemical transport (∼100 nm distance).",
+            "11": "Processes requiring investigation include bicarbonate buffer speciation.",
+            "12": "Photocatalytic CO₂R in ∼0 mM CO₂(aq) has rarely been studied.",
+            "13": "Photocatalytic CO₂R in ∼0 mM CO₂(aq) has important applications in integrated carbon capture.",
+            "14": "Photocatalytic CO₂R in ∼0 mM CO₂(aq) has important applications in utilization (CCU).",
+            "15": "0.1 M KHCO₃ (aq) of pH 7 was used without continuously bubbling CO₂.",
+            "16": "The use of 0.1 M KHCO₃ (aq) without bubbling CO₂ achieved ∼0.1% solar-to-fuel conversion efficiency for CO production.",
+            "17": "CO production used Ag@CrOₓ nanoparticles supported on a coating-protected GaInP₂ photocatalytic panel.",
+            "18": "CO is produced at ∼100% selectivity.",
+            "19": "No detectable H₂ is produced.",
+            "20": "Copious protons are co-generated nearby.",
+            "21": "CO₂ flux to the Ag@CrOₓ CO₂R sites enhances CO₂ adsorption.",
+            "22": "CO₂ adsorption enhancement is probed by in situ Raman spectroscopy.",
+            "23": "CO is produced with local protonation of dissolved inorganic carbon species.",
+            "24": "Local protonation occurs in a pH as high as 11.5.",
+            "25": "Local protonation occurs when using fast electron donors such as ethanol.",
+            "26": "Isotopic labeling using KH¹³CO₃ was used.",
+            "27": "Isotopic labeling confirmed the origin of CO from the bicarbonate solution.",
+            "28": "COMSOL Multiphysics modeling was employed.",
+            "29": "The modeling simulates the spatial pH variation.",
+            "30": "The modeling simulates the temporal pH variation.",
+            "31": "The modeling simulates the local concentrations of bicarbonates.",
+            "32": "The modeling simulates the local concentrations of CO₂(aq).",
+            "33": "Light-driven CO₂R and CO₂ reactive transport are mutually dependent.",
+            "34": "The mutual dependence of light-driven CO₂R and CO₂ reactive transport is important for further understanding CO₂R activity.",
+            "35": "The mutual dependence of light-driven CO₂R and CO₂ reactive transport is important for manipulating CO₂R activity.",
+            "36": "The mutual dependence of light-driven CO₂R and CO₂ reactive transport is important for further understanding CO₂R selectivity.",
+            "37": "The mutual dependence of light-driven CO₂R and CO₂ reactive transport is important for manipulating CO₂R selectivity.",
+            "38": "This study enables direct bicarbonate utilization as the source of CO₂.",
+            "39": "This study achieves CO₂ capture without purifying gaseous CO₂.",
+            "40": "This study achieves CO₂ capture without feeding gaseous CO₂.",
+            "41": "This study achieves CO₂ conversion without purifying gaseous CO₂.",
+            "42": "This study achieves CO₂ conversion without feeding gaseous CO₂."
+          }
+        },
+        "viewpoints": [
+          "The complex multi-species composition of seawater is a notable challenge for direct ocean CO2 capture and conversion.",
+          "The chemical equilibrium of seawater is a notable challenge for direct ocean CO2 capture and conversion.",
+          "Seawater contains major mineral species such as Na+, Cl−, Mg2+, and Ca2+.",
+          "Seawater contains organic carbon and microbial species, posing challenges for direct ocean CO2 capture and conversion."
+        ]
+      },
+      {
+        "idx": 46,
+        "sentence": "Chemical selective coatings are needed to permeate active reactants and prevent catalyst poisoning by minerals or other impurities in seawater [20].",
+        "references": {
+          "20": {
+            "1": "Seawater electrolysis is an attractive approach for producing clean hydrogen fuel.",
+            "2": "Seawater electrolysis is particularly attractive in scenarios where freshwater is scarce.",
+            "3": "Seawater electrolysis is particularly attractive in scenarios where renewable electricity is abundant.",
+            "4": "Chloride ions (Cl−) in seawater can accelerate electrode corrosion.",
+            "5": "Chloride ions (Cl−) in seawater can participate in the undesirable chlorine evolution reaction (CER).",
+            "6": "The acceleration of electrode corrosion and participation in CER by chloride ions is especially acute in acidic conditions.",
+            "7": "Acidic conditions naturally arise at the anode as a result of the desired oxygen evolution reaction (OER).",
+            "8": "Ultrathin silicon oxide (SiOx) overlayers on model platinum anodes are highly effective at suppressing the chlorine evolution reaction (CER) in the presence of 0.6 M Cl− in acidic electrolytes.",
+            "9": "Ultrathin silicon oxide (SiOx) overlayers on model platinum anodes are highly effective at suppressing the chlorine evolution reaction (CER) in the presence of 0.6 M Cl− in unbuffered pH-neutral electrolytes.",
+            "10": "The suppression of CER by ultrathin silicon oxide (SiOx) overlayers is achieved by blocking the transport of Cl− to the catalytically active buried interface.",
+            "11": "Ultrathin silicon oxide (SiOx) overlayers allow the desired oxygen evolution reaction (OER) to occur at the catalytically active buried interface while suppressing CER.",
+            "12": "The permeability of Cl− in SiOx overlayers is 3 orders of magnitude less than the permeability of Cl− in a conventional salt-selective membrane used in reverse osmosis desalination.",
+            "13": "The SiOx overlayers exhibit robust stability over 12 hours in chronoamperometry tests.",
+            "14": "The SiOx overlayers are stable at moderate overpotentials in chronoamperometry tests.",
+            "15": "SiOx overlayers demonstrate a promising step toward achieving selective seawater electrolysis.",
+            "16": "SiOx overlayers demonstrate a promising step toward achieving stable seawater electrolysis.",
+            "17": "The use of SiOx overlayers allows seawater electrolysis to occur without the need to adjust the pH of the electrolyte."
+          }
+        },
+        "viewpoints": [
+          "Chemical selective coatings are needed to permeate active reactants in seawater.",
+          "Chemical selective coatings are needed to prevent catalyst poisoning by minerals in seawater.",
+          "Chemical selective coatings are needed to prevent catalyst poisoning by other impurities in seawater."
+        ]
+      },
+      {
+        "idx": 47,
+        "sentence": "For proof-of-concept, simulated seawater was used.",
+        "references": {},
+        "viewpoints": [
+          "Simulated seawater was used for proof-of-concept."
+        ]
+      },
+      {
+        "idx": 48,
+        "sentence": "We demonstrate an understudied regime of molecular flux catalysis in which CO2 (aq) reactants continuously flow to the catalysts within a boundary layer flow (Fig. 1b and d).",
+        "references": {},
+        "viewpoints": [
+          "An understudied regime of molecular flux catalysis is demonstrated, in which CO2 (aq) reactants continuously flow to the catalysts within a boundary layer flow."
+        ]
+      },
+      {
+        "idx": 49,
+        "sentence": "This boundary layer flow is generated by a custom-designed and 3D-printed PEC device, which has tandem pairs of BiVO4 photoanodes to Si photocathodes that are arranged in parallel (Fig. 1b).",
+        "references": {},
+        "viewpoints": [
+          "The boundary layer flow is generated by a custom-designed and 3D-printed photoelectrochemical device.",
+          "The device has tandem pairs of BiVO4 photoanodes to Si photocathodes arranged in parallel."
+        ]
+      },
+      {
+        "idx": 50,
+        "sentence": "PEC CO2 R catalysis coupled with the boundary flow transport enables the conversion of the naturally low concentration of dissolved inorganic carbon found in seawater (2.3 mM HCO3−) to a flux of CO2 (aq) (Fig. 1d).",
+        "references": {},
+        "viewpoints": [
+          "Photoelectrochemical CO2 reduction catalysis coupled with the boundary flow transport enables the conversion of the naturally low concentration of dissolved inorganic carbon found in seawater to a flux of CO2 (aq).",
+          "Seawater contains 2.3 mM HCO3−."
+        ]
+      },
+      {
+        "idx": 51,
+        "sentence": "In this work, we make four parallel configurations for the Fig. 1b design, which in practice can be repeated periodically to achieve scaled-up, solar-driven, direct ocean CO2 conversion.",
+        "references": {},
+        "viewpoints": [
+          "Four parallel configurations are made for the Figure 1b design, which can be repeated periodically to achieve scaled-up, solar-driven, direct ocean CO2 conversion."
+        ]
+      },
+      {
+        "idx": 52,
+        "sentence": "The boundary-layer shear flow confines a continuous flux of CO2 (aq) molecules near the surface from the photoanode to the photocathode.",
+        "references": {},
+        "viewpoints": [
+          "The boundary-layer shear flow confines a continuous flux of CO2 (aq) molecules near the surface from the photoanode to the photocathode."
+        ]
+      },
+      {
+        "idx": 53,
+        "sentence": "The BiVO4 photoanode generates H+ thus acidifying HCO3− in flowing seawater under sunlight.",
+        "references": {},
+        "viewpoints": [
+          "The BiVO4 photoanode generates H+.",
+          "The BiVO4 photoanode acidifies HCO3− in flowing seawater under sunlight."
+        ]
+      },
+      {
+        "idx": 54,
+        "sentence": "The flow also prevents the out-diffusion of the CO2 (aq) to the bulk seawater, increasing the transport flux of CO2 (aq) and H+ and simultaneously reducing the CO2 (aq)’s residence time to achieve its efficient utilization at each photocathode downstream.",
+        "references": {},
+        "viewpoints": [
+          "The flow prevents the out-diffusion of the CO2 (aq) to the bulk seawater.",
+          "The flow increases the transport flux of CO2 (aq) and H+.",
+          "The flow reduces the CO2 (aq)’s residence time to achieve its efficient utilization at each photocathode downstream."
+        ]
+      },
+      {
+        "idx": 55,
+        "sentence": "Notably, the flow energy can be readily harvested from tidal waves and ocean currents, making such a boundary layer flow scheme possible.",
+        "references": {},
+        "viewpoints": [
+          "The flow energy can be harvested from tidal waves.",
+          "The flow energy can be harvested from ocean currents.",
+          "The harvesting of flow energy from tidal waves and ocean currents makes the boundary layer flow scheme possible."
+        ]
+      },
+      {
+        "idx": 56,
+        "sentence": "The CO2 (aq) flux, in situ, generated by the BiVO4 photoanode, arrives at the catalyst of the Si photocathode and then gets converted to gaseous CO products which accumulate at the device headspace.",
+        "references": {},
+        "viewpoints": [
+          "The CO2 (aq) flux generated by the BiVO4 photoanode arrives at the catalyst of the Si photocathode.",
+          "The CO2 (aq) flux gets converted to gaseous CO products.",
+          "The gaseous CO products accumulate at the device headspace."
+        ]
+      },
+      {
+        "idx": 57,
+        "sentence": "Besides the CO2 (aq) flux, the H+ flux is enhanced by the flow.",
+        "references": {},
+        "viewpoints": [
+          "The H+ flux is enhanced by the flow."
+        ]
+      },
+      {
+        "idx": 58,
+        "sentence": "This boundary layer flow reduces the pH gradient (supported by Fig. 5 data) and other concentration-limited transport losses (supported by Fig. 6 simulation) to improve PEC device efficiency of CO2 reduction, water splitting, and other fuel-forming photocatalysis broadly.",
+        "references": {},
+        "viewpoints": [
+          "The boundary layer flow reduces the pH gradient, as supported by Figure 5 data.",
+          "The boundary layer flow reduces other concentration-limited transport losses, as supported by Figure 6 simulation.",
+          "The boundary layer flow improves photoelectrochemical device efficiency of CO2 reduction.",
+          "The boundary layer flow improves photoelectrochemical device efficiency of water splitting.",
+          "The boundary layer flow improves photoelectrochemical device efficiency of other fuel-forming photocatalysis broadly."
+        ]
+      },
+      {
+        "idx": 59,
+        "sentence": "Compared to conventional static PEC devices, the STF efficiency of our flow device increased from 0.4% to 0.71%, which is the highest efficiency among reported BiVO4-based CO2-reduction devices.",
+        "references": {},
+        "viewpoints": [
+          "Compared to conventional static photoelectrochemical devices, the STF efficiency of the flow device increased from 0.4% to 0.71%.",
+          "The flow device's STF efficiency of 0.71% is the highest among reported BiVO4-based CO2-reduction devices."
+        ]
+      },
+      {
+        "idx": 60,
+        "sentence": "This molecular flux approach tunes the CO2 R catalytic selectivity via flow velocities.",
+        "references": {},
+        "viewpoints": [
+          "The molecular flux approach tunes the CO2 reduction catalytic selectivity via flow velocities."
+        ]
+      },
+      {
+        "idx": 61,
+        "sentence": "We also conducted modeling and numerical simulations to quantify the effect of flow vectors on the selectivity and rates of the PEC device.",
+        "references": {},
+        "viewpoints": [
+          "Modeling and numerical simulations were conducted to quantify the effect of flow vectors on the selectivity of the photoelectrochemical device.",
+          "Modeling and numerical simulations were conducted to quantify the effect of flow vectors on the rates of the photoelectrochemical device."
+        ]
+      },
+      {
+        "idx": 62,
+        "sentence": "According to the simulation and experimental outcome, this molecular flux catalysis approach through boundary layer flow drastically increased the selectivity of carbon-based products such as CO from 3% to 21%—approaching the theoretical limit of utilizing seawater under the solar flux, whereas conventional static device (Fig. 1c) requires constant bubbling of CO2 gas to achieve a comparable selectivity level.",
+        "references": {},
+        "viewpoints": [
+          "The molecular flux catalysis approach through boundary layer flow drastically increased the selectivity of carbon-based products such as CO from 3% to 21%.",
+          "The selectivity level achieved by the molecular flux catalysis approach approaches the theoretical limit of utilizing seawater under the solar flux.",
+          "Conventional static devices require constant bubbling of CO2 gas to achieve a comparable selectivity level."
+        ]
+      },
+      {
+        "idx": 63,
+        "sentence": "Resources such as seawater, air, and waste streams are typically low in the active species of CO2 (aq) but high in bicarbonates and carbonates due to their much higher solubility.",
+        "references": {},
+        "viewpoints": [
+          "Resources such as seawater, air, and waste streams are typically low in the active species of CO2 (aq).",
+          "Resources such as seawater, air, and waste streams are high in bicarbonates and carbonates due to their much higher solubility."
+        ]
+      },
+      {
+        "idx": 64,
+        "sentence": "This molecular flux catalysis concept has the potential to enable the solar-driven direct conversion of low-concentration reactants or improve the utilization efficiency of dilute reactants.",
+        "references": {},
+        "viewpoints": [
+          "The molecular flux catalysis concept has the potential to enable the solar-driven direct conversion of low-concentration reactants.",
+          "The molecular flux catalysis concept has the potential to improve the utilization efficiency of dilute reactants."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56106-3_with_abstracts",
+    "base_id": "s41467-025-56106-3",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56106-3_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

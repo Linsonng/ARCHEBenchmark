@@ -1,0 +1,356 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Human respiratory viruses such as influenza virus (IV) and respiratory syncytial virus (RSV) are important causes of severe respiratory infections [1] . Previous reports showed that most of the common respiratory viruses, including IV, RSV, parainfluenza virus (PIV), metapneumovirus (MPV), endemic seasonal coronaviruses (sCoV), and rhinovirus (RV) had distinct seasonal circulating patterns albeit with variations globally by geographical and environmental characteristics [2] , [3] , [4] . In 2020, the onset of the coronavirus disease 2019 (COVID-19) pandemic and the large-scale implementation of non-pharmaceutical interventions (NPIs) across the globe was associated with a precipitous and major impact on the circulation of common respiratory viruses; the activity of IV and RSV remained remarkably lower during the usual circulating season in multiple countries [5] , [6] , [7] . The subsequent relaxation of NPIs resulted in an unprecedented out-of-season resurgence of RSV in several countries, likely a result of depleted population immunity [8] . However, the resurgence of these common respiratory viruses did not occur simultaneously. For example, according to the weekly sentinel surveillance report from New South Wales, Australia, in January 2022, while all respiratory viruses included in the report had substantially lower activity than the 2015–2019 average level in 2020, RV and adenovirus (AdV) appeared to be the least affected; RSV activity was suppressed until an out-of-season resurgence occurred in September 2020; by contrast, there had been limited activity of PIV and MPV until mid-2021, and circulation of IV remained at very low level by the end of 2021 [9] . Interestingly, similar asynchronous resurgence was also noted in other countries with varied timing and stridency of NPIs [10] , [11] . It remains unclear whether the observed variations in the resurgence of these respiratory viruses are regionally specific or globally consistent, which can be crucial for enhancing future pandemic preparedness and informing public health strategies. In this study, we compiled a large dataset on respiratory virus activity across the globe from published studies, surveillance reports, and international collaborators. We determined the onset and peak of epidemics from different data sources using a unified method. We used a generalised linear mixed-effects model (GLMM) framework to synthesise the time interval between epidemic onsets and between epidemic peaks of different respiratory viruses during the COVID-19 pandemic. (Fig. 1 ). Fig. 1: Overview of methodology. Data were collected from three sources: systematic literature review, online surveillance reports, and the RSV GEN network. The epidemic onset was defined using a “4-week trend” method, where each week’s viral activity (case numbers or positive proportion) was compared to that of four weeks prior. An epidemic onset was identified when four consecutive weeks showed higher activity than their respective weeks four weeks earlier (“up-weeks”). Two approaches were implemented: (1) A descriptive pooling approach that compared intervals between consecutive epidemic onsets of the same virus across sites for both pre- and post-pandemic periods; (2) An analytical matching approach that examined the relative timing differences between pairs of viruses’ resurgence, matched by study site. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Human respiratory viruses such as influenza virus (IV) and respiratory syncytial virus (RSV) are important causes of severe respiratory infections [1].",
+        "references": {
+          "1": []
+        },
+        "viewpoints": [
+          "Influenza virus is an important cause of severe respiratory infections.",
+          "Respiratory syncytial virus is an important cause of severe respiratory infections."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Previous reports showed that most of the common respiratory viruses, including IV, RSV, parainfluenza virus (PIV), metapneumovirus (MPV), endemic seasonal coronaviruses (sCoV), and rhinovirus (RV) had distinct seasonal circulating patterns albeit with variations globally by geographical and environmental characteristics [2], [3], [4].",
+        "references": {
+          "2": {
+            "1": "Influenza virus, respiratory syncytial virus, parainfluenza virus, and metapneumovirus are the most common viruses associated with acute lower respiratory infections.",
+            "2": "Acute lower respiratory infections primarily affect young children under 5 years and older people aged 65 years or more.",
+            "3": "A global report of the monthly activity of influenza virus, respiratory syncytial virus, parainfluenza virus, and metapneumovirus is needed.",
+            "4": "The global report of virus activity is intended to inform public health strategies and programs for controlling these viruses.",
+            "5": "The systematic analysis compiled data from a literature review of studies published between Jan 1, 2000, and Dec 31, 2017.",
+            "6": "The systematic analysis included data from online datasets.",
+            "7": "The systematic analysis included unpublished research data.",
+            "8": "Studies were eligible if they reported laboratory-confirmed incidence data of human infection for at least 12 consecutive months.",
+            "9": "Eligible studies could report on influenza virus, respiratory syncytial virus, parainfluenza virus, metapneumovirus, or a combination of these viruses.",
+            "10": "Stable testing practice throughout all reported years was required for study eligibility.",
+            "11": "Studies needed to provide virus results among residents in well-defined geographical locations to qualify for inclusion.",
+            "12": "Aggregated virus results needed to be reported at least on a monthly basis for studies to be eligible.",
+            "13": "Data extraction was conducted through a three-stage process.",
+            "14": "The calculated monthly annual average percentage (AAP) was used to represent the relative strength of virus activity.",
+            "15": "The duration of epidemics was defined as the minimum number of months accounting for 75% of annual positive samples.",
+            "16": "Each month contributing to the 75% of annual positive samples was defined as an epidemic month.",
+            "17": "Monthly AAP of influenza virus was modeled using site-specific temperature and relative humidity.",
+            "18": "Monthly AAP of respiratory syncytial virus was modeled using site-specific temperature and relative humidity.",
+            "19": "The modeling was intended for the prediction of local average epidemic months.",
+            "20": "Global epidemic months of influenza virus were predicted on a 5° by 5° grid.",
+            "21": "Global epidemic months of respiratory syncytial virus were predicted on a 5° by 5° grid.",
+            "22": "The systematic review in this study is registered with PROSPERO.",
+            "23": "The registration number of the systematic review is CRD42018091628.",
+            "24": "A total of 37,335 studies were initially identified as eligible.",
+            "25": "After excluding duplicates, 21,065 studies remained.",
+            "26": "A total of 1,081 full-text articles were assessed for eligibility.",
+            "27": "Out of the assessed articles, 185 were identified as eligible.",
+            "28": "246 sites were included for influenza virus data.",
+            "29": "183 sites were included for respiratory syncytial virus data.",
+            "30": "83 sites were included for parainfluenza virus data.",
+            "31": "65 sites were included for metapneumovirus data.",
+            "32": "Influenza virus had clear seasonal epidemics in winter months in most temperate sites.",
+            "33": "The timing of influenza virus epidemics was more variable and less seasonal closer to the equator.",
+            "34": "Respiratory syncytial virus had clear seasonal epidemics in both temperate and tropical regions.",
+            "35": "Respiratory syncytial virus epidemics started in late summer months in the tropics of each hemisphere.",
+            "36": "Respiratory syncytial virus epidemics reached most temperate sites in winter months.",
+            "37": "In most temperate sites, influenza virus epidemics occurred 0.3 months later than respiratory syncytial virus epidemics.",
+            "38": "No clear temporal order of epidemics for influenza virus and respiratory syncytial virus was observed in the tropics.",
+            "39": "Parainfluenza virus epidemics mostly occurred in spring and early summer months in each hemisphere.",
+            "40": "Metapneumovirus epidemics occurred in late winter and spring in most temperate sites.",
+            "41": "The timing of metapneumovirus epidemics was more diverse in the tropics.",
+            "42": "Influenza virus epidemics had a duration of 3.8 months in temperate sites.",
+            "43": "In the tropics, influenza virus epidemics had a duration of 5.2 months.",
+            "44": "The duration of respiratory syncytial virus epidemics was 4.6 months across all sites.",
+            "45": "The duration of metapneumovirus epidemics was 4.8 months across all sites.",
+            "46": "The duration of parainfluenza virus epidemics was 6.3 months.",
+            "47": "The model had good predictability for the average epidemic months of influenza virus in temperate regions.",
+            "48": "The model had good predictability for the average epidemic months of respiratory syncytial virus in both temperate and tropical regions.",
+            "49": "The overall prediction error in the onset of epidemics was within 1 month through leave-one-out cross-validation.",
+            "50": "For influenza virus, the prediction error was -0.2 months.",
+            "51": "For respiratory syncytial virus, the prediction error was 0.1 months.",
+            "52": "This study is the first to provide global representations of month-by-month activity for influenza virus.",
+            "53": "This study is the first to provide global representations of month-by-month activity for respiratory syncytial virus.",
+            "54": "This study is the first to provide global representations of month-by-month activity for parainfluenza virus.",
+            "55": "This study is the first to provide global representations of month-by-month activity for metapneumovirus.",
+            "56": "The model is helpful in predicting the local onset month of influenza virus epidemics.",
+            "57": "The model is helpful in predicting the local onset month of respiratory syncytial virus epidemics.",
+            "58": "Seasonality information from the study has important implications for health services planning.",
+            "59": "Seasonality information informs the timing of respiratory syncytial virus passive prophylaxis.",
+            "60": "Seasonality information aids in strategizing influenza virus vaccination.",
+            "61": "Seasonality information aids in strategizing future respiratory syncytial virus vaccination.",
+            "62": "None (This sentence appears to reference the consortium involved but does not explicitly state a viewpoint within the given context)."
+          },
+          "3": {
+            "1": "Respiratory syncytial virus (RSV)-related acute lower respiratory infection is an important cause of death in infants.",
+            "2": "Respiratory syncytial virus (RSV)-related acute lower respiratory infection is an important cause of death in young children.",
+            "3": "Little is known about the risk period for RSV-related deaths after presenting to health services with an RSV illness.",
+            "4": "The study used the Scottish national mortality database to identify deaths from respiratory/circulatory causes in young children aged less than 5 years during 2009-2016.",
+            "5": "The medical history and records of laboratory-confirmed RSV infections for these children were obtained by linking the mortality database to the national surveillance data set and the Scottish Morbidity Record.",
+            "6": "The study used a self-controlled case series (SCCS) design to evaluate the relative incidence of respiratory/circulatory deaths in the first year after an RSV episode.",
+            "7": "The risk interval was defined as the first year after the RSV episode.",
+            "8": "The control interval was defined as the period before and after the risk interval until 5 years after birth.",
+            "9": "Age-adjusted incidence ratio was generated using the R software package SCCS.",
+            "10": "Attributable fraction was generated using the R software package SCCS.",
+            "11": "The study included 162 respiratory/circulatory deaths.",
+            "12": "36 out of 162 respiratory/circulatory deaths occurred in children with a history of laboratory-confirmed RSV infection.",
+            "13": "The mortality risk decreased with time after the RSV episode.",
+            "14": "The mortality risk was statistically significant for the month after RSV illness.",
+            "15": "More than 90% of respiratory/circulatory deaths occurring within 1 week after the RSV episode were attributable to RSV.",
+            "16": "The attributable fraction for deaths within 1 week after the RSV episode was 93.9% with a 95% confidence interval of 77.6%-98.4%.",
+            "17": "About 80% of respiratory/circulatory deaths occurring 1 week to 1 month after RSV illness were attributable to RSV.",
+            "18": "The attributable fraction for deaths occurring 1 week to 1 month after RSV illness was 80.3% with a range of 28.5%-94.6%.",
+            "19": "There was an increased risk of death in the first month after an RSV illness episode leading to healthcare attendance.",
+            "20": "The increased risk of death in the first month after an RSV illness provides a practical cutoff time window for community-based surveillance studies estimating RSV-related mortality risk.",
+            "21": "Further studies are warranted to assess the mortality risk beyond the first month after an RSV illness episode."
+          },
+          "4": {
+            "1": "The seasonal cycle of respiratory viral diseases has been recognized for thousands of years.",
+            "2": "Annual epidemics of the common cold and influenza occur in the winter season in temperate regions.",
+            "3": "Epidemics caused by severe acute respiratory syndrome coronavirus (SARS-CoV) occur during the winter months.",
+            "4": "Epidemics caused by SARS-CoV-2 occur during the winter months.",
+            "5": "The mechanisms underlying the seasonal nature of respiratory viral infections have been examined for many years.",
+            "6": "The mechanisms underlying the seasonal nature of respiratory viral infections have been debated for many years.",
+            "7": "The major contributing factors to the seasonal nature of respiratory viral infections are changes in environmental parameters.",
+            "8": "The major contributing factors to the seasonal nature of respiratory viral infections are changes in human behavior.",
+            "9": "Studies have revealed the effect of temperature on respiratory virus stability.",
+            "10": "Studies have revealed the effect of temperature on respiratory virus transmission rates.",
+            "11": "Studies have revealed the effect of humidity on respiratory virus stability.",
+            "12": "Studies have revealed the effect of humidity on respiratory virus transmission rates.",
+            "13": "More recent research highlights the importance of environmental factors in modulating host intrinsic immune responses to viral infections in the respiratory tract.",
+            "14": "More recent research highlights the importance of environmental factors in modulating host innate immune responses to viral infections in the respiratory tract.",
+            "15": "More recent research highlights the importance of environmental factors in modulating host adaptive immune responses to viral infections in the respiratory tract.",
+            "16": "More recent research highlights the importance of temperature in modulating host immune responses to viral infections in the respiratory tract.",
+            "17": "More recent research highlights the importance of humidity in modulating host immune responses to viral infections in the respiratory tract.",
+            "18": "The paper reviews evidence of how outdoor climates are linked to the seasonality of viral respiratory infections.",
+            "19": "The paper reviews evidence of how indoor climates are linked to the seasonality of viral respiratory infections.",
+            "20": "The paper discusses determinants of host response in the seasonality of respiratory viruses.",
+            "21": "The paper highlights recent studies about determinants of host response in the seasonality of respiratory viruses."
+          }
+        },
+        "viewpoints": [
+          "Common respiratory viruses have distinct seasonal circulating patterns.",
+          "Common respiratory viruses show variations in seasonal circulating patterns globally by geographical characteristics.",
+          "Common respiratory viruses show variations in seasonal circulating patterns globally by environmental characteristics."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In 2020, the onset of the coronavirus disease 2019 (COVID-19) pandemic and the large-scale implementation of non-pharmaceutical interventions (NPIs) across the globe was associated with a precipitous and major impact on the circulation of common respiratory viruses; the activity of IV and RSV remained remarkably lower during the usual circulating season in multiple countries [5], [6], [7].",
+        "references": {
+          "5": {
+            "1": "The World Health Organization European Region experienced a 99.8% reduction in sentinel influenza virus positive detections between weeks 40 2020 and 8 2021.",
+            "2": "The sentinel influenza virus positive detections between weeks 40 2020 and 8 2021 were 33 out of 25,606 tested, or 0.1%.",
+            "3": "An average of 14,966 out of 39,407 (38.0%; p < 0.001) sentinel influenza virus positive detections occurred over the same time in the previous six seasons.",
+            "4": "COVID-19 pandemic public health measures may have extinguished the 2020/21 European seasonal influenza epidemic.",
+            "5": "COVID-19 pandemic physical distancing measures may have extinguished the 2020/21 European seasonal influenza epidemic.",
+            "6": "There were just a few sporadic detections of all viral subtypes during the 2020/21 European seasonal influenza epidemic.",
+            "7": "The low level of influenza detections might possibly continue during the remainder of the influenza season."
+          },
+          "6": [],
+          "7": []
+        },
+        "viewpoints": [
+          "The COVID-19 pandemic was associated with a major impact on the circulation of common respiratory viruses.",
+          "The large-scale implementation of NPIs was associated with a major impact on the circulation of common respiratory viruses.",
+          "The activity of influenza virus remained remarkably lower during the usual circulating season in multiple countries in 2020.",
+          "The activity of respiratory syncytial virus remained remarkably lower during the usual circulating season in multiple countries in 2020."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The subsequent relaxation of NPIs resulted in an unprecedented out-of-season resurgence of RSV in several countries, likely a result of depleted population immunity [8].",
+        "references": {
+          "8": {
+            "1": "Nonpharmaceutical interventions (NPIs) were introduced widely to combat the COVID-19 pandemic.",
+            "2": "Nonpharmaceutical interventions likely led to substantially reduced activity of respiratory syncytial virus (RSV).",
+            "3": "Some countries observed out-of-season RSV epidemics from late 2020.",
+            "4": "The role of NPIs, population mobility, climate, and severe acute respiratory syndrome coronavirus 2 circulation in RSV rebound was analyzed.",
+            "5": "The analysis was conducted through a time-to-event analysis across 18 countries.",
+            "6": "Full reopening of schools was associated with an increased risk for RSV rebound.",
+            "7": "The hazard ratio for the increased risk of RSV rebound with full reopening of schools was 23.29 with a 95% confidence interval of 1.09-495.84.",
+            "8": "Every 5°C increase in temperature was associated with a decreased risk for RSV rebound.",
+            "9": "The hazard ratio for the decreased risk of RSV rebound with every 5°C increase in temperature was 0.63 with a 95% confidence interval of 0.40-0.99.",
+            "10": "There was an increasing trend in the risk for RSV rebound over time.",
+            "11": "The increasing trend in risk for RSV rebound highlights the role of increased population susceptibility.",
+            "12": "No other factors besides those mentioned were found to be statistically significant in affecting RSV rebound.",
+            "13": "Further analysis suggests that increasing population susceptibility could override the countereffect of high temperatures on RSV rebound.",
+            "14": "Further analysis suggests that full reopening of schools could override the countereffect of high temperatures on RSV rebound.",
+            "15": "The ability of increasing population susceptibility and full reopening of schools to override high temperatures explains the out-of-season RSV epidemics during the COVID-19 pandemic."
+          }
+        },
+        "viewpoints": [
+          "The relaxation of NPIs resulted in an unprecedented out-of-season resurgence of respiratory syncytial virus in several countries.",
+          "The out-of-season resurgence of respiratory syncytial virus was likely a result of depleted population immunity."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "However, the resurgence of these common respiratory viruses did not occur simultaneously.",
+        "references": {},
+        "viewpoints": [
+          "The resurgence of common respiratory viruses did not occur simultaneously."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "For example, according to the weekly sentinel surveillance report from New South Wales, Australia, in January 2022, while all respiratory viruses included in the report had substantially lower activity than the 2015–2019 average level in 2020, RV and adenovirus (AdV) appeared to be the least affected; RSV activity was suppressed until an out-of-season resurgence occurred in September 2020; by contrast, there had been limited activity of PIV and MPV until mid-2021, and circulation of IV remained at very low level by the end of 2021 [9].",
+        "references": {
+          "9": []
+        },
+        "viewpoints": [
+          "All respiratory viruses in New South Wales, Australia, had substantially lower activity than the 2015–2019 average level in 2020.",
+          "Rhinovirus and adenovirus were the least affected among the respiratory viruses in the report.",
+          "Respiratory syncytial virus activity was suppressed in New South Wales, Australia, until an out-of-season resurgence in September 2020.",
+          "There had been limited activity of parainfluenza virus in New South Wales, Australia, until mid-2021.",
+          "There had been limited activity of metapneumovirus in New South Wales, Australia, until mid-2021.",
+          "The circulation of the influenza virus remained at a very low level in New South Wales, Australia, by the end of 2021."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Interestingly, similar asynchronous resurgence was also noted in other countries with varied timing and stridency of NPIs [10], [11].",
+        "references": {
+          "10": {
+            "1": "Nonpharmaceutical interventions (NPIs) were implemented worldwide to combat the coronavirus disease 2019 (COVID-19) pandemic.",
+            "2": "Nonpharmaceutical interventions (NPIs) impacted a broad spectrum of acute respiratory infections (ARIs).",
+            "3": "Etiologically diagnostic data from 142,559 cases with acute respiratory infections were analyzed.",
+            "4": "The cases were tested for 8 viral pathogens, including influenza virus, respiratory syncytial virus, human parainfluenza virus, human adenovirus, human metapneumovirus, human coronavirus, human bocavirus, and human rhinovirus.",
+            "5": "The cases were from the years between 2012 and 2021.",
+            "6": "The analysis aimed to assess the changes in respiratory infections in China during the first COVID-19 pandemic year compared with pre-pandemic years.",
+            "7": "Test-positive rates of all respiratory viruses decreased during 2020 compared to the average levels during 2012-2019.",
+            "8": "The decrease in test-positive rates ranged from -17.2% for respiratory syncytial virus to -87.6% for influenza virus.",
+            "9": "Sharp decreases in test-positive rates mostly occurred between February and August.",
+            "10": "Massive nonpharmaceutical interventions remained active between February and August.",
+            "11": "Human rhinovirus rebounded to the historical level during the summer.",
+            "12": "Influenza virus and human metapneumovirus were consistently suppressed year-round.",
+            "13": "Respiratory syncytial virus, human parainfluenza virus, human coronavirus, human rhinovirus, and human bocavirus resurged and went beyond historical levels during September 2020-January 2021.",
+            "14": "Nonpharmaceutical interventions were largely relaxed, and schools reopened during September 2020-January 2021.",
+            "15": "The resurgence of respiratory viruses was more prominent among children under 18 years.",
+            "16": "The resurgence of respiratory viruses was more prominent in northern China.",
+            "17": "The observations of changes in respiratory viral infections remain valid after accounting for seasonality.",
+            "18": "The observations of changes in respiratory viral infections remain valid after accounting for long-term trend of each virus.",
+            "19": "Activities of respiratory viral infections were reduced substantially in the early phases of the COVID-19 pandemic.",
+            "20": "Massive nonpharmaceutical interventions were likely the main driver for the substantial reduction in activities of respiratory viral infections.",
+            "21": "Lifting of nonpharmaceutical interventions can lead to a resurgence of viral infections.",
+            "22": "Lifting of nonpharmaceutical interventions can particularly lead to a resurgence of viral infections in children."
+          },
+          "11": {
+            "1": "Social restrictions interrupted the normal respiratory virus circulation in Spring 2020.",
+            "2": "The report describes virus circulation in the pediatric population before the restrictions ended in Finland in September 2021.",
+            "3": "The report describes virus circulation in the pediatric population after the restrictions ended in Finland in September 2021.",
+            "4": "Data from the Finnish Infectious Disease Register was used.",
+            "5": "Nationwide findings of influenza A and B were collected from January 2018 to December 2021.",
+            "6": "Nationwide findings of rhinovirus were collected from January 2018 to December 2021.",
+            "7": "Nationwide findings of severe acute respiratory syndrome coronavirus 2 (SARS-Cov-2) were collected from January 2018 to December 2021.",
+            "8": "Nationwide findings of respiratory syncytial virus (RSV) were collected from January 2018 to December 2021.",
+            "9": "Age-stratified weekly incidences per 100,000 children were calculated for the age group 0-4 years.",
+            "10": "Age-stratified weekly incidences per 100,000 children were calculated for the age group 5-9 years.",
+            "11": "Age-stratified weekly incidences per 100,000 children were calculated for the age group 10-14 years.",
+            "12": "School and day-care closures completely interrupted the circulation of all respiratory viruses except rhinovirus in Spring 2020.",
+            "13": "Rhinovirus circulation was not interrupted by school and day-care closures in Spring 2020.",
+            "14": "After restrictions were relaxed in September 2021, SARS-Cov-2 detections increased significantly.",
+            "15": "A high RSV season was observed atypically early.",
+            "16": "SARS-Cov-2 was detected in older children.",
+            "17": "The RSV season peaked especially among children aged under 5.",
+            "18": "Influenza appeared to return to normal circulation.",
+            "19": "The ending of social restrictions in September 2021 led to an increase in SARS-Cov-2 detections in children.",
+            "20": "The ending of social restrictions in September 2021 led to high epidemic peaks of RSV in children.",
+            "21": "The ending of social restrictions in September 2021 led to high epidemic peaks of parainfluenza in children in atypical timing.",
+            "22": "Continuous pathogen surveillance during the pandemic is important.",
+            "23": "Atypical surges of non-COVID-19 respiratory viruses were observed."
+          }
+        },
+        "viewpoints": [
+          "Similar asynchronous resurgence of respiratory viruses was noted in other countries.",
+          "The resurgence of respiratory viruses in other countries had varied timing and stridency of NPIs."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "It remains unclear whether the observed variations in the resurgence of these respiratory viruses are regionally specific or globally consistent, which can be crucial for enhancing future pandemic preparedness and informing public health strategies.",
+        "references": {},
+        "viewpoints": [
+          "It is unclear whether the variations in the resurgence of respiratory viruses are regionally specific.",
+          "It is unclear whether the variations in the resurgence of respiratory viruses are globally consistent.",
+          "Understanding the variations in respiratory virus resurgence is crucial for enhancing future pandemic preparedness.",
+          "Understanding the variations in respiratory virus resurgence is crucial for informing public health strategies."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "In this study, we compiled a large dataset on respiratory virus activity across the globe from published studies, surveillance reports, and international collaborators.",
+        "references": {},
+        "viewpoints": [
+          "A large dataset on respiratory virus activity across the globe was compiled from published studies.",
+          "The dataset on respiratory virus activity was compiled from surveillance reports.",
+          "The dataset on respiratory virus activity was compiled from international collaborators."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "We determined the onset and peak of epidemics from different data sources using a unified method.",
+        "references": {},
+        "viewpoints": [
+          "The onset of epidemics was determined from different data sources using a unified method.",
+          "The peak of epidemics was determined from different data sources using a unified method."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "We used a generalised linear mixed-effects model (GLMM) framework to synthesise the time interval between epidemic onsets and between epidemic peaks of different respiratory viruses during the COVID-19 pandemic.",
+        "references": {},
+        "viewpoints": [
+          "A generalised linear mixed-effects model framework was used to synthesise the time interval between epidemic onsets of different respiratory viruses during the COVID-19 pandemic.",
+          "A generalised linear mixed-effects model framework was used to synthesise the time interval between epidemic peaks of different respiratory viruses during the COVID-19 pandemic."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Data were collected from three sources: systematic literature review, online surveillance reports, and the RSV GEN network.",
+        "references": {},
+        "viewpoints": [
+          "Data were collected from a systematic literature review.",
+          "Data were collected from online surveillance reports.",
+          "Data were collected from the RSV GEN network."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The epidemic onset was defined using a “4-week trend” method, where each week’s viral activity (case numbers or positive proportion) was compared to that of four weeks prior.",
+        "references": {},
+        "viewpoints": [
+          "Epidemic onset was defined using a “4-week trend” method.",
+          "In the “4-week trend” method, each week’s viral activity was compared to that of four weeks prior."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "An epidemic onset was identified when four consecutive weeks showed higher activity than their respective weeks four weeks earlier (“up-weeks”).",
+        "references": {},
+        "viewpoints": [
+          "An epidemic onset was identified when four consecutive weeks showed higher activity than their respective weeks four weeks earlier."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Two approaches were implemented: (1) A descriptive pooling approach that compared intervals between consecutive epidemic onsets of the same virus across sites for both pre- and post-pandemic periods; (2) An analytical matching approach that examined the relative timing differences between pairs of viruses’ resurgence, matched by study site.",
+        "references": {},
+        "viewpoints": [
+          "A descriptive pooling approach was used to compare intervals between consecutive epidemic onsets of the same virus across sites for both pre- and post-pandemic periods.",
+          "An analytical matching approach was used to examine the relative timing differences between pairs of viruses’ resurgence, matched by study site."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56776-z_with_abstracts",
+    "base_id": "s41467-025-56776-z",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56776-z_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

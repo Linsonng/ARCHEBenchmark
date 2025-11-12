@@ -1,0 +1,665 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Two-dimensional (2D) solids are distinguished from bulk solids because of their constrained longitudinal dimensionality [1] . With very high aspect ratios and thicknesses corresponding to a few atomic layers, the 2D materials including graphene, oxides, hydroxides, sulfides and boron nitrides have been reported with interesting properties and promising applications [2] , [3] , [4] . Among them, 2D metal oxides (MOs) are a large family with unique combinations of redox chemistry, abundant defect sites, rapid mass transport and high earth abundance, endowing them with widespread applications ranging from catalysts and energy-storage devices to semiconductors. Mechanical/chemical/ultrasonic exfoliation [5] , [6] , [7] , chemical vapor deposition (CVD) [2] , [8] , template method [9] , solvo-/hydrothermal methods [10] etc., have been used to fabricate novel 2D architectures. Similar with the fabrication of graphene by exfoliating layered graphite, some types of 2D metal oxide nanosheets have been produced via the “top-down” strategy. For instance, nine types of 2D hexagonal metal oxide monolayers (TiO 2 , MnO, Fe 2 O 3 etc.) have been prepared via exfoliation method [5] . The bulk metal surface could be polished and oxidized to layered metal oxide in oxygen-deficient environment, which was easily obtained after mechanical exfoliation. Meanwhile, liquid-phase exfoliation also was used in metal oxide sheets production [11] . Ultrasonic waves could break the van der Waals (vdW) forces between the metal oxide layers, following the liquid-phase exfoliation and stabilization in liquids. It is clear that exfoliation is suitable for cleavage those original frameworks contain a layered structure, which rely on weak vdW forces to maintain the interlayer interaction. Considering that most metal oxides are not intrinsically layered, the formation of 2D metal oxide nanosheets via exfoliation is quite limited. The “bottom-up” strategy has also been developed for the 2D metal oxides synthesis. Although CVD is more flexible, its large-scale application is extremely restricted by its high energy intensity, limited product types and low yield. The wet-chemical synthesis method benefits from low-cost, high-yield and simple operation. By wet-chemical system, Zhao et al. [9] synthesized ultrathin 2D metal oxides including MgO, Al 2 O 3 , SnO 2 , ZrO 2 , TiO 2 , and Sb 2 O 5 using graphene oxide (GO) as template. The metal cations was adsorbed on the GO surface, and hydrolyzed gradually in the liquid-phase reaction with precisely controlled temperature and pH. Notably, it is restricted by the solution pH, solubility and hydrolysis of precursors. A strategy involving the use of surfaces of water-soluble salt crystals as growth substrates to synthesize 2D transition metal oxides such as MoO 3 , MoO 2 , MnO, and WO 3 from solution has been discovered [12] . It remains a challenging task if the precursors are hydrolyzed violently or refractorily. Seeking a versatile and facile method to fabricate 2D metal oxide crystals is an appealing endeavor. Confinement synthesis in a fixed interlayer is the transverse growth of 2D target guest species by utilizing the layer spacing of lamellar framework in combination with template. Due to the fixed spacing between the layers of template, the longitudinal dimension of target products can be strictly limited. Very recently, Guo’s group [13] reported the solution preparation of free-standing nitrogen-doped amorphous monolayer carbon within the interlayer cavity of layered double hydroxides (LDHs), indicating the feasibility of confined polymerization using solid templates. Herein, we developed the confined interlayer growth strategy in combination with a melt infiltration method under dry-chemical conditions, achieving the synthesis of various ultrathin 2D metal oxide crystals (2D MOs), including 3 d transition metal (Ti, Cr, Mn, Fe, Co, Ni, Cu, Zr, and W) oxides, lanthanide (Ce) oxides and nontransition metal (In, Sn, and Bi) oxides. The synthesized 2D MOs presented ultrathin monolayer structures, which perfectly inherited the layer morphology of the parent compound RUB-15. All the 2D MOs exhibited high crystallinity through modulation of the growth conditions. Each MO monolayer was held by vdW forces rather than ionic bonds, which was distinctly different from those in the bulk phase. The ultrathin 2D crystals exposed large surfaces and edge regions, which formed multiple defects and strains that led to lattice distortions. The obtained 2D TiO 2 nanosheets demonstrated outstanding degradation efficiency for various persistent organic pollutants, including phenolic compounds and antibiotics, in 120 min. Moreover, five kinds of 2D transition metal sulfides (MSs), including FeS 2 , CoS, NiS 2 , Cu 9 S 5 , and SnS 2 have been synthesized in this strategy. The method is flexible for the construction of other ultrathin 2D frameworks, such as binary MOs, sulfide/phosphide or metallene nanosheets, which highlights the multidisciplinary exploration of 2D crystals with unique properties.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Two-dimensional (2D) solids are distinguished from bulk solids because of their constrained longitudinal dimensionality [1].",
+        "references": {
+          "1": {
+            "1": "A new family of two-dimensional (2D) early transition metal carbides and carbonitrides called MXenes was recently discovered.",
+            "2": "MXenes are produced by selective etching of the A element from the MAX phases.",
+            "3": "The MAX phases are metallically conductive, layered solids.",
+            "4": "The MAX phases are connected by strong metallic, ionic, and covalent bonds.",
+            "5": "Examples of the MAX phases include Ti₂AlC, Ti₃AlC₂, and Ta₄AlC₃.",
+            "6": "MXenes combine the metallic conductivity of transition metal carbides with the hydrophilic nature of their surfaces.",
+            "7": "The surfaces of MXenes are terminated with hydroxyl or oxygen.",
+            "8": "MXenes behave as \"conductive clays\".",
+            "9": "The article reviews experimental progress on the synthesis, structure, properties, intercalation, delamination, and potential applications of MXenes.",
+            "10": "The article reviews theoretical progress on the synthesis, structure, properties, intercalation, delamination, and potential applications of MXenes.",
+            "11": "MXenes are expected to be good candidates for a host of applications.",
+            "12": "MXenes have shown promising performance in electrochemical energy storage systems.",
+            "13": "The article presents a detailed outlook for future research on MXenes."
+          }
+        },
+        "viewpoints": [
+          "Two-dimensional solids are distinguished from bulk solids by constrained longitudinal dimensionality."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "With very high aspect ratios and thicknesses corresponding to a few atomic layers, the 2D materials including graphene, oxides, hydroxides, sulfides and boron nitrides have been reported with interesting properties and promising applications [2] , [3] , [4].",
+        "references": {
+          "2": {
+            "1": "Chemical vapour deposition (CVD) synthesis of graphene on copper has been broadly adopted.",
+            "2": "The adoption of CVD synthesis of graphene on copper started after the first demonstration of this process.",
+            "3": "Widespread use of CVD-grown graphene for basic science has been hindered by challenges with reproducibility and quality.",
+            "4": "Widespread use of CVD-grown graphene for applications has been hindered by challenges with reproducibility and quality.",
+            "5": "Trace oxygen is a key factor determining the growth trajectory for graphene grown by low-pressure CVD.",
+            "6": "Trace oxygen is a key factor determining the quality for graphene grown by low-pressure CVD.",
+            "7": "Oxygen-free chemical vapour deposition (OF-CVD) synthesis is fast.",
+            "8": "Oxygen-free chemical vapour deposition (OF-CVD) synthesis is highly reproducible.",
+            "9": "The kinetics of oxygen-free chemical vapour deposition (OF-CVD) synthesis can be described by a compact model.",
+            "10": "Adding trace oxygen leads to suppressed nucleation in CVD synthesis of graphene.",
+            "11": "Adding trace oxygen leads to slower growth in CVD synthesis of graphene.",
+            "12": "Adding trace oxygen leads to incomplete growth in CVD synthesis of graphene.",
+            "13": "Oxygen affects graphene quality as assessed by surface contamination.",
+            "14": "Oxygen affects graphene quality as assessed by the emergence of the Raman D peak.",
+            "15": "Oxygen affects graphene quality as assessed by a decrease in electrical conductivity.",
+            "16": "Epitaxial graphene grown in oxygen-free conditions is contamination-free.",
+            "17": "Epitaxial graphene grown in oxygen-free conditions shows no detectable D peak.",
+            "18": "Epitaxial graphene grown in oxygen-free conditions shows room-temperature electrical-transport behaviour close to that of exfoliated graphene after dry transfer and boron nitride encapsulation.",
+            "19": "A graphite-gated device shows well-developed integer quantum Hall effects.",
+            "20": "A graphite-gated device shows well-developed fractional quantum Hall effects.",
+            "21": "This work provides guidance for future CVD system design by highlighting the importance of eliminating trace oxygen.",
+            "22": "This work provides guidance for future CVD system operation by highlighting the importance of eliminating trace oxygen.",
+            "23": "The increased reproducibility afforded by OF-CVD synthesis will broadly influence basic research of graphene.",
+            "24": "The increased quality afforded by OF-CVD synthesis will broadly influence basic research of graphene.",
+            "25": "The increased reproducibility afforded by OF-CVD synthesis will broadly influence applications of graphene.",
+            "26": "The increased quality afforded by OF-CVD synthesis will broadly influence applications of graphene."
+          },
+          "3": {
+            "1": "Monolayer materials have an additional degree of freedom to modulate electronic structures.",
+            "2": "Monolayer materials have an additional degree of freedom to modulate catalytic performances.",
+            "3": "Monolayer Ni(OH)₂ can be directly synthesized on electrodes by in situ electrochemical conversion.",
+            "4": "Monolayer Ni(OH)₂ has been fundamentally investigated for their catalytic activity.",
+            "5": "The monolayer structure greatly promotes hydrogen release processes.",
+            "6": "The monolayer structure greatly promotes oxygen release processes.",
+            "7": "The promoted hydrogen and oxygen release processes produce dynamic active sites for the oxygen evolution reaction (OER).",
+            "8": "The dynamic active sites for the oxygen evolution reaction (OER) are produced at a lower potential.",
+            "9": "Lattice doping with cobalt tunes the electronic structure.",
+            "10": "Lattice doping with cobalt reduces the overpotential.",
+            "11": "Ni and Co valence state oscillation in NiCo hydroxides was revealed by in situ experiments.",
+            "12": "The Ni and Co valence state oscillation has been attributed to sequential dehydrogenation processes.",
+            "13": "The Ni and Co valence state oscillation has been attributed to sequential deoxygenation processes.",
+            "14": "The Ni and Co valence state oscillation fundamentally contributes to the dynamic generation of OER active sites.",
+            "15": "This study defines an in situ conversion process to yield monolayer layered double hydroxides (LDHs).",
+            "16": "This study establishes a critical fundamental understanding of the origin of the active sites in monolayer LDHs for the OER."
+          },
+          "4": {
+            "1": "The ideal mechanical properties and behaviors of materials without the influence of defects are of great fundamental significance.",
+            "2": "The ideal mechanical properties and behaviors of materials without the influence of defects are of great engineering significance.",
+            "3": "The ideal mechanical properties and behaviors of materials without the influence of defects are considered inaccessible.",
+            "4": "Single-atom-thin isotopically pure hexagonal boron nitride (hBN) is used to demonstrate that two-dimensional (2D) materials offer close-to-ideal experimental platforms to study intrinsic mechanical phenomena.",
+            "5": "Two-dimensional (2D) materials offer close-to-ideal experimental platforms to study intrinsic mechanical phenomena.",
+            "6": "The highly delicate isotope effect on the mechanical properties of monolayer hBN is directly measured by indentation.",
+            "7": "Lighter 10B gives rise to higher elasticity in monolayer hBN than heavier 11B.",
+            "8": "Lighter 10B gives rise to higher strength in monolayer hBN than heavier 11B.",
+            "9": "The anomalous isotope effect establishes that the intrinsic mechanical properties without the effect of defects could be measured.",
+            "10": "The ultrafine and normally neglected isotopic perturbation in nuclear charge distribution sometimes plays a more critical role than the isotopic mass effect in the mechanical properties of materials.",
+            "11": "The ultrafine and normally neglected isotopic perturbation in nuclear charge distribution sometimes plays a more critical role than the isotopic mass effect in other physical properties of materials."
+          }
+        },
+        "viewpoints": [
+          "2D materials have very high aspect ratios.",
+          "2D materials have thicknesses corresponding to a few atomic layers.",
+          "2D materials include graphene, oxides, hydroxides, sulfides, and boron nitrides.",
+          "2D materials have been reported with interesting properties.",
+          "2D materials have promising applications."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Among them, 2D metal oxides (MOs) are a large family with unique combinations of redox chemistry, abundant defect sites, rapid mass transport and high earth abundance, endowing them with widespread applications ranging from catalysts and energy-storage devices to semiconductors.",
+        "references": {},
+        "viewpoints": [
+          "2D metal oxides are a large family within 2D materials.",
+          "2D metal oxides have unique combinations of redox chemistry, abundant defect sites, rapid mass transport, and high earth abundance.",
+          "2D metal oxides have widespread applications ranging from catalysts and energy-storage devices to semiconductors."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Mechanical/chemical/ultrasonic exfoliation [5] , [6] , [7] , chemical vapor deposition (CVD) [2] , [8] , template method [9] , solvo-/hydrothermal methods [10] etc., have been used to fabricate novel 2D architectures.",
+        "references": {
+          "5": {
+            "1": "Two-dimensional crystals are promising materials.",
+            "2": "Two-dimensional crystals are promising for developing future nano-enabled technologies.",
+            "3": "The cleavage of weak, interlayer van der Waals bonds in layered bulk crystals enables the production of high-quality two-dimensional monolayers.",
+            "4": "High-quality two-dimensional monolayers are atomically thin.",
+            "5": "Metal oxides are earth-abundant compounds.",
+            "6": "Metal oxides are rarely accessible as pure monolayers.",
+            "7": "Metal oxides are rarely accessible as fully stoichiometric monolayers.",
+            "8": "The rarity of metal oxides being accessible as pure and fully stoichiometric monolayers is due to their ion-stabilized 'lamellar' bulk structure.",
+            "9": "A layered planar hexagonal phase of oxides has been discovered.",
+            "10": "The layered planar hexagonal phase of oxides includes elements across transition metals, post-transition metals, lanthanides, and metalloids.",
+            "11": "The oxides are derived from strictly controlled oxidation at the metal-gas interface.",
+            "12": "The monolayers are highly crystalline.",
+            "13": "The monolayers do not require the support of ionic dopants or vacancies.",
+            "14": "The monolayers can easily be mechanically exfoliated by stamping them onto substrates.",
+            "15": "Monolayer and few-layered hexagonal TiO₂ are characterized as examples.",
+            "16": "Monolayer and few-layered hexagonal TiO₂ show p-type semiconducting properties.",
+            "17": "Monolayer and few-layered hexagonal TiO₂ have hole mobilities of up to 950 cm² V⁻¹ s⁻¹ at room temperature.",
+            "18": "The strategy can be readily extended to a variety of elements.",
+            "19": "The strategy possibly expands the exploration of metal oxides in the two-dimensional quantum regime."
+          },
+          "6": {
+            "1": "Exfoliation of two-dimensional nanosheets from three-dimensional non-layered, non-van der Waals crystals is an emerging strategy for materials engineering.",
+            "2": "The exfoliation strategy could significantly increase the library of two-dimensional materials.",
+            "3": "The mechanism of exfoliation for deriving nanosheets from crystals that are not intrinsically layered is unclear.",
+            "4": "Planar defects in the starting three-dimensional boron material promote the exfoliation of two-dimensional boron sheets.",
+            "5": "Liquid-phase exfoliation, aberration-corrected scanning transmission electron microscopy, Raman spectroscopy, and density functional theory calculations were combined to study the promotion of exfoliation by planar defects.",
+            "6": "Two-dimensional boron nanosheets consist of a planar arrangement of icosahedral sub-units.",
+            "7": "Two-dimensional boron nanosheets are cleaved along the {001} planes of β-rhombohedral boron.",
+            "8": "Intrinsic stacking faults in three-dimensional boron form parallel layers of faulted planes.",
+            "9": "The faulted planes have the same orientation as the exfoliated nanosheets.",
+            "10": "Intrinsic stacking faults reduce the {001} cleavage energy.",
+            "11": "Planar defects represent a potential engineerable pathway for exfoliating two-dimensional sheets from three-dimensional boron.",
+            "12": "Planar defects may apply as an engineerable pathway for exfoliating two-dimensional sheets from other covalently bonded materials."
+          },
+          "7": {
+            "1": "Artificial photosynthesis involves light-driven conversion of CO₂ into hydrocarbon fuels.",
+            "2": "Artificial photosynthesis is a promising strategy to overcome global warming.",
+            "3": "Artificial photosynthesis is a promising strategy to address energy-supply issues.",
+            "4": "The quaternary AgInP₂S₆ atomic layer has a thickness of approximately 0.70 nm.",
+            "5": "The quaternary AgInP₂S₆ atomic layer was successfully synthesized.",
+            "6": "Facile ultrasonic exfoliation of the corresponding bulk crystal was used to synthesize the quaternary AgInP₂S₆ atomic layer.",
+            "7": "Sulfur defect engineering on the AgInP₂S₆ atomic layer is achieved through H₂O₂ etching treatment.",
+            "8": "Sulfur defect engineering can change the CO₂ photoreduction reaction pathway.",
+            "9": "The change in the reaction pathway steers the dominant generation of ethene.",
+            "10": "The yield-based selectivity for ethene generation reaches around 73%.",
+            "11": "The electron-based selectivity for ethene generation is as high as 89%.",
+            "12": "DFT calculation demonstrates the effects of introducing S vacancies in AgInP₂S₆.",
+            "13": "In-situ FTIR spectra demonstrate the effects of introducing S vacancies in AgInP₂S₆.",
+            "14": "Introducing S vacancies in AgInP₂S₆ causes charge accumulation on Ag atoms near S vacancies.",
+            "15": "The exposed Ag sites can effectively capture forming *CO molecules.",
+            "16": "The catalyst surface becomes enriched with key reaction intermediates.",
+            "17": "Enriching the catalyst surface lowers the C-C binding coupling barrier.",
+            "18": "Lowering the C-C binding coupling barrier facilitates the production of ethene."
+          },
+          "2": {
+            "1": "Chemical vapour deposition (CVD) synthesis of graphene on copper has been broadly adopted.",
+            "2": "The adoption of CVD synthesis of graphene on copper started after the first demonstration of this process.",
+            "3": "Widespread use of CVD-grown graphene for basic science has been hindered by challenges with reproducibility and quality.",
+            "4": "Widespread use of CVD-grown graphene for applications has been hindered by challenges with reproducibility and quality.",
+            "5": "Trace oxygen is a key factor determining the growth trajectory for graphene grown by low-pressure CVD.",
+            "6": "Trace oxygen is a key factor determining the quality for graphene grown by low-pressure CVD.",
+            "7": "Oxygen-free chemical vapour deposition (OF-CVD) synthesis is fast.",
+            "8": "Oxygen-free chemical vapour deposition (OF-CVD) synthesis is highly reproducible.",
+            "9": "The kinetics of oxygen-free chemical vapour deposition (OF-CVD) synthesis can be described by a compact model.",
+            "10": "Adding trace oxygen leads to suppressed nucleation in CVD synthesis of graphene.",
+            "11": "Adding trace oxygen leads to slower growth in CVD synthesis of graphene.",
+            "12": "Adding trace oxygen leads to incomplete growth in CVD synthesis of graphene.",
+            "13": "Oxygen affects graphene quality as assessed by surface contamination.",
+            "14": "Oxygen affects graphene quality as assessed by the emergence of the Raman D peak.",
+            "15": "Oxygen affects graphene quality as assessed by a decrease in electrical conductivity.",
+            "16": "Epitaxial graphene grown in oxygen-free conditions is contamination-free.",
+            "17": "Epitaxial graphene grown in oxygen-free conditions shows no detectable D peak.",
+            "18": "Epitaxial graphene grown in oxygen-free conditions shows room-temperature electrical-transport behaviour close to that of exfoliated graphene after dry transfer and boron nitride encapsulation.",
+            "19": "A graphite-gated device shows well-developed integer quantum Hall effects.",
+            "20": "A graphite-gated device shows well-developed fractional quantum Hall effects.",
+            "21": "This work provides guidance for future CVD system design by highlighting the importance of eliminating trace oxygen.",
+            "22": "This work provides guidance for future CVD system operation by highlighting the importance of eliminating trace oxygen.",
+            "23": "The increased reproducibility afforded by OF-CVD synthesis will broadly influence basic research of graphene.",
+            "24": "The increased quality afforded by OF-CVD synthesis will broadly influence basic research of graphene.",
+            "25": "The increased reproducibility afforded by OF-CVD synthesis will broadly influence applications of graphene.",
+            "26": "The increased quality afforded by OF-CVD synthesis will broadly influence applications of graphene."
+          },
+          "8": {
+            "1": "Investigations of two-dimensional transition-metal chalcogenides (TMCs) have revealed interesting physical phenomena.",
+            "2": "The interesting physical phenomena revealed by TMCs investigations include the quantum spin Hall effect, valley polarization, and two-dimensional superconductivity.",
+            "3": "The interesting physical phenomena revealed by TMCs suggest potential applications for functional devices.",
+            "4": "Only a handful of the numerous available two-dimensional transition-metal chalcogenides (TMCs) compounds have been synthesized.",
+            "5": "Mo- and W-based TMCs are among the few TMCs that have been synthesized.",
+            "6": "Mo- and W-based TMCs have been synthesized typically via sulfurization, selenization, and tellurization of metals and metal compounds.",
+            "7": "Many two-dimensional transition-metal chalcogenides (TMCs) are difficult to produce.",
+            "8": "The difficulty in producing many TMCs is due to the high melting points of their metal and metal oxide precursors.",
+            "9": "Molten-salt-assisted methods have been used to produce ceramic powders at relatively low temperatures.",
+            "10": "Molten-salt-assisted methods have been used to facilitate the growth of monolayer WS₂ and WSe₂.",
+            "11": "Molten-salt-assisted chemical vapour deposition can be broadly applied for the synthesis of a wide variety of two-dimensional (atomically thin) transition-metal chalcogenides (TMCs).",
+            "12": "We synthesized 47 compounds of two-dimensional transition-metal chalcogenides (TMCs).",
+            "13": "The synthesized compounds include 32 binary compounds based on transition metals Ti, Zr, Hf, V, Nb, Ta, Mo, W, Re, Pt, Pd, and Fe.",
+            "14": "The synthesized compounds include 13 alloys with compositions including 11 ternary, one quaternary, and one quinary.",
+            "15": "The synthesized compounds include two heterostructured compounds.",
+            "16": "Salt decreases the melting point of the reactants in the synthesis of transition-metal chalcogenides.",
+            "17": "Salt facilitates the formation of intermediate products in the synthesis of transition-metal chalcogenides.",
+            "18": "Salt increases the overall reaction rate in the synthesis of transition-metal chalcogenides.",
+            "19": "Most of the synthesized materials in our library are useful.",
+            "20": "Evidence of superconductivity supports the usefulness of monolayer NbSe₂ and MoTe₂ samples.",
+            "21": "Evidence of high mobilities supports the usefulness of MoS₂ and ReS₂ samples.",
+            "22": "The quality of some of the synthesized materials still requires development.",
+            "23": "The work opens up opportunities for studying the properties of a wide variety of two-dimensional transition-metal chalcogenides (TMCs).",
+            "24": "The work opens up opportunities for studying the potential application of a wide variety of two-dimensional transition-metal chalcogenides (TMCs)."
+          },
+          "9": {
+            "1": "Two-dimensional nanomaterials show unique electrical performance.",
+            "2": "Two-dimensional nanomaterials show unique mechanical performance.",
+            "3": "Two-dimensional nanomaterials show unique catalytic performance.",
+            "4": "The unique performance of two-dimensional nanomaterials is due to their ultrahigh surface-to-volume ratio.",
+            "5": "The unique performance of two-dimensional nanomaterials is due to quantum confinement effects.",
+            "6": "It is a big challenge to simply synthesize two-dimensional metal oxide nanosheets through a general and facile method.",
+            "7": "A generalized and facile strategy to synthesize large-size ultrathin two-dimensional metal oxide nanosheets is reported.",
+            "8": "Graphene oxide is used as a template in a wet-chemical system to synthesize large-size ultrathin two-dimensional metal oxide nanosheets.",
+            "9": "The novel strategy relies on accurately controlling the balance between heterogeneous growth and nucleation of metal oxides on the surface of graphene oxide.",
+            "10": "This strategy is independent of the individual character of the metal elements.",
+            "11": "Ultrathin nanosheets of various metal oxides can be synthesized with large size.",
+            "12": "Ultrathin nanosheets of metal oxides from main-group elements can be synthesized with large size.",
+            "13": "Ultrathin nanosheets of metal oxides from transition elements can be synthesized with large size.",
+            "14": "Ultrathin two-dimensional metal oxide nanosheets show controllable thickness.",
+            "15": "Ultrathin two-dimensional metal oxide nanosheets show a unique surface chemical state."
+          },
+          "10": {
+            "1": "Two-dimensional (2D) nanomaterials have been the focus of substantial research interest recently.",
+            "2": "Two-dimensional (2D) nanomaterials possess fascinating and excellent properties.",
+            "3": "2D porous materials have remained quite rare.",
+            "4": "The rarity of 2D porous materials is due to the difficulty of creating pores in 2D nanostructures.",
+            "5": "A novel type of single-layered 2D mesoporous TiO₂ nanosheets with very uniform size and thickness has been synthesized.",
+            "6": "The novel TiO₂ nanosheets have an ordered mesostructure.",
+            "7": "The synthesis of these TiO₂ nanosheets is from a hydrothermal-induced solvent-confined assembly approach, which is unprecedented.",
+            "8": "F127/TiO₂ spherical monomicelles are first formed.",
+            "9": "F127/TiO₂ spherical monomicelles are redispersed in ethanol and glycerol.",
+            "10": "A hydrothermal treatment is applied to assemble these subunits into a single-layered 2D mesostructure.",
+            "11": "The confinement effect of highly adhered glycerol solvent aids the assembly into a single-layered 2D mesostructure.",
+            "12": "The obtained 2D mesoporous TiO₂ nanosheets have a relative mean size of around 500 × 500 nm.",
+            "13": "The 2D mesoporous TiO₂ nanosheets can be randomly stacked into a bulk.",
+            "14": "The TiO₂ nanosheets possess only one layer of ordered mesopores.",
+            "15": "The ordered mesopores in the TiO₂ nanosheets have a pore size of 4.0 nm.",
+            "16": "The TiO₂ nanosheets have a very high surface area of 210 m² g⁻¹.",
+            "17": "The TiO₂ nanosheets have a uniform thickness of 5.5 nm.",
+            "18": "The thickness of the TiO₂ nanosheets can be manipulated from 5.5 to 27.6 nm.",
+            "19": "The manipulation of thickness is achieved by tuning precursor concentration or solvent ratio.",
+            "20": "The TiO₂ nanosheets have a well-defined 2D morphology.",
+            "21": "The TiO₂ nanosheets have large mesoporosity.",
+            "22": "The TiO₂ nanosheets have crystalline anatase mesopore walls.",
+            "23": "The TiO₂ nanosheets are capable of providing large accessible voids for sodium ion adsorption and intercalation.",
+            "24": "The TiO₂ nanosheets are capable of preventing volume expansion.",
+            "25": "The mesoporous TiO₂ nanosheets exhibit an excellent reversible capacity of 220 mAh g⁻¹ at 100 mA g⁻¹ as sodium-ion battery anodes.",
+            "26": "The mesoporous TiO₂ nanosheets can retain a capacity of 199 mAh g⁻¹ after numerous cycles at different current densities.",
+            "27": "The capacity is retained at 44 mAh g⁻¹ even at a large current density of 10 A g⁻¹ after 10,000 cycles.",
+            "28": "The retention of capacity demonstrates a remarkable performance for energy storage."
+          }
+        },
+        "viewpoints": [
+          "Mechanical exfoliation has been used to fabricate novel 2D architectures.",
+          "Chemical exfoliation has been used to fabricate novel 2D architectures.",
+          "Ultrasonic exfoliation has been used to fabricate novel 2D architectures.",
+          "Chemical vapor deposition has been used to fabricate novel 2D architectures.",
+          "The template method has been used to fabricate novel 2D architectures.",
+          "Solvo-/hydrothermal methods have been used to fabricate novel 2D architectures."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Similar with the fabrication of graphene by exfoliating layered graphite, some types of 2D metal oxide nanosheets have been produced via the “top-down” strategy.",
+        "references": {},
+        "viewpoints": [
+          "Some types of 2D metal oxide nanosheets have been produced via the “top-down” strategy.",
+          "The production of some 2D metal oxide nanosheets via the “top-down” strategy is similar to the fabrication of graphene by exfoliating layered graphite."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "For instance, nine types of 2D hexagonal metal oxide monolayers (TiO 2 , MnO, Fe 2 O 3 etc.) have been prepared via exfoliation method [5].",
+        "references": {
+          "5": {
+            "1": "Two-dimensional crystals are promising materials.",
+            "2": "Two-dimensional crystals are promising for developing future nano-enabled technologies.",
+            "3": "The cleavage of weak, interlayer van der Waals bonds in layered bulk crystals enables the production of high-quality two-dimensional monolayers.",
+            "4": "High-quality two-dimensional monolayers are atomically thin.",
+            "5": "Metal oxides are earth-abundant compounds.",
+            "6": "Metal oxides are rarely accessible as pure monolayers.",
+            "7": "Metal oxides are rarely accessible as fully stoichiometric monolayers.",
+            "8": "The rarity of metal oxides being accessible as pure and fully stoichiometric monolayers is due to their ion-stabilized 'lamellar' bulk structure.",
+            "9": "A layered planar hexagonal phase of oxides has been discovered.",
+            "10": "The layered planar hexagonal phase of oxides includes elements across transition metals, post-transition metals, lanthanides, and metalloids.",
+            "11": "The oxides are derived from strictly controlled oxidation at the metal-gas interface.",
+            "12": "The monolayers are highly crystalline.",
+            "13": "The monolayers do not require the support of ionic dopants or vacancies.",
+            "14": "The monolayers can easily be mechanically exfoliated by stamping them onto substrates.",
+            "15": "Monolayer and few-layered hexagonal TiO₂ are characterized as examples.",
+            "16": "Monolayer and few-layered hexagonal TiO₂ show p-type semiconducting properties.",
+            "17": "Monolayer and few-layered hexagonal TiO₂ have hole mobilities of up to 950 cm² V⁻¹ s⁻¹ at room temperature.",
+            "18": "The strategy can be readily extended to a variety of elements.",
+            "19": "The strategy possibly expands the exploration of metal oxides in the two-dimensional quantum regime."
+          }
+        },
+        "viewpoints": [
+          "Nine types of 2D hexagonal metal oxide monolayers have been prepared via exfoliation method.",
+          "The nine types of 2D hexagonal metal oxide monolayers include TiO₂, MnO, and Fe₂O₃."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The bulk metal surface could be polished and oxidized to layered metal oxide in oxygen-deficient environment, which was easily obtained after mechanical exfoliation.",
+        "references": {},
+        "viewpoints": [
+          "The bulk metal surface could be polished and oxidized to layered metal oxide in an oxygen-deficient environment.",
+          "Layered metal oxide obtained from polished and oxidized bulk metal surface is easily obtained after mechanical exfoliation."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Meanwhile, liquid-phase exfoliation also was used in metal oxide sheets production [11].",
+        "references": {
+          "11": {
+            "1": "Research on ultrathin two-dimensional (2D) nanomaterials began after the discovery of mechanically exfoliated graphene in 2004.",
+            "2": "Research on ultrathin 2D nanomaterials has grown exponentially since 2004.",
+            "3": "Research on ultrathin 2D nanomaterials has expanded in the fields of condensed matter physics, material science, chemistry, and nanotechnology.",
+            "4": "Ultrathin 2D nanomaterials have compelling physical, chemical, electronic, and optical properties.",
+            "5": "Ultrathin 2D nanomaterials have various potential applications.",
+            "6": "This Review summarizes the state-of-art progress on ultrathin 2D nanomaterials.",
+            "7": "This Review emphasizes the recent advances in ultrathin 2D nanomaterials.",
+            "8": "Unique advances on ultrathin 2D nanomaterials are introduced in this Review.",
+            "9": "The composition and crystal structures of ultrathin 2D nanomaterials are described in this Review.",
+            "10": "The synthetic methods of ultrathin 2D nanomaterials are summarized in this Review.",
+            "11": "The advantages of the synthetic methods of ultrathin 2D nanomaterials are discussed.",
+            "12": "The limitations of the synthetic methods of ultrathin 2D nanomaterials are discussed.",
+            "13": "Recommendations on suitable characterization techniques for ultrathin 2D nanomaterials are provided.",
+            "14": "The utilization of ultrathin 2D nanomaterials for potential applications in electronics/optoelectronics is detailed.",
+            "15": "The utilization of ultrathin 2D nanomaterials for potential applications in electrocatalysis is detailed.",
+            "16": "The utilization of ultrathin 2D nanomaterials for potential applications in batteries is detailed.",
+            "17": "The utilization of ultrathin 2D nanomaterials for potential applications in supercapacitors is detailed.",
+            "18": "The utilization of ultrathin 2D nanomaterials for potential applications in solar cells is detailed.",
+            "19": "The utilization of ultrathin 2D nanomaterials for potential applications in photocatalysis is detailed.",
+            "20": "The utilization of ultrathin 2D nanomaterials for potential applications in sensing platforms is detailed.",
+            "21": "The challenges in the field of ultrathin 2D nanomaterials are featured in this Review.",
+            "22": "The outlooks in the field of ultrathin 2D nanomaterials are featured in this Review.",
+            "23": "The challenges and outlooks are based on current developments in the field of ultrathin 2D nanomaterials."
+          }
+        },
+        "viewpoints": [
+          "Liquid-phase exfoliation was used in metal oxide sheets production."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Ultrasonic waves could break the van der Waals (vdW) forces between the metal oxide layers, following the liquid-phase exfoliation and stabilization in liquids.",
+        "references": {},
+        "viewpoints": [
+          "Ultrasonic waves could break the van der Waals forces between the metal oxide layers.",
+          "Ultrasonic waves facilitate liquid-phase exfoliation and stabilization in liquids."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "It is clear that exfoliation is suitable for cleavage those original frameworks contain a layered structure, which rely on weak vdW forces to maintain the interlayer interaction.",
+        "references": {},
+        "viewpoints": [
+          "Exfoliation is suitable for cleavage of original frameworks that contain a layered structure.",
+          "Layered structures in original frameworks rely on weak van der Waals forces to maintain interlayer interaction."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Considering that most metal oxides are not intrinsically layered, the formation of 2D metal oxide nanosheets via exfoliation is quite limited.",
+        "references": {},
+        "viewpoints": [
+          "Most metal oxides are not intrinsically layered.",
+          "The formation of 2D metal oxide nanosheets via exfoliation is quite limited."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "The “bottom-up” strategy has also been developed for the 2D metal oxides synthesis.",
+        "references": {},
+        "viewpoints": [
+          "The “bottom-up” strategy has been developed for the synthesis of 2D metal oxides."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Although CVD is more flexible, its large-scale application is extremely restricted by its high energy intensity, limited product types and low yield.",
+        "references": {},
+        "viewpoints": [
+          "Chemical vapor deposition is more flexible for 2D metal oxides synthesis.",
+          "The large-scale application of chemical vapor deposition is extremely restricted by high energy intensity.",
+          "The large-scale application of chemical vapor deposition is extremely restricted by limited product types.",
+          "The large-scale application of chemical vapor deposition is extremely restricted by low yield."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The wet-chemical synthesis method benefits from low-cost, high-yield and simple operation.",
+        "references": {},
+        "viewpoints": [
+          "The wet-chemical synthesis method benefits from low cost.",
+          "The wet-chemical synthesis method benefits from high yield.",
+          "The wet-chemical synthesis method benefits from simple operation."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "By wet-chemical system, Zhao et al. [9] synthesized ultrathin 2D metal oxides including MgO, Al 2 O 3 , SnO 2 , ZrO 2 , TiO 2 , and Sb 2 O 5 using graphene oxide (GO) as template.",
+        "references": {
+          "9": {
+            "1": "Two-dimensional nanomaterials show unique electrical performance.",
+            "2": "Two-dimensional nanomaterials show unique mechanical performance.",
+            "3": "Two-dimensional nanomaterials show unique catalytic performance.",
+            "4": "The unique performance of two-dimensional nanomaterials is due to their ultrahigh surface-to-volume ratio.",
+            "5": "The unique performance of two-dimensional nanomaterials is due to quantum confinement effects.",
+            "6": "It is a big challenge to simply synthesize two-dimensional metal oxide nanosheets through a general and facile method.",
+            "7": "A generalized and facile strategy to synthesize large-size ultrathin two-dimensional metal oxide nanosheets is reported.",
+            "8": "Graphene oxide is used as a template in a wet-chemical system to synthesize large-size ultrathin two-dimensional metal oxide nanosheets.",
+            "9": "The novel strategy relies on accurately controlling the balance between heterogeneous growth and nucleation of metal oxides on the surface of graphene oxide.",
+            "10": "This strategy is independent of the individual character of the metal elements.",
+            "11": "Ultrathin nanosheets of various metal oxides can be synthesized with large size.",
+            "12": "Ultrathin nanosheets of metal oxides from main-group elements can be synthesized with large size.",
+            "13": "Ultrathin nanosheets of metal oxides from transition elements can be synthesized with large size.",
+            "14": "Ultrathin two-dimensional metal oxide nanosheets show controllable thickness.",
+            "15": "Ultrathin two-dimensional metal oxide nanosheets show a unique surface chemical state."
+          }
+        },
+        "viewpoints": [
+          "Ultrathin 2D metal oxides were synthesized by a wet-chemical system by Zhao et al.",
+          "The ultrathin 2D metal oxides synthesized include MgO, Al₂O₃, SnO₂, ZrO₂, TiO₂, and Sb₂O₅.",
+          "Graphene oxide was used as a template in the synthesis of ultrathin 2D metal oxides."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "The metal cations was adsorbed on the GO surface, and hydrolyzed gradually in the liquid-phase reaction with precisely controlled temperature and pH.",
+        "references": {},
+        "viewpoints": [
+          "The metal cations were adsorbed on the graphene oxide surface.",
+          "The metal cations were hydrolyzed gradually in the liquid-phase reaction.",
+          "The liquid-phase reaction was controlled with precise temperature.",
+          "The liquid-phase reaction was controlled with precise pH."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Notably, it is restricted by the solution pH, solubility and hydrolysis of precursors.",
+        "references": {},
+        "viewpoints": [
+          "The synthesis process is restricted by the solution pH.",
+          "The synthesis process is restricted by the solubility of precursors.",
+          "The synthesis process is restricted by the hydrolysis of precursors."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "A strategy involving the use of surfaces of water-soluble salt crystals as growth substrates to synthesize 2D transition metal oxides such as MoO 3 , MoO 2 , MnO, and WO 3 from solution has been discovered [12].",
+        "references": {
+          "12": {
+            "1": "Two-dimensional atomic crystals have attracted much attention in energy storage.",
+            "2": "Two-dimensional oxides have attracted much attention in energy storage because nearly all of the atoms can be exposed to the electrolyte.",
+            "3": "Nearly all of the atoms in two-dimensional oxides can be involved in redox reactions.",
+            "4": "Current strategies for using two-dimensional atomic crystals in energy storage are largely limited to intrinsically layered compounds.",
+            "5": "A general strategy uses the surfaces of water-soluble salt crystals as growth templates.",
+            "6": "This strategy is applicable to not only layered compounds but also various transition metal oxides.",
+            "7": "The strategy is applicable to transition metal oxides such as hexagonal-MoO3.",
+            "8": "The strategy is applicable to transition metal oxides such as MoO2.",
+            "9": "The strategy is applicable to transition metal oxides such as MnO.",
+            "10": "The strategy is applicable to transition metal oxides such as hexagonal-WO3.",
+            "11": "The planar growth of two-dimensional oxides is hypothesized to occur via a match between the crystal lattices of the salt and the growing oxide.",
+            "12": "Restacked two-dimensional hexagonal-MoO3 exhibits high pseudocapacitive performances.",
+            "13": "Restacked two-dimensional hexagonal-MoO3 exhibits a performance of 300 F cm−3 in an Al2(SO4)3 electrolyte.",
+            "14": "The synthesis of various two-dimensional transition metal oxides is expected to enable fundamental studies of dimensionality effects on their properties.",
+            "15": "The demonstration of high capacitance in two-dimensional transition metal oxides is expected to enable fundamental studies of dimensionality effects on their properties.",
+            "16": "The synthesis of various two-dimensional transition metal oxides is expected to facilitate their use in energy storage and other applications.",
+            "17": "The demonstration of high capacitance in two-dimensional transition metal oxides is expected to facilitate their use in energy storage and other applications."
+          }
+        },
+        "viewpoints": [
+          "A strategy to use surfaces of water-soluble salt crystals as growth substrates has been discovered.",
+          "This strategy was used to synthesize 2D transition metal oxides from solution.",
+          "2D transition metal oxides synthesized using this strategy include MoO₃, MoO₂, MnO, and WO₃."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "It remains a challenging task if the precursors are hydrolyzed violently or refractorily.",
+        "references": {},
+        "viewpoints": [
+          "Synthesizing 2D metal oxides remains a challenging task if precursors are hydrolyzed violently.",
+          "Synthesizing 2D metal oxides remains a challenging task if precursors are hydrolyzed refractorily."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Seeking a versatile and facile method to fabricate 2D metal oxide crystals is an appealing endeavor.",
+        "references": {},
+        "viewpoints": [
+          "Seeking a versatile method to fabricate 2D metal oxide crystals is an appealing endeavor.",
+          "Seeking a facile method to fabricate 2D metal oxide crystals is an appealing endeavor."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Confinement synthesis in a fixed interlayer is the transverse growth of 2D target guest species by utilizing the layer spacing of lamellar framework in combination with template.",
+        "references": {},
+        "viewpoints": [
+          "Confinement synthesis involves the transverse growth of 2D target guest species.",
+          "Confinement synthesis utilizes the layer spacing of a lamellar framework.",
+          "Confinement synthesis involves combining the lamellar framework with a template."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Due to the fixed spacing between the layers of template, the longitudinal dimension of target products can be strictly limited.",
+        "references": {},
+        "viewpoints": [
+          "The fixed spacing between the layers of the template strictly limits the longitudinal dimension of target products."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Very recently, Guo’s group [13] reported the solution preparation of free-standing nitrogen-doped amorphous monolayer carbon within the interlayer cavity of layered double hydroxides (LDHs), indicating the feasibility of confined polymerization using solid templates.",
+        "references": {
+          "13": {
+            "1": "Monoatomic-layered carbon materials have stimulated intense fundamental and applied research.",
+            "2": "Graphene is an example of monoatomic-layered carbon materials.",
+            "3": "Amorphous monolayer carbon is an example of monoatomic-layered carbon materials.",
+            "4": "Monoatomic-layered carbon materials have unprecedented physical properties.",
+            "5": "Monoatomic-layered carbon materials have a wide range of promising applications.",
+            "6": "Monoatomic-layered carbon materials have mainly been produced by chemical vapour deposition.",
+            "7": "Chemical vapour deposition typically requires stringent reaction conditions compared to solution-phase synthesis.",
+            "8": "The solution preparation of free-standing nitrogen-doped amorphous monolayer carbon is demonstrated.",
+            "9": "Free-standing nitrogen-doped amorphous monolayer carbon has mixed 5-6-7-membered rings.",
+            "10": "The synthesis method involves the polymerization of pyrrole.",
+            "11": "Polymerization occurs within the confined interlayer cavity of a removable layered-double-hydroxide template.",
+            "12": "Structural characterizations and first-principles calculations indicate nitrogen-doped amorphous monolayer carbon formation.",
+            "13": "The nitrogen-doped amorphous monolayer carbon was formed by radical polymerization of pyrrole.",
+            "14": "Polymerization occurred at the α, β and N sites.",
+            "15": "Confinement of the reaction space enables bond rearrangements through the Stone–Wales transformation.",
+            "16": "Spatial confinement inhibits C–C bond rotation during polymerization.",
+            "17": "Spatial confinement inhibits chain entanglement during polymerization.",
+            "18": "Inhibition results in an atom-thick continuous amorphous layer.",
+            "19": "The atom-thick continuous amorphous layer has an in-plane π-conjugation electronic structure.",
+            "20": "Spatially confined radical polymerization employs solid templates and ion exchange strategy.",
+            "21": "This method demonstrates potential as a universal synthesis approach for obtaining two-dimensional covalent networks.",
+            "22": "The successful synthesis of monolayers of polythiophene exemplifies this potential.",
+            "23": "The successful synthesis of monolayers of polycarbazole exemplifies this potential."
+          }
+        },
+        "viewpoints": [
+          "Guo’s group reported the solution preparation of free-standing nitrogen-doped amorphous monolayer carbon.",
+          "The nitrogen-doped amorphous monolayer carbon preparation was done within the interlayer cavity of layered double hydroxides.",
+          "The preparation indicates the feasibility of confined polymerization using solid templates."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Herein, we developed the confined interlayer growth strategy in combination with a melt infiltration method under dry-chemical conditions, achieving the synthesis of various ultrathin 2D metal oxide crystals (2D MOs), including 3 d transition metal (Ti, Cr, Mn, Fe, Co, Ni, Cu, Zr, and W) oxides, lanthanide (Ce) oxides and nontransition metal (In, Sn, and Bi) oxides.",
+        "references": {},
+        "viewpoints": [
+          "A confined interlayer growth strategy was developed.",
+          "The development was combined with a melt infiltration method under dry-chemical conditions.",
+          "This development achieved the synthesis of various ultrathin 2D metal oxide crystals.",
+          "Ultrathin 2D metal oxide crystals synthesized include 3d transition metal oxides such as Ti, Cr, Mn, Fe, Co, Ni, Cu, Zr, and W oxides.",
+          "Ultrathin 2D metal oxide crystals synthesized include lanthanide Ce oxides.",
+          "Ultrathin 2D metal oxide crystals synthesized include nontransition metal In, Sn, and Bi oxides."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "The synthesized 2D MOs presented ultrathin monolayer structures, which perfectly inherited the layer morphology of the parent compound RUB-15.",
+        "references": {},
+        "viewpoints": [
+          "The synthesized 2D metal oxides presented ultrathin monolayer structures.",
+          "These structures perfectly inherited the layer morphology of the parent compound RUB-15."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "All the 2D MOs exhibited high crystallinity through modulation of the growth conditions.",
+        "references": {},
+        "viewpoints": [
+          "All the synthesized 2D metal oxides exhibited high crystallinity.",
+          "The high crystallinity was achieved through modulation of the growth conditions."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Each MO monolayer was held by vdW forces rather than ionic bonds, which was distinctly different from those in the bulk phase.",
+        "references": {},
+        "viewpoints": [
+          "Each metal oxide monolayer was held by van der Waals forces.",
+          "The holding by van der Waals forces is distinctly different from the holding in the bulk phase.",
+          "In the bulk phase, metal oxide monolayers are held by ionic bonds."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "The ultrathin 2D crystals exposed large surfaces and edge regions, which formed multiple defects and strains that led to lattice distortions.",
+        "references": {},
+        "viewpoints": [
+          "The ultrathin 2D crystals exposed large surfaces.",
+          "The ultrathin 2D crystals exposed edge regions.",
+          "The exposure of large surfaces and edge regions formed multiple defects and strains.",
+          "Multiple defects and strains led to lattice distortions."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "The obtained 2D TiO 2 nanosheets demonstrated outstanding degradation efficiency for various persistent organic pollutants, including phenolic compounds and antibiotics, in 120 min.",
+        "references": {},
+        "viewpoints": [
+          "The obtained 2D TiO₂ nanosheets demonstrated outstanding degradation efficiency.",
+          "The degradation efficiency was for various persistent organic pollutants.",
+          "The pollutants included phenolic compounds and antibiotics.",
+          "The degradation occurred in 120 minutes."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Moreover, five kinds of 2D transition metal sulfides (MSs), including FeS 2 , CoS, NiS 2 , Cu 9 S 5 , and SnS 2 have been synthesized in this strategy.",
+        "references": {},
+        "viewpoints": [
+          "Five kinds of 2D transition metal sulfides have been synthesized in this strategy.",
+          "The synthesized 2D transition metal sulfides include FeS₂, CoS, NiS₂, Cu₉S₅, and SnS₂."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "The method is flexible for the construction of other ultrathin 2D frameworks, such as binary MOs, sulfide/phosphide or metallene nanosheets, which highlights the multidisciplinary exploration of 2D crystals with unique properties.",
+        "references": {},
+        "viewpoints": [
+          "The method is flexible for the construction of other ultrathin 2D frameworks.",
+          "Other ultrathin 2D frameworks include binary metal oxides, sulfide/phosphide nanosheets, or metallene nanosheets.",
+          "The method highlights the multidisciplinary exploration of 2D crystals with unique properties."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56912-9_with_abstracts",
+    "base_id": "s41467-025-56912-9",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56912-9_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

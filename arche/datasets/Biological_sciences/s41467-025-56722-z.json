@@ -1,0 +1,433 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Huntington’s disease (HD) is a genetic, progressive neurodegenerative disease, which manifests with characteristic motor, cognitive, and psychiatric symptoms that arise generally at midlife and progress during 10 to 15 years, with subtle signs that can appear decades earlier. The disease is caused by an abnormal expansion of CAG trinucleotide repeats in the Huntingtin ( HTT) gene, which produces mutant HTT with polyglutamine expansion (polyQ) [1] , [2] . Specific neurons, particularly direct and indirect spiny projection neurons (dSPN and iSPN, respectively) in the striatum, representing >95% of striatal neurons, are highly vulnerable to the HD mutation [3] , [4] . Molecular underpinning of striatal neuron vulnerability in HD remains elusive. Epigenetic alteration is a key hallmark of cellular aging [5] , [6] . Recent study shows that cellular aging is caused by loss of cellular identity resulting from erosion of epigenetic information, so-called exdifferentiation [7] . Histone modifications, including the active mark H3K27 acetylation (H3K27ac) and the repressive mark H3K27 trimethylation (H3K27me3), were used as proxy to assess exdifferentiation, which is characterized by de-repression of non-lineage-specific genes, particularly developmental genes, and repression of cellular identity genes, both mechanisms contributing to cellular identity loss [7] . Epigenomic analyses in bulk HD striatal tissue show early loss of H3K27ac at striatal super-enhancers -broad enhancers regulating cellular identity genes, which results in transcriptional downregulation of their targets, striatal identity genes [8] , [9] , [10] , [11] , [12] . However, due to lack of cellular and temporal resolutions of earlier analyses, it was unclear whether HD vulnerable neurons undergo accelerated epigenetic aging, including accelerated de-repression of developmental genes. Here, we investigated HD striatal epigenetic landscape using fluorescence-activated nuclei sorting (FANS) coupled to ChIPseq or CUT&Tag. We profiled neuronal and non-neuronal striatal cells in two reference HD mouse models, R6/1 transgenic and Q140 knockin (KI) mice, showing distinct disease progressions. Additionally, we performed temporal analysis at 3 ages, corresponding to prodromal, early and advanced pathological stages in HD Q140 mice. We targeted H3K27me3, histone acetylation marks (e.g., H3K27ac, H3K9ac, H3K18ac) as well as H2AK119ub, since our analyses highlighted altered regulation of PRC1 subunits in HD striatal neurons. Our data show that the HD mutation accelerates loss of epigenetic information associated with cellular aging in striatal neurons of HD mice. Particularly, epigenetic de-repression of developmental genes is dramatically accelerated and our data indicate that the mechanism involves PRC1 through paralog switching among PRC1-CBX genes. Together, our data support the view that PRC1-mediated accelerated epigenetic aging is a key mechanism underlying striatal neuron vulnerability in HD.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Huntington’s disease (HD) is a genetic, progressive neurodegenerative disease, which manifests with characteristic motor, cognitive, and psychiatric symptoms that arise generally at midlife and progress during 10 to 15 years, with subtle signs that can appear decades earlier.",
+        "references": {},
+        "viewpoints": [
+          "Huntington’s disease is a genetic disease.",
+          "Huntington’s disease is a progressive neurodegenerative disease.",
+          "Huntington’s disease manifests with characteristic motor symptoms, cognitive symptoms, and psychiatric symptoms.",
+          "The symptoms of Huntington’s disease generally arise at midlife.",
+          "The symptoms of Huntington’s disease progress during 10 to 15 years.",
+          "Subtle signs of Huntington’s disease can appear decades earlier than midlife."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "The disease is caused by an abnormal expansion of CAG trinucleotide repeats in the Huntingtin (HTT) gene, which produces mutant HTT with polyglutamine expansion (polyQ) [1], [2].",
+        "references": {
+          "1": {
+            "1": "Huntington disease is devastating to patients and their families.",
+            "2": "Huntington disease has an autosomal dominant inheritance pattern.",
+            "3": "Huntington disease typically has onset in the prime of adult life.",
+            "4": "Huntington disease has a progressive course.",
+            "5": "Huntington disease features a combination of motor, cognitive, and behavioral symptoms.",
+            "6": "Huntington disease is caused by an expanded CAG trinucleotide repeat in the gene HTT.",
+            "7": "The expanded CAG trinucleotide repeat in HTT is of variable length.",
+            "8": "The HTT gene encodes the protein huntingtin.",
+            "9": "In mutation carriers, huntingtin is produced with abnormally long polyglutamine sequences.",
+            "10": "Abnormally long polyglutamine sequences in huntingtin confer toxic gains of function.",
+            "11": "Abnormally long polyglutamine sequences predispose huntingtin to fragmentation.",
+            "12": "Fragmentation of huntingtin results in neuronal dysfunction and death.",
+            "13": "The Primer reviews the epidemiology of Huntington disease.",
+            "14": "The prevalence of Huntington disease is higher than previously thought.",
+            "15": "The prevalence of Huntington disease is geographically variable.",
+            "16": "The prevalence of Huntington disease is increasing.",
+            "17": "The Primer describes the relationship between CAG repeat length and the clinical phenotype of Huntington disease.",
+            "18": "The Primer describes the concept of genetic modifiers of Huntington disease.",
+            "19": "The Primer discusses normal huntingtin protein function.",
+            "20": "The Primer discusses evidence for differential toxicity of mutant huntingtin variants.",
+            "21": "The Primer discusses theories of huntingtin aggregation.",
+            "22": "The Primer discusses the many different mechanisms of Huntington disease pathogenesis.",
+            "23": "The Primer describes the genetic diagnosis of Huntington disease.",
+            "24": "The Primer describes the clinical diagnosis of Huntington disease.",
+            "25": "The Primer describes the clinical assessment of Huntington disease.",
+            "26": "The Primer describes the multidisciplinary management of symptoms of Huntington disease.",
+            "27": "There is an absence of effective disease-modifying therapies for Huntington disease.",
+            "28": "The Primer reviews past clinical trials for Huntington disease.",
+            "29": "The Primer reviews present clinical trials for Huntington disease.",
+            "30": "The Primer reviews therapeutic strategies under investigation for Huntington disease.",
+            "31": "The Primer includes information about impending trials of targeted huntingtin-lowering drugs.",
+            "32": "There is progress in the development of biomarkers to support the next generation of clinical trials for Huntington disease.",
+            "33": "An illustrated summary of the Primer can be found at the provided URL: http://go.nature.com/hPMENh."
+          },
+          "2": {
+            "1": "Huntington's disease (HD) is a devastating neurogenetic disorder.",
+            "2": "The familial nature of Huntington's disease and its progressive course were first described in the 19th century.",
+            "3": "No disease-modifying treatment for Huntington's disease is yet available.",
+            "4": "Huntington's disease has acted as a flagship for the application of human molecular genetic strategies.",
+            "5": "The active participation of HD families has facilitated the use of human molecular genetic strategies in Huntington's disease.",
+            "6": "Human molecular genetic strategies have been applied to identify disease genes related to Huntington's disease.",
+            "7": "Human molecular genetic strategies have been applied to understand the pathogenesis of Huntington's disease.",
+            "8": "Human molecular genetic strategies have been applied to identify rational targets for the development of therapies for Huntington's disease."
+          }
+        },
+        "viewpoints": [
+          "Huntington’s disease is caused by an abnormal expansion of CAG trinucleotide repeats in the Huntingtin gene.",
+          "The abnormal expansion in the Huntingtin gene produces mutant Huntingtin with polyglutamine expansion."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Specific neurons, particularly direct and indirect spiny projection neurons (dSPN and iSPN, respectively) in the striatum, representing >95% of striatal neurons, are highly vulnerable to the HD mutation [3], [4].",
+        "references": {
+          "3": {
+            "1": "An expansion of a trinucleotide CAG repeat on chromosome 4 causes Huntington disease.",
+            "2": "The abnormal elongation of the CAG repeat increases the polyglutamine stretch of huntingtin.",
+            "3": "The increased polyglutamine stretch of huntingtin becomes proportionally toxic.",
+            "4": "The mutated huntingtin is ubiquitous in somatic tissues.",
+            "5": "The pathologic changes caused by mutated huntingtin are apparently restricted to the brain.",
+            "6": "The degree of the abnormal expansion of the CAG repeats governs the gradually diffuse atrophy of the brain.",
+            "7": "The brunt of the degenerative process in Huntington disease involves the striatum.",
+            "8": "The onset of symptoms of Huntington disease is insidious.",
+            "9": "The longer the CAG expansion, the earlier the occurrence of symptoms in Huntington disease.",
+            "10": "Symptoms of Huntington disease include psychiatric disorders.",
+            "11": "Symptoms of Huntington disease include motor disorders.",
+            "12": "Symptoms of Huntington disease include cognitive disorders.",
+            "13": "Patients with adult onset of Huntington disease symptoms are more prone to exhibit choreic movements.",
+            "14": "Patients with juvenile onset of Huntington disease symptoms tend to develop parkinsonism.",
+            "15": "Patients with juvenile onset of Huntington disease symptoms tend to develop rigidity.",
+            "16": "Brains from patients with juvenile onset of Huntington disease are usually more atrophic than brains from patients with adult onset.",
+            "17": "Brains from patients with late onset of Huntington disease symptoms might show changes occurring in usual aging.",
+            "18": "Brains from patients with late onset of Huntington disease symptoms might show changes characteristically observed in Huntington disease.",
+            "19": "Despite recent important discoveries, the pathogenesis of Huntington disease is still not elucidated.",
+            "20": "Many possible mechanisms underlying the relative selective vulnerability of neurons in Huntington disease are being explored.",
+            "21": "Factors promoting apoptosis in Huntington disease have been studied.",
+            "22": "Phenomena causing the toxic aggregation of proteins in Huntington disease have been studied.",
+            "23": "Phenomena causing the blockage of trophic factors in Huntington disease have been studied.",
+            "24": "Phenomena causing mitochondria dysfunction in Huntington disease have been studied.",
+            "25": "Phenomena causing excitoxicity in Huntington disease have been studied."
+          },
+          "4": {
+            "1": "The total cortical and striatal neuron and glial numbers were estimated in five cases of Huntington's disease.",
+            "2": "The total cortical and striatal neuron and glial numbers were estimated in five age- and sex-matched control cases.",
+            "3": "Serial 500-microns-thick gallocyanin-stained frontal sections through the left hemisphere were analyzed using Cavalieri's principle for volume estimations.",
+            "4": "Serial 500-microns-thick gallocyanin-stained frontal sections through the left hemisphere were analyzed using the optical disector for cell density estimations.",
+            "5": "The average cortical neuron number of five control cases was 5.97 x 10(9) +/- 320 x 10(6).",
+            "6": "The average number of small striatal neurons in five control cases was 82 x 10(6) +/- 15.8 x 10(6).",
+            "7": "The left striatum (caudatum, putamen, and accumbens) contained a mean of 273 x 10(6) +/- 53 x 10(6) glial cells.",
+            "8": "The glial cells in the left striatum included oligodendrocytes, astrocytes, and unclassifiable glial profiles.",
+            "9": "The mean cortical neuron number in Huntington's disease patients was diminished by about 33%.",
+            "10": "The mean cortical neuron number in Huntington's disease patients was 3.99 x 10(9) +/- 218 x 10(6) nerve cells.",
+            "11": "The statistical significance of the decrease in cortical neurons in Huntington's disease patients was P < or = 0.012 according to the Mann-Whitney U-test.",
+            "12": "The mean number of small striatal neurons in Huntington's disease patients decreased to 9.72 x 10(6) +/- 3.64 x 10(6).",
+            "13": "The decrease in the number of small striatal neurons in Huntington's disease patients was -88%.",
+            "14": "The decrease in total glial cells in Huntington's disease patients was to 193 x 10(6) +/- 26 x 10(6).",
+            "15": "The decrease in total glial cells in Huntington's disease patients was less pronounced than the decrease in neurons.",
+            "16": "The mean glial index, the numerical ratio of glial cells per neuron, increased from 3.35 to 22.59 in Huntington's disease.",
+            "17": "Neuronal loss was most pronounced in the supragranular layers of primary sensory areas in Huntington's disease.",
+            "18": "The primary sensory areas with pronounced neuronal loss in Huntington's disease included Brodmann's areas 3, 1, 2, area 17, and area 41.",
+            "19": "Layer IIIc pyramidal cells were preferentially lost in the association areas of the temporal, frontal, and parietal lobes in Huntington's disease.",
+            "20": "Spared layer IV granule cells formed a conspicuous band between layer III and V in the association areas of the temporal, frontal, and parietal lobes in Huntington's disease.",
+            "21": "Methodological issues in estimating neuronal and glial numbers are discussed in the context of previous investigations.",
+            "22": "Similarities and differences of laminar and lobar nerve cell loss in Huntington's disease are compared with nerve cell degeneration in other neuropsychiatric diseases."
+          }
+        },
+        "viewpoints": [
+          "Direct spiny projection neurons in the striatum are highly vulnerable to the Huntington’s disease mutation.",
+          "Indirect spiny projection neurons in the striatum are highly vulnerable to the Huntington’s disease mutation.",
+          "Direct and indirect spiny projection neurons represent more than 95% of striatal neurons."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Molecular underpinning of striatal neuron vulnerability in HD remains elusive.",
+        "references": {},
+        "viewpoints": [
+          "The molecular underpinning of striatal neuron vulnerability in Huntington’s disease remains elusive."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Epigenetic alteration is a key hallmark of cellular aging [5], [6].",
+        "references": {
+          "5": {
+            "1": "Aging is driven by hallmarks that have an age-associated manifestation.",
+            "2": "Experimentally accentuating certain hallmarks of aging can accelerate the aging process.",
+            "3": "There is an opportunity to decelerate, stop, or reverse aging by therapeutic interventions on specific hallmarks.",
+            "4": "The proposed hallmarks of aging include genomic instability.",
+            "5": "The proposed hallmarks of aging include telomere attrition.",
+            "6": "The proposed hallmarks of aging include epigenetic alterations.",
+            "7": "The proposed hallmarks of aging include loss of proteostasis.",
+            "8": "The proposed hallmarks of aging include disabled macroautophagy.",
+            "9": "The proposed hallmarks of aging include deregulated nutrient-sensing.",
+            "10": "The proposed hallmarks of aging include mitochondrial dysfunction.",
+            "11": "The proposed hallmarks of aging include cellular senescence.",
+            "12": "The proposed hallmarks of aging include stem cell exhaustion.",
+            "13": "The proposed hallmarks of aging include altered intercellular communication.",
+            "14": "The proposed hallmarks of aging include chronic inflammation.",
+            "15": "The proposed hallmarks of aging include dysbiosis.",
+            "16": "The hallmarks of aging are interconnected among each other.",
+            "17": "The hallmarks of aging are interconnected to the recently proposed hallmarks of health.",
+            "18": "The hallmarks of health include organizational features of spatial compartmentalization.",
+            "19": "The hallmarks of health include maintenance of homeostasis.",
+            "20": "The hallmarks of health include adequate responses to stress."
+          },
+          "6": {
+            "1": "Information storage is essential for all life.",
+            "2": "Information retrieval is essential for all life.",
+            "3": "Information in biology is primarily stored in the genome and the epigenome.",
+            "4": "The genome, comprising nucleic acids, acts as a foundational blueprint in biology.",
+            "5": "The epigenome consists of chemical modifications to DNA and histone proteins.",
+            "6": "The epigenome regulates gene expression patterns.",
+            "7": "The epigenome endows cells with specific identities and functions.",
+            "8": "Genetic information is stable and digital in nature.",
+            "9": "Epigenetic information is stored in a digital-analog format.",
+            "10": "Epigenetic information is susceptible to alterations induced by diverse environmental signals.",
+            "11": "Epigenetic information is susceptible to alterations induced by cellular damage.",
+            "12": "The Information Theory of Aging (ITOA) states that the aging process is driven by the progressive loss of youthful epigenetic information.",
+            "13": "The retrieval of youthful epigenetic information via epigenetic reprogramming can improve the function of damaged and aged tissues.",
+            "14": "Epigenetic reprogramming can catalyze age reversal in damaged and aged tissues."
+          }
+        },
+        "viewpoints": [
+          "Epigenetic alteration is a key hallmark of cellular aging."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Recent study shows that cellular aging is caused by loss of cellular identity resulting from erosion of epigenetic information, so-called exdifferentiation [7].",
+        "references": {
+          "7": {
+            "1": "All living things experience an increase in entropy.",
+            "2": "An increase in entropy in living things is manifested as a loss of genetic and epigenetic information.",
+            "3": "In yeast, epigenetic information is lost over time.",
+            "4": "The relocalization of chromatin-modifying proteins to DNA breaks in yeast is responsible for the loss of epigenetic information over time.",
+            "5": "The loss of epigenetic information causes yeast cells to lose their identity.",
+            "6": "Loss of cell identity is a hallmark of yeast aging.",
+            "7": "The \"ICE\" system is used to study epigenome changes.",
+            "8": "Faithful DNA repair advances aging at the physiological level.",
+            "9": "Faithful DNA repair advances aging at the cognitive level.",
+            "10": "Faithful DNA repair advances aging at the molecular level.",
+            "11": "Faithful DNA repair leads to the erosion of the epigenetic landscape.",
+            "12": "Faithful DNA repair causes cellular exdifferentiation.",
+            "13": "Faithful DNA repair causes senescence.",
+            "14": "Faithful DNA repair advances the DNA methylation clock.",
+            "15": "The epigenetic changes resulting from faithful DNA repair can be reversed by OSK-mediated rejuvenation.",
+            "16": "The data support the information theory of aging.",
+            "17": "The information theory of aging states that a loss of epigenetic information is a reversible cause of aging."
+          }
+        },
+        "viewpoints": [
+          "A recent study shows that cellular aging is caused by loss of cellular identity.",
+          "Loss of cellular identity results from erosion of epigenetic information.",
+          "The erosion of epigenetic information is referred to as exdifferentiation."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Histone modifications, including the active mark H3K27 acetylation (H3K27ac) and the repressive mark H3K27 trimethylation (H3K27me3), were used as proxy to assess exdifferentiation, which is characterized by de-repression of non-lineage-specific genes, particularly developmental genes, and repression of cellular identity genes, both mechanisms contributing to cellular identity loss [7].",
+        "references": {
+          "7": {
+            "1": "All living things experience an increase in entropy.",
+            "2": "An increase in entropy in living things is manifested as a loss of genetic and epigenetic information.",
+            "3": "In yeast, epigenetic information is lost over time.",
+            "4": "The relocalization of chromatin-modifying proteins to DNA breaks in yeast is responsible for the loss of epigenetic information over time.",
+            "5": "The loss of epigenetic information causes yeast cells to lose their identity.",
+            "6": "Loss of cell identity is a hallmark of yeast aging.",
+            "7": "The \"ICE\" system is used to study epigenome changes.",
+            "8": "Faithful DNA repair advances aging at the physiological level.",
+            "9": "Faithful DNA repair advances aging at the cognitive level.",
+            "10": "Faithful DNA repair advances aging at the molecular level.",
+            "11": "Faithful DNA repair leads to the erosion of the epigenetic landscape.",
+            "12": "Faithful DNA repair causes cellular exdifferentiation.",
+            "13": "Faithful DNA repair causes senescence.",
+            "14": "Faithful DNA repair advances the DNA methylation clock.",
+            "15": "The epigenetic changes resulting from faithful DNA repair can be reversed by OSK-mediated rejuvenation.",
+            "16": "The data support the information theory of aging.",
+            "17": "The information theory of aging states that a loss of epigenetic information is a reversible cause of aging."
+          }
+        },
+        "viewpoints": [
+          "Histone modifications were used as proxy to assess exdifferentiation.",
+          "H3K27 acetylation is an active histone modification mark.",
+          "H3K27 trimethylation is a repressive histone modification mark.",
+          "Exdifferentiation is characterized by de-repression of non-lineage-specific genes.",
+          "De-repression of developmental genes contributes to cellular identity loss.",
+          "Repression of cellular identity genes contributes to cellular identity loss."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Epigenomic analyses in bulk HD striatal tissue show early loss of H3K27ac at striatal super-enhancers -broad enhancers regulating cellular identity genes, which results in transcriptional downregulation of their targets, striatal identity genes [8], [9], [10], [11], [12].",
+        "references": {
+          "8": {
+            "1": "Huntington's disease (HD) is a neurodegenerative disease.",
+            "2": "Huntington's disease is associated with extensive down-regulation of genes controlling neuronal function.",
+            "3": "The down-regulation of genes in Huntington's disease occurs particularly in the striatum.",
+            "4": "It is unclear whether altered epigenetic regulation underlies transcriptional defects in Huntington's disease.",
+            "5": "Integration of RNA-sequencing (RNA-seq) and chromatin-immunoprecipitation followed by massively parallel sequencing (ChIP-seq) was used in the study.",
+            "6": "Down-regulated genes in Huntington's disease mouse striatum are associated with a selective decrease in H3K27ac.",
+            "7": "H3K27ac is a mark of active enhancers.",
+            "8": "Down-regulated genes in Huntington's disease mouse striatum are associated with a selective decrease in RNA Polymerase II (RNAPII).",
+            "9": "Decreased genes in Huntington's disease mouse striatum display a specific epigenetic signature.",
+            "10": "The specific epigenetic signature in Huntington's disease mouse striatum is characterized by high levels of H3K27ac.",
+            "11": "The specific epigenetic signature in Huntington's disease mouse striatum is characterized by broad patterns of H3K27ac.",
+            "12": "The specific epigenetic signature in Huntington's disease mouse striatum is characterized by high levels of RNA Polymerase II (RNAPII).",
+            "13": "The specific epigenetic signature in Huntington's disease mouse striatum is characterized by broad patterns of RNA Polymerase II (RNAPII).",
+            "14": "The epigenetic signature identified in decreased genes in Huntington's disease mouse striatum is that of super-enhancers.",
+            "15": "Super-enhancers are a category of broad enhancers.",
+            "16": "Super-enhancers regulate genes defining tissue identity and function.",
+            "17": "Striatal super-enhancers display extensive H3K27 acetylation within gene bodies.",
+            "18": "Striatal super-enhancers drive transcription characterized by low levels of paused RNA Polymerase II (RNAPII).",
+            "19": "Striatal super-enhancers regulate neuronal function genes.",
+            "20": "Striatal super-enhancers are enriched in binding motifs for Gata transcription factors.",
+            "21": "Gata transcription factors include Gata2.",
+            "22": "Gata2 regulates striatal identity genes.",
+            "23": "The study provides evidence for preferential down-regulation of genes controlled by super-enhancers in Huntington's disease striatum.",
+            "24": "Enhancer topography is a major parameter determining the propensity of a gene to be deregulated in a neurodegenerative disease."
+          },
+          "9": {
+            "1": "The temporal dynamics and mechanisms underlying epigenetic changes in Huntington's disease are unclear.",
+            "2": "Huntington's disease is a neurodegenerative disease primarily affecting the striatum.",
+            "3": "A slowly progressing knockin mouse model is used to profile the Huntington's disease striatal chromatin landscape.",
+            "4": "The profiling of the Huntington's disease striatal chromatin landscape is conducted at two early disease stages.",
+            "5": "Integration with cell type-specific striatal enhancer and transcriptomic databases demonstrates acceleration of age-related epigenetic remodeling.",
+            "6": "Integration with cell type-specific striatal enhancer and transcriptomic databases demonstrates acceleration of transcriptional changes at neuronal-specific genes from the prodromal stage.",
+            "7": "Integration with cell type-specific striatal enhancer and transcriptomic databases demonstrates acceleration of transcriptional changes at glial-specific genes from the prodromal stage.",
+            "8": "The acceleration occurs before the onset of motor deficits.",
+            "9": "The 3D chromatin architecture is generally preserved at neuronal enhancers.",
+            "10": "The 3D chromatin architecture is altered at the Huntington's disease locus.",
+            "11": "The Huntington's disease mutation is a CAG expansion in the Htt gene.",
+            "12": "The Huntington's disease mutation locally impairs the spatial chromatin organization.",
+            "13": "The Huntington's disease mutation locally impairs proximal gene regulation.",
+            "14": "The data provide evidence for two early and distinct mechanisms underlying chromatin structure changes in the Huntington's disease striatum.",
+            "15": "These chromatin structure changes correlate with transcriptional changes.",
+            "16": "The Huntington's disease mutation globally accelerates age-dependent epigenetic and transcriptional reprogramming of brain cell identities.",
+            "17": "The Huntington's disease mutation locally affects 3D chromatin organization."
+          },
+          "10": {
+            "1": "Insight into how mutant huntingtin CAG repeat length modifies Huntington's disease pathogenesis can be gained by profiling mRNA.",
+            "2": "Over 600 brain and peripheral tissue samples from HD knock-in mice with increasing CAG repeat lengths were used for mRNA profiling.",
+            "3": "Repeat length-dependent transcriptional signatures are prominent in the striatum.",
+            "4": "Repeat length-dependent transcriptional signatures are less prominent in the cortex.",
+            "5": "Repeat length-dependent transcriptional signatures are minimal in the liver.",
+            "6": "Coexpression network analyses revealed 13 striatal modules correlated highly with CAG length and age.",
+            "7": "Coexpression network analyses revealed 5 cortical modules correlated highly with CAG length and age.",
+            "8": "The 13 striatal modules were preserved in HD models and sometimes in patients.",
+            "9": "The 5 cortical modules were preserved in HD models and sometimes in patients.",
+            "10": "Top striatal modules implicated mutant huntingtin CAG length in graded impairment in the expression of identity genes for striatal medium spiny neurons.",
+            "11": "Top striatal modules implicated age in graded impairment in the expression of identity genes for striatal medium spiny neurons.",
+            "12": "Top striatal modules implicated mutant huntingtin CAG length in dysregulation of cyclic AMP signaling, cell death, and protocadherin genes.",
+            "13": "Top striatal modules implicated age in dysregulation of cyclic AMP signaling, cell death, and protocadherin genes.",
+            "14": "Proteomics was used to confirm 790 genes with CAG length-dependent dysregulation at the protein level.",
+            "15": "Proteomics was used to confirm 5 striatal modules with CAG length-dependent dysregulation at the protein level.",
+            "16": "22 striatal module genes were validated as modifiers of mutant huntingtin toxicities in vivo."
+          },
+          "11": {
+            "1": "The mechanisms by which mutant huntingtin leads to neuronal cell death in Huntington's disease are not fully understood.",
+            "2": "Single nuclear RNA sequencing was used to gain new molecular insights into caudate/putamen cell type-specific gene expression changes in human Huntington's disease and mouse models of Huntington's disease.",
+            "3": "Translating ribosome affinity purification was used to gain new molecular insights into caudate/putamen cell type-specific gene expression changes in human Huntington's disease and mouse models of Huntington's disease.",
+            "4": "Transcriptomic analyses of caudate/putamen cell type-specific gene expression changes were conducted in human Huntington's disease and mouse models of Huntington's disease.",
+            "5": "Striatal spiny projection neurons are the most vulnerable cell type in Huntington's disease.",
+            "6": "Release of mitochondrial RNA is observed in striatal spiny projection neurons in Huntington's disease.",
+            "7": "Mitochondrial RNA is a potent mitochondrial-derived innate immunogen.",
+            "8": "Upregulation of innate immune signaling is observed in spiny projection neurons in Huntington's disease.",
+            "9": "Released mitochondrial RNAs can directly bind to the innate immune sensor protein kinase R.",
+            "10": "Studying cell type-specific gene expression dysregulation is important in understanding Huntington's disease pathogenesis.",
+            "11": "Activation of innate immune signaling in the most vulnerable Huntington's disease neurons provides a novel framework to understand the basis of mutant huntingtin toxicity.",
+            "12": "Activation of innate immune signaling in the most vulnerable Huntington's disease neurons raises new therapeutic opportunities."
+          },
+          "12": {}
+        },
+        "viewpoints": [
+          "Epigenomic analyses in bulk Huntington's disease striatal tissue show early loss of H3K27ac at striatal super-enhancers.",
+          "Striatal super-enhancers are broad enhancers regulating cellular identity genes.",
+          "The early loss of H3K27ac at striatal super-enhancers results in transcriptional downregulation of striatal identity genes."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "However, due to lack of cellular and temporal resolutions of earlier analyses, it was unclear whether HD vulnerable neurons undergo accelerated epigenetic aging, including accelerated de-repression of developmental genes.",
+        "references": {},
+        "viewpoints": [
+          "Earlier analyses lacked cellular resolution.",
+          "Earlier analyses lacked temporal resolution.",
+          "Due to lack of cellular and temporal resolutions, it was unclear whether Huntington’s disease vulnerable neurons undergo accelerated epigenetic aging.",
+          "It was unclear whether Huntington’s disease vulnerable neurons undergo accelerated de-repression of developmental genes."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Here, we investigated HD striatal epigenetic landscape using fluorescence-activated nuclei sorting (FANS) coupled to ChIPseq or CUT&Tag.",
+        "references": {},
+        "viewpoints": [
+          "The study investigated Huntington’s disease striatal epigenetic landscape.",
+          "Fluorescence-activated nuclei sorting was used in the investigation.",
+          "ChIPseq or CUT&Tag was coupled with fluorescence-activated nuclei sorting in the investigation."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "We profiled neuronal and non-neuronal striatal cells in two reference HD mouse models, R6/1 transgenic and Q140 knockin (KI) mice, showing distinct disease progressions.",
+        "references": {},
+        "viewpoints": [
+          "The study profiled neuronal and non-neuronal striatal cells in two reference Huntington’s disease mouse models.",
+          "The reference Huntington’s disease mouse models are R6/1 transgenic mice and Q140 knockin mice.",
+          "R6/1 transgenic mice and Q140 knockin mice show distinct disease progressions."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Additionally, we performed temporal analysis at 3 ages, corresponding to prodromal, early and advanced pathological stages in HD Q140 mice.",
+        "references": {},
+        "viewpoints": [
+          "The study performed temporal analysis at three ages.",
+          "The three ages correspond to prodromal, early, and advanced pathological stages in Huntington’s disease Q140 mice."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "We targeted H3K27me3, histone acetylation marks (e.g., H3K27ac, H3K9ac, H3K18ac) as well as H2AK119ub, since our analyses highlighted altered regulation of PRC1 subunits in HD striatal neurons.",
+        "references": {},
+        "viewpoints": [
+          "The study targeted H3K27me3 in the investigation.",
+          "The study targeted histone acetylation marks in the investigation.",
+          "The histone acetylation marks targeted include H3K27ac, H3K9ac, and H3K18ac.",
+          "The study targeted H2AK119ub in the investigation.",
+          "The analyses highlighted altered regulation of PRC1 subunits in Huntington’s disease striatal neurons."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Our data show that the HD mutation accelerates loss of epigenetic information associated with cellular aging in striatal neurons of HD mice.",
+        "references": {},
+        "viewpoints": [
+          "The Huntington’s disease mutation accelerates loss of epigenetic information in striatal neurons of Huntington’s disease mice.",
+          "The accelerated loss of epigenetic information is associated with cellular aging."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Particularly, epigenetic de-repression of developmental genes is dramatically accelerated and our data indicate that the mechanism involves PRC1 through paralog switching among PRC1-CBX genes.",
+        "references": {},
+        "viewpoints": [
+          "Epigenetic de-repression of developmental genes is dramatically accelerated in Huntington’s disease.",
+          "The data indicate that the mechanism for accelerated de-repression involves PRC1.",
+          "Paralog switching among PRC1-CBX genes is involved in the mechanism for accelerated de-repression."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Together, our data support the view that PRC1-mediated accelerated epigenetic aging is a key mechanism underlying striatal neuron vulnerability in HD.",
+        "references": {},
+        "viewpoints": [
+          "PRC1-mediated accelerated epigenetic aging is a key mechanism underlying striatal neuron vulnerability in Huntington’s disease."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56722-z_with_abstracts",
+    "base_id": "s41467-025-56722-z",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56722-z_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

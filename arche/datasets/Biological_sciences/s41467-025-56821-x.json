@@ -1,0 +1,410 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "The pituitary is the most critical endocrine gland in humans, regulating key physiological functions by hormone secretion. Pituitary neuroendocrine tumors (PitNETs, also known as pituitary adenomas) are among the most prevalent intracranial tumors originating from the anterior pituitary gland (APG) [1] . The pathological classification of PitNETs incorporates the expression of specific hormone genes and three lineage-specific transcription factors (TFs), including PIT1 ( POU1F1 ), TPIT ( TBX19 ), and SF1 ( NR5A1 ) [2] . While the tumors within the same lineage have identical TF expressions, they exhibit variations in cellular functions and tumorigenesis. The PIT1 lineage commonly exhibits excessive hormone secretion, including somatotroph tumors (secreting growth hormone, GH), lactotrophs tumors (secreting prolactin, PRL) and thyrotroph tumors (secreting thyroid-stimulating hormone, TSH). Mixed somatotroph-lactotroph tumors secret GH and PRL (PG) and plurihormonal PIT1 lineage tumors secret all three hormones (PIT1M). The TPIT lineage tumors contain only one type, namely corticotroph tumors (secreting adrenocorticotrophic hormone, ACTH) and SF1 lineage contain gonadotroph tumors (GO, secreting follicle-stimulating hormone, FSH, and luteinizing hormone, LH) [3] . Null cell tumors (NULL) lack hormone production or specific TF expression, whereas plurihormonal tumors express multiple hormones with two or more lineages [2] . But even the same subtypes also exhibit diverse clinical manifestations. For instance, functional corticotroph tumors demonstrate typical Cushing symptoms because of ACTH oversecreting, while silent corticotroph tumors (with ACTH expressing but without Cushing symptoms) demonstrate more aggressive clinical behavior compared to other subtypes [4] . The complex hormone secretion profiles and highly variable clinical outcomes of these tumors present both requirements and challenges for more precise subtype classification. However, to date, the pathogenesis of most subtypes remains poorly understood and genomic markers for characterization are still lacking. Previous studies have predominantly focused on exploring genetic features or overall gene expression for additional molecular features of PitNETs [1] , overlooking co-transcriptional regulations. Alternative splicing (AS) is an essential cellular process in eukaryotes that generates multiple transcripts, diversifying final protein products [5] . Beyond PitNETs, AS has been extensively studied in various human tumors [6] , offering invaluable resources for a better understanding of inter-tumor heterogeneity and developing new therapies [7] . However, the overall landscape of splicing changes in PitNETs has not been thoroughly investigated so far. Here, we characterize the alternative splicing landscape of PitNETs using the PitNETs cohort with transcriptome sequencing, including bulk ( n = 268 patients) and full-length single-cell RNA-seq ( n = 195,720 cells) datasets from tumor tissues. Our analysis spans almost all PitNET subtypes, allowing us to construct subtype-specific splicing patterns and corresponding regulatory networks of RNA-binding proteins (RBPs). In contrast to the expression of TFs, our analysis more faithfully captures the transcriptomic diversity of PitNETs, thereby better demonstrating inter-tumor heterogeneity. Notably, within the TPIT lineage, we identify a distinct splicing regulatory pattern with significant clinical relevance. These findings are robustly validated by an independent cohort of 180 pituitary tumors. Overall, our study offers an enhanced approach to PitNET classification.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "The pituitary is the most critical endocrine gland in humans, regulating key physiological functions by hormone secretion.",
+        "references": {},
+        "viewpoints": [
+          "The pituitary gland is the most critical endocrine gland in humans.",
+          "The pituitary gland regulates key physiological functions by hormone secretion."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Pituitary neuroendocrine tumors (PitNETs, also known as pituitary adenomas) are among the most prevalent intracranial tumors originating from the anterior pituitary gland (APG) [1].",
+        "references": {
+          "1": {
+            "1": "Pituitary neuroendocrine tumors (PitNETs) are common.",
+            "2": "There are five main histological subtypes of PitNETs: lactotroph, somatotroph, and thyrotroph (POU1F1/PIT1 lineage), corticotroph (TBX19/TPIT lineage), and gonadotroph (NR5A1/SF1 lineage).",
+            "3": "The authors report a comprehensive pangenomic classification of Pituitary neuroendocrine tumors (PitNETs).",
+            "4": "PitNETs from the POU1F1/PIT1 lineage showed an epigenetic signature of diffuse DNA hypomethylation.",
+            "5": "PitNETs from the POU1F1/PIT1 lineage showed transposable elements expression.",
+            "6": "PitNETs from the POU1F1/PIT1 lineage showed chromosomal instability.",
+            "7": "GNAS-mutated somatotrophs from the POU1F1/PIT1 lineage do not show chromosomal instability.",
+            "8": "In the TPIT lineage, corticotrophs were divided into three classes: USP8-mutated with overt secretion, USP8-wild-type with increased invasiveness and increased epithelial-mesenchymal transition, and large silent tumors with gonadotroph transdifferentiation.",
+            "9": "Unexpected expression of gonadotroph markers was found in GNAS-wild-type somatotrophs, indicated by SF1 expression.",
+            "10": "The unexpected expression of gonadotroph markers in GNAS-wild-type somatotrophs challenges the current definition of the SF1/gonadotroph lineage.",
+            "11": "The reported classification improves our understanding of Pituitary neuroendocrine tumors (PitNETs).",
+            "12": "The reported classification affects the clinical stratification of patients with Pituitary neuroendocrine tumors (PitNETs)."
+          }
+        },
+        "viewpoints": [
+          "Pituitary neuroendocrine tumors are among the most prevalent intracranial tumors.",
+          "Pituitary neuroendocrine tumors originate from the anterior pituitary gland.",
+          "Pituitary neuroendocrine tumors are also known as pituitary adenomas."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "The pathological classification of PitNETs incorporates the expression of specific hormone genes and three lineage-specific transcription factors (TFs), including PIT1 (POU1F1), TPIT (TBX19), and SF1 (NR5A1) [2].",
+        "references": {
+          "2": {
+            "1": "The latest edition of the WHO classification of the central nervous system was published in 2021.",
+            "2": "The review summarizes the major revisions to the classification of anterior pituitary tumors.",
+            "3": "The most important revision in the classification involves preferring the terminology of pituitary neuroendocrine tumor (PitNET).",
+            "4": "The terminology of pituitary adenoma (PA) can still be used according to the latest WHO classification.",
+            "5": "Immunohistochemistry (IHC) examination of pituitary-specific transcription factors is endorsed to determine the tumor cell lineage.",
+            "6": "The endorsed transcription factors for IHC examination include PIT1, TPIT, SF-1, GATA2/3, and ERα.",
+            "7": "The IHC examination facilitates the classification of PitNET/PA subgroups.",
+            "8": "TF-negative IHC staining indicates PitNET/PA with no distinct cell lineages.",
+            "9": "TF-negative IHC staining includes unclassified plurihormonal (PH) tumors and null cell (NC) tumors according to the new classification.",
+            "10": "The new WHO classification of PitNET/PA incorporates tremendous advances in the understanding of the cytogenesis of pituitary tumors.",
+            "11": "The new WHO classification of PitNET/PA incorporates tremendous advances in the understanding of the pathogenesis of pituitary tumors.",
+            "12": "There are shortcomings in the technology used in the diagnosis of PitNET/PA.",
+            "13": "There is a limited understanding of the tumorigenesis of PitNET/PA.",
+            "14": "The application of the new WHO classification system in practice should be further evaluated.",
+            "15": "The application of the new WHO classification system in practice should be further validated.",
+            "16": "The classification system provides information for deciding follow-up plans after surgery.",
+            "17": "The classification system provides information for deciding adjunctive treatment after surgery.",
+            "18": "The classification system offers no additional help for neurosurgeons in clinical practice.",
+            "19": "The classification system is particularly lacking in aiding neurosurgeons in determining treatment strategies.",
+            "20": "It is necessary for neurosurgeons to establish a comprehensive pituitary classification system for PitNET/PA.",
+            "21": "The comprehensive classification system should incorporate neuroimaging grading data.",
+            "22": "The comprehensive classification system should incorporate direct observation of invasiveness during operation.",
+            "23": "The comprehensive classification system should incorporate the predictor of prognosis.",
+            "24": "The comprehensive classification system should incorporate pathological diagnosis.",
+            "25": "The comprehensive classification system should distinguish the invasiveness of the tumor.",
+            "26": "The comprehensive classification system should facilitate neurosurgeons in deciding on the treatment strategies.",
+            "27": "The comprehensive classification system should facilitate neurosurgeons in deciding on follow-up plans.",
+            "28": "The comprehensive classification system should facilitate neurosurgeons in deciding on adjunctive treatment after surgery."
+          }
+        },
+        "viewpoints": [
+          "The pathological classification of pituitary neuroendocrine tumors incorporates the expression of specific hormone genes.",
+          "The pathological classification of pituitary neuroendocrine tumors incorporates the expression of three lineage-specific transcription factors.",
+          "The three lineage-specific transcription factors include PIT1 (POU1F1), TPIT (TBX19), and SF1 (NR5A1)."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "While the tumors within the same lineage have identical TF expressions, they exhibit variations in cellular functions and tumorigenesis.",
+        "references": {},
+        "viewpoints": [
+          "Tumors within the same lineage have identical transcription factor expressions.",
+          "Tumors within the same lineage exhibit variations in cellular functions.",
+          "Tumors within the same lineage exhibit variations in tumorigenesis."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "The PIT1 lineage commonly exhibits excessive hormone secretion, including somatotroph tumors (secreting growth hormone, GH), lactotrophs tumors (secreting prolactin, PRL) and thyrotroph tumors (secreting thyroid-stimulating hormone, TSH).",
+        "references": {},
+        "viewpoints": [
+          "The PIT1 lineage commonly exhibits excessive hormone secretion.",
+          "Somatotroph tumors within the PIT1 lineage secrete growth hormone (GH).",
+          "Lactotroph tumors within the PIT1 lineage secrete prolactin (PRL).",
+          "Thyrotroph tumors within the PIT1 lineage secrete thyroid-stimulating hormone (TSH)."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Mixed somatotroph-lactotroph tumors secrete GH and PRL (PG) and plurihormonal PIT1 lineage tumors secrete all three hormones (PIT1M).",
+        "references": {},
+        "viewpoints": [
+          "Mixed somatotroph-lactotroph tumors secrete growth hormone (GH) and prolactin (PRL).",
+          "Plurihormonal PIT1 lineage tumors secrete growth hormone (GH), prolactin (PRL), and thyroid-stimulating hormone (TSH)."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The TPIT lineage tumors contain only one type, namely corticotroph tumors (secreting adrenocorticotrophic hormone, ACTH) and SF1 lineage contain gonadotroph tumors (GO, secreting follicle-stimulating hormone, FSH, and luteinizing hormone, LH) [3].",
+        "references": {
+          "3": {
+            "1": "Non-functioning pituitary adenomas are recently alternatively termed pituitary neuroendocrine tumours (NFpitNETs).",
+            "2": "NFpitNETs are mostly benign neoplasms.",
+            "3": "NFpitNETs are not associated with a hormonal hypersecretory syndrome.",
+            "4": "The clinical spectrum of NFpitNETs varies from completely asymptomatic cases.",
+            "5": "NFpitNETs can develop into panhypopituitarism.",
+            "6": "NFpitNETs can cause manifestations attributed to mass effects on nearby structures.",
+            "7": "NFpitNETs generally follow an indolent course.",
+            "8": "In 5-10% of cases, NFpitNETs exhibit more aggressive behaviour.",
+            "9": "Aggressive behaviour of NFpitNETs is characterised by rapid growth.",
+            "10": "Aggressive behaviour of NFpitNETs is characterised by invasiveness.",
+            "11": "Aggressive behaviour of NFpitNETs is characterised by early recurrence.",
+            "12": "The initial size of the adenoma is related to the natural course of NFpitNETs.",
+            "13": "The presence of symptoms is related to the natural course of NFpitNETs.",
+            "14": "The histological subtype is related to the natural course of NFpitNETs.",
+            "15": "Active surveillance is usually the strategy of choice for an asymptomatic NFpitNET.",
+            "16": "Surgical resection is recommended for NFpitNETs with visual abnormalities.",
+            "17": "Surgical resection is recommended for NFpitNETs with neurological abnormalities.",
+            "18": "Surgical resection is recommended for NFpitNETs with rapid tumour growth.",
+            "19": "Approximately 50% of patients with NFpitNETs show tumour growth.",
+            "20": "20% of patients with NF-macroadenomas on active surveillance may require further intervention during a follow-up period of 7 years.",
+            "21": "Adjuvant radiotherapy is usually considered for large residual tumours.",
+            "22": "Adjuvant radiotherapy is usually considered for recurrent adenomas.",
+            "23": "Adjuvant radiotherapy is usually considered for aggressive adenomas.",
+            "24": "There is evidence that medical therapy, especially with cabergoline, can occasionally be beneficial for NFpitNETs.",
+            "25": "Newer molecular agents for NFpitNETs are under investigation.",
+            "26": "A move towards a more conservative approach for NFpitNETs seems appropriate.",
+            "27": "Highly effective medical therapy for NFpitNETs is awaited.",
+            "28": "A more conservative approach is recommended until better molecular markers of progressiveness for NFpitNETs are available."
+          }
+        },
+        "viewpoints": [
+          "The TPIT lineage tumors contain corticotroph tumors.",
+          "Corticotroph tumors secrete adrenocorticotrophic hormone (ACTH).",
+          "The SF1 lineage contains gonadotroph tumors.",
+          "Gonadotroph tumors secrete follicle-stimulating hormone (FSH) and luteinizing hormone (LH)."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Null cell tumors (NULL) lack hormone production or specific TF expression, whereas plurihormonal tumors express multiple hormones with two or more lineages [2].",
+        "references": {
+          "2": {
+            "1": "The latest edition of the WHO classification of the central nervous system was published in 2021.",
+            "2": "The review summarizes the major revisions to the classification of anterior pituitary tumors.",
+            "3": "The most important revision in the classification involves preferring the terminology of pituitary neuroendocrine tumor (PitNET).",
+            "4": "The terminology of pituitary adenoma (PA) can still be used according to the latest WHO classification.",
+            "5": "Immunohistochemistry (IHC) examination of pituitary-specific transcription factors is endorsed to determine the tumor cell lineage.",
+            "6": "The endorsed transcription factors for IHC examination include PIT1, TPIT, SF-1, GATA2/3, and ERα.",
+            "7": "The IHC examination facilitates the classification of PitNET/PA subgroups.",
+            "8": "TF-negative IHC staining indicates PitNET/PA with no distinct cell lineages.",
+            "9": "TF-negative IHC staining includes unclassified plurihormonal (PH) tumors and null cell (NC) tumors according to the new classification.",
+            "10": "The new WHO classification of PitNET/PA incorporates tremendous advances in the understanding of the cytogenesis of pituitary tumors.",
+            "11": "The new WHO classification of PitNET/PA incorporates tremendous advances in the understanding of the pathogenesis of pituitary tumors.",
+            "12": "There are shortcomings in the technology used in the diagnosis of PitNET/PA.",
+            "13": "There is a limited understanding of the tumorigenesis of PitNET/PA.",
+            "14": "The application of the new WHO classification system in practice should be further evaluated.",
+            "15": "The application of the new WHO classification system in practice should be further validated.",
+            "16": "The classification system provides information for deciding follow-up plans after surgery.",
+            "17": "The classification system provides information for deciding adjunctive treatment after surgery.",
+            "18": "The classification system offers no additional help for neurosurgeons in clinical practice.",
+            "19": "The classification system is particularly lacking in aiding neurosurgeons in determining treatment strategies.",
+            "20": "It is necessary for neurosurgeons to establish a comprehensive pituitary classification system for PitNET/PA.",
+            "21": "The comprehensive classification system should incorporate neuroimaging grading data.",
+            "22": "The comprehensive classification system should incorporate direct observation of invasiveness during operation.",
+            "23": "The comprehensive classification system should incorporate the predictor of prognosis.",
+            "24": "The comprehensive classification system should incorporate pathological diagnosis.",
+            "25": "The comprehensive classification system should distinguish the invasiveness of the tumor.",
+            "26": "The comprehensive classification system should facilitate neurosurgeons in deciding on the treatment strategies.",
+            "27": "The comprehensive classification system should facilitate neurosurgeons in deciding on follow-up plans.",
+            "28": "The comprehensive classification system should facilitate neurosurgeons in deciding on adjunctive treatment after surgery."
+          }
+        },
+        "viewpoints": [
+          "Null cell tumors lack hormone production.",
+          "Null cell tumors lack specific transcription factor expression.",
+          "Plurihormonal tumors express multiple hormones with two or more lineages."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "But even the same subtypes also exhibit diverse clinical manifestations.",
+        "references": {},
+        "viewpoints": [
+          "Even the same subtypes exhibit diverse clinical manifestations."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "For instance, functional corticotroph tumors demonstrate typical Cushing symptoms because of ACTH oversecreting, while silent corticotroph tumors (with ACTH expressing but without Cushing symptoms) demonstrate more aggressive clinical behavior compared to other subtypes [4].",
+        "references": {
+          "4": []
+        },
+        "viewpoints": [
+          "Functional corticotroph tumors demonstrate typical Cushing symptoms because of adrenocorticotrophic hormone oversecreting.",
+          "Silent corticotroph tumors express adrenocorticotrophic hormone but do not demonstrate Cushing symptoms.",
+          "Silent corticotroph tumors demonstrate more aggressive clinical behavior compared to other subtypes."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "The complex hormone secretion profiles and highly variable clinical outcomes of these tumors present both requirements and challenges for more precise subtype classification.",
+        "references": {},
+        "viewpoints": [
+          "Complex hormone secretion profiles of pituitary neuroendocrine tumors present requirements for more precise subtype classification.",
+          "Highly variable clinical outcomes of pituitary neuroendocrine tumors present requirements for more precise subtype classification.",
+          "Complex hormone secretion profiles of pituitary neuroendocrine tumors present challenges for more precise subtype classification.",
+          "Highly variable clinical outcomes of pituitary neuroendocrine tumors present challenges for more precise subtype classification."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "However, to date, the pathogenesis of most subtypes remains poorly understood and genomic markers for characterization are still lacking.",
+        "references": {},
+        "viewpoints": [
+          "The pathogenesis of most pituitary neuroendocrine tumor subtypes remains poorly understood.",
+          "Genomic markers for characterization of pituitary neuroendocrine tumor subtypes are still lacking."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Previous studies have predominantly focused on exploring genetic features or overall gene expression for additional molecular features of PitNETs [1], overlooking co-transcriptional regulations.",
+        "references": {
+          "1": {
+            "1": "Pituitary neuroendocrine tumors (PitNETs) are common.",
+            "2": "There are five main histological subtypes of PitNETs: lactotroph, somatotroph, and thyrotroph (POU1F1/PIT1 lineage), corticotroph (TBX19/TPIT lineage), and gonadotroph (NR5A1/SF1 lineage).",
+            "3": "The authors report a comprehensive pangenomic classification of Pituitary neuroendocrine tumors (PitNETs).",
+            "4": "PitNETs from the POU1F1/PIT1 lineage showed an epigenetic signature of diffuse DNA hypomethylation.",
+            "5": "PitNETs from the POU1F1/PIT1 lineage showed transposable elements expression.",
+            "6": "PitNETs from the POU1F1/PIT1 lineage showed chromosomal instability.",
+            "7": "GNAS-mutated somatotrophs from the POU1F1/PIT1 lineage do not show chromosomal instability.",
+            "8": "In the TPIT lineage, corticotrophs were divided into three classes: USP8-mutated with overt secretion, USP8-wild-type with increased invasiveness and increased epithelial-mesenchymal transition, and large silent tumors with gonadotroph transdifferentiation.",
+            "9": "Unexpected expression of gonadotroph markers was found in GNAS-wild-type somatotrophs, indicated by SF1 expression.",
+            "10": "The unexpected expression of gonadotroph markers in GNAS-wild-type somatotrophs challenges the current definition of the SF1/gonadotroph lineage.",
+            "11": "The reported classification improves our understanding of Pituitary neuroendocrine tumors (PitNETs).",
+            "12": "The reported classification affects the clinical stratification of patients with Pituitary neuroendocrine tumors (PitNETs)."
+          }
+        },
+        "viewpoints": [
+          "Previous studies have predominantly focused on exploring genetic features of pituitary neuroendocrine tumors.",
+          "Previous studies have focused on overall gene expression for additional molecular features of pituitary neuroendocrine tumors.",
+          "Previous studies have overlooked co-transcriptional regulations of pituitary neuroendocrine tumors."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Alternative splicing (AS) is an essential cellular process in eukaryotes that generates multiple transcripts, diversifying final protein products [5].",
+        "references": {
+          "5": {
+            "1": "Most human genes undergo alternative splicing.",
+            "2": "Dysregulation of alternative splicing contributes to tumor initiation.",
+            "3": "Dysregulation of alternative splicing contributes to tumor progression.",
+            "4": "Computational analysis of genomic data enables the systematic characterization of alternative splicing in cancer.",
+            "5": "Computational analysis of transcriptomic data enables the systematic characterization of alternative splicing in cancer.",
+            "6": "Computational analysis of genomic data enables the systematic characterization of the functional role of alternative splicing in cancer.",
+            "7": "Computational analysis of transcriptomic data enables the systematic characterization of the functional role of alternative splicing in cancer.",
+            "8": "The review summarizes the latest computational approaches to studying alternative splicing in cancer.",
+            "9": "The review summarizes the current limitations of the most popular tools in the field of alternative splicing in cancer.",
+            "10": "The review describes current computational challenges in the characterization of the role of alternative splicing in cancer."
+          }
+        },
+        "viewpoints": [
+          "Alternative splicing is an essential cellular process in eukaryotes.",
+          "Alternative splicing generates multiple transcripts.",
+          "Alternative splicing diversifies final protein products."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Beyond PitNETs, AS has been extensively studied in various human tumors [6], offering invaluable resources for a better understanding of inter-tumor heterogeneity and developing new therapies [7].",
+        "references": {
+          "6": {
+            "1": "Alternative splicing is a fundamental process that governs almost all aspects of cellular functions.",
+            "2": "Dysregulation in alternative splicing has been implicated in tumor initiation, progression, and treatment resistance.",
+            "3": "There is an accumulation of studies on carcinogenic mis-splicing in cancers.",
+            "4": "There is an urgent demand to integrate cancer-associated splicing changes to better understand their internal cross-talks from a global view.",
+            "5": "There is an urgent demand to integrate cancer-associated splicing changes to better understand their functional consequences from a global view.",
+            "6": "A resource of key functional alternative splicing events in human cancers is still lacking.",
+            "7": "ASCancer Atlas was developed to fill the gap in the resource of key functional alternative splicing events in human cancers.",
+            "8": "ASCancer Atlas is a comprehensive knowledgebase of aberrant splicing in human cancers.",
+            "9": "ASCancer Atlas features a high-confidence collection of 2006 cancer-associated splicing events.",
+            "10": "The cancer-associated splicing events in ASCancer Atlas have been experimentally proved to promote tumorigenesis.",
+            "11": "ASCancer Atlas features a systematic splicing regulatory network.",
+            "12": "ASCancer Atlas features a suite of multi-scale online analysis tools.",
+            "13": "ASCancer Atlas is compared to extant databases.",
+            "14": "For each splicing event, the upstream splicing regulators were manually curated.",
+            "15": "For each splicing event, the splicing event annotations were manually curated.",
+            "16": "For each splicing event, the downstream oncogenic effects were manually curated.",
+            "17": "For each splicing event, the possible therapeutic strategies were manually curated.",
+            "18": "ASCancer Atlas houses about 2 million computationally putative splicing events.",
+            "19": "A user-friendly web interface was built for ASCancer Atlas.",
+            "20": "The web interface allows users to easily browse all splicing events.",
+            "21": "The web interface allows users to easily search all splicing events.",
+            "22": "The web interface allows users to easily visualize all splicing events.",
+            "23": "The web interface allows users to easily analyze all splicing events.",
+            "24": "The web interface allows users to easily download all splicing events.",
+            "25": "ASCancer Atlas provides a unique resource to study the functional roles of splicing dysregulation in human cancers."
+          },
+          "7": {
+            "1": "Tumor immunotherapy has made great progress in cancer treatment.",
+            "2": "Tumor immunotherapy faces challenges such as a limited number of targetable antigens.",
+            "3": "There are varying responses among patients to tumor immunotherapy.",
+            "4": "Alternative splicing is an essential process for the maturation of nearly all mammalian mRNAs.",
+            "5": "Alternative splicing contributes to expanding cancer-specific antigens.",
+            "6": "Alternative splicing contributes to modulating immunogenicity.",
+            "7": "Expanding cancer-specific antigens and modulating immunogenicity via alternative splicing makes it a promising solution to the challenges faced by tumor immunotherapy.",
+            "8": "Organoid technology preserves the individual immune microenvironment.",
+            "9": "Organoid technology reduces the time and economic costs of the experiment model.",
+            "10": "By preserving the individual immune microenvironment and reducing costs, organoid technology facilitates the development of splicing-based immunotherapy.",
+            "11": "Alternative splicing provides resources for generating neoantigens.",
+            "12": "Alternative splicing serves as targets for immune-therapeutic modulation.",
+            "13": "Alternative splicing acts as biomarkers to guide immunotherapy options.",
+            "14": "There are benefits to adopting organoids to develop AS-based immunotherapies.",
+            "15": "There are current challenges in studying AS-based immunotherapy related to existing bioinformatics algorithms.",
+            "16": "There are current challenges in studying AS-based immunotherapy related to existing biological technologies."
+          }
+        },
+        "viewpoints": [
+          "Alternative splicing has been extensively studied in various human tumors beyond pituitary neuroendocrine tumors.",
+          "Alternative splicing offers invaluable resources for better understanding of inter-tumor heterogeneity.",
+          "Alternative splicing offers invaluable resources for developing new therapies."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "However, the overall landscape of splicing changes in PitNETs has not been thoroughly investigated so far.",
+        "references": {},
+        "viewpoints": [
+          "The overall landscape of splicing changes in pituitary neuroendocrine tumors has not been thoroughly investigated."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Here, we characterize the alternative splicing landscape of PitNETs using the PitNETs cohort with transcriptome sequencing, including bulk (n = 268 patients) and full-length single-cell RNA-seq (n = 195,720 cells) datasets from tumor tissues.",
+        "references": {},
+        "viewpoints": [
+          "The study characterizes the alternative splicing landscape of pituitary neuroendocrine tumors.",
+          "The characterization uses the PitNETs cohort with transcriptome sequencing.",
+          "The cohort includes bulk sequencing data from 268 patients and full-length single-cell RNA-seq data from 195,720 cells from tumor tissues."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Our analysis spans almost all PitNET subtypes, allowing us to construct subtype-specific splicing patterns and corresponding regulatory networks of RNA-binding proteins (RBPs).",
+        "references": {},
+        "viewpoints": [
+          "The analysis spans almost all pituitary neuroendocrine tumor subtypes.",
+          "The analysis allows the construction of subtype-specific splicing patterns.",
+          "The analysis allows the construction of corresponding regulatory networks of RNA-binding proteins."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "In contrast to the expression of TFs, our analysis more faithfully captures the transcriptomic diversity of PitNETs, thereby better demonstrating inter-tumor heterogeneity.",
+        "references": {},
+        "viewpoints": [
+          "The analysis more faithfully captures the transcriptomic diversity of pituitary neuroendocrine tumors in contrast to the expression of transcription factors.",
+          "The analysis better demonstrates inter-tumor heterogeneity of pituitary neuroendocrine tumors."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Notably, within the TPIT lineage, we identify a distinct splicing regulatory pattern with significant clinical relevance.",
+        "references": {},
+        "viewpoints": [
+          "Within the TPIT lineage, a distinct splicing regulatory pattern with significant clinical relevance is identified."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "These findings are robustly validated by an independent cohort of 180 pituitary tumors.",
+        "references": {},
+        "viewpoints": [
+          "The findings are robustly validated by an independent cohort of 180 pituitary tumors."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Overall, our study offers an enhanced approach to PitNET classification.",
+        "references": {},
+        "viewpoints": [
+          "The study offers an enhanced approach to pituitary neuroendocrine tumor classification."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56821-x_with_abstracts",
+    "base_id": "s41467-025-56821-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56821-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

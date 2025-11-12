@@ -1,0 +1,1309 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Transcription initiation, finely orchestrated by the highly conserved multi-subunit RNA polymerase (RNAP, α2ββ‘ωσ) and various transcription factors, serves as a critical pivot for the precise regulation of gene expression in bacteria in response to changing signals. Regarding host-keeping genes, the principal σ factor specifically recognizes the promoter consensus -10 and -35 elements through its conserved domains, σR2 and σR4, respectively [1] . These interactions are further enhanced by the conserved σR2-β‘ clamp helices (β‘ CH), σR4-β flap interactions, and potential αCTD-DNA or/and αCTD-σR4 interactions, which collectively promote the formation of an active RNAP-promoter open complex (RPo) to initiate transcription [2] , [3] , [4] , [5] , [6] , [7] . In the context of promoters containing suboptimal elements, the formation of RPo is facilitated by specific transcription activators that recruit RNAP or bend DNA to compensate for the weaker σ-DNA interactions compared to those occurred in one canonical RPo. Consequently, this activator-containing RPo is referred to as a transcription activation complex (TAC) [8] , [9] . As recently reviewed, transcription activators from the σ 70 family can be classified into four categories based on the positioning of their binding sites relative to the –35 element: Type I (upstream site), Type II (downstream site), Type III (no DNA binding), and Type IV (both upstream and downstream sites) [10] . Conversely, transcription initiation can be inhibited by transcription repressors that utilize mechanisms such as occlusion, DNA looping, or locking of RNAP to impede the function of either RNAP or the activators [9] , [11] . The complex formed in this scenario is termed a transcription repression complex (TRC). Notably, many transcription factors have been identified as either activators or repressors at different promoters, underscoring the intricate nature of finely tuned regulatory mechanisms. As being identified, a majority of OmpR/PhoB family response regulators (RRs), characterized by distinct winged-helix DNA binding motifs, function as dual functional transcription regulators [12] , [13] . Typically, RRs, in conjunction with their associated membrane-bound sensor kinases, form integral signaling cascades—known as two-component systems (TCSs). These systems facilitate the transient regulation of stress-responsive genes that enhance bacterial survival and pathogenicity [14] . Numerous studies have shown that the OmpR/PhoB family RRs are widely distributed among bacteria, particularly in notable pathogens such as Mycobacterium tuberculosis ( Mtb ), Vibrio cholerae ( Vch ) , Pseudomonas aeruginosa ( Pae ), Escherichia coli ( Eco ) or the model bacteria Streptomyces coelicolor ( Sco ) [15] , [16] , [17] , [18] , [19] , [20] . As a representative member of the enormous OmpR/PhoB family, Mtb PhoP remodels the transcriptional network of Mtb by regulating over 100 genes involved in virulence, lipid biosynthesis, carbon metabolism, low pH, hypoxia, and stress response, functioning as both a global transcriptional activator and repressor [16] , [21] , [22] , [23] , [24] . Notably, the complex regulatory mechanisms of PhoP in response to phosphate starvation and its interplay with nitrogen availability have been documented [25] , [26] : PhoP not only activates the transcription of phosphate assimilation genes, including those for high-affinity phosphate-specific transport systems genes ( pstSCAB ) and the global phosphate starvation stress response modulator gene ( phoU ) [27] , [28] , [29] , but also represses the transcription of relevant dissimilation or other metabolic genes. For example, PhoP represses the nitrogen metabolism gene amtB through cross-talk with the global nitrogen metabolism regulator GlnR [30] , [31] , [32] . However, what determines PhoP to deferentially act as a dual transcriptional regulator remain inadequately understood. Structural based sequence alignment shows that Mtb PhoP shares high structural similarity with the other homologous members (Supplementary Fig. 1 ). It comprises a conserved N-terminal receiver domain (REC) and a C-terminal effective DNA binding domain (DBD). Biochemical assays indicate that phosphorylation of the REC by its cognate sensor kinase PhoR or by acetyl phosphate (AcP) enhances the DNA binding affinity of DBD [21] , [22] , [33] , [34] . The specific direct repeat units (DRus) PhoP binds are referred as PhoP binding boxes (PHO boxes), each of which carries two conserved PhoP binding sites (site a and site b) separated by several nucleotides (Fig. 1 ) [34] , [35] , [36] . The co-crystal structure of PhoP bound to a PHO box-containing promoter DNA reveals that a PhoP dimer interacts with the PHO box through conserved winged helices, akin to other transcription regulators in the OmpR/PhoB family [12] , [22] , [37] , [38] , [39] , [40] . These interactions facilitate a compact arrangement of the PhoP_RECs and PhoP_DBDs, which restricts a 4-bp spacer between the two binding sites [41] . Notably, PhoP is capable of regulating multiple PHO promoters that consists of two or more PHO boxes, a similar characteristic to its homolog PhoB [20] , [27] , [29] , [35] , [42] , [43] . The molecular details on how these PhoP-like OmpR/PhoB family regulators efficiently control such complex promoters remain to be elucidated. Fig. 1: The overall structures of Mtb PhoP-TAC. a DNA scaffold used in structure determination of Mtb 2PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 2PhoP-TAC (bottom panel). b DNA scaffold used in structure determination of Mtb 4PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 4PhoP-TAC (bottom panel). c DNA scaffold used in structure determination of Mtb 6PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 6PhoP-TAC (bottom panel). According to the structures, the PhoP binding box, −35 element, -10 element is boxed with yellow, violet, and brown colors, respectively. a1 site, b1 site, a2 site, b2 site, a3 site and b3 site of the PhoP binding box are shaded with light orange, dark cyan, brown, cyan, purple, and dark green, respectively. The EM density maps are colored as indicated in the color key. NT, non-template-strand promoter DNA; T, template-strand promoter DNA. Full size image Here, we determine three cryo-EM structures of the PhoP-dependent transcription activation complexes (2PhoP-TAC, 4PhoP-TAC, 6PhoP-TAC) consisting of Mtb RNA polymerase (RNAP), Mtb PhoP, and the well-characterized consensus promoters including various numbers of PHO boxes, respectively. Structural comparisons of PhoP-TACs and the obtained Mtb RPo demonstrate that PhoP specifically recognizes promoter PHO boxes as either dimer or distinct tandem dimers (tetramer/hexamer). These downstream PhoP-DNA interactions displace the canonical interactions between the -35 element and σ A R4 of Mtb RNAP. Additionally, PhoP engages in substantial protein-protein interactions with the conserved domains (β flap and σ A R4) of RNAP. These indicate PhoP functions through diverse and complex transcription activation mechanisms. Based on the prior competitive identification of PhoP on the PhoP-GlnR cross-talked nitrogen assimilation promoter, the DNA binding characteristics of PhoP, and the cryo-EM map of PhoP-TRC obtained, we were able to build one preliminary cryo-EM structural model for the PhoP-dependent transcription repression complex (PhoP-TRC), which comprises Mtb RNAP, PhoP, GlnR, and their cross-talked nitrogen assimilation promoter DNA. Notably, PhoP is restrained in a unique repression mode within PhoP-TRC: competitive binding of the PhoP dimer to the upstream PHO box significantly distorts the DNA double-strands at the following spacer. This distortion creates substantial steric hinderances to impede the binding of a third GlnR dimer, thereby repressing GlnR-dependent transcription activation. Collectively, these structural and biochemical data shed new light on the dual molecular mechanisms underlying PhoP-dependent transcription regulation, and provide valuable insights for exploring the PhoP-like OmpR/PhoB family transcription regulators and target development.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Transcription initiation, finely orchestrated by the highly conserved multi-subunit RNA polymerase (RNAP, α2ββ‘ωσ) and various transcription factors, serves as a critical pivot for the precise regulation of gene expression in bacteria in response to changing signals.",
+        "references": {},
+        "viewpoints": [
+          "Transcription initiation is orchestrated by the multi-subunit RNA polymerase (RNAP, α2ββ‘ωσ) and various transcription factors.",
+          "Transcription initiation serves as a critical pivot for the regulation of gene expression in bacteria.",
+          "Transcription initiation responds to changing signals to regulate gene expression in bacteria."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Regarding host-keeping genes, the principal σ factor specifically recognizes the promoter consensus -10 and -35 elements through its conserved domains, σR2 and σR4, respectively [1].",
+        "references": {
+          "1": {
+            "1": "Multisubunit RNA polymerases are complex protein machines.",
+            "2": "Multisubunit RNA polymerases require a specificity factor for the recognition of a specific transcription start site.",
+            "3": "Bacterial σ factors are thought to be quite different from the specificity factors employed in higher organisms.",
+            "4": "A comparison of the σ/RNA polymerase structures with recent structures of eukaryotic Pol II together with TFIIB highlights significant functional similarities.",
+            "5": "Bacterial promoters are composed of modular elements that are used in different combinations.",
+            "6": "Eukaryotic promoters are composed of modular elements that are used in different combinations.",
+            "7": "Bacteria utilize similar strategies to alter core promoter specificity through specificity factor exchange.",
+            "8": "Archaea utilize similar strategies to alter core promoter specificity through specificity factor exchange.",
+            "9": "Eukaryotes utilize similar strategies to alter core promoter specificity through specificity factor exchange.",
+            "10": "Bacteria use activators that bind close to or overlap core promoter sequences to direct transcriptional machinery to a new start site.",
+            "11": "Archaea use activators that bind close to or overlap core promoter sequences to direct transcriptional machinery to a new start site.",
+            "12": "Eukaryotes use activators that bind close to or overlap core promoter sequences to direct transcriptional machinery to a new start site.",
+            "13": "The details of core promoter recognition in bacteria reveal the transcriptional similarities throughout biology.",
+            "14": "The research examines the details of core promoter recognition in bacteria."
+          }
+        },
+        "viewpoints": [
+          "The principal σ factor recognizes the promoter consensus -10 elements through its conserved domain σR2.",
+          "The principal σ factor recognizes the promoter consensus -35 elements through its conserved domain σR4."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "These interactions are further enhanced by the conserved σR2-β‘ clamp helices (β‘ CH), σR4-β flap interactions, and potential αCTD-DNA or/and αCTD-σR4 interactions, which collectively promote the formation of an active RNAP-promoter open complex (RPo) to initiate transcription [2], [3], [4], [5], [6], [7].",
+        "references": {
+          "2": {
+            "1": "Recognition of the -10 promoter element by the RNA polymerase σ subunit is the key step in bacterial promoter opening.",
+            "2": "The -10 promoter element consists of the consensus sequence T(-12)A(-11)T(-10)A(-9)A(-8)T(-7).",
+            "3": "Crystal structures of σ domain 2 bound to single-stranded DNA bearing-10 element sequences were determined.",
+            "4": "Extensive interactions occur between the protein and the DNA backbone of every -10 element nucleotide.",
+            "5": "Base-specific interactions occur primarily with A(-11) and T(-7).",
+            "6": "A(-11) and T(-7) are flipped out of the single-stranded DNA base stack.",
+            "7": "A(-11) and T(-7) are buried deep in protein pockets.",
+            "8": "The structures, along with biochemical data, support a model where the recognition of the -10 element sequence drives initial promoter opening.",
+            "9": "In the proposed model, the bases of the nontemplate strand are extruded from the DNA double-helix and captured by σ during the initial promoter opening.",
+            "10": "These results provide a detailed structural basis for the critical roles of A(-11) and T(-7) in promoter melting.",
+            "11": "These results reveal important insights into the initiation of transcription bubble formation."
+          },
+          "3": {
+            "1": "Transcription initiation is the crucial focal point of gene expression in prokaryotes.",
+            "2": "Sigma factors (σs) are the key players in the process of transcription initiation in prokaryotes.",
+            "3": "Sigma factors (σs) associate with the catalytic core RNA polymerase to guide it through promoter recognition.",
+            "4": "Sigma factors (σs) associate with the catalytic core RNA polymerase to guide it through promoter opening.",
+            "5": "Sigma factors (σs) associate with the catalytic core RNA polymerase to guide it through the synthesis of the first few nucleotides of the transcript.",
+            "6": "The text recounts the key advances in sigma biology from their discovery 45 years ago.",
+            "7": "The text recounts the most recent progress in understanding the structure of sigma factors at the atomic level.",
+            "8": "The text recounts the most recent progress in understanding the function of sigma factors at the atomic level.",
+            "9": "Recent data provide important structural insights into the mechanisms whereby sigma factors initiate promoter opening.",
+            "10": "The text discusses housekeeping sigma factors, which govern transcription of the majority of cellular genes.",
+            "11": "The text discusses alternative sigma factors, which direct RNA polymerase to specialized operons in response to environmental cues.",
+            "12": "The text discusses alternative sigma factors, which direct RNA polymerase to specialized operons in response to physiological cues.",
+            "13": "The review concludes with a genome-scale view of the extracytoplasmic function sigma factors.",
+            "14": "Extracytoplasmic function sigma factors are the most abundant group of alternative sigma factors."
+          },
+          "4": {
+            "1": "Initiation of RNA synthesis from DNA templates by RNA polymerase is a multi-step process.",
+            "2": "Initial recognition of promoter DNA by RNA polymerase triggers a series of conformational changes in RNA polymerase.",
+            "3": "Initial recognition of promoter DNA by RNA polymerase triggers a series of conformational changes in promoter DNA.",
+            "4": "The bacterial RNA polymerase functions as a molecular isomerization machine.",
+            "5": "The bacterial RNA polymerase uses binding free energy to remodel the initial recognition complex.",
+            "6": "The bacterial RNA polymerase places downstream duplex DNA in the active site cleft.",
+            "7": "The bacterial RNA polymerase separates the nontemplate strand in the region surrounding the start site of RNA synthesis.",
+            "8": "The bacterial RNA polymerase separates the template strand in the region surrounding the start site of RNA synthesis.",
+            "9": "In the initial unstable \"open\" complex, the template strand appears correctly positioned in the active site.",
+            "10": "Subsequently, the nontemplate strand is repositioned.",
+            "11": "A clamp is assembled on duplex DNA downstream of the open region.",
+            "12": "The assembling of the clamp on duplex DNA forms the highly stable open complex, RP(o).",
+            "13": "The transcription initiation factor, σ(70), plays a critical role in promoter recognition.",
+            "14": "The transcription initiation factor, σ(70), plays a critical role in RP(o) formation.",
+            "15": "The transcription initiation factor, σ(70), plays a critical role in early steps of RNA synthesis."
+          },
+          "5": [],
+          "6": {
+            "1": "The first step of gene expression involves transcribing the genetic information stored in DNA to RNA.",
+            "2": "The transcription machinery, including RNA polymerase (RNAP), is responsible for transcribing genetic information from DNA to RNA."
+          },
+          "7": {
+            "1": "Transcription of DNA is a fundamental process in cellular organisms.",
+            "2": "RNA polymerase is responsible for transcription.",
+            "3": "The general architecture of RNA polymerase is conserved across the three domains of life.",
+            "4": "The catalytic function of RNA polymerase is conserved across the three domains of life.",
+            "5": "Diverse mechanisms are used among different branches to regulate transcription initiation.",
+            "6": "Diverse mechanisms are used within different branches to regulate transcription initiation.",
+            "7": "Mechanistic studies of transcription initiation in bacteria are especially amenable.",
+            "8": "The promoter recognition and melting steps in bacterial transcription initiation are much less complicated than in eukaryotes.",
+            "9": "The promoter recognition and melting steps in bacterial transcription initiation are much less complicated than in archaea.",
+            "10": "Bacteria have critical roles in human health as pathogens.",
+            "11": "Bacteria have critical roles in human health as commensals.",
+            "12": "Bacterial RNA polymerase is a proven target for antibiotics.",
+            "13": "Recent biophysical studies have detailed the mechanisms of transcription initiation in phylogenetically diverse bacteria.",
+            "14": "Recent biophysical studies of RNA polymerases have detailed the mechanisms of transcription initiation.",
+            "15": "Recent biophysical studies of RNA polymerase inhibition have detailed the mechanisms of transcription initiation.",
+            "16": "Recent biophysical studies of transcription initiation have detailed the mechanisms of transcription initiation.",
+            "17": "Recent biophysical studies of transcription factors have detailed the mechanisms of transcription initiation.",
+            "18": "This Review is inspired to examine unifying themes in the transcription initiation process.",
+            "19": "This Review is inspired to examine diverse themes in the transcription initiation process."
+          }
+        },
+        "viewpoints": [
+          "Conserved σR2-β‘ clamp helices (β‘ CH) enhance interactions between the σ factor and the promoter.",
+          "σR4-β flap interactions enhance interactions between the σ factor and the promoter.",
+          "Potential αCTD-DNA interactions promote the formation of an active RNAP-promoter open complex (RPo).",
+          "Potential αCTD-σR4 interactions promote the formation of an active RNAP-promoter open complex (RPo).",
+          "The interactions collectively promote the formation of an active RNAP-promoter open complex (RPo) to initiate transcription."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "In the context of promoters containing suboptimal elements, the formation of RPo is facilitated by specific transcription activators that recruit RNAP or bend DNA to compensate for the weaker σ-DNA interactions compared to those occurred in one canonical RPo.",
+        "references": {},
+        "viewpoints": [
+          "The formation of RPo is facilitated by specific transcription activators in promoters with suboptimal elements.",
+          "Specific transcription activators recruit RNAP to facilitate RPo formation.",
+          "Specific transcription activators bend DNA to compensate for weaker σ-DNA interactions."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Consequently, this activator-containing RPo is referred to as a transcription activation complex (TAC) [8], [9].",
+        "references": {
+          "8": {
+            "1": "Bacteria use a variety of mechanisms to direct RNA polymerase to specific promoters.",
+            "2": "RNA polymerase is directed to specific promoters in order to activate transcription in bacteria.",
+            "3": "Transcription in bacteria is activated in response to growth signals.",
+            "4": "Transcription in bacteria is activated in response to environmental cues.",
+            "5": "Activation of transcription can be due to factors that interact at specific promoters.",
+            "6": "Interaction of factors at specific promoters increases transcription directed by these promoters.",
+            "7": "The range of architectures found at activator-dependent promoters is examined.",
+            "8": "The mechanisms by which input from different factors is integrated at activator-dependent promoters are outlined.",
+            "9": "Activation of transcription can be due to factors that interact with RNA polymerase.",
+            "10": "Factors that interact with RNA polymerase can change its preferences for target promoters.",
+            "11": "The different mechanistic options for activation that are focused directly on RNA polymerase are summarized."
+          },
+          "9": {
+            "1": "Transcription in most bacteria is tightly regulated to facilitate bacterial adaptation to different environments.",
+            "2": "Transcription factors play a key role in the regulation of transcription in most bacteria.",
+            "3": "This paper provides a brief overview of the essential features of bacterial transcription factors.",
+            "4": "The paper discusses how bacterial transcription factors affect transcript initiation at target promoters.",
+            "5": "The paper focuses on complex promoters regulated by combinations of activators and repressors.",
+            "6": "The paper focuses on complex promoters regulated by combinations of repressors only.",
+            "7": "The paper focuses on complex promoters regulated by combinations of activators.",
+            "8": "At some promoters, transcript initiation is regulated by nucleoid-associated proteins.",
+            "9": "Nucleoid-associated proteins often work together with transcription factors to regulate transcript initiation.",
+            "10": "The distinction between nucleoid-associated proteins and transcription factors is blurred.",
+            "11": "Nucleoid-associated proteins and transcription factors likely share common origins."
+          }
+        },
+        "viewpoints": [
+          "An activator-containing RNAP-promoter open complex (RPo) is referred to as a transcription activation complex (TAC)."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "As recently reviewed, transcription activators from the σ 70 family can be classified into four categories based on the positioning of their binding sites relative to the –35 element: Type I (upstream site), Type II (downstream site), Type III (no DNA binding), and Type IV (both upstream and downstream sites) [10].",
+        "references": {
+          "10": []
+        },
+        "viewpoints": [
+          "Transcription activators from the σ 70 family can be classified into four categories based on the positioning of their binding sites relative to the –35 element.",
+          "Type I transcription activators from the σ 70 family have an upstream binding site.",
+          "Type II transcription activators from the σ 70 family have a downstream binding site.",
+          "Type III transcription activators from the σ 70 family do not bind DNA.",
+          "Type IV transcription activators from the σ 70 family have both upstream and downstream binding sites."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Conversely, transcription initiation can be inhibited by transcription repressors that utilize mechanisms such as occlusion, DNA looping, or locking of RNAP to impede the function of either RNAP or the activators [9], [11].",
+        "references": {
+          "9": {
+            "1": "Transcription in most bacteria is tightly regulated to facilitate bacterial adaptation to different environments.",
+            "2": "Transcription factors play a key role in the regulation of transcription in most bacteria.",
+            "3": "This paper provides a brief overview of the essential features of bacterial transcription factors.",
+            "4": "The paper discusses how bacterial transcription factors affect transcript initiation at target promoters.",
+            "5": "The paper focuses on complex promoters regulated by combinations of activators and repressors.",
+            "6": "The paper focuses on complex promoters regulated by combinations of repressors only.",
+            "7": "The paper focuses on complex promoters regulated by combinations of activators.",
+            "8": "At some promoters, transcript initiation is regulated by nucleoid-associated proteins.",
+            "9": "Nucleoid-associated proteins often work together with transcription factors to regulate transcript initiation.",
+            "10": "The distinction between nucleoid-associated proteins and transcription factors is blurred.",
+            "11": "Nucleoid-associated proteins and transcription factors likely share common origins."
+          },
+          "11": {
+            "1": "Transcription initiation is the principal step in the regulation of bacterial gene expression.",
+            "2": "Bacterial transcription is carried out by a single multisubunit RNA polymerase.",
+            "3": "The potential transcription initiation rate of any promoter is determined by the efficiency with which RNA polymerase recognizes different promoter sequence elements.",
+            "4": "The sigma subunit plays the major role in promoter recognition.",
+            "5": "Different RNA polymerase sigma subunits are capable of guiding RNA polymerase to different promoters.",
+            "6": "The E. coli genome encodes seven different sigma subunits.",
+            "7": "Each of the seven different sigma subunits allows the E. coli cell to respond to different environmental stimuli.",
+            "8": "A large number of transcription factors up-regulate expression from different promoters in response to environmental signals.",
+            "9": "A large number of transcription factors down-regulate expression from different promoters in response to environmental signals.",
+            "10": "Many transcription activators function by making direct interactions with RNA polymerase.",
+            "11": "Some activators function by altering the conformation of promoter DNA.",
+            "12": "Most transcription repressors function by blocking the access of RNA polymerase to their target promoters.",
+            "13": "In some cases, optimal repression depends on repressor molecules that are multiply bound and interact in complex ways.",
+            "14": "Many promoters are regulated by more than one transcription factor.",
+            "15": "There are known mechanisms whereby a promoter can be regulated by a repressor and an activator.",
+            "16": "There are known mechanisms whereby a promoter can be regulated by two activators."
+          }
+        },
+        "viewpoints": [
+          "Transcription initiation can be inhibited by transcription repressors.",
+          "Transcription repressors utilize occlusion to impede the function of RNAP or activators.",
+          "Transcription repressors utilize DNA looping to impede the function of RNAP or activators.",
+          "Transcription repressors utilize locking of RNAP to impede the function of RNAP or activators."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "The complex formed in this scenario is termed a transcription repression complex (TRC).",
+        "references": {},
+        "viewpoints": [
+          "A transcription repression complex (TRC) is the complex formed when transcription repressors inhibit transcription initiation."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Notably, many transcription factors have been identified as either activators or repressors at different promoters, underscoring the intricate nature of finely tuned regulatory mechanisms.",
+        "references": {},
+        "viewpoints": [
+          "Many transcription factors have been identified as activators at different promoters.",
+          "Many transcription factors have been identified as repressors at different promoters.",
+          "The ability of transcription factors to be activators or repressors at different promoters underscores the intricate nature of regulatory mechanisms."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "As being identified, a majority of OmpR/PhoB family response regulators (RRs), characterized by distinct winged-helix DNA binding motifs, function as dual functional transcription regulators [12], [13].",
+        "references": {
+          "12": {
+            "1": "Response regulators are the output component of two-component regulatory systems.",
+            "2": "Two-component regulatory systems are the predominant form of signal transduction systems utilized by prokaryotes.",
+            "3": "The majority of response regulators function as transcription factors.",
+            "4": "Detailed descriptions of the mechanisms of DNA binding by response regulators are lacking.",
+            "5": "Detailed descriptions of the consequences of DNA binding by response regulators are lacking.",
+            "6": "Versatility in the modes of DNA binding is evident with winged helix-turn-helix proteins.",
+            "7": "There are doubts that mechanisms of DNA binding will be generalizable among members of the winged helix-turn-helix protein family.",
+            "8": "The review highlights the current focus of some research efforts aimed at understanding activation by response regulators.",
+            "9": "The review highlights the current focus of some research efforts aimed at understanding DNA binding by response regulators."
+          },
+          "13": []
+        },
+        "viewpoints": [
+          "OmpR/PhoB family response regulators (RRs) are characterized by distinct winged-helix DNA binding motifs.",
+          "A majority of OmpR/PhoB family response regulators (RRs) function as dual functional transcription regulators."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Typically, RRs, in conjunction with their associated membrane-bound sensor kinases, form integral signaling cascades—known as two-component systems (TCSs).",
+        "references": {},
+        "viewpoints": [
+          "Response regulators (RRs) form integral signaling cascades with their associated membrane-bound sensor kinases.",
+          "These signaling cascades are known as two-component systems (TCSs)."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "These systems facilitate the transient regulation of stress-responsive genes that enhance bacterial survival and pathogenicity [14].",
+        "references": {
+          "14": {
+            "1": "CheY-like phosphoacceptor domain is a common module in response regulators of bacterial signal transduction systems.",
+            "2": "CheY-like receiver domain is a common module in response regulators of bacterial signal transduction systems.",
+            "3": "4,610 response regulators encoded in complete genomes of 200 bacterial and archaeal species were identified and classified by their domain architectures in this work.",
+            "4": "Previously uncharacterized output domains were analyzed.",
+            "5": "Some previously uncharacterized output domains were assigned to known domain families.",
+            "6": "Transcriptional regulators of the OmpR, NarL, and NtrC families comprise almost 60% of all response regulators.",
+            "7": "Transcriptional regulators with DNA-binding domains LytTR, AraC, Spo0A, Fis, YcbB, RpoE, and MerR account for an additional 6% of all response regulators.",
+            "8": "Approximately 14% of the remaining one-third of response regulators is represented by the stand-alone REC domain.",
+            "9": "The remaining one-third of response regulators includes combinations of the REC domain with enzymatic domains GGDEF, EAL, HD-GYP, CheB, CheC, PP2C, and HisK.",
+            "10": "The remaining one-third of response regulators includes combinations of the REC domain with RNA-binding domains ANTAR and CsrA.",
+            "11": "The remaining one-third of response regulators includes combinations of the REC domain with protein- or ligand-binding domains PAS, GAF, TPR, CAP_ED, and HPt.",
+            "12": "The remaining one-third of response regulators includes combinations of the REC domain with newly described domains of unknown function.",
+            "13": "The diversity of domain architectures suggests that fusions between the REC domain and various output domains is a widespread evolutionary mechanism in bacterial cells.",
+            "14": "The abundance of alternative domain combinations suggests that fusions between the REC domain and various output domains is a widespread evolutionary mechanism in bacterial cells.",
+            "15": "Fusions between the REC domain and various output domains allow bacterial cells to regulate transcription in response to environmental challenges.",
+            "16": "Fusions between the REC domain and various output domains allow bacterial cells to regulate enzyme activity in response to environmental challenges.",
+            "17": "Fusions between the REC domain and various output domains allow bacterial cells to regulate protein-protein interactions in response to environmental challenges.",
+            "18": "The complete list of response regulators encoded in each of the 200 analyzed genomes is available online.",
+            "19": "The complete list of response regulators can be found at http://www.ncbi.nlm.nih.gov/Complete_Genomes/RRcensus.html."
+          }
+        },
+        "viewpoints": [
+          "Two-component systems (TCSs) facilitate the transient regulation of stress-responsive genes.",
+          "The regulation of stress-responsive genes by TCSs enhances bacterial survival.",
+          "The regulation of stress-responsive genes by TCSs enhances bacterial pathogenicity."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Numerous studies have shown that the OmpR/PhoB family RRs are widely distributed among bacteria, particularly in notable pathogens such as Mycobacterium tuberculosis (Mtb), Vibrio cholerae (Vch), Pseudomonas aeruginosa (Pae), Escherichia coli (Eco) or the model bacteria Streptomyces coelicolor (Sco) [15], [16], [17], [18], [19], [20].",
+        "references": {
+          "15": [],
+          "16": {
+            "1": "Two-component regulatory systems are widely used by bacteria to sense environmental stimuli.",
+            "2": "Two-component regulatory systems are widely used by bacteria to respond to environmental stimuli.",
+            "3": "Two-component regulatory systems facilitate coordinated changes in gene expression in response to environmental stimuli.",
+            "4": "Two-component regulatory systems are normally comprised of a sensory kinase protein.",
+            "5": "A sensory kinase protein in two-component regulatory systems activates a transcriptional regulator by phosphorylation.",
+            "6": "Mycobacteria have few two-component regulatory systems.",
+            "7": "Two-component regulatory systems are of key importance for bacterial survival in mycobacteria.",
+            "8": "Two-component regulatory systems play important roles in pathogenicity in mycobacteria.",
+            "9": "Mycobacterium tuberculosis has 12 paired two-component regulatory systems.",
+            "10": "One of the two-component systems in Mycobacterium tuberculosis includes two regulators and one sensor.",
+            "11": "Mycobacterium tuberculosis has a split sensor system.",
+            "12": "Mycobacterium tuberculosis has four orphan regulators.",
+            "13": "Several two-component regulatory systems are involved in virulence in Mycobacterium tuberculosis.",
+            "14": "Disruption of different two-component regulatory systems in Mycobacterium tuberculosis leads to attenuation.",
+            "15": "Disruption of different two-component regulatory systems in Mycobacterium tuberculosis leads to hypervirulence.",
+            "16": "PhoPR plays a major role in regulating cell wall composition in Mycobacterium tuberculosis.",
+            "17": "Inactivation of PhoPR results in sufficient attenuation of Mycobacterium tuberculosis.",
+            "18": "Deletion strains of Mycobacterium tuberculosis with PhoPR inactivated are live vaccine candidates.",
+            "19": "MprAB controls the stress response in Mycobacterium tuberculosis.",
+            "20": "MprAB is required for persistent infections in Mycobacterium tuberculosis.",
+            "21": "SenX3-RegX3 is required for control of aerobic respiration in Mycobacterium tuberculosis.",
+            "22": "SenX3-RegX3 is required for phosphate uptake in Mycobacterium tuberculosis.",
+            "23": "PrrAB is required for adaptation to intracellular infection in Mycobacterium tuberculosis.",
+            "24": "MtrAB is an essential system in Mycobacterium tuberculosis.",
+            "25": "MtrAB controls DNA replication in Mycobacterium tuberculosis.",
+            "26": "MtrAB controls cell division in Mycobacterium tuberculosis.",
+            "27": "KdpDE, NarL, TrcRS, TcrXY, TcrA, PdtaRS, and four orphan regulators are less well understood in Mycobacterium tuberculosis.",
+            "28": "The structure and binding motifs for several regulators in Mycobacterium tuberculosis have been characterized.",
+            "29": "Characterizing the structure and binding motifs reveals variations in function and operation for several regulators in Mycobacterium tuberculosis.",
+            "30": "The sensors in Mycobacterium tuberculosis are less well characterized.",
+            "31": "Stimuli for many sensors in Mycobacterium tuberculosis remain to be confirmed.",
+            "32": "This chapter reviews current understanding of the role of two-component systems in mycobacteria.",
+            "33": "This chapter focuses on the role of two-component systems in Mycobacterium tuberculosis within the context of mycobacteria."
+          },
+          "17": {
+            "1": "Two-component regulatory systems (TCSs) are a major mechanism by which bacteria sense changes in their environment.",
+            "2": "Two-component regulatory systems (TCSs) are a major mechanism by which bacteria respond to changes in their environment.",
+            "3": "Two-component regulatory systems (TCSs) typically consist of two proteins.",
+            "4": "Two-component regulatory systems (TCSs) bring about major regulation of the cell genome through coordinated action mediated by phosphorylation.",
+            "5": "Environmental conditions that activate two-component regulatory systems (TCSs) are numerous and diverse.",
+            "6": "Exposure to antibiotics is an environmental condition that activates two-component regulatory systems (TCSs).",
+            "7": "Conditions inside a host are an environmental condition that activates two-component regulatory systems (TCSs).",
+            "8": "The resulting regulatory action of two-component regulatory systems (TCSs) often involves activation of antibiotic defenses.",
+            "9": "The resulting regulatory action of two-component regulatory systems (TCSs) often involves changes to cell physiology that increase antibiotic resistance.",
+            "10": "Examples of resistance mechanisms enacted by two-component regulatory systems (TCSs) span those found in both Gram-negative and Gram-positive species.",
+            "11": "Resistance mechanisms enacted by two-component regulatory systems (TCSs) include cell surface modifications.",
+            "12": "Resistance mechanisms enacted by two-component regulatory systems (TCSs) include changes in cell permeability.",
+            "13": "Resistance mechanisms enacted by two-component regulatory systems (TCSs) include increased biofilm formation.",
+            "14": "Resistance mechanisms enacted by two-component regulatory systems (TCSs) include upregulation of antibiotic-degrading enzymes."
+          },
+          "18": {},
+          "19": [],
+          "20": {
+            "1": "PhoB controls Vibrio cholerae phoBR expression by binding to Pho boxes.",
+            "2": "Pho boxes are located at -35 (box 1), -60 (box 2), and -80 (box 3) from the putative phoB translation start site.",
+            "3": "Pho box 1 is located on the sense strand of the phoBR regulatory region.",
+            "4": "Pho boxes 2 and 3 are located on the antisense strand of the phoBR regulatory region.",
+            "5": "PhoB binds to boxes 1, 2, and 3 with distinct affinities.",
+            "6": "Fusions of sequences with boxes 1, 2, and 3 upstream of the lacZ reporter activated transcription under inorganic phosphate (P(i)) limitation.",
+            "7": "Fusions of sequences with box 1 alone upstream of the lacZ reporter also activated transcription under P(i) limitation.",
+            "8": "Sequences carrying combinations other than boxes 1, 2, and 3 or 1 alone did not activate transcription under P(i) limitation.",
+            "9": "A fragment including only boxes 1 and 2 fused to lacZ did not induce expression by low P(i).",
+            "10": "PhoB~box2 exerts a repressive role over the transcriptional activity induced by PhoB~box1.",
+            "11": "LacZ expression levels from promoter fragments containing the three boxes or box 1 alone were similar.",
+            "12": "PhoB~box3 eliminated the repressive effect imposed by PhoB~box2 on phoBR transcription.",
+            "13": "The 234-bp promoter fragment carrying the three boxes is required for operon expression in Vibrio cholerae ΔphoBR cells.",
+            "14": "Complementation assays with a phoBR-containing plasmid demonstrated the necessity of the 234-bp promoter fragment for expression.",
+            "15": "The necessity of the 234-bp promoter fragment for operon expression was observed under P(i) abundance with phoBR expressed at a basal level.",
+            "16": "The necessity of the 234-bp promoter fragment was observed in low P(i) conditions when Pho regulon genes were fully expressed.",
+            "17": "Under P(i) limitation, PhoB exerts dual regulatory functions by binding sequentially distinct Pho boxes.",
+            "18": "PhoB binding to distinct Pho boxes enables fine-tuning and precise control of phoBR expression in V. cholerae cells."
+          }
+        },
+        "viewpoints": [
+          "OmpR/PhoB family response regulators (RRs) are widely distributed among bacteria.",
+          "OmpR/PhoB family response regulators (RRs) are found in notable pathogens like Mycobacterium tuberculosis (Mtb).",
+          "OmpR/PhoB family response regulators (RRs) are found in notable pathogens like Vibrio cholerae (Vch).",
+          "OmpR/PhoB family response regulators (RRs) are found in notable pathogens like Pseudomonas aeruginosa (Pae).",
+          "OmpR/PhoB family response regulators (RRs) are found in notable pathogens like Escherichia coli (Eco).",
+          "OmpR/PhoB family response regulators (RRs) are found in the model bacterium Streptomyces coelicolor (Sco)."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "As a representative member of the enormous OmpR/PhoB family, Mtb PhoP remodels the transcriptional network of Mtb by regulating over 100 genes involved in virulence, lipid biosynthesis, carbon metabolism, low pH, hypoxia, and stress response, functioning as both a global transcriptional activator and repressor [16], [21], [22], [23], [24].",
+        "references": {
+          "16": {
+            "1": "Two-component regulatory systems are widely used by bacteria to sense environmental stimuli.",
+            "2": "Two-component regulatory systems are widely used by bacteria to respond to environmental stimuli.",
+            "3": "Two-component regulatory systems facilitate coordinated changes in gene expression in response to environmental stimuli.",
+            "4": "Two-component regulatory systems are normally comprised of a sensory kinase protein.",
+            "5": "A sensory kinase protein in two-component regulatory systems activates a transcriptional regulator by phosphorylation.",
+            "6": "Mycobacteria have few two-component regulatory systems.",
+            "7": "Two-component regulatory systems are of key importance for bacterial survival in mycobacteria.",
+            "8": "Two-component regulatory systems play important roles in pathogenicity in mycobacteria.",
+            "9": "Mycobacterium tuberculosis has 12 paired two-component regulatory systems.",
+            "10": "One of the two-component systems in Mycobacterium tuberculosis includes two regulators and one sensor.",
+            "11": "Mycobacterium tuberculosis has a split sensor system.",
+            "12": "Mycobacterium tuberculosis has four orphan regulators.",
+            "13": "Several two-component regulatory systems are involved in virulence in Mycobacterium tuberculosis.",
+            "14": "Disruption of different two-component regulatory systems in Mycobacterium tuberculosis leads to attenuation.",
+            "15": "Disruption of different two-component regulatory systems in Mycobacterium tuberculosis leads to hypervirulence.",
+            "16": "PhoPR plays a major role in regulating cell wall composition in Mycobacterium tuberculosis.",
+            "17": "Inactivation of PhoPR results in sufficient attenuation of Mycobacterium tuberculosis.",
+            "18": "Deletion strains of Mycobacterium tuberculosis with PhoPR inactivated are live vaccine candidates.",
+            "19": "MprAB controls the stress response in Mycobacterium tuberculosis.",
+            "20": "MprAB is required for persistent infections in Mycobacterium tuberculosis.",
+            "21": "SenX3-RegX3 is required for control of aerobic respiration in Mycobacterium tuberculosis.",
+            "22": "SenX3-RegX3 is required for phosphate uptake in Mycobacterium tuberculosis.",
+            "23": "PrrAB is required for adaptation to intracellular infection in Mycobacterium tuberculosis.",
+            "24": "MtrAB is an essential system in Mycobacterium tuberculosis.",
+            "25": "MtrAB controls DNA replication in Mycobacterium tuberculosis.",
+            "26": "MtrAB controls cell division in Mycobacterium tuberculosis.",
+            "27": "KdpDE, NarL, TrcRS, TcrXY, TcrA, PdtaRS, and four orphan regulators are less well understood in Mycobacterium tuberculosis.",
+            "28": "The structure and binding motifs for several regulators in Mycobacterium tuberculosis have been characterized.",
+            "29": "Characterizing the structure and binding motifs reveals variations in function and operation for several regulators in Mycobacterium tuberculosis.",
+            "30": "The sensors in Mycobacterium tuberculosis are less well characterized.",
+            "31": "Stimuli for many sensors in Mycobacterium tuberculosis remain to be confirmed.",
+            "32": "This chapter reviews current understanding of the role of two-component systems in mycobacteria.",
+            "33": "This chapter focuses on the role of two-component systems in Mycobacterium tuberculosis within the context of mycobacteria."
+          },
+          "21": {
+            "1": "PhoP is essential for the virulence of Mycobacterium tuberculosis.",
+            "2": "PhoP is essential for the intracellular growth of Mycobacterium tuberculosis.",
+            "3": "Genetic evidence suggests that PhoP regulates complex lipid biosynthesis.",
+            "4": "The absence of some lipid molecules in a phoP mutant partly accounts for its attenuated growth in macrophages.",
+            "5": "The absence of some lipid molecules in a phoP mutant partly accounts for its attenuated growth in mice.",
+            "6": "Phosphorylation of PhoP is essential in the regulation of complex lipid biosynthesis.",
+            "7": "Phosphorylated PhoP activates the transcription of the gene pks2.",
+            "8": "Phosphorylated PhoP activates the transcription of the gene msl3.",
+            "9": "The pks2 gene encodes polyketide β-ketoacyl synthases.",
+            "10": "The msl3 gene encodes polyketide β-ketoacyl synthases.",
+            "11": "Phosphorylated PhoP activates transcription through direct DNA binding at the upstream regulatory region of the target genes.",
+            "12": "The genetic determinants recognized by PhoP are identified in the study.",
+            "13": "Activation of target genes requires interactions of the phosphorylated PhoP at the cognate binding sites.",
+            "14": "Sites within the regulatory region of respective genes do not bind in vitro with unphosphorylated PhoP protein.",
+            "15": "Sites within the regulatory region of respective genes do not bind in vitro with phosphorylation-deficient PhoP protein.",
+            "16": "The in vitro non-binding of sites with either unphosphorylated or phosphorylation-deficient PhoP protein is consistent with phosphorylation-dependent assembly of the transcription initiation complex.",
+            "17": "Phosphorylation-dependent assembly of the transcription initiation complex leads to in vivo transcriptional activation.",
+            "18": "The results reveal unknown molecular mechanisms of how PhoP contributes to M. tuberculosis cell wall composition.",
+            "19": "PhoP contributes to M. tuberculosis cell wall composition by regulating complex lipid biosynthesis."
+          },
+          "22": {
+            "1": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system orchestrates a complex transcription program.",
+            "2": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system is essential for the growth of the tubercle bacillus.",
+            "3": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system is essential for the virulence of the tubercle bacillus.",
+            "4": "PhoP comprises a phosphorylation domain at the amino-terminal half.",
+            "5": "PhoP comprises a DNA-binding domain in the carboxy-terminal half of the protein.",
+            "6": "PhoP recognizes a 23-bp sequence of the phoP upstream region.",
+            "7": "The 23-bp sequence of the phoP upstream region comprises two adjacent direct repeat motifs.",
+            "8": "The two adjacent direct repeat motifs in the 23-bp sequence are believed to promote transcription regulation.",
+            "9": "DNA binding involves the recruitment of two monomeric PhoP molecules.",
+            "10": "DNA binding was dependent on conserved adenines of the repeat sequences.",
+            "11": "DNA binding was dependent on the orientation of the repeat motifs relative to each other.",
+            "12": "Response regulators such as PhoB and FixJ dimerize upon phosphorylation.",
+            "13": "PhoP dimerization can be stimulated by DNA binding.",
+            "14": "The study uses the established asymmetric tandem binding model by members of the OmpR/PhoB protein family as a guide.",
+            "15": "The study examines intermolecular interactions between PhoP dimers by protein cross-linking.",
+            "16": "Two PhoP protomers bind the duplex DNA with a symmetric head-to-head orientation to project their N termini toward one another.",
+            "17": "The results argue against previously proposed head-to-tail tandem dimer formation for members of the OmpR/PhoB protein subfamily."
+          },
+          "23": {
+            "1": "The Mycobacterium tuberculosis PhoPR two-component system is essential for virulence.",
+            "2": "Animal models of tuberculosis demonstrate the essential nature of the PhoPR two-component system for virulence.",
+            "3": "Recent articles have shown that the attenuation of the M. tuberculosis H37Ra strain is partly due to a mutation in the phoP gene.",
+            "4": "A mutation in the phoP gene prevents the secretion of proteins important for virulence.",
+            "5": "New anti-tubercular therapies are needed due to the emergence of multi-drug-resistant M. tuberculosis strains.",
+            "6": "The currently used bacille Calmette-Guérin vaccine has variable efficacy.",
+            "7": "The variable efficacy of the bacille Calmette-Guérin vaccine contributes to the need for new anti-tubercular therapies.",
+            "8": "PhoP has a major role in M. tuberculosis pathogenicity.",
+            "9": "PhoP is a potential target candidate for new therapies because of its major role in M. tuberculosis pathogenicity.",
+            "10": "This review summarizes the current understanding of PhoPR's role in virulence.",
+            "11": "This review discusses areas where knowledge about PhoPR's role in virulence is limited."
+          },
+          "24": []
+        },
+        "viewpoints": [
+          "Mtb PhoP is a representative member of the OmpR/PhoB family.",
+          "Mtb PhoP remodels the transcriptional network of Mycobacterium tuberculosis (Mtb).",
+          "Mtb PhoP regulates over 100 genes involved in virulence.",
+          "Mtb PhoP regulates genes involved in lipid biosynthesis.",
+          "Mtb PhoP regulates genes involved in carbon metabolism.",
+          "Mtb PhoP regulates genes involved in response to low pH.",
+          "Mtb PhoP regulates genes involved in hypoxia response.",
+          "Mtb PhoP regulates genes involved in the stress response.",
+          "Mtb PhoP functions as a global transcriptional activator.",
+          "Mtb PhoP functions as a global transcriptional repressor."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Notably, the complex regulatory mechanisms of PhoP in response to phosphate starvation and its interplay with nitrogen availability have been documented [25], [26].",
+        "references": {
+          "25": {
+            "1": "Phosphate limitation is important for the production of antibiotics in Streptomyces.",
+            "2": "Phosphate limitation is important for the production of secondary metabolites in Streptomyces.",
+            "3": "Phosphate control is mediated by the PhoR-PhoP system, which is a two-component system.",
+            "4": "Following phosphate depletion, PhoP stimulates the expression of genes involved in phosphate scavenging.",
+            "5": "Following phosphate depletion, PhoP stimulates the expression of genes involved in phosphate transport.",
+            "6": "Following phosphate depletion, PhoP stimulates the expression of genes involved in phosphate mobilization.",
+            "7": "Following phosphate depletion, PhoP represses the utilization of nitrogen sources.",
+            "8": "PhoP reduces the expression of genes for aerobic respiration.",
+            "9": "PhoP activates genes for nitrate respiration.",
+            "10": "PhoP activates genes for teichuronic acid formation.",
+            "11": "PhoP reduces the expression of genes for phosphate-rich teichoic acid biosynthesis.",
+            "12": "In Streptomyces coelicolor, PhoP repressed several differentiation regulatory genes.",
+            "13": "In Streptomyces coelicolor, PhoP repressed several pleiotropic regulatory genes.",
+            "14": "Repression of differentiation and pleiotropic regulatory genes by PhoP affects development in Streptomyces coelicolor.",
+            "15": "Repression of differentiation and pleiotropic regulatory genes by PhoP indirectly affects antibiotic biosynthesis in Streptomyces coelicolor.",
+            "16": "A new bioinformatics analysis of the putative PhoP-binding sequences in Streptomyces avermitilis was conducted.",
+            "17": "Many sequences in the S. avermitilis genome showed high weight values.",
+            "18": "Many sequences in the S. avermitilis genome were classified according to available genetic information.",
+            "19": "The analyzed genes in S. avermitilis encode phosphate scavenging proteins.",
+            "20": "The analyzed genes in S. avermitilis encode phosphate transporters.",
+            "21": "The analyzed genes in S. avermitilis encode nitrogen metabolism genes.",
+            "22": "The gene aveR was highlighted in the new studies.",
+            "23": "The gene aveR is located in the avermectin gene cluster.",
+            "24": "The gene aveR encodes a LAL-type regulator.",
+            "25": "The gene afsS was highlighted in the new studies.",
+            "26": "The gene afsS is regulated by PhoP and AfsR.",
+            "27": "The sequence logo for S. avermitilis PHO boxes is similar to the sequence logo for S. coelicolor PHO boxes.",
+            "28": "There are differences in the weight value for specific nucleotides between the sequence logos of S. avermitilis and S. coelicolor PHO boxes."
+          },
+          "26": {}
+        },
+        "viewpoints": [
+          "The regulatory mechanisms of PhoP in response to phosphate starvation have been documented.",
+          "The interplay of PhoP regulatory mechanisms with nitrogen availability have been documented."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "PhoP not only activates the transcription of phosphate assimilation genes, including those for high-affinity phosphate-specific transport systems genes (pstSCAB) and the global phosphate starvation stress response modulator gene (phoU) [27], [28], [29], but also represses the transcription of relevant dissimilation or other metabolic genes.",
+        "references": {
+          "27": {
+            "1": "The two-component system PhoR-PhoP mediates the control of phosphate-regulated genes in Streptomyces coelicolor.",
+            "2": "The pstS promoter is very sensitive to phosphate regulation when coupled to the reporter xylE gene.",
+            "3": "The phoRP promoter is very sensitive to phosphate regulation when coupled to the reporter xylE gene.",
+            "4": "The phoU promoter is very sensitive to phosphate regulation when coupled to the reporter xylE gene.",
+            "5": "The transcription start points of the pstS promoter were identified by primer extension.",
+            "6": "The transcription start points of the phoRP promoter were identified by primer extension.",
+            "7": "The transcription start points of the phoU promoter were identified by primer extension.",
+            "8": "The phoRP promoter showed a leaderless transcript.",
+            "9": "The response-regulator PhoP protein was overexpressed in Escherichia coli as a GST-PhoP fused protein.",
+            "10": "The response-regulator PhoP protein was purified in Escherichia coli as a GST-PhoP fused protein.",
+            "11": "The DNA-binding domain of PhoP was obtained by overexpression and purification in Escherichia coli as a GST-PhoP fused protein.",
+            "12": "PhoP binds with high affinity to an upstream region of the pstS promoter close to the -35 sequence.",
+            "13": "PhoP binds with high affinity to an upstream region of the phoRP-phoU promoter close to the -35 sequence.",
+            "14": "The truncated DNA-binding domain of PhoP binds with high affinity to an upstream region of the pstS promoter close to the -35 sequence.",
+            "15": "The truncated DNA-binding domain of PhoP binds with high affinity to an upstream region of the phoRP-phoU promoter close to the -35 sequence.",
+            "16": "DNase I protection studies revealed a 29 base pair protected stretch in the sense strand of the pstS promoter.",
+            "17": "The 29 base pair protected stretch in the sense strand of the pstS promoter includes two 11 base pair direct repeat units.",
+            "18": "Footprinting of the bidirectional phoRP-phoU promoter region showed a 51 base pair protected sequence.",
+            "19": "The 51 base pair protected sequence in the phoRP-phoU promoter region encompasses four direct repeat units.",
+            "20": "Two of the four direct repeat units in the phoRP-phoU promoter region have high similarity to the protected sequences in the pstS promoter.",
+            "21": "PHO boxes have been identified by alignment of six direct repeat units found in the pstS and phoRP-phoU promoter regions.",
+            "22": "Each direct repeat unit adjusts to the consensus sequence G(G/T)TCAYYYR(G/C)G."
+          },
+          "28": {
+            "1": "Streptomycetes sense the stress of phosphate starvation via the PhoR-PhoP signal transduction system.",
+            "2": "Streptomycetes respond to the stress of phosphate starvation via the PhoR-PhoP signal transduction system.",
+            "3": "A chromatin-immunoprecipitation-on-microarray analysis of wild-type and phoP mutant cultures was undertaken to identify the in vivo targets of PhoP.",
+            "4": "In parallel with chromatin-immunoprecipitation-on-microarray analysis, the transcriptomes of wild-type and phoP mutant cultures have been quantified to identify the in vivo targets of PhoP.",
+            "5": "Approximately 80% of the previously in vitro characterized PhoP targets were identified in this study.",
+            "6": "Several hundred other putative novel PhoP targets were identified in this study.",
+            "7": "PhoP was shown to activate genes for phosphate scavenging systems.",
+            "8": "PhoP was shown to target two gene clusters for cell wall/extracellular polymer biosynthesis.",
+            "9": "PhoP was found to repress nitrogen assimilation upon entering phosphate limitation.",
+            "10": "PhoP was found to repress oxidative phosphorylation upon entering phosphate limitation.",
+            "11": "PhoP was found to repress nucleotide biosynthesis upon entering phosphate limitation.",
+            "12": "PhoP was found to repress glycogen catabolism upon entering phosphate limitation.",
+            "13": "PhoP represses an unprecedented range of pathways upon entering phosphate limitation.",
+            "14": "PhoP was shown to target many key genes involved in antibiotic production.",
+            "15": "PhoP was shown to target many key genes involved in morphological differentiation.",
+            "16": "PhoP targets the gene afsS.",
+            "17": "PhoP targets the gene atrA.",
+            "18": "PhoP targets the gene bldA.",
+            "19": "PhoP targets the gene bldC.",
+            "20": "PhoP targets the gene bldD.",
+            "21": "PhoP targets the gene bldK.",
+            "22": "PhoP targets the gene bldM.",
+            "23": "PhoP targets the gene cdaR.",
+            "24": "PhoP targets the gene cdgA.",
+            "25": "PhoP targets the gene cdgB.",
+            "26": "PhoP targets the gene scbR-scbA.",
+            "27": "In the PhoP-dependent cpk polyketide gene cluster, PhoP accumulates substantially at three specific sites.",
+            "28": "PhoP accumulates at three specific sites within the giant polyketide synthase-encoding genes.",
+            "29": "Following phosphate limitation, Streptomyces coelicolor PhoP functions as a 'master' regulator.",
+            "30": "PhoP suppresses central metabolism until sufficient phosphate is salvaged to support further growth and morphological development.",
+            "31": "PhoP suppresses secondary metabolism until sufficient phosphate is salvaged to support further growth and morphological development.",
+            "32": "PhoP suppresses developmental pathways until sufficient phosphate is salvaged to support further growth and morphological development.",
+            "33": "PhoP maintains suppression until sufficient phosphate is salvaged to support further growth and, ultimately, morphological development."
+          },
+          "29": {
+            "1": "The transport of inorganic phosphate is essential for the growth of all organisms.",
+            "2": "The metabolism of soil-dwelling Streptomyces species is strongly influenced by the availability of phosphate.",
+            "3": "The ability of soil-dwelling Streptomyces species to produce antibiotics is strongly influenced by the availability of phosphate.",
+            "4": "The ability of soil-dwelling Streptomyces species to produce other secondary metabolites is strongly influenced by the availability of phosphate.",
+            "5": "The transcriptional regulation of the SCO4138 gene of Streptomyces coelicolor was studied.",
+            "6": "The transcriptional regulation of the SCO1845 gene of Streptomyces coelicolor was studied.",
+            "7": "The SCO4138 gene encodes the putative low-affinity inorganic phosphate transporter PitH1.",
+            "8": "The SCO1845 gene encodes the putative low-affinity inorganic phosphate transporter PitH2.",
+            "9": "The expression of the SCO4138, SCO1845, and pstSCAB genes follows a sequential pattern in response to phosphate deprivation.",
+            "10": "The sequential pattern of expression in response to phosphate deprivation was shown by coupling the promoters of the genes to a luciferase reporter gene.",
+            "11": "The expression of the pitH2 gene is dependent upon the response regulator PhoP.",
+            "12": "The expression of the pap-pitH1 bicistronic transcript is not dependent upon the response regulator PhoP.",
+            "13": "PhoP binds to specific sequences consisting of direct repeats of 11 nucleotides in the promoter of the pitH2 gene.",
+            "14": "PhoP does not bind to the pap-pitH1 promoter.",
+            "15": "The pap-pitH1 promoter lacks direct repeats of 11 nucleotides required for PhoP recognition.",
+            "16": "The transcription start point of the pitH2 promoter was identified by primer extension analyses.",
+            "17": "The structure of the regulatory sequences in the PhoP-protected DNA region was established.",
+            "18": "The structure of the regulatory sequences in the PhoP-protected DNA region consists of four central direct repeats flanked by two other less conserved repeats.",
+            "19": "A model for PhoP regulation of the pitH2 promoter is proposed.",
+            "20": "The model is based on the four promoter DNA-PhoP complexes detected by electrophoretic mobility shift assays and footprinting studies."
+          }
+        },
+        "viewpoints": [
+          "PhoP activates the transcription of phosphate assimilation genes.",
+          "PhoP activates the transcription of high-affinity phosphate-specific transport systems genes (pstSCAB).",
+          "PhoP activates the transcription of the global phosphate starvation stress response modulator gene (phoU).",
+          "PhoP represses the transcription of dissimilation genes.",
+          "PhoP represses the transcription of other metabolic genes."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "For example, PhoP represses the nitrogen metabolism gene amtB through cross-talk with the global nitrogen metabolism regulator GlnR [30], [31], [32].",
+        "references": {
+          "30": {
+            "1": "The interaction of regulatory networks is a subject of great interest in the field of systems biology of bacteria.",
+            "2": "Phosphate control of metabolism in Streptomyces is mediated by the two-component system PhoR-PhoP.",
+            "3": "The utilization of different nitrogen sources is controlled by the regulator GlnR.",
+            "4": "Transcriptomic analysis revealed that glnA, glnR, and other nitrogen metabolism genes are under PhoP control.",
+            "5": "Biochemical analysis revealed that glnA, glnR, and other nitrogen metabolism genes are under PhoP control.",
+            "6": "glnA encodes a glutamine synthetase.",
+            "7": "DNA-binding experiments showed that PhoP binds to the nitrogen-regulated gene SCO0255.",
+            "8": "DNA-binding experiments showed that PhoP binds to the nitrogen-regulated gene SCO01863.",
+            "9": "DNA-binding experiments showed that PhoP binds to the nitrogen-regulated gene ureA.",
+            "10": "Using the glnA promoter as a model, it was observed that PhoP and GlnR compete for binding to the same promoter region.",
+            "11": "Using the glnA promoter as a model, it was observed that GlnR has a higher affinity than PhoP for the same promoter region.",
+            "12": "Using a total of 14 GlnR-binding sites, we established two information-based models that describe the GlnR box as consisting of two 11-nt direct repeats.",
+            "13": "The GlnR box consists of two 11-nt direct repeats.",
+            "14": "The GlnR box has clear differences to the PHO box.",
+            "15": "The information-based models used 50 direct repeat units to describe the GlnR box.",
+            "16": "DNA-binding studies with different mutant sequences of the glnA promoter revealed that the sequence recognized by GlnR is found in the coding strand.",
+            "17": "DNA-binding studies with different mutant sequences of the glnA promoter revealed that the sequence recognized by PhoP is overlapping in the non-coding strand.",
+            "18": "In the amtB promoter, PhoP and GlnR boxes are not totally overlapping.",
+            "19": "In the amtB promoter, PhoP and GlnR can bind simultaneously.",
+            "20": "PhoP control of nitrogen metabolism genes helps to balance the cellular phosphorus/nitrogen (P/N) equilibrium."
+          },
+          "31": {
+            "1": "Limitation of different nutrients in Streptomyces coelicolor A3(2) triggers nutrient-stress responses.",
+            "2": "Nutrient-stress responses in Streptomyces coelicolor A3(2) are mediated by PhoP, GlnR, AfsR and other regulators.",
+            "3": "Nutrient-stress responses are integrated at the molecular level.",
+            "4": "Nutrient-stress responses control secondary metabolite biosynthesis.",
+            "5": "Nutrient-stress responses control differentiation.",
+            "6": "Utilization of chitin regulates secondary metabolite biosynthesis.",
+            "7": "Utilization of N-acetylglucosamine regulates secondary metabolite biosynthesis.",
+            "8": "The regulation of secondary metabolite biosynthesis by chitin or N-acetylglucosamine is mediated by DasR.",
+            "9": "Phosphate control of primary metabolism in Streptomyces species is mediated by the two-component PhoR-PhoP system.",
+            "10": "Phosphate control of secondary metabolism in Streptomyces species is mediated by the two-component PhoR-PhoP system.",
+            "11": "In S. coelicolor, PhoP controls secondary metabolism by binding to a PHO box in the afsS promoter.",
+            "12": "The PHO box in the afsS promoter overlaps with the AfsR binding site.",
+            "13": "The afsS promoter serves to integrate the PhoP-mediated response to phosphate limitation.",
+            "14": "The afsS promoter serves to integrate AfsR-mediated responses to other unknown environmental stimuli.",
+            "15": "Phosphate control oversees nitrogen regulation.",
+            "16": "Nitrogen regulation does not oversee phosphate control.",
+            "17": "In ΔphoP mutants, expression of glnA is increased.",
+            "18": "In ΔphoP mutants, expression of glnII is increased.",
+            "19": "In ΔphoP mutants, expression of glnK is increased.",
+            "20": "Phosphate control of glnR is exerted through binding of PhoP to the promoter of glnR.",
+            "21": "PhoP is the global nitrogen regulator.",
+            "22": "Phosphate control of glnA is exerted through binding of PhoP to the promoter of glnA.",
+            "23": "Phosphate control of glnII is exerted through binding of PhoP to the promoter of glnII.",
+            "24": "Phosphate control of the amtB-glnK-glnD operon is exerted through binding of PhoP to its promoter.",
+            "25": "This regulation allows a 'metabolic homeostasis' of phosphate utilization pathways.",
+            "26": "This regulation allows a 'metabolic homeostasis' of nitrogen utilization pathways.",
+            "27": "This regulation prevents nutritional unbalances.",
+            "28": "Similar mechanisms of interaction between phosphate control and carbon catabolite regulation appear to exist.",
+            "29": "Similar mechanisms of interaction between phosphate control and DasR-mediated N-acetylglucosamine regulation appear to exist.",
+            "30": "Transport of N-acetylglucosamine by the NagE2 permease is dependent upon the balance of phosphorylated/dephosphorylated proteins of the N-acetylglucosamine phosphotransferase system.",
+            "31": "Regulation of secondary metabolism is dependent upon the balance of phosphorylated/dephosphorylated proteins of the N-acetylglucosamine phosphotransferase system.",
+            "32": "These findings provide the bases for understanding the mechanisms underlying systems biology of Streptomyces species."
+          },
+          "32": {
+            "1": "Bacterial growth requires equilibrated concentration of carbon sources.",
+            "2": "Bacterial growth requires equilibrated concentration of nitrogen sources.",
+            "3": "Bacterial growth requires equilibrated concentration of phosphorus sources.",
+            "4": "Phosphate exerts control over the nitrogen metabolism in Streptomyces coelicolor.",
+            "5": "The two component system PhoR-PhoP exerts phosphate control of metabolism in Streptomyces.",
+            "6": "The response regulator PhoP binds to PHO boxes.",
+            "7": "PHO boxes are composed of direct repeat units (DRus).",
+            "8": "PhoP binds to the glnR promoter.",
+            "9": "The glnR promoter encodes the major nitrogen regulator.",
+            "10": "PhoP does not bind to the glnRII promoter under the same experimental conditions.",
+            "11": "PhoP binds to the promoters of glnA.",
+            "12": "PhoP binds to the promoters of glnII.",
+            "13": "GlnA encodes a glutamine synthetase.",
+            "14": "GlnII encodes a glutamine synthetase.",
+            "15": "PhoP binds to the promoter of the amtB-glnK-glnD operon.",
+            "16": "The amtB-glnK-glnD operon encodes an ammonium transporter.",
+            "17": "The amtB-glnK-glnD operon encodes two putative nitrogen sensing/regulatory proteins.",
+            "18": "The PhoP-binding sequence overlaps the GlnR boxes in glnA.",
+            "19": "The PhoP-binding sequence overlaps the GlnR boxes in glnII.",
+            "20": "Information theory quantitative analyses of base conservation allowed researchers to establish the structure of the PhoP-binding regions in the glnR gene.",
+            "21": "Information theory quantitative analyses of base conservation allowed researchers to establish the structure of the PhoP-binding regions in the glnA gene.",
+            "22": "Information theory quantitative analyses of base conservation allowed researchers to establish the structure of the PhoP-binding regions in the glnII gene.",
+            "23": "Information theory quantitative analyses of base conservation allowed researchers to establish the structure of the PhoP-binding regions in the amtB gene.",
+            "24": "Expression studies using luxAB as a reporter showed that PhoP represses the nitrogen metabolism genes, including glnR, glnA, glnII, and amtB.",
+            "25": "A mutant with PhoP deleted showed increased expression of nitrogen metabolism genes.",
+            "26": "The possible conservation of phosphate control over nitrogen metabolism in other microorganisms is discussed."
+          }
+        },
+        "viewpoints": [
+          "PhoP represses the nitrogen metabolism gene amtB.",
+          "PhoP represses amtB through cross-talk with the global nitrogen metabolism regulator GlnR."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "However, what determines PhoP to deferentially act as a dual transcriptional regulator remain inadequately understood.",
+        "references": {},
+        "viewpoints": [
+          "The mechanisms determining PhoP's role as a dual transcriptional regulator remain inadequately understood."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Structural based sequence alignment shows that Mtb PhoP shares high structural similarity with the other homologous members (Supplementary Fig. 1).",
+        "references": {},
+        "viewpoints": [
+          "Mtb PhoP shares high structural similarity with other homologous members."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "It comprises a conserved N-terminal receiver domain (REC) and a C-terminal effective DNA binding domain (DBD).",
+        "references": {},
+        "viewpoints": [
+          "Mtb PhoP comprises a conserved N-terminal receiver domain (REC).",
+          "Mtb PhoP comprises a C-terminal effective DNA binding domain (DBD)."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Biochemical assays indicate that phosphorylation of the REC by its cognate sensor kinase PhoR or by acetyl phosphate (AcP) enhances the DNA binding affinity of DBD [21], [22], [33], [34].",
+        "references": {
+          "21": {
+            "1": "PhoP is essential for the virulence of Mycobacterium tuberculosis.",
+            "2": "PhoP is essential for the intracellular growth of Mycobacterium tuberculosis.",
+            "3": "Genetic evidence suggests that PhoP regulates complex lipid biosynthesis.",
+            "4": "The absence of some lipid molecules in a phoP mutant partly accounts for its attenuated growth in macrophages.",
+            "5": "The absence of some lipid molecules in a phoP mutant partly accounts for its attenuated growth in mice.",
+            "6": "Phosphorylation of PhoP is essential in the regulation of complex lipid biosynthesis.",
+            "7": "Phosphorylated PhoP activates the transcription of the gene pks2.",
+            "8": "Phosphorylated PhoP activates the transcription of the gene msl3.",
+            "9": "The pks2 gene encodes polyketide β-ketoacyl synthases.",
+            "10": "The msl3 gene encodes polyketide β-ketoacyl synthases.",
+            "11": "Phosphorylated PhoP activates transcription through direct DNA binding at the upstream regulatory region of the target genes.",
+            "12": "The genetic determinants recognized by PhoP are identified in the study.",
+            "13": "Activation of target genes requires interactions of the phosphorylated PhoP at the cognate binding sites.",
+            "14": "Sites within the regulatory region of respective genes do not bind in vitro with unphosphorylated PhoP protein.",
+            "15": "Sites within the regulatory region of respective genes do not bind in vitro with phosphorylation-deficient PhoP protein.",
+            "16": "The in vitro non-binding of sites with either unphosphorylated or phosphorylation-deficient PhoP protein is consistent with phosphorylation-dependent assembly of the transcription initiation complex.",
+            "17": "Phosphorylation-dependent assembly of the transcription initiation complex leads to in vivo transcriptional activation.",
+            "18": "The results reveal unknown molecular mechanisms of how PhoP contributes to M. tuberculosis cell wall composition.",
+            "19": "PhoP contributes to M. tuberculosis cell wall composition by regulating complex lipid biosynthesis."
+          },
+          "22": {
+            "1": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system orchestrates a complex transcription program.",
+            "2": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system is essential for the growth of the tubercle bacillus.",
+            "3": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system is essential for the virulence of the tubercle bacillus.",
+            "4": "PhoP comprises a phosphorylation domain at the amino-terminal half.",
+            "5": "PhoP comprises a DNA-binding domain in the carboxy-terminal half of the protein.",
+            "6": "PhoP recognizes a 23-bp sequence of the phoP upstream region.",
+            "7": "The 23-bp sequence of the phoP upstream region comprises two adjacent direct repeat motifs.",
+            "8": "The two adjacent direct repeat motifs in the 23-bp sequence are believed to promote transcription regulation.",
+            "9": "DNA binding involves the recruitment of two monomeric PhoP molecules.",
+            "10": "DNA binding was dependent on conserved adenines of the repeat sequences.",
+            "11": "DNA binding was dependent on the orientation of the repeat motifs relative to each other.",
+            "12": "Response regulators such as PhoB and FixJ dimerize upon phosphorylation.",
+            "13": "PhoP dimerization can be stimulated by DNA binding.",
+            "14": "The study uses the established asymmetric tandem binding model by members of the OmpR/PhoB protein family as a guide.",
+            "15": "The study examines intermolecular interactions between PhoP dimers by protein cross-linking.",
+            "16": "Two PhoP protomers bind the duplex DNA with a symmetric head-to-head orientation to project their N termini toward one another.",
+            "17": "The results argue against previously proposed head-to-tail tandem dimer formation for members of the OmpR/PhoB protein subfamily."
+          },
+          "33": {
+            "1": "PhoP and PhoR proteins from Mycobacterium tuberculosis form a highly specific two-component system.",
+            "2": "The two-component system formed by PhoP and PhoR controls the expression of genes involved in complex lipid biosynthesis.",
+            "3": "The two-component system formed by PhoP and PhoR regulates unknown virulence determinants.",
+            "4": "PhoP has several functions that are divided between a C-terminal effector domain (PhoPC) and an N-terminal receiver domain (PhoPN).",
+            "5": "Phosphorylation of the N-terminal receiver domain (PhoPN) regulates activation of the C-terminal effector domain (PhoPC).",
+            "6": "PhoPN, on its own, demonstrates PhoR-dependent phosphorylation.",
+            "7": "PhoPC, the truncated variant bearing the DNA binding domain, binds in vitro to the target site.",
+            "8": "The affinity of PhoPC for the target site in vitro is similar to that of the full-length PhoP protein.",
+            "9": "Residues spanning Met(1) to Arg(138) of PhoP constitute the minimal functional PhoPN.",
+            "10": "Arg(150) is identified as the first residue of the distal PhoPC domain capable of DNA binding on its own.",
+            "11": "The identification of Arg(150) as the first residue of the distal PhoPC domain capable of DNA binding indicates the presence of an interdomain linker.",
+            "12": "The coupling of two functional domains in a single polypeptide chain is essential for phosphorylation-coupled DNA binding by PhoP.",
+            "13": "The tethering of two domains affects DNA binding.",
+            "14": "Linker length plays a critical role in regulating interdomain interactions.",
+            "15": "Individual residues of the newly identified linker do not play a critical role in regulating interdomain interactions.",
+            "16": "These results have implications for the molecular mechanism of transmission of conformation change associated with phosphorylation of PhoP.",
+            "17": "The conformational change associated with phosphorylation of PhoP results in altered DNA recognition by the C-terminal domain."
+          },
+          "34": []
+        },
+        "viewpoints": [
+          "Phosphorylation of the REC by its cognate sensor kinase PhoR enhances the DNA binding affinity of the DBD.",
+          "Phosphorylation of the REC by acetyl phosphate (AcP) enhances the DNA binding affinity of the DBD."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The specific direct repeat units (DRus) PhoP binds are referred as PhoP binding boxes (PHO boxes), each of which carries two conserved PhoP binding sites (site a and site b) separated by several nucleotides (Fig. 1) [34], [35], [36].",
+        "references": {
+          "34": [],
+          "35": {
+            "1": "Tuberculosis has reemerged as a serious threat to human health.",
+            "2": "The increasing prevalence of drug-resistant strains of tuberculosis contributes to it being a serious threat to human health.",
+            "3": "The synergetic infection of tuberculosis with HIV contributes to it being a serious threat to human health.",
+            "4": "There is an urgent need for new and more efficient treatments for tuberculosis.",
+            "5": "The PhoP-PhoR two-component system of Mycobacterium tuberculosis plays an important role in the virulence of the pathogen.",
+            "6": "The PhoP-PhoR two-component system represents a potential drug target for treating tuberculosis.",
+            "7": "The mechanism of gene transcription regulation by response regulator PhoP was studied.",
+            "8": "A high-affinity DNA sequence for PhoP binding was identified.",
+            "9": "Systematic evolution of ligands by exponential enrichment was used to identify the high-affinity DNA sequence for PhoP binding.",
+            "10": "The identified high-affinity DNA sequence contains a direct repeat of two 7 bp motifs.",
+            "11": "The two 7 bp motifs in the sequence are separated by a 4 bp spacer.",
+            "12": "The sequence is represented as TCACAGC(N4)TCACAGC.",
+            "13": "The specificity of the direct-repeat sequence for PhoP binding was confirmed.",
+            "14": "Isothermal titration calorimetry was used to confirm the specificity of the direct-repeat sequence for PhoP binding.",
+            "15": "Electrophoretic mobility shift assays were used to confirm the specificity of the direct-repeat sequence for PhoP binding.",
+            "16": "PhoP binds to the direct repeat as a dimer.",
+            "17": "PhoP binds to the direct repeat in a highly cooperative manner.",
+            "18": "Many genes previously identified to be regulated by PhoP contain the direct-repeat motif in their promoter sequences.",
+            "19": "Synthetic DNA fragments at the putative promoter-binding sites bind PhoP with variable affinity.",
+            "20": "The variable affinity of PhoP binding is related to the number of mismatches in the 7 bp motifs.",
+            "21": "The variable affinity of PhoP binding is related to the positions of the mismatches in the 7 bp motifs.",
+            "22": "The variable affinity of PhoP binding is related to the spacer sequences.",
+            "23": "The variable affinity of PhoP binding is related to the flanking sequences.",
+            "24": "Phosphorylation of PhoP increases the affinity of DNA binding.",
+            "25": "Phosphorylation of PhoP does not change the specificity of DNA binding.",
+            "26": "The results confirm the direct-repeat sequence as the consensus motif for PhoP binding.",
+            "27": "The confirmation of the direct-repeat sequence as the consensus motif for PhoP binding paves the way for identification of PhoP directly regulated genes in different mycobacterial genomes."
+          },
+          "36": {
+            "1": "Expression of genes belonging to the pho regulon in Streptomyces coelicolor is positively regulated by binding of the response regulator PhoP to 11-nt direct repeats (DRus).",
+            "2": "Comparison of the wild-type and a DeltaphoP mutant shows the positive regulation of genes belonging to the pho regulon by PhoP.",
+            "3": "11-nt direct repeats (DRus) have been found in over 100 genes of Streptomyces coelicolor.",
+            "4": "20 genes containing 11-nt direct repeats (DRus) were cloned.",
+            "5": "The binding of PhoP(DBD) to the promoters of most of the cloned genes has been shown by electrophoretic mobility shift assays.",
+            "6": "At least two 11-nt direct repeats (DRus) are required for proper binding of PhoP(DBD).",
+            "7": "Deletion of 1 nucleotide leaving a 10-nt direct repeat drastically reduces binding of PhoP(DBD).",
+            "8": "Three different types of operators have been identified.",
+            "9": "Complex operators (class III) contain up to six 11-nt direct repeats (DRus).",
+            "10": "Some 11-nt direct repeats (DRus) in complex operators (class III) have poor conservation of the 11-nt consensus sequence.",
+            "11": "11-nt direct repeats (DRus) with poor conservation in complex operators (class III) were protected by PhoP(DBD) in footprinting analyses.",
+            "12": "Cooperative binding of PhoP(DBD) molecules initiated at conserved core DRus is the mechanism involved in binding several PhoP(DBD) monomers to complex operators.",
+            "13": "An information theory-based model incorporates the positive or negative contribution of adjacent sequences to the binding of PhoP(DBD).",
+            "14": "The information theory-based model has been used to deduce the structure of PHO boxes.",
+            "15": "The information theory-based model has been used to deduce the relevance of each 11-nt direct repeat (DRu)."
+          }
+        },
+        "viewpoints": [
+          "The direct repeat units PhoP binds are referred to as PhoP binding boxes (PHO boxes).",
+          "Each PHO box carries two conserved PhoP binding sites, site a and site b.",
+          "The two sites in a PHO box are separated by several nucleotides."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The co-crystal structure of PhoP bound to a PHO box-containing promoter DNA reveals that a PhoP dimer interacts with the PHO box through conserved winged helices, akin to other transcription regulators in the OmpR/PhoB family [12], [22], [37], [38], [39], [40].",
+        "references": {
+          "12": {
+            "1": "Response regulators are the output component of two-component regulatory systems.",
+            "2": "Two-component regulatory systems are the predominant form of signal transduction systems utilized by prokaryotes.",
+            "3": "The majority of response regulators function as transcription factors.",
+            "4": "Detailed descriptions of the mechanisms of DNA binding by response regulators are lacking.",
+            "5": "Detailed descriptions of the consequences of DNA binding by response regulators are lacking.",
+            "6": "Versatility in the modes of DNA binding is evident with winged helix-turn-helix proteins.",
+            "7": "There are doubts that mechanisms of DNA binding will be generalizable among members of the winged helix-turn-helix protein family.",
+            "8": "The review highlights the current focus of some research efforts aimed at understanding activation by response regulators.",
+            "9": "The review highlights the current focus of some research efforts aimed at understanding DNA binding by response regulators."
+          },
+          "22": {
+            "1": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system orchestrates a complex transcription program.",
+            "2": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system is essential for the growth of the tubercle bacillus.",
+            "3": "Mycobacterium tuberculosis PhoP of the PhoP-PhoR two-component signaling system is essential for the virulence of the tubercle bacillus.",
+            "4": "PhoP comprises a phosphorylation domain at the amino-terminal half.",
+            "5": "PhoP comprises a DNA-binding domain in the carboxy-terminal half of the protein.",
+            "6": "PhoP recognizes a 23-bp sequence of the phoP upstream region.",
+            "7": "The 23-bp sequence of the phoP upstream region comprises two adjacent direct repeat motifs.",
+            "8": "The two adjacent direct repeat motifs in the 23-bp sequence are believed to promote transcription regulation.",
+            "9": "DNA binding involves the recruitment of two monomeric PhoP molecules.",
+            "10": "DNA binding was dependent on conserved adenines of the repeat sequences.",
+            "11": "DNA binding was dependent on the orientation of the repeat motifs relative to each other.",
+            "12": "Response regulators such as PhoB and FixJ dimerize upon phosphorylation.",
+            "13": "PhoP dimerization can be stimulated by DNA binding.",
+            "14": "The study uses the established asymmetric tandem binding model by members of the OmpR/PhoB protein family as a guide.",
+            "15": "The study examines intermolecular interactions between PhoP dimers by protein cross-linking.",
+            "16": "Two PhoP protomers bind the duplex DNA with a symmetric head-to-head orientation to project their N termini toward one another.",
+            "17": "The results argue against previously proposed head-to-tail tandem dimer formation for members of the OmpR/PhoB protein subfamily."
+          },
+          "37": {
+            "1": "In actinobacteria, GlnR is an OmpR/PhoB subfamily protein.",
+            "2": "GlnR acts as an orphan response regulator in actinobacteria.",
+            "3": "GlnR globally coordinates the expression of genes responsible for nitrogen metabolism in actinobacteria.",
+            "4": "GlnR globally coordinates the expression of genes responsible for carbon metabolism in actinobacteria.",
+            "5": "GlnR globally coordinates the expression of genes responsible for phosphate metabolism in actinobacteria.",
+            "6": "Many researchers have attempted to elucidate the mechanisms of GlnR-dependent transcription activation.",
+            "7": "Progress in elucidating the mechanisms of GlnR-dependent transcription activation is impeded by the lack of an overall structure of GlnR-dependent transcription activation complex (GlnR-TAC).",
+            "8": "A co-crystal structure of the C-terminal DNA-binding domain of GlnR (GlnR_DBD) in complex with its regulatory component is being reported."
+          },
+          "38": {
+            "1": "PmrA is an OmpR/PhoB-family response regulator.",
+            "2": "PmrA triggers gene transcription responsible for polymyxin resistance in bacteria.",
+            "3": "PmrA recognizes promoters where the canonical-35 element is replaced by the pmra-box.",
+            "4": "The pmra-box represents the PmrA recognition sequence.",
+            "5": "A cryo-electron microscopy (cryo-EM) structure of a bacterial PmrA-dependent transcription activation complex (TAC) is reported.",
+            "6": "The bacterial PmrA-dependent transcription activation complex (TAC) contains a PmrA dimer.",
+            "7": "The bacterial PmrA-dependent transcription activation complex (TAC) contains an RNA polymerase σ70 holoenzyme (RNAPH).",
+            "8": "The bacterial PmrA-dependent transcription activation complex (TAC) contains the pbgP promoter DNA.",
+            "9": "The RNAPH mainly contacts the PmrA C-terminal DNA-binding domain (DBD) via electrostatic interactions.",
+            "10": "The RNAPH reorients the PmrA DNA-binding domain (DBD) three base pairs upstream of the pmra-box.",
+            "11": "The interaction of RNAPH with the PmrA DNA-binding domain (DBD) results in a dynamic transcription activation complex (TAC) conformation.",
+            "12": "The substitution of the DNA-recognition residue eliminated the transcriptional activity of the PmrA-dependent transcription activation complex.",
+            "13": "Variants with altered RNAPH-interacting residues resulted in enhanced transcriptional activity of the PmrA-dependent transcription activation complex.",
+            "14": "PmrA recognition-induced DNA distortion plays a crucial role in transcriptional activation.",
+            "15": "PmrA promoter escape plays a crucial role in transcriptional activation."
+          },
+          "39": [],
+          "40": {
+            "1": "PhoB is a signal transduction response regulator.",
+            "2": "PhoB activates nearly 40 genes in phosphate depletion conditions.",
+            "3": "PhoB operates in E. coli and closely related bacteria.",
+            "4": "The structure of the PhoB effector domain in complex with its target DNA sequence is in a novel tandem arrangement.",
+            "5": "Several monomers of PhoB bind head to tail to successive 11-base pair direct-repeat sequences.",
+            "6": "Several monomers of PhoB coat one face of a smoothly bent double helix.",
+            "7": "PhoB has a winged helix fold.",
+            "8": "The DNA recognition elements of PhoB comprise helix alpha 3, which penetrates the major groove.",
+            "9": "The DNA recognition elements of PhoB include a beta hairpin wing interacting with a compressed minor groove.",
+            "10": "The interaction with the compressed minor groove involves Arg219, which is tightly sandwiched between the DNA sugar backbones.",
+            "11": "The transactivation loops of PhoB protrude laterally.",
+            "12": "The orientation of the transactivation loops allows interaction with the RNA polymerase sigma(70) subunit.",
+            "13": "The interaction with the RNA polymerase sigma(70) subunit triggers transcription initiation."
+          }
+        },
+        "viewpoints": [
+          "The co-crystal structure shows that a PhoP dimer interacts with the PHO box through conserved winged helices.",
+          "The interaction of a PhoP dimer with the PHO box through conserved winged helices is akin to other transcription regulators in the OmpR/PhoB family."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "These interactions facilitate a compact arrangement of the PhoP_RECs and PhoP_DBDs, which restricts a 4-bp spacer between the two binding sites [41].",
+        "references": {
+          "41": {
+            "1": "PhoP is an essential virulence factor in Mycobacterium tuberculosis.",
+            "2": "PhoP presents a target for the development of new anti-tuberculosis drugs.",
+            "3": "PhoP presents a target for the development of attenuated tuberculosis vaccine strains.",
+            "4": "PhoP binds to DNA as a highly cooperative dimer.",
+            "5": "PhoP recognizes direct repeats of 7-bp motifs with a 4-bp spacer.",
+            "6": "The crystal structure of the PhoP-DNA complex was determined to elucidate the PhoP-DNA binding mechanism.",
+            "7": "The structure revealed a tandem PhoP dimer.",
+            "8": "The tandem PhoP dimer bound to the direct repeat.",
+            "9": "The tandem arrangement of the receiver domains was surprising.",
+            "10": "The tandem arrangement allowed the four domains of the PhoP dimer to form a compact structure.",
+            "11": "The tandem arrangement accounted for the strict requirement of a 4-bp spacer.",
+            "12": "The tandem arrangement accounted for the highly cooperative binding of the dimer.",
+            "13": "The PhoP-DNA interactions exclusively involved the effector domain.",
+            "14": "The sequence-recognition helix made contact with the bases of the 7-bp motif in the major groove.",
+            "15": "The wing interacted with the adjacent minor groove.",
+            "16": "The structure provides a starting point for the elucidation of the mechanism by which PhoP regulates the virulence of M. tuberculosis.",
+            "17": "The structure provides a starting point to guide the design of screening platforms for PhoP inhibitors."
+          }
+        },
+        "viewpoints": [
+          "Interactions between PhoP and the PHO box facilitate a compact arrangement of the PhoP_RECs and PhoP_DBDs.",
+          "The compact arrangement of PhoP_RECs and PhoP_DBDs restricts a 4-bp spacer between the two binding sites."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Notably, PhoP is capable of regulating multiple PHO promoters that consists of two or more PHO boxes, a similar characteristic to its homolog PhoB [20], [27], [29], [35], [42], [43].",
+        "references": {
+          "20": {
+            "1": "PhoB controls Vibrio cholerae phoBR expression by binding to Pho boxes.",
+            "2": "Pho boxes are located at -35 (box 1), -60 (box 2), and -80 (box 3) from the putative phoB translation start site.",
+            "3": "Pho box 1 is located on the sense strand of the phoBR regulatory region.",
+            "4": "Pho boxes 2 and 3 are located on the antisense strand of the phoBR regulatory region.",
+            "5": "PhoB binds to boxes 1, 2, and 3 with distinct affinities.",
+            "6": "Fusions of sequences with boxes 1, 2, and 3 upstream of the lacZ reporter activated transcription under inorganic phosphate (P(i)) limitation.",
+            "7": "Fusions of sequences with box 1 alone upstream of the lacZ reporter also activated transcription under P(i) limitation.",
+            "8": "Sequences carrying combinations other than boxes 1, 2, and 3 or 1 alone did not activate transcription under P(i) limitation.",
+            "9": "A fragment including only boxes 1 and 2 fused to lacZ did not induce expression by low P(i).",
+            "10": "PhoB~box2 exerts a repressive role over the transcriptional activity induced by PhoB~box1.",
+            "11": "LacZ expression levels from promoter fragments containing the three boxes or box 1 alone were similar.",
+            "12": "PhoB~box3 eliminated the repressive effect imposed by PhoB~box2 on phoBR transcription.",
+            "13": "The 234-bp promoter fragment carrying the three boxes is required for operon expression in Vibrio cholerae ΔphoBR cells.",
+            "14": "Complementation assays with a phoBR-containing plasmid demonstrated the necessity of the 234-bp promoter fragment for expression.",
+            "15": "The necessity of the 234-bp promoter fragment for operon expression was observed under P(i) abundance with phoBR expressed at a basal level.",
+            "16": "The necessity of the 234-bp promoter fragment was observed in low P(i) conditions when Pho regulon genes were fully expressed.",
+            "17": "Under P(i) limitation, PhoB exerts dual regulatory functions by binding sequentially distinct Pho boxes.",
+            "18": "PhoB binding to distinct Pho boxes enables fine-tuning and precise control of phoBR expression in V. cholerae cells."
+          },
+          "27": {
+            "1": "The two-component system PhoR-PhoP mediates the control of phosphate-regulated genes in Streptomyces coelicolor.",
+            "2": "The pstS promoter is very sensitive to phosphate regulation when coupled to the reporter xylE gene.",
+            "3": "The phoRP promoter is very sensitive to phosphate regulation when coupled to the reporter xylE gene.",
+            "4": "The phoU promoter is very sensitive to phosphate regulation when coupled to the reporter xylE gene.",
+            "5": "The transcription start points of the pstS promoter were identified by primer extension.",
+            "6": "The transcription start points of the phoRP promoter were identified by primer extension.",
+            "7": "The transcription start points of the phoU promoter were identified by primer extension.",
+            "8": "The phoRP promoter showed a leaderless transcript.",
+            "9": "The response-regulator PhoP protein was overexpressed in Escherichia coli as a GST-PhoP fused protein.",
+            "10": "The response-regulator PhoP protein was purified in Escherichia coli as a GST-PhoP fused protein.",
+            "11": "The DNA-binding domain of PhoP was obtained by overexpression and purification in Escherichia coli as a GST-PhoP fused protein.",
+            "12": "PhoP binds with high affinity to an upstream region of the pstS promoter close to the -35 sequence.",
+            "13": "PhoP binds with high affinity to an upstream region of the phoRP-phoU promoter close to the -35 sequence.",
+            "14": "The truncated DNA-binding domain of PhoP binds with high affinity to an upstream region of the pstS promoter close to the -35 sequence.",
+            "15": "The truncated DNA-binding domain of PhoP binds with high affinity to an upstream region of the phoRP-phoU promoter close to the -35 sequence.",
+            "16": "DNase I protection studies revealed a 29 base pair protected stretch in the sense strand of the pstS promoter.",
+            "17": "The 29 base pair protected stretch in the sense strand of the pstS promoter includes two 11 base pair direct repeat units.",
+            "18": "Footprinting of the bidirectional phoRP-phoU promoter region showed a 51 base pair protected sequence.",
+            "19": "The 51 base pair protected sequence in the phoRP-phoU promoter region encompasses four direct repeat units.",
+            "20": "Two of the four direct repeat units in the phoRP-phoU promoter region have high similarity to the protected sequences in the pstS promoter.",
+            "21": "PHO boxes have been identified by alignment of six direct repeat units found in the pstS and phoRP-phoU promoter regions.",
+            "22": "Each direct repeat unit adjusts to the consensus sequence G(G/T)TCAYYYR(G/C)G."
+          },
+          "29": {
+            "1": "The transport of inorganic phosphate is essential for the growth of all organisms.",
+            "2": "The metabolism of soil-dwelling Streptomyces species is strongly influenced by the availability of phosphate.",
+            "3": "The ability of soil-dwelling Streptomyces species to produce antibiotics is strongly influenced by the availability of phosphate.",
+            "4": "The ability of soil-dwelling Streptomyces species to produce other secondary metabolites is strongly influenced by the availability of phosphate.",
+            "5": "The transcriptional regulation of the SCO4138 gene of Streptomyces coelicolor was studied.",
+            "6": "The transcriptional regulation of the SCO1845 gene of Streptomyces coelicolor was studied.",
+            "7": "The SCO4138 gene encodes the putative low-affinity inorganic phosphate transporter PitH1.",
+            "8": "The SCO1845 gene encodes the putative low-affinity inorganic phosphate transporter PitH2.",
+            "9": "The expression of the SCO4138, SCO1845, and pstSCAB genes follows a sequential pattern in response to phosphate deprivation.",
+            "10": "The sequential pattern of expression in response to phosphate deprivation was shown by coupling the promoters of the genes to a luciferase reporter gene.",
+            "11": "The expression of the pitH2 gene is dependent upon the response regulator PhoP.",
+            "12": "The expression of the pap-pitH1 bicistronic transcript is not dependent upon the response regulator PhoP.",
+            "13": "PhoP binds to specific sequences consisting of direct repeats of 11 nucleotides in the promoter of the pitH2 gene.",
+            "14": "PhoP does not bind to the pap-pitH1 promoter.",
+            "15": "The pap-pitH1 promoter lacks direct repeats of 11 nucleotides required for PhoP recognition.",
+            "16": "The transcription start point of the pitH2 promoter was identified by primer extension analyses.",
+            "17": "The structure of the regulatory sequences in the PhoP-protected DNA region was established.",
+            "18": "The structure of the regulatory sequences in the PhoP-protected DNA region consists of four central direct repeats flanked by two other less conserved repeats.",
+            "19": "A model for PhoP regulation of the pitH2 promoter is proposed.",
+            "20": "The model is based on the four promoter DNA-PhoP complexes detected by electrophoretic mobility shift assays and footprinting studies."
+          },
+          "35": {
+            "1": "Tuberculosis has reemerged as a serious threat to human health.",
+            "2": "The increasing prevalence of drug-resistant strains of tuberculosis contributes to it being a serious threat to human health.",
+            "3": "The synergetic infection of tuberculosis with HIV contributes to it being a serious threat to human health.",
+            "4": "There is an urgent need for new and more efficient treatments for tuberculosis.",
+            "5": "The PhoP-PhoR two-component system of Mycobacterium tuberculosis plays an important role in the virulence of the pathogen.",
+            "6": "The PhoP-PhoR two-component system represents a potential drug target for treating tuberculosis.",
+            "7": "The mechanism of gene transcription regulation by response regulator PhoP was studied.",
+            "8": "A high-affinity DNA sequence for PhoP binding was identified.",
+            "9": "Systematic evolution of ligands by exponential enrichment was used to identify the high-affinity DNA sequence for PhoP binding.",
+            "10": "The identified high-affinity DNA sequence contains a direct repeat of two 7 bp motifs.",
+            "11": "The two 7 bp motifs in the sequence are separated by a 4 bp spacer.",
+            "12": "The sequence is represented as TCACAGC(N4)TCACAGC.",
+            "13": "The specificity of the direct-repeat sequence for PhoP binding was confirmed.",
+            "14": "Isothermal titration calorimetry was used to confirm the specificity of the direct-repeat sequence for PhoP binding.",
+            "15": "Electrophoretic mobility shift assays were used to confirm the specificity of the direct-repeat sequence for PhoP binding.",
+            "16": "PhoP binds to the direct repeat as a dimer.",
+            "17": "PhoP binds to the direct repeat in a highly cooperative manner.",
+            "18": "Many genes previously identified to be regulated by PhoP contain the direct-repeat motif in their promoter sequences.",
+            "19": "Synthetic DNA fragments at the putative promoter-binding sites bind PhoP with variable affinity.",
+            "20": "The variable affinity of PhoP binding is related to the number of mismatches in the 7 bp motifs.",
+            "21": "The variable affinity of PhoP binding is related to the positions of the mismatches in the 7 bp motifs.",
+            "22": "The variable affinity of PhoP binding is related to the spacer sequences.",
+            "23": "The variable affinity of PhoP binding is related to the flanking sequences.",
+            "24": "Phosphorylation of PhoP increases the affinity of DNA binding.",
+            "25": "Phosphorylation of PhoP does not change the specificity of DNA binding.",
+            "26": "The results confirm the direct-repeat sequence as the consensus motif for PhoP binding.",
+            "27": "The confirmation of the direct-repeat sequence as the consensus motif for PhoP binding paves the way for identification of PhoP directly regulated genes in different mycobacterial genomes."
+          },
+          "42": [],
+          "43": {
+            "1": "Three putative alkaline phosphatase genes, phoA, phoC, and phoD, were identified in the genome of Streptomyces coelicolor.",
+            "2": "The identification was based on homology with the amino acid sequence obtained from the PhoA protein of Streptomyces griseus.",
+            "3": "PhoA and PhoC correspond to broad-spectrum alkaline phosphatases.",
+            "4": "PhoD is similar to a Ca(2+)-dependent phospholipase D of Streptomyces chromofuscus.",
+            "5": "The phoA gene was efficiently expressed in R5 medium under phosphate-limited conditions.",
+            "6": "The phoD gene was efficiently expressed in R5 medium under phosphate-limited conditions.",
+            "7": "Studies using the xylE reporter gene showed that phoA and phoD genes were efficiently expressed under phosphate-limited conditions.",
+            "8": "The phoC gene was poorly transcribed in R5 medium under phosphate-limited conditions.",
+            "9": "Expression of phoA was PhoP-dependent.",
+            "10": "The phoA gene was not transcribed in the S. coelicolor DeltaphoP mutant.",
+            "11": "The phoA gene was strongly activated under low phosphate concentrations.",
+            "12": "Expression of phoD was PhoP-dependent.",
+            "13": "Expression of phoD was highly sensitive to phosphate availability.",
+            "14": "Expression of phoC was not PhoP-dependent.",
+            "15": "Electrophoretic mobility shift assays showed that PhoP binds to the phoA promoter.",
+            "16": "Electrophoretic mobility shift assays showed that PhoP binds to the phoD promoter.",
+            "17": "PhoP does not bind to the promoter of phoC.",
+            "18": "Footprinting studies with GST-PhoP revealed the presence of a PHO box (two direct 11 nt repeats) in the phoA promoter.",
+            "19": "Footprinting studies with GST-PhoP revealed the presence of two PHO boxes in the promoter of phoD.",
+            "20": "The transcription start points of phoA, phoC, and phoD promoters were identified by primer extension.",
+            "21": "The transcription start point of phoD coincides with the G of its translation start codon.",
+            "22": "The phoD gene is transcribed as a leaderless mRNA.",
+            "23": "The deduced -10 and -35 regions of phoD overlapped with the PHO boxes in the phoD promoter.",
+            "24": "The deduced -10 and -35 regions of phoA did not overlap with the PHO boxes in the phoA promoter.",
+            "25": "An excess of PhoP interferes with the binding of RNA polymerase to the phoD promoter.",
+            "26": "The three promoters, phoA, phoC, and phoD, showed clear differences in the modulation of their expression by PhoP."
+          }
+        },
+        "viewpoints": [
+          "PhoP is capable of regulating multiple PHO promoters that consist of two or more PHO boxes.",
+          "PhoP's ability to regulate multiple PHO promoters is similar to its homolog PhoB."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "The molecular details on how these PhoP-like OmpR/PhoB family regulators efficiently control such complex promoters remain to be elucidated.",
+        "references": {},
+        "viewpoints": [
+          "The molecular details of how PhoP-like OmpR/PhoB family regulators efficiently control complex promoters remain to be elucidated."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Fig. 1: The overall structures of Mtb PhoP-TAC.",
+        "references": {},
+        "viewpoints": [
+          "The sentence Fig. 1: The overall structures of Mtb PhoP-TAC contains no extractable viewpoint as it simply refers to a figure."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "a DNA scaffold used in structure determination of Mtb 2PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 2PhoP-TAC (bottom panel).",
+        "references": {},
+        "viewpoints": [
+          "The sentence a DNA scaffold used in structure determination of Mtb 2PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 2PhoP-TAC (bottom panel) contains no extractable viewpoint as it simply refers to a figure."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "b DNA scaffold used in structure determination of Mtb 4PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 4PhoP-TAC (bottom panel).",
+        "references": {},
+        "viewpoints": [
+          "The sentence b DNA scaffold used in structure determination of Mtb 4PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 4PhoP-TAC (bottom panel) contains no extractable viewpoint as it simply refers to a figure."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "c DNA scaffold used in structure determination of Mtb 6PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 6PhoP-TAC (bottom panel).",
+        "references": {},
+        "viewpoints": [
+          "The sentence c DNA scaffold used in structure determination of Mtb 6PhoP-TAC (top panel) and two views of the cryo-EM density map of Mtb 6PhoP-TAC (bottom panel) contains no extractable viewpoint as it simply refers to a figure."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "According to the structures, the PhoP binding box, −35 element, -10 element is boxed with yellow, violet, and brown colors, respectively.",
+        "references": {},
+        "viewpoints": [
+          "The sentence According to the structures, the PhoP binding box, −35 element, -10 element is boxed with yellow, violet, and brown colors, respectively contains no extractable viewpoint as it describes color coding in a figure."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "a1 site, b1 site, a2 site, b2 site, a3 site and b3 site of the PhoP binding box are shaded with light orange, dark cyan, brown, cyan, purple, and dark green, respectively.",
+        "references": {},
+        "viewpoints": [
+          "The sentence a1 site, b1 site, a2 site, b2 site, a3 site and b3 site of the PhoP binding box are shaded with light orange, dark cyan, brown, cyan, purple, and dark green, respectively contains no extractable viewpoint as it describes color coding in a figure."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "The EM density maps are colored as indicated in the color key.",
+        "references": {},
+        "viewpoints": [
+          "The sentence The EM density maps are colored as indicated in the color key contains no extractable viewpoint as it refers to figure details."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "NT, non-template-strand promoter DNA; T, template-strand promoter DNA.",
+        "references": {},
+        "viewpoints": [
+          "NT refers to non-template-strand promoter DNA.",
+          "T refers to template-strand promoter DNA."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Full size image",
+        "references": {},
+        "viewpoints": [
+          "The sentence Full size image contains no extractable viewpoint as it refers to figure details."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Here, we determine three cryo-EM structures of the PhoP-dependent transcription activation complexes (2PhoP-TAC, 4PhoP-TAC, 6PhoP-TAC) consisting of Mtb RNA polymerase (RNAP), Mtb PhoP, and the well-characterized consensus promoters including various numbers of PHO boxes, respectively.",
+        "references": {},
+        "viewpoints": [
+          "Three cryo-EM structures of PhoP-dependent transcription activation complexes (2PhoP-TAC, 4PhoP-TAC, 6PhoP-TAC) were determined.",
+          "PhoP-dependent transcription activation complexes consist of Mtb RNA polymerase (RNAP), Mtb PhoP, and consensus promoters.",
+          "The PhoP-dependent transcription activation complexes include various numbers of PHO boxes."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "Structural comparisons of PhoP-TACs and the obtained Mtb RPo demonstrate that PhoP specifically recognizes promoter PHO boxes as either dimer or distinct tandem dimers (tetramer/hexamer).",
+        "references": {},
+        "viewpoints": [
+          "Structural comparisons show that PhoP specifically recognizes promoter PHO boxes as a dimer.",
+          "Structural comparisons show that PhoP specifically recognizes promoter PHO boxes as distinct tandem dimers (tetramer/hexamer)."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "These downstream PhoP-DNA interactions displace the canonical interactions between the -35 element and σ A R4 of Mtb RNAP.",
+        "references": {},
+        "viewpoints": [
+          "Downstream PhoP-DNA interactions displace the canonical interactions between the -35 element and σ A R4 of Mtb RNAP."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "Additionally, PhoP engages in substantial protein-protein interactions with the conserved domains (β flap and σ A R4) of RNAP.",
+        "references": {},
+        "viewpoints": [
+          "PhoP engages in substantial protein-protein interactions with the β flap of RNAP.",
+          "PhoP engages in substantial protein-protein interactions with σ A R4 of RNAP."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "These indicate PhoP functions through diverse and complex transcription activation mechanisms.",
+        "references": {},
+        "viewpoints": [
+          "PhoP functions through diverse and complex transcription activation mechanisms."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "Based on the prior competitive identification of PhoP on the PhoP-GlnR cross-talked nitrogen assimilation promoter, the DNA binding characteristics of PhoP, and the cryo-EM map of PhoP-TRC obtained, we were able to build one preliminary cryo-EM structural model for the PhoP-dependent transcription repression complex (PhoP-TRC), which comprises Mtb RNAP, PhoP, GlnR, and their cross-talked nitrogen assimilation promoter DNA.",
+        "references": {},
+        "viewpoints": [
+          "Prior competitive identification of PhoP on the PhoP-GlnR cross-talked nitrogen assimilation promoter aided in building a preliminary cryo-EM structural model for PhoP-dependent transcription repression complex (PhoP-TRC).",
+          "The DNA binding characteristics of PhoP aided in building a preliminary cryo-EM structural model for PhoP-dependent transcription repression complex (PhoP-TRC).",
+          "The cryo-EM map of PhoP-TRC obtained aided in building a preliminary cryo-EM structural model for PhoP-TRC.",
+          "PhoP-dependent transcription repression complex (PhoP-TRC) comprises Mtb RNAP, PhoP, GlnR, and their cross-talked nitrogen assimilation promoter DNA."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "Notably, PhoP is restrained in a unique repression mode within PhoP-TRC: competitive binding of the PhoP dimer to the upstream PHO box significantly distorts the DNA double-strands at the following spacer.",
+        "references": {},
+        "viewpoints": [
+          "PhoP is restrained in a unique repression mode within PhoP-TRC.",
+          "Competitive binding of the PhoP dimer to the upstream PHO box significantly distorts the DNA double-strands at the following spacer."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "This distortion creates substantial steric hinderances to impede the binding of a third GlnR dimer, thereby repressing GlnR-dependent transcription activation.",
+        "references": {},
+        "viewpoints": [
+          "The distortion caused by PhoP binding creates substantial steric hinderances.",
+          "Steric hinderances impede the binding of a third GlnR dimer.",
+          "Impeded binding of GlnR dimer represses GlnR-dependent transcription activation."
+        ]
+      },
+      {
+        "idx": 44,
+        "sentence": "Collectively, these structural and biochemical data shed new light on the dual molecular mechanisms underlying PhoP-dependent transcription regulation, and provide valuable insights for exploring the PhoP-like OmpR/PhoB family transcription regulators and target development.",
+        "references": {},
+        "viewpoints": [
+          "The structural and biochemical data shed light on the dual molecular mechanisms underlying PhoP-dependent transcription regulation.",
+          "The data provide valuable insights for exploring the PhoP-like OmpR/PhoB family transcription regulators.",
+          "The data provide valuable insights for target development."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56697-x_with_abstracts",
+    "base_id": "s41467-025-56697-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56697-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

@@ -1,0 +1,773 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "In recent years, the rapid growth of artificial intelligence (AI) and machine learning (ML) has resulted in increasingly complex and large models in pursuit of higher accuracy and range of use cases [1] . The substantial growth rate of model computation exceeds efficiency gains realized through Moore and Dennard technology scaling [2] , indicating a looming limit to continued advancements with existing techniques. This issue is compounded by the open challenges of adapting such methods for resource-constrained edge devices (tinyML) in order to enable pervasive and decentralized intelligence through the Internet of Things (IoT) [3] . As such, the urgency for exploring new resource-efficient and scalable computing architectures has intensified. Neuromorphic computing has emerged as a promising area in addressing these challenges, aiming to unlock key hallmarks of biological intelligence by porting primitives and computational strategies employed in the brain into engineered computing devices and algorithms [4] , [5] , [6] . Neuromorphic systems hold a critical position in the investigation of novel architectures, as the brain exemplifies an exceptional model for accomplishing scalable, energy-efficient, and real-time embodied computation. Initially, the term “neuromorphic” referred specifically to approaches that aimed to emulate the biophysics of the brain by leveraging physical properties of silicon, as proposed by Mead in the 1980’s [7] . However, the field of neuromorphic computing research has since grown to encompass a wide range of brain-inspired computing techniques at the algorithmic, hardware, and system levels [4] . While the range of approaches is diverse, neuromorphic computing research generally utilizes mechanisms emulating or simulating biophysical properties more closely than conventional methods, aiming to reproduce high-level performance and efficiency characteristics of biological neural systems. Neuromorphic algorithms [8] encompass neuroscience-inspired methods which strive towards goals of expanded learning capabilities, such as predictive intelligence, data efficiency, and adaptation, and include approaches such as spiking neural networks (SNNs) and primitives of neuron dynamics, plastic synapses, and heterogeneous network architectures. Algorithm exploration often makes use of simulated execution on readily-available conventional hardware such as CPUs and GPUs, with the goal of driving design requirements for next-generation neuromorphic hardware. Neuromorphic systems [9] are composed of algorithms deployed to hardware, which seek greater energy efficiency, real-time processing capabilities, and resilience compared to conventional systems. Neuromorphic hardware utilizes a variety of biologically-inspired hardware approaches, including analog neuron emulation, event-based computation, non-von-Neumann architectures, and in-memory processing. Neuromorphic systems target a wide range of applications, from neuroscientific exploration, to low-power edge intelligence and datacenter-scale acceleration. Despite its promises, progress in the field of neuromorphic research is impeded due to the absence of fair and widely-adopted objective metrics and benchmarks [8] , [10] . Without such benchmarks, the validity of neuromorphic solutions cannot be directly quantified, hindering the research community from measuring technological advancement. Standard and rigorous benchmarking is necessary for the neuromorphic community to objectively assess and compare the achievements of novel approaches, and make evidence-based decisions on which directions show promise for achieving breakthrough efficiency, speed, and intelligence, thereby helping to focus research and commercialization efforts on techniques that concretely improve on prior work and conventional computing. Neuromorphic benchmarks have been previously proposed for classical vision [11] , [12] and audition tasks [13] , open-loop [14] and closed-loop [15] tasks, and for SNN simulator performance assessment [16] . While prior works have made valuable contributions, there are opportunities to further advance the field by addressing three outstanding challenges: Lack of a formal definition – The variety of approaches to exploring brain-inspired principles creates difficulties in defining a set of criteria for what should be benchmarked as a “neuromorphic” solution. Closed definitions can impose narrow assumptions and thus risk unfairly excluding promising methods. This challenge necessitates inclusive benchmarks that can be applied generally across the spectrum of potential approaches, allowing for flexible implementation while focusing on task capabilities and metrics of interest such as temporal processing and efficiency. Furthermore, the benchmarks should ideally allow for direct comparison of neuromorphic and conventional approaches. Implementation diversity – A wide array of different frameworks targeting different goals, such as neuroscientific exploration [17] and automatic SNN training [18] , are used in neuromorphic research. This diversity, which has been instrumental in exploring the landscape of bio-inspired techniques following different methodologies and abstraction levels, comes at the cost of portability and standardization, which in turn limits the ease of benchmark implementation. Benchmarks require common infrastructure that unites tooling to enable actionable implementation and comparison of new methods. Rapid research evolution – Neuromorphic approaches are continually and rapidly evolving as part of an emerging field. As the research community continues to make technological progress, so too should benchmark suites and methodology expand to foster inclusion and capture salient performance metrics. An iterative benchmark framework with structured versioning will facilitate productive foundational and evolving performance evaluation. To tackle these challenges, this article presents NeuroBench, a dual-track, multi-task benchmark framework. NeuroBench addresses the existing neuromorphic benchmark challenges by advancing prior work in three distinct ways. Firstly, the benchmark framework reduces assumptions regarding the specific solution being assessed, encouraging inclusive participation of neuromorphic and non-neuromorphic approaches by utilizing general, task-level benchmarking and hierarchical metric definitions which capture key performance indicators of interest. Secondly, the NeuroBench benchmarks are associated with a common open-source benchmark harness tool which facilitates actionable benchmark implementation and offers structure for further expansion to neuromorphic algorithm frameworks and systems. Finally, NeuroBench establishes an iterative, community-driven initiative designed to evolve over time to ensure representation and relevance to neuromorphic research, analogous to the well-established MLPerf benchmark framework for machine learning [19] , [20] . As a whole, NeuroBench intends to align the neuromorphic research community on standard benchmarking, providing a dynamically evolving platform to ensure ongoing relevance and facilitate advancements through workshops, competitions, and a centralized leaderboard. As Fig. 1 shows, the NeuroBench framework involves two tracks to enable agile algorithm and system development. As an emerging technology, neuromorphic hardware has not converged to a single platform which is commercially available, thus a large fraction of neuromorphic research explores algorithmic advancement on conventional systems which may not be optimal for performance. Thus, NeuroBench consists of an algorithm track for hardware-independent evaluation and a system track for fully deployed solutions. The algorithm track defines four novel benchmarks for neuromorphic methods across diverse domains, namely few-shot continual learning, computer vision, motor cortical decoding, and chaotic forecasting, and utilizes complexity metrics to analyze solution costs. Such hardware-independent benchmarking enables algorithmic exploration and prototyping, especially when simulating algorithm execution on non-neuromorphic platforms. Meanwhile, the system track defines standard protocols to measure the real-world speed and efficiency of neuromorphic hardware on benchmarks ranging from standard machine learning tasks to promising fields for neuromorphic systems, such as optimization. Up-to-date information on the latest benchmarks and official results can be found on the NeuroBench website ( https://neurobench.ai/ ). Fig. 1: The two NeuroBench tracks: algorithms and systems. Grey boxes designate what is defined by the benchmark, and orange boxes indicate what is unique to each solution. Connecting arrows between the two tracks denote the co-innovation between the tracks and the cross-stack innovation enabled by this approach. Between algorithm and system solutions, best-performing results from each track can motivate future solutions to the other. In addition, system metrics and results can inform hardware-independent algorithmic complexity metrics. Full size image Each NeuroBench track includes defined datasets, metric and measurement methodology, and modular evaluation components to enable flexible development. Promising methods identified from the algorithm track will inform system design by highlighting target algorithms for optimization and relevant system workloads for benchmarking. The system track in turn enables optimization and evaluation of performant implementations, providing feedback to refine algorithmic complexity modeling and analysis. The interplay between the tracks creates a virtuous cycle: algorithm innovations guide system implementation, while system-level insights accelerate further algorithmic progress. This approach allows NeuroBench to advance neuromorphic algorithm-system co-design. Both the algorithm and system track will be extended and co-developed as NeuroBench continues to expand. In the next few sections, we describe the algorithm track, including general complexity metric definitions, benchmark tasks, and common infrastructure tooling. We apply the framework to report baseline results for each algorithm benchmark, which outline unexplored research opportunities in optimizing algorithmic architectures and training of sparse, stateful models to achieve greater performance and resource efficiency. Then, we show baseline results established in the system track to assess neuromorphic performance across promising application workloads. By outlining both tracks, we provide a roadmap towards standardizing benchmark procedures in both hardware-independent and hardware dependent settings.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "In recent years, the rapid growth of artificial intelligence (AI) and machine learning (ML) has resulted in increasingly complex and large models in pursuit of higher accuracy and range of use cases [1].",
+        "references": {
+          "1": []
+        },
+        "viewpoints": [
+          "The rapid growth of artificial intelligence and machine learning in recent years has led to models that are increasingly complex and large.",
+          "The increasing complexity and size of AI and ML models aim to achieve higher accuracy and a broader range of use cases."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "The substantial growth rate of model computation exceeds efficiency gains realized through Moore and Dennard technology scaling [2], indicating a looming limit to continued advancements with existing techniques.",
+        "references": {
+          "2": []
+        },
+        "viewpoints": [
+          "The growth rate of model computation in AI and ML exceeds the efficiency gains achieved by Moore and Dennard technology scaling.",
+          "There is an impending limit to continued advancements in AI and ML using existing computational techniques due to the imbalance between model computation growth and efficiency gains."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "This issue is compounded by the open challenges of adapting such methods for resource-constrained edge devices (tinyML) in order to enable pervasive and decentralized intelligence through the Internet of Things (IoT) [3].",
+        "references": {
+          "3": []
+        },
+        "viewpoints": [
+          "Adapting resource-intensive AI and ML methods to resource-constrained edge devices, known as tinyML, presents challenges.",
+          "The challenges of adapting methods to tinyML are important for enabling pervasive and decentralized intelligence through the Internet of Things."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "As such, the urgency for exploring new resource-efficient and scalable computing architectures has intensified.",
+        "references": {},
+        "viewpoints": [
+          "There is an intensified urgency to explore new resource-efficient and scalable computing architectures."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Neuromorphic computing has emerged as a promising area in addressing these challenges, aiming to unlock key hallmarks of biological intelligence by porting primitives and computational strategies employed in the brain into engineered computing devices and algorithms [4], [5], [6].",
+        "references": {
+          "4": [],
+          "5": [],
+          "6": {
+            "1": "Neuromorphic engineering encompasses a diverse range of approaches to information processing inspired by neurobiological systems.",
+            "2": "Neuromorphic systems are distinguished from conventional computing systems by being inspired by neurobiological systems.",
+            "3": "The brain has evolved over billions of years to solve difficult engineering problems.",
+            "4": "The brain solves engineering problems by using efficient, parallel, low-power computation.",
+            "5": "The goal of neuromorphic engineering is to design systems capable of brain-like computation.",
+            "6": "Numerous large-scale neuromorphic projects have emerged recently.",
+            "7": "The interdisciplinary field of neuromorphic engineering was listed among the top 10 technology breakthroughs of 2014 by the MIT Technology Review.",
+            "8": "The interdisciplinary field of neuromorphic engineering was listed among the top 10 emerging technologies of 2015 by the World Economic Forum.",
+            "9": "Neuromorphic engineering has a scientific goal to understand the computational properties of biological neural systems by using models implemented in integrated circuits.",
+            "10": "Neuromorphic engineering has an engineering goal to exploit the known properties of biological systems to design and implement efficient devices for engineering applications.",
+            "11": "Building hardware neural emulators can be extremely useful for simulating large-scale neural models.",
+            "12": "Simulating large-scale neural models can help explain how intelligent behavior arises in the brain.",
+            "13": "Neuromorphic emulators are highly energy efficient.",
+            "14": "Neuromorphic emulators are parallel and distributed.",
+            "15": "Neuromorphic emulators require a small silicon area.",
+            "16": "Compared to conventional CPUs, neuromorphic emulators are beneficial in many engineering applications.",
+            "17": "Neuromorphic emulators are beneficial for the porting of deep learning algorithms for various recognition tasks.",
+            "18": "The review article describes some of the most significant neuromorphic spiking emulators.",
+            "19": "The review article compares the different architectures and approaches used by neuromorphic spiking emulators.",
+            "20": "The review article illustrates the advantages and drawbacks of neuromorphic spiking emulators.",
+            "21": "The review article highlights the capabilities that each neuromorphic spiking emulator can deliver to neural modelers.",
+            "22": "The article focuses on the discussion of large-scale emulators.",
+            "23": "The article is a continuation of a previous review of various neural and synapse circuits.",
+            "24": "The article explores applications where neuromorphic emulators have been used.",
+            "25": "The article discusses some promising future applications of neuromorphic emulators."
+          }
+        },
+        "viewpoints": [
+          "Neuromorphic computing has emerged as a promising area for addressing the challenges of resource-efficient and scalable computing.",
+          "Neuromorphic computing aims to unlock key hallmarks of biological intelligence.",
+          "Neuromorphic computing seeks to achieve its goals by adapting brain primitives and computational strategies into engineered computing devices and algorithms."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Neuromorphic systems hold a critical position in the investigation of novel architectures, as the brain exemplifies an exceptional model for accomplishing scalable, energy-efficient, and real-time embodied computation.",
+        "references": {},
+        "viewpoints": [
+          "Neuromorphic systems are critically important in investigating novel computing architectures.",
+          "The brain serves as an exceptional model for achieving scalable, energy-efficient, and real-time embodied computation."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Initially, the term “neuromorphic” referred specifically to approaches that aimed to emulate the biophysics of the brain by leveraging physical properties of silicon, as proposed by Mead in the 1980’s [7].",
+        "references": {
+          "7": {
+            "1": "Biological information-processing systems operate on principles completely different from those familiar to most engineers.",
+            "2": "Biological solutions are many orders of magnitude more effective than digital methods for problems where the input data are ill-conditioned.",
+            "3": "Biological solutions are many orders of magnitude more effective than digital methods for problems where the computation can be specified in a relative manner.",
+            "4": "The advantage of biological information-processing systems is attributed to the use of elementary physical phenomena as computational primitives.",
+            "5": "The advantage of biological information-processing systems is attributed to the representation of information by the relative values of analog signals rather than by the absolute values of digital signals.",
+            "6": "Adaptive techniques are required in the approach of using biological information-processing systems to mitigate the effects of component differences.",
+            "7": "Adaptation in biological information-processing systems leads naturally to systems that learn about their environment.",
+            "8": "Large-scale adaptive analog systems are more robust to component degradation and failure than more conventional systems.",
+            "9": "Large-scale adaptive analog systems use far less power than more conventional systems.",
+            "10": "Adaptive analog technology can be expected to utilize the full potential of wafer-scale silicon fabrication due to its robustness and low power usage."
+          }
+        },
+        "viewpoints": [
+          "The initial definition of \"neuromorphic\" referred to approaches that aimed to emulate the biophysics of the brain.",
+          "These approaches used the physical properties of silicon to emulate brain biophysics, as proposed by Mead in the 1980s."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "However, the field of neuromorphic computing research has since grown to encompass a wide range of brain-inspired computing techniques at the algorithmic, hardware, and system levels [4].",
+        "references": {
+          "4": []
+        },
+        "viewpoints": [
+          "The field of neuromorphic computing research has expanded to include a wide range of brain-inspired computing techniques.",
+          "Brain-inspired computing techniques in neuromorphic research exist at the algorithmic, hardware, and system levels."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "While the range of approaches is diverse, neuromorphic computing research generally utilizes mechanisms emulating or simulating biophysical properties more closely than conventional methods, aiming to reproduce high-level performance and efficiency characteristics of biological neural systems.",
+        "references": {},
+        "viewpoints": [
+          "Neuromorphic computing research uses diverse approaches to emulate or simulate biophysical properties more closely than conventional methods.",
+          "The goal of these approaches is to reproduce high-level performance and efficiency characteristics of biological neural systems."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Neuromorphic algorithms [8] encompass neuroscience-inspired methods which strive towards goals of expanded learning capabilities, such as predictive intelligence, data efficiency, and adaptation, and include approaches such as spiking neural networks (SNNs) and primitives of neuron dynamics, plastic synapses, and heterogeneous network architectures.",
+        "references": {
+          "8": {
+            "1": "Neuromorphic computing technologies will be important for the future of computing.",
+            "2": "Much of the work in neuromorphic computing has focused on hardware development.",
+            "3": "Recent results in neuromorphic computing algorithms and applications are reviewed.",
+            "4": "Characteristics of neuromorphic computing technologies that make them attractive for the future of computing are highlighted.",
+            "5": "Opportunities for future development of algorithms and applications on neuromorphic computing systems are discussed."
+          }
+        },
+        "viewpoints": [
+          "Neuromorphic algorithms encompass neuroscience-inspired methods.",
+          "Neuromorphic algorithms strive towards expanded learning capabilities such as predictive intelligence, data efficiency, and adaptation.",
+          "Neuromorphic algorithms include spiking neural networks (SNNs) and primitives of neuron dynamics, plastic synapses, and heterogeneous network architectures."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Algorithm exploration often makes use of simulated execution on readily-available conventional hardware such as CPUs and GPUs, with the goal of driving design requirements for next-generation neuromorphic hardware.",
+        "references": {},
+        "viewpoints": [
+          "Algorithm exploration in neuromorphic research often simulates execution on conventional hardware like CPUs and GPUs.",
+          "The aim of using conventional hardware is to drive design requirements for next-generation neuromorphic hardware."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Neuromorphic systems [9] are composed of algorithms deployed to hardware, which seek greater energy efficiency, real-time processing capabilities, and resilience compared to conventional systems.",
+        "references": {
+          "9": {
+            "1": "Moore's law has driven exponential computing power expectations.",
+            "2": "The nearing end of Moore's law calls for new avenues for improving overall system performance.",
+            "3": "Alternative brain-inspired computing architectures aim at achieving the flexibility of biological neural processing systems.",
+            "4": "Alternative brain-inspired computing architectures aim at achieving the computational efficiency of biological neural processing systems.",
+            "5": "Neuromorphic engineering represents a paradigm shift in computing.",
+            "6": "Neuromorphic engineering is based on the implementation of spiking neural network architectures.",
+            "7": "In spiking neural network architectures, processing and memory are tightly co-located.",
+            "8": "The paper provides a comprehensive overview of neuromorphic engineering.",
+            "9": "The paper highlights different levels of granularity at which the paradigm shift in neuromorphic engineering is realized.",
+            "10": "The paper compares design approaches that focus on replicating natural intelligence (bottom-up).",
+            "11": "The paper compares design approaches that aim at solving practical artificial intelligence applications (top-down).",
+            "12": "The paper presents analog, mixed-signal, and digital circuit design styles.",
+            "13": "The paper identifies the boundary between processing and memory through time multiplexing.",
+            "14": "The paper identifies the boundary between processing and memory through in-memory computation.",
+            "15": "The paper identifies the boundary between processing and memory through novel devices.",
+            "16": "The paper highlights the key trade-offs for the bottom-up design approach.",
+            "17": "The paper highlights the key trade-offs for the top-down design approach.",
+            "18": "The paper surveys the silicon implementations of the bottom-up design approach.",
+            "19": "The paper surveys the silicon implementations of the top-down design approach.",
+            "20": "The paper carries out detailed comparative analyses to extract design guidelines.",
+            "21": "The paper identifies necessary synergies for neuromorphic systems to achieve a competitive advantage over conventional machine-learning accelerators in edge computing applications.",
+            "22": "The paper identifies missing elements required for neuromorphic systems to achieve a competitive advantage over conventional machine-learning accelerators in edge computing applications.",
+            "23": "The paper outlines the key ingredients for a framework toward neuromorphic intelligence."
+          }
+        },
+        "viewpoints": [
+          "Neuromorphic systems consist of algorithms deployed on hardware.",
+          "These systems seek greater energy efficiency, real-time processing capabilities, and resilience compared to conventional systems."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Neuromorphic hardware utilizes a variety of biologically-inspired hardware approaches, including analog neuron emulation, event-based computation, non-von-Neumann architectures, and in-memory processing.",
+        "references": {},
+        "viewpoints": [
+          "Neuromorphic hardware uses biologically-inspired hardware approaches.",
+          "These approaches include analog neuron emulation, event-based computation, non-von-Neumann architectures, and in-memory processing."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Neuromorphic systems target a wide range of applications, from neuroscientific exploration, to low-power edge intelligence and datacenter-scale acceleration.",
+        "references": {},
+        "viewpoints": [
+          "Neuromorphic systems target a wide range of applications.",
+          "Applications for neuromorphic systems include neuroscientific exploration, low-power edge intelligence, and datacenter-scale acceleration."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Despite its promises, progress in the field of neuromorphic research is impeded due to the absence of fair and widely-adopted objective metrics and benchmarks [8], [10].",
+        "references": {
+          "8": {
+            "1": "Neuromorphic computing technologies will be important for the future of computing.",
+            "2": "Much of the work in neuromorphic computing has focused on hardware development.",
+            "3": "Recent results in neuromorphic computing algorithms and applications are reviewed.",
+            "4": "Characteristics of neuromorphic computing technologies that make them attractive for the future of computing are highlighted.",
+            "5": "Opportunities for future development of algorithms and applications on neuromorphic computing systems are discussed."
+          },
+          "10": []
+        },
+        "viewpoints": [
+          "Progress in neuromorphic research is impeded despite its promises.",
+          "The absence of fair and widely-adopted objective metrics and benchmarks impedes progress in neuromorphic research."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Without such benchmarks, the validity of neuromorphic solutions cannot be directly quantified, hindering the research community from measuring technological advancement.",
+        "references": {},
+        "viewpoints": [
+          "Without benchmarks, the validity of neuromorphic solutions cannot be directly quantified.",
+          "The absence of benchmarks hinders the research community from measuring technological advancement in neuromorphic research."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Standard and rigorous benchmarking is necessary for the neuromorphic community to objectively assess and compare the achievements of novel approaches, and make evidence-based decisions on which directions show promise for achieving breakthrough efficiency, speed, and intelligence, thereby helping to focus research and commercialization efforts on techniques that concretely improve on prior work and conventional computing.",
+        "references": {},
+        "viewpoints": [
+          "Standard and rigorous benchmarking is necessary for the neuromorphic community to objectively assess and compare novel approaches.",
+          "Standard and rigorous benchmarking helps make evidence-based decisions on promising directions for achieving breakthrough efficiency, speed, and intelligence.",
+          "Benchmarking efforts focus research and commercialization on techniques that improve prior work and conventional computing."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Neuromorphic benchmarks have been previously proposed for classical vision [11], [12] and audition tasks [13], open-loop [14] and closed-loop [15] tasks, and for SNN simulator performance assessment [16].",
+        "references": {
+          "11": {
+            "1": "Creating datasets for Neuromorphic Vision is challenging.",
+            "2": "There is a lack of available recordings from Neuromorphic Vision sensors.",
+            "3": "Data for Neuromorphic Vision datasets must typically be recorded specifically for dataset creation.",
+            "4": "Data for Neuromorphic Vision cannot typically be collected and labeled from existing data.",
+            "5": "The task of creating Neuromorphic Vision datasets is complicated by the desire to provide traditional frame-based recordings.",
+            "6": "Providing traditional frame-based recordings allows for direct comparison with traditional Computer Vision algorithms.",
+            "7": "A method is proposed for converting existing Computer Vision static image datasets into Neuromorphic Vision datasets.",
+            "8": "The method uses an actuated pan-tilt camera platform.",
+            "9": "Moving the sensor rather than the scene or image is a more biologically realistic approach to sensing.",
+            "10": "Moving the sensor rather than the scene or image eliminates timing artifacts introduced by monitor updates when simulating motion on a computer monitor.",
+            "11": "The conversion of MNIST and Caltech101 datasets to Neuromorphic Vision datasets is presented.",
+            "12": "MNIST and Caltech101 datasets have played important roles in the development of Computer Vision.",
+            "13": "Performance metrics on MNIST and Caltech101 datasets are provided using spike-based recognition algorithms.",
+            "14": "This work contributes datasets for future use in the field of Neuromorphic Vision.",
+            "15": "This work contributes results from spike-based algorithms against which future works can compare.",
+            "16": "Converting datasets already popular in Computer Vision enables more direct comparison with frame-based approaches."
+          },
+          "12": [],
+          "13": {
+            "1": "Spiking neural networks are the basis of versatile information processing in the brain.",
+            "2": "Spiking neural networks are the basis of power-efficient information processing in the brain.",
+            "3": "There is currently a lack of detailed understanding of how spiking neural networks compute.",
+            "4": "Recently developed optimization techniques enable the instantiation of increasingly complex functional spiking neural networks in-silico.",
+            "5": "Optimization techniques for spiking neural networks hold the promise to build more efficient non-von-Neumann computing hardware.",
+            "6": "Optimization techniques for spiking neural networks will offer new vistas in the quest of unraveling brain circuit function.",
+            "7": "Objective ways to compare the performance of optimization methods for spiking neural networks are indispensable to their development.",
+            "8": "There are no widely accepted means for comparing the computational performance of spiking neural networks at present.",
+            "9": "Two spike-based classification data sets have been introduced to benchmark software implementations of spiking neural networks.",
+            "10": "Two spike-based classification data sets have been introduced to benchmark neuromorphic hardware implementations of spiking neural networks.",
+            "11": "A general audio-to-spiking conversion procedure inspired by neurophysiology was developed to create the spike-based classification data sets.",
+            "12": "The audio-to-spiking conversion procedure was applied to an existing speech data set.",
+            "13": "The audio-to-spiking conversion procedure was applied to a novel speech data set.",
+            "14": "The novel speech data set is the free, high-fidelity, and word-level aligned Heidelberg digit data set.",
+            "15": "The Heidelberg digit data set was created specifically for this study.",
+            "16": "Leveraging spike timing information within the classification data sets is essential for good classification accuracy.",
+            "17": "A range of conventional and spiking classifiers were trained to demonstrate the importance of spike timing information for classification accuracy.",
+            "18": "These results serve as the first reference for future performance comparisons of spiking neural networks."
+          },
+          "14": {
+            "1": "A platform overarching benchmark suite for neuromorphic hardware is proposed.",
+            "2": "The proposed benchmark suite for neuromorphic hardware is discussed.",
+            "3": "The benchmark suite covers benchmarks from low-level characterization to high-level application evaluation.",
+            "4": "Benchmark specific metrics are used in the benchmark suite for neuromorphic hardware.",
+            "5": "The benchmark suite allows for comparison of various hardware systems with a broad approach.",
+            "6": "Mixed-signal and fully digital neuromorphic architectures are included in the comparison of hardware systems.",
+            "7": "Selected benchmarks are discussed within the proposed benchmark suite.",
+            "8": "Results for several target platforms are presented.",
+            "9": "Revealing characteristic differences between various systems is an outcome of the presented results for several target platforms.",
+            "10": "A proposed energy model allows benchmark performance metrics to be combined with energy efficiency.",
+            "11": "The proposed energy model enables prediction of the energy expenditure of a network on a target system.",
+            "12": "The prediction of energy expenditure can be done without actually having access to the target system.",
+            "13": "The energy model is used to estimate the energy required for a full brain simulation.",
+            "14": "The estimation provided by the energy model helps quantify the efficiency gap between neuromorphic systems and the human brain.",
+            "15": "Current neuromorphic systems are at least four orders of magnitude less efficient than the human brain.",
+            "16": "It is argued that two to three orders of magnitude in efficiency differences would remain even with a modern fabrication process for neuromorphic systems.",
+            "17": "For selected benchmarks, the performance and efficiency of the neuromorphic solution is compared to standard approaches."
+          },
+          "15": {
+            "1": "Neuromorphic engineering aims to build autonomous systems.",
+            "2": "Neuromorphic engineering aims to mimic biological systems.",
+            "3": "Biological organisms excel in sensing their environment.",
+            "4": "Biological organisms react promptly to perils and opportunities.",
+            "5": "Biological organisms range from algae to primates.",
+            "6": "Biological organisms are more resilient than advanced machines in sensing and reacting to their environment.",
+            "7": "Biological organisms consume a fraction of the power compared to advanced machines when sensing and reacting to their environment.",
+            "8": "The performance of neuromorphic systems should be evaluated in terms of real-time operation.",
+            "9": "The performance of neuromorphic systems should be evaluated in terms of power consumption.",
+            "10": "The performance of neuromorphic systems should be evaluated in terms of resiliency to real-world perturbations and noise.",
+            "11": "Task-relevant evaluation metrics should be used to evaluate neuromorphic systems.",
+            "12": "Most neuromorphic benchmarks rely on recorded datasets.",
+            "13": "Recorded datasets in neuromorphic benchmarks foster sensing accuracy as the primary measure for performance.",
+            "14": "The use of recorded datasets in neuromorphic benchmarks follows the footsteps of conventional machine learning.",
+            "15": "Sensing accuracy is an arbitrary proxy for the actual goal of the system.",
+            "16": "The actual goal of the system is taking a good decision in a timely manner.",
+            "17": "Static datasets hinder the ability to study closed-loop sensing strategies.",
+            "18": "Static datasets hinder the ability to study control strategies.",
+            "19": "Closed-loop sensing and control strategies are central to survival for biological organisms.",
+            "20": "Static datasets hinder the ability to compare closed-loop sensing and control strategies.",
+            "21": "The article advocates for a renewed focus on closed-loop benchmarks.",
+            "22": "The article advocates for closed-loop benchmarks involving real-world tasks.",
+            "23": "Closed-loop benchmarks involving real-world tasks will be crucial in developing neuromorphic Intelligence.",
+            "24": "Closed-loop benchmarks involving real-world tasks will be crucial in progressing neuromorphic Intelligence.",
+            "25": "A shift towards dynamic real-world benchmarking tasks should usher in richer artificially intelligent systems.",
+            "26": "A shift towards dynamic real-world benchmarking tasks should usher in more resilient artificially intelligent systems.",
+            "27": "A shift towards dynamic real-world benchmarking tasks should usher in more robust artificially intelligent systems."
+          },
+          "16": {
+            "1": "Software simulators are crucial for developing new algorithms in any field of engineering.",
+            "2": "Software simulators are crucial for developing new system architectures in any field of engineering.",
+            "3": "Neuromorphic computing has shown potential in building brain-inspired energy-efficient hardware.",
+            "4": "The development cycle of neuromorphic computing is slowed down by a lack of flexible simulators of neuromorphic hardware.",
+            "5": "The development cycle of neuromorphic computing is slowed down by a lack of flexible simulators of spiking neural networks (SNNs).",
+            "6": "Spiking neural networks (SNNs) are the type of neural network computation executed on most neuromorphic systems.",
+            "7": "Several openly available neuromorphic or SNN simulation packages are developed by various research groups.",
+            "8": "Most of the available neuromorphic or SNN simulation packages have targeted computational neuroscience simulations.",
+            "9": "Only a few neuromorphic or SNN simulation packages have targeted small-scale machine learning tasks with SNNs.",
+            "10": "Evaluations of neuromorphic or SNN simulation packages have often targeted computational neuroscience-style workloads.",
+            "11": "Comparisons of neuromorphic or SNN simulation packages have often targeted computational neuroscience-style workloads.",
+            "12": "The study aims to evaluate the performance of several publicly available SNN simulators with respect to non-computational neuroscience workloads.",
+            "13": "The evaluation of SNN simulators focuses on speed, flexibility, and scalability.",
+            "14": "The study evaluates the performance of NEST, Brian2, Brian2GeNN, BindsNET, and Nengo packages.",
+            "15": "The evaluation of the performance of these packages is done under a common front-end neuromorphic framework.",
+            "16": "The evaluation tasks include a variety of different network architectures.",
+            "17": "The evaluation tasks include a variety of workload types.",
+            "18": "The tasks aim to mimic computation common in different algorithms.",
+            "19": "The algorithms include feed-forward network inference, genetic algorithms, and reservoir computing.",
+            "20": "The study examines the scalability of each simulator when running on different computing hardware.",
+            "21": "The computing hardware examined ranges from single core CPU workstations to multi-node supercomputers.",
+            "22": "The results show that BindsNET simulator has the best speed for most SNN workloads on a single core CPU.",
+            "23": "BindsNET simulator has the best scalability for most SNN workloads on a single core CPU.",
+            "24": "The SNN workloads evaluated include sparse, dense, and layered SNN architectures.",
+            "25": "Brian2GeNN outperforms other simulators in terms of scalability when leveraging GPU capabilities.",
+            "26": "NEST performs the best for small sparse networks.",
+            "27": "NEST is the most flexible simulator in terms of reconfiguration capability.",
+            "28": "NEST shows a speedup of at least 2× compared to other packages when running evolutionary algorithms for SNNs.",
+            "29": "The multi-node and multi-thread capabilities of NEST show at least 2× speedup compared to single core CPU or GPU based simulators for large networks.",
+            "30": "The multi-node and multi-thread capabilities of NEST show at least 2× speedup compared to single core CPU or GPU based simulators for sparse networks.",
+            "31": "The work concludes by providing recommendations on the suitability of employing these simulators for different tasks.",
+            "32": "The work provides recommendations on the suitability of employing these simulators for different scales of operations.",
+            "33": "The work presents the characteristics for a future generic ideal SNN simulator.",
+            "34": "The characteristics are applicable for different neuromorphic computing workloads."
+          }
+        },
+        "viewpoints": [
+          "Neuromorphic benchmarks have been proposed for classical vision tasks.",
+          "Neuromorphic benchmarks have been proposed for audition tasks.",
+          "Neuromorphic benchmarks have been proposed for open-loop tasks.",
+          "Neuromorphic benchmarks have been proposed for closed-loop tasks.",
+          "Neuromorphic benchmarks have been proposed for SNN simulator performance assessment."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "While prior works have made valuable contributions, there are opportunities to further advance the field by addressing three outstanding challenges: Lack of a formal definition—The variety of approaches to exploring brain-inspired principles creates difficulties in defining a set of criteria for what should be benchmarked as a “neuromorphic” solution.",
+        "references": {},
+        "viewpoints": [
+          "Prior works in neuromorphic benchmarks have made valuable contributions.",
+          "There are opportunities to further advance neuromorphic research.",
+          "A lack of a formal definition is an outstanding challenge in neuromorphic research.",
+          "The variety of approaches to brain-inspired principles creates difficulties in defining criteria for what constitutes a “neuromorphic” solution to benchmark."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Closed definitions can impose narrow assumptions and thus risk unfairly excluding promising methods.",
+        "references": {},
+        "viewpoints": [
+          "Closed definitions can impose narrow assumptions.",
+          "Closed definitions risk unfairly excluding promising methods."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "This challenge necessitates inclusive benchmarks that can be applied generally across the spectrum of potential approaches, allowing for flexible implementation while focusing on task capabilities and metrics of interest such as temporal processing and efficiency.",
+        "references": {},
+        "viewpoints": [
+          "The challenge of defining benchmarks necessitates inclusive benchmarks.",
+          "Inclusive benchmarks should be applicable generally across potential approaches.",
+          "Inclusive benchmarks should allow for flexible implementation.",
+          "Inclusive benchmarks should focus on task capabilities and metrics such as temporal processing and efficiency."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Furthermore, the benchmarks should ideally allow for direct comparison of neuromorphic and conventional approaches.",
+        "references": {},
+        "viewpoints": [
+          "Benchmarks should ideally allow for direct comparison of neuromorphic and conventional approaches."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Implementation diversity—A wide array of different frameworks targeting different goals, such as neuroscientific exploration [17] and automatic SNN training [18], are used in neuromorphic research.",
+        "references": {
+          "17": [],
+          "18": {
+            "1": "The brain is an ideal source of inspiration for developing more efficient neural networks.",
+            "2": "The inner workings of synapses and neurons provide a glimpse into the future potential of deep learning.",
+            "3": "The article serves as a tutorial on applying research lessons from deep learning, gradient descent, backpropagation, and neuroscience to spiking neural networks.",
+            "4": "The article offers a perspective on the application of research lessons to biologically plausible spiking neural networks.",
+            "5": "The authors explore the interplay between encoding data as spikes and the learning process in neural networks.",
+            "6": "The authors examine the challenges and solutions of applying gradient-based learning to spiking neural networks.",
+            "7": "The authors investigate the link between temporal backpropagation and spike timing-dependent plasticity.",
+            "8": "The authors discuss how deep learning might progress towards biologically plausible online learning.",
+            "9": "Some ideas discussed in the article are well accepted and commonly used among the neuromorphic engineering community.",
+            "10": "Some ideas in the article are presented or justified for the first time.",
+            "11": "A series of companion interactive tutorials complementary to the article are made available using the Python package, snnTorch."
+          }
+        },
+        "viewpoints": [
+          "There is implementation diversity in neuromorphic research.",
+          "A wide array of different frameworks targets various goals in neuromorphic research.",
+          "Goals in neuromorphic research include neuroscientific exploration and automatic SNN training."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "This diversity, which has been instrumental in exploring the landscape of bio-inspired techniques following different methodologies and abstraction levels, comes at the cost of portability and standardization, which in turn limits the ease of benchmark implementation.",
+        "references": {},
+        "viewpoints": [
+          "Diversity in frameworks has been instrumental in exploring bio-inspired techniques.",
+          "Diversity follows different methodologies and abstraction levels.",
+          "Diversity in implementations comes at the cost of portability and standardization.",
+          "Limited portability and standardization limit the ease of benchmark implementation."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Benchmarks require common infrastructure that unites tooling to enable actionable implementation and comparison of new methods.",
+        "references": {},
+        "viewpoints": [
+          "Benchmarks require a common infrastructure.",
+          "Common infrastructure should unite tooling for actionable implementation and comparison of new methods."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Rapid research evolution—Neuromorphic approaches are continually and rapidly evolving as part of an emerging field.",
+        "references": {},
+        "viewpoints": [
+          "Neuromorphic approaches are continually evolving.",
+          "The evolution of neuromorphic approaches is part of an emerging field."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "As the research community continues to make technological progress, so too should benchmark suites and methodology expand to foster inclusion and capture salient performance metrics.",
+        "references": {},
+        "viewpoints": [
+          "Benchmark suites and methodology should expand alongside technological progress.",
+          "Expansion of benchmark suites should foster inclusion and capture salient performance metrics."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "An iterative benchmark framework with structured versioning will facilitate productive foundational and evolving performance evaluation.",
+        "references": {},
+        "viewpoints": [
+          "An iterative benchmark framework will facilitate productive foundational and evolving performance evaluation.",
+          "An iterative benchmark framework should have structured versioning."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "To tackle these challenges, this article presents NeuroBench, a dual-track, multi-task benchmark framework.",
+        "references": {},
+        "viewpoints": [
+          "This article presents NeuroBench as a dual-track, multi-task benchmark framework.",
+          "NeuroBench is intended to tackle the challenges in neuromorphic research."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "NeuroBench addresses the existing neuromorphic benchmark challenges by advancing prior work in three distinct ways.",
+        "references": {},
+        "viewpoints": [
+          "NeuroBench addresses existing challenges in neuromorphic benchmarks.",
+          "NeuroBench advances prior work in neuromorphic benchmarks in three distinct ways."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Firstly, the benchmark framework reduces assumptions regarding the specific solution being assessed, encouraging inclusive participation of neuromorphic and non-neuromorphic approaches by utilizing general, task-level benchmarking and hierarchical metric definitions which capture key performance indicators of interest.",
+        "references": {},
+        "viewpoints": [
+          "The NeuroBench framework reduces assumptions about specific solutions being assessed.",
+          "Reduced assumptions encourage inclusive participation of both neuromorphic and non-neuromorphic approaches.",
+          "NeuroBench uses general, task-level benchmarking.",
+          "NeuroBench employs hierarchical metric definitions which capture key performance indicators."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Secondly, the NeuroBench benchmarks are associated with a common open-source benchmark harness tool which facilitates actionable benchmark implementation and offers structure for further expansion to neuromorphic algorithm frameworks and systems.",
+        "references": {},
+        "viewpoints": [
+          "NeuroBench benchmarks are linked with a common open-source benchmark harness tool.",
+          "The benchmark harness tool facilitates actionable benchmark implementation.",
+          "The benchmark harness tool provides structure for further expansion to neuromorphic algorithm frameworks and systems."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Finally, NeuroBench establishes an iterative, community-driven initiative designed to evolve over time to ensure representation and relevance to neuromorphic research, analogous to the well-established MLPerf benchmark framework for machine learning [19], [20].",
+        "references": {
+          "19": [],
+          "20": []
+        },
+        "viewpoints": [
+          "NeuroBench establishes an iterative, community-driven initiative.",
+          "The initiative is designed to evolve over time to ensure representation and relevance to neuromorphic research.",
+          "NeuroBench is analogous to the well-established MLPerf benchmark framework for machine learning."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "As a whole, NeuroBench intends to align the neuromorphic research community on standard benchmarking, providing a dynamically evolving platform to ensure ongoing relevance and facilitate advancements through workshops, competitions, and a centralized leaderboard.",
+        "references": {},
+        "viewpoints": [
+          "NeuroBench intends to align the neuromorphic research community on standard benchmarking.",
+          "NeuroBench provides a dynamically evolving platform to ensure ongoing relevance.",
+          "NeuroBench facilitates advancements through workshops, competitions, and a centralized leaderboard."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "As Fig. 1 shows, the NeuroBench framework involves two tracks to enable agile algorithm and system development.",
+        "references": {},
+        "viewpoints": [
+          "The NeuroBench framework involves two tracks.",
+          "The two tracks enable agile algorithm and system development."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "As an emerging technology, neuromorphic hardware has not converged to a single platform which is commercially available, thus a large fraction of neuromorphic research explores algorithmic advancement on conventional systems which may not be optimal for performance.",
+        "references": {},
+        "viewpoints": [
+          "Neuromorphic hardware has not converged to a single commercially available platform as an emerging technology.",
+          "A large fraction of neuromorphic research explores algorithmic advancement on conventional systems.",
+          "Conventional systems may not be optimal for performance in neuromorphic research."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "Thus, NeuroBench consists of an algorithm track for hardware-independent evaluation and a system track for fully deployed solutions.",
+        "references": {},
+        "viewpoints": [
+          "NeuroBench consists of an algorithm track for hardware-independent evaluation.",
+          "NeuroBench consists of a system track for fully deployed solutions."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "The algorithm track defines four novel benchmarks for neuromorphic methods across diverse domains, namely few-shot continual learning, computer vision, motor cortical decoding, and chaotic forecasting, and utilizes complexity metrics to analyze solution costs.",
+        "references": {},
+        "viewpoints": [
+          "The algorithm track defines four novel benchmarks for neuromorphic methods.",
+          "The domains for the benchmarks are few-shot continual learning, computer vision, motor cortical decoding, and chaotic forecasting.",
+          "The algorithm track uses complexity metrics to analyze solution costs."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "Such hardware-independent benchmarking enables algorithmic exploration and prototyping, especially when simulating algorithm execution on non-neuromorphic platforms.",
+        "references": {},
+        "viewpoints": [
+          "Hardware-independent benchmarking enables algorithmic exploration and prototyping.",
+          "It is particularly beneficial when simulating algorithm execution on non-neuromorphic platforms."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "Meanwhile, the system track defines standard protocols to measure the real-world speed and efficiency of neuromorphic hardware on benchmarks ranging from standard machine learning tasks to promising fields for neuromorphic systems, such as optimization.",
+        "references": {},
+        "viewpoints": [
+          "The system track defines standard protocols to measure the real-world speed and efficiency of neuromorphic hardware.",
+          "The benchmarks for the system track range from standard machine learning tasks to fields like optimization."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "Up-to-date information on the latest benchmarks and official results can be found on the NeuroBench website (https://neurobench.ai/).",
+        "references": {},
+        "viewpoints": [
+          "Up-to-date information on the latest benchmarks and official results can be found on the NeuroBench website."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "Fig. 1: The two NeuroBench tracks: algorithms and systems.",
+        "references": {},
+        "viewpoints": [
+          "The two NeuroBench tracks are algorithms and systems."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "Grey boxes designate what is defined by the benchmark, and orange boxes indicate what is unique to each solution.",
+        "references": {},
+        "viewpoints": [
+          "In Fig. 1, grey boxes designate what is defined by the benchmark.",
+          "In Fig. 1, orange boxes indicate what is unique to each solution."
+        ]
+      },
+      {
+        "idx": 44,
+        "sentence": "Connecting arrows between the two tracks denote the co-innovation between the tracks and the cross-stack innovation enabled by this approach.",
+        "references": {},
+        "viewpoints": [
+          "In Fig. 1, connecting arrows between the two tracks denote the co-innovation between the tracks.",
+          "The connecting arrows also represent the cross-stack innovation enabled by the NeuroBench approach."
+        ]
+      },
+      {
+        "idx": 45,
+        "sentence": "Between algorithm and system solutions, best-performing results from each track can motivate future solutions to the other.",
+        "references": {},
+        "viewpoints": [
+          "Best-performing results from each NeuroBench track can motivate future solutions for the other track."
+        ]
+      },
+      {
+        "idx": 46,
+        "sentence": "In addition, system metrics and results can inform hardware-independent algorithmic complexity metrics.",
+        "references": {},
+        "viewpoints": [
+          "System metrics and results can inform hardware-independent algorithmic complexity metrics."
+        ]
+      },
+      {
+        "idx": 47,
+        "sentence": "Each NeuroBench track includes defined datasets, metric and measurement methodology, and modular evaluation components to enable flexible development.",
+        "references": {},
+        "viewpoints": [
+          "Each NeuroBench track includes defined datasets.",
+          "Each NeuroBench track includes metric and measurement methodology.",
+          "Each NeuroBench track includes modular evaluation components for flexible development."
+        ]
+      },
+      {
+        "idx": 48,
+        "sentence": "Promising methods identified from the algorithm track will inform system design by highlighting target algorithms for optimization and relevant system workloads for benchmarking.",
+        "references": {},
+        "viewpoints": [
+          "Promising methods identified from the algorithm track will inform system design.",
+          "Promising methods will highlight target algorithms for optimization.",
+          "Promising methods will highlight relevant system workloads for benchmarking."
+        ]
+      },
+      {
+        "idx": 49,
+        "sentence": "The system track in turn enables optimization and evaluation of performant implementations, providing feedback to refine algorithmic complexity modeling and analysis.",
+        "references": {},
+        "viewpoints": [
+          "The system track enables optimization and evaluation of performant implementations.",
+          "The system track provides feedback to refine algorithmic complexity modeling and analysis."
+        ]
+      },
+      {
+        "idx": 50,
+        "sentence": "The interplay between the tracks creates a virtuous cycle: algorithm innovations guide system implementation, while system-level insights accelerate further algorithmic progress.",
+        "references": {},
+        "viewpoints": [
+          "The interplay between the tracks creates a virtuous cycle.",
+          "Algorithm innovations guide system implementation.",
+          "System-level insights accelerate further algorithmic progress."
+        ]
+      },
+      {
+        "idx": 51,
+        "sentence": "This approach allows NeuroBench to advance neuromorphic algorithm-system co-design.",
+        "references": {},
+        "viewpoints": [
+          "The NeuroBench approach allows for advancement in neuromorphic algorithm-system co-design."
+        ]
+      },
+      {
+        "idx": 52,
+        "sentence": "Both the algorithm and system track will be extended and co-developed as NeuroBench continues to expand.",
+        "references": {},
+        "viewpoints": [
+          "Both the algorithm and system tracks will be extended and co-developed as NeuroBench expands."
+        ]
+      },
+      {
+        "idx": 53,
+        "sentence": "In the next few sections, we describe the algorithm track, including general complexity metric definitions, benchmark tasks, and common infrastructure tooling.",
+        "references": {},
+        "viewpoints": [
+          "The next sections will describe the algorithm track.",
+          "The algorithm track description will include general complexity metric definitions, benchmark tasks, and common infrastructure tooling."
+        ]
+      },
+      {
+        "idx": 54,
+        "sentence": "We apply the framework to report baseline results for each algorithm benchmark, which outline unexplored research opportunities in optimizing algorithmic architectures and training of sparse, stateful models to achieve greater performance and resource efficiency.",
+        "references": {},
+        "viewpoints": [
+          "The NeuroBench framework is used to report baseline results for each algorithm benchmark.",
+          "Baseline results outline unexplored research opportunities in optimizing algorithmic architectures.",
+          "Baseline results outline training opportunities for sparse, stateful models to achieve greater performance and resource efficiency."
+        ]
+      },
+      {
+        "idx": 55,
+        "sentence": "Then, we show baseline results established in the system track to assess neuromorphic performance across promising application workloads.",
+        "references": {},
+        "viewpoints": [
+          "Baseline results in the system track will be shown to assess neuromorphic performance.",
+          "Baseline results will assess neuromorphic performance across promising application workloads."
+        ]
+      },
+      {
+        "idx": 56,
+        "sentence": "By outlining both tracks, we provide a roadmap towards standardizing benchmark procedures in both hardware-independent and hardware dependent settings.",
+        "references": {},
+        "viewpoints": [
+          "Outlining both tracks provides a roadmap towards standardizing benchmark procedures.",
+          "The standardization applies to both hardware-independent and hardware-dependent settings."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56739-4_with_abstracts",
+    "base_id": "s41467-025-56739-4",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56739-4_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

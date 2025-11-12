@@ -1,0 +1,1039 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Positron emission tomography (PET) is an advanced imaging modality that is widely applied in biomedical research, drug development, and clinical diagnosis. The broad utility of PET derives from well-designed radiotracers that can report on specific protein targets and processes occurring in animals and humans in vivo [1] , [2] . Among positron-emitting radionuclides, fluorine-18 ( 18 F) is one of the most commonly used for PET [3] . This is not only because of its high accessibility in a no-carrier-added (NCA) state from modern cyclotrons through the high-yielding 18 O(p,n) 18 F reaction on [ 18 O]water [4] but also because of its many favorable physical properties for imaging and tracer design. These properties include: 1) almost pure decay ( β + , 97%) by emission of a relatively low energy positron ( β + , 0.634 MeV) enabling acquisition of images with high spatial resolution ( ca 2 mm) [5] ; 2) a usefully long half-life ( t 1/2 = 109.8 min) that i) allows time for efficient incorporation into tracers and their distribution to nearby standalone PET imaging facilities, and ii) offers the possibility to monitor tracer kinetics in vivo over a few hours [6] ; 3) a van der Waals radius similar to that of hydrogen that leads to only a minor steric perturbation when fluorine-18 replaces hydrogen at carbon; and 4) high electronegativity, enabling the alteration of molecular electrostatics and overall polarity. Indeed, since the late 1970s, fluorine-18 has featured prominently in a vast array of successful PET tracers [7] , [8] . The most frequently used methods for their preparation are based on aliphatic and aromatic nucleophilic substitution reactions on substrates with good leaving groups [3] , [9] . These methods are well-established for their abilities to generate 18 F-labeled tracers in acceptable yields and with high molar activities (radioactivity per mole of all isotopologues, denoted A m ) [10] . However, the success achieved in constructing C( sp 2 )– 18 F and C( sp 3 )– 18 F bonds has not been readily translated to 18 F-labeled compounds containing multiple fluorine atoms, especially when they are situated on the same carbon atom, such as an α,α-difluoromethyl moiety (RCF 2 H). Interest in the development of methods for incorporating the α,α-difluoromethyl group (−CF 2 H) into modern pharmaceuticals and agrochemicals has surged. Examples of such bioactive molecules appear in Fig. 1A . This interest is driven by a recognition of the potential of the difluoromethyl group to confer distinct advantages in biomolecule designs [11] , [12] . For example, the highly polarized carbon-hydrogen bond in the difluoromethyl group endows this group with the capability to act as a hydrogen bond donor, an attribute that sets it apart from other polyfluorinated chemical motifs [13] , [14] . Moreover, difluoromethyl groups can serve as metabolically stable bioisosteres of hydroxy, thiol, or amino groups and can therefore be used to improve pharmacokinetic and physicochemical properties [15] , [16] . Fig. 1: Biomolecules containing α, α-difluoromethyl groups and approaches for their labeling with fluorine-18. A Examples of biomolecules containing α,α-difluoromethylalkyl groups. B Prior methods for accessing 18 F-labeled α,α-difluoromethylalkyl groups and their limitations. C Methodology for synthesizing 18 F-labeled α,α-difluoromethylalkyl groups at high molar activity, as presented in this work. A m molar activity, PET positron emission tomography. Full size image The demand for novel methods to access the 18 F-labeled α,α-difluoromethyl moiety and thereby to expand the chemical space for PET tracer development also continues to grow [11] . A formidable challenge in this area is to meet the need for a straightforward general method that is capable of delivering good tracer yields along with usefully high molar activities. Usually, methods give low molar activity because a pre-existing C–F bond in the precursor for radiofluorination is vulnerable to cleavage during the labeling process to produce appreciable amounts of carrier fluoride ion as a competing reagent in the reaction. In the past decade, notable progress has been made in synthesizing [ 18 F]difluoromethylated arenes and heteroarenes from [ 18 F]fluoride [17] , [18] , [19] , [20] , [21] , [22] . However, these methods variously require specialized precursors, metal catalysts, or additional synthesis manipulations after radiofluorination, and they all provide mediocre molar activities for the 18 F-difluoromethylarene products. Other methods, based on generating the [ 18 F]difluoromethyl radical [23] or [ 18 F]difluorocarbene [24] , have enabled 18 F-difluoromethylarenes to be obtained with improved molar activity. Although methods to access [ 18 F]difluoromethylarenes are therefore well-established [25] , [26] , [27] , they are nonetheless unsuitable for the efficient syntheses of 18 F-labeled α,α-difluoromethylalkanes. After 2020, methods for attaching non-radioactive difluoromethyl groups to aliphatic chains were achieved with various difluoromethylating agents, such as the zinc complex, (DMPU) 2 Zn(CF 2 H) 2 , difluoroacetic acid, chlorodifluoromethane, ((difluoromethyl)sulfonyl)arenes, difluoromethyltriphenylphosphonium iodide, and N -phenyl- N -tosyldifluoroacetamide [28] , [29] , [30] , [31] , [32] , [33] , [34] , [35] , [36] , [37] . Nevertheless, these methods are not adaptable to fluorine-18 labeling due to their need for harsh reaction conditions, long reaction times, and likely outcomes of high carrier dilution. To date, few methods exist for the radiosynthesis of an 18 F-labeled α,α-difluoromethylalkane. The earliest report showed only one example with a low yield from an α-fluoroalkyl aryl thioether precursor by the combined action of the oxidant, 1,3-dibromo-5,5-dimethylhydantoin, and a large excess of carrier-added pyridine·9H[ 18 F]F [38] (Fig. 1B ). More recently two methods have appeared [39] , [40] . One method requires two steps from an aryldifluorovinyl iodonium salt and gives a low molar activity [39] . Another method is single-step from a 2-fluoroalkanoic acid precursor but gives only somewhat improved molar activity [40] . This method also requires the use of an oxidizing agent and a metal-ligand mediator. Thus, there is a clear need for the development of simple and efficient broad-scope methodologies for labeling α,α-difluoromethylalkanes with fluorine-18 at high molar activity. We envisioned that [ 18 F]fluoride treatment of an α-fluoroalkane possessing a leaving group on the α - carbon might provide an 18 F-labeled α,α-difluoromethylalkane with high molar activity. Herein, we describe our development of an effective method for the direct radiofluorination of α-bromo-α-fluoroalkane precursors with [ 18 F]fluoride, enabling the efficient late-stage syntheses of 18 F-labeled α,α-difluoromethylalkanes with high molar activities. This method has several other attractive features, including amenability for automation (Fig. 1C ). We further demonstrate robust applications of this methodology for installing an 18 F-labeled α,α-difluoromethyl moiety into diverse candidate PET tracers.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Positron emission tomography (PET) is an advanced imaging modality that is widely applied in biomedical research, drug development, and clinical diagnosis.",
+        "references": {},
+        "viewpoints": [
+          "Positron emission tomography (PET) is an advanced imaging modality.",
+          "Positron emission tomography (PET) is widely applied in biomedical research.",
+          "Positron emission tomography (PET) is widely applied in drug development.",
+          "Positron emission tomography (PET) is widely applied in clinical diagnosis."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "The broad utility of PET derives from well-designed radiotracers that can report on specific protein targets and processes occurring in animals and humans in vivo [1], [2].",
+        "references": {
+          "1": {
+            "1": "Diseases are biological processes.",
+            "2": "Molecular imaging with positron emission tomography (PET) is sensitive to biological processes.",
+            "3": "Molecular imaging with positron emission tomography (PET) is informative of biological processes.",
+            "4": "Molecular imaging with PET can detect biological abnormalities in neurological disorders with no computed tomography anatomic changes.",
+            "5": "Molecular imaging with PET can detect biological abnormalities in neurological disorders with no MRI anatomic changes.",
+            "6": "Molecular imaging with PET can detect biological abnormalities even before symptoms are expressed in neurological disorders.",
+            "7": "PET whole body imaging in cancer provides the means to identify early disease.",
+            "8": "PET whole body imaging in cancer provides the means to differentiate benign from malignant lesions.",
+            "9": "PET whole body imaging in cancer provides the means to examine all organs for metastases.",
+            "10": "PET whole body imaging in cancer provides the means to determine therapeutic effectiveness.",
+            "11": "Diagnostic accuracy of PET is 8–43% higher than conventional procedures.",
+            "12": "PET changes treatment in 20–40% of the patients with lung and colorectal cancers, melanoma, and lymphoma.",
+            "13": "Similar findings of PET's diagnostic accuracy and treatment impact occur in breast, ovarian, head and neck, and renal cancers.",
+            "14": "The impact of PET on treatment changes depends on the clinical question.",
+            "15": "A microPET scanner for mice, used with human PET systems, provides a novel technology for molecular imaging assays.",
+            "16": "MicroPET, in concert with human PET systems, allows molecular imaging assays of metabolism.",
+            "17": "MicroPET, in concert with human PET systems, allows molecular imaging assays of signal transduction to gene expression.",
+            "18": "Molecular imaging assays using microPET apply from mice to patients.",
+            "19": "PET reporter gene assays are used to trace the location of expression of therapeutic genes.",
+            "20": "PET reporter gene assays are used to trace the temporal level of expression of therapeutic genes.",
+            "21": "PET reporter gene assays are used to trace the location of expression of endogenous genes.",
+            "22": "PET reporter gene assays are used to trace the temporal level of expression of endogenous genes.",
+            "23": "PET probes and drugs are being developed together.",
+            "24": "PET probes are developed in low mass amounts as molecular imaging probes to image the function of targets without disturbing them.",
+            "25": "Drugs are developed in mass amounts to modify the target's function as a drug.",
+            "26": "Molecular imaging by PET assists in moving research findings from in vitro biology to in vivo integrative mammalian biology of disease.",
+            "27": "Optical technologies assist in moving research findings from in vitro biology to in vivo integrative mammalian biology of disease.",
+            "28": "Magnetic resonance imaging assists in moving research findings from in vitro biology to in vivo integrative mammalian biology of disease.",
+            "29": "Single photon emission tomography assists in moving research findings from in vitro biology to in vivo integrative mammalian biology of disease.",
+            "30": "Other technologies assist in moving research findings from in vitro biology to in vivo integrative mammalian biology of disease."
+          },
+          "2": {
+            "1": "The first total-body positron emission tomography (TB-PET) scanner represents a radical change for experimental medicine.",
+            "2": "The first total-body positron emission tomography (TB-PET) scanner represents a radical change for diagnostic health care."
+          }
+        },
+        "viewpoints": [
+          "The broad utility of PET derives from well-designed radiotracers.",
+          "Well-designed radiotracers can report on specific protein targets in animals in vivo.",
+          "Well-designed radiotracers can report on specific protein targets in humans in vivo.",
+          "Well-designed radiotracers can report on processes occurring in animals in vivo.",
+          "Well-designed radiotracers can report on processes occurring in humans in vivo."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Among positron-emitting radionuclides, fluorine-18 (18 F) is one of the most commonly used for PET [3].",
+        "references": {
+          "3": []
+        },
+        "viewpoints": [
+          "Fluorine-18 (18 F) is among the most commonly used positron-emitting radionuclides for PET."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "This is not only because of its high accessibility in a no-carrier-added (NCA) state from modern cyclotrons through the high-yielding 18 O(p,n) 18 F reaction on [18 O]water [4] but also because of its many favorable physical properties for imaging and tracer design.",
+        "references": {
+          "4": {
+            "1": "Upgrades and optimisation allowed a GE PETtrace cyclotron to achieve 160 μA total target current operation.",
+            "2": "The GE PETtrace cyclotron operates in dual target mode for the routine production of [18F]FDG.",
+            "3": "The cyclotron maintained this operational status for over two years.",
+            "4": "Approximately 900 GBq of 18F− can be produced routinely in a single production run.",
+            "5": "Over 500 GBq of [18F]FDG can be produced routinely in a single production run.",
+            "6": "These production levels meet the routine [18F]FDG requirements with the customer base.",
+            "7": "These production levels achieve economies of scale.",
+            "8": "Production of over 1 TBq of 18F− in a single run was achieved.",
+            "9": "Reliability was not adversely affected.",
+            "10": "Saturation was not adversely affected.",
+            "11": "Synthesis yields were not adversely affected."
+          }
+        },
+        "viewpoints": [
+          "Fluorine-18 is highly accessible in a no-carrier-added (NCA) state from modern cyclotrons.",
+          "Fluorine-18 is accessible through the high-yielding 18 O(p,n) 18 F reaction on [18 O]water.",
+          "Fluorine-18 has many favorable physical properties for imaging.",
+          "Fluorine-18 has many favorable physical properties for tracer design."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "These properties include: 1) almost pure decay (β + , 97%) by emission of a relatively low energy positron (β + , 0.634 MeV) enabling acquisition of images with high spatial resolution (ca 2 mm) [5];",
+        "references": {
+          "5": {
+            "1": "There is increased interest in new PET tracers, gene-targeted therapy, immunoPET, and theranostics.",
+            "2": "Other radioisotopes will be increasingly used in clinical PET scanners in addition to ^{18}F due to the increased interest in these areas.",
+            "3": "Some of the most interesting radioisotopes with prospective use in new PET fields are not pure short-range β^{+} emitters.",
+            "4": "These radioisotopes can be associated with gamma emissions in coincidence with the annihilation radiation (prompt gamma).",
+            "5": "These radioisotopes can be associated with gamma-gamma cascades.",
+            "6": "These radioisotopes can be associated with intense Bremsstrahlung radiation.",
+            "7": "These radioisotopes can emit high-energy positrons that may escape out of the patient skin.",
+            "8": "These radioisotopes can produce high-energy gamma rays that result in some e^{+}/e^{−} pair production.",
+            "9": "A high level of sophistication in data correction has been achieved for ^{18}F in recent years.",
+            "10": "Excellent quantitative accuracy has been reached for ^{18}F in recent years.",
+            "11": "The effects of the radioisotopes associated with gamma emissions and other phenomena can question the sophistication and accuracy achieved for ^{18}F.",
+            "12": "This work reviews the physics and scientific literature regarding additional phenomena affecting PET data.",
+            "13": "This work evaluates the effect of additional phenomena on PET data for a series of radioisotopes, including ^{11}C, ^{13}N, ^{15}O, ^{18}F, ^{64}Cu, ^{68}Ga, ^{76}Br, ^{82}Rb, ^{86}Y, ^{89}Zr, ^{90}Y, and ^{124}I.",
+            "14": "The present work discusses complications arising from prompt gammas in PET.",
+            "15": "The present work reviews the scientific literature on prompt gamma correction.",
+            "16": "For some radioisotopes, prompt gamma correction is definitely needed to assure acceptable image quality.",
+            "17": "Several approaches to prompt gamma correction have been proposed in recent years.",
+            "18": "Bremsstrahlung photons were evaluated in this work.",
+            "19": "^{176}Lu background was evaluated in this work."
+          }
+        },
+        "viewpoints": [
+          "Fluorine-18 has almost pure decay (β + , 97%) by emission of a relatively low energy positron (β + , 0.634 MeV).",
+          "The low energy positron from fluorine-18 enables acquisition of images with high spatial resolution (ca 2 mm)."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "2) a usefully long half-life (t1/2 = 109.8 min) that i) allows time for efficient incorporation into tracers and their distribution to nearby standalone PET imaging facilities, and ii) offers the possibility to monitor tracer kinetics in vivo over a few hours [6];",
+        "references": {
+          "6": []
+        },
+        "viewpoints": [
+          "Fluorine-18 has a usefully long half-life (t1/2 = 109.8 min).",
+          "The long half-life of fluorine-18 allows time for efficient incorporation into tracers.",
+          "The long half-life of fluorine-18 allows distribution of tracers to nearby standalone PET imaging facilities.",
+          "The long half-life of fluorine-18 offers the possibility to monitor tracer kinetics in vivo over a few hours."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "3) a van der Waals radius similar to that of hydrogen that leads to only a minor steric perturbation when fluorine-18 replaces hydrogen at carbon;",
+        "references": {},
+        "viewpoints": [
+          "Fluorine-18 has a van der Waals radius similar to that of hydrogen.",
+          "Fluorine-18's similar van der Waals radius to hydrogen leads to only a minor steric perturbation when replacing hydrogen at carbon."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "and 4) high electronegativity, enabling the alteration of molecular electrostatics and overall polarity.",
+        "references": {},
+        "viewpoints": [
+          "Fluorine-18 has high electronegativity.",
+          "The high electronegativity of fluorine-18 enables the alteration of molecular electrostatics.",
+          "The high electronegativity of fluorine-18 enables the alteration of overall polarity."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Indeed, since the late 1970s, fluorine-18 has featured prominently in a vast array of successful PET tracers [7] , [8].",
+        "references": {
+          "7": [],
+          "8": []
+        },
+        "viewpoints": [
+          "Since the late 1970s, fluorine-18 has featured prominently in a vast array of successful PET tracers."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "The most frequently used methods for their preparation are based on aliphatic and aromatic nucleophilic substitution reactions on substrates with good leaving groups [3], [9].",
+        "references": {
+          "3": [],
+          "9": {
+            "1": "Positron emission tomography (PET) is a functional imaging technique.",
+            "2": "PET is used to probe biological processes in vivo.",
+            "3": "PET imaging has been used to diagnose diseases.",
+            "4": "PET imaging has been used to monitor the progression of diseases.",
+            "5": "PET imaging has been used to facilitate drug development efforts at preclinical stages.",
+            "6": "PET imaging has been used to facilitate drug development efforts at clinical stages.",
+            "7": "The wide applications of PET have led to an increasing demand for new methods in radiochemistry.",
+            "8": "The rapid development of PET has led to an increasing demand for new methods in radiochemistry.",
+            "9": "There is a need to expand the scope of synthons amenable for radiolabeling.",
+            "10": "This work provides an overview of commonly used chemical transformations for the syntheses of PET tracers.",
+            "11": "The overview includes chemical transformations in all aspects of radiochemistry.",
+            "12": "This work highlights recent breakthrough discoveries in the field of radiochemistry.",
+            "13": "This work highlights contemporary challenges in the field of radiochemistry.",
+            "14": "This work discusses the use of biologicals for PET imaging.",
+            "15": "This work highlights general examples of successful probe discoveries for molecular imaging with PET.",
+            "16": "The focus is on translational radiochemistry concepts that have been entered into clinical use.",
+            "17": "The focus is on scalable radiochemistry concepts that have been entered into clinical use."
+          }
+        },
+        "viewpoints": [
+          "The most frequently used methods for preparing fluorine-18 PET tracers are based on aliphatic nucleophilic substitution reactions on substrates with good leaving groups.",
+          "The most frequently used methods for preparing fluorine-18 PET tracers are based on aromatic nucleophilic substitution reactions on substrates with good leaving groups."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "These methods are well-established for their abilities to generate 18 F-labeled tracers in acceptable yields and with high molar activities (radioactivity per mole of all isotopologues, denoted Am) [10].",
+        "references": {
+          "10": {
+            "1": "Radiotracers for imaging protein targets in the living human brain with positron emission tomography (PET) are increasingly useful in clinical research.",
+            "2": "Radiotracers for imaging protein targets in the living human brain with positron emission tomography (PET) are increasingly useful in drug development.",
+            "3": "Radiotracers must fulfill many criteria for use in imaging the brain.",
+            "4": "The ability to enter the brain adequately and reversibly without contamination by troublesome radiometabolites is a desirable criterion for radiotracers for accurate measurement of the density of a target protein.",
+            "5": "Accurate measurement of the density of a target protein is needed when using radiotracers for neuroreceptors.",
+            "6": "Accurate measurement of the density of a target protein is needed when using radiotracers for transporters.",
+            "7": "Accurate measurement of the density of a target protein is needed when using radiotracers for enzymes.",
+            "8": "Accurate measurement of the density of a target protein is needed when using radiotracers for plaques.",
+            "9": "Candidate radiotracers can fail as a result of poor passive brain entry.",
+            "10": "Candidate radiotracers can fail as a result of rejection from the brain by efflux transporters.",
+            "11": "Candidate radiotracers can fail as a result of undesirable metabolism.",
+            "12": "The issues of poor passive brain entry, rejection from the brain by efflux transporters, and undesirable metabolism of candidate radiotracers are reviewed.",
+            "13": "Emerging PET radiotracers for measuring efflux transporter function are discussed.",
+            "14": "New strategies for ameliorating radiotracer metabolism are discussed.",
+            "15": "A growing understanding of the molecular features affecting the brain penetration of prospective radiotracers should lead to their more rational and efficient design.",
+            "16": "A growing understanding of the molecular features affecting the metabolism of prospective radiotracers should lead to their more rational and efficient design.",
+            "17": "A growing understanding of the molecular features affecting the efflux transporter sensitivity of prospective radiotracers should lead to their more rational and efficient design.",
+            "18": "The more rational and efficient design of prospective radiotracers should lead to their greater efficacy."
+          }
+        },
+        "viewpoints": [
+          "The methods based on aliphatic and aromatic nucleophilic substitution reactions are well-established for their ability to generate 18 F-labeled tracers in acceptable yields.",
+          "The methods based on aliphatic and aromatic nucleophilic substitution reactions are well-established for their ability to generate 18 F-labeled tracers with high molar activities."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "However, the success achieved in constructing C(sp2)–18 F and C(sp3)–18 F bonds has not been readily translated to 18 F-labeled compounds containing multiple fluorine atoms, especially when they are situated on the same carbon atom, such as an α,α-difluoromethyl moiety (RCF2H).",
+        "references": {},
+        "viewpoints": [
+          "The success achieved in constructing C(sp2)–18 F bonds has not been readily translated to 18 F-labeled compounds containing multiple fluorine atoms.",
+          "The success achieved in constructing C(sp3)–18 F bonds has not been readily translated to 18 F-labeled compounds containing multiple fluorine atoms.",
+          "Constructing 18 F-labeled compounds containing multiple fluorine atoms is especially challenging when they are situated on the same carbon atom, such as an α,α-difluoromethyl moiety (RCF2H)."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Interest in the development of methods for incorporating the α,α-difluoromethyl group (−CF2H) into modern pharmaceuticals and agrochemicals has surged.",
+        "references": {},
+        "viewpoints": [
+          "Interest in the development of methods for incorporating the α,α-difluoromethyl group (−CF2H) into modern pharmaceuticals has surged.",
+          "Interest in the development of methods for incorporating the α,α-difluoromethyl group (−CF2H) into modern agrochemicals has surged."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Examples of such bioactive molecules appear in Fig. 1A.",
+        "references": {},
+        "viewpoints": [
+          "Examples of bioactive molecules containing the α,α-difluoromethyl group appear in Fig. 1A."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "This interest is driven by a recognition of the potential of the difluoromethyl group to confer distinct advantages in biomolecule designs [11], [12].",
+        "references": {
+          "11": {
+            "1": "The review describes recent advances in difluoromethylation processes involving X–CF₂H bond formation.",
+            "2": "X in X–CF₂H bond formation can be C(sp), C(sp²), C(sp³), O, N, or S.",
+            "3": "Advances in difluoromethylation processes have benefited from the invention of multiple difluoromethylation reagents.",
+            "4": "In the last decade, there has been an upsurge in metal-based methods for transferring CF₂H to C(sp²) sites.",
+            "5": "Metal-based methods can transfer CF₂H to C(sp²) sites in both stoichiometric and catalytic modes.",
+            "6": "Difluoromethylation of C(sp²)–H bond has been accomplished through Minisci-type radical chemistry.",
+            "7": "Minisci-type radical chemistry is best applied to difluoromethylation of heteroaromatics.",
+            "8": "Electrophilic, nucleophilic, radical, and cross-coupling methods have been used to construct C(sp³)–CF₂H bonds.",
+            "9": "Cases of stereoselective difluoromethylation are still limited.",
+            "10": "In the field of difluoromethylation, there is a precise site-selective installation of CF₂H onto large biomolecules.",
+            "11": "Large biomolecules that can have CF₂H precisely site-selectively installed include proteins.",
+            "12": "The formation of X–CF₂H bond where X is oxygen, nitrogen, or sulfur is conventionally achieved by reaction with ClCF₂H.",
+            "13": "Numerous protocols have recently achieved X–H insertion with novel non-ozone depleting difluorocarbene reagents.",
+            "14": "The advances in difluoromethylation processes have streamlined access to molecules of pharmaceutical relevance.",
+            "15": "The advances in difluoromethylation processes have generated interest for process chemistry."
+          },
+          "12": []
+        },
+        "viewpoints": [
+          "The interest in developing methods for incorporating the α,α-difluoromethyl group is driven by the recognition of its potential to confer distinct advantages in biomolecule designs."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "For example, the highly polarized carbon-hydrogen bond in the difluoromethyl group endows this group with the capability to act as a hydrogen bond donor, an attribute that sets it apart from other polyfluorinated chemical motifs [13], [14].",
+        "references": {
+          "13": {
+            "1": "There is a growing interest in organic compounds containing the difluoromethyl group.",
+            "2": "The difluoromethyl group is considered a lipophilic hydrogen bond donor.",
+            "3": "The difluoromethyl group may act as a bioisostere of hydroxyl groups.",
+            "4": "The difluoromethyl group may act as a bioisostere of thiol groups.",
+            "5": "The difluoromethyl group may act as a bioisostere of amine groups.",
+            "6": "A series of difluoromethyl anisoles was prepared.",
+            "7": "A series of difluoromethyl thioanisoles was prepared.",
+            "8": "The druglike properties of difluoromethyl anisoles and thioanisoles were studied.",
+            "9": "The hydrogen bonding properties of difluoromethyl anisoles and thioanisoles were studied.",
+            "10": "The lipophilicity of difluoromethyl anisoles and thioanisoles was studied.",
+            "11": "The hydrogen bond acidity parameters A for difluoromethyl compounds were determined to be in the range 0.085–0.126.",
+            "12": "Abraham’s solute ^1H NMR analysis was used to determine the hydrogen bond acidity parameters A.",
+            "13": "The difluoromethyl group acts as a hydrogen bond donor on a scale similar to that of thiophenol.",
+            "14": "The difluoromethyl group acts as a hydrogen bond donor on a scale similar to that of aniline.",
+            "15": "The difluoromethyl group acts as a hydrogen bond donor on a scale similar to that of amine groups.",
+            "16": "The difluoromethyl group does not act as a hydrogen bond donor on a scale similar to that of hydroxyl groups.",
+            "17": "Difluoromethyl is considered a lipophilicity enhancing group.",
+            "18": "The range of the experimental Δlog P(water–octanol) values for difluoromethyl compounds spanned from −0.1 to +0.4.",
+            "19": "A linear correlation was found between the hydrogen bond acidity parameters A and Hammett σ constants.",
+            "20": "A linear correlation was found between the Δlog P(water–octanol) values and Hammett σ constants.",
+            "21": "These results may aid in the rational design of drugs containing the difluoromethyl moiety."
+          },
+          "14": {
+            "1": "The CF₂H group is a potential surrogate for the OH group.",
+            "2": "The CF₂H group can act as an unusual hydrogen bond donor.",
+            "3": "Crystallographic, spectroscopic, and computational methods have confirmed that the CF₂H group can act as an unusual hydrogen bond donor.",
+            "4": "The bioisosterism of the OH and CF₂H groups is demonstrated.",
+            "5": "CF₂–H···O hydrogen bonds play important roles in influencing intermolecular interactions.",
+            "6": "CF₂–H···O hydrogen bonds play important roles in influencing conformational preferences.",
+            "7": "Experimental evidence reveals the distinctive nature of CF₂H hydrogen bonding interactions relative to normal OH hydrogen bonding interactions.",
+            "8": "Theory corroborates the experimental evidence about the distinctive nature of CF₂H hydrogen bonding interactions relative to normal OH hydrogen bonding interactions."
+          }
+        },
+        "viewpoints": [
+          "The highly polarized carbon-hydrogen bond in the difluoromethyl group endows it with the capability to act as a hydrogen bond donor.",
+          "The capability to act as a hydrogen bond donor sets the difluoromethyl group apart from other polyfluorinated chemical motifs."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Moreover, difluoromethyl groups can serve as metabolically stable bioisosteres of hydroxy, thiol, or amino groups and can therefore be used to improve pharmacokinetic and physicochemical properties [15], [16].",
+        "references": {
+          "15": {
+            "1": "The synthesis of a collection of 3-substituted indole derivatives incorporating partially fluorinated n-propyl and n-butyl groups is described.",
+            "2": "An in-depth study of the effects of various fluorination patterns on lipophilicity is described.",
+            "3": "An in-depth study of the effects of various fluorination patterns on aqueous solubility is described.",
+            "4": "An in-depth study of the effects of various fluorination patterns on metabolic stability is described.",
+            "5": "The experimental observations confirm predictions of a marked lipophilicity decrease imparted by a vic-difluoro unit.",
+            "6": "The lipophilicity decrease imparted by a vic-difluoro unit is more marked compared to the gem-difluoro counterparts.",
+            "7": "The data involving the comparison of the two substitution patterns is expected to benefit molecular design in medicinal chemistry.",
+            "8": "The data involving the comparison of the two substitution patterns is expected to benefit life sciences.",
+            "9": "The data involving the comparison of the two substitution patterns is expected to benefit materials sciences."
+          },
+          "16": {
+            "1": "The CF₂H moiety affects hydrogen-bond acidity of various compounds when attached directly to an aromatic ring.",
+            "2": "The CF₂H moiety affects hydrogen-bond acidity of various compounds when attached to other functions like alkyls, ethers/thioethers, or electron-withdrawing groups.",
+            "3": "The CF₂H moiety affects lipophilicity of various compounds when attached directly to an aromatic ring.",
+            "4": "The CF₂H moiety affects lipophilicity of various compounds when attached to other functions like alkyls, ethers/thioethers, or electron-withdrawing groups.",
+            "5": "The CF₂H group acts as a hydrogen-bond donor.",
+            "6": "The effect of the CF₂H group as a hydrogen-bond donor strongly depends on the attached functional group (A = 0.035–0.165).",
+            "7": "When attached to Ar or alkyl, the CF₂H group may act as a more lipophilic bioisostere of OH.",
+            "8": "When attached to Ar or alkyl, the CF₂H group may act as a similar or less lipophilic bioisostere of SH.",
+            "9": "When attached to Ar or alkyl, the CF₂H group may act as a similar or less lipophilic bioisostere of CH₃.",
+            "10": "The lipophilicity of ethers is dramatically increased upon CH₃/CF₂H exchange at the α position.",
+            "11": "The lipophilicity of sulfoxides is dramatically increased upon CH₃/CF₂H exchange at the α position.",
+            "12": "The lipophilicity of sulfones is dramatically increased upon CH₃/CF₂H exchange at the α position.",
+            "13": "The CH₃/CF₂H exchange at the α position significantly affects the polarity of the solutes.",
+            "14": "The CH₃/CF₂H exchange at the α position significantly affects the volume of the solutes.",
+            "15": "The CH₃/CF₂H exchange at the α position significantly affects the hydrogen-bond-accepting ability of the solutes.",
+            "16": "Polarity, volume, and hydrogen-bond-accepting ability are the main factors influencing log P_oct.",
+            "17": "This study may be helpful in the rational design of drugs containing the CF₂H moiety."
+          }
+        },
+        "viewpoints": [
+          "Difluoromethyl groups can serve as metabolically stable bioisosteres of hydroxy groups.",
+          "Difluoromethyl groups can serve as metabolically stable bioisosteres of thiol groups.",
+          "Difluoromethyl groups can serve as metabolically stable bioisosteres of amino groups.",
+          "Difluoromethyl groups can be used to improve pharmacokinetic properties.",
+          "Difluoromethyl groups can be used to improve physicochemical properties."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Fig. 1: Biomolecules containing α,α-difluoromethyl groups and approaches for their labeling with fluorine-18.",
+        "references": {},
+        "viewpoints": [
+          "Fig. 1 illustrates biomolecules containing α,α-difluoromethyl groups.",
+          "Fig. 1 illustrates approaches for labeling biomolecules containing α,α-difluoromethyl groups with fluorine-18."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "A Examples of biomolecules containing α,α-difluoromethylalkyl groups.",
+        "references": {},
+        "viewpoints": [
+          "Fig. 1A provides examples of biomolecules containing α,α-difluoromethylalkyl groups."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "B Prior methods for accessing 18 F-labeled α,α-difluoromethylalkyl groups and their limitations.",
+        "references": {},
+        "viewpoints": [
+          "Fig. 1B presents prior methods for accessing 18 F-labeled α,α-difluoromethylalkyl groups.",
+          "Fig. 1B details the limitations of prior methods for accessing 18 F-labeled α,α-difluoromethylalkyl groups."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "C Methodology for synthesizing 18 F-labeled α,α-difluoromethylalkyl groups at high molar activity, as presented in this work.",
+        "references": {},
+        "viewpoints": [
+          "Fig. 1C illustrates the methodology for synthesizing 18 F-labeled α,α-difluoromethylalkyl groups at high molar activity, as presented in this work."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "A m molar activity, PET positron emission tomography.",
+        "references": {},
+        "viewpoints": [
+          "A m stands for molar activity.",
+          "PET stands for positron emission tomography."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Full size image The demand for novel methods to access the 18 F-labeled α,α-difluoromethyl moiety and thereby to expand the chemical space for PET tracer development also continues to grow [11].",
+        "references": {
+          "11": {
+            "1": "The review describes recent advances in difluoromethylation processes involving X–CF₂H bond formation.",
+            "2": "X in X–CF₂H bond formation can be C(sp), C(sp²), C(sp³), O, N, or S.",
+            "3": "Advances in difluoromethylation processes have benefited from the invention of multiple difluoromethylation reagents.",
+            "4": "In the last decade, there has been an upsurge in metal-based methods for transferring CF₂H to C(sp²) sites.",
+            "5": "Metal-based methods can transfer CF₂H to C(sp²) sites in both stoichiometric and catalytic modes.",
+            "6": "Difluoromethylation of C(sp²)–H bond has been accomplished through Minisci-type radical chemistry.",
+            "7": "Minisci-type radical chemistry is best applied to difluoromethylation of heteroaromatics.",
+            "8": "Electrophilic, nucleophilic, radical, and cross-coupling methods have been used to construct C(sp³)–CF₂H bonds.",
+            "9": "Cases of stereoselective difluoromethylation are still limited.",
+            "10": "In the field of difluoromethylation, there is a precise site-selective installation of CF₂H onto large biomolecules.",
+            "11": "Large biomolecules that can have CF₂H precisely site-selectively installed include proteins.",
+            "12": "The formation of X–CF₂H bond where X is oxygen, nitrogen, or sulfur is conventionally achieved by reaction with ClCF₂H.",
+            "13": "Numerous protocols have recently achieved X–H insertion with novel non-ozone depleting difluorocarbene reagents.",
+            "14": "The advances in difluoromethylation processes have streamlined access to molecules of pharmaceutical relevance.",
+            "15": "The advances in difluoromethylation processes have generated interest for process chemistry."
+          }
+        },
+        "viewpoints": [
+          "The demand for novel methods to access the 18 F-labeled α,α-difluoromethyl moiety continues to grow.",
+          "Expanding the chemical space for PET tracer development continues to be a growing demand."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "A formidable challenge in this area is to meet the need for a straightforward general method that is capable of delivering good tracer yields along with usefully high molar activities.",
+        "references": {},
+        "viewpoints": [
+          "A formidable challenge in developing 18 F-labeled α,α-difluoromethyl moieties is meeting the need for a straightforward general method.",
+          "There is a need for a general method that can deliver good tracer yields with usefully high molar activities."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Usually, methods give low molar activity because a pre-existing C–F bond in the precursor for radiofluorination is vulnerable to cleavage during the labeling process to produce appreciable amounts of carrier fluoride ion as a competing reagent in the reaction.",
+        "references": {},
+        "viewpoints": [
+          "Methods usually give low molar activity due to the vulnerability of a pre-existing C–F bond in the precursor for radiofluorination to cleavage during the labeling process.",
+          "The cleavage of the pre-existing C–F bond produces appreciable amounts of carrier fluoride ion as a competing reagent in the reaction."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "In the past decade, notable progress has been made in synthesizing [18 F]difluoromethylated arenes and heteroarenes from [18 F]fluoride [17], [18], [19], [20], [21], [22].",
+        "references": {
+          "17": {
+            "1": "Positron emission tomography (PET) is a preclinical imaging technique used in biomedical research.",
+            "2": "Positron emission tomography (PET) is a clinical imaging technique used in biomedical research.",
+            "3": "Positron emission tomography (PET) is used to study biological processes.",
+            "4": "Positron emission tomography (PET) is used to study physiological processes.",
+            "5": "Positron emission tomography (PET) is used to visualize biological processes.",
+            "6": "Positron emission tomography (PET) is used to visualize physiological processes.",
+            "7": "Fluorine-18 (^18F) is the positron emitter used most frequently for PET imaging.",
+            "8": "Fluorine-18 (^18F) is used frequently for PET imaging due to its practical 109.8 min half-life.",
+            "9": "Fluorine-18 (^18F) is used frequently for PET imaging due to its high yield production on fragile biomedical cyclotrons.",
+            "10": "Fluorine-18 (^18F) is used frequently for PET imaging due to its well-established ^18F-radiochemistry.",
+            "11": "Fluorine atoms are present in many drugs.",
+            "12": "Fluorine atoms are present in many biomarkers.",
+            "13": "The presence of fluorine atoms in many drugs and biomarkers provides an opportunity for developing radioligands labeled with ^18F.",
+            "14": "Difluorocarbene (DFC)-enabled ^18F-radiosynthesis is used to introduce [^18F]CF₃ in organic molecules.",
+            "15": "Difluorocarbene (DFC)-enabled ^18F-radiosynthesis is used to introduce [^18F]CF₂ in organic molecules.",
+            "16": "Difluorocarbene (DFC)-enabled ^18F-radiosynthesis is used to introduce related motifs in organic molecules.",
+            "17": "The motifs introduced in organic molecules by difluorocarbene (DFC)-enabled ^18F-radiosynthesis are used as bioactive radiotracers."
+          },
+          "18": [],
+          "19": {
+            "1": "A general method for the synthesis of [^18F]difluoromethylarenes from [^18F]fluoride is suitable for radiopharmaceutical discovery.",
+            "2": "A general method for the synthesis of [^18F]difluoromethylarenes from [^18F]fluoride is reported.",
+            "3": "The method for the synthesis of [^18F]difluoromethylarenes from [^18F]fluoride is practical.",
+            "4": "The method for the synthesis of [^18F]difluoromethylarenes from [^18F]fluoride is operationally simple.",
+            "5": "The method for the synthesis of [^18F]difluoromethylarenes from [^18F]fluoride tolerates a wide scope of functional groups.",
+            "6": "The method for the synthesis of [^18F]difluoromethylarenes from [^18F]fluoride enables the labeling of a variety of arenes and heteroarenes.",
+            "7": "The method for the synthesis of [^18F]difluoromethylarenes from [^18F]fluoride results in radiochemical yields (not decay-corrected) from 10 to 60%.",
+            "8": "^18F-fluorination precursors are readily prepared from aryl chlorides.",
+            "9": "^18F-fluorination precursors are readily prepared from aryl bromides.",
+            "10": "^18F-fluorination precursors are readily prepared from aryl iodides.",
+            "11": "^18F-fluorination precursors are readily prepared from aryl triflates.",
+            "12": "Seven ^18F-difluoromethylarene drug analogues and radiopharmaceuticals were synthesized to show the potential of the method for PET radiopharmaceutical design.",
+            "13": "The method for the synthesis of [^18F]difluoromethylarenes has potential applications in PET radiopharmaceutical design.",
+            "14": "^18F-difluoromethylarene analogues of Claritin were synthesized.",
+            "15": "^18F-difluoromethylarene analogues of fluoxetine (Prozac) were synthesized.",
+            "16": "^18F-difluoromethylarene analogues of [^18F]DAA1106 were synthesized."
+          },
+          "20": {
+            "1": "A general method is reported for labeling both CF₃ and CF₂H groups.",
+            "2": "The labeling method can be applied to a broad range of chemical settings, including aryl, oxide, and sulfide.",
+            "3": "The method utilizes frustrated Lewis pair mediated selective C–F activation.",
+            "4": "The method formally substitutes fluorine-19 with fluorine-18 in a two-step defluorination/radiofluorination process.",
+            "5": "The method can utilize the target compounds as starting materials.",
+            "6": "Radiotracer precursors can be isolated as stable salts before radiofluorination.",
+            "7": "The method delivers good radiochemical yields.",
+            "8": "The method achieves molar activities up to 35.2±6.5% non-decay corrected isolated activity yields.",
+            "9": "The method achieves molar activities up to 12.0±1.7 GBq μmol⁻¹.",
+            "10": "The method is applicable to biologically relevant compounds.",
+            "11": "The method's ability to utilize the target compound as the starting material makes it attractive for drug and radiotracer development.",
+            "12": "The synthetic simplicity of the method makes it attractive for drug and radiotracer development.",
+            "13": "The ever-increasing use of CF₃ and CF₂H groups in pharmaceuticals makes this method attractive for drug and radiotracer development."
+          },
+          "21": {
+            "1": "The paper reports the radiosynthesis of ^{18}F-difluoromethylarenes.",
+            "2": "The radiosynthesis of ^{18}F-difluoromethylarenes is accomplished via the assembly of three components: a boron reagent, ethyl bromofluoroacetate, and cyclotron-produced non-carrier added [^{18}F]fluoride.",
+            "3": "A copper-catalysed cross-coupling reaction is a key step in the radiosynthesis of ^{18}F-difluoromethylarenes.",
+            "4": "A Mn-mediated ^{18}F-fluorodecarboxylation is a key step in the radiosynthesis of ^{18}F-difluoromethylarenes."
+          },
+          "22": {
+            "1": "A metal-free and selective method to form [^18F]aryl-CF₂H has been developed.",
+            "2": "The development involves nucleophilic radiofluorination of benzyl (pseudo)halides.",
+            "3": "The development involves oxidative C–H activation of benzylic C–H bonds.",
+            "4": "The method to form [^18F]aryl-CF₂H is operationally simple.",
+            "5": "The method to form [^18F]aryl-CF₂H tolerates a variety of electron-neutral arenes.",
+            "6": "The method to form [^18F]aryl-CF₂H tolerates a variety of electron-deficient arenes.",
+            "7": "The method to form [^18F]aryl-CF₂H tolerates a variety of heteroarenes."
+          }
+        },
+        "viewpoints": [
+          "Notable progress has been made in synthesizing [18 F]difluoromethylated arenes from [18 F]fluoride in the past decade.",
+          "Notable progress has been made in synthesizing [18 F]difluoromethylated heteroarenes from [18 F]fluoride in the past decade."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "However, these methods variously require specialized precursors, metal catalysts, or additional synthesis manipulations after radiofluorination, and they all provide mediocre molar activities for the 18 F-difluoromethylarene products.",
+        "references": {},
+        "viewpoints": [
+          "These methods for synthesizing [18 F]difluoromethylated arenes require specialized precursors.",
+          "These methods for synthesizing [18 F]difluoromethylated arenes require metal catalysts.",
+          "These methods for synthesizing [18 F]difluoromethylated arenes require additional synthesis manipulations after radiofluorination.",
+          "These methods provide mediocre molar activities for the 18 F-difluoromethylarene products."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Other methods, based on generating the [18 F]difluoromethyl radical [23] or [18 F]difluorocarbene [24], have enabled 18 F-difluoromethylarenes to be obtained with improved molar activity.",
+        "references": {
+          "23": {
+            "1": "There is a growing interest in CHF₂ in the field of medicinal chemistry.",
+            "2": "There is a lack of efficient methods for inserting CHF¹⁸F into drug-like compounds.",
+            "3": "A photoredox flow reaction for ¹⁸F-difluoromethylation of N-heteroaromatics is described.",
+            "4": "N-heteroaromatics are widely used in medicinal chemistry.",
+            "5": "There is a two-step synthesis for a new ¹⁸F-difluoromethylation reagent.",
+            "6": "The photoredox reaction is completed within two minutes.",
+            "7": "The photoredox reaction proceeds by C−H activation.",
+            "8": "The photoredox reaction circumvents the need for pre-functionalization of the substrate.",
+            "9": "The method is operationally simple.",
+            "10": "The method affords straightforward access to radiolabeled N-heteroaromatics.",
+            "11": "The radiolabeled N-heteroaromatics have high molar activity.",
+            "12": "The radiolabeled N-heteroaromatics are suitable for biological in vivo studies.",
+            "13": "The radiolabeled N-heteroaromatics are suitable for clinical application."
+          },
+          "24": {
+            "1": "Total-body positron emission tomography (PET) has vastly broadened the range of research applications of molecular imaging technology.",
+            "2": "Total-body positron emission tomography (PET) has vastly broadened the range of clinical applications of molecular imaging technology.",
+            "3": "The broadened range of applications of total-body PET has accelerated progress in fluorine-18 (18F) radiochemistry.",
+            "4": "Numerous methods are available to 18F-label (hetero)arenes.",
+            "5": "Numerous methods are available to 18F-label alkanes.",
+            "6": "Access to 18F-difluoromethylated molecules in high molar activity is mostly an unsolved problem.",
+            "7": "The difluoromethyl group is indispensable for pharmaceutical drug discovery.",
+            "8": "A general solution to access 18F-difluoromethylated molecules in high molar activity is introduced by incorporating carbene chemistry into nuclear imaging.",
+            "9": "A [18F]difluorocarbene reagent is capable of a myriad of 18F-difluoromethylation processes.",
+            "10": "The newly designed 18F-reagent contrasts with the tens of known difluorocarbene reagents.",
+            "11": "The 18F-reagent is carefully designed for facile accessibility.",
+            "12": "The 18F-reagent is carefully designed for high molar activity.",
+            "13": "The 18F-reagent is carefully designed for versatility.",
+            "14": "The issue of molar activity is solved using an assay.",
+            "15": "The assay examines the likelihood of isotopic dilution on variation of the electronics of the difluorocarbene precursor.",
+            "16": "Versatility is demonstrated with multiple [18F]difluorocarbene-based reactions.",
+            "17": "[18F]difluorocarbene-based reactions include O–H insertions.",
+            "18": "[18F]difluorocarbene-based reactions include S–H insertions.",
+            "19": "[18F]difluorocarbene-based reactions include N–H insertions.",
+            "20": "[18F]difluorocarbene-based reactions include cross-couplings.",
+            "21": "Cross-couplings harness the reactivity of ubiquitous functional groups.",
+            "22": "Ubiquitous functional groups include (thio)phenols.",
+            "23": "Ubiquitous functional groups include N-heteroarenes.",
+            "24": "Ubiquitous functional groups include aryl boronic acids.",
+            "25": "(Thio)phenols are easy to install.",
+            "26": "N-heteroarenes are easy to install.",
+            "27": "Aryl boronic acids are easy to install.",
+            "28": "The impact of the [18F]difluorocarbene reagent is illustrated with the labeling of highly complex biologically relevant molecules.",
+            "29": "The impact of the [18F]difluorocarbene reagent is illustrated with the labeling of functionalized biologically relevant molecules.",
+            "30": "The impact of the [18F]difluorocarbene reagent is illustrated with the labeling of radiotracers."
+          }
+        },
+        "viewpoints": [
+          "Methods based on generating the [18 F]difluoromethyl radical have enabled 18 F-difluoromethylarenes to be obtained with improved molar activity.",
+          "Methods based on generating [18 F]difluorocarbene have enabled 18 F-difluoromethylarenes to be obtained with improved molar activity."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Although methods to access [18 F]difluoromethylarenes are therefore well-established [25], [26], [27], they are nonetheless unsuitable for the efficient syntheses of 18 F-labeled α,α-difluoromethylalkanes.",
+        "references": {
+          "25": {
+            "1": "Diverse radiochemistry is an essential component of nuclear medicine.",
+            "2": "Imaging techniques such as positron emission tomography (PET) are part of diverse radiochemistry.",
+            "3": "PET can track diseases at an early stage of development.",
+            "4": "PET can help patient care planning through personalized medicine.",
+            "5": "PET can support drug discovery programs.",
+            "6": "Fluorine-18 is the most frequently used radioisotope in PET radiopharmaceuticals for clinical research.",
+            "7": "Fluorine-18 is the most frequently used radioisotope in PET radiopharmaceuticals for preclinical research.",
+            "8": "Fluorine-18 has a 97% β⁺ decay rate.",
+            "9": "Fluorine-18 has a half-life of 109.8 minutes.",
+            "10": "Fluorine-18 has a positron energy of 635 keV.",
+            "11": "Fluorine-18 has a high specific activity.",
+            "12": "The physical and nuclear characteristics of Fluorine-18 make it an attractive nuclide for labeling.",
+            "13": "The physical and nuclear characteristics of Fluorine-18 make it an attractive nuclide for molecular imaging.",
+            "14": "Arenes and heteroarenes are privileged candidates for ¹⁸F-incorporation.",
+            "15": "Arenes and heteroarenes are metabolically robust.",
+            "16": "Arenes and heteroarenes are widely used by medicinal chemists.",
+            "17": "Arenes and heteroarenes are widely used by radiochemists.",
+            "18": "The range of (hetero)arenes amenable to ¹⁸F-fluorination was limited for many years by the lack of chemically diverse precursors.",
+            "19": "The range of (hetero)arenes amenable to ¹⁸F-fluorination was limited for many years by the lack of radiochemical methods allowing ¹⁸F-incorporation in high selectivity.",
+            "20": "The range of (hetero)arenes amenable to ¹⁸F-fluorination was limited for many years by the lack of radiochemical methods allowing ¹⁸F-incorporation in high efficiency, including radiochemical yield, purity, specific activity, and radio-scalability.",
+            "21": "Late-stage fluorination reactions catalyzed by transition metals have appeared.",
+            "22": "Late-stage fluorination reactions catalyzed by small organic molecules (organocatalysis) have appeared.",
+            "23": "The appearance of late-stage fluorination reactions has encouraged much research on the use of activation manifolds for ¹⁸F-fluorination.",
+            "24": "This review covers all reactions known to date to install the ¹⁸F substituent onto (hetero)arenes.",
+            "25": "This review covers all reactions known to date to install key ¹⁸F-motifs of medicinal relevance onto (hetero)arenes, including CF₃, CHF₂, OCF₃, SCF₃, OCHF₂.",
+            "26": "The field of late-stage fluorination has changed significantly in the past five years.",
+            "27": "The current trend suggests that the radiochemical space available for PET applications will expand rapidly in the near future."
+          },
+          "26": {
+            "1": "The difluoromethyl functionality is useful in drug discovery.",
+            "2": "The difluoromethyl functionality can modulate the properties of bioactive molecules.",
+            "3": "The difluoromethyl functionality has been largely underexploited in (pre)clinical radiotracers for PET imaging.",
+            "4": "The underexploitation of the difluoromethyl functionality in (pre)clinical radiotracers for PET imaging is due to a lack of user-friendly radiosynthetic routes.",
+            "5": "The Minireview provides an overview of the challenges facing radiochemists.",
+            "6": "The Minireview summarises efforts made to date to access ^{18}F-difluoromethyl-containing radiotracers.",
+            "7": "Two distinct approaches to access ^{18}F-difluoromethyl-containing radiotracers have prevailed.",
+            "8": "The first approach to access ^{18}F-difluoromethyl-containing radiotracers relies on ^{18}F-fluorination.",
+            "9": "The second approach consists of a ^{18}F-difluoromethylation process.",
+            "10": "The ^{18}F-difluoromethylation process uses ^{18}F-labelled reagents.",
+            "11": "The ^{18}F-labelled reagents are capable of releasing key reactive intermediates such as the [^{18}F]CF_{2}H radical or [^{18}F]difluorocarbene.",
+            "12": "The Minireview provides an outlook for future directions in the radiosynthesis of [^{18}F]CF_{2}H compounds.",
+            "13": "The Minireview provides an outlook for the application of [^{18}F]CF_{2}H compounds in tracer radiosynthesis."
+          },
+          "27": {
+            "1": "Positron emission tomography (PET) is used in preclinical and clinical settings.",
+            "2": "PET is used to study biological processes in vivo.",
+            "3": "PET is used to visualize physiological processes in vivo.",
+            "4": "Fluorine-18 (18F) is the most frequently used positron emitter for PET imaging.",
+            "5": "Fluorine-18 has a convenient 109.8 min half-life.",
+            "6": "Fluorine-18 has high yield production on small biomedical cyclotrons.",
+            "7": "Fluorine-18 has well-established radiofluorination chemistry.",
+            "8": "The presence of fluorine atoms in many drugs opens new possibilities for developing radioligands labelled with fluorine-18.",
+            "9": "The trifluoromethyl group (CF3) is a versatile structural motif in medicinal and pharmaceutical chemistry.",
+            "10": "The trifluoromethyl group is used to design drug molecules with favorable pharmacological properties.",
+            "11": "The trifluoromethyl group is used to synthesize drug molecules with favorable pharmacological properties.",
+            "12": "The versatility of CF3 groups makes them an exciting synthesis target for PET tracer discovery.",
+            "13": "Early attempts to synthesize [18F]CF3-containing radiotracers were hampered by low radiochemical yields.",
+            "14": "Low radiochemical purity was a challenge in synthesizing [18F]CF3-containing radiotracers.",
+            "15": "Low molar activity was a challenge in synthesizing [18F]CF3-containing radiotracers.",
+            "16": "Recent innovations in [18F]trifluoromethylation chemistry have expanded the chemical toolbox.",
+            "17": "The expanded chemical toolbox allows for the synthesis of fluorine-18-labelled radiotracers.",
+            "18": "The review presents the development of significant [18F]trifluoromethylation chemistry strategies.",
+            "19": "The strategies aim to apply [18F]CF3-containing radiotracers in preclinical PET imaging studies.",
+            "20": "The strategies aim to apply [18F]CF3-containing radiotracers in clinical PET imaging studies.",
+            "21": "The continuous growth of PET as a crucial functional imaging technique in biomedical and clinical research will drive the development of novel [18F]trifluoromethylation chemistry strategies.",
+            "22": "The increasing number of CF3-containing drugs will drive the development of novel [18F]trifluoromethylation chemistry strategies."
+          }
+        },
+        "viewpoints": [
+          "Methods to access [18 F]difluoromethylarenes are well-established.",
+          "Methods to access [18 F]difluoromethylarenes are unsuitable for the efficient syntheses of 18 F-labeled α,α-difluoromethylalkanes."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "After 2020, methods for attaching non-radioactive difluoromethyl groups to aliphatic chains were achieved with various difluoromethylating agents, such as the zinc complex, (DMPU)2Zn(CF2H)2, difluoroacetic acid, chlorodifluoromethane, ((difluoromethyl)sulfonyl)arenes, difluoromethyltriphenylphosphonium iodide, and N-phenyl-N-tosyldifluoroacetamide [28], [29], [30], [31], [32], [33], [34], [35], [36], [37].",
+        "references": {
+          "28": {
+            "1": "The difluoromethyl group (CF₂H) is a lipophilic bioisostere of an amino (NH₂) group.",
+            "2": "The difluoromethyl group (CF₂H) is metabolically stable.",
+            "3": "The difluoromethyl group (CF₂H) is considered a bioisostere of an amino (NH₂) group.",
+            "4": "Methods that can rapidly convert an NH₂ group into a CF₂H group would be of great value to medicinal chemistry.",
+            "5": "An efficient Cu-catalyzed approach for the conversion of alkyl pyridinium salts to their alkyl difluoromethane analogues is reported.",
+            "6": "Alkyl pyridinium salts can be readily synthesized from the corresponding alkyl amines.",
+            "7": "The Cu-catalyzed approach efficiently converts alkyl pyridinium salts to their alkyl difluoromethane analogues.",
+            "8": "The Cu-catalyzed method tolerates a broad range of functional groups.",
+            "9": "The Cu-catalyzed method can be applied to the late-stage modification of complex amino-containing pharmaceuticals."
+          },
+          "29": {
+            "1": "Alcohols are ubiquitous in natural products.",
+            "2": "Alcohols are ubiquitous in pharmaceuticals.",
+            "3": "Alcohols are attractive starting materials for the construction of C–C bonds.",
+            "4": "The catalytic strategy harnesses the reactivity of aryl radicals for the activation of C–O bonds in alcohol-derived xanthate esters.",
+            "5": "The catalytic strategy allows for the discovery of the first catalytic deoxygenative difluoromethylation reaction.",
+            "6": "Under copper-catalyzed conditions, a wide variety of alkyl xanthate esters were activated by catalytically generated aryl radicals.",
+            "7": "Alkyl xanthate esters are readily synthesized from alcohol feedstocks.",
+            "8": "Alkyl xanthate esters were converted to alkyl-difluoromethane products via alkyl radical intermediates.",
+            "9": "The protocol is scalable.",
+            "10": "The protocol exhibits a broad substrate scope.",
+            "11": "The protocol exhibits functional group tolerance.",
+            "12": "The protocol enables late-stage modification of complex pharmaceutical agents.",
+            "13": "A one-pot protocol allows for the direct use of free alcohols.",
+            "14": "The one-pot protocol eliminates the need for purification of the xanthate esters.",
+            "15": "Mechanistic studies support the hypothesis that aryl radicals are formed.",
+            "16": "Aryl radicals initiate the cleavage of C–O bonds of xanthate esters.",
+            "17": "Cleavage of C–O bonds of xanthate esters generates alkyl radicals as key intermediates.",
+            "18": "The aryl radical activation approach represents a new strategy for the activation of alcohols as cross-coupling partners."
+          },
+          "30": {
+            "1": "The engagement of unactivated alkyl halides in copper-catalyzed cross-coupling reactions has been historically challenging.",
+            "2": "Unactivated alkyl halides have low reduction potential.",
+            "3": "There is slow oxidative addition of copper(I) catalysts in reactions involving unactivated alkyl halides.",
+            "4": "A novel strategy leverages the halogen abstraction ability of aryl radicals.",
+            "5": "The novel strategy engages a diverse range of alkyl iodides in copper-catalyzed Negishi-type cross-coupling reactions at room temperature.",
+            "6": "Aryl radicals generated via copper catalysis efficiently initiate the cleavage of the carbon–iodide bonds of alkyl iodides.",
+            "7": "Generated alkyl radicals enter copper catalytic cycles to couple with a difluoromethyl zinc reagent.",
+            "8": "The coupling of alkyl radicals with a difluoromethyl zinc reagent furnishes alkyl difluoromethane products.",
+            "9": "The unprecedented Negishi-type difluoromethylation approach has been applied to the late-stage modification of densely functionalized pharmaceutical agents.",
+            "10": "The unprecedented Negishi-type difluoromethylation approach has been applied to the late-stage modification of natural products."
+          },
+          "31": {
+            "1": "A facile method for the regioselective hydrodifluoromethylation of alkenes is reported.",
+            "2": "The method uses difluoroacetic acid and phenyliodine(III) diacetate.",
+            "3": "The method is conducted in tetrahydrofuran.",
+            "4": "The method operates under visible-light activation.",
+            "5": "The approach for regioselective hydrodifluoromethylation of alkenes is metal-free.",
+            "6": "The approach stands out because it uses inexpensive reagents.",
+            "7": "The approach does not require a photocatalyst.",
+            "8": "The approach displays broad functional group tolerance.",
+            "9": "The procedure for regioselective hydrodifluoromethylation of alkenes is operationally simple.",
+            "10": "The procedure is scalable.",
+            "11": "The procedure provides access in one step to high-value building blocks.",
+            "12": "The high-value building blocks are for application in medicinal chemistry."
+          },
+          "32": {
+            "1": "Incorporation of fluoroalkyl motifs in pharmaceuticals can enhance the therapeutic profiles of pharmaceuticals.",
+            "2": "The hydrofluoroalkylation of alkenes is a promising route to diverse fluoroalkylated compounds.",
+            "3": "Current methods of hydrofluoroalkylation require superstoichiometric oxidants.",
+            "4": "Current methods of hydrofluoroalkylation require expensive/oxidative fluoroalkylating reagents.",
+            "5": "Current methods of hydrofluoroalkylation require precious metals.",
+            "6": "Current methods of hydrofluoroalkylation often exhibit limited scope.",
+            "7": "A universal protocol that addresses the limitations of current methods of hydrofluoroalkylation is highly desirable.",
+            "8": "The hydrofluoroalkylation of alkenes can be achieved with fluoroalkyl carboxylic acids as the sole reagents.",
+            "9": "The fluoroalkyl carboxylic acids used in hydrofluoroalkylation of alkenes are cheap, abundant, and available.",
+            "10": "Hydrotrifluoroalkylation, difluoroalkylation, monofluoroalkylation, and perfluoroalkylation are demonstrated.",
+            "11": "The process of hydrotrifluoro-, difluoro-, monofluoro- and perfluoroalkylation has a broad scope.",
+            "12": "The process of hydrotrifluoro-, difluoro-, monofluoro- and perfluoroalkylation occurs under mild conditions.",
+            "13": "The conditions for hydrotrifluoro-, difluoro-, monofluoro- and perfluoroalkylation are redox neutral.",
+            "14": "The process of hydrotrifluoro-, difluoro-, monofluoro- and perfluoroalkylation has potential for late-stage modification of bioactive molecules.",
+            "15": "Success in hydrofluoroalkylation involves overcoming the exceedingly high redox potential of feedstock fluoroalkyl carboxylic acids.",
+            "16": "Trifluoroacetic acid is a fluoroalkyl carboxylic acid with a high redox potential.",
+            "17": "The high redox potential of feedstock fluoroalkyl carboxylic acids is overcome by using cooperative earth-abundant, inexpensive iron and redox-active thiol catalysis.",
+            "18": "The use of earth-abundant, inexpensive iron and redox-active thiol catalysis enables feedstock fluoroalkyl carboxylic acids to be used directly as hydroperfluoroalkylation donors without pre-activation.",
+            "19": "Preliminary mechanistic studies support the radical nature of the cooperative process involved in hydrofluoroalkylation."
+          },
+          "33": {
+            "1": "Using abundant and inexpensive fluorine feedstock sources to synthesize fluorinated compounds is appealing.",
+            "2": "Using abundant and inexpensive fluorine feedstock sources to synthesize fluorinated compounds is an underexplored strategy.",
+            "3": "A photocatalytic radical hydrodifluoromethylation of unactivated alkenes with chlorodifluoromethane (ClCF₂H, Freon-22) is reported.",
+            "4": "Chlorodifluoromethane (ClCF₂H, Freon-22) is an inexpensive industrial chemical.",
+            "5": "The protocol is realized by merging tertiary amine-ligated boryl radical-induced halogen atom transfer (XAT) with organophotoredox catalysis.",
+            "6": "The protocol operates under blue light irradiation.",
+            "7": "A broad scope of readily accessible alkenes could be selectively difluoromethylated with good efficiency.",
+            "8": "The alkenes feature a variety of functional groups and drug and natural product moieties.",
+            "9": "The difluoromethylation is achieved in a metal-free manner.",
+            "10": "The key XAT process of ClCF₂H is thermodynamically favored over the hydrogen atom transfer pathway.",
+            "11": "The key XAT process of ClCF₂H is kinetically favored over the hydrogen atom transfer pathway.",
+            "12": "The thermodynamic and kinetic favorability is due to the formation of a strong boron–chlorine (B–Cl) bond.",
+            "13": "The thermodynamic and kinetic favorability is due to the low-lying antibonding orbital of the carbon–chlorine (C–Cl) bond.",
+            "14": "Experimental studies and computational studies suggested the favorability of the key XAT process."
+          },
+          "34": {
+            "1": "Replacing a functional group with its corresponding bioisostere is a widely employed tactic during drug discovery campaigns.",
+            "2": "The tactic of replacing a functional group with its corresponding bioisostere allows medicinal chemists to improve the ADME properties of candidates.",
+            "3": "The tactic of replacing a functional group with its corresponding bioisostere allows medicinal chemists to maintain the potency of candidates.",
+            "4": "Incorporating bioisosteres typically requires lengthy de novo resynthesis of potential candidates.",
+            "5": "The lengthy de novo resynthesis required for incorporating bioisosteres represents a bottleneck in the broader evaluation of potential candidates.",
+            "6": "An alternative to de novo resynthesis is to directly convert a functional group into its corresponding bioisostere at a late stage.",
+            "7": "The approach of directly converting functional groups into their corresponding bioisosteres is realized through the conversion of aliphatic alcohols into difluoromethylated analogues.",
+            "8": "The conversion of aliphatic alcohols into difluoromethylated analogues is achieved via benzoxazolium-mediated deoxygenation.",
+            "9": "The conversion of aliphatic alcohols into difluoromethylated analogues is achieved via copper-mediated C(sp³)–CF₂H bond formation.",
+            "10": "The method of converting aliphatic alcohols into difluoromethylated analogues is useful for a variety of complex alcohols.",
+            "11": "The method of converting aliphatic alcohols into difluoromethylated analogues is useful for drug compounds."
+          },
+          "35": {
+            "1": "Photoredox-catalyzed hydrodifluoromethylation of alkenes is an effective method.",
+            "2": "The photoredox-catalyzed hydrodifluoromethylation method introduces a difluoromethyl group into organic molecules.",
+            "3": "Reported methods for hydrodifluoromethylation involve either photocatalysts or superstoichiometric amounts of additives.",
+            "4": "A simple alternative method for the hydrodifluoromethylation of alkenes is described without using photocatalyst or additive.",
+            "5": "The alternative method involves photoactivation of difluoromethyltriphenylphosphonium iodide salt.",
+            "6": "Mechanistic studies provide insight into how the transformation of hydrodifluoromethylation takes place."
+          },
+          "36": {
+            "1": "The search for active species in copper-mediated difluoromethylation of aryl halides led to the discovery of a powerful difluoromethylating reagent, [Ph₄P]⁺[Cu(CF₂H)₂]⁻ 2.",
+            "2": "Complex 2 was able to difluoromethylate electron-deficient and electron-rich aryl iodides.",
+            "3": "Complex 2 was able to difluoromethylate heteroaryl iodides.",
+            "4": "Complex 2 was able to difluoromethylate activated heteroaryl bromides.",
+            "5": "Complex 2 was able to difluoromethylate chloride.",
+            "6": "Complex 2 was able to difluoromethylate aryl bromides with a directing group.",
+            "7": "Complex 2 was able to difluoromethylate alkenyl iodide.",
+            "8": "Complex 2 was able to difluoromethylate benzyl bromides.",
+            "9": "Complex 2 was able to difluoromethylate allyl bromides.",
+            "10": "Complex 2 was able to difluoromethylate alkyl iodide.",
+            "11": "Complex 2 was able to difluoromethylate allyl carbonates.",
+            "12": "Complex 2 was able to difluoromethylate acid chloride.",
+            "13": "In the presence of an oxidant, complex 2 reacted with various lithium n-butyl arylboronic acid pinacol esters.",
+            "14": "In the presence of an oxidant, complex 2 reacted with alkyne.",
+            "15": "In the presence of an oxidant, complex 2 reacted with heteroarene.",
+            "16": "Complex 2 could transmetalate the difluoromethyl reagent to [Ph₄P]⁺[CuCl₂]⁻.",
+            "17": "Complex 2 could transmetalate the difluoromethyl reagent to [(DPPF)PdCl₂]."
+          },
+          "37": {
+            "1": "A new radical difluoromethylation method was developed.",
+            "2": "The new radical difluoromethylation method uses inexpensive and readily available difluoroacetic anhydride.",
+            "3": "The new radical difluoromethylation method uses N-phenyl-4-methylbenzenesulfonamide.",
+            "4": "This is the first reported use of inexpensive and readily available difluoroacetic anhydride and N-phenyl-4-methylbenzenesulfonamide for radical difluoromethylation.",
+            "5": "The reaction of arylboronic acids with the new difluoromethylation reagent, N-phenyl-N-tosyldifluoroacetamide, proceeded smoothly.",
+            "6": "A palladium catalyst was used in the reaction of arylboronic acids with N-phenyl-N-tosyldifluoroacetamide.",
+            "7": "The reaction provided difluoromethylarenes in satisfactory to excellent yields.",
+            "8": "The electronic property of the substituent linked to the aromatic ring did not considerably influence the reactivity of arylboronic acid.",
+            "9": "The electronic properties considered were electron-donating and electron-withdrawing.",
+            "10": "Various groups were tolerated well under the current reaction conditions.",
+            "11": "Synthetically useful functional groups Cl, CN, and NO₂ were included among the various groups that were tolerated well."
+          }
+        },
+        "viewpoints": [
+          "Methods for attaching non-radioactive difluoromethyl groups to aliphatic chains were achieved after 2020.",
+          "Various difluoromethylating agents, such as the zinc complex (DMPU)2Zn(CF2H)2, were used for attaching non-radioactive difluoromethyl groups.",
+          "Difluoroacetic acid was used as a difluoromethylating agent for attaching non-radioactive difluoromethyl groups.",
+          "Chlorodifluoromethane was used as a difluoromethylating agent for attaching non-radioactive difluoromethyl groups.",
+          "((Difluoromethyl)sulfonyl)arenes was used as a difluoromethylating agent for attaching non-radioactive difluoromethyl groups.",
+          "Difluoromethyltriphenylphosphonium iodide was used as a difluoromethylating agent for attaching non-radioactive difluoromethyl groups.",
+          "N-phenyl-N-tosyldifluoroacetamide was used as a difluoromethylating agent for attaching non-radioactive difluoromethyl groups."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Nevertheless, these methods are not adaptable to fluorine-18 labeling due to their need for harsh reaction conditions, long reaction times, and likely outcomes of high carrier dilution.",
+        "references": {},
+        "viewpoints": [
+          "These methods for attaching non-radioactive difluoromethyl groups are not adaptable to fluorine-18 labeling.",
+          "These methods require harsh reaction conditions.",
+          "These methods require long reaction times.",
+          "These methods likely result in high carrier dilution."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "To date, few methods exist for the radiosynthesis of an 18 F-labeled α,α-difluoromethylalkane.",
+        "references": {},
+        "viewpoints": [
+          "Few methods exist for the radiosynthesis of an 18 F-labeled α,α-difluoromethylalkane."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "The earliest report showed only one example with a low yield from an α-fluoroalkyl aryl thioether precursor by the combined action of the oxidant, 1,3-dibromo-5,5-dimethylhydantoin, and a large excess of carrier-added pyridine·9H[18 F]F [38] (Fig. 1B).",
+        "references": {
+          "38": {
+            "1": "ω-substituted 1,1-difluoroalkanes are synthesized in good yields from alkyl aryl thioethers.",
+            "2": "A new oxidative desulfurization−difluorination protocol is used for the synthesis.",
+            "3": "The reagents combination consists of 1,3-dibromo-5,5-dimethylhydantoin (DBH) as an oxidizer and pyridine·9HF (Py·9HF) as a fluoride source.",
+            "4": "The reaction involves a fluoro-Pummerer-type rearrangement.",
+            "5": "The fluoro-Pummerer-type rearrangement is followed by an oxidative desulfurization−fluorination step.",
+            "6": "The reaction is promising for ^{18}F-labeling of ligands for positron emission tomography (PET).",
+            "7": "Starting materials for the reaction are α-fluorinated thioethers.",
+            "8": "The half-life of ^{18}F used for labeling is 110 minutes.",
+            "9": "The combination of DBH and carrier-added Py·9H[^{18}F]F is used in the synthesis.",
+            "10": "An ^{18}F-labeled difluoride was synthesized from the corresponding α-fluoro thioether.",
+            "11": "The radiochemical yield of the ^{18}F-labeled difluoride synthesis is 9%."
+          }
+        },
+        "viewpoints": [
+          "The earliest report showed only one example of radiosynthesis of an 18 F-labeled α,α-difluoromethylalkane.",
+          "The radiosynthesis produced a low yield from an α-fluoroalkyl aryl thioether precursor using 1,3-dibromo-5,5-dimethylhydantoin as an oxidant.",
+          "A large excess of carrier-added pyridine·9H[18 F]F was used in the radiosynthesis process."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "More recently two methods have appeared [39], [40].",
+        "references": {
+          "39": {
+            "1": "A method for the synthesis of 1,1-[18F]difluorinated alkenes from [18F]fluoride is reported.",
+            "2": "The method reported is general for synthesizing 1,1-[18F]difluorinated alkenes.",
+            "3": "The transformation is highly regioselective.",
+            "4": "The transformation gives 18F-fluoroalkenes with radiochemical purities of up to 77%.",
+            "5": "The transformation achieves these purities within 20 minutes.",
+            "6": "The transformation achieves a molar activity of 1 GBq μmol−1.",
+            "7": "The transformations are operationally simple to perform.",
+            "8": "The transformations were readily translated onto a commercial automated synthesis unit.",
+            "9": "The 1,1-[18F]difluorinated alkene motif is prevalent in numerous drug molecules.",
+            "10": "This method is the first general method to synthesize the 1,1-[18F]difluorinated alkene motif with fluorine-18.",
+            "11": "18F-fluorinated alkenes are excellent building blocks.",
+            "12": "18F-fluorinated alkenes participate in a number of post-labeling transformations.",
+            "13": "The post-labeling transformations access a range of 18F-perfluorinated functional groups.",
+            "14": "These 18F-perfluorinated functional groups have never before been radiolabeled with non-carrier-added [18F]fluoride.",
+            "15": "This method considerably expands the range of 18F-motifs accessible to radiochemists."
+          },
+          "40": {
+            "1": "α-fluorocarboxylic acids undergo manganese-mediated oxidative ^{18}F-fluorodecarboxylation with [^{18}F]fluoride.",
+            "2": "The process results in the formation of biologically relevant ^{18}F-difluoromethyl(ene)-containing molecules.",
+            "3": "The no-carrier added process provides a solution to a known challenge in radiochemistry.",
+            "4": "The no-carrier added process expands the radiochemical space available for positron emission tomography (PET) ligand discovery.",
+            "5": "Scalability on a fully automated radiosynthetic platform is exemplified with the production of [^{18}F]4,4-difluoropiperidine.",
+            "6": "[^{18}F]4,4-difluoropiperidine is amenable to postlabeling functionalization.",
+            "7": "[^{18}F]4,4-difluoropiperidine can undergo N-heteroarylation.",
+            "8": "[^{18}F]4,4-difluoropiperidine can form amide bonds.",
+            "9": "[^{18}F]4,4-difluoropiperidine can form sulfonamide bonds."
+          }
+        },
+        "viewpoints": [
+          "More recently, two methods for the radiosynthesis of an 18 F-labeled α,α-difluoromethylalkane have appeared."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "One method requires two steps from an aryldifluorovinyl iodonium salt and gives a low molar activity [39].",
+        "references": {
+          "39": {
+            "1": "A method for the synthesis of 1,1-[18F]difluorinated alkenes from [18F]fluoride is reported.",
+            "2": "The method reported is general for synthesizing 1,1-[18F]difluorinated alkenes.",
+            "3": "The transformation is highly regioselective.",
+            "4": "The transformation gives 18F-fluoroalkenes with radiochemical purities of up to 77%.",
+            "5": "The transformation achieves these purities within 20 minutes.",
+            "6": "The transformation achieves a molar activity of 1 GBq μmol−1.",
+            "7": "The transformations are operationally simple to perform.",
+            "8": "The transformations were readily translated onto a commercial automated synthesis unit.",
+            "9": "The 1,1-[18F]difluorinated alkene motif is prevalent in numerous drug molecules.",
+            "10": "This method is the first general method to synthesize the 1,1-[18F]difluorinated alkene motif with fluorine-18.",
+            "11": "18F-fluorinated alkenes are excellent building blocks.",
+            "12": "18F-fluorinated alkenes participate in a number of post-labeling transformations.",
+            "13": "The post-labeling transformations access a range of 18F-perfluorinated functional groups.",
+            "14": "These 18F-perfluorinated functional groups have never before been radiolabeled with non-carrier-added [18F]fluoride.",
+            "15": "This method considerably expands the range of 18F-motifs accessible to radiochemists."
+          }
+        },
+        "viewpoints": [
+          "One method for 18 F-labeled α,α-difluoromethylalkane requires two steps from an aryldifluorovinyl iodonium salt.",
+          "The method using aryldifluorovinyl iodonium salt gives a low molar activity."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Another method is single-step from a 2-fluoroalkanoic acid precursor but gives only somewhat improved molar activity [40].",
+        "references": {
+          "40": {
+            "1": "α-fluorocarboxylic acids undergo manganese-mediated oxidative ^{18}F-fluorodecarboxylation with [^{18}F]fluoride.",
+            "2": "The process results in the formation of biologically relevant ^{18}F-difluoromethyl(ene)-containing molecules.",
+            "3": "The no-carrier added process provides a solution to a known challenge in radiochemistry.",
+            "4": "The no-carrier added process expands the radiochemical space available for positron emission tomography (PET) ligand discovery.",
+            "5": "Scalability on a fully automated radiosynthetic platform is exemplified with the production of [^{18}F]4,4-difluoropiperidine.",
+            "6": "[^{18}F]4,4-difluoropiperidine is amenable to postlabeling functionalization.",
+            "7": "[^{18}F]4,4-difluoropiperidine can undergo N-heteroarylation.",
+            "8": "[^{18}F]4,4-difluoropiperidine can form amide bonds.",
+            "9": "[^{18}F]4,4-difluoropiperidine can form sulfonamide bonds."
+          }
+        },
+        "viewpoints": [
+          "Another method is a single-step synthesis from a 2-fluoroalkanoic acid precursor.",
+          "The single-step method from a 2-fluoroalkanoic acid precursor gives only somewhat improved molar activity."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "This method also requires the use of an oxidizing agent and a metal-ligand mediator.",
+        "references": {},
+        "viewpoints": [
+          "The method using a 2-fluoroalkanoic acid precursor requires an oxidizing agent.",
+          "The method using a 2-fluoroalkanoic acid precursor requires a metal-ligand mediator."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Thus, there is a clear need for the development of simple and efficient broad-scope methodologies for labeling α,α-difluoromethylalkanes with fluorine-18 at high molar activity.",
+        "references": {},
+        "viewpoints": [
+          "There is a clear need for simple and efficient broad-scope methodologies for labeling α,α-difluoromethylalkanes with fluorine-18 at high molar activity."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "We envisioned that [18 F]fluoride treatment of an α-fluoroalkane possessing a leaving group on the α - carbon might provide an 18 F-labeled α,α-difluoromethylalkane with high molar activity.",
+        "references": {},
+        "viewpoints": [
+          "The authors envisioned that [18 F]fluoride treatment of an α-fluoroalkane with a leaving group on the α-carbon might provide an 18 F-labeled α,α-difluoromethylalkane with high molar activity."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "Herein, we describe our development of an effective method for the direct radiofluorination of α-bromo-α-fluoroalkane precursors with [18 F]fluoride, enabling the efficient late-stage syntheses of 18 F-labeled α,α-difluoromethylalkanes with high molar activities.",
+        "references": {},
+        "viewpoints": [
+          "The authors developed an effective method for the direct radiofluorination of α-bromo-α-fluoroalkane precursors with [18 F]fluoride.",
+          "The authors' method enables the efficient late-stage syntheses of 18 F-labeled α,α-difluoromethylalkanes with high molar activities."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "This method has several other attractive features, including amenability for automation (Fig. 1C).",
+        "references": {},
+        "viewpoints": [
+          "The authors' method has several attractive features.",
+          "The method is amenable for automation, as shown in Fig. 1C."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "We further demonstrate robust applications of this methodology for installing an 18 F-labeled α,α-difluoromethyl moiety into diverse candidate PET tracers.",
+        "references": {},
+        "viewpoints": [
+          "The authors demonstrate robust applications of their methodology for installing an 18 F-labeled α,α-difluoromethyl moiety into diverse candidate PET tracers."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56897-5_with_abstracts",
+    "base_id": "s41467-025-56897-5",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56897-5_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

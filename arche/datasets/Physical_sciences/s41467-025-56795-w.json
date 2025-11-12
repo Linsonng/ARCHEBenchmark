@@ -1,0 +1,275 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Single-crystal optical actuators are stimulating a new field of chemistry, given their wide-ranging prospective applications that range from light-driven molecular machinery [1] , [2] , [3] , to microrobotics [4] , [5] , [6] , [7] , to optical data storage [8] , to futuristic quantum-computing circuitry [9] . Single crystals are a particularly attractive form of an optically actuating material since they offer a highly pure solid-state medium for photonic control. Crystalline actuators whose functional origins lie in light-induced structural changes are especially alluring because such changes exhibit long-range effects that propagate throughout a periodic crystal-lattice environment; thereby affording an ordered array of photonic signatures. These photostructural effects are often correlated, and ‘out-of-equilibrium’ in nature, a characteristic that has been coined as ‘the real terra nova of solid-state chemistry’ [10] . Single-crystal optical actuation has been demonstrated in a diverse range of organic, inorganic and organometallic compounds [11] , [12] , [13] , [14] , [15] , [16] , [17] , [18] , [19] , [20] , [21] , [22] , [23] , [24] , [25] , [26] . Coordination complexes that contain transition metals, such as ruthenium, are of particular interest since they exhibit metal-to-ligand charge transfer (MLCT) that gives rise to broad-band optical absorption, while maintaining good thermal stability. Linkage photoisomerisation is often the molecular-scale phenomenon that underpins the microscopic manifestation of single-crystal optical actuation in coordination complexes [24] . We therefore sought to discover a new single-crystal optical actuator by developing an extended series of ruthenium-tetraammine complexes that undergo SO 2 -linkage photoisomerisation [27] , [28] , [29] , [30] , [31] , [32] , [33] , [34] , [35] , [36] , [37] , [38] , [39] , [40] , [41] , [42] , [43] , [44] , [45] . Their generic formula is trans -[Ru(SO 2 )(NH 3 ) 4 (X)] m+ Y n , where X is a trans ligand relative to the photoactive SO 2 ligand, Y is a counter ion and m and n are integers whose values are determined by charge balancing (hereafter, these will be known as [RuSO 2 ] complexes). Many variations of X and Y can support one or both η 1 -OSO or η 2 -(OS)O photoisomeric configurations within the single-crystal form, whose light-induced structure is metastable when kept suitably cooled (typically to 100 K) and which thermally reverts to its η 1 -SO 2 dark-state crystal structure. Single-crystal optical actuation has been reported in one [RuSO 2 ] complex, to date, and adopts the form of a thermally-reversible macroscopic crystal-peeling effect [38] . Peeling is one of the more novel types of macroscopic crystalline deformations that may occur in complexes, owing to the untenable crystal strain that molecular-scale photostructural effects can impart: crystals may peel, bend, stretch, crack, fracture or explode, when subjected to light [11] . This peeling effect was deemed to stabilise the substantial but incomplete (52%) photoconversion level of the η 1 -OSO isomer in [Ru(SO 2 )(NH 3 ) 4 (3-phenylpyridine)]Cl 2 .H 2 O [38] . A [RuSO 2 ] complex would ideally support 100% SO 2 -linkage photoisomerisation so that the dark- (0) and light-induced (1,2,…) states can be readily distinguished as integer encodings for photonic applications. Yet, until now, complete η 1 -OSO photoconversion had only been reported in single crystals of two [RuSO 2 ] complexes [42] , [44] , neither of which display macroscopic optical actuation. Furthermore, the η 2 -(OS)O photoisomer that is often found in [RuSO 2 ] complexes has never been structurally isolated with 100% photoconversion; rather, it has been found to co-exist with one or both of the η 1 -OSO photoisomer and η 1 -SO 2 dark-state configurations [27] , [28] , [29] , [30] , [31] , [32] , [33] , [34] , [35] , [36] , [37] , [38] , [43] , [45] . This paper reports the discovery of a new [RuSO 2 ] complex, trans -[Ru(SO 2 )(NH 3 ) 4 (4-bromopyridine)]tosylate 2 ] ( 1 , Fig. 1a ) that exhibits a thermally-reversible ‘cracking’ form of single-crystal optical actuation. Thereby, we show that its η 1 -SO 2 dark-state crystal structure undergoes 100% SO 2 -linkage photoisomerisation to create a pure η 1 -OSO photoisomeric crystal structure at 90 K or a pure η 2 -(OS)O photoisomeric species at 100 K. Each photoisomer is metastable at their stated temperature and is accompanied by a substantial level of micro- and nanoscopic crystal strain, which diminishes as 1 thermally recovers its η 1 -SO 2 dark-state crystal structure. Fig. 1: Chemical Structure of 1 in its dark-state and photoisomeric forms. a Chemical schematic diagram of 1 , whose ( b ) crystals can be light and temperature tuned to behave as a ternary molecular switch (Data: 0, 1, 2). The molecular origins of this ternary switching behaviour lie in photostructural changes within the crystal structure of 1 , caused by 100% SO 2 linkage photoisomerisation that occurs when the crystal is exposed to 505 nm light while maintained at low-temperature: the η 1 -OSO or η 2 -(OS)O photoisomer forms at 90 K or 100 K, respectively. The latter photoisomer can also be generated by warming up the former by 10 K. The η 1 -SO 2 dark-state crystal structure is recovered upon warming up the crystal. c The asymmetric unit of the three crystal structures of 1 captured in each of its isomeric-state configurations. Anisotropic displacement parameters are shown at the 50% probability level. Hydrogen atoms and tosylate counterions are omitted for clarity. Full size image This demonstration of three distinct 100%-converted SO 2 -linkage isomeric species in a [RuSO 2 ] complex is important because it reveals the foundational possibility of creating ternary photonic signatures of high purity in single-crystal optical actuators (Fig. 1b ). We now describe our findings through the structural and optical characteristics of 1 which we determined using in-situ light-induced single-crystal X-ray diffraction (also known as ‘photocrystallography’) [46] , [47] , [48] , single-crystal optical-absorption spectroscopy and optical microscopy [41] and in-situ light-induced low-temperature atomic-force microscopy. These findings also show how its ternary molecular switching can be controlled by temperature and visible light (Fig. 1b ).",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Single-crystal optical actuators are stimulating a new field of chemistry, given their wide-ranging prospective applications that range from light-driven molecular machinery, to microrobotics, to optical data storage, to futuristic quantum-computing circuitry.",
+        "references": {},
+        "viewpoints": [
+          "Single-crystal optical actuators are stimulating a new field of chemistry.",
+          "Single-crystal optical actuators have wide-ranging prospective applications in light-driven molecular machinery.",
+          "Single-crystal optical actuators have wide-ranging prospective applications in microrobotics.",
+          "Single-crystal optical actuators have wide-ranging prospective applications in optical data storage.",
+          "Single-crystal optical actuators have wide-ranging prospective applications in futuristic quantum-computing circuitry."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Single crystals are a particularly attractive form of an optically actuating material since they offer a highly pure solid-state medium for photonic control.",
+        "references": {},
+        "viewpoints": [
+          "Single crystals are a particularly attractive form of optically actuating material.",
+          "Single crystals offer a highly pure solid-state medium for photonic control."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Crystalline actuators whose functional origins lie in light-induced structural changes are especially alluring because such changes exhibit long-range effects that propagate throughout a periodic crystal-lattice environment; thereby affording an ordered array of photonic signatures.",
+        "references": {},
+        "viewpoints": [
+          "Crystalline actuators' functional origins lie in light-induced structural changes.",
+          "Crystalline actuators light-induced structural changes are especially alluring.",
+          "Light-induced structural changes in crystalline actuators exhibit long-range effects.",
+          "Long-range effects propagate throughout a periodic crystal-lattice environment.",
+          "Long-range effects in a periodic crystal-lattice environment afford an ordered array of photonic signatures."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "These photostructural effects are often correlated, and ‘out-of-equilibrium’ in nature, a characteristic that has been coined as ‘the real terra nova of solid-state chemistry’.",
+        "references": {},
+        "viewpoints": [
+          "Photostructural effects are often correlated.",
+          "Photostructural effects are often ‘out-of-equilibrium’ in nature.",
+          "The ‘out-of-equilibrium’ nature of photostructural effects has been coined as ‘the real terra nova of solid-state chemistry’."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Single-crystal optical actuation has been demonstrated in a diverse range of organic, inorganic and organometallic compounds.",
+        "references": {},
+        "viewpoints": [
+          "Single-crystal optical actuation has been demonstrated in a diverse range of organic compounds.",
+          "Single-crystal optical actuation has been demonstrated in a diverse range of inorganic compounds.",
+          "Single-crystal optical actuation has been demonstrated in a diverse range of organometallic compounds."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Coordination complexes that contain transition metals, such as ruthenium, are of particular interest since they exhibit metal-to-ligand charge transfer (MLCT) that gives rise to broad-band optical absorption, while maintaining good thermal stability.",
+        "references": {},
+        "viewpoints": [
+          "Coordination complexes containing transition metals are of particular interest.",
+          "Ruthenium is an example of a transition metal in coordination complexes.",
+          "Coordination complexes with transition metals exhibit metal-to-ligand charge transfer (MLCT).",
+          "Metal-to-ligand charge transfer (MLCT) in coordination complexes gives rise to broad-band optical absorption.",
+          "Coordination complexes with MLCT maintain good thermal stability."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Linkage photoisomerisation is often the molecular-scale phenomenon that underpins the microscopic manifestation of single-crystal optical actuation in coordination complexes.",
+        "references": {},
+        "viewpoints": [
+          "Linkage photoisomerisation is often the molecular-scale phenomenon underpinning single-crystal optical actuation in coordination complexes."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "We therefore sought to discover a new single-crystal optical actuator by developing an extended series of ruthenium-tetraammine complexes that undergo SO2-linkage photoisomerisation.",
+        "references": {},
+        "viewpoints": [
+          "The research sought to discover a new single-crystal optical actuator.",
+          "The research involved developing an extended series of ruthenium-tetraammine complexes.",
+          "The developed ruthenium-tetraammine complexes undergo SO2-linkage photoisomerisation."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Their generic formula is trans-[Ru(SO2)(NH3)4(X)]m+Yn, where X is a trans ligand relative to the photoactive SO2 ligand, Y is a counter ion and m and n are integers whose values are determined by charge balancing (hereafter, these will be known as [RuSO2] complexes).",
+        "references": {},
+        "viewpoints": [
+          "The generic formula for the complexes is trans-[Ru(SO2)(NH3)4(X)]m+Yn.",
+          "In the formula, X is a trans ligand relative to the photoactive SO2 ligand.",
+          "In the formula, Y is a counter ion.",
+          "In the formula, m and n are integers determined by charge balancing.",
+          "The complexes are known as [RuSO2] complexes."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Many variations of X and Y can support one or both η1-OSO or η2-(OS)O photoisomeric configurations within the single-crystal form, whose light-induced structure is metastable when kept suitably cooled (typically to 100 K) and which thermally reverts to its η1-SO2 dark-state crystal structure.",
+        "references": {},
+        "viewpoints": [
+          "Many variations of X and Y can support η1-OSO photoisomeric configurations.",
+          "Many variations of X and Y can support η2-(OS)O photoisomeric configurations.",
+          "The light-induced structure of these configurations is metastable when kept at 100 K.",
+          "The light-induced structure thermally reverts to its η1-SO2 dark-state crystal structure."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Single-crystal optical actuation has been reported in one [RuSO2] complex, to date, and adopts the form of a thermally-reversible macroscopic crystal-peeling effect.",
+        "references": {},
+        "viewpoints": [
+          "Single-crystal optical actuation has been reported in one [RuSO2] complex.",
+          "The actuation adopts the form of a thermally-reversible macroscopic crystal-peeling effect."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Peeling is one of the more novel types of macroscopic crystalline deformations that may occur in complexes, owing to the untenable crystal strain that molecular-scale photostructural effects can impart: crystals may peel, bend, stretch, crack, fracture or explode, when subjected to light.",
+        "references": {},
+        "viewpoints": [
+          "Peeling is a novel type of macroscopic crystalline deformation in complexes.",
+          "Crystal strain from molecular-scale photostructural effects can cause peeling.",
+          "Crystals subjected to light may peel.",
+          "Crystals subjected to light may bend.",
+          "Crystals subjected to light may stretch.",
+          "Crystals subjected to light may crack.",
+          "Crystals subjected to light may fracture.",
+          "Crystals subjected to light may explode."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "This peeling effect was deemed to stabilise the substantial but incomplete (52%) photoconversion level of the η1-OSO isomer in [Ru(SO2)(NH3)4(3-phenylpyridine)]Cl2·H2O.",
+        "references": {},
+        "viewpoints": [
+          "The peeling effect stabilises the photoconversion level of the η1-OSO isomer in [Ru(SO2)(NH3)4(3-phenylpyridine)]Cl2·H2O.",
+          "The photoconversion level of the η1-OSO isomer was substantial but incomplete at 52%."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "A [RuSO2] complex would ideally support 100% SO2-linkage photoisomerisation so that the dark- (0) and light-induced (1,2,…) states can be readily distinguished as integer encodings for photonic applications.",
+        "references": {},
+        "viewpoints": [
+          "A [RuSO2] complex ideally supports 100% SO2-linkage photoisomerisation.",
+          "The complex supports photoisomerisation to distinguish dark- (0) and light-induced (1,2,…) states.",
+          "Dark- (0) and light-induced (1,2,…) states can be distinguished as integer encodings for photonic applications."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Yet, until now, complete η1-OSO photoconversion had only been reported in single crystals of two [RuSO2] complexes, neither of which display macroscopic optical actuation.",
+        "references": {},
+        "viewpoints": [
+          "Complete η1-OSO photoconversion had only been reported in two [RuSO2] complexes until now.",
+          "The two complexes with complete η1-OSO photoconversion do not display macroscopic optical actuation."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Furthermore, the η2-(OS)O photoisomer that is often found in [RuSO2] complexes has never been structurally isolated with 100% photoconversion; rather, it has been found to co-exist with one or both of the η1-OSO photoisomer and η1-SO2 dark-state configurations.",
+        "references": {},
+        "viewpoints": [
+          "The η2-(OS)O photoisomer is often found in [RuSO2] complexes.",
+          "The η2-(OS)O photoisomer has never been structurally isolated with 100% photoconversion.",
+          "The η2-(OS)O photoisomer co-exists with the η1-OSO photoisomer in some instances.",
+          "The η2-(OS)O photoisomer co-exists with the η1-SO2 dark-state configuration in some instances."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "This paper reports the discovery of a new [RuSO2] complex, trans-[Ru(SO2)(NH3)4(4-bromopyridine)]tosylate 2] (1, Fig. 1a) that exhibits a thermally-reversible ‘cracking’ form of single-crystal optical actuation.",
+        "references": {},
+        "viewpoints": [
+          "The paper reports the discovery of a new [RuSO2] complex.",
+          "The new complex is trans-[Ru(SO2)(NH3)4(4-bromopyridine)]tosylate 2] (1, Fig. 1a).",
+          "The complex exhibits a thermally-reversible ‘cracking’ form of single-crystal optical actuation."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Thereby, we show that its η1-SO2 dark-state crystal structure undergoes 100% SO2-linkage photoisomerisation to create a pure η1-OSO photoisomeric crystal structure at 90 K or a pure η2-(OS)O photoisomeric species at 100 K.",
+        "references": {},
+        "viewpoints": [
+          "The complex's η1-SO2 dark-state crystal structure undergoes 100% SO2-linkage photoisomerisation.",
+          "The photoisomerisation creates a pure η1-OSO photoisomeric crystal structure at 90 K.",
+          "The photoisomerisation creates a pure η2-(OS)O photoisomeric species at 100 K."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Each photoisomer is metastable at their stated temperature and is accompanied by a substantial level of micro- and nanoscopic crystal strain, which diminishes as 1 thermally recovers its η1-SO2 dark-state crystal structure.",
+        "references": {},
+        "viewpoints": [
+          "Each photoisomer is metastable at its respective temperature.",
+          "Each photoisomer is accompanied by a substantial level of micro- and nanoscopic crystal strain.",
+          "Micro- and nanoscopic crystal strain diminishes as the complex thermally recovers its η1-SO2 dark-state crystal structure."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The molecular origins of this ternary switching behaviour lie in photostructural changes within the crystal structure of 1, caused by 100% SO2 linkage photoisomerisation that occurs when the crystal is exposed to 505 nm light while maintained at low temperature: the η1-OSO or η2-(OS)O photoisomer forms at 90 K or 100 K, respectively.",
+        "references": {},
+        "viewpoints": [
+          "The ternary switching behavior originates from photostructural changes within the crystal structure.",
+          "Photostructural changes are caused by 100% SO2 linkage photoisomerisation.",
+          "Photoisomerisation occurs when the crystal is exposed to 505 nm light at low temperature.",
+          "The η1-OSO photoisomer forms at 90 K.",
+          "The η2-(OS)O photoisomer forms at 100 K."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "The latter photoisomer can also be generated by warming up the former by 10 K.",
+        "references": {},
+        "viewpoints": [
+          "The η2-(OS)O photoisomer can be generated by warming up the η1-OSO photoisomer by 10 K."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The η1-SO2 dark-state crystal structure is recovered upon warming up the crystal.",
+        "references": {},
+        "viewpoints": [
+          "The η1-SO2 dark-state crystal structure is recovered upon warming up the crystal."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "This demonstration of three distinct 100%-converted SO2-linkage isomeric species in a [RuSO2] complex is important because it reveals the foundational possibility of creating ternary photonic signatures of high purity in single-crystal optical actuators.",
+        "references": {},
+        "viewpoints": [
+          "The demonstration involves three distinct 100%-converted SO2-linkage isomeric species in a [RuSO2] complex.",
+          "The demonstration reveals the foundational possibility of creating ternary photonic signatures.",
+          "Ternary photonic signatures of high purity can be created in single-crystal optical actuators."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "We now describe our findings through the structural and optical characteristics of 1 which we determined using in-situ light-induced single-crystal X-ray diffraction (also known as ‘photocrystallography’), single-crystal optical-absorption spectroscopy and optical microscopy and in-situ light-induced low-temperature atomic-force microscopy.",
+        "references": {},
+        "viewpoints": [
+          "The findings are described through the structural and optical characteristics of 1.",
+          "The structural and optical characteristics of 1 were determined using in-situ light-induced single-crystal X-ray diffraction.",
+          "In-situ light-induced single-crystal X-ray diffraction is also known as ‘photocrystallography’.",
+          "The structural and optical characteristics of 1 were determined using single-crystal optical-absorption spectroscopy.",
+          "The structural and optical characteristics of 1 were determined using optical microscopy and in-situ light-induced low-temperature atomic-force microscopy."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "These findings also show how its ternary molecular switching can be controlled by temperature and visible light.",
+        "references": {},
+        "viewpoints": [
+          "The findings show that the ternary molecular switching can be controlled by temperature.",
+          "The findings show that the ternary molecular switching can be controlled by visible light."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56795-w_with_abstracts",
+    "base_id": "s41467-025-56795-w",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56795-w_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Quantum metrology’s efficiency is fundamentally influenced by two critical factors: the Heisenberg limit, which defines how accuracy scales with quantum resources, and the coefficients of this scaling. While a variety of quantum metrology strategies [1] , [2] , [3] successfully adhere to the Heisenberg scaling, the real challenge lies in achieving or even addressing optimality in the scaling coefficients with realistic constraints. This aspect is particularly vital for applications in quantum error correction, where achieving fault-tolerant thresholds demands exceptionally high accuracy in quantum gate characterization. The necessity for deep circuitry, a significant hurdle in practical applications, stems directly from the lack of optimality in these scaling coefficients. This inefficiency is compounded by the challenges of finite coherence times and the amplification of drift errors from low-frequency noise or control fluctuations. Therefore, current quantum metrology protocols, limited to accuracy levels between 10 −2 and 10 −3 radians [2] , [3] for estimating gate angles, often fall short of the accuracy ( ~ 10 −4 ) needed to verify the crossing of fault-tolerant error threshold for quantum error correction and other near-term quantum applications. In quantum metrology for gate calibration, two primary approaches are used: robust phase estimation (RPE) and randomized benchmarking. RPE, along with its extensions like Floquet calibration, can achieve the Heisenberg limit under ideal conditions and are robust against state preparation and measurement (SPAM) errors across both single and multi-qubit gates [1] , [2] , [3] . However, its practical implementation is limited by the need for deep circuits and resource-intensive, iterative black-box optimizations to ensure accurate calibration. Moreover, its precision drops to between 10 −1 and 10 −2 radians when dealing with the time-dependent drifts common in superconducting qubit systems. Though recent progress [4] , [5] refine the multiplicative overhead of RPE cost, they focus on the asymptotic regime rather than physically short-depth and noise-robust implementation. Meanwhile, the randomized benchmarking approach, although general, forgoes Heisenberg scaling. It also requires extensive circuit depth to accurately estimate parameters and lacks sensitivity to coherent rotation errors [6] , [7] , [8] , [9] . As a result, these prevalent quantum metrology techniques have not yet achieved optimal performance in practice for learning two-qubit gates. The effectiveness of a quantum metrology scheme can be assessed by the fundamental limits set by both classical and quantum Cramér-Rao bounds [10] , [11] . To meet the classical Cramér-Rao bounds, the inference subroutines that process measurements to estimate quantum gate parameters must be optimal. Similarly, to achieve the quantum Cramér-Rao bounds, the quantum measurement schemes, characterized by any Positive-Operator-Valued Measurements, must also be optimal [11] . Realizing optimality in both aspects requires refining classical post-processing techniques and the quantum circuit designs used in quantum gate calibration. In this work, we show that the RPE-based multi-parameter phase estimation method requires an additional phase-matching condition: the diagonal elements of the gates must share the same phase. If this condition is violated, the RPE-based method will fail to achieve both Heisenberg scaling and the classical Cramér-Rao bounds when there’s more than one phase to learn, even in the absence of quantum noise. In this work, we propose a metrology protocol that is, by design, robust against realistic time-dependent errors and only requires shallow ( < 10) circuits to achieve up to two orders of magnitudes of improvement over existing methods in the precision of gate-parameter estimates.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Quantum metrology’s efficiency is fundamentally influenced by two critical factors: the Heisenberg limit, which defines how accuracy scales with quantum resources, and the coefficients of this scaling.",
+        "references": {},
+        "viewpoints": [
+          "Quantum metrology’s efficiency is fundamentally influenced by the Heisenberg limit.",
+          "The Heisenberg limit defines how accuracy scales with quantum resources.",
+          "Quantum metrology’s efficiency is influenced by the coefficients of scaling with quantum resources."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "While a variety of quantum metrology strategies [1] , [2] , [3] successfully adhere to the Heisenberg scaling, the real challenge lies in achieving or even addressing optimality in the scaling coefficients with realistic constraints.",
+        "references": {
+          "1": {
+            "1": "Calibrating experimentally implemented quantum gates is an important step in building a quantum computer.",
+            "2": "The purpose of calibrating experimentally implemented quantum gates is to produce operations that are close to ideal unitaries.",
+            "3": "The calibration step involves estimating the systematic errors in quantum gates.",
+            "4": "The calibration step involves using controls to correct the implementation of quantum gates.",
+            "5": "Quantum process tomography is a standard technique for estimating systematic errors in quantum gates.",
+            "6": "Quantum process tomography is time-consuming when one wants to learn only a few key parameters.",
+            "7": "Quantum process tomography is usually inaccurate without resources such as perfect state preparation and measurement.",
+            "8": "Perfect state preparation and measurement might not be available when performing quantum process tomography.",
+            "9": "The goal is to efficiently and accurately estimate specific errors using minimal resources.",
+            "10": "A parameter estimation technique has been developed to efficiently estimate key systematic parameters in a universal single-qubit gate set.",
+            "11": "The parameter estimation technique can gauge amplitude errors in a universal single-qubit gate set.",
+            "12": "The parameter estimation technique can gauge off-resonance errors in a universal single-qubit gate set.",
+            "13": "The parameter estimation technique has provable robustness and efficiency.",
+            "14": "The developed estimates achieve optimal efficiency.",
+            "15": "The developed estimates achieve Heisenberg scaling.",
+            "16": "The developed estimates do not require entanglement.",
+            "17": "The developed estimates operate entirely within a single-qubit Hilbert space.",
+            "18": "The main theorem enabling these estimates is a robust version of the phase estimation procedure.",
+            "19": "The robust version of the phase estimation procedure is based on the work of Higgins et al."
+          },
+          "2": {
+            "1": "Simulating condensed-matter systems on an engineered quantum platform is a promising approach to study these systems.",
+            "2": "Achieving the accuracy needed to outperform classical methods in simulating condensed-matter systems has been an outstanding challenge.",
+            "3": "An experimental blueprint for an accurate condensed-matter simulator using eighteen superconducting qubits is provided.",
+            "4": "The experimental blueprint using eighteen superconducting qubits demonstrates how to probe fundamental electronic properties.",
+            "5": "The underlying method is benchmarked by reconstructing the single-particle band-structure of a one-dimensional wire.",
+            "6": "Nearly complete mitigation of decoherence and readout errors is demonstrated.",
+            "7": "The accuracy in measuring energy eigenvalues of the one-dimensional wire is approximately 0.01 rad error.",
+            "8": "Typical energy scales for measuring energy eigenvalues are of order 1 rad.",
+            "9": "Insight into the unprecedented algorithm fidelity is gained by highlighting robust properties of a Fourier transform.",
+            "10": "Fourier transform includes the ability to resolve eigenenergies with a statistical uncertainty of 1e-4 rad.",
+            "11": "Magnetic flux is synthesized.",
+            "12": "Disordered local potentials are synthesized.",
+            "13": "Magnetic flux and disordered local potentials are two key tenets of a condensed-matter system.",
+            "14": "Sweeping the magnetic flux results in the observation of avoided level crossings in the spectrum.",
+            "15": "Avoided level crossings in the spectrum are a detailed fingerprint of the spatial distribution of local disorder.",
+            "16": "Electronic properties of the eigenstates are reconstructed by combining these methods.",
+            "17": "Persistent currents are observed in the reconstructed electronic properties of the eigenstates.",
+            "18": "A strong suppression of conductance with added disorder is observed.",
+            "19": "The work describes an accurate method for quantum simulation.",
+            "20": "The work paves the way to study novel quantum materials with superconducting qubits."
+          },
+          "3": []
+        },
+        "viewpoints": [
+          "A variety of quantum metrology strategies successfully adhere to the Heisenberg scaling.",
+          "The challenge in quantum metrology is achieving optimality in the scaling coefficients.",
+          "Quantum metrology faces challenges in addressing optimality in scaling coefficients with realistic constraints."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "This aspect is particularly vital for applications in quantum error correction, where achieving fault-tolerant thresholds demands exceptionally high accuracy in quantum gate characterization.",
+        "references": {},
+        "viewpoints": [
+          "Optimality in scaling coefficients is vital for quantum error correction applications.",
+          "Achieving fault-tolerant thresholds in quantum error correction demands exceptionally high accuracy in quantum gate characterization."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The necessity for deep circuitry, a significant hurdle in practical applications, stems directly from the lack of optimality in these scaling coefficients.",
+        "references": {},
+        "viewpoints": [
+          "The lack of optimality in scaling coefficients necessitates deep circuitry.",
+          "Deep circuitry is a significant hurdle in practical applications of quantum metrology."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "This inefficiency is compounded by the challenges of finite coherence times and the amplification of drift errors from low-frequency noise or control fluctuations.",
+        "references": {},
+        "viewpoints": [
+          "Inefficiency in quantum metrology is compounded by challenges of finite coherence times.",
+          "Inefficiency is compounded by the amplification of drift errors from low-frequency noise.",
+          "Inefficiency is compounded by control fluctuations."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Therefore, current quantum metrology protocols, limited to accuracy levels between 10^-2 and 10^-3 radians [2] , [3] for estimating gate angles, often fall short of the accuracy (~10^-4) needed to verify the crossing of fault-tolerant error threshold for quantum error correction and other near-term quantum applications.",
+        "references": {
+          "2": {
+            "1": "Simulating condensed-matter systems on an engineered quantum platform is a promising approach to study these systems.",
+            "2": "Achieving the accuracy needed to outperform classical methods in simulating condensed-matter systems has been an outstanding challenge.",
+            "3": "An experimental blueprint for an accurate condensed-matter simulator using eighteen superconducting qubits is provided.",
+            "4": "The experimental blueprint using eighteen superconducting qubits demonstrates how to probe fundamental electronic properties.",
+            "5": "The underlying method is benchmarked by reconstructing the single-particle band-structure of a one-dimensional wire.",
+            "6": "Nearly complete mitigation of decoherence and readout errors is demonstrated.",
+            "7": "The accuracy in measuring energy eigenvalues of the one-dimensional wire is approximately 0.01 rad error.",
+            "8": "Typical energy scales for measuring energy eigenvalues are of order 1 rad.",
+            "9": "Insight into the unprecedented algorithm fidelity is gained by highlighting robust properties of a Fourier transform.",
+            "10": "Fourier transform includes the ability to resolve eigenenergies with a statistical uncertainty of 1e-4 rad.",
+            "11": "Magnetic flux is synthesized.",
+            "12": "Disordered local potentials are synthesized.",
+            "13": "Magnetic flux and disordered local potentials are two key tenets of a condensed-matter system.",
+            "14": "Sweeping the magnetic flux results in the observation of avoided level crossings in the spectrum.",
+            "15": "Avoided level crossings in the spectrum are a detailed fingerprint of the spatial distribution of local disorder.",
+            "16": "Electronic properties of the eigenstates are reconstructed by combining these methods.",
+            "17": "Persistent currents are observed in the reconstructed electronic properties of the eigenstates.",
+            "18": "A strong suppression of conductance with added disorder is observed.",
+            "19": "The work describes an accurate method for quantum simulation.",
+            "20": "The work paves the way to study novel quantum materials with superconducting qubits."
+          },
+          "3": []
+        },
+        "viewpoints": [
+          "Current quantum metrology protocols are limited to accuracy levels between 10^-2 and 10^-3 radians for estimating gate angles.",
+          "Current protocols often fall short of the accuracy (~10^-4) needed to verify crossing of the fault-tolerant error threshold.",
+          "Crossing the fault-tolerant error threshold is necessary for quantum error correction and other near-term quantum applications."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "In quantum metrology for gate calibration, two primary approaches are used: robust phase estimation (RPE) and randomized benchmarking.",
+        "references": {},
+        "viewpoints": [
+          "Robust phase estimation (RPE) and randomized benchmarking are two primary approaches used in quantum metrology for gate calibration."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "RPE, along with its extensions like Floquet calibration, can achieve the Heisenberg limit under ideal conditions and are robust against state preparation and measurement (SPAM) errors across both single and multi-qubit gates [1] , [2] , [3] .",
+        "references": {
+          "1": {
+            "1": "Calibrating experimentally implemented quantum gates is an important step in building a quantum computer.",
+            "2": "The purpose of calibrating experimentally implemented quantum gates is to produce operations that are close to ideal unitaries.",
+            "3": "The calibration step involves estimating the systematic errors in quantum gates.",
+            "4": "The calibration step involves using controls to correct the implementation of quantum gates.",
+            "5": "Quantum process tomography is a standard technique for estimating systematic errors in quantum gates.",
+            "6": "Quantum process tomography is time-consuming when one wants to learn only a few key parameters.",
+            "7": "Quantum process tomography is usually inaccurate without resources such as perfect state preparation and measurement.",
+            "8": "Perfect state preparation and measurement might not be available when performing quantum process tomography.",
+            "9": "The goal is to efficiently and accurately estimate specific errors using minimal resources.",
+            "10": "A parameter estimation technique has been developed to efficiently estimate key systematic parameters in a universal single-qubit gate set.",
+            "11": "The parameter estimation technique can gauge amplitude errors in a universal single-qubit gate set.",
+            "12": "The parameter estimation technique can gauge off-resonance errors in a universal single-qubit gate set.",
+            "13": "The parameter estimation technique has provable robustness and efficiency.",
+            "14": "The developed estimates achieve optimal efficiency.",
+            "15": "The developed estimates achieve Heisenberg scaling.",
+            "16": "The developed estimates do not require entanglement.",
+            "17": "The developed estimates operate entirely within a single-qubit Hilbert space.",
+            "18": "The main theorem enabling these estimates is a robust version of the phase estimation procedure.",
+            "19": "The robust version of the phase estimation procedure is based on the work of Higgins et al."
+          },
+          "2": {
+            "1": "Simulating condensed-matter systems on an engineered quantum platform is a promising approach to study these systems.",
+            "2": "Achieving the accuracy needed to outperform classical methods in simulating condensed-matter systems has been an outstanding challenge.",
+            "3": "An experimental blueprint for an accurate condensed-matter simulator using eighteen superconducting qubits is provided.",
+            "4": "The experimental blueprint using eighteen superconducting qubits demonstrates how to probe fundamental electronic properties.",
+            "5": "The underlying method is benchmarked by reconstructing the single-particle band-structure of a one-dimensional wire.",
+            "6": "Nearly complete mitigation of decoherence and readout errors is demonstrated.",
+            "7": "The accuracy in measuring energy eigenvalues of the one-dimensional wire is approximately 0.01 rad error.",
+            "8": "Typical energy scales for measuring energy eigenvalues are of order 1 rad.",
+            "9": "Insight into the unprecedented algorithm fidelity is gained by highlighting robust properties of a Fourier transform.",
+            "10": "Fourier transform includes the ability to resolve eigenenergies with a statistical uncertainty of 1e-4 rad.",
+            "11": "Magnetic flux is synthesized.",
+            "12": "Disordered local potentials are synthesized.",
+            "13": "Magnetic flux and disordered local potentials are two key tenets of a condensed-matter system.",
+            "14": "Sweeping the magnetic flux results in the observation of avoided level crossings in the spectrum.",
+            "15": "Avoided level crossings in the spectrum are a detailed fingerprint of the spatial distribution of local disorder.",
+            "16": "Electronic properties of the eigenstates are reconstructed by combining these methods.",
+            "17": "Persistent currents are observed in the reconstructed electronic properties of the eigenstates.",
+            "18": "A strong suppression of conductance with added disorder is observed.",
+            "19": "The work describes an accurate method for quantum simulation.",
+            "20": "The work paves the way to study novel quantum materials with superconducting qubits."
+          },
+          "3": []
+        },
+        "viewpoints": [
+          "RPE and its extensions like Floquet calibration can achieve the Heisenberg limit under ideal conditions.",
+          "RPE is robust against state preparation and measurement (SPAM) errors across both single and multi-qubit gates.",
+          "Floquet calibration is an extension of RPE."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "However, its practical implementation is limited by the need for deep circuits and resource-intensive, iterative black-box optimizations to ensure accurate calibration.",
+        "references": {},
+        "viewpoints": [
+          "The practical implementation of RPE is limited by the need for deep circuits.",
+          "RPE requires resource-intensive, iterative black-box optimizations to ensure accurate calibration."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Moreover, its precision drops to between 10^-1 and 10^-2 radians when dealing with the time-dependent drifts common in superconducting qubit systems.",
+        "references": {},
+        "viewpoints": [
+          "The precision of RPE drops to between 10^-1 and 10^-2 radians when dealing with time-dependent drifts.",
+          "Time-dependent drifts are common in superconducting qubit systems."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Though recent progress [4] , [5] refine the multiplicative overhead of RPE cost, they focus on the asymptotic regime rather than physically short-depth and noise-robust implementation.",
+        "references": {
+          "4": {
+            "1": "Quantum phase estimation is a critical building block of quantum computing.",
+            "2": "For early fault-tolerant quantum devices, it is desirable for a quantum phase estimation algorithm to use a minimal number of ancilla qubits.",
+            "3": "For early fault-tolerant quantum devices, it is desirable for a quantum phase estimation algorithm to allow for inexact initial states with a significant mismatch.",
+            "4": "For early fault-tolerant quantum devices, it is desirable for a quantum phase estimation algorithm to achieve the Heisenberg limit for the total resource used.",
+            "5": "For early fault-tolerant quantum devices, it is desirable for a quantum phase estimation algorithm to have a diminishing prefactor for the maximum circuit length when the overlap between the initial state and the target state approaches one.",
+            "6": "An existing algorithm from quantum metrology can achieve the requirement of using a minimal number of ancilla qubits.",
+            "7": "An existing algorithm from quantum metrology can achieve the requirement of allowing for inexact initial states with a significant mismatch.",
+            "8": "An existing algorithm from quantum metrology can achieve the requirement of achieving the Heisenberg limit for the total resource used.",
+            "9": "A modified version of an existing algorithm is proposed that also meets the requirement of having a diminishing prefactor for the maximum circuit length when the overlap between the initial state and the target state approaches one.",
+            "10": "The modified version of the algorithm is particularly attractive for early fault-tolerant quantum devices."
+          },
+          "5": {
+            "1": "A phase-estimation method is developed with the distinct feature of having its maximal run time determined by δ/ϵ, where ϵ is the target precision.",
+            "2": "In the phase-estimation method, the preconstant δ can be arbitrarily close to 0 as the initial state approaches the target eigenstate.",
+            "3": "The total cost of the algorithm satisfies the Heisenberg-limited scaling Õ(ϵ⁻¹).",
+            "4": "The algorithm may significantly reduce the circuit depth for performing phase-estimation tasks on early fault-tolerant quantum computers.",
+            "5": "The key technique of the algorithm is a simple subroutine called quantum complex exponential least squares (QCELS).",
+            "6": "The algorithm can be readily applied to reduce the circuit depth for estimating the ground-state energy of a quantum Hamiltonian.",
+            "7": "The algorithm effectively reduces the circuit depth when the overlap between the initial state and the ground state is large.",
+            "8": "If the initial overlap is small, the method can be combined with the Fourier-filtering method developed in Lin and Tong, resulting in an algorithm that provably reduces the circuit depth.",
+            "9": "The combined algorithm reduces the circuit depth in the presence of a large relative overlap compared to ϵ.",
+            "10": "The relative-overlap condition is similar to a spectral-gap assumption.",
+            "11": "The relative-overlap condition is aware of the information in the initial state.",
+            "12": "The relative-overlap condition is applicable to certain Hamiltonians with small spectral gaps.",
+            "13": "The circuit depth can be reduced by around 2 orders of magnitude in numerical experiments under various settings."
+          }
+        },
+        "viewpoints": [
+          "Recent progress refines the multiplicative overhead of RPE cost.",
+          "Recent progress focuses on the asymptotic regime.",
+          "Recent progress does not focus on physically short-depth and noise-robust implementation."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Meanwhile, the randomized benchmarking approach, although general, forgoes Heisenberg scaling.",
+        "references": {},
+        "viewpoints": [
+          "The randomized benchmarking approach is general.",
+          "The randomized benchmarking approach forgoes Heisenberg scaling."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "It also requires extensive circuit depth to accurately estimate parameters and lacks sensitivity to coherent rotation errors [6] , [7] , [8] , [9] .",
+        "references": {
+          "6": {
+            "1": "A fully scalable randomized benchmarking protocol for quantum information processors is proposed in this Letter.",
+            "2": "The proposed protocol provides an efficient estimate of the average error-rate for a set of operations (gates).",
+            "3": "The proposed protocol provides a reliable estimate of the average error-rate for a set of operations (gates).",
+            "4": "The noise model used in the protocol allows for both time-dependent errors.",
+            "5": "The noise model used in the protocol allows for gate-dependent errors.",
+            "6": "The noise model used in the protocol is very general.",
+            "7": "A sequence of fitting models is obtained for the observable fidelity decay.",
+            "8": "The observable fidelity decay is a function of a convergent perturbative expansion of the gate errors about the mean error.",
+            "9": "The proposed protocol is illustrated through numerical examples."
+          },
+          "7": {
+            "1": "Scalable quantum computing requires that elementary quantum gates be implemented with sufficiently low error.",
+            "2": "Process tomography is a method for determining the error behavior of a gate implementation.",
+            "3": "Standard process tomography is limited by errors in state preparation.",
+            "4": "Standard process tomography is limited by errors in measurement.",
+            "5": "Standard process tomography is limited by errors in one-qubit gates.",
+            "6": "Standard process tomography suffers from inefficient scaling with the number of qubits.",
+            "7": "Standard process tomography does not detect adverse error-compounding when gates are composed in long sequences.",
+            "8": "Desirable error probabilities for scalable quantum computing are of the order of 0.0001 or lower.",
+            "9": "The difficulty in achieving error probabilities of the order of 0.0001 or lower poses an additional problem for scalable quantum computing.",
+            "10": "Experimentally proving error probabilities of the order of 0.0001 or lower is challenging.",
+            "11": "A randomized benchmarking method yields estimates of the computationally relevant errors without relying on accurate state preparation.",
+            "12": "A randomized benchmarking method yields estimates of the computationally relevant errors without relying on accurate measurement.",
+            "13": "The randomized benchmarking method involves long sequences of randomly chosen gates.",
+            "14": "The randomized benchmarking method verifies that error behavior is stable when used in long computations.",
+            "15": "Randomized benchmarking was implemented on trapped atomic ion qubits.",
+            "16": "The implementation established a one-qubit error probability per randomized π/2 pulse of 0.00482(17) in a particular experiment.",
+            "17": "The error probability of 0.00482(17) is expected to be readily improved with straightforward technical modifications."
+          },
+          "8": {
+            "1": "The scalable randomized benchmarking protocol provides a method for benchmarking quantum gates.",
+            "2": "The scalable randomized benchmarking protocol provides a method for estimating the gate dependence of the noise.",
+            "3": "This section describes and expands upon the scalable randomized benchmarking protocol proposed in Phys. Rev. Lett. 106, 180504 (2011).",
+            "4": "The scalable randomized benchmarking protocol allows the noise to have weak time dependence.",
+            "5": "The scalable randomized benchmarking protocol allows the noise to have weak gate dependence.",
+            "6": "A sufficient condition is provided for the applicability of the protocol in terms of the average variation of the noise.",
+            "7": "State-preparation errors are taken into account in the scalable randomized benchmarking protocol.",
+            "8": "Measurement errors are taken into account in the scalable randomized benchmarking protocol.",
+            "9": "A complete proof of the scalability of the protocol is provided.",
+            "10": "A connection is established in special cases between the error rate provided by the scalable randomized benchmarking protocol and the error strength measured using the diamond norm distance."
+          },
+          "9": {
+            "1": "Quantum computers promise that certain computational tasks might be executed exponentially faster on a quantum processor than on a classical processor.",
+            "2": "A fundamental challenge is to build a high-fidelity processor.",
+            "3": "A high-fidelity processor needs to be capable of running quantum algorithms in an exponentially large computational space.",
+            "4": "A processor with programmable superconducting qubits was used to create quantum states on 53 qubits.",
+            "5": "Creating quantum states on 53 qubits corresponds to a computational state-space of dimension 2^53.",
+            "6": "A computational state-space of dimension 2^53 is about 10^16.",
+            "7": "Measurements from repeated experiments sample the resulting probability distribution.",
+            "8": "The resulting probability distribution is verified using classical simulations.",
+            "9": "The Sycamore processor takes about 200 seconds to sample one instance of a quantum circuit a million times.",
+            "10": "Benchmarks currently indicate that the equivalent task for a state-of-the-art classical supercomputer would take approximately 10,000 years.",
+            "11": "The dramatic increase in speed compared to all known classical algorithms is an experimental realization of quantum supremacy for this specific computational task.",
+            "12": "The dramatic increase in speed heralds a much-anticipated computing paradigm."
+          }
+        },
+        "viewpoints": [
+          "Randomized benchmarking requires extensive circuit depth to accurately estimate parameters.",
+          "Randomized benchmarking lacks sensitivity to coherent rotation errors."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "As a result, these prevalent quantum metrology techniques have not yet achieved optimal performance in practice for learning two-qubit gates.",
+        "references": {},
+        "viewpoints": [
+          "Prevalent quantum metrology techniques have not yet achieved optimal performance in practice for learning two-qubit gates."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The effectiveness of a quantum metrology scheme can be assessed by the fundamental limits set by both classical and quantum Cramér-Rao bounds [10] , [11] .",
+        "references": {
+          "10": [],
+          "11": {
+            "1": "Finding measurements that optimally resolve neighboring quantum states allows for the use of statistical distinguishability to define a natural Riemannian metric on the space of quantum-mechanical density operators.",
+            "2": "Statistical distinguishability is used to formulate more general uncertainty principles compared to standard uncertainty principles.",
+            "3": "Statistical distinguishability is used to formulate more stringent uncertainty principles than standard uncertainty principles."
+          }
+        },
+        "viewpoints": [
+          "The effectiveness of a quantum metrology scheme can be assessed by fundamental limits set by the classical Cramér-Rao bounds.",
+          "The effectiveness of a quantum metrology scheme can be assessed by fundamental limits set by the quantum Cramér-Rao bounds."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "To meet the classical Cramér-Rao bounds, the inference subroutines that process measurements to estimate quantum gate parameters must be optimal.",
+        "references": {},
+        "viewpoints": [
+          "Inference subroutines that process measurements to estimate quantum gate parameters must be optimal to meet the classical Cramér-Rao bounds."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Similarly, to achieve the quantum Cramér-Rao bounds, the quantum measurement schemes, characterized by any Positive-Operator-Valued Measurements, must also be optimal [11] .",
+        "references": {
+          "11": {
+            "1": "Finding measurements that optimally resolve neighboring quantum states allows for the use of statistical distinguishability to define a natural Riemannian metric on the space of quantum-mechanical density operators.",
+            "2": "Statistical distinguishability is used to formulate more general uncertainty principles compared to standard uncertainty principles.",
+            "3": "Statistical distinguishability is used to formulate more stringent uncertainty principles than standard uncertainty principles."
+          }
+        },
+        "viewpoints": [
+          "Quantum measurement schemes must be optimal to achieve the quantum Cramér-Rao bounds.",
+          "Quantum measurement schemes are characterized by any Positive-Operator-Valued Measurements."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Realizing optimality in both aspects requires refining classical post-processing techniques and the quantum circuit designs used in quantum gate calibration.",
+        "references": {},
+        "viewpoints": [
+          "Refining classical post-processing techniques is required to realize optimality in quantum metrology.",
+          "Refining quantum circuit designs is required to realize optimality in quantum gate calibration."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "In this work, we show that the RPE-based multi-parameter phase estimation method requires an additional phase-matching condition: the diagonal elements of the gates must share the same phase.",
+        "references": {},
+        "viewpoints": [
+          "In RPE-based multi-parameter phase estimation, the diagonal elements of the gates must share the same phase as an additional phase-matching condition."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "If this condition is violated, the RPE-based method will fail to achieve both Heisenberg scaling and the classical Cramér-Rao bounds when there’s more than one phase to learn, even in the absence of quantum noise.",
+        "references": {},
+        "viewpoints": [
+          "If the phase-matching condition is violated, the RPE-based method will fail to achieve Heisenberg scaling when there’s more than one phase to learn.",
+          "If the phase-matching condition is violated, the RPE-based method will fail to achieve the classical Cramér-Rao bounds when there’s more than one phase to learn, even in the absence of quantum noise."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "In this work, we propose a metrology protocol that is, by design, robust against realistic time-dependent errors and only requires shallow (<10) circuits to achieve up to two orders of magnitudes of improvement over existing methods in the precision of gate-parameter estimates.",
+        "references": {},
+        "viewpoints": [
+          "A proposed metrology protocol is robust against realistic time-dependent errors.",
+          "The proposed metrology protocol requires shallow (<10) circuits.",
+          "The proposed metrology protocol achieves up to two orders of magnitudes of improvement over existing methods in the precision of gate-parameter estimates."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56724-x_with_abstracts",
+    "base_id": "s41467-025-56724-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56724-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

@@ -1,0 +1,821 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Nickel-rich LiNi x Mn y Co z O 2 ( x ≥ 0.8, NMC) layered positive electrode materials with high specific capacity (≥200 mAh/g) hold great potential for high-energy lithium batteries, the most significant power devices for long-range electric vehicles. However, the cycling stability of nickel-rich positive electrode material is still unsatisfactory at present, especially at high voltages. The severe structural and chemo-mechanical degradation results in rapid capacity decay of these positive electrode materials during cycling, and the capacity decay is accelerated with an increase of Ni content in materials [1] . The surface stability plays a vital role in nickel-rich positive electrode materials, because their performance deterioration can initiate at the surface due to parasitic reactions with the electrolyte, transition metal dissolution, and surface reconstruction [2] , [3] , [4] . Moreover, the surface stability of NMCs is related to their bulk chemo-mechanical stability during cycling. Due to the mutual modulation between surface chemistry and bulk microstructure, a higher surface structural stability can alleviate anisotropic stress formation in NMC polycrystalline particles [5] , [6] . To mitigate surface instability of NMCs, researchers have built functional layers on positive particles or prepared NMCs with an elemental concentration gradient and core-shell structure [7] , [8] , [9] , [10] . A surface coating layer such as Al 2 O 3 can enhance the cycling stability of NMCs by suppressing undesired side reactions with the electrolyte and lowering interfacial charge transfer impendence [11] . The concentration gradient NMCs exhibit improved long-term cycle life through enhancing structural stability with a Mn-rich surface layer. However, the effectiveness of these strategies depends on the capability to precisely control the synthesis conditions [12] , [13] . Considering that the capacity delivery and electrochemical kinetics of positive electrode materials are associated with reversible Li ion (de)intercalation throughout entire battery particles, the structural and chemical evolution in the bulk of NMC particles should be considered when investigating degradation mechanisms upon cycling. Researchers have introduced heteroatoms into the NMC lattice, which may mitigate undesired bulk degradation [14] , [15] , [16] , [17] , [18] . However, due to the crystallographic anisotropy, it is unlikely to make zero-strain layered positive electrode materials although from time to time one may claim minimal volume changes upon cycling. Due to their high Young’s moduli, a seemingly insignificant strain can still lead to high mechanical stress. Meanwhile, it is non-trivial to precisely place heteroatoms in the desired site of NMC lattice. Another hardly discussed drawback of doping chemistry, especially those with multiple dopants, is the vulnerable raw materials supply chain. Adding more elements means a more complex raw materials supply chain. It is within such context that controlling materials microstructures without excessively using dopants has become an attractive strategy for long-term manufacturing reliability [6] , [19] , [20] , [21] . As a key step in positive electrode material manufacturing, the calcination process can drive mass transport and reaction kinetics to redistribute constituting elements to become either homogeneously or heterogeneously distributed in NMC secondary particles [22] . In a typical NMC calcination, the ramping and cooling rates are controlled at a few or tens of degrees per minute. Quenching can produce materials far from equilibrium. Quenching from the peak of the calcination temperature to low temperature has been shown to increase the reversible capacity of lithium titanate negative electrodes [23] . Some studies adopted a similar quenching treatment for Ni-rich positive electrode materials and found that Ni-rich positive electrodes could deliver enhanced electrochemical performance after the quenching treatment [24] , [25] . It has remained largely unexplored regarding how quenching can change the mutual modulation between the surface and bulk of layered positive electrode particles and thus impact battery performance. If successful, such a thermal treatment can reduce the overall calcination duration and become an effective strategy to tailor battery performance. Herein, we report quenching as a strategy to simultaneously mitigate surface structural degradation and address the bulk charge distribution heterogeneity issue. We manipulate elemental distribution in NMC polycrystalline particles by regulating the cooling rate from the peak of calcination temperature. We observe substantial lithium diffusion from the bulk to the surface of NMC polycrystalline particles, creating a surface Ni reduction layer to decrease the surface reactivity. Subsequent X-ray spectroscopic and imaging analyses show the improved surface stability allows the redox reactions to proceed more homogeneously throughout polycrystalline particles and results in more favorable capacity retention cycled to high voltages. Our work provides insights into regulating the mutual modulation between surface chemistry and bulk charging reactions within polycrystalline layered positive electrode particles.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Nickel-rich LiNiₓMnᵧCo𝓏O₂ (x ≥ 0.8, NMC) layered positive electrode materials with high specific capacity (≥200 mAh/g) hold great potential for high-energy lithium batteries, the most significant power devices for long-range electric vehicles.",
+        "references": {},
+        "viewpoints": [
+          "Nickel-rich LiNiₓMnᵧCo𝓏O₂ (x ≥ 0.8, NMC) layered positive electrode materials have high specific capacity (≥200 mAh/g).",
+          "Nickel-rich LiNiₓMnᵧCo𝓏O₂ (x ≥ 0.8, NMC) materials hold great potential for high-energy lithium batteries.",
+          "High-energy lithium batteries are the most significant power devices for long-range electric vehicles."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "However, the cycling stability of nickel-rich positive electrode material is still unsatisfactory at present, especially at high voltages.",
+        "references": {},
+        "viewpoints": [
+          "The cycling stability of nickel-rich positive electrode material is still unsatisfactory at present.",
+          "The cycling stability of nickel-rich positive electrode material is especially unsatisfactory at high voltages."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "The severe structural and chemo-mechanical degradation results in rapid capacity decay of these positive electrode materials during cycling, and the capacity decay is accelerated with an increase of Ni content in materials [1].",
+        "references": {
+          "1": {
+            "1": "The effects of Ni content on the electrochemical properties of Li[NixCoyMnz]O2 are reported in this study.",
+            "2": "The effects of Ni content on the structural stability of Li[NixCoyMnz]O2 are reported in this study.",
+            "3": "The effects of Ni content on the thermal stabilities of Li[NixCoyMnz]O2 are reported in this study.",
+            "4": "Li[NixCoyMnz]O2 is synthesized via a coprecipitation method in this study.",
+            "5": "The electrochemical properties of Li[NixCoyMnz]O2 are strongly dependent on its composition.",
+            "6": "The thermal properties of Li[NixCoyMnz]O2 are strongly dependent on its composition.",
+            "7": "An increase in the Ni content results in an increase in the specific discharge capacity of Li[NixCoyMnz]O2.",
+            "8": "An increase in the Ni content results in an increase in the total residual lithium content of Li[NixCoyMnz]O2.",
+            "9": "An increase in the Ni content results in a decrease in capacity retention of Li[NixCoyMnz]O2.",
+            "10": "An increase in the Ni content results in a decrease in safety characteristics of Li[NixCoyMnz]O2.",
+            "11": "The structural stability of Li[NixCoyMnz]O2 is related to its thermal stability.",
+            "12": "The structural stability of Li[NixCoyMnz]O2 is related to its electrochemical stability.",
+            "13": "X-ray diffraction confirms the relation between structural stability and thermal and electrochemical stabilities of Li[NixCoyMnz]O2.",
+            "14": "Thermal gravimetric analysis confirms the relation between structural stability and thermal and electrochemical stabilities of Li[NixCoyMnz]O2.",
+            "15": "Differential scanning calorimetry confirms the relation between structural stability and thermal and electrochemical stabilities of Li[NixCoyMnz]O2.",
+            "16": "Developing an ideal cathode material with both high capacity and safety is a challenging task.",
+            "17": "Precise control of the microstructure of the electrode is required to develop an ideal cathode material with both high capacity and safety.",
+            "18": "Precise control of the physico-chemical properties of the electrode is required to develop an ideal cathode material with both high capacity and safety."
+          }
+        },
+        "viewpoints": [
+          "Severe structural and chemo-mechanical degradation results in rapid capacity decay of nickel-rich positive electrode materials during cycling.",
+          "Capacity decay of nickel-rich positive electrode materials is accelerated with an increase of Ni content in the materials."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The surface stability plays a vital role in nickel-rich positive electrode materials, because their performance deterioration can initiate at the surface due to parasitic reactions with the electrolyte, transition metal dissolution, and surface reconstruction [2], [3], [4].",
+        "references": {
+          "2": {
+            "1": "The present study addresses long-standing challenges with high-voltage operation of LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> cathode materials for lithium-ion batteries.",
+            "2": "The study uses high-throughput X-ray absorption spectroscopy and spatially resolved electron microscopy and spectroscopy to investigate LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles.",
+            "3": "LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles undergo structural reconstruction, including the formation of a surface reduced layer.",
+            "4": "LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles undergo chemical evolution, including the formation of a surface reaction layer.",
+            "5": "The structural reconstruction and chemical evolution of LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles are primarily responsible for capacity fading under high-voltage cycling conditions.",
+            "6": "The structural reconstruction and chemical evolution of LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles are primarily responsible for impedance buildup under high-voltage cycling conditions.",
+            "7": "The structural reconstruction and chemical evolution of LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles are responsible for the first-cycle coulombic inefficiency.",
+            "8": "The surface reconstruction of LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles exhibits a strong anisotropic characteristic.",
+            "9": "The anisotropic characteristic of surface reconstruction predominantly occurs along lithium diffusion channels.",
+            "10": "The surface reaction layer of LiNi<sub>x</sub>Mn<sub>x</sub>Co<sub>1−2x</sub>O<sub>2</sub> particles is composed of lithium fluoride.",
+            "11": "The lithium fluoride in the surface reaction layer is embedded in a complex organic matrix.",
+            "12": "The study provides a refined example for investigating surface reconstruction and chemical evolution in battery materials.",
+            "13": "The study utilizes combined diagnostic tools at complementary length scales to investigate surface reconstruction and chemical evolution in battery materials."
+          },
+          "3": {
+            "1": "Ni-rich layered oxides LiNixCoyMnzO2 (NCM) and LiNixCoyAlzO2 (NCA) are considered the best choice for cathode material in high energy Li-ion batteries.",
+            "2": "Ni-rich layered oxides are favored because of their advantages in capacity, working potential, and manufacture cost.",
+            "3": "The application of Ni-rich layered oxides in practical Li-ion batteries is hindered by performance degradation over the battery's life.",
+            "4": "The application of Ni-rich layered oxides in practical Li-ion batteries is hindered by safety hazards over the battery's life.",
+            "5": "Performance degradation in Ni-rich layered oxides manifests as declines in battery's capacity.",
+            "6": "Performance degradation in Ni-rich layered oxides manifests as declines in battery's working voltage.",
+            "7": "Performance degradation in Ni-rich layered oxides results in battery swelling.",
+            "8": "Performance degradation in Ni-rich layered oxides leads to impedance growth.",
+            "9": "Safety hazards in Ni-rich layered oxides arise from thermal runaway.",
+            "10": "Thermal runaway occurs under abuse conditions such as overcharging.",
+            "11": "Thermal runaway occurs under abuse conditions such as overheating.",
+            "12": "Thermal runaway occurs under abuse conditions such as electric shorting.",
+            "13": "Nearly all problems of Ni-rich layered oxides are attributed to the loss of oxygen.",
+            "14": "The loss of oxygen is especially caused by the oxidation of lattice oxygen in the H3 phase.",
+            "15": "In the H3 phase, capacities are contributed by both the Ni and O redox couples.",
+            "16": "The review provides an overview of the problems and their origins in Ni-rich layered oxides.",
+            "17": "The review outlines the solutions attempted to mitigate the problems in Ni-rich layered oxides."
+          },
+          "4": {
+            "1": "Nickel-rich layered transition-metal oxides have high-capacity capabilities.",
+            "2": "Nickel-rich layered transition-metal oxides have high-power capabilities.",
+            "3": "Nickel-rich layered transition-metal oxides are established as the principal cathode candidates for next-generation lithium-ion batteries.",
+            "4": "Poor thermal stability of nickel-rich layered transition-metal oxides restricts their broadly practical applications.",
+            "5": "Rapid capacity fade of nickel-rich layered transition-metal oxides restricts their broadly practical applications.",
+            "6": "Air-sensitivity of nickel-rich layered transition-metal oxides, particularly for Ni content over 80%, restricts their broadly practical applications.",
+            "7": "The properties of the stable surface/interface where the Li+ shuttles back and forth between the cathode and electrolyte play a significant role in the lithium-storage performance of nickel-rich layered transition-metal oxides.",
+            "8": "The nature of the stable surface/interface where the Li+ shuttles back and forth between the cathode and electrolyte plays a significant role in the lithium-storage performance of nickel-rich layered transition-metal oxides.",
+            "9": "The properties of the stable surface/interface where the Li+ shuttles back and forth between the cathode and electrolyte play a significant role in the industrial processability of nickel-rich layered transition-metal oxides.",
+            "10": "The nature of the stable surface/interface where the Li+ shuttles back and forth between the cathode and electrolyte plays a significant role in the industrial processability of nickel-rich layered transition-metal oxides.",
+            "11": "Tremendous efforts are made to understand the essential origins of surface/interface structure degradation of nickel-rich layered transition-metal oxides.",
+            "12": "Efficient surface modification methodologies for nickel-rich layered transition-metal oxides are intensively explored.",
+            "13": "The purpose of the contribution is to provide a comprehensive review of the up-to-date mechanisms proposed to rationally elucidate the surface/interface behaviors of nickel-rich layered transition-metal oxides.",
+            "14": "The contribution focuses on recent strategies developed to optimize the surface/interface structure of nickel-rich layered transition-metal oxides.",
+            "15": "The contribution focuses on recent strategies developed to optimize the surface/interface chemistry of nickel-rich layered transition-metal oxides.",
+            "16": "Strategies to optimize the surface/interface structure and chemistry include synthetic condition regulation.",
+            "17": "Strategies to optimize the surface/interface structure and chemistry include surface doping.",
+            "18": "Strategies to optimize the surface/interface structure and chemistry include surface coating.",
+            "19": "Strategies to optimize the surface/interface structure and chemistry include dual doping-coating modification.",
+            "20": "Strategies to optimize the surface/interface structure and chemistry include concentration-gradient structure.",
+            "21": "Strategies to optimize the surface/interface structure and chemistry include electrolyte additives.",
+            "22": "The perspective on future research trends toward advanced Ni-rich cathodes with stable surface/interface is presented briefly.",
+            "23": "Feasible approaches toward advanced Ni-rich cathodes with stable surface/interface are presented briefly."
+          }
+        },
+        "viewpoints": [
+          "Surface stability plays a vital role in nickel-rich positive electrode materials.",
+          "Performance deterioration of nickel-rich positive electrode materials can initiate at the surface due to parasitic reactions with the electrolyte.",
+          "Performance deterioration of nickel-rich positive electrode materials can initiate at the surface due to transition metal dissolution.",
+          "Performance deterioration of nickel-rich positive electrode materials can initiate at the surface due to surface reconstruction."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Moreover, the surface stability of NMCs is related to their bulk chemo-mechanical stability during cycling.",
+        "references": {},
+        "viewpoints": [
+          "Surface stability of NMCs is related to their bulk chemo-mechanical stability during cycling."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Due to the mutual modulation between surface chemistry and bulk microstructure, a higher surface structural stability can alleviate anisotropic stress formation in NMC polycrystalline particles [5], [6].",
+        "references": {
+          "5": {
+            "1": "Surface lattice reconstruction is commonly observed in nickel-rich layered oxide battery cathode materials.",
+            "2": "Surface lattice reconstruction causes unsatisfactory high-voltage cycling performance in nickel-rich layered oxide battery cathode materials.",
+            "3": "The interplay of the surface chemistry and the bulk microstructure in nickel-rich layered oxide battery cathode materials remains largely unexplored.",
+            "4": "The intrinsic structural complexity of nickel-rich layered oxide battery cathode materials contributes to the unexplored nature of the interplay between surface chemistry and bulk microstructure.",
+            "5": "The lack of integrated diagnostic tools contributes to the unexplored nature of the interplay between surface chemistry and bulk microstructure in nickel-rich layered oxide battery cathode materials.",
+            "6": "Integrated diagnostic tools are needed for a thorough investigation of the interplay between surface chemistry and bulk microstructure at complementary length scales in nickel-rich layered oxide battery cathode materials.",
+            "7": "Nano-resolution X-ray probes in both soft and hard X-ray regimes are combined to demonstrate correlative surface chemical mapping and bulk microstructure imaging.",
+            "8": "Correlative surface chemical mapping and bulk microstructure imaging are demonstrated over a single charged LiNi<sub>0.8</sub>Mn<sub>0.1</sub>Co<sub>0.1</sub>O<sub>2</sub> (NMC811) secondary particle using nano-resolution X-ray probes.",
+            "9": "Sub-particle regions with more micro cracks in nickel-rich layered oxide battery cathode materials are associated with more severe surface degradation.",
+            "10": "A mechanism of mutual modulation between the surface chemistry and the bulk microstructure in nickel-rich layered oxide battery cathode materials is formulated.",
+            "11": "The formulation of the mechanism is based on experimental observations and finite element modeling.",
+            "12": "The surface-to-bulk reaction coupling effect is fundamentally important for the design of the next generation battery cathode materials."
+          },
+          "6": {
+            "1": "Ni-rich layered oxides serve as high-capacity battery cathodes.",
+            "2": "Ni-rich layered oxides suffer from degradation at high voltages.",
+            "3": "A dry surface modification method called mechanofusion (MF) is utilized.",
+            "4": "Mechanofusion (MF) is used to achieve enhanced battery stability.",
+            "5": "Mechanofusion (MF) is simple.",
+            "6": "Mechanofusion (MF) has a high yield.",
+            "7": "Mechanofusion (MF) is flexible.",
+            "8": "Mechanofusion (MF) is cost-effective.",
+            "9": "Mechanofusion (MF) is highly attractive for processing at the industrial scale.",
+            "10": "A systematic study unveils the underlying mechanisms responsible for performance improvement.",
+            "11": "The study combines multiple probes.",
+            "12": "The probes used in the study include 3D nano-tomography.",
+            "13": "The probes used in the study include spectroscopic imaging.",
+            "14": "The probes used in the study include in situ synchrotron diffraction.",
+            "15": "The probes used in the study include finite element analysis (FEA).",
+            "16": "Mechanofusion (MF) affects the bulk crystallography.",
+            "17": "Mechanofusion (MF) introduces a partially disordered structure.",
+            "18": "Mechanofusion (MF) introduces microstrain.",
+            "19": "Mechanofusion (MF) introduces local lattice variation.",
+            "20": "The crack initiation pattern during delithiation is regulated by surface coating.",
+            "21": "The crack propagation pattern during delithiation is regulated by surface coating.",
+            "22": "The overall mechanical fracture is reduced after surface coating.",
+            "23": "Mechanofusion (MF) can alter the bulk charging pathways.",
+            "24": "The ability of mechanofusion (MF) to alter bulk charging pathways is validated.",
+            "25": "There is a synergic effect between surface modification and bulk charge distribution.",
+            "26": "This synergic effect is fundamentally important for designing next-generation battery cathode materials."
+          }
+        },
+        "viewpoints": [
+          "There is a mutual modulation between surface chemistry and bulk microstructure in NMCs.",
+          "Higher surface structural stability can alleviate anisotropic stress formation in NMC polycrystalline particles."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "To mitigate surface instability of NMCs, researchers have built functional layers on positive particles or prepared NMCs with an elemental concentration gradient and core-shell structure [7], [8], [9], [10].",
+        "references": {
+          "7": {
+            "1": "The synthesis of particles with internal gradients in transition metal composition is reported.",
+            "2": "The synthesis is tailored and aided by the use of a general process model.",
+            "3": "Tailored synthesis of transition metal particles was achieved using a coprecipitation reaction.",
+            "4": "The coprecipitation reaction allowed for tunable control over the process conditions.",
+            "5": "The gradients in the internal composition of the particles were monitored experimentally.",
+            "6": "The gradients in the internal composition of the particles were confirmed by analysis.",
+            "7": "The analysis was performed on particles collected during regularly timed intervals.",
+            "8": "Particles collected from the reactor at the end of the process were used as precursor material.",
+            "9": "The particles were used for the solid-state synthesis of Li_{1.2}(Mn_{0.62}Ni_{0.38})_{0.8}O_{2}.",
+            "10": "Li_{1.2}(Mn_{0.62}Ni_{0.38})_{0.8}O_{2} was electrochemically evaluated.",
+            "11": "Li_{1.2}(Mn_{0.62}Ni_{0.38})_{0.8}O_{2} served as the active cathode material in a lithium battery.",
+            "12": "Li_{1.2}(Mn_{0.62}Ni_{0.38})_{0.8}O_{2} was the first example of a structurally integrated multiphase material.",
+            "13": "Li_{1.2}(Mn_{0.62}Ni_{0.38})_{0.8}O_{2} included a tailored internal gradient in relative transition metal composition.",
+            "14": "Li_{1.2}(Mn_{0.62}Ni_{0.38})_{0.8}O_{2} served as the active cathode material in a lithium-ion battery.",
+            "15": "The authors believe their general synthesis strategy may be applied to produce new cathode materials.",
+            "16": "The synthesis strategy may allow for tunable interior compositions of new cathode materials.",
+            "17": "The synthesis strategy may allow for tunable surface compositions of new cathode materials.",
+            "18": "The synthesis strategy may allow for tunable overall relative transition metal compositions of new cathode materials."
+          },
+          "8": {
+            "1": "Aluminum (Al) is introduced into a cathode with average composition Li[Ni0.61Co0.12Mn0.27]O2 (FCG61).",
+            "2": "The Ni and Mn concentrations in the FCG61 cathode are designed to vary continuously within the cathode particle.",
+            "3": "The Al-FCG61 cathode is tested in a full-cell for 3000 cycles.",
+            "4": "The testing of the Al-FCG61 cathode for 3000 cycles is mainly to assess its viability for daily charge/discharge cycles during the ≈10 years service life of electric vehicles.",
+            "5": "Aluminum substitution allows the Al-FCG61 cathode to maintain 84% of its initial capacity after 3000 cycles.",
+            "6": "Aluminum substitution strengthens the grain boundaries in the Al-FCG61 cathode.",
+            "7": "The mechanical strength data substantiates the strengthening of the grain boundaries by Al-substitution.",
+            "8": "The strengthening of the grain boundaries by Al-substitution delays the nucleation of microcracks at the phase boundaries.",
+            "9": "The nucleation of microcracks at the phase boundaries is shown to be the main reason for cathode failure during long-term cycling.",
+            "10": "Aluminum substitution decreases cation mixing in the Al-FCG61 cathode.",
+            "11": "Aluminum substitution suppresses the formation of the secondary phase.",
+            "12": "The formation of the secondary phase likely initiates microcracks.",
+            "13": "An NCA cathode must be limited to a 60% depth of discharge (DOD) for long-term cycling.",
+            "14": "The proposed Al-FCG61 cathode is cycled at 100% DOD for 3000 cycles.",
+            "15": "The Al-FCG61 cathode is designed to fully utilize its available capacity for maximum energy density.",
+            "16": "Utilizing the full capacity of the Al-FCG61 cathode reduces the cost of the battery."
+          },
+          "9": {
+            "1": "Layered lithium nickel-rich oxides have attracted significant interest as cathode materials for rechargeable lithium batteries.",
+            "2": "Layered lithium nickel-rich oxides are of interest due to their high capacity.",
+            "3": "Layered lithium nickel-rich oxides have excellent rate capability.",
+            "4": "Layered lithium nickel-rich oxides are low cost.",
+            "5": "Low thermal-abuse tolerance of layered lithium nickel-rich oxides prohibits their use in practical batteries.",
+            "6": "Poor cycle life of layered lithium nickel-rich oxides, especially at elevated temperatures, prohibits their use in practical batteries.",
+            "7": "A concentration-gradient cathode material for rechargeable lithium batteries based on layered lithium nickel cobalt manganese oxide is reported.",
+            "8": "Each particle in the concentration-gradient cathode material has a central bulk that is rich in nickel (Ni).",
+            "9": "The Mn-rich outer layer in the concentration-gradient cathode material has decreasing nickel (Ni) concentration as the surface is approached.",
+            "10": "The Mn-rich outer layer in the concentration-gradient cathode material has increasing manganese (Mn) concentration as the surface is approached.",
+            "11": "The Mn-rich outer layer in the concentration-gradient cathode material has increasing cobalt (Co) concentration as the surface is approached.",
+            "12": "The central bulk that is rich in nickel (Ni) provides high capacity.",
+            "13": "The Mn-rich outer layer improves thermal stability.",
+            "14": "A half cell using the concentration-gradient cathode material achieved a high capacity of 209 mA h g(-1).",
+            "15": "The half cell retained 96% of the capacity after 50 charge-discharge cycles under an aggressive test profile of 55 degrees C between 3.0 and 4.4 V.",
+            "16": "The concentration-gradient material showed superior performance in thermal-abuse tests compared to the bulk composition Li[Ni(0.8)Co(0.1)Mn(0.1)]O(2).",
+            "17": "The concentration-gradient cathode material could enable the production of batteries meeting the demanding performance requirements of plug-in hybrid electric vehicles.",
+            "18": "The concentration-gradient cathode material could enable the production of batteries meeting the demanding safety requirements of plug-in hybrid electric vehicles."
+          },
+          "10": {
+            "1": "Lithium-rich layered Ni–Mn–Co oxide materials have been the subject of intense study in the past decade.",
+            "2": "Mn-rich materials have serious voltage fade issues.",
+            "3": "Ni-rich materials have poor thermal stability.",
+            "4": "Ni-rich materials oxidize the organic carbonate electrolyte readily.",
+            "5": "Core–shell strategies use Ni-rich material as the core.",
+            "6": "Core–shell strategies use Mn-rich materials as the shell.",
+            "7": "Core–shell strategies can balance the advantages and disadvantages of Ni-rich and Mn-rich materials in a hybrid system.",
+            "8": "The lithium-rich core–shell materials show much improved overall electrochemical performance compared to core-only samples.",
+            "9": "The lithium-rich core–shell materials show much improved overall electrochemical performance compared to shell-only samples.",
+            "10": "Energy dispersive spectroscopy results show there was diffusion of transition metals between the core and shell phases after sintering at 900 °C.",
+            "11": "The diffusion of transition metals between the core and shell phases occurred compared to the prepared hydroxide precursors.",
+            "12": "A Mn-rich shell was still maintained after diffusion.",
+            "13": "Co, which was only in the shell in the precursor, was approximately homogeneous throughout the particles after diffusion.",
+            "14": "The core–shell samples with optimal lithium content showed low irreversible capacity.",
+            "15": "The core–shell samples with optimal lithium content showed high capacity.",
+            "16": "The core–shell samples with optimal lithium content showed excellent capacity retention.",
+            "17": "Sample CS2-3 had a reversible capacity of approximately 218 mAh/g.",
+            "18": "Sample CS2-3 had an irreversible capacity of approximately 30 mAh/g, which is 12.3% of the total capacity.",
+            "19": "Sample CS2-3 showed 98% capacity retention after 40 cycles to 4.6 V at 30 °C at a rate of approximately C/20.",
+            "20": "Differential capacity versus potential analysis confirmed that cells of the core–shell samples had stable impedance.",
+            "21": "Differential capacity versus potential analysis confirmed that cells of the core–shell samples had a very stable average voltage.",
+            "22": "The Mn-rich shell can effectively protect the Ni-rich core from reactions with the electrolyte.",
+            "23": "The Ni-rich core renders a high and stable average voltage."
+          }
+        },
+        "viewpoints": [
+          "Researchers have built functional layers on positive particles to mitigate surface instability of NMCs.",
+          "Researchers have prepared NMCs with an elemental concentration gradient to mitigate surface instability.",
+          "Researchers have prepared NMCs with a core-shell structure to mitigate surface instability."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "A surface coating layer such as Al₂O₃ can enhance the cycling stability of NMCs by suppressing undesired side reactions with the electrolyte and lowering interfacial charge transfer impendence [11].",
+        "references": {
+          "11": {
+            "1": "The energy density of current lithium-ion batteries based on layered LiMO₂ cathodes needs significant improvement.",
+            "2": "Improvement in energy density is required to make lithium-ion batteries competitive with internal combustion engines.",
+            "3": "Higher energy density is necessary to enable the widespread implementation of electric vehicles.",
+            "4": "Atomic layer deposition of titania on Ni-rich FCG NMC and NCA active material particles could substantially improve lithium-ion battery performance.",
+            "5": "Atomic layer deposition of alumina on Ni-rich FCG NMC and NCA active material particles could substantially improve lithium-ion battery performance.",
+            "6": "Improved lithium-ion battery performance allows for increased upper cutoff voltage during charging.",
+            "7": "Increased upper cutoff voltage during charging delivers significantly increased specific energy utilization.",
+            "8": "Al₂O₃ coating improved the NMC cycling performance by 40% at 1 C/−1 C.",
+            "9": "Al₂O₃ coating improved the NCA cycling performance by 34% at 1 C/−1 C.",
+            "10": "Improvement in NMC performance was achieved with a 4.35 V upper cutoff voltage in 2 Ah pouch cells.",
+            "11": "Improvement in NCA performance was achieved with a 4.4 V upper cutoff voltage in 2 Ah pouch cells.",
+            "12": "High resolution TEM/SAED structural characterization was used to study the materials.",
+            "13": "Al₂O₃ coatings prevented surface-initiated layered-to-spinel phase transitions in coated materials.",
+            "14": "Surface-initiated layered-to-spinel phase transitions were prevalent in uncoated materials.",
+            "15": "EIS confirmed that Al₂O₃-coated materials had a significantly lower increase in the charge transfer component of impedance during cycling.",
+            "16": "The ability to mitigate degradation mechanisms for Ni-rich NMC and NCA provides insight into improving lithium-ion battery performance.",
+            "17": "Improving the performance of high-voltage lithium-ion batteries can be enabled through the mitigation of degradation mechanisms."
+          }
+        },
+        "viewpoints": [
+          "A surface coating layer such as Al₂O₃ can enhance the cycling stability of NMCs.",
+          "A surface coating layer such as Al₂O₃ can suppress undesired side reactions with the electrolyte.",
+          "A surface coating layer such as Al₂O₃ can lower the interfacial charge transfer impendence."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "The concentration gradient NMCs exhibit improved long-term cycle life through enhancing structural stability with a Mn-rich surface layer.",
+        "references": {},
+        "viewpoints": [
+          "Concentration gradient NMCs exhibit improved long-term cycle life.",
+          "Concentration gradient NMCs enhance structural stability with a Mn-rich surface layer."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "However, the effectiveness of these strategies depends on the capability to precisely control the synthesis conditions [12], [13].",
+        "references": {
+          "12": {
+            "1": "The recharging capability of Ni-rich layered cathodes deteriorates rapidly upon cycling.",
+            "2": "The rapid deterioration of the recharging capability of Ni-rich layered cathodes is mainly due to mechanical instability.",
+            "3": "The mechanical instability in Ni-rich layered cathodes is caused by removing a large amount of Li ions from the host structure.",
+            "4": "Multi-stage microstructural tailoring involves optimal engineering of the precursor microstructure.",
+            "5": "Multi-stage microstructural tailoring includes the deliberate over-doping of Al during the lithiation stage to preserve the needle-like morphology of the precursor.",
+            "6": "Through multi-stage microstructural tailoring, the primary particle morphology of the cathode is optimized.",
+            "7": "The chemical and microstructural engineering of a Li[Ni_{0.9–x}Co_{0.1}Al_{x}]O_{2} cathode starting from its precursor stage produces a unique structure.",
+            "8": "The unique structure produced by chemical and microstructural engineering relieves detrimental mechanical strain.",
+            "9": "The unique structure produced by chemical and microstructural engineering significantly extends the battery life.",
+            "10": "Excess Al-doped Li[Ni_{0.86}Co_{0.1}Al_{0.04}]O_{2] with compositional partitioning of Ni produces a highly aligned microstructure.",
+            "11": "In the highly aligned microstructure, constituent primary particles are refined to a sub-micrometer scale.",
+            "12": "The designed Li[Ni_{0.86}Co_{0.1}Al_{0.04}]O_{2} retains 86.5% of the initial capacity after 2000 cycles.",
+            "13": "The designed Li[Ni_{0.86}Co_{0.1}Al_{0.04}]O_{2} retains an unprecedented 78.0% of the initial capacity at a severe operation condition of 45 °C.",
+            "14": "The proposed Li[Ni_{0.86}Co_{0.1}Al_{0.04}]O_{2} represents a new class of Ni-rich Li[Ni_{x}Co_{y}Al_{1–x–y}]O_{2} cathodes.",
+            "15": "The proposed Li[Ni_{0.86}Co_{0.1}Al_{0.04}]O_{2] can meet the energy density required for next-generation electric vehicles.",
+            "16": "The proposed Li[Ni_{0.86}Co_{0.1}Al_{0.04}]O_{2] does not compromise the battery life.",
+            "17": "The proposed Li[Ni_{0.86}Co_{0.1}Al_{0.04}]O_{2] does not compromise the battery safety."
+          },
+          "13": {
+            "1": "Li[Ni_{1–x–y–z}Co_{x}Mn_{y}Al_{z}]O_{2} (NCMA) cathodes have improved durability.",
+            "2": "Li[Ni_{1–x–y–z}Co_{x}Mn_{y}Al_{z}]O_{2} (NCMA) cathodes leverage the advantages of both NCM and NCA cathodes.",
+            "3": "Li[Ni_{1–x–y–z}Co_{x}Mn_{y}Al_{z}]O_{2} (NCMA) cathodes have attracted public attention.",
+            "4": "It is challenging to realize high-energy Ni-rich NCMA cathodes when Ni content approaches 90% without sacrificing durability.",
+            "5": "The cycling stability of a Ni-rich Li[Ni_{0.93}Co_{0.03}Mn_{0.03}Al_{0.01}]O_{2} (NCMA93) cathode is improved.",
+            "6": "The strategy to improve cycling stability involves microstructural refinement.",
+            "7": "The strategy to improve cycling stability involves surface modification.",
+            "8": "The F-coating-induced protective layer of the F-coated, Sb-doped NCMA93 cathode enables the formation of a robust cathode–electrolyte interphase (CEI) layer.",
+            "9": "The engineered microstructure of the F-coated, Sb-doped NCMA93 cathode enables the formation of a robust cathode–electrolyte interphase (CEI) layer.",
+            "10": "The robust cathode–electrolyte interphase (CEI) layer suppresses surface degradation.",
+            "11": "Suppressing surface degradation leads to a long battery life.",
+            "12": "The F coating alone does not significantly improve the cycling stability of the cathode.",
+            "13": "The F coating suffers severe microcracking during cycling.",
+            "14": "The severe microcracking is due to its suboptimal microstructure.",
+            "15": "A robust cathode–electrolyte interphase (CEI) layer should be generated on the cathode for a long lifespan.",
+            "16": "The robust cathode–electrolyte interphase (CEI) layer should be maintained without severe microcracking for a long lifespan of the cathode."
+          }
+        },
+        "viewpoints": [
+          "The effectiveness of building functional layers or preparing NMCs with an elemental concentration gradient and core-shell structure depends on the ability to precisely control synthesis conditions."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Considering that the capacity delivery and electrochemical kinetics of positive electrode materials are associated with reversible Li ion (de)intercalation throughout entire battery particles, the structural and chemical evolution in the bulk of NMC particles should be considered when investigating degradation mechanisms upon cycling.",
+        "references": {},
+        "viewpoints": [
+          "Capacity delivery and electrochemical kinetics of positive electrode materials are associated with reversible Li ion (de)intercalation throughout entire battery particles.",
+          "Structural evolution in the bulk of NMC particles should be considered when investigating degradation mechanisms upon cycling.",
+          "Chemical evolution in the bulk of NMC particles should be considered when investigating degradation mechanisms upon cycling."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Researchers have introduced heteroatoms into the NMC lattice, which may mitigate undesired bulk degradation [14], [15], [16], [17], [18].",
+        "references": {
+          "14": {
+            "1": "Elemental doping is a strategy used to improve interfacial chemistry in battery materials.",
+            "2": "Elemental doping is considered a prominent strategy in the context of battery materials.",
+            "3": "Manipulating the spatial distribution of dopants can inform better design of doping chemistry for batteries.",
+            "4": "Understanding the dynamic evolution of dopants at the atomic scale can inform better design of doping chemistry for batteries.",
+            "5": "A targeted hierarchical distribution of Ti⁴⁺ is created in LiNi₀.₈Mn₀.₁Co₀.₁O₂ primary particles.",
+            "6": "Ti⁴⁺ is a popular doping element for oxide cathode materials.",
+            "7": "Multiscale synchrotron/electron spectroscopy and imaging techniques are applied to investigate the dynamic evolution of the doping chemical environment.",
+            "8": "Theoretical calculations are applied to investigate the dynamic evolution of the doping chemical environment.",
+            "9": "The Ti⁴⁺ dopant is fully incorporated into the TMO₆ octahedral coordination.",
+            "10": "The Ti⁴⁺ dopant is targeted to be enriched at the surface.",
+            "11": "Ti⁴⁺ in the TMO₆ octahedral coordination increases the TM–O bond length.",
+            "12": "Ti⁴⁺ in the TMO₆ octahedral coordination reduces the covalency between (Ni, Mn, Co) and O.",
+            "13": "The excellent reversibility of the Ti⁴⁺ chemical environment gives rise to superior oxygen reversibility at the cathode–electrolyte interphase.",
+            "14": "The excellent reversibility of the Ti⁴⁺ chemical environment gives rise to superior oxygen reversibility in the bulk particles.",
+            "15": "Superior oxygen reversibility leads to improved stability in capacity.",
+            "16": "Superior oxygen reversibility leads to improved stability in energy.",
+            "17": "Superior oxygen reversibility leads to improved stability in voltage.",
+            "18": "The work directly probes the chemical environment of doping elements.",
+            "19": "The work helps rationalize the doping strategy for high-voltage layered cathodes."
+          },
+          "15": {
+            "1": "Ni-rich layered oxides (LiNi1-x-yCoxMnyO2, 1-x-y ≥ 0.5) have high capacity.",
+            "2": "Ni-rich layered oxides (LiNi1-x-yCoxMnyO2, 1-x-y ≥ 0.5) have high operating voltage.",
+            "3": "Ni-rich layered oxides (LiNi1-x-yCoxMnyO2, 1-x-y ≥ 0.5) are attracting great attention.",
+            "4": "Ni-rich layered oxides face challenges of incomplete capacity release.",
+            "5": "Ni-rich layered oxides face challenges of fast capacity fade.",
+            "6": "Challenges of incomplete capacity release and fast capacity fade are especially prominent at high C rates for Ni-rich layered oxides.",
+            "7": "A wet chemical method is used to dope Ti into LiNi0.8Co0.1Mn0.1O2 (NCM811).",
+            "8": "NCM811 with homogeneously distributed Ti can effectively enhance ion transfer kinetics.",
+            "9": "NCM811 with homogeneously distributed Ti can greatly improve capacity delivery at high C rates.",
+            "10": "The Ti-doped NCM811 exhibits a capacity of 196 mAh/g at 0.5C in a voltage range of 2.8–4.6 V.",
+            "11": "The Ti-doped NCM811 exhibits a capacity of 157 mAh/g at 2C in a voltage range of 2.8–4.6 V.",
+            "12": "The capacity of Ti-doped NCM811 at 0.5C is 5% higher than that of pristine NCM811.",
+            "13": "The capacity of Ti-doped NCM811 at 2C is 15% higher than that of pristine NCM811.",
+            "14": "Ti-doped NCM811 cathodes exhibit enhanced cycling stability.",
+            "15": "Ti-doped NCM811 cathodes have capacity retention of 84% after 100 cycles at 1C.",
+            "16": "The methodology for Ti doping is potentially competitive for practical production of Ni-rich layered oxides."
+          },
+          "16": {
+            "1": "Targeted control of layered oxide properties requires more fundamental studies.",
+            "2": "Fundamental studies are needed to mechanistically probe the evolution of layered oxide properties during their synthesis.",
+            "3": "Dopant distribution in multielement-doped LiNiO₂ materials is investigated using spectroscopic, imaging, and scattering techniques.",
+            "4": "Phase propagation in multielement-doped LiNiO₂ materials is investigated using spectroscopic, imaging, and scattering techniques.",
+            "5": "Local chemical changes in multielement-doped LiNiO₂ materials are investigated using spectroscopic, imaging, and scattering techniques.",
+            "6": "The interplay of dopant distribution, phase propagation, and local chemical changes in multielement-doped LiNiO₂ materials is investigated using spectroscopic, imaging, and scattering techniques.",
+            "7": "Dopants undergo dynamic redistribution in the Ni(OH)₂ host lattice at the early stage of calcination (below 300 °C).",
+            "8": "The redistribution behavior of dopants exhibits strong dopant-dependent characteristics.",
+            "9": "The dopant-dependent characteristics of redistribution behavior allow for targeted surface doping control.",
+            "10": "The dopant-dependent characteristics of redistribution behavior allow for targeted bulk doping control.",
+            "11": "The Ni oxidation process exhibits depth-dependent characteristics.",
+            "12": "The most rapid Ni oxidation takes place between 300 and 700 °C.",
+            "13": "Ni oxidation state is used as the proxy for the phase transformation.",
+            "14": "The buildup of heterogeneous phase propagation in the early stage of calcination is shown, especially along the radial direction of secondary particles.",
+            "15": "The radial heterogeneous phase distribution gradually decreases upon completing the calcination.",
+            "16": "A high degree of mosaic-like heterogeneity may still be present in the final product.",
+            "17": "The presence of mosaic-like heterogeneity in the final product departs from the perfect layered oxide.",
+            "18": "The present study offers fundamental insights into manipulating multiscale materials properties during calcination.",
+            "19": "The manipulation of multiscale materials properties during calcination is for the purpose of obtaining stable, high-energy layered oxide cathodes."
+          },
+          "17": {
+            "1": "Recent studies have suggested that Co-free, Ni-rich layered cathodes, such as doped LiNiO₂, can provide promising battery performance for practical applications.",
+            "2": "Co-free, Ni-rich layered cathodes, such as doped LiNiO₂, suffer from significant surface instability during various stages of the sample history.",
+            "3": "The surface instability of Co-free, Ni-rich layered cathodes generates inherent challenges for achieving stable battery performance.",
+            "4": "The surface instability of Co-free, Ni-rich layered cathodes generates inherent challenges for obtaining statistically representative characterization results.",
+            "5": "Delicate controls of stepwise sample preparation are required to reliably report the surface chemistry of Co-free, Ni-rich layered cathodes.",
+            "6": "The aim of this study is to illustrate how the surface chemistry of LiNiO₂ based materials changes with various environments.",
+            "7": "The environments impacting the surface chemistry of LiNiO₂ based materials include human exhalation, sample storage, sample preparation, electrochemical cycling, and surface doping.",
+            "8": "The surface of LiNiO₂ based materials is highly reactive.",
+            "9": "The surface of LiNiO₂ based materials is prone to alter at various stages of sample handling.",
+            "10": "The surface of LiNiO₂ based materials is prone to alter at various stages of characterization.",
+            "11": "The sensitive surface of LiNiO₂ based materials could impact the interpretation of the surface chemical and structural information.",
+            "12": "The sensitive surface could impact the interpretation of surface carbonate formation.",
+            "13": "The sensitive surface could impact the interpretation of transition metal reduction and dissolution.",
+            "14": "The sensitive surface could impact the interpretation of surface reconstruction.",
+            "15": "The heterogeneity of the surface degradation calls for a consolidation of nanoscale, high-resolution characterization methods.",
+            "16": "The heterogeneity of the surface degradation calls for a consolidation of ensemble-averaged methods.",
+            "17": "The consolidation of nanoscale, high-resolution characterization and ensemble-averaged methods is needed to improve statistical representation.",
+            "18": "The doping chemistry can effectively mitigate surface degradation in LiNiO₂ based materials.",
+            "19": "The doping chemistry can improve overall battery performance.",
+            "20": "The improvement in battery performance due to doping chemistry is because of enhanced surface oxygen retention.",
+            "21": "The study highlights the necessity of strict measurements through complementary characterization at multiple length scales.",
+            "22": "Strict measurements through complementary characterization at multiple length scales are necessary to eliminate unintentional biased conclusions."
+          },
+          "18": {
+            "1": "Ni-rich layered oxides have high capacity.",
+            "2": "Ni-rich layered oxides are promising cathode materials for secondary lithium-based battery systems.",
+            "3": "The structural instability of Ni-rich layered oxides detrimentally affects battery performance during cell cycling.",
+            "4": "An Al/Zr co-doped single-crystalline LiNi<sub>0.88</sub>Co<sub>0.09</sub>Mn<sub>0.03</sub>O<sub>2</sub> (SNCM) cathode material is reported to circumvent the structural instability issue of Ni-rich layered oxides.",
+            "5": "Soluble Al ions are adequately incorporated in the SNCM lattice.",
+            "6": "Less soluble Zr ions are prone to aggregate in the outer SNCM surface layer.",
+            "7": "The synergistic effect of Al/Zr co-doping in the SNCM lattice improves Li-ion mobility.",
+            "8": "The synergistic effect of Al/Zr co-doping in the SNCM lattice relieves the internal strain.",
+            "9": "The synergistic effect of Al/Zr co-doping in the SNCM lattice suppresses Li/Ni cation mixing upon cycling at high cut-off voltage.",
+            "10": "The features of Al/Zr co-doped SNCM improve the cathode rate capability during prolonged cell cycling.",
+            "11": "The features of Al/Zr co-doped SNCM improve structural stabilization during prolonged cell cycling.",
+            "12": "The Zr-rich surface enables the formation of a stable cathode-electrolyte interphase.",
+            "13": "The stable cathode-electrolyte interphase prevents SNCM from unwanted reactions with the non-aqueous fluorinated liquid electrolyte solution.",
+            "14": "The stable cathode-electrolyte interphase avoids Ni dissolution.",
+            "15": "A 10.8 Ah pouch cell using a 100 μm thick Li metal anode was assembled to prove the practical application of the Al/Zr co-doped SNCM.",
+            "16": "The 10.8 Ah pouch cell is capable of delivering an initial specific energy of 504.5 Wh kg<sup>−1</sup> at 0.1 C and 25 °C."
+          }
+        },
+        "viewpoints": [
+          "Researchers have introduced heteroatoms into the NMC lattice.",
+          "Introducing heteroatoms into the NMC lattice may mitigate undesired bulk degradation."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "However, due to the crystallographic anisotropy, it is unlikely to make zero-strain layered positive electrode materials although from time to time one may claim minimal volume changes upon cycling.",
+        "references": {},
+        "viewpoints": [
+          "It is unlikely to make zero-strain layered positive electrode materials due to crystallographic anisotropy.",
+          "Some claims of minimal volume changes upon cycling exist, but zero-strain is unlikely due to crystallographic anisotropy."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Due to their high Young’s moduli, a seemingly insignificant strain can still lead to high mechanical stress.",
+        "references": {},
+        "viewpoints": [
+          "A seemingly insignificant strain can lead to high mechanical stress due to their high Young’s moduli."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Meanwhile, it is non-trivial to precisely place heteroatoms in the desired site of NMC lattice.",
+        "references": {},
+        "viewpoints": [
+          "It is non-trivial to precisely place heteroatoms in the desired site of the NMC lattice."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Another hardly discussed drawback of doping chemistry, especially those with multiple dopants, is the vulnerable raw materials supply chain.",
+        "references": {},
+        "viewpoints": [
+          "A drawback of doping chemistry, especially with multiple dopants, is the vulnerable raw materials supply chain."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Adding more elements means a more complex raw materials supply chain.",
+        "references": {},
+        "viewpoints": [
+          "Adding more elements leads to a more complex raw materials supply chain."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "It is within such context that controlling materials microstructures without excessively using dopants has become an attractive strategy for long-term manufacturing reliability [6], [19], [20], [21].",
+        "references": {
+          "6": {
+            "1": "Ni-rich layered oxides serve as high-capacity battery cathodes.",
+            "2": "Ni-rich layered oxides suffer from degradation at high voltages.",
+            "3": "A dry surface modification method called mechanofusion (MF) is utilized.",
+            "4": "Mechanofusion (MF) is used to achieve enhanced battery stability.",
+            "5": "Mechanofusion (MF) is simple.",
+            "6": "Mechanofusion (MF) has a high yield.",
+            "7": "Mechanofusion (MF) is flexible.",
+            "8": "Mechanofusion (MF) is cost-effective.",
+            "9": "Mechanofusion (MF) is highly attractive for processing at the industrial scale.",
+            "10": "A systematic study unveils the underlying mechanisms responsible for performance improvement.",
+            "11": "The study combines multiple probes.",
+            "12": "The probes used in the study include 3D nano-tomography.",
+            "13": "The probes used in the study include spectroscopic imaging.",
+            "14": "The probes used in the study include in situ synchrotron diffraction.",
+            "15": "The probes used in the study include finite element analysis (FEA).",
+            "16": "Mechanofusion (MF) affects the bulk crystallography.",
+            "17": "Mechanofusion (MF) introduces a partially disordered structure.",
+            "18": "Mechanofusion (MF) introduces microstrain.",
+            "19": "Mechanofusion (MF) introduces local lattice variation.",
+            "20": "The crack initiation pattern during delithiation is regulated by surface coating.",
+            "21": "The crack propagation pattern during delithiation is regulated by surface coating.",
+            "22": "The overall mechanical fracture is reduced after surface coating.",
+            "23": "Mechanofusion (MF) can alter the bulk charging pathways.",
+            "24": "The ability of mechanofusion (MF) to alter bulk charging pathways is validated.",
+            "25": "There is a synergic effect between surface modification and bulk charge distribution.",
+            "26": "This synergic effect is fundamentally important for designing next-generation battery cathode materials."
+          },
+          "19": {
+            "1": "Architecting grain crystallographic orientation can modulate charge distribution in polycrystalline battery materials.",
+            "2": "Architecting grain crystallographic orientation can modulate chemomechanical properties in polycrystalline battery materials.",
+            "3": "Architecting grain crystallographic orientation enhances the performance of polycrystalline battery materials.",
+            "4": "Probing the interplay between charge distribution, grain crystallographic orientation, and performance is a daunting challenge.",
+            "5": "The researchers elucidate the spatially resolved charge distribution in lithium layered oxides with different grain crystallographic arrangements.",
+            "6": "The researchers establish a model to quantify the charge distributions in lithium layered oxides with different grain crystallographic arrangements.",
+            "7": "A holistic \"surface-to-bulk\" charge distribution prevails in polycrystalline particles.",
+            "8": "The crystallographic orientation-guided redox reaction governs the charge distribution in local charged nanodomains.",
+            "9": "Radially aligned grains exhibit lower cell polarization compared to randomly oriented grains upon battery cycling.",
+            "10": "Radially aligned grains exhibit higher capacity retention compared to randomly oriented grains upon battery cycling.",
+            "11": "Radially aligned grains create less tortuous lithium ion pathways.",
+            "12": "Radially aligned grains improve charge homogeneity in polycrystalline particles.",
+            "13": "The improvement in charge homogeneity is statistically quantified from over 20 million nanodomains in polycrystalline particles.",
+            "14": "This study provides an improved understanding of the charge distribution in polycrystalline battery materials.",
+            "15": "This study provides an improved understanding of the chemomechanical properties of polycrystalline battery materials."
+          },
+          "20": {
+            "1": "A comprehensive investigation was conducted on the effect of calcination temperature on the physicochemical properties of full-concentration-gradient Li[Ni0.78Co0.10Mn0.12]O₂ (FCG NCM78).",
+            "2": "A comprehensive investigation was conducted on the effect of calcination temperature on the electrochemical performance of FCG NCM78 cathodes.",
+            "3": "The electrochemical performance of the FCG NCM78 cathode was significantly influenced by the crystallinity of FCG NCM78.",
+            "4": "The electrochemical performance of the FCG NCM78 cathode was significantly influenced by the compositional gradient of FCG NCM78.",
+            "5": "The electrochemical performance of the FCG NCM78 cathode was significantly influenced by the morphology of FCG NCM78.",
+            "6": "The crystallinity of FCG NCM78 increased with increasing calcination temperature.",
+            "7": "The compositional gradient of FCG NCM78 disappeared at calcination temperatures exceeding the optimal calcination temperature.",
+            "8": "The radial alignment of rod-shaped primary particles in FCG NCM78 increasingly disappeared at calcination temperatures exceeding the optimal calcination temperature.",
+            "9": "FCG NCM78 calcined at the optimal calcination temperature retained the morphological texture of its precursor.",
+            "10": "FCG NCM78 calcined at the optimal calcination temperature demonstrated high crystallinity.",
+            "11": "The cathode made from FCG NCM78 calcined at the optimal calcination temperature exhibited remarkable cycling stability.",
+            "12": "The cathode made from FCG NCM78 calcined at the optimal calcination temperature retained 86.3% of its initial capacity after 4000 cycles.",
+            "13": "The cathode made from FCG NCM78 calcined at the optimal calcination temperature exhibited superior rate capability.",
+            "14": "The superior rate capability of the cathode made from FCG NCM78 calcined at the optimal calcination temperature was due to the availability of nearly straight diffusion paths for Li-ion transport across adjacent primary particles.",
+            "15": "Excessively coarsened FCG NCM78 cathode particles are obtained at high calcination temperatures.",
+            "16": "Excessively coarsened FCG NCM78 cathode particles develop permanent microcracks during cycling.",
+            "17": "Permanent microcracks in excessively coarsened FCG NCM78 cathode particles facilitate severe structural damage of the cathode material.",
+            "18": "Severe structural damage of the cathode material is facilitated by parasitic surface reactions.",
+            "19": "The rapid deterioration of the solid electrolyte interphase layer on the graphite anode surface occurs due to the crossover of dissolved transition-metal ions."
+          },
+          "21": {
+            "1": "Developing Co-free Li[Ni_{x}Mn_{1−x}]O_{2} cathodes for lithium-ion batteries is a priority.",
+            "2": "Co is associated with price volatility.",
+            "3": "Co is associated with environmental concerns.",
+            "4": "Co is associated with human rights violations.",
+            "5": "Co-free Li[Ni_{x}Mn_{1−x}]O_{2} cathodes can potentially supersede Co-containing Li[Ni_{x}Co_{y}Mn_{1−x−y}]O_{2} and Li[Ni_{x}Co_{y}Al_{1−x−y}]O_{2} cathodes.",
+            "6": "Complete removal of Co from cathodes for lithium-ion batteries is difficult.",
+            "7": "Co-free cathodes suffer from structural instability.",
+            "8": "Co-free cathodes suffer from inferior capacity.",
+            "9": "A morphology-engineering approach is used in this study.",
+            "10": "A Co-free Li[Ni_{0.9}Mn_{0.1}]O_{2} cathode is developed with a Ni-rich core–Mn-rich shell structure.",
+            "11": "The Ni-rich core–Mn-rich shell structure aims to overcome the limitations of Co-free Li[Ni_{x}Mn_{1−x}]O_{2} cathodes.",
+            "12": "The engineered morphology of the Co-free Li[Ni_{0.9}Mn_{0.1}]O_{2} cathode particles dissipates internal strain.",
+            "13": "The internal strain is caused by state-of-charge heterogeneity.",
+            "14": "The engineered morphology contributes to fracture toughening of the cathode.",
+            "15": "The Co-free cathode demonstrates excellent long-term cycling stability.",
+            "16": "Effective dissipation of internal strain contributes to the stability of the Co-free cathode.",
+            "17": "Chemical protection by the Mn-rich shell contributes to the stability of the Co-free cathode.",
+            "18": "The Co-free cathode retains 78.5% of its initial capacity after 2000 cycles at 1 C charge and 0.8 C discharge rates.",
+            "19": "The Co-free cathode retains 79.5% of its initial capacity after 1000 cycles under fast-charging conditions (3 C charge and 1 C discharge).",
+            "20": "The proposed Co-free layered oxide cathode represents a next-generation cathode.",
+            "21": "The proposed cathode affords fast-charging lithium-ion batteries.",
+            "22": "The proposed cathode affords durable lithium-ion batteries.",
+            "23": "The proposed cathode is more cost effective than lithium-ion batteries featuring commercial Co-containing cathodes."
+          }
+        },
+        "viewpoints": [
+          "Controlling materials microstructures without excessively using dopants has become an attractive strategy for long-term manufacturing reliability."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "As a key step in positive electrode material manufacturing, the calcination process can drive mass transport and reaction kinetics to redistribute constituting elements to become either homogeneously or heterogeneously distributed in NMC secondary particles [22].",
+        "references": {
+          "22": {
+            "1": "During solid-state calcination, materials undergo complex phase transitions as temperature increases.",
+            "2": "During solid-state calcination, materials undergo heterogeneous solid-state reactions as temperature increases.",
+            "3": "During solid-state calcination, materials undergo mass transport as temperature increases.",
+            "4": "Precise control of the calcination chemistry is crucial for synthesizing Ni-rich layered oxides (LiNi_{1-x-y}Co_{x}Mn_{y}O_{2}, NRNCM).",
+            "5": "Ni-rich layered oxides (LiNi_{1-x-y}Co_{x}Mn_{y}O_{2}, NRNCM) are used as cathode materials for lithium-ion batteries.",
+            "6": "Battery performance depends on the chemical heterogeneity during NRNCM calcination.",
+            "7": "The chemical heterogeneity during NRNCM calcination has not yet been elucidated.",
+            "8": "Synchrotron-based X-ray, mass spectrometry microscopy, and structural analyses reveal that temperature-dependent reaction kinetics control the local chemical compositions of the reaction intermediates within a calcined particle.",
+            "9": "Synchrotron-based X-ray, mass spectrometry microscopy, and structural analyses reveal that the diffusivity of solid-state lithium sources controls the local chemical compositions of the reaction intermediates within a calcined particle.",
+            "10": "Synchrotron-based X-ray, mass spectrometry microscopy, and structural analyses reveal that ambient oxygen controls the local chemical compositions of the reaction intermediates within a calcined particle.",
+            "11": "Variations in the reducing power of transition metals (i.e., Ni, Co, and Mn) determine the local structures at the nanoscale.",
+            "12": "Investigation of the reaction mechanism via imaging analysis provides valuable information for tuning the calcination chemistry.",
+            "13": "Investigation of the reaction mechanism via imaging analysis provides valuable information for developing high-energy/power density lithium-ion batteries."
+          }
+        },
+        "viewpoints": [
+          "The calcination process is a key step in positive electrode material manufacturing.",
+          "The calcination process can drive mass transport and reaction kinetics.",
+          "The calcination process can redistribute constituting elements to become homogeneously distributed in NMC secondary particles.",
+          "The calcination process can redistribute constituting elements to become heterogeneously distributed in NMC secondary particles."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "In a typical NMC calcination, the ramping and cooling rates are controlled at a few or tens of degrees per minute.",
+        "references": {},
+        "viewpoints": [
+          "In a typical NMC calcination, the ramping rates are controlled at a few or tens of degrees per minute.",
+          "In a typical NMC calcination, the cooling rates are controlled at a few or tens of degrees per minute."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Quenching can produce materials far from equilibrium.",
+        "references": {},
+        "viewpoints": [
+          "Quenching can produce materials far from equilibrium."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Quenching from the peak of the calcination temperature to low temperature has been shown to increase the reversible capacity of lithium titanate negative electrodes [23].",
+        "references": {
+          "23": {
+            "1": "Defect engineering for lithium-ion battery materials can tailor electrical conductivity.",
+            "2": "Defect engineering for lithium-ion battery materials can introduce extra active sites for electrochemical reactions.",
+            "3": "Harvesting excessive intrinsic defects in the bulk of the electrodes is a long-standing challenge.",
+            "4": "Harvesting excessive intrinsic defects near the surface of the electrodes is comparatively easier than in the bulk.",
+            "5": "A versatile strategy of quenching is demonstrated in lithium titanate to achieve off-stoichiometry in the interior region of lithium titanate.",
+            "6": "Lithium titanate (Li₄Ti₅O₁₂, LTO) is a renowned anode for lithium-ion batteries.",
+            "7": "In situ synchrotron analysis reveals enriched oxygen vacancies after ice-water quenching.",
+            "8": "Atomic-resolution microscopy reveals cation redistribution after ice-water quenching.",
+            "9": "Enriched oxygen vacancies and cation redistribution can facilitate the participation of native unextractable Li ions in reversible cycling.",
+            "10": "The fabricated lithium titanate anode delivers a sustained capacity of 202 mAh g⁻¹ in the 1.0–2.5 V range.",
+            "11": "The fabricated lithium titanate anode has excellent rate capability.",
+            "12": "The fabricated lithium titanate anode overcomes the poor cycling stability seen in conventional defective electrodes.",
+            "13": "The feasibility of tuning the degree of structural defectiveness via quenching agents is proven.",
+            "14": "Tuning the degree of structural defectiveness via quenching agents can open up an avenue of research to harness intrinsic defects.",
+            "15": "Harnessing intrinsic defects can improve the energy density of rechargeable batteries."
+          }
+        },
+        "viewpoints": [
+          "Quenching from the peak of the calcination temperature to low temperature has been shown to increase the reversible capacity of lithium titanate negative electrodes."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Some studies adopted a similar quenching treatment for Ni-rich positive electrode materials and found that Ni-rich positive electrodes could deliver enhanced electrochemical performance after the quenching treatment [24], [25].",
+        "references": {
+          "24": {
+            "1": "The electrochemical performance of Ni-rich cathode materials is improved via fast cooling methods.",
+            "2": "The storage properties of Ni-rich cathode materials are improved via fast cooling methods.",
+            "3": "The fast cooling methods mentioned include fast and ultrafast cooling.",
+            "4": "X-ray diffraction results show that the interslab thickness of a fast-cooled sample is larger than in an untreated sample.",
+            "5": "X-ray diffraction results show that the degree of cation mixing in a fast-cooled sample is relatively lower than in an untreated sample.",
+            "6": "X-ray photoelectron spectroscopy confirms that the content of Ni<sup>3+</sup> on the surface of a fast-cooling treated sample is lower than in the untreated sample.",
+            "7": "The average valence state of Ni obtained via titration in a fast-cooling treated sample is higher than in the untreated sample.",
+            "8": "There is a surface layer with less Ni<sup>3+</sup> in fast-cooled samples.",
+            "9": "Electrochemical characterizations confirm that as-treated samples display better cycling stability at 25 °C.",
+            "10": "Electrochemical characterizations confirm that as-treated samples display better cycling stability at 55 °C.",
+            "11": "As-treated samples have better rate capability than untreated samples.",
+            "12": "The electrochemical improvements in as-treated samples are consistent with the XRD results.",
+            "13": "Fourier-transformed infrared spectrum analysis confirms that the storage properties of fast-cooled samples are enhanced.",
+            "14": "X-ray diffraction analysis confirms that the storage properties of fast-cooled samples are enhanced.",
+            "15": "Electrochemical analysis confirms that the storage properties of fast-cooled samples are enhanced.",
+            "16": "Fast-cooled LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub> has less Ni<sup>3+</sup> at the surface.",
+            "17": "Fast-cooled LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub> has larger interslab thickness in the bulk.",
+            "18": "Fast-cooled LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub> is a promising cathode material for high-performance lithium-ion batteries."
+          },
+          "25": {
+            "1": "Transition metal layered oxides have been the dominant cathodes in lithium-ion batteries.",
+            "2": "High-Ni transition metal layered oxides (LiNi<sub>x</sub>Mn<sub>y</sub>Co<sub>z</sub>O<sub>2</sub>; x ≥ 0.7) have greatly boosted capacity.",
+            "3": "High-Ni transition metal layered oxides are of particular interest for large-scale applications due to their reduced cost.",
+            "4": "High Ni loading raises the critical issue of surface instability in high-Ni transition metal layered oxides.",
+            "5": "High Ni loading results in poor rate performance in high-Ni transition metal layered oxides.",
+            "6": "A rational design of synthesis leading to layered LiNi<sub>0.7</sub>Mn<sub>0.15</sub>Co<sub>0.15</sub>O<sub>2</sub> with greatly enhanced rate capability is demonstrated.",
+            "7": "The enhanced rate capability is achieved by implementing a quenching process as an alternative to the general slow cooling.",
+            "8": "In situ synchrotron X-ray diffraction, coupled with surface analysis, is applied to study the synthesis process of layered LiNi<sub>0.7</sub>Mn<sub>0.15</sub>Co<sub>0.15</sub>O<sub>2</sub>.",
+            "9": "The synthesis process study reveals cooling-induced surface reconstruction involving Li<sub>2</sub>CO<sub>3</sub> accumulation.",
+            "10": "The synthesis process study reveals the formation of a Li-deficient layer at the particle surface.",
+            "11": "The synthesis process study reveals Ni reduction at the particle surface.",
+            "12": "The reconstruction process occurs predominantly at high temperatures above 350 °C.",
+            "13": "The reconstruction process is highly cooling-rate dependent.",
+            "14": "Surface reconstruction can be suppressed through synthetic control, specifically quenching.",
+            "15": "Suppressing surface reconstruction through quenching improves the surface stability of the synthesized materials.",
+            "16": "Suppressing surface reconstruction through quenching improves the rate performance of the synthesized materials.",
+            "17": "These findings may provide guidance for the rational synthesis of high-Ni cathode materials."
+          }
+        },
+        "viewpoints": [
+          "Some studies adopted a quenching treatment for Ni-rich positive electrode materials.",
+          "Ni-rich positive electrodes could deliver enhanced electrochemical performance after quenching treatment."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "It has remained largely unexplored regarding how quenching can change the mutual modulation between the surface and bulk of layered positive electrode particles and thus impact battery performance.",
+        "references": {},
+        "viewpoints": [
+          "It is largely unexplored how quenching changes the mutual modulation between the surface and bulk of layered positive electrode particles.",
+          "How quenching impacts battery performance remains largely unexplored."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "If successful, such a thermal treatment can reduce the overall calcination duration and become an effective strategy to tailor battery performance.",
+        "references": {},
+        "viewpoints": [
+          "If successful, quenching can reduce the overall calcination duration.",
+          "If successful, quenching can become an effective strategy to tailor battery performance."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Herein, we report quenching as a strategy to simultaneously mitigate surface structural degradation and address the bulk charge distribution heterogeneity issue.",
+        "references": {},
+        "viewpoints": [
+          "Quenching is a strategy to mitigate surface structural degradation.",
+          "Quenching is a strategy to address the bulk charge distribution heterogeneity issue."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "We manipulate elemental distribution in NMC polycrystalline particles by regulating the cooling rate from the peak of calcination temperature.",
+        "references": {},
+        "viewpoints": [
+          "Elemental distribution in NMC polycrystalline particles is manipulated by regulating the cooling rate from the peak of calcination temperature."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "We observe substantial lithium diffusion from the bulk to the surface of NMC polycrystalline particles, creating a surface Ni reduction layer to decrease the surface reactivity.",
+        "references": {},
+        "viewpoints": [
+          "Substantial lithium diffusion from the bulk to the surface of NMC polycrystalline particles is observed.",
+          "Lithium diffusion creates a surface Ni reduction layer.",
+          "The surface Ni reduction layer decreases surface reactivity."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Subsequent X-ray spectroscopic and imaging analyses show the improved surface stability allows the redox reactions to proceed more homogeneously throughout polycrystalline particles and results in more favorable capacity retention cycled to high voltages.",
+        "references": {},
+        "viewpoints": [
+          "X-ray spectroscopic and imaging analyses show improved surface stability.",
+          "Improved surface stability allows redox reactions to proceed more homogeneously throughout polycrystalline particles.",
+          "Improved surface stability results in more favorable capacity retention cycled to high voltages."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Our work provides insights into regulating the mutual modulation between surface chemistry and bulk charging reactions within polycrystalline layered positive electrode particles.",
+        "references": {},
+        "viewpoints": [
+          "The work provides insights into regulating the mutual modulation between surface chemistry and bulk charging reactions within polycrystalline layered positive electrode particles."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56075-7_with_abstracts",
+    "base_id": "s41467-025-56075-7",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56075-7_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

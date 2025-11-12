@@ -1,0 +1,1384 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "GTPases are essential regulatory proteins that are highly conserved across species. They play crucial roles in regulating various biological processes, including signal transduction, intercellular transport, protein synthesis, ribosome biogenesis, and so on [1] , [2] , [3] . Based on the phylogenetic and structural analyses, GTPases can be divided into two large superclasses: SIMIBI (Signal Recognition GTPases and the MinD and BioD) superclass and TRAFAC (Translation Factor) superclass [1] . OLA1 and its bacteria homolog YchF belong to the TRAFAC class, Obg (spo0B-associated GTP-binding protein) family, and YchF subfamily of P-loop GTPases [4] , [5] . The OLA1/YchF proteins possess a core ATPase domain, a C-terminal TGS domain, and an inserted helical domain (Supplementary Fig. 1 ) and are ubiquitously expressed in a majority of organisms, including bacteria, plants, and humans, sharing more than 40% sequence identity (Supplementary Fig. 2 ) [6] . The G4 motif ((N/T)KxD) in the YchF subfamily exhibits a unique (N/T)(M/L/V)xE amino acid sequence, leading to the members losing GTP specificity and preferentially hydrolyzing ATP rather than GTP [5] , [7] . OLA1/YchF is involved in various cellular stress response pathways, such as heat shock, integrated stress, cell adhesion, and antioxidant responses [8] , [9] . It is also implicated in the regulation of tumor progression in numerous types of cancer, including breast, lung, and hepatocellular cancer [10] , [11] , [12] . Accumulating reports show that OLA1 is highly expressed in most cancers and could be a potential biomarker and therapeutic target for cancer [10] , [13] , [14] , [15] . OLA1 also works as an intrinsic stress response regulator, including oxidative stress [6] and heat shock [16] , [17] . Heat shock protein 70 (HSP70) is a key molecule in different types of cancer, and high expression of HSP70 is associated with poor tumor progression [18] . OLA1 regulates HSP70 protein stability to inhibit shock-induced cell death [16] . OLA1 also interacts with BRCA1 and BRCA1-associated RING domain protein 1, which affects centrosome function and is suspected to lead to carcinogenesis in hereditary breast and ovarian cancer [11] , [19] , [20] . Growing evidence shows that OLA1/YchF plays important roles in translation regulation on a subset of mRNAs, such as leaderless mRNAs encoding stress response proteins essential for cell survival [21] . Human OLA1 has been implicated in translation initiation by interacting with eIF2, thereby preventing its binding to the initiator methionyl-tRNA [22] . Conversely, under stress conditions, the down-regulation of OLA1 enhances translation initiation and mitigate the integrated stress response (ISR) [22] , [23] . A recent study in Mollicutes found that YchF is one of the 104 core set proteins that sustain ribosome biogenesis and the translation of the genetic code in self-replicating bacteria with reduced genomes [24] . Ribosome binding of OLA1/YchF has been observed in E.coli [21] , [25] , [26] , [27] , yeast [17] , Trypanosoma [4] , plants [7] , and human cells [22] . The available data suggest that YchF/OLA1 binds not only to fully assembled ribosomes but also independently to the small and large ribosomal subunits. Moreover, the 70S ribosome has been reported to stimulate the ATPase activity of YchF [26] . Recent biochemical studies using UV-inducible crosslinkers locate YchF at the E-site on the 30S small ribosomal subunit [21] . Despite these advances, questions remain unanswered regarding the molecular details of ribosome binding and translation regulation, as well as the exact roles of OLA1/YchF during these processes. One major reason for this gap is the lack of structural data capturing OLA1/YchF in complex with ribosomes. Here, we report that OLA1/YchF binds to the ribosomal large subunit and promotes efficient translation on D/E-rich mRNA. Disruption in translation can be caused by truncated mRNA or mRNA with specific structures/sequences [28] . Rescuing stalled ribosomes on these mRNAs requires numerous ribosome-associated proteins to release the nascent peptide and split the ribosome. For instance, the proteins Dom34, Hbs1 and Rli1 target ribosomes with truncated mRNA in eukaryotes, catalyzing the splitting of subunit [28] . Stalls on specific mRNA structures/sequences can be resolved under optimal conditions, i.e., synthesis of P-rich is made possible by EF-P (in bacteria, eIF5A in eukaryotes and archaea) [29] . Stalling on R/K-rich mRNA is promoted by Rbg1/Tma46 complex or targeted/split by the RQT complex if ribosome collision occurs [30] , [31] . The bacteria ATP-Binding Cassette family-F (ABCF) proteins, YheS, YbiT/YkpA, EttA and Uup/YfmR could cope with these problematic nascent peptide sequences within the exit tunnel [32] , [33] . The ATP hydrolysis-coupled structural rearrangement is critical for handling ribosome stalling caused by nascent peptides [32] . Currently, there is limited research on D/E-rich mRNA. Through structural analysis and Ribo-seq data, we speculate that OLA1/YchF enhances translation on D/E-rich mRNA, a notion validated by our constructed reporter. OLA1/YchF binds to the large subunit at the uL14/bL19 position via its helical domain, preventing the re-association of split ribosomes. These findings not only provide deeper insights into OLA1/YchF function but also contribute to a better understanding of translation regulation on D/E-rich mRNA.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "GTPases are essential regulatory proteins that are highly conserved across species.",
+        "references": {},
+        "viewpoints": [
+          "GTPases are regulatory proteins.",
+          "GTPases are essential for biological functions.",
+          "GTPases are highly conserved across different species."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "They play crucial roles in regulating various biological processes, including signal transduction, intercellular transport, protein synthesis, ribosome biogenesis, and so on [1], [2], [3].",
+        "references": {
+          "1": {
+            "1": "Sequences and available structures were compared for P-loop GTPases and GTPase-related proteins.",
+            "2": "The aim of comparing sequences and available structures is to construct an evolutionary classification for the GTPase superclass of proteins.",
+            "3": "The aim of comparing sequences and available structures is to reconstruct the principal events in the evolution of the GTPase superclass of proteins.",
+            "4": "The GTPase superclass can be divided into two large classes.",
+            "5": "Each of the two large classes of the GTPase superclass has a unique set of sequence and structural signatures.",
+            "6": "The first class of the GTPase superclass is designated TRAFAC after translation factors.",
+            "7": "The TRAFAC class includes enzymes involved in translation, such as initiation, elongation, and release factors.",
+            "8": "The TRAFAC class includes enzymes involved in signal transduction, particularly the extended Ras-like family.",
+            "9": "The TRAFAC class includes enzymes involved in cell motility.",
+            "10": "The TRAFAC class includes enzymes involved in intracellular transport.",
+            "11": "The second class of the GTPase superclass is designated SIMIBI after signal recognition particle, MinD, and BioD.",
+            "12": "The SIMIBI class consists of signal recognition particle (SRP) GTPases.",
+            "13": "The SIMIBI class consists of the assemblage of MinD-like ATPases.",
+            "14": "MinD-like ATPases are involved in protein localization.",
+            "15": "MinD-like ATPases are involved in chromosome partitioning.",
+            "16": "MinD-like ATPases are involved in membrane transport.",
+            "17": "The SIMIBI class consists of a group of metabolic enzymes with kinase or related phosphate transferase activity.",
+            "18": "The TRAFAC and SIMIBI classes together contain over 20 distinct families.",
+            "19": "The families within the TRAFAC and SIMIBI classes are further subdivided into 57 subfamilies.",
+            "20": "The subdivision of families into subfamilies is based on conserved sequence motifs.",
+            "21": "The subdivision of families into subfamilies is based on shared structural features.",
+            "22": "The subdivision of families into subfamilies is based on domain architectures.",
+            "23": "Ten subfamilies show a universal phyletic distribution.",
+            "24": "The universal phyletic distribution of ten subfamilies is compatible with their presence in the last universal common ancestor of extant life forms.",
+            "25": "The ten subfamilies compatible with LUCA presence include four translation factors.",
+            "26": "The ten subfamilies compatible with LUCA presence include two OBG-like GTPases.",
+            "27": "The ten subfamilies compatible with LUCA presence include YawG/YlqF-like GTPases.",
+            "28": "YawG/YlqF-like GTPases are predicted to be translation factors.",
+            "29": "The ten subfamilies compatible with LUCA presence include two signal-recognition-associated GTPases.",
+            "30": "The ten subfamilies compatible with LUCA presence include the MRP subfamily of MinD-like ATPases.",
+            "31": "The distribution of nucleotide specificity among GTPase superclass proteins indicates that the common ancestor was a GTPase.",
+            "32": "A secondary switch from GTPase activity to ATPase activity has occurred on several independent occasions during the evolution of the GTPase superclass.",
+            "33": "The functions of most GTPases traceable to LUCA are associated with translation.",
+            "34": "GTPases do not participate in NTP-dependent nucleic acid unwinding activities.",
+            "35": "GTPases do not participate in NTP-dependent nucleic acid reorganizing activities.",
+            "36": "GTPases are contrasted with other superclasses of P-loop NTPases, such as RecA-F1/F0, AAA+, helicases, and ABC, regarding nucleic acid unwinding and reorganizing activities.",
+            "37": "It is hypothesized that the ancestral GTPase was an enzyme with a generic regulatory role in translation.",
+            "38": "Subsequent diversification of the ancestral GTPase resulted in the acquisition of diverse functions.",
+            "39": "The acquisition of diverse functions included roles in transport, protein trafficking, and signaling.",
+            "40": "In addition to classifying previously known families of GTPases and related ATPases, several previously undetected families are introduced.",
+            "41": "New functional predictions for the previously undetected families are described."
+          },
+          "2": {
+            "1": "OLA1 is a P-loop ATPase.",
+            "2": "OLA1 is implicated in centrosome duplication through interactions with tumor suppressor BRCA1.",
+            "3": "OLA1 is implicated in centrosome duplication through interactions with tumor suppressor BARD1.",
+            "4": "Disruption of the interaction between OLA1 and BARD1 results in centrosome amplification.",
+            "5": "The molecular interplay of the OLA1-BARD1 complex remains elusive.",
+            "6": "The mechanism of the OLA1-BARD1 complex remains elusive.",
+            "7": "A battery of biophysical, biochemical, and structural analyses is used to elucidate the molecular basis of the OLA1-BARD1 interaction.",
+            "8": "Structural analyses show that the nucleotide-dependent interaction enhances the ATPase activity of OLA1.",
+            "9": "Enzyme kinetics analyses show that the nucleotide-dependent interaction enhances the ATPase activity of OLA1.",
+            "10": "The nucleotide-dependent interaction enhances the ATPase activity of OLA1 by increasing the turnover number."
+          },
+          "3": []
+        },
+        "viewpoints": [
+          "GTPases play crucial roles in regulating biological processes.",
+          "GTPases are involved in signal transduction.",
+          "GTPases are involved in intercellular transport.",
+          "GTPases are involved in protein synthesis.",
+          "GTPases are involved in ribosome biogenesis."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Based on the phylogenetic and structural analyses, GTPases can be divided into two large superclasses: SIMIBI (Signal Recognition GTPases and the MinD and BioD) superclass and TRAFAC (Translation Factor) superclass [1].",
+        "references": {
+          "1": {
+            "1": "Sequences and available structures were compared for P-loop GTPases and GTPase-related proteins.",
+            "2": "The aim of comparing sequences and available structures is to construct an evolutionary classification for the GTPase superclass of proteins.",
+            "3": "The aim of comparing sequences and available structures is to reconstruct the principal events in the evolution of the GTPase superclass of proteins.",
+            "4": "The GTPase superclass can be divided into two large classes.",
+            "5": "Each of the two large classes of the GTPase superclass has a unique set of sequence and structural signatures.",
+            "6": "The first class of the GTPase superclass is designated TRAFAC after translation factors.",
+            "7": "The TRAFAC class includes enzymes involved in translation, such as initiation, elongation, and release factors.",
+            "8": "The TRAFAC class includes enzymes involved in signal transduction, particularly the extended Ras-like family.",
+            "9": "The TRAFAC class includes enzymes involved in cell motility.",
+            "10": "The TRAFAC class includes enzymes involved in intracellular transport.",
+            "11": "The second class of the GTPase superclass is designated SIMIBI after signal recognition particle, MinD, and BioD.",
+            "12": "The SIMIBI class consists of signal recognition particle (SRP) GTPases.",
+            "13": "The SIMIBI class consists of the assemblage of MinD-like ATPases.",
+            "14": "MinD-like ATPases are involved in protein localization.",
+            "15": "MinD-like ATPases are involved in chromosome partitioning.",
+            "16": "MinD-like ATPases are involved in membrane transport.",
+            "17": "The SIMIBI class consists of a group of metabolic enzymes with kinase or related phosphate transferase activity.",
+            "18": "The TRAFAC and SIMIBI classes together contain over 20 distinct families.",
+            "19": "The families within the TRAFAC and SIMIBI classes are further subdivided into 57 subfamilies.",
+            "20": "The subdivision of families into subfamilies is based on conserved sequence motifs.",
+            "21": "The subdivision of families into subfamilies is based on shared structural features.",
+            "22": "The subdivision of families into subfamilies is based on domain architectures.",
+            "23": "Ten subfamilies show a universal phyletic distribution.",
+            "24": "The universal phyletic distribution of ten subfamilies is compatible with their presence in the last universal common ancestor of extant life forms.",
+            "25": "The ten subfamilies compatible with LUCA presence include four translation factors.",
+            "26": "The ten subfamilies compatible with LUCA presence include two OBG-like GTPases.",
+            "27": "The ten subfamilies compatible with LUCA presence include YawG/YlqF-like GTPases.",
+            "28": "YawG/YlqF-like GTPases are predicted to be translation factors.",
+            "29": "The ten subfamilies compatible with LUCA presence include two signal-recognition-associated GTPases.",
+            "30": "The ten subfamilies compatible with LUCA presence include the MRP subfamily of MinD-like ATPases.",
+            "31": "The distribution of nucleotide specificity among GTPase superclass proteins indicates that the common ancestor was a GTPase.",
+            "32": "A secondary switch from GTPase activity to ATPase activity has occurred on several independent occasions during the evolution of the GTPase superclass.",
+            "33": "The functions of most GTPases traceable to LUCA are associated with translation.",
+            "34": "GTPases do not participate in NTP-dependent nucleic acid unwinding activities.",
+            "35": "GTPases do not participate in NTP-dependent nucleic acid reorganizing activities.",
+            "36": "GTPases are contrasted with other superclasses of P-loop NTPases, such as RecA-F1/F0, AAA+, helicases, and ABC, regarding nucleic acid unwinding and reorganizing activities.",
+            "37": "It is hypothesized that the ancestral GTPase was an enzyme with a generic regulatory role in translation.",
+            "38": "Subsequent diversification of the ancestral GTPase resulted in the acquisition of diverse functions.",
+            "39": "The acquisition of diverse functions included roles in transport, protein trafficking, and signaling.",
+            "40": "In addition to classifying previously known families of GTPases and related ATPases, several previously undetected families are introduced.",
+            "41": "New functional predictions for the previously undetected families are described."
+          }
+        },
+        "viewpoints": [
+          "GTPases can be divided into two large superclasses based on phylogenetic and structural analyses.",
+          "The two large superclasses of GTPases are SIMIBI and TRAFAC.",
+          "The SIMIBI superclass includes Signal Recognition GTPases and the MinD and BioD.",
+          "The TRAFAC superclass includes Translation Factor GTPases."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "OLA1 and its bacteria homolog YchF belong to the TRAFAC class, Obg (spo0B-associated GTP-binding protein) family, and YchF subfamily of P-loop GTPases [4], [5].",
+        "references": {
+          "4": {
+            "1": "A gene encoding a YchF-related protein, TcYchF, was characterized.",
+            "2": "TcYchF is potentially associated with the protein translation machinery of Trypanosoma cruzi.",
+            "3": "YchF belongs to the translation factor-related (TRAFAC) class of P-loop NTPases.",
+            "4": "The coding region of the gene is 1185 base pairs long.",
+            "5": "The gene encodes a 44.3 kilodalton protein.",
+            "6": "TcYchF is very similar (45-86%) to putative GTP-binding proteins from eukaryotes.",
+            "7": "TcYchF is similar to putative GTP-binding proteins from some species of trypanosomatids, including Leishmania major and Trypanosoma brucei.",
+            "8": "The predicted sequences of TcYchF have a significant level of similarity (38-43%) with bacterial YyaF/YchF GTPases of the Spo0B-associated GTP-binding protein (Obg) family.",
+            "9": "Some of the important features of the G domain of the Obg family of GTPases are conserved in TcYchF.",
+            "10": "TcYchF preferentially hydrolyzed ATP instead of GTP.",
+            "11": "The function of YyaF/YchF is unknown.",
+            "12": "Other members of the Obg family are known to be associated with ribosomal subunits.",
+            "13": "TcYchF was associated with ribosomal subunits.",
+            "14": "TcYchF was associated with polysomes.",
+            "15": "TcYchF was associated with the proteasome of T. cruzi.",
+            "16": "Inactivation of the T. brucei homolog of TcYchF by RNA interference inhibited the growth of procyclic forms of the parasite.",
+            "17": "TcYchF plays an important role in the translation machinery of trypanosomes."
+          },
+          "5": {
+            "1": "Purine nucleotide-binding proteins form the large family of P-loop GTPases.",
+            "2": "Purine nucleotide-binding proteins form related ATPases.",
+            "3": "P-loop GTPases and related ATPases perform essential functions in all kingdoms of life.",
+            "4": "The Obg family comprises a group of ancient GTPases.",
+            "5": "The Obg family belongs to the TRAFAC (for translation factors) class.",
+            "6": "The Obg family can be subdivided into several distinct protein subfamilies.",
+            "7": "The bacterial P-loop NTPase YchF is the founding member of one of the distinct protein subfamilies of the Obg family.",
+            "8": "The bacterial P-loop NTPase YchF had so far been assumed to act as a GTPase.",
+            "9": "The human homologue of YchF has been biochemically characterized.",
+            "10": "The human homologue of YchF binds ATP more efficiently than it binds GTP.",
+            "11": "The human homologue of YchF hydrolyzes ATP more efficiently than it hydrolyzes GTP.",
+            "12": "The human homologue of YchF has been termed hOLA1, for human Obg-like ATPase 1, because it binds and hydrolyzes ATP more efficiently than GTP.",
+            "13": "Further biochemical characterization was performed on YchF proteins from different species.",
+            "14": "ATPase activity is a general feature of the YchF subfamily of Obg-like GTPases.",
+            "15": "ATPase activity in the YchF subfamily of Obg-like GTPases was previously missed.",
+            "16": "To explain ATP specificity of hOLA1, the x-ray structure of hOLA1 bound to the nonhydrolyzable ATP analogue AMPPCP has been solved.",
+            "17": "Structural data help to explain the altered nucleotide specificity of YchF homologues.",
+            "18": "Structural data identify the Ola1/YchF subfamily of the Obg-related NTPases as an exceptional example of a single protein subfamily.",
+            "19": "The Ola1/YchF subfamily has evolved altered nucleotide specificity within a distinct protein family of GTPases."
+          }
+        },
+        "viewpoints": [
+          "OLA1 belongs to the TRAFAC class of GTPases.",
+          "OLA1 belongs to the Obg family of GTPases.",
+          "OLA1 belongs to the YchF subfamily of P-loop GTPases.",
+          "YchF, the bacterial homolog of OLA1, belongs to the TRAFAC class of GTPases.",
+          "YchF belongs to the Obg family of GTPases.",
+          "YchF belongs to the YchF subfamily of P-loop GTPases."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "The OLA1/YchF proteins possess a core ATPase domain, a C-terminal TGS domain, and an inserted helical domain (Supplementary Fig. 1) and are ubiquitously expressed in a majority of organisms, including bacteria, plants, and humans, sharing more than 40% sequence identity (Supplementary Fig. 2) [6].",
+        "references": {
+          "6": {
+            "1": "Oxidative stress is implicated in diverse disease states.",
+            "2": "Oxidative stress is implicated in aging.",
+            "3": "Induction of cellular responses to combat oxidative stress has been characterized largely at the transcriptional level.",
+            "4": "There is an emphasis on Nrf2-mediated activation of antioxidant response elements in characterizing cellular responses to combat oxidative stress.",
+            "5": "OLA1 is a novel Obg-like ATPase.",
+            "6": "OLA1 functions as a negative regulator of the cellular antioxidant response.",
+            "7": "OLA1's regulation of the cellular antioxidant response is independent of transcriptional processes.",
+            "8": "Knockdown of OLA1 in human cells elicited increased resistance to oxidizing agents including tert-butyl hydroperoxide (tBH) and diamide.",
+            "9": "Knockdown of OLA1 did not affect cell proliferation.",
+            "10": "Knockdown of OLA1 did not affect baseline apoptosis.",
+            "11": "Knockdown of OLA1 did not affect sensitivity to other cytotoxic agents that target the mitochondria, cytoskeleton, or DNA.",
+            "12": "Overexpression of OLA1 increased cellular sensitivity to tert-butyl hydroperoxide (tBH).",
+            "13": "Overexpression of OLA1 increased cellular sensitivity to diamide.",
+            "14": "OLA1-knockdown cells had decreased production of intracellular reactive oxygen species when challenged with oxidants.",
+            "15": "OLA1-knockdown cells exhibited less depletion of reduced glutathione when challenged with oxidants.",
+            "16": "Knockdown of OLA1 caused only a minimal genomic response.",
+            "17": "No changes were found in the mRNA levels of genes encoding antioxidant enzymes due to OLA1 knockdown.",
+            "18": "No changes were found in the mRNA levels of genes that produce antioxidants, including glutathione, due to OLA1 knockdown.",
+            "19": "No changes were found in the mRNA levels of other genes known to respond to Nrf2 due to OLA1 knockdown.",
+            "20": "Blocking de novo protein synthesis by cycloheximide in OLA1-knockdown cells did not reduce their increased resistance to tert-butyl hydroperoxide (tBH).",
+            "21": "Blocking de novo protein synthesis by cycloheximide in OLA1-knockdown cells did not reduce their increased resistance to diamide.",
+            "22": "OLA1 suppresses the antioxidant response through nontranscriptional mechanisms.",
+            "23": "The beneficial effects observed upon OLA1-knockdown suggest that OLA1 is a potential novel target for antioxidative therapy.",
+            "24": "OLA1 is a regulatory ATPase."
+          }
+        },
+        "viewpoints": [
+          "OLA1/YchF proteins possess a core ATPase domain.",
+          "OLA1/YchF proteins possess a C-terminal TGS domain.",
+          "OLA1/YchF proteins possess an inserted helical domain.",
+          "OLA1/YchF proteins are ubiquitously expressed in a majority of organisms.",
+          "OLA1/YchF proteins are expressed in bacteria, plants, and humans.",
+          "OLA1/YchF proteins share more than 40% sequence identity among different organisms."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "The G4 motif ((N/T)KxD) in the YchF subfamily exhibits a unique (N/T)(M/L/V)xE amino acid sequence, leading to the members losing GTP specificity and preferentially hydrolyzing ATP rather than GTP [5], [7].",
+        "references": {
+          "5": {
+            "1": "Purine nucleotide-binding proteins form the large family of P-loop GTPases.",
+            "2": "Purine nucleotide-binding proteins form related ATPases.",
+            "3": "P-loop GTPases and related ATPases perform essential functions in all kingdoms of life.",
+            "4": "The Obg family comprises a group of ancient GTPases.",
+            "5": "The Obg family belongs to the TRAFAC (for translation factors) class.",
+            "6": "The Obg family can be subdivided into several distinct protein subfamilies.",
+            "7": "The bacterial P-loop NTPase YchF is the founding member of one of the distinct protein subfamilies of the Obg family.",
+            "8": "The bacterial P-loop NTPase YchF had so far been assumed to act as a GTPase.",
+            "9": "The human homologue of YchF has been biochemically characterized.",
+            "10": "The human homologue of YchF binds ATP more efficiently than it binds GTP.",
+            "11": "The human homologue of YchF hydrolyzes ATP more efficiently than it hydrolyzes GTP.",
+            "12": "The human homologue of YchF has been termed hOLA1, for human Obg-like ATPase 1, because it binds and hydrolyzes ATP more efficiently than GTP.",
+            "13": "Further biochemical characterization was performed on YchF proteins from different species.",
+            "14": "ATPase activity is a general feature of the YchF subfamily of Obg-like GTPases.",
+            "15": "ATPase activity in the YchF subfamily of Obg-like GTPases was previously missed.",
+            "16": "To explain ATP specificity of hOLA1, the x-ray structure of hOLA1 bound to the nonhydrolyzable ATP analogue AMPPCP has been solved.",
+            "17": "Structural data help to explain the altered nucleotide specificity of YchF homologues.",
+            "18": "Structural data identify the Ola1/YchF subfamily of the Obg-related NTPases as an exceptional example of a single protein subfamily.",
+            "19": "The Ola1/YchF subfamily has evolved altered nucleotide specificity within a distinct protein family of GTPases."
+          },
+          "7": {
+            "1": "G proteins are involved in almost all aspects of the cellular regulatory pathways.",
+            "2": "G proteins bind GTP.",
+            "3": "G proteins hydrolyze GTP.",
+            "4": "The YchF subfamily can bind both ATP and GTP.",
+            "5": "The ability to bind both ATP and GTP is unique to the YchF subfamily.",
+            "6": "The YchF subfamily is possibly an ancestral form of G proteins.",
+            "7": "The YchF subfamily is present in all kingdoms of life.",
+            "8": "Phylogenetic studies suggest the YchF subfamily is an ancestral form of G proteins.",
+            "9": "Researchers have long been unable to determine the biological significance of the YchF subfamily's ability to bind both ATP and GTP with relaxed ligand specificity.",
+            "10": "The binding of a YchF homolog in rice (OsYchF1) to ATP causes different conformational changes compared to binding to GTP.",
+            "11": "X-ray crystallography was used to elucidate the conformational changes in OsYchF1 when bound to ATP versus GTP.",
+            "12": "Comparison of the 3D relationships of ligand position and amino acid residues at the binding sites in the crystal structures revealed a mechanism for OsYchF1's ability to bind both ATP and GTP.",
+            "13": "The comparison involved both apo-bound and ligand-bound versions of OsYchF1.",
+            "14": "Mutation of the noncanonical G4 motif of OsYchF1 to the canonical sequence for GTP specificity precludes the binding/hydrolysis of ATP.",
+            "15": "Mutation of the noncanonical G4 motif to the canonical sequence for GTP specificity prevents OsYchF1 from functioning as a negative regulator of plant-defense responses.",
+            "16": "Mutation of the noncanonical G4 motif retains OsYchF1's ability to bind/hydrolyze GTP.",
+            "17": "Mutation of the noncanonical G4 motif retains OsYchF1's function as a negative regulator of abiotic stress responses.",
+            "18": "The specific role of ATP-binding/hydrolysis in disease resistance is demonstrated by the mutation of the noncanonical G4 motif.",
+            "19": "The discovery regarding OsYchF1's conformational changes and binding mechanisms will significantly impact the understanding of the structure-function relationships of the YchF subfamily of G proteins.",
+            "20": "The impact of this discovery will extend to all kingdoms of life."
+          }
+        },
+        "viewpoints": [
+          "The G4 motif in the YchF subfamily has a unique (N/T)(M/L/V)xE amino acid sequence.",
+          "The unique amino acid sequence leads YchF subfamily members to lose GTP specificity.",
+          "YchF subfamily members preferentially hydrolyze ATP rather than GTP."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "OLA1/YchF is involved in various cellular stress response pathways, such as heat shock, integrated stress, cell adhesion, and antioxidant responses [8], [9].",
+        "references": {
+          "8": {
+            "1": "Attachment of cells to the extracellular matrix induces clustering of membrane receptor integrins.",
+            "2": "Clustering of membrane receptor integrins triggers the formation of focal adhesions (FAs).",
+            "3": "Adaptor/scaffold proteins in focal adhesions provide linkage to actin cytoskeleton.",
+            "4": "Focal adhesion kinase (FAK) and other focal adhesion-associated kinases and phosphatases transduce integrin-mediated signaling cascades.",
+            "5": "Integrin-mediated signaling cascades promote actin polymerization.",
+            "6": "Integrin-mediated signaling cascades promote progression of cell spreading.",
+            "7": "The study explored the role of OLA1 in regulating cell adhesion processes.",
+            "8": "OLA1 is a newly identified member of Obg-like ATPases.",
+            "9": "RNAi-mediated downregulation of OLA1 significantly accelerated cell adhesion in multiple human cell lines.",
+            "10": "RNAi-mediated downregulation of OLA1 significantly accelerated cell spreading in multiple human cell lines.",
+            "11": "Overexpression of OLA1 by gene transfection resulted in delayed cell adhesion in multiple human cell lines.",
+            "12": "Overexpression of OLA1 by gene transfection resulted in delayed cell spreading in multiple human cell lines.",
+            "13": "OLA1-deficient cells had elevated levels of focal adhesion kinase (FAK) protein.",
+            "14": "OLA1-deficient cells had decreased Ser3 phosphorylation of cofilin.",
+            "15": "Cofilin is an actin-binding protein and a key regulator of actin filament dynamics.",
+            "16": "OLA1-overexpressing cells exhibited lower levels of FAK protein.",
+            "17": "OLA1-overexpressing cells exhibited increased Ser3 phosphorylation of cofilin.",
+            "18": "OLA1 plays an important negative role in cell adhesion.",
+            "19": "OLA1 plays an important negative role in cell spreading.",
+            "20": "OLA1 affects cell adhesion and spreading through the regulation of FAK expression.",
+            "21": "OLA1 affects cell adhesion and spreading through the regulation of cofilin phosphorylation.",
+            "22": "Manipulation of OLA1 may lead to significant changes in cell adhesion.",
+            "23": "Manipulation of OLA1 may lead to significant changes in the associated phenotypes of cell adhesion."
+          },
+          "9": {
+            "1": "Persistent pulmonary hypertension of the newborn (PPHN) is characterized by a failure of pulmonary vascular resistance to rapidly decline at birth.",
+            "2": "Mitochondrial oxidative stress is one principal mechanism implicated in the development of persistent pulmonary hypertension of the newborn (PPHN).",
+            "3": "In persistent pulmonary hypertension of the newborn (PPHN), the expression of mitochondrial SOD2 (superoxide dismutase) is decreased.",
+            "4": "The activity of mitochondrial SOD2 (superoxide dismutase) is decreased in persistent pulmonary hypertension of the newborn (PPHN).",
+            "5": "The mechanism causing the decreased expression and activity of mitochondrial SOD2 in PPHN remains unknown.",
+            "6": "OLA1 (Obg-like ATPase-1) acts as a critical regulator of proteins that control the cell response to stress.",
+            "7": "Hsp70, an obligate chaperone for SOD2, is one of the proteins regulated by OLA1.",
+            "8": "The investigation aimed to determine whether OLA1 is causally linked to persistent pulmonary hypertension of the newborn (PPHN).",
+            "9": "SOD2 expression is reduced in distal-pulmonary arteries from patients with persistent pulmonary hypertension of the newborn (PPHN) compared with controls.",
+            "10": "SOD2 expression is reduced in distal-pulmonary arteries in fetal-lamb models of persistent pulmonary hypertension of the newborn (PPHN) compared with controls."
+          }
+        },
+        "viewpoints": [
+          "OLA1/YchF is involved in cellular stress response pathways.",
+          "OLA1/YchF is involved in heat shock response.",
+          "OLA1/YchF is involved in integrated stress response.",
+          "OLA1/YchF is involved in cell adhesion response.",
+          "OLA1/YchF is involved in antioxidant responses."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "It is also implicated in the regulation of tumor progression in numerous types of cancer, including breast, lung, and hepatocellular cancer [10], [11], [12].",
+        "references": {
+          "10": {},
+          "11": {
+            "1": "BRCA1 functions as a tumor suppressor.",
+            "2": "BRCA1 is involved in DNA repair.",
+            "3": "BRCA1 is involved in centrosome regulation.",
+            "4": "Obg-like ATPase 1 (OLA1) interacts with BARD1.",
+            "5": "BARD1 is a heterodimer partner of BRCA1.",
+            "6": "OLA1 binds to BRCA1.",
+            "7": "OLA1 binds to BARD1.",
+            "8": "OLA1 binds to γ-tubulin.",
+            "9": "OLA1 functions in centrosome regulation.",
+            "10": "Overexpression of wild-type OLA1 (OLA1-WT) caused centrosome amplification.",
+            "11": "Centrosome amplification was caused by centriole overduplication.",
+            "12": "The observation was made in mammary tissue-derived cells.",
+            "13": "Overexpression of the cancer-derived OLA1 mutant induced centrosome amplification in significantly fewer cells than overexpression of OLA1-WT.",
+            "14": "The cancer-derived OLA1 mutant is deficient at regulating centrosome number.",
+            "15": "Overexpression of OLA1 with normal function is hypothesized to efficiently induce centrosome amplification.",
+            "16": "OLA1 mutants, which are deficient at regulating centrosome number, are hypothesized not to induce centrosome amplification as efficiently.",
+            "17": "The study analyzed whether overexpression of OLA1 missense mutants of nine candidate phosphorylation residues caused centrosome amplification.",
+            "18": "The study analyzed whether overexpression of OLA1 missense mutants of three residues modified with acetylation caused centrosome amplification.",
+            "19": "The study analyzed whether overexpression of OLA1 missense mutants of two ATP-binding residues caused centrosome amplification.",
+            "20": "Five OLA1 missense mutants were identified as deficient in the regulation of centrosome number.",
+            "21": "Three of the identified OLA1 missense mutants did not bind to BARD1.",
+            "22": "Two phosphomimetic mutations restored binding to BARD1.",
+            "23": "Two phosphomimetic mutations restored efficient centrosome amplification by their overexpression.",
+            "24": "Knockdown of BARD1 caused centrosome amplification.",
+            "25": "Overexpression of BARD1 caused centrosome amplification.",
+            "26": "The BARD1 mutant reported in cancer failed to bind to OLA1.",
+            "27": "The BARD1 mutant reported in cancer failed to rescue the BARD1 knockdown-induced centrosome amplification.",
+            "28": "The BARD1 mutant reported in cancer reduced its centrosomal localization.",
+            "29": "The OLA1-BARD1 interaction is important for the regulation of centrosome number."
+          },
+          "12": {
+            "1": "This article provides an update on the global cancer burden.",
+            "2": "The update uses the GLOBOCAN 2020 estimates of cancer incidence and mortality.",
+            "3": "The GLOBOCAN 2020 estimates are produced by the International Agency for Research on Cancer.",
+            "4": "An estimated 19.3 million new cancer cases occurred worldwide in 2020.",
+            "5": "An estimated 18.1 million new cancer cases, excluding nonmelanoma skin cancer, occurred worldwide in 2020.",
+            "6": "Almost 10.0 million cancer deaths occurred worldwide in 2020.",
+            "7": "Approximately 9.9 million cancer deaths, excluding nonmelanoma skin cancer, occurred worldwide in 2020.",
+            "8": "Female breast cancer is the most commonly diagnosed cancer as of 2020.",
+            "9": "There were an estimated 2.3 million new cases of female breast cancer, representing 11.7% of all new cancer cases.",
+            "10": "Lung cancer is the second most commonly diagnosed cancer, with 11.4% of new cases.",
+            "11": "Colorectal cancer is the third most commonly diagnosed cancer, with 10.0% of new cases.",
+            "12": "Prostate cancer is the fourth most commonly diagnosed cancer, with 7.3% of new cases.",
+            "13": "Stomach cancer is the fifth most commonly diagnosed cancer, with 5.6% of new cases.",
+            "14": "Lung cancer is the leading cause of cancer death as of 2020.",
+            "15": "An estimated 1.8 million people died from lung cancer, accounting for 18% of cancer deaths.",
+            "16": "Colorectal cancer is the second leading cause of cancer death, with 9.4% of deaths.",
+            "17": "Liver cancer is the third leading cause of cancer death, with 8.3% of deaths.",
+            "18": "Stomach cancer is the fourth leading cause of cancer death, with 7.7% of deaths.",
+            "19": "Female breast cancer is the fifth leading cause of cancer death, with 6.9% of deaths.",
+            "20": "The overall cancer incidence was 2-fold to 3-fold higher in transitioned countries compared to transitioning countries for both sexes.",
+            "21": "Cancer mortality varied less than 2-fold for men between transitioned and transitioning countries.",
+            "22": "Cancer mortality varied little for women between transitioned and transitioning countries.",
+            "23": "Death rates for female breast cancer were considerably higher in transitioning countries (15.0 per 100,000) than in transitioned countries (12.8 per 100,000).",
+            "24": "Death rates for cervical cancer were considerably higher in transitioning countries (12.4 per 100,000) than in transitioned countries (5.2 per 100,000).",
+            "25": "The global cancer burden is expected to be 28.4 million cases in 2040.",
+            "26": "The expected global cancer burden in 2040 represents a 47% rise from 2020 levels.",
+            "27": "The increase in cancer cases is expected to be larger in transitioning countries (64% to 95%) compared to transitioned countries (32% to 56%).",
+            "28": "Demographic changes are a factor in the expected increase in cancer cases from 2020 to 2040.",
+            "29": "Increasing risk factors associated with globalization may exacerbate the expected rise in cancer cases.",
+            "30": "A growing economy may contribute to the exacerbation of the expected rise in cancer cases.",
+            "31": "Building a sustainable infrastructure for the dissemination of cancer prevention measures in transitioning countries is critical for global cancer control.",
+            "32": "Provision of cancer care in transitioning countries is critical for global cancer control."
+          }
+        },
+        "viewpoints": [
+          "OLA1 is implicated in the regulation of tumor progression.",
+          "OLA1 is implicated in breast cancer progression.",
+          "OLA1 is implicated in lung cancer progression.",
+          "OLA1 is implicated in hepatocellular cancer progression."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Accumulating reports show that OLA1 is highly expressed in most cancers and could be a potential biomarker and therapeutic target for cancer [10], [13], [14], [15].",
+        "references": {
+          "10": {},
+          "13": {
+            "1": "Obg-like ATPase 1 (OLA1) is upregulated in tumor tissues in different types of cancer.",
+            "2": "The function of OLA1 in endometrial cancer remains unknown.",
+            "3": "The molecular mechanisms of OLA1 in endometrial cancer remain unknown.",
+            "4": "The study aimed to elucidate the expression level of OLA1 in endometrial cancer.",
+            "5": "The study aimed to elucidate the biological function of OLA1 in endometrial cancer.",
+            "6": "The differential expression of OLA1 between endometrial cancer tissues and non-cancerous tissues was analyzed using The Cancer Genome Atlas database.",
+            "7": "The differential expression of OLA1 between endometrial cancer tissues and non-cancerous tissues was analyzed using clinical samples.",
+            "8": "The association between clinicopathological characteristics and OLA1 expression was analyzed using bioinformatics analysis.",
+            "9": "Cell proliferation was analyzed by short interfering RNA-mediated knockdown experiments, Cell Counting Kit-8, and 5-Ethynyl-2'-deoxyuridine incorporation assays.",
+            "10": "Cell migration was analyzed by wound healing and Transwell assays.",
+            "11": "Cell invasion was analyzed by Transwell and Boyden assays.",
+            "12": "The potential signaling pathways associated with OLA1 in endometrial cancer were evaluated by Gene Set Enrichment Analysis.",
+            "13": "The expression levels of OLA1 in endometrial cancer tissues were upregulated compared with non-cancerous tissues (P<0.001).",
+            "14": "Patients with worse survival were found to have higher OLA1 expression.",
+            "15": "Increased OLA1 expression in endometrial cancer was associated with clinical stage (P<0.01).",
+            "16": "Increased OLA1 expression in endometrial cancer was associated with histological type (P<0.01).",
+            "17": "Increased OLA1 expression in endometrial cancer was associated with histological grade (P<0.01).",
+            "18": "Increased OLA1 expression in endometrial cancer was associated with menstrual status (P<0.01).",
+            "19": "Increased OLA1 expression in endometrial cancer was associated with cancer status (P<0.05).",
+            "20": "Increased OLA1 expression in endometrial cancer was associated with distant metastasis (P<0.05).",
+            "21": "In RL95-2 cell lines, decreased levels of OLA1 inhibited proliferation, invasion, and migration.",
+            "22": "In HEC-1B cell lines, decreased levels of OLA1 inhibited proliferation, invasion, and migration.",
+            "23": "The TGF-β signaling pathway may be involved in the mechanisms by which decreased levels of OLA1 inhibit proliferation, invasion, and migration.",
+            "24": "Ubiquitin-mediated proteolysis may be involved in the mechanisms by which decreased levels of OLA1 inhibit proliferation, invasion, and migration.",
+            "25": "The Wnt signaling pathway may be involved in the mechanisms by which decreased levels of OLA1 inhibit proliferation, invasion, and migration.",
+            "26": "OLA1 could be a potential prognostic indicator in endometrial cancer.",
+            "27": "OLA1 could be a therapeutic target in endometrial cancer.",
+            "28": "The TGF-β signaling pathway may be regulated by OLA1.",
+            "29": "The Wnt signaling pathway may be regulated by OLA1.",
+            "30": "Ubiquitin-mediated proteolysis may be regulated by OLA1."
+          },
+          "14": {
+            "1": "Chiba and colleagues identify Obg-like ATPase 1 (OLA1) as an additional member of the BRCA1/BARD1/γ-tubulin complex.",
+            "2": "The BRCA1/BARD1/γ-tubulin complex, including the newly identified member OLA1, is critically involved in centrosome amplification.",
+            "3": "The BRCA1/BARD1/γ-tubulin complex, including the newly identified member OLA1, is critically involved in microtubule aster formation."
+          },
+          "15": {
+            "1": "Clarifying the molecular mechanism of hepatocellular carcinoma is conducive to developing an effective therapy for HCC.",
+            "2": "Severe drug resistance limits the clinical use of sorafenib, which is approved for HCC treatment.",
+            "3": "The precise molecular mechanisms of sorafenib drug resistance remain unclear.",
+            "4": "The current work evaluated the role of Obg-like ATPase 1 (OLA1) in sorafenib resistance in hepatocellular carcinoma.",
+            "5": "The survival of HCC patients between OLA1 expression and sorafenib treatment was analyzed by Kaplan-Meier plotter.",
+            "6": "Cell viability was measured by cell counting kit-8 (CCK-8) assays.",
+            "7": "Cell viability was measured by colony formation assays.",
+            "8": "Cell death was detected by propidium iodide (PI) staining.",
+            "9": "Cell death was detected by trypan blue staining.",
+            "10": "The mRNA levels were measured by real-time quantitative polymerase chain reaction (RT-qPCR).",
+            "11": "Protein levels were measured by western blot (WB).",
+            "12": "OLA1 was found to be highly correlated with sorafenib resistance of hepatocellular carcinoma through a public database.",
+            "13": "Knockdown of OLA1 enhanced cell proliferation inhibition induced by sorafenib in hepatocellular carcinoma cells.",
+            "14": "Knockdown of OLA1 enhanced cell death induced by sorafenib in hepatocellular carcinoma cells.",
+            "15": "Knockdown of OLA1 reduced proliferation-associated proteins c-Myc and cyclin D1 in hepatocellular carcinoma cells.",
+            "16": "Knockdown of OLA1 increased apoptosis-related proteins cleaved caspase-3 and cleaved PARP in hepatocellular carcinoma cells.",
+            "17": "Knockdown of OLA1 reduced the activation of glycogen synthase kinase 3β (GSK-3β).",
+            "18": "Knockdown of OLA1 reduced the activation of β-catenin.",
+            "19": "OLA1 can be a potential target to enhance sorafenib sensitivity in hepatocellular carcinoma."
+          }
+        },
+        "viewpoints": [
+          "OLA1 is highly expressed in most cancers.",
+          "OLA1 could be a potential biomarker for cancer.",
+          "OLA1 could be a therapeutic target for cancer."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "OLA1 also works as an intrinsic stress response regulator, including oxidative stress [6] and heat shock [16], [17].",
+        "references": {
+          "6": {
+            "1": "Oxidative stress is implicated in diverse disease states.",
+            "2": "Oxidative stress is implicated in aging.",
+            "3": "Induction of cellular responses to combat oxidative stress has been characterized largely at the transcriptional level.",
+            "4": "There is an emphasis on Nrf2-mediated activation of antioxidant response elements in characterizing cellular responses to combat oxidative stress.",
+            "5": "OLA1 is a novel Obg-like ATPase.",
+            "6": "OLA1 functions as a negative regulator of the cellular antioxidant response.",
+            "7": "OLA1's regulation of the cellular antioxidant response is independent of transcriptional processes.",
+            "8": "Knockdown of OLA1 in human cells elicited increased resistance to oxidizing agents including tert-butyl hydroperoxide (tBH) and diamide.",
+            "9": "Knockdown of OLA1 did not affect cell proliferation.",
+            "10": "Knockdown of OLA1 did not affect baseline apoptosis.",
+            "11": "Knockdown of OLA1 did not affect sensitivity to other cytotoxic agents that target the mitochondria, cytoskeleton, or DNA.",
+            "12": "Overexpression of OLA1 increased cellular sensitivity to tert-butyl hydroperoxide (tBH).",
+            "13": "Overexpression of OLA1 increased cellular sensitivity to diamide.",
+            "14": "OLA1-knockdown cells had decreased production of intracellular reactive oxygen species when challenged with oxidants.",
+            "15": "OLA1-knockdown cells exhibited less depletion of reduced glutathione when challenged with oxidants.",
+            "16": "Knockdown of OLA1 caused only a minimal genomic response.",
+            "17": "No changes were found in the mRNA levels of genes encoding antioxidant enzymes due to OLA1 knockdown.",
+            "18": "No changes were found in the mRNA levels of genes that produce antioxidants, including glutathione, due to OLA1 knockdown.",
+            "19": "No changes were found in the mRNA levels of other genes known to respond to Nrf2 due to OLA1 knockdown.",
+            "20": "Blocking de novo protein synthesis by cycloheximide in OLA1-knockdown cells did not reduce their increased resistance to tert-butyl hydroperoxide (tBH).",
+            "21": "Blocking de novo protein synthesis by cycloheximide in OLA1-knockdown cells did not reduce their increased resistance to diamide.",
+            "22": "OLA1 suppresses the antioxidant response through nontranscriptional mechanisms.",
+            "23": "The beneficial effects observed upon OLA1-knockdown suggest that OLA1 is a potential novel target for antioxidative therapy.",
+            "24": "OLA1 is a regulatory ATPase."
+          },
+          "16": {
+            "1": "The heat-shock response is an evolutionarily conserved cellular defense mechanism against environmental stresses.",
+            "2": "The heat-shock response is characterized by the rapid synthesis of heat-shock proteins (HSPs).",
+            "3": "HSP70 is a highly inducible molecular chaperone.",
+            "4": "HSP70 assists in refolding damaged proteins.",
+            "5": "HSP70 assists in the clearance of damaged proteins.",
+            "6": "HSP70 has a central role in maintaining intracellular homeostasis.",
+            "7": "HSP70 has a central role in maintaining thermotolerance.",
+            "8": "The induction of HSP70 expression has been described extensively at the transcriptional level.",
+            "9": "Post-translational regulation of HSP70 is only partially understood.",
+            "10": "Protein stability represents a form of post-translational regulation of HSP70 that is only partially understood.",
+            "11": "The study investigated the role of OLA1 (Obg-like ATPase 1) in regulating the turnover of HSP70.",
+            "12": "OLA1 is a previously uncharacterized cytosolic ATPase.",
+            "13": "Downregulation of OLA1 in mammalian cells by RNAi results in reduced steady-state levels of HSP70.",
+            "14": "Downregulation of OLA1 in mammalian cells by targeted gene disruption results in reduced steady-state levels of HSP70.",
+            "15": "Downregulation of OLA1 in mammalian cells results in impaired HSP70 induction by heat.",
+            "16": "Downregulation of OLA1 in mammalian cells results in increased cellular sensitivity to heat shock.",
+            "17": "Overexpression of OLA1 correlates with elevated HSP70 protein levels.",
+            "18": "Overexpression of OLA1 correlates with improved thermal resistance.",
+            "19": "Binding of OLA1 to the HSP70 carboxyl terminus variable domain hinders the recruitment of CHIP.",
+            "20": "CHIP is the C-terminus of Hsp70-binding protein.",
+            "21": "CHIP is an E3 ubiquitin ligase for HSP70.",
+            "22": "Binding of OLA1 to the HSP70 carboxyl terminus variable domain prevents HSP70 from CHIP-mediated ubiquitination.",
+            "23": "The findings suggest a novel molecular mechanism by which OLA1 stabilizes HSP70.",
+            "24": "Stabilization of HSP70 by OLA1 leads to upregulation of HSP70.",
+            "25": "Stabilization of HSP70 by OLA1 leads to increased survival during heat shock."
+          },
+          "17": {
+            "1": "The P-loop ATPase Ola1 is universally conserved.",
+            "2": "Ola1 is implicated in various cellular stress response pathways.",
+            "3": "Ola1 is implicated in cancer.",
+            "4": "Ola1 is implicated in tumor progression.",
+            "5": "Ola1p functions are divergent between species.",
+            "6": "The mechanisms involved in Ola1p functions are poorly understood.",
+            "7": "The role of Ola1p in the heat shock response of yeast Saccharomyces cerevisiae was studied.",
+            "8": "Quantitative proteomics approaches were used to study the role of Ola1p.",
+            "9": "Pulse labeling-based proteomics approaches were used to study the role of Ola1p.",
+            "10": "In vitro studies were used to study the role of Ola1p.",
+            "11": "Cell-based assays were used to study the role of Ola1p.",
+            "12": "When heat stress is applied to cells lacking Ola1p, the expression of stress-protective proteins is enhanced.",
+            "13": "During heat stress, Ola1p associates with detergent-resistant protein aggregates.",
+            "14": "During heat stress, Ola1p rapidly forms assemblies that localize to stress granules.",
+            "15": "The assembly of Ola1p was observed in vitro.",
+            "16": "Purified protein was used to observe the assembly of Ola1p in vitro.",
+            "17": "Conditions resembling those in living cells were used to observe the assembly of Ola1p in vitro.",
+            "18": "Loss of Ola1p results in increased protein ubiquitination of detergent-insoluble aggregates recovered from heat-shocked cells.",
+            "19": "When cells lacking Ola1p were relieved from heat stress, reinitiation of translation was delayed.",
+            "20": "When cells lacking Ola1p were relieved from heat stress, de novo synthesis of central factors required for protein refolding was enhanced compared with wild-type cells.",
+            "21": "When cells lacking Ola1p were relieved from heat stress, de novo synthesis of central factors required for the clearance of aggregates was enhanced compared with wild-type cells.",
+            "22": "Upon acute heat stress, Ola1p is involved in the stabilization of misfolded proteins.",
+            "23": "Misfolded proteins become sequestered in cytoplasmic stress granules upon acute heat stress.",
+            "24": "The function of Ola1p enables cells to resume translation in a timely manner after heat stress is relieved."
+          }
+        },
+        "viewpoints": [
+          "OLA1 works as an intrinsic stress response regulator.",
+          "OLA1 regulates oxidative stress response.",
+          "OLA1 regulates heat shock response."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Heat shock protein 70 (HSP70) is a key molecule in different types of cancer, and high expression of HSP70 is associated with poor tumor progression [18].",
+        "references": {
+          "18": {
+            "1": "The 70-kDa heat shock proteins (Hsp70s) are ubiquitous molecular chaperones.",
+            "2": "Hsp70s act in a large variety of cellular protein folding processes.",
+            "3": "Hsp70s act in a large variety of cellular protein remodelling processes.",
+            "4": "Hsp70s function at all stages of the life of proteins from synthesis to degradation.",
+            "5": "Hsp70s are crucial for maintaining protein homeostasis.",
+            "6": "Maintaining protein homeostasis has direct implications for human health.",
+            "7": "A large set of co-chaperones regulate the ATPase cycle of Hsp70s.",
+            "8": "J-domain proteins are part of the co-chaperones that regulate the ATPase cycle of Hsp70s.",
+            "9": "Nucleotide exchange factors are part of the co-chaperones that regulate the ATPase cycle of Hsp70s.",
+            "10": "The ATPase cycle of Hsp70s is allosterically coupled to substrate binding.",
+            "11": "The ATPase cycle of Hsp70s is allosterically coupled to substrate release.",
+            "12": "Hsp70s cooperate with other cellular chaperone systems.",
+            "13": "Hsp70s cooperate with Hsp90 chaperone systems.",
+            "14": "Hsp70s cooperate with Hsp60 chaperonins.",
+            "15": "Hsp70s cooperate with small heat shock proteins.",
+            "16": "Hsp70s cooperate with Hsp100 AAA+ disaggregases.",
+            "17": "Hsp70s and the other cellular chaperone systems constitute a dynamic and functionally versatile network.",
+            "18": "The network constituted by Hsp70s and other chaperone systems is for protein folding.",
+            "19": "The network constituted by Hsp70s and other chaperone systems is for protein unfolding.",
+            "20": "The network constituted by Hsp70s and other chaperone systems is for protein regulation.",
+            "21": "The network constituted by Hsp70s and other chaperone systems is for protein targeting.",
+            "22": "The network constituted by Hsp70s and other chaperone systems is for protein aggregation.",
+            "23": "The network constituted by Hsp70s and other chaperone systems is for protein disaggregation.",
+            "24": "The network constituted by Hsp70s and other chaperone systems is for protein degradation.",
+            "25": "Recent advances have increased our understanding of the molecular mechanisms of the Hsp70 network.",
+            "26": "Recent advances have increased our understanding of the working principles of the Hsp70 network.",
+            "27": "The knowledge of molecular mechanisms and working principles showcases how the Hsp70 chaperone system controls diverse cellular functions.",
+            "28": "The knowledge of molecular mechanisms and working principles offers new opportunities for the development of chemical compounds.",
+            "29": "New opportunities exist for the development of chemical compounds that modulate disease-related Hsp70 activities."
+          }
+        },
+        "viewpoints": [
+          "Heat shock protein 70 (HSP70) is a key molecule in different types of cancer.",
+          "High expression of HSP70 is associated with poor tumor progression."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "OLA1 regulates HSP70 protein stability to inhibit shock-induced cell death [16].",
+        "references": {
+          "16": {
+            "1": "The heat-shock response is an evolutionarily conserved cellular defense mechanism against environmental stresses.",
+            "2": "The heat-shock response is characterized by the rapid synthesis of heat-shock proteins (HSPs).",
+            "3": "HSP70 is a highly inducible molecular chaperone.",
+            "4": "HSP70 assists in refolding damaged proteins.",
+            "5": "HSP70 assists in the clearance of damaged proteins.",
+            "6": "HSP70 has a central role in maintaining intracellular homeostasis.",
+            "7": "HSP70 has a central role in maintaining thermotolerance.",
+            "8": "The induction of HSP70 expression has been described extensively at the transcriptional level.",
+            "9": "Post-translational regulation of HSP70 is only partially understood.",
+            "10": "Protein stability represents a form of post-translational regulation of HSP70 that is only partially understood.",
+            "11": "The study investigated the role of OLA1 (Obg-like ATPase 1) in regulating the turnover of HSP70.",
+            "12": "OLA1 is a previously uncharacterized cytosolic ATPase.",
+            "13": "Downregulation of OLA1 in mammalian cells by RNAi results in reduced steady-state levels of HSP70.",
+            "14": "Downregulation of OLA1 in mammalian cells by targeted gene disruption results in reduced steady-state levels of HSP70.",
+            "15": "Downregulation of OLA1 in mammalian cells results in impaired HSP70 induction by heat.",
+            "16": "Downregulation of OLA1 in mammalian cells results in increased cellular sensitivity to heat shock.",
+            "17": "Overexpression of OLA1 correlates with elevated HSP70 protein levels.",
+            "18": "Overexpression of OLA1 correlates with improved thermal resistance.",
+            "19": "Binding of OLA1 to the HSP70 carboxyl terminus variable domain hinders the recruitment of CHIP.",
+            "20": "CHIP is the C-terminus of Hsp70-binding protein.",
+            "21": "CHIP is an E3 ubiquitin ligase for HSP70.",
+            "22": "Binding of OLA1 to the HSP70 carboxyl terminus variable domain prevents HSP70 from CHIP-mediated ubiquitination.",
+            "23": "The findings suggest a novel molecular mechanism by which OLA1 stabilizes HSP70.",
+            "24": "Stabilization of HSP70 by OLA1 leads to upregulation of HSP70.",
+            "25": "Stabilization of HSP70 by OLA1 leads to increased survival during heat shock."
+          }
+        },
+        "viewpoints": [
+          "OLA1 regulates HSP70 protein stability.",
+          "Regulation of HSP70 protein stability by OLA1 inhibits shock-induced cell death."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "OLA1 also interacts with BRCA1 and BRCA1-associated RING domain protein 1, which affects centrosome function and is suspected to lead to carcinogenesis in hereditary breast and ovarian cancer [11], [19], [20].",
+        "references": {
+          "11": {
+            "1": "BRCA1 functions as a tumor suppressor.",
+            "2": "BRCA1 is involved in DNA repair.",
+            "3": "BRCA1 is involved in centrosome regulation.",
+            "4": "Obg-like ATPase 1 (OLA1) interacts with BARD1.",
+            "5": "BARD1 is a heterodimer partner of BRCA1.",
+            "6": "OLA1 binds to BRCA1.",
+            "7": "OLA1 binds to BARD1.",
+            "8": "OLA1 binds to γ-tubulin.",
+            "9": "OLA1 functions in centrosome regulation.",
+            "10": "Overexpression of wild-type OLA1 (OLA1-WT) caused centrosome amplification.",
+            "11": "Centrosome amplification was caused by centriole overduplication.",
+            "12": "The observation was made in mammary tissue-derived cells.",
+            "13": "Overexpression of the cancer-derived OLA1 mutant induced centrosome amplification in significantly fewer cells than overexpression of OLA1-WT.",
+            "14": "The cancer-derived OLA1 mutant is deficient at regulating centrosome number.",
+            "15": "Overexpression of OLA1 with normal function is hypothesized to efficiently induce centrosome amplification.",
+            "16": "OLA1 mutants, which are deficient at regulating centrosome number, are hypothesized not to induce centrosome amplification as efficiently.",
+            "17": "The study analyzed whether overexpression of OLA1 missense mutants of nine candidate phosphorylation residues caused centrosome amplification.",
+            "18": "The study analyzed whether overexpression of OLA1 missense mutants of three residues modified with acetylation caused centrosome amplification.",
+            "19": "The study analyzed whether overexpression of OLA1 missense mutants of two ATP-binding residues caused centrosome amplification.",
+            "20": "Five OLA1 missense mutants were identified as deficient in the regulation of centrosome number.",
+            "21": "Three of the identified OLA1 missense mutants did not bind to BARD1.",
+            "22": "Two phosphomimetic mutations restored binding to BARD1.",
+            "23": "Two phosphomimetic mutations restored efficient centrosome amplification by their overexpression.",
+            "24": "Knockdown of BARD1 caused centrosome amplification.",
+            "25": "Overexpression of BARD1 caused centrosome amplification.",
+            "26": "The BARD1 mutant reported in cancer failed to bind to OLA1.",
+            "27": "The BARD1 mutant reported in cancer failed to rescue the BARD1 knockdown-induced centrosome amplification.",
+            "28": "The BARD1 mutant reported in cancer reduced its centrosomal localization.",
+            "29": "The OLA1-BARD1 interaction is important for the regulation of centrosome number."
+          },
+          "19": {
+            "1": "The tumor suppressor BRCA1, specific to breast and ovarian cancer, plays important roles in DNA repair, centrosome regulation, and transcription.",
+            "2": "BARD1 is a heterodimer partner of BRCA1.",
+            "3": "BRCA1-associated RING domain protein (BARD1) plays important roles in DNA repair, centrosome regulation, and transcription.",
+            "4": "BRCA1, along with BARD1, plays important roles in DNA repair.",
+            "5": "BRCA1, along with BARD1, plays important roles in centrosome regulation.",
+            "6": "BRCA1, along with BARD1, plays important roles in transcription.",
+            "7": "Mass spectrometry analysis was performed to explore further functions of BRCA1/BARD1.",
+            "8": "Mass spectrometry analysis identified Obg-like ATPase 1 (OLA1) as a protein that interacts with the carboxy-terminal region of BARD1.",
+            "9": "OLA1 directly bound to the amino-terminal region of BRCA1.",
+            "10": "OLA1 directly bound to γ-tubulin.",
+            "11": "OLA1 localized to centrosomes in interphase.",
+            "12": "OLA1 localized to the spindle pole in the mitotic phase.",
+            "13": "Knockdown of OLA1 resulted in centrosome amplification.",
+            "14": "Knockdown of OLA1 resulted in the activation of microtubule aster formation.",
+            "15": "OLA1 with the mutation E168Q, observed in a breast cancer cell line, failed to bind BRCA1.",
+            "16": "OLA1 with the mutation E168Q, observed in a breast cancer cell line, failed to rescue the OLA1 knockdown-induced centrosome amplification.",
+            "17": "BRCA1 variant I42V abrogated the binding of BRCA1 to OLA1.",
+            "18": "OLA1 plays an important role in centrosome regulation together with BRCA1."
+          },
+          "20": {
+            "1": "Approximately 30-70% of individuals with suspected hereditary breast and ovarian cancer do not harbor mutations in either the BRCA1 or BRCA2 gene.",
+            "2": "The absence of mutations in the BRCA1 or BRCA2 gene in these individuals suggests they have other genetic or epigenetic alterations.",
+            "3": "These genetic or epigenetic alterations could lead to the onset of hereditary breast and ovarian cancer.",
+            "4": "OLA1 has been identified as a novel BRCA1/BARD1-interacting protein.",
+            "5": "The present study aimed to elucidate whether any genetic mutations in OLA1 are detected among patients with suspected hereditary breast and ovarian cancer without BRCA1 or BRCA2 mutations.",
+            "6": "There were 53 patients with suspected hereditary breast and ovarian cancer enrolled at Hoshi General Hospital.",
+            "7": "23 patients without any BRCA1 or BRCA2 mutations were analyzed for OLA1 mutations.",
+            "8": "Genomic DNA was extracted from the peripheral blood samples of the patients.",
+            "9": "PCR and Sanger sequencing were performed.",
+            "10": "PCR and Sanger sequencing were used to elucidate whether there were any mutations in the ten exons of the OLA1 gene.",
+            "11": "PCR and Sanger sequencing were used to elucidate whether there were any mutations in the flanking introns of the OLA1 gene.",
+            "12": "No germline sequence variation was detected in the OLA1 gene among the 23 patients enrolled in this study.",
+            "13": "No germline mutations were found in the OLA1 gene among the cohort of patients with suspected hereditary breast and ovarian cancer without BRCA1 or BRCA2 mutations.",
+            "14": "Further studies are needed to clarify whether other mutations are involved in the pathogenesis of BRCA1 or BRCA2 mutation-negative inherited disease with breast or ovarian cancer.",
+            "15": "Further studies are needed to clarify whether epigenetic alterations are involved in the pathogenesis of BRCA1 or BRCA2 mutation-negative inherited disease with breast or ovarian cancer."
+          }
+        },
+        "viewpoints": [
+          "OLA1 interacts with BRCA1.",
+          "OLA1 interacts with BRCA1-associated RING domain protein 1.",
+          "Interaction of OLA1 with BRCA1 affects centrosome function.",
+          "Interaction of OLA1 with BRCA1-associated RING domain protein 1 affects centrosome function.",
+          "Effect on centrosome function is suspected to lead to carcinogenesis in hereditary breast cancer.",
+          "Effect on centrosome function is suspected to lead to carcinogenesis in hereditary ovarian cancer."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Growing evidence shows that OLA1/YchF plays important roles in translation regulation on a subset of mRNAs, such as leaderless mRNAs encoding stress response proteins essential for cell survival [21].",
+        "references": {
+          "21": []
+        },
+        "viewpoints": [
+          "OLA1/YchF plays important roles in translation regulation.",
+          "OLA1/YchF regulates translation on a subset of mRNAs.",
+          "OLA1/YchF regulates translation on leaderless mRNAs encoding stress response proteins.",
+          "Leaderless mRNAs encoding stress response proteins are essential for cell survival."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Human OLA1 has been implicated in translation initiation by interacting with eIF2, thereby preventing its binding to the initiator methionyl-tRNA [22].",
+        "references": {
+          "22": {
+            "1": "Translation is a fundamental cellular process.",
+            "2": "Dysregulation of translation can contribute to human diseases such as cancer.",
+            "3": "During translation initiation, the eukaryotic initiation factor 2 (eIF2) forms a ternary complex (TC) with GTP and initiator methionyl-tRNA (tRNAi).",
+            "4": "The ternary complex mediates ribosomal recruitment of initiator methionyl-tRNA (tRNAi).",
+            "5": "Limiting ternary complex (TC) availability is a central mechanism for triggering the integrated stress response (ISR).",
+            "6": "The integrated stress response (ISR) suppresses global translation in response to various cellular stresses.",
+            "7": "The integrated stress response (ISR) induces specific proteins such as ATF4 in response to various cellular stresses.",
+            "8": "OLA1 is a member of the ancient Obg family of GTPases.",
+            "9": "OLA1 is an eIF2-regulatory protein.",
+            "10": "OLA1 inhibits protein synthesis by binding eIF2, hydrolyzing GTP, and interfering with ternary complex (TC) formation.",
+            "11": "OLA1 promotes the integrated stress response (ISR) by binding eIF2, hydrolyzing GTP, and interfering with ternary complex (TC) formation.",
+            "12": "OLA1 represents a novel mechanism of translational control affecting de novo ternary complex (TC) formation.",
+            "13": "OLA1's mechanism of affecting TC formation is different from the traditional model where phosphorylation of eIF2α blocks the regeneration of TC.",
+            "14": "Depletion of OLA1 caused a hypoactive integrated stress response (ISR).",
+            "15": "Depletion of OLA1 resulted in greater survival in stressed cells.",
+            "16": "In vivo, OLA1-knockdown rendered cancer cells deficient in the integrated stress response (ISR).",
+            "17": "OLA1-knockdown rendered cancer cells deficient in the downstream proapoptotic effector, CHOP.",
+            "18": "OLA1-knockdown promoted tumor growth and metastasis.",
+            "19": "OLA1 is suggested to be a novel translational GTPase.",
+            "20": "OLA1 plays a suppressive role in translation.",
+            "21": "OLA1 plays a suppressive role in cell survival.",
+            "22": "OLA1 plays a suppressive role in cancer growth.",
+            "23": "OLA1 plays a suppressive role in cancer progression."
+          }
+        },
+        "viewpoints": [
+          "Human OLA1 is implicated in translation initiation.",
+          "Human OLA1 interacts with eIF2.",
+          "Interaction of human OLA1 with eIF2 prevents eIF2 binding to the initiator methionyl-tRNA."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Conversely, under stress conditions, the down-regulation of OLA1 enhances translation initiation and mitigates the integrated stress response (ISR) [22], [23].",
+        "references": {
+          "22": {
+            "1": "Translation is a fundamental cellular process.",
+            "2": "Dysregulation of translation can contribute to human diseases such as cancer.",
+            "3": "During translation initiation, the eukaryotic initiation factor 2 (eIF2) forms a ternary complex (TC) with GTP and initiator methionyl-tRNA (tRNAi).",
+            "4": "The ternary complex mediates ribosomal recruitment of initiator methionyl-tRNA (tRNAi).",
+            "5": "Limiting ternary complex (TC) availability is a central mechanism for triggering the integrated stress response (ISR).",
+            "6": "The integrated stress response (ISR) suppresses global translation in response to various cellular stresses.",
+            "7": "The integrated stress response (ISR) induces specific proteins such as ATF4 in response to various cellular stresses.",
+            "8": "OLA1 is a member of the ancient Obg family of GTPases.",
+            "9": "OLA1 is an eIF2-regulatory protein.",
+            "10": "OLA1 inhibits protein synthesis by binding eIF2, hydrolyzing GTP, and interfering with ternary complex (TC) formation.",
+            "11": "OLA1 promotes the integrated stress response (ISR) by binding eIF2, hydrolyzing GTP, and interfering with ternary complex (TC) formation.",
+            "12": "OLA1 represents a novel mechanism of translational control affecting de novo ternary complex (TC) formation.",
+            "13": "OLA1's mechanism of affecting TC formation is different from the traditional model where phosphorylation of eIF2α blocks the regeneration of TC.",
+            "14": "Depletion of OLA1 caused a hypoactive integrated stress response (ISR).",
+            "15": "Depletion of OLA1 resulted in greater survival in stressed cells.",
+            "16": "In vivo, OLA1-knockdown rendered cancer cells deficient in the integrated stress response (ISR).",
+            "17": "OLA1-knockdown rendered cancer cells deficient in the downstream proapoptotic effector, CHOP.",
+            "18": "OLA1-knockdown promoted tumor growth and metastasis.",
+            "19": "OLA1 is suggested to be a novel translational GTPase.",
+            "20": "OLA1 plays a suppressive role in translation.",
+            "21": "OLA1 plays a suppressive role in cell survival.",
+            "22": "OLA1 plays a suppressive role in cancer growth.",
+            "23": "OLA1 plays a suppressive role in cancer progression."
+          },
+          "23": {
+            "1": "The article reports the characterization of a novel DNA damage-regulated gene named DNA damage-regulated overexpressed in cancer 45 (DOC45).",
+            "2": "DNA damage-inducing agents strongly downregulate DOC45 expression.",
+            "3": "Doxorubicin (adriamycin), etoposide, and ionizing and UV radiation are DNA damage-inducing agents.",
+            "4": "Endoplasmic reticulum stress-inducing agents do not downregulate DOC45 expression.",
+            "5": "DOC45 is overexpressed in several human malignancies.",
+            "6": "DOC45 is overexpressed in cancers of the colon, rectum, ovary, lung, stomach, and uterus.",
+            "7": "DOC45 harbors conserved nucleotide triphosphate-binding motifs.",
+            "8": "DOC45 is capable of ATP hydrolysis.",
+            "9": "The capability of ATP hydrolysis highlights the function of DOC45 as a novel ATPase.",
+            "10": "DOC45 is predominantly cytoplasmic.",
+            "11": "DOC45 exhibits a characteristic nucleocytoplasmic distribution.",
+            "12": "DOC45 predominantly accumulates in the nucleoli on inhibition of nuclear export.",
+            "13": "DOC45 may shuttle between the nucleus and cytoplasm to carry out its function.",
+            "14": "DOC45 expression is enhanced during oncogenic Ras-mediated transformation.",
+            "15": "DOC45 expression is linked to the phosphoinositide 3-kinase signaling pathway.",
+            "16": "Short hairpin RNA-mediated knockdown of DOC45 in human colon cancer cells inhibits their proliferation.",
+            "17": "Short hairpin RNA-mediated knockdown of DOC45 in human colon cancer cells enhances cellular sensitivity to doxorubicin-induced cell death.",
+            "18": "DOC45 plays an important role in cell proliferation.",
+            "19": "DOC45 plays an important role in cell survival.",
+            "20": "DOC45 is a novel ATPase linked to cellular stress response.",
+            "21": "DOC45 is linked to tumorigenesis.",
+            "22": "DOC45 may serve as a valuable tumor marker."
+          }
+        },
+        "viewpoints": [
+          "Under stress conditions, down-regulation of OLA1 enhances translation initiation.",
+          "Down-regulation of OLA1 under stress conditions mitigates the integrated stress response (ISR)."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "A recent study in Mollicutes found that YchF is one of the 104 core set proteins that sustain ribosome biogenesis and the translation of the genetic code in self-replicating bacteria with reduced genomes [24].",
+        "references": {
+          "24": {
+            "1": "Mollicutes is a class of parasitic bacteria.",
+            "2": "Mollicutes have evolved from a common Firmicutes ancestor.",
+            "3": "The evolution of Mollicutes from a common Firmicutes ancestor involved massive genome reduction.",
+            "4": "Most Mollicutes species have genomes under 1 Mbp in size.",
+            "5": "Most Mollicutes species retain the capacity to replicate autonomously.",
+            "6": "Most Mollicutes species retain the capacity to grow autonomously.",
+            "7": "The major goal of this work was to identify the minimal set of proteins that can sustain ribosome biogenesis in Mollicutes.",
+            "8": "The major goal of this work was to identify the minimal set of proteins that can sustain the translation of the genetic code in Mollicutes.",
+            "9": "Experimentally validated genes from Escherichia coli and Bacillus subtilis were used as input.",
+            "10": "Genes encoding proteins of the core translation machinery were predicted in 39 distinct Mollicutes species.",
+            "11": "Thirty-three of the 39 distinct Mollicutes species are culturable.",
+            "12": "The set of 260 input genes encodes proteins involved in ribosome biogenesis.",
+            "13": "The set of 260 input genes encodes proteins involved in tRNA maturation.",
+            "14": "The set of 260 input genes encodes proteins involved in aminoacylation.",
+            "15": "The set of 260 input genes encodes protein cofactors required for mRNA translation.",
+            "16": "The set of 260 input genes encodes protein cofactors required for RNA decay.",
+            "17": "A core set of 104 proteins is found in all Mollicutes species analyzed.",
+            "18": "Genes encoding proteins involved in post-translational modifications of ribosomal proteins are the most frequently lost.",
+            "19": "Genes encoding proteins involved in post-translational modifications of translation cofactors are the most frequently lost.",
+            "20": "Genes encoding proteins involved in post-transcriptional modifications of t+rRNA are the most frequently lost.",
+            "21": "Genes encoding proteins involved in ribosome assembly are the most frequently lost.",
+            "22": "Genes encoding proteins involved in RNA degradation are the most frequently lost.",
+            "23": "Genes coding for aminoacyl-tRNA synthetases are the most persistent.",
+            "24": "Genes coding for ribosomal proteins are the most persistent.",
+            "25": "Genes coding for initiation factors are the most persistent.",
+            "26": "Genes coding for elongation factors are the most persistent.",
+            "27": "Genes coding for termination factors are the most persistent.",
+            "28": "The most persistent genes are those conserved in a majority of genomes.",
+            "29": "Enzymes introducing nucleotide modifications in the anticodon loop of tRNA are maintained in all species.",
+            "30": "Enzymes introducing nucleotide modifications in helix 44 of 16S rRNA are maintained in all species.",
+            "31": "Enzymes introducing nucleotide modifications in helices 69 and 80 of 23S rRNA are maintained in all species.",
+            "32": "These modifications are essential for decoding and facilitating peptidyl transfer.",
+            "33": "Reconstruction of genome evolution in Mollicutes revealed many gene losses.",
+            "34": "Reconstruction of genome evolution in Mollicutes revealed occasional gains by horizontal gene transfer.",
+            "35": "The analysis showed that slightly different solutions for preserving a functional, albeit minimal, protein synthesizing machinery have emerged in successive rounds of reductive evolution.",
+            "36": "The analysis has broad implications in guiding the reconstruction of a minimal cell by synthetic biology approaches."
+          }
+        },
+        "viewpoints": [
+          "YchF is one of the 104 core set proteins in Mollicutes.",
+          "YchF sustains ribosome biogenesis in Mollicutes.",
+          "YchF sustains the translation of the genetic code in self-replicating bacteria with reduced genomes."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Ribosome binding of OLA1/YchF has been observed in E.coli [21], [25], [26], [27], yeast [17], Trypanosoma [4], plants [7], and human cells [22].",
+        "references": {
+          "21": [],
+          "25": {
+            "1": "YchF is an ATPase.",
+            "2": "YchF is evolutionarily conserved.",
+            "3": "The function of YchF is unknown.",
+            "4": "The YchF homologue in humans is hOla1.",
+            "5": "hOla1 appears to influence cell proliferation in humans.",
+            "6": "hOla1 is found to be up-regulated in many tumors in humans.",
+            "7": "There is a possible involvement of YchF in regulating the oxidative stress response.",
+            "8": "Details on the underlying mechanism of YchF's involvement in oxidative stress response regulation are lacking.",
+            "9": "Escherichia coli was used as a model organism to gain insight into YchF function.",
+            "10": "YchF overexpression in Escherichia coli resulted in hypersensitivity to H(2)O(2).",
+            "11": "The hypersensitivity to H(2)O(2) resulting from YchF overexpression was not caused by transcriptional down-regulation of H(2)O(2)-scavenging enzymes.",
+            "12": "The hypersensitivity to H(2)O(2) resulting from YchF overexpression was not caused by translational down-regulation of H(2)O(2)-scavenging enzymes.",
+            "13": "YchF expression resulted in the inhibition of catalase activity.",
+            "14": "The inhibition of catalase activity by YchF is dependent on YchF.",
+            "15": "There is a direct interaction between YchF and the major E. coli catalase KatG.",
+            "16": "KatG inhibition by YchF was dependent on the ATPase activity of YchF.",
+            "17": "KatG inhibition by YchF was regulated by post-translational modifications.",
+            "18": "Post-translational modifications regulating KatG inhibition by YchF most likely include an H(2)O(2)-dependent dephosphorylation.",
+            "19": "YchF expression is repressed by the transcription factor OxyR.",
+            "20": "YchF is further post-translationally modified in response to H(2)O(2).",
+            "21": "YchF functions as a novel negative regulator of the oxidative stress response in Escherichia coli.",
+            "22": "YchF/Ola1 most likely execute similar functions in bacteria and humans, based on available data on hOla1.",
+            "23": "Up-regulation of YchF/Ola1 inhibits the ability of the cells to scavenge damaging reactive oxygen species."
+          },
+          "26": {
+            "1": "YchF is one of two universally conserved GTPases.",
+            "2": "The cellular function of YchF is unknown.",
+            "3": "A detailed biochemical characterization of YchF from Escherichia coli was performed as a first step toward elucidating YchF's cellular role.",
+            "4": "YchFE.coli binds adenine nucleotides more efficiently than guanine nucleotides.",
+            "5": "YchF assumes two distinct conformational states (ATP-bound and ADP-bound).",
+            "6": "The two distinct conformational states of YchF are consistent with the functional cycle of a typical GTPase.",
+            "7": "An in vivo pull-down experiment using a His-tagged variant of YchF from E. coli was conducted.",
+            "8": "The in vivo pull-down experiment led to the isolation of a megadalton complex containing the 70S ribosome.",
+            "9": "The YchF•70S complex was successfully reconstituted in vitro.",
+            "10": "The affinity (KD) of the YchFE.coli•ADPNP complex for 70S ribosomes is 3 μM.",
+            "11": "The nucleotide-bound state of YchF (ADP or ATP) modulates its affinity for 70S ribosomes.",
+            "12": "A detailed Michaelis-Menten analysis of YchF's catalytic activity was conducted in the presence and absence of the 70S ribosome and its subunits.",
+            "13": "The 70S ribosome is able to stimulate YchF's ATPase activity (~10-fold).",
+            "14": "The ribosome is confirmed to be part of the functional cycle of YchF.",
+            "15": "There is a high level of evolutionary conservation in the enzymatic properties of YchF and its human homolog (hOLA1).",
+            "16": "The ribosome is suggested to be the main functional partner of YchF not only in bacteria."
+          },
+          "27": {
+            "1": "YchF is a universally conserved protein.",
+            "2": "YchF was previously thought to be a GTPase.",
+            "3": "YchF was shown to be an ATPase.",
+            "4": "The conclusion that YchF is an ATPase was based on structural and biochemical studies.",
+            "5": "The studies on hOLA1, a human ortholog of YchF, contributed to the conclusion that YchF is an ATPase.",
+            "6": "The cellular role of YchF is unclear.",
+            "7": "YchF contains a RNA binding domain.",
+            "8": "YchF has significant homology to ribosome binding Obg family GTPases.",
+            "9": "The presence of a RNA binding domain and homology to ribosome binding Obg family GTPases prompted an examination of YchF's ability to associate with the ribosome.",
+            "10": "Escherichia coli YchF binds the 50S ribosomal particles.",
+            "11": "Escherichia coli YchF binds the 70S ribosomal particles.",
+            "12": "The binding of Escherichia coli YchF to ribosomal particles occurs in a nucleotide independent manner.",
+            "13": "Escherichia coli YchF hydrolyzes ATP.",
+            "14": "Escherichia coli YchF utilizes a potassium dependent mechanism to hydrolyze ATP.",
+            "15": "A potassium mediated acceleration of hydrolysis activity is known for a few GTPases.",
+            "16": "YchF conserves the structural features required for K(+) coordination.",
+            "17": "YchF is a unique ribosome binding ATPase.",
+            "18": "YchF utilizes a mechanism similar to that of a few GTPases for potassium mediated acceleration of hydrolysis activity.",
+            "19": "Lys78 is an important determinant of the potassium dependent ATPase activity of YchF."
+          },
+          "17": {
+            "1": "The P-loop ATPase Ola1 is universally conserved.",
+            "2": "Ola1 is implicated in various cellular stress response pathways.",
+            "3": "Ola1 is implicated in cancer.",
+            "4": "Ola1 is implicated in tumor progression.",
+            "5": "Ola1p functions are divergent between species.",
+            "6": "The mechanisms involved in Ola1p functions are poorly understood.",
+            "7": "The role of Ola1p in the heat shock response of yeast Saccharomyces cerevisiae was studied.",
+            "8": "Quantitative proteomics approaches were used to study the role of Ola1p.",
+            "9": "Pulse labeling-based proteomics approaches were used to study the role of Ola1p.",
+            "10": "In vitro studies were used to study the role of Ola1p.",
+            "11": "Cell-based assays were used to study the role of Ola1p.",
+            "12": "When heat stress is applied to cells lacking Ola1p, the expression of stress-protective proteins is enhanced.",
+            "13": "During heat stress, Ola1p associates with detergent-resistant protein aggregates.",
+            "14": "During heat stress, Ola1p rapidly forms assemblies that localize to stress granules.",
+            "15": "The assembly of Ola1p was observed in vitro.",
+            "16": "Purified protein was used to observe the assembly of Ola1p in vitro.",
+            "17": "Conditions resembling those in living cells were used to observe the assembly of Ola1p in vitro.",
+            "18": "Loss of Ola1p results in increased protein ubiquitination of detergent-insoluble aggregates recovered from heat-shocked cells.",
+            "19": "When cells lacking Ola1p were relieved from heat stress, reinitiation of translation was delayed.",
+            "20": "When cells lacking Ola1p were relieved from heat stress, de novo synthesis of central factors required for protein refolding was enhanced compared with wild-type cells.",
+            "21": "When cells lacking Ola1p were relieved from heat stress, de novo synthesis of central factors required for the clearance of aggregates was enhanced compared with wild-type cells.",
+            "22": "Upon acute heat stress, Ola1p is involved in the stabilization of misfolded proteins.",
+            "23": "Misfolded proteins become sequestered in cytoplasmic stress granules upon acute heat stress.",
+            "24": "The function of Ola1p enables cells to resume translation in a timely manner after heat stress is relieved."
+          },
+          "4": {
+            "1": "A gene encoding a YchF-related protein, TcYchF, was characterized.",
+            "2": "TcYchF is potentially associated with the protein translation machinery of Trypanosoma cruzi.",
+            "3": "YchF belongs to the translation factor-related (TRAFAC) class of P-loop NTPases.",
+            "4": "The coding region of the gene is 1185 base pairs long.",
+            "5": "The gene encodes a 44.3 kilodalton protein.",
+            "6": "TcYchF is very similar (45-86%) to putative GTP-binding proteins from eukaryotes.",
+            "7": "TcYchF is similar to putative GTP-binding proteins from some species of trypanosomatids, including Leishmania major and Trypanosoma brucei.",
+            "8": "The predicted sequences of TcYchF have a significant level of similarity (38-43%) with bacterial YyaF/YchF GTPases of the Spo0B-associated GTP-binding protein (Obg) family.",
+            "9": "Some of the important features of the G domain of the Obg family of GTPases are conserved in TcYchF.",
+            "10": "TcYchF preferentially hydrolyzed ATP instead of GTP.",
+            "11": "The function of YyaF/YchF is unknown.",
+            "12": "Other members of the Obg family are known to be associated with ribosomal subunits.",
+            "13": "TcYchF was associated with ribosomal subunits.",
+            "14": "TcYchF was associated with polysomes.",
+            "15": "TcYchF was associated with the proteasome of T. cruzi.",
+            "16": "Inactivation of the T. brucei homolog of TcYchF by RNA interference inhibited the growth of procyclic forms of the parasite.",
+            "17": "TcYchF plays an important role in the translation machinery of trypanosomes."
+          },
+          "7": {
+            "1": "G proteins are involved in almost all aspects of the cellular regulatory pathways.",
+            "2": "G proteins bind GTP.",
+            "3": "G proteins hydrolyze GTP.",
+            "4": "The YchF subfamily can bind both ATP and GTP.",
+            "5": "The ability to bind both ATP and GTP is unique to the YchF subfamily.",
+            "6": "The YchF subfamily is possibly an ancestral form of G proteins.",
+            "7": "The YchF subfamily is present in all kingdoms of life.",
+            "8": "Phylogenetic studies suggest the YchF subfamily is an ancestral form of G proteins.",
+            "9": "Researchers have long been unable to determine the biological significance of the YchF subfamily's ability to bind both ATP and GTP with relaxed ligand specificity.",
+            "10": "The binding of a YchF homolog in rice (OsYchF1) to ATP causes different conformational changes compared to binding to GTP.",
+            "11": "X-ray crystallography was used to elucidate the conformational changes in OsYchF1 when bound to ATP versus GTP.",
+            "12": "Comparison of the 3D relationships of ligand position and amino acid residues at the binding sites in the crystal structures revealed a mechanism for OsYchF1's ability to bind both ATP and GTP.",
+            "13": "The comparison involved both apo-bound and ligand-bound versions of OsYchF1.",
+            "14": "Mutation of the noncanonical G4 motif of OsYchF1 to the canonical sequence for GTP specificity precludes the binding/hydrolysis of ATP.",
+            "15": "Mutation of the noncanonical G4 motif to the canonical sequence for GTP specificity prevents OsYchF1 from functioning as a negative regulator of plant-defense responses.",
+            "16": "Mutation of the noncanonical G4 motif retains OsYchF1's ability to bind/hydrolyze GTP.",
+            "17": "Mutation of the noncanonical G4 motif retains OsYchF1's function as a negative regulator of abiotic stress responses.",
+            "18": "The specific role of ATP-binding/hydrolysis in disease resistance is demonstrated by the mutation of the noncanonical G4 motif.",
+            "19": "The discovery regarding OsYchF1's conformational changes and binding mechanisms will significantly impact the understanding of the structure-function relationships of the YchF subfamily of G proteins.",
+            "20": "The impact of this discovery will extend to all kingdoms of life."
+          },
+          "22": {
+            "1": "Translation is a fundamental cellular process.",
+            "2": "Dysregulation of translation can contribute to human diseases such as cancer.",
+            "3": "During translation initiation, the eukaryotic initiation factor 2 (eIF2) forms a ternary complex (TC) with GTP and initiator methionyl-tRNA (tRNAi).",
+            "4": "The ternary complex mediates ribosomal recruitment of initiator methionyl-tRNA (tRNAi).",
+            "5": "Limiting ternary complex (TC) availability is a central mechanism for triggering the integrated stress response (ISR).",
+            "6": "The integrated stress response (ISR) suppresses global translation in response to various cellular stresses.",
+            "7": "The integrated stress response (ISR) induces specific proteins such as ATF4 in response to various cellular stresses.",
+            "8": "OLA1 is a member of the ancient Obg family of GTPases.",
+            "9": "OLA1 is an eIF2-regulatory protein.",
+            "10": "OLA1 inhibits protein synthesis by binding eIF2, hydrolyzing GTP, and interfering with ternary complex (TC) formation.",
+            "11": "OLA1 promotes the integrated stress response (ISR) by binding eIF2, hydrolyzing GTP, and interfering with ternary complex (TC) formation.",
+            "12": "OLA1 represents a novel mechanism of translational control affecting de novo ternary complex (TC) formation.",
+            "13": "OLA1's mechanism of affecting TC formation is different from the traditional model where phosphorylation of eIF2α blocks the regeneration of TC.",
+            "14": "Depletion of OLA1 caused a hypoactive integrated stress response (ISR).",
+            "15": "Depletion of OLA1 resulted in greater survival in stressed cells.",
+            "16": "In vivo, OLA1-knockdown rendered cancer cells deficient in the integrated stress response (ISR).",
+            "17": "OLA1-knockdown rendered cancer cells deficient in the downstream proapoptotic effector, CHOP.",
+            "18": "OLA1-knockdown promoted tumor growth and metastasis.",
+            "19": "OLA1 is suggested to be a novel translational GTPase.",
+            "20": "OLA1 plays a suppressive role in translation.",
+            "21": "OLA1 plays a suppressive role in cell survival.",
+            "22": "OLA1 plays a suppressive role in cancer growth.",
+            "23": "OLA1 plays a suppressive role in cancer progression."
+          }
+        },
+        "viewpoints": [
+          "Ribosome binding of OLA1/YchF has been observed in E.coli.",
+          "Ribosome binding of OLA1/YchF has been observed in yeast.",
+          "Ribosome binding of OLA1/YchF has been observed in Trypanosoma.",
+          "Ribosome binding of OLA1/YchF has been observed in plants.",
+          "Ribosome binding of OLA1/YchF has been observed in human cells."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The available data suggest that YchF/OLA1 binds not only to fully assembled ribosomes but also independently to the small and large ribosomal subunits.",
+        "references": {},
+        "viewpoints": [
+          "YchF/OLA1 binds to fully assembled ribosomes.",
+          "YchF/OLA1 independently binds to the small ribosomal subunits.",
+          "YchF/OLA1 independently binds to the large ribosomal subunits."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Moreover, the 70S ribosome has been reported to stimulate the ATPase activity of YchF [26].",
+        "references": {
+          "26": {
+            "1": "YchF is one of two universally conserved GTPases.",
+            "2": "The cellular function of YchF is unknown.",
+            "3": "A detailed biochemical characterization of YchF from Escherichia coli was performed as a first step toward elucidating YchF's cellular role.",
+            "4": "YchFE.coli binds adenine nucleotides more efficiently than guanine nucleotides.",
+            "5": "YchF assumes two distinct conformational states (ATP-bound and ADP-bound).",
+            "6": "The two distinct conformational states of YchF are consistent with the functional cycle of a typical GTPase.",
+            "7": "An in vivo pull-down experiment using a His-tagged variant of YchF from E. coli was conducted.",
+            "8": "The in vivo pull-down experiment led to the isolation of a megadalton complex containing the 70S ribosome.",
+            "9": "The YchF•70S complex was successfully reconstituted in vitro.",
+            "10": "The affinity (KD) of the YchFE.coli•ADPNP complex for 70S ribosomes is 3 μM.",
+            "11": "The nucleotide-bound state of YchF (ADP or ATP) modulates its affinity for 70S ribosomes.",
+            "12": "A detailed Michaelis-Menten analysis of YchF's catalytic activity was conducted in the presence and absence of the 70S ribosome and its subunits.",
+            "13": "The 70S ribosome is able to stimulate YchF's ATPase activity (~10-fold).",
+            "14": "The ribosome is confirmed to be part of the functional cycle of YchF.",
+            "15": "There is a high level of evolutionary conservation in the enzymatic properties of YchF and its human homolog (hOLA1).",
+            "16": "The ribosome is suggested to be the main functional partner of YchF not only in bacteria."
+          }
+        },
+        "viewpoints": [
+          "The 70S ribosome stimulates the ATPase activity of YchF."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Recent biochemical studies using UV-inducible crosslinkers locate YchF at the E-site on the 30S small ribosomal subunit [21].",
+        "references": {
+          "21": []
+        },
+        "viewpoints": [
+          "Recent biochemical studies locate YchF at the E-site on the 30S small ribosomal subunit.",
+          "UV-inducible crosslinkers were used in recent biochemical studies to locate YchF."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Despite these advances, questions remain unanswered regarding the molecular details of ribosome binding and translation regulation, as well as the exact roles of OLA1/YchF during these processes.",
+        "references": {},
+        "viewpoints": [
+          "Questions remain unanswered regarding the molecular details of ribosome binding.",
+          "Questions remain unanswered regarding the molecular details of translation regulation.",
+          "The exact roles of OLA1/YchF during ribosome binding and translation regulation are still unclear."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "One major reason for this gap is the lack of structural data capturing OLA1/YchF in complex with ribosomes.",
+        "references": {},
+        "viewpoints": [
+          "A major reason for the gap in understanding is the lack of structural data capturing OLA1/YchF in complex with ribosomes."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Here, we report that OLA1/YchF binds to the ribosomal large subunit and promotes efficient translation on D/E-rich mRNA.",
+        "references": {},
+        "viewpoints": [
+          "OLA1/YchF binds to the ribosomal large subunit.",
+          "OLA1/YchF promotes efficient translation on D/E-rich mRNA."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Disruption in translation can be caused by truncated mRNA or mRNA with specific structures/sequences [28].",
+        "references": {
+          "28": []
+        },
+        "viewpoints": [
+          "Disruption in translation can be caused by truncated mRNA.",
+          "Disruption in translation can be caused by mRNA with specific structures/sequences."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Rescuing stalled ribosomes on these mRNAs requires numerous ribosome-associated proteins to release the nascent peptide and split the ribosome.",
+        "references": {},
+        "viewpoints": [
+          "Rescuing stalled ribosomes on truncated or structured/sequence-specific mRNAs requires ribosome-associated proteins.",
+          "Releasing the nascent peptide is required to rescue stalled ribosomes on these mRNAs.",
+          "Splitting the ribosome is required to rescue stalled ribosomes on these mRNAs."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "For instance, the proteins Dom34, Hbs1 and Rli1 target ribosomes with truncated mRNA in eukaryotes, catalyzing the splitting of subunit [28].",
+        "references": {
+          "28": []
+        },
+        "viewpoints": [
+          "Dom34 targets ribosomes with truncated mRNA in eukaryotes.",
+          "Hbs1 targets ribosomes with truncated mRNA in eukaryotes.",
+          "Rli1 targets ribosomes with truncated mRNA in eukaryotes.",
+          "Dom34, Hbs1, and Rli1 catalyze the splitting of the ribosomal subunit."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Stalls on specific mRNA structures/sequences can be resolved under optimal conditions, i.e., synthesis of P-rich is made possible by EF-P (in bacteria, eIF5A in eukaryotes and archaea) [29].",
+        "references": {
+          "29": {
+            "1": "Elongation factor P (EF-P) is a translation factor with an unknown function.",
+            "2": "Elongation factor P (EF-P) has been implicated in a great variety of cellular processes.",
+            "3": "Elongation factor P (EF-P) prevents the ribosome from stalling during the synthesis of proteins containing consecutive prolines.",
+            "4": "Consecutive prolines can include sequences such as PPG, PPP, or longer proline strings.",
+            "5": "Elongation factor P (EF-P) functions in both natural and engineered model proteins.",
+            "6": "Elongation factor P (EF-P) promotes peptide-bond formation in the ribosome.",
+            "7": "Elongation factor P (EF-P) stabilizes the peptidyl-transfer RNA in the catalytic center of the ribosome.",
+            "8": "Elongation factor P (EF-P) is posttranslationally modified by a hydroxylated β-lysine.",
+            "9": "The hydroxylated β-lysine is attached to a lysine residue.",
+            "10": "The hydroxylated β-lysine modification enhances the catalytic proficiency of Elongation factor P (EF-P).",
+            "11": "The enhancement of catalytic proficiency is mainly due to the increased affinity of Elongation factor P (EF-P) to the ribosome.",
+            "12": "Elongation factor P (EF-P) is proposed to be essential for the synthesis of a subset of proteins containing proline stretches in all cells.",
+            "13": "The eukaryotic homolog of Elongation factor P (EF-P), eIF5A, is proposed to be essential for the synthesis of a subset of proteins containing proline stretches in all cells."
+          }
+        },
+        "viewpoints": [
+          "Stalls on specific mRNA structures/sequences can be resolved under optimal conditions.",
+          "The synthesis of P-rich sequences is facilitated by EF-P in bacteria.",
+          "The synthesis of P-rich sequences is facilitated by eIF5A in eukaryotes.",
+          "The synthesis of P-rich sequences is facilitated by eIF5A in archaea."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Stalling on R/K-rich mRNA is promoted by Rbg1/Tma46 complex or targeted/split by the RQT complex if ribosome collision occurs [30], [31].",
+        "references": {
+          "30": {
+            "1": "Conserved developmentally regulated GTP-binding proteins (Drgs) are important for embryonic development.",
+            "2": "Conserved developmentally regulated GTP-binding proteins (Drgs) are important for cellular growth control.",
+            "3": "Conserved developmentally regulated GTP-binding proteins (Drgs) are important for differentiation.",
+            "4": "Conserved developmentally regulated GTP-binding proteins (Drgs) are important for proliferation.",
+            "5": "The binding partner Drg family regulatory proteins (Dfrps) are important for embryonic development.",
+            "6": "The binding partner Drg family regulatory proteins (Dfrps) are important for cellular growth control.",
+            "7": "The binding partner Drg family regulatory proteins (Dfrps) are important for differentiation.",
+            "8": "The binding partner Drg family regulatory proteins (Dfrps) are important for proliferation.",
+            "9": "The yeast Drg1/Dfrp1 ortholog Rbg1/Tma46 facilitates translational initiation by suppressing prolonged ribosome pausing.",
+            "10": "The yeast Drg1/Dfrp1 ortholog Rbg1/Tma46 facilitates translational elongation by suppressing prolonged ribosome pausing.",
+            "11": "The yeast Drg1/Dfrp1 ortholog Rbg1/Tma46 facilitates translational termination by suppressing prolonged ribosome pausing.",
+            "12": "Deletion of Rbg1 exacerbates the growth defect resulting from translation stalling.",
+            "13": "Rbg1 stabilizes mRNAs against no-go decay.",
+            "14": "A cryoelectron microscopy (cryo-EM) structure of the 80S ribosome bound with Rbg1/Tma46 is provided.",
+            "15": "The cryo-EM structure reveals the molecular interactions responsible for Rbg1/Tma46 function.",
+            "16": "The Rbg1 subunit binds to the GTPase association center of the ribosome.",
+            "17": "The Rbg1 subunit binds to the A-tRNA.",
+            "18": "The N-terminal zinc finger domain of the Tma46 subunit binds to the 40S ribosomal subunit.",
+            "19": "The binding of the Rbg1 subunit to the GTPase association center and A-tRNA and the Tma46 subunit to the 40S ribosomal subunit establish an interaction critical for the ribosomal association.",
+            "20": "The results answer the fundamental question of how a paused ribosome resumes translation.",
+            "21": "Drg1/Dfrp1 play a critical role in ensuring orderly translation."
+          },
+          "31": {
+            "1": "Translation of aberrant messenger RNAs can cause stalling of ribosomes.",
+            "2": "Stalling of ribosomes can result in ribosomal collisions.",
+            "3": "Collided ribosomes are specifically recognized to initiate stress responses.",
+            "4": "Collided ribosomes are specifically recognized to initiate quality control pathways.",
+            "5": "Ribosome-associated quality control facilitates the degradation of incomplete translation products.",
+            "6": "Ribosome-associated quality control requires dissociation of the stalled ribosomes.",
+            "7": "A central event in ribosome-associated quality control is the splitting of collided ribosomes.",
+            "8": "The ribosome quality control trigger complex (RQT) is responsible for splitting collided ribosomes.",
+            "9": "The mechanism by which RQT splits collided ribosomes is unknown.",
+            "10": "RQT requires accessible mRNA to split collided ribosomes.",
+            "11": "RQT requires the presence of a neighboring ribosome to split collided ribosomes.",
+            "12": "Cryogenic electron microscopy of RQT-ribosome complexes reveals that RQT engages the 40S subunit of the lead ribosome.",
+            "13": "RQT can switch between two conformations in the RQT-ribosome complex.",
+            "14": "The Ski2-like helicase 1 (Slh1) subunit of RQT applies a pulling force on the mRNA.",
+            "15": "The pulling force by Slh1 causes destabilizing conformational changes of the small ribosomal subunit.",
+            "16": "Destabilizing conformational changes of the small ribosomal subunit result in subunit dissociation.",
+            "17": "The findings provide a conceptual framework for a helicase-driven ribosomal splitting mechanism."
+          }
+        },
+        "viewpoints": [
+          "Stalling on R/K-rich mRNA is promoted by the Rbg1/Tma46 complex.",
+          "Ribosome collision on R/K-rich mRNA is targeted by the RQT complex.",
+          "Ribosome collision on R/K-rich mRNA is split by the RQT complex."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "The bacteria ATP-Binding Cassette family-F (ABCF) proteins, YheS, YbiT/YkpA, EttA and Uup/YfmR could cope with these problematic nascent peptide sequences within the exit tunnel [32], [33].",
+        "references": {
+          "32": {
+            "1": "Organisms possess a wide variety of proteins with diverse amino acid sequences.",
+            "2": "The synthesis of proteins relies on the ribosome.",
+            "3": "There is a misconception that ribosomes are robust protein factories.",
+            "4": "Ribosomes have several weaknesses.",
+            "5": "Ribosomes stall during the translation of the proline-rich sequences.",
+            "6": "The elongation factor EF-P assists in synthesizing proteins containing the poly-proline sequences.",
+            "7": "Living organisms have evolved to expand the translation capability of ribosomes.",
+            "8": "Living organisms expand the translation capability of ribosomes through the acquisition of translation elongation factors.",
+            "9": "Escherichia coli ATP-Binding Cassette family-F (ABCF) proteins YheS, YbiT, EttA, and Uup individually cope with various problematic nascent peptide sequences within the exit tunnel.",
+            "10": "YheS corresponds to noncanonical translations for the translational arrest by nascent SecM.",
+            "11": "YbiT corresponds to noncanonical translations for poly-basic sequence-dependent stalling.",
+            "12": "YbiT corresponds to noncanonical translations for poly-acidic sequence-dependent intrinsic ribosome destabilization (IRD).",
+            "13": "EttA corresponds to noncanonical translations for intrinsic ribosome destabilization at the early stage of elongation.",
+            "14": "Uup corresponds to noncanonical translations for poly-proline-dependent stalling.",
+            "15": "ATP hydrolysis-coupled structural rearrangement is pivotal for handling 'hard-to-translate' nascent peptides.",
+            "16": "The interdomain linker sequence is pivotal for handling 'hard-to-translate' nascent peptides.",
+            "17": "The study highlights a new aspect of ABCF proteins to reduce the potential risks encoded within the nascent peptide sequences."
+          },
+          "33": {
+            "1": "The efficiency of protein synthesis on the ribosome is influenced by the amino acid composition of the assembled amino acid chain.",
+            "2": "Proline-rich motifs present challenges in protein synthesis.",
+            "3": "Highly positively charged amino acid stretches present challenges in protein synthesis.",
+            "4": "Highly negatively charged amino acid stretches present challenges in protein synthesis.",
+            "5": "Members of the F subfamily of ABC ATPases (ABCFs) are hypothesised to promote the translation of proline-rich motifs.",
+            "6": "Members of the F subfamily of ABC ATPases (ABCFs) are hypothesised to promote the translation of highly positively charged amino acid stretches.",
+            "7": "Members of the F subfamily of ABC ATPases (ABCFs) are hypothesised to promote the translation of highly negatively charged amino acid stretches.",
+            "8": "The study applied genetics to characterise the four housekeeping ABCF ATPases of Bacillus subtilis.",
+            "9": "The study applied reporter-based assays to characterise the four housekeeping ABCF ATPases of Bacillus subtilis.",
+            "10": "The four housekeeping ABCF ATPases of Bacillus subtilis being characterised are YdiF, YfmM, YfmR/Uup, and YkpA/YbiT.",
+            "11": "YfmR cooperates with the translation factor EF-P.",
+            "12": "The translation factor EF-P promotes the translation of Pro-rich motifs.",
+            "13": "The simultaneous loss of YfmR and EF-P results in a dramatic growth defect.",
+            "14": "The growth defect from the loss of YfmR and EF-P can be largely suppressed by the overexpression of an EF-P variant.",
+            "15": "The EF-P variant that can suppress the growth defect lacks the otherwise crucial 5-amino-pentanolylated residue K32.",
+            "16": "Overexpression of YfmR can alleviate ribosomal stalling on Asp-Pro motifs.",
+            "17": "In vivo reporter assays were used to show that overexpression of YfmR alleviates ribosomal stalling on Asp-Pro motifs.",
+            "18": "YkpA/YbiT promotes the translation of positively charged motifs.",
+            "19": "YkpA/YbiT promotes the translation of negatively charged motifs.",
+            "20": "YkpA/YbiT is inactive in resolving ribosomal stalls on proline-rich stretches.",
+            "21": "The study provides insights into the function of ABCF translation factors in modulating protein synthesis in Bacillus subtilis."
+          }
+        },
+        "viewpoints": [
+          "Bacteria ATP-Binding Cassette family-F (ABCF) proteins cope with problematic nascent peptide sequences.",
+          "YheS copes with problematic nascent peptide sequences within the exit tunnel.",
+          "YbiT/YkpA cope with problematic nascent peptide sequences within the exit tunnel.",
+          "EttA copes with problematic nascent peptide sequences within the exit tunnel.",
+          "Uup/YfmR cope with problematic nascent peptide sequences within the exit tunnel."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "The ATP hydrolysis-coupled structural rearrangement is critical for handling ribosome stalling caused by nascent peptides [32].",
+        "references": {
+          "32": {
+            "1": "Organisms possess a wide variety of proteins with diverse amino acid sequences.",
+            "2": "The synthesis of proteins relies on the ribosome.",
+            "3": "There is a misconception that ribosomes are robust protein factories.",
+            "4": "Ribosomes have several weaknesses.",
+            "5": "Ribosomes stall during the translation of the proline-rich sequences.",
+            "6": "The elongation factor EF-P assists in synthesizing proteins containing the poly-proline sequences.",
+            "7": "Living organisms have evolved to expand the translation capability of ribosomes.",
+            "8": "Living organisms expand the translation capability of ribosomes through the acquisition of translation elongation factors.",
+            "9": "Escherichia coli ATP-Binding Cassette family-F (ABCF) proteins YheS, YbiT, EttA, and Uup individually cope with various problematic nascent peptide sequences within the exit tunnel.",
+            "10": "YheS corresponds to noncanonical translations for the translational arrest by nascent SecM.",
+            "11": "YbiT corresponds to noncanonical translations for poly-basic sequence-dependent stalling.",
+            "12": "YbiT corresponds to noncanonical translations for poly-acidic sequence-dependent intrinsic ribosome destabilization (IRD).",
+            "13": "EttA corresponds to noncanonical translations for intrinsic ribosome destabilization at the early stage of elongation.",
+            "14": "Uup corresponds to noncanonical translations for poly-proline-dependent stalling.",
+            "15": "ATP hydrolysis-coupled structural rearrangement is pivotal for handling 'hard-to-translate' nascent peptides.",
+            "16": "The interdomain linker sequence is pivotal for handling 'hard-to-translate' nascent peptides.",
+            "17": "The study highlights a new aspect of ABCF proteins to reduce the potential risks encoded within the nascent peptide sequences."
+          }
+        },
+        "viewpoints": [
+          "ATP hydrolysis-coupled structural rearrangement is critical for handling ribosome stalling.",
+          "Ribosome stalling caused by nascent peptides requires ATP hydrolysis-coupled structural rearrangement."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Currently, there is limited research on D/E-rich mRNA.",
+        "references": {},
+        "viewpoints": [
+          "There is limited research on D/E-rich mRNA."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Through structural analysis and Ribo-seq data, we speculate that OLA1/YchF enhances translation on D/E-rich mRNA, a notion validated by our constructed reporter.",
+        "references": {},
+        "viewpoints": [
+          "Structural analysis and Ribo-seq data were used to speculate that OLA1/YchF enhances translation on D/E-rich mRNA.",
+          "OLA1/YchF enhances translation on D/E-rich mRNA.",
+          "The enhancement of translation on D/E-rich mRNA by OLA1/YchF was validated by a constructed reporter."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "OLA1/YchF binds to the large subunit at the uL14/bL19 position via its helical domain, preventing the re-association of split ribosomes.",
+        "references": {},
+        "viewpoints": [
+          "OLA1/YchF binds to the ribosomal large subunit at the uL14/bL19 position.",
+          "OLA1/YchF binds via its helical domain.",
+          "Binding of OLA1/YchF prevents re-association of split ribosomes."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "These findings not only provide deeper insights into OLA1/YchF function but also contribute to a better understanding of translation regulation on D/E-rich mRNA.",
+        "references": {},
+        "viewpoints": [
+          "Findings provide deeper insights into OLA1/YchF function.",
+          "Findings contribute to a better understanding of translation regulation on D/E-rich mRNA."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56797-8_with_abstracts",
+    "base_id": "s41467-025-56797-8",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56797-8_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

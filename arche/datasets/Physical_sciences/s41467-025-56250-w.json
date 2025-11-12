@@ -1,0 +1,657 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Negative refraction of electromagnetic waves [1] , [2] , [3] , [4] , [5] , [6] , [7] is characterised by counter-intuitive phenomena, such as the bending of waves in a medium in the opposite direction to what normally occurs and the amplification of evanescent waves in the bulk [8] , [9] . These entail possibilities of transformative applications, including cloaking [10] , [11] , [12] and superlensing [9] , [13] , and have also gained considerable attention in other wave types, such as elastic and acoustic waves [14] , [15] . Metamaterials, synthetic man-made media, were developed to overcome limitations of natural materials, with these unconventional refraction phenomena serving as a key driving force behind their advancement. Despite the significant interest in negative refraction, intrinsic non-radiative damping and ever-present fabrication imperfections of resonators in metamaterials result in significant losses at optical frequencies [16] , [17] . Similarly, negative refraction in 3D photonic crystals [18] , [19] is constrained by the refractive indices of their constituent dielectrics, is sensitive to imperfections, and operates within a narrow range of incidence angles with limited subwavelength resolution due to the requirement of wavelength-scale periodicity. Consequently, a practical application of negative refraction of light has yet to be demonstrated. Here we show that negative refraction of light can be obtained in atomic media without the use of artificially fabricated resonators. This is made possible by harnessing and utilising cooperative, non-local atom responses that arise from strong light-mediated interactions at high densities. We achieve this controlled response by considering subwavelength atomic arrays [20] with unit filling, which can be experimentally realised in system sizes up to tens of wavelengths [21] . Cooperative optical interactions in atomic arrays have recently been confirmed in transmitted light, as evidenced by the spectral resonance narrowing below the fundamental quantum limit dictated by a single atom [22] and coherently manipulated optical switching [23] . In contrast to our approach, previous proposals for utilising atomic media to achieve negative refraction have relied on quantum interference effects in multilevel systems involving inherently weak magnetic dipole transitions for independently scattering atoms [24] , [25] . These approaches necessitate, e.g., exceptionally high refractive indices at high densities, that currently surpass the limits of experimental capabilities [26] . We demonstrate the negative refraction of light through microscopic, atom-by-atom simulations that exactly incorporate all recurrent scattering processes between stationary atoms in the low light intensity limit [27] , [28] , and accurately describe experimental conditions [22] , [29] . Our analysis encompasses both the \\(J=0\\to {J}^{{\\prime} }=1\\) transition, typical of experimentally relevant alkaline-earth-metals and rare-earth metals (e.g., Sr, Yb), and a two-level transition found in cycling transitions for alkali-metal atoms, using the optical lattice spacing of Rb from light transmission experiments [22] , [23] . The simulations uncover a distinct deflection of propagating light beams in the opposite direction to what normally occurs. This enables us to extract from microscopic simulations the negative value of refractive index. We demonstrate high-transmission negative refraction that is resilient to lattice imperfections, such as missing atoms and position uncertainty, over a range of laser frequencies, incident angles, and lattice constants by modelling 3D atom arrays as stacked infinite 2D planar layers when in each layer the scattering problem is represented in momentum space. Our findings, confirmed for finite-sized arrays in a few-layer scenario through large-scale simulations, reveal that such refraction aligns with the simple phenomenology of transverse Bloch band collective resonances. Notably, negative refraction can be realised by engineering and exciting such resonance bands whose in-plane group velocities are antiparallel to the excitation quasimomenta—which are a common occurrence in moderately subwavelength arrays. Intriguingly, the effective refractive index can be significantly enhanced through coupling with more subradiant excitations.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Negative refraction of electromagnetic waves [1] , [2] , [3] , [4] , [5] , [6] , [7] is characterised by counter-intuitive phenomena, such as the bending of waves in a medium in the opposite direction to what normally occurs and the amplification of evanescent waves in the bulk [8] , [9] .",
+        "references": {
+          "1": {
+            "1": "Experimental scattering data at microwave frequencies on a structured metamaterial is presented.",
+            "2": "The structured metamaterial exhibits a frequency band where the effective index of refraction (n) is negative.",
+            "3": "The structured metamaterial consists of a two-dimensional array of repeated unit cells.",
+            "4": "The unit cells are made of copper strips and split ring resonators.",
+            "5": "The copper strips and split ring resonators are on interlocking strips of standard circuit board material.",
+            "6": "The scattering angle of the transmitted beam through a prism fabricated from the structured metamaterial is measured.",
+            "7": "The effective index of refraction (n) of the structured metamaterial is determined by this measurement.",
+            "8": "The effective index of refraction (n) is appropriate to Snell's law.",
+            "9": "The experiments directly confirm the predictions of Maxwell's equations.",
+            "10": "Maxwell's equations predict that the effective index of refraction (n) is given by the negative square root of ε·μ.",
+            "11": "The prediction applies for the frequencies where both the permittivity (ε) and the permeability (μ) are negative.",
+            "12": "Configurations of geometrical optical designs are now possible with the structured metamaterial.",
+            "13": "These configurations could not be realized by positive index materials."
+          },
+          "2": {
+            "1": "Metal-based negative refractive-index materials have been extensively studied in the microwave region.",
+            "2": "Negative-index metamaterials have not been realized at near-IR frequencies due to difficulties of fabrication.",
+            "3": "Negative-index metamaterials have not been realized at visible frequencies due to difficulties of fabrication.",
+            "4": "Negative-index metamaterials have not been realized at near-IR frequencies due to the generally poor optical properties of metals at these wavelengths.",
+            "5": "Negative-index metamaterials have not been realized at visible frequencies due to the generally poor optical properties of metals at these wavelengths.",
+            "6": "The authors report the first fabrication of a transversely structured metal-dielectric-metal multilayer exhibiting a negative refractive index around 2 μm.",
+            "7": "The authors report the first experimental verification of a transversely structured metal-dielectric-metal multilayer exhibiting a negative refractive index around 2 μm.",
+            "8": "The amplitude of the transmission and reflection of the transversely structured metal-dielectric-metal multilayer was measured experimentally.",
+            "9": "The phase of the transmission and reflection of the transversely structured metal-dielectric-metal multilayer was measured experimentally.",
+            "10": "The experimental measurements of the amplitude of the transmission and reflection are in good agreement with a rigorous coupled wave analysis.",
+            "11": "The experimental measurements of the phase of the transmission and reflection are in good agreement with a rigorous coupled wave analysis."
+          },
+          "3": [],
+          "4": {
+            "1": "Metamaterials are artificially engineered structures.",
+            "2": "Metamaterials have properties not attainable with naturally occurring materials.",
+            "3": "Metamaterials can have a negative refractive index.",
+            "4": "Negative-index metamaterials were first demonstrated for microwave frequencies.",
+            "5": "Designing negative-index metamaterials for optical frequencies has been challenging.",
+            "6": "Negative-index metamaterials for optical frequencies have been limited to optically thin samples.",
+            "7": "Optically thin samples of negative-index metamaterials result from significant fabrication challenges.",
+            "8": "Optically thin samples of negative-index metamaterials result from strong energy dissipation in metals.",
+            "9": "Optically thin structures of negative-index metamaterials are analogous to a monolayer of atoms.",
+            "10": "It is difficult to assign bulk properties such as the index of refraction to structures that are analogous to a monolayer of atoms.",
+            "11": "Negative refraction of surface plasmons was recently demonstrated.",
+            "12": "Negative refraction of surface plasmons was confined to a two-dimensional waveguide.",
+            "13": "Three-dimensional optical metamaterials have recently gained research focus.",
+            "14": "Negative refraction has been realized by using layered semiconductor metamaterials.",
+            "15": "Negative refraction has been realized by using a 3D magnetic metamaterial in infrared frequencies.",
+            "16": "Neither layered semiconductor metamaterials nor 3D magnetic metamaterials had a negative index of refraction.",
+            "17": "A three-dimensional optical metamaterial with a negative refractive index is reported.",
+            "18": "The reported three-dimensional optical metamaterial has a very high figure of merit of 3.5, indicating low loss.",
+            "19": "The reported metamaterial is made of cascaded 'fishnet' structures.",
+            "20": "The reported metamaterial has a negative index existing over a broad spectral range.",
+            "21": "The reported metamaterial can readily be probed from free space.",
+            "22": "The reported metamaterial being probed from free space makes it functional for optical devices.",
+            "23": "A prism made of the reported optical negative-index metamaterial was constructed.",
+            "24": "The prism demonstrated negative refractive index at optical frequencies.",
+            "25": "The negative refractive index at optical frequencies resulted from the negative phase evolution of the wave propagating inside the metamaterial.",
+            "26": "Bulk optical metamaterials open up prospects for studies of 3D optical effects.",
+            "27": "Bulk optical metamaterials open up prospects for applications associated with negative-index metamaterials and zero-index materials.",
+            "28": "Applications of bulk optical metamaterials include the reversed Doppler effect.",
+            "29": "Applications of bulk optical metamaterials include superlenses.",
+            "30": "Applications of bulk optical metamaterials include optical tunnelling devices.",
+            "31": "Applications of bulk optical metamaterials include compact resonators.",
+            "32": "Applications of bulk optical metamaterials include highly directional sources."
+          },
+          "5": {
+            "1": "A new class of smart materials called left-handed media exhibit highly unusual electromagnetic properties.",
+            "2": "Left-handed media promise new device applications.",
+            "3": "Left-handed materials require negative permeability μ.",
+            "4": "Negative permeability μ is an extreme condition.",
+            "5": "Negative permeability μ has so far been achieved only for frequencies in the microwave to terahertz range.",
+            "6": "Achieving the necessary high-frequency magnetic response in visible optics presents a formidable challenge.",
+            "7": "No material, natural or artificial, is known to exhibit any magnetism at visible light frequencies.",
+            "8": "The approach described in ref. 7 could be extended to achieve high-frequency magnetic response in visible optics.",
+            "9": "A nanofabricated medium consists of electromagnetically coupled pairs of gold dots.",
+            "10": "The geometry of gold dots in the nanofabricated medium is carefully designed at a 10-nm level.",
+            "11": "The nanofabricated medium exhibits a strong magnetic response at visible-light frequencies.",
+            "12": "The nanofabricated medium exhibits a band with negative permeability μ at visible-light frequencies.",
+            "13": "The magnetism in the nanofabricated medium arises due to the excitation of an antisymmetric plasmon resonance.",
+            "14": "The high-frequency permeability reveals itself via optical impedance matching.",
+            "15": "The results demonstrate the feasibility of engineering magnetism at visible frequencies.",
+            "16": "The results pave the way towards magnetic components for visible optics.",
+            "17": "The results pave the way towards left-handed components for visible optics."
+          },
+          "6": {
+            "1": "Artificially engineered metamaterials demonstrate unprecedented electromagnetic properties.",
+            "2": "The electromagnetic properties demonstrated by artificially engineered metamaterials cannot be obtained with naturally occurring materials.",
+            "3": "Artificially engineered metamaterials provide a route to creating materials with a negative refractive index.",
+            "4": "Materials with a negative refractive index offer exciting new prospects for manipulating light.",
+            "5": "The review describes recent progress in creating nanostructured metamaterials with a negative index at optical wavelengths.",
+            "6": "The review discusses some of the devices that could result from nanostructured metamaterials with a negative index at optical wavelengths."
+          },
+          "7": {
+            "1": "Artificially constructed metamaterials have become of considerable interest recently.",
+            "2": "Artificially constructed metamaterials can exhibit electromagnetic characteristics unlike those of any conventional materials.",
+            "3": "Artificial magnetism is a specific type of behavior that has been demonstrated in artificially constructed metamaterials over the past few years.",
+            "4": "Negative refractive index is a specific type of behavior that has been demonstrated in artificially constructed metamaterials over the past few years.",
+            "5": "Demonstrations of artificial magnetism and negative refractive index illustrate new physics that is possible when expanding the view of what constitutes a material.",
+            "6": "Demonstrations of artificial magnetism and negative refractive index illustrate new applications that are possible when expanding the view of what constitutes a material.",
+            "7": "The review describes recent advances in metamaterials research.",
+            "8": "The review discusses the potential that metamaterials may hold for realizing new and seemingly exotic electromagnetic phenomena."
+          },
+          "8": [],
+          "9": {
+            "1": "The sharpness of the image produced by a conventional lens is always limited by the wavelength of light.",
+            "2": "A slab of negative refractive index material is an unconventional alternative to a lens.",
+            "3": "A slab of negative refractive index material has the power to focus all Fourier components of a 2D image.",
+            "4": "A slab of negative refractive index material can focus Fourier components that do not propagate in a radiative manner.",
+            "5": "\"Superlenses\" can be realized in the microwave band with current technology.",
+            "6": "Simulations show that a version of the lens operating at the frequency of visible light can be realized in the form of a thin slab of silver.",
+            "7": "The optical version of the lens can resolve objects only a few nanometers across."
+          }
+        },
+        "viewpoints": [
+          "Negative refraction of electromagnetic waves is characterized by the bending of waves in a medium in the opposite direction to what normally occurs.",
+          "Negative refraction of electromagnetic waves includes the amplification of evanescent waves in the bulk."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "These entail possibilities of transformative applications, including cloaking [10] , [11] , [12] and superlensing [9] , [13] , and have also gained considerable attention in other wave types, such as elastic and acoustic waves [14] , [15] .",
+        "references": {
+          "10": {
+            "1": "Metamaterials provide a freedom of design in manipulating electromagnetic fields.",
+            "2": "Electromagnetic fields can be redirected at will using the design freedom provided by metamaterials.",
+            "3": "A design strategy for redirecting electromagnetic fields is proposed.",
+            "4": "The electric displacement field D, magnetic induction field B, and Poynting vector S are conserved fields.",
+            "5": "The electric displacement field D, magnetic induction field B, and Poynting vector S are all displaced in a consistent manner.",
+            "6": "A simple illustration is given of the cloaking of a proscribed volume of space.",
+            "7": "The illustration shows a proscribed volume of space that excludes all electromagnetic fields completely.",
+            "8": "The work has relevance to exotic lens design.",
+            "9": "The work has relevance to the cloaking of objects from electromagnetic fields."
+          },
+          "11": {
+            "1": "An invisibility device should guide light around an object as if nothing were there.",
+            "2": "An invisibility device should guide light around an object regardless of where the light comes from.",
+            "3": "Ideal invisibility devices are impossible.",
+            "4": "The impossibility of ideal invisibility devices is due to the wave nature of light.",
+            "5": "This study develops a general recipe for the design of media that create perfect invisibility.",
+            "6": "The designed media create perfect invisibility within the accuracy of geometrical optics.",
+            "7": "The imperfections of invisibility can be made arbitrarily small to hide objects.",
+            "8": "The objects that can be hidden are much larger than the wavelength.",
+            "9": "With the use of modern metamaterials, practical demonstrations of invisibility devices may be possible.",
+            "10": "The method developed in this study can be applied to escape detection by other electromagnetic waves.",
+            "11": "The method developed in this study can be applied to escape detection by sound."
+          },
+          "12": {
+            "1": "A cloak of invisibility is in principle possible, according to a recently published theory.",
+            "2": "The cloak of invisibility is suggested to be possible over a narrow frequency band.",
+            "3": "The paper describes the first practical realization of a cloak of invisibility.",
+            "4": "In the demonstration, a copper cylinder was \"hidden\" inside a cloak.",
+            "5": "The cloak was constructed according to the previous theoretical prescription of the cloak of invisibility.",
+            "6": "The cloak was constructed with the use of artificially structured metamaterials.",
+            "7": "The metamaterials were designed for operation over a band of microwave frequencies.",
+            "8": "The cloak decreased scattering from the hidden object.",
+            "9": "The cloak reduced the shadow of the hidden object.",
+            "10": "The combined effect of the cloak and the object began to resemble empty space."
+          },
+          "9": {
+            "1": "The sharpness of the image produced by a conventional lens is always limited by the wavelength of light.",
+            "2": "A slab of negative refractive index material is an unconventional alternative to a lens.",
+            "3": "A slab of negative refractive index material has the power to focus all Fourier components of a 2D image.",
+            "4": "A slab of negative refractive index material can focus Fourier components that do not propagate in a radiative manner.",
+            "5": "\"Superlenses\" can be realized in the microwave band with current technology.",
+            "6": "Simulations show that a version of the lens operating at the frequency of visible light can be realized in the form of a thin slab of silver.",
+            "7": "The optical version of the lens can resolve objects only a few nanometers across."
+          },
+          "13": [],
+          "14": {
+            "1": "Reflection of waves occurs at the interface between two different media.",
+            "2": "Refraction of waves occurs at the interface between two different media.",
+            "3": "Reflection and refraction of waves form the basis of fabricating various wave components.",
+            "4": "Optical lenses are an example of wave components fabricated based on reflection and refraction of waves.",
+            "5": "Classical refraction is now referred to as positive refraction.",
+            "6": "Positive refraction causes the transmitted wave to appear on the opposite side of the interface normal compared to the incident wave.",
+            "7": "Negative refraction results in the transmitted wave emerging on the same side of the interface normal.",
+            "8": "Negative refraction has been observed in artificial materials following its theoretical prediction.",
+            "9": "Negative refraction has stimulated many applications including super-resolution imaging.",
+            "10": "Reflection is generally inevitable during the refraction process.",
+            "11": "Reflection during the refraction process is often undesirable in designing wave functional devices.",
+            "12": "Negative refraction of topological surface waves has been observed in a Weyl phononic crystal.",
+            "13": "A Weyl phononic crystal is an acoustic analogue of the recently discovered Weyl semimetals.",
+            "14": "Topological negative refraction occurs at one-dimensional edges separating different facets of the Weyl phononic crystal.",
+            "15": "Tailoring the surface terminations of the Weyl phononic crystal allows for the design of constant-frequency contours of surface acoustic waves.",
+            "16": "Constant-frequency contours of surface acoustic waves can be designed to produce negative refraction at certain interfaces in the Weyl phononic crystal.",
+            "17": "Positive refraction can be realized at different interfaces within the same Weyl phononic crystal sample.",
+            "18": "Unwanted reflection can be prevented in the Weyl phononic crystal.",
+            "19": "The prevention of unwanted reflection is due to the open nature of the constant-frequency contours in the Weyl phononic crystal.",
+            "20": "The open nature of the constant-frequency contours is a hallmark of the topologically protected surface states in Weyl crystals."
+          },
+          "15": {
+            "1": "Metamaterials are man-made composite media.",
+            "2": "Metamaterials are structured on a scale much smaller than a wavelength.",
+            "3": "Metamaterials offer surprising possibilities for engineering the propagation of waves.",
+            "4": "Superlensing is the ability to focus or image beyond the diffraction limit.",
+            "5": "Achieving superlensing is one of the most interesting possibilities offered by metamaterials.",
+            "6": "The ability to achieve superlensing originates from the left-handed behaviour of negative index metamaterials.",
+            "7": "Left-handed behaviour is the property of refracting waves negatively.",
+            "8": "Left-handed behaviour is typical of negative index metamaterials.",
+            "9": "Reaching the goal of superlensing requires the design of double negative metamaterials.",
+            "10": "Double negative metamaterials act simultaneously on permittivity and permeability in electromagnetics.",
+            "11": "Double negative metamaterials act simultaneously on density and compressibility in acoustics.",
+            "12": "Designing double negative metamaterials generally implies the use of two different kinds of building blocks.",
+            "13": "Designing double negative metamaterials generally implies the use of specific particles presenting multiple overlapping resonances.",
+            "14": "The requirement for double negative metamaterials limits their applicability.",
+            "15": "The requirement for double negative metamaterials has hampered demonstrations of subwavelength focusing using left-handed acoustic metamaterials.",
+            "16": "Strict conditions for using double negative metamaterials can be largely relaxed by relying on media consisting of only one type of single resonant unit cell.",
+            "17": "Judiciously breaking the symmetry of a single negative metamaterial can turn it into a double negative metamaterial.",
+            "18": "A simple yet general semi-analytical model shows how breaking symmetry of single negative metamaterials leads to double negative properties.",
+            "19": "The transformation of a single negative metamaterial into a double negative one occurs because of multiple scattering of waves off the metamaterial resonant elements.",
+            "20": "Multiple scattering of waves is often disregarded in metamaterials due to their subwavelength patterning.",
+            "21": "The approach of using single negative metamaterials is applied to acoustics.",
+            "22": "Numerical simulations verify that the approach allows realization of negative index acoustic metamaterials based on Helmholtz resonators only.",
+            "23": "The operation of a negative index acoustic superlens is demonstrated.",
+            "24": "The negative index acoustic superlens achieves subwavelength focusing.",
+            "25": "The negative index acoustic superlens achieves imaging with spot width 7 times better than the diffraction limit.",
+            "26": "The negative index acoustic superlens achieves imaging with resolution 3.5 times better than the diffraction limit.",
+            "27": "The findings have profound implications for the physics of metamaterials.",
+            "28": "The findings highlight the role of the subwavelength crystalline structure of metamaterials.",
+            "29": "The findings enter the realm of metamaterial crystals.",
+            "30": "The findings widen the scope of possibilities for designing composite media with novel properties.",
+            "31": "The design of composite media with novel properties is made simpler than previously possible."
+          }
+        },
+        "viewpoints": [
+          "Negative refraction entails possibilities of transformative applications, including cloaking.",
+          "Negative refraction entails possibilities of transformative applications, including superlensing.",
+          "Negative refraction has gained considerable attention in elastic waves.",
+          "Negative refraction has gained considerable attention in acoustic waves."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Metamaterials, synthetic man-made media, were developed to overcome limitations of natural materials, with these unconventional refraction phenomena serving as a key driving force behind their advancement.",
+        "references": {},
+        "viewpoints": [
+          "Metamaterials are synthetic man-made media.",
+          "Metamaterials were developed to overcome limitations of natural materials.",
+          "Unconventional refraction phenomena serve as a key driving force behind the advancement of metamaterials."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Despite the significant interest in negative refraction, intrinsic non-radiative damping and ever-present fabrication imperfections of resonators in metamaterials result in significant losses at optical frequencies [16] , [17] .",
+        "references": {
+          "16": [],
+          "17": []
+        },
+        "viewpoints": [
+          "There is significant interest in negative refraction.",
+          "Intrinsic non-radiative damping in metamaterials results in significant losses at optical frequencies.",
+          "Fabrication imperfections of resonators in metamaterials result in significant losses at optical frequencies."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Similarly, negative refraction in 3D photonic crystals [18] , [19] is constrained by the refractive indices of their constituent dielectrics, is sensitive to imperfections, and operates within a narrow range of incidence angles with limited subwavelength resolution due to the requirement of wavelength-scale periodicity.",
+        "references": {
+          "18": {
+            "1": "Super resolution can be achieved while imaging with a flat lens consisting of a phononic crystal exhibiting negative refraction.",
+            "2": "Super resolution can be achieved experimentally while imaging with a flat lens consisting of a phononic crystal exhibiting negative refraction.",
+            "3": "Super resolution can be achieved theoretically while imaging with a flat lens consisting of a phononic crystal exhibiting negative refraction.",
+            "4": "The phenomenon of achieving super resolution with a flat lens consisting of a phononic crystal is related to the coupling between the incident evanescent waves and a bound slab mode of the phononic crystal lens.",
+            "5": "Coupling between the incident evanescent waves and a bound slab mode of the phononic crystal lens leads to amplification of evanescent waves by the slab mode.",
+            "6": "Super resolution is only observed when the source is located very near to the lens.",
+            "7": "The observation of super resolution is very sensitive to the location of the source parallel to the lens surface.",
+            "8": "The observation of super resolution is very sensitive to site disorder in the phononic crystal lattice."
+          },
+          "19": {
+            "1": "Light propagation in weakly modulated photonic crystals is basically similar to propagation in a diffraction grating.",
+            "2": "In weakly modulated photonic crystals, conventional refractive index loses its meaning.",
+            "3": "Light propagation in strongly modulated 2D/3D photonic crystals becomes refractionlike in the vicinity of the photonic bandgap.",
+            "4": "Strongly modulated 2D/3D photonic crystals behave as a material having an effective refractive index.",
+            "5": "The effective refractive index of strongly modulated 2D/3D photonic crystals is controllable by the band structure.",
+            "6": "The situation of having an effective refractive index controllable by the band structure is analogous to the effective-mass approximation in electron-band theory.",
+            "7": "Negatively refractive material can be realized by utilizing the phenomenon of having an effective refractive index controllable by the band structure.",
+            "8": "Negatively refractive material has interesting optical properties such as mirror-image refraction."
+          }
+        },
+        "viewpoints": [
+          "Negative refraction in 3D photonic crystals is constrained by the refractive indices of their constituent dielectrics.",
+          "Negative refraction in 3D photonic crystals is sensitive to imperfections.",
+          "Negative refraction in 3D photonic crystals operates within a narrow range of incidence angles.",
+          "Negative refraction in 3D photonic crystals has limited subwavelength resolution due to the requirement of wavelength-scale periodicity."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Consequently, a practical application of negative refraction of light has yet to be demonstrated.",
+        "references": {},
+        "viewpoints": [
+          "A practical application of negative refraction of light has yet to be demonstrated."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Here we show that negative refraction of light can be obtained in atomic media without the use of artificially fabricated resonators.",
+        "references": {},
+        "viewpoints": [
+          "Negative refraction of light can be obtained in atomic media.",
+          "Negative refraction of light can be obtained without the use of artificially fabricated resonators."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "This is made possible by harnessing and utilising cooperative, non-local atom responses that arise from strong light-mediated interactions at high densities.",
+        "references": {},
+        "viewpoints": [
+          "Negative refraction of light in atomic media is made possible by harnessing cooperative, non-local atom responses.",
+          "Negative refraction of light in atomic media is made possible by utilising cooperative, non-local atom responses.",
+          "Cooperative, non-local atom responses arise from strong light-mediated interactions at high densities."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "We achieve this controlled response by considering subwavelength atomic arrays [20] with unit filling, which can be experimentally realised in system sizes up to tens of wavelengths [21] .",
+        "references": {
+          "20": {
+            "1": "Atomic planar arrays are a novel emerging quantum-optical many-body system.",
+            "2": "In atomic planar arrays, light mediates strong interactions between atoms.",
+            "3": "The regular lattice structure of atomic planar arrays provides cooperatively enhanced light-matter coupling.",
+            "4": "The regular lattice structure of atomic planar arrays allows for increased control of light-matter interactions.",
+            "5": "The regular lattice structure of atomic planar arrays allows for harnessing of light-matter interactions.",
+            "6": "In subwavelength arrays, coherent scattering of incident light beams can be highly collimated in the forward and backward direction.",
+            "7": "In subwavelength arrays, coherent scattering of incident light beams resembles one-dimensional light propagation.",
+            "8": "Subwavelength arrays do not require waveguides, fibers, or resonators to achieve one-dimensional light propagation.",
+            "9": "Atomic planar arrays share features with fabricated metasurfaces.",
+            "10": "Fabricated metasurfaces are formed by thin nanostructured films.",
+            "11": "Thin nanostructured films have shown great promise in manipulating classical light.",
+            "12": "Thin nanostructured films have shown great promise in structuring classical light.",
+            "13": "The paper describes theoretical methods commonly employed to analyze the cooperative responses of atomic arrays.",
+            "14": "The paper explores some recent developments in atomic planar arrays.",
+            "15": "The paper explores potential future applications of planar arrays as versatile quantum interfaces between light and matter."
+          },
+          "21": {
+            "1": "The fermionic Hubbard model describes a wide range of physical phenomena resulting from strong electron–electron correlations.",
+            "2": "The fermionic Hubbard model includes conjectured mechanisms for unconventional superconductivity.",
+            "3": "Resolving the low-temperature physics of the fermionic Hubbard model is challenging theoretically.",
+            "4": "Resolving the low-temperature physics of the fermionic Hubbard model is challenging numerically.",
+            "5": "Ultracold fermions in optical lattices provide a clean and well-controlled platform.",
+            "6": "Ultracold fermions in optical lattices offer a path to simulate the fermionic Hubbard model.",
+            "7": "Doping the antiferromagnetic ground state of a fermionic Hubbard model simulator at half-filling is expected to yield various exotic phases.",
+            "8": "Doping the antiferromagnetic ground state of a fermionic Hubbard model simulator at half-filling is expected to yield stripe order.",
+            "9": "Doping the antiferromagnetic ground state of a fermionic Hubbard model simulator at half-filling is expected to yield a pseudogap.",
+            "10": "Doping the antiferromagnetic ground state of a fermionic Hubbard model simulator at half-filling is expected to yield a d-wave superfluid.",
+            "11": "Doping the antiferromagnetic ground state of a fermionic Hubbard model simulator at half-filling offers valuable insights into high-temperature superconductivity.",
+            "12": "The observation of antiferromagnetic correlations over short distances has been obtained.",
+            "13": "The observation of antiferromagnetic correlations over extended distances has been obtained.",
+            "14": "The antiferromagnetic phase has yet to be realized.",
+            "15": "The realization of the antiferromagnetic phase requires sufficiently low temperatures.",
+            "16": "The realization of the antiferromagnetic phase requires a large and uniform quantum simulator.",
+            "17": "The observation of the antiferromagnetic phase transition in a three-dimensional fermionic Hubbard system is reported.",
+            "18": "The three-dimensional fermionic Hubbard system comprises lithium-6 atoms in a uniform optical lattice.",
+            "19": "The three-dimensional fermionic Hubbard system has approximately 800,000 sites.",
+            "20": "A sharp increase in the spin structure factor is observed when the interaction strength is finely tuned to approach its critical value.",
+            "21": "A sharp increase in the spin structure factor is observed when the temperature is finely tuned to approach its critical value.",
+            "22": "A sharp increase in the spin structure factor is observed when the doping concentration is finely tuned to approach its critical value.",
+            "23": "The observations can be well described by a power-law divergence.",
+            "24": "The power-law divergence has a critical exponent of 1.396.",
+            "25": "The critical exponent of 1.396 is from the Heisenberg universality class.",
+            "26": "At half-filling and with optimal interaction strength, the measured spin structure factor reaches 123(8).",
+            "27": "A measured spin structure factor of 123(8) signifies the establishment of an antiferromagnetic phase.",
+            "28": "The results provide opportunities for exploring the low-temperature phase diagram of the fermionic Hubbard model."
+          }
+        },
+        "viewpoints": [
+          "A controlled response is achieved by considering subwavelength atomic arrays with unit filling.",
+          "Subwavelength atomic arrays with unit filling can be experimentally realised in system sizes up to tens of wavelengths."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Cooperative optical interactions in atomic arrays have recently been confirmed in transmitted light, as evidenced by the spectral resonance narrowing below the fundamental quantum limit dictated by a single atom [22] and coherently manipulated optical switching [23] .",
+        "references": {
+          "22": {
+            "1": "Versatile interfaces with strong and tunable light–matter interactions are essential for quantum science.",
+            "2": "Strong and tunable light–matter interactions enable mapping of quantum properties between light and matter.",
+            "3": "Recent studies have proposed a method of controlling light–matter interactions.",
+            "4": "The method involves using the rich interplay of photon-mediated dipole–dipole interactions.",
+            "5": "The method involves structured subwavelength arrays of quantum emitters.",
+            "6": "A key aspect of the proposed approach is the cooperative enhancement of the light–matter coupling strength.",
+            "7": "Another key aspect of the proposed approach is the directional mirror reflection of the incoming light.",
+            "8": "This key aspect of the approach has not yet been experimentally demonstrated.",
+            "9": "The approach involves using an array of quantum emitters.",
+            "10": "The direct observation of the cooperative subradiant response of a two-dimensional square array of atoms in an optical lattice is reported.",
+            "11": "A spectral narrowing of the collective atomic response is observed.",
+            "12": "The spectral narrowing is well below the quantum-limited decay of individual atoms into free space.",
+            "13": "Spatially resolved spectroscopic measurements are used to demonstrate that the array acts as an efficient mirror.",
+            "14": "The efficient mirror is formed by a single monolayer of a few hundred atoms.",
+            "15": "The atom density in the array can be tuned to control the cooperative response.",
+            "16": "Changing the ordering of the particles in the array can control the cooperative response.",
+            "17": "The control of the cooperative response helps elucidate the effect of the interplay of spatial order and dipolar interactions.",
+            "18": "The interplay of spatial order and dipolar interactions affects the collective properties of the ensemble.",
+            "19": "Bloch oscillations of the atoms outside the array enable dynamic control of the reflectivity of the atomic mirror.",
+            "20": "The work demonstrates efficient optical metamaterial engineering based on structured ensembles of atoms.",
+            "21": "The work paves the way towards controlling many-body physics with light.",
+            "22": "The work paves the way towards controlling light–matter interfaces at the single-quantum level."
+          },
+          "23": {
+            "1": "Enhancing light–matter coupling at the level of single quanta is essential for applications in quantum science.",
+            "2": "The cooperative optical response of subwavelength atomic arrays opens new pathways for strong light–matter couplings.",
+            "3": "Subwavelength atomic arrays offering a cooperative optical response simultaneously offer access to multiple spatial modes of the light field.",
+            "4": "Efficient single-mode free-space coupling to subwavelength atomic arrays has been reported.",
+            "5": "Spatial control over the modes of outgoing light fields from subwavelength atomic arrays has remained elusive.",
+            "6": "Spatial control over the optical response of an atomically thin mirror formed by a subwavelength array of atoms in free space is demonstrated.",
+            "7": "A single controlled ancilla atom excited to a Rydberg state is used to achieve spatial control over the optical response.",
+            "8": "The switching behavior of the optical response is controlled by the admixture of a small Rydberg fraction to the atomic mirror.",
+            "9": "Strong dipolar Rydberg interactions with the ancilla control the switching behavior of the optical response.",
+            "10": "Coherent control of the transmission of the array is demonstrated by driving Rabi oscillations on the ancilla atom.",
+            "11": "Coherent control of the reflection of the array is demonstrated by driving Rabi oscillations on the ancilla atom.",
+            "12": "These results represent a step towards the realization of quantum coherent metasurfaces.",
+            "13": "These results represent a step towards the demonstration of controlled atom–photon entanglement.",
+            "14": "These results represent a step towards the deterministic engineering of quantum states of light."
+          }
+        },
+        "viewpoints": [
+          "Cooperative optical interactions in atomic arrays have recently been confirmed in transmitted light.",
+          "Spectral resonance narrowing below the fundamental quantum limit dictated by a single atom provides evidence for cooperative optical interactions in atomic arrays.",
+          "Coherently manipulated optical switching provides evidence for cooperative optical interactions in atomic arrays."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "In contrast to our approach, previous proposals for utilising atomic media to achieve negative refraction have relied on quantum interference effects in multilevel systems involving inherently weak magnetic dipole transitions for independently scattering atoms [24] , [25] .",
+        "references": {
+          "24": {
+            "1": "Negative refraction with minimal absorption can be obtained by means of quantum interference effects.",
+            "2": "Quantum interference effects similar to electromagnetically induced transparency (EIT) can be used to obtain negative refraction with minimal absorption.",
+            "3": "Coupling a magnetic dipole transition coherently with an electric dipole transition leads to electromagnetically induced chirality.",
+            "4": "Electromagnetically induced chirality can provide negative refraction without requiring negative permeability.",
+            "5": "Electromagnetically induced chirality can suppress absorption.",
+            "6": "The technique of using quantum interference effects allows negative refraction in the optical regime at densities where the magnetic susceptibility is still small.",
+            "7": "The technique allows negative refraction with refraction/absorption ratios that are orders of magnitude larger than those achievable previously.",
+            "8": "The refractive index can be fine-tuned using this technique.",
+            "9": "Fine-tuning of the refractive index is essential for practical realization of subdiffraction-limit imaging.",
+            "10": "Electromagnetically induced chirality should be applicable to a wide range of systems.",
+            "11": "Electromagnetically induced chirality, like electromagnetically induced transparency (EIT), should be applicable to a wide range of systems."
+          },
+          "25": {
+            "1": "A three-level system can be used to change the frequency-dependent magnetic permeability of an atomic gas.",
+            "2": "The change in magnetic permeability makes it significantly different from 1.",
+            "3": "The conditions for the three-level system scheme to change the frequency-dependent magnetic permeability of an atomic gas successfully are derived.",
+            "4": "The resulting macroscopic electrodynamics from using a three-level system in an atomic gas is briefly discussed.",
+            "5": "It may be possible to obtain left-handed electrodynamics for an atomic gas using three atomic levels."
+          }
+        },
+        "viewpoints": [
+          "Previous proposals for utilising atomic media to achieve negative refraction have relied on quantum interference effects in multilevel systems.",
+          "Previous proposals for utilising atomic media to achieve negative refraction have involved inherently weak magnetic dipole transitions for independently scattering atoms."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "These approaches necessitate, e.g., exceptionally high refractive indices at high densities, that currently surpass the limits of experimental capabilities [26] .",
+        "references": {
+          "26": []
+        },
+        "viewpoints": [
+          "Previous proposals for utilising atomic media to achieve negative refraction necessitate exceptionally high refractive indices at high densities.",
+          "The exceptionally high refractive indices at high densities surpass the limits of current experimental capabilities."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "We demonstrate the negative refraction of light through microscopic, atom-by-atom simulations that exactly incorporate all recurrent scattering processes between stationary atoms in the low light intensity limit [27] , [28] , and accurately describe experimental conditions [22] , [29] .",
+        "references": {
+          "27": {
+            "1": "Propagation of low-intensity light in a medium is studied within a one-dimensional (1D) model electrodynamics.",
+            "2": "The coupled theory for light and matter fields may be solved exactly by means of stochastic simulations.",
+            "3": "Stochastic simulations account for collective linewidths and line shifts.",
+            "4": "Stochastic simulations account for quantum statistical position correlations of the atoms.",
+            "5": "Stochastic simulations require synthesizing atomic positions with correlation functions appropriate for the given atomic sample type.",
+            "6": "Methods to simulate a Bose-Einstein condensate (BEC) are demonstrated.",
+            "7": "Methods to simulate a zero-temperature noninteracting Fermi-Dirac gas are demonstrated.",
+            "8": "Results of simulations of light propagation in quantum degenerate gases are compared with analytical density expansions.",
+            "9": "The analytical density expansions are obtained by adapting the approach of Morice, Castin, and Dalibard to the 1D electrodynamics.",
+            "10": "A Bose-Einstein condensate (BEC) exhibits an optical resonance that narrows with increasing atom density.",
+            "11": "The optical resonance of a Bose-Einstein condensate (BEC) stays somewhat below the atomic resonance frequency as collective effects set in with increasing atom density.",
+            "12": "The first two terms in the analytical density expansion are in excellent agreement with the numerical results for a condensate.",
+            "13": "Fermions display a similar narrowing and shift of the resonance with increasing density.",
+            "14": "In the limit of a very dilute gas, the linewidth for fermions is only half of the resonance linewidth of an isolated atom.",
+            "15": "The regular spacing between the atoms is attributed to the Pauli exclusion principle.",
+            "16": "The analytical density expansion successfully predicts the narrowing of the resonance.",
+            "17": "The analytical density expansion gives the next term in the density expansion of the optical response in semiquantitative agreement with numerical simulations."
+          },
+          "28": {
+            "1": "Equations are derived for the strongly coupled system of light and dense atomic ensembles.",
+            "2": "The formalism includes an arbitrary internal-level structure for the atoms.",
+            "3": "The formalism is not restricted to weak excitation of atoms by light.",
+            "4": "In the low-light-intensity limit for atoms with a single electronic ground state, the full quantum field-theoretical representation of the model can be solved exactly.",
+            "5": "The exact solution is achieved by means of classical stochastic electrodynamics simulations for stationary atoms that represent cold atomic ensembles.",
+            "6": "Simulations for the optical response of atoms in a quantum degenerate regime require synthesizing a stochastic ensemble of atomic positions.",
+            "7": "A synthesized stochastic ensemble of atomic positions generates the corresponding quantum statistical position correlations between the atoms.",
+            "8": "In the case of multiple ground levels, the classical simulations require approximations that neglect quantum fluctuations between the levels.",
+            "9": "At light intensities where saturation becomes important, the classical simulations require approximations that neglect quantum fluctuations between the levels.",
+            "10": "The model is extended to incorporate corrections due to quantum fluctuations that result from virtual scattering processes.",
+            "11": "In the low-light-intensity limit, simulations are illustrated in a system of atoms in a Mott-insulator state in a two-dimensional optical lattice.",
+            "12": "In a Mott-insulator state in a two-dimensional optical lattice, recurrent scattering of light induces strong interatomic correlations.",
+            "13": "Interatomic correlations result in collective many-atom subradiant and superradiant states.",
+            "14": "Interatomic correlations result in a strong dependence of the optical response on the spatial confinement within the lattice sites."
+          },
+          "22": {
+            "1": "Versatile interfaces with strong and tunable light–matter interactions are essential for quantum science.",
+            "2": "Strong and tunable light–matter interactions enable mapping of quantum properties between light and matter.",
+            "3": "Recent studies have proposed a method of controlling light–matter interactions.",
+            "4": "The method involves using the rich interplay of photon-mediated dipole–dipole interactions.",
+            "5": "The method involves structured subwavelength arrays of quantum emitters.",
+            "6": "A key aspect of the proposed approach is the cooperative enhancement of the light–matter coupling strength.",
+            "7": "Another key aspect of the proposed approach is the directional mirror reflection of the incoming light.",
+            "8": "This key aspect of the approach has not yet been experimentally demonstrated.",
+            "9": "The approach involves using an array of quantum emitters.",
+            "10": "The direct observation of the cooperative subradiant response of a two-dimensional square array of atoms in an optical lattice is reported.",
+            "11": "A spectral narrowing of the collective atomic response is observed.",
+            "12": "The spectral narrowing is well below the quantum-limited decay of individual atoms into free space.",
+            "13": "Spatially resolved spectroscopic measurements are used to demonstrate that the array acts as an efficient mirror.",
+            "14": "The efficient mirror is formed by a single monolayer of a few hundred atoms.",
+            "15": "The atom density in the array can be tuned to control the cooperative response.",
+            "16": "Changing the ordering of the particles in the array can control the cooperative response.",
+            "17": "The control of the cooperative response helps elucidate the effect of the interplay of spatial order and dipolar interactions.",
+            "18": "The interplay of spatial order and dipolar interactions affects the collective properties of the ensemble.",
+            "19": "Bloch oscillations of the atoms outside the array enable dynamic control of the reflectivity of the atomic mirror.",
+            "20": "The work demonstrates efficient optical metamaterial engineering based on structured ensembles of atoms.",
+            "21": "The work paves the way towards controlling many-body physics with light.",
+            "22": "The work paves the way towards controlling light–matter interfaces at the single-quantum level."
+          },
+          "29": []
+        },
+        "viewpoints": [
+          "Negative refraction of light is demonstrated through microscopic, atom-by-atom simulations.",
+          "The microscopic simulations exactly incorporate all recurrent scattering processes between stationary atoms in the low light intensity limit.",
+          "The microscopic simulations accurately describe experimental conditions."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Our analysis encompasses both the \\(J=0\\to {J}^{{\\prime} }=1\\) transition, typical of experimentally relevant alkaline-earth-metals and rare-earth metals (e.g., Sr, Yb), and a two-level transition found in cycling transitions for alkali-metal atoms, using the optical lattice spacing of Rb from light transmission experiments [22] , [23] .",
+        "references": {
+          "22": {
+            "1": "Versatile interfaces with strong and tunable light–matter interactions are essential for quantum science.",
+            "2": "Strong and tunable light–matter interactions enable mapping of quantum properties between light and matter.",
+            "3": "Recent studies have proposed a method of controlling light–matter interactions.",
+            "4": "The method involves using the rich interplay of photon-mediated dipole–dipole interactions.",
+            "5": "The method involves structured subwavelength arrays of quantum emitters.",
+            "6": "A key aspect of the proposed approach is the cooperative enhancement of the light–matter coupling strength.",
+            "7": "Another key aspect of the proposed approach is the directional mirror reflection of the incoming light.",
+            "8": "This key aspect of the approach has not yet been experimentally demonstrated.",
+            "9": "The approach involves using an array of quantum emitters.",
+            "10": "The direct observation of the cooperative subradiant response of a two-dimensional square array of atoms in an optical lattice is reported.",
+            "11": "A spectral narrowing of the collective atomic response is observed.",
+            "12": "The spectral narrowing is well below the quantum-limited decay of individual atoms into free space.",
+            "13": "Spatially resolved spectroscopic measurements are used to demonstrate that the array acts as an efficient mirror.",
+            "14": "The efficient mirror is formed by a single monolayer of a few hundred atoms.",
+            "15": "The atom density in the array can be tuned to control the cooperative response.",
+            "16": "Changing the ordering of the particles in the array can control the cooperative response.",
+            "17": "The control of the cooperative response helps elucidate the effect of the interplay of spatial order and dipolar interactions.",
+            "18": "The interplay of spatial order and dipolar interactions affects the collective properties of the ensemble.",
+            "19": "Bloch oscillations of the atoms outside the array enable dynamic control of the reflectivity of the atomic mirror.",
+            "20": "The work demonstrates efficient optical metamaterial engineering based on structured ensembles of atoms.",
+            "21": "The work paves the way towards controlling many-body physics with light.",
+            "22": "The work paves the way towards controlling light–matter interfaces at the single-quantum level."
+          },
+          "23": {
+            "1": "Enhancing light–matter coupling at the level of single quanta is essential for applications in quantum science.",
+            "2": "The cooperative optical response of subwavelength atomic arrays opens new pathways for strong light–matter couplings.",
+            "3": "Subwavelength atomic arrays offering a cooperative optical response simultaneously offer access to multiple spatial modes of the light field.",
+            "4": "Efficient single-mode free-space coupling to subwavelength atomic arrays has been reported.",
+            "5": "Spatial control over the modes of outgoing light fields from subwavelength atomic arrays has remained elusive.",
+            "6": "Spatial control over the optical response of an atomically thin mirror formed by a subwavelength array of atoms in free space is demonstrated.",
+            "7": "A single controlled ancilla atom excited to a Rydberg state is used to achieve spatial control over the optical response.",
+            "8": "The switching behavior of the optical response is controlled by the admixture of a small Rydberg fraction to the atomic mirror.",
+            "9": "Strong dipolar Rydberg interactions with the ancilla control the switching behavior of the optical response.",
+            "10": "Coherent control of the transmission of the array is demonstrated by driving Rabi oscillations on the ancilla atom.",
+            "11": "Coherent control of the reflection of the array is demonstrated by driving Rabi oscillations on the ancilla atom.",
+            "12": "These results represent a step towards the realization of quantum coherent metasurfaces.",
+            "13": "These results represent a step towards the demonstration of controlled atom–photon entanglement.",
+            "14": "These results represent a step towards the deterministic engineering of quantum states of light."
+          }
+        },
+        "viewpoints": [
+          "The analysis encompasses the \\(J=0\\to {J}^{{\\prime} }=1\\) transition typical of experimentally relevant alkaline-earth-metals and rare-earth metals, such as Sr and Yb.",
+          "The analysis encompasses a two-level transition found in cycling transitions for alkali-metal atoms.",
+          "The analysis uses the optical lattice spacing of Rb from light transmission experiments."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The simulations uncover a distinct deflection of propagating light beams in the opposite direction to what normally occurs.",
+        "references": {},
+        "viewpoints": [
+          "The simulations uncover a distinct deflection of propagating light beams in the opposite direction to what normally occurs."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "This enables us to extract from microscopic simulations the negative value of refractive index.",
+        "references": {},
+        "viewpoints": [
+          "The distinct deflection of propagating light beams enables the extraction of the negative value of refractive index from microscopic simulations."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "We demonstrate high-transmission negative refraction that is resilient to lattice imperfections, such as missing atoms and position uncertainty, over a range of laser frequencies, incident angles, and lattice constants by modelling 3D atom arrays as stacked infinite 2D planar layers when in each layer the scattering problem is represented in momentum space.",
+        "references": {},
+        "viewpoints": [
+          "High-transmission negative refraction is demonstrated.",
+          "The demonstrated high-transmission negative refraction is resilient to lattice imperfections such as missing atoms and position uncertainty.",
+          "The demonstrated high-transmission negative refraction is resilient over a range of laser frequencies, incident angles, and lattice constants.",
+          "High-transmission negative refraction is achieved by modelling 3D atom arrays as stacked infinite 2D planar layers.",
+          "In each layer of the model, the scattering problem is represented in momentum space."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Our findings, confirmed for finite-sized arrays in a few-layer scenario through large-scale simulations, reveal that such refraction aligns with the simple phenomenology of transverse Bloch band collective resonances.",
+        "references": {},
+        "viewpoints": [
+          "Our findings are confirmed for finite-sized arrays in a few-layer scenario through large-scale simulations.",
+          "The findings reveal that such refraction aligns with the simple phenomenology of transverse Bloch band collective resonances."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Notably, negative refraction can be realised by engineering and exciting such resonance bands whose in-plane group velocities are antiparallel to the excitation quasimomenta—which are a common occurrence in moderately subwavelength arrays.",
+        "references": {},
+        "viewpoints": [
+          "Negative refraction can be realised by engineering and exciting resonance bands whose in-plane group velocities are antiparallel to the excitation quasimomenta.",
+          "In-plane group velocities antiparallel to the excitation quasimomenta are a common occurrence in moderately subwavelength arrays."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Intriguingly, the effective refractive index can be significantly enhanced through coupling with more subradiant excitations.",
+        "references": {},
+        "viewpoints": [
+          "The effective refractive index can be significantly enhanced through coupling with more subradiant excitations."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56250-w_with_abstracts",
+    "base_id": "s41467-025-56250-w",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56250-w_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

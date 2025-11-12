@@ -1,0 +1,701 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Training and inference are two key processes in machine learning [1] , [2] . During training, synaptic devices need to adjust weights dynamically to generate a large number of resistive states. While, during inference, non-volatile storage of these weights is required to efficiently perform matrix multiplication [3] , [4] , [5] . Unlike machine learning which relies on electrical or optical signals alone, utilizing optical signals for training and converting them into non-volatile electrical signals for inference combines the strengths of both. This strategy leverages the wide bandwidth of optical signals and high-speed transmission capabilities, facilitating seamless integration with external circuits through the electrical output signals [6] , [7] , [8] , [9] . Non-volatile optoelectronic memories (NVOM) are the hardware foundation for this strategy, and they are expected to modulate a large number of non-volatile resistive states using ultra-short and ultra-dim light pulses, ensuring high accuracy, fast computing speed, and low energy consumption. Meanwhile, each resistive state should not decay after the removal of the light pulse. Floating-gate transistor (FGT) is an ideal device structure for NVOM [10] , [11] . Two-dimensional (2D) van der Waals (vdW) layered materials, with no surface dangling bonds, can reduce surface state generation, prevent carrier scattering, and thus enable fast device response, providing material base for FGTs [12] , [13] , [14] . However, 2D materials are usually used as channels or floating gates in FGTs to store carriers [15] , [16] , [17] . In this case, the synaptic weights could not be modulated through light without gate voltage assistance. The additional gate electrode poses challenges for large-scale integration and leads to increased electrical energy consumption and slow response speed [18] . Moreover, the device suffers from limited number of resistive states, which makes it difficult to construct neural networks with high training accuracy [19] . To solve these challenges, we propose using 2D photoconductive material as photosensitive control gate, instead of the commonly used metal control gate, to construct FGT. In this device, light plays a similar role to the gate voltage in traditional FGTs, and thus we call this device optical FGT (O-FGT). Besides excellent photoconductive properties, the 2D photoconductive material used in O-FGT should have low exciton binding energy ( E B ) and long exciton lifetime ( τ 0 ) [20] , [21] . The low E B and long τ 0 allow the separation of excitons by the electric potential difference generated inside photosensitive control gate without the assistance of additional gate voltage, and further writing into or erasing out of the floating gate layer. Unfortunately, most 2D materials have poor photoconductivity [22] , [23] . Although 2D Pb-based and Bi-based halide perovskites have excellent photoconductivity, the large E B and short τ 0 significantly impede effective exciton separation and transport [24] , [25] . Here, we synthesize a dielectric 2D photoconductive material, (NH 4 )BiI 3 , which has high density of states (DOS), low E B , and long τ 0 simultaneously. The O-FGT constructed with (NH 4 )BiI 3 as photosensitive control gate exhibits adjustable synaptic weights using light without the assistance of gate voltage and achieves non-volatile storage, showing no current decay after the removal of the light pulse, simultaneously meeting the demands of both training and inference processes. Moreover, it shows ultra-low training energy consumption (~5.25 fJ) to generate a non-volatile state and the largest resistive state numbers (up to 360) among the known non-volatile optoelectronic memories. An artificial neural network (ANN) is implemented by the on-chip trained weights of one-transistors-one-memory (1T1M) device array and achieves ~99% accuracy in nonlinear localization tasks. Moreover, the device array shows comparable performance of Graphics Processing Unit (GPU) in YOLOv8 while greatly reducing energy consumption.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Training and inference are two key processes in machine learning [1], [2].",
+        "references": {
+          "1": {
+            "1": "A striking difference between brain-inspired neuromorphic processors and current von Neumann processor architectures is in the organization of memory and processing.",
+            "2": "Information and communication technologies address the need for increased computational power by increasing the cores within a digital processor.",
+            "3": "Neuromorphic engineers and scientists can complement the need for increased computational power by building processor architectures where memory is distributed with the processing.",
+            "4": "The paper presents a survey of brain-inspired processor architectures.",
+            "5": "The brain-inspired processor architectures surveyed support models of cortical networks.",
+            "6": "The brain-inspired processor architectures surveyed support models of deep neural networks.",
+            "7": "The architectures range from serial clocked implementations of multineuron systems to massively parallel asynchronous ones.",
+            "8": "The architectures range from purely digital systems to mixed analog/digital systems.",
+            "9": "The mixed analog/digital systems implement more biological-like models of neurons and synapses.",
+            "10": "The mixed analog/digital systems include a suite of adaptation and learning mechanisms analogous to those found in biological nervous systems.",
+            "11": "The paper describes the advantages of the different approaches being pursued for building artificial neural processing systems.",
+            "12": "The paper presents the challenges that need to be addressed for building artificial neural processing systems that can display the richness of behaviors seen in biological systems."
+          },
+          "2": {
+            "1": "Causal inference has recently attracted substantial attention in the machine learning community.",
+            "2": "Causal inference has recently attracted substantial attention in the artificial intelligence community.",
+            "3": "Causal inference is usually positioned as a distinct strand of research.",
+            "4": "Causal inference can broaden the scope of machine learning from predictive modelling to intervention.",
+            "5": "Causal inference can broaden the scope of machine learning from predictive modelling to decision-making.",
+            "6": "Ideas from causality can be used to improve predictive modelling in machine learning if predictive stability is important.",
+            "7": "Ideas from causality can be used to improve predictive modelling in machine learning if explainability is important.",
+            "8": "Ideas from causality can be used to improve predictive modelling in machine learning if fairness is important.",
+            "9": "Stable learning is proposed as a source of common ground between the tradition of precise modelling in causal inference and black-box approaches from machine learning.",
+            "10": "Stable learning is developed to bridge the gap between the tradition of precise modelling in causal inference and black-box approaches from machine learning.",
+            "11": "There is a source of risk for machine learning models that this Perspective clarifies.",
+            "12": "This Perspective discusses the benefits of bringing causality into learning.",
+            "13": "The fundamental problems addressed by stable learning are identified.",
+            "14": "The latest progress from causal inference perspectives is identified.",
+            "15": "The latest progress from learning perspectives is identified.",
+            "16": "Relationships with explainability problems are discussed.",
+            "17": "Relationships with fairness problems are discussed."
+          }
+        },
+        "viewpoints": [
+          "Training is a key process in machine learning.",
+          "Inference is a key process in machine learning."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "During training, synaptic devices need to adjust weights dynamically to generate a large number of resistive states.",
+        "references": {},
+        "viewpoints": [
+          "During training, synaptic devices need to adjust weights dynamically.",
+          "Dynamic weight adjustment during training leads to the generation of a large number of resistive states."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "While, during inference, non-volatile storage of these weights is required to efficiently perform matrix multiplication [3], [4], [5].",
+        "references": {
+          "3": {
+            "1": "Neural-network training can be slow due to the transfer of the weight data between conventional digital memory chips and processor chips.",
+            "2": "Neural-network training can be energy intensive due to the transfer of the weight data between conventional digital memory chips and processor chips.",
+            "3": "Analogue non-volatile memory can accelerate the backpropagation neural-network training algorithm.",
+            "4": "Analogue non-volatile memory accelerates backpropagation by performing parallelized multiply–accumulate operations in the analogue domain.",
+            "5": "Multiply–accumulate operations in the analogue domain occur at the location of the weight data.",
+            "6": "The classification accuracies of in situ training using non-volatile-memory hardware have generally been less than those of software-based training.",
+            "7": "The lower classification accuracies of in situ training are due to insufficient dynamic range.",
+            "8": "The lower classification accuracies of in situ training are due to excessive weight-update asymmetry.",
+            "9": "Mixed hardware–software neural-network implementations are demonstrated that involve up to 204,900 synapses.",
+            "10": "These implementations combine long-term storage in phase-change memory.",
+            "11": "These implementations involve near-linear updates of volatile capacitors.",
+            "12": "These implementations involve weight-data transfer with 'polarity inversion' to cancel out inherent device-to-device variations.",
+            "13": "Generalization accuracies on previously unseen data are achieved that are equivalent to those of software-based training.",
+            "14": "The achieved generalization accuracies were measured on commonly used machine-learning test datasets (MNIST, MNIST-backrand, CIFAR-10 and CIFAR-100).",
+            "15": "The computational energy efficiency of the implementation is 28,065 billion operations per second per watt.",
+            "16": "The throughput per area of the implementation is 3.6 trillion operations per second per square millimetre.",
+            "17": "The energy efficiency and throughput per area of the implementation exceed those of today's graphical processing units by two orders of magnitude.",
+            "18": "The work provides a path towards the development of hardware accelerators that are fast and energy efficient.",
+            "19": "The developed hardware accelerators are particularly efficient on fully connected neural-network layers."
+          },
+          "4": {
+            "1": "The growing computational demand in artificial intelligence requires hardware solutions capable of in situ machine learning.",
+            "2": "In situ machine learning involves both training and inference being performed by edge computation.",
+            "3": "Extremely energy-efficient architecture is necessary for in situ machine learning, with examples including in-memory computing.",
+            "4": "Memory hardware with tunable properties is required to simultaneously meet the demand for training and inference in in situ machine learning.",
+            "5": "A duplex device structure is reported, based on a ferroelectric field-effect transistor and an atomically thin MoS₂ channel.",
+            "6": "A universal in-memory computing architecture is realized for in situ learning using the duplex device structure.",
+            "7": "The tunability of the ferroelectric energy landscape is exploited in the duplex building block.",
+            "8": "The duplex building block demonstrates excellent performance in endurance, with a value greater than 10¹³.",
+            "9": "The duplex building block demonstrates excellent performance in retention, with a duration greater than 10 years.",
+            "10": "The duplex building block demonstrates excellent performance in speed, with a time of 4.8 ns.",
+            "11": "The duplex building block demonstrates excellent performance in energy consumption, with a consumption of 22.7 fJ bit⁻¹ μm⁻².",
+            "12": "A hardware neural network was implemented using arrays of two-transistors-one-duplex ferroelectric field-effect transistor cells.",
+            "13": "The hardware neural network achieved 99.86% accuracy in a nonlinear localization task with in situ trained weights.",
+            "14": "Simulations indicate that the proposed device architecture could achieve the same level of performance as a graphics processing unit.",
+            "15": "The proposed device architecture could achieve notably improved energy efficiency compared to a graphics processing unit.",
+            "16": "The device core can be combined with silicon circuitry through three-dimensional heterogeneous integration.",
+            "17": "Three-dimensional heterogeneous integration can provide a hardware solution towards general edge intelligence."
+          },
+          "5": {
+            "1": "Memristor-enabled neuromorphic computing systems provide a fast approach to training neural networks.",
+            "2": "Memristor-enabled neuromorphic computing systems provide an energy-efficient approach to training neural networks.",
+            "3": "Convolutional neural networks (CNNs) are one of the most important models for image recognition.",
+            "4": "Convolutional neural networks have not yet been fully hardware-implemented using memristor crossbars.",
+            "5": "Memristor crossbars are cross-point arrays with a memristor device at each intersection.",
+            "6": "Achieving software-comparable results with memristor-based systems is highly challenging.",
+            "7": "The challenge in achieving software-comparable results is due to poor yield, large variation, and other non-ideal characteristics of devices.",
+            "8": "High-yield, high-performance, and uniform memristor crossbar arrays have been fabricated for the implementation of CNNs.",
+            "9": "The memristor crossbar arrays integrate eight 2,048-cell memristor arrays to improve parallel-computing efficiency.",
+            "10": "An effective hybrid-training method is proposed to adapt to device imperfections.",
+            "11": "The hybrid-training method is proposed to improve the overall system performance.",
+            "12": "A five-layer memristor-based CNN was built to perform MNIST image recognition.",
+            "13": "The five-layer memristor-based CNN achieved a high accuracy of more than 96 percent.",
+            "14": "Parallel convolutions using different kernels with shared inputs were demonstrated in memristor arrays.",
+            "15": "Replication of multiple identical kernels in memristor arrays was demonstrated for processing different inputs in parallel.",
+            "16": "The memristor-based CNN neuromorphic system has an energy efficiency more than two orders of magnitude greater than that of state-of-the-art graphics-processing units.",
+            "17": "The memristor-based CNN neuromorphic system is shown to be scalable to larger networks, such as residual neural networks.",
+            "18": "The results are expected to enable a viable memristor-based non-von Neumann hardware solution for deep neural networks.",
+            "19": "The results are expected to enable a viable hardware solution for edge computing based on memristors."
+          }
+        },
+        "viewpoints": [
+          "During inference, non-volatile storage of these weights is required.",
+          "Non-volatile storage is necessary to efficiently perform matrix multiplication during inference."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Unlike machine learning which relies on electrical or optical signals alone, utilizing optical signals for training and converting them into non-volatile electrical signals for inference combines the strengths of both.",
+        "references": {},
+        "viewpoints": [
+          "Machine learning typically relies on electrical signals.",
+          "Machine learning typically relies on optical signals.",
+          "Utilizing optical signals for training and converting them into non-volatile electrical signals for inference combines the strengths of both signal types."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "This strategy leverages the wide bandwidth of optical signals and high-speed transmission capabilities, facilitating seamless integration with external circuits through the electrical output signals [6], [7], [8], [9].",
+        "references": {
+          "6": {
+            "1": "Optoelectronic logic gates (OELGs) are promising building blocks for next-generation logic circuits.",
+            "2": "Optoelectronic logic gates (OELGs) have potential applications in light detection and ranging.",
+            "3": "Optoelectronic logic gates (OELGs) have potential applications in machine vision.",
+            "4": "Optoelectronic logic gates (OELGs) have potential applications in real-time video analysis.",
+            "5": "On-chip OELGs operating at telecom wavelengths are highly desirable.",
+            "6": "On-chip OELGs at telecom wavelengths are desirable for integration with silicon-based optoelectronics.",
+            "7": "Current operations of OELGs are limited to linear logic functions.",
+            "8": "Current operations of OELGs are limited to the ultraviolet or visible range.",
+            "9": "High-performance OELGs for multiple logic functions are lacking.",
+            "10": "Three silicon waveguides integrated with black phosphorus are used for optoelectronic logic operations.",
+            "11": "Optoelectronic logic operations are conducted at 1.55 μm.",
+            "12": "Linear OELGs including AND, OR, NOT, NAND, and NOR are demonstrated.",
+            "13": "Nonlinear OELGs including XOR and XNOR are demonstrated.",
+            "14": "Optical inputs are programmed into the waveguides to demonstrate OELGs.",
+            "15": "Electronic signals are read out to demonstrate OELGs.",
+            "16": "The devices exhibit a responsivity as high as 0.35 A W^{−1}.",
+            "17": "The devices exhibit a 3 dB bandwidth of 230 MHz.",
+            "18": "A photovoltaic OR gate combined with a voltage-switchable AND gate enables two-layer composite logic computing.",
+            "19": "Two-layer composite logic computing is in the form (A + B)C.",
+            "20": "Symbol recognition is performed by these OELGs.",
+            "21": "Edge extraction is performed by these OELGs.",
+            "22": "Image fusion is performed by these OELGs.",
+            "23": "Encryption/decryption is performed by these OELGs.",
+            "24": "This work paves the way for the development of new optoelectronic logic computing circuits."
+          },
+          "7": {
+            "1": "Research in photonic computing has flourished.",
+            "2": "The proliferation of optoelectronic components on photonic integration platforms has contributed to the flourishing of photonic computing research.",
+            "3": "Photonic integrated circuits have enabled ultrafast artificial neural networks.",
+            "4": "Photonic integrated circuits provide a framework for a new class of information processing machines.",
+            "5": "Algorithms running on hardware utilizing photonic integrated circuits have the potential to address the growing demand for machine learning.",
+            "6": "Algorithms running on hardware utilizing photonic integrated circuits have the potential to address the growing demand for artificial intelligence.",
+            "7": "The growing demand for machine learning and artificial intelligence exists in areas such as medical diagnosis, telecommunications, and high-performance and scientific computing.",
+            "8": "The development of neuromorphic electronics has highlighted challenges in the domain of neuromorphic electronics.",
+            "9": "Challenges in the domain of neuromorphic electronics are particularly related to processor latency.",
+            "10": "Neuromorphic photonics offers sub-nanosecond latencies.",
+            "11": "Neuromorphic photonics provides a complementary opportunity to extend the domain of artificial intelligence.",
+            "12": "The paper reviews recent advances in integrated photonic neuromorphic systems.",
+            "13": "The paper discusses current challenges in the field of integrated photonic neuromorphic systems.",
+            "14": "The paper discusses future challenges in the field of integrated photonic neuromorphic systems.",
+            "15": "The paper outlines the advances in science and technology needed to meet current and future challenges in integrated photonic neuromorphic systems."
+          },
+          "8": {
+            "1": "The ITO/CeO₂₋ₓ/AlOᵧ/Al structure exhibits photo-induced electron detrapping, electrode-injection, and retrapping processes.",
+            "2": "The ITO/CeO₂₋ₓ/AlOᵧ/Al structure results in electrically erasable, multilevel, and persistent photoresponsive resistances in the broadband visible region.",
+            "3": "The demonstrated photoresponsive resistances allow for the integration of demodulating, arithmetic, and memory functions in the same physical space.",
+            "4": "The demonstrated photoresponsive resistances have been achieved in the present optoelectronic device.",
+            "5": "The optoelectronic device faces a challenge of slow speed.",
+            "6": "The slow speed of the optoelectronic device hinders its immediate implementation.",
+            "7": "The present finding demonstrates the possibility of using a photoresponsive device for future high-performance information storage applications.",
+            "8": "The present finding demonstrates the possibility of using a photoresponsive device for future high-performance computing applications.",
+            "9": "The present finding demonstrates the possibility of using a photoresponsive device for future high-performance communication applications."
+          },
+          "9": {
+            "1": "Convolutional neural networks are inspired by biological visual cortex systems.",
+            "2": "Convolutional neural networks are a powerful category of artificial neural networks.",
+            "3": "Convolutional neural networks can extract the hierarchical features of raw data.",
+            "4": "Convolutional neural networks provide greatly reduced parametric complexity.",
+            "5": "Convolutional neural networks enhance the accuracy of prediction.",
+            "6": "Convolutional neural networks are of great interest for machine learning tasks.",
+            "7": "Machine learning tasks of interest include computer vision.",
+            "8": "Machine learning tasks of interest include speech recognition.",
+            "9": "Machine learning tasks of interest include playing board games.",
+            "10": "Machine learning tasks of interest include medical diagnosis.",
+            "11": "Optical neural networks offer the promise of dramatically accelerating computing speed.",
+            "12": "Optical neural networks use the broad optical bandwidths available.",
+            "13": "A universal optical vector convolutional accelerator can operate at more than ten TOPS.",
+            "14": "TOPS stands for trillions (10¹²) of operations per second, or tera-ops per second.",
+            "15": "The universal optical vector convolutional accelerator generates convolutions of images with 250,000 pixels.",
+            "16": "Images with 250,000 pixels are sufficiently large for facial image recognition.",
+            "17": "The same hardware is used to sequentially form an optical convolutional neural network with ten output neurons.",
+            "18": "The optical convolutional neural network achieves successful recognition of handwritten digit images at 88 per cent accuracy.",
+            "19": "The results are based on simultaneously interleaving temporal dimensions.",
+            "20": "The results are based on simultaneously interleaving wavelength dimensions.",
+            "21": "The results are based on simultaneously interleaving spatial dimensions.",
+            "22": "The interleaving of dimensions is enabled by an integrated microcomb source.",
+            "23": "This approach is scalable to much more complex networks.",
+            "24": "This approach is trainable to much more complex networks.",
+            "25": "Complex networks are needed for demanding applications such as autonomous vehicles.",
+            "26": "Complex networks are needed for demanding applications such as real-time video recognition."
+          }
+        },
+        "viewpoints": [
+          "The strategy leverages the wide bandwidth of optical signals.",
+          "The strategy leverages the high-speed transmission capabilities of optical signals.",
+          "Facilitating seamless integration with external circuits is achieved through electrical output signals."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Non-volatile optoelectronic memories (NVOM) are the hardware foundation for this strategy, and they are expected to modulate a large number of non-volatile resistive states using ultra-short and ultra-dim light pulses, ensuring high accuracy, fast computing speed, and low energy consumption.",
+        "references": {},
+        "viewpoints": [
+          "Non-volatile optoelectronic memories (NVOM) are the hardware foundation for the strategy.",
+          "NVOMs are expected to modulate a large number of non-volatile resistive states using ultra-short and ultra-dim light pulses.",
+          "NVOMs ensure high accuracy.",
+          "NVOMs ensure fast computing speed.",
+          "NVOMs ensure low energy consumption."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Meanwhile, each resistive state should not decay after the removal of the light pulse.",
+        "references": {},
+        "viewpoints": [
+          "Each resistive state should not decay after the removal of the light pulse."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Floating-gate transistor (FGT) is an ideal device structure for NVOM [10], [11].",
+        "references": {
+          "10": {
+            "1": "Metal–oxide memristive integrated technologies for analogue neuromorphic computing have undergone notable developments in the past decade.",
+            "2": "Metal–oxide memristive integrated technologies for analogue neuromorphic computing are still not mature enough for very large-scale integration with CMOS processes.",
+            "3": "Non-volatile floating-gate synapse transistors are a more advanced technology embedded within CMOS processes compared to metal–oxide memristive technologies.",
+            "4": "The performance of non-volatile floating-gate synapse transistors as analogue resistive memories remains limited.",
+            "5": "A low-power, two-terminal floating-gate transistor is reported.",
+            "6": "The low-power, two-terminal floating-gate transistor is fabricated using standard single-poly technology.",
+            "7": "The low-power, two-terminal floating-gate transistor is fabricated in a commercial 180 nm CMOS process.",
+            "8": "The device is integrated with a readout transistor.",
+            "9": "The device can operate in an energy-efficient subthreshold memristive mode.",
+            "10": "The device is linearized for small-signal changes.",
+            "11": "The device has a two-orders-of-magnitude resistance dynamic range.",
+            "12": "The device can be precisely tuned using optimized switching voltages and times.",
+            "13": "The device can achieve 65 distinct resistive levels.",
+            "14": "The device can achieve ten-year analogue data retention.",
+            "15": "The feasibility of a selector-free integrated memristive array in basic neuromorphic applications is experimentally demonstrated.",
+            "16": "The basic neuromorphic applications include spike-time-dependent plasticity, vector-matrix multiplication, associative memory, and classification training."
+          },
+          "11": []
+        },
+        "viewpoints": [
+          "Floating-gate transistor (FGT) is an ideal device structure for NVOM."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Two-dimensional (2D) van der Waals (vdW) layered materials, with no surface dangling bonds, can reduce surface state generation, prevent carrier scattering, and thus enable fast device response, providing material base for FGTs [12], [13], [14].",
+        "references": {
+          "12": {
+            "1": "Rapid digital technology advancement has resulted in a tremendous increase in computing tasks.",
+            "2": "The increase in computing tasks imposes stringent energy efficiency requirements on next-generation computing.",
+            "3": "The increase in computing tasks imposes stringent area efficiency requirements on next-generation computing.",
+            "4": "In-memory computing has emerged as a potent technology for the implementation of matrix computing to meet the growing data-driven demand.",
+            "5": "In-memory computing has emerged as a potent technology for the implementation of logic computing to meet the growing data-driven demand.",
+            "6": "Transistor-based computing has emerged as a potent technology for the implementation of matrix computing to meet the growing data-driven demand.",
+            "7": "Transistor-based computing has emerged as a potent technology for the implementation of logic computing to meet the growing data-driven demand.",
+            "8": "New materials are urgently needed to complement the existing Si complementary metal-oxide-semiconductor technology to fulfil future computing requirements.",
+            "9": "New technologies must be developed to enable further diversification of electronics to fulfil future computing requirements.",
+            "10": "New technologies must be developed to enable further diversification of applications of electronics to fulfil future computing requirements.",
+            "11": "Two-dimensional materials have a rich variety of electronic properties.",
+            "12": "The abundance of electronic properties of two-dimensional materials endows them with the potential to enhance computing energy efficiency.",
+            "13": "Two-dimensional materials have the potential to enable continued device downscaling to a feature size below 5 nm.",
+            "14": "This Review discusses the opportunities of integrating two-dimensional materials with in-memory computing and transistor-based computing technologies from the perspective of matrix and logic computing.",
+            "15": "This Review discusses the progress of integrating two-dimensional materials with in-memory computing and transistor-based computing technologies from the perspective of matrix and logic computing.",
+            "16": "This Review discusses the challenges of integrating two-dimensional materials with in-memory computing and transistor-based computing technologies from the perspective of matrix and logic computing."
+          },
+          "13": {
+            "1": "Machine vision technology has advanced significantly in recent years.",
+            "2": "Machine vision technology is becoming an integral part of various intelligent systems.",
+            "3": "Machine vision technology is becoming an integral part of autonomous vehicles.",
+            "4": "Machine vision technology is becoming an integral part of robotics.",
+            "5": "Visual information is usually captured by a frame-based camera.",
+            "6": "Visual information is converted into a digital format.",
+            "7": "Visual information is processed afterwards using a machine-learning algorithm.",
+            "8": "An artificial neural network (ANN) is an example of a machine-learning algorithm used for processing visual information.",
+            "9": "The data passed through the entire signal chain is mostly redundant.",
+            "10": "The large amount of data passed through the entire signal chain results in low frame rates.",
+            "11": "The large amount of data passed through the entire signal chain results in high power consumption.",
+            "12": "Various visual data preprocessing techniques have been developed.",
+            "13": "The purpose of developing visual data preprocessing techniques is to increase the efficiency of subsequent signal processing in an artificial neural network (ANN).",
+            "14": "An image sensor can itself constitute an artificial neural network (ANN).",
+            "15": "An image sensor that constitutes an ANN can simultaneously sense and process optical images without latency.",
+            "16": "The device is based on a reconfigurable two-dimensional (2D) semiconductor photodiode array.",
+            "17": "The synaptic weights of the network are stored in a continuously tunable photoresponsivity matrix.",
+            "18": "The sensor is capable of both supervised learning.",
+            "19": "The sensor is capable of unsupervised learning.",
+            "20": "The sensor is trained to classify images optically projected onto the chip.",
+            "21": "The sensor is trained to encode images optically projected onto the chip.",
+            "22": "The classification and encoding of images by the sensor occur with a throughput of 20 million bins per second."
+          },
+          "14": {
+            "1": "The importance of applications based on machine learning is growing.",
+            "2": "The growing importance of machine learning applications is driving the need to develop dedicated, energy-efficient electronic hardware.",
+            "3": "Von Neumann architectures have separate processing and storage units.",
+            "4": "Brain-inspired in-memory computing uses the same basic device structure for logic operations and data storage.",
+            "5": "Using the same basic device structure for logic operations and data storage in in-memory computing promises to reduce the energy cost of data-centred computing substantially.",
+            "6": "There is ample research focused on exploring new device architectures.",
+            "7": "The engineering of material platforms suitable for new device designs remains a challenge.",
+            "8": "Two-dimensional materials, such as semiconducting molybdenum disulphide (MoS₂), could be promising candidates for material platforms for device designs.",
+            "9": "Semiconducting molybdenum disulphide (MoS₂) has exceptional electrical properties.",
+            "10": "Semiconducting molybdenum disulphide (MoS₂) has exceptional mechanical properties.",
+            "11": "The study explores large-area MoS₂ as an active channel material.",
+            "12": "The study focuses on developing logic-in-memory devices based on floating-gate field-effect transistors (FGFETs) using large-area MoS₂.",
+            "13": "The conductance of the FGFETs can be precisely tuned.",
+            "14": "The conductance of the FGFETs can be continuously tuned.",
+            "15": "The FGFETs can be used as building blocks for reconfigurable logic circuits.",
+            "16": "Logic operations can be directly performed using memory elements in reconfigurable logic circuits made from FGFETs.",
+            "17": "The study demonstrated a programmable NOR gate.",
+            "18": "The design of the programmable NOR gate can be simply extended to implement more complex programmable logic.",
+            "19": "The design can be extended to implement a functionally complete set of operations.",
+            "20": "The findings highlight the potential of atomically thin semiconductors for developing next-generation low-power electronics."
+          }
+        },
+        "viewpoints": [
+          "Two-dimensional (2D) van der Waals (vdW) layered materials have no surface dangling bonds.",
+          "2D vdW materials can reduce surface state generation.",
+          "2D vdW materials can prevent carrier scattering.",
+          "2D vdW materials enable fast device response.",
+          "2D vdW materials provide a material base for floating-gate transistors (FGTs)."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "However, 2D materials are usually used as channels or floating gates in FGTs to store carriers [15], [16], [17].",
+        "references": {
+          "15": {
+            "1": "The detection and recognition of moving objects is becoming increasingly important with the advent of the Internet of Things era.",
+            "2": "The current motion detection and recognition technology based on the complementary metal oxide semiconductor image sensors platform contains redundant sensing, transmission conversion, processing, and memory modules.",
+            "3": "The existing systems based on the complementary metal oxide semiconductor image sensors platform are bulky.",
+            "4": "The existing systems based on the complementary metal oxide semiconductor image sensors platform are inefficient in comparison to the human retina.",
+            "5": "Non-memory capable vision sensors have only been used for static targets until now.",
+            "6": "Non-memory capable vision sensors have not been used for motion detection and recognition until now.",
+            "7": "A retina-inspired two-dimensional heterostructure based retinomorphic hardware device with all-in-one perception capabilities for the detection and recognition of moving trolleys is presented.",
+            "8": "A retina-inspired two-dimensional heterostructure based retinomorphic hardware device with all-in-one memory capabilities for the detection and recognition of moving trolleys is presented.",
+            "9": "A retina-inspired two-dimensional heterostructure based retinomorphic hardware device with all-in-one computing capabilities for the detection and recognition of moving trolleys is presented.",
+            "10": "The proposed two-dimensional retinomorphic device senses an optical stimulus to generate progressively tuneable positive/negative photoresponses.",
+            "11": "The proposed two-dimensional retinomorphic device memorizes an optical stimulus.",
+            "12": "The proposed two-dimensional retinomorphic device combines memorized optical stimulus with interframe differencing computations.",
+            "13": "The proposed two-dimensional retinomorphic device achieves 100% separation detection of moving trichromatic trolleys without ghosting using interframe differencing computations.",
+            "14": "The detected motion images are fed into a conductance mapped neural network for trolley recognition.",
+            "15": "The conductance mapped neural network achieves fast trolley recognition in as few as four training epochs at 10% noise level.",
+            "16": "The conductance mapped neural network outperforms previous results from similar customized datasets.",
+            "17": "The prototype demonstration of a two-dimensional retinomorphic device with integrated perceptual memory provides the possibility of building compact, efficient motion detection and recognition hardware.",
+            "18": "The prototype demonstration of a two-dimensional retinomorphic device with integrated computation provides the possibility of building compact, efficient motion detection and recognition hardware."
+          },
+          "16": {
+            "1": "The charge storage ability of the charge-trapping layer limits the development of floating-gate nonvolatile memory.",
+            "2": "The retention ability of the charge-trapping layer limits the development of floating-gate nonvolatile memory.",
+            "3": "The transfer ability of the charge-trapping layer limits the development of floating-gate nonvolatile memory.",
+            "4": "The unique alternate inorganic/organic chain structure of an insulating 2D Ruddlesden-Popper perovskite (2D-RPP) layer allows it to function as an excellent charge-storage layer.",
+            "5": "The superior optical sensitivity of an insulating 2D Ruddlesden-Popper perovskite (2D-RPP) layer allows it to function as an excellent charge-storage layer.",
+            "6": "An insulating 2D Ruddlesden-Popper perovskite (2D-RPP) layer can function as a photosensitive layer.",
+            "7": "Optoelectronic memory composed of a MoS₂/hBN/2D-RPP (MBR) van der Waals heterostructure is demonstrated.",
+            "8": "The MBR device exhibits unique light-controlled charge-storage characteristics.",
+            "9": "The MBR device has a maximum memory window up to 92 V.",
+            "10": "The MBR device has a high on/off ratio of 10⁴.",
+            "11": "The MBR device has negligible degeneration over 10³ s.",
+            "12": "The MBR device supports more than 1000 program/erase cycles.",
+            "13": "The MBR device has a write speed of 500 µs.",
+            "14": "The MBR optoelectronic memory can be programmed in positive photoconductivity (PPC) mode, dependent on the initial states.",
+            "15": "The MBR optoelectronic memory can have up to 11 distinct resistance states in positive photoconductivity (PPC) mode.",
+            "16": "The MBR optoelectronic memory can be programmed in negative photoconductivity (NPC) mode, dependent on the initial states.",
+            "17": "The MBR optoelectronic memory can have up to 22 distinct resistance states in negative photoconductivity (NPC) mode.",
+            "18": "The optical program power for each bit is as low as 36 pJ for PPC.",
+            "19": "The optical program power for each bit is as low as 10 pJ for NPC.",
+            "20": "The results reveal the potential of 2D-RPP as a superior charge-storage medium in floating-gate memory.",
+            "21": "The results provide an effective strategy toward fast optical multi-bit storage.",
+            "22": "The results provide an effective strategy toward low-power optical multi-bit storage.",
+            "23": "The results provide an effective strategy toward stable optical multi-bit storage.",
+            "24": "The results provide an effective strategy toward neuromorphic computing."
+          },
+          "17": {
+            "1": "Neuromorphic event-based image sensors capture only the dynamic motion in a scene.",
+            "2": "Captured dynamic motion is transferred to computation units for motion recognition.",
+            "3": "The approach of transferring dynamic motion to computation units leads to time latency.",
+            "4": "The approach of transferring dynamic motion to computation units can be power consuming.",
+            "5": "Computational event-driven vision sensors capture dynamic motion.",
+            "6": "Computational event-driven vision sensors directly convert dynamic motion into programmable, sparse, and informative spiking signals.",
+            "7": "The sensors can be used to form a spiking neural network for motion recognition.",
+            "8": "Each individual vision sensor consists of two parallel photodiodes with opposite polarities.",
+            "9": "Each individual vision sensor has a temporal resolution of 5 μs.",
+            "10": "The sensors generate spiking signals with different amplitudes and polarities in response to changes in light intensity.",
+            "11": "The sensors generate spiking signals by electrically programming their individual photoresponsivity.",
+            "12": "The non-volatile and multilevel photoresponsivity of the vision sensors can emulate synaptic weights.",
+            "13": "The non-volatile and multilevel photoresponsivity of the vision sensors can be used to create an in-sensor spiking neural network.",
+            "14": "The computational event-driven vision sensor approach eliminates redundant data during the sensing process.",
+            "15": "The computational event-driven vision sensor approach eliminates the need for data transfer between sensors and computation units."
+          }
+        },
+        "viewpoints": [
+          "2D materials are usually used as channels in floating-gate transistors (FGTs).",
+          "2D materials are usually used as floating gates in FGTs to store carriers."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "In this case, the synaptic weights could not be modulated through light without gate voltage assistance.",
+        "references": {},
+        "viewpoints": [
+          "Synaptic weights could not be modulated through light without gate voltage assistance when 2D materials are used as channels or floating gates."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "The additional gate electrode poses challenges for large-scale integration and leads to increased electrical energy consumption and slow response speed [18].",
+        "references": {
+          "18": {
+            "1": "Optoelectronic memory is capturing growing attention.",
+            "2": "Optoelectronic memory integrates the function of sense and memory.",
+            "3": "Optoelectronic memory has multilevel storage ability.",
+            "4": "Tens of states have been reported in optoelectronic memories in the literature.",
+            "5": "Most optoelectronic memories have a deficiency of large programming voltage (>20 V).",
+            "6": "Most optoelectronic memories have a deficiency of high optical power density (>1 mW cm−2).",
+            "7": "Most optoelectronic memories have a deficiency of poor compatibility.",
+            "8": "Poor compatibility in most optoelectronic memories originates from an over-reliance on channel materials.",
+            "9": "The authors propose a new optoelectronic memory based on a photosensitive dielectric (PSD) architecture.",
+            "10": "Data writing is realized by using an optical pulse to switch on the photosensitive dielectric (PSD).",
+            "11": "Data erasing is realized by using an optical pulse to switch on the photosensitive dielectric (PSD).",
+            "12": "The unique design of the new optoelectronic memory enables it to work with a programming voltage as low as 4 V.",
+            "13": "The unique design of the new optoelectronic memory enables it to work with an optical power density as low as 160 µW cm−2.",
+            "14": "The new optoelectronic memory device may be extended to different kinds of transistors.",
+            "15": "The new optoelectronic memory device may be extended for specific applications.",
+            "16": "The authors' discovery offers a new direction for non-volatile optoelectronic memories.",
+            "17": "The new direction for non-volatile optoelectronic memories involves low energy consumption."
+          }
+        },
+        "viewpoints": [
+          "The additional gate electrode poses challenges for large-scale integration.",
+          "The additional gate electrode leads to increased electrical energy consumption.",
+          "The additional gate electrode leads to slow response speed."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Moreover, the device suffers from limited number of resistive states, which makes it difficult to construct neural networks with high training accuracy [19].",
+        "references": {
+          "19": {
+            "1": "The rapid development of artificial intelligence demands the rapid development of domain-specific hardware.",
+            "2": "Domain-specific hardware needs to be specifically designed for AI applications.",
+            "3": "Neuro-inspired computing chips integrate a range of features inspired by neurobiological systems.",
+            "4": "Neuro-inspired computing chips could provide an energy-efficient approach to AI computing workloads.",
+            "5": "This paper reviews the development of neuro-inspired computing chips.",
+            "6": "The review includes artificial neural network chips.",
+            "7": "The review includes spiking neural network chips.",
+            "8": "Four key metrics for benchmarking neuro-inspired computing chips are proposed: computing density, energy efficiency, computing accuracy, and on-chip learning capability.",
+            "9": "Co-design principles for neuro-inspired computing chips based on non-volatile memory are discussed.",
+            "10": "The discussion on co-design principles covers from the device to the algorithm level.",
+            "11": "A future electronic design automation tool chain is provided in this paper.",
+            "12": "A roadmap for the development of large-scale neuro-inspired computing chips is proposed in this paper."
+          }
+        },
+        "viewpoints": [
+          "The device suffers from a limited number of resistive states.",
+          "A limited number of resistive states makes it difficult to construct neural networks with high training accuracy."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "To solve these challenges, we propose using 2D photoconductive material as photosensitive control gate, instead of the commonly used metal control gate, to construct FGT.",
+        "references": {},
+        "viewpoints": [
+          "To solve these challenges, the authors propose using 2D photoconductive material as a photosensitive control gate to construct FGT.",
+          "The commonly used metal control gate is replaced by a 2D photoconductive material in the proposal."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "In this device, light plays a similar role to the gate voltage in traditional FGTs, and thus we call this device optical FGT (O-FGT).",
+        "references": {},
+        "viewpoints": [
+          "In this device, light plays a similar role to the gate voltage in traditional FGTs.",
+          "The device is called optical FGT (O-FGT) because light plays a role similar to gate voltage in traditional FGTs."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Besides excellent photoconductive properties, the 2D photoconductive material used in O-FGT should have low exciton binding energy (E B) and long exciton lifetime (τ 0) [20], [21].",
+        "references": {
+          "20": {
+            "1": "Dielectric screening reduces the strength of carrier scattering by point defects in semiconductors.",
+            "2": "Dielectric screening reduces the strength of carrier trapping by point defects in semiconductors.",
+            "3": "Halide perovskite solar materials are examples of semiconductors where dielectric screening reduces carrier scattering and trapping.",
+            "4": "Dielectric screening was rarely considered as a screen to find new electronic semiconductors.",
+            "5": "A material search study was performed using dielectric properties as a screen.",
+            "6": "The study aimed to identify potential electronic materials in the class of metal-pnictide ternary sulfosalts.",
+            "7": "The metal-pnictide ternary sulfosalts considered in the study contain either Bi or Sb.",
+            "8": "Metal-pnictide ternary sulfosalts are basically ionic.",
+            "9": "The ionic nature of these salts is due to the electronegativity difference between S and the metal elements.",
+            "10": "The ionic nature of these salts is due to the electronegativity difference between S and the pnictogen elements.",
+            "11": "Significant cross-gap hybridization is found between the S p-derived valence bands and pnictogen p-derived conduction bands in many metal-pnictide ternary sulfosalts.",
+            "12": "Cross-gap hybridization leads to enhanced Born effective charges in metal-pnictide ternary sulfosalts.",
+            "13": "Cross-gap hybridization leads to highly enhanced dielectric constants in several metal-pnictide ternary sulfosalts.",
+            "14": "A chemical rule for high dielectric constants is found in terms of the bond connectivity of the pnictogen–chalcogen part of the crystal structure.",
+            "15": "A series of compounds with low effective mass and high dielectric constant is found.",
+            "16": "These compounds suggest good performance as electronic materials.",
+            "17": "Several of these compounds are identified as potential thermoelectric compounds.",
+            "18": "Experimental optical data are reported for Sn–Sb–S samples.",
+            "19": "Solar conversion efficiency is reported for Sn–Sb–S samples.",
+            "20": "The reported results for Sn–Sb–S samples are in accord with predicted good performance.",
+            "21": "The results illustrate the utility of using dielectric properties as a screen for identifying complex semiconductors."
+          },
+          "21": {
+            "1": "The presence of undesirable defects in perovskite photovoltaics contributes to non-radiative losses.",
+            "2": "Non-radiative losses fundamentally impede the performance of perovskite photovoltaics.",
+            "3": "Numerous passivation strategies have been extensively reported to mitigate non-radiative losses in perovskite photovoltaics.",
+            "4": "A detailed understanding of the origins of losses within perovskite photovoltaic devices remains elusive.",
+            "5": "The defect capturing probability in perovskite is estimated by the capture cross-section.",
+            "6": "Decreasing the defect capturing probability is achieved by varying the dielectric response.",
+            "7": "Varying the dielectric response produces the dielectric screening effect in perovskite.",
+            "8": "The resulting perovskites show reduced surface recombination.",
+            "9": "The resulting perovskites show a weaker electron-phonon coupling.",
+            "10": "Reduced surface recombination, a weaker electron-phonon coupling, and the dielectric screening effect boost the power conversion efficiency of an inverted perovskite photovoltaic device to 22.3%.",
+            "11": "The inverted perovskite photovoltaic device has a high open-circuit voltage of 1.25 V.",
+            "12": "The inverted perovskite photovoltaic device has a low voltage deficit of 0.37 V.",
+            "13": "The bandgap of the inverted perovskite photovoltaic device is approximately 1.62 eV.",
+            "14": "The results provide an in-depth understanding of the carrier capture processes in perovskites.",
+            "15": "The results provide a promising pathway for realizing highly efficient devices via dielectric regulation."
+          }
+        },
+        "viewpoints": [
+          "The 2D photoconductive material used in O-FGT should have excellent photoconductive properties.",
+          "The 2D photoconductive material used in O-FGT should have low exciton binding energy (E B).",
+          "The 2D photoconductive material used in O-FGT should have a long exciton lifetime (τ 0)."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "The low E B and long τ 0 allow the separation of excitons by the electric potential difference generated inside photosensitive control gate without the assistance of additional gate voltage, and further writing into or erasing out of the floating gate layer.",
+        "references": {},
+        "viewpoints": [
+          "The low exciton binding energy (E B) and long exciton lifetime (τ 0) allow the separation of excitons by the electric potential difference generated inside the photosensitive control gate without the assistance of additional gate voltage.",
+          "The low E B and long τ 0 allow further writing into the floating gate layer.",
+          "The low E B and long τ 0 allow erasing out of the floating gate layer."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Unfortunately, most 2D materials have poor photoconductivity [22], [23].",
+        "references": {
+          "22": {
+            "1": "Two-dimensional electron gases (2DEG) have allowed important experimental discoveries in condensed-matter physics for decades.",
+            "2": "Two-dimensional electron gases (2DEG) have allowed important conceptual developments in condensed-matter physics for decades.",
+            "3": "Two-dimensional electron gases (2DEG) allow rich physical phenomena to be probed at the quantum level when combined with the unique electronic properties of two-dimensional crystals.",
+            "4": "A two-dimensional electron gas (2DEG) is created in black phosphorus, a recently added member of the two-dimensional atomic crystal family.",
+            "5": "The two-dimensional electron gas (2DEG) in black phosphorus is created using a gate electric field.",
+            "6": "The black phosphorus film hosting the two-dimensional electron gas (2DEG) is placed on a hexagonal boron nitride substrate.",
+            "7": "The high carrier mobility in the two-dimensional electron gas (2DEG) allows the observation of quantum oscillations.",
+            "8": "The temperature dependence of quantum oscillations in the two-dimensional electron gas (2DEG) yields crucial information about the system.",
+            "9": "The magnetic field dependence of quantum oscillations in the two-dimensional electron gas (2DEG) yields crucial information about the system.",
+            "10": "Crucial information about the system includes cyclotron mass and lifetime of its charge carriers.",
+            "11": "Black phosphorus possesses anisotropic energy bands with a tunable, direct bandgap.",
+            "12": "The combination of the results and the properties of black phosphorus distinguishes black phosphorus two-dimensional electron gas (2DEG) as a system with unique electronic properties.",
+            "13": "The combination of the results and the properties of black phosphorus distinguishes black phosphorus two-dimensional electron gas (2DEG) as a system with unique optoelectronic properties."
+          },
+          "23": {
+            "1": "The surface-to-volume ratio of quasi-two-dimensional materials is extremely high.",
+            "2": "Understanding the surface characteristics of quasi-two-dimensional materials is crucial for practically controlling the intrinsic properties of these materials.",
+            "3": "Understanding the surface characteristics of quasi-two-dimensional materials is crucial for fabricating p-type and n-type layered semiconductors.",
+            "4": "Van der Waals crystals are expected to have an inert surface.",
+            "5": "The expectation of an inert surface in Van der Waals crystals is due to the absence of dangling bonds.",
+            "6": "The surface of high-quality synthesized molybdenum disulfide (MoS₂) is a major n-doping source.",
+            "7": "The surface electron concentration of MoS₂ is nearly four orders of magnitude higher than the electron concentration of its inner bulk.",
+            "8": "Substantial thickness-dependent conductivity was observed in MoS₂ nanoflakes.",
+            "9": "The transfer length method suggested that current transport in MoS₂ follows a two-dimensional behavior.",
+            "10": "Current transport in MoS₂ does not follow the conventional three-dimensional mode.",
+            "11": "Scanning tunneling microscopy measurements confirmed the presence of surface electron accumulation in the layered material MoS₂.",
+            "12": "Angle-resolved photoemission spectroscopy measurements confirmed the presence of surface electron accumulation in the layered material MoS₂.",
+            "13": "The in situ-cleaved surface exhibited a nearly intrinsic state.",
+            "14": "The in situ-cleaved surface exhibited a state without electron accumulation."
+          }
+        },
+        "viewpoints": [
+          "Most 2D materials have poor photoconductivity."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Although 2D Pb-based and Bi-based halide perovskites have excellent photoconductivity, the large E B and short τ 0 significantly impede effective exciton separation and transport [24], [25].",
+        "references": {
+          "24": {
+            "1": "Quasi-two-dimensional perovskites have superior semiconducting properties.",
+            "2": "Quasi-two-dimensional perovskites have attracted extraordinary attention.",
+            "3": "Quasi-two-dimensional perovskites have emerged as one of the most promising materials for next-generation light-emitting diodes.",
+            "4": "The outstanding optical properties of quasi-two-dimensional perovskites originate from their structural characteristics.",
+            "5": "The inherent quantum-well structure of quasi-two-dimensional perovskites endows them with a large exciton binding energy.",
+            "6": "The large exciton binding energy is due to strong dielectric-confinement effects.",
+            "7": "The large exciton binding energy is due to strong quantum-confinement effects.",
+            "8": "Energy transfer among different n-value species in quasi-two-dimensional perovskites results in high photoluminescence quantum yields.",
+            "9": "High photoluminescence quantum yields are particularly achieved at low excitation intensities in quasi-two-dimensional perovskites.",
+            "10": "The review presents an overview of the inherent properties of quasi-two-dimensional perovskite materials.",
+            "11": "The review presents an overview of the energy transfer methodologies for thin films of quasi-two-dimensional perovskite materials.",
+            "12": "The review presents an overview of the spectral tunability methodologies for thin films of quasi-two-dimensional perovskite materials.",
+            "13": "The review presents an overview of the application of quasi-two-dimensional perovskite materials in high-performance LEDs.",
+            "14": "The review summarizes the challenges towards developing high-performance and stable quasi-two-dimensional perovskite light-emitting diodes.",
+            "15": "The review summarizes potential research directions towards developing high-performance and stable quasi-two-dimensional perovskite light-emitting diodes.",
+            "16": "The review provides a systematic summary for the community to deepen the understanding of quasi-two-dimensional perovskite materials.",
+            "17": "The review provides a timely summary for the community to deepen the understanding of resulting LED devices from quasi-two-dimensional perovskite materials."
+          },
+          "25": []
+        },
+        "viewpoints": [
+          "2D Pb-based and Bi-based halide perovskites have excellent photoconductivity.",
+          "The large exciton binding energy (E B) in 2D Pb-based and Bi-based halide perovskites significantly impedes effective exciton separation and transport.",
+          "The short exciton lifetime (τ 0) in 2D Pb-based and Bi-based halide perovskites significantly impedes effective exciton separation and transport."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Here, we synthesize a dielectric 2D photoconductive material, (NH 4)BiI 3, which has high density of states (DOS), low E B, and long τ 0 simultaneously.",
+        "references": {},
+        "viewpoints": [
+          "The authors synthesize a dielectric 2D photoconductive material, (NH 4)BiI 3.",
+          "(NH 4)BiI 3 has high density of states (DOS).",
+          "(NH 4)BiI 3 has low exciton binding energy (E B).",
+          "(NH 4)BiI 3 has long exciton lifetime (τ 0)."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "The O-FGT constructed with (NH 4)BiI 3 as photosensitive control gate exhibits adjustable synaptic weights using light without the assistance of gate voltage and achieves non-volatile storage, showing no current decay after the removal of the light pulse, simultaneously meeting the demands of both training and inference processes.",
+        "references": {},
+        "viewpoints": [
+          "The O-FGT constructed with (NH 4)BiI 3 as the photosensitive control gate exhibits adjustable synaptic weights using light without the assistance of gate voltage.",
+          "The O-FGT achieves non-volatile storage, showing no current decay after the removal of the light pulse.",
+          "The O-FGT simultaneously meets the demands of both training and inference processes."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Moreover, it shows ultra-low training energy consumption (~5.25 fJ) to generate a non-volatile state and the largest resistive state numbers (up to 360) among the known non-volatile optoelectronic memories.",
+        "references": {},
+        "viewpoints": [
+          "The O-FGT shows ultra-low training energy consumption (~5.25 fJ) to generate a non-volatile state.",
+          "The O-FGT has the largest resistive state numbers (up to 360) among the known non-volatile optoelectronic memories."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "An artificial neural network (ANN) is implemented by the on-chip trained weights of one-transistor-one-memory (1T1M) device array and achieves ~99% accuracy in nonlinear localization tasks.",
+        "references": {},
+        "viewpoints": [
+          "An artificial neural network (ANN) is implemented by the on-chip trained weights of one-transistor-one-memory (1T1M) device array.",
+          "The ANN achieves ~99% accuracy in nonlinear localization tasks."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Moreover, the device array shows comparable performance of Graphics Processing Unit (GPU) in YOLOv8 while greatly reducing energy consumption.",
+        "references": {},
+        "viewpoints": [
+          "The device array shows comparable performance to a Graphics Processing Unit (GPU) in YOLOv8.",
+          "The device array greatly reduces energy consumption compared to GPU performance in YOLOv8."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56819-5_with_abstracts",
+    "base_id": "s41467-025-56819-5",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56819-5_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

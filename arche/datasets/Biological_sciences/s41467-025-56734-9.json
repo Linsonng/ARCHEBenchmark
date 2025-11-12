@@ -1,0 +1,504 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "The initial prime editing (PE) system was constructed by fusing a Strep. pyogenes Cas9 (SpyCas9) nickase (H840A) with an engineered Moloney-Murine leukemia virus reverse transcriptase (M-MLV RT) [1] . To enable editing, a prime editing guide RNA (pegRNA) is used, which includes a protospacer defining the target site, a sgRNA scaffold, and a 3′ extension encoding the desired edit. This extension contains a primer binding site (PBS) complementary to a segment of the DNA protospacer, as well as an RT template (RTT) that encodes the desired edit and genomic homologous sequences [1] . PEs hold great promise in modern biotechnology. However, all existing PEs can only modify the downstream genomic region of the pegRNA nick, but cannot modify the upstream genomic region, posing a significant limitation on their editing range. In addition, the editing efficiency of PEs remains to be improved. There have been efforts to expand the editing range of PE. In one study, substituting SpyCas9 nickase (H840A) with Francisella novicida Cas9 nickase (H969A) expands the editing range of PE [2] . The circular RNA-mediated prime editor (CPE) which combines Cas12a with circular RNA [3] , and template-jumping prime editing (TJ-PE) [4] , inspired by the genomic insertion mechanism of retrotransposons, also expand the editing range. The performance of PE has also been enhanced through other strategies. For example, adding motifs, such as modified prequeosine 1 -1 riboswitch aptamer (evopreQ1) [5] , Csy4 [6] , G-quadruplexes [7] , viral exoribonuclease-resistant RNA motif (xrRNA) [8] , or MS2 [9] , to the 3′ extension of the pegRNA improves the stability of the pegRNA and consequently the PE efficiency. Protein engineering to PE system, such as altering the composition of nuclear localization signals [10] , introducing point mutations to alter certain amino acid residue [11] or adding additional peptide or protein domains (e.g., IGFpm1-NFATC2IPp1-PE2 (IN-PE2) [12] , chromatin-modulating peptide-PE-Variant1 (CMP-PE-V1) [13] , hyPE2 [14] , PE combined with the recruitment of P65 protein [15] ), as well as adding the dominant negative MLH1 (MLH1dn) mutant to inhibit the mismatch repair pathway, is also effective in improving PE efficiency [11] . Nevertheless, while many PE systems could achieve double-digit (i.e., >10%) efficiencies in human cells, they can only do so within approximately a 10 bp range downstream of the nick [1] , [11] . Hence there is a need for further expanding the editable region of PE systems, particularly for editing sites located more than 10 bp away downstream from the nick, and editing sites located upstream from the nick. Recently, the use of two-pegRNA, such as in dual-pegRNA [16] , twinPE [17] , GRAND (genome editing by RTTs partially aligned to each other but nonhomologous to target sequences within duo pegRNA) [18] , PRIME-Del [19] , homologous 3′ extension mediated prime editor (HOPE) [20] , and bi-direction prime editing (Bi-PE) [21] , has gained momentum in expanding the editing range of PE and improving its efficiency. It should be noted however, that in these two-pegRNA systems the two nicks are located on the complementary strands, i.e., in trans , which is associated with an elevated probability of inducing double-strand breaks (DSBs) [22] , [23] . Furthermore, the editable region is positioned in between the downstream direction of these two-pegRNA nicks. In other words, these two-pegRNA approaches are still unable to edit the upstream region of either pegRNA nick. Here, we report the development of the EXPERT. EXPERT uses an additional sgRNA (ups-sgRNA) that is located upstream of pegRNA to generate a cis nick of the pegRNA nick, and an extended pegRNA (ext-pegRNA) that has an elongated and modified 3′ extension. We compared EXPERT with the representative single-pegRNA system PE2 and the two-pegRNA system twinPE, demonstrating that EXPERT achieves higher product purity. The results reveal that EXPERT can efficiently perform editing on both sides of the ext-pegRNA nick, a task that is unattainable by canonical PEs, while maintaining low indel rates at the target site and minimal off-target effects genome-wide. Additionally, the EXPERT strategy proves particularly useful for large fragment edits. Collectively, EXPERT represents an effective gene-editing tool that complements the PE toolbox and holds significant value in life sciences.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "The initial prime editing (PE) system was constructed by fusing a Strep. pyogenes Cas9 (SpyCas9) nickase (H840A) with an engineered Moloney-Murine leukemia virus reverse transcriptase (M-MLV RT) [1].",
+        "references": {
+          "1": {}
+        },
+        "viewpoints": [
+          "The initial prime editing (PE) system consists of a fusion between a Strep. pyogenes Cas9 (SpyCas9) nickase (H840A) and an engineered Moloney-Murine leukemia virus reverse transcriptase (M-MLV RT)."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "To enable editing, a prime editing guide RNA (pegRNA) is used, which includes a protospacer defining the target site, a sgRNA scaffold, and a 3′ extension encoding the desired edit.",
+        "references": {},
+        "viewpoints": [
+          "A prime editing guide RNA (pegRNA) is necessary to enable editing.",
+          "The pegRNA includes a protospacer defining the target site.",
+          "The pegRNA includes a sgRNA scaffold.",
+          "The pegRNA includes a 3′ extension encoding the desired edit."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "This extension contains a primer binding site (PBS) complementary to a segment of the DNA protospacer, as well as an RT template (RTT) that encodes the desired edit and genomic homologous sequences [1].",
+        "references": {
+          "1": {}
+        },
+        "viewpoints": [
+          "The 3′ extension of the pegRNA contains a primer binding site (PBS) complementary to a segment of the DNA protospacer.",
+          "The 3′ extension of the pegRNA contains an RT template (RTT) that encodes the desired edit.",
+          "The 3′ extension of the pegRNA contains genomic homologous sequences."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "PEs hold great promise in modern biotechnology.",
+        "references": {},
+        "viewpoints": [
+          "Prime editing systems hold great promise in modern biotechnology."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "However, all existing PEs can only modify the downstream genomic region of the pegRNA nick, but cannot modify the upstream genomic region, posing a significant limitation on their editing range.",
+        "references": {},
+        "viewpoints": [
+          "Existing prime editing systems can only modify the downstream genomic region of the pegRNA nick.",
+          "Existing prime editing systems cannot modify the upstream genomic region of the pegRNA nick.",
+          "The inability to modify the upstream region poses a significant limitation on the editing range of existing prime editing systems."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "In addition, the editing efficiency of PEs remains to be improved.",
+        "references": {},
+        "viewpoints": [
+          "The editing efficiency of prime editing systems needs improvement."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "There have been efforts to expand the editing range of PE.",
+        "references": {},
+        "viewpoints": [
+          "Efforts have been made to expand the editing range of prime editing systems."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "In one study, substituting SpyCas9 nickase (H840A) with Francisella novicida Cas9 nickase (H969A) expands the editing range of PE [2].",
+        "references": {
+          "2": []
+        },
+        "viewpoints": [
+          "Substituting SpyCas9 nickase (H840A) with Francisella novicida Cas9 nickase (H969A) expands the editing range of prime editing systems."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "The circular RNA-mediated prime editor (CPE) which combines Cas12a with circular RNA [3], and template-jumping prime editing (TJ-PE) [4], inspired by the genomic insertion mechanism of retrotransposons, also expand the editing range.",
+        "references": {
+          "3": [],
+          "4": []
+        },
+        "viewpoints": [
+          "The circular RNA-mediated prime editor (CPE) combines Cas12a with circular RNA.",
+          "The circular RNA-mediated prime editor (CPE) expands the editing range of prime editing.",
+          "Template-jumping prime editing (TJ-PE) is inspired by the genomic insertion mechanism of retrotransposons.",
+          "Template-jumping prime editing (TJ-PE) expands the editing range of prime editing."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "The performance of PE has also been enhanced through other strategies.",
+        "references": {},
+        "viewpoints": [
+          "The performance of prime editing systems has been enhanced through other strategies."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "For example, adding motifs, such as modified prequeosine 1 -1 riboswitch aptamer (evopreQ1) [5], Csy4 [6], G-quadruplexes [7], viral exoribonuclease-resistant RNA motif (xrRNA) [8], or MS2 [9], to the 3′ extension of the pegRNA improves the stability of the pegRNA and consequently the PE efficiency.",
+        "references": {
+          "5": {
+            "1": "Prime editing enables the installation of point mutations in the DNA of living cells.",
+            "2": "Prime editing enables the installation of small insertions in the DNA of living cells.",
+            "3": "Prime editing enables the installation of small deletions in the DNA of living cells.",
+            "4": "Prime editing can install a combination of point mutations, small insertions, or small deletions in the DNA of living cells.",
+            "5": "A prime editing guide RNA (pegRNA) directs the prime editor protein to the targeted locus.",
+            "6": "A prime editing guide RNA (pegRNA) encodes the desired edit.",
+            "7": "Degradation of the 3' region of the pegRNA can poison the activity of prime editing systems.",
+            "8": "Degradation of the 3' region of the pegRNA impedes editing efficiency.",
+            "9": "The 3' region of the pegRNA contains the reverse transcriptase template.",
+            "10": "The 3' region of the pegRNA contains the primer binding site.",
+            "11": "Structured RNA motifs were incorporated into the 3' terminus of pegRNAs.",
+            "12": "The structured RNA motifs enhance the stability of pegRNAs.",
+            "13": "The structured RNA motifs prevent degradation of the 3' extension of pegRNAs.",
+            "14": "Engineered pegRNAs (epegRNAs) improve prime editing efficiency 3-4-fold in HeLa cells.",
+            "15": "Engineered pegRNAs (epegRNAs) improve prime editing efficiency 3-4-fold in U2OS cells.",
+            "16": "Engineered pegRNAs (epegRNAs) improve prime editing efficiency 3-4-fold in K562 cells.",
+            "17": "Engineered pegRNAs (epegRNAs) improve prime editing efficiency 3-4-fold in primary human fibroblasts.",
+            "18": "Engineered pegRNAs (epegRNAs) do not increase off-target editing activity.",
+            "19": "The choice of 3' structural motif was optimized.",
+            "20": "A computational tool called pegLIT was developed to identify non-interfering nucleotide linkers between pegRNAs and 3' motifs.",
+            "21": "Engineered pegRNAs (epegRNAs) enhance the efficiency of the installation of disease-relevant mutations.",
+            "22": "Engineered pegRNAs (epegRNAs) enhance the efficiency of the correction of disease-relevant mutations."
+          },
+          "6": [],
+          "7": [],
+          "8": [],
+          "9": []
+        },
+        "viewpoints": [
+          "Adding modified prequeosine 1 -1 riboswitch aptamer (evopreQ1) to the 3′ extension of the pegRNA improves its stability and consequently the efficiency of prime editing.",
+          "Adding Csy4 to the 3′ extension of the pegRNA improves its stability and consequently the efficiency of prime editing.",
+          "Adding G-quadruplexes to the 3′ extension of the pegRNA improves its stability and consequently the efficiency of prime editing.",
+          "Adding viral exoribonuclease-resistant RNA motif (xrRNA) to the 3′ extension of the pegRNA improves its stability and consequently the efficiency of prime editing.",
+          "Adding MS2 to the 3′ extension of the pegRNA improves its stability and consequently the efficiency of prime editing."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Protein engineering to PE system, such as altering the composition of nuclear localization signals [10], introducing point mutations to alter certain amino acid residue [11] or adding additional peptide or protein domains (e.g., IGFpm1-NFATC2IPp1-PE2 (IN-PE2) [12], chromatin-modulating peptide-PE-Variant1 (CMP-PE-V1) [13], hyPE2 [14], PE combined with the recruitment of P65 protein [15]), as well as adding the dominant negative MLH1 (MLH1dn) mutant to inhibit the mismatch repair pathway, is also effective in improving PE efficiency [11].",
+        "references": {
+          "10": [],
+          "11": {
+            "1": "Prime editing enables precise sequence changes in DNA.",
+            "2": "Cellular determinants of prime editing remain poorly understood.",
+            "3": "DNA mismatch repair (MMR) impedes prime editing.",
+            "4": "DNA mismatch repair (MMR) promotes undesired indel byproducts in prime editing.",
+            "5": "PE4 and PE5 prime editing systems were developed.",
+            "6": "Transient expression of an engineered MMR-inhibiting protein in PE4 and PE5 systems enhances the efficiency of substitution, small insertion, and small deletion prime edits by an average 7.7-fold and 2.0-fold compared to PE2 and PE3 systems.",
+            "7": "Transient expression of an engineered MMR-inhibiting protein in PE4 and PE5 systems improves edit/indel ratios by 3.4-fold in MMR-proficient cell types.",
+            "8": "Strategic installation of silent mutations near the intended edit can enhance prime editing outcomes.",
+            "9": "Strategic installation of silent mutations enhances prime editing outcomes by evading DNA mismatch repair (MMR).",
+            "10": "Prime editor protein optimization resulted in a PEmax architecture.",
+            "11": "The PEmax architecture enhances editing efficacy by 2.8-fold on average in HeLa cells.",
+            "12": "These findings enrich our understanding of prime editing.",
+            "13": "These findings establish prime editing systems that show substantial improvement.",
+            "14": "The prime editing systems show substantial improvement across 191 edits in seven mammalian cell types."
+          },
+          "12": [],
+          "13": {
+            "1": "Prime editors are novel genome-editing tools.",
+            "2": "Prime editors consist of a CRISPR-Cas9 nickase and an engineered reverse transcriptase.",
+            "3": "Prime editors can induce targeted mutagenesis.",
+            "4": "Much effort is required to optimize prime-editing.",
+            "5": "Much effort is required to improve the efficiency of prime-editing.",
+            "6": "Two strategies are introduced to improve the editing efficiency of prime-editing.",
+            "7": "The first strategy involves using proximal dead sgRNA.",
+            "8": "The second strategy involves using chromatin-modulating peptides.",
+            "9": "Enhanced prime-editing was used to generate Igf2 mutant mice.",
+            "10": "The editing frequencies in Igf2 mutant mice reached up to 47%.",
+            "11": "Germline transmission was observed in Igf2 mutant mice generated using enhanced prime-editing.",
+            "12": "No off-target effects were observed in Igf2 mutant mice generated using enhanced prime-editing.",
+            "13": "A dwarf phenotype was observed in Igf2 mutant mice generated using enhanced prime-editing.",
+            "14": "The improved prime-editing method can be efficiently applied to cell research.",
+            "15": "The improved prime-editing method can be efficiently applied to generate mouse models."
+          },
+          "14": {
+            "1": "Prime editing is a promising genome editing method.",
+            "2": "The efficiency of prime editor 2 (PE2) is often insufficient.",
+            "3": "A more efficient variant of PE2, named hyPE2, was generated.",
+            "4": "The Rad51 DNA-binding domain was added to generate hyPE2.",
+            "5": "When tested at endogenous sites, hyPE2 shows a median of 1.5-fold to 1.4-fold higher efficiencies than PE2.",
+            "6": "The efficiency range of hyPE2 at endogenous sites is 0.99-fold to 2.6-fold higher than PE2.",
+            "7": "At sites where PE2-induced prime editing is very inefficient (efficiency < 1%), hyPE2 enables prime editing with efficiencies ranging from 1.1% to 2.9%.",
+            "8": "hyPE2 can enable prime editing at up to 34% of target sequences where PE2-induced prime editing is very inefficient.",
+            "9": "hyPE2 potentially facilitates prime editing applications at sites with low PE2 efficiency."
+          },
+          "15": {
+            "1": "Prime editing is a versatile gene editing tool.",
+            "2": "Prime editing enables precise sequence changes of all types in the genome.",
+            "3": "The application of prime editing is limited by its editing efficiency.",
+            "4": "The Suntag system is applied to recruit the transcription factor P65.",
+            "5": "Recruitment of the transcription factor P65 enhances the desired editing outcomes in the prime editing system.",
+            "6": "MS2 hairpins are used to recruit MS2-fused P65.",
+            "7": "The recruitment of the P65 protein effectively improves the prime editing efficiency in the PE3 system.",
+            "8": "The recruitment of the P65 protein effectively improves the prime editing efficiency in the PE5 system.",
+            "9": "Increased editing efficiency is most likely associated with the induction of chromatin accessibility change by P65.",
+            "10": "Different systems are applied to recruit P65.",
+            "11": "Recruitment of P65 enhances the prime editing efficiency of various PE systems.",
+            "12": "Our work provides a variety of methods to work as protein scaffolds for screening target factors.",
+            "13": "Our work supports further optimization of prime editing systems."
+          }
+        },
+        "viewpoints": [
+          "Altering the composition of nuclear localization signals improves prime editing efficiency.",
+          "Introducing point mutations to alter certain amino acid residues improves prime editing efficiency.",
+          "Adding additional peptide or protein domains improves prime editing efficiency.",
+          "IGFpm1-NFATC2IPp1-PE2 (IN-PE2) is an example of adding protein domains to improve prime editing efficiency.",
+          "Chromatin-modulating peptide-PE-Variant1 (CMP-PE-V1) is an example of adding protein domains to improve prime editing efficiency.",
+          "hyPE2 is an example of adding protein domains to improve prime editing efficiency.",
+          "PE combined with the recruitment of P65 protein is an example of improving prime editing efficiency.",
+          "Adding the dominant negative MLH1 (MLH1dn) mutant to inhibit the mismatch repair pathway is effective in improving prime editing efficiency."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Nevertheless, while many PE systems could achieve double-digit (i.e., >10%) efficiencies in human cells, they can only do so within approximately a 10 bp range downstream of the nick [1], [11].",
+        "references": {
+          "1": {},
+          "11": {
+            "1": "Prime editing enables precise sequence changes in DNA.",
+            "2": "Cellular determinants of prime editing remain poorly understood.",
+            "3": "DNA mismatch repair (MMR) impedes prime editing.",
+            "4": "DNA mismatch repair (MMR) promotes undesired indel byproducts in prime editing.",
+            "5": "PE4 and PE5 prime editing systems were developed.",
+            "6": "Transient expression of an engineered MMR-inhibiting protein in PE4 and PE5 systems enhances the efficiency of substitution, small insertion, and small deletion prime edits by an average 7.7-fold and 2.0-fold compared to PE2 and PE3 systems.",
+            "7": "Transient expression of an engineered MMR-inhibiting protein in PE4 and PE5 systems improves edit/indel ratios by 3.4-fold in MMR-proficient cell types.",
+            "8": "Strategic installation of silent mutations near the intended edit can enhance prime editing outcomes.",
+            "9": "Strategic installation of silent mutations enhances prime editing outcomes by evading DNA mismatch repair (MMR).",
+            "10": "Prime editor protein optimization resulted in a PEmax architecture.",
+            "11": "The PEmax architecture enhances editing efficacy by 2.8-fold on average in HeLa cells.",
+            "12": "These findings enrich our understanding of prime editing.",
+            "13": "These findings establish prime editing systems that show substantial improvement.",
+            "14": "The prime editing systems show substantial improvement across 191 edits in seven mammalian cell types."
+          }
+        },
+        "viewpoints": [
+          "Many prime editing systems can achieve efficiencies greater than 10% in human cells.",
+          "Many prime editing systems can only achieve these efficiencies within approximately a 10 bp range downstream of the pegRNA nick."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Hence there is a need for further expanding the editable region of PE systems, particularly for editing sites located more than 10 bp away downstream from the nick, and editing sites located upstream from the nick.",
+        "references": {},
+        "viewpoints": [
+          "There is a need to further expand the editable region of prime editing systems.",
+          "There is a need to expand the editable region particularly for editing sites located more than 10 bp downstream from the nick.",
+          "There is a need to expand the editable region particularly for editing sites located upstream from the nick."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Recently, the use of two-pegRNA, such as in dual-pegRNA [16], twinPE [17], GRAND (genome editing by RTTs partially aligned to each other but nonhomologous to target sequences within duo pegRNA) [18], PRIME-Del [19], homologous 3′ extension mediated prime editor (HOPE) [20], and bi-direction prime editing (Bi-PE) [21], has gained momentum in expanding the editing range of PE and improving its efficiency.",
+        "references": {
+          "16": {
+            "1": "Prime editing applications have low editing efficiency.",
+            "2": "Designing prime binding sites with a melting temperature of 30 °C leads to optimal performance in rice.",
+            "3": "Using two prime editing guide RNAs in trans encoding the same edits substantially enhances prime editing efficiency.",
+            "4": "Designing prime binding sites with a melting temperature of 30 °C and using two prime editing guide RNAs together boost prime editing efficiency from 2.9-fold to 17.4-fold.",
+            "5": "Optimal prime editing guide RNAs can be designed with the web application, PlantPegDesigner.",
+            "6": "Optimal prime editing guide RNA pairs can be designed with the web application, PlantPegDesigner."
+          },
+          "17": {
+            "1": "Targeted deletion, replacement, integration, or inversion of genomic sequences could be used to study or treat human genetic diseases.",
+            "2": "Existing methods for targeted genomic editing typically require double-strand DNA breaks.",
+            "3": "Double-strand DNA breaks lead to undesired consequences, including uncontrolled indel mixtures.",
+            "4": "Double-strand DNA breaks lead to chromosomal abnormalities.",
+            "5": "Twin prime editing (twinPE) is a DSB-independent method.",
+            "6": "Twin prime editing uses a prime editor protein and two prime editing guide RNAs (pegRNAs).",
+            "7": "Twin prime editing is used for the programmable replacement or excision of DNA sequences at endogenous human genomic sites.",
+            "8": "The two prime editing guide RNAs (pegRNAs) template the synthesis of complementary DNA flaps on opposing strands of genomic DNA.",
+            "9": "Complementary DNA flaps replace the endogenous DNA sequence between the prime-editor-induced nick sites.",
+            "10": "Twin prime editing (twinPE) enabled targeted integration of gene-sized DNA plasmids greater than 5,000 bp in human cells when combined with a site-specific serine recombinase.",
+            "11": "Twin prime editing enabled targeted sequence inversions of 40 kb in human cells when combined with a site-specific serine recombinase.",
+            "12": "Twin prime editing (twinPE) expands the capabilities of precision gene editing.",
+            "13": "Twin prime editing might synergize with other tools for the correction of large human pathogenic alleles.",
+            "14": "Twin prime editing might synergize with other tools for the complementation of large human pathogenic alleles.",
+            "15": "Twin prime editing might synergize with other tools for the correction of complex human pathogenic alleles.",
+            "16": "Twin prime editing might synergize with other tools for the complementation of complex human pathogenic alleles."
+          },
+          "18": {
+            "1": "Targeted insertion of large DNA fragments is potentially beneficial for treating genetic diseases.",
+            "2": "Prime editors can effectively insert short DNA fragments of approximately 44 base pairs.",
+            "3": "Prime editors are not effective at inserting large DNA fragments.",
+            "4": "GRAND editing was developed to precisely insert large DNA fragments without the use of DNA donors.",
+            "5": "Prime editors require reverse transcription templates that hybridize with the target sequence.",
+            "6": "GRAND editing employs a pair of prime editing guide RNAs.",
+            "7": "The reverse transcription templates in GRAND editing are nonhomologous to the target site.",
+            "8": "The reverse transcription templates in GRAND editing are complementary to each other.",
+            "9": "GRAND editing strategy exhibited an efficiency of up to 63.0% for inserting a 150-base pair DNA fragment.",
+            "10": "The insertion of the 150-base pair fragment using GRAND editing produced minor by-products.",
+            "11": "GRAND editing strategy exhibited an efficiency of 28.4% for inserting a 250-base pair DNA fragment.",
+            "12": "GRAND editing allowed the insertion of DNA fragments up to approximately 1 kilobase.",
+            "13": "The efficiency of GRAND editing remains low for inserting DNA fragments larger than 400 base pairs.",
+            "14": "Efficient insertion using GRAND editing was confirmed in multiple genomic loci of several cell lines.",
+            "15": "Efficient insertion using GRAND editing was confirmed in non-dividing cells.",
+            "16": "Efficient insertion in multiple genomic loci using GRAND editing expands the scope of genome editing.",
+            "17": "GRAND editing enables the donor-free insertion of large DNA sequences."
+          },
+          "19": {
+            "1": "Current methods to delete genomic sequences are based on CRISPR-Cas9 and pairs of sgRNAs.",
+            "2": "Current methods based on CRISPR-Cas9 and pairs of sgRNAs can be inefficient.",
+            "3": "Current methods based on CRISPR-Cas9 and pairs of sgRNAs can be imprecise.",
+            "4": "Errors in current methods based on CRISPR-Cas9 and pairs of sgRNAs include small indels.",
+            "5": "Errors in current methods based on CRISPR-Cas9 and pairs of sgRNAs include unintended large deletions.",
+            "6": "Errors in current methods based on CRISPR-Cas9 and pairs of sgRNAs include more complex rearrangements.",
+            "7": "A prime editing-based method called PRIME-Del is described in the present study.",
+            "8": "PRIME-Del induces a deletion using a pair of pegRNAs.",
+            "9": "The pegRNAs in PRIME-Del target opposite DNA strands.",
+            "10": "PRIME-Del programs the sites that are nicked in the DNA.",
+            "11": "PRIME-Del programs the outcome of the repair.",
+            "12": "PRIME-Del achieves markedly higher precision than CRISPR-Cas9 and sgRNA pairs in programming deletions up to 10 kb.",
+            "13": "PRIME-Del has 1-30% editing efficiency in programming deletions up to 10 kb.",
+            "14": "PRIME-Del can be used to couple genomic deletions with short insertions.",
+            "15": "PRIME-Del enables deletions with junctions that do not fall at protospacer-adjacent motif sites.",
+            "16": "Extended expression of prime editing components can substantially enhance efficiency.",
+            "17": "Extended expression of prime editing components does not compromise precision.",
+            "18": "PRIME-Del is anticipated to be broadly useful for precise programming of genomic deletions.",
+            "19": "PRIME-Del is anticipated to be broadly useful for flexible programming of genomic deletions.",
+            "20": "PRIME-Del is anticipated to be broadly useful for epitope tagging.",
+            "21": "PRIME-Del is anticipated to be potentially useful for programming genomic rearrangements."
+          },
+          "20": {
+            "1": "The recently reported prime editor (PE) can produce all types of base substitution.",
+            "2": "The recently reported prime editor (PE) can produce insertions.",
+            "3": "The recently reported prime editor (PE) can produce deletions.",
+            "4": "The abilities of the prime editor (PE) to perform substitutions, insertions, and deletions greatly expand the scope of genome editing.",
+            "5": "Improving the editing efficiency of the prime editor (PE) is a major challenge.",
+            "6": "Improving the precision of the prime editor (PE) is a major challenge.",
+            "7": "The approach termed homologous 3' extension mediated prime editor (HOPE) is reported.",
+            "8": "HOPE uses paired prime editing guide RNAs (pegRNAs) encoding the same edits in both sense and antisense DNA strands.",
+            "9": "HOPE achieves high editing efficiency in human embryonic kidney 293T cells.",
+            "10": "HOPE achieves high editing efficiency in mismatch repair-deficient human colorectal carcinoma 116 cells.",
+            "11": "HOPE shows greatly improved product purity compared to the original PE3 system.",
+            "12": "The enhanced tool HOPE could broaden fundamental research applications of prime editing.",
+            "13": "The enhanced tool HOPE could broaden therapeutic applications of prime editing."
+          },
+          "21": {
+            "1": "Prime editors consist of Cas9-nickase and reverse transcriptase.",
+            "2": "Prime editors enable targeted precise editing of small DNA pieces.",
+            "3": "Prime editors enable all 12 kinds of base substitutions.",
+            "4": "Prime editors enable insertions and deletions.",
+            "5": "Prime editors do not require double-strand breaks.",
+            "6": "Prime editors do not require donor templates.",
+            "7": "Current optimized prime editing strategy (PE3) uses two guide RNAs.",
+            "8": "Two guide RNAs guide the performance of prime editor in the current optimized prime editing strategy (PE3).",
+            "9": "One guide RNA carrying both spacer and templating sequences (pegRNA) guides prime editor to produce ssDNA break.",
+            "10": "One guide RNA carrying both spacer and templating sequences (pegRNA) guides prime editor to produce subsequent extension.",
+            "11": "The second guide RNA produces a nick in the complementary strand.",
+            "12": "Positioning the nick sgRNA nearby the templating sequences of the pegRNA facilitated targeted large fragment deletion.",
+            "13": "Engineering both guide RNAs to be pegRNAs achieved bi-direction prime editing (Bi-PE).",
+            "14": "Bi-direction prime editing (Bi-PE) increased the efficiency of editing by up to 16 times.",
+            "15": "Bi-direction prime editing (Bi-PE) improved the accuracy of editing products by 60 times.",
+            "16": "Bi-PE strategy increased the efficiency of simultaneous conversion of multiple bases over PE3.",
+            "17": "Bi-PE strategy did not increase the efficiency of single base conversion over PE3.",
+            "18": "Bi-PE strategy expanded the editing scope of the prime editing system.",
+            "19": "Bi-PE strategy improved the efficiency of the prime editing system.",
+            "20": "Bi-PE strategy improved the accuracy of the prime editing system.",
+            "21": "Bi-PE strategy might have a wide range of potential applications."
+          }
+        },
+        "viewpoints": [
+          "The use of two-pegRNA has gained momentum in expanding the editing range of prime editing systems.",
+          "The use of two-pegRNA has gained momentum in improving the efficiency of prime editing systems.",
+          "Dual-pegRNA is an example of a two-pegRNA system.",
+          "TwinPE is an example of a two-pegRNA system.",
+          "GRAND is an example of a two-pegRNA system.",
+          "PRIME-Del is an example of a two-pegRNA system.",
+          "Homologous 3′ extension mediated prime editor (HOPE) is an example of a two-pegRNA system.",
+          "Bi-direction prime editing (Bi-PE) is an example of a two-pegRNA system."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "It should be noted however, that in these two-pegRNA systems the two nicks are located on the complementary strands, i.e., in trans, which is associated with an elevated probability of inducing double-strand breaks (DSBs) [22], [23].",
+        "references": {
+          "22": {
+            "1": "Bacterial RNA-directed Cas9 endonuclease is a tool for site-specific genome modification in eukaryotes.",
+            "2": "Bacterial RNA-directed Cas9 endonuclease is a versatile tool.",
+            "3": "Co-microinjection of mouse embryos with Cas9 mRNA and single guide RNAs induces on-target mutations.",
+            "4": "Co-microinjection of mouse embryos with Cas9 mRNA and single guide RNAs induces off-target mutations.",
+            "5": "The mutations induced by co-microinjection of mouse embryos with Cas9 mRNA and single guide RNAs are transmissible to offspring.",
+            "6": "Cas9 nickase can be used to efficiently mutate genes.",
+            "7": "Cas9 nickase mutates genes without detectable damage at known off-target sites.",
+            "8": "This method using Cas9 nickase is applicable for genome editing of any model organism.",
+            "9": "This method using Cas9 nickase minimizes confounding problems of off-target mutations."
+          },
+          "23": {
+            "1": "Targeted genome editing technologies have enabled a broad range of research applications.",
+            "2": "Targeted genome editing technologies have enabled a broad range of medical applications.",
+            "3": "The Cas9 nuclease from the microbial CRISPR-Cas system is targeted to specific genomic loci by a 20 nt guide sequence.",
+            "4": "The 20 nt guide sequence used to target Cas9 nuclease can tolerate certain mismatches to the DNA target.",
+            "5": "Tolerating certain mismatches to the DNA target by the guide sequence can promote undesired off-target mutagenesis.",
+            "6": "An approach is described that combines a Cas9 nickase mutant with paired guide RNAs.",
+            "7": "The combination of a Cas9 nickase mutant with paired guide RNAs is used to introduce targeted double-strand breaks.",
+            "8": "Individual nicks in the genome are repaired with high fidelity.",
+            "9": "Simultaneous nicking via appropriately offset guide RNAs is required for double-stranded breaks.",
+            "10": "Simultaneous nicking via appropriately offset guide RNAs extends the number of specifically recognized bases for target cleavage.",
+            "11": "Paired nicking can reduce off-target activity by 50- to 1,500-fold in cell lines.",
+            "12": "Paired nicking can facilitate gene knockout in mouse zygotes.",
+            "13": "Paired nicking does not sacrifice on-target cleavage efficiency.",
+            "14": "This versatile strategy enables a wide variety of genome editing applications.",
+            "15": "The versatile strategy enables genome editing applications that require high specificity."
+          }
+        },
+        "viewpoints": [
+          "In two-pegRNA systems, the two nicks are located on complementary strands.",
+          "The location of nicks in two-pegRNA systems is in trans.",
+          "This configuration in two-pegRNA systems is associated with an elevated probability of inducing double-strand breaks (DSBs)."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Furthermore, the editable region is positioned in between the downstream direction of these two-pegRNA nicks.",
+        "references": {},
+        "viewpoints": [
+          "The editable region in two-pegRNA systems is positioned in between the downstream direction of the two-pegRNA nicks."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "In other words, these two-pegRNA approaches are still unable to edit the upstream region of either pegRNA nick.",
+        "references": {},
+        "viewpoints": [
+          "Two-pegRNA approaches are unable to edit the upstream region of either pegRNA nick."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Here, we report the development of the EXPERT.",
+        "references": {},
+        "viewpoints": [
+          "The study reports the development of the EXPERT system."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "EXPERT uses an additional sgRNA (ups-sgRNA) that is located upstream of pegRNA to generate a cis nick of the pegRNA nick, and an extended pegRNA (ext-pegRNA) that has an elongated and modified 3′ extension.",
+        "references": {},
+        "viewpoints": [
+          "EXPERT uses an additional sgRNA (ups-sgRNA) located upstream of the pegRNA to generate a cis nick of the pegRNA nick.",
+          "EXPERT uses an extended pegRNA (ext-pegRNA) with an elongated and modified 3′ extension."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "We compared EXPERT with the representative single-pegRNA system PE2 and the two-pegRNA system twinPE, demonstrating that EXPERT achieves higher product purity.",
+        "references": {},
+        "viewpoints": [
+          "The study compared EXPERT with the single-pegRNA system PE2.",
+          "The study compared EXPERT with the two-pegRNA system twinPE.",
+          "EXPERT achieves higher product purity than PE2 and twinPE systems."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The results reveal that EXPERT can efficiently perform editing on both sides of the ext-pegRNA nick, a task that is unattainable by canonical PEs, while maintaining low indel rates at the target site and minimal off-target effects genome-wide.",
+        "references": {},
+        "viewpoints": [
+          "EXPERT can efficiently perform editing on both sides of the ext-pegRNA nick.",
+          "Editing on both sides of the ext-pegRNA nick is unattainable by canonical prime editing systems.",
+          "EXPERT maintains low indel rates at the target site.",
+          "EXPERT demonstrates minimal off-target effects genome-wide."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Additionally, the EXPERT strategy proves particularly useful for large fragment edits.",
+        "references": {},
+        "viewpoints": [
+          "The EXPERT strategy is particularly useful for large fragment edits."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Collectively, EXPERT represents an effective gene-editing tool that complements the PE toolbox and holds significant value in life sciences.",
+        "references": {},
+        "viewpoints": [
+          "EXPERT is an effective gene-editing tool.",
+          "EXPERT complements the prime editing toolbox.",
+          "EXPERT holds significant value in life sciences."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56734-9_with_abstracts",
+    "base_id": "s41467-025-56734-9",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56734-9_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

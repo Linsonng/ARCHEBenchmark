@@ -1,0 +1,608 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "As an important functional material, piezoceramics, represented by lead zirconate titanate {(Pb(Zr, Ti)O 3 , PZT)}, have been widely used in many vital technical applications such as ultra-precision actuators, sensors, and transducers [1] , [2] . In recent years, the rapid development of technology demands for piezoceramics with better overall performance to meet harsh usage conditions [3] , [4] . In particular, piezoelectric devices, such as sensors and actuators, require piezoceramics possessing excellent piezoelectric properties and good temperature stability, with the purpose of ensuring sensitivity within their operating temperature range and providing reliable and stable sensing outputs. However, the trade-off relationship between piezoelectricity and its temperature stability poses a significant challenge that remains unresolved. Therefore, developing piezoceramics with both satisfactory properties has become one of the most cutting-edge tasks in piezo/ferroelectrics. The trade-off relationship between two properties stems from their different contributions. Generally, the high piezoelectricity is usually obtained by introducing structural instability, while the high temperature stability prefers a stable structure. Therefore, these previously reported strategies (e.g., conducting donor doping, introducing relaxor end members, and designing local heterogeneous structures) used for introducing structural instability inevitably decrease the Curie temperature ( T C ) that dictates workable temperature range [5] , [6] , [7] . Intriguingly, even though the complex preparation process and high cost, the texturing method did significantly enhance both piezoelectricity and temperature stability even without increasing the T C , which sheds the light for achieving both high properties. The results showed that the high texturing degree and the large grain size make the domain switching more sufficiently and the degree of poling more saturated in the textured piezoceramics, resulting in the both stable phase structure and domain configurations [8] , [9] , [10] . By contrast, the random piezoceramics prepared by the conventional solid-state sintering method usually exhibit the inferior degree of poling and the insufficient domain switching due to the randomly-distributed orientation of both crystal cells and domains and the relatively small grain size. In addition to the above, a large number of pores and oxygen vacancies will be generated in random PZT-based ceramics due to the high sintering temperature (~1200 °C) and the volatilization of Pb element. The existence of pores reduces the density and electric breakdown strength ( E b ), and the oxygen vacancies construct complex dipole defects (e.g., V“ Pb -V •• O ), both of which hinder the saturated poling and domain switching. In particular, the dipole defects not only pin the room-temperature domain switching but also show a de-pinning at high temperature due to the enhanced migration, worsening both piezoelectricity and temperature stability. Conversely, if one can effectively eliminate the pores and reduce the content of oxygen vacancies in PZT-based ceramics, both high piezoelectricity and improved temperature stability are highly anticipated. Moreover, it is desirable that the proposed new strategy is more economical and practical than the texturing method. Inspired by the foregoing analysis and the thermodynamic theory, we proposed a synergistic design, namely combining phase boundary engineering and process engineering, to simultaneously boost piezoelectricity and temperature stability and validated it in Pb 0.92 Ba 0.08 [Zr 0.50+ x Ti 0.48- x (Nb 0.5 Sb 0.5 ) 0.02 ]O 3 ( x = 0–0.8) (abbreviated to PBZTNS- x ) ceramics, as schemed in Fig. 1 . For the Strategy 1 (i.e., the phase boundary engineering), we elaborately adjusted the Zr/Ti ratio to establish the morphotropic phase boundary (MPB) in PBZTNS- x ceramics. The flattened Landau energy profile at the MPB and the nanoscale multi-phase coexistence endow PBZTNS- x ceramics with enhanced dielectric response, consequently boosting the piezoelectricity (Fig. 1a ). For the Strategy 2 (i.e., the process engineering), based on the optimal composition selected by the Strategy 1, we employed the tape casting, lamination, and hot pressing techniques to achieve a denser microstructure and reduce the PbO volatilization and the content of oxygen vacancies, thereby improving the temperature stability. Fig. 1: Schematic diagrams of our proposed combined strategy and its expected effect. a For the phase boundary engineering, regulating the Zr/Ti ratio makes the ceramics approach the MPB, which lowers the Landau energy barrier of different ferroelectric phases and consequently promotes the dielectric and piezoelectric properties. R and T are the abbreviations of rhombohedral (R) and tetragonal (T) phases, respectively. P R and P T represent the spontaneous polarization of R and T phases, respectively. b For the process engineering, the tape casting, lamination, and hot isostatic pressing are applied to the well-designed MPB-featured composition selected by the Strategy 1. The process engineering significantly reduces the content of pores and oxygen vacancies, thereby further improving piezoelectric properties but boosting the temperature stability. c Expected three effects from the combined strategy. d Alleviating the trade-off relationship between piezoelectricity and its temperature stability by the combined strategy. e Advantages of our strategy. Full size image We’d like to emphasize the distinctions between previous literatures and our work. Most literatures employed one of these process techniques and obtained the limited enhancement in piezo/ferroelectric properties. For example, the hot-press sintering can improve the density and piezo/ferroelectric properties moderately [11] , [12] , [13] . The tape casting can improve the microstructure of piezoceramics and is widely used for fabricating ultra-thin ceramics, multilayer ceramics, and textured ceramics [14] , [15] . But it still hardly improves piezoelectric properties and the temperature stability simultaneously for an individual composition without adding texturing templates [16] , [17] . Here, based on the Strategy 1, we combined three process techniques together to achieve this goal by significantly improving the density and reducing the PbO volatilization, which was rarely reported. Encouragingly, we achieved the simultaneous enhancement of piezoelectricity and temperature stability through the synergetic design and discussed the physical origin from both intrinsic and extrinsic contributions.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "As an important functional material, piezoceramics, represented by lead zirconate titanate {(Pb(Zr, Ti)O 3 , PZT)}, have been widely used in many vital technical applications such as ultra-precision actuators, sensors, and transducers [1] , [2] .",
+        "references": {
+          "1": {
+            "1": "Piezoelectric materials have a unique ability for mechanical-electrical energy conversion.",
+            "2": "Piezoelectric materials have been widely applied in the field of sensing.",
+            "3": "Piezoelectric materials have been widely applied in the field of energy harvesting.",
+            "4": "Piezoelectric materials have been widely applied in the field of wastewater treatment.",
+            "5": "Piezoelectric materials have been widely applied in the field of catalysis.",
+            "6": "Advances in material synthesis have provided new opportunities for the development of bio-piezoelectric materials.",
+            "7": "Advances in material engineering have provided new opportunities for the development of bio-piezoelectric materials.",
+            "8": "Bio-piezoelectric materials offer excellent biocompatibility.",
+            "9": "Bio-piezoelectric materials offer excellent piezoelectric performance.",
+            "10": "Bio-piezoelectric materials have attracted interdisciplinary research interest.",
+            "11": "Recent insights have revealed the impact of piezoelectricity on biological systems.",
+            "12": "Bio-piezoelectric materials have versatile biomedical applications.",
+            "13": "The review introduces the development of bio-piezoelectric platforms from a broad perspective.",
+            "14": "The review highlights the design strategies of bio-piezoelectric platforms.",
+            "15": "The review highlights the engineering strategies of bio-piezoelectric platforms.",
+            "16": "The review will systematically outline state-of-the-art biomedical applications in biosensing.",
+            "17": "The review will systematically outline state-of-the-art biomedical applications in disease treatment.",
+            "18": "The review examines the relationships between the properties of bio-piezoelectric materials and their biomedical performance.",
+            "19": "The review examines the relationships between the structure of bio-piezoelectric materials and their biomedical performance.",
+            "20": "The examination aims to provide a deep understanding of the working mechanisms of bio-piezoelectric materials in a physiological environment.",
+            "21": "The review discusses the development trends of bio-piezoelectric materials.",
+            "22": "The review discusses the challenges in the development of bio-piezoelectric materials.",
+            "23": "The aim is to provide new insights for the design of future bio-piezoelectric materials.",
+            "24": "The aim is to provide new insights for the construction of future bio-piezoelectric materials."
+          },
+          "2": {
+            "1": "Piezoelectric composites consist of piezoelectric active materials and non-piezoelectric passive polymers.",
+            "2": "Piezoelectric active materials and non-piezoelectric passive polymers in piezoelectric composites are mechanically attached together.",
+            "3": "Piezoelectric composites are formed to create different connectivities.",
+            "4": "Piezoelectric composites have several advantages over conventional piezoelectric ceramics and polymers.",
+            "5": "Piezoelectric composites have improved electromechanical properties compared to conventional piezoelectric ceramics and polymers.",
+            "6": "Piezoelectric composites have mechanical flexibility that is advantageous compared to conventional piezoelectric ceramics and polymers.",
+            "7": "Piezoelectric composites have the ability to tailor properties using different connectivity patterns, which is an advantage over conventional piezoelectric ceramics and polymers.",
+            "8": "The advantages of piezoelectric composites have improved the overall performance of transducers.",
+            "9": "The advantages of piezoelectric composites have improved transducer sensitivity.",
+            "10": "The advantages of piezoelectric composites have improved transducer bandwidth.",
+            "11": "The improved transducer performance has resulted in the rapid implementation of piezoelectric composites in medical imaging ultrasounds.",
+            "12": "The improved transducer performance has resulted in the rapid implementation of piezoelectric composites in other acoustic transducers.",
+            "13": "New piezoelectric composite transducers have been developed recently.",
+            "14": "The new piezoelectric composite transducers have optimized composite components.",
+            "15": "The optimized composite components have improved thermal stability.",
+            "16": "The optimized composite components have improved mechanical quality factors.",
+            "17": "The new piezoelectric composite transducers are promising candidates for high temperature, high power transducer applications.",
+            "18": "Examples of high temperature, high power transducer applications include therapeutic ultrasound, high power ultrasonic wirebonding, high temperature non-destructive testing, and downhole energy harvesting.",
+            "19": "The paper will present recent developments of piezoelectric composite technology.",
+            "20": "The paper will focus on piezoelectric composite technology for high temperature applications.",
+            "21": "The paper will focus on piezoelectric composite technology for high power applications.",
+            "22": "The concerns of using piezoelectric composites will be discussed in the paper.",
+            "23": "The limitations of using piezoelectric composites will be discussed in the paper.",
+            "24": "The expected future research directions for piezoelectric composites will be outlined in the paper."
+          }
+        },
+        "viewpoints": [
+          "Piezoceramics are an important functional material.",
+          "Lead zirconate titanate (Pb(Zr, Ti)O3, PZT) represents piezoceramics.",
+          "Piezoceramics have been widely used in ultra-precision actuators.",
+          "Piezoceramics have been widely used in sensors.",
+          "Piezoceramics have been widely used in transducers."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "In recent years, the rapid development of technology demands for piezoceramics with better overall performance to meet harsh usage conditions [3] , [4] .",
+        "references": {
+          "3": {
+            "1": "Ferroelectricity has been discovered in oxides compatible with modern semiconductor manufacturing processes, such as hafnium oxide.",
+            "2": "The discovery of ferroelectricity in oxides compatible with modern semiconductor manufacturing processes has led to a re-emergence of the ferroelectric field-effect transistor.",
+            "3": "The re-emergence of the ferroelectric field-effect transistor is occurring in advanced microelectronics.",
+            "4": "A ferroelectric field-effect transistor combines a ferroelectric material with a semiconductor in a transistor structure.",
+            "5": "A ferroelectric field-effect transistor merges logic and memory functionalities at the single-device level.",
+            "6": "A ferroelectric field-effect transistor delivers some of the most pressing hardware-level demands for emerging computing paradigms.",
+            "7": "The potential of the ferroelectric field-effect transistor technologies is being examined in current embedded non-volatile memory applications.",
+            "8": "The potential of the ferroelectric field-effect transistor technologies is being examined in future in-memory computing models.",
+            "9": "The potential of the ferroelectric field-effect transistor technologies is being examined in future biomimetic computing models.",
+            "10": "The potential of the ferroelectric field-effect transistor technologies is being examined in future alternative computing models.",
+            "11": "Material-level challenges are involved in high-volume manufacturing in advanced technology nodes (≤10 nm).",
+            "12": "Device-level challenges are involved in high-volume manufacturing in advanced technology nodes (≤10 nm).",
+            "13": "The challenges in high-volume manufacturing in advanced technology nodes are reminiscent of those encountered in the early days of high-K-metal-gate transistor development.",
+            "14": "Ferroelectric field-effect transistors can be a key hardware component in the future of computing.",
+            "15": "Ferroelectric field-effect transistors provide a new approach to electronics termed ferroelectronics."
+          },
+          "4": []
+        },
+        "viewpoints": [
+          "The rapid development of technology in recent years demands piezoceramics with better overall performance.",
+          "Piezoceramics with better overall performance are needed to meet harsh usage conditions."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In particular, piezoelectric devices, such as sensors and actuators, require piezoceramics possessing excellent piezoelectric properties and good temperature stability, with the purpose of ensuring sensitivity within their operating temperature range and providing reliable and stable sensing outputs.",
+        "references": {},
+        "viewpoints": [
+          "Piezoelectric devices require piezoceramics possessing excellent piezoelectric properties.",
+          "Piezoelectric devices require piezoceramics with good temperature stability.",
+          "Excellent piezoelectric properties and good temperature stability ensure sensitivity within the operating temperature range of piezoelectric devices.",
+          "Good temperature stability of piezoceramics provides reliable and stable sensing outputs in piezoelectric devices."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "However, the trade-off relationship between piezoelectricity and its temperature stability poses a significant challenge that remains unresolved.",
+        "references": {},
+        "viewpoints": [
+          "There is a trade-off relationship between piezoelectricity and temperature stability in piezoceramics.",
+          "The trade-off relationship between piezoelectricity and temperature stability poses a significant unresolved challenge."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Therefore, developing piezoceramics with both satisfactory properties has become one of the most cutting-edge tasks in piezo/ferroelectrics.",
+        "references": {},
+        "viewpoints": [
+          "Developing piezoceramics with both excellent piezoelectric properties and good temperature stability is a cutting-edge task in piezo/ferroelectrics."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "The trade-off relationship between two properties stems from their different contributions.",
+        "references": {},
+        "viewpoints": [
+          "The trade-off relationship between piezoelectricity and temperature stability stems from their different contributions."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Generally, the high piezoelectricity is usually obtained by introducing structural instability, while the high temperature stability prefers a stable structure.",
+        "references": {},
+        "viewpoints": [
+          "High piezoelectricity in piezoceramics is usually obtained by introducing structural instability.",
+          "High temperature stability in piezoceramics prefers a stable structure."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Therefore, these previously reported strategies (e.g., conducting donor doping, introducing relaxor end members, and designing local heterogeneous structures) used for introducing structural instability inevitably decrease the Curie temperature (T C ) that dictates workable temperature range [5] , [6] , [7] .",
+        "references": {
+          "5": {
+            "1": "Piezoceramics face the challenge of achieving a high Curie temperature (TC).",
+            "2": "Piezoceramics face the challenge of achieving outstanding electrical properties.",
+            "3": "The challenge in achieving both a high Curie temperature (TC) and outstanding electrical properties is due to thermal depolarization.",
+            "4": "A novel two-step synergistic strategy was introduced to address the challenges of achieving high Curie temperature and outstanding electrical properties in piezoceramics.",
+            "5": "The strategy involves synthesizing lead zirconate titanate (PZT)-based x[(1–y)BiYO3-yFe2O3)]-(1–x)Pb(Zr0.53Ti0.47)O3 ceramics, abbreviated as xBYF(y)-PZT.",
+            "6": "Co-doping of Fe2O3 and BiYO3 significantly influences the dielectric and piezoelectric properties of the ceramics.",
+            "7": "The composition 0.01BYF(0.6)-PZT showcases a unique coexistence of rhombohedral and tetragonal phases.",
+            "8": "The composition 0.01BYF(0.6)-PZT has a piezoelectric coefficient d33 of 467 pC N−1.",
+            "9": "The composition 0.01BYF(0.6)-PZT has a Curie temperature (TC) of 381 °C.",
+            "10": "The composition 0.01BYF(0.6)-PZT has an electromechanical coupling coefficient (kp) of 68%.",
+            "11": "The composition 0.01BYF(0.6)-PZT has a coercive field (Ec) of 12 kV cm−1.",
+            "12": "The composition 0.01BYF(0.6)-PZT displays both \"softening\" and \"hardening\" characteristics.",
+            "13": "In-depth analysis with in-situ X-ray diffraction and transmission electron microscopy unveils the critical role of multiphase coexistence in enhancing piezoelectric responses.",
+            "14": "In-depth analysis with in-situ X-ray diffraction and transmission electron microscopy unveils the critical role of local heterostructures in enhancing piezoelectric responses.",
+            "15": "Multiphase coexistence and local heterostructures enhance piezoelectric responses through synergistic effects.",
+            "16": "The composition with x = 0.01 showcases exceptional thermal stability across an operating temperature range of 30–350 °C.",
+            "17": "The composition with x = 0.01 delivers an in-situ d33 value of 790 pC N−1.",
+            "18": "The findings underscore the potential of BYF-modified PZT ceramics as promising candidates for high-temperature piezoelectric applications."
+          },
+          "6": {
+            "1": "Long-range ordering of dipoles is a key microscopic signature of ferroelectrics.",
+            "2": "Ordered dipoles form ferroelectric domains.",
+            "3": "Ferroelectric domains can be reoriented by electric fields.",
+            "4": "Relaxor ferroelectrics are a type of ferroelectric.",
+            "5": "In relaxor ferroelectrics, the long-range ordering of dipoles is disrupted by cation disorder.",
+            "6": "Relaxor ferroelectrics exhibit complex polar states.",
+            "7": "Relaxor ferroelectrics exhibit a significant amount of local structural heterogeneity at the nanoscale.",
+            "8": "Relaxor ferroelectrics are the materials of choice for capacitors, nonlinear optical devices, and piezoelectric transducers.",
+            "9": "Relaxor ferroelectrics are chosen for these devices due to their extraordinary dielectric properties.",
+            "10": "Relaxor ferroelectrics are chosen for these devices due to their extraordinary electro-optic properties.",
+            "11": "Relaxor ferroelectrics are chosen for these devices due to their extraordinary electromechanical properties.",
+            "12": "The origins of the unique properties of relaxor ferroelectrics are yet to be fully understood.",
+            "13": "The incomplete understanding of the origins of their unique properties hinders the design of new relaxor ferroelectric-based materials.",
+            "14": "The incomplete understanding of the origins of their unique properties hinders the exploration of new relaxor ferroelectric-based materials.",
+            "15": "The complex polar states of relaxor ferroelectrics are introduced.",
+            "16": "The applications of relaxor ferroelectrics are introduced.",
+            "17": "Attention is focused on the electromechanical properties of relaxor ferroelectrics.",
+            "18": "The relationship between local structural heterogeneity and extraordinary electromechanical properties of relaxor ferroelectrics is discussed.",
+            "19": "Potential strategies to exploit local structural heterogeneity to design ferroelectrics for enhancing electromechanical performances are discussed.",
+            "20": "These strategies are based on the understanding of relaxor ferroelectrics.",
+            "21": "It is expected that the article will stimulate future studies on the roles of local structural heterogeneity.",
+            "22": "Local structural heterogeneity is important for improving the properties of various functional materials."
+          },
+          "7": {
+            "1": "Piezoelectric materials respond mechanically to an applied electric field.",
+            "2": "Piezoelectric materials respond electrically to mechanical stress.",
+            "3": "Piezoelectric materials are essential for electromechanical transducers.",
+            "4": "Previous theoretical analyses have shown that high piezoelectricity in perovskite oxides is associated with a flat thermodynamic energy landscape.",
+            "5": "A flat thermodynamic energy landscape in perovskite oxides connects two or more ferroelectric phases.",
+            "6": "The authors propose an alternative design strategy to commonly used morphotropic phase boundaries to further flatten the energy landscape.",
+            "7": "The proposed strategy involves introducing local structural heterogeneity to manipulate interfacial energies.",
+            "8": "Interfacial energies include extra interaction energies, such as electrostatic and elastic energies associated with the interfaces.",
+            "9": "The proposal is guided by phenomenological theories and phase-field simulations.",
+            "10": "The authors synthesize rare-earth-doped Pb(Mg_{1/3}Nb_{2/3})O_{3}–PbTiO_{3} (PMN–PT) to validate the proposed design strategy.",
+            "11": "Rare-earth dopants tend to change the local structure of Pb-based perovskite ferroelectrics.",
+            "12": "The authors achieve ultrahigh piezoelectric coefficients d_{33} of up to 1,500 pC N^{−1} in a Sm-doped PMN–PT ceramic.",
+            "13": "The authors achieve dielectric permittivity ε_{33}/ε_{0} above 13,000 in a Sm-doped PMN–PT ceramic.",
+            "14": "The Sm-doped PMN–PT ceramic has a Curie temperature of 89 °C.",
+            "15": "The research provides a new paradigm for designing material properties through engineering local structural heterogeneity.",
+            "16": "Engineering local structural heterogeneity is expected to benefit a wide range of functional materials."
+          }
+        },
+        "viewpoints": [
+          "Previously reported strategies introduce structural instability in piezoceramics.",
+          "Strategies such as conducting donor doping, introducing relaxor end members, and designing local heterogeneous structures introduce structural instability.",
+          "Structural instability introduced by these strategies inevitably decreases the Curie temperature (T C) of piezoceramics.",
+          "The Curie temperature (T C) dictates the workable temperature range of piezoceramics."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Intriguingly, even though the complex preparation process and high cost, the texturing method did significantly enhance both piezoelectricity and temperature stability even without increasing the T C , which sheds the light for achieving both high properties.",
+        "references": {},
+        "viewpoints": [
+          "The texturing method significantly enhanced both piezoelectricity and temperature stability of piezoceramics.",
+          "The texturing method enhanced both properties without increasing the Curie temperature (T C).",
+          "The texturing method involves a complex preparation process and high cost.",
+          "The texturing method sheds light on achieving high piezoelectricity and temperature stability in piezoceramics."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "The results showed that the high texturing degree and the large grain size make the domain switching more sufficiently and the degree of poling more saturated in the textured piezoceramics, resulting in the stable phase structure and domain configurations [8] , [9] , [10] .",
+        "references": {
+          "8": {
+            "1": "The piezoelectric properties of PZT ceramics could be enhanced by fabricating textured ceramics.",
+            "2": "Fabricating textured ceramics involves aligning the crystal grains along specific orientations.",
+            "3": "A seed-passivated texturing process is presented to fabricate textured PZT ceramics.",
+            "4": "The seed-passivated texturing process uses newly developed Ba(Zr,Ti)O₃ microplatelet templates.",
+            "5": "The seed-passivated texturing process ensures template-induced grain growth in titanium-rich PZT layers.",
+            "6": "The seed-passivated texturing process facilitates desired composition through interlayer diffusion of zirconium and titanium.",
+            "7": "Textured PZT ceramics with Curie temperatures of 360°C were successfully prepared.",
+            "8": "Textured PZT ceramics with piezoelectric coefficients d₃₃ of 760 picocoulombs per newton were successfully prepared.",
+            "9": "Textured PZT ceramics with piezoelectric coefficients g₃₃ of 100 millivolt meters per newton were successfully prepared.",
+            "10": "Textured PZT ceramics with electromechanical couplings k₃₃ of 0.85 were successfully prepared.",
+            "11": "The textured PZT ceramics prepared have outstanding properties.",
+            "12": "The study addresses the challenge of fabricating textured rhombohedral PZT ceramics.",
+            "13": "The challenge is addressed by suppressing the severe chemical reaction between PZT powder and titanate templates."
+          },
+          "9": {
+            "1": "The figure-of-merits of ferroelectrics for transducer applications include their electromechanical coupling factor.",
+            "2": "The figure-of-merits of ferroelectrics for transducer applications include the operable temperature range.",
+            "3": "Relaxor-PbTiO₃ ferroelectric crystals have a much improved electromechanical coupling factor k₃₃ (88~93%) compared to their ceramic counterparts (65~78%).",
+            "4": "The improved electromechanical coupling factor k₃₃ of relaxor-PbTiO₃ ferroelectric crystals is due to the strong anisotropy of crystals.",
+            "5": "Only a few relaxor-PbTiO₃ systems, such as Pb(In₁/₂Nb₁/₂)O₃-Pb(Mg₁/₃Nb₂/₃)O₃-PbTiO₃, can be grown into single crystals.",
+            "6": "The operable temperature range of these relaxor-PbTiO₃ single crystals is limited by their rhombohedral-tetragonal phase transition temperatures (T_rt: 60~120 °C).",
+            "7": "A templated grain-growth approach is developed to fabricate <001>-textured Pb(In₁/₂Nb₁/₂)O₃-Pb(Sc₁/₂Nb₁/₂)O₃-PbTiO₃ (PIN-PSN-PT) ceramics.",
+            "8": "The <001>-textured PIN-PSN-PT ceramics contain a large amount of the refractory component Sc₂O₃.",
+            "9": "The refractory component Sc₂O₃ in PIN-PSN-PT ceramics has the ability to increase the rhombohedral-tetragonal phase transition temperature (T_rt) of the system.",
+            "10": "Textured PIN-PSN-PT ceramics achieve a high electromechanical coupling factor k₃₃ of 85~89%.",
+            "11": "Textured PIN-PSN-PT ceramics achieve a greatly increased rhombohedral-tetragonal phase transition temperature (T_rt) of 160~200 °C.",
+            "12": "The merits of textured PIN-PSN-PT ceramics will make them an alternative to single crystals.",
+            "13": "Textured PIN-PSN-PT ceramics will benefit the development of numerous advanced piezoelectric devices."
+          },
+          "10": {
+            "1": "A polymorphic phase boundary generates a contradiction between high piezoelectricity and poor temperature stability in (K, Na)NbO₃-based ceramics.",
+            "2": "The contradiction between high piezoelectricity and poor temperature stability is a huge obstacle to (K, Na)NbO₃-based ceramics entering the application market as substitutes for Pb-based ceramics.",
+            "3": "The phase boundary is mimicked by copying Pb(Zr, Ti)O₃’s morphotropic phase boundary structure.",
+            "4": "The phase boundary is optimized through the synergistic optimization of diffusion phase boundary and crystal orientation in 0.94(Na₀.₅₆K₀.₄₄)NbO₃−0.03Bi₀.₅Na₀.₅ZrO₃−0.03(Bi₀.₅K₀.₅)HfO₃ textured ceramics.",
+            "5": "A prominent comprehensive performance is obtained, including a giant d₃₃ of 550 ± 30 pC/N and ultrahigh temperature stability.",
+            "6": "Ultrahigh temperature stability is indicated by a d₃₃ change rate of less than 1.2% within 25-150 °C.",
+            "7": "The obtained performance represents a significant breakthrough in lead-free piezoceramics.",
+            "8": "The performance surpasses that of Pb-based piezoelectric ceramics.",
+            "9": "In the temperature range of 25-150 °C, the d₃₃ change rate of commercial Pb(Zr, Ti)O₃−5 ceramics is about 10%.",
+            "10": "The d₃₃ of commercial Pb(Zr, Ti)O₃−5 ceramics, at about 350 pC/N, is much lower than that of (K, Na)NbO₃-based ceramics in this work.",
+            "11": "This study demonstrates a strategy for constructing the phase boundary with an MPB (morphotropic phase boundary) feature.",
+            "12": "The strategy settles the problem of temperature instability in (K, Na)NbO₃-based ceramics."
+          }
+        },
+        "viewpoints": [
+          "High texturing degree in piezoceramics allows more sufficient domain switching.",
+          "Large grain size in piezoceramics allows more sufficient domain switching.",
+          "High texturing degree in piezoceramics leads to a more saturated degree of poling.",
+          "Large grain size in piezoceramics leads to a more saturated degree of poling.",
+          "High texturing degree and large grain size result in stable phase structure in textured piezoceramics.",
+          "High texturing degree and large grain size result in stable domain configurations in textured piezoceramics."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "By contrast, the random piezoceramics prepared by the conventional solid-state sintering method usually exhibit the inferior degree of poling and the insufficient domain switching due to the randomly-distributed orientation of both crystal cells and domains and the relatively small grain size.",
+        "references": {},
+        "viewpoints": [
+          "Random piezoceramics prepared by the conventional solid-state sintering method exhibit an inferior degree of poling.",
+          "Random piezoceramics prepared by the conventional solid-state sintering method exhibit insufficient domain switching.",
+          "Random orientation of crystal cells and domains in piezoceramics results in inferior poling and insufficient domain switching.",
+          "Relatively small grain size in piezoceramics leads to an inferior degree of poling and insufficient domain switching."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "In addition to the above, a large number of pores and oxygen vacancies will be generated in random PZT-based ceramics due to the high sintering temperature (~1200 °C) and the volatilization of Pb element.",
+        "references": {},
+        "viewpoints": [
+          "A large number of pores are generated in random PZT-based ceramics due to high sintering temperature.",
+          "Oxygen vacancies are generated in random PZT-based ceramics due to high sintering temperature.",
+          "High sintering temperature (~1200 °C) and volatilization of Pb element cause pore and oxygen vacancy generation in PZT-based ceramics."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The existence of pores reduces the density and electric breakdown strength (E b ), and the oxygen vacancies construct complex dipole defects (e.g., V“ Pb -V •• O ), both of which hinder the saturated poling and domain switching.",
+        "references": {},
+        "viewpoints": [
+          "The existence of pores reduces the density of PZT-based ceramics.",
+          "The existence of pores reduces the electric breakdown strength (E b ) of PZT-based ceramics.",
+          "Oxygen vacancies construct complex dipole defects in PZT-based ceramics.",
+          "The existence of pores hinders saturated poling in PZT-based ceramics.",
+          "The existence of pores hinders domain switching in PZT-based ceramics.",
+          "Complex dipole defects from oxygen vacancies hinder saturated poling in PZT-based ceramics.",
+          "Complex dipole defects from oxygen vacancies hinder domain switching in PZT-based ceramics."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "In particular, the dipole defects not only pin the room-temperature domain switching but also show a de-pinning at high temperature due to the enhanced migration, worsening both piezoelectricity and temperature stability.",
+        "references": {},
+        "viewpoints": [
+          "Dipole defects pin room-temperature domain switching in PZT-based ceramics.",
+          "Dipole defects exhibit de-pinning at high temperature due to enhanced migration.",
+          "De-pinning of dipole defects at high temperature worsens piezoelectricity in PZT-based ceramics.",
+          "De-pinning of dipole defects at high temperature worsens temperature stability in PZT-based ceramics."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Conversely, if one can effectively eliminate the pores and reduce the content of oxygen vacancies in PZT-based ceramics, both high piezoelectricity and improved temperature stability are highly anticipated.",
+        "references": {},
+        "viewpoints": [
+          "Eliminating the pores in PZT-based ceramics is expected to improve piezoelectricity.",
+          "Reducing the content of oxygen vacancies in PZT-based ceramics is expected to improve piezoelectricity.",
+          "Eliminating the pores in PZT-based ceramics is expected to improve temperature stability.",
+          "Reducing the content of oxygen vacancies in PZT-based ceramics is expected to improve temperature stability."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Moreover, it is desirable that the proposed new strategy is more economical and practical than the texturing method.",
+        "references": {},
+        "viewpoints": [
+          "The proposed new strategy is expected to be more economical than the texturing method.",
+          "The proposed new strategy is expected to be more practical than the texturing method."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Inspired by the foregoing analysis and the thermodynamic theory, we proposed a synergistic design, namely combining phase boundary engineering and process engineering, to simultaneously boost piezoelectricity and temperature stability and validated it in Pb 0.92 Ba 0.08 [Zr 0.50+ x Ti 0.48- x (Nb 0.5 Sb 0.5 ) 0.02 ]O 3 ( x = 0–0.8) (abbreviated to PBZTNS- x ) ceramics, as schemed in Fig. 1 .",
+        "references": {},
+        "viewpoints": [
+          "A synergistic design combining phase boundary engineering and process engineering is proposed to boost piezoelectricity and temperature stability.",
+          "The synergistic design was validated in Pb 0.92 Ba 0.08 [Zr 0.50+ x Ti 0.48- x (Nb 0.5 Sb 0.5 ) 0.02 ]O 3 (x = 0–0.8), abbreviated as PBZTNS- x ceramics."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "For the Strategy 1 (i.e., the phase boundary engineering), we elaborately adjusted the Zr/Ti ratio to establish the morphotropic phase boundary (MPB) in PBZTNS- x ceramics.",
+        "references": {},
+        "viewpoints": [
+          "In Strategy 1, the phase boundary engineering involves adjusting the Zr/Ti ratio.",
+          "The adjustment of the Zr/Ti ratio establishes the morphotropic phase boundary (MPB) in PBZTNS- x ceramics."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The flattened Landau energy profile at the MPB and the nanoscale multi-phase coexistence endow PBZTNS- x ceramics with enhanced dielectric response, consequently boosting the piezoelectricity (Fig. 1a ).",
+        "references": {},
+        "viewpoints": [
+          "The flattened Landau energy profile at the MPB enhances the dielectric response of PBZTNS- x ceramics.",
+          "Nanoscale multi-phase coexistence enhances the dielectric response of PBZTNS- x ceramics.",
+          "Enhanced dielectric response in PBZTNS- x ceramics boosts piezoelectricity."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "For the Strategy 2 (i.e., the process engineering), based on the optimal composition selected by the Strategy 1, we employed the tape casting, lamination, and hot pressing techniques to achieve a denser microstructure and reduce the PbO volatilization and the content of oxygen vacancies, thereby improving the temperature stability.",
+        "references": {},
+        "viewpoints": [
+          "In Strategy 2, process engineering is based on the optimal composition selected by Strategy 1.",
+          "Strategy 2 involves the use of tape casting, lamination, and hot pressing techniques.",
+          "Strategy 2 achieves a denser microstructure in PBZTNS- x ceramics.",
+          "Strategy 2 reduces PbO volatilization in PBZTNS- x ceramics.",
+          "Strategy 2 reduces the content of oxygen vacancies in PBZTNS- x ceramics.",
+          "A denser microstructure, reduced PbO volatilization, and reduced oxygen vacancies improve temperature stability in PBZTNS- x ceramics."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Fig. 1: Schematic diagrams of our proposed combined strategy and its expected effect.",
+        "references": {},
+        "viewpoints": [
+          "The schematic diagrams illustrate the proposed combined strategy and its expected effect."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "a For the phase boundary engineering, regulating the Zr/Ti ratio makes the ceramics approach the MPB, which lowers the Landau energy barrier of different ferroelectric phases and consequently promotes the dielectric and piezoelectric properties.",
+        "references": {},
+        "viewpoints": [
+          "Regulating the Zr/Ti ratio in phase boundary engineering makes the ceramics approach the MPB.",
+          "Approaching the MPB lowers the Landau energy barrier of different ferroelectric phases in the ceramics.",
+          "Lowering the Landau energy barrier promotes the dielectric properties of the ceramics.",
+          "Lowering the Landau energy barrier promotes the piezoelectric properties of the ceramics."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "R and T are the abbreviations of rhombohedral (R) and tetragonal (T) phases, respectively.",
+        "references": {},
+        "viewpoints": [
+          "R is the abbreviation of rhombohedral phase.",
+          "T is the abbreviation of tetragonal phase."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "P R and P T represent the spontaneous polarization of R and T phases, respectively.",
+        "references": {},
+        "viewpoints": [
+          "P R represents the spontaneous polarization of the rhombohedral phase.",
+          "P T represents the spontaneous polarization of the tetragonal phase."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "b For the process engineering, the tape casting, lamination, and hot isostatic pressing are applied to the well-designed MPB-featured composition selected by the Strategy 1.",
+        "references": {},
+        "viewpoints": [
+          "In process engineering, tape casting, lamination, and hot isostatic pressing are applied to the MPB-featured composition.",
+          "The MPB-featured composition is selected by Strategy 1."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "The process engineering significantly reduces the content of pores and oxygen vacancies, thereby further improving piezoelectric properties but boosting the temperature stability.",
+        "references": {},
+        "viewpoints": [
+          "Process engineering significantly reduces the content of pores in the ceramics.",
+          "Process engineering significantly reduces the content of oxygen vacancies in the ceramics.",
+          "Reduction of pores and oxygen vacancies in the ceramics improves piezoelectric properties.",
+          "Reduction of pores and oxygen vacancies boosts temperature stability in the ceramics."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "c Expected three effects from the combined strategy.",
+        "references": {},
+        "viewpoints": [
+          "The combined strategy is expected to have three effects."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "d Alleviating the trade-off relationship between piezoelectricity and its temperature stability by the combined strategy.",
+        "references": {},
+        "viewpoints": [
+          "The combined strategy alleviates the trade-off relationship between piezoelectricity and temperature stability."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "e Advantages of our strategy.",
+        "references": {},
+        "viewpoints": [
+          "The strategy has various advantages."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "We’d like to emphasize the distinctions between previous literatures and our work.",
+        "references": {},
+        "viewpoints": [
+          "There are distinctions between previous literature and the current work."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Most literatures employed one of these process techniques and obtained the limited enhancement in piezo/ferroelectric properties.",
+        "references": {},
+        "viewpoints": [
+          "Most previous literature employed one of the process techniques.",
+          "The use of one process technique resulted in limited enhancement in piezo/ferroelectric properties."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "For example, the hot-press sintering can improve the density and piezo/ferroelectric properties moderately [11] , [12] , [13] .",
+        "references": {
+          "11": {
+            "1": "Lead-free ceramics with the composition K0.5Na0.5NbO3-0.5 mol%Al2O3 were prepared using hot-press sintering.",
+            "2": "The composition of the ceramics is simple.",
+            "3": "The ceramics have a dense microstructure.",
+            "4": "The ceramics have fine grains.",
+            "5": "The ceramics have a pure orthorhombic structure.",
+            "6": "Piezoelectric properties of the ceramics were enhanced by hot-press sintering and adding 0.5 mol%Al2O3 to K0.5Na0.5NbO3.",
+            "7": "Ferroelectric properties of the ceramics were enhanced by hot-press sintering and adding 0.5 mol%Al2O3 to K0.5Na0.5NbO3.",
+            "8": "The ceramics exhibit high remnant polarization (Pr) of 26.8 μC/cm2.",
+            "9": "The ceramics exhibit a piezoelectric constant (d33) of 137 pC/N.",
+            "10": "The maximum unipolar strain of the ceramics is 0.17%.",
+            "11": "The converse piezoelectric coefficient (d33*) is 212 pm/V under an electric field of 80 kV/cm.",
+            "12": "Under an electric field of 50 kV/cm, the remnant polarization (Pr) increases from 21.6 to 22.2 μC/cm2 as the temperature increases from room temperature to 170 °C.",
+            "13": "Under an electric field of 50 kV/cm, the converse piezoelectric coefficient (d33*) increases from 223 to 322 pm/V as the temperature increases from room temperature to 170 °C.",
+            "14": "The ex situ measurement shows that the piezoelectric constant (d33) maintains a high value of 97 pC/N as the annealing temperature increases to 380 °C.",
+            "15": "The maintenance of a high piezoelectric constant (d33) value at 380 °C implies excellent thermal stability of the ceramics."
+          },
+          "12": {
+            "1": "Bismuth layer-structured ferroelectrics (BLSFs) are widely demanded in high-temperature piezoelectric sensors.",
+            "2": "The low piezoelectricity-induced low sensitivity of Bismuth layer-structured ferroelectric-based piezoelectric sensors is not appropriate for practical operation conditions.",
+            "3": "Texturing is an effective way to engineer the performance of piezoelectric ceramics.",
+            "4": "Texturing improves the performance of piezoelectric ceramics by aligning the polar vectors.",
+            "5": "Texturing improves the performance of piezoelectric ceramics by increasing poling efficiency.",
+            "6": "Chemical substitution is used to improve the piezoelectricity of BTN-based ceramics.",
+            "7": "The hot-pressing technique is used to improve the piezoelectricity of BTN-based ceramics.",
+            "8": "Grains with (100) orientation contribute to excellent ferroelectricity in the textured BCTNTW-Per ceramic.",
+            "9": "Improved domain switching contributes to excellent ferroelectricity in the textured BCTNTW-Per ceramic.",
+            "10": "The excellent ferroelectricity in the textured BCTNTW-Per ceramic is characterized by a remnant polarization of approximately 17.7 μC/cm².",
+            "11": "The large piezoelectric coefficient in the textured BCTNTW-Per ceramic is approximately 27 pC/N.",
+            "12": "The BCTNTW-Per ceramic exhibits a high Curie temperature (T_C) of 890 °C.",
+            "13": "The BCTNTW-Per ceramic exhibits low dielectric loss.",
+            "14": "The BCTNTW-Per ceramic exhibits high electrical resistivity of 1.6 × 10⁵ Ω•cm at 600 °C.",
+            "15": "The BCTNTW-Per ceramic exhibits excellent thermal stability.",
+            "16": "The combination of the hot-pressing technique and traditional doping strategy is an effective way to prepare high-performance Bismuth layer-structured ferroelectrics (BLSFs)."
+          },
+          "13": []
+        },
+        "viewpoints": [
+          "Hot-press sintering can moderately improve the density of piezoceramics.",
+          "Hot-press sintering can moderately improve the piezo/ferroelectric properties of piezoceramics."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "The tape casting can improve the microstructure of piezoceramics and is widely used for fabricating ultra-thin ceramics, multilayer ceramics, and textured ceramics [14] , [15] .",
+        "references": {
+          "14": [],
+          "15": {
+            "1": "The review explores the evolution of textured lead-free piezoceramics.",
+            "2": "The review primarily focuses on the technique of templated grain growth (TGG) as an alternative to single crystals.",
+            "3": "The review primarily focuses on the technique of reactive-templated grain growth (RTGG) as an alternative to single crystals.",
+            "4": "Using a template to guide and orient ceramic grains into the same crystal orientation allows for piezoelectric properties.",
+            "5": "The piezoelectric properties of textured ceramics approach those of single-crystal counterparts.",
+            "6": "The fabrication process of textured lead-free piezoceramics was surveyed in depth.",
+            "7": "The survey focused on the tape casting process.",
+            "8": "Numerous variables are associated with aligning the template seeds in the ceramic matrix.",
+            "9": "The piezoelectric and ferroelectric properties of textured ceramics are supposedly a function of tape casting.",
+            "10": "The piezoelectric and ferroelectric properties of textured ceramics are supposedly a function of slurry formation.",
+            "11": "The piezoelectric and ferroelectric properties of textured ceramics are supposedly a function of the sintering profile.",
+            "12": "The piezoelectric and ferroelectric properties of textured ceramics are supposedly a function of template properties.",
+            "13": "The study aims to determine the significance of the contributions of these parameters to the piezoelectric and ferroelectric properties."
+          }
+        },
+        "viewpoints": [
+          "Tape casting can improve the microstructure of piezoceramics.",
+          "Tape casting is widely used for fabricating ultra-thin ceramics.",
+          "Tape casting is widely used for fabricating multilayer ceramics.",
+          "Tape casting is widely used for fabricating textured ceramics."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "But it still hardly improves piezoelectric properties and the temperature stability simultaneously for an individual composition without adding texturing templates [16] , [17] .",
+        "references": {
+          "16": [],
+          "17": []
+        },
+        "viewpoints": [
+          "Tape casting hardly improves piezoelectric properties and temperature stability simultaneously for an individual composition without texturing templates."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Here, based on the Strategy 1, we combined three process techniques together to achieve this goal by significantly improving the density and reducing the PbO volatilization, which was rarely reported.",
+        "references": {},
+        "viewpoints": [
+          "Based on Strategy 1, three process techniques were combined.",
+          "The combination of process techniques significantly improved the density of the ceramics.",
+          "The combination of process techniques significantly reduced the PbO volatilization in the ceramics.",
+          "This approach of combining techniques and achieving results was rarely reported."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Encouragingly, we achieved the simultaneous enhancement of piezoelectricity and temperature stability through the synergetic design and discussed the physical origin from both intrinsic and extrinsic contributions.",
+        "references": {},
+        "viewpoints": [
+          "Simultaneous enhancement of piezoelectricity and temperature stability was achieved through the synergetic design.",
+          "The discussion included the physical origin of the enhancements from both intrinsic and extrinsic contributions."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56798-7_with_abstracts",
+    "base_id": "s41467-025-56798-7",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56798-7_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

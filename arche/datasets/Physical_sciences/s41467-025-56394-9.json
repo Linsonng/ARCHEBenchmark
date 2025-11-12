@@ -1,0 +1,1071 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Chiral materials featuring circularly polarized luminescence (CPL) are currently garnering significant attention for their potential applications in 3D displays, quantum computing, spintronic devices, and information storage [1] , [2] , [3] , [4] . The luminescence dissymmetry factor, g lum , is a key metric to evaluate CPL performance, which is obtained from Eq. ( 1 ): $${g}_{{\\mbox{lum}}}=\\frac{2({I}_{{\\mbox{L}}}-{I}_{{\\mbox{R}}})}{{I}_{{\\mbox{L}}}+{I}_{{\\mbox{R}}}}=\\frac{4{{{\\bf{m}}}}{{{\\boldsymbol{\\mu }}}}\\cos (\\theta )}{{{{{\\bf{m}}}}}^{2}+{{{{\\boldsymbol{\\mu }}}}}^{2}}$$ (1) where I L and I R represent the emission intensities of left- and right-handed circularly polarized light, μ and m are the electric and magnetic transition dipole moment vectors, respectively, and θ is the angle between these two vectors [5] , [6] . Generally, | μ | is much larger than | m | , leading to a mismatch between electric and magnetic transition dipole moment, which results the g lum value around 10 −4 to 10 −3 . An ideal CPL emitter should have both large g lum and high photoluminescence quantum yield (PLQY), the former represents the polarization purity of the emitted light, while the latter evaluates the effectiveness of energy conversion. In this case, the figure of merit (FOM) has been proposed to quantify CPL performance and estimate the potential of materials for practical applications, which can be calculated by the product of g lum and PLQY (FOM = g lum × PLQY) [7] , [8] . The design challenges lie in balancing the g lum and PLQY via modulating both the value and orientation of μ and m . Numerous researches in this field have already been carried out and a series of excellent CPL-active materials have emerged including chiral organic small molecules [9] , [10] , inorganic nanomaterials [11] , [12] , and metal complexes [13] , [14] , [15] . However, most of them are barely promising for brilliant CPL emitters due to their high cost, poor thermal stability and luminescence intensity. For example, the synthesis of chiral organic molecules or chiral metal complexes is tedious and costly, and they often suffer from poor thermal stability and low luminescence intensity. Inorganic nanomaterials, on the other hand, require coating prefabricated nanomaterials with chiral passivating ligands to achieve CPL, and their properties are challenging to precisely control. Recently, lead-free metal halide hybrids have become a research hotspot due to their low cost and facile synthesis [16] , [17] , diverse topological structures [18] , [19] , and high PLQY [20] , [21] . The use of chirality-induced spin selectivity (CISS) effect further endows such materials more stable intrinsic chirality with excellent CPL behavior, positioning them as promising candidates for high-performance CPL emitters [22] , [23] . The principle involves directly incorporating chiral organic cations into the metal halide lattice, imparting them inherent chirality. The asymmetric hydrogen bonds between chiral organic cations and halide ions often exacerbate lattice distortion, leading to the deformation of excited state. This deformed excited state further induces the generation of self-trapped excitons (STEs), thereby initiating efficient STEs emission and exhibiting chiral luminescent properties. Several significant achievements have been realized in chiral lead-free metal halides [24] , [25] , [26] , [27] , [28] , [29] , [30] , [31] , [32] , [33] , [34] . For instance, Quan et al. reported a pair of 0D indium-antimony chlorides with near-unity STEs emission and g lum of ±1.0 × 10 −2 [35] . Mao and colleagues realized a g lum of ±2.3 × 10 − 2 in the 1D chiral Mn-based halides ( R / S -3-quinuclidinol)MnBr 3 with PLQY of 50.2% [36] . Additionally, Xu et al. reported two CPL-active metal halide enantiomers: 0D ( R / S -C 6 H 15 ClNO) 2 •SbCl 5 (C 6 H 15 ClNO + = (3-chloro-2-hydroxypropyl)trimethylammonium cation) and 1D ( D / L )-( tert -butylprolinate)MnCl 3 with the PLQY higher than 70% [37] , [38] . The g lum for 0D ( R / S -C 6 H 15 ClNO) 2 •SbCl 5 is ± 3.0 × 10 − 4 , while for 1D ( D / L )-( tert -butylprolinate)MnCl 3 is ±6.0 × 10 −3 . Recently, Zhang’s team reported the best-brightness CPL-active metal halides to date using the cascade cationic insertion strategy with FOM value reaching 2.26 × 10 −2 [25] . Despite the progress, the CPL performance implemented above is still not governed by any specific rules and is typically obtained through a trial-and-error approach. Therefore, it is highly needed to clarify the relationship between structures and chiroptical properties in chiral metal halide hybrids and provide effective guidance for designing efficient circularly polarized light sources. In this work, we develope an efficient strategy to achieve both high PLQY and large g lum in chiral metal halide hybrids by regulating their structural dimensions (Fig. 1 ). Specifically, the 0D, 1D, and 3D In-based hybrids are rationally designed and constructed by tuning the size and polarization of chiral organic cations with strong hydrogen-bonding-acceptors (oxygen heteroatom), which can coordinate with K + ions and enhance the chirality transfer. Bright emission with the near-unity PLQY is obtained in these hybrids. Furthermore, the contradiction between PLQY and g lum is overcame by regulating the structural dimensions which enhances the chiral induction effect and balances the values of electric and magnetic transition dipole moment. As a result, the g lum of these hybrids show an exponential growth from 10 − 3 to nearly 10 − 1 orders of magnitude as the structural dimension increases from 0D to 3D. Both the | g lum | (0.89 × 10 − 1 ) and FOM (0.79 × 10 − 1 ) are the highest values among the reported chiral metal halides to date. Our work elucidates the relationship between structural dimension and g lum in chiral metal halides, and provides a simple pathway for the rational design of efficient CPL-active metal halide hybrids with both high PLQY and large g lum . Fig. 1: CPL performance optimization strategy. Schematic diagram for constructing the chiral metal halide hybrids with different structural dimensions by manipulating chiral organic cations and introducing K + and Sb 3+ ions. The gray represents the hybrid is nonluminous, and yellow, green, and orange-red shadows represent the luminescent colors of corresponding hybrids, respectively. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Chiral materials featuring circularly polarized luminescence (CPL) are currently garnering significant attention for their potential applications in 3D displays, quantum computing, spintronic devices, and information storage [1], [2], [3], [4].",
+        "references": {
+          "1": [],
+          "2": {
+            "1": "Chiral functional materials with CPL have fascinating characteristics.",
+            "2": "Chiral functional materials with CPL have potential applications in various research fields.",
+            "3": "The interest in chiral functional materials with CPL has increased rapidly in recent years.",
+            "4": "CPL refers to the differential spontaneous emission of left-handed circularly polarized light upon photon or electron excitation.",
+            "5": "CPL refers to the differential spontaneous emission of right-handed circularly polarized light upon photon or electron excitation.",
+            "6": "An outstanding CPL-active material needs to possess a high luminescence dissymmetry factor (g_{lum}).",
+            "7": "The luminescence dissymmetry factor (g_{lum}) is defined as 2(I_{L} - I_{R})/(I_{L} + I_{R}) where I is the emission intensity.",
+            "8": "The luminescence dissymmetry factor (g_{lum}) is between -2 and +2.",
+            "9": "There has been exciting development in CPL-active materials.",
+            "10": "The modulation of CPL signs is still a challenge.",
+            "11": "For small organic systems, a relatively small g_{lum} value limits their practical applications.",
+            "12": "The g_{lum} value is one of the key parameters of CPL.",
+            "13": "It is important to search for efficient approaches for amplifying g_{lum}.",
+            "14": "Over the past decades, many strategies besides optimizing the structure of small molecules have been developed to obtain efficient CPL-active materials.",
+            "15": "Self-assembly is an effective approach to amplify the supramolecular chirality.",
+            "16": "Self-assembly is an effective approach to amplify the g_{lum} values.",
+            "17": "CLCs are capable of selective reflection of left-handed circularly polarized light.",
+            "18": "CLCs are capable of selective reflection of right-handed circularly polarized light.",
+            "19": "CLCs serve as a host matrix for endowing guest emitters with CPL activity.",
+            "20": "CLCs serve as a host matrix for endowing guest emitters with high g_{lum} values.",
+            "21": "Self-assembly focuses on modulating the conformation of chiral emitters.",
+            "22": "Self-assembly focuses on modulating the spatial arrangement of chiral emitters.",
+            "23": "The CPL of a luminophore-doped CLC matrix depends on the helix pitch.",
+            "24": "The CPL of a luminophore-doped CLC matrix depends on the band gap positions.",
+            "25": "Novel photophysical approaches to modulate CPL signs have gradually emerged.",
+            "26": "The recent progress of excited-state-regulation involved CPL-active materials is discussed in this Account.",
+            "27": "The emergence of CPL can be adjusted through regulation of the excited state of chiral emitters.",
+            "28": "The amplification of CPL can be adjusted through regulation of the excited state of chiral emitters.",
+            "29": "The inversion of CPL can be adjusted through regulation of the excited state of chiral emitters.",
+            "30": "Förster resonance energy transfer (FRET) can amplify the g_{lum} values of chiral energy acceptors in chiral supramolecular assemblies.",
+            "31": "High-energy upconverted circularly polarized emission was achieved by combining the concepts of photon upconversion and CPL.",
+            "32": "High-energy upconverted circularly polarized emission was achieved under excitation of low-energy light.",
+            "33": "High-energy upconverted circularly polarized emission was accompanied by an amplified g_{lum}.",
+            "34": "Organic systems with unpaired electrons show favorable CPL properties.",
+            "35": "The charge transfer (CT) system shows favorable CPL properties.",
+            "36": "The open-shell π-radical shows favorable CPL properties.",
+            "37": "Favorable CPL properties of organic systems with unpaired electrons can be flexibly tuned with an applied magnetic field.",
+            "38": "These photophysical processes are associated with the excited state of chiral emitters.",
+            "39": "The main focus so far is on the regulation of the molecular and supramolecular nanostructures.",
+            "40": "Direct regulation of the excited state of the chiral system will serve as a new platform to understand CPL activity.",
+            "41": "Direct regulation of the excited state of the chiral system will serve as a new platform to regulate CPL activity.",
+            "42": "Direct regulation of the excited state of the chiral system will be helpful to develop smart chiroptical materials."
+          },
+          "3": {
+            "1": "Hybrid organic–inorganic perovskites offer long carrier-diffusion lengths.",
+            "2": "Hybrid organic–inorganic perovskites offer high absorption coefficients.",
+            "3": "Hybrid organic–inorganic perovskites offer tunable band gaps.",
+            "4": "Hybrid organic–inorganic perovskites offer long spin lifetimes.",
+            "5": "The flexible crystal structure of hybrid organic–inorganic perovskites allows tuning of their material properties through rational design.",
+            "6": "The ionic nature of hybrid organic–inorganic perovskites allows tuning of their material properties through rational design.",
+            "7": "Incorporation of chiral organic ligands is a method of tuning the material properties of hybrid organic–inorganic perovskites through rational design.",
+            "8": "Chiral hybrid organic–inorganic perovskites have emerged as promising materials for chiroptoelectronics.",
+            "9": "Chiral hybrid organic–inorganic perovskites have emerged as promising materials for spintronics.",
+            "10": "Chiral hybrid organic–inorganic perovskites have emerged as promising materials for ferroelectrics.",
+            "11": "Chiral hybrid organic–inorganic perovskites exhibit high photoluminescence polarization of 17% without an external magnetic field.",
+            "12": "Chiral hybrid organic–inorganic perovskites exhibit good device performance as exemplified by a circularly polarized photodetector with 100 times higher responsivity than one based on a chiral metasurface.",
+            "13": "Chiral hybrid organic–inorganic perovskites exhibit high saturated polarization approximately two times higher than that of barium titanate.",
+            "14": "The paper reviews the latest advances in chiral hybrid organic–inorganic perovskites.",
+            "15": "The paper investigates the specific benefits of combining chiral organic components in hybrid organic–inorganic perovskites.",
+            "16": "The paper investigates the specific benefits of combining inorganic components in hybrid organic–inorganic perovskites.",
+            "17": "The paper discusses demonstrations of chiroptical applications of chiral hybrid organic–inorganic perovskites.",
+            "18": "The paper discusses demonstrations of ferroelectric applications of chiral hybrid organic–inorganic perovskites.",
+            "19": "The paper concludes with the authors' perspective on future opportunities for chiral hybrid organic–inorganic perovskites."
+          },
+          "4": {
+            "1": "Hybrid organic–inorganic perovskites exhibit strong spin–orbit coupling.",
+            "2": "Hybrid organic–inorganic perovskites exhibit spin-dependent optical selection rules.",
+            "3": "Hybrid organic–inorganic perovskites exhibit large Rashba splitting.",
+            "4": "Strong spin–orbit coupling, spin-dependent optical selection rules, and large Rashba splitting make hybrid organic–inorganic perovskites promising candidates for spintronic devices with photonic interfaces.",
+            "5": "Spin polarization in perovskites can be controlled through chemical design.",
+            "6": "Spin polarization in perovskites can be controlled by a magnetic field.",
+            "7": "Spin-polarized photon absorption is obtained in reduced-dimensional chiral perovskites through combined strategies of chirality transfer and energy funnelling.",
+            "8": "Spin-polarized photoluminescence is obtained in reduced-dimensional chiral perovskites through combined strategies of chirality transfer and energy funnelling.",
+            "9": "A 3% spin-polarized photoluminescence is observed in reduced-dimensional chiral perovskites even in the absence of an applied external magnetic field.",
+            "10": "The observation of a 3% spin-polarized photoluminescence without an external magnetic field is owing to different emission rates of σ+ and σ− polarized photoluminescence.",
+            "11": "Three-dimensional perovskites achieve a comparable degree of photoluminescence polarization to reduced-dimensional chiral perovskites only under an external magnetic field of 5 T.",
+            "12": "Findings on spin control and polarization in perovskites pave the way for chiral perovskites as powerful spintronic materials."
+          }
+        },
+        "viewpoints": [
+          "Chiral materials featuring circularly polarized luminescence (CPL) have potential applications in 3D displays.",
+          "Chiral materials featuring CPL have potential applications in quantum computing.",
+          "Chiral materials featuring CPL have potential applications in spintronic devices.",
+          "Chiral materials featuring CPL have potential applications in information storage.",
+          "Chiral materials featuring CPL are currently garnering significant attention."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "The luminescence dissymmetry factor, g lum, is a key metric to evaluate CPL performance, which is obtained from Eq. (1): $${g}_{{\\mbox{lum}}}=\\frac{2({I}_{{\\mbox{L}}}-{I}_{{\\mbox{R}}})}{{I}_{{\\mbox{L}}}+{I}_{{\\mbox{R}}}}=\\frac{4{{{\\bf{m}}}}{{{\\boldsymbol{\\mu }}}}\\cos (\\theta )}{{{{{\\bf{m}}}}}^{2}+{{{{\\boldsymbol{\\mu }}}}}^{2}}$$ (1) where I L and I R represent the emission intensities of left- and right-handed circularly polarized light, μ and m are the electric and magnetic transition dipole moment vectors, respectively, and θ is the angle between these two vectors [5], [6].",
+        "references": {
+          "5": {
+            "1": "Molecular emitters that combine circularly polarized luminescence (CPL) and high radiative rate constants of the triplet exciton decay are highly attractive for electroluminescent devices (OLEDs).",
+            "2": "Molecular emitters that combine circularly polarized luminescence (CPL) and high radiative rate constants of the triplet exciton decay are highly attractive for next-generation photonic applications.",
+            "3": "Next-generation photonic applications include spintronics, quantum computing, cryptography, and sensors.",
+            "4": "The design of molecular emitters combining CPL and high radiative rate constants is a major challenge.",
+            "5": "The criteria for enhancing CPL and high radiative rate constants are mutually exclusive.",
+            "6": "Enantiomerically pure {Cu(Cbz^{R})[(S/R)-BINAP]} [R = H (1), 3,6-tBu (2)] are efficient thermally activated delayed fluorescence (TADF) emitters.",
+            "7": "The TADF emitters have high radiative rate constants of k_{TADF} up to 3.1 × 10^{5} s^{-1} from ^{1/3}LLCT states.",
+            "8": "The temperature-dependent time-resolved luminescence studies were used to determine radiative rate constants.",
+            "9": "The efficiency of the TADF process is highly sensitive to environmental hydrogen bonding of the ligands.",
+            "10": "The emission wavelengths are highly sensitive to environmental hydrogen bonding of the ligands.",
+            "11": "Environmental hydrogen bonding of the ligands can be disrupted by grinding of the crystalline materials.",
+            "12": "The pronounced mechano-stimulus photophysical behavior originates from a thermal equilibrium between the ^{1/3}LLCT states and a ^{3}LC state of the BINAP ligand.",
+            "13": "The thermal equilibrium depends on the relative energetic order of the excited states.",
+            "14": "The thermal equilibrium is prone to inter-ligand C-H···π interactions.",
+            "15": "The copper(I) complexes are efficient CPL emitters.",
+            "16": "The copper(I) complexes display exceptional dissymmetry values g_{lum} of up to ±0.6 × 10^{-2} in THF solution.",
+            "17": "The copper(I) complexes display exceptional dissymmetry values g_{lum} of up to ±2.1 × 10^{-2} in the solid state.",
+            "18": "The C-H···π interactions can be disrupted by employing sterically bulky matrices.",
+            "19": "Disruption of C-H···π interactions is important for application in electroluminescence devices.",
+            "20": "Various matrix materials have been investigated for the successful implementation of chiral copper(I) TADF emitters in proof-of-concept CP-OLEDs."
+          },
+          "6": {
+            "1": "Circularly polarized luminescence (CPL) materials have magnetic photophysical properties.",
+            "2": "Circularly polarized luminescence (CPL) materials are of particular interest.",
+            "3": "Circularly polarized luminescence (CPL) materials have potential applications in biological science.",
+            "4": "Circularly polarized luminescence (CPL) materials have potential applications in 3D display.",
+            "5": "Circularly polarized luminescence (CPL) materials have potential applications in information storage.",
+            "6": "Circularly polarized luminescence (CPL) materials have potential applications in spintronics.",
+            "7": "Circularly polarized luminescence (CPL) materials have potential applications in optoelectronic devices.",
+            "8": "Materials with excellent circularly polarized luminescence character include small chiral molecules.",
+            "9": "Materials with excellent circularly polarized luminescence character include supermolecules.",
+            "10": "Materials with excellent circularly polarized luminescence character include chiral rare earth complexes.",
+            "11": "Materials with excellent circularly polarized luminescence character include nano-superstructures.",
+            "12": "The field of circularly polarized luminescence materials began fast development recently.",
+            "13": "The progress of new materials in chiral science has contributed to the fast development of circularly polarized luminescence materials.",
+            "14": "The progress of technology in chiral science has contributed to the fast development of circularly polarized luminescence materials.",
+            "15": "The progress of new materials in nanoscience has contributed to the fast development of circularly polarized luminescence materials.",
+            "16": "The progress of technology in nanoscience has contributed to the fast development of circularly polarized luminescence materials.",
+            "17": "The review presents a comprehensive overview of the field of circularly polarized luminescence materials.",
+            "18": "The review includes the theory of circularly polarized luminescence materials.",
+            "19": "The review includes experiments related to circularly polarized luminescence materials.",
+            "20": "The review presents formulas suitable for ordinary chiral materials.",
+            "21": "The review presents formulas suitable for chiral optical crystals.",
+            "22": "CPL-active materials are categorized into small organic molecules.",
+            "23": "CPL-active materials are categorized into lanthanide complexes.",
+            "24": "CPL-active materials are categorized into inorganic nanomaterials.",
+            "25": "CPL-active materials are categorized into self-assembled helical nanomaterials.",
+            "26": "CPL-active materials are categorized into supermolecular gels.",
+            "27": "The review systematically discusses the merits of CPL-active materials.",
+            "28": "The review systematically discusses the drawbacks of CPL-active materials.",
+            "29": "The review presents in detail the factors influencing the dissymmetry factor of CPL-active materials.",
+            "30": "The review presents in detail the factors influencing the luminescence efficiency of CPL-active materials.",
+            "31": "The review discusses the opportunities of concurrently enhancing the dissymmetry factor and luminescent efficiency in CPL-active materials.",
+            "32": "The review discusses the challenges of concurrently enhancing the dissymmetry factor and luminescent efficiency in CPL-active materials."
+          }
+        },
+        "viewpoints": [
+          "The luminescence dissymmetry factor, g lum, is a key metric to evaluate CPL performance.",
+          "The luminescence dissymmetry factor is obtained from the equation $${g}_{{\\mbox{lum}}}=\\frac{2({I}_{{\\mbox{L}}}-{I}_{{\\mbox{R}}})}{{I}_{{\\mbox{L}}}+{I}_{{\\mbox{R}}}}=\\frac{4{{{\\bf{m}}}}{{{\\boldsymbol{\\mu }}}}\\cos (\\theta )}{{{{{\\bf{m}}}}}^{2}+{{{{\\boldsymbol{\\mu }}}}}^{2}}$$.",
+          "I L and I R represent the emission intensities of left- and right-handed circularly polarized light.",
+          "μ and m are the electric and magnetic transition dipole moment vectors.",
+          "θ is the angle between μ (electric transition dipole moment vector) and m (magnetic transition dipole moment vector)."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Generally, | μ | is much larger than | m | , leading to a mismatch between electric and magnetic transition dipole moment, which results the g lum value around 10 −4 to 10 −3.",
+        "references": {},
+        "viewpoints": [
+          "The absolute value of the electric transition dipole moment vector (| μ |) is generally much larger than the absolute value of the magnetic transition dipole moment vector (| m |).",
+          "The mismatch between electric and magnetic transition dipole moments results in the g lum value around 10 −4 to 10 −3."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "An ideal CPL emitter should have both large g lum and high photoluminescence quantum yield (PLQY), the former represents the polarization purity of the emitted light, while the latter evaluates the effectiveness of energy conversion.",
+        "references": {},
+        "viewpoints": [
+          "An ideal CPL emitter should have a large g lum.",
+          "An ideal CPL emitter should have high photoluminescence quantum yield (PLQY).",
+          "The luminescence dissymmetry factor (g lum) represents the polarization purity of the emitted light.",
+          "The photoluminescence quantum yield (PLQY) evaluates the effectiveness of energy conversion."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In this case, the figure of merit (FOM) has been proposed to quantify CPL performance and estimate the potential of materials for practical applications, which can be calculated by the product of g lum and PLQY (FOM = g lum × PLQY) [7], [8].",
+        "references": {
+          "7": {
+            "1": "Circularly polarized luminescent materials have promise in 3D display applications.",
+            "2": "Circularly polarized luminescent materials have promise in quantum communication applications.",
+            "3": "Hybrid organic–inorganic copper(I) iodides have been rapidly developed.",
+            "4": "Hybrid organic–inorganic copper(I) iodides are developed due to their intense photoluminescence.",
+            "5": "Hybrid organic–inorganic copper(I) iodides are developed due to their structural diversity.",
+            "6": "Reported Cu–I clusters rarely show circularly polarized luminescent activities.",
+            "7": "Chiral organic molecules R/S-methylbenzylammonium were introduced into Cu-I inorganic skeletons in this study.",
+            "8": "Chiral tetranuclear (R/S-MBA)₄Cu₄I₄ clusters with intense orange luminescence were achieved.",
+            "9": "Chiral tetranuclear (R/S-MBA)₄Cu₄I₄ clusters demonstrate circularly polarized luminescent activity at room temperature.",
+            "10": "Enantiomeric (R/S-MBA)₄Cu₄I₄ clusters show oppositely signed circular dichroism signals.",
+            "11": "The circular dichroism signals of enantiomeric (R/S-MBA)₄Cu₄I₄ clusters agree well with their simulated electronic circular dichroism spectra.",
+            "12": "The crystallization-induced helical arrangement of (R/S-MBA)₄Cu₄I₄ clusters demonstrates a new platform for the study of chiral-related properties.",
+            "13": "The largely distorted polynuclear configuration of (R/S-MBA)₄Cu₄I₄ clusters demonstrates a new platform for the study of chiral-related properties."
+          },
+          "8": {
+            "1": "Nations have experienced forgery and counterfeiting since the emergence of commercialization.",
+            "2": "Industries have experienced forgery and counterfeiting since the emergence of commercialization.",
+            "3": "Aspects of everyday life have undergone forgery and counterfeiting since the emergence of commercialization.",
+            "4": "Securing documents with anticounterfeit additives shows promise for authentication.",
+            "5": "Securing products with anticounterfeit additives shows promise for authentication.",
+            "6": "Anticounterfeit additives allow one to combat ever-increasing global counterfeiting.",
+            "7": "A most-used effective encryption strategy is to combine encryption with optical-security markers on required protection objects.",
+            "8": "State-of-the-art labels still suffer from imitation due to poor complexity.",
+            "9": "State-of-the-art labels still suffer from imitation due to easy forecasting.",
+            "10": "The poor complexity and easy forecasting of state-of-the-art labels result from deterministic production.",
+            "11": "Developing advanced anticounterfeiting tags with unusual optical characters is desired to achieve multimodal, unbreakable authentication capacity.",
+            "12": "Incorporating complex security features into anticounterfeiting tags is desired to achieve multimodal, unbreakable authentication capacity.",
+            "13": "Advanced anticounterfeiting tags with desired features for unbreakable authentication capacity have not yet been achieved.",
+            "14": "Stable circularly polarized luminescence (CPL) materials have been prepared.",
+            "15": "The prepared CPL materials are composed of toxicity-free inorganic quantum dots (QDs) and liquid crystals.",
+            "16": "The prepared CPL materials are high-quality-emitting.",
+            "17": "The preparation of the CPL materials used a designed helical-coassembly strategy.",
+            "18": "The CPL system achieves a figure of merit (FM) value of 0.39.",
+            "19": "The FM value assesses the performance of both luminescence dissymmetry and quantum yield.",
+            "20": "The CPL system fulfills practical demands for anticounterfeiting applications.",
+            "21": "Based on CPL structures, a type of multimodal-responsive security materials (MRSMs) has been produced.",
+            "22": "The MRSMs exhibit six different stimuli-responsive modes.",
+            "23": "The stimuli-responsive modes of MRSMs include light activation, polarization, temperature, voltage, pressure, and view angle.",
+            "24": "A proof-of-principle blockchain-like integrated anticounterfeiting system has been shown.",
+            "25": "The integrated anticounterfeiting system allows multimodal-responsive information encryption-decryption.",
+            "26": "The integrated anticounterfeiting system allows interactive/changeable information encryption-decryption.",
+            "27": "The obtained security materials are encapsulated into a fiber.",
+            "28": "Encapsulation into a fiber expands the materials to work on flexible fabrics.",
+            "29": "The result is building an intelligent textile.",
+            "30": "The intelligent textile has a color-adaptable function along with environmental change."
+          }
+        },
+        "viewpoints": [
+          "The figure of merit (FOM) has been proposed to quantify CPL performance.",
+          "The figure of merit (FOM) has been proposed to estimate the potential of materials for practical applications.",
+          "The figure of merit (FOM) can be calculated by the product of g lum and PLQY (FOM = g lum × PLQY)."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "The design challenges lie in balancing the g lum and PLQY via modulating both the value and orientation of μ and m.",
+        "references": {},
+        "viewpoints": [
+          "The design challenges involve balancing the g lum and PLQY.",
+          "The design challenges involve modulating both the value and orientation of the electric transition dipole moment vector (μ).",
+          "The design challenges involve modulating both the value and orientation of the magnetic transition dipole moment vector (m)."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Numerous researches in this field have already been carried out and a series of excellent CPL-active materials have emerged including chiral organic small molecules [9], [10], inorganic nanomaterials [11], [12], and metal complexes [13], [14], [15].",
+        "references": {
+          "9": {
+            "1": "Chiral boron/nitrogen doped MR-TADF emitters are promising for highly efficient CP-OLEDs.",
+            "2": "Chiral boron/nitrogen doped MR-TADF emitters are promising for color-pure CP-OLEDs.",
+            "3": "Two pairs of MR-TADF materials based on planar chiral paracyclophane are reported: Czp-tBuCzB and Czp-POAB.",
+            "4": "Czp-tBuCzB and Czp-POAB have photoluminescence quantum yields of up to 98%.",
+            "5": "The enantiomers showed symmetric circularly polarized photoluminescence spectra.",
+            "6": "The symmetric circularly polarized photoluminescence spectra had dissymmetry factors |g_{PL}| of up to 1.6×10^{−3} in doped films.",
+            "7": "The sky-blue CP-OLEDs with (R/S)-Czp-tBuCzB showed an external quantum efficiency of 32.1%.",
+            "8": "The sky-blue CP-OLEDs with (R/S)-Czp-tBuCzB had the narrowest full-width at half-maximum of 24 nm among reported CP-OLEDs.",
+            "9": "Devices with (R/S)-Czp-POAB displayed the first nearly pure green CP electroluminescence.",
+            "10": "The nearly pure green CP electroluminescence had |g_{EL}| factors at the 10^{−3} level.",
+            "11": "The incorporation of planar chirality into MR-TADF emitters is a reliable strategy for constructing efficient CP-OLEDs."
+          },
+          "10": {
+            "1": "Purely organic materials showing room temperature phosphorescence (RTP) have recently attracted much attention.",
+            "2": "Purely organic materials showing ultralong RTP (OURTP) have recently attracted much attention.",
+            "3": "Integrating circularly polarized luminescence (CPL) into room temperature phosphorescence (RTP) is challenging.",
+            "4": "Integrating circularly polarized luminescence (CPL) into ultralong RTP (OURTP) is challenging.",
+            "5": "A strategy to realize CPL-active OURTP (CP-OURTP) involves binding an achiral phosphor group directly to the chiral center of an ester chain.",
+            "6": "Engineering of a flexible chiral chain enables efficient chirality transfer to carbazole aggregates.",
+            "7": "Efficient chirality transfer to carbazole aggregates results in strong CPL-active OURTP (CP-OURTP) with a lifetime of over 0.6 seconds.",
+            "8": "Strong CPL-active OURTP (CP-OURTP) has a dissymmetry factor of 2.3×10^{-3} after conformation regulation upon photo-activation.",
+            "9": "The realized CPL-active OURTP (CP-OURTP) is stable at room temperature.",
+            "10": "The realized CPL-active OURTP (CP-OURTP) can be deactivated quickly at 50 °C to CPL-active RTP (CP-RTP).",
+            "11": "The realized CPL-active OURTP (CP-OURTP) maintains high circularly polarized luminescence (CPL) stability during the photo-activation/thermal-deactivation cycles.",
+            "12": "A CPL-featured lifetime-encrypted combinational logic device has been successfully established.",
+            "13": "The CPL-featured lifetime-encrypted combinational logic device is based on the extraordinary photo/thermal-responsive and highly reversible CP-OURTP/RTP."
+          },
+          "11": {
+            "1": "The development of circularly polarized luminescent (CPL) materials has drawn extensive attention.",
+            "2": "CPL materials have numerous potential applications in optical data storage.",
+            "3": "CPL materials have numerous potential applications in displays.",
+            "4": "CPL materials have numerous potential applications in backlights in 3D displays.",
+            "5": "CPL materials have numerous other potential applications.",
+            "6": "The fabrication of CPL-active materials generally requires chiral luminescent molecules.",
+            "7": "The introduction of the \"self-assembly\" concept offers a new perspective in obtaining CPL-active materials.",
+            "8": "Various self-assembled materials can be endowed with CPL properties.",
+            "9": "Self-assembled organic systems can be endowed with CPL properties.",
+            "10": "Self-assembled inorganic systems can be endowed with CPL properties.",
+            "11": "Self-assembled hybrid systems can be endowed with CPL properties.",
+            "12": "Chiral molecules can benefit from the advantages of self-assembly to be formed into chiral nanoassemblies showing CPL activity.",
+            "13": "Achiral species can benefit from the advantages of self-assembly to be formed into chiral nanoassemblies showing CPL activity.",
+            "14": "Inorganic nanoparticles can benefit from the advantages of self-assembly to be formed into chiral nanoassemblies showing CPL activity.",
+            "15": "The dissymmetry factor is an important parameter of CPL materials.",
+            "16": "The dissymmetry factor can be enhanced through various pathways of self-assembly.",
+            "17": "The present status of self-assembled nanomaterials with CPL activity is reviewed.",
+            "18": "The progress of self-assembled nanomaterials with CPL activity is reviewed.",
+            "19": "An overview of the key factors in regulating chiral emission materials at the supramolecular level will largely boost their application in multidisciplinary fields."
+          },
+          "12": {
+            "1": "Circularly polarized electroluminescence (CPEL) is actively researched.",
+            "2": "CPEL has wide applications in 3D displays.",
+            "3": "CPEL has wide applications in anti‐counterfeiting.",
+            "4": "It is not trivial to obtain a high asymmetry factor for highly efficient CPELs.",
+            "5": "A highly efficient CPEL is demonstrated with a superior asymmetry factor.",
+            "6": "The superior asymmetry factor is achieved by using a chiral phosphine‐oxide‐passivated perovskite film as an emitter.",
+            "7": "An in situ‐formed perovskite nanocrystalline (NC) film is obtained by passivation of the chiral phosphine oxide.",
+            "8": "The as-formed perovskite nanocrystalline film exhibits much‐enhanced photoluminescence compared with the pristine film.",
+            "9": "The perovskite nanocrystalline film exhibits excellent chiral photoluminescence.",
+            "10": "The perovskite nanocrystalline film has a luminescence dissymmetry factor glum as high as 5.6 × 10^{−3}.",
+            "11": "Electrically driven light‐emitting diodes based on the perovskite nanocrystalline film exhibited superior device performance.",
+            "12": "The maximum brightness of the electrically driven light-emitting diodes is 18,783 cd m^{−2}.",
+            "13": "The peak external quantum efficiency of the electrically driven light-emitting diodes is 3.6%.",
+            "14": "An unprecedented electroluminescence asymmetry factor gEL of up to 0.18 is achieved.",
+            "15": "The electroluminescence asymmetry factor is achieved because of the chiral lattice distortion of the perovskite.",
+            "16": "The electroluminescence asymmetry factor gEL of up to 0.18 is the state‐of‐the‐art among hybrid materials."
+          },
+          "13": {
+            "1": "Chiral Au nanoclusters have promising application prospects in chiral sensing.",
+            "2": "Chiral Au nanoclusters have promising application prospects in asymmetric catalysis.",
+            "3": "Chiral Au nanoclusters have promising application prospects in chiroptics.",
+            "4": "It remains challenging to synthesize enantiopure superatomic homogold clusters with crystallographic structures that emit bright circularly polarized luminescence (CPL).",
+            "5": "Chiral N-heterocyclic carbenes (NHCs) were designed in this study.",
+            "6": "For the first time, a pair of monovalent cationic superatomic Au_{13} clusters was enantioselectively synthesized in this study.",
+            "7": "The new enantiomeric pair of clusters has a quasi-C_{2} symmetric core.",
+            "8": "The new enantiomeric pair of clusters exhibited circularly polarized luminescence (CPL) with an unprecedented solution-state quantum yield (QY) of 61%.",
+            "9": "The solution-state quantum yield (QY) of 61% is unprecedented among atomically precise Au nanoclusters.",
+            "10": "DFT calculations provided insights into the circular dichroism behavior of superatomic Au clusters.",
+            "11": "DFT calculations revealed the origin of circularly polarized luminescence (CPL) from superatomic Au clusters.",
+            "12": "This work opens a new avenue for developing novel homochiral nanoclusters using chiral N-heterocyclic carbene (NHC) ligands.",
+            "13": "This work provides a fundamental understanding of the origin of the chiroptics of metal clusters."
+          },
+          "14": {
+            "1": "The synthesis of dynamic chiral lanthanide complex emitters is difficult.",
+            "2": "Three pairs of dynamic chiral EuIII complex emitters, named R/S-Eu-R-1, R = Et/Me, and R/S-Eu-Et-2, are reported.",
+            "3": "The reported EuIII complex emitters exhibit aggregation-induced emission.",
+            "4": "In the molecular state, the EuIII complexes have almost no obvious emission.",
+            "5": "In the aggregate state, the EuIII complexes greatly enhance the EuIII emission.",
+            "6": "The enhancement of EuIII emission in the aggregate state is due to the restriction of intramolecular rotation.",
+            "7": "The enhancement of EuIII emission in the aggregate state is due to the restriction of intramolecular vibration.",
+            "8": "The asymmetry factor of R-Eu-Et-1 is as high as 0.64 (5D0 → 7F1).",
+            "9": "The circularly polarized luminescence brightness of R-Eu-Et-1 is as high as 2429 M−1cm−1.",
+            "10": "R-Eu-Et-1 achieves a rare double improvement in asymmetry factor and circularly polarized luminescence brightness.",
+            "11": "R-Eu-Et-1 exhibits excellent sensing properties for low concentrations of CuII ions.",
+            "12": "R-Eu-Et-2 exhibits excellent sensing properties for low concentrations of CuII ions.",
+            "13": "The detection limit for CuII ions of R-Eu-Et-1 is as low as 2.55 nM.",
+            "14": "The detection limit for CuII ions of R-Eu-Et-2 is as low as 4.44 nM.",
+            "15": "Dynamic EuIII complexes are constructed by using chiral ligands with rotor structures.",
+            "16": "Dynamic EuIII complexes are constructed by using chiral ligands with vibration units.",
+            "17": "This approach of using chiral ligands with rotor structures or vibration units opens a door for the construction of dynamic chiral luminescent materials."
+          },
+          "15": []
+        },
+        "viewpoints": [
+          "Numerous researches have been carried out in the field of CPL-active materials.",
+          "A series of excellent CPL-active materials have emerged including chiral organic small molecules.",
+          "A series of excellent CPL-active materials have emerged including inorganic nanomaterials.",
+          "A series of excellent CPL-active materials have emerged including metal complexes."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "However, most of them are barely promising for brilliant CPL emitters due to their high cost, poor thermal stability and luminescence intensity.",
+        "references": {},
+        "viewpoints": [
+          "Most CPL-active materials emerging in research are barely promising for brilliant CPL emitters.",
+          "The high cost of CPL-active materials limits their promise as brilliant CPL emitters.",
+          "The poor thermal stability of CPL-active materials limits their promise as brilliant CPL emitters.",
+          "The low luminescence intensity of CPL-active materials limits their promise as brilliant CPL emitters."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "For example, the synthesis of chiral organic molecules or chiral metal complexes is tedious and costly, and they often suffer from poor thermal stability and low luminescence intensity.",
+        "references": {},
+        "viewpoints": [
+          "The synthesis of chiral organic molecules is tedious and costly.",
+          "The synthesis of chiral metal complexes is tedious and costly.",
+          "Chiral organic molecules often suffer from poor thermal stability.",
+          "Chiral metal complexes often suffer from poor thermal stability.",
+          "Chiral organic molecules often suffer from low luminescence intensity.",
+          "Chiral metal complexes often suffer from low luminescence intensity."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Inorganic nanomaterials, on the other hand, require coating prefabricated nanomaterials with chiral passivating ligands to achieve CPL, and their properties are challenging to precisely control.",
+        "references": {},
+        "viewpoints": [
+          "Inorganic nanomaterials require coating prefabricated nanomaterials with chiral passivating ligands to achieve CPL.",
+          "The properties of inorganic nanomaterials are challenging to precisely control."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Recently, lead-free metal halide hybrids have become a research hotspot due to their low cost and facile synthesis [16], [17], diverse topological structures [18], [19], and high PLQY [20], [21].",
+        "references": {
+          "16": {
+            "1": "Ecological and environmental concerns are increasing.",
+            "2": "Tin-based perovskite light-emitting diodes (PeLEDs) are competitive candidates for future displays.",
+            "3": "Tin-based PeLEDs are environmentally friendly.",
+            "4": "Tin-based PeLEDs have excellent photoelectric properties.",
+            "5": "Tin-based PeLEDs have low-cost solution-processed fabrication.",
+            "6": "The electroluminescence performance of Sn-based PeLEDs lags behind that of lead-based PeLEDs.",
+            "7": "The fast crystallization rate of Sn-based perovskite films contributes to the inferior EL performance of Sn-based PeLEDs.",
+            "8": "Undesired oxidation from Sn²⁺ to Sn⁴⁺ contributes to the inferior EL performance of Sn-based PeLEDs.",
+            "9": "Fast crystallization rate and undesired oxidation lead to poor film morphology and coverage in Sn-based PeLEDs.",
+            "10": "Fast crystallization rate and undesired oxidation lead to high density defects in Sn-based PeLEDs.",
+            "11": "A ligand engineering strategy is proposed to construct high-quality phenethylammonium tin iodide perovskite films.",
+            "12": "L-glutathione reduced (GSH) is used as surface ligands in constructing phenethylammonium tin iodide perovskite films.",
+            "13": "The strategy aims to create efficient pure red phenethylammonium tin iodide-based PeLEDs.",
+            "14": "Hydrogen-bond interactions between GSH and PEA₂SnI₄ reduce the crystallization rate of the perovskites.",
+            "15": "Coordinate interactions between GSH and PEA₂SnI₄ reduce the crystallization rate of the perovskites.",
+            "16": "Hydrogen-bond interactions suppress the oxidation of Sn²⁺ and formation of defects.",
+            "17": "Coordinate interactions suppress the oxidation of Sn²⁺ and formation of defects.",
+            "18": "The improved pure red perovskite films show excellent uniformity.",
+            "19": "The improved pure red perovskite films show excellent density.",
+            "20": "The improved pure red perovskite films show excellent coverage.",
+            "21": "The improved pure red perovskite films exhibit enhanced optical properties.",
+            "22": "The improved pure red perovskite films exhibit enhanced stability.",
+            "23": "State-of-the-art pure red PeLEDs achieve a record external quantum efficiency of 9.32%.",
+            "24": "The record external quantum efficiency is achieved in the field of PEA₂SnI₄-based devices.",
+            "25": "This work demonstrates that ligand engineering is a feasible route to enhance the electroluminescence performance of Sn-based PeLEDs."
+          },
+          "17": {
+            "1": "Zero-dimensional organic metal halide hybrids have emerged as a new class of light-emitting materials.",
+            "2": "Zero-dimensional organic metal halide hybrids possess exceptional color tunability.",
+            "3": "Near-unity photoluminescence quantum efficiencies are routinely obtained for a large number of zero-dimensional organic metal halide hybrids.",
+            "4": "It remains challenging to apply zero-dimensional organic metal halide hybrids as emitters for electrically driven light-emitting diodes.",
+            "5": "The challenge in applying zero-dimensional organic metal halide hybrids as emitters for electrically driven light-emitting diodes is largely due to the low conductivity of wide bandgap organic cations.",
+            "6": "The development of a new organic metal halide hybrid, triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide, as an emitter for efficient light-emitting diodes is reported.",
+            "7": "Triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide consists of semiconducting organic cations and light-emitting antimony bromide anions.",
+            "8": "A semiconducting triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium cation is developed for the preparation of red-emitting zero-dimensional triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide single crystals.",
+            "9": "One of the phenyl groups in a tetraphenylphosphonium cation is replaced with an electroactive phenylcarbazole group to develop a semiconducting triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium cation.",
+            "10": "The red-emitting zero-dimensional triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide single crystals have a high photoluminescence quantum efficiency of 93.8%.",
+            "11": "Solution-processed triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide thin films as the light-emitting layer have a photoluminescence quantum efficiency of 86.1%.",
+            "12": "Red light-emitting diodes fabricated with solution-processed triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide thin films exhibit an external quantum efficiency of 5.12%.",
+            "13": "Red light-emitting diodes fabricated with solution-processed triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide thin films exhibit a peak luminance of 5957 cd m⁻².",
+            "14": "Red light-emitting diodes fabricated with solution-processed triphenyl(9-phenyl-9H-carbazol-3-yl) phosphonium antimony bromide thin films exhibit a current efficiency of 14.2 cd A⁻¹.",
+            "15": "The performance values of external quantum efficiency, peak luminance, and current efficiency are the best reported to date for electroluminescence devices based on zero-dimensional organic metal halide hybrids."
+          },
+          "18": {
+            "1": "Hybrid metal halides are an emerging class of materials.",
+            "2": "Hybrid metal halides are highly efficient photoluminescent materials.",
+            "3": "Very few hybrid metal halides show reversible on–off photoluminescent switching under external stimuli.",
+            "4": "Hybrid metal halides have the potential to perform as next-generation intelligent materials.",
+            "5": "Hybrid metal halides have applications in cutting-edge photoelectric devices.",
+            "6": "We report single crystal-to-single crystal structural transitions among three 0D hybrid antimony halides.",
+            "7": "We report photoluminescent transitions among three 0D hybrid antimony halides.",
+            "8": "The three 0D hybrid antimony halides are nonemissive α-[DHEP]­SbCl₅ (1), yellow-emissive β-[DHEP]­SbCl₅·2H₂O (2), and red-emissive β-[DHEP]­SbCl₅ (3).",
+            "9": "The transitions are achieved by a dynamic phonon-engineering strategy.",
+            "10": "The reversible single crystal-to-single crystal transformation between nonemissive α-[DHEP]­SbCl₅ (1) and yellow-emissive β-[DHEP]­SbCl₅·2H₂O (2) is triggered by acetone.",
+            "11": "The reversible single crystal-to-single crystal transformation between nonemissive α-[DHEP]­SbCl₅ (1) and yellow-emissive β-[DHEP]­SbCl₅·2H₂O (2) is triggered by methanol.",
+            "12": "The transformation between nonemissive α-[DHEP]­SbCl₅ (1) and yellow-emissive β-[DHEP]­SbCl₅·2H₂O (2) affords the reversible photoluminescent on–off switching.",
+            "13": "The transition between yellow-emissive β-[DHEP]­SbCl₅·2H₂O (2) and red-emissive β-[DHEP]­SbCl₅ (3) is achieved by reversible single crystal-to-single crystal transformation.",
+            "14": "The transformation between yellow-emissive β-[DHEP]­SbCl₅·2H₂O (2) and red-emissive β-[DHEP]­SbCl₅ (3) occurs through the process of removal/adsorption of guest water molecules.",
+            "15": "The transition from red-emissive β-[DHEP]­SbCl₅ (3) to nonemissive α-[DHEP]­SbCl₅ (1) is performed by the introduction of methanol.",
+            "16": "The transition from red-emissive β-[DHEP]­SbCl₅ (3) to nonemissive α-[DHEP]­SbCl₅ (1) is accompanied by the quenching of red emission.",
+            "17": "A triple-mode reversible photoluminescent off–on^I–on^II–off switching is realized in metal halide hybrids for the first time.",
+            "18": "The reversible photoluminescent off–on^I switching involves a yellow-emissive mode.",
+            "19": "The color-tunable on^I–on^II switching involves yellow-red emissive modes.",
+            "20": "The on^II–off switching involves a red-emissive mode.",
+            "21": "The reversible photoluminescent switching in 0D hybrid antimony halides makes them suitable for applications in the protection of confidential information.",
+            "22": "The reversible photoluminescent switching in 0D hybrid antimony halides makes them suitable for applications in the anti-counterfeiting of confidential information.",
+            "23": "The reversible photoluminescent switching in 0D hybrid antimony halides makes them suitable for applications in optical logic gates."
+          },
+          "19": {
+            "1": "Thermochromic phosphors are intriguing materials.",
+            "2": "Thermochromic phosphors are used for realizing thermochromic behaviors of light-emitting diodes.",
+            "3": "A highly luminescent and stable thermochromic phosphor based on one-dimensional Cu₄I₆(4-dimethylamino-1-ethylpyridinium)₂ is reported.",
+            "4": "The ionic copper-iodine chain-based hybrid exhibits near-unity photoluminescence efficiency.",
+            "5": "The near-unity photoluminescence efficiency of the ionic copper-iodine chain-based hybrid is owing to the through-space charge-transfer character of relevant electronic transitions.",
+            "6": "An alternative mechanism of thermochromic phosphorescence was unraveled.",
+            "7": "The unraveling of the alternative mechanism of thermochromic phosphorescence is supported by a first principles simulation.",
+            "8": "The first principles simulation involves concerted copper atom migration in the copper-iodine chain.",
+            "9": "A bright thermochromic light-emitting diode was successfully fabricated.",
+            "10": "The bright thermochromic light-emitting diode uses the Cu₄I₆(4-dimethylamino-1-ethylpyridinium)₂ thermochromic phosphor.",
+            "11": "The flexible ionic copper-iodine chain-based thermochromic luminescent material represents a new type of cost-effective functional phosphor."
+          },
+          "20": {
+            "1": "Glass is a group of materials with appealing qualities, including simplicity in fabrication.",
+            "2": "Glass has qualities of durability.",
+            "3": "Glass has qualities of high transparency.",
+            "4": "Glass plays a crucial role in the optics field.",
+            "5": "A new organic-inorganic metal halide luminescent glass is reported.",
+            "6": "The new luminescent glass exhibits >78% transmittance at the 550-800 nm range.",
+            "7": "The new luminescent glass has a high photoluminescence quantum yield (PLQY) of 28.5%.",
+            "8": "The new luminescent glass is produced through a low-temperature melt-quenched approach.",
+            "9": "The new luminescent glass is made from pre-synthesized (HTPP)₂MnBr₄ (HTPP = hexyltriphenylphosphonium) single crystal.",
+            "10": "Temperature-dependent X-ray diffraction, polarizing microscopy, and molecular dynamics simulations were combined to investigate the glass-crystalline interconversion process.",
+            "11": "The study of the glass-crystalline interconversion process revealed the disordered nature of the glassy state.",
+            "12": "The transparent nature of (HTPP)₂MnBr₄ glass benefits its use in X-ray imaging.",
+            "13": "(HTPP)₂MnBr₄ glass yields an outstanding spatial resolution of 10 lp/mm for X-ray imaging.",
+            "14": "The superb optical properties distinguish the organic-inorganic metal halide glass as a highly promising class of materials for optical devices.",
+            "15": "The facility of large-scale fabrication distinguishes the organic-inorganic metal halide glass as a highly promising class of materials for optical devices."
+          },
+          "21": {
+            "1": "Luminescent metal halide materials have flexible crystallography/electronic structures.",
+            "2": "Luminescent metal halide materials have tunable emission.",
+            "3": "Luminescent metal halide materials have broad application prospects in the visible light region.",
+            "4": "Designing near-infrared (NIR) light-emitting metal halides is a challenge.",
+            "5": "A prototype is proposed to explore high-efficiency broadband NIR emission in metal halide systems.",
+            "6": "The prototype involves incorporating Sb³⁺ into the Cs₂ZnCl₄ matrix.",
+            "7": "Experimental analysis and density functional theory calculations are combined to study NIR emission.",
+            "8": "A modified self-trapped excitons model is revealed to explain the NIR emission.",
+            "9": "The lead-free metal halide Cs₂ZnCl₄:Sb³⁺ has a high photoluminescence quantum yield of 69.9% peaking at 745 nm.",
+            "10": "The lead-free metal halide Cs₂ZnCl₄:Sb³⁺ has a large full width at half maximum of 175 nm.",
+            "11": "The lead-free metal halide Cs₂ZnCl₄:Sb³⁺ has excellent air/thermal stability.",
+            "12": "The lead-free metal halide Cs₂ZnCl₄:Sb³⁺ has unique advantages as the NIR light source.",
+            "13": "The substitution of Cl⁻ by Br⁻ enables the red-shift of the emission peak from 745 to 823 nm.",
+            "14": "The NIR light-emitting diode device based on Cs₂ZnCl₄:Sb³⁺ has potential as a non-visible light source in night vision.",
+            "15": "This study proposes an effective strategy to design novel eco-friendly and high-efficiency NIR emissive materials.",
+            "16": "This study provides guidance for expanding the application scope of luminescent metal halides."
+          }
+        },
+        "viewpoints": [
+          "Lead-free metal halide hybrids have become a research hotspot recently.",
+          "Lead-free metal halide hybrids are a research hotspot due to their low cost.",
+          "Lead-free metal halide hybrids are a research hotspot due to their facile synthesis.",
+          "Lead-free metal halide hybrids are a research hotspot due to their diverse topological structures.",
+          "Lead-free metal halide hybrids are a research hotspot due to their high photoluminescence quantum yield (PLQY)."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "The use of chirality-induced spin selectivity (CISS) effect further endows such materials more stable intrinsic chirality with excellent CPL behavior, positioning them as promising candidates for high-performance CPL emitters [22], [23].",
+        "references": {
+          "22": {
+            "1": "Scintillators display radioluminescent properties when irradiated by high-energy photons.",
+            "2": "Scintillators play an essential role in radiation detection due to their radioluminescent properties.",
+            "3": "The current inventory of scintillators is overwhelmingly represented by achiral structures.",
+            "4": "In achiral structures, the radioluminescence propagates isotropically after generation.",
+            "5": "(R-3AP)PbBr₃Cl·H₂O (R-3APP) and (S-3AP)PbBr₃Cl·H₂O (S-3APP) emerge as a new type of chiral perovskite scintillator.",
+            "6": "(R-3AP)PbBr₃Cl·H₂O (R-3APP) scintillators display a distinct property of circularly polarized radioluminescence (CPRL).",
+            "7": "(S-3AP)PbBr₃Cl·H₂O (S-3APP) scintillators display a distinct property of circularly polarized radioluminescence (CPRL).",
+            "8": "(R-3APP) and (S-3APP) compounds exhibit a high quantum yield of 27.6%.",
+            "9": "(R-3APP) and (S-3APP) compounds exhibit high luminescence dissymmetric factors (gₗᵤₘ) of 4×10⁻².",
+            "10": "(R-3APP) and (S-3APP) compounds exhibit high X-ray absorption coefficients.",
+            "11": "A polarized scintillator pair was fabricated by assembling chiral scintillator crystals as proof of concept.",
+            "12": "The assembly of chiral scintillator crystals into a polarized scintillator pair provides a new strategy to attenuate optical crosstalk between the scintillators.",
+            "13": "The assembly of chiral scintillator crystals into a polarized scintillator pair allows for precise control of radioluminescence propagation.",
+            "14": "The assembly of chiral scintillator crystals into a polarized scintillator pair improves the X-ray imaging quality at the boundary region."
+          },
+          "23": {
+            "1": "Zero-dimensional (0D) hybrid metal halides with perfect host-guest structures are promising candidates for constructing circularly polarized luminescence (CPL)-active materials.",
+            "2": "It remains challenging to obtain zero-dimensional chiral metal halides with both strong circularly polarized luminescence (CPL) and high photoluminescence quantum yield.",
+            "3": "A new enantiomeric pair of zero-dimensional hybrid lead-tin bromides, (RR/SS-C₆N₂H₁₆)₂Pb₀.₉₆₈Sn₀.₀₃₂Br₆·2H₂O (R/S-PbSnBr·H₂O), is reported.",
+            "4": "The R/S-PbSnBr·H₂O compounds show intriguing self-trapped exciton emissions with near-unity quantum yield.",
+            "5": "The R/S-PbSnBr·H₂O compounds present intense circularly polarized luminescence (CPL) with a dissymmetry factor gₗᵤₘ of ±3.0×10⁻³.",
+            "6": "The circularly polarized luminescence (CPL) activities originate from the asymmetric [SnBr₆]⁴⁻ luminophores in R/S-PbSnBr·H₂O.",
+            "7": "The structural chirality induced by the organic ligands via N-H⋅⋅⋅Br hydrogen bonds is responsible for the asymmetric [SnBr₆]⁴⁻ luminophores.",
+            "8": "Circularly polarized luminescence (CPL) emissions with tunable colors from R/S-PbSnBr·H₂O and dehydrated compounds are reversibly observed.",
+            "9": "The tunable colors in CPL emissions extend the chiroptical applications of R/S-PbSnBr·H₂O and dehydrated compounds."
+          }
+        },
+        "viewpoints": [
+          "The use of chirality-induced spin selectivity (CISS) effect endows lead-free metal halide hybrids with more stable intrinsic chirality.",
+          "Lead-free metal halide hybrids with the CISS effect exhibit excellent CPL behavior.",
+          "Lead-free metal halide hybrids with the CISS effect are promising candidates for high-performance CPL emitters."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The principle involves directly incorporating chiral organic cations into the metal halide lattice, imparting them inherent chirality.",
+        "references": {},
+        "viewpoints": [
+          "The principle involves directly incorporating chiral organic cations into the metal halide lattice.",
+          "Incorporating chiral organic cations into the metal halide lattice imparts inherent chirality to the materials."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The asymmetric hydrogen bonds between chiral organic cations and halide ions often exacerbate lattice distortion, leading to the deformation of excited state.",
+        "references": {},
+        "viewpoints": [
+          "Asymmetric hydrogen bonds between chiral organic cations and halide ions often exacerbate lattice distortion.",
+          "Lattice distortion leads to the deformation of the excited state."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "This deformed excited state further induces the generation of self-trapped excitons (STEs), thereby initiating efficient STEs emission and exhibiting chiral luminescent properties.",
+        "references": {},
+        "viewpoints": [
+          "The deformed excited state induces the generation of self-trapped excitons (STEs).",
+          "The deformed excited state initiates efficient STEs emission.",
+          "The deformed excited state exhibits chiral luminescent properties."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Several significant achievements have been realized in chiral lead-free metal halides [24], [25], [26], [27], [28], [29], [30], [31], [32], [33], [34].",
+        "references": {
+          "24": {
+            "1": "Hybrid multifunctional materials have great potential in a wide variety of applications.",
+            "2": "The potential of hybrid multifunctional materials is due to their flexible combination of organic and inorganic components.",
+            "3": "Introducing chiral organic modules into the metal halide frameworks can effectively generate multifunctional materials.",
+            "4": "Introducing chiral organic modules into the metal halide frameworks achieves new functionalities with noncentrosymmetric structures.",
+            "5": "(R)- or (S)-piperidine-3-carboxylic acid (R/S-PCA) is used as the templating cation.",
+            "6": "Three pairs of new 2D chiral hybrid Cu(I) halides synthesized and characterized are (R/S-PCA)CuBr₂, (R/S-PCA)CuBr₂·0.5H₂O, and (R/S-PCA)CuI₂.",
+            "7": "Chiral Cu(I) halides crystallize in the noncentrosymmetric space group C2.",
+            "8": "Chiral Cu(I) halides belong to a new structural type similar to layered silicates.",
+            "9": "The optical absorption edges of chiral materials can be tuned by changing the halide.",
+            "10": "The optical absorption edges of chiral materials can be tuned upon the absorption of water.",
+            "11": "The optical absorption edges of chiral materials range from 2.70 to 3.66 eV.",
+            "12": "A dynamic conversion between (R/S-PCA)CuBr₂ and (R/S-PCA)CuBr₂·0.5H₂O occurs through exposure to moisture.",
+            "13": "A dynamic conversion between (R/S-PCA)CuBr₂ and (R/S-PCA)CuBr₂·0.5H₂O occurs through vacuum drying.",
+            "14": "The dynamic conversion is along with changes in the reversible bandgap.",
+            "15": "The dynamic conversion is along with changes in photoluminescence.",
+            "16": "Chiroptical properties investigated include circular dichroism.",
+            "17": "Chiroptical properties investigated include circular polarized light emission.",
+            "18": "Chiroptical properties investigated include second harmonic generation.",
+            "19": "Density functional theory calculations (DFT) show the indirect bandgap nature of Cu(I) halides.",
+            "20": "Density functional theory calculations (DFT) show the direct bandgap nature of Cu(I) halides.",
+            "21": "Density functional theory calculations reveal the mechanism for the broadband self-trapped exciton emission at the excited state.",
+            "22": "The structural type of Cu(I)-based halides makes them viable candidates for next-generation multifunctional optoelectronic materials.",
+            "23": "The chiroptical properties of Cu(I)-based halides make them viable candidates for next-generation multifunctional optoelectronic materials.",
+            "24": "The reversible hydrochromic behavior of Cu(I)-based halides makes them viable candidates for next-generation multifunctional optoelectronic materials."
+          },
+          "25": {
+            "1": "It is difficult to generate circularly polarized luminescence (CPL) with simultaneous high photoluminescence quantum yield (PLQY) and dissymmetry factor (g_{lum}).",
+            "2": "The difficulty in generating CPL with high PLQY and g_{lum} is due to the usually unmatched electric transition dipole moment (μ) and magnetic transition dipole moment (m) of materials.",
+            "3": "The issue of generating CPL with high PLQY and g_{lum} is tackled by using a \"cascade cationic insertion\" trick.",
+            "4": "Strong CPL with a PLQY of ~100% is achieved in lead-free metal halides using the \"cascade cationic insertion\" trick.",
+            "5": "High g_{lum} values reaching -2.3×10^{-2} are achieved in lead-free metal halides without using any chiral inducers.",
+            "6": "Achiral solvents of hydrochloric acid (HCl) and N, N-dimethylformamide (DMF) infiltrate the crystal lattice via asymmetric hydrogen bonding.",
+            "7": "The infiltration of the crystal lattice by HCl and DMF distorts the perovskite structure.",
+            "8": "The distortion of the perovskite structure by achiral solvents induces the \"intrinsic\" chirality.",
+            "9": "The additional insertion of Cs^{+} cation substitutes partial (CH_{3})_{2}NH_{2}^{+}.",
+            "10": "The substitution of (CH_{3})_{2}NH_{2}^{+} with Cs^{+} cation transforms the chiral space group to achiral.",
+            "11": "Despite the transformation of the chiral space group to achiral, the crystal maintains chiroptical activity.",
+            "12": "Further doping of Sb^{3+} stimulates strong photoluminescence.",
+            "13": "The stimulation of strong photoluminescence by Sb^{3+} doping is a result of self-trapped excitons (STEs) formation.",
+            "14": "The formation of STEs occurs without disturbing the crystal framework.",
+            "15": "Chiral perovskites of indium-antimony chlorides embedded on LEDs chips demonstrate promising potential as CPL emitters.",
+            "16": "The work presents rare cases of chiroptical activity of highly luminescent perovskites.",
+            "17": "The highly luminescent perovskites exhibit chiroptical activity from only achiral building blocks.",
+            "18": "The chiroptical activity of the perovskites occurs via spontaneous resolution as a result of symmetry breaking."
+          },
+          "26": [],
+          "27": {
+            "1": "Introducing chirality into metal-halide hybrids has enabled emerging properties in these hybrids.",
+            "2": "Emerging properties enabled by introducing chirality into metal-halide hybrids include chiroptical activity.",
+            "3": "Emerging properties enabled by introducing chirality into metal-halide hybrids include spin-dependent transport.",
+            "4": "Emerging properties enabled by introducing chirality into metal-halide hybrids include ferroelectricity.",
+            "5": "Most chiral metal-halide hybrids to date are non-emissive.",
+            "6": "The underlying mechanism for the non-emissive nature of most chiral metal-halide hybrids remains elusive.",
+            "7": "A new strategy to turn on circularly polarized luminescence (CPL) in chiral metal-halide hybrids is described.",
+            "8": "Alloying Sb³⁺ into chiral indium-chloride hybrids dramatically increases the photoluminescence quantum yield.",
+            "9": "Two new series of chiral indium-antimony chlorides with increased photoluminescence quantum yield due to Sb³⁺ alloying are demonstrated.",
+            "10": "Chiral indium-antimony chlorides exhibit strong CPL signals.",
+            "11": "The CPL signals in chiral indium-antimony chlorides have tunable energy.",
+            "12": "The dissymmetry factor of CPL signals in chiral indium-antimony chlorides is high, up to 1.5×10⁻².",
+            "13": "Mechanistic studies reveal that the emission originates from self-trapped excitons in 5s² Sb³⁺.",
+            "14": "Near-ultraviolet pumped white light is demonstrated in the materials.",
+            "15": "The demonstrated near-ultraviolet pumped white light has a polarization up to 6.0%.",
+            "16": "New strategies towards highly luminescent chiral metal-halide hybrids are demonstrated."
+          },
+          "28": {
+            "1": "Chiral hybrid metal halides have great potential as circularly polarized luminescence light sources.",
+            "2": "Two enantiomeric pairs of one-dimensional hybrid chiral manganese(II) chloride single crystals, denoted as R/S-(3-methyl piperidine)MnCl₃ (R/S-1) and R/S-(3-hydroxy piperidine)MnCl₃ (R/S-2), have been obtained.",
+            "3": "R/S-(3-methyl piperidine)MnCl₃ (R/S-1) and R/S-(3-hydroxy piperidine)MnCl₃ (R/S-2) crystallize in the non-centrosymmetric space group P2₁2₁2₁.",
+            "4": "R/S-2 single crystals show red emission with near-unity photoluminescence quantum yield (PLQY).",
+            "5": "R/S-2 single crystals have high resistance to thermal quenching.",
+            "6": "R/S-2 single crystals exhibit circularly polarized luminescence with an asymmetry factor (gₗᵤₘ) of 2.5×10⁻³.",
+            "7": "The asymmetry factor (gₗᵤₘ) of 2.5×10⁻³ in R/S-2 single crystals can be attributed to enhanced crystal rigidity.",
+            "8": "Enhanced crystal rigidity in R/S-2 results from hydrogen bonding networks between R/S-(3-hydroxy piperidine) cations and [MnCl₆]⁴⁻ chains.",
+            "9": "Circularly polarized luminescence activities originate from the asymmetric [MnCl₆]⁴⁻ luminophores.",
+            "10": "The asymmetric [MnCl₆]⁴⁻ luminophores are induced by N–H⋅⋅⋅Cl hydrogen bonding with R/S-(3-hydroxy piperidine).",
+            "11": "R/S-1 and R/S-2 samples demonstrate great application potential in circularly polarized light-emitting diodes.",
+            "12": "R/S-1 and R/S-2 samples demonstrate great application potential in X-ray scintillators.",
+            "13": "This work shows a highly efficient photoluminescent Mn-based halide.",
+            "14": "This work offers a strategy for designing multifunctional chiral metal halides."
+          },
+          "29": {
+            "1": "Hybrid metal halides with efficient circularly polarized luminescence have application prospects in many fields.",
+            "2": "Hybrid metal halides have abundant host-guest structures.",
+            "3": "Hybrid metal halides have high photoluminescence quantum yield.",
+            "4": "Circularly polarized luminescences in hybrid metal halides are predominantly excited by light.",
+            "5": "Circularly polarized luminescences in hybrid metal halides are predominantly excited by electricity.",
+            "6": "The predominant excitation of circularly polarized luminescences by light or electricity limits their use in multivariate environments.",
+            "7": "It is necessary to explore a novel excitation method for chiral hybrid metal halides.",
+            "8": "Exploring a novel excitation method aims to extend the application of chiral hybrid metal halides as smart stimuli-responsive optical materials.",
+            "9": "An enantiomeric pair of 0D hybrid manganese bromides, [H₂(2R,4R)-(+)/(2S,4S)-(−)-2,4-bis(diphenylphosphino)pentane]MnBr₄, called (R/S)-1, is presented in this work.",
+            "10": "(R/S)-1 exhibits efficient circularly polarized luminescence emissions.",
+            "11": "(R/S)-1 has near-unity photoluminescence quantum yields.",
+            "12": "(R/S)-1 has high dissymmetry factors of ±2.0 × 10⁻³.",
+            "13": "(R/S)-1 compounds exhibit unprecedented circularly polarized mechanoluminescence emissions.",
+            "14": "The circularly polarized mechanoluminescence emissions in (R/S)-1 are bright.",
+            "15": "(R/S)-1 compounds exhibit circularly polarized mechanoluminescence emissions under mechanical stimulation.",
+            "16": "(R/S)-1 possess high mechanical force sensitivities.",
+            "17": "(R/S)-1 have mechanoluminescence emissions detectable under 0.1 N force stimulation.",
+            "18": "The mechanoluminescence emission in (R/S)-1 exhibits an extraordinary antithermal quenching effect in the temperature range of 300–380 K.",
+            "19": "The antithermal quenching effect of mechanoluminescence in (R/S)-1 originates from a thermal activation energy compensation mechanism.",
+            "20": "The thermal activation energy compensation mechanism occurs from trap levels to the Mn(II) ⁴T₁ level.",
+            "21": "(R/S)-1 compounds are demonstrated as chiral force-responsive materials in multilevel confidential information encryption.",
+            "22": "The demonstration of (R/S)-1 in multilevel confidential information encryption is based on their intriguing optical properties."
+          },
+          "30": {
+            "1": "Ultraviolet circularly polarized luminescence (UV-CPL) with high photon energy shows great potential in polarized light sources.",
+            "2": "Ultraviolet circularly polarized luminescence (UV-CPL) with high photon energy shows great potential in stereoselective photopolymerization.",
+            "3": "Developing luminescent materials with high UV-CPL performance remains challenging.",
+            "4": "A pair of rare earth Ce^{3+}-based zero-dimensional (0D) chiral hybrid metal halides (HMHs), R/S-(C_{14}H_{24}N_{2})_{2}CeBr_{7}, is reported.",
+            "5": "R/S-(C_{14}H_{24}N_{2})_{2}CeBr_{7} exhibits characteristic UV emissions derived from the Ce 5d–4f transition.",
+            "6": "The compounds exhibit high photoluminescent quantum yields of (32–39)%.",
+            "7": "The compounds exhibit large luminescent dissymmetry factor (|g_{lum}|) values of (1.3–1.5)×10^{−2}.",
+            "8": "The figures of merits of R/S-(C_{14}H_{24}N_{2})_{2}CeBr_{7} are calculated to be (4.5–5.8)×10^{−3}.",
+            "9": "The figures of merits of R/S-(C_{14}H_{24}N_{2})_{2}CeBr_{7} are superior to the reported UV-CPL emissive materials.",
+            "10": "Nearly 91% of the PL intensities of R/S-(C_{14}H_{24}N_{2})_{2}CeBr_{7} at 300 K can be well preserved at 380 K (LED operating temperature).",
+            "11": "The PL intensities preservation occurs without phase transition or decomposition.",
+            "12": "The preservation demonstrates the excellent structural stability of R/S-(C_{14}H_{24}N_{2})_{2}CeBr_{7}.",
+            "13": "The preservation demonstrates the excellent optical thermal stability of R/S-(C_{14}H_{24}N_{2})_{2}CeBr_{7}.",
+            "14": "The fabricated UV-emitting CP-LEDs based on these enantiomers exhibit high polarization degrees of ±1.0%.",
+            "15": "The UV-CPL generated from the devices can significantly trigger the enantioselective photopolymerization of diacetylene with remarkable stereoselectivity.",
+            "16": "The UV-CPL generated from the devices yields polymerized products with the anisotropy factors of circular dichroism (g_{CD}) up to ±3.9×10^{−2}.",
+            "17": "The UV-CPL generated from the devices outperforms other UV-CPL materials.",
+            "18": "The UV-CPL generated from the devices demonstrates great potential as UV-polarized light sources."
+          },
+          "31": {
+            "1": "Chiral organic-inorganic hybrid metal halides (OIHMHs) have recently attracted broader scientific interest.",
+            "2": "Chiral organic-inorganic hybrid metal halides (OIHMHs) are of interest in spin light-emitting diodes.",
+            "3": "Chiral organic-inorganic hybrid metal halides (OIHMHs) are of interest in circularly polarized light-emitting diodes.",
+            "4": "The emission peaks of the reported chiral OIHMHs mainly reside in the visible region.",
+            "5": "Chiral OIHMHs with ultraviolet (UV) circularly polarized luminescence (CPL) have been rarely reported.",
+            "6": "Cerium is a unique rare-earth (RE) element with tunable luminescence from UV to the visible region.",
+            "7": "The tunable luminescence of cerium is due to the 4f-related electronic transition.",
+            "8": "Cerium was introduced to construct the first rare-earth (RE)-based chiral OIHMHs called R/S-MCC.",
+            "9": "Chirality is successfully transferred from the chiral organic cations to the inorganic cerium chloride framework in R/S-MCC.",
+            "10": "The transfer of chirality in R/S-MCC is confirmed by single crystal structures.",
+            "11": "The transfer of chirality in R/S-MCC is confirmed by circular dichroism.",
+            "12": "The transfer of chirality in R/S-MCC is confirmed by circularly polarized luminescence (CPL).",
+            "13": "The emission spectra of R/S-MCC are in the UV region.",
+            "14": "The UV emission spectra originate from the characteristic d-f transition of Ce³⁺.",
+            "15": "Ce-based metal halides are ideal candidates for circularly polarized luminescence (CPL) light sources in the UV region.",
+            "16": "R-MCC and S-MCC are the first rare-earth (RE)-based chiral organic-inorganic hybrid metal halides (OIHMHs).",
+            "17": "R-MCC and S-MCC are the first chiral metal-halides with ultraviolet (UV) circularly polarized luminescence (CPL).",
+            "18": "This work opens a new avenue for the development of the chiral organic-inorganic hybrid metal halide (OIHMH) family.",
+            "19": "The new development of the chiral OIHMH family is towards rare-earth (RE)-based chiral OIHMHs.",
+            "20": "Rare-earth (RE)-based chiral metal halides couple the unique optical properties of RE elements with chirality.",
+            "21": "Rare-earth (RE)-based chiral metal halides couple the superior optical properties of RE elements with chirality.",
+            "22": "Rare-earth (RE)-based chiral metal halides couple the superior electrical properties of RE elements with chirality.",
+            "23": "Rare-earth (RE)-based chiral metal halides couple the superior magnetic properties of RE elements with chirality.",
+            "24": "Rare-earth (RE)-based chiral metal halides couple the superior spintronic properties of RE elements with chirality.",
+            "25": "Coupling of these properties could accelerate the development of chiral optoelectronics toward real applications.",
+            "26": "Coupling of these properties could accelerate the development of chiral spintronics toward real applications."
+          },
+          "32": {
+            "1": "Light-emitting diodes (LEDs) with circularly polarized luminescence features have promising applications in solid-state lighting.",
+            "2": "Light-emitting diodes (LEDs) with circularly polarized luminescence features have promising applications in displays.",
+            "3": "Light-emitting diodes (LEDs) with circularly polarized luminescence features have promising applications in bioencoding.",
+            "4": "Light-emitting diodes (LEDs) with circularly polarized luminescence features have promising applications in anticounterfeiting.",
+            "5": "Highly emissive chiral materials are a prerequisite for circularly polarized luminescence.",
+            "6": "(R/S-MBA)₄Cu₄I₈·2H₂O single crystals were grown on the basis of Gua₃Cu₂I₅ by the slow evaporation method.",
+            "7": "Acentric Gua₆Cu₄I₁₀ single crystals were grown on the basis of Gua₃Cu₂I₅ by the slow evaporation method.",
+            "8": "(R/S-MBA)₄Cu₄I₈·2H₂O single crystals exhibited excellent circularly polarized luminescence characteristics.",
+            "9": "Ultraviolet-pumped LEDs (UV-LEDs) based on (R/S-MBA)₄Cu₄I₈·2H₂O exhibit higher optical selectivity under right-handed circular polarization conditions.",
+            "10": "Ultraviolet-pumped LEDs (UV-LEDs) based on (R/S-MBA)₄Cu₄I₈·2H₂O exhibit higher optical selectivity under left-handed circular polarization conditions.",
+            "11": "Ultraviolet-pumped LEDs (UV-LEDs) based on Gua₆Cu₄I₁₀ single crystals exhibit higher optical selectivity under right-handed circular polarization conditions.",
+            "12": "Ultraviolet-pumped LEDs (UV-LEDs) based on Gua₆Cu₄I₁₀ single crystals exhibit higher optical selectivity under left-handed circular polarization conditions.",
+            "13": "(S-MBA)₄Cu₄I₈·2H₂O single crystals induced by the (R)-MBA cation exhibit different polarized light intensities at PL peak positions in different λ/4 waveplate polarizer angle directions.",
+            "14": "Gua₆Cu₄I₁₀ single crystals induced by the (R)-MBA cation exhibit different polarized light intensities at PL peak positions in different λ/4 waveplate polarizer angle directions.",
+            "15": "The different polarized light intensities at PL peak positions provide new possibilities for applications in 3D displays.",
+            "16": "The different polarized light intensities at PL peak positions provide new possibilities for applications in spintronics.",
+            "17": "The different polarized light intensities at PL peak positions provide new possibilities for applications in anticounterfeiting."
+          },
+          "33": {
+            "1": "Materials with circularly polarized luminescence (CPL) activity have immense potential applications in molecular switches.",
+            "2": "Materials with circularly polarized luminescence (CPL) activity have immense potential applications in optical sensors.",
+            "3": "Materials with circularly polarized luminescence (CPL) activity have immense potential applications in information storage.",
+            "4": "Materials with circularly polarized luminescence (CPL) activity have immense potential applications in asymmetric photosynthesis.",
+            "5": "Materials with circularly polarized luminescence (CPL) activity have immense potential applications in 3D optical displays.",
+            "6": "Materials with circularly polarized luminescence (CPL) activity have immense potential applications in biological probes.",
+            "7": "Materials with circularly polarized luminescence (CPL) activity have immense potential applications in spintronic devices.",
+            "8": "The achiral architectures of most luminophores severely limit the practical applications of materials with circularly polarized luminescence (CPL) activity.",
+            "9": "Molecular ferroelectrics have striking chemical variability.",
+            "10": "Molecular ferroelectrics have structure-property flexibility.",
+            "11": "Molecular ferroelectrics with striking chemical variability and structure-property flexibility facilitate the assembly of CPL-active ferroelectric materials.",
+            "12": "(R)-3-(fluoropyrrolidinium)MnBr₃ and (S)-3-(fluoropyrrolidinium)MnBr₃ are organic-inorganic perovskite enantiomorphic ferroelectrics.",
+            "13": "(R)-3-(fluoropyrrolidinium)MnBr₃ and (S)-3-(fluoropyrrolidinium)MnBr₃ undergo a 222F2-type ferroelectric phase transition at 273 K.",
+            "14": "The mirror relationships of (R)- and (S)-3-(fluoropyrrolidinium)MnBr₃ are verified by single-crystal X-ray diffraction.",
+            "15": "The mirror relationships of (R)- and (S)-3-(fluoropyrrolidinium)MnBr₃ are verified by vibrational circular dichroism (VCD).",
+            "16": "The corresponding Cotton effect for the two chiral crystals was captured by mirror circularly polarized luminescence (CPL) activity.",
+            "17": "The inducing interaction between the achiral luminescent perovskite framework and chiral organic components may cause the mirror CPL activity.",
+            "18": "This is the first molecular ferroelectric with circularly polarized luminescence (CPL) activity.",
+            "19": "The discovery of the first molecular ferroelectric with CPL activity will inspire intriguing research in molecular ferroelectrics with CPL activity.",
+            "20": "The discovery of the first molecular ferroelectric with CPL activity holds great potential for the development of new optoelectronic devices."
+          },
+          "34": {
+            "1": "Chiral hybrid Cu(I)-based iodides with d10 closed shell demonstrate great potential for circularly polarized luminescence.",
+            "2": "Chiral hybrid Cu(I)-based iodides with d10 closed shell have high photoluminescence quantum yield.",
+            "3": "Mono- or bi-dentate coordination mode ligands are used as a chiral source for the self-assembly of chiral hybrid Cu(I)-based iodides.",
+            "4": "The self-assembly of four pairs of chiral hybrid Cu(I)-based iodides is reported.",
+            "5": "The four pairs of chiral hybrid Cu(I)-based iodides include (R/S)-Cu4I4(Hmpy)4·H2O (R/S-1), (R/S)-Cu4I4(3Hpy)4 (R/S-2), (R/S)-Cu4I4(2MePI)4 (R/S-3), and (R/S)-Cu4I4(3AD)4 (R/S-4).",
+            "6": "R/S-Hmpy is R/S-2-pyrrolidinemethanol, R/S-3Hpy is R/S-3-hydroxypyrrolidine, R/S-2MePI is R/S-2-methylpiperazine, and R/S-3AD is R/S-3-aminopiperidine.",
+            "7": "These materials use monodentate and bidentate ligands.",
+            "8": "These materials belong to two different structural types: 0D molecular clusters and 3D porous metal–organic frameworks.",
+            "9": "R/S-1 and R/S-2 are 0D molecular clusters.",
+            "10": "R/S-3 and R/S-4 are 3D porous metal–organic frameworks.",
+            "11": "These materials crystallize in non-centrosymmetric space groups.",
+            "12": "These materials contain similar basic Cu4I4 cubane tetramer building units.",
+            "13": "These materials have different coordination modes.",
+            "14": "These materials are semiconductors.",
+            "15": "The optical bandgaps of these materials range from 2.70 to 2.94 eV.",
+            "16": "The photoluminescence emissions of these materials are characterized.",
+            "17": "The circularly polarized luminescence emissions of these materials are characterized.",
+            "18": "R/S-1 achieves the highest photoluminescence quantum yield of ≈95%.",
+            "19": "R/S-1 achieves a circularly polarized luminescence dissymmetry factor of ≈7 × 10−3.",
+            "20": "This work offers a systematic comparison between different structural types with similar building blocks.",
+            "21": "The structural types are bridged by flexible chiral ligands.",
+            "22": "The work shows that the hybrid copper iodides are highly promising candidates for next-generation optoelectronics.",
+            "23": "The work shows that the hybrid copper iodides are highly promising candidates for chiroptics."
+          }
+        },
+        "viewpoints": [
+          "Several significant achievements have been realized in chiral lead-free metal halides."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "For instance, Quan et al. reported a pair of 0D indium-antimony chlorides with near-unity STEs emission and g lum of ±1.0 × 10 −2 [35].",
+        "references": {
+          "35": {
+            "1": "Chiral zero-dimensional hybrid metal halides (0D HMHs) could combine excellent optical properties and chirality.",
+            "2": "Chiral zero-dimensional hybrid metal halides (0D HMHs) are promising for circularly polarized luminescence (CPL).",
+            "3": "Chiral zero-dimensional hybrid metal halides (0D HMHs) with efficient circularly polarized luminescence (CPL) have been rarely reported.",
+            "4": "An efficient strategy is proposed to achieve simultaneously high photoluminescence quantum yield (PLQY) and large dissymmetry factor (g_{lum}).",
+            "5": "Integrating achiral and chiral ligands into zero-dimensional hybrid metal halides (0D HMHs) is the method used in the proposed strategy.",
+            "6": "Three pairs of chiral zero-dimensional hybrid indium-antimony chlorides are synthesized in this study.",
+            "7": "Achiral guanidine is combined with three types of chiral methylbenzylammonium-based derivatives to synthesize the chiral zero-dimensional hybrid indium-antimony chlorides.",
+            "8": "Achiral guanidine and chiral methylbenzylammonium-based derivatives are used as the organic cations in the synthesis process.",
+            "9": "The chiral zero-dimensional hybrid metal halides (0D HMHs) exhibit near-unity photoluminescence quantum yield (PLQY).",
+            "10": "The chiral zero-dimensional hybrid metal halides (0D HMHs) exhibit large dissymmetry factor (g_{lum}) values up to around ±1×10^{-2}.",
+            "11": "The achiral guanidine ligand is essential to crystallize hybrid indium-antimony chlorides.",
+            "12": "The crystallization of hybrid indium-antimony chlorides achieves near-unity photoluminescence quantum yields (PLQYs).",
+            "13": "The achiral guanidine ligand greatly enhances the chirality induction from organic ligands to inorganic units in the zero-dimensional hybrid metal halides (0D HMHs).",
+            "14": "The choice of different chiral ligands can modify the strength of hydrogen bonding interactions in zero-dimensional hybrid metal halides (0D HMHs).",
+            "15": "Modifying the strength of hydrogen bonding interactions can maximize the dissymmetry factor (g_{lum}) values in zero-dimensional hybrid metal halides (0D HMHs).",
+            "16": "The study provides a robust way to realize efficient circularly polarized luminescence (CPL) in chiral hybrid metal halides (HMHs).",
+            "17": "Realizing efficient circularly polarized luminescence (CPL) in chiral hybrid metal halides (HMHs) expands their applications in chiroptical fields."
+          }
+        },
+        "viewpoints": [
+          "Quan et al. reported a pair of 0D indium-antimony chlorides with near-unity STEs emission.",
+          "Quan et al. reported a pair of 0D indium-antimony chlorides with a g lum of ±1.0 × 10 −2."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Mao and colleagues realized a g lum of ±2.3 × 10 − 2 in the 1D chiral Mn-based halides (R/S-3-quinuclidinol)MnBr3 with PLQY of 50.2% [36].",
+        "references": {
+          "36": {
+            "1": "Chiral hybrid metal halides with a high dissymmetry factor (g_{lum}) are promising candidates for CPL light sources.",
+            "2": "Chiral hybrid metal halides with a superior photoluminescence quantum yield (PLQY) are promising candidates for CPL light sources.",
+            "3": "Eight new chiral hybrid manganese halides have been reported.",
+            "4": "The eight chiral hybrid manganese halides crystallize in the non-centrosymmetric space group P2_{1}2_{1}2_{1}.",
+            "5": "The eight chiral hybrid manganese halides show intense CPL emissions.",
+            "6": "Oppositely-signed circular dichroism (CD) signals are detected according to the R- and S-configurations of the chiral alkanolammonium cations.",
+            "7": "Oppositely-signed CPL signals are detected according to the R- and S-configurations of the chiral alkanolammonium cations.",
+            "8": "Time-resolved photoluminescence spectra show long averaged decay lifetimes up to 1 ms for (R-3-quinuclidinol)MnBr_{3} (R-1).",
+            "9": "The g_{lum} of polycrystalline samples for coordinated structures is 23×10^{−3}.",
+            "10": "The g_{lum} of polycrystalline samples for non-coordinated structures is 8.5×10^{−3}.",
+            "11": "The g_{lum} of coordinated structures is more than doubled compared with non-coordinated structures due to structural variations.",
+            "12": "R-1 exhibit a high dissymmetry factor (g_{lum).",
+            "13": "R-1 exhibit a high photoluminescence quantum yield (PLQY) of 50.2%.",
+            "14": "The effective chirality transfer mechanism through coordination bonds enables a new class of high-performance CPL materials.",
+            "15": "Strongly emissive Mn^{II} centers contribute to enabling a new class of high-performance CPL materials."
+          }
+        },
+        "viewpoints": [
+          "Mao and colleagues realized a g lum of ±2.3 × 10 −2 in the 1D chiral Mn-based halides (R/S-3-quinuclidinol)MnBr3.",
+          "The 1D chiral Mn-based halides (R/S-3-quinuclidinol)MnBr3 have a PLQY of 50.2%."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Additionally, Xu et al. reported two CPL-active metal halide enantiomers: 0D (R/S-C6H15ClNO)2•SbCl5 (C6H15ClNO+ = (3-chloro-2-hydroxypropyl)trimethylammonium cation) and 1D (D/L)-(tert-butylprolinate)MnCl3 with the PLQY higher than 70% [37], [38].",
+        "references": {
+          "37": {
+            "1": "Chiral materials with circularly polarized luminescence (CPL) are attracting great attention.",
+            "2": "Chiral materials with CPL are used in bioresponsive imaging.",
+            "3": "Chiral materials with CPL are used in 3D displays.",
+            "4": "Chiral materials with CPL are used in the storage of information.",
+            "5": "CPL-active enantiomorphic hybrids (R)- and (S)-C6H15Cl2NO⋅SbCl5 are obtained.",
+            "6": "The hybrids are obtained by self-assembling chiral R/S-(3-chloro-2-hydroxypropyl)trimethylammonium chloride with antimony(III) chloride.",
+            "7": "The obtained structure is 0D with SbCl5 pyramids.",
+            "8": "The SbCl5 pyramids are isolated by (3-chloro-2-hydroxypropyl)trimethylammonium chloride cations.",
+            "9": "The formed enantiomers exhibit brilliant orange emission.",
+            "10": "The orange emission of the enantiomers peaks at 604 nm.",
+            "11": "The photoluminescence quantum yield of the enantiomers is as high as 71.2%.",
+            "12": "The emission originates from self-trapped exciton emission.",
+            "13": "The self-trapped exciton emission is demonstrated by photophysical characterization.",
+            "14": "The enantiomers exhibit strong chiral-optical properties due to the existence of chiral organic cations.",
+            "15": "The enantiomers have mirror-image circular dichroism signals in the ground state.",
+            "16": "The enantiomers exhibit obvious CPL activity.",
+            "17": "The dissymmetry factor glum is 2.5 × 10−4 for R-type.",
+            "18": "The dissymmetry factor glum is −1.6 × 10−4 for S-type.",
+            "19": "These are the first reported 0D hybrids with CPL-activity.",
+            "20": "This work paves an avenue for developing eco-friendly CPL materials.",
+            "21": "This work paves an avenue for developing CPL materials with highly efficient luminescence."
+          },
+          "38": {
+            "1": "Circular polarized luminescence (CPL)-active materials attract significant attention.",
+            "2": "CPL-active materials have widespread applications in 3D optical displays.",
+            "3": "CPL-active materials are used in encrypted transmission.",
+            "4": "Strategies adopted in perovskite-based CPL materials inspired the preparation of CPL-active hybrids.",
+            "5": "CPL-active hybrids (D)- and (L)-(tert-butyl prolinate)MnCl₃ were successfully prepared.",
+            "6": "The CPL-active hybrids were prepared by assembling chiral D/L tert-butyl prolinate with manganese (II) chloride.",
+            "7": "Single crystal structures show the as-formed hybrids possess one-dimensional (1D) structure.",
+            "8": "The 1D structure contains linear chains of face-sharing MnCl₆ octahedral.",
+            "9": "The MnCl₆ octahedral are surrounded by prolinate cations.",
+            "10": "The 1D Mn(II) hybrids display strong red emission peaked at 646 nm.",
+            "11": "The photoluminescence quantum yield (PLQY) for d-type is 67.1 %.",
+            "12": "The photoluminescence quantum yield (PLQY) for l-type is 57.2 %.",
+            "13": "The PLQY of these hybrids represents the highest for 1D Mn²⁺ hybrids.",
+            "14": "The 1D Mn(II) hybrids exhibit prominent circular dichroism (CD) signals.",
+            "15": "The 1D Mn(II) hybrids exhibit remarkable circular polarized luminescence (CPL) activity.",
+            "16": "The dissymmetry factor g is 6.1×10⁻³ for (D)-(tert-butyl prolinate)MnCl₃ from 550 to 800 nm.",
+            "17": "The dissymmetry factor g is −6.3×10⁻³ for (L)-(tert-butyl prolinate)MnCl₃ from 550 to 800 nm.",
+            "18": "The chiral cations contribute to the CPL activity and CD signals.",
+            "19": "The obtained dissymmetry factor g represents the highest value for non-lead organic–inorganic hybrids."
+          }
+        },
+        "viewpoints": [
+          "Xu et al. reported the 0D CPL-active metal halide enantiomer (R/S-C6H15ClNO)2•SbCl5.",
+          "Xu et al. reported the 1D CPL-active metal halide enantiomer (D/L)-(tert-butylprolinate)MnCl3.",
+          "The CPL-active metal halide enantiomers (R/S-C6H15ClNO)2•SbCl5 and (D/L)-(tert-butylprolinate)MnCl3 have a PLQY higher than 70%."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The g lum for 0D (R/S-C6H15ClNO)2•SbCl5 is ± 3.0 × 10 −4, while for 1D (D/L)-(tert-butylprolinate)MnCl3 is ±6.0 × 10 −3.",
+        "references": {},
+        "viewpoints": [
+          "The g lum for the 0D CPL-active metal halide enantiomer (R/S-C6H15ClNO)2•SbCl5 is ± 3.0 × 10 −4.",
+          "The g lum for the 1D CPL-active metal halide enantiomer (D/L)-(tert-butylprolinate)MnCl3 is ±6.0 × 10 −3."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Recently, Zhang’s team reported the best-brightness CPL-active metal halides to date using the cascade cationic insertion strategy with FOM value reaching 2.26 × 10 −2 [25].",
+        "references": {
+          "25": {
+            "1": "It is difficult to generate circularly polarized luminescence (CPL) with simultaneous high photoluminescence quantum yield (PLQY) and dissymmetry factor (g_{lum}).",
+            "2": "The difficulty in generating CPL with high PLQY and g_{lum} is due to the usually unmatched electric transition dipole moment (μ) and magnetic transition dipole moment (m) of materials.",
+            "3": "The issue of generating CPL with high PLQY and g_{lum} is tackled by using a \"cascade cationic insertion\" trick.",
+            "4": "Strong CPL with a PLQY of ~100% is achieved in lead-free metal halides using the \"cascade cationic insertion\" trick.",
+            "5": "High g_{lum} values reaching -2.3×10^{-2} are achieved in lead-free metal halides without using any chiral inducers.",
+            "6": "Achiral solvents of hydrochloric acid (HCl) and N, N-dimethylformamide (DMF) infiltrate the crystal lattice via asymmetric hydrogen bonding.",
+            "7": "The infiltration of the crystal lattice by HCl and DMF distorts the perovskite structure.",
+            "8": "The distortion of the perovskite structure by achiral solvents induces the \"intrinsic\" chirality.",
+            "9": "The additional insertion of Cs^{+} cation substitutes partial (CH_{3})_{2}NH_{2}^{+}.",
+            "10": "The substitution of (CH_{3})_{2}NH_{2}^{+} with Cs^{+} cation transforms the chiral space group to achiral.",
+            "11": "Despite the transformation of the chiral space group to achiral, the crystal maintains chiroptical activity.",
+            "12": "Further doping of Sb^{3+} stimulates strong photoluminescence.",
+            "13": "The stimulation of strong photoluminescence by Sb^{3+} doping is a result of self-trapped excitons (STEs) formation.",
+            "14": "The formation of STEs occurs without disturbing the crystal framework.",
+            "15": "Chiral perovskites of indium-antimony chlorides embedded on LEDs chips demonstrate promising potential as CPL emitters.",
+            "16": "The work presents rare cases of chiroptical activity of highly luminescent perovskites.",
+            "17": "The highly luminescent perovskites exhibit chiroptical activity from only achiral building blocks.",
+            "18": "The chiroptical activity of the perovskites occurs via spontaneous resolution as a result of symmetry breaking."
+          }
+        },
+        "viewpoints": [
+          "Zhang’s team reported the best-brightness CPL-active metal halides to date using the cascade cationic insertion strategy.",
+          "Zhang’s team achieved a FOM value of 2.26 × 10 −2 in their CPL-active metal halides."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Despite the progress, the CPL performance implemented above is still not governed by any specific rules and is typically obtained through a trial-and-error approach.",
+        "references": {},
+        "viewpoints": [
+          "The CPL performance achieved so far is not governed by any specific rules.",
+          "The CPL performance is typically obtained through a trial-and-error approach."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Therefore, it is highly needed to clarify the relationship between structures and chiroptical properties in chiral metal halide hybrids and provide effective guidance for designing efficient circularly polarized light sources.",
+        "references": {},
+        "viewpoints": [
+          "It is highly needed to clarify the relationship between structures and chiroptical properties in chiral metal halide hybrids.",
+          "Effective guidance is needed for designing efficient circularly polarized light sources."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "In this work, we develope an efficient strategy to achieve both high PLQY and large g lum in chiral metal halide hybrids by regulating their structural dimensions (Fig. 1).",
+        "references": {},
+        "viewpoints": [
+          "An efficient strategy was developed to achieve both high PLQY and large g lum in chiral metal halide hybrids.",
+          "The strategy achieves these results by regulating the structural dimensions of the hybrids."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Specifically, the 0D, 1D, and 3D In-based hybrids are rationally designed and constructed by tuning the size and polarization of chiral organic cations with strong hydrogen-bonding-acceptors (oxygen heteroatom), which can coordinate with K+ ions and enhance the chirality transfer.",
+        "references": {},
+        "viewpoints": [
+          "0D, 1D, and 3D In-based hybrids are rationally designed and constructed.",
+          "The size and polarization of chiral organic cations are tuned with strong hydrogen-bonding-acceptors (oxygen heteroatom).",
+          "Strong hydrogen-bonding-acceptors can coordinate with K+ ions.",
+          "Coordination with K+ ions enhances chirality transfer."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Bright emission with the near-unity PLQY is obtained in these hybrids.",
+        "references": {},
+        "viewpoints": [
+          "Bright emission with near-unity PLQY is obtained in these hybrids."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Furthermore, the contradiction between PLQY and g lum is overcame by regulating the structural dimensions which enhances the chiral induction effect and balances the values of electric and magnetic transition dipole moment.",
+        "references": {},
+        "viewpoints": [
+          "The contradiction between PLQY and g lum is overcome by regulating the structural dimensions.",
+          "Regulating structural dimensions enhances the chiral induction effect.",
+          "Regulating structural dimensions balances the values of electric and magnetic transition dipole moments."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "As a result, the g lum of these hybrids show an exponential growth from 10 − 3 to nearly 10 − 1 orders of magnitude as the structural dimension increases from 0D to 3D.",
+        "references": {},
+        "viewpoints": [
+          "The g lum of these hybrids shows an exponential growth from 10 − 3 to nearly 10 − 1 orders of magnitude.",
+          "The growth in g lum is related to the increase in structural dimension from 0D to 3D."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Both the | g lum | (0.89 × 10 − 1) and FOM (0.79 × 10 − 1) are the highest values among the reported chiral metal halides to date.",
+        "references": {},
+        "viewpoints": [
+          "The | g lum | of 0.89 × 10 − 1 is the highest value among the reported chiral metal halides to date.",
+          "The FOM of 0.79 × 10 − 1 is the highest value among the reported chiral metal halides to date."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Our work elucidates the relationship between structural dimension and g lum in chiral metal halides, and provides a simple pathway for the rational design of efficient CPL-active metal halide hybrids with both high PLQY and large g lum.",
+        "references": {},
+        "viewpoints": [
+          "The work elucidates the relationship between structural dimension and g lum in chiral metal halides.",
+          "The work provides a simple pathway for the rational design of efficient CPL-active metal halide hybrids with both high PLQY and large g lum."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56394-9_with_abstracts",
+    "base_id": "s41467-025-56394-9",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56394-9_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

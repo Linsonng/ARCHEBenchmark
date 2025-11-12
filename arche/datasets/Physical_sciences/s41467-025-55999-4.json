@@ -1,0 +1,473 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Phosphorus is remarkable for the structural diversity of its allotropes, but only a few of them are chemically stable and possess desired properties. The molecular forms of low nuclearity species are unstable, with white phosphorus P 4 self-igniting in air, and P 2 and P 6 species existing only in the gas phase at high temperature [1] , [2] . In contrast, polymeric red, violet and black phosphorus can be handled readily under ambient conditions. Phosphorene, a monolayer of black phosphorus, was recently demonstrated to be a semiconductor with a tuneable bandgap [3] , [4] . However, these sheets of black phosphorus are not stable towards a combination of moisture, oxygen and light. Another drawback is the high energy consumption during the synthesis of this allotrope from P 4 at 1.3 GPa and 200 °C [5] . Another important and stable allotrope is red phosphorus, which is more stable than black phosphorus with a wide bandgap of up to 2.4 eV [6] . Decreasing the bandgap of red phosphorus-based materials is a challenging task, and extensive theoretical and synthetic investigations have been conducted to develop new polymeric forms of phosphorus with improved stability and physiochemical properties. Von Schnering and Baudler have demonstrated [7] , [8] various types of clusters of phosphorus, including the structural elements of black phosphorus. Cis - and trans -linear chains, helical and double-helical chains containing [P 8 ] cages directly bound to each other have been predicted recently to be more stable than P 4 [9] . A phase-pure sample of fibrous phosphorus featuring parallel chains of P 8 building blocks [10] has been isolated by heating ultra-pure red phosphorus in the presence of CuCl 2 in vacuo [11] . Supramolecular chemistry can promote controllable polymerisation and stabilisation of phosphorus chains within the nanochannels of a porous host. Thus, CuI has been used to stabilise phosphorus nanorods in the form of (CuI) 8 P 12 and (CuI) 3 P 12 adducts [12] , as well as confining and stabilising anionic P 12 2– and P 14 2– species [13] . Activated carbons and carbon nanotubes can adsorb tetrahedral P 4 molecules [14] , with the latter also able to act as a host for the polymerisation of encapsulated white phosphorus molecules into single-stranded chains consisting of butterfly P 4 fragments [15] , [16] , [17] . Due to the amorphous nature of these materials, their structure determination remains elusive. A rich host–guest chemistry [18] , [19] , tuneable porosity, high crystallinity and potential stability of metal-organic frameworks (MOFs) make them ideal hosts for the inclusion of white phosphorus molecules, which might be further polymerised using visible light and analysed structurally by diffraction [20] , [21] . Moreover, the doping of MOFs with phosphorus chains of atomic width may improve the semiconducting properties of the resulting P–MOF composites. Here, we report the synthesis of a double-helical phosphorus chain comprising butterfly P 8 monomers stabilised in the helical channels of an indium-based MOF, MFM-300(In). The similarity between Raman spectra of bulk red phosphorus and the obtained adduct suggests the presence of such helical chains within the structure of amorphous red phosphorus, thus representing a comprehensive crystallographic study on the structural building units of the red phosphorus allotrope.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Phosphorus is remarkable for the structural diversity of its allotropes, but only a few of them are chemically stable and possess desired properties.",
+        "references": {},
+        "viewpoints": [
+          "Phosphorus has a remarkable structural diversity of allotropes.",
+          "Only a few phosphorus allotropes are chemically stable.",
+          "Only a few phosphorus allotropes possess desired properties."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "The molecular forms of low nuclearity species are unstable, with white phosphorus P 4 self-igniting in air, and P 2 and P 6 species existing only in the gas phase at high temperature [1] , [2].",
+        "references": {
+          "1": [],
+          "2": []
+        },
+        "viewpoints": [
+          "The molecular forms of low nuclearity phosphorus species are unstable.",
+          "White phosphorus P 4 self-ignites in air.",
+          "P 2 and P 6 phosphorus species exist only in the gas phase at high temperature."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In contrast, polymeric red, violet and black phosphorus can be handled readily under ambient conditions.",
+        "references": {},
+        "viewpoints": [
+          "Polymeric red phosphorus can be handled readily under ambient conditions.",
+          "Polymeric violet phosphorus can be handled readily under ambient conditions.",
+          "Polymeric black phosphorus can be handled readily under ambient conditions."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Phosphorene, a monolayer of black phosphorus, was recently demonstrated to be a semiconductor with a tuneable bandgap [3] , [4].",
+        "references": {
+          "3": {
+            "1": "The study explores the impact of strain on charge carrier mobility of monolayer α-P, β-P, γ-P, and δ-P.",
+            "2": "Monolayer α-P, β-P, γ-P, and δ-P are the four well-known atomically thin allotropes of phosphorus.",
+            "3": "The study uses density functional theory to explore the impact of strain on charge carrier mobility of monolayer α-P, β-P, γ-P, and δ-P.",
+            "4": "The band dispersion of the pristine allotropes is highly anisotropic.",
+            "5": "The charge carrier mobility of the pristine allotropes is significantly higher in one principal direction compared to the other.",
+            "6": "The charge carrier mobility of the pristine allotropes is more than 5 times higher in one principal direction (zigzag or armchair) compared to the other in some cases.",
+            "7": "Uniaxial strain up to 6% compressive/tensile leads to band gap alteration in each of the allotropes.",
+            "8": "Uniaxial strain leads to a direct to indirect band gap semiconductor transition in γ-P.",
+            "9": "Uniaxial strain leads to a complete closure of the band gap in γ-P.",
+            "10": "Uniaxial strain leads to a complete closure of the band gap in δ-P.",
+            "11": "Uniaxial strain typically enhances the charge carrier mobility by a factor of ∼5–10 in all the allotropes.",
+            "12": "A compressive strain acting in the armchair direction leads to an ∼250 times increase of the hole mobility in β-P along the armchair direction.",
+            "13": "A compressive strain acting in the armchair direction leads to a ∼30 times increase of the electron mobility in γ-P along the zigzag direction.",
+            "14": "The preferred electronic conduction direction can be changed in α-P by applying strain.",
+            "15": "The preferred electronic conduction direction can be changed in γ-P by applying strain."
+          },
+          "4": {
+            "1": "Phosphorus is a nonmetal.",
+            "2": "Phosphorus has several allotropes.",
+            "3": "White phosphorus is highly reactive.",
+            "4": "Black phosphorus is thermodynamically stable.",
+            "5": "Black phosphorus has a puckered orthorhombic layered structure.",
+            "6": "The bulk form of black phosphorus was first synthesized in 1914.",
+            "7": "Black phosphorus received little attention until it was rediscovered in 2014.",
+            "8": "Black phosphorus was rediscovered as a member of the new wave of 2D layered nanomaterials.",
+            "9": "Black phosphorus can be exfoliated to a single sheet.",
+            "10": "The single sheet of black phosphorus acts as a semiconductor.",
+            "11": "The single sheet of black phosphorus has a tunable direct band gap.",
+            "12": "The single sheet of black phosphorus has high carrier mobility at room temperature.",
+            "13": "The single sheet of black phosphorus has in-plane anisotropy.",
+            "14": "The development of black phosphorus applications is hampered by surface degradation.",
+            "15": "Efforts to achieve effective black phosphorus passivation are ongoing.",
+            "16": "Efforts to achieve effective black phosphorus passivation include its integration in van der Waals heterostructures.",
+            "17": "Black phosphorus has been tested as a novel nanomaterial in batteries.",
+            "18": "Black phosphorus has been tested as a novel nanomaterial in transistors.",
+            "19": "Black phosphorus has been tested as a novel nanomaterial in sensors.",
+            "20": "Black phosphorus has been tested as a novel nanomaterial in photonics.",
+            "21": "The Review begins with the origin of the black phosphorus story.",
+            "22": "The Review follows the path from black phosphorus as a bulk material to modern few/single layers.",
+            "23": "The physical properties of black phosphorus are summarized.",
+            "24": "The chemical properties of black phosphorus are summarized.",
+            "25": "The state-of-the-art of black phosphorus applications is highlighted."
+          }
+        },
+        "viewpoints": [
+          "Phosphorene, a monolayer of black phosphorus, is a semiconductor.",
+          "Phosphorene has a tuneable bandgap."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "However, these sheets of black phosphorus are not stable towards a combination of moisture, oxygen and light.",
+        "references": {},
+        "viewpoints": [
+          "Sheets of black phosphorus are not stable towards moisture.",
+          "Sheets of black phosphorus are not stable towards oxygen.",
+          "Sheets of black phosphorus are not stable towards light."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Another drawback is the high energy consumption during the synthesis of this allotrope from P 4 at 1.3 GPa and 200 °C [5].",
+        "references": {
+          "5": {
+            "1": "Phosphorus is one of the most abundant elements in the Earth (~0.1%).",
+            "2": "Phosphorus has attracted much attention in the last five years.",
+            "3": "Phosphorus has attracted attention due to the rediscovery of two-dimensional black phosphorus (BP) in 2014.",
+            "4": "The successful scaling down of black phosphorus endows this 'old material' with new vitality.",
+            "5": "The new vitality of black phosphorus results from its intriguing semiconducting properties in the atomic scale limit.",
+            "6": "Black phosphorus has a layer-dependent bandgap that covers from the visible light to the mid-infrared light spectrum.",
+            "7": "Black phosphorus exhibits hole-dominated ambipolar transport characteristics.",
+            "8": "Intensive research effort has been devoted to the fabrication of black phosphorus and other phosphorus allotropes.",
+            "9": "Intensive research effort has been devoted to the characterization of black phosphorus and other phosphorus allotropes.",
+            "10": "Intensive research effort has been devoted to the functionalization of black phosphorus and other phosphorus allotropes.",
+            "11": "Intensive research effort has been devoted to the application of black phosphorus and other phosphorus allotropes.",
+            "12": "The review article summarizes the fundamental properties of black phosphorus.",
+            "13": "The review article summarizes the fabrication techniques of black phosphorus.",
+            "14": "The review article places particular emphasis on the recent progress in molecular beam epitaxy growth of two-dimensional phosphorus.",
+            "15": "Recent progress in black phosphorus (opto)electronic device applications is highlighted in the article.",
+            "16": "Recent progress in black phosphorus (opto)electronic device applications has been achieved via customized manipulation methods.",
+            "17": "Customized manipulation methods include interface engineering.",
+            "18": "Customized manipulation methods include defect engineering.",
+            "19": "Customized manipulation methods include bandgap engineering.",
+            "20": "Customized manipulation methods include forming Lego-like stacked heterostructures."
+          }
+        },
+        "viewpoints": [
+          "High energy consumption is a drawback during the synthesis of black phosphorus from P 4.",
+          "Black phosphorus synthesis requires 1.3 GPa and 200 °C."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Another important and stable allotrope is red phosphorus, which is more stable than black phosphorus with a wide bandgap of up to 2.4 eV [6].",
+        "references": {
+          "6": {
+            "1": "Red phosphorus (RP) is an excellent semiconductor photocatalyst.",
+            "2": "Red phosphorus (RP) suffers from a narrow band gap.",
+            "3": "Red phosphorus (RP) suffers from a small specific surface area.",
+            "4": "Red phosphorus (RP) has few active sites.",
+            "5": "Red phosphorus (RP) has low light quantum efficiency.",
+            "6": "The narrow band gap, small specific surface area, few active sites, and low light quantum efficiency limit the practical application of red phosphorus (RP).",
+            "7": "The immobilization of red phosphorus (RP) on supports with a large surface is an emerging attempt to improve photocatalytic performance.",
+            "8": "The hydrothermally treated red phosphorus (HRP) was immobilized on the inexpensive activated carbon (AC) support.",
+            "9": "The ratio optimization experiments showed that the photocatalytic activity of AC7/HRP (mass fraction of AC was 7%) composite was optimal.",
+            "10": "AC7/HRP composite showed the highest photocatalytic activity against Rhodamine B (RhB).",
+            "11": "The κ values of AC7/HRP composite were 0.234 min⁻¹.",
+            "12": "The κ values of AC7/HRP composite were 11.7 times higher than that of HRP.",
+            "13": "A special structure was formed between hydrothermally treated red phosphorus (HRP) and activated carbon (AC).",
+            "14": "The special structure between HRP and AC inhibited the overgrowth of HRP.",
+            "15": "The special structure between HRP and AC inhibited the agglomeration of HRP.",
+            "16": "The special structure between HRP and AC acted as a micro-reaction system for adsorption-localization photocatalytic reactions.",
+            "17": "Activated carbon (AC) has excellent optical properties.",
+            "18": "Activated carbon (AC) can improve photoelectric conversion.",
+            "19": "Activated carbon (AC) can improve the separation of photogenerated electron and hole (e⁻-h⁺) pairs.",
+            "20": "Improving photoelectric conversion and separation of photogenerated electron and hole pairs improves photocatalytic activity.",
+            "21": "AC7/HRP composite was eco-friendly.",
+            "22": "AC7/HRP composite was cost-effective.",
+            "23": "AC7/HRP composite had strong photocatalytic oxidation properties.",
+            "24": "AC7/HRP composite was expected to be used in practical wastewater treatment."
+          }
+        },
+        "viewpoints": [
+          "Red phosphorus is an important and stable allotrope.",
+          "Red phosphorus is more stable than black phosphorus.",
+          "Red phosphorus has a wide bandgap of up to 2.4 eV."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Decreasing the bandgap of red phosphorus-based materials is a challenging task, and extensive theoretical and synthetic investigations have been conducted to develop new polymeric forms of phosphorus with improved stability and physiochemical properties.",
+        "references": {},
+        "viewpoints": [
+          "Decreasing the bandgap of red phosphorus-based materials is challenging.",
+          "Extensive theoretical investigations have been conducted to develop new polymeric forms of phosphorus.",
+          "Extensive synthetic investigations have been conducted to develop new polymeric forms of phosphorus.",
+          "The goal is to develop new polymeric forms of phosphorus with improved stability.",
+          "The goal is to develop new polymeric forms of phosphorus with improved physiochemical properties."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Von Schnering and Baudler have demonstrated [7] , [8] various types of clusters of phosphorus, including the structural elements of black phosphorus.",
+        "references": {
+          "7": [],
+          "8": {
+            "1": "Up to about 15 years ago, compounds with a skeleton of phosphorus chains or rings were considered \"exotic\" in nonmetal chemistry.",
+            "2": "A number of molecules with two phosphorus atoms directly bonded to each other were known.",
+            "3": "A few sporadically discovered monocyclic phosphorus ring compounds were known.",
+            "4": "Only solids of undefined composition and structure were known beyond the mentioned examples.",
+            "5": "Considerable progress has been made in the knowledge of phosphorus-containing compounds in the last 15 years.",
+            "6": "An unexpected variety of well-defined phosphorus-containing compounds have been discovered between PH₃ and its derivatives and the high-molecular modifications of elemental phosphorus.",
+            "7": "The newly discovered phosphorus-containing compounds show many similarities to analogous carbon compounds.",
+            "8": "Surprises can still occur with \"small\" phosphorus-containing molecules.",
+            "9": "The recently discovered field of phosphorus three-membered ring compounds indicates unexpected findings in small phosphorus-containing molecules."
+          }
+        },
+        "viewpoints": [
+          "Von Schnering and Baudler have demonstrated various types of clusters of phosphorus.",
+          "Von Schnering and Baudler have demonstrated the structural elements of black phosphorus."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Cis - and trans -linear chains, helical and double-helical chains containing [P 8 ] cages directly bound to each other have been predicted recently to be more stable than P 4 [9].",
+        "references": {
+          "9": {
+            "1": "The discovery of materials is increasingly guided by quantum-mechanical crystal-structure prediction.",
+            "2": "Structural complexity in bulk materials remains a bottleneck in the discovery of new materials.",
+            "3": "Structural complexity in nanoscale materials remains a bottleneck in the discovery of new materials.",
+            "4": "Data-driven approaches can vastly accelerate the search for complex structures.",
+            "5": "The approach combines a machine-learning model for the potential-energy surface with efficient, fragment-based searching.",
+            "6": "Characteristic building units observed in Hittorf's phosphorus are used to seed stochastic structure searches.",
+            "7": "Characteristic building units observed in fibrous phosphorus are used to seed stochastic structure searches.",
+            "8": "The searches are stochastic, meaning they are \"random.\"",
+            "9": "The searches are conducted over hundreds of thousands of runs.",
+            "10": "The study identifies a family of hierarchically structured allotropes based on a P8 cage as a principal building unit.",
+            "11": "The family of allotropes includes one-dimensional single helix structures.",
+            "12": "The family of allotropes includes one-dimensional double helix structures.",
+            "13": "The family of allotropes includes nanowires.",
+            "14": "The family of allotropes includes two-dimensional phosphorene allotropes with square-lattice topology.",
+            "15": "The family of allotropes includes two-dimensional phosphorene allotropes with kagome topology.",
+            "16": "The findings yield new insight into the intriguingly diverse structural chemistry of phosphorus.",
+            "17": "The findings provide an example of how machine-learning methods may, in the long run, be expected to accelerate the discovery of hierarchical nanostructures."
+          }
+        },
+        "viewpoints": [
+          "Cis-linear chains containing [P 8 ] cages have been predicted to be more stable than P 4.",
+          "Trans-linear chains containing [P 8 ] cages have been predicted to be more stable than P 4.",
+          "Helical chains containing [P 8 ] cages have been predicted to be more stable than P 4.",
+          "Double-helical chains containing [P 8 ] cages have been predicted to be more stable than P 4."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "A phase-pure sample of fibrous phosphorus featuring parallel chains of P 8 building blocks [10] has been isolated by heating ultra-pure red phosphorus in the presence of CuCl 2 in vacuo [11].",
+        "references": {
+          "10": [],
+          "11": []
+        },
+        "viewpoints": [
+          "A phase-pure sample of fibrous phosphorus features parallel chains of P 8 building blocks.",
+          "A phase-pure sample of fibrous phosphorus has been isolated by heating ultra-pure red phosphorus in the presence of CuCl 2 in vacuo."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Supramolecular chemistry can promote controllable polymerisation and stabilisation of phosphorus chains within the nanochannels of a porous host.",
+        "references": {},
+        "viewpoints": [
+          "Supramolecular chemistry can promote controllable polymerisation of phosphorus chains.",
+          "Supramolecular chemistry can promote stabilisation of phosphorus chains.",
+          "Supramolecular chemistry acts within the nanochannels of a porous host."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Thus, CuI has been used to stabilise phosphorus nanorods in the form of (CuI) 8 P 12 and (CuI) 3 P 12 adducts [12] , as well as confining and stabilising anionic P 12 2– and P 14 2– species [13].",
+        "references": {
+          "12": [],
+          "13": {
+            "1": "Phosphorus exhibits fascinating structural diversity.",
+            "2": "The discovery of new modifications of phosphorus attracts continued attention.",
+            "3": "The work describes a complete stability range of known and novel crystalline allotropes of phosphorus for the first time.",
+            "4": "The work includes recently discovered tubular modifications of phosphorus.",
+            "5": "The work includes the prediction of not-yet-known crystal structures of [P₁₂] nanorods of phosphorus.",
+            "6": "The work includes the prediction of not-yet-isolated [P₁₄] nanorods of phosphorus.",
+            "7": "All phosphorus allotropes consist of covalent substructures.",
+            "8": "Covalent substructures in phosphorus allotropes are held together by van der Waals interactions.",
+            "9": "There are significant structural differences among phosphorus allotropes.",
+            "10": "The correct reproduction of phosphorus allotropes by ab initio calculations is a core issue of current research.",
+            "11": "Some predictions with the established DFT functionals GGA and LDA differ significantly from experimental data in the description of phosphorus allotropes.",
+            "12": "The GGA-D2 approach shows consistently excellent agreement with experimental data for phosphorus allotropes.",
+            "13": "The GGA-D2 approach is used to predict the solid structures of phosphorus nanorods."
+          }
+        },
+        "viewpoints": [
+          "CuI has been used to stabilise phosphorus nanorods in the form of (CuI) 8 P 12 adducts.",
+          "CuI has been used to stabilise phosphorus nanorods in the form of (CuI) 3 P 12 adducts.",
+          "CuI has been used to confine and stabilise anionic P 12 2⁻ species.",
+          "CuI has been used to confine and stabilise anionic P 14 2⁻ species."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Activated carbons and carbon nanotubes can adsorb tetrahedral P 4 molecules [14] , with the latter also able to act as a host for the polymerisation of encapsulated white phosphorus molecules into single-stranded chains consisting of butterfly P 4 fragments [15] , [16] , [17].",
+        "references": {
+          "14": {
+            "1": "The storage of metastable compounds has great interest for synthesis applications.",
+            "2": "The storage of metastable compounds has great interest for semiconductor applications.",
+            "3": "The storage of modifications of elements has great interest for synthesis applications.",
+            "4": "The storage of modifications of elements has great interest for semiconductor applications.",
+            "5": "White phosphorus is a metastable modification that can be stored under certain conditions.",
+            "6": "Storage of yellow arsenic, an extremely light- and air-sensitive form of arsenic, is a challenge rarely tackled so far.",
+            "7": "Facile storage of tetrahedral E₄ molecules (E = P, As) using activated carbon as a porous storage material is demonstrated.",
+            "8": "Facile release of tetrahedral E₄ molecules (E = P, As) using activated carbon as a porous storage material is reported.",
+            "9": "Loaded materials containing tetrahedral E₄ molecules are air-stable.",
+            "10": "Loaded materials containing tetrahedral E₄ molecules are light-stable.",
+            "11": "Loaded materials containing tetrahedral E₄ molecules have been characterized by solid-state ³¹P{¹H} MAS NMR spectroscopy.",
+            "12": "Loaded materials containing tetrahedral E₄ molecules have been characterized by powder X-ray diffraction analysis.",
+            "13": "Loaded materials containing tetrahedral E₄ molecules have been characterized by nitrogen adsorption measurements.",
+            "14": "Loaded materials containing tetrahedral E₄ molecules have been characterized by thermogravimetric analysis.",
+            "15": "Materials loaded with tetrahedral E₄ molecules can be used as a suitable source for releasing intact white phosphorus.",
+            "16": "Materials loaded with tetrahedral E₄ molecules can be used as a suitable source for releasing intact yellow arsenic.",
+            "17": "Materials loaded with tetrahedral E₄ molecules enable subsequent reactions in solution.",
+            "18": "The uptake of E₄ by activated carbon-based materials is reversible.",
+            "19": "The release of E₄ by activated carbon-based materials is reversible.",
+            "20": "Materials containing tetrahedral E₄ molecules are excellent carriers of highly reactive modifications."
+          },
+          "15": {
+            "1": "Elemental phosphorus has an impressive number of allotropes.",
+            "2": "Elemental phosphorus allotropes have highly diverse chemical properties.",
+            "3": "Elemental phosphorus allotropes have highly diverse physical properties.",
+            "4": "White phosphorus has been filled into single-wall carbon nanotubes (SWCNTs) from the liquid.",
+            "5": "Filling white phosphorus into SWCNTs stabilizes it against the highly exothermic reaction with atmospheric oxygen.",
+            "6": "The encapsulated tetraphosphorus molecules were visualized with transmission electron microscopy.",
+            "7": "Encapsulated tetraphosphorus molecules were found to convert readily into chain structures inside the SWCNT \"nanoreactors\".",
+            "8": "The energies of the possible chain structures were determined computationally.",
+            "9": "There is a delicate balance between the extent of polymerization and the SWCNT diameter.",
+            "10": "A single-stranded zig-zag chain of phosphorus atoms was observed experimentally.",
+            "11": "The single-stranded zig-zag chain of phosphorus atoms is the lowest energy structure at small confinement diameters.",
+            "12": "These one-dimensional chains provide a glimpse into the very first steps of the transformation from white phosphorus to red phosphorus."
+          },
+          "16": {
+            "1": "The discovery of phosphorene has accelerated the investigation of pnictogen nanomaterials.",
+            "2": "Phosphorene is a single layer of black phosphorus.",
+            "3": "The investigation of pnictogen nanomaterials led to the recent identification of arsenene and antimonene.",
+            "4": "Arsenene and antimonene display physical properties superior to those of graphene for some applications.",
+            "5": "Single-wall carbon nanotubes (SWCNTs) have been filled with P₄ molecules from the melt.",
+            "6": "Single-wall carbon nanotubes (SWCNTs) have been filled with As₄ molecules from the vapor phase.",
+            "7": "Polymerization reactions confined within SWCNTs yielded new one-dimensional pnictogen allotropes.",
+            "8": "High-resolution electron microscopy shows that pnictogen nanostructures can be observed upon filling SWCNTs from the vapor phase using red phosphorus as the source material.",
+            "9": "Using larger-diameter SWCNTs, the vapor phase favors the formation of double-stranded phosphorus zigzag ladders.",
+            "10": "Double-stranded phosphorus zigzag ladders observed here for the first time.",
+            "11": "SWCNTs were generally found to fill more efficiently with liquid phosphorus.",
+            "12": "Substantial decreases in the filling yields were observed for both phosphorus and arsenic filling of narrow SWCNTs using the vapor route.",
+            "13": "Attempts to extend the pnictogen series using molten antimony gave very low filling yields.",
+            "14": "The antimony zigzag ladder was observed on two occasions.",
+            "15": "The observation of the antimony zigzag ladder suggests that this structural motif dominates across the pnictogens.",
+            "16": "Computational predictions of the encapsulation energies of the various pnictogen nanostructures are consistent with the observed experimental trends.",
+            "17": "Band gap calculations predict that the single-stranded zigzag chains of all investigated pnictogens are fully metallic.",
+            "18": "Using SWCNTs with diameters of >1.5 nm revealed a plethora of complex new phosphorus nanostructures.",
+            "19": "The revelation of complex new phosphorus nanostructures highlights an exciting new avenue for future work in this area."
+          },
+          "17": {
+            "1": "Single-walled carbon nanotubes (SWCNTs) are a perfect host for the formation of one-dimensional phosphorus structures.",
+            "2": "Single-walled carbon nanotubes (SWCNTs) are a perfect host to obtain hybrid materials with a large phosphorus-carbon (P–C) ratio.",
+            "3": "This work presents a procedure for high-yield phosphorus filling of commercial Tuball SWCNTs.",
+            "4": "This work presents a procedure for the efficient removal of phosphorus deposits from the external nanotube surface of commercial Tuball SWCNTs.",
+            "5": "White phosphorus was probed as a precursor for the synthesis of phosphorus-filled SWCNTs.",
+            "6": "Red phosphorus was probed as a precursor for the synthesis of phosphorus-filled SWCNTs.",
+            "7": "The synthesis temperature was varied during the synthesis of phosphorus-filled SWCNTs.",
+            "8": "The ampoule shape was varied during the synthesis of phosphorus-filled SWCNTs.",
+            "9": "Three solvents were tested for sample purification in the synthesis of phosphorus-filled SWCNTs.",
+            "10": "High-resolution transmission electron microscopy indicated that the interior phosphorus crystallized in a form resembling fibrous red phosphorus.",
+            "11": "Raman spectroscopy indicated that the interior phosphorus crystallized in a form resembling fibrous red phosphorus.",
+            "12": "An aqueous sodium hydroxide solution allowed the removal of the majority of external phosphorus particles from the SWCNTs.",
+            "13": "Thermogravimetric analysis of the phosphorus-filled SWCNTs product determined approximately 23 weight percent (approximately 10 atom percent) phosphorus content.",
+            "14": "X-ray photoelectron spectroscopy (XPS) data showed that approximately 80% of the phosphorus in the product is in the form of elemental phosphorus.",
+            "15": "Externally purified SWCNTs filled with phosphorus were used to study the interaction between SWCNTs and phosphorus components.",
+            "16": "Raman spectroscopy revealed p-type doping of SWCNTs.",
+            "17": "Core-level XPS revealed p-type doping of SWCNTs.",
+            "18": "Valence-band XPS data confirmed the transfer of SWCNT electron density to the encapsulated phosphorus.",
+            "19": "Density functional theory calculations confirmed the transfer of SWCNT electron density to the encapsulated phosphorus."
+          }
+        },
+        "viewpoints": [
+          "Activated carbons can adsorb tetrahedral P 4 molecules.",
+          "Carbon nanotubes can adsorb tetrahedral P 4 molecules.",
+          "Carbon nanotubes can act as a host for the polymerisation of encapsulated white phosphorus molecules.",
+          "The polymerisation results in single-stranded chains consisting of butterfly P 4 fragments."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Due to the amorphous nature of these materials, their structure determination remains elusive.",
+        "references": {},
+        "viewpoints": [
+          "The structure determination of these amorphous materials remains elusive."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "A rich host–guest chemistry [18] , [19] , tuneable porosity, high crystallinity and potential stability of metal-organic frameworks (MOFs) make them ideal hosts for the inclusion of white phosphorus molecules, which might be further polymerised using visible light and analysed structurally by diffraction [20] , [21].",
+        "references": {
+          "18": {
+            "1": "A novel metal–organic framework (MOF) features functional pores decorated with hydroxyl groups derived from the natural amino acid L-serine.",
+            "2": "The novel metal–organic framework (MOF) can establish specific interactions with organic molecules of technological interest like ascorbic acid, pyridoxine, bupropion and 17-β-estradiol.",
+            "3": "The interactions established by the metal–organic framework (MOF) are based on different sizes and chemical natures of the organic molecules.",
+            "4": "The interactions established by the metal–organic framework (MOF) have different natures, strengths, and directionalities.",
+            "5": "The novel metal–organic framework (MOF) can distinctly organize guest molecules within its channels through different directing supramolecular host–guest interactions.",
+            "6": "The distinct organization of guest molecules within the channels enables gaining unique insights into host–guest interactions.",
+            "7": "Single-crystal X-ray crystallography is used to gain unique insights into host–guest interactions.",
+            "8": "The results increase our understanding of molecular recognition processes in metal–organic frameworks (MOFs).",
+            "9": "The increased understanding of molecular recognition processes in MOFs opens a myriad of potential technological applications in the near future."
+          },
+          "19": {
+            "1": "X-ray single-crystal diffraction analysis requires that target molecules be obtained as single crystals.",
+            "2": "A protocol for SCD analysis is reported that does not require the crystallization of the sample.",
+            "3": "Tiny crystals of porous complexes are soaked in a solution of the target molecules in the method reported.",
+            "4": "The porous complexes absorb the target molecules in the solution in the method reported.",
+            "5": "Crystallographic analysis determines the structures of the absorbed guest molecules.",
+            "6": "Crystallographic analysis determines the host frameworks' structures.",
+            "7": "SCD analysis is carried out on only one tiny crystal of the complex.",
+            "8": "The required sample mass for SCD analysis is in the nanogram–microgram range.",
+            "9": "About 80 nanograms of a sample is sufficient for SCD analysis.",
+            "10": "In combination with high-performance liquid chromatography, the protocol allows direct characterization of multiple fractions.",
+            "11": "The protocol establishes a prototypical means of liquid chromatography SCD analysis.",
+            "12": "The structure of a scarce marine natural product was unambiguously determined.",
+            "13": "Only 5 micrograms of the marine natural product compound were used in determining its structure."
+          },
+          "20": [],
+          "21": {
+            "1": "The synthesis of two-dimensional (2D) materials mainly relies on interface-templates.",
+            "2": "The synthesis of two-dimensional (2D) materials mainly relies on exfoliation of layered crystals.",
+            "3": "The synthesis of two-dimensional (2D) materials mainly relies on surfactant-assistance.",
+            "4": "A new strategy for synthesizing two-dimensional materials through polymerization in a 2D nano-reactor has been realized.",
+            "5": "A 2D nano-reactor was constructed within a new pillar–layer metal-organic framework (MOF) as an application of the polymerization in a 2D nano-reactor strategy.",
+            "6": "A moderately stable 2D phosphorus material was synthesized from white phosphorus (P₄) in the 2D nano-reactor within a new pillar–layer MOF.",
+            "7": "The research may provide a new approach for the synthesis of various two-dimensional materials."
+          }
+        },
+        "viewpoints": [
+          "Metal-organic frameworks have a rich host–guest chemistry.",
+          "Metal-organic frameworks have tuneable porosity.",
+          "Metal-organic frameworks have high crystallinity.",
+          "Metal-organic frameworks have potential stability.",
+          "Metal-organic frameworks are ideal hosts for the inclusion of white phosphorus molecules.",
+          "White phosphorus molecules in MOFs might be further polymerised using visible light.",
+          "White phosphorus molecules in MOFs might be analysed structurally by diffraction."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Moreover, the doping of MOFs with phosphorus chains of atomic width may improve the semiconducting properties of the resulting P–MOF composites.",
+        "references": {},
+        "viewpoints": [
+          "Doping MOFs with phosphorus chains of atomic width may improve the semiconducting properties of P–MOF composites."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Here, we report the synthesis of a double-helical phosphorus chain comprising butterfly P 8 monomers stabilised in the helical channels of an indium-based MOF, MFM-300(In).",
+        "references": {},
+        "viewpoints": [
+          "The synthesis of a double-helical phosphorus chain comprising butterfly P 8 monomers is reported.",
+          "Butterfly P 8 monomers are stabilised in the helical channels of an indium-based MOF, MFM-300(In)."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The similarity between Raman spectra of bulk red phosphorus and the obtained adduct suggests the presence of such helical chains within the structure of amorphous red phosphorus, thus representing a comprehensive crystallographic study on the structural building units of the red phosphorus allotrope.",
+        "references": {},
+        "viewpoints": [
+          "The similarity between Raman spectra of bulk red phosphorus and the obtained adduct suggests the presence of helical chains within the structure of amorphous red phosphorus.",
+          "This similarity represents a comprehensive crystallographic study on the structural building units of the red phosphorus allotrope."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-55999-4_with_abstracts",
+    "base_id": "s41467-025-55999-4",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-55999-4_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

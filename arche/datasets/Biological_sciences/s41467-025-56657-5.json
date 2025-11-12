@@ -1,0 +1,634 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "C andida albicans ( C. albicans ), an opportunistic yeast, is a member of the human mycobiota in the oral, gastrointestinal, and vaginal mucosa. In patients with ulcerative colitis, high-damaging C. albicans strains form hyphae and exacerbate intestinal inflammation [1] . In immunocompromised and critically ill patients, C. albicans transitions from a commensal organism in the gut to an opportunistic pathogen that causes disseminated candidiasis, which is a leading cause of nosocomial bloodstream infections. In developed countries, this leads to a mortality rate that can exceed 40%, even in patients given antifungal treatment [2] . Hyphal morphogenesis controls the balance between gut commensalism and invasive infection [3] , [4] , [5] . C. albicans invades host tissues through a process associated with yeast-to-hyphal transition [6] , [7] . Hyphae induce a higher level of IL-1β secretion than the yeast form [8] , [9] . The presence of gut C. albicans strains with a high ability to induce IL-1β production in phagocytes is positively correlated with increased disease severity in their host with ulcerative colitis [1] . C. albicans candidalysin, a hypha-secreted pore-forming toxin, damages epithelial cells and fuels proinflammatory immunity in the mucosa and gut [1] , [10] . Als proteins, well-known as adhesins and invasins [11] , not only induce intestinal adaptive immune responses but also exacerbate intestinal colitis and colon damage [12] . Among Als family proteins, Als3 is the most abundant and hypha-specific protein. It induces immune responses that promote fungal clearance during systemic infection [9] . Death effector domains (DEDs), protein-protein interaction domains identified in proteins such as Fas-associated death domain (FADD), caspase-8, and cellular FLICE-inhibitory protein (cFLIP), regulate inflammation and cell death including apoptosis, pyroptosis, and necroptosis [13] , [14] , [15] . FADD initiates caspase-8 oligomerization via DED-DED interactions, forming a FADD/caspase-8 complex that regulates cell death pathways [16] , [17] . Genetic ablation of either Caspase-8 or Fadd in intestinal epithelial cells (IECs) results in necroptosis and caspase-8-gasdermin-D-mediated pyroptosis-like death, leading to spontaneous ileitis and/or colitis [18] , [19] , [20] . Expression of catalytically inactive caspase-8 C362A or C262S triggers the formation of caspase-8/ASC specks, activation of caspase-1, and secretion of IL-1β [14] , [15] . Intracellular pathogens, such as viruses, bacteria, and protozoa, must replicate without killing the host cell to survive. Therefore, their interactions with the host intracellular components have been widely studied. The cellular FLICE (caspase-8)-like inhibitory protein (short form, cFLIPs) and viral FLIPs (vFLIPs) function as apoptosis inhibitors and consist of two tandem DEDs similar to the prodomain of caspase-8 [21] , [22] . vFLIPs inhibit death ligand-induced apoptosis by interacting with FADD and/or caspase-8 via DED-DED interaction [21] . C. albicans DNA packaged in extracellular vesicles triggers type I IFN signaling through the intracellular cGAS-STING pathway [23] . As an extracellular organism, C. albicans proteins have not been reported to directly influence intracellular cell death core components at the molecular level. Here, we show that hyphal Als3 interacts with the DEDs of FADD and caspase-8 to modulate immune responses and cell death pathways. Als3 is a DED-interacting protein that does not have a DED but functionally resembles DED-containing proteins like vFLIPs. Although there is increasing interest in studying the recognition of fungal extracellular proteins/peptides [24] , [25] , this intracellular recognition mechanism extends our understanding of innate immune recognition.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "<The Start of the section>",
+        "references": {},
+        "viewpoints": [
+          "C andida albicans (C. albicans), an opportunistic yeast, is a member of the human mycobiota in the oral, gastrointestinal, and vaginal mucosa.",
+          "C. albicans is an opportunistic yeast.",
+          "C. albicans is a member of the human mycobiota in the oral mucosa.",
+          "C. albicans is a member of the human mycobiota in the gastrointestinal mucosa.",
+          "C. albicans is a member of the human mycobiota in the vaginal mucosa."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "In patients with ulcerative colitis, high-damaging C. albicans strains form hyphae and exacerbate intestinal inflammation [1].",
+        "references": {
+          "1": {
+            "1": "The fungal microbiota (mycobiota) is an integral part of the complex multikingdom microbial community colonizing the mammalian gastrointestinal tract.",
+            "2": "The fungal microbiota (mycobiota) has an important role in immune regulation within the mammalian gastrointestinal tract."
+          }
+        },
+        "viewpoints": [
+          "High-damaging C. albicans strains form hyphae in patients with ulcerative colitis.",
+          "High-damaging C. albicans strains exacerbate intestinal inflammation in patients with ulcerative colitis."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In immunocompromised and critically ill patients, C. albicans transitions from a commensal organism in the gut to an opportunistic pathogen that causes disseminated candidiasis, which is a leading cause of nosocomial bloodstream infections.",
+        "references": {},
+        "viewpoints": [
+          "C. albicans transitions from a commensal organism in the gut to an opportunistic pathogen in immunocompromised patients.",
+          "C. albicans transitions from a commensal organism in the gut to an opportunistic pathogen in critically ill patients.",
+          "C. albicans causes disseminated candidiasis in immunocompromised patients.",
+          "C. albicans causes disseminated candidiasis in critically ill patients.",
+          "Disseminated candidiasis is a leading cause of nosocomial bloodstream infections."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "In developed countries, this leads to a mortality rate that can exceed 40%, even in patients given antifungal treatment [2].",
+        "references": {
+          "2": []
+        },
+        "viewpoints": [
+          "In developed countries, disseminated candidiasis leads to a mortality rate that can exceed 40%.",
+          "The mortality rate for disseminated candidiasis can exceed 40%, even in patients given antifungal treatment."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Hyphal morphogenesis controls the balance between gut commensalism and invasive infection [3], [4], [5].",
+        "references": {
+          "3": {
+            "1": "It is widely assumed that the ability to switch between different morphologies is required for Candida albicans pathogenesis.",
+            "2": "Most virulence studies have used mutants that are permanently locked into either the yeast form or the filamentous form.",
+            "3": "Mutants locked into either the yeast or filamentous forms are avirulent.",
+            "4": "Mutants locked into either the yeast or filamentous forms are unsuitable for discerning the role of morphogenetic conversions at the various stages of the infectious process.",
+            "5": "A strain has been constructed in which the developmental transition can be externally modulated both in vitro and in vivo.",
+            "6": "One copy of the NRG1 gene, a negative regulator of filamentation, was placed under the control of a tetracycline-regulatable promoter to achieve the ability to externally modulate the developmental transition.",
+            "7": "The modified strain was tested in an animal model of hematogenously disseminated candidiasis.",
+            "8": "Mice injected with the modified strain under conditions permitting hyphal development succumbed to the infection.",
+            "9": "All of the animals injected with the modified strain under conditions that inhibited the transition survived.",
+            "10": "Fungal burdens were almost identical in both sets of animals.",
+            "11": "Filament formation appears to be required for the mortality resulting from a deep-seated infection.",
+            "12": "Yeast cells play an important role early in the infectious process by extravasating and disseminating to the target organs.",
+            "13": "Infecting Candida yeast cells still retained their pathogenic potential.",
+            "14": "The pathogenic potential of Candida yeast cells is demonstrated by allowing the developmental transition to occur at various time points postinfection.",
+            "15": "The importance of morphogenetic conversions in Candida albicans pathogenesis is demonstrated in this study.",
+            "16": "The engineered strain should provide a useful tool in unraveling the individual contributions of the yeast and filamentous forms at various stages of the infectious process."
+          },
+          "4": {
+            "1": "Candida albicans is a gut commensal organism.",
+            "2": "Candida albicans is an opportunistic pathogen.",
+            "3": "The transition between yeast and invasive hyphae is central to the virulence of Candida albicans.",
+            "4": "The functions of yeast-to-hyphae transition during commensal growth are unknown.",
+            "5": "In a mouse model of colonization, yeast forms of Candida albicans co-occur with hyphae forms throughout the gastrointestinal tract.",
+            "6": "Competitive infections of Candida albicans homozygous gene disruption mutants revealed an inhibitory role for the yeast-to-hypha morphogenesis program on commensalism.",
+            "7": "The inhibitory role of the yeast-to-hypha morphogenesis program on commensalism was unanticipated.",
+            "8": "The transcription factor Ume6 is a master regulator of filamentation in Candida albicans.",
+            "9": "The transcription factor Ume6 inhibits gut colonization in Candida albicans.",
+            "10": "The inhibition of gut colonization by Ume6 is not due to effects on cell shape.",
+            "11": "The transcription factor Ume6 activates the expression of a hypha-specific pro-inflammatory secreted protease, Sap6.",
+            "12": "The transcription factor Ume6 activates the expression of a hyphal cell surface adhesin, Hyr1.",
+            "13": "Strains of Candida albicans lacking SAP6 exhibit enhanced colonization fitness, similar to a ume6 mutant.",
+            "14": "SAP6-overexpression strains of Candida albicans are attenuated in the gut.",
+            "15": "There is a tradeoff between fungal programs supporting commensalism and virulence in Candida albicans.",
+            "16": "Selection against hypha-specific markers limits the disease-causing potential of Candida albicans."
+          },
+          "5": {
+            "1": "Candida albicans frequently colonizes the human gastrointestinal tract.",
+            "2": "Candida albicans can disseminate from the human gastrointestinal tract to cause systemic disease.",
+            "3": "Candida albicans is a polymorphic species.",
+            "4": "Candida albicans can transition between growing as single-celled yeast and as multicellular hyphae.",
+            "5": "Transitioning between yeast and hyphal forms allows Candida albicans to adapt to its environment.",
+            "6": "The current dogma of Candida albicans commensalism is that the yeast form is optimal for colonization of the gut.",
+            "7": "The current dogma of Candida albicans commensalism is that hyphal cells are detrimental to gut colonization.",
+            "8": "The current dogma of Candida albicans commensalism is that hyphal cells are critical for virulence."
+          }
+        },
+        "viewpoints": [
+          "Hyphal morphogenesis controls the balance between gut commensalism and invasive infection."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "C. albicans invades host tissues through a process associated with yeast-to-hyphal transition [6], [7].",
+        "references": {
+          "6": {
+            "1": "The commensal character of Candida species shapes the immune response to the fungus.",
+            "2": "Discerning between colonization and invasion at mucosal surfaces plays a crucial role in the immune response to Candida species.",
+            "3": "Antifungal host defence mechanisms during mucosal infection with Candida species differ substantially from those during systemic infection.",
+            "4": "Innate sensing of fungi by pattern recognition receptors shapes host immunity to Candida species.",
+            "5": "The interplay of immune cells with non-immune cells shapes host immunity to Candida species.",
+            "6": "The interplay of myeloid cells with non-immune cells shapes host immunity to Candida species.",
+            "7": "The interplay of lymphoid cells with non-immune cells shapes host immunity to Candida species.",
+            "8": "Platelets are involved in the interplay with immune cells to shape host immunity to Candida species.",
+            "9": "Epithelial cells are involved in the interplay with immune cells to shape host immunity to Candida species.",
+            "10": "Emerging data suggest that the innate immune system displays memory characteristics after encountering Candida species.",
+            "11": "Emerging data suggest that the adaptive immune system displays memory characteristics after encountering Candida species."
+          },
+          "7": []
+        },
+        "viewpoints": [
+          "C. albicans invades host tissues through a process associated with yeast-to-hyphal transition."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Hyphae induce a higher level of IL-1β secretion than the yeast form [8], [9].",
+        "references": {
+          "8": {
+            "1": "Fungal infections represent a serious threat.",
+            "2": "Fungal infections are a serious threat particularly in immunocompromised patients.",
+            "3": "Interleukin-1beta (IL-1beta) is a key pro-inflammatory factor.",
+            "4": "Interleukin-1beta (IL-1beta) plays a role in innate antifungal immunity.",
+            "5": "The mechanism of IL-1beta production regulation post-fungal recognition in the mammalian immune system is unclear.",
+            "6": "IL-1beta production generally requires two signals.",
+            "7": "An NF-kappaB-dependent signal induces the synthesis of pro-IL-1beta (p35).",
+            "8": "A second signal is needed for proteolytic processing of pro-IL-1beta to bioactive IL-1beta (p17).",
+            "9": "The second signal operates via Caspase-1-containing multiprotein complexes called inflammasomes.",
+            "10": "Tyrosine kinase Syk operates downstream of several ITAM-coupled fungal pattern recognition receptors.",
+            "11": "Tyrosine kinase Syk controls pro-IL-1beta synthesis after cell stimulation with Candida albicans.",
+            "12": "Tyrosine kinase Syk controls inflammasome activation after cell stimulation with Candida albicans.",
+            "13": "Syk signalling for pro-IL-1beta synthesis uses the Card9 pathway.",
+            "14": "Inflammasome activation by the fungus involves reactive oxygen species production.",
+            "15": "Inflammasome activation by the fungus involves potassium efflux.",
+            "16": "Genetic deletion of Syk selectively abrogated inflammasome activation by Candida albicans.",
+            "17": "Pharmalogical inhibition of Syk selectively abrogated inflammasome activation by Candida albicans.",
+            "18": "Inflammasome activation by Salmonella typhimurium was not affected by genetic deletion or pharmalogical inhibition of Syk.",
+            "19": "Inflammasome activation by the bacterial toxin nigericin was not affected by genetic deletion or pharmalogical inhibition of Syk.",
+            "20": "Nlrp3 (also known as NALP3) is a critical NOD-like receptor family member.",
+            "21": "Nlrp3 transduces the fungal recognition signal to the inflammasome adaptor Asc (Pycard).",
+            "22": "Nlrp3 is involved in Caspase-1 (Casp1) activation.",
+            "23": "Nlrp3 is involved in pro-IL-1beta processing.",
+            "24": "Nlrp3 inflammasomes play an essential role in antifungal immunity.",
+            "25": "Nlrp3-deficient mice are hypersusceptible to Candida albicans infection.",
+            "26": "The results demonstrate the molecular basis for IL-1beta production after fungal infection.",
+            "27": "The results identify a crucial function for the Nlrp3 inflammasome in mammalian host defence in vivo."
+          },
+          "9": []
+        },
+        "viewpoints": [
+          "Hyphae induce a higher level of IL-1β secretion than the yeast form of C. albicans."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "The presence of gut C. albicans strains with a high ability to induce IL-1β production in phagocytes is positively correlated with increased disease severity in their host with ulcerative colitis [1].",
+        "references": {
+          "1": {
+            "1": "The fungal microbiota (mycobiota) is an integral part of the complex multikingdom microbial community colonizing the mammalian gastrointestinal tract.",
+            "2": "The fungal microbiota (mycobiota) has an important role in immune regulation within the mammalian gastrointestinal tract."
+          }
+        },
+        "viewpoints": [
+          "Gut C. albicans strains with a high ability to induce IL-1β production in phagocytes are positively correlated with increased disease severity in hosts with ulcerative colitis."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "C. albicans candidalysin, a hypha-secreted pore-forming toxin, damages epithelial cells and fuels proinflammatory immunity in the mucosa and gut [1], [10].",
+        "references": {
+          "1": {
+            "1": "The fungal microbiota (mycobiota) is an integral part of the complex multikingdom microbial community colonizing the mammalian gastrointestinal tract.",
+            "2": "The fungal microbiota (mycobiota) has an important role in immune regulation within the mammalian gastrointestinal tract."
+          },
+          "10": {
+            "1": "Cytolytic proteins and peptide toxins are classical virulence factors of several bacterial pathogens.",
+            "2": "Cytolytic proteins and peptide toxins disrupt epithelial barrier function.",
+            "3": "Cytolytic proteins and peptide toxins damage cells.",
+            "4": "Cytolytic proteins and peptide toxins activate or modulate host immune responses.",
+            "5": "Cytolytic proteins and peptide toxins have not been identified previously in human pathogenic fungi.",
+            "6": "The first fungal cytolytic peptide toxin is identified in the opportunistic pathogen Candida albicans.",
+            "7": "The identified fungal cytolytic peptide toxin directly damages epithelial membranes.",
+            "8": "The identified fungal cytolytic peptide toxin triggers a danger response signalling pathway.",
+            "9": "The identified fungal cytolytic peptide toxin activates epithelial immunity.",
+            "10": "Membrane permeabilization is enhanced by a positive charge at the carboxy terminus of the peptide.",
+            "11": "A positive charge at the carboxy terminus of the peptide triggers an inward current concomitant with calcium influx.",
+            "12": "C. albicans strains lacking this toxin do not activate epithelial cells.",
+            "13": "C. albicans strains lacking this toxin do not damage epithelial cells.",
+            "14": "C. albicans strains lacking this toxin are avirulent in animal models of mucosal infection.",
+            "15": "The name 'Candidalysin' is proposed for the identified cytolytic peptide toxin.",
+            "16": "'Candidalysin' is a newly identified, critical molecular determinant of epithelial damage caused by C. albicans.",
+            "17": "'Candidalysin' is a critical molecular determinant of host recognition of C. albicans."
+          }
+        },
+        "viewpoints": [
+          "C. albicans candidalysin is a hypha-secreted pore-forming toxin.",
+          "C. albicans candidalysin damages epithelial cells.",
+          "C. albicans candidalysin fuels proinflammatory immunity in the mucosa and gut."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Als proteins, well-known as adhesins and invasins [11], not only induce intestinal adaptive immune responses but also exacerbate intestinal colitis and colon damage [12].",
+        "references": {
+          "11": {
+            "1": "Candida albicans is part of the normal human flora.",
+            "2": "Candida albicans grows on mucosal surfaces in healthy individuals.",
+            "3": "In susceptible hosts, Candida albicans can cause mucosal disease.",
+            "4": "In susceptible hosts, Candida albicans can cause hematogenously disseminated disease.",
+            "5": "To persist in the host, Candida albicans must be able to adhere to biotic and abiotic surfaces.",
+            "6": "To persist in the host, Candida albicans must be able to invade host cells.",
+            "7": "To persist in the host, Candida albicans must be able to obtain iron.",
+            "8": "For Candida albicans to induce disease, it must be able to adhere to biotic and abiotic surfaces.",
+            "9": "For Candida albicans to induce disease, it must be able to invade host cells.",
+            "10": "For Candida albicans to induce disease, it must be able to obtain iron.",
+            "11": "Als3 is a hypha-specific surface protein of Candida albicans.",
+            "12": "Als3 is a member of the agglutinin-like sequence (Als) family of proteins.",
+            "13": "Als3 is important in the processes of adhesion, invasion, and iron acquisition.",
+            "14": "Als3 functions as an adhesin.",
+            "15": "Als3 mediates attachment to epithelial cells.",
+            "16": "Als3 mediates attachment to endothelial cells.",
+            "17": "Als3 mediates attachment to extracellular matrix proteins.",
+            "18": "Als3 plays an important role in biofilm formation on prosthetic surfaces alone.",
+            "19": "Als3 plays an important role in biofilm formation on prosthetic surfaces in mixed infection with Streptococcus gordonii.",
+            "20": "Als3 is one of two known Candida albicans invasins.",
+            "21": "Als3 binds to host cell receptors such as E-cadherin.",
+            "22": "Als3 binds to host cell receptors such as N-cadherin.",
+            "23": "Als3 induces host cells to endocytose Candida albicans.",
+            "24": "Als3 binds to host cell ferritin.",
+            "25": "Als3 enables Candida albicans to utilize host cell ferritin as a source of iron.",
+            "26": "Als3 has multiple functions.",
+            "27": "Als3 has a high expression level in vivo.",
+            "28": "Als3 is a promising target for vaccines.",
+            "29": "Vaccines targeting Als3 can induce protective cell-mediated responses.",
+            "30": "Vaccines targeting Als3 can induce protective antibody responses.",
+            "31": "The review will summarize the multiple functions of Als3.",
+            "32": "Als3 is an interesting and multifunctional protein."
+          },
+          "12": {
+            "1": "Pathogenic fungi reside in the intestinal microbiota.",
+            "2": "Pathogenic fungi rarely cause disease.",
+            "3": "Little is known about the interactions between fungi and the immune system that promote commensalism.",
+            "4": "The study investigates the role of adaptive immunity in promoting mutual interactions between fungi and host.",
+            "5": "Potentially pathogenic Candida species induce intestinal immunoglobulin A (IgA) responses.",
+            "6": "Potentially pathogenic Candida species are targeted by intestinal immunoglobulin A (IgA) responses.",
+            "7": "Studies on Candida albicans reveal that the pathogenic hyphal morphotype is specialized for adhesion and invasion.",
+            "8": "The pathogenic hyphal morphotype of Candida albicans is preferentially targeted by intestinal IgA responses.",
+            "9": "The pathogenic hyphal morphotype of Candida albicans is suppressed by intestinal IgA responses.",
+            "10": "IgA from mice directly targets hyphal-enriched cell-surface adhesins.",
+            "11": "IgA from humans directly targets hyphal-enriched cell-surface adhesins.",
+            "12": "C. albicans hyphae are typically required for pathogenesis.",
+            "13": "C. albicans hyphae are less fit for gut colonization."
+          }
+        },
+        "viewpoints": [
+          "Als proteins are well-known as adhesins.",
+          "Als proteins are well-known as invasins.",
+          "Als proteins induce intestinal adaptive immune responses.",
+          "Als proteins exacerbate intestinal colitis.",
+          "Als proteins exacerbate colon damage."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Among Als family proteins, Als3 is the most abundant and hypha-specific protein.",
+        "references": {},
+        "viewpoints": [
+          "Among Als family proteins, Als3 is the most abundant.",
+          "Als3 is a hypha-specific protein."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "It induces immune responses that promote fungal clearance during systemic infection [9].",
+        "references": {
+          "9": []
+        },
+        "viewpoints": [
+          "Als3 induces immune responses that promote fungal clearance during systemic infection."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Death effector domains (DEDs), protein-protein interaction domains identified in proteins such as Fas-associated death domain (FADD), caspase-8, and cellular FLICE-inhibitory protein (cFLIP), regulate inflammation and cell death including apoptosis, pyroptosis, and necroptosis [13], [14], [15].",
+        "references": {
+          "13": {
+            "1": "Death effector domains (DEDs) are protein-protein interaction domains.",
+            "2": "DEDs were initially identified in proteins such as FADD, FLIP, and caspase-8.",
+            "3": "The proteins FADD, FLIP, and caspase-8 are involved in regulating apoptosis.",
+            "4": "DED-containing proteins have important roles in regulating other forms of cell death besides apoptosis.",
+            "5": "DED-containing proteins are involved in regulating necroptosis.",
+            "6": "DED-containing proteins are involved in regulating important cellular processes.",
+            "7": "DED-containing proteins are involved in regulating autophagy.",
+            "8": "DED-containing proteins are involved in regulating inflammation.",
+            "9": "DED-containing proteins have prominent roles in innate immunity.",
+            "10": "DED-containing proteins have prominent roles in adaptive immunity.",
+            "11": "DED-containing proteins have prominent roles during embryonic development.",
+            "12": "The article reviews the various roles of DED-containing proteins.",
+            "13": "The article discusses recent developments in understanding DED complex formation.",
+            "14": "The article discusses recent developments in understanding DED complex regulation.",
+            "15": "The article briefly discusses opportunities to therapeutically target DED complex formation.",
+            "16": "Therapeutic targeting of DED complex formation is relevant in diseases such as cancer."
+          },
+          "14": {
+            "1": "Caspase-8 is a protease with pro-death functions.",
+            "2": "Caspase-8 is a protease with pro-survival functions.",
+            "3": "Caspase-8 mediates apoptosis induced by death receptors.",
+            "4": "Death receptors such as TNFR1 can induce apoptosis through the action of Caspase-8."
+          },
+          "15": {
+            "1": "Caspase-8 is the initiator caspase involved in the extrinsic apoptosis pathway."
+          }
+        },
+        "viewpoints": [
+          "DEDs are protein-protein interaction domains.",
+          "DEDs are identified in Fas-associated death domain (FADD).",
+          "DEDs are identified in caspase-8.",
+          "DEDs are identified in cellular FLICE-inhibitory protein (cFLIP).",
+          "DEDs regulate inflammation.",
+          "DEDs regulate cell death including apoptosis.",
+          "DEDs regulate cell death including pyroptosis.",
+          "DEDs regulate cell death including necroptosis."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "FADD initiates caspase-8 oligomerization via DED-DED interactions, forming a FADD/caspase-8 complex that regulates cell death pathways [16], [17].",
+        "references": {
+          "16": {
+            "1": "Caspase-8 activation can be triggered by death receptor-mediated formation of the death-inducing signaling complex (DISC).",
+            "2": "Caspase-8 activation can be triggered by the inflammasome adaptor ASC.",
+            "3": "Caspase-8 assembles with FADD at the death-inducing signaling complex (DISC) through its tandem death effector domain (tDED).",
+            "4": "Caspase-8 assembles with ASC at the inflammasome through its tandem death effector domain (tDED).",
+            "5": "The assembly of caspase-8 with FADD and ASC through its tandem death effector domain is regulated by the tDED-containing cellular inhibitor cFLIP.",
+            "6": "The assembly of caspase-8 with FADD and ASC through its tandem death effector domain is regulated by the viral inhibitor MC159.",
+            "7": "The caspase-8 tDED filament structure has been determined by cryoelectron microscopy.",
+            "8": "Extensive assembly interfaces not predicted by the previously proposed linear DED chain model were uncovered.",
+            "9": "The uncovered assembly interfaces were confirmed by structure-based mutagenesis in filament formation in vitro.",
+            "10": "The uncovered assembly interfaces were confirmed by structure-based mutagenesis in Fas-induced apoptosis.",
+            "11": "The uncovered assembly interfaces were confirmed by structure-based mutagenesis in ASC-mediated caspase-8 recruitment in cells.",
+            "12": "The two DEDs in caspase-8 use quasi-equivalent contacts to enable assembly.",
+            "13": "Using the tDED filament structure as a template, structural analyses reveal the interaction surfaces between FADD and caspase-8.",
+            "14": "cFLIP regulates the interaction between FADD and caspase-8 through comingling.",
+            "15": "MC159 regulates the interaction between FADD and caspase-8 through capping."
+          },
+          "17": {
+            "1": "Regulated cell death is essential in development.",
+            "2": "Regulated cell death is essential in cellular homeostasis.",
+            "3": "Multi-protein platforms coordinate cell fate.",
+            "4": "The Death-Inducing Signaling Complex (DISC) is an example of a multi-protein platform that coordinates cell fate.",
+            "5": "Cell fate is coordinated via a core FADD:Caspase-8 complex.",
+            "6": "Regulatory partners of the core FADD:Caspase-8 complex include the cell death inhibitor c-FLIP.",
+            "7": "Electron microscopy is used to visualize full-length procaspase-8 in complex with FADD.",
+            "8": "Structural analysis reveals that the FADD-nucleated tandem death effector domain (tDED) helical filament is required to orientate the procaspase-8 catalytic domains.",
+            "9": "The orientation of the procaspase-8 catalytic domains by the FADD-nucleated tDED helical filament enables their activation.",
+            "10": "The activation of procaspase-8 catalytic domains is enabled via anti-parallel dimerization.",
+            "11": "The viewpoint of recruitment of c-FLIP is incomplete."
+          }
+        },
+        "viewpoints": [
+          "FADD initiates caspase-8 oligomerization via DED-DED interactions.",
+          "FADD/caspase-8 complex regulates cell death pathways."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Genetic ablation of either Caspase-8 or Fadd in intestinal epithelial cells (IECs) results in necroptosis and caspase-8-gasdermin-D-mediated pyroptosis-like death, leading to spontaneous ileitis and/or colitis [18], [19], [20].",
+        "references": {
+          "18": {
+            "1": "Dysfunction of the intestinal epithelium is believed to result in the excessive translocation of commensal bacteria into the bowel wall.",
+            "2": "Excessive translocation of commensal bacteria into the bowel wall drives chronic mucosal inflammation in Crohn's disease.",
+            "3": "Crohn's disease is an incurable inflammatory bowel disease in humans.",
+            "4": "Crohn's disease is characterized by inflammation of the terminal ileum.",
+            "5": "In healthy individuals, the intestinal epithelium maintains a physical barrier.",
+            "6": "The physical barrier of the intestinal epithelium in healthy individuals is established by the tight contact of cells.",
+            "7": "Specialized epithelial cells such as Paneth cells and goblet cells provide innate immune defense functions.",
+            "8": "Paneth cells and goblet cells secrete mucus and antimicrobial peptides.",
+            "9": "Mucus and antimicrobial peptides secreted by Paneth cells and goblet cells hamper access and survival of bacteria adjacent to the epithelium.",
+            "10": "Epithelial cell death is a hallmark of intestinal inflammation.",
+            "11": "Epithelial cell death has been discussed as a possible pathogenic mechanism driving Crohn's disease in humans.",
+            "12": "The regulation of epithelial cell death remains poorly understood.",
+            "13": "The role of epithelial cell death in intestinal homeostasis remains poorly understood.",
+            "14": "Caspase-8 has a critical role in regulating necroptosis of intestinal epithelial cells.",
+            "15": "Caspase-8 has a critical role in regulating terminal ileitis.",
+            "16": "Mice with a conditional deletion of caspase-8 in the intestinal epithelium (Casp8(ΔIEC)) spontaneously developed inflammatory lesions in the terminal ileum.",
+            "17": "Casp8(ΔIEC) mice were highly susceptible to colitis.",
+            "18": "Casp8(ΔIEC) mice lacked Paneth cells.",
+            "19": "Casp8(ΔIEC) mice showed reduced numbers of goblet cells.",
+            "20": "The lack of Paneth cells and reduced numbers of goblet cells in Casp8(ΔIEC) mice indicate dysregulated antimicrobial immune cell functions of the intestinal epithelium.",
+            "21": "Casp8(ΔIEC) mice showed increased cell death in the Paneth cell area of small intestinal crypts.",
+            "22": "Epithelial cell death was induced by tumour necrosis factor (TNF)-α.",
+            "23": "Epithelial cell death was associated with increased expression of receptor-interacting protein 3 (Rip3; also known as Ripk3).",
+            "24": "Epithelial cell death could be inhibited on blockade of necroptosis.",
+            "25": "High levels of RIP3 were identified in human Paneth cells.",
+            "26": "Increased necroptosis was identified in the terminal ileum of patients with Crohn's disease.",
+            "27": "These findings suggest a potential role of necroptosis in the pathogenesis of Crohn's disease.",
+            "28": "Caspase-8 has a critical function in regulating intestinal homeostasis.",
+            "29": "Caspase-8 has a critical function in protecting intestinal epithelial cells from TNF-α-induced necroptotic cell death."
+          },
+          "19": {
+            "1": "Intestinal immune homeostasis depends on a tightly regulated cross talk between commensal bacteria, mucosal immune cells, and intestinal epithelial cells (IECs).",
+            "2": "Epithelial barrier disruption is considered to be a potential cause of inflammatory bowel disease.",
+            "3": "The mechanisms regulating intestinal epithelial integrity are poorly understood.",
+            "4": "Mice with IEC-specific knockout of FADD (FADD(IEC-KO)) spontaneously developed epithelial cell necrosis, loss of Paneth cells, enteritis, and severe erosive colitis.",
+            "5": "FADD is an adaptor protein required for death-receptor-induced apoptosis in intestinal epithelial cells (IECs).",
+            "6": "Genetic deficiency in RIP3 prevented the development of spontaneous pathology in both the small intestine and colon of FADD(IEC-KO) mice.",
+            "7": "RIP3 is a critical regulator of programmed necrosis.",
+            "8": "Intestinal inflammation is triggered by RIP3-dependent death of FADD-deficient intestinal epithelial cells (IECs).",
+            "9": "Epithelial-specific inhibition of CYLD prevented colitis development in FADD(IEC-KO) mice.",
+            "10": "Epithelial-specific inhibition of CYLD did not prevent colitis development in NEMO(IEC-KO) mice.",
+            "11": "CYLD is a deubiquitinase that regulates cellular necrosis.",
+            "12": "Different mechanisms mediated death of colonic epithelial cells in FADD(IEC-KO) and NEMO(IEC-KO) mice.",
+            "13": "In FADD(IEC-KO) mice, TNF deficiency ameliorated colon inflammation.",
+            "14": "In FADD(IEC-KO) mice, MYD88 deficiency prevented colon inflammation.",
+            "15": "Elimination of the microbiota prevented colon inflammation in FADD(IEC-KO) mice.",
+            "16": "Bacteria-mediated Toll-like-receptor signaling drives colitis by inducing the expression of TNF and other cytokines.",
+            "17": "Neither CYLD deficiency nor TNF deficiency could prevent Paneth cell loss and enteritis in FADD(IEC-KO) mice.",
+            "18": "MYD88 deficiency could not prevent Paneth cell loss and enteritis in FADD(IEC-KO) mice.",
+            "19": "Elimination of the microbiota could not prevent Paneth cell loss and enteritis in FADD(IEC-KO) mice.",
+            "20": "Different mechanisms drive RIP3-dependent necrosis of FADD-deficient intestinal epithelial cells (IECs) in the small and large bowel.",
+            "21": "Inhibiting RIP3-mediated intestinal epithelial cell necrosis, FADD preserves epithelial barrier integrity.",
+            "22": "Inhibiting RIP3-mediated intestinal epithelial cell necrosis, FADD preserves antibacterial defense.",
+            "23": "Inhibiting RIP3-mediated intestinal epithelial cell necrosis, FADD maintains homeostasis.",
+            "24": "Inhibiting RIP3-mediated intestinal epithelial cell necrosis, FADD prevents chronic intestinal inflammation.",
+            "25": "Mechanisms preventing RIP3-mediated epithelial cell death are critical for the maintenance of intestinal homeostasis.",
+            "26": "Programmed necrosis of intestinal epithelial cells (IECs) might be implicated in the pathogenesis of inflammatory bowel disease.",
+            "27": "Paneth cell defects are thought to contribute to intestinal inflammation in inflammatory bowel disease.",
+            "28": "Barrier defects are thought to contribute to intestinal inflammation in inflammatory bowel disease."
+          },
+          "20": []
+        },
+        "viewpoints": [
+          "Genetic ablation of Caspase-8 in IECs results in necroptosis.",
+          "Genetic ablation of Caspase-8 in IECs results in caspase-8-gasdermin-D-mediated pyroptosis-like death.",
+          "Genetic ablation of Fadd in IECs results in necroptosis.",
+          "Genetic ablation of Fadd in IECs results in caspase-8-gasdermin-D-mediated pyroptosis-like death.",
+          "Genetic ablation of either Caspase-8 or Fadd in IECs leads to spontaneous ileitis and/or colitis."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Expression of catalytically inactive caspase-8 C362A or C262S triggers the formation of caspase-8/ASC specks, activation of caspase-1, and secretion of IL-1β [14], [15].",
+        "references": {
+          "14": {
+            "1": "Caspase-8 is a protease with pro-death functions.",
+            "2": "Caspase-8 is a protease with pro-survival functions.",
+            "3": "Caspase-8 mediates apoptosis induced by death receptors.",
+            "4": "Death receptors such as TNFR1 can induce apoptosis through the action of Caspase-8."
+          },
+          "15": {
+            "1": "Caspase-8 is the initiator caspase involved in the extrinsic apoptosis pathway."
+          }
+        },
+        "viewpoints": [
+          "Expression of catalytically inactive caspase-8 C362A triggers the formation of caspase-8/ASC specks.",
+          "Expression of catalytically inactive caspase-8 C262S triggers the formation of caspase-8/ASC specks.",
+          "Expression of catalytically inactive caspase-8 C362A triggers activation of caspase-1.",
+          "Expression of catalytically inactive caspase-8 C262S triggers activation of caspase-1.",
+          "Expression of catalytically inactive caspase-8 C362A triggers secretion of IL-1β.",
+          "Expression of catalytically inactive caspase-8 C262S triggers secretion of IL-1β."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Intracellular pathogens, such as viruses, bacteria, and protozoa, must replicate without killing the host cell to survive.",
+        "references": {},
+        "viewpoints": [
+          "Intracellular pathogens include viruses.",
+          "Intracellular pathogens include bacteria.",
+          "Intracellular pathogens include protozoa.",
+          "Intracellular pathogens must replicate without killing the host cell to survive."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Therefore, their interactions with the host intracellular components have been widely studied.",
+        "references": {},
+        "viewpoints": [
+          "Interactions of intracellular pathogens with host intracellular components have been widely studied."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The cellular FLICE (caspase-8)-like inhibitory protein (short form, cFLIPs) and viral FLIPs (vFLIPs) function as apoptosis inhibitors and consist of two tandem DEDs similar to the prodomain of caspase-8 [21], [22].",
+        "references": {
+          "21": [],
+          "22": {
+            "1": "The widely expressed protein Fas is a member of the tumour necrosis factor receptor family.",
+            "2": "The tumour necrosis factor receptor family can trigger apoptosis.",
+            "3": "Fas surface expression does not necessarily render cells susceptible to Fas ligand-induced death signals.",
+            "4": "The existence of inhibitors of the apoptosis-signalling pathway is indicated by the lack of susceptibility of Fas surface-expressing cells to Fas ligand-induced death signals.",
+            "5": "FLIP is an inhibitor of apoptosis.",
+            "6": "FLIP stands for FLICE-inhibitory protein.",
+            "7": "FLIP is predominantly expressed in muscle tissues.",
+            "8": "FLIP is predominantly expressed in lymphoid tissues.",
+            "9": "The short form, FLIPs, contains two death effector domains.",
+            "10": "FLIPs is structurally related to viral FLIP inhibitors of apoptosis.",
+            "11": "The long form, FLIP(L), contains a caspase-like domain in addition to two death effector domains.",
+            "12": "In FLIP(L), the active-centre cysteine residue is substituted by a tyrosine residue.",
+            "13": "FLIPs interacts with the adaptor protein FADD.",
+            "14": "FLIP(L) interacts with the adaptor protein FADD.",
+            "15": "FLIPs interacts with the protease FLICE.",
+            "16": "FLIP(L) interacts with the protease FLICE.",
+            "17": "FLIPs potently inhibit apoptosis induced by all known human death receptors.",
+            "18": "FLIP(L) potently inhibits apoptosis induced by all known human death receptors.",
+            "19": "FLIP(L) is expressed during the early stage of T-cell activation.",
+            "20": "FLIP(L) disappears when T cells become susceptible to Fas ligand-mediated apoptosis.",
+            "21": "High levels of FLIP(L) protein are detectable in melanoma cell lines.",
+            "22": "High levels of FLIP(L) protein are detectable in malignant melanoma tumours.",
+            "23": "FLIP may be implicated in tissue homeostasis.",
+            "24": "FLIP may be an important regulator of apoptosis."
+          }
+        },
+        "viewpoints": [
+          "cFLIPs function as apoptosis inhibitors.",
+          "vFLIPs function as apoptosis inhibitors.",
+          "cFLIPs consist of two tandem DEDs similar to the prodomain of caspase-8.",
+          "vFLIPs consist of two tandem DEDs similar to the prodomain of caspase-8."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "vFLIPs inhibit death ligand-induced apoptosis by interacting with FADD and/or caspase-8 via DED-DED interaction [21].",
+        "references": {
+          "21": []
+        },
+        "viewpoints": [
+          "vFLIPs inhibit death ligand-induced apoptosis by interacting with FADD via DED-DED interaction.",
+          "vFLIPs inhibit death ligand-induced apoptosis by interacting with caspase-8 via DED-DED interaction."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "C. albicans DNA packaged in extracellular vesicles triggers type I IFN signaling through the intracellular cGAS-STING pathway [23].",
+        "references": {
+          "23": []
+        },
+        "viewpoints": [
+          "C. albicans DNA packaged in extracellular vesicles triggers type I IFN signaling through the intracellular cGAS-STING pathway."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "As an extracellular organism, C. albicans proteins have not been reported to directly influence intracellular cell death core components at the molecular level.",
+        "references": {},
+        "viewpoints": [
+          "C. albicans is an extracellular organism.",
+          "C. albicans proteins have not been reported to directly influence intracellular cell death core components at the molecular level."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Here, we show that hyphal Als3 interacts with the DEDs of FADD and caspase-8 to modulate immune responses and cell death pathways.",
+        "references": {},
+        "viewpoints": [
+          "Hyphal Als3 interacts with the DEDs of FADD.",
+          "Hyphal Als3 interacts with the DEDs of caspase-8.",
+          "Hyphal Als3 modulates immune responses.",
+          "Hyphal Als3 modulates cell death pathways."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Als3 is a DED-interacting protein that does not have a DED but functionally resembles DED-containing proteins like vFLIPs.",
+        "references": {},
+        "viewpoints": [
+          "Als3 is a DED-interacting protein.",
+          "Als3 does not have a DED.",
+          "Als3 functionally resembles DED-containing proteins like vFLIPs."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Although there is increasing interest in studying the recognition of fungal extracellular proteins/peptides [24], [25], this intracellular recognition mechanism extends our understanding of innate immune recognition.",
+        "references": {
+          "24": {
+            "1": "Candida albicans is a fungal pathobiont.",
+            "2": "Candida albicans can cause epithelial cell damage.",
+            "3": "Candida albicans can cause immune activation.",
+            "4": "The functions of causing epithelial cell damage and immune activation by Candida albicans have been attributed to its secreted toxin, candidalysin.",
+            "5": "The molecular mechanisms of candidalysin in causing these functions are poorly understood.",
+            "6": "Epidermal growth factor receptor (EGFR) is identified as a critical component of candidalysin-triggered immune responses.",
+            "7": "Both Candida albicans and candidalysin activate human epithelial EGFR receptors.",
+            "8": "Candidalysin-deficient fungal mutants poorly induce EGFR phosphorylation during murine oropharyngeal candidiasis.",
+            "9": "Inhibition of EGFR impairs candidalysin-triggered MAPK signalling in vitro.",
+            "10": "Inhibition of EGFR impairs the release of neutrophil activating chemokines in vitro.",
+            "11": "Inhibition of EGFR diminishes neutrophil recruitment.",
+            "12": "Inhibition of EGFR causes significant mortality in an EGFR-inhibited zebrafish swimbladder model of infection.",
+            "13": "The mechanism of EGFR activation requires matrix metalloproteinases (MMPs).",
+            "14": "The mechanism of EGFR activation requires EGFR ligands.",
+            "15": "The mechanism of EGFR activation requires calcium.",
+            "16": "A PAMP-independent mechanism of immune stimulation is identified.",
+            "17": "Candidalysin is highlighted as a potential target for prophylactic intervention of mucosal candidiasis.",
+            "18": "Candidalysin is highlighted as a potential target for therapeutic intervention of mucosal candidiasis.",
+            "19": "EGFR signalling components are highlighted as potential targets for prophylactic intervention of mucosal candidiasis.",
+            "20": "EGFR signalling components are highlighted as potential targets for therapeutic intervention of mucosal candidiasis."
+          },
+          "25": []
+        },
+        "viewpoints": [
+          "There is increasing interest in studying the recognition of fungal extracellular proteins/peptides.",
+          "The intracellular recognition mechanism extends our understanding of innate immune recognition."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56657-5_with_abstracts",
+    "base_id": "s41467-025-56657-5",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56657-5_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

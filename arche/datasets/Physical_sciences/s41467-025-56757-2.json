@@ -1,0 +1,544 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Beyond traditional organic thin-film transistors [1] , [2] , conjugated polymers (CPs) are now pioneering in wearable [3] , biocompatible [4] , and neuromorphic [5] , [6] thin-film electronics attributed to their unique combination of molecular diversity, electronic versatility, and mechanical flexibility [7] . The semiconducting capabilities of CPs are essentially determined by long-range delocalization of electronic wave functions across polymer chains. Consequently, single crystals characterized by perfect coplanar conformations, minimum energetic disorders, and enhanced carrier mobility have been widely recognized as an ideal platform to not only access the peak semiconducting performances but also explore the inherent structure-property relationships [8] . However, the manufacturing of CP single crystals remains significantly challenging, mainly ascribed to the intrinsic contradiction between the energetic preference and the entropic cost for organizing random polymer chains into well-ordered arrangements [9] . This challenging is further exacerbated in thin films, where two-dimensional constraints limit the spatial freedom of chains to arrange into the energetically favorable crystalline state, and the π-π stackings along two-dimensional scales are more easily disrupted by molecular irregularities, thermal agitations, and mechanical detachments. To this end, we explore down to the molecular level of CPs, where electronegativity differences between carbon and heteroatoms create localized molecular dipoles due to the asymmetric distribution of electrons. From the thermodynamic perspective, molecular dipoles may serve as subtle modulators to influence the energy landscape of π-π stackings, thus lowering the energy barrier towards a single-crystal state. On the kinetic front, molecular dipoles are expected to accelerate the nucleation by fostering highly-ordered initial states, and in turn contribute to more uniform and rapid crystal growths. Unfortunately, accelerated nucleation is often accompanied by high-density random crystal nuclei, leading to polycrystals with abundant grains [10] . In addition, molecular dipoles are highly sensitive to both molecular configurations and stacking conformations. Although external forces such as fluid flow [11] , [12] , mechanical stress [13] , [14] , and electric field [15] , [16] have been employed for aligned arrangements of polymer chains, these approaches are constrained by the lack of nanoscopic controls over twisted molecular configurations [17] , [18] . Therefore, achieving a delicate equilibrium between localized molecular rotations and comprehensive chain alignments remains elusive, and the involved complex dynamics hampers efforts to precisely modulate the crystallization process of CPs at the thin-film level, a goal that has yet to be readily achieved. Herein, we introduce a universal nanoconfined molecular-dipole orienting (nano-CMDO) strategy for precise assembly of CPs into single-crystal thin films. Capitalizing on our rational design of spatial-electrostatic nanoconfined capacitor, molecular dipoles are demonstrated to rotate conjugated backbones in response to a perpendicular electric field, while alkyl-modified parallel plates are engineered to regulate side chains. As a result, a series of prototype CPs, including polythiophenes, polytheinothiophenes, p -type and n -type donor-acceptor copolymers, are manufactured into microscale-size high-quantity single-crystal thin films. These films exhibit ultralow energetic disorders with the minimal Urbach energy of 25 meV, even below the thermal fluctuation energy at room temperature (i.e., k B T = 26 meV). Trap-free space-charge-limited-current (SCLC) behaviors are observed with notably low trap densities of 10 15 –10 16 cm −3 . A high transistor mobility of 15.5 cm 2 V −1 s −1 is achieved to exemplify the substantial potential of these CP single-crystal thin films for high-performance organic electronics. Our nano-CMDO strategy offers a promising non-epitaxial avenue for the single-crystal growth of conjugated polymers.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Beyond traditional organic thin-film transistors [1], [2], conjugated polymers (CPs) are now pioneering in wearable [3], biocompatible [4], and neuromorphic [5], [6] thin-film electronics attributed to their unique combination of molecular diversity, electronic versatility, and mechanical flexibility [7].",
+        "references": {
+          "1": {
+            "1": "Organic electrochemical transistors (OECTs) and OECT-based circuitry have exceptionally low driving voltages (<1 V).",
+            "2": "Organic electrochemical transistors (OECTs) and OECT-based circuitry have low power consumption (<1 µW).",
+            "3": "Organic electrochemical transistors (OECTs) and OECT-based circuitry have high transconductances (>10 mS).",
+            "4": "Organic electrochemical transistors (OECTs) and OECT-based circuitry are biocompatible.",
+            "5": "Organic electrochemical transistors (OECTs) and OECT-based circuitry offer great potential in bioelectronics.",
+            "6": "Organic electrochemical transistors (OECTs) and OECT-based circuitry offer great potential in wearable electronics.",
+            "7": "Organic electrochemical transistors (OECTs) and OECT-based circuitry offer great potential in artificial neuromorphic electronics.",
+            "8": "The successful realization of critical complementary logic OECTs is limited by temporal instability.",
+            "9": "The successful realization of critical complementary logic OECTs is limited by operational instability.",
+            "10": "The successful realization of critical complementary logic OECTs is limited by slow redox processes.",
+            "11": "The successful realization of critical complementary logic OECTs is limited by slow switching.",
+            "12": "The successful realization of critical complementary logic OECTs is limited by incompatibility with high-density monolithic integration.",
+            "13": "The successful realization of critical complementary logic OECTs is limited by inferior n-type OECT performance.",
+            "14": "P- and n-type vertical OECTs with balanced and ultra-high performance are demonstrated.",
+            "15": "P- and n-type vertical OECTs are created by blending redox-active semiconducting polymers with a redox-inactive photocurable and/or photopatternable polymer.",
+            "16": "A simple, scalable vertical architecture with a dense, impermeable top contact is used to implement the OECTs.",
+            "17": "The blending of polymers forms an ion-permeable semiconducting channel.",
+            "18": "Footprint current densities exceeding 1 kA cm−2 at less than ±0.7 V are achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "19": "Transconductances of 0.2–0.4 S are achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "20": "Short transient times of less than 1 ms are achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "21": "Ultra-stable switching (>50,000 cycles) is achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "22": "The first vertically stacked complementary vertical OECT logic circuits are demonstrated.",
+            "23": "This architecture opens possibilities for fundamental studies of organic semiconductor redox chemistry in nanoscopically confined spaces.",
+            "24": "This architecture opens possibilities for fundamental studies of organic semiconductor physics in nanoscopically confined spaces.",
+            "25": "This architecture allows studies without macroscopic electrolyte contact.",
+            "26": "This architecture opens possibilities for wearable device applications.",
+            "27": "This architecture opens possibilities for implantable device applications."
+          },
+          "2": {
+            "1": "Two-dimensional conjugated polymers (2DCPs) are composed of multiple strands of linear conjugated polymers with extended in-plane π-conjugation.",
+            "2": "Two-dimensional conjugated polymers (2DCPs) are emerging as crystalline semiconducting polymers for organic (opto)electronics.",
+            "3": "Two-dimensional conjugated polymers (2DCPs) are represented by two-dimensional π-conjugated covalent organic frameworks.",
+            "4": "Two-dimensional π-conjugated covalent organic frameworks typically suffer from poor π-conjugation.",
+            "5": "Poor π-conjugation in two-dimensional π-conjugated covalent organic frameworks leads to low charge carrier mobilities.",
+            "6": "The limitation of low charge carrier mobilities is overcome by demonstrating two semiconducting phthalocyanine-based poly(benzimidazobenzophenanthroline)-ladder-type 2DCPs (2DCP-MPc, with M = Cu or Ni).",
+            "7": "2DCP-MPc is constructed from octaaminophthalocyaninato metal(ii) and naphthalenetetracarboxylic dianhydride by polycondensation under solvothermal conditions.",
+            "8": "2DCP-MPcs exhibit optical bandgaps of approximately 1.3 eV.",
+            "9": "2DCP-MPcs have highly delocalized π-electrons.",
+            "10": "Density functional theory calculations unveil strongly dispersive energy bands for the layer-stacked 2DCP-MPcs.",
+            "11": "The layer-stacked 2DCP-MPcs have small electron–hole reduced effective masses of approximately 0.15m0.",
+            "12": "Terahertz spectroscopy reveals the band transport of Drude-type free carriers in 2DCP-MPcs.",
+            "13": "2DCP-MPcs have an exceptionally high sum mobility of electrons and holes of approximately 970 cm² V⁻¹ s⁻¹ at room temperature.",
+            "14": "The sum mobility of electrons and holes in 2DCP-MPcs surpasses that of the reported linear conjugated polymers and 2DCPs.",
+            "15": "Effective conjugation plays a critical role in enhancing the charge transport properties of 2DCPs.",
+            "16": "High-mobility 2DCPs have great potential for future (opto)electronics."
+          },
+          "3": {
+            "1": "Intrinsically stretchable electronics with skin-like mechanical properties are identified as a promising platform for continuous physiological monitoring.",
+            "2": "Intrinsically stretchable electronics with skin-like mechanical properties are identified as a promising platform for real-time analysis of health conditions.",
+            "3": "Intrinsically stretchable electronics with skin-like mechanical properties are identified as a promising platform for closed-loop delivery of autonomous medical treatment.",
+            "4": "Current technologies in intrinsically stretchable electronics achieve electrical performance at the amorphous-silicon level, with charge-carrier mobility of about 1 cm² V⁻¹ s⁻¹.",
+            "5": "Current technologies in intrinsically stretchable electronics have a low integration scale, exemplified by 54 transistors per circuit.",
+            "6": "Current technologies in intrinsically stretchable electronics have limited functionalities.",
+            "7": "High-density, intrinsically stretchable transistors and integrated circuits are reported with high driving ability.",
+            "8": "High-density, intrinsically stretchable transistors and integrated circuits are reported with high operation speed.",
+            "9": "High-density, intrinsically stretchable transistors and integrated circuits are reported with large-scale integration.",
+            "10": "Innovations in materials enabled the high-density, intrinsically stretchable transistors and integrated circuits.",
+            "11": "Innovations in fabrication process design enabled the high-density, intrinsically stretchable transistors and integrated circuits.",
+            "12": "Innovations in device engineering enabled the high-density, intrinsically stretchable transistors and integrated circuits.",
+            "13": "Innovations in circuit design enabled the high-density, intrinsically stretchable transistors and integrated circuits.",
+            "14": "Intrinsically stretchable transistors exhibit an average field-effect mobility of more than 20 cm² V⁻¹ s⁻¹ under 100% strain.",
+            "15": "Intrinsically stretchable transistors exhibit a device density of 100,000 transistors per cm², including interconnects.",
+            "16": "Intrinsically stretchable transistors exhibit a high drive current of around 2 μA μm⁻¹ at a supply voltage of 5 V.",
+            "17": "The achieved parameters of intrinsically stretchable transistors are on par with state-of-the-art flexible transistors based on metal-oxide materials on plastic substrates.",
+            "18": "The achieved parameters of intrinsically stretchable transistors are on par with state-of-the-art flexible transistors based on carbon nanotube materials on plastic substrates.",
+            "19": "The achieved parameters of intrinsically stretchable transistors are on par with state-of-the-art flexible transistors based on polycrystalline silicon materials on plastic substrates.",
+            "20": "A large-scale integrated circuit with more than 1,000 transistors is realized for the first time in intrinsically stretchable electronics.",
+            "21": "A stage-switching frequency greater than 1 MHz is achieved for the first time in intrinsically stretchable electronics.",
+            "22": "A high-throughput braille recognition system surpasses human skin sensing ability.",
+            "23": "The braille recognition system is enabled by an active-matrix tactile sensor array with a record-high density of 2,500 units per cm².",
+            "24": "The braille recognition system features a light-emitting diode display with a high refreshing speed of 60 Hz.",
+            "25": "The braille recognition system features a light-emitting diode display with excellent mechanical robustness.",
+            "26": "The advancements in device performance have substantially enhanced the abilities of skin-like electronics."
+          },
+          "4": {
+            "1": "Living materials function as internal collaborative systems.",
+            "2": "Living materials naturally respond to changing environmental conditions.",
+            "3": "Regulating bioelectronic processes within living materials can effectively collect biological signals.",
+            "4": "Regulating bioelectronic processes within living materials can detect biomarkers.",
+            "5": "A living material was constructed by combining the conjugated polymer PMNT with a Shewanella oneidensis MR-1 biofilm in this study.",
+            "6": "The constructed living material was integrated into a flexible bioelectronic device.",
+            "7": "The flexible bioelectronic device was designed for lactate detection in physiological fluids.",
+            "8": "The flexible bioelectronic device can detect lactate in sweat.",
+            "9": "The flexible bioelectronic device can detect lactate in urine.",
+            "10": "The flexible bioelectronic device can detect lactate in plasma.",
+            "11": "The electroconductivity of the conjugated polymer PMNT optimized the bioelectronic processes within the living material.",
+            "12": "The collected electrical signals were wirelessly transmitted to a portable smartphone.",
+            "13": "The collected electrical signals were transmitted for reading.",
+            "14": "The collected electrical signals were transmitted for analysis.",
+            "15": "Lactate serves as a biomarker for cancer treatment.",
+            "16": "The flexible bioelectronic device was used to detect cancer cells.",
+            "17": "The flexible bioelectronic device was used to count cancer cells.",
+            "18": "The demonstration of a bioelectronic device using conductive polymer–based living material highlights promising applications.",
+            "19": "The bioelectronic device using conductive polymer–based living material has promising applications for next-generation personal health monitoring systems."
+          },
+          "5": {
+            "1": "In-sensor multi-task learning is a key merit of biological visions.",
+            "2": "In-sensor multi-task learning is a primary goal of artificial-general-intelligence.",
+            "3": "Traditional silicon-vision-chips suffer from large time overheads.",
+            "4": "Traditional silicon-vision-chips suffer from large energy overheads.",
+            "5": "Training conventional deep-learning models is not scalable on edge-devices.",
+            "6": "Training conventional deep-learning models is not affordable on edge-devices.",
+            "7": "A material-algorithm co-design is proposed to emulate the human retina.",
+            "8": "A material-algorithm co-design is proposed to emulate the affordable learning paradigm.",
+            "9": "A wearable transistor-based dynamic in-sensor Reservoir-Computing system is developed.",
+            "10": "The system relies on a bottle-brush-shaped semiconducting p-NDI with efficient exciton-dissociations.",
+            "11": "The system relies on through-space charge-transport characteristics.",
+            "12": "The system manifests excellent separability on different tasks.",
+            "13": "The system manifests fading memory on different tasks.",
+            "14": "The system manifests echo state property on different tasks.",
+            "15": "The RC system is paired with a ‘readout function’ on memristive organic diodes.",
+            "16": "The RC system recognizes handwritten letters and numbers with an accuracy of 98.04%.",
+            "17": "The RC system classifies diverse costumes with an accuracy of 88.18%.",
+            "18": "The RC system's accuracy is higher than all reported organic semiconductors.",
+            "19": "The spatiotemporal dynamics of RC naturally extract features of event-based videos.",
+            "20": "The RC system classifies 3 types of hand gestures at an accuracy of 98.62%.",
+            "21": "The computing cost of the RC system is significantly lower than that of conventional artificial-neural-networks.",
+            "22": "This work provides a promising material-algorithm co-design for affordable photonic neuromorphic systems.",
+            "23": "This work provides a promising material-algorithm co-design for highly efficient photonic neuromorphic systems."
+          },
+          "6": {
+            "1": "The \"von Neumann bottleneck\" presents a significant challenge in traditional computing.",
+            "2": "The challenge of the \"von Neumann bottleneck\" prompts the exploration of artificial synapses.",
+            "3": "Organic semiconductor materials offer potential solutions for overcoming the \"von Neumann bottleneck.\"",
+            "4": "Organic semiconductor materials are often limited by poor adhesion.",
+            "5": "Organic semiconductor materials are often limited by high elastic modulus.",
+            "6": "The study synthesized a triblock-conjugated polymer (PIID-2T-PDMS).",
+            "7": "PIID-2T-PDMS was synthesized by combining polyisoindigo-bithiophene (PIID-2T) with grafted poly(dimethylsiloxane) (PDMS).",
+            "8": "PIID-2T-PDMS demonstrated notable improvements in adhesion, increasing from 4.8 to 68.8 nN.",
+            "9": "PIID-2T-PDMS demonstrated reductions in elastic modulus, decreasing from 1.6 to 0.58 GPa.",
+            "10": "PIID-2T-PDMS preserved the electrical properties of PIID-2T.",
+            "11": "The three-terminal p-type organic artificial synapse (TPOAS) exhibited an unprecedented analog switching range of 276×.",
+            "12": "The analog switching range of the TPOAS surpassed previous records.",
+            "13": "TPOAS demonstrated a remarkable memory on-off ratio of 10^6.",
+            "14": "The TPOAS device showcased exceptional operational stability.",
+            "15": "The TPOAS maintained 99.6% of its original current after 1,600 write-read cycles in ambient conditions.",
+            "16": "TPOAS replicated key biological synaptic behavior of paired-pulse facilitation (PPF).",
+            "17": "TPOAS replicated key biological synaptic behavior of short-term plasticity (STP).",
+            "18": "TPOAS replicated key biological synaptic behavior of long-term plasticity (LTP).",
+            "19": "Simulations using handwritten digit datasets achieved a recognition accuracy of 91.7%.",
+            "20": "The study introduces a polyisoindigo-bithiophene-based block copolymer.",
+            "21": "The polyisoindigo-bithiophene-based block copolymer enhances adhesion.",
+            "22": "The polyisoindigo-bithiophene-based block copolymer reduces elastic modulus.",
+            "23": "The polyisoindigo-bithiophene-based block copolymer delivers high-performance artificial synapses.",
+            "24": "The polyisoindigo-bithiophene-based block copolymer paves the way for the next generation of neuromorphic computing systems."
+          },
+          "7": {
+            "1": "Organic semiconductors are solution-processable.",
+            "2": "Organic semiconductors are lightweight.",
+            "3": "Organic semiconductors are flexible.",
+            "4": "Organic semiconductors are increasingly being used as the active layer in a wide range of new technologies.",
+            "5": "The versatility of synthetic organic chemistry enables materials to be tuned.",
+            "6": "Tuned materials can be incorporated into biological sensors.",
+            "7": "Tuned materials can be incorporated into wearable electronics.",
+            "8": "Tuned materials can be incorporated into photovoltaics.",
+            "9": "Tuned materials can be incorporated into flexible displays.",
+            "10": "Devices can be improved by improving their material components.",
+            "11": "Devices can be improved by developing the synthetic chemistry of their material components.",
+            "12": "Devices can be improved by improving analytical techniques for understanding factors that govern material properties.",
+            "13": "Devices can be improved by improving computational techniques for understanding factors that govern material properties.",
+            "14": "Judicious molecular design provides control of the semiconductor frontier molecular orbital energy distribution.",
+            "15": "Judicious molecular design guides the hierarchical assembly of organic semiconductors into functional films.",
+            "16": "Judicious molecular design allows manipulation of the properties of charges in functional films.",
+            "17": "Judicious molecular design allows manipulation of the motion of charges in functional films.",
+            "18": "Judicious molecular design allows manipulation of the properties of excited states in functional films.",
+            "19": "Judicious molecular design allows manipulation of the motion of excited states in functional films.",
+            "20": "Molecular design plays an integral role in developing organic semiconductors for electronic devices in present technologies.",
+            "21": "Molecular design plays an integral role in developing organic semiconductors for electronic devices in emerging technologies."
+          }
+        },
+        "viewpoints": [
+          "Conjugated polymers are pioneering in wearable thin-film electronics.",
+          "Conjugated polymers are pioneering in biocompatible thin-film electronics.",
+          "Conjugated polymers are pioneering in neuromorphic thin-film electronics.",
+          "Conjugated polymers have a unique combination of molecular diversity.",
+          "Conjugated polymers have a unique combination of electronic versatility.",
+          "Conjugated polymers have a unique combination of mechanical flexibility."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "The semiconducting capabilities of CPs are essentially determined by long-range delocalization of electronic wave functions across polymer chains.",
+        "references": {},
+        "viewpoints": [
+          "The semiconducting capabilities of conjugated polymers are determined by long-range delocalization of electronic wave functions across polymer chains."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Consequently, single crystals characterized by perfect coplanar conformations, minimum energetic disorders, and enhanced carrier mobility have been widely recognized as an ideal platform to not only access the peak semiconducting performances but also explore the inherent structure-property relationships [8].",
+        "references": {
+          "8": {
+            "1": "Conjugated polymers are emerging as a viable semiconductor technology in industries such as displays, electronics, renewable energy, sensing, and healthcare.",
+            "2": "Molecular semiconductors are emerging as a viable semiconductor technology in industries such as displays, electronics, renewable energy, sensing, and healthcare.",
+            "3": "A key enabling factor for conjugated polymers and molecular semiconductors as a semiconductor technology has been significant scientific progress in improving their charge transport properties.",
+            "4": "A key enabling factor for conjugated polymers and molecular semiconductors as a semiconductor technology has been significant scientific progress in improving their carrier mobilities.",
+            "5": "Scientific progress in improving charge transport properties and carrier mobilities has been made possible by a better understanding of the molecular structure–property relationships.",
+            "6": "Scientific progress in improving charge transport properties and carrier mobilities has been made possible by a better understanding of the underpinning charge transport physics.",
+            "7": "The aim is to present a coherent review of how charge transport is understood in high-mobility van der Waals bonded semiconductors.",
+            "8": "Estimates for intrinsic limits to the carrier mobilities that might ultimately be achievable are specific questions of interest.",
+            "9": "The coupling between charge and structural dynamics is a specific question of interest.",
+            "10": "The importance of molecular conformations is a specific question of interest.",
+            "11": "The importance of mesoscale structural features is a specific question of interest.",
+            "12": "The relationship between the transport physics of conjugated polymers and small molecule semiconductors is a specific question of interest.",
+            "13": "How the incorporation of counterions in doped films affects the electronic structure and charge transport properties is a specific question of interest.",
+            "14": "The incorporation of counterions in doped films, as used in bioelectronics and thermoelectric devices, affects the electronic structure and charge transport properties."
+          }
+        },
+        "viewpoints": [
+          "Single crystals characterized by perfect coplanar conformations are recognized as an ideal platform to access peak semiconducting performances.",
+          "Single crystals characterized by minimum energetic disorders are recognized as an ideal platform to access peak semiconducting performances.",
+          "Single crystals characterized by enhanced carrier mobility are recognized as an ideal platform to access peak semiconducting performances.",
+          "Single crystals are recognized as an ideal platform to explore inherent structure-property relationships."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "However, the manufacturing of CP single crystals remains significantly challenging, mainly ascribed to the intrinsic contradiction between the energetic preference and the entropic cost for organizing random polymer chains into well-ordered arrangements [9].",
+        "references": {
+          "9": []
+        },
+        "viewpoints": [
+          "The manufacturing of conjugated polymer single crystals remains significantly challenging.",
+          "The challenge in manufacturing conjugated polymer single crystals is ascribed to the intrinsic contradiction between energetic preference and entropic cost.",
+          "There is an intrinsic contradiction between energetic preference and entropic cost for organizing random polymer chains into well-ordered arrangements."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "This challenging is further exacerbated in thin films, where two-dimensional constraints limit the spatial freedom of chains to arrange into the energetically favorable crystalline state, and the π-π stackings along two-dimensional scales are more easily disrupted by molecular irregularities, thermal agitations, and mechanical detachments.",
+        "references": {},
+        "viewpoints": [
+          "The challenge in manufacturing conjugated polymer single crystals is exacerbated in thin films.",
+          "Two-dimensional constraints in thin films limit the spatial freedom of chains to arrange into an energetically favorable crystalline state.",
+          "π-π stackings along two-dimensional scales are more easily disrupted by molecular irregularities.",
+          "π-π stackings along two-dimensional scales are more easily disrupted by thermal agitations.",
+          "π-π stackings along two-dimensional scales are more easily disrupted by mechanical detachments."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "To this end, we explore down to the molecular level of CPs, where electronegativity differences between carbon and heteroatoms create localized molecular dipoles due to the asymmetric distribution of electrons.",
+        "references": {},
+        "viewpoints": [
+          "Electronegativity differences between carbon and heteroatoms in conjugated polymers create localized molecular dipoles.",
+          "Localized molecular dipoles are created due to the asymmetric distribution of electrons."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "From the thermodynamic perspective, molecular dipoles may serve as subtle modulators to influence the energy landscape of π-π stackings, thus lowering the energy barrier towards a single-crystal state.",
+        "references": {},
+        "viewpoints": [
+          "From the thermodynamic perspective, molecular dipoles may serve as subtle modulators to influence the energy landscape of π-π stackings.",
+          "Molecular dipoles can lower the energy barrier towards a single-crystal state."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "On the kinetic front, molecular dipoles are expected to accelerate the nucleation by fostering highly-ordered initial states, and in turn contribute to more uniform and rapid crystal growths.",
+        "references": {},
+        "viewpoints": [
+          "Molecular dipoles are expected to accelerate nucleation by fostering highly-ordered initial states.",
+          "Molecular dipoles contribute to more uniform crystal growths.",
+          "Molecular dipoles contribute to rapid crystal growths."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Unfortunately, accelerated nucleation is often accompanied by high-density random crystal nuclei, leading to polycrystals with abundant grains [10].",
+        "references": {
+          "10": []
+        },
+        "viewpoints": [
+          "Accelerated nucleation is often accompanied by high-density random crystal nuclei.",
+          "High-density random crystal nuclei lead to polycrystals with abundant grains."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "In addition, molecular dipoles are highly sensitive to both molecular configurations and stacking conformations.",
+        "references": {},
+        "viewpoints": [
+          "Molecular dipoles are highly sensitive to molecular configurations.",
+          "Molecular dipoles are highly sensitive to stacking conformations."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Although external forces such as fluid flow [11], [12], mechanical stress [13], [14], and electric field [15], [16] have been employed for aligned arrangements of polymer chains, these approaches are constrained by the lack of nanoscopic controls over twisted molecular configurations [17], [18].",
+        "references": {
+          "11": {
+            "1": "Multi-physical fields solution processing strategy provides a universal way to prepare various conjugated polymer films.",
+            "2": "Multi-physical fields solution processing strategy provides a facile way to prepare various conjugated polymer films.",
+            "3": "Multi-physical fields solution processing strategy provides a universal way to prepare high-performance devices.",
+            "4": "Multi-physical fields solution processing strategy provides a facile way to prepare high-performance devices.",
+            "5": "The hierarchical structures evolution of polymer chains is elusive under the far-from-equilibrium state in solution.",
+            "6": "The crystallization of polymer chains is elusive under the far-from-equilibrium state in solution.",
+            "7": "A combined microfluidic flow and ultrasonication strategy (FU) was employed for conjugated polymer solution processing.",
+            "8": "There is a pronounced synergetic effect of microfluidic flow and ultrasonication in promoting the pre-ordering of chains in solution.",
+            "9": "The conformation order of the solution was revealed by UV–Vis absorption, polarized optical microscopy (POM), and cryogenic transmission electron microscopy (Cryo-TEM) characterizations.",
+            "10": "The anisotropy of the solution was revealed by UV–Vis absorption, polarized optical microscopy (POM), and cryogenic transmission electron microscopy (Cryo-TEM) characterizations.",
+            "11": "A non-classical nucleation model for the conjugated polymer crystallization in non-equilibrium solution processing was confirmed.",
+            "12": "The roles of microfluidic flow and ultrasonication on chain aggregation were addressed with a multi-physical simulation.",
+            "13": "The roles of microfluidic flow and ultrasonication on chain crystallization were addressed with a multi-physical simulation.",
+            "14": "The multi-physical simulation was based on pressure acoustics streaming, fluid heat transfer, and thermoviscous boundary layer impedance."
+          },
+          "12": {
+            "1": "Conjugated polymers have demonstrated promising optoelectronic properties.",
+            "2": "The brittleness of conjugated polymers has hindered their fabrication into durable fibers and textiles.",
+            "3": "The poor mechanical characteristics of conjugated polymers have hindered their fabrication into durable fibers and textiles.",
+            "4": "A universal approach to continuously producing highly strong, ultratough conjugated polymer fibers is reported.",
+            "5": "The approach uses a flow-enhanced crystallization (FLEX) method.",
+            "6": "The conjugated polymer fibers exhibit one order of magnitude higher tensile strength (>200 megapascals) than traditional semiconducting polymer fibers and films.",
+            "7": "The conjugated polymer fibers exhibit one order of magnitude higher toughness (>80 megajoules per cubic meter) than traditional semiconducting polymer fibers and films.",
+            "8": "The conjugated polymer fibers outperform many synthetic fibers.",
+            "9": "The conjugated polymer fibers are ready for scalable production.",
+            "10": "The conjugated polymer fibers exhibit unique strain-enhanced electronic properties.",
+            "11": "The conjugated polymer fibers exhibit exceptional performance when used as stretchable conductors.",
+            "12": "The conjugated polymer fibers exhibit exceptional performance when used as thermoelectrics.",
+            "13": "The conjugated polymer fibers exhibit exceptional performance when used as transistors.",
+            "14": "The conjugated polymer fibers exhibit exceptional performance when used as sensors.",
+            "15": "This work highlights the influence of fluid mechanical effects on the crystallization of conjugated polymers.",
+            "16": "This work highlights the influence of fluid mechanical effects on the mechanical properties of conjugated polymers.",
+            "17": "This work opens up exciting possibilities for integrating conjugated polymer fibers into wearable electronics."
+          },
+          "13": {
+            "1": "Stretchable semiconducting polymers have been developed as a key component to enable skin-like wearable electronics.",
+            "2": "The electrical performance of stretchable semiconducting polymers must be improved to enable more advanced functionalities in skin-like wearable electronics.",
+            "3": "A solution processing approach can achieve multi-scale ordering and alignment of conjugated polymers in stretchable semiconductors.",
+            "4": "The purpose of achieving multi-scale ordering and alignment of conjugated polymers is to substantially improve the charge carrier mobility in stretchable semiconductors.",
+            "5": "Solution shearing with a patterned microtrench coating blade was used to achieve macroscale alignment of conjugated-polymer nanostructures.",
+            "6": "The macroscale alignment of conjugated-polymer nanostructures was achieved along the charge transport direction.",
+            "7": "Nanoscale spatial confinement aligns chain conformation in conjugated polymers.",
+            "8": "Nanoscale spatial confinement promotes short-range π–π ordering in conjugated polymers.",
+            "9": "Short-range π–π ordering substantially reduces the energetic barrier for charge carrier transport.",
+            "10": "The mobilities of stretchable conjugated-polymer films have been enhanced up to threefold.",
+            "11": "The enhanced mobilities of stretchable conjugated-polymer films have been maintained under a strain up to 100%.",
+            "12": "The method of achieving multi-scale ordering and alignment of conjugated polymers may serve as the basis for large-area manufacturing of stretchable semiconducting films.",
+            "13": "The potential use of this method for large-area manufacturing is demonstrated by the roll-to-roll coating of metre-scale films."
+          },
+          "14": {
+            "1": "Room-temperature mechanical rubbing is used to control the 3D orientation of small π-conjugated molecular systems in solution-processed polycrystalline thin films.",
+            "2": "The mechanical rubbing technique is performed without using any alignment substrate.",
+            "3": "High absorption dichroic ratio is obtained in rubbed organic films based on ambipolar quinoidal quaterthiophene (QQT(CN)4).",
+            "4": "Significant anisotropy in charge carrier mobilities (up to 130) is measured in transistor configuration in the rubbed organic films based on QQT(CN)4.",
+            "5": "Solvent vapor annealing treatment of the rubbed film is found to improve the optical anisotropy.",
+            "6": "Solvent vapor annealing treatment of the rubbed film is found to improve the charge transport anisotropy.",
+            "7": "The improvement in optical and charge transport anisotropy is due to increased crystallinity.",
+            "8": "X-ray diffraction measurements demonstrate that rubbing leads to an excellent 1D orientation of the QQT(CN)4 molecules over large areas.",
+            "9": "Atomic force microscopy measurements demonstrate that rubbing leads to an excellent 1D orientation of the QQT(CN)4 molecules over large areas.",
+            "10": "Rubbing modifies the orientation of the crystals, moving molecules from an edge-on to a face-on configuration.",
+            "11": "The use of a mechanical alignment technique at room temperature for polycrystalline films is rationalized by the plastic characteristics of the QQT(CN)4 layer.",
+            "12": "The role of flexible alkyl side chains in the molecular packing rationalizes the use of a mechanical alignment technique at room temperature for polycrystalline films.",
+            "13": "The nearly complete conversion from edge-on to face-on orientation by mechanical treatment occurs in polycrystalline small-molecule-based thin films.",
+            "14": "The conversion opens perspectives in terms of fundamental research in organic optoelectronics.",
+            "15": "The conversion opens perspectives in terms of practical applications in organic optoelectronics."
+          },
+          "15": {
+            "1": "Alternating current (AC) electric fields align poly(3-alkylthiophene) (P3AT) fibers.",
+            "2": "The alignment occurs during a one-dimensional crystallization process.",
+            "3": "Microscopy has been used to probe structural, mechanical, and electrical properties.",
+            "4": "Small angle neutron scattering (SANS) has been used to probe structural, mechanical, and electrical properties.",
+            "5": "Atomic force microscopy (AFM) has been used to probe structural, mechanical, and electrical properties.",
+            "6": "X-ray diffraction (XRD) has been used to probe structural, mechanical, and electrical properties.",
+            "7": "Rheology has been used to probe structural, mechanical, and electrical properties.",
+            "8": "UV-Vis spectroscopy has been used to probe structural, mechanical, and electrical properties.",
+            "9": "Dielectric spectroscopy has been used to probe structural, mechanical, and electrical properties.",
+            "10": "Optimum frequency was identified for specific P3AT concentrations.",
+            "11": "Optimum amplitudes were identified for specific P3AT concentrations.",
+            "12": "Optimum frequency was identified for variable solvent quality.",
+            "13": "Optimum amplitudes were identified for variable solvent quality.",
+            "14": "Optical microscopy demonstrates that alignment persists over micrometer length scales.",
+            "15": "Optical microscopy demonstrates that alignment persists over nanometer length scales.",
+            "16": "SANS demonstrates that alignment persists over micrometer length scales.",
+            "17": "SANS demonstrates that alignment persists over nanometer length scales.",
+            "18": "XRD demonstrates that alignment persists over micrometer length scales.",
+            "19": "XRD demonstrates that alignment persists over nanometer length scales.",
+            "20": "Small amplitude oscillatory shear rheology showed that the shear modulus increased for aligned fibers.",
+            "21": "The structural changes were correlated to improvements in electric conductivity.",
+            "22": "Improvements in electric conductivity were probed by dielectric spectroscopy.",
+            "23": "XRD experiments performed with variable sample orientations showed that the P3HT π–π stacking direction was aligned parallel to the direction of the fiber axis.",
+            "24": "Electric field alignment was possible for other alkyl-thiophene polymers.",
+            "25": "Electric field alignment was possible for polymers with simple backbone repeat units."
+          },
+          "16": {
+            "1": "The ability to control crystallization is important to technologies.",
+            "2": "The ability to control crystallization is important to pharmaceutical materials.",
+            "3": "Electric fields impact crystallization.",
+            "4": "Little is known about the mechanism by which electric fields affect crystallization.",
+            "5": "The frequency of an external electric (ac) field changes the crystallization rate of vinylethylene carbonate.",
+            "6": "The frequency of an external electric (ac) field changes the partitioning into distinct polymorphs of vinylethylene carbonate.",
+            "7": "The field effects on crystallization are pronounced only for frequencies below a certain threshold.",
+            "8": "The threshold frequency for pronounced field effects is orders of magnitude below the frequency characterizing molecular orientation.",
+            "9": "The threshold frequency for pronounced field effects is consistent with the reorientation of polar crystal nuclei of radius r < 3 nm.",
+            "10": "The electric field opens an additional nucleation pathway in the crystallization process.",
+            "11": "The electric field lowers the free-energy barrier to form a polymorph.",
+            "12": "The polymorph formed under the influence of an electric field melts at a temperature ∼20 K below that of the ordinary crystal.",
+            "13": "The lower melting polymorph is not obtained at zero electrical field."
+          },
+          "17": {
+            "1": "Recent demonstrations of inverted thermal activation of charge mobility in polymer field-effect transistors have generated interest in transport regimes not limited by thermal barriers.",
+            "2": "There is a lack of understanding regarding the limiting factors to access transport regimes not limited by thermal barriers.",
+            "3": "Improved understanding of transport regimes not limited by thermal barriers is critical for the development of new materials.",
+            "4": "Improved understanding of transport regimes not limited by thermal barriers is critical for establishing processing guidelines.",
+            "5": "Improved understanding of transport regimes not limited by thermal barriers is critical for broadening the range of applications.",
+            "6": "Precise processing of a diketopyrrolopyrrole-tetrafluorobenzene-based electron transporting copolymer results in single crystal-like mobility.",
+            "7": "Precise processing of a diketopyrrolopyrrole-tetrafluorobenzene-based electron transporting copolymer results in voltage-independent mobility.",
+            "8": "The mobility of the processed diketopyrrolopyrrole-tetrafluorobenzene-based electron transporting copolymer exhibits vanishing activation energy above 280 K.",
+            "9": "Uniaxial chain alignment is a key factor in achieving the desired mobility in the processed copolymer.",
+            "10": "Thermal annealing at temperatures within the melting endotherm of films is a key factor in achieving the desired mobility in the processed copolymer.",
+            "11": "Experimental and computational evidence suggests that electrons are delocalized within crystalline domains of increased size.",
+            "12": "Residual energy barriers introduced by disordered regions are bypassed in the direction of molecular alignment.",
+            "13": "The bypass of residual energy barriers is due to a more efficient interconnection of the ordered domains following the annealing process."
+          },
+          "18": {
+            "1": "Zone casting, dip coating, and solution shearing are meniscus-guided coating methods.",
+            "2": "Meniscus-guided coating methods are scalable laboratory models.",
+            "3": "Meniscus-guided coating methods are used for large-area solution coating of functional materials.",
+            "4": "Meniscus-guided coating methods are used for thin-film electronics.",
+            "5": "There is a general lack of understanding of how coating parameters affect dry-film morphology.",
+            "6": "The lack of understanding of how coating parameters affect dry-film morphology upholds trial-and-error experimentation.",
+            "7": "The lack of understanding of how coating parameters affect dry-film morphology delays lab-to-fab translation.",
+            "8": "A model is presented that predicts dry-film morphologies.",
+            "9": "The model predicts dry-film morphologies produced by meniscus-guided coating.",
+            "10": "The model predicts dry-film morphologies of a crystallizing solute.",
+            "11": "The model reveals how the interplay between coating velocity and evaporation rate determines crystalline domain size.",
+            "12": "The model reveals how the interplay between coating velocity and evaporation rate determines crystalline domain shape anisotropy.",
+            "13": "The model reveals how the interplay between coating velocity and evaporation rate determines crystalline domain regularity.",
+            "14": "Fast coating leads to evaporation quickly driving the system past supersaturation.",
+            "15": "Fast coating results in isotropic domain structures due to evaporation driving the system past supersaturation.",
+            "16": "Slow coating leads to depletion due to crystallization.",
+            "17": "Slow coating results in domains being stretched in the coating direction due to crystallization depletion.",
+            "18": "The predicted morphologies have been experimentally confirmed.",
+            "19": "Zone-casting experiments confirmed the predicted morphologies.",
+            "20": "The predicted morphologies were confirmed with the organic semiconductor 4-tolyl-bithiophenyl-diketopyrrolopyrrole.",
+            "21": "The model was applied to a small molecular solute in this context.",
+            "22": "The model can be applied broadly to polymers.",
+            "23": "The model can be applied broadly to organic-inorganic hybrids such as perovskites."
+          }
+        },
+        "viewpoints": [
+          "External forces such as fluid flow have been employed for aligned arrangements of polymer chains.",
+          "External forces such as mechanical stress have been employed for aligned arrangements of polymer chains.",
+          "External forces such as electric field have been employed for aligned arrangements of polymer chains.",
+          "The approaches using external forces are constrained by the lack of nanoscopic controls over twisted molecular configurations."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Therefore, achieving a delicate equilibrium between localized molecular rotations and comprehensive chain alignments remains elusive, and the involved complex dynamics hampers efforts to precisely modulate the crystallization process of CPs at the thin-film level, a goal that has yet to be readily achieved.",
+        "references": {},
+        "viewpoints": [
+          "Achieving a delicate equilibrium between localized molecular rotations and comprehensive chain alignments remains elusive.",
+          "Complex dynamics involved in achieving equilibrium hampers efforts to precisely modulate the crystallization process of conjugated polymers at the thin-film level."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Herein, we introduce a universal nanoconfined molecular-dipole orienting (nano-CMDO) strategy for precise assembly of CPs into single-crystal thin films.",
+        "references": {},
+        "viewpoints": [
+          "A universal nanoconfined molecular-dipole orienting (nano-CMDO) strategy is introduced for precise assembly of conjugated polymers into single-crystal thin films."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Capitalizing on our rational design of spatial-electrostatic nanoconfined capacitor, molecular dipoles are demonstrated to rotate conjugated backbones in response to a perpendicular electric field, while alkyl-modified parallel plates are engineered to regulate side chains.",
+        "references": {},
+        "viewpoints": [
+          "Rational design of a spatial-electrostatic nanoconfined capacitor is used.",
+          "Molecular dipoles are demonstrated to rotate conjugated backbones in response to a perpendicular electric field.",
+          "Alkyl-modified parallel plates are engineered to regulate side chains."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "As a result, a series of prototype CPs, including polythiophenes, polytheinothiophenes, p-type and n-type donor-acceptor copolymers, are manufactured into microscale-size high-quantity single-crystal thin films.",
+        "references": {},
+        "viewpoints": [
+          "Prototype conjugated polymers like polythiophenes are manufactured into microscale-size high-quantity single-crystal thin films.",
+          "Prototype conjugated polymers like polytheinothiophenes are manufactured into microscale-size high-quantity single-crystal thin films.",
+          "Prototype conjugated polymers like p-type donor-acceptor copolymers are manufactured into microscale-size high-quantity single-crystal thin films.",
+          "Prototype conjugated polymers like n-type donor-acceptor copolymers are manufactured into microscale-size high-quantity single-crystal thin films."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "These films exhibit ultralow energetic disorders with the minimal Urbach energy of 25 meV, even below the thermal fluctuation energy at room temperature (i.e., kBT = 26 meV).",
+        "references": {},
+        "viewpoints": [
+          "These films exhibit ultralow energetic disorders.",
+          "These films exhibit the minimal Urbach energy of 25 meV.",
+          "The Urbach energy of these films is below thermal fluctuation energy at room temperature."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Trap-free space-charge-limited-current (SCLC) behaviors are observed with notably low trap densities of 10 15 –10 16 cm−3.",
+        "references": {},
+        "viewpoints": [
+          "Trap-free space-charge-limited-current (SCLC) behaviors are observed.",
+          "The films have notably low trap densities of 10^15 – 10^16 cm−3."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "A high transistor mobility of 15.5 cm2 V−1 s−1 is achieved to exemplify the substantial potential of these CP single-crystal thin films for high-performance organic electronics.",
+        "references": {},
+        "viewpoints": [
+          "A high transistor mobility of 15.5 cm^2 V−1 s−1 is achieved.",
+          "The high transistor mobility exemplifies the substantial potential of conjugated polymer single-crystal thin films for high-performance organic electronics."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Our nano-CMDO strategy offers a promising non-epitaxial avenue for the single-crystal growth of conjugated polymers.",
+        "references": {},
+        "viewpoints": [
+          "The nano-CMDO strategy offers a promising non-epitaxial avenue for the single-crystal growth of conjugated polymers."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56757-2_with_abstracts",
+    "base_id": "s41467-025-56757-2",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56757-2_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

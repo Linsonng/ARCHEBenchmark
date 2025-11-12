@@ -1,0 +1,753 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Loneliness is often described as a global epidemic [1] , [2] , [3] that is linked to negative outcomes that span the gamut from depression to cardiovascular disease to premature death [4] , [5] . These stark realities compelled the World Health Organization to declare loneliness a major health concern in 2019 [6] , [7] and the U.S. to release a Surgeon General’s Advisory in 2023 [8] . In response, media articles and public health campaigns have proliferated with warnings about the dangers of being alone [9] , [10] . For example, the United States’ Commit to Connect campaign’s priority is to “increase awareness about the harms of social isolation and loneliness across all segments of society” [2] . Likewise, a report by the United Kingdom’s Campaign to End Loneliness notes that “isolation can be as harmful to health as smoking 15 cigarettes a day and is more damaging than obesity” [11] . Here we suggest that this discourse, though well-intentioned, may paradoxically contribute to the problem of loneliness by influencing a potential driver of this state: people’s beliefs about being alone. This argument is grounded in the observation that being alone is not inherently harmful. Although experiences of being alone and loneliness are often conflated [12] , they are distinct states [13] , [14] , [15] . Some people are content spending time alone [13] , [16] , [17] , whereas others interact with people frequently and still feel lonely [14] . Indeed, a study of over 11,000 participants revealed that the strength of the relationship between being alone and feeling alone (i.e., loneliness) was weak ( r = 0.20) [18] . More recent studies demonstrate similarly modest associations ( r range: 0.13 to 0.25 across studies) [19] , [20] , [21] . Although loneliness is a negative state that people generally try to avoid [22] , time alone can be a desirable part of daily life [16] , [23] . Consider that American adults spend ~30–65% of their waking hours alone [20] , [24] and often intentionally seek out such experiences [17] , [25] . According to one recent estimate, for example, 85% of the time that people spend by themselves is deliberately chosen [26] . Being alone can of course induce loneliness [27] , [28] . Yet, a less frequently heralded literature indicates that spending time alone can also promote well-being [13] , [16] , emotion regulation [29] , [30] , [31] , [32] , and cognitive restoration [33] . Conversely, spending less time alone than one would like is associated with increased stress and depression [34] . Thus, there is substantial variability in people’s experiences of being alone [23] . One factor that may consequentially influence the emotional impact of being alone is how people think about this experience. Decades of research indicate that people’s beliefs powerfully impact their emotional responses to a vast array of situations [35] , [36] by systematically recruiting prefrontal and parietal networks that modulate affective reactions [37] , [38] . The wide-ranging nature of these effects is well documented. For example, interventions that target beliefs positively impact experiences that range from stress [39] and depression [40] to weight loss [41] and sleep [42] . Drawing from this work, we reasoned that people’s beliefs about being alone should influence their experiences of time alone. Preliminary evidence supporting this idea comes from two laboratory experiments which found that teaching people about the benefits of being alone increased how positive they felt after spending 10 min by themselves [30] , [31] . Yet, whether these findings extend beyond a brief laboratory task is unclear. Here, we provide evidence across five multi-method studies that people’s beliefs about being alone, which are shaped by media discourse on this issue, influence experiences of loneliness in daily life. In Study 1, we find that contemporary U.S. news articles frequently portray being alone as harmful. Study 2 demonstrates that brief exposure to such portrayals causally influences people’s beliefs about being alone. Study 3, a 2-week experience-sampling study, shows that people who hold negative beliefs about being alone experience a significant increase in loneliness after spending time alone in daily life, whereas those with positive beliefs experience a significant decrease in loneliness after spending the same amount of time alone. Finally, Studies 4 and 5 demonstrate the generalizability of these findings across nine countries spanning six continents. Together, these results reveal beliefs about being alone as a notable driver of loneliness, offering new directions for interventions aimed at reducing this widespread problem.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Loneliness is often described as a global epidemic [1], [2], [3] that is linked to negative outcomes that span the gamut from depression to cardiovascular disease to premature death [4], [5].",
+        "references": {
+          "1": [],
+          "2": [],
+          "3": [],
+          "4": [],
+          "5": {
+            "1": "The associations between social isolation and the risk of mortality from all causes, cardiovascular disease (CVD), and cancer are controversial.",
+            "2": "The associations between loneliness and the risk of mortality from all causes, cardiovascular disease (CVD), and cancer are controversial.",
+            "3": "A systematic review was conducted on prospective studies about the association between social isolation and mortality outcomes in adults aged 18 years or older.",
+            "4": "A systematic review was conducted on prospective studies about the association between loneliness and mortality outcomes in adults aged 18 years or older.",
+            "5": "A systematic review was conducted on studies about the association between social isolation and mortality outcomes in individuals with CVD or cancer.",
+            "6": "A systematic review was conducted on studies about the association between loneliness and mortality outcomes in individuals with CVD or cancer.",
+            "7": "A meta-analysis was conducted on the reviewed studies.",
+            "8": "The study protocol was registered with PROSPERO under registration number CRD42022299959.",
+            "9": "A total of 90 prospective cohort studies were included in the analysis.",
+            "10": "The included studies encompassed 2,205,199 individuals.",
+            "11": "In the general population, social isolation is significantly associated with an increased risk of all-cause mortality.",
+            "12": "In the general population, loneliness is significantly associated with an increased risk of all-cause mortality.",
+            "13": "In the general population, social isolation is significantly associated with an increased risk of cancer mortality.",
+            "14": "In the general population, loneliness is significantly associated with an increased risk of cancer mortality.",
+            "15": "Social isolation is significantly associated with an increased risk of CVD mortality.",
+            "16": "Socially isolated individuals with CVD have an increased risk of all-cause mortality.",
+            "17": "Socially isolated individuals with breast cancer have an increased risk of all-cause mortality.",
+            "18": "Individuals with breast cancer have a higher cancer-specific mortality due to social isolation.",
+            "19": "Greater focus on social isolation may help improve people's well-being.",
+            "20": "Greater focus on social isolation may help reduce people's mortality risk.",
+            "21": "Greater focus on loneliness may help improve people's well-being.",
+            "22": "Greater focus on loneliness may help reduce people's mortality risk."
+          }
+        },
+        "viewpoints": [
+          "Loneliness is often described as a global epidemic.",
+          "Loneliness is linked to negative outcomes such as depression, cardiovascular disease, and premature death."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "These stark realities compelled the World Health Organization to declare loneliness a major health concern in 2019 [6], [7] and the U.S. to release a Surgeon General’s Advisory in 2023 [8].",
+        "references": {
+          "6": [],
+          "7": {
+            "1": "The response to coronavirus disease 2019 (COVID-19) has led to an unprecedented scale of social isolation.",
+            "2": "The social environment has a dramatic impact on our sense of life satisfaction.",
+            "3": "The social environment has a dramatic impact on our well-being.",
+            "4": "In times of distress, crisis, or disaster, human resilience depends on the richness of social connections.",
+            "5": "In times of distress, crisis, or disaster, human resilience depends on the strength of social connections.",
+            "6": "In times of distress, crisis, or disaster, human resilience depends on active engagement in groups.",
+            "7": "In times of distress, crisis, or disaster, human resilience depends on active engagement in communities.",
+            "8": "Perceived social isolation, or loneliness, may be the most potent threat to survival.",
+            "9": "Perceived social isolation, or loneliness, may be the most potent threat to longevity.",
+            "10": "Evidence emerging from various disciplines has made it clear that perceived social isolation may threaten survival and longevity.",
+            "11": "Social bonds have benefits.",
+            "12": "The choreographies of bond creation are important.",
+            "13": "The choreographies of bond maintenance are important.",
+            "14": "There is a neurocognitive basis for social isolation.",
+            "15": "Social isolation has deep consequences for mental health.",
+            "16": "Social isolation has deep consequences for physical health."
+          },
+          "8": []
+        },
+        "viewpoints": [
+          "The World Health Organization declared loneliness a major health concern in 2019 due to its stark realities.",
+          "The United States released a Surgeon General’s Advisory on loneliness in 2023 due to its stark realities."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In response, media articles and public health campaigns have proliferated with warnings about the dangers of being alone [9], [10].",
+        "references": {
+          "9": {
+            "1": "Over the past decade, the health implications of social isolation and loneliness garnered global attention.",
+            "2": "A widely cited meta-analysis contributed to the global attention on social isolation and loneliness.",
+            "3": "The meta-analysis benchmarked associations between cigarette smoking and mortality.",
+            "4": "The meta-analysis benchmarked associations between several social-relationship measures and mortality.",
+            "5": "Leaders in health systems have claimed that the harms of social isolation and loneliness are comparable to that of cigarette smoking.",
+            "6": "Leaders in research have claimed that the harms of social isolation and loneliness are comparable to that of cigarette smoking.",
+            "7": "Leaders in government have claimed that the harms of social isolation and loneliness are comparable to that of cigarette smoking.",
+            "8": "Leaders in popular media have claimed that the harms of social isolation and loneliness are comparable to that of cigarette smoking.",
+            "9": "The commentary examines the basis of the comparison between social isolation, loneliness, and cigarette smoking.",
+            "10": "Comparisons between social isolation, loneliness, and smoking have been helpful for raising awareness of robust evidence.",
+            "11": "Robust evidence links social relationships and health.",
+            "12": "The analogy often oversimplifies the evidence linking social isolation, loneliness, and smoking.",
+            "13": "The analogy may overemphasize treating social isolation or loneliness at the individual level.",
+            "14": "There is insufficient attention on population-level prevention of social isolation or loneliness.",
+            "15": "Communities, governments, and health and social sector practitioners are navigating opportunities for change.",
+            "16": "It is time to focus greater attention on the structures and environments that promote healthy relationships.",
+            "17": "It is time to focus greater attention on the structures and environments that constrain healthy relationships."
+          },
+          "10": []
+        },
+        "viewpoints": [
+          "Media articles have proliferated with warnings about the dangers of being alone.",
+          "Public health campaigns have proliferated with warnings about the dangers of being alone."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "For example, the United States’ Commit to Connect campaign’s priority is to “increase awareness about the harms of social isolation and loneliness across all segments of society” [2].",
+        "references": {
+          "2": []
+        },
+        "viewpoints": [
+          "The United States’ Commit to Connect campaign prioritizes increasing awareness about the harms of social isolation and loneliness across all segments of society."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Likewise, a report by the United Kingdom’s Campaign to End Loneliness notes that “isolation can be as harmful to health as smoking 15 cigarettes a day and is more damaging than obesity” [11].",
+        "references": {
+          "11": []
+        },
+        "viewpoints": [
+          "A report by the United Kingdom’s Campaign to End Loneliness states that isolation can be as harmful to health as smoking 15 cigarettes a day.",
+          "A report by the United Kingdom’s Campaign to End Loneliness states that isolation is more damaging to health than obesity."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Here we suggest that this discourse, though well-intentioned, may paradoxically contribute to the problem of loneliness by influencing a potential driver of this state: people’s beliefs about being alone.",
+        "references": {},
+        "viewpoints": [
+          "The discourse on loneliness may paradoxically contribute to the problem of loneliness by influencing people’s beliefs about being alone.",
+          "The discourse concerning loneliness is well-intentioned."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "This argument is grounded in the observation that being alone is not inherently harmful.",
+        "references": {},
+        "viewpoints": [
+          "Being alone is not inherently harmful."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Although experiences of being alone and loneliness are often conflated [12], they are distinct states [13], [14], [15].",
+        "references": {
+          "12": [],
+          "13": [],
+          "14": {
+            "1": "The cognitive discrepancy model predicts that loneliness occurs due to a perceived difference between desired and actual levels of social involvement.",
+            "2": "The present investigation used data from a sample of high school sophomore students.",
+            "3": "The present investigation aimed to go beyond previous research on the cognitive discrepancy model.",
+            "4": "The investigation examined the predicted nonlinear relationships between desired and actual social contact and feelings of loneliness.",
+            "5": "Support for the cognitive discrepancy model of loneliness was found in measures of close friendships.",
+            "6": "There was a nonlinear relationship between the discrepancy in students' ideal and actual number of close friends and feelings of satisfaction with close friendships.",
+            "7": "There was a nonlinear relationship between the discrepancy in students' ideal and actual number of close friends and feelings of loneliness, after controlling for the number of close friends.",
+            "8": "Implications of these findings for theoretical models of loneliness are discussed."
+          },
+          "15": []
+        },
+        "viewpoints": [
+          "Experiences of being alone and loneliness are often conflated.",
+          "Being alone and loneliness are distinct states."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Some people are content spending time alone [13], [16], [17], whereas others interact with people frequently and still feel lonely [14].",
+        "references": {
+          "13": [],
+          "16": {
+            "1": "Solitude is defined as the state of being alone and not physically with another.",
+            "2": "Solitude can be rewarding.",
+            "3": "The present research explored the potential benefits of solitude.",
+            "4": "The present research used a pragmatist approach.",
+            "5": "A pragmatist approach involves a ground-up, top-down perspective.",
+            "6": "A pragmatist approach is receptive to new knowledge but informed by theory.",
+            "7": "Participant recruitment in the study was stratified by age and gender.",
+            "8": "The study sample involved 2,035 individuals.",
+            "9": "The study sample included adolescents aged 13-16 years.",
+            "10": "The study sample included adults aged 35-55 years.",
+            "11": "The study sample included older adults aged 65+ years.",
+            "12": "Data in the study were analyzed with a mixed-methods approach.",
+            "13": "Coded themes were extracted from brief narratives about solitude.",
+            "14": "The frequencies of coded themes from brief narratives about solitude were analyzed."
+          },
+          "17": [],
+          "14": {
+            "1": "The cognitive discrepancy model predicts that loneliness occurs due to a perceived difference between desired and actual levels of social involvement.",
+            "2": "The present investigation used data from a sample of high school sophomore students.",
+            "3": "The present investigation aimed to go beyond previous research on the cognitive discrepancy model.",
+            "4": "The investigation examined the predicted nonlinear relationships between desired and actual social contact and feelings of loneliness.",
+            "5": "Support for the cognitive discrepancy model of loneliness was found in measures of close friendships.",
+            "6": "There was a nonlinear relationship between the discrepancy in students' ideal and actual number of close friends and feelings of satisfaction with close friendships.",
+            "7": "There was a nonlinear relationship between the discrepancy in students' ideal and actual number of close friends and feelings of loneliness, after controlling for the number of close friends.",
+            "8": "Implications of these findings for theoretical models of loneliness are discussed."
+          }
+        },
+        "viewpoints": [
+          "Some people are content spending time alone.",
+          "Some people interact with others frequently and still feel lonely."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Indeed, a study of over 11,000 participants revealed that the strength of the relationship between being alone and feeling alone (i.e., loneliness) was weak (r = 0.20) [18].",
+        "references": {
+          "18": {
+            "1": "The study aims to examine the relationship between social isolation and health outcomes among older adults.",
+            "2": "The study aims to examine the relationship between loneliness and health outcomes among older adults.",
+            "3": "The study used data from the Leave Behind Questionnaire of the Health and Retirement Study (2006 and 2008) with a sample size of 11,825 participants.",
+            "4": "Several indicators of social isolation were scaled in the study.",
+            "5": "The Hughes 3-Item Loneliness Scale was used in the study.",
+            "6": "Self-rated health was examined as a measure of health using logistic regression.",
+            "7": "Mental health conditions were examined as a measure of health using logistic regression.",
+            "8": "Loneliness and social isolation were not highly correlated with one another.",
+            "9": "Loneliness was associated with higher odds of having a mental health problem.",
+            "10": "Social isolation was associated with higher odds of reporting one's health as being fair or poor.",
+            "11": "Global measures of isolation may not detect the impact on physical and mental health in older adults.",
+            "12": "Global measures of isolation that fail to distinguish between social isolation and feelings of loneliness may not detect their impact on physical and mental health in older adults."
+          }
+        },
+        "viewpoints": [
+          "A study of over 11,000 participants revealed a weak relationship between being alone and feeling alone, with a correlation coefficient of r = 0.20."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "More recent studies demonstrate similarly modest associations (r range: 0.13 to 0.25 across studies) [19], [20], [21].",
+        "references": {
+          "19": [],
+          "20": [],
+          "21": {
+            "1": "The relationship between various social isolation indicators and loneliness is being assessed.",
+            "2": "The differential associations that social isolation indicators and loneliness have with depressive symptoms are being examined.",
+            "3": "Baseline data for 1,919 adults aged 21 years and above from a representative health survey in the Central region of Singapore was used for this study.",
+            "4": "The association between social isolation indicators and loneliness was assessed using multiple linear regression.",
+            "5": "Social isolation indicators include marital status, living arrangement, and social connectedness with relatives and friends.",
+            "6": "Loneliness was measured using the three-item UCLA Loneliness Scale.",
+            "7": "The differential associations of social isolation indicators and loneliness with depressive symptoms were examined using multiple linear regression.",
+            "8": "Depressive symptoms were assessed using the Patient Health Questionnaire-9.",
+            "9": "Relevant covariates were controlled for in the analysis.",
+            "10": "There was significant overlap between loneliness and social isolation.",
+            "11": "Social connectedness with relatives was mildly correlated with loneliness score.",
+            "12": "Social connectedness with friends was mildly correlated with loneliness score.",
+            "13": "The correlation coefficients for social connectedness with relatives and friends with loneliness score were in the range of |r| = 0.14 to 0.16.",
+            "14": "Social isolation, in terms of weak connectedness with relatives, was associated with depressive symptoms.",
+            "15": "Social isolation, in terms of weak connectedness with friends, was associated with depressive symptoms.",
+            "16": "Loneliness was associated with depressive symptoms.",
+            "17": "The associations of weak connectedness with relatives, weak connectedness with friends, and loneliness with depressive symptoms remained even after controlling for age, gender, employment status, and other covariates.",
+            "18": "The association of loneliness with depressive symptoms had a β value of 0.33.",
+            "19": "The association of loneliness with depressive symptoms was independent of the association of any social isolation indicators with depressive symptoms.",
+            "20": "The association of loneliness with depressive symptoms was stronger than that of any social isolation indicators.",
+            "21": "The β values for the association of any social isolation indicators with depressive symptoms ranged from |β| = 0.00 to 0.07.",
+            "22": "The study establishes a significant association of different social isolation indicators with depressive symptoms in community-dwelling adults aged 21 and above.",
+            "23": "The study establishes a unique association of different social isolation indicators with depressive symptoms in community-dwelling adults aged 21 and above.",
+            "24": "The study establishes a significant association of loneliness with depressive symptoms in community-dwelling adults aged 21 and above.",
+            "25": "The study establishes a unique association of loneliness with depressive symptoms in community-dwelling adults aged 21 and above."
+          }
+        },
+        "viewpoints": [
+          "Recent studies demonstrate modest associations between being alone and feeling alone, with correlation coefficients ranging from r = 0.13 to r = 0.25."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Although loneliness is a negative state that people generally try to avoid [22], time alone can be a desirable part of daily life [16], [23].",
+        "references": {
+          "22": {
+            "1": "Humans, as a social species, rely on a safe social environment to survive.",
+            "2": "Humans, as a social species, rely on a secure social environment to thrive.",
+            "3": "Perceptions of social isolation increase vigilance for threat.",
+            "4": "Perceptions of social isolation heighten feelings of vulnerability.",
+            "5": "Perceptions of social isolation raise the desire to reconnect.",
+            "6": "Loneliness increases vigilance for threat.",
+            "7": "Loneliness heightens feelings of vulnerability.",
+            "8": "Loneliness raises the desire to reconnect.",
+            "9": "Implicit hypervigilance for social threat alters psychological processes.",
+            "10": "Implicit hypervigilance for social threat influences physiological functioning.",
+            "11": "Implicit hypervigilance for social threat diminishes sleep quality.",
+            "12": "Implicit hypervigilance for social threat increases morbidity.",
+            "13": "Implicit hypervigilance for social threat increases mortality.",
+            "14": "The purpose of this paper is to review the features of loneliness within a comprehensive theoretical framework.",
+            "15": "The purpose of this paper is to review the consequences of loneliness within a comprehensive theoretical framework.",
+            "16": "The comprehensive theoretical framework informs interventions to reduce loneliness.",
+            "17": "The paper reviews the physical health consequences of loneliness.",
+            "18": "The paper reviews the mental health consequences of loneliness.",
+            "19": "The paper reviews mechanisms for the effects of loneliness.",
+            "20": "The paper reviews the effectiveness of existing interventions.",
+            "21": "Features of a loneliness regulatory loop are employed to explain cognitive consequences of loneliness.",
+            "22": "Features of a loneliness regulatory loop are employed to explain behavioral consequences of loneliness.",
+            "23": "Features of a loneliness regulatory loop are employed to explain physiological consequences of loneliness.",
+            "24": "Features of a loneliness regulatory loop are employed to discuss interventions to reduce loneliness.",
+            "25": "Loneliness is not simply the same as being alone.",
+            "26": "Interventions to reduce loneliness may need to take into account its attentional biases.",
+            "27": "Interventions to reduce loneliness may need to take into account its confirmatory biases.",
+            "28": "Interventions to reduce loneliness may need to take into account its memorial biases.",
+            "29": "Interventions to reduce loneliness may need to take into account its social effects.",
+            "30": "Interventions to reduce loneliness may need to take into account its behavioral effects.",
+            "31": "Interventions to reduce the health consequences of loneliness may need to take into account its attentional biases.",
+            "32": "Interventions to reduce the health consequences of loneliness may need to take into account its confirmatory biases.",
+            "33": "Interventions to reduce the health consequences of loneliness may need to take into account its memorial biases.",
+            "34": "Interventions to reduce the health consequences of loneliness may need to take into account its social effects.",
+            "35": "Interventions to reduce the health consequences of loneliness may need to take into account its behavioral effects."
+          },
+          "16": {
+            "1": "Solitude is defined as the state of being alone and not physically with another.",
+            "2": "Solitude can be rewarding.",
+            "3": "The present research explored the potential benefits of solitude.",
+            "4": "The present research used a pragmatist approach.",
+            "5": "A pragmatist approach involves a ground-up, top-down perspective.",
+            "6": "A pragmatist approach is receptive to new knowledge but informed by theory.",
+            "7": "Participant recruitment in the study was stratified by age and gender.",
+            "8": "The study sample involved 2,035 individuals.",
+            "9": "The study sample included adolescents aged 13-16 years.",
+            "10": "The study sample included adults aged 35-55 years.",
+            "11": "The study sample included older adults aged 65+ years.",
+            "12": "Data in the study were analyzed with a mixed-methods approach.",
+            "13": "Coded themes were extracted from brief narratives about solitude.",
+            "14": "The frequencies of coded themes from brief narratives about solitude were analyzed."
+          },
+          "23": []
+        },
+        "viewpoints": [
+          "Loneliness is a negative state that people generally try to avoid.",
+          "Time alone can be a desirable part of daily life."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Consider that American adults spend ~30–65% of their waking hours alone [20], [24] and often intentionally seek out such experiences [17], [25].",
+        "references": {
+          "20": [],
+          "24": [],
+          "17": [],
+          "25": {
+            "1": "Motivation is crucial in determining whether solitude is psychologically beneficial.",
+            "2": "Motivation is crucial in determining whether solitude is psychologically risky.",
+            "3": "Motivation is an overlooked factor in the context of solitude’s psychological impact.",
+            "4": "The paper describes the development of the Motivation for Solitude Scale - Short-Form (MSS-SF).",
+            "5": "The paper describes the validation of the Motivation for Solitude Scale - Short-Form (MSS-SF).",
+            "6": "The MSS-SF is a measure grounded in Self-Determination Theory.",
+            "7": "The MSS-SF differentiates between intrinsic motivations for solitude and extrinsic motivations for solitude.",
+            "8": "Emerging adult participants (N = 803) were recruited in four successive samples from the United States for scale development and validation.",
+            "9": "Adolescent participants (N = 176) were recruited in four successive samples from the United States for scale development and validation.",
+            "10": "Participants completed an online survey that included the MSS-SF.",
+            "11": "Participants completed an online survey that included various well-being measures.",
+            "12": "Participants completed an online survey that included personality measures.",
+            "13": "Confirmatory Factor Analyses resulted in a two-factor solution: self-determined solitude (SDS) and not self-determined solitude (NSDS).",
+            "14": "The MSS-SF was shown to be reliable with adolescents.",
+            "15": "The MSS-SF was shown to be reliable with emerging adults.",
+            "16": "The MSS-SF demonstrated satisfactory convergent validity.",
+            "17": "The MSS-SF demonstrated satisfactory discriminant validity.",
+            "18": "Engaging in solitude for extrinsic, not self-determined reasons was associated with loneliness.",
+            "19": "Engaging in solitude for extrinsic, not self-determined reasons was associated with social anxiety.",
+            "20": "Engaging in solitude for extrinsic, not self-determined reasons was associated with depressive symptomatology.",
+            "21": "Solitude chosen for intrinsic, self-determined reasons was positively correlated with well-being.",
+            "22": "The positive correlation between intrinsically motivated solitude and well-being was particularly noted for emerging adults.",
+            "23": "The MSS-SF distinguishes between two distinctly different motivations for solitude beyond the mere preference for solitude.",
+            "24": "By distinguishing between different motivations for solitude, the MSS-SF allows researchers to better understand the affordances of being alone for adolescents.",
+            "25": "By distinguishing between different motivations for solitude, the MSS-SF allows researchers to better understand the risks of being alone for adolescents.",
+            "26": "By distinguishing between different motivations for solitude, the MSS-SF allows researchers to better understand the affordances of being alone for emerging adults.",
+            "27": "By distinguishing between different motivations for solitude, the MSS-SF allows researchers to better understand the risks of being alone for emerging adults."
+          }
+        },
+        "viewpoints": [
+          "American adults spend approximately 30–65% of their waking hours alone.",
+          "American adults often intentionally seek out experiences of being alone."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "According to one recent estimate, for example, 85% of the time that people spend by themselves is deliberately chosen [26].",
+        "references": {
+          "26": []
+        },
+        "viewpoints": [
+          "One recent estimate suggests that 85% of the time people spend by themselves is deliberately chosen."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Being alone can of course induce loneliness [27], [28].",
+        "references": {
+          "27": [],
+          "28": []
+        },
+        "viewpoints": [
+          "Being alone can induce loneliness."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Yet, a less frequently heralded literature indicates that spending time alone can also promote well-being [13], [16], emotion regulation [29], [30], [31], [32], and cognitive restoration [33].",
+        "references": {
+          "13": [],
+          "16": {
+            "1": "Solitude is defined as the state of being alone and not physically with another.",
+            "2": "Solitude can be rewarding.",
+            "3": "The present research explored the potential benefits of solitude.",
+            "4": "The present research used a pragmatist approach.",
+            "5": "A pragmatist approach involves a ground-up, top-down perspective.",
+            "6": "A pragmatist approach is receptive to new knowledge but informed by theory.",
+            "7": "Participant recruitment in the study was stratified by age and gender.",
+            "8": "The study sample involved 2,035 individuals.",
+            "9": "The study sample included adolescents aged 13-16 years.",
+            "10": "The study sample included adults aged 35-55 years.",
+            "11": "The study sample included older adults aged 65+ years.",
+            "12": "Data in the study were analyzed with a mixed-methods approach.",
+            "13": "Coded themes were extracted from brief narratives about solitude.",
+            "14": "The frequencies of coded themes from brief narratives about solitude were analyzed."
+          },
+          "29": {
+            "1": "Solitude generally has a deactivation effect on people's affective experiences.",
+            "2": "Solitude decreases both positive and negative high-arousal affects in people's affective experiences.",
+            "3": "The deactivation effect of solitude occurred when people were alone.",
+            "4": "The deactivation effect of solitude did not occur when people were with another person.",
+            "5": "The deactivation effect of solitude did not depend on engagement in an activity such as reading when a person was alone.",
+            "6": "High-arousal positive affect did not drop in a solitude condition in which participants specifically engaged in positive thinking.",
+            "7": "High-arousal positive affect did not drop in a solitude condition when participants actively chose what to think about.",
+            "8": "Solitude could lead to relaxation when individuals actively chose to be alone.",
+            "9": "Solitude could lead to reduced stress when individuals actively chose to be alone.",
+            "10": "This research shed light on solitude effects in the past literature.",
+            "11": "This research shed light on people's experiences when alone.",
+            "12": "This research shed light on the different factors that moderate the effects of solitude on people's experiences."
+          },
+          "30": {
+            "1": "Loneliness is a transdiagnostic feature of psychopathology.",
+            "2": "Loneliness is an experience of perceived isolation.",
+            "3": "The experience of loneliness is only weakly linked to the amount of time spent alone.",
+            "4": "Traditional loneliness interventions aim to increase social contact.",
+            "5": "Targeting maladaptive cognition about time alone may be an effective way to reduce loneliness.",
+            "6": "A brief reappraisal manipulation may enable individuals to experience their time alone more positively.",
+            "7": "The impact of trait loneliness on experiences of time alone was tested.",
+            "8": "The impact of compulsive social media use on experiences of time alone was tested.",
+            "9": "The impact of trait reappraisal on experiences of time alone was tested.",
+            "10": "Positive mood significantly decreased after sitting alone across conditions.",
+            "11": "Negative mood significantly decreased after sitting alone across conditions.",
+            "12": "Participants who read about the benefits of solitude experienced a smaller reduction in positive mood than participants in the control condition.",
+            "13": "Participants who less frequently used reappraisal in their everyday lives benefited most from the reappraisal manipulation.",
+            "14": "Reappraising time alone as solitude may boost resilience to the decrements in positive mood associated with time alone.",
+            "15": "The results provide preliminary evidence for the above claim.",
+            "16": "The paper discusses the limitations of the study.",
+            "17": "The paper discusses the clinical implications of the study.",
+            "18": "The paper discusses directions for future research."
+          },
+          "31": [],
+          "32": [],
+          "33": []
+        },
+        "viewpoints": [
+          "Spending time alone can promote well-being.",
+          "Spending time alone can promote emotion regulation.",
+          "Spending time alone can promote cognitive restoration."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Conversely, spending less time alone than one would like is associated with increased stress and depression [34].",
+        "references": {
+          "34": []
+        },
+        "viewpoints": [
+          "Spending less time alone than desired is associated with increased stress.",
+          "Spending less time alone than desired is associated with increased depression."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Thus, there is substantial variability in people’s experiences of being alone [23].",
+        "references": {
+          "23": []
+        },
+        "viewpoints": [
+          "There is substantial variability in people’s experiences of being alone."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "One factor that may consequentially influence the emotional impact of being alone is how people think about this experience.",
+        "references": {},
+        "viewpoints": [
+          "How people think about the experience of being alone may influence its emotional impact."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Decades of research indicate that people’s beliefs powerfully impact their emotional responses to a vast array of situations [35], [36] by systematically recruiting prefrontal and parietal networks that modulate affective reactions [37], [38].",
+        "references": {
+          "35": {
+            "1": "Several lines of investigation have evolved from the initial cognitive model of depression.",
+            "2": "Several lines of investigation have evolved from the initial cognitive model of other disorders.",
+            "3": "A large number of studies have tested the cognitive model using clinical strategies.",
+            "4": "A large number of studies have tested the cognitive model using laboratory-based strategies.",
+            "5": "Studies that most closely approximate the clinical conditions from which the theory was derived support the cognitive model of depression.",
+            "6": "Studies of anxiety generally support the cognitive model of anxiety.",
+            "7": "Studies of panic generally support the cognitive model of panic.",
+            "8": "There are fewer studies of anxiety and panic compared to studies of depression.",
+            "9": "The application of the cognitive model to the treatment of clinical problems has been promising.",
+            "10": "The application of the cognitive model to the treatment of clinical problems supports the concept of cognitive specificity.",
+            "11": "The cognitive therapy of depression has led to the utilization of specific cognitive strategies based on the specific conceptualizations of depression.",
+            "12": "The cognitive therapy of depression has been applied to a wide variety of disorders.",
+            "13": "Study of abnormal reactions has provided clues to the cognitive structure of normal reactions."
+          },
+          "36": [],
+          "37": {
+            "1": "Placebo analgesia shares several features with reward processing.",
+            "2": "Reward processing shares several features with placebo analgesia.",
+            "3": "Expectations have a strong influence on the subsequent emotional experience of placebo analgesia.",
+            "4": "Expectations have a strong influence on the subsequent emotional experience of reward processing.",
+            "5": "Recent imaging data indicate similarities in the underlying neuronal network of placebo analgesia and reward processing.",
+            "6": "The authors hypothesized that placebo analgesia is a special case of reward processing.",
+            "7": "The authors hypothesized that placebo treatment could modulate emotional perception in the same way as placebo treatment does pain perception.",
+            "8": "The behavioral part of the study indicates that placebo treatment has an effect on how subjects perceive unpleasant pictures.",
+            "9": "Event-related fMRI demonstrated that the same modulatory network is involved in both emotional placebo and placebo analgesia.",
+            "10": "The modulatory network involved in both emotional placebo and placebo analgesia includes the rostral anterior cingulate cortex and the lateral orbitofrontal cortex.",
+            "11": "The effects on emotional perception were correlated with the reported placebo effect.",
+            "12": "The effects on emotional perception were predicted by the amount of treatment expectation induced on a previous day.",
+            "13": "The placebo effect may be considered as a general process of modulation induced by the subjects' expectations."
+          },
+          "38": {
+            "1": "Placebo effects are beneficial effects.",
+            "2": "Placebo effects are attributable to brain-mind responses to the context of treatment delivery.",
+            "3": "Placebo effects are not attributable to the specific actions of the drug.",
+            "4": "Placebo effects are mediated by diverse processes, including learning, expectations, and social cognition.",
+            "5": "Placebo effects can influence various clinical outcomes related to health.",
+            "6": "Placebo effects can influence various physiological outcomes related to health.",
+            "7": "Emerging neuroscience evidence implicates multiple brain systems in placebo effects.",
+            "8": "Emerging neuroscience evidence implicates neurochemical mediators, including opioids, in placebo effects.",
+            "9": "Emerging neuroscience evidence implicates neurochemical mediators, including dopamine, in placebo effects.",
+            "10": "The paper presents an empirical review of the brain systems involved in placebo effects.",
+            "11": "The empirical review focuses on placebo analgesia.",
+            "12": "The paper presents a conceptual framework linking the findings on brain systems to the mind-brain processes that mediate placebo effects.",
+            "13": "The conceptual framework suggests that neuropsychological processes mediating placebo effects may be crucial for a wide array of therapeutic approaches.",
+            "14": "The neuropsychological processes mediating placebo effects may be crucial for many drugs."
+          }
+        },
+        "viewpoints": [
+          "People’s beliefs powerfully impact their emotional responses to a vast array of situations.",
+          "People’s beliefs impact their emotional responses by recruiting prefrontal and parietal networks that modulate affective reactions."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "The wide-ranging nature of these effects is well documented.",
+        "references": {},
+        "viewpoints": [
+          "The wide-ranging nature of the effects of people’s beliefs on their emotional responses is well documented."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "For example, interventions that target beliefs positively impact experiences that range from stress [39] and depression [40] to weight loss [41] and sleep [42].",
+        "references": {
+          "39": {
+            "1": "Altering situation-specific evaluations of stress as challenging versus threatening can improve responses to stress according to prior research.",
+            "2": "The current study aimed to explore whether cognitive, physiological, and affective stress responses can be altered independent of situation-specific evaluations.",
+            "3": "The current study intended to change individuals' mindsets about the nature of stress in general to alter stress responses.",
+            "4": "The study used a 2 × 2 design to experimentally manipulate stress mindset.",
+            "5": "Multi-media film clips were used to orient participants to either the enhancing or debilitating nature of stress.",
+            "6": "Participants (N = 113) were oriented to either the enhancing or debilitating nature of stress.",
+            "7": "The study manipulated challenge and threat evaluations by providing positive or negative feedback.",
+            "8": "Positive feedback and negative feedback were given to participants during a social stress test.",
+            "9": "Under threat stress evaluations, a stress-is-enhancing mindset produced sharper increases in anabolic hormones compared to a stress-is-debilitating mindset.",
+            "10": "Under challenge stress evaluations, a stress-is-enhancing mindset produced sharper increases in anabolic hormones compared to a stress-is-debilitating mindset.",
+            "11": "When stress was evaluated as a challenge, a stress-is-enhancing mindset produced sharper increases in positive affect.",
+            "12": "When stress was evaluated as a challenge, a stress-is-enhancing mindset heightened attentional bias towards positive stimuli.",
+            "13": "When stress was evaluated as a challenge, a stress-is-enhancing mindset increased cognitive flexibility.",
+            "14": "When stress was evaluated as a challenge, a stress-is-debilitating mindset produced worse cognitive outcomes.",
+            "15": "When stress was evaluated as a challenge, a stress-is-debilitating mindset produced worse affective outcomes.",
+            "16": "The findings demonstrate that a short manipulation designed to generate a stress-is-enhancing mindset can improve responses to challenging stress.",
+            "17": "The findings demonstrate that a short manipulation designed to generate a stress-is-enhancing mindset can improve responses to threatening stress.",
+            "18": "The findings advance stress management theory and practice."
+          },
+          "40": {
+            "1": "Depression is often framed as a disease or dysfunctional syndrome.",
+            "2": "Framing depression as a disease or dysfunctional syndrome has unintended negative consequences.",
+            "3": "Framing depression as a disease or dysfunctional syndrome leads to increased stigma.",
+            "4": "There is an alternative messaging framework that suggests depression serves an adaptive function.",
+            "5": "The paper describes the historical development of popular messages about depression.",
+            "6": "The alternative framework that depression is a \"signal\" that serves a purpose is informed by evolutionary psychiatry.",
+            "7": "The alternative framework that depression is a \"signal\" that serves a purpose is informed by social cognition.",
+            "8": "The paper presents data from a pre-registered, online randomized-controlled study.",
+            "9": "Participants in the study had self-reported depression histories.",
+            "10": "Participants viewed videos explaining depression as a \"disease like any other\" with known biopsychosocial risk factors (BPS condition).",
+            "11": "Participants viewed videos explaining depression as a signal that serves an adaptive function (Signal condition).",
+            "12": "The study sample consisted of 877 participants.",
+            "13": "Three of the six hypotheses in the study were supported.",
+            "14": "The Signal condition led to less self-stigma.",
+            "15": "The Signal condition led to greater offset efficacy.",
+            "16": "The Signal condition led to more adaptive beliefs about depression.",
+            "17": "Exploratory analyses showed that Signal effects were stronger among females.",
+            "18": "There were 553 females in the study sample.",
+            "19": "Females showed a greater growth mindset of depression after the Signal explanation.",
+            "20": "Framing depression as an adaptive signal can benefit patients.",
+            "21": "Framing depression as an adaptive signal can avoid harmful consequences of popular etiological presentations.",
+            "22": "Alternative framings of depression are worthy of further study."
+          },
+          "41": {
+            "1": "The study tested whether the relationship between exercise and health is moderated by one's mind-set.",
+            "2": "84 female room attendants working in seven different hotels participated in the study.",
+            "3": "Physiological health variables that are affected by exercise were measured in the participants.",
+            "4": "Participants in the informed condition were told that cleaning hotel rooms is good exercise.",
+            "5": "Participants in the informed condition were told that cleaning hotel rooms satisfies the Surgeon General's recommendations for an active lifestyle.",
+            "6": "Examples were provided to the informed group showing how cleaning hotel rooms is exercise.",
+            "7": "The control group participants were not told that cleaning hotel rooms is good exercise.",
+            "8": "The control group participants were not told that cleaning hotel rooms satisfies the Surgeon General's recommendations for an active lifestyle.",
+            "9": "Actual behavior did not change in the informed group.",
+            "10": "Four weeks after the intervention, the informed group perceived themselves to be getting significantly more exercise than before the intervention.",
+            "11": "The informed group showed a decrease in weight compared with the control group.",
+            "12": "The informed group showed a decrease in blood pressure compared with the control group.",
+            "13": "The informed group showed a decrease in body fat compared with the control group.",
+            "14": "The informed group showed a decrease in waist-to-hip ratio compared with the control group.",
+            "15": "The informed group showed a decrease in body mass index compared with the control group.",
+            "16": "The results support the hypothesis that exercise affects health in part or in whole via the placebo effect."
+          },
+          "42": {
+            "1": "Cognitive behavioral therapy for insomnia (CBT-I) is the preferred treatment for chronic insomnia.",
+            "2": "Sleep-related cognitions are one target of treatment in cognitive behavioral therapy for insomnia (CBT-I).",
+            "3": "There has been little systematic investigation of how sleep-related cognitions are being assessed in CBT-I trials.",
+            "4": "There has been no meta-analysis of the impact of CBT-I on dysfunctional beliefs about sleep.",
+            "5": "Dysfunctional beliefs about sleep are a core cognitive component of treatment in CBT-I.",
+            "6": "Academic Search Complete, Medline, CINAHL, and PsychInfo were searched from 1990 to 2018 to identify randomized controlled trials of CBT-I in adults (≥18 years).",
+            "7": "The identified studies reported some measure of sleep-related cognitions.",
+            "8": "Sixteen randomized controlled trials were identified.",
+            "9": "The identified trials compared 1134 CBT-I subjects with 830 control subjects.",
+            "10": "The Dysfunctional Beliefs and Attitudes about Sleep Scale was utilized almost exclusively to assess sleep-related cognitions in the identified trials.",
+            "11": "Hedge's g at a 95% confidence interval (CI) was calculated to assess CBT-I effect size at post-treatment.",
+            "12": "Hedge's g was used to compare CBT-I effect size at post-treatment to control groups.",
+            "13": "Cognitive behavioral therapy for insomnia (CBT-I) significantly reduced dysfunctional beliefs about sleep at post-treatment.",
+            "14": "The effect size of the reduction in dysfunctional beliefs about sleep at post-treatment was g = -0.90 with a 95% confidence interval of -1.19 to -0.62.",
+            "15": "Three trials contributed data to estimate the effect size for long-term effects of CBT-I.",
+            "16": "The effect size for long-term effects was g = -1.04 with a 95% confidence interval of -2.07 to -0.02.",
+            "17": "Follow-up time for assessing long-term effects ranged from 3 to 18 months.",
+            "18": "Cognitive behavioral therapy for insomnia (CBT-I) has moderate to large effects on dysfunctional beliefs about sleep."
+          }
+        },
+        "viewpoints": [
+          "Interventions that target beliefs positively impact experiences related to stress.",
+          "Interventions that target beliefs positively impact experiences related to depression.",
+          "Interventions that target beliefs positively impact experiences related to weight loss.",
+          "Interventions that target beliefs positively impact experiences related to sleep."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Drawing from this work, we reasoned that people’s beliefs about being alone should influence their experiences of time alone.",
+        "references": {},
+        "viewpoints": [
+          "People’s beliefs about being alone should influence their experiences of time alone."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Preliminary evidence supporting this idea comes from two laboratory experiments which found that teaching people about the benefits of being alone increased how positive they felt after spending 10 min by themselves [30], [31].",
+        "references": {
+          "30": {
+            "1": "Loneliness is a transdiagnostic feature of psychopathology.",
+            "2": "Loneliness is an experience of perceived isolation.",
+            "3": "The experience of loneliness is only weakly linked to the amount of time spent alone.",
+            "4": "Traditional loneliness interventions aim to increase social contact.",
+            "5": "Targeting maladaptive cognition about time alone may be an effective way to reduce loneliness.",
+            "6": "A brief reappraisal manipulation may enable individuals to experience their time alone more positively.",
+            "7": "The impact of trait loneliness on experiences of time alone was tested.",
+            "8": "The impact of compulsive social media use on experiences of time alone was tested.",
+            "9": "The impact of trait reappraisal on experiences of time alone was tested.",
+            "10": "Positive mood significantly decreased after sitting alone across conditions.",
+            "11": "Negative mood significantly decreased after sitting alone across conditions.",
+            "12": "Participants who read about the benefits of solitude experienced a smaller reduction in positive mood than participants in the control condition.",
+            "13": "Participants who less frequently used reappraisal in their everyday lives benefited most from the reappraisal manipulation.",
+            "14": "Reappraising time alone as solitude may boost resilience to the decrements in positive mood associated with time alone.",
+            "15": "The results provide preliminary evidence for the above claim.",
+            "16": "The paper discusses the limitations of the study.",
+            "17": "The paper discusses the clinical implications of the study.",
+            "18": "The paper discusses directions for future research."
+          },
+          "31": []
+        },
+        "viewpoints": [
+          "Preliminary evidence supporting the idea that beliefs about being alone influence experiences comes from two laboratory experiments.",
+          "Teaching people about the benefits of being alone increased how positive they felt after spending 10 minutes alone, according to two laboratory experiments."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Yet, whether these findings extend beyond a brief laboratory task is unclear.",
+        "references": {},
+        "viewpoints": [
+          "It is unclear whether the findings from laboratory experiments extend beyond a brief laboratory task."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Here, we provide evidence across five multi-method studies that people’s beliefs about being alone, which are shaped by media discourse on this issue, influence experiences of loneliness in daily life.",
+        "references": {},
+        "viewpoints": [
+          "Five multi-method studies provide evidence that people’s beliefs about being alone influence experiences of loneliness in daily life.",
+          "People’s beliefs about being alone are shaped by media discourse on this issue."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "In Study 1, we find that contemporary U.S. news articles frequently portray being alone as harmful.",
+        "references": {},
+        "viewpoints": [
+          "Contemporary U.S. news articles frequently portray being alone as harmful."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Study 2 demonstrates that brief exposure to such portrayals causally influences people’s beliefs about being alone.",
+        "references": {},
+        "viewpoints": [
+          "Brief exposure to portrayals of being alone as harmful causally influences people’s beliefs about being alone."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Study 3, a 2-week experience-sampling study, shows that people who hold negative beliefs about being alone experience a significant increase in loneliness after spending time alone in daily life, whereas those with positive beliefs experience a significant decrease in loneliness after spending the same amount of time alone.",
+        "references": {},
+        "viewpoints": [
+          "People who hold negative beliefs about being alone experience a significant increase in loneliness after spending time alone in daily life.",
+          "People who hold positive beliefs about being alone experience a significant decrease in loneliness after spending the same amount of time alone."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Finally, Studies 4 and 5 demonstrate the generalizability of these findings across nine countries spanning six continents.",
+        "references": {},
+        "viewpoints": [
+          "Studies 4 and 5 demonstrate the generalizability of the findings across nine countries spanning six continents."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Together, these results reveal beliefs about being alone as a notable driver of loneliness, offering new directions for interventions aimed at reducing this widespread problem.",
+        "references": {},
+        "viewpoints": [
+          "Beliefs about being alone are revealed as a notable driver of loneliness.",
+          "The results offer new directions for interventions aimed at reducing loneliness."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56764-3_with_abstracts",
+    "base_id": "s41467-025-56764-3",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56764-3_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

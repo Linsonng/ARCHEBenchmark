@@ -1,0 +1,974 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Excessive energy consumption, particularly from the continuous burning of fossil fuels, has significantly worsened climate change [1] , [2] , [3] , [4] . Extensive research has focused on clean energy production and carbon capture to reduce the release of greenhouse gases, mainly CO 2 emissions, into the atmosphere during the process of extracting, producing, and using energy [2] , [3] , [4] . MOFs are cage-like structures containing metal nodes and organic ligands connected in infinite arrays [5] . The highly porous structures and precise pore size distributions of crystalline MOFs give them potential applications in various energy and environment-related gas separations, such as natural gas purification and CO 2 capture [6] , [7] , [8] , [9] , [10] , [11] . Crystalline MOFs typically require processing, such as pelletization, coating, or sintering, to form bulky structures for device applications, especially for membrane modules [12] , [13] . However, their practical implementation is still hampered by inherent limitations in mechanical stability of microcrystalline powders [14] , [15] . The discovery of MOF glasses, recognised as a fourth category of glass materials, given their dissimilarity to existing inorganic (non-metallic), organic and metallic families, opens up possible opportunities to process MOFs into macroscale, grain-boundary free morphologies [16] . ZIFs are a class of MOFs containing tetrahedral metal ions linked by imidazolate ions. A few types of ZIFs have been discovered with the capability to form glasses via melt-quenching [17] . These melt-quenched MOF glasses possess similar structures to amorphous silica and display viscoelastic states at temperatures above their glass transition temperatures ( T g ). Several forming methods such as hot-pressing and remelting have been explored to fabricate bulk samples of both MOF glasses and MOF crystal glass composites (CGCs) [18] , [19] , [20] . However, upon glass formation, the inherent porosity in their crystalline precursors is reduced, which would be unfavourable for possible applications in gas separation compared with other pure polycrystalline MOFs [10] , [21] , [22] , [23] , [24] , [25] . Hence, a substantial enhancement in porosity is imperative for MOF glasses to emerge as practical solutions for gas separation challenges. The introduction of pore-inducing agents can enhance the porosity of MOF glass through the decomposition of chemicals added during glass formation, such as polymers [21] , [26] . Nevertheless, achieving precise manipulation of porosity in MOF glass at the Ångstrom scale remains a significant challenge. Chemical composition of the crystalline MOFs, i.e., the type of metal nodes and organic ligands, is a decisive factor in determining their melting point and decomposition temperature [27] , [28] . Thus, to make both meltable and highly porous crystalline MOFs, it is logical to engineer a more porous topology by using similar metal nodes and organic ligands to those present in reported meltable MOFs, e.g., ZIF-4, [Zn(Im) 2 , Im=imidazolate], and ZIF-62, [Zn(Im) 1.75 (bIm) 0.25 , bIm=benzimidazolate]. The commonly employed ligand-directed strategy, which utilizes large-sized ligands to enhance porosity in crystalline MOFs, is not readily applicable to meltable MOFs. This is due to the introduction of extra ligands which may potentially lower the decomposition temperature of MOFs [21] . Large solvent molecules have previously been used as the structure-directing agents (SDAs) to synthesize crystalline MOFs with highly porous topology without introducing extra ligands. For example, Shi et al. synthesized two large pore ZIF compounds with Im organic ligands, by using dibutylformamide (DBF) and dipropylformamide (DPF) solvents as SDAs, respectively [29] . The obtained ZIFs possess the zeolite CAN and AFI topology with 12-membered rings (MR), and are termed CAN-[Zn(Im) 2 ] and AFI-[Zn(Im) 2 ], respectively. AFI-[Zn(Im) 2 ] displays pore apertures as large as 15.6 Å, which is larger than that of ZIF-4 (2.1 Å, 6 MR) and ZIF-62 (1.4 Å, 6 MR) [30] . However, CAN-[Zn(Im) 2 ] and AFI-[Zn(Im) 2 ] will recrystallize to the dense ZIF-zni phase with 4 MR before melting, similar with ZIF-4 [24] , [31] . This leads to a reduction in the porosity of the resultant melt-quenched glass, a g ZIF-zni [32] . In this work, meltable MOFs that have highly porous topologies of 12 MR have been synthesised by using both SDAs and mixed ligands of imidazole (Im) and benzimidazole (bIm) as shown in Fig. 1 . Bulky amide solvents were used as SDAs to create highly porous topologies, without introducing extra ligands. The mixed ligands of Im and bIm were used to suppress the recrystallization to dense ZIF-zni phase during the melting process and provide spatial support for porosity preservation. The obtained crystalline frameworks, termed AFI-[Zn(Im) 1.68 (bIm) 0.32 ] and CAN-[Zn(Im) 1.73 (bIm) 0.27 ], possess similar chemical compositions to the prototypical glass former ZIF-62, though they have far greater porosity. The enhanced porosity carries over to the glass upon melt quenching, resulting in high H 2 , CO 2 , and CH 4 adsorption capacities of a g AFI-[Zn(Im) 1.68 (bIm) 0.32 ], while decomposition was found during the melt quenching process of CAN-[Zn(Im) 1.73 (bIm) 0.27 ]. Moreover, a free-standing membrane was fabricated with a g AFI-[Zn(Im) 1.68 (bIm) 0.32 ], featuring record-breaking CH 4 /N 2 and CO 2 /N 2 separation performance. This porous MOF glass shows promising applications in energy gas purification and CO 2 capture. Fig. 1: Synthesis scheme of meltable MOFs with highly porous topologies by using both bulky amide solvents as SDAs and mixed ligands. SDAs create highly porous topologies without introducing extra ligands. The mixed ligands of Im and bIm suppress the recrystallization to dense ZIF-zni phase during the melting process, and provide spatial support for porosity preservation. a Synthesis of large-pore AFI-[Zn(Im) 2-x (bIm) x ] and a g AFI-[Zn(Im) 2-x (bIm) x ] by using both SDAs and mixed ligands. b Synthesis of small-pore ZIF-62 (CCDC code SIWJAM) and a g ZIF-62 by using only mixed ligands. c Synthesis of AFI-[Zn(Im) 2 ] (CCDC code PAJROK), thermal recrystallization ZIF-zni (CCDC code IMIDZB), and a g AFI-[Zn(Im) 2 ] by using only SDAs. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Excessive energy consumption, particularly from the continuous burning of fossil fuels, has significantly worsened climate change [1] , [2] , [3] , [4] .",
+        "references": {
+          "1": [],
+          "2": {
+            "1": "Electrochemical conversion of CO₂ to methane using intermittent renewable electricity provides an opportunity to store renewable electric energy.",
+            "2": "Electrochemical conversion of CO₂ to methane using intermittent renewable electricity provides an opportunity to utilize emitted CO₂.",
+            "3": "Copper-based single atom catalysts are promising candidates to restrain C-C coupling in CO₂ conversion.",
+            "4": "Restraining C-C coupling suggests the feasibility of further protonation of CO* to CHO* for methane production.",
+            "5": "Introducing boron atoms into the first coordination layer of the Cu-N₄ motif facilitates the binding of CO* intermediates.",
+            "6": "Introducing boron atoms into the first coordination layer of the Cu-N₄ motif facilitates the binding of CHO* intermediates.",
+            "7": "Facilitating the binding of CO* and CHO* intermediates favors the generation of methane.",
+            "8": "A co-doping strategy is employed to fabricate a B-doped Cu-Nₓ atomic configuration (Cu-NₓBᵧ).",
+            "9": "Cu-N₂B₂ is resolved to be the dominant site in the B-doped Cu-Nₓ atomic configuration.",
+            "10": "The as-synthesized B-doped Cu-Nₓ structure exhibits superior performance towards methane production compared with Cu-N₄ motifs.",
+            "11": "The as-synthesized B-doped Cu-Nₓ structure shows a peak methane Faradaic efficiency of 73% at −1.46 V vs. RHE.",
+            "12": "The as-synthesized B-doped Cu-Nₓ structure shows a maximum methane partial current density of −462 mA cm⁻² at −1.94 V vs. RHE.",
+            "13": "Extensional calculations utilizing two-dimensional reaction phase diagram analysis help to gain insights into the reaction mechanism of Cu-N₂B₂ coordination structure.",
+            "14": "Barrier calculation helps to gain insights into the reaction mechanism of Cu-N₂B₂ coordination structure."
+          },
+          "3": {
+            "1": "Negative emissions technologies can be used for the net removal of greenhouse gases from the atmosphere.",
+            "2": "The net removal of greenhouse gases from the atmosphere could provide a pathway to limit global temperature rises.",
+            "3": "Direct air capture of carbon dioxide offers the prospect of permanently lowering the atmospheric CO₂ concentration.",
+            "4": "The reduction in atmospheric CO₂ concentration through direct air capture is contingent on the development and deployment of economical and energy-efficient technologies on a large scale.",
+            "5": "An approach to direct air capture is reported at the laboratory scale.",
+            "6": "The approach uses mostly off-the-shelf materials and equipment.",
+            "7": "CO₂ absorption is achieved with readily available aqueous amino acid solutions.",
+            "8": "The aqueous amino acid solutions used for CO₂ absorption are environmentally friendly.",
+            "9": "Glycine and sarcosine are the specific amino acids used in the solutions for CO₂ absorption.",
+            "10": "A household humidifier is used for CO₂ absorption with the amino acid solutions.",
+            "11": "The CO₂-loaded solutions are reacted with a guanidine compound.",
+            "12": "The guanidine compound used in the reaction is simple.",
+            "13": "The reaction results in crystallization as a very insoluble carbonate salt.",
+            "14": "The reaction regenerates the amino acid sorbent.",
+            "15": "Effective CO₂ release is achieved by heating the carbonate crystals.",
+            "16": "Near-quantitative regeneration of the guanidine compound is achieved by heating the carbonate crystals.",
+            "17": "The heating of the carbonate crystals uses concentrated solar power.",
+            "18": "Relatively mild heating is used for effective CO₂ release and guanidine compound regeneration."
+          },
+          "4": {
+            "1": "Carbon dioxide capture technologies are important for counteracting difficult-to-abate greenhouse gas emissions.",
+            "2": "Limiting global warming to acceptable levels requires counteracting difficult-to-abate greenhouse gas emissions.",
+            "3": "Electrochemically mediated CO₂ capture is a promising alternative to conventional amine scrubbing.",
+            "4": "Electrochemically mediated CO₂ capture is potentially cost-effective.",
+            "5": "Electrochemically mediated CO₂ capture is environmentally friendly.",
+            "6": "Electrochemically mediated CO₂ capture is energy-efficient.",
+            "7": "An electrochemical cell for CO₂ capture is based on pH swing cycles.",
+            "8": "The pH swing cycles are driven through proton-coupled electron transfer of a developed phenazine derivative, 2,2′-(phenazine-1,8-diyl)bis(ethane-1-sulfonate) (1,8-ESP).",
+            "9": "The phenazine derivative 1,8-ESP has high aqueous solubility (>1.35 M).",
+            "10": "The phenazine derivative 1,8-ESP is soluble over a pH range of 0.00–14.90.",
+            "11": "The electrochemical system has a high capture capacity of 0.86–1.41 mol l⁻¹.",
+            "12": "The electrochemical system operates with a low energetic cost of 36–55 kJ mol⁻¹.",
+            "13": "The electrochemical system has an extremely low capacity fade rate of <0.01% per day.",
+            "14": "The performance metrics depend on organic concentration.",
+            "15": "The system charge–discharge cycle provides an electrical energy storage function.",
+            "16": "The electrical energy storage function could be run only for storage when called for by electricity market conditions."
+          }
+        },
+        "viewpoints": [
+          "Excessive energy consumption significantly worsens climate change.",
+          "Continuous burning of fossil fuels is a major contributor to worsening climate change."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Extensive research has focused on clean energy production and carbon capture to reduce the release of greenhouse gases, mainly CO2 emissions, into the atmosphere during the process of extracting, producing, and using energy [2] , [3] , [4] .",
+        "references": {
+          "2": {
+            "1": "Electrochemical conversion of CO₂ to methane using intermittent renewable electricity provides an opportunity to store renewable electric energy.",
+            "2": "Electrochemical conversion of CO₂ to methane using intermittent renewable electricity provides an opportunity to utilize emitted CO₂.",
+            "3": "Copper-based single atom catalysts are promising candidates to restrain C-C coupling in CO₂ conversion.",
+            "4": "Restraining C-C coupling suggests the feasibility of further protonation of CO* to CHO* for methane production.",
+            "5": "Introducing boron atoms into the first coordination layer of the Cu-N₄ motif facilitates the binding of CO* intermediates.",
+            "6": "Introducing boron atoms into the first coordination layer of the Cu-N₄ motif facilitates the binding of CHO* intermediates.",
+            "7": "Facilitating the binding of CO* and CHO* intermediates favors the generation of methane.",
+            "8": "A co-doping strategy is employed to fabricate a B-doped Cu-Nₓ atomic configuration (Cu-NₓBᵧ).",
+            "9": "Cu-N₂B₂ is resolved to be the dominant site in the B-doped Cu-Nₓ atomic configuration.",
+            "10": "The as-synthesized B-doped Cu-Nₓ structure exhibits superior performance towards methane production compared with Cu-N₄ motifs.",
+            "11": "The as-synthesized B-doped Cu-Nₓ structure shows a peak methane Faradaic efficiency of 73% at −1.46 V vs. RHE.",
+            "12": "The as-synthesized B-doped Cu-Nₓ structure shows a maximum methane partial current density of −462 mA cm⁻² at −1.94 V vs. RHE.",
+            "13": "Extensional calculations utilizing two-dimensional reaction phase diagram analysis help to gain insights into the reaction mechanism of Cu-N₂B₂ coordination structure.",
+            "14": "Barrier calculation helps to gain insights into the reaction mechanism of Cu-N₂B₂ coordination structure."
+          },
+          "3": {
+            "1": "Negative emissions technologies can be used for the net removal of greenhouse gases from the atmosphere.",
+            "2": "The net removal of greenhouse gases from the atmosphere could provide a pathway to limit global temperature rises.",
+            "3": "Direct air capture of carbon dioxide offers the prospect of permanently lowering the atmospheric CO₂ concentration.",
+            "4": "The reduction in atmospheric CO₂ concentration through direct air capture is contingent on the development and deployment of economical and energy-efficient technologies on a large scale.",
+            "5": "An approach to direct air capture is reported at the laboratory scale.",
+            "6": "The approach uses mostly off-the-shelf materials and equipment.",
+            "7": "CO₂ absorption is achieved with readily available aqueous amino acid solutions.",
+            "8": "The aqueous amino acid solutions used for CO₂ absorption are environmentally friendly.",
+            "9": "Glycine and sarcosine are the specific amino acids used in the solutions for CO₂ absorption.",
+            "10": "A household humidifier is used for CO₂ absorption with the amino acid solutions.",
+            "11": "The CO₂-loaded solutions are reacted with a guanidine compound.",
+            "12": "The guanidine compound used in the reaction is simple.",
+            "13": "The reaction results in crystallization as a very insoluble carbonate salt.",
+            "14": "The reaction regenerates the amino acid sorbent.",
+            "15": "Effective CO₂ release is achieved by heating the carbonate crystals.",
+            "16": "Near-quantitative regeneration of the guanidine compound is achieved by heating the carbonate crystals.",
+            "17": "The heating of the carbonate crystals uses concentrated solar power.",
+            "18": "Relatively mild heating is used for effective CO₂ release and guanidine compound regeneration."
+          },
+          "4": {
+            "1": "Carbon dioxide capture technologies are important for counteracting difficult-to-abate greenhouse gas emissions.",
+            "2": "Limiting global warming to acceptable levels requires counteracting difficult-to-abate greenhouse gas emissions.",
+            "3": "Electrochemically mediated CO₂ capture is a promising alternative to conventional amine scrubbing.",
+            "4": "Electrochemically mediated CO₂ capture is potentially cost-effective.",
+            "5": "Electrochemically mediated CO₂ capture is environmentally friendly.",
+            "6": "Electrochemically mediated CO₂ capture is energy-efficient.",
+            "7": "An electrochemical cell for CO₂ capture is based on pH swing cycles.",
+            "8": "The pH swing cycles are driven through proton-coupled electron transfer of a developed phenazine derivative, 2,2′-(phenazine-1,8-diyl)bis(ethane-1-sulfonate) (1,8-ESP).",
+            "9": "The phenazine derivative 1,8-ESP has high aqueous solubility (>1.35 M).",
+            "10": "The phenazine derivative 1,8-ESP is soluble over a pH range of 0.00–14.90.",
+            "11": "The electrochemical system has a high capture capacity of 0.86–1.41 mol l⁻¹.",
+            "12": "The electrochemical system operates with a low energetic cost of 36–55 kJ mol⁻¹.",
+            "13": "The electrochemical system has an extremely low capacity fade rate of <0.01% per day.",
+            "14": "The performance metrics depend on organic concentration.",
+            "15": "The system charge–discharge cycle provides an electrical energy storage function.",
+            "16": "The electrical energy storage function could be run only for storage when called for by electricity market conditions."
+          }
+        },
+        "viewpoints": [
+          "Extensive research focuses on clean energy production to reduce greenhouse gas emissions.",
+          "Extensive research focuses on carbon capture to reduce greenhouse gas emissions.",
+          "Reducing CO2 emissions is a key goal in addressing greenhouse gas emissions.",
+          "Greenhouse gas emissions occur during the extraction, production, and use of energy."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "MOFs are cage-like structures containing metal nodes and organic ligands connected in infinite arrays [5].",
+        "references": {
+          "5": {
+            "1": "Metal-organic frameworks (MOFs) are recognized as a fascinating class of materials from science and engineering perspectives.",
+            "2": "MOFs benefit from high porosity.",
+            "3": "MOFs benefit from well-defined and tailored structures and components at the atomic level.",
+            "4": "The intrinsic micropores of MOFs endow them with size-selective capability.",
+            "5": "The intrinsic micropores of MOFs endow them with a high surface area.",
+            "6": "The narrow pores of MOFs limit their applications toward diffusion-control processes.",
+            "7": "The narrow pores of MOFs limit their applications toward processes involving large-size species.",
+            "8": "There is widespread interest in constructing hierarchically porous MOFs (HP-MOFs) to extend the applications of conventional MOF-based materials.",
+            "9": "There is widespread interest in constructing MOF-based hierarchically porous composites to extend the applications of conventional MOF-based materials.",
+            "10": "There is widespread interest in constructing MOF-based hierarchically porous derivatives to extend the applications of conventional MOF-based materials.",
+            "11": "The Review summarizes recent advances in the design of MOF-based hierarchically porous materials.",
+            "12": "The Review summarizes recent advances in the synthesis of MOF-based hierarchically porous materials.",
+            "13": "The Review summarizes recent advances in the functional applications of MOF-based hierarchically porous materials.",
+            "14": "The structural characters of MOF-based hierarchically porous materials have been demonstrated with typical reports.",
+            "15": "MOF-based hierarchically porous materials have applications in catalysis.",
+            "16": "MOF-based hierarchically porous materials have applications in gas storage and separation.",
+            "17": "MOF-based hierarchically porous materials have applications in air filtration.",
+            "18": "MOF-based hierarchically porous materials have applications in sewage treatment.",
+            "19": "MOF-based hierarchically porous materials have applications in sensing.",
+            "20": "MOF-based hierarchically porous materials have applications in energy storage.",
+            "21": "The Review indicates a comparison of HP-MOFs with traditional porous materials such as zeolite, porous silica, carbons, metal oxides, and polymers.",
+            "22": "The Review indicates subsisting challenges in the research field of MOF-based hierarchically porous materials.",
+            "23": "The Review indicates future directions in the research field of MOF-based hierarchically porous materials."
+          }
+        },
+        "viewpoints": [
+          "MOFs are cage-like structures.",
+          "MOFs contain metal nodes.",
+          "MOFs contain organic ligands.",
+          "MOFs are connected in infinite arrays."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The highly porous structures and precise pore size distributions of crystalline MOFs give them potential applications in various energy and environment-related gas separations, such as natural gas purification and CO2 capture [6] , [7] , [8] , [9] , [10] , [11].",
+        "references": {
+          "6": [],
+          "7": {
+            "1": "The process used to upgrade natural gas, biogas, and refinery-off-gas directly influences the cost of producing the fuel.",
+            "2": "Complex separation strategies and operational systems are often required to remove contaminants like hydrogen sulfide (H₂S) and carbon dioxide (CO₂) in fuel production processes.",
+            "3": "AlFFIVE-1-Ni is a fluorinated metal–organic framework (MOF).",
+            "4": "AlFFIVE-1-Ni allows simultaneous and equally selective removal of CO₂ and H₂S from CH₄-rich streams in a single adsorption step.",
+            "5": "The simultaneous removal of CO₂ and H₂S is possible for a wide range of compositions and concentrations of H₂S and CO₂ in the gas feed.",
+            "6": "Pure component and mixed gas adsorption studies were carried out to elucidate the mechanism governing the simultaneous adsorption of H₂S and CO₂.",
+            "7": "Single-crystal X-ray diffraction studies were conducted to elucidate the mechanism governing the simultaneous adsorption of H₂S and CO₂.",
+            "8": "Molecular simulation studies were carried out to elucidate the mechanism governing the simultaneous adsorption of H₂S and CO₂.",
+            "9": "Concurrent removal of CO₂ and H₂S is achieved via the integrated favourable sites for H₂S and CO₂ adsorption.",
+            "10": "The favourable sites for H₂S and CO₂ adsorption are located in a confined pore system.",
+            "11": "The approach using AlFFIVE-1-Ni offers the prospect of simplifying the complex schemes for removal of acid gases."
+          },
+          "8": {
+            "1": "Functionalizing porous materials with capping agents generates hybrid materials with enhanced properties.",
+            "2": "The challenge in functionalizing porous materials with capping agents lies in improving selectivity and maintaining the porosity of the parent framework.",
+            "3": "A “Cage-on-MOF” strategy was developed to tune the recognition properties of MOFs.",
+            "4": "A “Cage-on-MOF” strategy was developed to tune the catalytic properties of MOFs.",
+            "5": "The “Cage-on-MOF” strategy does not impair the porosity of MOFs.",
+            "6": "Two types of porous coordination cages (PCCs) of opposite charges containing secondary binding groups were developed.",
+            "7": "The developed porous coordination cages were used to coordinatively functionalize two distinct porous MOFs, resulting in MOF@PCC nanocomposites.",
+            "8": "Surface-capped PCCs can act as “modulators” to effectively tune the surface charge of different host MOF particles.",
+            "9": "Surface-capped PCCs can act as “modulators” to effectively tune the stability of different host MOF particles.",
+            "10": "Surface-capped PCCs can act as “modulators” to effectively tune the adsorption behavior of different host MOF particles.",
+            "11": "MOF@PCCs can serve as selective heterogeneous catalysts for condensation reactions.",
+            "12": "MOF@PCCs achieve reversed product selectivity in condensation reactions.",
+            "13": "MOF@PCCs exhibit excellent recyclability in condensation reactions.",
+            "14": "This work sets the foundation for using molecular cages as porous surface-capping agents to functionalize another porous material.",
+            "15": "This work sets the foundation for using molecular cages as porous surface-capping agents to manipulate another porous material.",
+            "16": "The use of molecular cages as porous surface-capping agents does not affect the intrinsic properties of the parent framework."
+          },
+          "9": {
+            "1": "Mixed matrix membranes (MMMs) for gas separation applications have enhanced selectivity compared with the pure polymer matrix.",
+            "2": "MMMs are commonly reported with low intrinsic permeability.",
+            "3": "Low intrinsic permeability of MMMs has major cost implications for implementing membrane technologies in large-scale carbon capture projects.",
+            "4": "High-permeability polymers rarely generate sufficient selectivity for energy-efficient CO₂ capture.",
+            "5": "Substantial selectivity enhancements were observed within high-permeability polymers due to efficient dispersion of amine-functionalized, nanosized metal–organic framework (MOF) additives.",
+            "6": "The enhancement effects in selectivity occur with minimal loss in overall permeability under optimal mixing conditions.",
+            "7": "Nanosizing of the metal–organic framework (MOF) enhances its dispersion within the polymer matrix.",
+            "8": "Enhanced dispersion of nanosized MOF within the polymer matrix minimizes non-selective microvoid formation around the particles.",
+            "9": "Amination of metal–organic frameworks (MOFs) increases their interaction with the polymer matrix.",
+            "10": "Increased interaction of aminated MOFs with the polymer matrix results in a measured rigidification of the overall composite.",
+            "11": "Increased interaction of aminated MOFs with the polymer matrix results in enhanced selectivity of the overall composite.",
+            "12": "The optimal performance of MOF MMM was verified in three different polymer systems.",
+            "13": "The optimal performance of MOF MMM was also verified over pressure and temperature ranges suitable for carbon capture."
+          },
+          "10": {
+            "1": "Metal–organic frameworks (MOFs) represent the largest known class of porous crystalline materials.",
+            "2": "Metal–organic frameworks (MOFs) are synthesized materials.",
+            "3": "MOFs have narrow pore windows.",
+            "4": "MOFs have nearly unlimited structural and chemical features.",
+            "5": "The narrow pore windows and nearly unlimited structural and chemical features of MOFs have made these materials of significant interest for membrane-based gas separations.",
+            "6": "The review discusses opportunities related to the formation of pure MOF films.",
+            "7": "The review discusses challenges related to the formation of pure MOF films.",
+            "8": "The review discusses opportunities related to the formation of mixed-matrix membranes (MMMs).",
+            "9": "The review discusses challenges related to the formation of mixed-matrix membranes (MMMs).",
+            "10": "Common separation applications of MOFs are identified in the review.",
+            "11": "Emerging separation applications of MOFs are identified in the review.",
+            "12": "Membrane transport theory for MOFs is described in the review.",
+            "13": "Membrane transport theory for MOFs is contextualized relative to the governing principles that describe transport in polymers.",
+            "14": "Cross-cutting research opportunities using advanced metrologies are reviewed.",
+            "15": "Cross-cutting research opportunities using computational techniques are reviewed.",
+            "16": "A simple membrane performance score is introduced to quantify membrane performance.",
+            "17": "The simple membrane performance score has been tabulated for all of the literature data compiled in the review.",
+            "18": "The literature data compiled in the review are reported on upper bound plots.",
+            "19": "The upper bound plots reveal classes of MOF materials that consistently demonstrate promising separation performance.",
+            "20": "Recommendations are provided with the intent of identifying the most promising materials for the field of MOF research.",
+            "21": "Recommendations are provided with the intent of identifying the most promising directions for the field of MOF research in terms of fundamental science.",
+            "22": "Recommendations are provided with the intent of identifying the most promising directions for the field of MOF research in terms of the eventual deployment of MOF materials for commercial membrane-based gas separations."
+          },
+          "11": {
+            "1": "The improvement and diversification of gas sensor performance are necessary to enhance the quality of life.",
+            "2": "The enhancement of the quality of life is achieved by ensuring health.",
+            "3": "The enhancement of the quality of life is achieved by ensuring safety.",
+            "4": "The enhancement of the quality of life is achieved by ensuring convenience.",
+            "5": "MOFs provide a promising framework for facilitating gas-sensor innovations.",
+            "6": "MOFs exhibit an extremely high surface area.",
+            "7": "MOFs exhibit abundant porosity.",
+            "8": "MOFs exhibit unique surface chemistry.",
+            "9": "Enhanced understanding of conduction mechanisms of MOFs has facilitated the use of MOFs as gas-sensing materials.",
+            "10": "Various types of MOFs have been developed by examining compositional dependences.",
+            "11": "Various types of MOFs have been developed by examining morphological dependences.",
+            "12": "Various types of MOFs have been developed by implementing catalyst incorporation.",
+            "13": "Various types of MOFs have been developed by implementing light activation.",
+            "14": "MOFs are applied as molecular sieves due to their inherent separation properties.",
+            "15": "MOFs are applied as absorptive filtering layers due to their inherent absorption properties.",
+            "16": "MOFs are applied as heterogeneous catalysts due to their catalytic activity.",
+            "17": "Oxide-based sensing materials with complex structures can be derived by the appropriate post-treatment of MOFs.",
+            "18": "Carbon-based sensing materials with complex structures can be derived by the appropriate post-treatment of MOFs.",
+            "19": "Catalytic composites can be derived by the appropriate post-treatment of MOFs.",
+            "20": "The review discusses effective techniques to design optimal MOFs.",
+            "21": "Effective techniques to design optimal MOFs include computational screening methods.",
+            "22": "Effective techniques to design optimal MOFs include synthesis methods.",
+            "23": "The review presents the mechanisms through which the distinctive functionalities of MOFs as sensing materials can be incorporated in gas-sensor applications.",
+            "24": "The review presents the mechanisms through which the distinctive functionalities of MOFs as heterostructures can be incorporated in gas-sensor applications.",
+            "25": "The review presents the mechanisms through which the distinctive functionalities of MOFs as derivatives can be incorporated in gas-sensor applications."
+          }
+        },
+        "viewpoints": [
+          "Crystalline MOFs have highly porous structures.",
+          "Crystalline MOFs have precise pore size distributions.",
+          "Crystalline MOFs are potentially applicable in energy-related gas separations.",
+          "Crystalline MOFs are potentially applicable in environment-related gas separations.",
+          "Crystalline MOFs have potential applications in natural gas purification.",
+          "Crystalline MOFs have potential applications in CO2 capture."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Crystalline MOFs typically require processing, such as pelletization, coating, or sintering, to form bulky structures for device applications, especially for membrane modules [12] , [13].",
+        "references": {
+          "12": {
+            "1": "Membrane-based approaches can offer energy-efficient methods for various separation processes.",
+            "2": "Membrane-based approaches can offer cost-effective methods for various separation processes.",
+            "3": "Practical membranes must have high permselectivity at industrially relevant high pressures.",
+            "4": "Practical membranes must have high permselectivity under aggressive conditions.",
+            "5": "Practical membranes must be manufacturable in a scalable fashion.",
+            "6": "Practical membranes must be manufacturable in a robust fashion.",
+            "7": "A versatile electrochemical directed-assembly strategy is reported to fabricate polycrystalline metal–organic framework membranes for separation of hydrocarbons.",
+            "8": "A series of face-centred cubic metal–organic framework membranes is fabricated.",
+            "9": "The face-centred cubic metal–organic framework membranes are based on 12-connected rare-earth hexanuclear clusters with distinct ligands.",
+            "10": "The face-centred cubic metal–organic framework membranes are based on zirconium hexanuclear clusters with distinct ligands.",
+            "11": "The resultant fumarate-based membranes contain contracted triangular apertures as sole entrances to the pore system.",
+            "12": "The fumarate-based membranes enable molecular-sieving separation of propylene/propane mixtures.",
+            "13": "The fumarate-based membranes enable molecular-sieving separation of butane/isobutane mixtures.",
+            "14": "Increasing the feed pressure to the industrially practical value of 7 atm promoted a desired enhancement in total flux.",
+            "15": "Increasing the feed pressure to the industrially practical value of 7 atm promoted a desired enhancement in separation selectivity.",
+            "16": "Process design analysis demonstrates the potential to decrease the energy input by nearly 90% for propylene/propane separation.",
+            "17": "The deployment of face-centred cubic Zr-fumarate-based metal–organic framework membranes in a hybrid membrane–distillation system offers the potential to decrease energy input.",
+            "18": "The potential energy input decrease is relative to a conventional single distillation process."
+          },
+          "13": {
+            "1": "Zeolitic imidazolate framework (ZIF) membranes are a promising energy-efficient separation technology.",
+            "2": "ZIF membranes are emerging in the field of separation technology.",
+            "3": "Manufacturing ZIF membranes reliably remains a challenge.",
+            "4": "Manufacturing ZIF membranes at scale remains a challenge.",
+            "5": "ZIF nanocomposite membranes can be fabricated by an all-vapor-phase processing method.",
+            "6": "The all-vapor-phase processing method is based on atomic layer deposition (ALD) of ZnO in a porous support.",
+            "7": "The all-vapor-phase processing method includes ligand-vapor treatment after ALD.",
+            "8": "The nanocomposite exhibits low flux after atomic layer deposition (ALD).",
+            "9": "The nanocomposite is not selective after atomic layer deposition (ALD).",
+            "10": "After ligand-vapor (2-methylimidazole) treatment, the nanocomposite is partially transformed to ZIF.",
+            "11": "The nanocomposite shows stable performance with a high mixture separation factor for propylene over propane after ligand-vapor (2-methylimidazole) treatment.",
+            "12": "Propylene over propane is an energy-intensive high-volume separation.",
+            "13": "The nanocomposite shows high propylene flux after ligand-vapor (2-methylimidazole) treatment.",
+            "14": "Membrane synthesis through ligand-induced permselectivation of a nonselective and impermeable deposit is simple.",
+            "15": "Membrane synthesis through ligand-induced permselectivation of a nonselective and impermeable deposit is highly reproducible.",
+            "16": "Membrane synthesis through ligand-induced permselectivation of a nonselective and impermeable deposit holds promise for scalability."
+          }
+        },
+        "viewpoints": [
+          "Crystalline MOFs typically require processing to form bulky structures.",
+          "Pelletization is a processing method required for crystalline MOFs.",
+          "Coating is a processing method required for crystalline MOFs.",
+          "Sintering is a processing method required for crystalline MOFs.",
+          "Bulky structures are needed for device applications of crystalline MOFs.",
+          "Crystalline MOFs are especially processed for membrane module applications."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "However, their practical implementation is still hampered by inherent limitations in mechanical stability of microcrystalline powders [14] , [15].",
+        "references": {
+          "14": [],
+          "15": {
+            "1": "The internal free volume of porous materials diminishes upon mechanical compression.",
+            "2": "Volume collapse of porous materials due to mechanical compression can have chemical consequences.",
+            "3": "Endothermic bond breakage occurs in a metal-organic framework during compression-induced collapse.",
+            "4": "Bulk compression at 1.9 GPa causes a decrease in the effective number of Zr–O bonds between Zr(IV) ions and carboxylate groups in UiO-66 from 4.0 to 1.9.",
+            "5": "EXAFS determined the decrease in the effective number of Zr–O bonds in UiO-66 during compression.",
+            "6": "The internal free volume of UiO-66 is synchronously collapsed during bulk compression at 1.9 GPa.",
+            "7": "IR spectra confirm the conversion of syn–syn bridging carboxylates to monodentate ligation during compression.",
+            "8": "The conversion of syn–syn bridging carboxylates to monodentate ligation establishes mechanochemical reactions induced by external compression of metal-organic frameworks.",
+            "9": "UiO-66 nanocrystals absorb substantial mechanical energy (~4 kJ g^−1) during compression.",
+            "10": "Nanocompression of single UiO-66 crystals (600 nm) was demonstrated in situ during scanning electron microscopy.",
+            "11": "UiO-66 nanocrystals' absorption of substantial mechanical energy suggests the potential application of metal-organic frameworks as mechanical energy absorbers for hydrostatic and shock compression."
+          }
+        },
+        "viewpoints": [
+          "Practical implementation of crystalline MOFs is hampered by limitations in mechanical stability.",
+          "Microcrystalline powders of MOFs have inherent limitations in mechanical stability."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The discovery of MOF glasses, recognised as a fourth category of glass materials, given their dissimilarity to existing inorganic (non-metallic), organic and metallic families, opens up possible opportunities to process MOFs into macroscale, grain-boundary free morphologies [16].",
+        "references": {
+          "16": []
+        },
+        "viewpoints": [
+          "MOF glasses are recognized as a fourth category of glass materials.",
+          "MOF glasses are dissimilar to inorganic (non-metallic) glass materials.",
+          "MOF glasses are dissimilar to organic glass materials.",
+          "MOF glasses are dissimilar to metallic glass materials.",
+          "The discovery of MOF glasses opens opportunities to process MOFs into macroscale morphologies.",
+          "MOF glasses allow for grain-boundary free morphologies."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "ZIFs are a class of MOFs containing tetrahedral metal ions linked by imidazolate ions.",
+        "references": {},
+        "viewpoints": [
+          "ZIFs contain tetrahedral metal ions.",
+          "ZIFs are linked by imidazolate ions.",
+          "ZIFs are a class of MOFs."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "A few types of ZIFs have been discovered with the capability to form glasses via melt-quenching [17].",
+        "references": {
+          "17": {
+            "1": "Metal–organic frameworks (MOFs) are a family of chemically diverse materials.",
+            "2": "Metal–organic frameworks (MOFs) have applications in engineering.",
+            "3": "Metal–organic frameworks (MOFs) have applications in physics.",
+            "4": "Metal–organic frameworks (MOFs) have applications in chemistry.",
+            "5": "Metal–organic frameworks (MOFs) have applications in biology.",
+            "6": "Metal–organic frameworks (MOFs) have applications in medicine.",
+            "7": "Until recently, research on metal–organic frameworks (MOFs) has focused almost entirely on crystalline structures.",
+            "8": "A trend is emerging to shift research emphasis onto disordered states of metal–organic frameworks (MOFs).",
+            "9": "Disordered states in metal–organic frameworks (MOFs) include 'defective by design' crystals.",
+            "10": "Disordered states in metal–organic frameworks (MOFs) include amorphous phases such as glasses.",
+            "11": "Disordered states in metal–organic frameworks (MOFs) include amorphous phases such as gels.",
+            "12": "A strongly associated MOF liquid has been introduced.",
+            "13": "The strongly associated MOF liquid is obtained by melting a zeolitic imidazolate framework.",
+            "14": "In situ variable temperature X-ray is used to study the melting phenomenon and the nature of the MOF liquid obtained.",
+            "15": "Ex situ neutron pair distribution function experiments are used to study the melting phenomenon and the nature of the MOF liquid obtained.",
+            "16": "First-principles molecular dynamics simulations are used to study the melting phenomenon.",
+            "17": "First-principles molecular dynamics simulations are used to study the nature of the MOF liquid obtained.",
+            "18": "The chemical configuration of the parent crystalline framework survives upon formation of the MOF liquid.",
+            "19": "The coordinative bonding of the parent crystalline framework survives upon formation of the MOF liquid.",
+            "20": "The porosity of the parent crystalline framework survives upon formation of the MOF liquid.",
+            "21": "Structural information is used to demonstrate the survival of the chemical configuration, coordinative bonding, and porosity upon formation of the MOF liquid.",
+            "22": "Dynamical information is used to demonstrate the survival of the chemical configuration, coordinative bonding, and porosity upon formation of the MOF liquid.",
+            "23": "Thermodynamical information is used to demonstrate the survival of the chemical configuration, coordinative bonding, and porosity upon formation of the MOF liquid."
+          }
+        },
+        "viewpoints": [
+          "A few types of ZIFs can form glasses.",
+          "ZIFs can form glasses via melt-quenching."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "These melt-quenched MOF glasses possess similar structures to amorphous silica and display viscoelastic states at temperatures above their glass transition temperatures (Tg).",
+        "references": {},
+        "viewpoints": [
+          "Melt-quenched MOF glasses possess structures similar to amorphous silica.",
+          "Melt-quenched MOF glasses display viscoelastic states.",
+          "Viscoelastic states in MOF glasses occur at temperatures above their glass transition temperatures."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Several forming methods such as hot-pressing and remelting have been explored to fabricate bulk samples of both MOF glasses and MOF crystal glass composites (CGCs) [18] , [19] , [20].",
+        "references": {
+          "18": {
+            "1": "Metal–organic framework crystal–glass composite materials consist of a crystalline metal–organic framework embedded within a metal–organic framework glass matrix.",
+            "2": "A new synthetic route to metal–organic framework crystal–glass composite materials is demonstrated in this work.",
+            "3": "The preparation of two ZIF-62 glass-based metal–organic framework crystal–glass composites is demonstrated.",
+            "4": "One of the ZIF-62 glass-based metal–organic framework crystal–glass composites incorporates crystalline ZIF-67.",
+            "5": "The other ZIF-62 glass-based metal–organic framework crystal–glass composite incorporates crystalline UiO-66.",
+            "6": "Previous attempts to form metal–organic framework crystal–glass composites failed.",
+            "7": "The failures were due to the high processing temperatures required for heating above the melting point of ZIF-62.",
+            "8": "Annealing the ZIF-62 glass above the glass transition with each metal–organic framework leads to stable metal–organic framework crystal–glass composite formation.",
+            "9": "Stable metal–organic framework crystal–glass composite formation is achieved at lower temperatures through annealing.",
+            "10": "The reduction in processing temperatures enables the formation of a greatly expanded range of metal–organic framework crystal–glass composites."
+          },
+          "19": {
+            "1": "The majority of research into metal-organic frameworks focuses on their crystalline nature.",
+            "2": "Recent research has revealed solid-liquid transitions within the metal-organic frameworks family.",
+            "3": "Solid-liquid transitions within the metal-organic framework family are used to create a class of functional, stable and porous composite materials.",
+            "4": "The design, synthesis, and characterization of MOF crystal-glass composites are described.",
+            "5": "MOF crystal-glass composites are formed by dispersing crystalline metal-organic frameworks within a metal-organic framework-glass matrix.",
+            "6": "The coordinative bonding of a MIL-53 crystalline phase is preserved within the ZIF-62 glass matrix.",
+            "7": "The chemical structure of a MIL-53 crystalline phase is preserved within the ZIF-62 glass matrix.",
+            "8": "The phases, though separated, have interfacial interactions between closely contacted microdomains.",
+            "9": "The interfacial interactions between closely contacted microdomains improve the mechanical properties of the composite glass.",
+            "10": "The high temperature open pore phase of MIL-53 spontaneously transforms to a narrow pore upon cooling in the presence of water.",
+            "11": "The high temperature open pore phase of MIL-53 is stabilized at room temperature in the crystal-glass composite.",
+            "12": "The stabilization of the high temperature open pore phase of MIL-53 at room temperature in the crystal-glass composite leads to a significant improvement in the CO₂ adsorption capacity."
+          },
+          "20": {
+            "1": "Melt quenched metal–organic framework (MOF) glasses define a new category of glass.",
+            "2": "MOF glasses are distinct from metallic glasses.",
+            "3": "MOF glasses are distinct from organic glasses.",
+            "4": "MOF glasses are distinct from inorganic glasses.",
+            "5": "The distinction of MOF glasses is due to the dominant role of metal–ligand coordination bonding.",
+            "6": "The mechanical properties of glasses are important for their application in protective coatings.",
+            "7": "The mechanical properties of glasses are important for their application in display technologies.",
+            "8": "Little is known about the mechanical properties of MOF glasses concerning their application in protective coatings and display technologies.",
+            "9": "The experimental elucidation of key properties of MOF glasses, such as scratch resistance, has been limited.",
+            "10": "The limitation in elucidating key properties of MOF glasses is due to the lack of processing methodologies capable of producing bulk glass samples.",
+            "11": "Nanoindentation was used to investigate the Young’s modulus of four melt-quenched glasses formed from zeolitic imidazolate frameworks (ZIF).",
+            "12": "Nanoindentation was used to investigate the hardness of four melt-quenched glasses formed from zeolitic imidazolate frameworks (ZIF).",
+            "13": "The four melt-quenched glasses investigated are agZIF-4, agZIF-62, agZIF-76, and agZIF-76-mbIm.",
+            "14": "The creep resistance of the melt-quenched glasses was studied via strain-rate jump (SRJ) tests.",
+            "15": "The creep resistance of the melt-quenched glasses was studied through constant load and hold (CLH) indentation creep experiments.",
+            "16": "The strain-rate sensitivity values for the melt-quenched glasses were found to be close to those for other glassy polymers.",
+            "17": "The strain-rate sensitivity values for the melt-quenched glasses were found to be close to those for Se-rich GeSe chalcogenide glasses.",
+            "18": "Vacuum hot-pressing of agZIF-62 resulted in an inhomogeneous bulk sample.",
+            "19": "The inhomogeneous bulk sample contained both the melt-quenched glass and amorphous non-melt-quenched aZIF-62.",
+            "20": "Remelting and annealing of the agZIF-62 specimen resulted in the fabrication of a transparent, bubble-free bulk specimen.",
+            "21": "The transparent, bubble-free bulk specimen allowed the first scratch testing experiments to be performed on an MOF glass."
+          }
+        },
+        "viewpoints": [
+          "Hot-pressing is a method to fabricate bulk samples of MOF glasses.",
+          "Remelting is a method to fabricate bulk samples of MOF glasses.",
+          "Hot-pressing is a method to fabricate bulk samples of MOF crystal glass composites.",
+          "Remelting is a method to fabricate bulk samples of MOF crystal glass composites."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "However, upon glass formation, the inherent porosity in their crystalline precursors is reduced, which would be unfavorable for possible applications in gas separation compared with other pure polycrystalline MOFs [10] , [21] , [22] , [23] , [24] , [25].",
+        "references": {
+          "10": {
+            "1": "Metal–organic frameworks (MOFs) represent the largest known class of porous crystalline materials.",
+            "2": "Metal–organic frameworks (MOFs) are synthesized materials.",
+            "3": "MOFs have narrow pore windows.",
+            "4": "MOFs have nearly unlimited structural and chemical features.",
+            "5": "The narrow pore windows and nearly unlimited structural and chemical features of MOFs have made these materials of significant interest for membrane-based gas separations.",
+            "6": "The review discusses opportunities related to the formation of pure MOF films.",
+            "7": "The review discusses challenges related to the formation of pure MOF films.",
+            "8": "The review discusses opportunities related to the formation of mixed-matrix membranes (MMMs).",
+            "9": "The review discusses challenges related to the formation of mixed-matrix membranes (MMMs).",
+            "10": "Common separation applications of MOFs are identified in the review.",
+            "11": "Emerging separation applications of MOFs are identified in the review.",
+            "12": "Membrane transport theory for MOFs is described in the review.",
+            "13": "Membrane transport theory for MOFs is contextualized relative to the governing principles that describe transport in polymers.",
+            "14": "Cross-cutting research opportunities using advanced metrologies are reviewed.",
+            "15": "Cross-cutting research opportunities using computational techniques are reviewed.",
+            "16": "A simple membrane performance score is introduced to quantify membrane performance.",
+            "17": "The simple membrane performance score has been tabulated for all of the literature data compiled in the review.",
+            "18": "The literature data compiled in the review are reported on upper bound plots.",
+            "19": "The upper bound plots reveal classes of MOF materials that consistently demonstrate promising separation performance.",
+            "20": "Recommendations are provided with the intent of identifying the most promising materials for the field of MOF research.",
+            "21": "Recommendations are provided with the intent of identifying the most promising directions for the field of MOF research in terms of fundamental science.",
+            "22": "Recommendations are provided with the intent of identifying the most promising directions for the field of MOF research in terms of the eventual deployment of MOF materials for commercial membrane-based gas separations."
+          },
+          "21": {
+            "1": "Glasses formed by the melt quenching of metal–organic frameworks (MOFs) are the first new category of glass since metallics in the 1970s.",
+            "2": "The formation of glasses by the melt quenching of metal–organic frameworks (MOFs) has begun to redistribute attention in the MOF field away from the crystalline state.",
+            "3": "Glasses formed by the melt quenching of metal–organic frameworks (MOFs) to date are relatively dense.",
+            "4": "Interest in glasses formed by the melt quenching of metal–organic frameworks (MOFs) focuses mainly on their physical properties due to their relative density.",
+            "5": "Suggestions are made to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs).",
+            "6": "Routes to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs) borrow from inorganic polymer science.",
+            "7": "Routes to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs) borrow from organic polymer science.",
+            "8": "Speculation is made on the future adsorptive applications of glasses formed by the melt quenching of metal–organic frameworks (MOFs)."
+          },
+          "22": {
+            "1": "Metal–organic framework (MOF) glasses have significant porosity.",
+            "2": "Metal–organic framework (MOF) glasses offer ease of processing.",
+            "3": "Metal–organic framework (MOF) glasses have the potential to eliminate the grain boundary unavoidable in polycrystalline MOF membranes.",
+            "4": "Metal–organic framework (MOF) glasses are promising candidates for membrane fabrication.",
+            "5": "A ZIF-62 MOF glass membrane was developed.",
+            "6": "The intrinsic gas-separation properties of the ZIF-62 MOF glass membrane were exploited.",
+            "7": "The MOF glass membrane was fabricated by melt-quenching treatment.",
+            "8": "The MOF glass membrane was fabricated from an in situ solvothermally synthesized polycrystalline ZIF-62 MOF membrane.",
+            "9": "The polycrystalline ZIF-62 MOF membrane was supported on a porous ceramic alumina support.",
+            "10": "The molten ZIF-62 phase penetrated into the nanopores of the alumina support.",
+            "11": "The penetration of the molten ZIF-62 phase into the nanopores eliminated the formation of intercrystalline defects in the resultant glass membrane.",
+            "12": "The molecular sieving ability of the MOF membrane is remarkably enhanced via vitrification.",
+            "13": "The separation factor of the MOF glass membrane for H₂/CH₄ mixture is 50.7.",
+            "14": "The separation factor of the MOF glass membrane for CO₂/N₂ mixture is 34.5.",
+            "15": "The separation factor of the MOF glass membrane for CO₂/CH₄ mixture is 36.6.",
+            "16": "The separation factors of the MOF glass membrane for H₂/CH₄, CO₂/N₂, and CO₂/CH₄ mixtures far exceed the Robeson upper bounds."
+          },
+          "23": [],
+          "24": {
+            "1": "Ab initio density functional theory (DFT) is used to elucidate the mechanical properties of ZIF-4.",
+            "2": "Ab initio density functional theory (DFT) is used to elucidate the mechanical properties of ZIF-zni.",
+            "3": "ZIF-4 and ZIF-zni are topologically distinct zeolitic imidazolate framework (ZIF) materials.",
+            "4": "ZIF-4 and ZIF-zni have the same chemical composition of Zn(Im)₂ [Im = C₃H₃N₂⁻].",
+            "5": "ZIF-4 and ZIF-zni are constructed from an identical Zn—Im—Zn basic building block.",
+            "6": "The CRYSTAL code was used to compute the single-crystal elastic constants Cᵢⱼ of the orthorhombic ZIF-4 structure at the PBE level of theory.",
+            "7": "The CRYSTAL code was used to compute the single-crystal elastic constants Cᵢⱼ of the tetragonal ZIF-zni structure at the PBE level of theory.",
+            "8": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of the Young's modulus.",
+            "9": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of the shear modulus.",
+            "10": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of the Poisson's ratio.",
+            "11": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of linear compressibility.",
+            "12": "The three-dimensional representation surfaces enable the description of detailed elasticity behavior.",
+            "13": "The three-dimensional representation surfaces enable the pinpointing of basic crystal structure–property correlations.",
+            "14": "ZIF-4 can potentially exhibit a negative Poisson's ratio.",
+            "15": "ZIF-4 with a potential negative Poisson's ratio represents the first example of an ‘auxetic-ZIF’ identified to date.",
+            "16": "The DFT predictions are consistent with recently reported experimental measurements of the Young's moduli of complex ZIF structures.",
+            "17": "The DFT predictions are consistent with recently reported experimental measurements of the bulk moduli of complex ZIF structures."
+          },
+          "25": {
+            "1": "Metal–organic framework (MOF) glass is easy to process.",
+            "2": "Metal–organic framework (MOF) glass is a self‐supported amorphous material.",
+            "3": "Metal–organic framework (MOF) glass is suitable for fabricating gas separation membranes.",
+            "4": "MOF glasses, such as ZIF‐62 and ZIF‐4, have low porosity.",
+            "5": "Low porosity in MOF glasses such as ZIF‐62 and ZIF‐4 makes it difficult to obtain membranes with high permeance.",
+            "6": "A self‐supported MOF crystal–glass composite (CGC) membrane was prepared.",
+            "7": "The CGC membrane was prepared by melt quenching a mixture.",
+            "8": "ZIF‐62 was used as the membrane matrix in the mixture for preparing the CGC membrane.",
+            "9": "ZIF‐8 was used as the filler in the mixture for preparing the CGC membrane.",
+            "10": "The conversion of ZIF‐62 from crystal to glass is part of the process of making the CGC membrane monolithic.",
+            "11": "Simultaneous partial melting of ZIF‐8 is facilitated by the melt state of ZIF‐62 during the making of the CGC membrane.",
+            "12": "The monolithic nature of the CGC membrane eliminates non‐selective grain boundaries.",
+            "13": "The elimination of non‐selective grain boundaries in the CGC membrane improves selectivity.",
+            "14": "The thickness of the CGC membrane can be adjusted.",
+            "15": "Adjusting the thickness allows for the fabrication of a CGC membrane without the need of a support substrate.",
+            "16": "CGC membranes exhibit a C₂H₆ permeance of 41,569 gas permeation units (GPU).",
+            "17": "CGC membranes exhibit a C₂H₆/C₂H₄ selectivity of 7.16.",
+            "18": "The CGC membrane has abundant pores from the glassy state of ZIF‐62.",
+            "19": "The CGC membrane has abundant pores from the crystalline ZIF‐8.",
+            "20": "Abundant pores from the glassy state of ZIF‐62 and the crystalline ZIF‐8 enable high gas permeance in the CGC membrane.",
+            "21": "ZIF‐8 has preferential adsorption for C₂H₆.",
+            "22": "Preferential adsorption for C₂H₆ by ZIF‐8 promotes C₂H₆ transport in the membrane.",
+            "23": "The GCG membrane exhibits ultrahigh C₂H₆ permeance.",
+            "24": "The GCG membrane exhibits good C₂H₆/C₂H₄ selectivity."
+          }
+        },
+        "viewpoints": [
+          "Upon glass formation, inherent porosity in crystalline precursors is reduced.",
+          "The reduction in porosity upon glass formation is unfavorable for gas separation applications.",
+          "Pure polycrystalline MOFs have advantages in gas separation due to maintaining higher porosity."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Hence, a substantial enhancement in porosity is imperative for MOF glasses to emerge as practical solutions for gas separation challenges.",
+        "references": {},
+        "viewpoints": [
+          "Substantial enhancement in porosity is imperative for MOF glasses.",
+          "Enhanced porosity in MOF glasses is crucial for practical gas separation solutions."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The introduction of pore-inducing agents can enhance the porosity of MOF glass through the decomposition of chemicals added during glass formation, such as polymers [21] , [26].",
+        "references": {
+          "21": {
+            "1": "Glasses formed by the melt quenching of metal–organic frameworks (MOFs) are the first new category of glass since metallics in the 1970s.",
+            "2": "The formation of glasses by the melt quenching of metal–organic frameworks (MOFs) has begun to redistribute attention in the MOF field away from the crystalline state.",
+            "3": "Glasses formed by the melt quenching of metal–organic frameworks (MOFs) to date are relatively dense.",
+            "4": "Interest in glasses formed by the melt quenching of metal–organic frameworks (MOFs) focuses mainly on their physical properties due to their relative density.",
+            "5": "Suggestions are made to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs).",
+            "6": "Routes to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs) borrow from inorganic polymer science.",
+            "7": "Routes to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs) borrow from organic polymer science.",
+            "8": "Speculation is made on the future adsorptive applications of glasses formed by the melt quenching of metal–organic frameworks (MOFs)."
+          },
+          "26": {
+            "1": "Membranes with ultrahigh permeance could greatly decrease the cost of difficult industrial gas separations.",
+            "2": "Membranes with practical selectivity could greatly decrease the cost of difficult industrial gas separations.",
+            "3": "CH₄/N₂ separation is an example of a difficult industrial gas separation.",
+            "4": "Advanced membranes made from porous materials can achieve good gas separation performance.",
+            "5": "Metal–organic frameworks are an example of porous materials used in advanced membranes.",
+            "6": "Advanced membranes are typically formed on support layers or mixed with polymeric matrices.",
+            "7": "Forming advanced membranes on support layers or mixing them with polymeric matrices places limitations on gas permeance.",
+            "8": "An amorphous glass foam, a₍gf₎ZIF-62, was synthesized.",
+            "9": "In a₍gf₎ZIF-62, \"a\" denotes amorphous, \"g\" denotes glass, and \"f\" denotes foam.",
+            "10": "The synthesis of a₍gf₎ZIF-62 was done by a polymer-thermal-decomposition-assisted melting strategy.",
+            "11": "The synthesis of a₍gf₎ZIF-62 started from a crystalline zeolitic imidazolate framework, ZIF-62.",
+            "12": "The thermal decomposition of incorporated low-molecular-weight polyethyleneimine evolves CO₂ gases.",
+            "13": "The thermal decomposition of incorporated low-molecular-weight polyethyleneimine evolves NH₃ gases.",
+            "14": "The thermal decomposition of incorporated low-molecular-weight polyethyleneimine evolves H₂O gases.",
+            "15": "The evolution of CO₂, NH₃, and H₂O gases creates a large number and variety of pores.",
+            "16": "The creation of a large number and variety of pores greatly increases pore interconnectivity.",
+            "17": "The increase in pore interconnectivity maintains the crystalline ZIF-62 ultramicropores.",
+            "18": "The maintenance of crystalline ZIF-62 ultramicropores allows ultrahigh gas permeance.",
+            "19": "The maintenance of crystalline ZIF-62 ultramicropores allows good selectivity.",
+            "20": "A self-supported circular a₍gf₎ZIF-62 was used for membrane separation.",
+            "21": "The self-supported circular a₍gf₎ZIF-62 had a thickness of 200–330 µm.",
+            "22": "The self-supported circular a₍gf₎ZIF-62 had an area of 8.55 cm².",
+            "23": "The membranes perform well in terms of CH₄ permeance.",
+            "24": "The membranes show a CH₄ permeance of 30,000–50,000 gas permeance units.",
+            "25": "The CH₄ permeance of the membranes is approximately two orders of magnitude higher than that of other reported membranes.",
+            "26": "The membranes have good CH₄/N₂ selectivity, with a selectivity range of 4–6."
+          }
+        },
+        "viewpoints": [
+          "Pore-inducing agents can enhance the porosity of MOF glass.",
+          "The decomposition of chemicals added during glass formation enhances porosity.",
+          "Polymers are examples of chemicals used to enhance porosity."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Nevertheless, achieving precise manipulation of porosity in MOF glass at the Ångstrom scale remains a significant challenge.",
+        "references": {},
+        "viewpoints": [
+          "Achieving precise manipulation of porosity in MOF glass remains a significant challenge.",
+          "Manipulating porosity at the Ångstrom scale in MOF glass is challenging."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Chemical composition of the crystalline MOFs, i.e., the type of metal nodes and organic ligands, is a decisive factor in determining their melting point and decomposition temperature [27] , [28].",
+        "references": {
+          "27": {
+            "1": "Porous glasses from metal–organic frameworks (MOFs) represent a new class of functional inorganic–organic materials.",
+            "2": "Porous glasses from metal–organic frameworks (MOFs) have been proposed for applications ranging from solid electrolytes to radioactive waste storage.",
+            "3": "Just a few zeolitic imidazolate frameworks (ZIFs), a subset of MOFs, have been reported to melt.",
+            "4": "The structural and compositional requirements for MOF melting and glass formation are poorly understood.",
+            "5": "The melting point of the prototypical ZIF-4/ZIF-62(M) frameworks can be controlled systematically by adjusting the molar ratio of the two imidazolate-type linkers im⁻ and bim⁻.",
+            "6": "Covering the entire range from x = 0 to 0.35 reveals a transition from ZIF materials showing sequential amorphization/recrystallization to derivatives exhibiting coherent melting.",
+            "7": "The derivatives exhibit a liquid phase that is stable over a large temperature window.",
+            "8": "The melting point of this ZIF system is a direct function of x.",
+            "9": "The melting point can be lowered from approximately 430 °C to 370 °C.",
+            "10": "370 °C is the lowest melting point reported for a three-dimensional porous MOF.",
+            "11": "The results allow the postulation of compositional requirements for ZIF melting and glass formation.",
+            "12": "The compositional requirements for ZIF melting and glass formation may guide the search for other meltable ZIFs.",
+            "13": "Gas physisorption experiments establish that the ZIF glasses adsorb technologically relevant C₃ and C₄ hydrocarbons.",
+            "14": "The adsorption kinetics are much faster for propylene compared to propane.",
+            "15": "The adsorption kinetics are dependent on the im⁻:bim⁻ ratio.",
+            "16": "The faster adsorption kinetics and dependence on the im⁻:bim⁻ ratio demonstrate the potential of ZIF glasses for applications in gas separation."
+          },
+          "28": {
+            "1": "Hybrid glasses from melt-quenched metal-organic frameworks (MOFs) are emerging as a new class of materials.",
+            "2": "Hybrid glasses from melt-quenched MOFs combine the functional properties of crystalline MOFs with the processability of glasses.",
+            "3": "Only a handful of the crystalline MOFs are meltable.",
+            "4": "Porosity is a crucial parameter in the trade-off between thermal decomposition of the organic linker and melting.",
+            "5": "Metal-linker interaction strength is a crucial parameter in the trade-off between thermal decomposition of the organic linker and melting.",
+            "6": "The prototypical zeolitic imidazolate framework (ZIF) ZIF-8 is unable to melt.",
+            "7": "The inability of ZIF-8 to melt is ascribed to the instability of the organic linker upon dissociation from the metal center.",
+            "8": "Incorporation of an ionic liquid into the porous interior of ZIF-8 provides a means to reduce its melting temperature to below its thermal decomposition temperature.",
+            "9": "The prevention of decomposition and successful melting of ZIF-8 is due to the interactions of the ionic liquid stabilizing the rapidly dissociating ZIF-8 linkers upon heating.",
+            "10": "The understanding of ionic liquid interactions stabilizing ZIF-8 linkers may act as a general guide for extending the range of meltable MOF materials.",
+            "11": "The understanding of ionic liquid interactions stabilizing ZIF-8 linkers may act as a general guide for extending the chemical and structural variety of MOF-derived glasses."
+          }
+        },
+        "viewpoints": [
+          "Chemical composition of crystalline MOFs is a decisive factor in determining melting point.",
+          "Chemical composition of crystalline MOFs is a decisive factor in determining decomposition temperature.",
+          "The type of metal nodes in crystalline MOFs influences melting point and decomposition temperature.",
+          "The type of organic ligands in crystalline MOFs influences melting point and decomposition temperature."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Thus, to make both meltable and highly porous crystalline MOFs, it is logical to engineer a more porous topology by using similar metal nodes and organic ligands to those present in reported meltable MOFs, e.g., ZIF-4, [Zn(Im)2, Im=imidazolate], and ZIF-62, [Zn(Im)1.75(bIm)0.25, bIm=benzimidazolate].",
+        "references": {},
+        "viewpoints": [
+          "To make meltable and highly porous crystalline MOFs, it is logical to engineer a more porous topology.",
+          "Similar metal nodes as those in reported meltable MOFs should be used to create porous crystalline MOFs.",
+          "Similar organic ligands as those in reported meltable MOFs should be used to create porous crystalline MOFs.",
+          "ZIF-4, which has [Zn(Im)2], is an example of a reported meltable MOF.",
+          "ZIF-62, which has [Zn(Im)1.75(bIm)0.25], is an example of a reported meltable MOF."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "The commonly employed ligand-directed strategy, which utilizes large-sized ligands to enhance porosity in crystalline MOFs, is not readily applicable to meltable MOFs.",
+        "references": {},
+        "viewpoints": [
+          "The ligand-directed strategy uses large-sized ligands to enhance porosity in crystalline MOFs.",
+          "The ligand-directed strategy is not readily applicable to meltable MOFs."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "This is due to the introduction of extra ligands which may potentially lower the decomposition temperature of MOFs [21].",
+        "references": {
+          "21": {
+            "1": "Glasses formed by the melt quenching of metal–organic frameworks (MOFs) are the first new category of glass since metallics in the 1970s.",
+            "2": "The formation of glasses by the melt quenching of metal–organic frameworks (MOFs) has begun to redistribute attention in the MOF field away from the crystalline state.",
+            "3": "Glasses formed by the melt quenching of metal–organic frameworks (MOFs) to date are relatively dense.",
+            "4": "Interest in glasses formed by the melt quenching of metal–organic frameworks (MOFs) focuses mainly on their physical properties due to their relative density.",
+            "5": "Suggestions are made to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs).",
+            "6": "Routes to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs) borrow from inorganic polymer science.",
+            "7": "Routes to incorporate porosity into glasses formed by the melt quenching of metal–organic frameworks (MOFs) borrow from organic polymer science.",
+            "8": "Speculation is made on the future adsorptive applications of glasses formed by the melt quenching of metal–organic frameworks (MOFs)."
+          }
+        },
+        "viewpoints": [
+          "The introduction of extra ligands may potentially lower the decomposition temperature of MOFs."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Large solvent molecules have previously been used as the structure-directing agents (SDAs) to synthesize crystalline MOFs with highly porous topology without introducing extra ligands.",
+        "references": {},
+        "viewpoints": [
+          "Large solvent molecules have been used as structure-directing agents.",
+          "Structure-directing agents help synthesize crystalline MOFs with highly porous topology.",
+          "The use of structure-directing agents does not introduce extra ligands."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "For example, Shi et al. synthesized two large pore ZIF compounds with Im organic ligands, by using dibutylformamide (DBF) and dipropylformamide (DPF) solvents as SDAs, respectively [29].",
+        "references": {
+          "29": {
+            "1": "Using bulky amides as structure-directing agents is an alternative synthetic strategy.",
+            "2": "The alternative synthetic strategy is used for the exploration of crystalline large pore zeolitic imidazolate frameworks.",
+            "3": "Dibutylformamide (DBF) and dipropylformamide (DPF) are used as solvents.",
+            "4": "Imidazole (Im) is used as a ligand in the synthesis.",
+            "5": "Two zeolitic imidazolate frameworks mimicking the CAN and AlPO-5 zeotypes were synthesized.",
+            "6": "The synthesized zeolitic imidazolate frameworks have 12-membered ring pore openings.",
+            "7": "The zeolitic imidazolate frameworks synthesized were denoted as CAN-[Zn(Im)₂] and AFI-[Zn(Im)₂].",
+            "8": "The materials CAN-[Zn(Im)₂] and AFI-[Zn(Im)₂] are the first known examples of Zn(Im)₂ polymorphs with 12-membered ring pores.",
+            "9": "AFI-[Zn(Im)₂] has the largest pore apertures reported to date for zeolitic imidazolate framework materials.",
+            "10": "The bulky amides used were not simply acting as the solvent during the synthesis of large pore zeolitic imidazolate frameworks.",
+            "11": "The bulky amides were in fact acting as structure-directing agents or templates during the synthesis.",
+            "12": "The suggestion was based on the closeness of the geometrical fit between the guest dibutylformamide and the can cages of CAN-[Zn(Im)₂]."
+          }
+        },
+        "viewpoints": [
+          "Shi et al. synthesized two large pore ZIF compounds.",
+          "Im organic ligands were used in the synthesis of large pore ZIF compounds.",
+          "Dibutylformamide (DBF) solvent was used as an SDA in the synthesis of large pore ZIF compounds.",
+          "Dipropylformamide (DPF) solvent was used as an SDA in the synthesis of large pore ZIF compounds."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The obtained ZIFs possess the zeolite CAN and AFI topology with 12-membered rings (MR), and are termed CAN-[Zn(Im)2] and AFI-[Zn(Im)2], respectively.",
+        "references": {},
+        "viewpoints": [
+          "The obtained ZIFs possess the zeolite CAN topology.",
+          "The obtained ZIFs possess the zeolite AFI topology.",
+          "The obtained ZIFs have 12-membered rings.",
+          "CAN-[Zn(Im)2] is a ZIF with CAN topology.",
+          "AFI-[Zn(Im)2] is a ZIF with AFI topology."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "AFI-[Zn(Im)2] displays pore apertures as large as 15.6 Å, which is larger than that of ZIF-4 (2.1 Å, 6 MR) and ZIF-62 (1.4 Å, 6 MR) [30].",
+        "references": {
+          "30": {
+            "1": "The flexibility evaluation of zeolitic imidazolate frameworks (ZIFs) is useful for understanding their performance in gas adsorption applications.",
+            "2": "The flexibility evaluation of zeolitic imidazolate frameworks (ZIFs) is useful for understanding their performance in gas separation applications.",
+            "3": "The study evaluates the adsorption properties of a nanoporous mixed-linker ZIF-62.",
+            "4": "The evaluation uses gas adsorption measurements.",
+            "5": "The evaluation uses grand canonical Monte Carlo simulations.",
+            "6": "The evaluation uses synchrotron X-ray powder diffraction under operando conditions.",
+            "7": "Adsorption studies in nanoporous ZIF-62 at 77 K and atmospheric pressure predict a large O₂/N₂ separation ability.",
+            "8": "Computational studies anticipate that observed differences in separation ability must be attributed to kinetic restrictions of N₂.",
+            "9": "The kinetic restrictions prevent N₂ from accessing the internal porosity at cryogenic temperatures.",
+            "10": "A small increase in the adsorption temperature (90 K vs 77 K) allows both N₂ and O₂ to access the inner porous structure.",
+            "11": "The phase transition promoted by the temperature increase leads to a volume expansion of approximately 3.8% upon gas adsorption.",
+            "12": "The phase transition is a result of the gas adsorption process.",
+            "13": "The narrow phase (np) to expanded phase (ep) structural transition in ZIF-62 is completely suppressed above 150 K.",
+            "14": "Nanoporous ZIF-62 has excellent molecular sieve properties for O₂/N₂ at cryogenic temperatures.",
+            "15": "The study was extended to include the adsorption of linear hydrocarbons.",
+            "16": "The study was extended to include the adsorption of branched hydrocarbons.",
+            "17": "ZIF-62 shows preferential adsorption of alkanes over alkenes for small hydrocarbons (C₂).",
+            "18": "For C₃ hydrocarbons and above, the adsorption process in ZIF-62 is mainly defined by kinetic restrictions."
+          }
+        },
+        "viewpoints": [
+          "AFI-[Zn(Im)2] displays pore apertures as large as 15.6 Å.",
+          "The pore apertures of AFI-[Zn(Im)2] are larger than those of ZIF-4.",
+          "The pore aperture of ZIF-4 is 2.1 Å with 6-membered rings.",
+          "The pore apertures of AFI-[Zn(Im)2] are larger than those of ZIF-62.",
+          "The pore aperture of ZIF-62 is 1.4 Å with 6-membered rings."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "However, CAN-[Zn(Im)2] and AFI-[Zn(Im)2] will recrystallize to the dense ZIF-zni phase with 4 MR before melting, similar with ZIF-4 [24] , [31].",
+        "references": {
+          "24": {
+            "1": "Ab initio density functional theory (DFT) is used to elucidate the mechanical properties of ZIF-4.",
+            "2": "Ab initio density functional theory (DFT) is used to elucidate the mechanical properties of ZIF-zni.",
+            "3": "ZIF-4 and ZIF-zni are topologically distinct zeolitic imidazolate framework (ZIF) materials.",
+            "4": "ZIF-4 and ZIF-zni have the same chemical composition of Zn(Im)₂ [Im = C₃H₃N₂⁻].",
+            "5": "ZIF-4 and ZIF-zni are constructed from an identical Zn—Im—Zn basic building block.",
+            "6": "The CRYSTAL code was used to compute the single-crystal elastic constants Cᵢⱼ of the orthorhombic ZIF-4 structure at the PBE level of theory.",
+            "7": "The CRYSTAL code was used to compute the single-crystal elastic constants Cᵢⱼ of the tetragonal ZIF-zni structure at the PBE level of theory.",
+            "8": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of the Young's modulus.",
+            "9": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of the shear modulus.",
+            "10": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of the Poisson's ratio.",
+            "11": "Tensorial analysis of the single-crystal elastic constants Cᵢⱼ reveals the three-dimensional representation surfaces of linear compressibility.",
+            "12": "The three-dimensional representation surfaces enable the description of detailed elasticity behavior.",
+            "13": "The three-dimensional representation surfaces enable the pinpointing of basic crystal structure–property correlations.",
+            "14": "ZIF-4 can potentially exhibit a negative Poisson's ratio.",
+            "15": "ZIF-4 with a potential negative Poisson's ratio represents the first example of an ‘auxetic-ZIF’ identified to date.",
+            "16": "The DFT predictions are consistent with recently reported experimental measurements of the Young's moduli of complex ZIF structures.",
+            "17": "The DFT predictions are consistent with recently reported experimental measurements of the bulk moduli of complex ZIF structures."
+          },
+          "31": []
+        },
+        "viewpoints": [
+          "CAN-[Zn(Im)2] recrystallizes to the dense ZIF-zni phase before melting.",
+          "AFI-[Zn(Im)2] recrystallizes to the dense ZIF-zni phase before melting.",
+          "The dense ZIF-zni phase has 4-membered rings.",
+          "ZIF-4 recrystallizes to the dense ZIF-zni phase before melting."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "This leads to a reduction in the porosity of the resultant melt-quenched glass, a g ZIF-zni [32].",
+        "references": {
+          "32": {
+            "1": "ZIF-7-8 is a modification of the zeolitic-imidazolate framework-8 (ZIF-8) with partial replacement of the 2-methylimidazolate (mIm) linker with benzimidazolate (bIm).",
+            "2": "ZIF-7-8 is investigated using molecular simulations.",
+            "3": "A first-time reported force field is used in the molecular simulations of ZIF-7-8.",
+            "4": "The size of the ZIF-7-8 aperture governs the gas-separation efficiency of ZIF-7-8.",
+            "5": "The size of the ZIF-7-8 aperture has not been estimated before for this modification.",
+            "6": "The size of the ZIF-7-8 aperture is smaller than that of the original ZIF-8.",
+            "7": "The diffusivities of CO₂, N₂, and CH₄ are estimated through transition state theory calculations.",
+            "8": "The transition state theory calculations result in remarkably high diffusion selectivities for CO₂/CH₄ mixtures.",
+            "9": "The transition state theory calculations result in remarkably high diffusion selectivities for CO₂/N₂ mixtures.",
+            "10": "The performance enhancement is investigated in terms of structural flexibility in the form of the aperture motion.",
+            "11": "The investigation includes extensive estimation of the effective diameter of both ZIF-8 and ZIF-7-8.",
+            "12": "The investigation includes extensive estimation of the total effective area of both ZIF-8 and ZIF-7-8.",
+            "13": "The investigation includes extensive estimation of the motion of the aperture linkers of both ZIF-8 and ZIF-7-8.",
+            "14": "Both apertures exhibit oscillation through the rotation of the linkers.",
+            "15": "The linkers are adjusted according to the size of the penetrant molecules the moment the molecules pass through it.",
+            "16": "There is a strong dependency of the separation performance on the bIm-to-mIm ratio.",
+            "17": "Below 33% bIm incorporation, the appearance of ZIF-8-alike wide apertures decreases dramatically the size-based selectivity of the mixtures in ZIF-7-8."
+          }
+        },
+        "viewpoints": [
+          "Recrystallization leads to a reduction in porosity of the resultant melt-quenched glass.",
+          "The resultant melt-quenched glass is referred to as a g ZIF-zni."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "In this work, meltable MOFs that have highly porous topologies of 12 MR have been synthesised by using both SDAs and mixed ligands of imidazole (Im) and benzimidazole (bIm) as shown in Fig. 1.",
+        "references": {},
+        "viewpoints": [
+          "Meltable MOFs with highly porous topologies of 12-membered rings have been synthesized in this work.",
+          "Both SDAs and mixed ligands of imidazole and benzimidazole were used in synthesizing meltable MOFs."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Bulky amide solvents were used as SDAs to create highly porous topologies, without introducing extra ligands.",
+        "references": {},
+        "viewpoints": [
+          "Bulky amide solvents were used as structure-directing agents.",
+          "Bulky amide solvents create highly porous topologies.",
+          "No extra ligands are introduced when using bulky amide solvents as SDAs."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "The mixed ligands of Im and bIm were used to suppress the recrystallization to dense ZIF-zni phase during the melting process and provide spatial support for porosity preservation.",
+        "references": {},
+        "viewpoints": [
+          "Mixed ligands of Im and bIm suppress recrystallization to the dense ZIF-zni phase.",
+          "Mixed ligands of Im and bIm provide spatial support for porosity preservation."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "The obtained crystalline frameworks, termed AFI-[Zn(Im)1.68(bIm)0.32] and CAN-[Zn(Im)1.73(bIm)0.27], possess similar chemical compositions to the prototypical glass former ZIF-62, though they have far greater porosity.",
+        "references": {},
+        "viewpoints": [
+          "The obtained crystalline frameworks are termed AFI-[Zn(Im)1.68(bIm)0.32] and CAN-[Zn(Im)1.73(bIm)0.27].",
+          "AFI-[Zn(Im)1.68(bIm)0.32] and CAN-[Zn(Im)1.73(bIm)0.27] possess similar chemical compositions to ZIF-62.",
+          "AFI-[Zn(Im)1.68(bIm)0.32] and CAN-[Zn(Im)1.73(bIm)0.27] have far greater porosity than ZIF-62."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "The enhanced porosity carries over to the glass upon melt quenching, resulting in high H2, CO2, and CH4 adsorption capacities of a g AFI-[Zn(Im)1.68(bIm)0.32], while decomposition was found during the melt quenching process of CAN-[Zn(Im)1.73(bIm)0.27].",
+        "references": {},
+        "viewpoints": [
+          "Enhanced porosity carries over to the glass upon melt quenching.",
+          "High H2 adsorption capacities are observed for a g AFI-[Zn(Im)1.68(bIm)0.32].",
+          "High CO2 adsorption capacities are observed for a g AFI-[Zn(Im)1.68(bIm)0.32].",
+          "High CH4 adsorption capacities are observed for a g AFI-[Zn(Im)1.68(bIm)0.32].",
+          "Decomposition occurs during the melt quenching process of CAN-[Zn(Im)1.73(bIm)0.27]."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Moreover, a free-standing membrane was fabricated with a g AFI-[Zn(Im)1.68(bIm)0.32], featuring record-breaking CH4/N2 and CO2/N2 separation performance.",
+        "references": {},
+        "viewpoints": [
+          "A free-standing membrane was fabricated with a g AFI-[Zn(Im)1.68(bIm)0.32].",
+          "The membrane with a g AFI-[Zn(Im)1.68(bIm)0.32] features record-breaking CH4/N2 separation performance.",
+          "The membrane with a g AFI-[Zn(Im)1.68(bIm)0.32] features record-breaking CO2/N2 separation performance."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "This porous MOF glass shows promising applications in energy gas purification and CO2 capture.",
+        "references": {},
+        "viewpoints": [
+          "Porous MOF glass shows promising applications in energy gas purification.",
+          "Porous MOF glass shows promising applications in CO2 capture."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56295-x_with_abstracts",
+    "base_id": "s41467-025-56295-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56295-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

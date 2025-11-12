@@ -1,0 +1,1102 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Fabricating objects with complex geometry has become much simpler thanks to additive manufacturing. Light-based 3D printing exploits the ability of certain light-sensitive molecules to trigger polymerization or crosslinking reactions in liquid resins, thus solidifying them. Photopolymerization can be produced sequentially, as in stereolithography [1] or digital light processing [2] , [3] , and more recently also volumetrically, as in two-photon polymerization [4] , [5] , light-sheet microprinting [6] , holographic multi-beam interference [7] , or tomographic volumetric additive manufacturing [8] , [9] . By printing in a volumetric fashion, support struts are no longer needed, enabling the fabrication of designs with cavities and overhangs. In Tomographic Volumetric Additive Manufacturing (TVAM), an entire three-dimensional object is simultaneously solidified by irradiating a volume of photocurable liquid resin from multiple angles with dynamic light patterns until the photocurable resin reaches a polymerization dose threshold [8] , [10] . Unlike most other additive manufacturing methods, TVAM is layer-less, meaning that it does not fabricate objects by solidifying one voxel, line, or layer at a time. Instead, light from sequential tomographic patterns builds up an energy dose that approximates the volume of the target object. Typical printing times are tens of seconds [11] for cm-scale prints with resolutions down to 50–80 μm [9] , [12] using high-power laser diodes [9] , [13] , [14] . Additionally, the technique has proven versatile and has been used to fabricate objects in materials such as acrylates, thiol-enes [12] , [15] , [16] , [17] , nanoparticle-loaded composites [12] , polymer-derived ceramics [18] , epoxies [19] , silk bioinks [20] , and cell-laden hydrogels [10] , [21] , [22] . Implementations of tomographic VAM rely on the Radon transform (ray optics) to compute the light amplitude patterns. Essentially, different techniques have been used to improve the light dose delivered to the photoresin. Due to the positive constraint applied to the intensity patterns after the Filtered Back Projection (FBP), the computed projection patterns produce a 3D dose with artifacts [22] , [23] . The dose threshold required to solidify the photosensitive resin provides an additional degree of freedom for improved shape fidelity. Iterative optimization schemes that use appropriate error functions to minimize printed voxel errors have proven to be very effective [8] , [24] , [25] . The diffusion of inhibiting molecules has been modeled as a convolution operation and shown to improve fidelity [26] . Additionally, including 3D imaging methods during fabrication can be used to experimentally correct for oxygen diffusion or other effects such as temperature-induced reaction kinetics [9] , [26] , [27] , [28] . The Radon transform assumes straight rays to compute the projected light patterns. Projection patterns can be thought of as “extruded” two-dimensional patterns that propagate as a collimated beam. In practice, this is implemented by imaging a two-dimensional spatial light modulator into a cylindrical vial containing the photoresin and relying on the depth of focus of the imaging system to maintain a quasi-collimated image. If the vial’s diameter is much larger than the depth of focus, blurring artifacts appear and compromise the resolution [9] , [14] . The space-bandwidth product of the light source is a key optical parameter, as it determines the depth of focus. A diffraction-limited spot has the lowest space bandwidth product. Additionally, in this type of optical imaging configuration, the two-dimensional spatial light modulator modulates only the intensity, not the phase. Typically, digital micromirror devices (DMD) are used as reflective binary amplitude modulators in light-based 3D printers including TVAM. Here, one pixel on the 2D modulator corresponds to one pixel in the relayed image. In this work, we propose a light engine that harnesses the phase properties of the light beam. We term this technique HoloVAM. Phase encoding of tomographic projections offers multiple advantages over amplitude modulation. First, phase-encoding improves light efficiency, as all pixels of the display can contribute to the projected intensity pattern. Since tomographic projection patterns typically exhibit high spatial frequency information, most pixels are dark. Amplitude encoding is therefore highly inefficient: typically, less than 1% of the incident light reaches the vial. Second, phase-encoding allows a modification of the point spread function (PSF) to be encoded within the same hologram, allowing 3D digital control of the light beam, for example, by increasing the depth of focus using an Axicon phase to generate a Bessel beam, or by multi-plane projections of the same pattern by adding phases of Fresnel lenses, effectively creating a low-divergence projection. A self-healing beam, generated using a Helical Phase Plate (HPP) to produce an Optical Vortex (OV), enables printing within scattering materials. Herein, we use a projection system that converts a two-dimensional phase modulator to a two-dimensional intensity pattern in the Fourier plane. All pixels on the modulator contribute, by interference, to all pixels on the image plane. There are multiple iterative algorithms or machine learning approaches [29] that can generate two-dimensional input phase patterns to produce a user-specified intensity distribution in a desired plane or volume. The Gerchberg–Saxton (GS) iterative algorithm is one of the many methods to calculate a two-dimensional input phase pattern, which results in a desired intensity distribution pattern at the optical Fourier plane [30] . Binary holograms computed with the Gerchberg-Saxton algorithm and encoded with Lee holograms have recently been used to control multiple foci in two-photon lithography, thereby increasing printing speed [31] . In our approach, we demonstrate the use of phase encoding in tomographic VAM by printing millimeter-scale objects in an acrylate-based resin and in a hydrogel based on Gelatin Metacryloyl (GelMA) loaded with cells at a concentration of 0.5 million cells per mL. We demonstrate a printing time of less than 60 s with a single continuous-wave 40 mW laser diode at 405 nm (coupled with an efficiency of 33% in a single mode fiber) and reach negative features (holes) of 31.35 μm reliably. This short printing time is the result of the efficiency of the light engine. First, we show a comparison between the light efficiency for amplitude and phase encoding using a DMD as a spatial light modulator (SLM) [32] , [33] . We then present a pipeline to compute holograms for tomographic projections, where tiled holograms with PSF modification reduce speckle noise and increase contrast, and the Lee Hologram method allows to use of the DMD as a fast phase modulator [32] , [33] , [34] , [35] , [36] .",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Fabricating objects with complex geometry has become much simpler thanks to additive manufacturing.",
+        "references": {},
+        "viewpoints": [
+          "Additive manufacturing has simplified the fabrication of objects with complex geometry."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Light-based 3D printing exploits the ability of certain light-sensitive molecules to trigger polymerization or crosslinking reactions in liquid resins, thus solidifying them.",
+        "references": {},
+        "viewpoints": [
+          "Light-based 3D printing uses light-sensitive molecules to trigger polymerization reactions in liquid resins.",
+          "Light-based 3D printing uses light-sensitive molecules to trigger crosslinking reactions in liquid resins.",
+          "Polymerization and crosslinking reactions solidify liquid resins in light-based 3D printing."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Photopolymerization can be produced sequentially, as in stereolithography [1] or digital light processing [2], [3], and more recently also volumetrically, as in two-photon polymerization [4], [5], light-sheet microprinting [6], holographic multi-beam interference [7], or tomographic volumetric additive manufacturing [8], [9].",
+        "references": {
+          "1": [],
+          "2": {
+            "1": "Additive manufacturing processes such as 3D printing use time-consuming approaches to object fabrication.",
+            "2": "Additive manufacturing processes such as 3D printing use stepwise layer-by-layer approaches to object fabrication.",
+            "3": "The paper demonstrates the continuous generation of monolithic polymeric parts.",
+            "4": "The monolithic polymeric parts generated are up to tens of centimeters in size.",
+            "5": "The monolithic polymeric parts have a feature resolution below 100 micrometers.",
+            "6": "Continuous liquid interface production is achieved with an oxygen-permeable window below the ultraviolet image projection plane.",
+            "7": "The oxygen-permeable window creates a \"dead zone\" which is a persistent liquid interface.",
+            "8": "Photopolymerization is inhibited between the oxygen-permeable window and the polymerizing part.",
+            "9": "The paper delineates critical control parameters for the process.",
+            "10": "The paper shows that complex solid parts can be drawn out of the resin at rates of hundreds of millimeters per hour.",
+            "11": "Print speeds in the process allow parts to be produced in minutes instead of hours."
+          },
+          "3": {
+            "1": "A stereolithographic three-dimensional printing approach for polymeric components uses a mobile liquid interface, which is a fluorinated oil.",
+            "2": "The mobile liquid interface reduces the adhesive forces between the interface and the printed object.",
+            "3": "Reducing adhesive forces allows for a continuous and rapid print process.",
+            "4": "The printing approach works regardless of the type of polymeric precursor used.",
+            "5": "The bed area is not size-restricted by thermal limitations in the stereolithographic printing approach.",
+            "6": "Flowing oil enables direct cooling across the entire print area.",
+            "7": "Continuous vertical print rates exceeding 430 millimeters per hour have been demonstrated.",
+            "8": "A volumetric throughput of 100 liters per hour has been demonstrated.",
+            "9": "Proof-of-concept structures made from hard plastics have been printed.",
+            "10": "Proof-of-concept structures made from ceramic precursors have been printed.",
+            "11": "Proof-of-concept structures made from elastomers have been printed."
+          },
+          "4": [],
+          "5": [],
+          "6": {
+            "1": "High-speed high-resolution 3D printing of polymers is highly desirable for many applications.",
+            "2": "High-speed high-resolution 3D printing of polymers is still technologically challenging.",
+            "3": "Optics-based printing is currently leading in the field of 3D printing.",
+            "4": "Projection-based linear optical approaches have achieved high printing rates of around 10<sup>6</sup> voxels s<sup>–1</sup>.",
+            "5": "Projection-based linear optical approaches produce voxel volumes of greater than 100 μm<sup>3</sup>.",
+            "6": "Scanning-based nonlinear optical approaches have achieved voxel volumes of less than 1 μm<sup>3</sup>.",
+            "7": "Scanning-based nonlinear optical approaches suffer from low printing speed.",
+            "8": "Scanning-based nonlinear optical approaches suffer from high cost due to the required femtosecond lasers.",
+            "9": "A new approach referred to as light-sheet 3D laser microprinting is being presented.",
+            "10": "Light-sheet 3D laser microprinting combines image projection with an AND-type optical nonlinearity.",
+            "11": "The AND-type optical nonlinearity in light-sheet 3D laser microprinting is based on two-colour two-step absorption.",
+            "12": "The underlying photoresin in light-sheet 3D laser microprinting is composed of 2,3-butanedione as the photoinitiator.",
+            "13": "The underlying photoresin in light-sheet 3D laser microprinting is composed of (2,2,6,6-tetramethylpiperidin-1-yl)oxyl as the scavenger.",
+            "14": "The underlying photoresin in light-sheet 3D laser microprinting is composed of dipentaerythritol hexaacrylate as the multifunctional monomer.",
+            "15": "Continuous-wave laser diodes at 440 nm wavelength are used for projection in light-sheet 3D laser microprinting.",
+            "16": "A continuous-wave laser at 660 nm is used for the light-sheet in light-sheet 3D laser microprinting.",
+            "17": "Light-sheet 3D laser microprinting achieves a peak printing rate of 7 × 10<sup>6</sup> voxels s<sup>–1</sup>.",
+            "18": "Light-sheet 3D laser microprinting achieves a voxel volume of 0.55 μm<sup>3</sup>."
+          },
+          "7": {
+            "1": "Additive manufacturing methods have the limitation of slow speed due to layer-based fabrication.",
+            "2": "Additive manufacturing methods have the limitation of geometric constraints, which include poor surface quality, due to layer-based fabrication.",
+            "3": "The slow speed limitation of additive manufacturing methods is overcome by the new volumetric additive fabrication paradigm reported in this work.",
+            "4": "The geometric constraints limitation of additive manufacturing methods is overcome by the new volumetric additive fabrication paradigm reported in this work.",
+            "5": "The new volumetric additive fabrication paradigm produces photopolymer structures with complex nonperiodic three-dimensional geometries on a time scale of seconds.",
+            "6": "The new volumetric additive fabrication approach is implemented using holographic patterning of light fields.",
+            "7": "The implementation of the new volumetric additive fabrication approach demonstrates the fabrication of a variety of structures.",
+            "8": "The properties of the light patterns are studied for the new volumetric additive fabrication approach.",
+            "9": "The properties of the photosensitive resins required for the new volumetric additive fabrication approach are studied.",
+            "10": "The results indicate that low-absorbing resins containing ~0.1% photoinitiator may be successfully used to build full structures.",
+            "11": "The results indicate that low-absorbing resins need to be illuminated at modest powers (~10 to 100 mW) to successfully build full structures.",
+            "12": "Low-absorbing resins enable the building of full structures in approximately 1 to 10 seconds."
+          },
+          "8": {
+            "1": "Additive manufacturing promises enormous geometrical freedom.",
+            "2": "Additive manufacturing has the potential to combine materials for complex functions.",
+            "3": "The speed limitations of additive processes are linked to their reliance on material layering.",
+            "4": "The geometry limitations of additive processes are linked to their reliance on material layering.",
+            "5": "The surface quality limitations of additive processes are linked to their reliance on material layering.",
+            "6": "Concurrent printing of all points within a three-dimensional object was demonstrated.",
+            "7": "The demonstration involved illuminating a rotating volume of photosensitive material with a dynamically evolving light pattern.",
+            "8": "Features as small as 0.3 millimeters were printed in engineering acrylate polymers.",
+            "9": "Soft structures with exceptionally smooth surfaces were printed into a gelatin methacrylate hydrogel.",
+            "10": "The process enables construction of components that encase other preexisting solid objects.",
+            "11": "The process allows for multimaterial fabrication.",
+            "12": "Models were developed to describe speed capabilities.",
+            "13": "Models were developed to describe spatial resolution capabilities.",
+            "14": "Printing times of 30 to 120 seconds for diverse centimeter-scale objects were demonstrated."
+          },
+          "9": {
+            "1": "In tomographic volumetric additive manufacturing, an entire three-dimensional object is solidified simultaneously.",
+            "2": "A liquid photopolymer volume is irradiated from multiple angles with dynamic light patterns in tomographic volumetric additive manufacturing.",
+            "3": "Tomographic additive manufacturing has the potential to produce complex parts with a higher throughput than layer-by-layer additive manufacturing.",
+            "4": "Tomographic additive manufacturing has the potential to produce complex parts with a wider range of printable materials than layer-by-layer additive manufacturing.",
+            "5": "The resolution of tomographic additive manufacturing is currently limited to 300 µm.",
+            "6": "A low-étendue illumination system enables the production of high-resolution features.",
+            "7": "An integrated feedback system can accurately control the photopolymerization kinetics over the entire build volume.",
+            "8": "An integrated feedback system improves the geometric fidelity of the object solidification.",
+            "9": "Hard and soft centimeter-scale parts are produced in less than 30 seconds.",
+            "10": "These parts have 80 µm positive features.",
+            "11": "These parts have 500 µm negative features.",
+            "12": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of advanced constructs.",
+            "13": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of functional constructs."
+          }
+        },
+        "viewpoints": [
+          "Photopolymerization can be produced sequentially in stereolithography.",
+          "Photopolymerization can be produced sequentially in digital light processing.",
+          "Photopolymerization can be produced volumetrically in two-photon polymerization.",
+          "Photopolymerization can be produced volumetrically in light-sheet microprinting.",
+          "Photopolymerization can be produced volumetrically in holographic multi-beam interference.",
+          "Photopolymerization can be produced volumetrically in tomographic volumetric additive manufacturing."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "By printing in a volumetric fashion, support struts are no longer needed, enabling the fabrication of designs with cavities and overhangs.",
+        "references": {},
+        "viewpoints": [
+          "Volumetric printing eliminates the need for support struts.",
+          "Volumetric printing enables the fabrication of designs with cavities.",
+          "Volumetric printing enables the fabrication of designs with overhangs."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In Tomographic Volumetric Additive Manufacturing (TVAM), an entire three-dimensional object is simultaneously solidified by irradiating a volume of photocurable liquid resin from multiple angles with dynamic light patterns until the photocurable resin reaches a polymerization dose threshold [8], [10].",
+        "references": {
+          "8": {
+            "1": "Additive manufacturing promises enormous geometrical freedom.",
+            "2": "Additive manufacturing has the potential to combine materials for complex functions.",
+            "3": "The speed limitations of additive processes are linked to their reliance on material layering.",
+            "4": "The geometry limitations of additive processes are linked to their reliance on material layering.",
+            "5": "The surface quality limitations of additive processes are linked to their reliance on material layering.",
+            "6": "Concurrent printing of all points within a three-dimensional object was demonstrated.",
+            "7": "The demonstration involved illuminating a rotating volume of photosensitive material with a dynamically evolving light pattern.",
+            "8": "Features as small as 0.3 millimeters were printed in engineering acrylate polymers.",
+            "9": "Soft structures with exceptionally smooth surfaces were printed into a gelatin methacrylate hydrogel.",
+            "10": "The process enables construction of components that encase other preexisting solid objects.",
+            "11": "The process allows for multimaterial fabrication.",
+            "12": "Models were developed to describe speed capabilities.",
+            "13": "Models were developed to describe spatial resolution capabilities.",
+            "14": "Printing times of 30 to 120 seconds for diverse centimeter-scale objects were demonstrated."
+          },
+          "10": {
+            "1": "Organ-level biological functions are linked to microscale cell–cell interactions.",
+            "2": "Organ-level biological functions are linked to overarching tissue architecture.",
+            "3": "Tissue-level biological functions are linked to microscale cell–cell interactions.",
+            "4": "Tissue-level biological functions are linked to overarching tissue architecture.",
+            "5": "Biofabrication and organoid technologies together offer the potential to engineer multi-scale living constructs.",
+            "6": "The potential of biofabrication and organoid technologies is described as unique.",
+            "7": "Cellular microenvironments are formed by stem cell self-assembled structures.",
+            "8": "Cellular microenvironments are embedded in customizable bioprinted geometries.",
+            "9": "The study introduces volumetric bioprinting of complex organoid-laden constructs.",
+            "10": "The organoid-laden constructs capture key functions of the human liver.",
+            "11": "Volumetric bioprinting via optical tomography shapes organoid-laden gelatin hydrogels into 3D structures.",
+            "12": "The 3D structures shaped by volumetric bioprinting are complex centimeter-scale.",
+            "13": "The shaping of the structures is achieved in under 20 seconds.",
+            "14": "Optically tuned bioresins enable refractive index matching of specific intracellular structures.",
+            "15": "Optically tuned bioresins counter the disruptive impact of cell-mediated light scattering.",
+            "16": "Cell-mediated light scattering has a disruptive impact on printing resolution.",
+            "17": "The technique is layerless and nozzle-free.",
+            "18": "The technique poses no harmful mechanical stresses on organoids.",
+            "19": "The technique results in superior viability of organoids post-printing.",
+            "20": "The technique results in superior morphology preservation of organoids post-printing.",
+            "21": "Bioprinted organoids undergo hepatocytic differentiation.",
+            "22": "Bioprinted organoids show albumin synthesis.",
+            "23": "Bioprinted organoids show liver-specific enzyme activity.",
+            "24": "Bioprinted organoids acquire native-like polarization remarkably.",
+            "25": "Organoids embedded within low stiffness gelatins are bioprinted into mathematically defined lattices.",
+            "26": "The stiffness of the gelatins is less than 2 kPa.",
+            "27": "Organoids are bioprinted into lattices with varying degrees of pore network tortuosity.",
+            "28": "The bioprinted organoids are cultured under perfusion.",
+            "29": "The structures act as metabolic biofactories.",
+            "30": "In these metabolic biofactories, liver-specific ammonia detoxification can be enhanced.",
+            "31": "Liver-specific ammonia detoxification enhancement is influenced by the architectural profile of the constructs.",
+            "32": "This technology opens up new possibilities for regenerative medicine.",
+            "33": "This technology opens up new possibilities for personalized drug testing."
+          }
+        },
+        "viewpoints": [
+          "In TVAM, a three-dimensional object is solidified simultaneously.",
+          "In TVAM, a volume of photocurable liquid resin is irradiated from multiple angles with dynamic light patterns.",
+          "In TVAM, solidification occurs when the photocurable resin reaches a polymerization dose threshold."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Unlike most other additive manufacturing methods, TVAM is layer-less, meaning that it does not fabricate objects by solidifying one voxel, line, or layer at a time.",
+        "references": {},
+        "viewpoints": [
+          "TVAM is a layer-less additive manufacturing method.",
+          "TVAM does not fabricate objects by solidifying one voxel at a time.",
+          "TVAM does not fabricate objects by solidifying one line at a time.",
+          "TVAM does not fabricate objects by solidifying one layer at a time."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Instead, light from sequential tomographic patterns builds up an energy dose that approximates the volume of the target object.",
+        "references": {},
+        "viewpoints": [
+          "Light from sequential tomographic patterns builds up an energy dose in TVAM.",
+          "The energy dose approximates the volume of the target object in TVAM."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Typical printing times are tens of seconds [11] for cm-scale prints with resolutions down to 50–80 μm [9], [12] using high-power laser diodes [9], [13], [14].",
+        "references": {
+          "11": {
+            "1": "Volumetric additive manufacturing is a novel fabrication method.",
+            "2": "Volumetric additive manufacturing allows rapid 3D printing.",
+            "3": "Volumetric additive manufacturing allows freeform 3D printing.",
+            "4": "Volumetric additive manufacturing allows layer-less 3D printing.",
+            "5": "Volumetric additive manufacturing is analogous to computer tomography (CT).",
+            "6": "Volumetric additive manufacturing projects dynamic light patterns into a rotating vat of photosensitive resin.",
+            "7": "The light patterns build up a three-dimensional energy dose within the photosensitive resin.",
+            "8": "The three-dimensional energy dose solidifies the volume of the desired object within seconds.",
+            "9": "Volumetric additive manufacturing departs from established sequential fabrication methods like stereolithography.",
+            "10": "Volumetric additive manufacturing departs from established sequential fabrication methods like digital light printing.",
+            "11": "Volumetric additive manufacturing offers new opportunities for materials that can be used for printing.",
+            "12": "Volumetric additive manufacturing offers new opportunities for using viscous acrylates for printing.",
+            "13": "Volumetric additive manufacturing offers new opportunities for using elastomers for printing.",
+            "14": "Volumetric additive manufacturing offers new opportunities for using epoxies for printing.",
+            "15": "Volumetric additive manufacturing offers new opportunities for using orthogonal epoxy-acrylate formulations with spatially controlled stiffness for printing.",
+            "16": "Volumetric additive manufacturing offers new opportunities for using tunable stiffness thiol-enes for printing.",
+            "17": "Volumetric additive manufacturing offers new opportunities for using shape memory foams for printing.",
+            "18": "Volumetric additive manufacturing offers new opportunities for using polymer-derived ceramics for printing.",
+            "19": "Volumetric additive manufacturing offers new opportunities for using silica-nanocomposite based glass for printing.",
+            "20": "Volumetric additive manufacturing offers new opportunities for using gelatin-based hydrogels for cell-laden biofabrication.",
+            "21": "The authors review the materials that can be used with volumetric additive manufacturing.",
+            "22": "The authors highlight the challenges to adapt various materials to volumetric additive manufacturing.",
+            "23": "The authors discuss the perspectives the materials present for volumetric additive manufacturing."
+          },
+          "9": {
+            "1": "In tomographic volumetric additive manufacturing, an entire three-dimensional object is solidified simultaneously.",
+            "2": "A liquid photopolymer volume is irradiated from multiple angles with dynamic light patterns in tomographic volumetric additive manufacturing.",
+            "3": "Tomographic additive manufacturing has the potential to produce complex parts with a higher throughput than layer-by-layer additive manufacturing.",
+            "4": "Tomographic additive manufacturing has the potential to produce complex parts with a wider range of printable materials than layer-by-layer additive manufacturing.",
+            "5": "The resolution of tomographic additive manufacturing is currently limited to 300 µm.",
+            "6": "A low-étendue illumination system enables the production of high-resolution features.",
+            "7": "An integrated feedback system can accurately control the photopolymerization kinetics over the entire build volume.",
+            "8": "An integrated feedback system improves the geometric fidelity of the object solidification.",
+            "9": "Hard and soft centimeter-scale parts are produced in less than 30 seconds.",
+            "10": "These parts have 80 µm positive features.",
+            "11": "These parts have 500 µm negative features.",
+            "12": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of advanced constructs.",
+            "13": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of functional constructs."
+          },
+          "12": {
+            "1": "Glass is increasingly desired as a material for manufacturing complex microscopic geometries.",
+            "2": "Glass is used in the micro-optics in compact consumer products.",
+            "3": "Glass is used in microfluidic systems for chemical synthesis.",
+            "4": "Glass is used in microfluidic systems for biological analyses.",
+            "5": "The size requirements of glass are evolving.",
+            "6": "The geometric requirements of glass are evolving.",
+            "7": "The surface roughness requirements of glass are evolving.",
+            "8": "The mechanical strength requirements of glass are evolving.",
+            "9": "Conventional processing methods for glass are challenged by evolving requirements of size, geometry, surface roughness, and mechanical strength.",
+            "10": "Microscale computed axial lithography (micro-CAL) of fused silica components is introduced.",
+            "11": "Micro-CAL works by tomographically illuminating a photopolymer-silica nanocomposite.",
+            "12": "The photopolymer-silica nanocomposite is sintered after tomographic illumination.",
+            "13": "Three-dimensional microfluidics with internal diameters of 150 micrometers were fabricated.",
+            "14": "Free-form micro-optical elements with a surface roughness of 6 nanometers were fabricated.",
+            "15": "Complex high-strength trusses and lattice structures with minimum feature sizes of 50 micrometers were fabricated.",
+            "16": "Micro-CAL is a high-speed digital light manufacturing process.",
+            "17": "Micro-CAL is a layer-free digital light manufacturing process.",
+            "18": "Micro-CAL can process nanocomposites with high solids content.",
+            "19": "Micro-CAL can process nanocomposites with high geometric freedom.",
+            "20": "Micro-CAL enables new device structures.",
+            "21": "Micro-CAL enables new applications."
+          },
+          "13": {
+            "1": "3D printing has revolutionized the manufacturing of volumetric components.",
+            "2": "3D printing has revolutionized the manufacturing of volumetric structures in many areas.",
+            "3": "Several fully volumetric light-based techniques have been recently developed because of the advent of photocurable resins.",
+            "4": "Fully volumetric light-based techniques promise to reach unprecedented short print times down to a few tens of seconds.",
+            "5": "Fully volumetric light-based techniques promise to keep a good resolution around 100 μm.",
+            "6": "These new approaches only work with homogeneous resins.",
+            "7": "These new approaches only work with relatively transparent resins.",
+            "8": "Light patterns used for photo-polymerization are not scrambled along their propagation when using homogeneous and relatively transparent resins.",
+            "9": "A method is proposed that takes into account light scattering in the resin prior to computing projection patterns.",
+            "10": "Using a tomographic volumetric printer, it is experimentally demonstrated that the implementation of the correction for light scattering is critical when printing objects whose size exceeds the scattering mean free path.",
+            "11": "Functional objects of high print fidelity are fabricated in hard organic scattering acrylates to show the broad applicability of the technique.",
+            "12": "Functional objects of high print fidelity are fabricated in soft cell-laden hydrogels at 4 million cells mL⁻¹ to show the broad applicability of the technique.",
+            "13": "Printing inside turbid materials opens up promising perspectives.",
+            "14": "Printing inside turbid materials has particularly interesting applications for bioprinting cell-laden constructs."
+          },
+          "14": []
+        },
+        "viewpoints": [
+          "Typical printing times for cm-scale prints in TVAM are tens of seconds.",
+          "TVAM can achieve resolutions down to 50–80 μm.",
+          "TVAM uses high-power laser diodes."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Additionally, the technique has proven versatile and has been used to fabricate objects in materials such as acrylates, thiol-enes [12], [15], [16], [17], nanoparticle-loaded composites [12], polymer-derived ceramics [18], epoxies [19], silk bioinks [20], and cell-laden hydrogels [10], [21], [22].",
+        "references": {
+          "12": {
+            "1": "Glass is increasingly desired as a material for manufacturing complex microscopic geometries.",
+            "2": "Glass is used in the micro-optics in compact consumer products.",
+            "3": "Glass is used in microfluidic systems for chemical synthesis.",
+            "4": "Glass is used in microfluidic systems for biological analyses.",
+            "5": "The size requirements of glass are evolving.",
+            "6": "The geometric requirements of glass are evolving.",
+            "7": "The surface roughness requirements of glass are evolving.",
+            "8": "The mechanical strength requirements of glass are evolving.",
+            "9": "Conventional processing methods for glass are challenged by evolving requirements of size, geometry, surface roughness, and mechanical strength.",
+            "10": "Microscale computed axial lithography (micro-CAL) of fused silica components is introduced.",
+            "11": "Micro-CAL works by tomographically illuminating a photopolymer-silica nanocomposite.",
+            "12": "The photopolymer-silica nanocomposite is sintered after tomographic illumination.",
+            "13": "Three-dimensional microfluidics with internal diameters of 150 micrometers were fabricated.",
+            "14": "Free-form micro-optical elements with a surface roughness of 6 nanometers were fabricated.",
+            "15": "Complex high-strength trusses and lattice structures with minimum feature sizes of 50 micrometers were fabricated.",
+            "16": "Micro-CAL is a high-speed digital light manufacturing process.",
+            "17": "Micro-CAL is a layer-free digital light manufacturing process.",
+            "18": "Micro-CAL can process nanocomposites with high solids content.",
+            "19": "Micro-CAL can process nanocomposites with high geometric freedom.",
+            "20": "Micro-CAL enables new device structures.",
+            "21": "Micro-CAL enables new applications."
+          },
+          "15": {
+            "1": "Volumetric additive manufacturing (VAM) forms complete 3D objects in a single photocuring operation.",
+            "2": "Volumetric additive manufacturing eliminates layering defects in 3D printed objects.",
+            "3": "Volumetric additive manufacturing enables 3D printed polymer parts with mechanical properties similar to their bulk material counterparts.",
+            "4": "This study presents the first report of VAM-printed thiol-ene resins.",
+            "5": "Thiol-ene chemistry forms polymer materials with well-ordered molecular networks.",
+            "6": "Thiol-ene chemistry provides access to polymer materials with a wide range of mechanical properties.",
+            "7": "Thiol-ene chemistry moves VAM beyond the limitations of commonly used acrylate formulations.",
+            "8": "Free-radical thiol-ene polymerization is not inhibited by oxygen.",
+            "9": "The nonlinear threshold response required in VAM is introduced by incorporating 2,2,6,6-tetramethyl-1-piperidinyloxy (TEMPO) as a radical scavenger.",
+            "10": "Tuning of the reaction kinetics is accomplished by balancing inhibitor content.",
+            "11": "Tuning of the reaction kinetics is accomplished by balancing initiator content.",
+            "12": "Coupling the tuning of reaction kinetics with quantitative measurements of the absorbed volumetric optical dose allows control of polymer conversion during printing.",
+            "13": "Coupling the tuning of reaction kinetics with quantitative measurements of the absorbed volumetric optical dose allows control of gelation during printing.",
+            "14": "This work establishes the first comprehensive framework for spatial–temporal control over volumetric energy distribution.",
+            "15": "The established framework demonstrates structures 3D printed in thiol-ene resin by means of tomographic volumetric VAM.",
+            "16": "Mechanical characterization of the thiol-ene system reveals a highly tunable mechanical response.",
+            "17": "The tunable mechanical response is achieved with varied ratios of isocyanurate and triethylene glycol monomers.",
+            "18": "The mechanical response of the thiol-ene system is far more versatile than that of identical acrylate-based resins.",
+            "19": "The tunable mechanical response broadens the range of materials available for VAM.",
+            "20": "The tunable mechanical response broadens the range of properties available for VAM.",
+            "21": "Broadening the range of materials and properties available for VAM takes another step toward high-performance printed polymers."
+          },
+          "16": {
+            "1": "Current biodegradable and cross-linkable polymers mainly rely on acrylate cross-linking.",
+            "2": "Acrylates have swift cross-linking kinetics.",
+            "3": "The brittleness of materials resulting from acrylate cross-linking limits their applicability.",
+            "4": "Photo-cross-linkable poly(ε-caprolactone) networks through orthogonal thiol-ene chemistry are introduced.",
+            "5": "The step-growth polymerized networks are tunable.",
+            "6": "The step-growth polymerized networks are predictable by means of the rubber elasticity theory.",
+            "7": "The mechanical properties of the step-growth polymerized networks are significantly improved over their acrylate cross-linked counterparts.",
+            "8": "Tunability is introduced to the materials by altering M<sub>c</sub> (or the molar mass between cross-links).",
+            "9": "The effect of altering M<sub>c</sub> on the thermal properties of the materials is evaluated.",
+            "10": "The effect of altering M<sub>c</sub> on the mechanical strength of the materials is evaluated.",
+            "11": "The effect of altering M<sub>c</sub> on the degradability of the materials is evaluated.",
+            "12": "Excellent volumetric printability of the materials is illustrated.",
+            "13": "The smallest features obtained via volumetric 3D-printing to date are reported for thiol-ene systems.",
+            "14": "In vitro and in vivo characterization of 3D-printed constructs is used to illustrate biocompatibility.",
+            "15": "The volumetrically 3D-printed materials are biocompatible.",
+            "16": "The combination of mechanical stability, tunability, biocompatibility, and rapid fabrication by volumetric 3D-printing charts a new path toward bedside manufacturing.",
+            "17": "The combination of mechanical stability, tunability, biocompatibility, and rapid fabrication by volumetric 3D-printing is specifically for biodegradable patient-specific implants."
+          },
+          "17": {
+            "1": "Shape memory polymers are stimuli responsive materials.",
+            "2": "Shape memory polymers have programmable recovery from a deformed state.",
+            "3": "The behavior of shape memory polymers is often impacted by manufacturing features.",
+            "4": "Layering is a manufacturing feature that affects shape memory polymer behavior.",
+            "5": "Layering can impart anisotropic responses in shape memory polymers.",
+            "6": "Volumetric additive manufacturing is an emerging paradigm.",
+            "7": "Volumetric additive manufacturing can generate complex three-dimensional shape memory polymer structures.",
+            "8": "Volumetric additive manufacturing does not involve layers in generating shape memory polymer structures.",
+            "9": "The study reports volumetric additive manufacturing of thiol–ene-based shape memory polymer photoresins.",
+            "10": "Volumetric additive manufacturing of thiol–ene-based shape memory polymer photoresins produces structures with nearly full shape recovery.",
+            "11": "Volumetric additive manufacturing of thiol–ene-based shape memory polymer photoresins is used to produce self-standing tripod structures.",
+            "12": "Volumetric additive manufacturing of thiol–ene-based shape memory polymer photoresins is used to produce actuating three-arm gripper structures."
+          },
+          "18": {
+            "1": "Ceramics are highly chemically resistant.",
+            "2": "Ceramics are highly thermally resistant.",
+            "3": "Ceramics are highly mechanically resistant.",
+            "4": "The chemical, thermal, and mechanical resistance properties of ceramics make them useful across multiple industries.",
+            "5": "The chemical, thermal, and mechanical resistance properties of ceramics make them difficult to mold into complex shapes.",
+            "6": "Preceramic polymers (PCPs) in liquid form provide a possibility to make convoluted ceramic parts.",
+            "7": "The PCP resin is first solidified in a desired geometry.",
+            "8": "The solidified PCP resin is transformed into ceramic compounds through a pyrolysis step.",
+            "9": "The pyrolysis step preserves the shape of the solidified PCP resin during transformation into ceramic compounds.",
+            "10": "Light-based additive manufacturing (AM) is a promising route to achieve solidification of the PCP resin.",
+            "11": "Different approaches, such as stereolithography, have already been proposed for solidification of PCP resin.",
+            "12": "Stereolithography and similar approaches rely on a layer-by-layer printing process.",
+            "13": "Layer-by-layer printing processes limit printing speed and object geometry.",
+            "14": "Tomographic volumetric printing is used for the fabrication of complex 3D centimeter-scale ceramic parts.",
+            "15": "Tomographic volumetric printing is fast.",
+            "16": "Tomographic volumetric printing offers high resolution.",
+            "17": "Tomographic volumetric printing offers geometrical design freedom.",
+            "18": "A photosensitive polysiloxane preceramic resin is formulated.",
+            "19": "The photosensitive polysiloxane preceramic resin is solidified by projecting light patterns from multiple angles.",
+            "20": "The obtained 3D printed parts are converted into ceramics by pyrolysis.",
+            "21": "The strength of the tomographic volumetric printing approach is demonstrated through the fabrication of smooth, dense microcomponents.",
+            "22": "The fabricated microcomponents exhibit overhangs.",
+            "23": "The fabricated microcomponents exhibit hollow geometries.",
+            "24": "The fabricated microcomponents do not need supporting structures.",
+            "25": "The resistance of the fabricated ceramic microcomponents to thermal stress is characterized.",
+            "26": "The resistance of the fabricated ceramic microcomponents to harsh chemical treatments is characterized."
+          },
+          "19": {
+            "1": "Tomographic volumetric printing physically reverses tomography.",
+            "2": "Tomographic volumetric printing offers fast 3D printing.",
+            "3": "Tomographic volumetric printing offers auxiliary-free 3D printing.",
+            "4": "Wavelength-sensitive photoresins can be cured using visible (λ̄=455 nm) sources in a tomographic volumetric printing setup.",
+            "5": "Wavelength-sensitive photoresins can be cured using UV (λ̄=365 nm) sources in a tomographic volumetric printing setup.",
+            "6": "Visible and UV sources can be used simultaneously in a tomographic volumetric printing setup to cure wavelength-sensitive photoresins.",
+            "7": "Using visible and UV sources simultaneously in a tomographic volumetric printing setup generates internal mechanical property gradients with high precision.",
+            "8": "Solutions of mixed acrylate and epoxy monomers are developed.",
+            "9": "The orthogonal chemistry between free radical and cationic polymerization is utilized to realize fully 3D stiffness control.",
+            "10": "Fully 3D stiffness control is realized.",
+            "11": "The radial resolution of stiffness control is 300 µm or better.",
+            "12": "An average modulus gradient of 5 MPa/µm is achieved.",
+            "13": "The reactive transport of radical inhibitors defines a workpiece’s shape.",
+            "14": "The reactive transport of radical inhibitors limits the achievable stiffness contrast according to standard tensile tests after post-processing.",
+            "15": "The stiffness contrast is limited to a range from 127 MPa to 201 MPa according to standard tensile tests after post-processing.",
+            "16": "The result presents a strategy for controlling the stiffness of material spatially.",
+            "17": "The strategy is applicable in light-based volumetric additive manufacturing."
+          },
+          "20": {
+            "1": "Volumetric additive manufacturing (VAM) enables fast photopolymerization of three-dimensional constructs.",
+            "2": "Fast photopolymerization in VAM is achieved by illuminating dynamically evolving light patterns in the entire build volume.",
+            "3": "The lack of bioinks suitable for VAM is a critical limitation.",
+            "4": "This study reports rapid volumetric (bio)printing of pristine, unmodified silk-based (silk sericin (SS) and silk fibroin (SF)) (bio)inks.",
+            "5": "The silk-based (bio)inks are used to form sophisticated shapes and architectures.",
+            "6": "The (bio)printed SS constructs reveal properties including reversible and repeated shrinkage and expansion, or shape-memory, when combined with post-fabrication processing.",
+            "7": "The (bio)printed SF constructs exhibit tunable mechanical performances ranging from a few hundred Pa to hundreds of MPa.",
+            "8": "Silk sericin (SS) (bio)inks are cytocompatible.",
+            "9": "Silk fibroin (SF) (bio)inks are cytocompatible.",
+            "10": "This work supplies expanded bioink libraries for VAM.",
+            "11": "This work provides a path forward for the rapid volumetric manufacturing of silk constructs.",
+            "12": "This work aims towards broadened biomedical applications of silk constructs."
+          },
+          "10": {
+            "1": "Organ-level biological functions are linked to microscale cell–cell interactions.",
+            "2": "Organ-level biological functions are linked to overarching tissue architecture.",
+            "3": "Tissue-level biological functions are linked to microscale cell–cell interactions.",
+            "4": "Tissue-level biological functions are linked to overarching tissue architecture.",
+            "5": "Biofabrication and organoid technologies together offer the potential to engineer multi-scale living constructs.",
+            "6": "The potential of biofabrication and organoid technologies is described as unique.",
+            "7": "Cellular microenvironments are formed by stem cell self-assembled structures.",
+            "8": "Cellular microenvironments are embedded in customizable bioprinted geometries.",
+            "9": "The study introduces volumetric bioprinting of complex organoid-laden constructs.",
+            "10": "The organoid-laden constructs capture key functions of the human liver.",
+            "11": "Volumetric bioprinting via optical tomography shapes organoid-laden gelatin hydrogels into 3D structures.",
+            "12": "The 3D structures shaped by volumetric bioprinting are complex centimeter-scale.",
+            "13": "The shaping of the structures is achieved in under 20 seconds.",
+            "14": "Optically tuned bioresins enable refractive index matching of specific intracellular structures.",
+            "15": "Optically tuned bioresins counter the disruptive impact of cell-mediated light scattering.",
+            "16": "Cell-mediated light scattering has a disruptive impact on printing resolution.",
+            "17": "The technique is layerless and nozzle-free.",
+            "18": "The technique poses no harmful mechanical stresses on organoids.",
+            "19": "The technique results in superior viability of organoids post-printing.",
+            "20": "The technique results in superior morphology preservation of organoids post-printing.",
+            "21": "Bioprinted organoids undergo hepatocytic differentiation.",
+            "22": "Bioprinted organoids show albumin synthesis.",
+            "23": "Bioprinted organoids show liver-specific enzyme activity.",
+            "24": "Bioprinted organoids acquire native-like polarization remarkably.",
+            "25": "Organoids embedded within low stiffness gelatins are bioprinted into mathematically defined lattices.",
+            "26": "The stiffness of the gelatins is less than 2 kPa.",
+            "27": "Organoids are bioprinted into lattices with varying degrees of pore network tortuosity.",
+            "28": "The bioprinted organoids are cultured under perfusion.",
+            "29": "The structures act as metabolic biofactories.",
+            "30": "In these metabolic biofactories, liver-specific ammonia detoxification can be enhanced.",
+            "31": "Liver-specific ammonia detoxification enhancement is influenced by the architectural profile of the constructs.",
+            "32": "This technology opens up new possibilities for regenerative medicine.",
+            "33": "This technology opens up new possibilities for personalized drug testing."
+          },
+          "21": {
+            "1": "A major challenge in biofabrication is capturing the complex composition of native tissues.",
+            "2": "A major challenge in biofabrication is capturing the hierarchical composition of native tissues.",
+            "3": "Individual 3D printing techniques have limited capacity to produce composite biomaterials.",
+            "4": "Individual 3D printing techniques have limited capacity to achieve multi-scale resolution.",
+            "5": "Volumetric bioprinting is a recent paradigm-shift in biofabrication.",
+            "6": "Volumetric bioprinting is an ultrafast, light-based technique.",
+            "7": "Volumetric bioprinting sculpts cell-laden hydrogel bioresins into 3D structures in a layerless fashion.",
+            "8": "Volumetric bioprinting provides enhanced design freedom over conventional bioprinting.",
+            "9": "Volumetric bioprinting yields prints with low mechanical stability.",
+            "10": "Volumetric bioprinting uses soft, cell-friendly hydrogels.",
+            "11": "The use of soft, cell-friendly hydrogels in volumetric bioprinting results in low mechanical stability.",
+            "12": "The possibility to converge volumetric bioprinting with melt electrowriting is shown.",
+            "13": "Melt electrowriting excels at patterning microfibers.",
+            "14": "The convergence of volumetric bioprinting and melt electrowriting is used for fabricating tubular hydrogel-based composites with enhanced mechanical behavior.",
+            "15": "Non-transparent melt electrowritten scaffolds are included in the volumetric printing process.",
+            "16": "High-resolution bioprinted structures are successfully achieved despite the inclusion of non-transparent melt electrowritten scaffolds.",
+            "17": "The tensile mechanical properties of printed tubes are tuned by altering the electrowritten mesh design.",
+            "18": "The burst mechanical properties of printed tubes are tuned by altering the electrowritten mesh design.",
+            "19": "The bending mechanical properties of printed tubes are tuned by altering the electrowritten mesh design.",
+            "20": "Altering the electrowritten mesh design results in complex, multi-material tubular constructs.",
+            "21": "The tubular constructs have customizable, anisotropic geometries.",
+            "22": "The customizable, anisotropic geometries better mimic intricate biological tubular structures.",
+            "23": "As a proof-of-concept, engineered tubular structures are obtained by building trilayered cell-laden vessels.",
+            "24": "Valves, branches, and fenestrations can be rapidly printed using this hybrid approach.",
+            "25": "The convergence of multiple technologies offers a new toolbox for manufacturing hierarchical multi-material living structures.",
+            "26": "The convergence of multiple technologies offers a new toolbox for manufacturing mechanically tunable multi-material living structures."
+          },
+          "22": {
+            "1": "Tomographic volumetric bioprinting (VBP) enables fast photofabrication of cell-laden hydrogel constructs in one step.",
+            "2": "Tomographic volumetric bioprinting (VBP) addresses the limitations of conventional layer-by-layer additive manufacturing.",
+            "3": "Existing biomaterials that fulfill the physicochemical requirements of VBP are limited to gelatin-based photoresins.",
+            "4": "The existing gelatin-based photoresins used in VBP have high polymer concentrations.",
+            "5": "The printed microenvironments in VBP are predominantly static and stiff.",
+            "6": "The printed microenvironments in VBP lack sufficient capacity to support 3D cell growth.",
+            "7": "A dynamic resin based on thiol–ene photo-clickable polyvinyl alcohol (PVA) and thermo-sensitive sacrificial gelatin is reported.",
+            "8": "The dynamic resin enables fast VBP of functional ultrasoft cell-laden hydrogel constructs within 7–15 seconds.",
+            "9": "Using gelatin allows VBP of permissive hydrogels with low polyvinyl alcohol (PVA) contents of 1.5%.",
+            "10": "Permissive hydrogels with low PVA content provide a stress-relaxing environment for fast cell spreading.",
+            "11": "Permissive hydrogels with low PVA content support 3D osteogenic differentiation of embedded human mesenchymal stem cells.",
+            "12": "Permissive hydrogels with low PVA content support matrix mineralization.",
+            "13": "Site-specific immobilization of molecules-of-interest inside a PVA hydrogel is achieved by 3D tomographic thiol–ene photopatterning.",
+            "14": "The technique of 3D tomographic thiol–ene photopatterning may enable spatiotemporal control of cell–material interactions.",
+            "15": "The technique of 3D tomographic thiol–ene photopatterning guides in vitro tissue formation using programmed cell-friendly light.",
+            "16": "This study introduces a synthetic dynamic photoresin.",
+            "17": "The synthetic dynamic photoresin enables fast VBP of functional ultrasoft hydrogel constructs.",
+            "18": "The synthetic dynamic photoresin has well-defined physicochemical properties.",
+            "19": "The synthetic dynamic photoresin enables VBP with high efficiency."
+          }
+        },
+        "viewpoints": [
+          "TVAM is a versatile technique.",
+          "TVAM has been used to fabricate objects in acrylates.",
+          "TVAM has been used to fabricate objects in thiol-enes.",
+          "TVAM has been used to fabricate objects in nanoparticle-loaded composites.",
+          "TVAM has been used to fabricate objects in polymer-derived ceramics.",
+          "TVAM has been used to fabricate objects in epoxies.",
+          "TVAM has been used to fabricate objects in silk bioinks.",
+          "TVAM has been used to fabricate objects in cell-laden hydrogels."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Implementations of tomographic VAM rely on the Radon transform (ray optics) to compute the light amplitude patterns.",
+        "references": {},
+        "viewpoints": [
+          "Implementations of tomographic VAM rely on the Radon transform to compute light amplitude patterns.",
+          "Tomographic VAM implementations use ray optics to compute light amplitude patterns."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Essentially, different techniques have been used to improve the light dose delivered to the photoresin.",
+        "references": {},
+        "viewpoints": [
+          "Various techniques have been used to improve the light dose delivered to the photoresin."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Due to the positive constraint applied to the intensity patterns after the Filtered Back Projection (FBP), the computed projection patterns produce a 3D dose with artifacts [22], [23].",
+        "references": {
+          "22": {
+            "1": "Tomographic volumetric bioprinting (VBP) enables fast photofabrication of cell-laden hydrogel constructs in one step.",
+            "2": "Tomographic volumetric bioprinting (VBP) addresses the limitations of conventional layer-by-layer additive manufacturing.",
+            "3": "Existing biomaterials that fulfill the physicochemical requirements of VBP are limited to gelatin-based photoresins.",
+            "4": "The existing gelatin-based photoresins used in VBP have high polymer concentrations.",
+            "5": "The printed microenvironments in VBP are predominantly static and stiff.",
+            "6": "The printed microenvironments in VBP lack sufficient capacity to support 3D cell growth.",
+            "7": "A dynamic resin based on thiol–ene photo-clickable polyvinyl alcohol (PVA) and thermo-sensitive sacrificial gelatin is reported.",
+            "8": "The dynamic resin enables fast VBP of functional ultrasoft cell-laden hydrogel constructs within 7–15 seconds.",
+            "9": "Using gelatin allows VBP of permissive hydrogels with low polyvinyl alcohol (PVA) contents of 1.5%.",
+            "10": "Permissive hydrogels with low PVA content provide a stress-relaxing environment for fast cell spreading.",
+            "11": "Permissive hydrogels with low PVA content support 3D osteogenic differentiation of embedded human mesenchymal stem cells.",
+            "12": "Permissive hydrogels with low PVA content support matrix mineralization.",
+            "13": "Site-specific immobilization of molecules-of-interest inside a PVA hydrogel is achieved by 3D tomographic thiol–ene photopatterning.",
+            "14": "The technique of 3D tomographic thiol–ene photopatterning may enable spatiotemporal control of cell–material interactions.",
+            "15": "The technique of 3D tomographic thiol–ene photopatterning guides in vitro tissue formation using programmed cell-friendly light.",
+            "16": "This study introduces a synthetic dynamic photoresin.",
+            "17": "The synthetic dynamic photoresin enables fast VBP of functional ultrasoft hydrogel constructs.",
+            "18": "The synthetic dynamic photoresin has well-defined physicochemical properties.",
+            "19": "The synthetic dynamic photoresin enables VBP with high efficiency."
+          },
+          "23": []
+        },
+        "viewpoints": [
+          "A positive constraint is applied to the intensity patterns after the Filtered Back Projection in TVAM.",
+          "The computed projection patterns in TVAM produce a 3D dose with artifacts."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The dose threshold required to solidify the photosensitive resin provides an additional degree of freedom for improved shape fidelity.",
+        "references": {},
+        "viewpoints": [
+          "The dose threshold required to solidify the photosensitive resin provides an additional degree of freedom.",
+          "The additional degree of freedom provided by the dose threshold helps improve shape fidelity."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Iterative optimization schemes that use appropriate error functions to minimize printed voxel errors have proven to be very effective [8], [24], [25].",
+        "references": {
+          "8": {
+            "1": "Additive manufacturing promises enormous geometrical freedom.",
+            "2": "Additive manufacturing has the potential to combine materials for complex functions.",
+            "3": "The speed limitations of additive processes are linked to their reliance on material layering.",
+            "4": "The geometry limitations of additive processes are linked to their reliance on material layering.",
+            "5": "The surface quality limitations of additive processes are linked to their reliance on material layering.",
+            "6": "Concurrent printing of all points within a three-dimensional object was demonstrated.",
+            "7": "The demonstration involved illuminating a rotating volume of photosensitive material with a dynamically evolving light pattern.",
+            "8": "Features as small as 0.3 millimeters were printed in engineering acrylate polymers.",
+            "9": "Soft structures with exceptionally smooth surfaces were printed into a gelatin methacrylate hydrogel.",
+            "10": "The process enables construction of components that encase other preexisting solid objects.",
+            "11": "The process allows for multimaterial fabrication.",
+            "12": "Models were developed to describe speed capabilities.",
+            "13": "Models were developed to describe spatial resolution capabilities.",
+            "14": "Printing times of 30 to 120 seconds for diverse centimeter-scale objects were demonstrated."
+          },
+          "24": [],
+          "25": {
+            "1": "Tomographic Volumetric Additive Manufacturing (TVAM) allows printing of mesoscopic objects.",
+            "2": "TVAM can print mesoscopic objects within seconds.",
+            "3": "TVAM can print mesoscopic objects within minutes.",
+            "4": "In TVAM, tomographic patterns are illuminated onto a rotating glass vial.",
+            "5": "The rotating glass vial in TVAM contains a photosensitive resin.",
+            "6": "Current pattern optimization in TVAM is based on a ray optical assumption.",
+            "7": "The ray optical assumption in pattern optimization leads to limited resolution around 20 µm in TVAM.",
+            "8": "The resolution resulting from current pattern optimization varies throughout the volume of the 3D object in TVAM.",
+            "9": "This work introduces a rigorous wave-based optical amplitude optimization scheme for TVAM.",
+            "10": "The wave-based optical amplitude optimization scheme for TVAM shows that high-resolution printing is theoretically possible over the full volume.",
+            "11": "The wave optical optimization approach is based on an efficient angular spectrum method of plane waves.",
+            "12": "The wave optical optimization approach includes custom written memory efficient gradients.",
+            "13": "The wave optical optimization approach allows for optimization of realistic volumes for TVAM.",
+            "14": "The realistic volumes for TVAM can be (100 µm)³ or (10 mm)³.",
+            "15": "The realistic volumes for TVAM can have 550³ voxels.",
+            "16": "The realistic volumes for TVAM can have 600 angles.",
+            "17": "Simulations show that ray-optics start to produce artifacts when the desired features are 20 µm and below.",
+            "18": "Amplitude modulated TVAM can reach sub 20 µm features.",
+            "19": "Amplitude modulated TVAM can reach sub 20 µm features when optimizing the patterns using a full wave model."
+          }
+        },
+        "viewpoints": [
+          "Iterative optimization schemes use appropriate error functions to minimize printed voxel errors.",
+          "Iterative optimization schemes have proven to be very effective in minimizing printed voxel errors."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The diffusion of inhibiting molecules has been modeled as a convolution operation and shown to improve fidelity [26].",
+        "references": {
+          "26": {
+            "1": "Volumetric additive manufacturing techniques are a promising pathway to ultra-rapid light-based 3D fabrication.",
+            "2": "The widespread adoption of volumetric additive manufacturing techniques demands significant improvement in print fidelity.",
+            "3": "Volumetric additive manufacturing prints currently suffer from systematic undercuring of fine features.",
+            "4": "Systematic undercuring of fine features makes it impossible to print objects containing a wide range of feature sizes with volumetric additive manufacturing.",
+            "5": "The inability to print a wide range of feature sizes precludes the effective adoption of volumetric additive manufacturing in many applications.",
+            "6": "The reason for the limitation in volumetric additive manufacturing is light dose spread in the resin.",
+            "7": "Light dose spread in the resin is due to chemical diffusion and optical blurring.",
+            "8": "Light dose spread in the resin becomes significant for features ⪅0.5 mm.",
+            "9": "A model is developed that quantitatively predicts the variation of print time with feature size in volumetric additive manufacturing.",
+            "10": "A deconvolution method is demonstrated to correct for the error caused by light dose spread in volumetric additive manufacturing.",
+            "11": "The model and deconvolution method enable prints previously beyond the capabilities of volumetric additive manufacturing.",
+            "12": "Examples of prints previously beyond the capabilities of volumetric additive manufacturing include a complex gyroid structure with variable thickness and a fine-toothed gear.",
+            "13": "The results position volumetric additive manufacturing as a mature 3D printing method.",
+            "14": "The results all but eliminate the gap to industry-standard print fidelity for volumetric additive manufacturing."
+          }
+        },
+        "viewpoints": [
+          "The diffusion of inhibiting molecules has been modeled as a convolution operation.",
+          "Modeling the diffusion of inhibiting molecules as a convolution operation has been shown to improve fidelity."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Additionally, including 3D imaging methods during fabrication can be used to experimentally correct for oxygen diffusion or other effects such as temperature-induced reaction kinetics [9], [26], [27], [28].",
+        "references": {
+          "9": {
+            "1": "In tomographic volumetric additive manufacturing, an entire three-dimensional object is solidified simultaneously.",
+            "2": "A liquid photopolymer volume is irradiated from multiple angles with dynamic light patterns in tomographic volumetric additive manufacturing.",
+            "3": "Tomographic additive manufacturing has the potential to produce complex parts with a higher throughput than layer-by-layer additive manufacturing.",
+            "4": "Tomographic additive manufacturing has the potential to produce complex parts with a wider range of printable materials than layer-by-layer additive manufacturing.",
+            "5": "The resolution of tomographic additive manufacturing is currently limited to 300 µm.",
+            "6": "A low-étendue illumination system enables the production of high-resolution features.",
+            "7": "An integrated feedback system can accurately control the photopolymerization kinetics over the entire build volume.",
+            "8": "An integrated feedback system improves the geometric fidelity of the object solidification.",
+            "9": "Hard and soft centimeter-scale parts are produced in less than 30 seconds.",
+            "10": "These parts have 80 µm positive features.",
+            "11": "These parts have 500 µm negative features.",
+            "12": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of advanced constructs.",
+            "13": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of functional constructs."
+          },
+          "26": {
+            "1": "Volumetric additive manufacturing techniques are a promising pathway to ultra-rapid light-based 3D fabrication.",
+            "2": "The widespread adoption of volumetric additive manufacturing techniques demands significant improvement in print fidelity.",
+            "3": "Volumetric additive manufacturing prints currently suffer from systematic undercuring of fine features.",
+            "4": "Systematic undercuring of fine features makes it impossible to print objects containing a wide range of feature sizes with volumetric additive manufacturing.",
+            "5": "The inability to print a wide range of feature sizes precludes the effective adoption of volumetric additive manufacturing in many applications.",
+            "6": "The reason for the limitation in volumetric additive manufacturing is light dose spread in the resin.",
+            "7": "Light dose spread in the resin is due to chemical diffusion and optical blurring.",
+            "8": "Light dose spread in the resin becomes significant for features ⪅0.5 mm.",
+            "9": "A model is developed that quantitatively predicts the variation of print time with feature size in volumetric additive manufacturing.",
+            "10": "A deconvolution method is demonstrated to correct for the error caused by light dose spread in volumetric additive manufacturing.",
+            "11": "The model and deconvolution method enable prints previously beyond the capabilities of volumetric additive manufacturing.",
+            "12": "Examples of prints previously beyond the capabilities of volumetric additive manufacturing include a complex gyroid structure with variable thickness and a fine-toothed gear.",
+            "13": "The results position volumetric additive manufacturing as a mature 3D printing method.",
+            "14": "The results all but eliminate the gap to industry-standard print fidelity for volumetric additive manufacturing."
+          },
+          "27": {
+            "1": "Light-based additive manufacturing techniques enable a rapid transition from object design to production.",
+            "2": "In light-based additive manufacturing approaches, a 3D object is typically built by successive polymerization of 2D layers in a photocurable resin.",
+            "3": "A recently demonstrated technique uses tomographic dose patterning to establish a 3D light dose distribution within a cylindrical glass vial of photoresin.",
+            "4": "Lensing distortion from the cylindrical vial is currently mitigated by an index matching bath around the print volume.",
+            "5": "Lensing distortion from the cylindrical vial is currently mitigated by a cylindrical lens.",
+            "6": "The hardware approaches of using an index matching bath or a cylindrical lens for distortion correction are shown to be unnecessary in this work.",
+            "7": "The lensing effect can be computationally corrected by resampling the parallel-beam radon transform into an aberrated geometry.",
+            "8": "The computational approach can correct for non-telecentricity inherent in most optical projection systems.",
+            "9": "The results are expected to underpin a more simple and flexible class of tomographic 3D printers.",
+            "10": "In these tomographic 3D printers, deviations from the assumed parallel-beam projection geometry are rectified computationally."
+          },
+          "28": []
+        },
+        "viewpoints": [
+          "3D imaging methods during fabrication can be used to experimentally correct for oxygen diffusion.",
+          "3D imaging methods can be used to experimentally correct for temperature-induced reaction kinetics during fabrication."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "The Radon transform assumes straight rays to compute the projected light patterns.",
+        "references": {},
+        "viewpoints": [
+          "The Radon transform assumes straight rays for computing projected light patterns."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Projection patterns can be thought of as “extruded” two-dimensional patterns that propagate as a collimated beam.",
+        "references": {},
+        "viewpoints": [
+          "Projection patterns can be thought of as “extruded” two-dimensional patterns.",
+          "Projection patterns propagate as a collimated beam."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "In practice, this is implemented by imaging a two-dimensional spatial light modulator into a cylindrical vial containing the photoresin and relying on the depth of focus of the imaging system to maintain a quasi-collimated image.",
+        "references": {},
+        "viewpoints": [
+          "A two-dimensional spatial light modulator is imaged into a cylindrical vial containing the photoresin.",
+          "The depth of focus of the imaging system is used to maintain a quasi-collimated image in practice."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "If the vial’s diameter is much larger than the depth of focus, blurring artifacts appear and compromise the resolution [9], [14].",
+        "references": {
+          "9": {
+            "1": "In tomographic volumetric additive manufacturing, an entire three-dimensional object is solidified simultaneously.",
+            "2": "A liquid photopolymer volume is irradiated from multiple angles with dynamic light patterns in tomographic volumetric additive manufacturing.",
+            "3": "Tomographic additive manufacturing has the potential to produce complex parts with a higher throughput than layer-by-layer additive manufacturing.",
+            "4": "Tomographic additive manufacturing has the potential to produce complex parts with a wider range of printable materials than layer-by-layer additive manufacturing.",
+            "5": "The resolution of tomographic additive manufacturing is currently limited to 300 µm.",
+            "6": "A low-étendue illumination system enables the production of high-resolution features.",
+            "7": "An integrated feedback system can accurately control the photopolymerization kinetics over the entire build volume.",
+            "8": "An integrated feedback system improves the geometric fidelity of the object solidification.",
+            "9": "Hard and soft centimeter-scale parts are produced in less than 30 seconds.",
+            "10": "These parts have 80 µm positive features.",
+            "11": "These parts have 500 µm negative features.",
+            "12": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of advanced constructs.",
+            "13": "Tomographic additive manufacturing is potentially suitable for the ultrafast fabrication of functional constructs."
+          },
+          "14": []
+        },
+        "viewpoints": [
+          "If the vial’s diameter is much larger than the depth of focus, blurring artifacts appear.",
+          "Blurring artifacts compromise resolution if the vial's diameter is much larger than the depth of focus."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "The space-bandwidth product of the light source is a key optical parameter, as it determines the depth of focus.",
+        "references": {},
+        "viewpoints": [
+          "The space-bandwidth product of the light source is a key optical parameter.",
+          "The space-bandwidth product of the light source determines the depth of focus."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "A diffraction-limited spot has the lowest space bandwidth product.",
+        "references": {},
+        "viewpoints": [
+          "A diffraction-limited spot has the lowest space bandwidth product."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Additionally, in this type of optical imaging configuration, the two-dimensional spatial light modulator modulates only the intensity, not the phase.",
+        "references": {},
+        "viewpoints": [
+          "In this optical imaging configuration, the two-dimensional spatial light modulator modulates only the intensity.",
+          "In this optical imaging configuration, the two-dimensional spatial light modulator does not modulate the phase."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Typically, digital micromirror devices (DMD) are used as reflective binary amplitude modulators in light-based 3D printers including TVAM.",
+        "references": {},
+        "viewpoints": [
+          "Digital micromirror devices are typically used as reflective binary amplitude modulators in light-based 3D printers.",
+          "Digital micromirror devices are used as reflective binary amplitude modulators in TVAM."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Here, one pixel on the 2D modulator corresponds to one pixel in the relayed image.",
+        "references": {},
+        "viewpoints": [
+          "One pixel on the 2D modulator corresponds to one pixel in the relayed image."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "In this work, we propose a light engine that harnesses the phase properties of the light beam.",
+        "references": {},
+        "viewpoints": [
+          "We propose a light engine that harnesses the phase properties of the light beam."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "We term this technique HoloVAM.",
+        "references": {},
+        "viewpoints": [
+          "We term this phase property technique HoloVAM."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Phase encoding of tomographic projections offers multiple advantages over amplitude modulation.",
+        "references": {},
+        "viewpoints": [
+          "Phase encoding of tomographic projections offers multiple advantages over amplitude modulation."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "First, phase-encoding improves light efficiency, as all pixels of the display can contribute to the projected intensity pattern.",
+        "references": {},
+        "viewpoints": [
+          "Phase-encoding improves light efficiency because all pixels of the display can contribute to the projected intensity pattern."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Since tomographic projection patterns typically exhibit high spatial frequency information, most pixels are dark.",
+        "references": {},
+        "viewpoints": [
+          "Tomographic projection patterns typically exhibit high spatial frequency information.",
+          "In tomographic projection patterns, most pixels are dark."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Amplitude encoding is therefore highly inefficient: typically, less than 1% of the incident light reaches the vial.",
+        "references": {},
+        "viewpoints": [
+          "Amplitude encoding is highly inefficient.",
+          "Typically, less than 1% of the incident light reaches the vial with amplitude encoding."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Second, phase-encoding allows a modification of the point spread function (PSF) to be encoded within the same hologram, allowing 3D digital control of the light beam, for example, by increasing the depth of focus using an Axicon phase to generate a Bessel beam, or by multi-plane projections of the same pattern by adding phases of Fresnel lenses, effectively creating a low-divergence projection.",
+        "references": {},
+        "viewpoints": [
+          "Phase-encoding allows modification of the point spread function (PSF) to be encoded within the same hologram.",
+          "Phase-encoding allows 3D digital control of the light beam.",
+          "Phase-encoding allows increasing the depth of focus using an Axicon phase to generate a Bessel beam.",
+          "Phase-encoding allows multi-plane projections of the same pattern by adding phases of Fresnel lenses.",
+          "Phase-encoding effectively creates a low-divergence projection."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "A self-healing beam, generated using a Helical Phase Plate (HPP) to produce an Optical Vortex (OV), enables printing within scattering materials.",
+        "references": {},
+        "viewpoints": [
+          "A self-healing beam is generated using a Helical Phase Plate to produce an Optical Vortex.",
+          "A self-healing beam enables printing within scattering materials."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "Herein, we use a projection system that converts a two-dimensional phase modulator to a two-dimensional intensity pattern in the Fourier plane.",
+        "references": {},
+        "viewpoints": [
+          "We use a projection system that converts a two-dimensional phase modulator to a two-dimensional intensity pattern in the Fourier plane."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "All pixels on the modulator contribute, by interference, to all pixels on the image plane.",
+        "references": {},
+        "viewpoints": [
+          "All pixels on the modulator contribute by interference to all pixels on the image plane."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "There are multiple iterative algorithms or machine learning approaches [29] that can generate two-dimensional input phase patterns to produce a user-specified intensity distribution in a desired plane or volume.",
+        "references": {
+          "29": {
+            "1": "This work studies the use of machine learning to generate digital holograms.",
+            "2": "This work studies the use of a Convolutional Neural Network (CNN) to generate digital holograms.",
+            "3": "This work compares CNNs to state-of-the-art iterative methods in terms of reconstruction quality.",
+            "4": "This work compares CNNs to state-of-the-art iterative methods in terms of computation time.",
+            "5": "CNNs only require a single pass through the network by a target image to generate a result.",
+            "6": "CNNs do not require tens or hundreds of expensive iterations as in the iterative methods.",
+            "7": "CNNs may be able to accomplish real-time hologram generation.",
+            "8": "Real-time hologram generation could open the technology to proper commercial use.",
+            "9": "A CNN built on the UNet architecture, capable of hologram generation, is presented in this work.",
+            "10": "The network is trained on 4096 images of varying spatial frequencies.",
+            "11": "The images used for training the network include both user-generated images and images from the DIV2K dataset.",
+            "12": "The CNN is compared to the Gerchberg–Saxton (GS) algorithm for hologram generation.",
+            "13": "The CNN is compared to modern and improved implementations of the GS algorithm.",
+            "14": "In reconstruction quality, the neural network outperforms the original implementation of the GS algorithm.",
+            "15": "The neural network outperforms the original GS implementation when evaluating Mean Square Error (MSE) on 64 unseen test images.",
+            "16": "The neural network outperforms the original GS implementation when evaluating geometric error (GE) on 64 unseen test images.",
+            "17": "The neural network outperforms the original GS implementation when evaluating Structural Similarity Index Measurement (SSIM) on 64 unseen test images.",
+            "18": "The neural network outperforms the original GS implementation when evaluating Peak Signal-Noise Ratio (PSNR) on 64 unseen test images.",
+            "19": "On the same test images, the network lacks behind modern, optimized GS implementations in all error measurements.",
+            "20": "On the same test images, the network lacks behind modern, optimized GS implementations in all accuracy measurements.",
+            "21": "The network achieves results at a rate 70–280 times faster than the iterative methods.",
+            "22": "The speed of the network depends on the particular implementation of the GS algorithm.",
+            "23": "The network corresponds to a possible generation rate of 32 FPS on average."
+          }
+        },
+        "viewpoints": [
+          "Multiple iterative algorithms can generate two-dimensional input phase patterns to produce a user-specified intensity distribution.",
+          "Machine learning approaches can generate two-dimensional input phase patterns to produce a user-specified intensity distribution.",
+          "The intensity distribution can be produced in a desired plane or volume using these approaches."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "The Gerchberg–Saxton (GS) iterative algorithm is one of the many methods to calculate a two-dimensional input phase pattern, which results in a desired intensity distribution pattern at the optical Fourier plane [30].",
+        "references": {
+          "30": []
+        },
+        "viewpoints": [
+          "The Gerchberg–Saxton iterative algorithm is a method to calculate a two-dimensional input phase pattern.",
+          "The Gerchberg–Saxton iterative algorithm results in a desired intensity distribution pattern at the optical Fourier plane."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Binary holograms computed with the Gerchberg-Saxton algorithm and encoded with Lee holograms have recently been used to control multiple foci in two-photon lithography, thereby increasing printing speed [31].",
+        "references": {
+          "31": {
+            "1": "There is a compelling demand for fabricating high-resolution complex three-dimensional structures in nanotechnology.",
+            "2": "Two-photon lithography largely satisfies the demand for fabricating high-resolution complex 3D structures.",
+            "3": "The low writing speed of two-photon lithography makes it impractical for many large-scale applications.",
+            "4": "The high cost of two-photon lithography makes it impractical for many large-scale applications.",
+            "5": "The digital holography-based TPL platform realizes parallel printing with up to 2000 individually programmable laser foci.",
+            "6": "The digital holography-based TPL platform fabricates complex 3D structures with 90 nm resolution.",
+            "7": "The digital holography-based TPL platform improves the fabrication rate to 2,000,000 voxels per second.",
+            "8": "The polymerization kinetics under a low-repetition-rate regenerative laser amplifier enable the promising result of the digital holography-based TPL platform.",
+            "9": "The smallest features are defined via a single laser pulse at 1 kHz under the digital holography-based TPL platform.",
+            "10": "Large-scale metastructures have been fabricated up to centimeter-scale to validate the predicted writing speed, resolution, and cost.",
+            "11": "Optical devices of up to centimeter-scale have been fabricated to validate the predicted writing speed, resolution, and cost.",
+            "12": "The results confirm that the digital holography-based TPL platform provides an effective solution for scaling up TPL for applications beyond laboratory prototyping."
+          }
+        },
+        "viewpoints": [
+          "Binary holograms computed with the Gerchberg-Saxton algorithm have been used to control multiple foci in two-photon lithography.",
+          "Lee holograms have been used to encode binary holograms computed with the Gerchberg-Saxton algorithm.",
+          "Using binary holograms and Lee holograms in two-photon lithography increases printing speed."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "In our approach, we demonstrate the use of phase encoding in tomographic VAM by printing millimeter-scale objects in an acrylate-based resin and in a hydrogel based on Gelatin Metacryloyl (GelMA) loaded with cells at a concentration of 0.5 million cells per mL.",
+        "references": {},
+        "viewpoints": [
+          "We demonstrate the use of phase encoding in tomographic VAM.",
+          "We use phase encoding to print millimeter-scale objects in an acrylate-based resin.",
+          "We use phase encoding to print millimeter-scale objects in a hydrogel based on Gelatin Metacryloyl loaded with cells.",
+          "The hydrogel is loaded with cells at a concentration of 0.5 million cells per mL."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "We demonstrate a printing time of less than 60 s with a single continuous-wave 40 mW laser diode at 405 nm (coupled with an efficiency of 33% in a single mode fiber) and reach negative features (holes) of 31.35 μm reliably.",
+        "references": {},
+        "viewpoints": [
+          "We demonstrate a printing time of less than 60 seconds using a single continuous-wave 40 mW laser diode at 405 nm.",
+          "The laser diode is coupled with an efficiency of 33% in a single mode fiber.",
+          "We reach negative features (holes) of 31.35 μm reliably."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "This short printing time is the result of the efficiency of the light engine.",
+        "references": {},
+        "viewpoints": [
+          "The short printing time is the result of the efficiency of the light engine."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "First, we show a comparison between the light efficiency for amplitude and phase encoding using a DMD as a spatial light modulator (SLM) [32], [33].",
+        "references": {
+          "32": [],
+          "33": []
+        },
+        "viewpoints": [
+          "We show a comparison between the light efficiency for amplitude and phase encoding.",
+          "A DMD is used as a spatial light modulator in the comparison."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "We then present a pipeline to compute holograms for tomographic projections, where tiled holograms with PSF modification reduce speckle noise and increase contrast, and the Lee Hologram method allows to use of the DMD as a fast phase modulator [32], [33], [34], [35], [36].",
+        "references": {
+          "32": [],
+          "33": [],
+          "34": {
+            "1": "Binary computer-generated holograms are similar to interferograms.",
+            "2": "Binary computer-generated holograms have fringe patterns hardclipped by a photographic process.",
+            "3": "The fringe locations in binary holograms can be determined by solving a grating equation.",
+            "4": "There are difficulties in using the approach of solving a grating equation to make binary Fourier transform holograms.",
+            "5": "The number of difficulties identified in using this approach is two.",
+            "6": "The discrete Fourier transform provides only data at discrete sampling locations.",
+            "7": "The phase angles calculated using the discrete Fourier transform are given as residues of the original phase angles.",
+            "8": "The residues of the original phase angles are obtained after multiples of 2π radians are removed.",
+            "9": "An accurate numerical method that circumvents the difficulties of using the grating equation for binary Fourier transform holograms is described in this paper.",
+            "10": "Three different techniques for storing amplitude information in binary computer-generated holograms are discussed.",
+            "11": "The different solution methods discussed in this paper are illustrated by computer-generated holograms.",
+            "12": "The different solution methods discussed in this paper are illustrated by the reconstructed images of computer-generated holograms."
+          },
+          "35": {
+            "1": "Speckle noise is a problem in coherent imaging techniques.",
+            "2": "Speckle noise is well-documented in Digital Holography.",
+            "3": "A method to reduce speckle noise is presented.",
+            "4": "The method is based on introducing a Digital Micromirror Device.",
+            "5": "The Digital Micromirror Device is used to phase modulate the illumination over the object.",
+            "6": "Multiple holograms with varying illuminations are recorded.",
+            "7": "The reconstructed intensities of multiple holograms are averaged.",
+            "8": "Averaging the reconstructed intensities results in a final improved image.",
+            "9": "A simple numerical resampling scheme is proposed.",
+            "10": "The numerical resampling scheme is intended to further improve noise reduction.",
+            "11": "The obtained results demonstrate the effectiveness of the hybrid approach."
+          },
+          "36": {
+            "1": "A time-division multiplexing method for computer-generated holograms (CGHs) is proposed.",
+            "2": "The time-division multiplexing method aims to solve the problem of the limited space-bandwidth product.",
+            "3": "A three-dimensional (3-D) scene is divided into multiple layers.",
+            "4": "The layers of the three-dimensional scene are at different depths.",
+            "5": "The computer-generated hologram (CGH) corresponding to each layer is calculated by an angular-spectrum algorithm.",
+            "6": "The angular-spectrum algorithm is effective at a wide range of propagation distances.",
+            "7": "All of the computer-generated holograms (CGHs) are combined into several group-CGHs.",
+            "8": "The group-CGHs are sequentially uploaded onto one spatial light modulator.",
+            "9": "The uploading of group-CGHs onto the spatial light modulator occurs at a high frame rate.",
+            "10": "The time-division processing of the computer-generated holograms (CGHs) benefits the space-bandwidth product.",
+            "11": "The proposed method provides a new approach to achieve high quality 3-D display.",
+            "12": "The proposed method involves fast and accurate computer-generated hologram (CGH) computation."
+          }
+        },
+        "viewpoints": [
+          "We present a pipeline to compute holograms for tomographic projections.",
+          "Tiled holograms with PSF modification reduce speckle noise.",
+          "Tiled holograms with PSF modification increase contrast.",
+          "The Lee Hologram method allows using the DMD as a fast phase modulator."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56852-4_with_abstracts",
+    "base_id": "s41467-025-56852-4",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56852-4_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

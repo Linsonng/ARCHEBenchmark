@@ -1,0 +1,522 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Since the last revision of the International System of Units (SI) in May 20, 2019, founded on seven fixed constants of nature [1] , [2] , any source generating an electric current which can be expressed in terms of e f , with e the elementary charge and f a frequency in Hz (s −1 ), provides a realisation of the ampere. Single-electron current sources (SECS) [3] , [4] , [5] , which are mesoscopic devices [6] , [7] , [8] , [9] , [10] , [11] , [12] , [13] , [14] , able to handle electrons one by one at a rate f e , are often presented as the most obvious way to realize the definition. However, achieving currents above 100 pA using GaAs and Si-based tunable-barrier SECS accurate to within a relative uncertainty better than 10 −7 remains a very challenging goal because of increasing error rates at high frequencies (~1 GHz) [15] , [16] . Very recently, as a consequence of the phase-charge quantum mechanical duality in Josephson junctions (JJ), dual Shapiro steps have been evidenced in superconducting nanowires and small JJ placed in high impedance environments under microwave radiation [17] , [18] , [19] . Here, the enhanced phase variance allows photon-assisted tunneling of fluxons ϕ 0 = h /2 e ( h is the Planck constant) and a synchronized transfer of Cooper pairs. Sharp current steps appearing at integer multiples of 2 e f e in the DC current-voltage characteristics could be promising candidates as quantum sources in the nanoampere range, although their flatness is still in debate [20] . More generally, for all mesoscopic current sources, the control of charge fluctuations, which are dependent on the device coupling with the electromagnetic environment, remains a crucial issue. Concurrently, another route to the SI realization consists in applying Ohm’s law to the Josephson voltage and quantum Hall resistance standards, since the Josephson effect [21] and the quantum Hall effect [22] now provide direct and universal realizations of the volt and the ohm from h /2 e and h / e 2 constants, respectively [2] , with a 10 −9 measurement uncertainty. The high accuracy of the Josephson voltage standards, which are series arrays of JJ, relies on the phase rigidity of macroscopic superconductors. Under application of dc current bias and a microwave radiation f J , the transfer through each JJ of one fluxon per period of the microwave tone is ensured and results in a quantized voltage V = n J ϕ 0 f J [23] , where n J is the number of JJ. If this quantized voltage can be accurately applied to a quantum Hall resistance standard (QHRS) in the ν =2 Landau level filling factor, taking advantage of the charge rigidity of the quantum Hall edge states, n J e charges are transferred at a rate f J through the QHRS of h /2 e 2 resistance. Hence, a current n J e f J , easily reaching microamperes, can be generated. Recently, a calculable current of 1 μA generated from the series connection of both quantum standards has been measured with a relative uncertainty of 1.3 × 10 −7 [24] , [25] , but the accuracy was reached owing to the very low-resistance of the ammeter (~0.1 mΩ). The main issue is therefore to implement the accurate series connection of the two quantum standards while realizing a true current source. The programmable quantum current generator (PQCG) [26] , [27] , [28] has addressed this issue by locking an electron flow to the current circulating in the loop formed by the quantum standards, with the help of a superconducting amplifier, allowing simultaneously the scaling over a wider range of current values. Its accuracy was demonstrated in the milliampere range with a relative measurement uncertainty of 10 −8 . This result was however obtained at the expense of corrections of the order of a few parts in 10 7 , originating from the non-ideal connection of the quantum standards, and determined after time consuming additional measurements. This impaired the final uncertainty, the simplicity and hence the full potential of the new quantum current standard. Here, we report on a next-generation PQCG able of delivering lower-noise currents, at the theoretical quantized values driven by the Josephson frequency, without any classical correction. This performance results from the implementation of a three-terminal connection of the QHRS, which allows a highly-accurate application of the Josephson voltage to the quantized resistance. We demonstrate the realization of the ampere with relative uncertainties below 10 −8 for different current levels, filling the gap between the milliampere range and the microampere range. This is achieved using a full quantum instrumentation made of five quantum devices, which opens the way to the realization of several electrical units in a single experiment.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Since the last revision of the International System of Units (SI) in May 20, 2019, founded on seven fixed constants of nature [1] , [2] , any source generating an electric current which can be expressed in terms of e f , with e the elementary charge and f a frequency in Hz (s −1 ), provides a realisation of the ampere.",
+        "references": {
+          "1": [],
+          "2": {
+            "1": "The revised \"Système international\" (SI) of units fixes two fundamental constants from quantum mechanics: the Planck constant h and the elementary charge e.",
+            "2": "The revised \"Système international\" (SI) of units explicitly endorses quantum mechanics by fixing these two constants.",
+            "3": "The evolution of the \"Système international\" (SI) of units highlights the importance of quantum mechanics.",
+            "4": "Quantum mechanics underpins the most accurate realizations of the units in the \"Système international\" (SI).",
+            "5": "From 20 May 2019 onwards, the definition of the kilogram is based on the fixed value of Planck constant h.",
+            "6": "From 20 May 2019 onwards, the definition of the ampere is based on the fixed value of elementary charge e.",
+            "7": "The new definitions of the kilogram and the ampere will particularly impact electrical metrology.",
+            "8": "The Josephson effect (JE) is used to maintain voltage standards with unprecedented reproducibility since 1990.",
+            "9": "The quantum Hall effect (QHE) is used to maintain resistance standards with unprecedented reproducibility since 1990.",
+            "10": "The Josephson effect (JE) and the quantum Hall effect (QHE) will henceforth provide realizations of the volt and the ohm without the uncertainties inherited from the older electromechanical definitions.",
+            "11": "The revised \"Système international\" (SI) will support the exploitation of quantum effects to realize the electrical units.",
+            "12": "The exploitation of quantum effects to realize electrical units will benefit end-users.",
+            "13": "The paper reviews the state-of-the-art of quantum standards.",
+            "14": "The paper discusses further applications and perspectives in electrical metrology."
+          }
+        },
+        "viewpoints": [
+          "The International System of Units (SI) was revised on May 20, 2019.",
+          "The revision of the International System of Units (SI) was founded on seven fixed constants of nature.",
+          "Any source generating an electric current can provide a realization of the ampere if it can be expressed in terms of the product of the elementary charge (e) and a frequency (f) in Hz (s −1)."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Single-electron current sources (SECS) [3] , [4] , [5] , which are mesoscopic devices [6] , [7] , [8] , [9] , [10] , [11] , [12] , [13] , [14] , able to handle electrons one by one at a rate f e , are often presented as the most obvious way to realize the definition.",
+        "references": {
+          "3": [],
+          "4": {
+            "1": "The control of electrons at the level of the elementary charge e was demonstrated experimentally in the 1980s.",
+            "2": "The production of an electrical current ef, or its integer multiple, at a drive frequency f has been a focus of research since the 1980s.",
+            "3": "The production of an electrical current ef, or its integer multiple, at a drive frequency f is important for metrological purposes.",
+            "4": "The review discusses the generic physical phenomena that influence single-electron charge transport.",
+            "5": "The review discusses the technical constraints that influence single-electron charge transport.",
+            "6": "The review presents a broad variety of proposed realizations of single-electron charge transport.",
+            "7": "Some proposed realizations of single-electron charge transport have proven experimentally to nearly fulfill the demanding needs of quantum metrology of electrical quantities in terms of transfer errors and transfer rate.",
+            "8": "Some proposed realizations of single-electron charge transport are currently wild ideas but are often potentially competitive if technical constraints can be lifted.",
+            "9": "The review discusses the important issue of readout of single-electron events.",
+            "10": "The review discusses potential error correction schemes based on single-electron events.",
+            "11": "The review provides an account of the status of single-electron current sources in the framework of electric quantum standards.",
+            "12": "The review provides an account of the status of single-electron current sources in the framework of the future international SI system of units.",
+            "13": "The review briefly discusses applications and uses of single-electron devices outside the metrological context."
+          },
+          "5": {
+            "1": "The revision of the International System of Units has consequences for electrical quantum metrology.",
+            "2": "The section discusses these consequences.",
+            "3": "Possible applications of single-electron transport pump devices based on quantum electrical effects are reviewed.",
+            "4": "Topical state-of-the-art metrology methodologies based on quantum electrical effects are reviewed.",
+            "5": "The focus of the review is on the potential for and implications of these methodologies on electrical metrology in the future."
+          },
+          "6": {
+            "1": "A capacitance standard was built based directly on the definition of capacitance.",
+            "2": "Single-electron tunneling devices were used to place N electrons of charge e onto a cryogenic capacitor C.",
+            "3": "The resulting voltage change ΔV was measured after placing N electrons onto the cryogenic capacitor.",
+            "4": "Repeated measurements of capacitance using the method of placing N electrons and measuring the resulting voltage change have a relative standard deviation of 0.3 × 10^{–6}.",
+            "5": "The formula used for measuring capacitance in this method is C = Ne/ΔV.",
+            "6": "The capacitance standard offers a natural basis for capacitance.",
+            "7": "The capacitance standard is analogous to the Josephson effect for voltage.",
+            "8": "The capacitance standard is analogous to the quantum Hall effect for resistance."
+          },
+          "7": {
+            "1": "The rise of single electronics about two decades ago laid the basis for synchronous manipulation of individual electrons in solid-state devices.",
+            "2": "Ultrasmall structures in a low-temperature environment form an ideal domain for addressing electrons individually.",
+            "3": "The metrological triangle involves testing voltage from the Josephson effect and resistance from the quantum Hall effect against current via Ohm's law.",
+            "4": "The purpose of the metrological triangle is to check the consistency of the fundamental constants of nature, ℏ and e.",
+            "5": "There have been several attempts to create a metrological current source.",
+            "6": "The metrological current source needs to comply with demanding criteria of extreme accuracy, high yield, and implementation with not too many control parameters.",
+            "7": "The unexpected concept proposed and proven is a hybrid normal-metal–superconductor turnstile.",
+            "8": "The hybrid normal-metal–superconductor turnstile is in the form of a one-island single-electron transistor with one gate.",
+            "9": "The hybrid normal-metal–superconductor turnstile demonstrates robust current plateaux at multiple levels of ef at frequency f."
+          },
+          "8": {
+            "1": "The Electron Counting Capacitance Standard aims to close the Quantum Metrological Triangle.",
+            "2": "PTB is currently pursuing the Electron Counting Capacitance Standard.",
+            "3": "The target precision for closing the Quantum Metrological Triangle is a few parts in 10^{7}.",
+            "4": "Considerable progress has been achieved with a new generation of single-electron tunnelling devices.",
+            "5": "The paper reports the recent progress with single-electron tunnelling devices.",
+            "6": "A five-junction R-pump was operated with a relative charge transfer error of five electrons in 10^{7}.",
+            "7": "The five-junction R-pump was used to successfully perform single-electron charging of a cryogenic capacitor.",
+            "8": "The preliminary result for the single-electron charge quantum has an uncertainty of less than two parts in 10^{6}.",
+            "9": "The preliminary result for the single-electron charge quantum is consistent with the value of the elementary charge."
+          },
+          "9": {
+            "1": "Electron pumps generate a macroscopic electric current.",
+            "2": "Electron pumps operate by controlled manipulation of single electrons.",
+            "3": "There has been intensive research towards a quantum current standard over the last 25 years.",
+            "4": "Making a fast and accurate quantised electron pump has proved extremely difficult.",
+            "5": "The accuracy of a semiconductor quantum dot pump can be dramatically improved by using specially designed gate drive waveforms.",
+            "6": "The pump can generate a current of up to 150 pA.",
+            "7": "A current of 150 pA corresponds to almost a billion electrons per second.",
+            "8": "The pump has an experimentally demonstrated current accuracy better than 1.2 parts per million (ppm).",
+            "9": "There is strong evidence, based on fitting data to a model, that the true accuracy of the pump is approaching 0.01 ppm.",
+            "10": "This type of pump is a promising candidate for further development as a realisation of the SI base unit ampere.",
+            "11": "The development of this pump as a realisation of the SI base unit ampere follows a re-definition of the ampere in terms of a fixed value of the elementary charge."
+          },
+          "10": {
+            "1": "High-accuracy measurements of quantized current were performed.",
+            "2": "The quantized current was sourced by a tunable-barrier single-electron pump.",
+            "3": "The tunable-barrier single-electron pump operated at frequencies up to 1 GHz.",
+            "4": "The measurements of quantized current were performed with an ultrastable picoammeter instrument.",
+            "5": "The ultrastable picoammeter instrument is traceable to the Josephson effects.",
+            "6": "The ultrastable picoammeter instrument is traceable to the quantum Hall effects.",
+            "7": "Current quantization according to I = ef was confirmed at f = 545 MHz.",
+            "8": "e represents the elementary charge in the formula I = ef.",
+            "9": "The total relative uncertainty in the confirmation of current quantization was 0.2 ppm.",
+            "10": "The confirmation of current quantization improved the state of the art by about a factor of 5.",
+            "11": "The accuracy of a possible future quantum current standard based on single-electron transport was experimentally validated.",
+            "12": "The experimentally validated accuracy is better than the best indirect realization of the ampere within the present SI."
+          },
+          "11": {
+            "1": "Characterizations of single-electron pumps have been conducted at the highest accuracy level.",
+            "2": "The highest accuracy level in these characterizations was enabled by improvements in the small-current measurement technique.",
+            "3": "A new accuracy record in measurements on single-electron pumps was demonstrated with the improved small-current measurement technique.",
+            "4": "The new accuracy record for measurements on single-electron pumps is 0.16 µA · A^{−1} of relative combined uncertainty.",
+            "5": "The measurement achieving the new accuracy record was completed in less than 1 day.",
+            "6": "Robustness tests of pump operation were conducted on a sub-ppm level.",
+            "7": "The robustness tests revealed good stability of tunable-barrier single-electron pumps.",
+            "8": "The tunable-barrier single-electron pumps showed good stability against variations in the operating parameters."
+          },
+          "12": {
+            "1": "High-speed and high-accuracy pumping of a single electron is crucial for realizing an accurate current source.",
+            "2": "An accurate current source is a promising candidate for a quantum current standard.",
+            "3": "The evaluation uses a high-accuracy measurement system traceable to primary standards.",
+            "4": "The accuracy of a Si tunable-barrier single-electron pump driven by a single sinusoidal signal is evaluated.",
+            "5": "The pump operates at frequencies up to 6.5 GHz.",
+            "6": "The pump produces a current of more than 1 nA.",
+            "7": "At 1 GHz, the current plateau has a level of about 160 pA.",
+            "8": "At 1 GHz, the current plateau is accurate to better than 0.92 ppm.",
+            "9": "The accuracy of 0.92 ppm at 1 GHz is a record value for 1-GHz operation.",
+            "10": "At 2 GHz, a current plateau offset from 1ef (~320 pA) by 20 ppm is observed.",
+            "11": "The current quantization accuracy is improved by applying a magnetic field of 14 T.",
+            "12": "A current level of 1ef is observed with an accuracy of a few ppm.",
+            "13": "Gigahertz single-electron pumping with a high accuracy is presented.",
+            "14": "The presented gigahertz single-electron pumping with a high accuracy is an important step towards a metrological current standard."
+          },
+          "13": {
+            "1": "Single-electron pumps based on semiconductor quantum dots are promising candidates for the emerging quantum standard of electrical current.",
+            "2": "Single-electron pumps based on semiconductor quantum dots can transfer discrete charges with part-per-million (ppm) precision.",
+            "3": "Single-electron pumps based on semiconductor quantum dots can transfer discrete charges in nanosecond time scales.",
+            "4": "A metal-oxide-semiconductor silicon quantum dot is employed to experimentally demonstrate high-accuracy gigahertz single-electron pumping.",
+            "5": "The number of electrons trapped in the metal-oxide-semiconductor silicon quantum dot is determined by the thermal distribution in the reservoir leads.",
+            "6": "The measurement of the averaged pump current is traceable to primary voltage and resistance standards.",
+            "7": "The averaged pump current over the quantized plateau is driven by a 1-GHz sinusoidal wave in the absence of a magnetic field.",
+            "8": "The averaged pump current over the quantized plateau is equal to the ideal value of ef within a measurement uncertainty as low as 0.27 ppm."
+          },
+          "14": []
+        },
+        "viewpoints": [
+          "Single-electron current sources (SECS) are mesoscopic devices.",
+          "Single-electron current sources (SECS) can handle electrons one by one at a rate f e.",
+          "Single-electron current sources (SECS) are often presented as the most obvious way to realize the ampere."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "However, achieving currents above 100 pA using GaAs and Si-based tunable-barrier SECS accurate to within a relative uncertainty better than 10 −7 remains a very challenging goal because of increasing error rates at high frequencies (~1 GHz) [15] , [16].",
+        "references": {
+          "15": {
+            "1": "The observation of nonadiabatic excitations of single electrons in a quantum dot has been reported.",
+            "2": "A tunable-barrier single-electron pump has been used to develop a method for reading out the excitation spectrum of a quantum dot.",
+            "3": "A tunable-barrier single-electron pump has been used to develop a method for reading out the level population of a quantum dot.",
+            "4": "The pump current is used as a probe in the method for reading out the excitation spectrum and level population of a quantum dot.",
+            "5": "Electrons are excited to higher levels when the potential well is deformed at subnanosecond time scales.",
+            "6": "The excited states of electrons follow a Fock-Darwin spectrum in the presence of a perpendicular magnetic field.",
+            "7": "The experiments provide a simple model system to study nonadiabatic processes of quantum particles."
+          },
+          "16": []
+        },
+        "viewpoints": [
+          "It is challenging to achieve currents above 100 pA using GaAs and Si-based tunable-barrier SECS with a relative uncertainty better than 10 −7.",
+          "The challenge in achieving accurate currents above 100 pA using GaAs and Si-based tunable-barrier SECS is due to increasing error rates at high frequencies (~1 GHz)."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Very recently, as a consequence of the phase-charge quantum mechanical duality in Josephson junctions (JJ), dual Shapiro steps have been evidenced in superconducting nanowires and small JJ placed in high impedance environments under microwave radiation [17] , [18] , [19].",
+        "references": {
+          "17": {
+            "1": "The a.c. Josephson effect was predicted in 1962.",
+            "2": "The a.c. Josephson effect was observed experimentally in 1963 as quantized 'voltage steps'.",
+            "3": "The 'voltage steps' observed in the a.c. Josephson effect are known as the Shapiro steps.",
+            "4": "The a.c. Josephson effect involves photon-assisted tunnelling of Cooper pairs.",
+            "5": "The a.c. Josephson effect is among the most fundamental phenomena of quantum mechanics.",
+            "6": "The a.c. Josephson effect is vital for metrological quantum voltage standards.",
+            "7": "The a.c. coherent quantum phase slip (CQPS) is the physically dual effect of the a.c. Josephson effect.",
+            "8": "The CQPS involves photon-assisted tunnelling of magnetic fluxes through a superconducting nanowire.",
+            "9": "The CQPS is envisaged to reveal itself as quantized 'current steps'.",
+            "10": "The a.c. CQPS has basic physical significance.",
+            "11": "The a.c. CQPS is practically important for future current standards.",
+            "12": "The a.c. CQPS is a missing element for closing the quantum metrology triangle.",
+            "13": "In 2012, the CQPS was demonstrated as superposition of magnetic flux quanta.",
+            "14": "The demonstration of the CQPS occurred in superconducting nanowires.",
+            "15": "The direct flat current steps in superconductors were unattainable.",
+            "16": "The unattainability of direct flat current steps was due to a lack of appropriate materials.",
+            "17": "Challenges in circuit engineering also contributed to the unattainability of direct flat current steps.",
+            "18": "Direct flat current steps in superconductors were the only unavailable basic effect of superconductivity to date.",
+            "19": "The authors report the direct observation of the dual Shapiro steps.",
+            "20": "The observation of the dual Shapiro steps occurred in a superconducting nanowire.",
+            "21": "The sharp steps are clear up to 26 GHz frequency.",
+            "22": "The sharp steps have current values of 8.3 nA.",
+            "23": "The observation of sharp steps is limited by the present set-up bandwidth.",
+            "24": "The current steps were theoretically predicted in small Josephson junctions 30 years ago.",
+            "25": "Unavoidable broadening in Josephson junctions prevents the direct experimental observation of current steps.",
+            "26": "The problem of unavoidable broadening in Josephson junctions is solved by placing a thin NbN nanowire in an inductive environment."
+          },
+          "18": {
+            "1": "The modern primary voltage standard is based on the a.c. Josephson effect and the ensuing Shapiro steps.",
+            "2": "In the a.c. Josephson effect, a microwave tone applied to a Josephson junction yields a constant voltage hf/2e.",
+            "3": "The constant voltage hf/2e is determined by the microwave frequency f, Planck’s constant h, and the electron charge e.",
+            "4": "Duality arguments for current and voltage have long suggested the possibility of dual Shapiro steps.",
+            "5": "A Josephson junction device could produce current steps with heights determined only by the applied frequency according to duality arguments.",
+            "6": "An ultrasmall Josephson junction is embedded in a high impedance array of larger junctions to reveal dual Shapiro steps.",
+            "7": "For multiple frequencies, the a.c. response of the circuit is synchronized with the microwave tone at frequency f.",
+            "8": "Flat steps emerge in the d.c. response with current 2ef, equal to the transport of a Cooper pair per tone period.",
+            "9": "This work extends phase–charge duality to Josephson circuits.",
+            "10": "Extending phase–charge duality to Josephson circuits opens a broad range of possibilities in the field of circuit quantum electrodynamics.",
+            "11": "This work is an important step towards the long-sought closure of the quantum metrology electrical triangle."
+          },
+          "19": {
+            "1": "Bloch oscillations were predicted theoretically to occur in small Josephson junctions.",
+            "2": "Bloch oscillations are the quantum dual to Josephson oscillations.",
+            "3": "The prediction of Bloch oscillations leads to the emergence of quantized current steps, known as dual Shapiro steps.",
+            "4": "Dual Shapiro steps occur when Bloch oscillations are synchronized to an external microwave signal.",
+            "5": "Dual Shapiro steps potentially enable a fundamental standard of current I.",
+            "6": "The current I is defined via the frequency f of the external signal and the elementary charge e.",
+            "7": "The equation for the current is I = ± n × 2ef, where n is a natural number.",
+            "8": "The fundamental relation I = ± n × 2ef is realized by synchronizing Bloch oscillations in small Al/AlOₓ/Al Josephson junctions to sinusoidal drives.",
+            "9": "The frequencies of the sinusoidal drives range from 1 to 6 GHz.",
+            "10": "Dual Shapiro steps are observed up to a current I ≈ 3 nA.",
+            "11": "The investigation of a pulsed drive regime is inspired by today's voltage standards.",
+            "12": "The investigation aims to further confirm the duality relation in Josephson junctions.",
+            "13": "An asymmetric pattern of dual Shapiro steps is observed in the pulsed drive regime.",
+            "14": "This work confirms quantum duality effects in Josephson junctions.",
+            "15": "This work paves the way towards a range of applications in quantum metrology.",
+            "16": "The applications are based on well-established fabrication techniques.",
+            "17": "The applications are based on straightforward circuit design."
+          }
+        },
+        "viewpoints": [
+          "There is a phase-charge quantum mechanical duality in Josephson junctions (JJ).",
+          "Dual Shapiro steps have been evidenced in superconducting nanowires placed in high impedance environments under microwave radiation.",
+          "Dual Shapiro steps have been evidenced in small Josephson junctions placed in high impedance environments under microwave radiation."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Here, the enhanced phase variance allows photon-assisted tunneling of fluxons ϕ 0 = h /2 e ( h is the Planck constant) and a synchronized transfer of Cooper pairs.",
+        "references": {},
+        "viewpoints": [
+          "The enhanced phase variance allows photon-assisted tunneling of fluxons where ϕ 0 equals h /2 e (h is the Planck constant).",
+          "The enhanced phase variance allows a synchronized transfer of Cooper pairs."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Sharp current steps appearing at integer multiples of 2 e f e in the DC current-voltage characteristics could be promising candidates as quantum sources in the nanoampere range, although their flatness is still in debate [20].",
+        "references": {
+          "20": []
+        },
+        "viewpoints": [
+          "Sharp current steps appear at integer multiples of 2 e f e in the DC current-voltage characteristics.",
+          "Sharp current steps in the DC current-voltage characteristics could be promising candidates as quantum sources in the nanoampere range.",
+          "The flatness of sharp current steps in the DC current-voltage characteristics is still in debate."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "More generally, for all mesoscopic current sources, the control of charge fluctuations, which are dependent on the device coupling with the electromagnetic environment, remains a crucial issue.",
+        "references": {},
+        "viewpoints": [
+          "The control of charge fluctuations remains a crucial issue for all mesoscopic current sources.",
+          "Charge fluctuations are dependent on the device coupling with the electromagnetic environment."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Concurrently, another route to the SI realization consists in applying Ohm’s law to the Josephson voltage and quantum Hall resistance standards, since the Josephson effect [21] and the quantum Hall effect [22] now provide direct and universal realizations of the volt and the ohm from h /2 e and h / e 2 constants, respectively [2] , with a 10 −9 measurement uncertainty.",
+        "references": {
+          "21": [],
+          "22": {
+            "1": "The Hall voltage of a two-dimensional electron gas is measured.",
+            "2": "A two-dimensional electron gas is realized with a silicon metal-oxide-semiconductor field-effect transistor.",
+            "3": "Hall resistance at particular, experimentally well-defined surface carrier concentrations has fixed values.",
+            "4": "The fixed values of Hall resistance depend only on the fine-structure constant and speed of light.",
+            "5": "The fixed values of Hall resistance are insensitive to the geometry of the device.",
+            "6": "Preliminary data on the Hall resistance measurements are reported."
+          },
+          "2": {
+            "1": "The revised \"Système international\" (SI) of units fixes two fundamental constants from quantum mechanics: the Planck constant h and the elementary charge e.",
+            "2": "The revised \"Système international\" (SI) of units explicitly endorses quantum mechanics by fixing these two constants.",
+            "3": "The evolution of the \"Système international\" (SI) of units highlights the importance of quantum mechanics.",
+            "4": "Quantum mechanics underpins the most accurate realizations of the units in the \"Système international\" (SI).",
+            "5": "From 20 May 2019 onwards, the definition of the kilogram is based on the fixed value of Planck constant h.",
+            "6": "From 20 May 2019 onwards, the definition of the ampere is based on the fixed value of elementary charge e.",
+            "7": "The new definitions of the kilogram and the ampere will particularly impact electrical metrology.",
+            "8": "The Josephson effect (JE) is used to maintain voltage standards with unprecedented reproducibility since 1990.",
+            "9": "The quantum Hall effect (QHE) is used to maintain resistance standards with unprecedented reproducibility since 1990.",
+            "10": "The Josephson effect (JE) and the quantum Hall effect (QHE) will henceforth provide realizations of the volt and the ohm without the uncertainties inherited from the older electromechanical definitions.",
+            "11": "The revised \"Système international\" (SI) will support the exploitation of quantum effects to realize the electrical units.",
+            "12": "The exploitation of quantum effects to realize electrical units will benefit end-users.",
+            "13": "The paper reviews the state-of-the-art of quantum standards.",
+            "14": "The paper discusses further applications and perspectives in electrical metrology."
+          }
+        },
+        "viewpoints": [
+          "Another route to the SI realization consists of applying Ohm’s law to the Josephson voltage and quantum Hall resistance standards.",
+          "The Josephson effect provides a direct and universal realization of the volt from the constant h /2 e.",
+          "The quantum Hall effect provides a direct and universal realization of the ohm from the constant h / e 2.",
+          "The realizations of the volt and the ohm via the Josephson effect and the quantum Hall effect have a measurement uncertainty of 10 −9."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "The high accuracy of the Josephson voltage standards, which are series arrays of JJ, relies on the phase rigidity of macroscopic superconductors.",
+        "references": {},
+        "viewpoints": [
+          "The Josephson voltage standards consist of series arrays of Josephson junctions.",
+          "The high accuracy of the Josephson voltage standards relies on the phase rigidity of macroscopic superconductors."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Under application of dc current bias and a microwave radiation f J, the transfer through each JJ of one fluxon per period of the microwave tone is ensured and results in a quantized voltage V = n J ϕ 0 f J [23], where n J is the number of JJ.",
+        "references": {
+          "23": []
+        },
+        "viewpoints": [
+          "The application of dc current bias and microwave radiation f J ensures the transfer through each Josephson junction of one fluxon per period of the microwave tone.",
+          "The transfer through each Josephson junction results in a quantized voltage V = n J ϕ 0 f J, where n J is the number of Josephson junctions."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "If this quantized voltage can be accurately applied to a quantum Hall resistance standard (QHRS) in the ν =2 Landau level filling factor, taking advantage of the charge rigidity of the quantum Hall edge states, n J e charges are transferred at a rate f J through the QHRS of h /2 e 2 resistance.",
+        "references": {},
+        "viewpoints": [
+          "The quantized voltage can be accurately applied to a quantum Hall resistance standard (QHRS) in the ν = 2 Landau level filling factor.",
+          "The accurate application of the quantized voltage uses the charge rigidity of the quantum Hall edge states.",
+          "n J e charges are transferred at a rate f J through the quantum Hall resistance standard of h /2 e 2 resistance."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Hence, a current n J e f J, easily reaching microamperes, can be generated.",
+        "references": {},
+        "viewpoints": [
+          "A current n J e f J can be generated.",
+          "The generated current can easily reach microamperes."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Recently, a calculable current of 1 μA generated from the series connection of both quantum standards has been measured with a relative uncertainty of 1.3 × 10 −7 [24], [25], but the accuracy was reached owing to the very low-resistance of the ammeter (~0.1 mΩ).",
+        "references": {
+          "24": [],
+          "25": {
+            "1": "This paper provides a comprehensive overview of the historical background related to the generation and measurement of small electric currents.",
+            "2": "This paper provides a comprehensive overview of the current status related to the generation and measurement of small electric currents.",
+            "3": "This paper provides a comprehensive overview of the future prospects related to the generation and measurement of small electric currents.",
+            "4": "The paper caters to nonprofessional readers.",
+            "5": "The aim of the paper is to make the information comprehensible to nonprofessional readers.",
+            "6": "A range of technologies applicable in basic research contexts are introduced.",
+            "7": "A range of technologies applicable in industrial contexts are introduced.",
+            "8": "Quantum-mechanical approaches have been the focus of extensive efforts in the field of generating and measuring small electric currents.",
+            "9": "Quantum-mechanical approaches encompass various types of single-electron pumps.",
+            "10": "Quantum-mechanical approaches encompass combinations of the Josephson voltage standard and the quantized Hall resistance standard.",
+            "11": "Quantum-mechanical methods offer a reliable means of generating small electric currents.",
+            "12": "Quantum-mechanical methods offer a precise means of generating small electric currents.",
+            "13": "Quantum-mechanical methods offer a reliable means of measuring small electric currents.",
+            "14": "Quantum-mechanical methods offer a precise means of measuring small electric currents.",
+            "15": "Quantum-mechanical methods minimize uncertainties in generating and measuring small electric currents.",
+            "16": "Operating complex cryogenic systems requires specialized expertise.",
+            "17": "Conventional room-temperature systems are easier to handle than complex cryogenic systems.",
+            "18": "Conventional room-temperature systems employ low-noise amplifiers.",
+            "19": "Conventional room-temperature systems use stable high-value resistors in conjunction with low-noise amplifiers.",
+            "20": "Conventional room-temperature systems use capacitors charged with voltage ramps in conjunction with low-noise amplifiers.",
+            "21": "The paper examines the characteristics of quantum approaches from multiple perspectives.",
+            "22": "The paper examines the characteristics of classical approaches from multiple perspectives.",
+            "23": "The paper outlines current applications for the generation and measurement of small electric currents.",
+            "24": "The paper outlines future applications for the generation and measurement of small electric currents."
+          }
+        },
+        "viewpoints": [
+          "A calculable current of 1 μA has been generated from the series connection of both quantum standards.",
+          "The calculable current of 1 μA has been measured with a relative uncertainty of 1.3 × 10 −7.",
+          "The accuracy of the 1 μA current measurement was due to the very low resistance of the ammeter (~0.1 mΩ)."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The main issue is therefore to implement the accurate series connection of the two quantum standards while realizing a true current source.",
+        "references": {},
+        "viewpoints": [
+          "The main issue is to implement the accurate series connection of the two quantum standards.",
+          "Another main issue is to realize a true current source while connecting the two quantum standards."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The programmable quantum current generator (PQCG) [26], [27], [28] has addressed this issue by locking an electron flow to the current circulating in the loop formed by the quantum standards, with the help of a superconducting amplifier, allowing simultaneously the scaling over a wider range of current values.",
+        "references": {
+          "26": {
+            "1": "A programmable quantum current standard (PQCS) can be realized from the Josephson voltage standard and the quantum Hall resistance standard (QHR).",
+            "2": "The realization of PQCS involves exploiting the multiple connection technique provided by the quantum Hall effect (QHE).",
+            "3": "The realization of PQCS involves exploiting the exactness of the cryogenic current comparator.",
+            "4": "The programmable quantum current standard (PQCS) could lead to breakthroughs in electrical metrology.",
+            "5": "The PQCS could enable the realization of a programmable quantum current source.",
+            "6": "The PQCS could enable the realization of a quantum ampere-meter.",
+            "7": "The PQCS could enable a simplified closure of the quantum metrological triangle.",
+            "8": "Very accurate universality tests of the quantum Hall effect (QHE) could be performed by comparing programmable quantum current standards (PQCS) based on different quantum Hall resistances (QHRs)."
+          },
+          "27": [],
+          "28": {
+            "1": "A programmable quantum current generator has been developed based on the application of Ohm's law to quantum voltage and resistance standards.",
+            "2": "The programmable quantum current generator demonstrated a realization of the ampere from the elementary charge.",
+            "3": "The realization of the ampere from the elementary charge has a $10^{-8}$ relative uncertainty.",
+            "4": "Improvements have been made to the programmable quantum current generator.",
+            "5": "The improvements led to a noise reduction of the generated quantized current.",
+            "6": "The improved quantum current generator is used to calibrate different ammeters.",
+            "7": "The calibration of different ammeters using the improved quantum current generator results in lower measurement uncertainties.",
+            "8": "Measurements of the quantized current were conducted using a calibrated Ultrastable Low-Noise Current Amplifier (ULCA).",
+            "9": "The realizations of the ampere at PTB and LNE in the range ±50 μA agreed to -3.7 parts in 10⁷.",
+            "10": "The realizations of the ampere at PTB and LNE had a combined standard uncertainty of 3.1 parts in 10⁷.",
+            "11": "The coverage factor for the standard uncertainty in the realizations of the ampere at PTB and LNE is kₐ = 1."
+          }
+        },
+        "viewpoints": [
+          "The programmable quantum current generator (PQCG) addresses the issue of accurate series connection of quantum standards.",
+          "The PQCG locks an electron flow to the current circulating in the loop formed by the quantum standards.",
+          "The PQCG uses a superconducting amplifier.",
+          "The PQCG allows simultaneous scaling over a wider range of current values."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Its accuracy was demonstrated in the milliampere range with a relative measurement uncertainty of 10 −8.",
+        "references": {},
+        "viewpoints": [
+          "The accuracy of the PQCG was demonstrated in the milliampere range.",
+          "The PQCG had a relative measurement uncertainty of 10 −8."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "This result was however obtained at the expense of corrections of the order of a few parts in 10 7, originating from the non-ideal connection of the quantum standards, and determined after time consuming additional measurements.",
+        "references": {},
+        "viewpoints": [
+          "The result of PQCG accuracy was obtained at the expense of corrections of the order of a few parts in 10 7.",
+          "The corrections were due to the non-ideal connection of the quantum standards.",
+          "The corrections were determined after time-consuming additional measurements."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "This impaired the final uncertainty, the simplicity and hence the full potential of the new quantum current standard.",
+        "references": {},
+        "viewpoints": [
+          "The final uncertainty of the new quantum current standard was impaired.",
+          "The simplicity of the new quantum current standard was impaired.",
+          "The full potential of the new quantum current standard was impaired."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Here, we report on a next-generation PQCG able of delivering lower-noise currents, at the theoretical quantized values driven by the Josephson frequency, without any classical correction.",
+        "references": {},
+        "viewpoints": [
+          "The next-generation PQCG can deliver lower-noise currents.",
+          "The next-generation PQCG delivers currents at the theoretical quantized values driven by the Josephson frequency.",
+          "The next-generation PQCG delivers currents without any classical correction."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "This performance results from the implementation of a three-terminal connection of the QHRS, which allows a highly-accurate application of the Josephson voltage to the quantized resistance.",
+        "references": {},
+        "viewpoints": [
+          "The performance of the next-generation PQCG results from the implementation of a three-terminal connection of the quantum Hall resistance standard.",
+          "The three-terminal connection of the quantum Hall resistance standard allows a highly-accurate application of the Josephson voltage to the quantized resistance."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "We demonstrate the realization of the ampere with relative uncertainties below 10 −8 for different current levels, filling the gap between the milliampere range and the microampere range.",
+        "references": {},
+        "viewpoints": [
+          "The realization of the ampere is demonstrated with relative uncertainties below 10 −8.",
+          "The realization of the ampere covers different current levels.",
+          "The realization of the ampere fills the gap between the milliampere range and the microampere range."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "This is achieved using a full quantum instrumentation made of five quantum devices, which opens the way to the realization of several electrical units in a single experiment.",
+        "references": {},
+        "viewpoints": [
+          "The realization of the ampere with reduced uncertainties is achieved using a full quantum instrumentation made of five quantum devices.",
+          "The use of full quantum instrumentation made of five quantum devices opens the way to the realization of several electrical units in a single experiment."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56413-9_with_abstracts",
+    "base_id": "s41467-025-56413-9",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56413-9_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

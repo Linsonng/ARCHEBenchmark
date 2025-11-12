@@ -1,0 +1,881 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Capillary waves, also known as ripples, are surface tension -dominated mechanical perturbations of a liquid-gas interface. Evocations date back at least to the first century AD, when Pliny the Elder was reporting on the absence of ripples in the wake of ships releasing surfactants [1] . The earliest description of capillary waves in the modern scientific sense is attributed to John Scott Russell [2] . His investigation portrayed the orbital motion of the water molecules carried on by the swelling interface and measured propagation speeds in the range 0.2–0.9 m s −1 . The influence of a nearby seabed on the wave motion has been first assessed for the case of gravity-driven waves with longer wavelength λ , in a configuration of intermediate depth of the water medium, with a first linear model proposed by Sir Airy in 1841 [3] , further developed to account for weak nonlinear effects by Sir Stokes [4] in 1847. Later extensions to these models would consider e.g., high wave steepness [5] and pure capillary waves [6] . Together, these works would contribute in particular to describing a wavenumber-to-frequency relation, commonly called dispersion relation. For a wave travelling at an interface between two fluid phases (i.e., an interfacial wave) a and b , the angular frequency Ω( k ) writes $${\\Omega }^{2}(k)=\\frac{gk\\mid{\\rho }_{{{{\\rm{a}}}}}-{\\rho }_{{{{\\rm{b}}}}}\\mid+\\sigma{k}^{3}}{{\\rho }_{{{{\\rm{a}}}}}\\coth (k{h}_{{{{\\rm{a}}}}})+{\\rho }_{{{{\\rm{b}}}}}\\coth (k{h}_{{{{\\rm{b}}}}})},$$ (1) where g and σ are gravity and surface tension. k = 2 π / λ is the wavenumber. ρ a and h a (respectively, ρ b and h b ) are the density and thickness of the fluid phase a (respectively, b ). At an air-water interface, a minimum for the wave propagation speed, here referred to as the phase speed c p = Ω( k )/ k , can be found for λ ≃ 1.7 cm and equals ca . 0.23 m s −1 , in a condition of deep water ( h ≫ λ ). Interfacial waves on water are generally categorised, according to their wavelength into two distinct groups, capillary ( λ ≤ 1.7 cm) and gravity ( λ ≥ 1.7 cm) waves, mainly governed by distinct restoring forces, respectively surface tension and gravity [7] . Capillary and gravity waves are dispersive, meaning that their propagation speed depends on their wavelength, according to Eq. ( 1 ), a graphical representation of which is provided as Supplementary Information ( SI ), in Fig. S1 . The wave-driven orbital motion of water molecules constrained by a shallow water configuration ( h ≪ λ ) experiences a no-slip boundary condition at the water-bottom interface [8] , causing the wave to slow down [3] and its amplitude to increase [9] . This effect is known as wave shoaling and is opposed to the restoring forces, such as gravity and interfacial tensions, which try to restore the equilibrium state. The pinning contact of the water interface to the walls of a channel in which a wave travels can also exert an additional restoring force, opposite to the interface displacement, which further stiffens the gas-water interface [10] and speeds up the wave propagation [10] , [11] . This effect is intensified, when the wall spacing is narrowed [12] and the water interface becomes curved [13] . In contrast, a condition of freely moving contact line agrees with the theory of waves on constraint-free interfaces [10] , [14] . Together, this abundant literature constitutes in-depth knowledge of water waves in various configurations, which all share a common determinant, namely the assumption that the air or gas phase above the water interface is boundary-free and inviscid. While capillary waves have been extensively studied in free conditions (e.g., deep water) [2] , [3] , [4] , [5] , [6] , [7] and in constrained conditions (e.g., shallow water or narrow channel) [3] , [8] , [9] , [10] , [11] , [12] , [13] , [14] , to the best of our knowledge, systematic studies on capillary waves at an interface constrained by its pinning to an array of microstructures are still lacking. Such conditions could be facilitated by the superhydrophobic state exhibiting a superior water repellency. Nature itself offers fascinating examples, such as lotus [15] and salvinia [16] leaves, aquatic arthropod exoskeletons [17] , feathers [18] , serving as remarkable sources of inspiration [19] . Superhydrophobicity is enabled by a combination of surface chemistry [20] and nano-micro topography, which prevents liquid entry and impalement [20] , [21] . Underwater immersion, a thin layer of air is trapped between the micropillars, where the micropillar tops support the water like a fakir on a bed of nails. Collectively, this is known as a plastron, or the Cassie state [22] . However, the water-repellent feature can be compromised by spontaneous changes in the environment [20] . In particular, the plastron can experience depletion as a result of gas dissolution or pressure-induced impalement [23] , [24] . Eventually, the plastron could be lost and the surface fully wetted, the so-called Wenzel state [25] , while partially wet states would be here referred to as intermediate states. The plastron condition is typically assessed optically by bright-field microscopy [23] , [26] , total internal reflection technique [24] , [27] , or confocal microscopy [28] . Acoustics-based alternatives to optics [21] show limitations due to (i) complexity and cost related to integrating a transducer into the studied surface [29] , [30] , or (ii) lack of access to the plastron dynamics and intermediate wetting states [31] . Mechanical waves carry their propagation medium’s properties, making them useful tools for investigating optically opaque or contamination-sensitive media, such as, respectively, the Earth’s crust [32] and biological tissues [33] , or soft matter and biological fluids [34] , [35] . With this in mind, the examination of the dynamics of the gas-water interface, constrained by microstructures, in response to mechanical stress could provide a means for remotely monitoring the plastron’s condition, wetting state, and spontaneous gas diffusion over time. Accordingly, this work presents an original configuration of capillary waves induced by ultrasound (US), travelling on a gas-water interface bounded to the solid microstructures of a superhydrophobic plastron. The wave behaviour is studied by varying the density of the three-phase contact line and the pillar height. The sensing potential of these waves for remotely monitoring the plastron and its intermediate wetting state is eventually addressed.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Capillary waves, also known as ripples, are surface tension-dominated mechanical perturbations of a liquid-gas interface.",
+        "references": {},
+        "viewpoints": [
+          "Capillary waves are also known as ripples.",
+          "Capillary waves are mechanical perturbations of a liquid-gas interface dominated by surface tension."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Evocations date back at least to the first century AD, when Pliny the Elder was reporting on the absence of ripples in the wake of ships releasing surfactants [1].",
+        "references": {
+          "1": []
+        },
+        "viewpoints": [
+          "Reports of capillary waves date back to at least the first century AD.",
+          "Pliny the Elder reported on the absence of ripples in the wake of ships releasing surfactants."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "The earliest description of capillary waves in the modern scientific sense is attributed to John Scott Russell [2].",
+        "references": {
+          "2": []
+        },
+        "viewpoints": [
+          "John Scott Russell is attributed with the earliest description of capillary waves in the modern scientific sense."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "His investigation portrayed the orbital motion of the water molecules carried on by the swelling interface and measured propagation speeds in the range 0.2–0.9 m s −1.",
+        "references": {},
+        "viewpoints": [
+          "John Scott Russell's investigation portrayed the orbital motion of water molecules carried by the swelling interface.",
+          "John Scott Russell measured the propagation speeds of capillary waves to be in the range 0.2–0.9 m/s."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "The influence of a nearby seabed on the wave motion has been first assessed for the case of gravity-driven waves with longer wavelength λ, in a configuration of intermediate depth of the water medium, with a first linear model proposed by Sir Airy in 1841 [3], further developed to account for weak nonlinear effects by Sir Stokes [4] in 1847.",
+        "references": {
+          "3": [],
+          "4": []
+        },
+        "viewpoints": [
+          "The influence of a nearby seabed on wave motion was first assessed for gravity-driven waves with longer wavelength.",
+          "A first linear model for gravity-driven waves in a configuration of intermediate depth was proposed by Sir Airy in 1841.",
+          "Sir Stokes further developed this model in 1847 to account for weak nonlinear effects."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Later extensions to these models would consider e.g., high wave steepness [5] and pure capillary waves [6].",
+        "references": {
+          "5": [],
+          "6": {
+            "1": "An exact solution for two-dimensional progressive waves of arbitrary amplitude on a fluid of unlimited depth has been found.",
+            "2": "The exact solution is applicable when only surface tension is taken into account as the restoring force.",
+            "3": "Gravity is not taken into account as the restoring force in the exact solution.",
+            "4": "The calculated wave forms for two-dimensional progressive waves are exhibited graphically for various amplitudes.",
+            "5": "The relation between wave velocity and amplitude of two-dimensional progressive waves is plotted.",
+            "6": "The wave of greatest height for two-dimensional progressive waves occurs when the vertical distance between trough and crest is 0.730 wavelengths.",
+            "7": "For gravity waves, the vertical distance between trough and crest is 0.142 wavelengths.",
+            "8": "Higher waves are prevented from appearing by the enclosing of air bubbles in the troughs."
+          }
+        },
+        "viewpoints": [
+          "Later extensions to these models considered high wave steepness.",
+          "Later extensions to these models considered pure capillary waves."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Together, these works would contribute in particular to describing a wavenumber-to-frequency relation, commonly called dispersion relation.",
+        "references": {},
+        "viewpoints": [
+          "These works contributed to describing a wavenumber-to-frequency relation.",
+          "The wavenumber-to-frequency relation is commonly called the dispersion relation."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "For a wave travelling at an interface between two fluid phases (i.e., an interfacial wave) a and b, the angular frequency Ω(k) writes $${\\Omega }^{2}(k)=\\frac{gk\\mid{\\rho }_{{{{\\rm{a}}}}}-{\\rho }_{{{{\\rm{b}}}}}\\mid+\\sigma{k}^{3}}{{\\rho }_{{{{\\rm{a}}}}}\\coth (k{h}_{{{{\\rm{a}}}}})+{\\rho }_{{{{\\rm{b}}}}}\\coth (k{h}_{{{{\\rm{b}}}}})},$$ (1) where g and σ are gravity and surface tension.",
+        "references": {},
+        "viewpoints": [
+          "The angular frequency Ω(k) for an interfacial wave travelling between two fluid phases is described by the equation: $${\\Omega }^{2}(k)=\\frac{gk\\mid{\\rho }_{{{{\\rm{a}}}}}-{\\rho }_{{{{\\rm{b}}}}}\\mid+\\sigma{k}^{3}}{{\\rho }_{{{{\\rm{a}}}}}\\coth (k{h}_{{{{\\rm{a}}}}})+{\\rho }_{{{{\\rm{b}}}}}\\coth (k{h}_{{{{\\rm{b}}}}})}.$$",
+          "In the equation for angular frequency Ω(k), g represents gravity, and σ represents surface tension."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "k = 2π/λ is the wavenumber.",
+        "references": {},
+        "viewpoints": [
+          "k is the wavenumber.",
+          "k is equal to 2π/λ."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "ρ a and h a (respectively, ρ b and h b) are the density and thickness of the fluid phase a (respectively, b).",
+        "references": {},
+        "viewpoints": [
+          "ρ a is the density of fluid phase a.",
+          "h a is the thickness of fluid phase a.",
+          "ρ b is the density of fluid phase b.",
+          "h b is the thickness of fluid phase b."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "At an air-water interface, a minimum for the wave propagation speed, here referred to as the phase speed c p = Ω(k)/k, can be found for λ ≃ 1.7 cm and equals ca. 0.23 m s −1, in a condition of deep water (h ≫ λ).",
+        "references": {},
+        "viewpoints": [
+          "At an air-water interface, the minimum wave propagation speed is referred to as the phase speed c p = Ω(k)/k.",
+          "For λ ≃ 1.7 cm, the phase speed c p equals approximately 0.23 m/s in deep water conditions (h ≫ λ)."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Interfacial waves on water are generally categorised, according to their wavelength into two distinct groups, capillary (λ ≤ 1.7 cm) and gravity (λ ≥ 1.7 cm) waves, mainly governed by distinct restoring forces, respectively surface tension and gravity [7].",
+        "references": {
+          "7": []
+        },
+        "viewpoints": [
+          "Interfacial waves on water are categorized into capillary waves and gravity waves according to their wavelength.",
+          "Capillary waves have a wavelength λ ≤ 1.7 cm and are mainly governed by surface tension.",
+          "Gravity waves have a wavelength λ ≥ 1.7 cm and are mainly governed by gravity."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Capillary and gravity waves are dispersive, meaning that their propagation speed depends on their wavelength, according to Eq. (1), a graphical representation of which is provided as Supplementary Information (SI), in Fig. S1.",
+        "references": {},
+        "viewpoints": [
+          "Capillary and gravity waves are dispersive.",
+          "The propagation speed of capillary and gravity waves depends on their wavelength according to Eq. (1)."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The wave-driven orbital motion of water molecules constrained by a shallow water configuration (h ≪ λ) experiences a no-slip boundary condition at the water-bottom interface [8], causing the wave to slow down [3] and its amplitude to increase [9].",
+        "references": {
+          "8": [],
+          "3": [],
+          "9": {
+            "1": "Radiation stresses in water waves play an important role in the change in mean sea level due to storm waves (wave \"set-up\").",
+            "2": "Radiation stresses in water waves play an important role in the generation of \"surf-beats.\"",
+            "3": "Radiation stresses in water waves play an important role in the interaction of waves with steady currents.",
+            "4": "Radiation stresses in water waves play an important role in the steepening of short gravity waves on the crests of longer waves.",
+            "5": "Radiation stresses in water waves and their effects have been discussed rigorously in previous papers.",
+            "6": "Detailed perturbation analysis has been used to discuss the effects of radiation stresses in previous papers.",
+            "7": "A simplified exposition of the radiation stresses is given in the present paper.",
+            "8": "A simplified exposition of some consequences of radiation stresses is given in the present paper.",
+            "9": "Physical reasoning is used wherever possible in the present paper.",
+            "10": "The physical reasoning used is less rigorous than previous analyses.",
+            "11": "The influence of capillarity on the radiation stresses is fully described in the present paper for the first time."
+          }
+        },
+        "viewpoints": [
+          "Wave-driven orbital motion of water molecules in a shallow water configuration (h ≪ λ) experiences a no-slip boundary condition at the water-bottom interface.",
+          "The no-slip boundary condition causes the wave to slow down.",
+          "The no-slip boundary condition causes the amplitude of the wave to increase."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "This effect is known as wave shoaling and is opposed to the restoring forces, such as gravity and interfacial tensions, which try to restore the equilibrium state.",
+        "references": {},
+        "viewpoints": [
+          "The effect of wave slowing down and amplitude increase is known as wave shoaling.",
+          "Wave shoaling is opposed to restoring forces like gravity and interfacial tensions which aim to restore equilibrium."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "The pinning contact of the water interface to the walls of a channel in which a wave travels can also exert an additional restoring force, opposite to the interface displacement, which further stiffens the gas-water interface [10] and speeds up the wave propagation [10], [11].",
+        "references": {
+          "10": {
+            "1": "The study involved an experimental investigation of gravity-capillary wave propagation.",
+            "2": "The experimental investigation was conducted in a narrow channel.",
+            "3": "A pinned contact line was a condition in the experimental setup.",
+            "4": "Fourier transform profilometry was used to measure the static curved meniscus.",
+            "5": "Fourier transform profilometry was used to measure the surface perturbation.",
+            "6": "The channel width was varied between 7 and 15 times the capillary length.",
+            "7": "Edge constraints were shown to modify the surface curvature.",
+            "8": "Modifications to the surface curvature affect the dispersion relation.",
+            "9": "A space-time-resolved field was used to decompose the linear mode onto transverse modes.",
+            "10": "The transverse modes satisfied the condition of a pinned contact line.",
+            "11": "The approach complements the theoretical model with experimental analysis.",
+            "12": "The approach allows for the computation of wave numbers.",
+            "13": "The approach allows for the computation of natural frequencies.",
+            "14": "The approach provides robust statistics for the computations.",
+            "15": "The convergence of the model was verified experimentally.",
+            "16": "The pertinence of the linear approximation was verified experimentally.",
+            "17": "The relative contribution of the experimentally measured static meniscus was analyzed.",
+            "18": "There was excellent agreement between the computed natural frequencies and the forcing frequency.",
+            "19": "The agreement confirms the contribution of the space-time-resolved measured surface.",
+            "20": "The experimental results provide an accurate estimation of the influence of the additional restoring force.",
+            "21": "The additional restoring force is exerted by the pinned contact line on the deformed surface.",
+            "22": "The additional restoring force increases the wave celerity.",
+            "23": "The local character of the effect is evidenced by the decrease of the shift of the dispersion relation.",
+            "24": "The shift of the dispersion relation decreases as a function of the channel width."
+          },
+          "11": {
+            "1": "An experimental test of Kelvin's equation for the phase velocity in shallow water was conducted.",
+            "2": "The frequency of the test was 20 Hz.",
+            "3": "The test was performed at various depths down to 0.006 cm.",
+            "4": "The experimental values agreed with Kelvin's equation for the phase velocity in shallow water.",
+            "5": "Agreement between experimental values and theory did not hold for depths less than the thickness of the boundary layer.",
+            "6": "Measurements were made of the wavelengths in narrow, deep channels.",
+            "7": "The frequencies used for these measurements were 20 Hz and 60 Hz.",
+            "8": "A cutoff wavelength exists due to boundary conditions at the edges of the channels.",
+            "9": "The cutoff wavelength is about one-fourth the wavelength in open water.",
+            "10": "An equation was derived from fundamental hydrodynamics.",
+            "11": "The derived equation is for wavelengths in channels that are less than a wavelength wide.",
+            "12": "An empirical constant was added to the channel width.",
+            "13": "The addition of the empirical constant was necessary to reach agreement with the experimental results."
+          }
+        },
+        "viewpoints": [
+          "The pinning contact of the water interface to the walls of a channel can exert an additional restoring force opposite to the interface displacement.",
+          "The additional restoring force from the pinning contact stiffens the gas-water interface.",
+          "The additional restoring force from the pinning contact speeds up the wave propagation."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "This effect is intensified, when the wall spacing is narrowed [12] and the water interface becomes curved [13].",
+        "references": {
+          "12": {
+            "1": "Experiments were conducted on the propagation of water waves in channels with parallel sides made of Perspex.",
+            "2": "The phase velocities of small-amplitude waves with wavelengths in the range 40–100 mm were consistently higher than predicted by the standard hydrodynamic theory.",
+            "3": "The original observations of the phase velocity anomaly were made in a channel 100 mm wide.",
+            "4": "The channel where the anomaly was observed was filled to a depth of 50 mm.",
+            "5": "The standard theory might be expected to provide a close approximation to the wave velocity for channels with dimensions close to 100 mm wide and 50 mm deep.",
+            "6": "Observed wave velocities were approximately 0.5% higher than predicted by the standard theory.",
+            "7": "Highly surface-clean water was used in all the experiments.",
+            "8": "Clean apparatus was used in all the experiments.",
+            "9": "The measurements in the experiments proved to be wholly reproducible.",
+            "10": "Reproducible measurements prompted a closer examination of the wave motion to detect the cause of the anomaly.",
+            "11": "The lines of contact between the water surface and the sides of the channel did not rise and fall in step with the movement of the surface at the center of the channel.",
+            "12": "The lines of contact remained fixed in their original locations while the water was at rest."
+          },
+          "13": {
+            "1": "A recently developed technique calculates the natural frequencies of gravity–capillary waves in a confined liquid mass with a possibly highly curved free surface.",
+            "2": "The technique is extended to the case where the contact line is pinned.",
+            "3": "The general technique is described in detail for rectangular and cylindrical containers of circular section.",
+            "4": "Experimental data are available for rectangular and cylindrical containers of circular section.",
+            "5": "The results of the present method agree excellently with earlier experimental data for the flat static interface case.",
+            "6": "The results of the present method agree excellently with earlier theoretical data for the flat static interface case.",
+            "7": "The present method is applicable when the contact angle is not π/2.",
+            "8": "The present method is applicable when the static interface is curved.",
+            "9": "The present method allows for analyzing the effects of a curved meniscus on the results of Cocciaro et al.",
+            "10": "The contact angle measured by Cocciaro et al. was 62°.",
+            "11": "The meniscus accounts for the earlier discrepancy between theory and experiment of about 20 mHz, as suggested by Cocciaro et al.",
+            "12": "There is now excellent agreement between the theoretical and experimental results after accounting for the meniscus."
+          }
+        },
+        "viewpoints": [
+          "The effect of the additional restoring force is intensified when the wall spacing is narrowed.",
+          "The effect of the additional restoring force is intensified when the water interface becomes curved."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "In contrast, a condition of freely moving contact line agrees with the theory of waves on constraint-free interfaces [10], [14].",
+        "references": {
+          "10": {
+            "1": "The study involved an experimental investigation of gravity-capillary wave propagation.",
+            "2": "The experimental investigation was conducted in a narrow channel.",
+            "3": "A pinned contact line was a condition in the experimental setup.",
+            "4": "Fourier transform profilometry was used to measure the static curved meniscus.",
+            "5": "Fourier transform profilometry was used to measure the surface perturbation.",
+            "6": "The channel width was varied between 7 and 15 times the capillary length.",
+            "7": "Edge constraints were shown to modify the surface curvature.",
+            "8": "Modifications to the surface curvature affect the dispersion relation.",
+            "9": "A space-time-resolved field was used to decompose the linear mode onto transverse modes.",
+            "10": "The transverse modes satisfied the condition of a pinned contact line.",
+            "11": "The approach complements the theoretical model with experimental analysis.",
+            "12": "The approach allows for the computation of wave numbers.",
+            "13": "The approach allows for the computation of natural frequencies.",
+            "14": "The approach provides robust statistics for the computations.",
+            "15": "The convergence of the model was verified experimentally.",
+            "16": "The pertinence of the linear approximation was verified experimentally.",
+            "17": "The relative contribution of the experimentally measured static meniscus was analyzed.",
+            "18": "There was excellent agreement between the computed natural frequencies and the forcing frequency.",
+            "19": "The agreement confirms the contribution of the space-time-resolved measured surface.",
+            "20": "The experimental results provide an accurate estimation of the influence of the additional restoring force.",
+            "21": "The additional restoring force is exerted by the pinned contact line on the deformed surface.",
+            "22": "The additional restoring force increases the wave celerity.",
+            "23": "The local character of the effect is evidenced by the decrease of the shift of the dispersion relation.",
+            "24": "The shift of the dispersion relation decreases as a function of the channel width."
+          },
+          "14": []
+        },
+        "viewpoints": [
+          "A freely moving contact line condition agrees with the theory of waves on constraint-free interfaces."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Together, this abundant literature constitutes in-depth knowledge of water waves in various configurations, which all share a common determinant, namely the assumption that the air or gas phase above the water interface is boundary-free and inviscid.",
+        "references": {},
+        "viewpoints": [
+          "This abundant literature constitutes in-depth knowledge of water waves in various configurations.",
+          "The in-depth knowledge of water waves shares a common determinant, assuming the air or gas phase above the water interface is boundary-free and inviscid."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "While capillary waves have been extensively studied in free conditions (e.g., deep water) [2], [3], [4], [5], [6], [7] and in constrained conditions (e.g., shallow water or narrow channel) [3], [8], [9], [10], [11], [12], [13], [14], to the best of our knowledge, systematic studies on capillary waves at an interface constrained by its pinning to an array of microstructures are still lacking.",
+        "references": {
+          "2": [],
+          "3": [],
+          "4": [],
+          "5": [],
+          "6": {
+            "1": "An exact solution for two-dimensional progressive waves of arbitrary amplitude on a fluid of unlimited depth has been found.",
+            "2": "The exact solution is applicable when only surface tension is taken into account as the restoring force.",
+            "3": "Gravity is not taken into account as the restoring force in the exact solution.",
+            "4": "The calculated wave forms for two-dimensional progressive waves are exhibited graphically for various amplitudes.",
+            "5": "The relation between wave velocity and amplitude of two-dimensional progressive waves is plotted.",
+            "6": "The wave of greatest height for two-dimensional progressive waves occurs when the vertical distance between trough and crest is 0.730 wavelengths.",
+            "7": "For gravity waves, the vertical distance between trough and crest is 0.142 wavelengths.",
+            "8": "Higher waves are prevented from appearing by the enclosing of air bubbles in the troughs."
+          },
+          "7": [],
+          "8": [],
+          "9": {
+            "1": "Radiation stresses in water waves play an important role in the change in mean sea level due to storm waves (wave \"set-up\").",
+            "2": "Radiation stresses in water waves play an important role in the generation of \"surf-beats.\"",
+            "3": "Radiation stresses in water waves play an important role in the interaction of waves with steady currents.",
+            "4": "Radiation stresses in water waves play an important role in the steepening of short gravity waves on the crests of longer waves.",
+            "5": "Radiation stresses in water waves and their effects have been discussed rigorously in previous papers.",
+            "6": "Detailed perturbation analysis has been used to discuss the effects of radiation stresses in previous papers.",
+            "7": "A simplified exposition of the radiation stresses is given in the present paper.",
+            "8": "A simplified exposition of some consequences of radiation stresses is given in the present paper.",
+            "9": "Physical reasoning is used wherever possible in the present paper.",
+            "10": "The physical reasoning used is less rigorous than previous analyses.",
+            "11": "The influence of capillarity on the radiation stresses is fully described in the present paper for the first time."
+          },
+          "10": {
+            "1": "The study involved an experimental investigation of gravity-capillary wave propagation.",
+            "2": "The experimental investigation was conducted in a narrow channel.",
+            "3": "A pinned contact line was a condition in the experimental setup.",
+            "4": "Fourier transform profilometry was used to measure the static curved meniscus.",
+            "5": "Fourier transform profilometry was used to measure the surface perturbation.",
+            "6": "The channel width was varied between 7 and 15 times the capillary length.",
+            "7": "Edge constraints were shown to modify the surface curvature.",
+            "8": "Modifications to the surface curvature affect the dispersion relation.",
+            "9": "A space-time-resolved field was used to decompose the linear mode onto transverse modes.",
+            "10": "The transverse modes satisfied the condition of a pinned contact line.",
+            "11": "The approach complements the theoretical model with experimental analysis.",
+            "12": "The approach allows for the computation of wave numbers.",
+            "13": "The approach allows for the computation of natural frequencies.",
+            "14": "The approach provides robust statistics for the computations.",
+            "15": "The convergence of the model was verified experimentally.",
+            "16": "The pertinence of the linear approximation was verified experimentally.",
+            "17": "The relative contribution of the experimentally measured static meniscus was analyzed.",
+            "18": "There was excellent agreement between the computed natural frequencies and the forcing frequency.",
+            "19": "The agreement confirms the contribution of the space-time-resolved measured surface.",
+            "20": "The experimental results provide an accurate estimation of the influence of the additional restoring force.",
+            "21": "The additional restoring force is exerted by the pinned contact line on the deformed surface.",
+            "22": "The additional restoring force increases the wave celerity.",
+            "23": "The local character of the effect is evidenced by the decrease of the shift of the dispersion relation.",
+            "24": "The shift of the dispersion relation decreases as a function of the channel width."
+          },
+          "11": {
+            "1": "An experimental test of Kelvin's equation for the phase velocity in shallow water was conducted.",
+            "2": "The frequency of the test was 20 Hz.",
+            "3": "The test was performed at various depths down to 0.006 cm.",
+            "4": "The experimental values agreed with Kelvin's equation for the phase velocity in shallow water.",
+            "5": "Agreement between experimental values and theory did not hold for depths less than the thickness of the boundary layer.",
+            "6": "Measurements were made of the wavelengths in narrow, deep channels.",
+            "7": "The frequencies used for these measurements were 20 Hz and 60 Hz.",
+            "8": "A cutoff wavelength exists due to boundary conditions at the edges of the channels.",
+            "9": "The cutoff wavelength is about one-fourth the wavelength in open water.",
+            "10": "An equation was derived from fundamental hydrodynamics.",
+            "11": "The derived equation is for wavelengths in channels that are less than a wavelength wide.",
+            "12": "An empirical constant was added to the channel width.",
+            "13": "The addition of the empirical constant was necessary to reach agreement with the experimental results."
+          },
+          "12": {
+            "1": "Experiments were conducted on the propagation of water waves in channels with parallel sides made of Perspex.",
+            "2": "The phase velocities of small-amplitude waves with wavelengths in the range 40–100 mm were consistently higher than predicted by the standard hydrodynamic theory.",
+            "3": "The original observations of the phase velocity anomaly were made in a channel 100 mm wide.",
+            "4": "The channel where the anomaly was observed was filled to a depth of 50 mm.",
+            "5": "The standard theory might be expected to provide a close approximation to the wave velocity for channels with dimensions close to 100 mm wide and 50 mm deep.",
+            "6": "Observed wave velocities were approximately 0.5% higher than predicted by the standard theory.",
+            "7": "Highly surface-clean water was used in all the experiments.",
+            "8": "Clean apparatus was used in all the experiments.",
+            "9": "The measurements in the experiments proved to be wholly reproducible.",
+            "10": "Reproducible measurements prompted a closer examination of the wave motion to detect the cause of the anomaly.",
+            "11": "The lines of contact between the water surface and the sides of the channel did not rise and fall in step with the movement of the surface at the center of the channel.",
+            "12": "The lines of contact remained fixed in their original locations while the water was at rest."
+          },
+          "13": {
+            "1": "A recently developed technique calculates the natural frequencies of gravity–capillary waves in a confined liquid mass with a possibly highly curved free surface.",
+            "2": "The technique is extended to the case where the contact line is pinned.",
+            "3": "The general technique is described in detail for rectangular and cylindrical containers of circular section.",
+            "4": "Experimental data are available for rectangular and cylindrical containers of circular section.",
+            "5": "The results of the present method agree excellently with earlier experimental data for the flat static interface case.",
+            "6": "The results of the present method agree excellently with earlier theoretical data for the flat static interface case.",
+            "7": "The present method is applicable when the contact angle is not π/2.",
+            "8": "The present method is applicable when the static interface is curved.",
+            "9": "The present method allows for analyzing the effects of a curved meniscus on the results of Cocciaro et al.",
+            "10": "The contact angle measured by Cocciaro et al. was 62°.",
+            "11": "The meniscus accounts for the earlier discrepancy between theory and experiment of about 20 mHz, as suggested by Cocciaro et al.",
+            "12": "There is now excellent agreement between the theoretical and experimental results after accounting for the meniscus."
+          },
+          "14": []
+        },
+        "viewpoints": [
+          "Capillary waves have been extensively studied in free conditions like deep water.",
+          "Capillary waves have been extensively studied in constrained conditions like shallow water or narrow channels.",
+          "Systematic studies on capillary waves at an interface constrained by pinning to an array of microstructures are still lacking."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Such conditions could be facilitated by the superhydrophobic state exhibiting a superior water repellency.",
+        "references": {},
+        "viewpoints": [
+          "The superhydrophobic state could facilitate conditions with an interface constrained by pinning to microstructures.",
+          "The superhydrophobic state exhibits superior water repellency."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Nature itself offers fascinating examples, such as lotus [15] and salvinia [16] leaves, aquatic arthropod exoskeletons [17], feathers [18], serving as remarkable sources of inspiration [19].",
+        "references": {
+          "15": {
+            "1": "The wetting/non-wetting properties of a liquid drop in contact with a chemically hydrophobic rough surface with a thermodynamic contact angle greater than π/2 are studied.",
+            "2": "The study considers a scenario where the liquid drop lies on a simple sinusoidal profile, representing an extremely idealized rough profile.",
+            "3": "The coexistence of the Cassie and Wenzel states depends on the surface geometry and pressure values.",
+            "4": "If the amplitude h of the substrate is sufficiently large, the Cassie state is the only possible stable state.",
+            "5": "If the amplitude h of the substrate is below a certain critical value hₐ, transition to the Wenzel state occurs.",
+            "6": "In many potential applications of super-hydrophobic surfaces, liquid drops often collide with the substrate.",
+            "7": "The critical drop pressure pₓ is calculated at which the Cassie state is no longer stable.",
+            "8": "When the critical drop pressure pₓ is reached, the liquid jumps into full contact with the substrate, transitioning to the Wenzel state.",
+            "9": "The asymptotic behavior of the systems is analyzed in the limiting case of a large substrate corrugation.",
+            "10": "A simple criterion is proposed to calculate the minimum height asperity h necessary to prevent the Wenzel state from being formed.",
+            "11": "The minimum height asperity h is calculated to preserve the super-hydrophobic properties of the substrate.",
+            "12": "The minimum height asperity h is used to design a robust super-hydrophobic surface."
+          },
+          "16": {
+            "1": "The water fern *Salvinia* has a sophisticated surface design.",
+            "2": "The sophisticated surface design of the water fern *Salvinia* provides a novel mechanism for long-term air retention under water.",
+            "3": "The floating leaves of the water fern *Salvinia* are evenly covered with complex hydrophobic hairs.",
+            "4": "The complex hydrophobic hairs on the leaves of the water fern *Salvinia* retain a layer of air when submerged under water.",
+            "5": "The terminal cells of the complex hydrophobic hairs on the leaves of the water fern *Salvinia* are hydrophilic.",
+            "6": "The hydrophilic patches at the terminal cells of the hairs on the leaves of the water fern *Salvinia* stabilize the air layer.",
+            "7": "The hydrophilic patches stabilize the air layer by pinning the air–water interface.",
+            "8": "The \"Salvinia Effect\" provides an innovative concept for developing biomimetic surfaces with long-term air-retention capabilities.",
+            "9": "Biomimetic surfaces with long-term air-retention capabilities have applications in underwater environments."
+          },
+          "17": {
+            "1": "The spiracular chambers of the three anterior pairs of spiracles are described.",
+            "2": "The relationships between the spiracular chambers of the three anterior pairs of spiracles and the air stores on the body are discussed.",
+            "3": "Morphological variations exist in the spiracular chambers of Ambrysus.",
+            "4": "Morphological variations exist in the spiracular chambers of Notonecta.",
+            "5": "Morphological variations exist in the spiracular chambers of Hesperocorixa.",
+            "6": "Morphological variations in the spiracular chambers of Ambrysus, Notonecta, and Hesperocorixa appear to be correlated with the manner in which Ambrysus, Notonecta, and Hesperocorixa obtain atmospheric oxygen.",
+            "7": "Morphological variations in the spiracular chambers of Ambrysus, Notonecta, and Hesperocorixa appear to be correlated with the manner in which Ambrysus, Notonecta, and Hesperocorixa obtain dissolved oxygen."
+          },
+          "18": {
+            "1": "The physical mechanisms of Cassie–Wenzel wetting transitions are discussed.",
+            "2": "The origin of the potential barrier separating Cassie and Wenzel wetting states is clarified.",
+            "3": "The potential barrier separating Cassie and Wenzel wetting states may contain contributions originating from the filling of hydrophobic pores.",
+            "4": "The potential barrier separating Cassie and Wenzel wetting states may contain contributions originating from the displacement of the triple line along the smooth portions of the relief.",
+            "5": "One-dimensional scenarios of wetting transitions are considered.",
+            "6": "Two-dimensional scenarios of wetting transitions are considered.",
+            "7": "The contribution to the potential barrier due to the displacement of the triple line is not negligible in one-dimensional scenarios of wetting transitions.",
+            "8": "The contribution to the potential barrier due to the displacement of the triple line is not negligible in two-dimensional scenarios of wetting transitions."
+          },
+          "19": {
+            "1": "The term superhydrophobicity was introduced in 1996.",
+            "2": "The term superhydrophilicity was introduced in 2000.",
+            "3": "Superhydrophobicity is used to describe exceptionally weak interactions of materials and coatings with bulk water.",
+            "4": "Superhydrophilicity is used to indicate strong interactions of materials and coatings with bulk water.",
+            "5": "The interactions are controlled entirely by surface topography and material chemistry.",
+            "6": "There was an explosion of research on the fabrication of superhydrophobic and superhydrophilic surfaces and coatings after the concepts appeared in the technical literature.",
+            "7": "Hundreds of reports on superhydrophobic and superhydrophilic surfaces and coatings are now published annually.",
+            "8": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for water-repellant products.",
+            "9": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for snow- and ice-phobic products.",
+            "10": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for water antifogging screens, windows, and lenses.",
+            "11": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for antifouling coatings.",
+            "12": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for microfluidic devices.",
+            "13": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for coatings for enhanced boiling heat transfer.",
+            "14": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for foils for food packaging.",
+            "15": "Interest in superhydrophobic and superhydrophilic surfaces and coatings is driven by an emerging market for many other products.",
+            "16": "The popularity of the emerging subdiscipline of superhydrophobic and superhydrophilic surface chemistry can be attributed to uncomplicated fabrication technologies.",
+            "17": "The popularity of the emerging subdiscipline of superhydrophobic and superhydrophilic surface chemistry can be attributed to the simplicity of testing techniques used.",
+            "18": "One of the testing techniques used is contact angle measurements.",
+            "19": "The physics behind superhydrophobic effects are reviewed in the article.",
+            "20": "The physics behind superhydrophilic effects are reviewed in the article.",
+            "21": "Several examples of applications of superhydrophobic surfaces and coatings are provided in the article.",
+            "22": "Several examples of applications of superhydrophilic surfaces and coatings are provided in the article."
+          }
+        },
+        "viewpoints": [
+          "Nature offers examples like lotus leaves, salvinia leaves, aquatic arthropod exoskeletons, and feathers.",
+          "These natural examples serve as remarkable sources of inspiration."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Superhydrophobicity is enabled by a combination of surface chemistry [20] and nano-micro topography, which prevents liquid entry and impalement [20], [21].",
+        "references": {
+          "20": {
+            "1": "Researchers have been working to induce superhydrophobic properties into material surfaces to mimic nature.",
+            "2": "Inducing superhydrophobic properties into material surfaces causes them to exhibit non-wetting properties.",
+            "3": "Superhydrophobic surfaces have diverse applications in fields such as space and aerospace.",
+            "4": "Superhydrophobic surfaces have diverse applications in fields such as defense.",
+            "5": "Superhydrophobic surfaces have diverse applications in fields such as automotive.",
+            "6": "Superhydrophobic surfaces have diverse applications in fields such as biomedical applications and engineering.",
+            "7": "Superhydrophobic surfaces have diverse applications in fields such as sensors.",
+            "8": "Superhydrophobic surfaces have diverse applications in fields such as apparel.",
+            "9": "Superhydrophobic surfaces generally repel water due to their surface texture.",
+            "10": "Superhydrophobic surfaces generally repel water due to their chemical properties.",
+            "11": "The article focuses on the functional applications of superhydrophobic surfaces.",
+            "12": "The article focuses on state-of-the-art fabrication technologies and processes to generate superhydrophobic surfaces.",
+            "13": "The article focuses on the limitations of the processes to generate superhydrophobic surfaces that have been developed over the years."
+          },
+          "21": {
+            "1": "Superhydrophobic materials have been widely reported throughout the scientific literature.",
+            "2": "The properties of superhydrophobic materials originate from a highly rough morphology.",
+            "3": "The properties of superhydrophobic materials originate from inherently water repellent surface chemistry.",
+            "4": "Superhydrophobic materials promise an array of functionalities.",
+            "5": "Superhydrophobic materials have seen limited commercial development.",
+            "6": "The limited commercial development of superhydrophobic materials could be attributed to material compatibility issues.",
+            "7": "The limited commercial development of superhydrophobic materials could be attributed to low physical resilience.",
+            "8": "The limited commercial development of superhydrophobic materials could be attributed to scaling-up complications.",
+            "9": "In applications where persistent water contact is required, the stability of the air layer trapped at the surface when submerged or impacted by water arises as a major concern.",
+            "10": "The review is aimed at examining the diverse array of research focused on monitoring air layer stability.",
+            "11": "The review is aimed at examining the diverse array of research focused on improving air layer stability.",
+            "12": "The review is aimed at highlighting the most successful approaches to monitoring/improving air layer stability.",
+            "13": "Monitoring air layer stability is reported to be complex.",
+            "14": "Enhancing air layer stability is reported to be complex.",
+            "15": "The variety of approaches adopted for monitoring and enhancing air layer stability results in an assortment of suggested routes to achieving success.",
+            "16": "The review is addressing the challenge of finding a balance between maximising water repulsion and incorporating structures that protect air pockets from removal.",
+            "17": "The review is addressing challenges related to the variant approaches to testing air-layer stability across the research field.",
+            "18": "The review is addressing the gap between the achieved progress and the required performance in real-life applications regarding air-layer stability."
+          }
+        },
+        "viewpoints": [
+          "Superhydrophobicity is enabled by a combination of surface chemistry and nano-micro topography.",
+          "Surface chemistry and nano-micro topography prevent liquid entry and impalement."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Underwater immersion, a thin layer of air is trapped between the micropillars, where the micropillar tops support the water like a fakir on a bed of nails.",
+        "references": {},
+        "viewpoints": [
+          "Underwater immersion traps a thin layer of air between micropillars.",
+          "The micropillar tops support the water like a fakir on a bed of nails."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Collectively, this is known as a plastron, or the Cassie state [22].",
+        "references": {
+          "22": []
+        },
+        "viewpoints": [
+          "The combination of the thin layer of air and water support by micropillars is known as a plastron.",
+          "The combination of the thin layer of air and water support by micropillars is also called the Cassie state."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "However, the water-repellent feature can be compromised by spontaneous changes in the environment [20].",
+        "references": {
+          "20": {
+            "1": "Researchers have been working to induce superhydrophobic properties into material surfaces to mimic nature.",
+            "2": "Inducing superhydrophobic properties into material surfaces causes them to exhibit non-wetting properties.",
+            "3": "Superhydrophobic surfaces have diverse applications in fields such as space and aerospace.",
+            "4": "Superhydrophobic surfaces have diverse applications in fields such as defense.",
+            "5": "Superhydrophobic surfaces have diverse applications in fields such as automotive.",
+            "6": "Superhydrophobic surfaces have diverse applications in fields such as biomedical applications and engineering.",
+            "7": "Superhydrophobic surfaces have diverse applications in fields such as sensors.",
+            "8": "Superhydrophobic surfaces have diverse applications in fields such as apparel.",
+            "9": "Superhydrophobic surfaces generally repel water due to their surface texture.",
+            "10": "Superhydrophobic surfaces generally repel water due to their chemical properties.",
+            "11": "The article focuses on the functional applications of superhydrophobic surfaces.",
+            "12": "The article focuses on state-of-the-art fabrication technologies and processes to generate superhydrophobic surfaces.",
+            "13": "The article focuses on the limitations of the processes to generate superhydrophobic surfaces that have been developed over the years."
+          }
+        },
+        "viewpoints": [
+          "The water-repellent feature can be compromised by spontaneous changes in the environment."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "In particular, the plastron can experience depletion as a result of gas dissolution or pressure-induced impalement [23], [24].",
+        "references": {
+          "23": {
+            "1": "Superhydrophobic surfaces are capable of producing slip flow.",
+            "2": "Superhydrophobic surfaces are capable of drag reduction.",
+            "3": "The capability of superhydrophobic surfaces to produce slip flow and drag reduction holds considerable promise for a broad range of applications.",
+            "4": "Environmental factors such as water movement over the surface must be observed to implement superhydrophobic surfaces for practical utilizations.",
+            "5": "Environmental factors such as water movement over the surface must be understood to implement superhydrophobic surfaces for practical utilizations.",
+            "6": "Experiments were carried out to present a proof-of-concept study on the impact of flow on the longevity of polystyrene fibrous coatings.",
+            "7": "The time-dependent hydrophobicity of a submerged coating in a pressure vessel was determined.",
+            "8": "The coating was exposed to a rudimentary wall-jet flow while determining its time-dependent hydrophobicity.",
+            "9": "Rheological studies were performed to determine the effect of the flow on drag reduction.",
+            "10": "The longevity of the surface deteriorates by increasing the flow rate.",
+            "11": "The flow appears to enhance the dissolution of air into water.",
+            "12": "The enhancement of the dissolution of air into water leads to a loss of drag reduction."
+          },
+          "24": []
+        },
+        "viewpoints": [
+          "The plastron can experience depletion due to gas dissolution.",
+          "The plastron can experience depletion due to pressure-induced impalement."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Eventually, the plastron could be lost and the surface fully wetted, the so-called Wenzel state [25], while partially wet states would be here referred to as intermediate states.",
+        "references": {
+          "25": []
+        },
+        "viewpoints": [
+          "The plastron could eventually be lost, resulting in a fully wetted surface known as the Wenzel state.",
+          "Partially wet states are referred to as intermediate states."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "The plastron condition is typically assessed optically by bright-field microscopy [23], [26], total internal reflection technique [24], [27], or confocal microscopy [28].",
+        "references": {
+          "23": {
+            "1": "Superhydrophobic surfaces are capable of producing slip flow.",
+            "2": "Superhydrophobic surfaces are capable of drag reduction.",
+            "3": "The capability of superhydrophobic surfaces to produce slip flow and drag reduction holds considerable promise for a broad range of applications.",
+            "4": "Environmental factors such as water movement over the surface must be observed to implement superhydrophobic surfaces for practical utilizations.",
+            "5": "Environmental factors such as water movement over the surface must be understood to implement superhydrophobic surfaces for practical utilizations.",
+            "6": "Experiments were carried out to present a proof-of-concept study on the impact of flow on the longevity of polystyrene fibrous coatings.",
+            "7": "The time-dependent hydrophobicity of a submerged coating in a pressure vessel was determined.",
+            "8": "The coating was exposed to a rudimentary wall-jet flow while determining its time-dependent hydrophobicity.",
+            "9": "Rheological studies were performed to determine the effect of the flow on drag reduction.",
+            "10": "The longevity of the surface deteriorates by increasing the flow rate.",
+            "11": "The flow appears to enhance the dissolution of air into water.",
+            "12": "The enhancement of the dissolution of air into water leads to a loss of drag reduction."
+          },
+          "26": {
+            "1": "Superhydrophobic/superamphiphobic surfaces require a stable plastron for effective use.",
+            "2": "A plastron is a film of air located between micro- and nanostructures on superhydrophobic/superamphiphobic surfaces.",
+            "3": "The plastron disappears during immersion if not actively replenished with gases.",
+            "4": "Air from the plastron diffuses into the immersion liquid, which is water.",
+            "5": "Electrocatalysis, electrolysis, boiling, and air-refilling are current techniques used to sustain the plastron under immersion.",
+            "6": "The methods available for sustaining the plastron under immersion are limited.",
+            "7": "Methods for sustaining the plastron under immersion are difficult to implement at scale.",
+            "8": "Methods for sustaining the plastron under immersion are energy-consuming.",
+            "9": "Methods for sustaining the plastron under immersion require continuous monitoring and subsequent intervention.",
+            "10": "The concept of passive on-demand recovery of the plastron through a chemical reaction called effervescence is presented.",
+            "11": "A superhydrophobic nanostructured surface is applied on top of a wetting-reactive, gas-forming effervescent sublayer.",
+            "12": "The effervescent layer needs protection by a moisture-absorbent, water-soluble polymer during extended exposure to moisture.",
+            "13": "Prolonged immersion causes partial collapse of the Cassie-state.",
+            "14": "Prolonged immersion causes water to contact the effervescent layer.",
+            "15": "Contact of water with the effervescent layer induces the local formation of gases from effervescence.",
+            "16": "The local formation of gases from effervescence restores the Cassie-state.",
+            "17": "The design principles presented are facile and scalable.",
+            "18": "These design principles offer a new route toward creating superhydrophobic/superamphiphobic surfaces that are intervention-free and immersion-durable."
+          },
+          "24": [],
+          "27": {
+            "1": "When a rough hydrophobic surface is immersed in water, the \"Cassie\" state of wetting can occur.",
+            "2": "In the \"Cassie\" state, water is in contact with both the solid surface and the entrapped air.",
+            "3": "The sustainability of entrapped air on rough hydrophobic surfaces is important for underwater applications.",
+            "4": "Sustainability of entrapped air reduces flow resistance in microchannels.",
+            "5": "Sustainability of entrapped air reduces drag on submerged bodies such as hydrofoils.",
+            "6": "An optical technique based on total internal reflection of light at the water-air interface is utilized to quantify the spatial distribution of trapped air on rough hydrophobic surfaces.",
+            "7": "The optical technique quantifies the variation of trapped air with immersion time.",
+            "8": "The optical technique is used to evaluate the sustainability of the Cassie state on hydrophobic surfaces with four different kinds of textures.",
+            "9": "The textures studied include regular arrays of pillars, ridges, and holes created in silicon by a wet etching technique.",
+            "10": "A texture of random craters was obtained through electrodischarge machining of aluminum.",
+            "11": "The surfaces were rendered hydrophobic with a self-assembled layer of fluorooctyl trichlorosilane.",
+            "12": "The size and shape of the trapped air pockets were found to vary depending on the texture.",
+            "13": "The size and number of air pockets decrease with time and eventually disappear, suggesting finite sustainability of the \"Cassie\" state for all microstructures studied.",
+            "14": "The finite sustainability of the \"Cassie\" state is possibly due to the diffusion of air from the trapped air pockets into the water.",
+            "15": "The time scale for air pocket disappearance depends on the kind of microstructure.",
+            "16": "The time scale for air pocket disappearance depends on the hydrostatic pressure at the water-air interface.",
+            "17": "For the surface with a regular array of pillars, air pockets form a thin layer perched on top of the pillars.",
+            "18": "The air pockets for this surface have a large lateral extent compared to the spacing between pillars.",
+            "19": "For other surfaces studied, air pockets are smaller.",
+            "20": "For these surfaces, air pockets are of the same order as the characteristic length scale of the texture.",
+            "21": "For the surface with holes, the time for air-pocket disappearance decreases as hydrostatic pressure increases."
+          },
+          "28": {
+            "1": "Nature offers examples of functional wetting properties based on superhydrophobicity.",
+            "2": "Self-cleaning surfaces on plant leaves are an example of functional wetting properties based on superhydrophobicity.",
+            "3": "Trapped air on immersed insect surfaces allowing underwater breathing is an example of functional wetting properties based on superhydrophobicity.",
+            "4": "Functional wetting properties based on superhydrophobicity inspire biomimetic approaches in science and technology.",
+            "5": "Superhydrophobicity relies on the Cassie wetting state.",
+            "6": "Air is trapped within the surface topography in the Cassie wetting state.",
+            "7": "Pressure can trigger an irreversible transition from the Cassie state to the Wenzel state.",
+            "8": "The Wenzel state has no trapped air within the surface topography.",
+            "9": "The transition to the Wenzel state is usually detrimental for nonwetting functionality.",
+            "10": "The transition from the Cassie state to the Wenzel state is to be avoided.",
+            "11": "A new type of reversible, localized and instantaneous transition between two Cassie wetting states is presented.",
+            "12": "The new transition is enabled by two-level (dual-scale) topography of a superhydrophobic surface.",
+            "13": "The new transition allows writing of optically displayed information in plastrons related to different length scales.",
+            "14": "The new transition allows erasing of optically displayed information in plastrons related to different length scales.",
+            "15": "The new transition allows rewriting of optically displayed information in plastrons related to different length scales.",
+            "16": "The new transition allows storing of optically displayed information in plastrons related to different length scales."
+          }
+        },
+        "viewpoints": [
+          "The plastron condition is typically assessed optically by bright-field microscopy.",
+          "The plastron condition is typically assessed optically by the total internal reflection technique.",
+          "The plastron condition is typically assessed optically by confocal microscopy."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Acoustics-based alternatives to optics [21] show limitations due to (i) complexity and cost related to integrating a transducer into the studied surface [29], [30], or (ii) lack of access to the plastron dynamics and intermediate wetting states [31].",
+        "references": {
+          "21": {
+            "1": "Superhydrophobic materials have been widely reported throughout the scientific literature.",
+            "2": "The properties of superhydrophobic materials originate from a highly rough morphology.",
+            "3": "The properties of superhydrophobic materials originate from inherently water repellent surface chemistry.",
+            "4": "Superhydrophobic materials promise an array of functionalities.",
+            "5": "Superhydrophobic materials have seen limited commercial development.",
+            "6": "The limited commercial development of superhydrophobic materials could be attributed to material compatibility issues.",
+            "7": "The limited commercial development of superhydrophobic materials could be attributed to low physical resilience.",
+            "8": "The limited commercial development of superhydrophobic materials could be attributed to scaling-up complications.",
+            "9": "In applications where persistent water contact is required, the stability of the air layer trapped at the surface when submerged or impacted by water arises as a major concern.",
+            "10": "The review is aimed at examining the diverse array of research focused on monitoring air layer stability.",
+            "11": "The review is aimed at examining the diverse array of research focused on improving air layer stability.",
+            "12": "The review is aimed at highlighting the most successful approaches to monitoring/improving air layer stability.",
+            "13": "Monitoring air layer stability is reported to be complex.",
+            "14": "Enhancing air layer stability is reported to be complex.",
+            "15": "The variety of approaches adopted for monitoring and enhancing air layer stability results in an assortment of suggested routes to achieving success.",
+            "16": "The review is addressing the challenge of finding a balance between maximising water repulsion and incorporating structures that protect air pockets from removal.",
+            "17": "The review is addressing challenges related to the variant approaches to testing air-layer stability across the research field.",
+            "18": "The review is addressing the gap between the achieved progress and the required performance in real-life applications regarding air-layer stability."
+          },
+          "29": {
+            "1": "Surface wettability governs the interaction between the solid and liquid phases.",
+            "2": "Surface wettability is central in various biological systems.",
+            "3": "Surface wettability is central in various technological applications.",
+            "4": "The sessile droplet contact angle is a typical approach to assess the wetting interaction.",
+            "5": "The measurement of the sessile contact angle is experimentally simple.",
+            "6": "Caution is required in the measurement of the sessile contact angle as a wettability metric.",
+            "7": "Caution is required in the interpretation of the sessile contact angle as a wettability metric.",
+            "8": "The major challenges related to the use of the sessile droplet contact angle for characterizing surface wetting behavior are reviewed in this work.",
+            "9": "The complexity of interpreting surface wettability using the contact angle value arises from the role of the solid–liquid interfacial area and three-phase contact line.",
+            "10": "The complexity of interpreting surface wettability using the contact angle value arises from the existence of multiple metastable states with a range of contact angle values.",
+            "11": "The complexity of interpreting surface wettability using the contact angle value arises from the droplet size dependence of contact angles.",
+            "12": "Emerging alternative wetting evaluation techniques are outlined.",
+            "13": "Emerging alternative wetting evaluation parameters are outlined.",
+            "14": "Emerging alternative wetting evaluation techniques and parameters can complement the sessile contact angle measurement."
+          },
+          "30": {
+            "1": "Acoustic characterization is proposed as a new method to probe wetting states on a superhydrophobic surface.",
+            "2": "The analysis of the multiple reflections of a longitudinal acoustic wave from solid-liquid interfaces enables distinguishing between Cassie-Baxter and Wenzel wetting configurations.",
+            "3": "The analysis of the multiple reflections of a longitudinal acoustic wave from solid-vapor interfaces enables distinguishing between Cassie-Baxter and Wenzel wetting configurations.",
+            "4": "The phenomenon of distinguishing wetting configurations is investigated experimentally on silicon micro-pillars superhydrophobic surfaces.",
+            "5": "The phenomenon of distinguishing wetting configurations is investigated numerically using a finite difference time domain method.",
+            "6": "Numerical calculations of reflection coefficients show a good agreement with experimental measurements.",
+            "7": "Acoustic characterization appears as a promising alternative to optical measurement methods for probing wetting states."
+          },
+          "31": []
+        },
+        "viewpoints": [
+          "Acoustics-based alternatives to optics have limitations due to complexity and cost of integrating a transducer into the studied surface.",
+          "Acoustics-based alternatives to optics have limitations due to lack of access to plastron dynamics and intermediate wetting states."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Mechanical waves carry their propagation medium’s properties, making them useful tools for investigating optically opaque or contamination-sensitive media, such as, respectively, the Earth’s crust [32] and biological tissues [33], or soft matter and biological fluids [34], [35].",
+        "references": {
+          "32": {
+            "1": "Numerical experiments explore subsurface imaging at subwavelength distances.",
+            "2": "The exploration of subsurface imaging at subwavelength distances is performed for dense seismic arrays.",
+            "3": "The experiments focus on seismic wave propagation in a laterally homogeneous layered medium.",
+            "4": "A time-reversal approach is chosen to simulate fundamental mode Rayleigh surface wavefields.",
+            "5": "The simulated Rayleigh surface wavefields are equivalent to the cross-correlation results of three-component ambient seismic field records.",
+            "6": "The synthesized 2-D spatial autocorrelation fields in the time domain support local imaging.",
+            "7": "The synthesized 2-D spatial autocorrelation fields in the time domain support so-called focal spot imaging.",
+            "8": "Systematic tests involve clean isotropic surface wavefields to assess accuracy.",
+            "9": "Systematic tests involve interfering body wave components to assess accuracy.",
+            "10": "Systematic tests involve anisotropic incidence to assess accuracy.",
+            "11": "The systematic tests assess the accuracy of the phase velocity estimates obtained from focal spot properties.",
+            "12": "The systematic tests assess the accuracy of the dispersion estimates obtained from focal spot properties.",
+            "13": "Data collected within half a wavelength around the origin is usually sufficient to constrain the used Bessel functions models.",
+            "14": "The cleaner the surface wavefield, the smaller the fitting distances needed for accurate local Rayleigh wave speed estimation.",
+            "15": "Phase velocity estimates from vertical-radial component data are less biased by P-wave energy compared to estimates from vertical-vertical component data.",
+            "16": "Strong anisotropic surface wave incidence yields phase velocity estimates with an accuracy of 1 percent or better.",
+            "17": "Dispersion can be studied in the presence of noise.",
+            "18": "Estimates using a model to resolve potential medium anisotropy are significantly biased by anisotropic surface wave incidence.",
+            "19": "Overall accurate results are obtained from near-field measurements using isotropic medium assumptions.",
+            "20": "Dense array seismic Rayleigh wave focal spot imaging can increase the depth sensitivity compared to ambient noise surface wave tomography.",
+            "21": "A high station density supports subwavelength resolution of lateral medium variations.",
+            "22": "Clean surface wavefields support subwavelength resolution of lateral medium variations.",
+            "23": "The analogy to elastography focal spot medical imaging suggests high station density and clean surface wavefields are beneficial."
+          },
+          "33": {
+            "1": "Shear waves in soft human tissues have been used in clinical settings.",
+            "2": "Little is known about the upper frequency behavior of shear waves in soft human tissues.",
+            "3": "Shear waves in soft human tissues fade out before reaching the ultrasonic regime due to viscoelastic dissipation.",
+            "4": "Studying the upper frequency bound of shear waves has become a need in micro-elastography.",
+            "5": "Micro-elastography aims at characterizing a single cell using shear waves.",
+            "6": "Ultrasonic shear waves were observed at 20.4 kHz through phantom experiments.",
+            "7": "The Kelvin–Voigt model can predict a frequency upper bound for shear waves.",
+            "8": "The frequency upper bound predicted by the Kelvin–Voigt model is in good agreement with cell experiments.",
+            "9": "According to the Kelvin–Voigt model, the maximum error of elasticity estimation when viscosity is neglected is 40%.",
+            "10": "The maximum error of elasticity estimation of 40% occurs under the widespread perfectly elastic assumption when viscosity is neglected."
+          },
+          "34": [],
+          "35": []
+        },
+        "viewpoints": [
+          "Mechanical waves carry the properties of their propagation medium.",
+          "Mechanical waves are useful for investigating optically opaque media like the Earth's crust.",
+          "Mechanical waves are useful for investigating contamination-sensitive media like biological tissues.",
+          "Mechanical waves are useful for investigating soft matter and biological fluids."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "With this in mind, the examination of the dynamics of the gas-water interface, constrained by microstructures, in response to mechanical stress could provide a means for remotely monitoring the plastron’s condition, wetting state, and spontaneous gas diffusion over time.",
+        "references": {},
+        "viewpoints": [
+          "Examining the dynamics of the gas-water interface constrained by microstructures in response to mechanical stress could provide a means for remotely monitoring the plastron’s condition.",
+          "Examining the dynamics of the gas-water interface constrained by microstructures in response to mechanical stress could provide a means for remotely monitoring the wetting state.",
+          "Examining the dynamics of the gas-water interface constrained by microstructures in response to mechanical stress could provide a means for remotely monitoring spontaneous gas diffusion over time."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Accordingly, this work presents an original configuration of capillary waves induced by ultrasound (US), travelling on a gas-water interface bounded to the solid microstructures of a superhydrophobic plastron.",
+        "references": {},
+        "viewpoints": [
+          "This work presents an original configuration of capillary waves induced by ultrasound.",
+          "The capillary waves travel on a gas-water interface bounded to the solid microstructures of a superhydrophobic plastron."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "The wave behaviour is studied by varying the density of the three-phase contact line and the pillar height.",
+        "references": {},
+        "viewpoints": [
+          "The wave behaviour is studied by varying the density of the three-phase contact line.",
+          "The wave behaviour is studied by varying the pillar height."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "The sensing potential of these waves for remotely monitoring the plastron and its intermediate wetting state is eventually addressed.",
+        "references": {},
+        "viewpoints": [
+          "The sensing potential of these waves for remotely monitoring the plastron is addressed.",
+          "The sensing potential of these waves for remotely monitoring the intermediate wetting state is addressed."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-55907-w_with_abstracts",
+    "base_id": "s41467-025-55907-w",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-55907-w_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

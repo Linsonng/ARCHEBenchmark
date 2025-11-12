@@ -1,0 +1,896 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Systemic lupus erythematosus (SLE) is a common and complex autoimmune disease, caused by an interplay of many unknown genes and environmental factors. Yet, it has been difficult to precisely pinpoint and functionally confirm the causative factors. Thanks to genome-wide association studies (GWAS), hundreds of lupus disease-associated loci in the genome have been identified, which has strengthened the view that SLE is indeed a polygenic disease most likely regulated by variants in loci determining tolerance and immune responsiveness of the immune system [1] . However, the identification of the causative SNPs and the inducing environmental factors, remains largely unknown [2] , [3] . An alternative approach to identify the underlying genes has been to use genetic crosses of inbred animals susceptible to SLE. We have approached this problem by positioning the causative genes in mice and rats, and with these studies, we could identify some of the most important SNPs for complex autoimmune diseases. The first autoimmune disease-associated gene cloned was the neutrophil cytosolic factor ( Ncf1 ), encoding a protein (NCF1, alias p47phox) critically involved in the formation of the NADPH oxidase 2 (NOX2) complex, responsible for inducing reactive oxygen species (ROS) responses [4] , [5] . In rats, an amino acid replacing SNP ( Ncf1 T153M ) associated with autoimmune diseases was positioned [4] , [6] , and an effect was reproduced in mice with a spontaneous Ncf1 m1J mutation [7] . In humans, the NCF1 locus has been difficult to study due to copy number variations (CNV), but after exon sequencing a functionally important SNP could be identified [8] . This SNP (rs201802880 or NCF1-339 , here denoted NCF1 R90H ) replaces arginine with histidine at position 90 (R90H), affecting NCF1 interaction with the plasma cell membrane [5] . Analysis of SLE cohorts showed a high odds ratio (OR) and allelic frequency for NCF1-339 (NCF1 90H ) [9] , [10] . Importantly, the NCF1 90H allele caused a decreased ROS response in phorbol myristate acetate (PMA)-stimulated cells from patients with SLE in vitro, and it was also associated with an activated interferon signaling response, similar to previous findings in the Ncf1 m1J mutated mice [10] , [11] , [12] . BALB/c mice with the Ncf1 m1J mutation spontaneously showed signs of lupus with autoantibodies and glomerulonephritis and developed severe pristane-induced lupus, a commonly used mouse model of SLE [12] , [13] . The Ncf1 m1J mutation was associated with the activation of interferon signaling genes, including the STAT1 pathway [12] . An important remaining question is why and how the interferon response, and the development of lupus, are triggered in the presence of a low ROS-producing NCF1 variant. The detected antibodies to murine norovirus (MNV) in ROS-deficient Ncf1 m1J mutated mice with spontaneous lupus preliminarily suggested norovirus as a possible environmental factor [12] . In humans, there is no consensus on specific causative environmental challenges or virus infections, although DNA viruses, such as Epstein Barr virus (EBV), BK-virus (BKV), and retroviruses (RV) have been suggested to have disease association [14] , [15] , [16] . No substantial evidence for triggering lupus as a result of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) epidemic has been observed, although scattered cases have been reported. However, Covid-19 has been shown to be able to trigger the presentation or exacerbation of autoimmune diseases as well as a longstanding inflammatory syndrome in genetically predisposed patients [17] , [18] , [19] . Genetic predisposition accounts for approximately thirty percent of the risk of developing autoimmune diseases and interacting environmental factors could include toxic agents and diet but also infections [20] . The NCF1-regulated differences in the interferon signaling responses were seen in germ-free mice only after immunization, and they were also obvious after pristane injection, which triggered a more severe lupus-associated response [12] , [13] , [21] . Like several other mouse lupus models, pristane-induced lupus has been extensively studied for pathogenic mechanisms, and different downstream causative mechanisms have been suggested [22] . To understand the pathogenic role of the NCF1 polymorphism relevant to humans, we have addressed the role of the Ncf1 R90H alleles in mice. Here we study the Ncf1 R90H alleles in mice, to understand the pathogenic role of the NCF1 polymorphism relevant to humans. To our surprise, the Ncf1 90H allele does not enhance pristane-induced lupus in the mice under specific pathogen-free conditions. However, infection with MNV causes the development of severe lupus in Ncf1 90H mice irrespective of whether these were naïve or injected with pristane. Thus, a synergy between a defined gene mutation and a specific non-autologous factor for the induction of an autoimmune disease is described.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Systemic lupus erythematosus (SLE) is a common and complex autoimmune disease, caused by an interplay of many unknown genes and environmental factors.",
+        "references": {},
+        "viewpoints": [
+          "Systemic lupus erythematosus (SLE) is a common autoimmune disease.",
+          "Systemic lupus erythematosus (SLE) is a complex autoimmune disease.",
+          "The cause of SLE involves an interplay of many unknown genes.",
+          "The cause of SLE involves an interplay of environmental factors."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Yet, it has been difficult to precisely pinpoint and functionally confirm the causative factors.",
+        "references": {},
+        "viewpoints": [
+          "It has been difficult to precisely pinpoint the causative factors of systemic lupus erythematosus.",
+          "It has been difficult to functionally confirm the causative factors of systemic lupus erythematosus."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Thanks to genome-wide association studies (GWAS), hundreds of lupus disease-associated loci in the genome have been identified, which has strengthened the view that SLE is indeed a polygenic disease most likely regulated by variants in loci determining tolerance and immune responsiveness of the immune system [1].",
+        "references": {
+          "1": {
+            "1": "Systemic lupus erythematosus (SLE) is a worldwide chronic autoimmune disease.",
+            "2": "Systemic lupus erythematosus (SLE) may affect every organ and tissue.",
+            "3": "Genetic predisposition plays a role in the development and activity of systemic lupus erythematosus.",
+            "4": "Environmental triggers play a role in the development and activity of systemic lupus erythematosus.",
+            "5": "The hormonal milieu plays a role in the development and activity of systemic lupus erythematosus.",
+            "6": "Clinical manifestations of systemic lupus erythematosus are widely heterogeneous.",
+            "7": "The pattern of organ involvement in systemic lupus erythematosus is widely heterogeneous.",
+            "8": "The heterogeneity of clinical manifestations and organ involvement reflects the complex mosaic of disrupted molecular pathways in systemic lupus erythematosus.",
+            "9": "Disrupted molecular pathways converge into the systemic lupus erythematosus clinical phenotype.",
+            "10": "The pathogenesis of systemic lupus erythematosus involves multiple cellular components of the innate system.",
+            "11": "The pathogenesis of systemic lupus erythematosus involves multiple cellular components of the immune system.",
+            "12": "The presence of autoantibodies is involved in the pathogenesis of systemic lupus erythematosus.",
+            "13": "The presence of immunocomplexes is involved in the pathogenesis of systemic lupus erythematosus.",
+            "14": "Engagement of the complement system is involved in the pathogenesis of systemic lupus erythematosus.",
+            "15": "Dysregulation of several cytokines, including type I interferons, is involved in the pathogenesis of systemic lupus erythematosus.",
+            "16": "Disruption of the clearance of nucleic acids after cell death is involved in the pathogenesis of systemic lupus erythematosus.",
+            "17": "The use of immunomodulators has altered the natural course of systemic lupus erythematosus.",
+            "18": "The use of immunosuppression has altered the natural course of systemic lupus erythematosus.",
+            "19": "Morbidity and mortality in systemic lupus erythematosus derive from direct immune mediated tissue damage.",
+            "20": "Morbidity and mortality in systemic lupus erythematosus derive from SLE associated complications.",
+            "21": "Morbidity and mortality in systemic lupus erythematosus derive from treatment associated complications.",
+            "22": "SLE associated complications include accelerated coronary artery disease.",
+            "23": "SLE associated complications include increased infection risk.",
+            "24": "Treatment associated complications include accelerated coronary artery disease.",
+            "25": "Treatment associated complications include increased infection risk.",
+            "26": "The diagnostic approach for systemic lupus erythematosus is reviewed.",
+            "27": "The etiopathogenetic rationale for the management of systemic lupus erythematosus is reviewed.",
+            "28": "The clinical evidence for the management of systemic lupus erythematosus is reviewed.",
+            "29": "The management of systemic lupus erythematosus includes lifestyle changes.",
+            "30": "Lifestyle changes in the management of systemic lupus erythematosus include avoidance of ultraviolet light.",
+            "31": "The management of systemic lupus erythematosus includes prevention of comorbidities.",
+            "32": "Prevention of comorbidities includes prevention of coronary artery disease.",
+            "33": "Prevention of comorbidities includes prevention of osteoporosis.",
+            "34": "Prevention of comorbidities includes prevention of infections.",
+            "35": "Prevention of comorbidities includes prevention of drug toxicities.",
+            "36": "The management of systemic lupus erythematosus includes the use of immunomodulators.",
+            "37": "Hydroxychloroquine is an immunomodulator used in the management of systemic lupus erythematosus.",
+            "38": "Vitamin D is an immunomodulator used in the management of systemic lupus erythematosus.",
+            "39": "The management of systemic lupus erythematosus includes the use of immunosuppressants.",
+            "40": "The management of systemic lupus erythematosus includes the use of targeted therapy.",
+            "41": "New upcoming agents for systemic lupus erythematosus are reviewed.",
+            "42": "New upcoming regimens for systemic lupus erythematosus are reviewed.",
+            "43": "Upcoming agents and regimens for systemic lupus erythematosus are currently under study."
+          }
+        },
+        "viewpoints": [
+          "Genome-wide association studies (GWAS) have identified hundreds of lupus disease-associated loci in the genome.",
+          "The identification of hundreds of lupus disease-associated loci has strengthened the view that SLE is a polygenic disease.",
+          "SLE is most likely regulated by variants in loci determining tolerance of the immune system.",
+          "SLE is most likely regulated by variants in loci determining immune responsiveness of the immune system."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "However, the identification of the causative SNPs and the inducing environmental factors, remains largely unknown [2], [3].",
+        "references": {
+          "2": {
+            "1": "The sequencing of the human genome has allowed the study of the genetic architecture of common diseases.",
+            "2": "The genetic architecture of common diseases involves the number of genomic variants that contribute to the risk of disease.",
+            "3": "The genetic architecture of common diseases involves the joint frequency of genomic variants.",
+            "4": "The genetic architecture of common diseases includes the effect size distribution of genomic variants.",
+            "5": "Common diseases are polygenic.",
+            "6": "Many loci contribute to the phenotype of common diseases.",
+            "7": "The cumulative burden of risk alleles determines individual risk for common diseases.",
+            "8": "Environmental factors, in conjunction with the cumulative burden of risk alleles, determine individual risk for common diseases.",
+            "9": "Most risk loci occur in noncoding regions of the genome.",
+            "10": "Noncoding regions of the genome regulate cell-specific gene expression.",
+            "11": "Noncoding regions of the genome regulate context-specific gene expression.",
+            "12": "The effect sizes of most risk alleles are small.",
+            "13": "The cumulative effects of risk alleles in individuals are quantified as a polygenic risk score.",
+            "14": "A polygenic risk score can identify people at increased risk of disease.",
+            "15": "Identifying people at increased risk of disease can facilitate prevention.",
+            "16": "Identifying people at increased risk of disease can facilitate early intervention."
+          },
+          "3": {
+            "1": "The primary challenge in human genetics over the next decade will be understanding the biological mechanisms by which genetic variants influence phenotypes.",
+            "2": "Understanding the biological mechanisms by which genetic variants influence phenotypes includes understanding how they influence disease risk.",
+            "3": "The scale of the challenge in understanding the biological mechanisms by which genetic variants influence phenotypes is daunting.",
+            "4": "Better methods for functional variant interpretation will have transformative consequences for disease diagnosis.",
+            "5": "Better methods for functional variant interpretation will have transformative consequences for risk prediction.",
+            "6": "Better methods for functional variant interpretation will have transformative consequences for the development of new therapies.",
+            "7": "New methods for characterizing variant impact at scale are being applied to dissect variant mechanisms.",
+            "8": "These new methods use patient tissue samples.",
+            "9": "These new methods use in vitro models.",
+            "10": "These new methods are applied across a range of human cell types and environments.",
+            "11": "New methods for characterizing variant impact at scale are increasingly being deployed in clinical settings.",
+            "12": "The paper discusses the rationale for characterizing the molecular and cellular effects of genetic variants.",
+            "13": "The paper discusses approaches for characterizing the molecular and cellular effects of genetic variants.",
+            "14": "The paper discusses applications for characterizing the molecular and cellular effects of genetic variants.",
+            "15": "The paper discusses the future outlook for characterizing the molecular and cellular effects of genetic variants."
+          }
+        },
+        "viewpoints": [
+          "The identification of the causative SNPs for SLE remains largely unknown.",
+          "The identification of the inducing environmental factors for SLE remains largely unknown."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "An alternative approach to identify the underlying genes has been to use genetic crosses of inbred animals susceptible to SLE.",
+        "references": {},
+        "viewpoints": [
+          "Using genetic crosses of inbred animals susceptible to SLE is an alternative approach to identify the underlying genes for SLE."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "We have approached this problem by positioning the causative genes in mice and rats, and with these studies, we could identify some of the most important SNPs for complex autoimmune diseases.",
+        "references": {},
+        "viewpoints": [
+          "The problem of identifying underlying genes for SLE has been approached by positioning the causative genes in mice and rats.",
+          "Studies involving mice and rats have identified some of the most important SNPs for complex autoimmune diseases."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The first autoimmune disease-associated gene cloned was the neutrophil cytosolic factor (Ncf1), encoding a protein (NCF1, alias p47phox) critically involved in the formation of the NADPH oxidase 2 (NOX2) complex, responsible for inducing reactive oxygen species (ROS) responses [4], [5].",
+        "references": {
+          "4": {
+            "1": "Identifying genes underlying quantitative-trait loci (QTL) for complex diseases is challenging and difficult.",
+            "2": "Identifying genes underlying quantitative-trait loci (QTL) for diseases like rheumatoid arthritis is a challenging task for the human genome project.",
+            "3": "Positional cloning of the Pia4 QTL in rats led to the discovery that a naturally occurring polymorphism of Ncf1 regulates arthritis severity.",
+            "4": "Ncf1 encodes neutrophil cytosolic factor 1, a component of the NADPH oxidase complex.",
+            "5": "The disease-related allele of Ncf1 has a reduced oxidative burst response.",
+            "6": "The disease-related allele of Ncf1 promotes activation of arthritogenic T cells.",
+            "7": "Pharmacological treatment with substances that activate the NADPH oxidase complex ameliorates arthritis.",
+            "8": "Ncf1 is associated with a new autoimmune mechanism leading to severe destructive arthritis.",
+            "9": "The severe destructive arthritis associated with Ncf1 is notably similar to rheumatoid arthritis in humans."
+          },
+          "5": {
+            "1": "The assembly of cytosolic subunits p47phox, p67phox, and p40phox with flavocytochrome b558 at the membrane is required for activating the neutrophil NADPH oxidase.",
+            "2": "Neutrophil NADPH oxidase generates superoxide for microbial killing.",
+            "3": "The p47phox subunit plays a critical role in the assembly of neutrophil NADPH oxidase.",
+            "4": "The p47phox Phox homology (PX) domain mediates phosphoinositide binding in vitro.",
+            "5": "The p47phox Phox homology (PX) domain regulates phorbol ester-induced NADPH oxidase activity in a K562 myeloid cell model.",
+            "6": "The importance of the p47phox PX domain in neutrophils is unclear.",
+            "7": "Researchers investigated the role of the p47phox PX domain in neutrophils using p47phox knock-out (KO) mouse neutrophils.",
+            "8": "The investigation involved expressing human p47phox and derivatives harboring R90A mutations in the PX domain.",
+            "9": "R90A mutations in the PX domain result in the loss of phosphoinositide binding.",
+            "10": "Human p47phox proteins were expressed at levels similar to endogenous murine p47phox.",
+            "11": "The chronic granulomatous disease-associated R42Q mutant was poorly expressed.",
+            "12": "Wild type human p47phox rescued p47phox KO mouse neutrophil NADPH oxidase activity.",
+            "13": "Plasma membrane NAPDH oxidase activity was reduced in neutrophils expressing p47phox with Arg90 substitutions.",
+            "14": "Arg90 substitutions had substantial effects on responses to either phorbol ester or formyl-Met-Leu-Phe.",
+            "15": "Arg90 substitutions had more modest effects on responses to particulate stimuli.",
+            "16": "p47phox Arg90 mutants supported normal levels of intracellular NADPH oxidase activity during phagocytosis of a variety of particles.",
+            "17": "p47phox Arg90 mutants were recruited to phagosome membranes.",
+            "18": "This study defines a differential and agonist-dependent role of the p47phox PX domain for neutrophil NADPH oxidase activation."
+          }
+        },
+        "viewpoints": [
+          "The first autoimmune disease-associated gene cloned was the neutrophil cytosolic factor (Ncf1).",
+          "Ncf1 encodes a protein (NCF1, alias p47phox).",
+          "The protein NCF1 is critically involved in the formation of the NADPH oxidase 2 (NOX2) complex.",
+          "The NADPH oxidase 2 (NOX2) complex is responsible for inducing reactive oxygen species (ROS) responses."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "In rats, an amino acid replacing SNP (Ncf1 T153M) associated with autoimmune diseases was positioned [4], [6], and an effect was reproduced in mice with a spontaneous Ncf1 m1J mutation [7].",
+        "references": {
+          "4": {
+            "1": "Identifying genes underlying quantitative-trait loci (QTL) for complex diseases is challenging and difficult.",
+            "2": "Identifying genes underlying quantitative-trait loci (QTL) for diseases like rheumatoid arthritis is a challenging task for the human genome project.",
+            "3": "Positional cloning of the Pia4 QTL in rats led to the discovery that a naturally occurring polymorphism of Ncf1 regulates arthritis severity.",
+            "4": "Ncf1 encodes neutrophil cytosolic factor 1, a component of the NADPH oxidase complex.",
+            "5": "The disease-related allele of Ncf1 has a reduced oxidative burst response.",
+            "6": "The disease-related allele of Ncf1 promotes activation of arthritogenic T cells.",
+            "7": "Pharmacological treatment with substances that activate the NADPH oxidase complex ameliorates arthritis.",
+            "8": "Ncf1 is associated with a new autoimmune mechanism leading to severe destructive arthritis.",
+            "9": "The severe destructive arthritis associated with Ncf1 is notably similar to rheumatoid arthritis in humans."
+          },
+          "6": {
+            "1": "The Ncf1 gene encodes the P47(PHOX) protein.",
+            "2": "The P47(PHOX) protein regulates production of reactive oxygen species (ROS) by the phagocyte NADPH oxidase (NOX2) complex.",
+            "3": "The Ncf1 gene is associated with autoimmunity in rats.",
+            "4": "The Ncf1 gene is associated with arthritis severity in rats.",
+            "5": "A single-nucleotide polymorphism (SNP) resulting in an M153T amino acid substitution mediates arthritis resistance.",
+            "6": "The M153T amino acid substitution explains the molecular polymorphism underlying the earlier identified Ncf1 gene effect.",
+            "7": "The SNP in position 153 regulates ROS production.",
+            "8": "COS(PHOX) cells transfected with mutated Ncf1 were used to identify the SNP's role in ROS production regulation.",
+            "9": "The role of this SNP for control of arthritis was determined using the Wistar strain.",
+            "10": "The Wistar strain carries only the postulated arthritis resistant SNP in position 153.",
+            "11": "When the Ncf1 allele carrying the SNP in position 153 was backcrossed to the arthritis susceptible DA strain, granulocyte ROS production was restored.",
+            "12": "When the Ncf1 allele carrying the SNP in position 153 was backcrossed to the arthritis susceptible DA strain, arthritis resistance was restored.",
+            "13": "Position 153 is located in the hinge region between the PX and SH3 domains of P47(PHOX).",
+            "14": "Mutational analysis of position 153 revealed a need for an -OH group in the side chain.",
+            "15": "Mutational analysis of position 153 found no evidence for phosphorylation.",
+            "16": "The polymorphism did not affect assembly of the P47(PHOX)/P67(PHOX) complex in the cytosol.",
+            "17": "The polymorphism did not affect membrane localization of the P47(PHOX)/P67(PHOX) complex.",
+            "18": "The polymorphism is likely to operate downstream of assembly.",
+            "19": "The polymorphism is likely to affect the activity of the membrane NOX2 complex."
+          },
+          "7": {
+            "1": "The Ncf1 gene is identified as a strong regulator of severe arthritis in rats.",
+            "2": "The finding that the Ncf1 gene is a strong regulator of severe arthritis was surprising.",
+            "3": "The disease-promoting allele of the Ncf1 gene mediated a lower level of reactive oxygen species in NADPH oxidase-expressing cells.",
+            "4": "A splice mutation of the Ncf1 gene in B10.Q mice was investigated.",
+            "5": "The splice mutation of the Ncf1 gene in B10.Q mice causes a truncated and nonfunctional Ncf1 protein.",
+            "6": "The mutated Ncf1 gene led to more severe and chronic relapsing collagen-induced arthritis in B10.Q mice.",
+            "7": "Enhanced IgG responses against type II collagen were observed.",
+            "8": "Delayed-type hypersensitivity responses against type II collagen were observed.",
+            "9": "The enhanced IgG and delayed-type hypersensitivity responses indicate increased activity of autoreactive T cells.",
+            "10": "Female Ncf1-mutated mice spontaneously developed severe arthritis during the postpartum period.",
+            "11": "The severe arthritis in female Ncf1-mutated mice was accompanied by an increased antibody response to type II collagen.",
+            "12": "The increased antibody response to type II collagen had the same fine specificity as in collagen-induced arthritis.",
+            "13": "The mutated Ncf1 gene had an enhancing effect that was general.",
+            "14": "The mutated Ncf1 gene enhanced myelin oligodendrocyte glycoprotein protein-induced experimental autoimmune encephalomyelitis.",
+            "15": "Myelin oligodendrocyte glycoprotein protein-induced experimental autoimmune encephalomyelitis is a model for multiple sclerosis.",
+            "16": "The Ncf1 gene is important for oxidative burst.",
+            "17": "The Ncf1 gene regulates the susceptibility and severity of arthritis.",
+            "18": "The Ncf1 gene regulates the susceptibility and severity of encephalomyelitis.",
+            "19": "The Ncf1 gene modulates the level of T cell-dependent autoimmune responses.",
+            "20": "The modulation of T cell-dependent autoimmune responses by the Ncf1 gene can be direct or indirect."
+          }
+        },
+        "viewpoints": [
+          "An amino acid replacing SNP (Ncf1 T153M) associated with autoimmune diseases was positioned in rats.",
+          "The effect of the Ncf1 T153M SNP was reproduced in mice with a spontaneous Ncf1 m1J mutation."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "In humans, the NCF1 locus has been difficult to study due to copy number variations (CNV), but after exon sequencing a functionally important SNP could be identified [8].",
+        "references": {
+          "8": {
+            "1": "The study aimed to investigate genetic variants in the gene neutrophil cytosolic factor 1 (NCF1) for association with rheumatoid arthritis (RA).",
+            "2": "In rodent models, a single-nucleotide polymorphism (SNP) in Ncf1 has been shown to be a major locus regulating the severity of arthritis.",
+            "3": "Ncf1 encodes one of the five subunits of the NADPH oxidase complex.",
+            "4": "In humans, the genomic structure of NCF1 is complex.",
+            "5": "The complexity of the genomic structure of NCF1 excludes it from genome-wide association screens.",
+            "6": "The complexity of the genomic structure of NCF1 complicates genetic analysis.",
+            "7": "There is copy number variation of NCF1.",
+            "8": "There are also two nonfunctional pseudogenes, nearly identical in sequence to NCF1.",
+            "9": "The study characterized copy number variation and SNPs in NCF1.",
+            "10": "The study investigated these variants (copy number variation and SNPs in NCF1) for association with rheumatoid arthritis (RA).",
+            "11": "RA patients are less likely to have an increased copy number of NCF1.",
+            "12": "The likelihood of RA patients having an increased copy number of NCF1 is 7.6%.",
+            "13": "The likelihood of controls having an increased copy number of NCF1 is 11.6%.",
+            "14": "The statistical significance of the difference in copy number of NCF1 between RA patients and controls is p=0.037.",
+            "15": "The T-allele of NCF1-339 (rs13447) is expressed in NCF1.",
+            "16": "The T-allele of NCF1-339 (rs13447) significantly reduces reactive oxygen species production.",
+            "17": "This study provides the first finding of genetic association of NCF1 with rheumatoid arthritis (RA).",
+            "18": "The detailed characterization of genetic variants in NCF1 helps elucidate the complexity of the NCF1 gene.",
+            "19": "Increased copy number of NCF1 can be protective against developing rheumatoid arthritis (RA).",
+            "20": "The data add support to previous findings of a role of NCF1 in RA pathogenesis.",
+            "21": "The data add support to previous findings of a role of the phagocyte NADPH oxidase complex in RA pathogenesis."
+          }
+        },
+        "viewpoints": [
+          "The NCF1 locus has been difficult to study in humans due to copy number variations (CNV).",
+          "A functionally important SNP in humans could be identified after exon sequencing of the NCF1 locus."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "This SNP (rs201802880 or NCF1-339, here denoted NCF1 R90H) replaces arginine with histidine at position 90 (R90H), affecting NCF1 interaction with the plasma cell membrane [5].",
+        "references": {
+          "5": {
+            "1": "The assembly of cytosolic subunits p47phox, p67phox, and p40phox with flavocytochrome b558 at the membrane is required for activating the neutrophil NADPH oxidase.",
+            "2": "Neutrophil NADPH oxidase generates superoxide for microbial killing.",
+            "3": "The p47phox subunit plays a critical role in the assembly of neutrophil NADPH oxidase.",
+            "4": "The p47phox Phox homology (PX) domain mediates phosphoinositide binding in vitro.",
+            "5": "The p47phox Phox homology (PX) domain regulates phorbol ester-induced NADPH oxidase activity in a K562 myeloid cell model.",
+            "6": "The importance of the p47phox PX domain in neutrophils is unclear.",
+            "7": "Researchers investigated the role of the p47phox PX domain in neutrophils using p47phox knock-out (KO) mouse neutrophils.",
+            "8": "The investigation involved expressing human p47phox and derivatives harboring R90A mutations in the PX domain.",
+            "9": "R90A mutations in the PX domain result in the loss of phosphoinositide binding.",
+            "10": "Human p47phox proteins were expressed at levels similar to endogenous murine p47phox.",
+            "11": "The chronic granulomatous disease-associated R42Q mutant was poorly expressed.",
+            "12": "Wild type human p47phox rescued p47phox KO mouse neutrophil NADPH oxidase activity.",
+            "13": "Plasma membrane NAPDH oxidase activity was reduced in neutrophils expressing p47phox with Arg90 substitutions.",
+            "14": "Arg90 substitutions had substantial effects on responses to either phorbol ester or formyl-Met-Leu-Phe.",
+            "15": "Arg90 substitutions had more modest effects on responses to particulate stimuli.",
+            "16": "p47phox Arg90 mutants supported normal levels of intracellular NADPH oxidase activity during phagocytosis of a variety of particles.",
+            "17": "p47phox Arg90 mutants were recruited to phagosome membranes.",
+            "18": "This study defines a differential and agonist-dependent role of the p47phox PX domain for neutrophil NADPH oxidase activation."
+          }
+        },
+        "viewpoints": [
+          "The SNP rs201802880 or NCF1-339 (NCF1 R90H) replaces arginine with histidine at position 90 (R90H).",
+          "The SNP rs201802880 or NCF1-339 (NCF1 R90H) affects NCF1 interaction with the plasma cell membrane."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Analysis of SLE cohorts showed a high odds ratio (OR) and allelic frequency for NCF1-339 (NCF1 90H) [9], [10].",
+        "references": {
+          "9": {},
+          "10": {
+            "1": "The NCF1-339 SNP was genotyped in 973 Swedish patients with SLE.",
+            "2": "The NCF1-339 SNP was genotyped in 1301 controls.",
+            "3": "Nested PCR and pyrosequencing were used for genotyping.",
+            "4": "ROS production was measured in isolated cells from subjects with different NCF1-339 genotypes.",
+            "5": "Gene expression of type 1 interferon-regulated genes was measured in isolated cells from subjects with different NCF1-339 genotypes.",
+            "6": "There was an increased frequency of the NCF1-339 T allele in patients with SLE compared to controls.",
+            "7": "The frequency of the NCF1-339 T allele was 11% in patients with SLE.",
+            "8": "The frequency of the NCF1-339 T allele was 4% in controls.",
+            "9": "The odds ratio (OR) for the NCF1-339 T allele in patients with SLE versus controls was 3.0, with a 95% confidence interval (CI) of 2.4 to 3.9.",
+            "10": "The p-value for the increased frequency of the NCF1-339 T allele in patients with SLE was 7.0×10.",
+            "11": "A genetically controlled reduced production of ROS increases the risk of developing SLE.",
+            "12": "The results confirm the hypothesis that ROS regulate chronic autoimmune inflammatory diseases."
+          }
+        },
+        "viewpoints": [
+          "SLE cohort analysis showed a high odds ratio (OR) for NCF1-339 (NCF1 90H).",
+          "SLE cohort analysis showed a high allelic frequency for NCF1-339 (NCF1 90H)."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Importantly, the NCF1 90H allele caused a decreased ROS response in phorbol myristate acetate (PMA)-stimulated cells from patients with SLE in vitro, and it was also associated with an activated interferon signaling response, similar to previous findings in the Ncf1 m1J mutated mice [10], [11], [12].",
+        "references": {
+          "10": {
+            "1": "The NCF1-339 SNP was genotyped in 973 Swedish patients with SLE.",
+            "2": "The NCF1-339 SNP was genotyped in 1301 controls.",
+            "3": "Nested PCR and pyrosequencing were used for genotyping.",
+            "4": "ROS production was measured in isolated cells from subjects with different NCF1-339 genotypes.",
+            "5": "Gene expression of type 1 interferon-regulated genes was measured in isolated cells from subjects with different NCF1-339 genotypes.",
+            "6": "There was an increased frequency of the NCF1-339 T allele in patients with SLE compared to controls.",
+            "7": "The frequency of the NCF1-339 T allele was 11% in patients with SLE.",
+            "8": "The frequency of the NCF1-339 T allele was 4% in controls.",
+            "9": "The odds ratio (OR) for the NCF1-339 T allele in patients with SLE versus controls was 3.0, with a 95% confidence interval (CI) of 2.4 to 3.9.",
+            "10": "The p-value for the increased frequency of the NCF1-339 T allele in patients with SLE was 7.0×10.",
+            "11": "A genetically controlled reduced production of ROS increases the risk of developing SLE.",
+            "12": "The results confirm the hypothesis that ROS regulate chronic autoimmune inflammatory diseases."
+          },
+          "11": {
+            "1": "A single nucleotide polymorphism in the NCF1 gene, NCF1-339, encodes NADPH oxidase type II subunit NCF1/p47^phox.",
+            "2": "The NCF1-339 polymorphism reduces the production of reactive oxygen species.",
+            "3": "The NCF1-339 polymorphism is strongly associated with the development of systemic lupus erythematosus.",
+            "4": "The study aimed to characterize the effects of NCF1-339 on neutrophil extracellular trap formation in patients with systemic lupus erythematosus.",
+            "5": "The study aimed to characterize the effects of NCF1-339 on type I interferon activity in patients with systemic lupus erythematosus.",
+            "6": "The study aimed to characterize the effects of NCF1-339 on the antibody profile in patients with systemic lupus erythematosus.",
+            "7": "Neutrophil NET-release pathways were investigated in 31 systemic lupus erythematosus subjects from Lund genotyped for NCF1-339.",
+            "8": "Serum interferon was investigated in 141 systemic lupus erythematosus subjects from Lund genotyped for NCF1-339.",
+            "9": "Antibody profiles were investigated in 305 systemic lupus erythematosus subjects from Lund genotyped for NCF1-339.",
+            "10": "1087 systemic lupus erythematosus subjects from four Swedish SLE centers were genotyped for NCF1-339.",
+            "11": "These 1087 systemic lupus erythematosus subjects were clinically characterized to validate the findings from Lund.",
+            "12": "Neutrophils from patients with systemic lupus erythematosus with low-ROS NCF1-339 genotypes displayed impaired NET formation compared to those with normal-ROS NCF1-339 genotypes.",
+            "13": "Neutrophils from patients with systemic lupus erythematosus with low-ROS NCF1-339 genotypes displayed increased dependence on mitochondrial reactive oxygen species compared to those with normal-ROS NCF1-339 genotypes.",
+            "14": "Patients with systemic lupus erythematosus with low-ROS NCF1-339 genotypes had an increased frequency of high serum interferon activity compared to normal-ROS patients.",
+            "15": "Patients with systemic lupus erythematosus with low-ROS NCF1-339 genotypes showed positivity for anti-β2 glycoprotein I.",
+            "16": "Patients with systemic lupus erythematosus with low-ROS NCF1-339 genotypes showed positivity for anticardiolipin antibodies.",
+            "17": "Patients with systemic lupus erythematosus with low-ROS NCF1-339 genotypes were not associated with other antibodies.",
+            "18": "There was an over-representation of having any antiphospholipid antibody in all four systemic lupus erythematosus cohorts.",
+            "19": "There was an over-representation of anti-β2 glycoprotein I in all four systemic lupus erythematosus cohorts.",
+            "20": "There was an over-representation of antiphospholipid syndrome in all four systemic lupus erythematosus cohorts.",
+            "21": "The NCF1-339 SNP is associated with decreased NADPH oxidase function.",
+            "22": "The NCF1-339 SNP is associated with high interferon activity in systemic lupus erythematosus.",
+            "23": "The NCF1-339 SNP is associated with impaired formation of NETs in systemic lupus erythematosus.",
+            "24": "The NCF1-339 SNP allows dependence on mitochondrial reactive oxygen species.",
+            "25": "There is a striking connection between the ROS deficient NCF1-339 genotypes and the presence of phospholipid antibodies.",
+            "26": "There is a striking connection between the ROS deficient NCF1-339 genotypes and the presence of antiphospholipid syndrome."
+          },
+          "12": {
+            "1": "Chronic granulomatous disease (CGD) is a primary immunodeficiency.",
+            "2": "Chronic granulomatous disease (CGD) is caused by mutations in the phagocyte reactive oxygen species (ROS)-producing NOX2 enzyme complex.",
+            "3": "Chronic granulomatous disease (CGD) is characterized by recurrent infections.",
+            "4": "Chronic granulomatous disease (CGD) is associated with hyperinflammatory manifestations.",
+            "5": "Chronic granulomatous disease (CGD) is associated with autoimmune manifestations.",
+            "6": "A translational, comparative analysis of CGD patients and the corresponding ROS-deficient Ncf1(m1J) mutated mouse model was performed.",
+            "7": "The purpose of the translational, comparative analysis was to reveal the molecular pathways operating in NOX2 complex deficient inflammation.",
+            "8": "A prominent type I interferon (IFN) response signature was identified in mice lacking functional NOX2 complex.",
+            "9": "A prominent type I interferon (IFN) response signature was identified in humans lacking functional NOX2 complex.",
+            "10": "Elevated autoantibody levels accompanied the type I IFN response signature in mice lacking functional NOX2 complex.",
+            "11": "Elevated autoantibody levels accompanied the type I IFN response signature in humans lacking functional NOX2 complex.",
+            "12": "The systemic lupus erythematosus (SLE)-related autoimmune process is underlined by the fact that naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease.",
+            "13": "Naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "14": "SLE patients suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "15": "Naïve Ncf1(m1J) mutated mice are similar to SLE patients in terms of suffering from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "16": "Expression analysis of germ-free Ncf1(m1J) mutated mice reproduced the type I IFN signature.",
+            "17": "The reproduction of the type I IFN signature in germ-free Ncf1(m1J) mutated mice enabled the conclusion that the upregulated signaling pathway is of endogenous origin.",
+            "18": "The upregulated signaling pathway in germ-free Ncf1(m1J) mutated mice is of endogenous origin.",
+            "19": "There was a previously unexplained connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "20": "Our findings link the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "21": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in mice.",
+            "22": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in humans.",
+            "23": "The discovery that activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex links the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "24": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in mice.",
+            "25": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in humans.",
+            "26": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in mice.",
+            "27": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in humans."
+          }
+        },
+        "viewpoints": [
+          "The NCF1 90H allele caused a decreased ROS response in phorbol myristate acetate (PMA)-stimulated cells from patients with SLE in vitro.",
+          "The NCF1 90H allele was associated with an activated interferon signaling response.",
+          "The activated interferon signaling response associated with the NCF1 90H allele is similar to previous findings in the Ncf1 m1J mutated mice."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "BALB/c mice with the Ncf1 m1J mutation spontaneously showed signs of lupus with autoantibodies and glomerulonephritis and developed severe pristane-induced lupus, a commonly used mouse model of SLE [12], [13].",
+        "references": {
+          "12": {
+            "1": "Chronic granulomatous disease (CGD) is a primary immunodeficiency.",
+            "2": "Chronic granulomatous disease (CGD) is caused by mutations in the phagocyte reactive oxygen species (ROS)-producing NOX2 enzyme complex.",
+            "3": "Chronic granulomatous disease (CGD) is characterized by recurrent infections.",
+            "4": "Chronic granulomatous disease (CGD) is associated with hyperinflammatory manifestations.",
+            "5": "Chronic granulomatous disease (CGD) is associated with autoimmune manifestations.",
+            "6": "A translational, comparative analysis of CGD patients and the corresponding ROS-deficient Ncf1(m1J) mutated mouse model was performed.",
+            "7": "The purpose of the translational, comparative analysis was to reveal the molecular pathways operating in NOX2 complex deficient inflammation.",
+            "8": "A prominent type I interferon (IFN) response signature was identified in mice lacking functional NOX2 complex.",
+            "9": "A prominent type I interferon (IFN) response signature was identified in humans lacking functional NOX2 complex.",
+            "10": "Elevated autoantibody levels accompanied the type I IFN response signature in mice lacking functional NOX2 complex.",
+            "11": "Elevated autoantibody levels accompanied the type I IFN response signature in humans lacking functional NOX2 complex.",
+            "12": "The systemic lupus erythematosus (SLE)-related autoimmune process is underlined by the fact that naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease.",
+            "13": "Naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "14": "SLE patients suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "15": "Naïve Ncf1(m1J) mutated mice are similar to SLE patients in terms of suffering from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "16": "Expression analysis of germ-free Ncf1(m1J) mutated mice reproduced the type I IFN signature.",
+            "17": "The reproduction of the type I IFN signature in germ-free Ncf1(m1J) mutated mice enabled the conclusion that the upregulated signaling pathway is of endogenous origin.",
+            "18": "The upregulated signaling pathway in germ-free Ncf1(m1J) mutated mice is of endogenous origin.",
+            "19": "There was a previously unexplained connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "20": "Our findings link the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "21": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in mice.",
+            "22": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in humans.",
+            "23": "The discovery that activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex links the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "24": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in mice.",
+            "25": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in humans.",
+            "26": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in mice.",
+            "27": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in humans."
+          },
+          "13": {
+            "1": "Effector mechanisms of neutrophils are involved in the pathogenesis of systemic lupus erythematosus (SLE).",
+            "2": "Neutrophil extracellular traps (NETs) are considered to have a particularly detrimental role in systemic lupus erythematosus (SLE).",
+            "3": "The study investigated the functional impact of neutrophils and neutrophil extracellular traps (NETs) on a mouse model of lupus.",
+            "4": "The mouse model of lupus was triggered by intraperitoneal injection of the cell death-inducing alkane pristane.",
+            "5": "Pristane-induced lupus (PIL) was aggravated in NOX2-deficient (Ncf1-mutated) mouse strains with impaired induction of NET formation.",
+            "6": "Pristane-induced lupus (PIL) was aggravated in peptidyl arginine deiminase 4-deficient (PAD4-deficient) mouse strains with impaired induction of NET formation.",
+            "7": "Aggravation of pristane-induced lupus (PIL) in NOX2-deficient and PAD4-deficient mice was evidenced by elevated levels of antinuclear autoantibodies (ANAs).",
+            "8": "Aggravation of pristane-induced lupus (PIL) in NOX2-deficient and PAD4-deficient mice was evidenced by exacerbated glomerulonephritis.",
+            "9": "There was a dramatically reduced ability to form pristane-induced NETs in vivo in Ncf1-mutated mice.",
+            "10": "There was a dramatically reduced ability to form pristane-induced NETs in vivo in PAD4-deficient mice.",
+            "11": "The reduced ability to form pristane-induced NETs in Ncf1-mutated and PAD4-deficient mice was accompanied by higher levels of inflammatory mediators in the peritoneum.",
+            "12": "Neutropenic Mcl-1ΔMyelo mice exhibited higher levels of antinuclear autoantibodies (ANAs).",
+            "13": "The observation of higher levels of antinuclear autoantibodies (ANAs) in neutropenic Mcl-1ΔMyelo mice indicates a regulatory function in lupus for NETs and neutrophils.",
+            "14": "Blood neutrophils from Ncf1-mutated mice exhibited exuberant spontaneous NET formation.",
+            "15": "Blood neutrophils from human individuals with systemic lupus erythematosus (SLE) exhibited exuberant spontaneous NET formation.",
+            "16": "Treatment with specific chemical NOX2 activators induced NET formation.",
+            "17": "Treatment with specific chemical NOX2 activators ameliorated pristane-induced lupus (PIL).",
+            "18": "Aberrant NET formation is one of the factors promoting experimental lupus-like autoimmunity.",
+            "19": "Aberrant NET formation promotes experimental lupus-like autoimmunity by uncontrolled release of inflammatory mediators."
+          }
+        },
+        "viewpoints": [
+          "BALB/c mice with the Ncf1 m1J mutation spontaneously showed signs of lupus with autoantibodies.",
+          "BALB/c mice with the Ncf1 m1J mutation spontaneously showed signs of lupus with glomerulonephritis.",
+          "BALB/c mice with the Ncf1 m1J mutation developed severe pristane-induced lupus.",
+          "Pristane-induced lupus is a commonly used mouse model of SLE."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The Ncf1 m1J mutation was associated with the activation of interferon signaling genes, including the STAT1 pathway [12].",
+        "references": {
+          "12": {
+            "1": "Chronic granulomatous disease (CGD) is a primary immunodeficiency.",
+            "2": "Chronic granulomatous disease (CGD) is caused by mutations in the phagocyte reactive oxygen species (ROS)-producing NOX2 enzyme complex.",
+            "3": "Chronic granulomatous disease (CGD) is characterized by recurrent infections.",
+            "4": "Chronic granulomatous disease (CGD) is associated with hyperinflammatory manifestations.",
+            "5": "Chronic granulomatous disease (CGD) is associated with autoimmune manifestations.",
+            "6": "A translational, comparative analysis of CGD patients and the corresponding ROS-deficient Ncf1(m1J) mutated mouse model was performed.",
+            "7": "The purpose of the translational, comparative analysis was to reveal the molecular pathways operating in NOX2 complex deficient inflammation.",
+            "8": "A prominent type I interferon (IFN) response signature was identified in mice lacking functional NOX2 complex.",
+            "9": "A prominent type I interferon (IFN) response signature was identified in humans lacking functional NOX2 complex.",
+            "10": "Elevated autoantibody levels accompanied the type I IFN response signature in mice lacking functional NOX2 complex.",
+            "11": "Elevated autoantibody levels accompanied the type I IFN response signature in humans lacking functional NOX2 complex.",
+            "12": "The systemic lupus erythematosus (SLE)-related autoimmune process is underlined by the fact that naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease.",
+            "13": "Naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "14": "SLE patients suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "15": "Naïve Ncf1(m1J) mutated mice are similar to SLE patients in terms of suffering from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "16": "Expression analysis of germ-free Ncf1(m1J) mutated mice reproduced the type I IFN signature.",
+            "17": "The reproduction of the type I IFN signature in germ-free Ncf1(m1J) mutated mice enabled the conclusion that the upregulated signaling pathway is of endogenous origin.",
+            "18": "The upregulated signaling pathway in germ-free Ncf1(m1J) mutated mice is of endogenous origin.",
+            "19": "There was a previously unexplained connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "20": "Our findings link the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "21": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in mice.",
+            "22": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in humans.",
+            "23": "The discovery that activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex links the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "24": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in mice.",
+            "25": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in humans.",
+            "26": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in mice.",
+            "27": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in humans."
+          }
+        },
+        "viewpoints": [
+          "The Ncf1 m1J mutation was associated with the activation of interferon signaling genes.",
+          "The activation of interferon signaling genes associated with the Ncf1 m1J mutation includes the STAT1 pathway."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "An important remaining question is why and how the interferon response, and the development of lupus, are triggered in the presence of a low ROS-producing NCF1 variant.",
+        "references": {},
+        "viewpoints": [
+          "An important question remains about why the interferon response is triggered in the presence of a low ROS-producing NCF1 variant.",
+          "An important question remains about how the interferon response is triggered in the presence of a low ROS-producing NCF1 variant.",
+          "An important question remains about why the development of lupus is triggered in the presence of a low ROS-producing NCF1 variant.",
+          "An important question remains about how the development of lupus is triggered in the presence of a low ROS-producing NCF1 variant."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "The detected antibodies to murine norovirus (MNV) in ROS-deficient Ncf1 m1J mutated mice with spontaneous lupus preliminarily suggested norovirus as a possible environmental factor [12].",
+        "references": {
+          "12": {
+            "1": "Chronic granulomatous disease (CGD) is a primary immunodeficiency.",
+            "2": "Chronic granulomatous disease (CGD) is caused by mutations in the phagocyte reactive oxygen species (ROS)-producing NOX2 enzyme complex.",
+            "3": "Chronic granulomatous disease (CGD) is characterized by recurrent infections.",
+            "4": "Chronic granulomatous disease (CGD) is associated with hyperinflammatory manifestations.",
+            "5": "Chronic granulomatous disease (CGD) is associated with autoimmune manifestations.",
+            "6": "A translational, comparative analysis of CGD patients and the corresponding ROS-deficient Ncf1(m1J) mutated mouse model was performed.",
+            "7": "The purpose of the translational, comparative analysis was to reveal the molecular pathways operating in NOX2 complex deficient inflammation.",
+            "8": "A prominent type I interferon (IFN) response signature was identified in mice lacking functional NOX2 complex.",
+            "9": "A prominent type I interferon (IFN) response signature was identified in humans lacking functional NOX2 complex.",
+            "10": "Elevated autoantibody levels accompanied the type I IFN response signature in mice lacking functional NOX2 complex.",
+            "11": "Elevated autoantibody levels accompanied the type I IFN response signature in humans lacking functional NOX2 complex.",
+            "12": "The systemic lupus erythematosus (SLE)-related autoimmune process is underlined by the fact that naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease.",
+            "13": "Naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "14": "SLE patients suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "15": "Naïve Ncf1(m1J) mutated mice are similar to SLE patients in terms of suffering from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "16": "Expression analysis of germ-free Ncf1(m1J) mutated mice reproduced the type I IFN signature.",
+            "17": "The reproduction of the type I IFN signature in germ-free Ncf1(m1J) mutated mice enabled the conclusion that the upregulated signaling pathway is of endogenous origin.",
+            "18": "The upregulated signaling pathway in germ-free Ncf1(m1J) mutated mice is of endogenous origin.",
+            "19": "There was a previously unexplained connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "20": "Our findings link the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "21": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in mice.",
+            "22": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in humans.",
+            "23": "The discovery that activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex links the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "24": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in mice.",
+            "25": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in humans.",
+            "26": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in mice.",
+            "27": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in humans."
+          }
+        },
+        "viewpoints": [
+          "Antibodies to murine norovirus (MNV) were detected in ROS-deficient Ncf1 m1J mutated mice with spontaneous lupus.",
+          "The detection of antibodies to murine norovirus (MNV) in ROS-deficient Ncf1 m1J mutated mice preliminarily suggested norovirus as a possible environmental factor."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "In humans, there is no consensus on specific causative environmental challenges or virus infections, although DNA viruses, such as Epstein Barr virus (EBV), BK-virus (BKV), and retroviruses (RV) have been suggested to have disease association [14], [15], [16].",
+        "references": {
+          "14": {
+            "1": "Systemic lupus erythematosus (SLE) is a systemic autoimmune disease.",
+            "2": "Systemic lupus erythematosus (SLE) is a complex disease.",
+            "3": "Infections are potential triggers for the initiation of autoimmunity.",
+            "4": "Infectious reactivation is a potential trigger for the initiation of autoimmunity.",
+            "5": "Infections are potential triggers for SLE flares.",
+            "6": "Infectious reactivation is a potential trigger for SLE flares.",
+            "7": "Epstein-Barr virus (EBV) is a gamma herpes virus.",
+            "8": "Epstein-Barr virus (EBV) has been associated with systemic lupus erythematosus (SLE).",
+            "9": "Epstein-Barr virus (EBV) has been associated with multiple sclerosis.",
+            "10": "Epstein-Barr virus (EBV) has been associated with Sjogren's syndrome.",
+            "11": "Epstein-Barr virus (EBV) has been associated with systemic sclerosis.",
+            "12": "The review will discuss recent advances regarding how Epstein-Barr virus (EBV) may contribute to immune dysregulation.",
+            "13": "The review will discuss how mechanisms by which Epstein-Barr virus (EBV) contributes to immune dysregulation may relate to systemic lupus erythematosus (SLE) disease progression."
+          },
+          "15": {
+            "1": "Systemic lupus erythematosus (SLE) is an autoimmune disease.",
+            "2": "Patients with systemic lupus erythematosus (SLE) are often infected by viruses.",
+            "3": "The occurrence of virus infections in SLE patients is due to deficient immunity.",
+            "4": "The use of immunosuppressants in SLE patients can increase their chances of virus infections.",
+            "5": "BK virus (BKV) mainly affects the kidney.",
+            "6": "BK virus (BKV) can cause multiple organ involvement throughout the body.",
+            "7": "The multiple organ involvement caused by BK virus (BKV) is similar to that in systemic lupus erythematosus (SLE).",
+            "8": "BK virus (BKV) is mostly a latent infection in vivo.",
+            "9": "The incidence of BK virus (BKV) reactivation is higher in systemic lupus erythematosus (SLE) patients.",
+            "10": "Reactivation of BK virus (BKV) can induce the production of autoantibodies.",
+            "11": "The production of autoantibodies induced by BK virus (BKV) reactivation can promote the occurrence of systemic lupus erythematosus (SLE).",
+            "12": "The production of autoantibodies induced by BK virus (BKV) reactivation can promote the development of systemic lupus erythematosus (SLE).",
+            "13": "The aim of this article is to review the prevalence of BK virus (BKV) infection in systemic lupus erythematosus (SLE) patients.",
+            "14": "The aim of this article is to review the pathogenesis of BK virus (BKV) infection in systemic lupus erythematosus (SLE) patients.",
+            "15": "The literature search for this study was conducted using PubMed.",
+            "16": "The literature search for this study was conducted using Cochrane Library.",
+            "17": "The literature search for this study was conducted using Scopus.",
+            "18": "The literature search for this study was conducted using Web of Science.",
+            "19": "BK virus (BKV) infection is higher in systemic lupus erythematosus (SLE) patients.",
+            "20": "BK virus (BKV) reactivation is higher in systemic lupus erythematosus (SLE) patients.",
+            "21": "The \"hapten carrier\" mechanism may lead to the production of autoantibodies.",
+            "22": "Leflunomide, an immunosuppressive drug, may show a protective effect in BK virus (BKV) infection in systemic lupus erythematosus (SLE) patients.",
+            "23": "Hydroxychloroquine, an immunosuppressive drug, may show a protective effect in BK virus (BKV) infection in systemic lupus erythematosus (SLE) patients.",
+            "24": "BK virus (BKV) infection plays a role in the occurrence of systemic lupus erythematosus (SLE).",
+            "25": "BK virus (BKV) infection plays a role in the development of systemic lupus erythematosus (SLE).",
+            "26": "The significance of BK virus (BKV) infection in systemic lupus erythematosus (SLE) deserves further exploration."
+          },
+          "16": {
+            "1": "Systemic lupus erythematosus (SLE) is classified as a heterogeneous autoimmune disease.",
+            "2": "The etiology of systemic lupus erythematosus (SLE) remains elusive.",
+            "3": "The current understanding of systemic lupus erythematosus (SLE) suggests a multifactorial process.",
+            "4": "Genetic factors contribute to the multifactorial process of systemic lupus erythematosus (SLE).",
+            "5": "Immunologic factors contribute to the multifactorial process of systemic lupus erythematosus (SLE).",
+            "6": "Hormonal factors contribute to the multifactorial process of systemic lupus erythematosus (SLE).",
+            "7": "Environmental factors contribute to the multifactorial process of systemic lupus erythematosus (SLE).",
+            "8": "A hypothesis proposes that genomic elements, the L1 retrotransposons, are instrumental in the pathogenesis of systemic lupus erythematosus (SLE).",
+            "9": "The hypothesis combines several factors contributing to systemic lupus erythematosus (SLE) pathogenesis.",
+            "10": "L1 retroelements are transcriptionally activated in systemic lupus erythematosus (SLE).",
+            "11": "L1 retroelements produce two proteins, ORF1p and ORF2p, when activated in SLE.",
+            "12": "ORF1p and ORF2p are immunogenic.",
+            "13": "ORF1p and ORF2p can drive type I interferon (IFN) production.",
+            "14": "ORF1p and ORF2p produce DNA species that activate cytosolic DNA sensors.",
+            "15": "Proteins ORF1p and ORF2p reside in RNA-rich macromolecular assemblies.",
+            "16": "The RNA-rich macromolecular assemblies containing ORF1p and ORF2p also contain well-known systemic lupus erythematosus (SLE) autoantigens like Ro60.",
+            "17": "Cells expressing L1 will exhibit all the hallmarks of cells infected by a virus.",
+            "18": "Cells expressing L1 will result in a cellular and humoral immune response.",
+            "19": "The immune response in L1-expressing cells will be similar to those in chronic viral infections.",
+            "20": "L1 retroelements cannot be eliminated from the host genome.",
+            "21": "L1 retroelements differ from exogenous viruses in their inability to be eliminated from the host genome.",
+            "22": "Dysregulated L1 will cause a chronic challenge for the immune system.",
+            "23": "Dysregulated L1 will cause a potentially episodic challenge for the immune system.",
+            "24": "The clinical features of systemic lupus erythematosus (SLE) can be at least partly explained by this model.",
+            "25": "The immunological features of systemic lupus erythematosus (SLE) can be at least partly explained by this model.",
+            "26": "The paper reviews the support for the hypothesis of L1 retroelements' involvement in systemic lupus erythematosus (SLE).",
+            "27": "The paper reviews the gaps in the hypothesis of L1 retroelements' involvement in systemic lupus erythematosus (SLE).",
+            "28": "The hypothesis has potential for new diagnostic options in systemic lupus erythematosus (SLE).",
+            "29": "The hypothesis has potential for new prognostic options in systemic lupus erythematosus (SLE).",
+            "30": "The hypothesis has potential for new therapeutic options in systemic lupus erythematosus (SLE)."
+          }
+        },
+        "viewpoints": [
+          "In humans, there is no consensus on specific causative environmental challenges for SLE.",
+          "In humans, there is no consensus on specific causative virus infections for SLE.",
+          "DNA viruses, such as Epstein Barr virus (EBV), BK-virus (BKV), and retroviruses (RV), have been suggested to have disease association with SLE."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "No substantial evidence for triggering lupus as a result of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) epidemic has been observed, although scattered cases have been reported.",
+        "references": {},
+        "viewpoints": [
+          "No substantial evidence has been observed for triggering lupus as a result of the SARS-CoV-2 epidemic.",
+          "Scattered cases of lupus triggered by SARS-CoV-2 have been reported."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "However, Covid-19 has been shown to be able to trigger the presentation or exacerbation of autoimmune diseases as well as a longstanding inflammatory syndrome in genetically predisposed patients [17], [18], [19].",
+        "references": {
+          "17": {
+            "1": "The clinical and immunological spectrum of acute and post-active COVID-19 syndrome overlaps with criteria for autoimmune diseases.",
+            "2": "Rheumatoid arthritis (RA) is characterized using criteria that overlap with the spectrum of COVID-19 syndrome.",
+            "3": "Systemic lupus erythematosus (SLE) is characterized using criteria that overlap with the spectrum of COVID-19 syndrome.",
+            "4": "After SARS-Cov2 infection, the innate immune response is altered.",
+            "5": "There is an initial delayed production of interferon type I (IFN-I) following SARS-Cov2 infection.",
+            "6": "Following SARS-Cov2 infection, the NF-kappa B pathway is activated.",
+            "7": "Following SARS-Cov2 infection, the inflammasome pathway is activated.",
+            "8": "In lung and digestive tissues, an alternative immune response against SARS-Cov2 takes place.",
+            "9": "In lung and digestive tissues, an extrafollicular immune response against SARS-Cov2 takes place.",
+            "10": "The alternative and extrafollicular immune response against SARS-Cov2 alters the humoral and memory T cell response.",
+            "11": "The alternative and extrafollicular immune response against SARS-Cov2 leads to a breakdown of tolerance.",
+            "12": "The alternative and extrafollicular immune response against SARS-Cov2 results in the emergence of autoantibodies.",
+            "13": "The risk of developing severe COVID-19 in SLE patients did not exceed that in the general population.",
+            "14": "The risk of developing severe COVID-19 in RA patients did not exceed that in the general population.",
+            "15": "SLE and RA patients with pre-existing neutralizing autoantibodies against IFN-I have a higher risk of developing severe COVID-19 compared to the general population.",
+            "16": "Discontinuation of treatment increases the risk of developing flares more than COVID-19 infection does.",
+            "17": "Discontinuation of treatment increases the risk of developing flares more than COVID-19 vaccination does.",
+            "18": "There have been a limited number of case reports of individuals developing SLE following COVID-19 infection.",
+            "19": "There have been a limited number of case reports of individuals developing SLE following COVID-19 vaccination.",
+            "20": "There have been a limited number of case reports of individuals developing RA following COVID-19 infection.",
+            "21": "There have been a limited number of case reports of individuals developing RA following COVID-19 vaccination.",
+            "22": "The SARS-Cov2 pandemic provides a unique opportunity to investigate the interplay between the immune response against infectious agents and autoimmunity.",
+            "23": "The SARS-Cov2 pandemic provides a unique opportunity to better understand the triggering role of infection as a risk factor in autoimmune disease development.",
+            "24": "The SARS-Cov2 pandemic provides a unique opportunity to better understand the triggering role of infection as a risk factor in chronic inflammatory disease development."
+          },
+          "18": {
+            "1": "Circular RNAs (circRNAs) are produced from back-splicing of exons of pre-mRNAs.",
+            "2": "Circular RNAs (circRNAs) are widely expressed.",
+            "3": "The current understanding of the functions of circular RNAs (circRNAs) is limited.",
+            "4": "Circular RNAs (circRNAs) are generally stable.",
+            "5": "Circular RNAs (circRNAs) are thought to have unique structural conformations distinct from their linear RNA cognates.",
+            "6": "Endogenous circular RNAs (circRNAs) tend to form 16-26 bp imperfect RNA duplexes.",
+            "7": "Endogenous circular RNAs (circRNAs) act as inhibitors of double-stranded RNA (dsRNA)-activated protein kinase (PKR) related to innate immunity.",
+            "8": "Upon poly(I:C) stimulation, circular RNAs (circRNAs) are globally degraded by RNase L.",
+            "9": "Upon viral infection, circular RNAs (circRNAs) are globally degraded by RNase L.",
+            "10": "The degradation of circular RNAs (circRNAs) by RNase L is required for the activation of PKR in early cellular innate immune responses.",
+            "11": "Augmented PKR phosphorylation is found in peripheral blood mononuclear cells (PBMCs) derived from patients with autoimmune disease systemic lupus erythematosus (SLE).",
+            "12": "Circular RNA (circRNA) reduction is found in peripheral blood mononuclear cells (PBMCs) derived from patients with autoimmune disease systemic lupus erythematosus (SLE).",
+            "13": "Overexpression of the dsRNA-containing circular RNA (circRNA) in peripheral blood mononuclear cells (PBMCs) or T cells derived from systemic lupus erythematosus (SLE) can alleviate the aberrant PKR activation cascade.",
+            "14": "There is a connection between circular RNAs (circRNAs) and systemic lupus erythematosus (SLE)."
+          },
+          "19": {
+            "1": "Multisystem inflammatory syndrome in children (MIS-C) is a severe sequela of SARS-CoV-2 infection.",
+            "2": "Multisystem inflammatory syndrome in children (MIS-C) is a post-infectious sequela of SARS-CoV-2 infection."
+          }
+        },
+        "viewpoints": [
+          "Covid-19 has been shown to be able to trigger the presentation of autoimmune diseases in genetically predisposed patients.",
+          "Covid-19 has been shown to be able to trigger the exacerbation of autoimmune diseases in genetically predisposed patients.",
+          "Covid-19 has been shown to be able to trigger a longstanding inflammatory syndrome in genetically predisposed patients."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Genetic predisposition accounts for approximately thirty percent of the risk of developing autoimmune diseases and interacting environmental factors could include toxic agents and diet but also infections [20].",
+        "references": {
+          "20": []
+        },
+        "viewpoints": [
+          "Genetic predisposition accounts for approximately thirty percent of the risk of developing autoimmune diseases.",
+          "Interacting environmental factors could include toxic agents.",
+          "Interacting environmental factors could include diet.",
+          "Interacting environmental factors could include infections."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "The NCF1-regulated differences in the interferon signaling responses were seen in germ-free mice only after immunization, and they were also obvious after pristane injection, which triggered a more severe lupus-associated response [12], [13], [21].",
+        "references": {
+          "12": {
+            "1": "Chronic granulomatous disease (CGD) is a primary immunodeficiency.",
+            "2": "Chronic granulomatous disease (CGD) is caused by mutations in the phagocyte reactive oxygen species (ROS)-producing NOX2 enzyme complex.",
+            "3": "Chronic granulomatous disease (CGD) is characterized by recurrent infections.",
+            "4": "Chronic granulomatous disease (CGD) is associated with hyperinflammatory manifestations.",
+            "5": "Chronic granulomatous disease (CGD) is associated with autoimmune manifestations.",
+            "6": "A translational, comparative analysis of CGD patients and the corresponding ROS-deficient Ncf1(m1J) mutated mouse model was performed.",
+            "7": "The purpose of the translational, comparative analysis was to reveal the molecular pathways operating in NOX2 complex deficient inflammation.",
+            "8": "A prominent type I interferon (IFN) response signature was identified in mice lacking functional NOX2 complex.",
+            "9": "A prominent type I interferon (IFN) response signature was identified in humans lacking functional NOX2 complex.",
+            "10": "Elevated autoantibody levels accompanied the type I IFN response signature in mice lacking functional NOX2 complex.",
+            "11": "Elevated autoantibody levels accompanied the type I IFN response signature in humans lacking functional NOX2 complex.",
+            "12": "The systemic lupus erythematosus (SLE)-related autoimmune process is underlined by the fact that naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease.",
+            "13": "Naïve Ncf1(m1J) mutated mice suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "14": "SLE patients suffer from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "15": "Naïve Ncf1(m1J) mutated mice are similar to SLE patients in terms of suffering from inflammatory kidney disease with IgG and C3 deposits in the glomeruli.",
+            "16": "Expression analysis of germ-free Ncf1(m1J) mutated mice reproduced the type I IFN signature.",
+            "17": "The reproduction of the type I IFN signature in germ-free Ncf1(m1J) mutated mice enabled the conclusion that the upregulated signaling pathway is of endogenous origin.",
+            "18": "The upregulated signaling pathway in germ-free Ncf1(m1J) mutated mice is of endogenous origin.",
+            "19": "There was a previously unexplained connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "20": "Our findings link the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "21": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in mice.",
+            "22": "Activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex in humans.",
+            "23": "The discovery that activation of IFN signaling is a major pathway downstream of a deficient NOX2 complex links the connection between ROS deficiency and increased susceptibility to autoimmunity.",
+            "24": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in mice.",
+            "25": "The lack of phagocyte-derived oxidative burst is associated with spontaneous autoimmunity in humans.",
+            "26": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in mice.",
+            "27": "The lack of phagocyte-derived oxidative burst is linked with the type I IFN signature in humans."
+          },
+          "13": {
+            "1": "Effector mechanisms of neutrophils are involved in the pathogenesis of systemic lupus erythematosus (SLE).",
+            "2": "Neutrophil extracellular traps (NETs) are considered to have a particularly detrimental role in systemic lupus erythematosus (SLE).",
+            "3": "The study investigated the functional impact of neutrophils and neutrophil extracellular traps (NETs) on a mouse model of lupus.",
+            "4": "The mouse model of lupus was triggered by intraperitoneal injection of the cell death-inducing alkane pristane.",
+            "5": "Pristane-induced lupus (PIL) was aggravated in NOX2-deficient (Ncf1-mutated) mouse strains with impaired induction of NET formation.",
+            "6": "Pristane-induced lupus (PIL) was aggravated in peptidyl arginine deiminase 4-deficient (PAD4-deficient) mouse strains with impaired induction of NET formation.",
+            "7": "Aggravation of pristane-induced lupus (PIL) in NOX2-deficient and PAD4-deficient mice was evidenced by elevated levels of antinuclear autoantibodies (ANAs).",
+            "8": "Aggravation of pristane-induced lupus (PIL) in NOX2-deficient and PAD4-deficient mice was evidenced by exacerbated glomerulonephritis.",
+            "9": "There was a dramatically reduced ability to form pristane-induced NETs in vivo in Ncf1-mutated mice.",
+            "10": "There was a dramatically reduced ability to form pristane-induced NETs in vivo in PAD4-deficient mice.",
+            "11": "The reduced ability to form pristane-induced NETs in Ncf1-mutated and PAD4-deficient mice was accompanied by higher levels of inflammatory mediators in the peritoneum.",
+            "12": "Neutropenic Mcl-1ΔMyelo mice exhibited higher levels of antinuclear autoantibodies (ANAs).",
+            "13": "The observation of higher levels of antinuclear autoantibodies (ANAs) in neutropenic Mcl-1ΔMyelo mice indicates a regulatory function in lupus for NETs and neutrophils.",
+            "14": "Blood neutrophils from Ncf1-mutated mice exhibited exuberant spontaneous NET formation.",
+            "15": "Blood neutrophils from human individuals with systemic lupus erythematosus (SLE) exhibited exuberant spontaneous NET formation.",
+            "16": "Treatment with specific chemical NOX2 activators induced NET formation.",
+            "17": "Treatment with specific chemical NOX2 activators ameliorated pristane-induced lupus (PIL).",
+            "18": "Aberrant NET formation is one of the factors promoting experimental lupus-like autoimmunity.",
+            "19": "Aberrant NET formation promotes experimental lupus-like autoimmunity by uncontrolled release of inflammatory mediators."
+          },
+          "21": {
+            "1": "The NADPH oxidase 2 (NOX2) complex is responsible for the production of reactive oxygen species (ROS) in phagocytic cells.",
+            "2": "Genetic defects in NOX2 lead to opportunistic infections in humans.",
+            "3": "Genetic defects in NOX2 lead to inflammatory manifestations such as granulomas in humans.",
+            "4": "Granulomas in humans are also known as chronic granulomatous disease (CGD).",
+            "5": "Chronic granulomatous disease (CGD) condition is mirrored in mice with defective ROS production.",
+            "6": "Humans with chronic granulomatous disease (CGD) are predisposed to autoimmune diseases.",
+            "7": "Mice with defective ROS production are predisposed to autoimmune diseases.",
+            "8": "There is an unresolved question of whether the hyper-inflammation and tendency to develop autoimmunity are secondary to increased infections.",
+            "9": "There is an unresolved question of whether the hyper-inflammation and tendency to develop autoimmunity are parallel phenomena to increased infections.",
+            "10": "Researchers generated germ-free ROS-deficient Ncf1 mutant mice.",
+            "11": "Germ-free ROS-deficient Ncf1 mutant mice reared in specific pathogen-free conditions are highly susceptible to collagen-induced arthritis compared with wild-type mice.",
+            "12": "Arthritis incidence in germ-free ROS-deficient mice was almost identical to that in specific pathogen-free ROS-deficient mice.",
+            "13": "Arthritis severity in germ-free ROS-deficient mice was almost identical to that in specific pathogen-free ROS-deficient mice.",
+            "14": "Partial reduction of the microbial flora in ROS-deficient mice by antibiotic treatment did not alter the disease course.",
+            "15": "Reactive oxygen species (ROS) has a clear immune regulatory function.",
+            "16": "The immune regulatory function of reactive oxygen species (ROS) is decoupled from its function in host defense."
+          }
+        },
+        "viewpoints": [
+          "NCF1-regulated differences in the interferon signaling responses were seen in germ-free mice only after immunization.",
+          "NCF1-regulated differences in the interferon signaling responses were obvious after pristane injection.",
+          "Pristane injection triggered a more severe lupus-associated response."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Like several other mouse lupus models, pristane-induced lupus has been extensively studied for pathogenic mechanisms, and different downstream causative mechanisms have been suggested [22].",
+        "references": {
+          "22": {
+            "1": "Intraperitoneal injection of pristane is a standard technique for obtaining monoclonal antibody-enriched ascitic fluid.",
+            "2": "Pristane induces plasmacytomas in BALB/c mice.",
+            "3": "Pristane induces an erosive arthritis resembling rheumatoid arthritis in BALB/c mice.",
+            "4": "The induction of plasmacytomas and erosive arthritis by pristane in BALB/c mice is probably a consequence of enhanced interleukin 6 production.",
+            "5": "The production of autoantibodies characteristic of systemic lupus erythematosus is a further consequence of injecting pristane in BALB/c mice.",
+            "6": "Anti-Su antibodies appeared 1-2 months after a single injection of 0.5 ml pristane in BALB/c mice.",
+            "7": "Anti-U1RNP antibodies appeared 2-4 months after a single injection of 0.5 ml pristane in BALB/c mice.",
+            "8": "Anti-Sm antibodies appeared 2-4 months after a single injection of 0.5 ml pristane in BALB/c mice.",
+            "9": "9 of 11 BALB/c mice developed anti-Su, anti-U1RNP, anti-U2RNP, anti-Sm, and possibly anti-U5RNP antibodies within 6 months of pristane injection.",
+            "10": "Autoantibodies were not produced by 20 BALB/c mice of the same age and sex that were not injected with pristane.",
+            "11": "Autoantibodies characteristic of lupus were induced in mice that are not usually considered to be genetically susceptible to the disease.",
+            "12": "The induction of autoantibodies associated with systemic lupus erythematosus by pristane may be relevant to understanding the role of abnormal cytokine production in autoantibody production.",
+            "13": "The induction of autoantibodies associated with systemic lupus erythematosus by pristane may be relevant to understanding the pathogenesis of autoimmune disease.",
+            "14": "The induction of high titer autoantibodies by pristane dictates caution in the use of ascitic fluid as a source of monoclonal antibodies.",
+            "15": "The polyclonal antibodies induced by pristane may copurify with the monoclonal antibody secreted by an injected hybridoma."
+          }
+        },
+        "viewpoints": [
+          "Pristane-induced lupus has been extensively studied for pathogenic mechanisms, similar to several other mouse lupus models.",
+          "Different downstream causative mechanisms for pristane-induced lupus have been suggested."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "To understand the pathogenic role of the NCF1 polymorphism relevant to humans, we have addressed the role of the Ncf1 R90H alleles in mice.",
+        "references": {},
+        "viewpoints": [
+          "The study aimed to understand the pathogenic role of the NCF1 polymorphism relevant to humans by addressing the role of the Ncf1 R90H alleles in mice."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Here we study the Ncf1 R90H alleles in mice, to understand the pathogenic role of the NCF1 polymorphism relevant to humans.",
+        "references": {},
+        "viewpoints": [
+          "The study focuses on Ncf1 R90H alleles in mice to understand the pathogenic role of the NCF1 polymorphism relevant to humans."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "To our surprise, the Ncf1 90H allele does not enhance pristane-induced lupus in the mice under specific pathogen-free conditions.",
+        "references": {},
+        "viewpoints": [
+          "The Ncf1 90H allele does not enhance pristane-induced lupus in mice under specific pathogen-free conditions."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "However, infection with MNV causes the development of severe lupus in Ncf1 90H mice irrespective of whether these were naïve or injected with pristane.",
+        "references": {},
+        "viewpoints": [
+          "Infection with murine norovirus (MNV) causes the development of severe lupus in Ncf1 90H mice.",
+          "The development of severe lupus in Ncf1 90H mice due to MNV infection occurs irrespective of whether these mice were naïve or injected with pristane."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Thus, a synergy between a defined gene mutation and a specific non-autologous factor for the induction of an autoimmune disease is described.",
+        "references": {},
+        "viewpoints": [
+          "A synergy between a defined gene mutation and a specific non-autologous factor for the induction of an autoimmune disease is described."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56857-z_with_abstracts",
+    "base_id": "s41467-025-56857-z",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56857-z_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

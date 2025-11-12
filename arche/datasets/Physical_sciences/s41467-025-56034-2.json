@@ -1,0 +1,1470 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Complex networks represent the structure of several natural and artificial complex systems [1] , that exhibit ubiquitous properties such as heterogeneous connectivity [2] , efficient information transmission [3] , mesoscale [4] and hierarchical [5] , [6] organization. Moreover, additional information can be used to enrich these models considering multiplexity and interdependence [7] , [8] , [9] , [10] , [11] , high-order behavior and mechanisms [12] , [13] , [14] , [15] , [16] . The richness of network modeling and analysis opens the door for a wide variety of applications across multiple disciplines, ranging from gene regulation [17] , [18] and protein interaction [19] networks in molecular biology, brain networks [20] , [21] in neuroscience, traffic networks [22] in urban planning, to social networks [23] , [24] in social sciences. Furthermore, network science has been used to study the flow of information within networks, from the electrochemical signals traveling between brain areas and pathogens spreading among social systems to the flights in airline networks and the messages being shared on social media. To this aim, often, a dynamical process is exploited that governs the short- to long-range flow between the components [25] , [26] , [27] , [28] , [29] , [30] , [31] , [32] , [33] , [34] , [35] , [36] , [37] , [38] , [39] . Yet, the largeness of many real-world systems poses a challenge, due to computational complexity and components’ redundancies in roles and features, hampering a clear understanding of how complex systems operate. Therefore, an interesting possibility is to search for proper compressions of networks– by means of grouping and coarse-graining nodes with redundant features or roles– that preserve the flow. The network renormalization method focuses on compressing the size of the network while preserving its core properties. Several pioneering methods have been proposed to coarse-grain the components. Song et al. [40] brought the concept of the Box-Covering method into the network renormalization realm [41] , with subsequent works primarily focused on enhancing its efficiency [42] , [43] , [44] . Generally, these methods treat the network as a spin system [45] and study the universality classes [46] and fractal properties [47] . As another example, geometric renormalization on unweighted graph [48] and weighted graph [49] embeds the network structure into a two-dimensional hyperbolic space, groups the nodes based on their angle similarities, and merge them into a macro network: in that space they unravel the multiscale organization of real-world networks. In the same spirit, the effective geometry induced by network dynamics have been used to uncover the scale and fractal properties [50] . As an example, spectral coarse graining [51] focuses on the dynamics on top of networks and attempts to preserve the large-scale random walk behavior of the network during structural compression. More recently, an approach based on Laplacian renormalization [52] was proposed based on diffusion dynamics on top of the network, corresponding to the renormalization of a free field theory in network structures. This method pushed the boundaries of RG to include structural heterogeneity by preserving the slow modes of diffusion. However, none of these renormalization methods is designed to preserve the macroscopic features of information dynamics simultaneously at all propagation scales for all network types. Similar to the Laplacian renormalization group, we capitalize on network density matrices [33] to describe the information dynamics in the system [53] . From density matrices, we derive the typical macroscopic indicators like network entropy and free energy, which, respectively, quantify how diverse the diffusion pathways are [53] , [54] , [55] and how fast signals travel in the system [55] , [56] . We show that such measures can be derived from the network partition function Z τ , as in equilibrium thermodynamics. On this theoretical basis, we deduce that a coarse-graining that preserves the shape of partition function across the propagation scale τ , preserves the macroscopic indicators of information flow. Therefore, we aim to reach a coarse-graining with minimum deviations from the full partition function profile. We bypass the challenge of finding an analytically closed solution for general complex networks. Avoiding simplifying assumptions and cases of poor practical interest, we leverage recent advances in machine learning based on graphs to develop the framework of the Network Flow Compression Model(NFC Model), as depicted in Fig. 1 . More technically, we use graph neural networks [57] , [58] to process and aggregate nodes’ local features like the number of connections (degree), and reach a high-level representation of them. In the representation space, it identifies groups of nodes that play redundant roles in information flow whose aggregation does not drastically change the flow and coarse-grain them to reach suitable compressions, minimizing the partition function deviation. While most coarse-graning methods define and identify supernodes by grouping nodes with similar local structures, their notion of similarity is typically predefined [48] , [49] . In contrast, our approach leverages a machine learning model to automatically learn the vital similarity features that can be used to compress the network while preserving the macroscopic flow properties. For instance, in the BA network, hub nodes are coarsened together, while leaf nodes are coarsened together. In real-world scientist collaboration networks, scientists with the highest number of collaborations are coarsened into one group, even if they don’t collaborate with(are connected to) each other. Experimental results in subsequent sections and show that our approach preserves the information flow even for large compressions, in synthetic and empirical systems. The analysis of the model’s interpretability in subsequent sections indicates that this strategy is reasonable: it preserves the function of local structures in the process of information diffusion while reducing the number of redundant structures. Fig. 1: A Schematic representation of our framework. The message-passing mechanism of the GNN collects neighbors' information to create a vector representation for each node. The Softmax method normlizes the vector leading to a node grouping. The node features we use here include degree σ d , degree’s \\({{{{\\mathcal{X}}}}}^{2}\\) --- i.e., given by \\({{{{\\mathcal{X}}}}}_{i}^{2}={(E[d]-{\\sigma }_{d})}^{2}/E[d]\\) where d is the degree of neighboring nodes---, clustering coefficient and core-number. In this case, 3 groups are considered for simplicity, represented in the group matrix S . Using both S and the original adjacency matrix A , we proceed with a compression operation expressed as: \\(\\hat{{{{\\bf{A}}}}}=\\frac{M}{N}{{{{\\bf{S}}}}}^{T}{{{\\bf{A}}}}{{{\\bf{S}}}}\\) . In this operation, \\(\\hat{{{{\\bf{A}}}}}\\) stands for the adjacency matrix of the macro network, whereas M and N symbolize the number of nodes within the macro and micro networks, respectively. The deviation of macro network’s normalized partition function from the original network is used as the loss function to supervise the GNN. Full size image Our work serves a purpose that is ultimately different from the network renormalization group methods. In fact, these methods aim to uncover the scaling behavior of systems. For instance, renormalization group methods preserve specific topological properties when compressing networks, like the degree distribution of scale-free networks. However, in other cases, for instance, in network with one or multiple characteristic topological scales, these methods are expected to capture the changes in network properties, including the flow, as it gets compressed. In contrast, our approach seeks to find a coarse-graining that preserves the flow properties, regardless of the specific features of a topology. Therefore, it is expected to outperform others in preserving the flow, when compared across distinct network families. We confirm this expectation through a series of numerical experiments demonstrated in Fig. 2 . Fig. 2: Compression for Synthetic Networks. Visual representation of the compression process applied to two representative Stochastic Block Model (SBM) networks (mixing parameters μ of 0.029 and 0.127, respectively) and Barabasi-Albert (BA) networks (numbers of links per node m of 1 and 2). The second row visualizes the structure of the macro network that was compressed to 35 nodes. The third row shows the Mean Absolute Error in the partition function before and after compression at different sizes. We selected 10 different sizes uniformly in the logarithmic space between 5 and 200. The last row shows the Mean Absolute Error of the partition function curve for different methods when compressing the network to 35 nodes. Full size image Finally, we train our graph neural networks on a vast number of real-world networks, enabling generalization to the datasets it has not seen before. We show that it leads to rapid and highly effective compressions across networks from various domains.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Complex networks represent the structure of several natural and artificial complex systems [1], that exhibit ubiquitous properties such as heterogeneous connectivity [2], efficient information transmission [3], mesoscale [4] and hierarchical [5], [6] organization.",
+        "references": {
+          "1": {
+            "1": "Coupled biological and chemical systems are examples of systems composed by a large number of highly interconnected dynamical units.",
+            "2": "Neural networks are examples of systems composed by a large number of highly interconnected dynamical units.",
+            "3": "Social interacting species are examples of systems composed by a large number of highly interconnected dynamical units.",
+            "4": "The Internet is an example of a system composed by a large number of highly interconnected dynamical units.",
+            "5": "The World Wide Web is an example of a system composed by a large number of highly interconnected dynamical units.",
+            "6": "Modeling systems composed by a large number of highly interconnected dynamical units as graphs is the first approach to capture their global properties.",
+            "7": "In the graph modeling of systems with highly interconnected dynamical units, nodes represent the dynamical units.",
+            "8": "In the graph modeling of systems with highly interconnected dynamical units, links represent the interactions between dynamical units.",
+            "9": "Scientists have to cope with structural issues in the study of complex networks.",
+            "10": "Characterizing the topology of a complex wiring architecture is a structural issue in the study of complex networks.",
+            "11": "Revealing the unifying principles that are at the basis of real networks is a structural issue in the study of complex networks.",
+            "12": "Developing models to mimic the growth of a network and reproduce its structural properties is a structural issue in the study of complex networks.",
+            "13": "Many relevant questions arise when studying the dynamics of complex networks.",
+            "14": "One of the relevant questions in the study of complex networks' dynamics is understanding how a large ensemble of dynamical systems that interact through a complex wiring topology can behave collectively.",
+            "15": "The authors review the major concepts recently achieved in the study of the structure and dynamics of complex networks.",
+            "16": "The authors review the major results recently achieved in the study of the structure and dynamics of complex networks.",
+            "17": "The authors summarize the relevant applications of the ideas from the study of complex networks' structure and dynamics in many different disciplines.",
+            "18": "The relevant applications of ideas from studying complex networks range from nonlinear science to biology.",
+            "19": "The relevant applications of ideas from studying complex networks range from statistical mechanics to medicine and engineering."
+          },
+          "2": {
+            "1": "Genetic networks are best described as networks with complex topology.",
+            "2": "The World Wide Web is best described as a network with complex topology.",
+            "3": "Many large networks have the common property that vertex connectivities follow a scale-free power-law distribution.",
+            "4": "The scale-free power-law distribution of vertex connectivities in large networks is a consequence of two generic mechanisms.",
+            "5": "Networks expand continuously by the addition of new vertices.",
+            "6": "New vertices attach preferentially to sites that are already well connected.",
+            "7": "A model based on the continuous expansion of networks by new vertices and preferential attachment of new vertices to well-connected sites reproduces the observed stationary scale-free distributions.",
+            "8": "The development of large networks is governed by robust self-organizing phenomena.",
+            "9": "The robust self-organizing phenomena governing the development of large networks go beyond the particulars of the individual systems."
+          },
+          "3": {
+            "1": "Networks of coupled dynamical systems are used to model biological oscillators.",
+            "2": "Networks of coupled dynamical systems are used to model Josephson junction arrays.",
+            "3": "Networks of coupled dynamical systems are used to model excitable media.",
+            "4": "Networks of coupled dynamical systems are used to model neural networks.",
+            "5": "Networks of coupled dynamical systems are used to model spatial games.",
+            "6": "Networks of coupled dynamical systems are used to model genetic control networks.",
+            "7": "Networks of coupled dynamical systems are used to model many other self-organizing systems.",
+            "8": "The connection topology of networks of coupled dynamical systems is usually assumed to be completely regular.",
+            "9": "The connection topology of networks of coupled dynamical systems is usually assumed to be completely random.",
+            "10": "Many biological networks lie between completely regular and completely random connection topologies.",
+            "11": "Many technological networks lie between completely regular and completely random connection topologies.",
+            "12": "Many social networks lie between completely regular and completely random connection topologies.",
+            "13": "Simple models of networks can be tuned through the middle ground between completely regular and completely random connection topologies.",
+            "14": "Simple models are created by 'rewiring' regular networks to introduce increasing amounts of disorder.",
+            "15": "These systems can be highly clustered like regular lattices.",
+            "16": "These systems can have small characteristic path lengths like random graphs.",
+            "17": "These networks are called 'small-world' networks.",
+            "18": "The naming 'small-world' networks is by analogy with the small-world phenomenon.",
+            "19": "The small-world phenomenon is popularly known as six degrees of separation.",
+            "20": "The neural network of the worm Caenorhabditis elegans is a small-world network.",
+            "21": "The power grid of the western United States is a small-world network.",
+            "22": "The collaboration graph of film actors is a small-world network.",
+            "23": "Models of dynamical systems with small-world coupling display enhanced signal-propagation speed.",
+            "24": "Models of dynamical systems with small-world coupling display enhanced computational power.",
+            "25": "Models of dynamical systems with small-world coupling display enhanced synchronizability.",
+            "26": "Infectious diseases spread more easily in small-world networks than in regular lattices."
+          },
+          "4": {
+            "1": "Networks of interest in the sciences, including social networks, divide naturally into communities or modules.",
+            "2": "Networks of interest in the sciences, including computer networks, divide naturally into communities or modules.",
+            "3": "Networks of interest in the sciences, including metabolic networks, divide naturally into communities or modules.",
+            "4": "Networks of interest in the sciences, including regulatory networks, divide naturally into communities or modules.",
+            "5": "Detecting and characterizing community structure is a significant issue in the study of networked systems.",
+            "6": "Optimizing the quality function known as \"modularity\" over the possible divisions of a network is a highly effective approach.",
+            "7": "Modularity can be expressed in terms of the eigenvectors of a characteristic matrix for the network, called the modularity matrix.",
+            "8": "The expression of modularity in terms of eigenvectors leads to a spectral algorithm for community detection.",
+            "9": "The spectral algorithm for community detection returns results of higher quality than competing methods.",
+            "10": "The spectral algorithm for community detection operates in shorter running times than competing methods.",
+            "11": "The method is illustrated with applications to several published network data sets."
+          },
+          "5": {
+            "1": "Many real networks in nature and society are scale-free.",
+            "2": "Many real networks in nature and society display a high degree of clustering.",
+            "3": "The scale-free property of real networks is a consequence of a hierarchical organization.",
+            "4": "The high degree of clustering in real networks is a consequence of a hierarchical organization.",
+            "5": "Small groups of nodes in hierarchical networks organize into increasingly large groups while maintaining a scale-free topology.",
+            "6": "In hierarchical networks, the degree of clustering characterizing different groups follows a strict scaling law.",
+            "7": "The strict scaling law for the degree of clustering can be used to identify the presence of a hierarchical organization in real networks.",
+            "8": "The Worldwideweb obeys the scaling law for hierarchical networks.",
+            "9": "The actor network obeys the scaling law for hierarchical networks.",
+            "10": "The Internet at the domain level obeys the scaling law for hierarchical networks.",
+            "11": "The semantic web obeys the scaling law for hierarchical networks.",
+            "12": "Hierarchy is a fundamental characteristic of many complex systems as indicated by several real networks obeying the scaling law."
+          },
+          "6": {
+            "1": "Networks have recently become essential for describing complex systems in many scientific disciplines.",
+            "2": "Networks have recently become essential for quantifying complex systems in many scientific disciplines.",
+            "3": "Recent studies suggest that networks often have hierarchical organization.",
+            "4": "Hierarchical organization in networks involves vertices dividing into groups.",
+            "5": "Groups of vertices in networks can further subdivide into smaller groups over multiple scales.",
+            "6": "Groups in networks often correspond to known functional units.",
+            "7": "Ecological niches in food webs are examples of functional units corresponding to groups in networks.",
+            "8": "Modules in protein interaction networks are examples of functional units corresponding to groups in networks.",
+            "9": "Modules in metabolic networks are examples of functional units corresponding to groups in networks.",
+            "10": "Modules in genetic regulatory networks are examples of functional units corresponding to groups in networks.",
+            "11": "Communities in social networks are examples of functional units corresponding to groups in networks.",
+            "12": "A general technique for inferring hierarchical structure from network data is presented.",
+            "13": "The existence of hierarchical structure can explain many commonly observed topological properties of networks.",
+            "14": "Hierarchical structure can quantitatively reproduce many commonly observed topological properties of networks.",
+            "15": "Right-skewed degree distributions are topological properties of networks that can be explained and reproduced by hierarchical structure.",
+            "16": "High clustering coefficients are topological properties of networks that can be explained and reproduced by hierarchical structure.",
+            "17": "Short path lengths are topological properties of networks that can be explained and reproduced by hierarchical structure.",
+            "18": "Knowledge of hierarchical structure can be used to predict missing connections in partly known networks.",
+            "19": "Predictions of missing connections in partly known networks using hierarchical structure can be made with high accuracy.",
+            "20": "Hierarchical structure can be used to predict missing connections for more general network structures than competing techniques.",
+            "21": "Hierarchy is a central organizing principle of complex networks.",
+            "22": "Hierarchy can offer insight into many network phenomena."
+          }
+        },
+        "viewpoints": [
+          "Complex networks represent the structure of several natural and artificial complex systems.",
+          "Complex systems exhibit ubiquitous properties such as heterogeneous connectivity, efficient information transmission, mesoscale organization, and hierarchical organization."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Moreover, additional information can be used to enrich these models considering multiplexity and interdependence [7], [8], [9], [10], [11], high-order behavior and mechanisms [12], [13], [14], [15], [16].",
+        "references": {
+          "7": {
+            "1": "Complex networks are present in almost every aspect of science.",
+            "2": "Complex networks are present in almost every aspect of technology.",
+            "3": "Most results in the field of complex networks have been obtained by analyzing isolated networks.",
+            "4": "Many real-world networks interact with other networks.",
+            "5": "Many real-world networks depend on other networks.",
+            "6": "Extensive results exist for the limiting case of non-interacting networks.",
+            "7": "The results for non-interacting networks are valid only if ignoring the presence of other networks can be justified.",
+            "8": "An analytical framework for studying the percolation properties of interacting networks has been developed recently.",
+            "9": "The framework for studying interacting networks will be reviewed.",
+            "10": "The results obtained for connectivity properties of 'networks of networks' formed by interdependent random networks will be reviewed."
+          },
+          "8": [],
+          "9": {
+            "1": "In most natural and engineered systems, a set of entities interact with each other in complicated patterns.",
+            "2": "The complicated patterns of interaction can encompass multiple types of relationships.",
+            "3": "The complicated patterns of interaction can change in time.",
+            "4": "The complicated patterns of interaction can include other types of complications.",
+            "5": "Such systems include multiple subsystems.",
+            "6": "Such systems include layers of connectivity.",
+            "7": "It is important to take 'multilayer' features into account to improve understanding of complex systems.",
+            "8": "It is necessary to generalize 'traditional' network theory to study multilayer systems comprehensively.",
+            "9": "Developing and validating a framework and associated tools is necessary to study multilayer systems.",
+            "10": "The efforts to generalize 'traditional' network theory date back several decades.",
+            "11": "The efforts to generalize 'traditional' network theory arose in multiple disciplines.",
+            "12": "The study of multilayer networks has become one of the most important directions in network science.",
+            "13": "The paper discusses the history of multilayer networks and related concepts.",
+            "14": "The paper reviews the rapidly growing body of work on multilayer networks.",
+            "15": "The paper discusses a general framework for multilayer networks to unify disparate terminology.",
+            "16": "The paper constructs a dictionary of terminology to relate numerous existing concepts in multilayer networks.",
+            "17": "The paper provides a thorough discussion that compares, contrasts, and translates between related notions such as multilayer networks, multiplex networks, interdependent networks, and networks of networks.",
+            "18": "The paper surveys existing data sets that can be represented as multilayer networks.",
+            "19": "The paper discusses existing data sets that can be represented as multilayer networks.",
+            "20": "The paper reviews attempts to generalize single-layer-network diagnostics to multilayer networks.",
+            "21": "The paper discusses rapidly expanding research on multilayer-network models.",
+            "22": "The paper discusses notions like community structure, connected components, tensor decompositions, and various types of dynamical processes on multilayer networks.",
+            "23": "The paper concludes with a summary.",
+            "24": "The paper concludes with an outlook."
+          },
+          "10": {
+            "1": "Network theory has characterized interactions among the constituents of complex systems.",
+            "2": "Network theory has successfully characterized interactions in biological systems.",
+            "3": "Network theory has successfully characterized interactions in technological systems.",
+            "4": "Network theory has successfully characterized interactions in social systems.",
+            "5": "Attention was almost exclusively given to networks where all components were treated equally.",
+            "6": "The networks studied previously neglected extra information about temporal properties of interactions.",
+            "7": "The networks studied previously neglected extra information about context-related properties of interactions.",
+            "8": "Network scientists have recently directed interest to the multiplex character of real-world systems.",
+            "9": "Network scientists have considered the time-varying nature of networks.",
+            "10": "Network scientists have considered the multilayer nature of networks.",
+            "11": "Enhanced resolution in real data sets enabled the consideration of multiplex, time-varying, and multilayer characteristics.",
+            "12": "The review addresses structural organization of graphs made of diverse relationships (layers) between constituents.",
+            "13": "The review addresses dynamical organization of graphs made of diverse relationships (layers) between constituents.",
+            "14": "The review includes relevant issues such as a full redefinition of the basic structural measures.",
+            "15": "The review includes understanding how the multilayer nature of the network affects processes.",
+            "16": "The review includes understanding how the multilayer nature of the network affects dynamics."
+          },
+          "11": [],
+          "12": {
+            "1": "Networks are a fundamental tool for understanding complex systems in physics.",
+            "2": "Networks are a fundamental tool for understanding complex systems in biology.",
+            "3": "Networks are a fundamental tool for understanding complex systems in neuroscience.",
+            "4": "Networks are a fundamental tool for understanding complex systems in engineering.",
+            "5": "Networks are a fundamental tool for understanding complex systems in social science.",
+            "6": "Networks are a fundamental tool for modeling complex systems in physics.",
+            "7": "Networks are a fundamental tool for modeling complex systems in biology.",
+            "8": "Networks are a fundamental tool for modeling complex systems in neuroscience.",
+            "9": "Networks are a fundamental tool for modeling complex systems in engineering.",
+            "10": "Networks are a fundamental tool for modeling complex systems in social science.",
+            "11": "Many networks exhibit rich, lower-order connectivity patterns.",
+            "12": "Lower-order connectivity patterns can be captured at the level of individual nodes and edges.",
+            "13": "Higher-order organization of complex networks remains largely unknown.",
+            "14": "Higher-order organization of complex networks is at the level of small network subgraphs.",
+            "15": "A generalized framework for clustering networks on the basis of higher-order connectivity patterns is developed.",
+            "16": "The framework provides mathematical guarantees on the optimality of obtained clusters.",
+            "17": "The framework scales to networks with billions of edges.",
+            "18": "The framework reveals higher-order organization in a number of networks.",
+            "19": "The higher-order organization includes information propagation units in neuronal networks.",
+            "20": "The higher-order organization includes hub structure in transportation networks.",
+            "21": "Networks exhibit rich higher-order organizational structures.",
+            "22": "Rich higher-order organizational structures are exposed by clustering based on higher-order connectivity patterns."
+          },
+          "13": {
+            "1": "Rich data is revealing complex dependencies between the nodes of a network.",
+            "2": "Complex dependencies between the nodes of a network may escape models based on pairwise interactions.",
+            "3": "Higher-order network models go beyond the limitations of models based on pairwise interactions.",
+            "4": "Higher-order network models offer new perspectives for understanding complex systems."
+          },
+          "14": {
+            "1": "Complex networks are the main paradigm for modeling the dynamics of interacting systems.",
+            "2": "Networks are intrinsically limited to describing pairwise interactions.",
+            "3": "Real-world systems are often characterized by higher-order interactions involving groups of three or more units.",
+            "4": "Higher-order structures, such as hypergraphs and simplicial complexes, are a better tool than networks for mapping the real organization of many social systems.",
+            "5": "Higher-order structures, such as hypergraphs and simplicial complexes, are a better tool than networks for mapping the real organization of many biological systems.",
+            "6": "Higher-order structures, such as hypergraphs and simplicial complexes, are a better tool than networks for mapping the real organization of many man-made systems.",
+            "7": "There is recent evidence of collective behaviors induced by higher-order interactions.",
+            "8": "There are three key challenges for the physics of higher-order systems."
+          },
+          "15": [],
+          "16": []
+        },
+        "viewpoints": [
+          "Additional information can be used to enrich complex network models.",
+          "Considering multiplexity and interdependence can enrich complex network models.",
+          "Considering high-order behavior and mechanisms can enrich complex network models."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "The richness of network modeling and analysis opens the door for a wide variety of applications across multiple disciplines, ranging from gene regulation [17], [18] and protein interaction [19] networks in molecular biology, brain networks [20], [21] in neuroscience, traffic networks [22] in urban planning, to social networks [23], [24] in social sciences.",
+        "references": {
+          "17": {
+            "1": "Gene regulatory networks have an important role in cell differentiation.",
+            "2": "Gene regulatory networks have an important role in metabolism.",
+            "3": "Gene regulatory networks have an important role in the cell cycle.",
+            "4": "Gene regulatory networks have an important role in signal transduction.",
+            "5": "Understanding the dynamics of gene regulatory networks can shed light on the mechanisms of diseases.",
+            "6": "Diseases occur when cellular processes involving gene regulatory networks are dysregulated.",
+            "7": "Accurate prediction of the behaviour of regulatory networks will speed up biotechnological projects.",
+            "8": "Predictions of the behaviour of regulatory networks are quicker than lab experiments.",
+            "9": "Predictions of the behaviour of regulatory networks are cheaper than lab experiments.",
+            "10": "Computational methods support the development of network models.",
+            "11": "Computational methods are used for the analysis of the functionality of network models.",
+            "12": "Computational methods have already proved to be a valuable research tool."
+          },
+          "18": {
+            "1": "A systematic evaluation is presented.",
+            "2": "The evaluation is of state-of-the-art algorithms.",
+            "3": "The purpose of the algorithms is inferring gene regulatory networks.",
+            "4": "The data source for the evaluation is single-cell transcriptional data.",
+            "5": "Synthetic networks with predictable trajectories are used as ground truth for assessing accuracy.",
+            "6": "Literature-curated Boolean models are used as ground truth for assessing accuracy.",
+            "7": "Diverse transcriptional regulatory networks are used as ground truth for assessing accuracy.",
+            "8": "A strategy is developed to simulate single-cell transcriptional data from synthetic networks.",
+            "9": "A strategy is developed to simulate single-cell transcriptional data from Boolean networks.",
+            "10": "The developed strategy avoids pitfalls of previously used methods.",
+            "11": "Networks are collected from multiple experimental single-cell RNA-seq datasets.",
+            "12": "An evaluation framework called BEELINE is developed.",
+            "13": "The area under the precision-recall curve of the algorithms is moderate.",
+            "14": "The early precision of the algorithms is moderate.",
+            "15": "The methods are better in recovering interactions in synthetic networks than in Boolean models.",
+            "16": "The algorithms with the best early precision values for Boolean models perform well on experimental datasets.",
+            "17": "Techniques that do not require pseudotime-ordered cells are generally more accurate.",
+            "18": "Recommendations are presented to end users based on the evaluation results.",
+            "19": "BEELINE will aid the development of gene regulatory network inference algorithms."
+          },
+          "19": {
+            "1": "Residue-residue coevolution has been observed across a number of protein-protein interfaces.",
+            "2": "The extent of residue coevolution between protein families on the whole-proteome scale has not been systematically studied.",
+            "3": "Coevolution is investigated between 5.4 million pairs of proteins in *Escherichia coli*.",
+            "4": "Coevolution is investigated between 3.9 million pairs of proteins in *Mycobacterium tuberculosis*.",
+            "5": "Strong coevolution is found for binary complexes involved in metabolism.",
+            "6": "Weaker coevolution is found for larger complexes playing roles in genetic information processing.",
+            "7": "The coevolution, in combination with structure modeling, is used to predict protein-protein interactions with high accuracy.",
+            "8": "The accuracy of the predicted protein-protein interactions is considerably higher than that of proteome-wide two-hybrid and mass spectrometry screens, according to benchmark studies.",
+            "9": "Hundreds of previously uncharacterized protein-protein interactions are identified in *E. coli*.",
+            "10": "Hundreds of previously uncharacterized protein-protein interactions are identified in *Mycobacterium tuberculosis*.",
+            "11": "The identified protein-protein interactions add components to known protein complexes and networks.",
+            "12": "The identified protein-protein interactions establish the existence of new protein complexes and networks."
+          },
+          "20": {
+            "1": "The analysis of the human connectome using functional magnetic resonance imaging (fMRI) started in the mid-1990s.",
+            "2": "The analysis using fMRI attracted increasing attention in attempts to discover the neural underpinnings of human cognition.",
+            "3": "The analysis using fMRI attracted increasing attention in attempts to discover the neural underpinnings of neurological disorders.",
+            "4": "Brain connectivity patterns from fMRI data are classified as statistical dependencies, known as functional connectivity.",
+            "5": "Brain connectivity patterns from fMRI data are classified as causal interactions, known as effective connectivity.",
+            "6": "Functional connectivity indicates statistical dependencies among various neural units.",
+            "7": "Effective connectivity indicates causal interactions among various neural units.",
+            "8": "Computational methods have recently played a significant role in understanding brain connectivity architecture.",
+            "9": "Graph theory-based methods, a type of computational method, have played a significant role in understanding brain connectivity architecture.",
+            "10": "The emergence of graph theoretical analysis has prompted the systematic review of how brain properties can emerge through the interactions of distinct neuronal units.",
+            "11": "The main purpose of the current paper is to review how brain properties can emerge through the interactions of distinct neuronal units using fMRI.",
+            "12": "The current paper examines interactions of distinct neuronal units in various cognitive applications using fMRI.",
+            "13": "The current paper examines interactions of distinct neuronal units in various neurological applications using fMRI.",
+            "14": "The article provides an overview of the existing functional connectivity methods used to construct the brain network.",
+            "15": "The article provides an overview of the existing effective connectivity methods used to construct the brain network.",
+            "16": "The article discusses the advantages of existing connectivity methods.",
+            "17": "The article discusses the pitfalls of existing connectivity methods.",
+            "18": "The systematic review employs the databases Science Direct, Scopus, arXiv, Google Scholar, IEEE Xplore, PsycINFO, PubMed, and SpringerLink.",
+            "19": "The review explores the evolution of computational methods in human brain connectivity from 1990 to the present.",
+            "20": "The review focuses on graph theory in the context of human brain connectivity.",
+            "21": "The Cochrane Collaboration's tool was used in the review.",
+            "22": "The tool was used to assess the risk of bias in individual studies.",
+            "23": "Graph theory has attracted the attention of researchers in cognitive neuroscience since 2009.",
+            "24": "Implications of graph theory in cognitive neuroscience have attracted researchers' attention since 2009.",
+            "25": "Graph theory attracted attention due to its capability to characterize the behavior of complex brain systems.",
+            "26": "The Human Connectome Project launched in 2009.",
+            "27": "The graph theoretical approach can be applied to functional connectivity patterns during rest or task performance.",
+            "28": "The graph theoretical approach can be applied to effective connectivity patterns during rest or task performance.",
+            "29": "Most articles have focused on resting-state functional connectivity.",
+            "30": "The review provides insight into utilizing graph theoretical measures to make neurobiological inferences.",
+            "31": "Graph theoretical measures can be used to make inferences regarding mechanisms underlying human cognition.",
+            "32": "Graph theoretical measures can be used to make inferences regarding mechanisms underlying human behavior.",
+            "33": "Graph theoretical measures can be used to make inferences regarding mechanisms underlying different brain disorders."
+          },
+          "21": {
+            "1": "Structure–function relationships are a fundamental principle of many naturally occurring systems.",
+            "2": "Network neuroscience research suggests that there is an imperfect link between structural connectivity and functional connectivity in the brain.",
+            "3": "The current state of knowledge linking structure and function in macroscale brain networks is synthesized.",
+            "4": "Different types of models are used to assess the relationship between structure and function in macroscale brain networks.",
+            "5": "Current models do not include the requisite biological detail to completely predict function.",
+            "6": "Structural network reconstructions enriched with local molecular and cellular metadata hold great potential for a multiscale understanding of the structure–function relationship.",
+            "7": "More nuanced representations of functions and properties hold great potential for a multiscale understanding of the structure–function relationship.",
+            "8": "Enriching structural network reconstructions with local molecular and cellular metadata, combined with nuanced representations of functions and properties, holds great potential for a multiscale understanding of the structure–function relationship."
+          },
+          "22": {
+            "1": "Complex network theory is a multidisciplinary research direction of complexity science.",
+            "2": "Complex network theory has experienced a rapid surge of interest over the last two decades.",
+            "3": "Applications of complex network theory in land-based urban traffic network studies have been fruitful.",
+            "4": "Applications of complex network theory in land-based urban traffic network studies have suffered from the lack of a systematic cognitive and integration framework.",
+            "5": "The paper reviews complex network theory related knowledge.",
+            "6": "The paper discusses applications of complex network theory in urban traffic network studies in several directions.",
+            "7": "Applications of complex network theory in urban traffic network studies include network representation methods.",
+            "8": "Applications of complex network theory in urban traffic network studies include topological and geographical related studies.",
+            "9": "Applications of complex network theory in urban traffic network studies include network communities mining.",
+            "10": "Applications of complex network theory in urban traffic network studies include network robustness and vulnerability.",
+            "11": "Applications of complex network theory in urban traffic network studies include big-data-based research.",
+            "12": "Applications of complex network theory in urban traffic network studies include network optimization.",
+            "13": "Applications of complex network theory in urban traffic network studies include co-evolution research.",
+            "14": "Applications of complex network theory in urban traffic network studies include multilayer network theory related studies.",
+            "15": "The paper points out new research directions.",
+            "16": "Efforts discussed in the paper will make the physics-based concept of complex network theory more easily accepted by urban traffic network planners.",
+            "17": "Efforts discussed in the paper will make the physics-based concept of complex network theory more widely accepted by urban traffic network planners.",
+            "18": "Efforts discussed in the paper will make the physics-based concept of complex network theory more easily accepted by urban traffic network designers.",
+            "19": "Efforts discussed in the paper will make the physics-based concept of complex network theory more widely accepted by urban traffic network designers.",
+            "20": "Efforts discussed in the paper will make the physics-based concept of complex network theory more easily accepted by other related scholars.",
+            "21": "Efforts discussed in the paper will make the physics-based concept of complex network theory more widely accepted by other related scholars."
+          },
+          "23": {
+            "1": "Support for the Islamic State (ISIS) somehow manages to survive globally online despite considerable external pressure.",
+            "2": "Support for the Islamic State (ISIS) may ultimately inspire acts by individuals having no history of extremism.",
+            "3": "Support for the Islamic State (ISIS) may ultimately inspire acts by individuals having no membership in a terrorist faction.",
+            "4": "Support for the Islamic State (ISIS) may ultimately inspire acts by individuals having no direct links to leadership.",
+            "5": "An evolving ecology on a daily time scale drives online support for ISIS.",
+            "6": "The authors uncovered the evolving ecology by examining longitudinal records of online activity.",
+            "7": "The authors provide a mathematical theory that describes the evolving ecology driving online support for ISIS.",
+            "8": "The ecology features self-organized aggregates formed via linkage to a Facebook page or analog.",
+            "9": "The self-organized aggregates proliferate preceding the onset of recent real-world campaigns.",
+            "10": "The self-organized aggregates adopt novel adaptive mechanisms to enhance their survival.",
+            "11": "The development of large, potentially potent pro-ISIS aggregates can be thwarted by targeting smaller ones."
+          },
+          "24": {
+            "1": "Theoretical models of critical mass have shown that minority groups can initiate social change dynamics.",
+            "2": "Minority groups can initiate the emergence of new social conventions.",
+            "3": "The study is conducted on an artificial system of social conventions.",
+            "4": "Human subjects interact within the artificial system to establish a new coordination equilibrium.",
+            "5": "The findings provide empirical demonstration of a tipping point in the dynamics of changing social conventions.",
+            "6": "There is a tipping point in the dynamics of changing social conventions.",
+            "7": "Minority groups were able to overturn the established behavior by reaching critical mass.",
+            "8": "The critical mass is the critical group size needed for initiating social change.",
+            "9": "Overturning established behavior is possible when minority groups reach the critical mass.",
+            "10": "The size of the required critical mass is expected to vary.",
+            "11": "The size of the required critical mass varies based on theoretically identifiable features of a social setting.",
+            "12": "The results show that the dynamics of critical mass emerge as predicted theoretically.",
+            "13": "The theoretically predicted dynamics of critical mass emerge as expected within an empirical system of social coordination."
+          }
+        },
+        "viewpoints": [
+          "The richness of network modeling and analysis allows for a wide variety of applications across multiple disciplines.",
+          "Applications of network modeling and analysis include gene regulation networks in molecular biology.",
+          "Applications of network modeling and analysis include protein interaction networks in molecular biology.",
+          "Applications of network modeling and analysis include brain networks in neuroscience.",
+          "Applications of network modeling and analysis include traffic networks in urban planning.",
+          "Applications of network modeling and analysis include social networks in social sciences."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Furthermore, network science has been used to study the flow of information within networks, from the electrochemical signals traveling between brain areas and pathogens spreading among social systems to the flights in airline networks and the messages being shared on social media.",
+        "references": {},
+        "viewpoints": [
+          "Network science has been used to study the flow of information within networks.",
+          "Network science studies electrochemical signals traveling between brain areas as a flow of information.",
+          "Network science studies pathogen spreading among social systems as a flow of information.",
+          "Network science studies flights in airline networks as a flow of information.",
+          "Network science studies messages being shared on social media as a flow of information."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "To this aim, often, a dynamical process is exploited that governs the short- to long-range flow between the components [25], [26], [27], [28], [29], [30], [31], [32], [33], [34], [35], [36], [37], [38], [39].",
+        "references": {
+          "25": {
+            "1": "A class of statistical models is proposed for analyzing longitudinal network data.",
+            "2": "The dependent variable in these statistical models is the changing relation network.",
+            "3": "The changing relation network is represented by two or more observations of a directed graph with a fixed set of actors.",
+            "4": "Network evolution is modeled as the consequence of actors making new choices or withdrawing existing choices.",
+            "5": "Actors’ choices are based on functions with fixed and random components.",
+            "6": "Actors try to maximize these functions when making or withdrawing choices.",
+            "7": "Individual exogenous variables can be used as covariates.",
+            "8": "Dyadic exogenous variables can be used as covariates.",
+            "9": "The change in the network is modeled as the stochastic result of network effects.",
+            "10": "The change in the network is modeled as the stochastic result of covariates.",
+            "11": "The existing network structure is a dynamic constraint for the evolution of the network structure itself.",
+            "12": "The models are continuous-time Markov chain models.",
+            "13": "The continuous-time Markov chain models can be implemented as simulation models.",
+            "14": "The model parameters are estimated from observed data.",
+            "15": "Statistical procedures are proposed for estimating and testing these models.",
+            "16": "The statistical procedures for estimating and testing these models are based on the method of moments.",
+            "17": "The statistical procedures are implemented using a stochastic approximation algorithm.",
+            "18": "The stochastic approximation algorithm is based on computer simulations of the network evolution process."
+          },
+          "26": {
+            "1": "Complex assemblies of interacting proteins carry out most of the interesting jobs in a cell.",
+            "2": "The interesting jobs carried out by assemblies of interacting proteins in a cell include metabolism, DNA synthesis, movement, and information processing.",
+            "3": "The physiological properties of cells manifest as a subtle molecular dance.",
+            "4": "The molecular dance of physiological properties is choreographed by underlying regulatory networks.",
+            "5": "A new breed of theoretical molecular biologists works to understand the molecular dance of physiological properties.",
+            "6": "Theoretical molecular biologists reproduce regulatory networks in computers to understand the molecular dance.",
+            "7": "Theoretical molecular biologists use the mathematical language of dynamical systems to reproduce regulatory networks and understand the molecular dance."
+          },
+          "27": {
+            "1": "Searchability in decentralized complex networks is a significant issue in computer science.",
+            "2": "Searchability in decentralized complex networks is a significant issue in the economy.",
+            "3": "Searchability in decentralized complex networks is a significant issue in sociology.",
+            "4": "A formalism is presented that addresses the problem of search in decentralized complex networks.",
+            "5": "The presented formalism can simultaneously address congestion effects that arise when parallel searches are performed in decentralized complex networks.",
+            "6": "Expressions for the average search cost are obtained both in the presence of congestion and in the absence of congestion.",
+            "7": "The formalism is used to obtain optimal network structures for a system.",
+            "8": "The system for which optimal network structures are obtained uses a local search algorithm.",
+            "9": "Only two classes of networks can be optimal: starlike configurations and homogeneous-isotropic configurations.",
+            "10": "Starlike configurations are optimal when the number of parallel searches is small.",
+            "11": "Homogeneous-isotropic configurations are optimal when the number of parallel searches is large."
+          },
+          "28": {
+            "1": "The propensity for synchronization of complex networks with directed links is considered.",
+            "2": "The propensity for synchronization of complex networks with weighted links is considered.",
+            "3": "A weighting procedure based upon the global structure of network pathways enhances complete synchronization of identical dynamical units in scale-free networks.",
+            "4": "The weighting procedure is shown to enhance complete synchronization in scale-free networks.",
+            "5": "Very similar conditions for synchronization hold for phase synchronization of nonidentical chaotic oscillators.",
+            "6": "These conditions were shown numerically."
+          },
+          "29": {
+            "1": "The relationship between topological scales and dynamic time scales in complex networks is being studied.",
+            "2": "The analysis is based on the full dynamics towards synchronization of a system of coupled oscillators.",
+            "3": "In the synchronization process, modular structures emerge in different time scales.",
+            "4": "The modular structures in the synchronization process correspond to well-defined communities of nodes.",
+            "5": "The modular structures are ordered in a hierarchical way in the synchronization process.",
+            "6": "The analysis provides a useful connection between synchronization dynamics and complex networks topology.",
+            "7": "The analysis provides a useful connection between synchronization dynamics and spectral graph analysis."
+          },
+          "30": {
+            "1": "Routing information through networks is a universal phenomenon in natural complex systems.",
+            "2": "Routing information through networks is a universal phenomenon in man-made complex systems.",
+            "3": "Each node having full knowledge of the global network connectivity makes finding short communication paths a matter of distributed computation.",
+            "4": "In many real networks, nodes communicate efficiently without full knowledge of the global network connectivity.",
+            "5": "Peculiar structural characteristics of many complex networks support efficient communication without global knowledge.",
+            "6": "There is a general mechanism that explains the connection between network structure and network function.",
+            "7": "The mechanism explaining the connection between network structure and function relies on the presence of a metric space hidden behind an observable network.",
+            "8": "Real networks in nature have underlying metric spaces that remain undiscovered.",
+            "9": "The discovery of underlying metric spaces in real networks should have practical applications in areas where networks are used to model complex systems."
+          },
+          "31": {
+            "1": "The study focuses on how cooperation is organized in complex topologies.",
+            "2": "The study involves analyzing the evolutionary (replicator) dynamics of the prisoner's dilemma.",
+            "3": "The prisoner's dilemma is a two-player game with two available strategies: defection and cooperation.",
+            "4": "The payoff matrix of the prisoner's dilemma favors defection.",
+            "5": "Asymptotically, the population is partitioned into three subsets: individuals that always cooperate, individuals that always defect, and individuals that intermittently change their strategy.",
+            "6": "The individuals that always cooperate are referred to as pure cooperators.",
+            "7": "The individuals that always defect are referred to as pure defectors.",
+            "8": "The size of the set of individuals that intermittently change their strategy is the biggest for a wide range of the \"stimulus to defect\" parameter.",
+            "9": "In homogeneous random graphs, pure cooperators are grouped into several clusters.",
+            "10": "In heterogeneous scale-free networks, pure cooperators always form a single cluster.",
+            "11": "The single cluster of pure cooperators in scale-free networks contains the most connected individuals, referred to as hubs.",
+            "12": "The results provide further insights into why cooperation in scale-free networks is enhanced."
+          },
+          "32": {
+            "1": "There have been significant advances in characterizing the structural properties of complex networks.",
+            "2": "A mathematical framework that reveals the universal properties of the interplay between topology and dynamics in complex systems has not been developed.",
+            "3": "A self-consistent theory of dynamical perturbations in complex systems has been developed.",
+            "4": "The self-consistent theory allows for the systematic separation of the contributions of network topology and dynamics.",
+            "5": "The formalism applies to a broad range of steady-state dynamical processes.",
+            "6": "The formalism offers testable predictions about the system's response to perturbations.",
+            "7": "The formalism offers testable predictions regarding the development of correlations in the system.",
+            "8": "The formalism predicts several distinct universality classes.",
+            "9": "The characteristics of the universality classes can be derived directly from the continuum equation governing the system's dynamics.",
+            "10": "The universality classes are validated on several canonical network-based dynamical systems, ranging from biochemical dynamics to epidemic spreading.",
+            "11": "Experimental data pertaining to social systems are collected.",
+            "12": "Experimental data pertaining to biological systems are collected.",
+            "13": "Experimental data demonstrate that the universality class of social and biological systems can be accurately uncovered.",
+            "14": "The universality class of social and biological systems can be uncovered even without an appropriate continuum theory governing the system's dynamics."
+          },
+          "33": [],
+          "34": {
+            "1": "Networks are extensively used to visualize information flow in biological, social, and technological systems.",
+            "2": "Translating the topology of networks into dynamic flow continues to be a challenge.",
+            "3": "Similar networks can exhibit fundamentally different flow patterns.",
+            "4": "Fundamentally different flow patterns in similar networks are driven by different interaction mechanisms.",
+            "5": "The authors use a perturbative formalism to uncover a network's actual flow patterns.",
+            "6": "The perturbative formalism analytically tracks the contribution of all nodes and paths to the flow of information.",
+            "7": "The perturbative formalism exposes the rules that link structure and dynamic information flow.",
+            "8": "The perturbative formalism applies to a broad range of nonlinear systems.",
+            "9": "The diversity of flow patterns can be mapped into a single universal function.",
+            "10": "The single universal function characterizes the interplay between a system's topology and its dynamics.",
+            "11": "The single universal function allows identification of the network's main arteries of information flow.",
+            "12": "The formalism predicts a family of frequently encountered dynamics where the flow of information avoids the hubs.",
+            "13": "In the predicted dynamics, the flow of information favors the network's peripheral pathways.",
+            "14": "There is a striking disparity between structure and dynamics in the predicted flow patterns."
+          },
+          "35": {
+            "1": "Collective phenomena emerge from the interaction of natural units with a complex organization.",
+            "2": "Collective phenomena emerge from the interaction of artificial units with a complex organization.",
+            "3": "The interplay between structural patterns and dynamics might induce functional clusters.",
+            "4": "Functional clusters are generally different from topological clusters.",
+            "5": "In biological systems, the overall functionality is often favored by the interplay between connectivity and synchronization dynamics.",
+            "6": "In biological systems, functional clusters do not coincide with anatomical modules in most cases.",
+            "7": "The human brain is a biological system where functional clusters do not coincide with anatomical modules in most cases.",
+            "8": "In social systems, the quest for consensus favors the emergence of clusters.",
+            "9": "In sociotechnical systems, the quest for consensus favors the emergence of clusters.",
+            "10": "In engineering systems, the quest for consensus favors the emergence of clusters.",
+            "11": "There is unquestionable evidence for mesoscale organization of many complex systems.",
+            "12": "There is heterogeneity in the interconnectivity of many complex systems.",
+            "13": "A way to predict the emergence of functional modules in collective phenomena continues to elude us.",
+            "14": "A way to identify the emergence of functional modules in collective phenomena continues to elude us.",
+            "15": "An approach is proposed based on random walk dynamics to define the diffusion distance between any pair of units in a networked system.",
+            "16": "The metric based on random walk dynamics allows exploitation of the underlying diffusion geometry.",
+            "17": "This metric provides a unifying framework for the relationship between metastable synchronization, consensus, and random search dynamics in complex networks.",
+            "18": "The framework helps pinpoint the functional mesoscale organization of synthetic systems.",
+            "19": "The framework helps pinpoint the functional mesoscale organization of biological systems."
+          },
+          "36": {
+            "1": "The stable functionality of networked systems is a hallmark of their natural ability to coordinate between their multiple interacting components.",
+            "2": "Real-world networks often appear random.",
+            "3": "Real-world networks often appear highly irregular.",
+            "4": "The random and highly irregular appearance of real-world networks raises the question of the naturally emerging organizing principles of complex system stability.",
+            "5": "The answer to the organizing principles of complex system stability is encoded within the system's stability matrix, the Jacobian.",
+            "6": "The answer encoded within the system's stability matrix is hard to retrieve.",
+            "7": "The difficulty in retrieving the answer encoded within the system's stability matrix is due to the scale of the relevant systems.",
+            "8": "The difficulty in retrieving the answer encoded within the system's stability matrix is due to the diversity of the relevant systems.",
+            "9": "The difficulty in retrieving the answer encoded within the system's stability matrix is due to the broad parameter space of the relevant systems.",
+            "10": "The difficulty in retrieving the answer encoded within the system's stability matrix is due to the nonlinear interaction dynamics of the relevant systems.",
+            "11": "The dynamic Jacobian ensemble is introduced in this study.",
+            "12": "The dynamic Jacobian ensemble allows us to systematically investigate the fixed-point dynamics of a range of relevant network-based models.",
+            "13": "Within the dynamic Jacobian ensemble, complex systems exhibit discrete stability classes.",
+            "14": "Complex systems exhibit a stability class that is asymptotically unstable, where stability is unattainable.",
+            "15": "Complex systems exhibit a stability class that is sensitive, where stability abides within a bounded range of system parameters.",
+            "16": "A third asymptotically stable class is uncovered alongside the asymptotically unstable and sensitive classes.",
+            "17": "In the asymptotically stable class, a sufficiently large and heterogeneous network acquires a guaranteed stability.",
+            "18": "The stability in the asymptotically stable class is independent of the network's microscopic parameters.",
+            "19": "The stability in the asymptotically stable class is robust against external perturbation.",
+            "20": "In the dynamic Jacobian ensemble, scale emerges as a natural organizing principle to ensure fixed-point stability in the face of changing environmental conditions.",
+            "21": "In the dynamic Jacobian ensemble, heterogeneity emerges as a natural organizing principle to ensure fixed-point stability in the face of changing environmental conditions."
+          },
+          "37": {
+            "1": "Network-based interactions are used to model many technological and natural systems.",
+            "2": "Understanding information flow between nodes is important to predict the functioning of technological and natural systems.",
+            "3": "The complex interplay between network connectivity and dynamics can be captured by scaling laws.",
+            "4": "Scaling laws overcome the paradigm of information spread being solely dependent on network structure.",
+            "5": "Identifying the relevant paths for perturbation propagation capitalizes on the paradigm that information spread is not solely dependent on network structure.",
+            "6": "A multi-pathways temporal distance between nodes is introduced.",
+            "7": "The multi-pathways temporal distance between nodes overcomes the limitation of focusing only on the shortest path.",
+            "8": "The multi-pathways temporal distance metric predicts the latent geometry induced by dynamics.",
+            "9": "The latent geometry involves signal propagation that resembles the traveling wave solution of reaction-diffusion systems.",
+            "10": "The framework is validated on a set of synthetic dynamical models.",
+            "11": "The framework outperforms existing approaches in predicting arrival times.",
+            "12": "The framework is reliably used for models of infectious disease spread in empirical contact-based social systems.",
+            "13": "The framework shows remarkable accuracy in predicting the observed timing of infections in models like Susceptible-Infected-Susceptible.",
+            "14": "The framework encodes the concerted behavior of the ensemble of paths connecting two nodes in conveying perturbations.",
+            "15": "The framework has applications in regulatory dynamics within cells.",
+            "16": "The framework has applications in epidemic spreading in social networks."
+          },
+          "38": {
+            "1": "The network architecture of the human brain is of increasing interest to the neuroscientific community.",
+            "2": "The network architecture of the human brain has the potential to illuminate human cognition.",
+            "3": "The network architecture of the human brain varies over development and aging.",
+            "4": "The network architecture of the human brain is altered in disease or injury.",
+            "5": "Traditional tools to study the network architecture of the human brain have largely focused on single scales of topology.",
+            "6": "Traditional tools to study the network architecture of the human brain have largely focused on single scales of time.",
+            "7": "Traditional tools to study the network architecture of the human brain have largely focused on single scales of space.",
+            "8": "This review expands beyond the narrow view of single-scale study of the brain's architecture.",
+            "9": "The review focuses on pertinent questions for the multi-scale brain.",
+            "10": "The review focuses on novel methodological advances for the multi-scale brain.",
+            "11": "The exposition is separated into content related to multi-scale topological structure.",
+            "12": "The exposition is separated into content related to multi-scale temporal structure.",
+            "13": "The exposition is separated into content related to multi-scale spatial structure.",
+            "14": "Empirical evidence for multi-scale structures is recounted.",
+            "15": "Network-based methodological approaches to reveal multi-scale structures are surveyed.",
+            "16": "Current frontiers and open questions related to multi-scale structures are outlined.",
+            "17": "The account is predominantly peppered with examples from human neuroimaging.",
+            "18": "The account is intended to offer an accessible guide to any neuroscientist aiming to measure the brain's multiscale network structure.",
+            "19": "The account is intended to offer an accessible guide to any neuroscientist aiming to characterize the brain's multiscale network structure.",
+            "20": "The account is intended to offer an accessible guide to any neuroscientist aiming to understand the brain's multiscale network structure.",
+            "21": "The account is intended for any neuroscientist irrespective of species.",
+            "22": "The account is intended for any neuroscientist irrespective of imaging modality.",
+            "23": "The account is intended for any neuroscientist irrespective of spatial resolution."
+          },
+          "39": {
+            "1": "Protein–protein interaction networks have been used to investigate the influence of SARS-CoV-2 viral proteins on the function of human cells.",
+            "2": "Using protein–protein interaction networks provides a deeper understanding of COVID-19.",
+            "3": "Protein–protein interaction networks provide ground for applications such as drug repurposing.",
+            "4": "Characterizing molecular similarities and dissimilarities between SARS-CoV-2 and other viral agents allows the exploitation of existing information.",
+            "5": "The exploitation of existing information about the alteration of key biological processes due to known viruses can be used for predicting the potential effects of SARS-CoV-2.",
+            "6": "The novel coronavirus network has been compared against 92 known viruses.",
+            "7": "The comparison of the novel coronavirus network against 92 known viruses is done from the perspective of statistical physics and computational biology.",
+            "8": "Regulatory spreading patterns in targeted proteins lead to meaningful clusters of viruses.",
+            "9": "Physical features in targeted proteins lead to meaningful clusters of viruses.",
+            "10": "Enriched biological pathways in targeted proteins lead to meaningful clusters of viruses.",
+            "11": "Meaningful clusters of viruses, across scales, provide complementary perspectives to better characterize SARS-CoV-2.",
+            "12": "The meaningful clusters of viruses provide complementary perspectives to better characterize the effects of SARS-CoV-2 on humans.",
+            "13": "The virus responsible for COVID-19 exhibits expected similarities to Influenza A viruses.",
+            "14": "The virus responsible for COVID-19 exhibits expected similarities to Human Respiratory Syncytial viruses.",
+            "15": "The virus responsible for COVID-19 exhibits unexpected similarities to viruses with different infection types and from distant viral families.",
+            "16": "The virus responsible for COVID-19 exhibits unexpected similarities to HIV1 virus.",
+            "17": "The virus responsible for COVID-19 exhibits unexpected similarities to Human Herpes virus.",
+            "18": "Our findings indicate that COVID-19 is a systemic disease.",
+            "19": "COVID-19 has potential effects on the function of multiple organs.",
+            "20": "COVID-19 has potential effects on human body sub-systems."
+          }
+        },
+        "viewpoints": [
+          "A dynamical process is often exploited to govern the short- to long-range flow between components in networks."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Yet, the largeness of many real-world systems poses a challenge, due to computational complexity and components’ redundancies in roles and features, hampering a clear understanding of how complex systems operate.",
+        "references": {},
+        "viewpoints": [
+          "The largeness of many real-world systems poses a challenge.",
+          "The challenge is due to computational complexity in real-world systems.",
+          "Redundancies in roles and features of components hamper a clear understanding of how complex systems operate."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Therefore, an interesting possibility is to search for proper compressions of networks– by means of grouping and coarse-graining nodes with redundant features or roles– that preserve the flow.",
+        "references": {},
+        "viewpoints": [
+          "Searching for proper compressions of networks is an interesting possibility.",
+          "Proper compressions of networks involve grouping and coarse-graining nodes with redundant features or roles.",
+          "Proper compressions of networks aim to preserve the flow."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "The network renormalization method focuses on compressing the size of the network while preserving its core properties.",
+        "references": {},
+        "viewpoints": [
+          "The network renormalization method focuses on compressing the size of the network.",
+          "The network renormalization method aims to preserve the core properties of the network."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Several pioneering methods have been proposed to coarse-grain the components.",
+        "references": {},
+        "viewpoints": [
+          "Several pioneering methods have been proposed to coarse-grain the components of networks."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Song et al. [40] brought the concept of the Box-Covering method into the network renormalization realm [41], with subsequent works primarily focused on enhancing its efficiency [42], [43], [44].",
+        "references": {
+          "40": {
+            "1": "Complex networks have been studied extensively because they are relevant to systems such as the world-wide web.",
+            "2": "Complex networks have been studied extensively because they are relevant to systems such as the Internet.",
+            "3": "Complex networks have been studied extensively because they are relevant to energy landscapes.",
+            "4": "Complex networks have been studied extensively because they are relevant to biological networks.",
+            "5": "Complex networks have been studied extensively because they are relevant to social networks.",
+            "6": "A large number of real networks are referred to as 'scale-free'.",
+            "7": "'Scale-free' networks show a power-law distribution of the number of links per node.",
+            "8": "It is widely believed that complex networks are not invariant under a length-scale transformation.",
+            "9": "It is widely believed that complex networks are not self-similar under a length-scale transformation.",
+            "10": "The belief that complex networks are not self-similar originates from the 'small-world' property of these networks.",
+            "11": "The 'small-world' property of networks implies that the number of nodes increases exponentially with the 'diameter' of the network.",
+            "12": "An exponential increase in the number of nodes with network diameter is contrary to a power-law relation expected for a self-similar structure.",
+            "13": "The analysis of a variety of real complex networks shows they consist of self-repeating patterns on all length scales.",
+            "14": "The finding of self-repeating patterns on all length scales in complex networks contradicts the belief that they are not self-similar.",
+            "15": "The result indicating self-repeating patterns is achieved by applying a renormalization procedure.",
+            "16": "The renormalization procedure coarse-grains the system into boxes containing nodes within a given 'size'.",
+            "17": "There is a power-law relation between the number of boxes needed to cover the network and the size of the box.",
+            "18": "The power-law relation defines a finite self-similar exponent for complex networks.",
+            "19": "The self-repeating patterns and associated properties help to explain the scale-free nature of complex networks.",
+            "20": "The self-repeating patterns and associated properties suggest a common self-organization dynamics in complex networks."
+          },
+          "41": {
+            "1": "Covering a network with the minimum possible number of boxes can reveal interesting features for the network structure.",
+            "2": "The network structure can exhibit self-similar or fractal characteristics.",
+            "3": "Considerable attention has been recently devoted to the problem of covering a network with the minimum possible number of boxes.",
+            "4": "Many real networks are self-similar fractals.",
+            "5": "The authors present a number of algorithms toward the goal of covering a network with the minimum possible number of boxes.",
+            "6": "The authors compare and study in detail the algorithms used in previous papers.",
+            "7": "The problem of covering a network with the minimum possible number of boxes can be mapped to the well-known graph coloring problem.",
+            "8": "Well-established algorithms can be applied to solve the problem of covering a network with the minimum possible number of boxes once it is mapped to the graph coloring problem.",
+            "9": "Mapping the problem to the graph coloring problem and applying well-established algorithms seems to be the most efficient method.",
+            "10": "The authors present two other algorithms based on burning.",
+            "11": "The algorithms based on burning provide a number of other benefits.",
+            "12": "The authors argue that the presented algorithms provide a solution close to optimal for covering a network with the minimum possible number of boxes.",
+            "13": "The authors argue that an algorithm that can significantly improve the result of covering a network with the minimum possible number of boxes in an efficient way does not exist.",
+            "14": "The authors offer to cover expenses for a 1-week trip to their lab in New York to anyone who finds a method to significantly improve the result of covering a network with the minimum possible number of boxes."
+          },
+          "42": {
+            "1": "The fractality and self-similarity of complex networks are investigated by evaluating the fractal dimension.",
+            "2": "Evaluating the fractal dimension involves locating the optimal solution or tiling the network with the fewest boxes.",
+            "3": "The box-covering method with separated boxes yields results that possess great randomness.",
+            "4": "The box-covering method with separated boxes yields results that possess large errors.",
+            "5": "The authors adopted the overlapping box to tile the entire network, called the overlapping-box-covering method.",
+            "6": "The authors proposed an overlapping-box-covering algorithm to verify the validity of the overlapping-box-covering method.",
+            "7": "The authors applied the overlapping-box-covering algorithm to three deterministic networks.",
+            "8": "The authors applied the overlapping-box-covering algorithm to four real-world fractal networks.",
+            "9": "The overlapping-box-covering algorithm produces optimums or more accurate fractal dimensions for deterministic networks.",
+            "10": "The quantities of boxes finally obtained for real-world fractal networks are fewer.",
+            "11": "The quantities of boxes finally obtained for real-world fractal networks are more deterministic.",
+            "12": "The redundant box in the results for real-world fractal networks reaches up to 33.3%.",
+            "13": "The experimental results show that the overlapping-box-covering method is available.",
+            "14": "The experimental results show that the overlapping box outperforms the previous box-covering method.",
+            "15": "The experimental results show that the overlapping box renders the errors smaller compared to the previous box-covering method.",
+            "16": "The authors conclude that the overlapping box is an important determinant to acquire the fewest boxes for complex networks."
+          },
+          "43": [],
+          "44": {
+            "1": "Research on fractal networks is a dynamically growing field within network science.",
+            "2": "A central issue in fractal networks research is to analyze fractality using the box-covering method.",
+            "3": "Analyzing fractality with the box-covering method is an NP-hard problem.",
+            "4": "A plethora of approximating algorithms for the box-covering method have been proposed throughout the years.",
+            "5": "This study aims to establish a unified framework for comparing approximating box-covering algorithms.",
+            "6": "The study plans to collect, implement, and evaluate box-covering methods in various aspects.",
+            "7": "The aspects considered for evaluation of approximating algorithms include running time and approximation ability.",
+            "8": "This work might serve as a reference for researchers.",
+            "9": "This work might serve as a reference for practitioners.",
+            "10": "The study will allow fast selection from a rich collection of box-covering algorithms.",
+            "11": "The study will provide a publicly available codebase for box-covering algorithms."
+          }
+        },
+        "viewpoints": [
+          "Song et al. brought the concept of the Box-Covering method into the network renormalization realm.",
+          "Subsequent works primarily focus on enhancing the efficiency of the Box-Covering method."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Generally, these methods treat the network as a spin system [45] and study the universality classes [46] and fractal properties [47].",
+        "references": {
+          "45": {
+            "1": "Some complex networks are claimed to be self-similar under a convenient renormalization procedure.",
+            "2": "A general method is presented to study renormalization flows in graphs.",
+            "3": "The behavior of some variables, such as the maximum number of connections of a node, under renormalization obeys simple scaling laws.",
+            "4": "The simple scaling laws that describe the behavior of some variables under renormalization are characterized by critical exponents.",
+            "5": "The behavior of some variables under renormalization obeying simple scaling laws is true for any class of graphs.",
+            "6": "The classes of graphs for which this is true include random networks, scale-free networks, lattices, and hierarchical graphs.",
+            "7": "Renormalization flows for graphs are similar to the renormalization of spin systems.",
+            "8": "An analysis of classic renormalization for percolation on the lattice confirms the analogy between renormalization flows for graphs and the renormalization of spin systems.",
+            "9": "An analysis of classic renormalization for the Ising model on the lattice confirms the analogy between renormalization flows for graphs and the renormalization of spin systems.",
+            "10": "Critical exponents can be used to classify graphs in universality classes.",
+            "11": "Scaling functions can be used to classify graphs in universality classes.",
+            "12": "Critical exponents can be used to uncover similarities between graphs that are inaccessible to a standard analysis.",
+            "13": "Scaling functions can be used to uncover similarities between graphs that are inaccessible to a standard analysis."
+          },
+          "46": {
+            "1": "Renormalization group (RG) theory applied to complex networks is useful for classifying network topologies into universality classes.",
+            "2": "The classification occurs in the space of configurations.",
+            "3": "The RG flow identifies a small-world–fractal transition.",
+            "4": "The RG flow identifies a trivial stable fixed point of a complete graph.",
+            "5": "The RG flow identifies a nontrivial point of a pure fractal topology that is stable or unstable based on the amount of long-range links in the network.",
+            "6": "The RG flow identifies another stable point of a fractal with shortcuts at the exact small-world–fractal transition.",
+            "7": "The RG technique explains the coexistence of fractal and small-world phases, which seem contradicting.",
+            "8": "The RG technique allows extraction of information on the distribution of shortcuts in real-world networks.",
+            "9": "The distribution of shortcuts in real-world networks is important for information flow in the system."
+          },
+          "47": {
+            "1": "Fractal scaling in a class of scale-free networks originates from an underlying tree structure called a skeleton.",
+            "2": "A skeleton is a special type of spanning tree based on the edge betweenness centrality.",
+            "3": "The fractal skeleton has the property of a critical branching tree.",
+            "4": "Original fractal networks are viewed as a fractal skeleton dressed with local shortcuts.",
+            "5": "An in silico model with both fractal scaling and scale-invariance properties is constructed.",
+            "6": "The framework of fractal networks is useful in understanding the utility in networked systems.",
+            "7": "The framework of fractal networks is useful in understanding the redundancy in networked systems."
+          }
+        },
+        "viewpoints": [
+          "Generally, these methods treat the network as a spin system.",
+          "These methods study the universality classes of networks.",
+          "These methods study the fractal properties of networks."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "As another example, geometric renormalization on unweighted graph [48] and weighted graph [49] embeds the network structure into a two-dimensional hyperbolic space, groups the nodes based on their angle similarities, and merge them into a macro network: in that space they unravel the multiscale organization of real-world networks.",
+        "references": {
+          "48": {
+            "1": "Symmetries in physical theories denote invariance under certain transformations.",
+            "2": "One example of symmetry in physical theories is self-similarity under a change of scale.",
+            "3": "The renormalization group provides a powerful framework to study symmetries in physical theories.",
+            "4": "Studying symmetries with the renormalization group leads to a better understanding of the universal properties of phase transitions.",
+            "5": "The small-world property of complex networks complicates the application of the renormalization group.",
+            "6": "The small-world property introduces correlations between coexisting scales in complex networks.",
+            "7": "A framework is provided for the investigation of complex networks at different resolutions.",
+            "8": "The approach for investigating complex networks at different resolutions is based on geometric representations.",
+            "9": "Geometric representations have been shown to sustain network navigability.",
+            "10": "Geometric representations reveal the mechanisms that govern network structure and evolution.",
+            "11": "A geometric renormalization group for networks is defined by embedding networks into an underlying hidden metric space.",
+            "12": "Real scale-free networks show geometric scaling under the defined geometric renormalization group transformation.",
+            "13": "Networks are unfolded in a self-similar multilayer shell.",
+            "14": "The self-similar multilayer shell distinguishes the coexisting scales in networks.",
+            "15": "The self-similar multilayer shell distinguishes the interactions of coexisting scales in networks.",
+            "16": "Unfolding networks in a self-similar multilayer shell offers a basis for exploring critical phenomena in complex networks.",
+            "17": "Unfolding networks in a self-similar multilayer shell offers a basis for exploring universality in complex networks.",
+            "18": "Unfolding networks in a self-similar multilayer shell affords immediate practical applications.",
+            "19": "Practical applications include high-fidelity smaller-scale replicas of large networks.",
+            "20": "Practical applications include a multiscale navigation protocol in hyperbolic space.",
+            "21": "The multiscale navigation protocol in hyperbolic space is better than those on single layers."
+          },
+          "49": {
+            "1": "The geometric renormalization technique for complex networks has successfully revealed the multiscale self-similarity of real network topologies.",
+            "2": "The geometric renormalization technique for complex networks can be applied to generate replicas at different length scales.",
+            "3": "The geometric renormalization framework is extended to weighted networks.",
+            "4": "In weighted networks, the intensities of the interactions play a crucial role in their structural organization.",
+            "5": "In weighted networks, the intensities of the interactions play a crucial role in their function.",
+            "6": "The weighted organization of real networks exhibits multiscale self-similarity under a renormalization protocol.",
+            "7": "The renormalization protocol selects the connections with the maximum weight across increasingly longer length scales.",
+            "8": "A theory is presented that elucidates the multiscale self-similarity symmetry in weighted networks.",
+            "9": "The presented theory sustains the selection of the maximum weight as a meaningful procedure.",
+            "10": "Scaled-down replicas of weighted networks can be straightforwardly derived based on the results.",
+            "11": "The derivation of scaled-down replicas facilitates the investigation of various size-dependent phenomena in downstream applications."
+          }
+        },
+        "viewpoints": [
+          "Geometric renormalization on unweighted graphs embeds the network structure into a two-dimensional hyperbolic space.",
+          "Geometric renormalization on weighted graphs embeds the network structure into a two-dimensional hyperbolic space.",
+          "Geometric renormalization groups nodes based on their angle similarities.",
+          "Geometric renormalization merges grouped nodes into a macro network.",
+          "Geometric renormalization unravels the multiscale organization of real-world networks."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "In the same spirit, the effective geometry induced by network dynamics have been used to uncover the scale and fractal properties [50].",
+        "references": {
+          "50": {
+            "1": "Networks are finite metric spaces.",
+            "2": "Distances in networks are defined by the shortest paths between nodes.",
+            "3": "The geometry of latent spaces is a form of network geometry underlying many networks.",
+            "4": "The effective geometry induced by dynamical processes in networks is a form of network geometry.",
+            "5": "The shortest-path metric is not the only form of network geometry.",
+            "6": "The shortest-path metric, latent spaces geometry, and effective geometry are three approaches to network geometry.",
+            "7": "These three approaches to network geometry are intimately related.",
+            "8": "The shortest-path metric, latent spaces geometry, and effective geometry are exceptionally efficient in discovering fractality in networks.",
+            "9": "The shortest-path metric, latent spaces geometry, and effective geometry are exceptionally efficient in discovering scale invariance in networks.",
+            "10": "The shortest-path metric, latent spaces geometry, and effective geometry are exceptionally efficient in discovering self-similarity in networks.",
+            "11": "The shortest-path metric, latent spaces geometry, and effective geometry are exceptionally efficient in discovering other forms of fundamental symmetries in networks.",
+            "12": "Network geometry is useful in understanding how the brain works.",
+            "13": "Network geometry is useful in Internet routing.",
+            "14": "Network geometry is useful in a variety of practical applications.",
+            "15": "The paper reviews important theoretical developments dealing with the shortest-path metric, latent spaces geometry, and effective geometry.",
+            "16": "The paper reviews practical developments dealing with the shortest-path metric, latent spaces geometry, and effective geometry.",
+            "17": "The paper offers perspectives on future research directions in network geometry.",
+            "18": "The paper offers perspectives on future challenges in network geometry.",
+            "19": "Network geometry is considered a frontier in the study of complexity."
+          }
+        },
+        "viewpoints": [
+          "The effective geometry induced by network dynamics has been used to uncover the scale properties of networks.",
+          "The effective geometry induced by network dynamics has been used to uncover the fractal properties of networks."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "As an example, spectral coarse graining [51] focuses on the dynamics on top of networks and attempts to preserve the large-scale random walk behavior of the network during structural compression.",
+        "references": {
+          "51": {
+            "1": "Reducing the complexity of large systems described as complex networks is key to understanding these systems.",
+            "2": "A crucial issue in reducing the complexity of large systems described as complex networks is to know which properties of the initial system are preserved in the reduced system.",
+            "3": "Random walks are used to design a coarse graining scheme for complex networks.",
+            "4": "The coarse graining scheme preserves the slow modes of the random walk by construction.",
+            "5": "The coarse graining scheme reduces significantly the size and the complexity of the network.",
+            "6": "The coarse graining scheme allows approximation of large networks by smaller ones.",
+            "7": "The coarse graining scheme keeps most of the relevant spectral properties of the original network in the smaller network."
+          }
+        },
+        "viewpoints": [
+          "Spectral coarse graining focuses on the dynamics on top of networks.",
+          "Spectral coarse graining attempts to preserve the large-scale random walk behavior of the network during structural compression."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "More recently, an approach based on Laplacian renormalization [52] was proposed based on diffusion dynamics on top of the network, corresponding to the renormalization of a free field theory in network structures.",
+        "references": {
+          "52": {
+            "1": "The renormalization group is the cornerstone of the modern theory of universality.",
+            "2": "The renormalization group is the cornerstone of the modern theory of phase transitions.",
+            "3": "The renormalization group is a powerful tool to scrutinize symmetries in dynamical systems.",
+            "4": "The renormalization group is a powerful tool to scrutinize organizational scales in dynamical systems.",
+            "5": "The application of the renormalization group to complex networks has proven particularly challenging.",
+            "6": "The challenges in applying the renormalization group to complex networks are due to correlations between intertwined scales.",
+            "7": "Existing approaches to applying the renormalization group to complex networks have been based on hidden geometries hypotheses.",
+            "8": "These existing approaches rely on the embedding of complex networks into underlying hidden metric spaces.",
+            "9": "A Laplacian renormalization group diffusion-based picture is proposed for complex networks.",
+            "10": "The proposed Laplacian renormalization group diffusion-based picture can identify proper spatiotemporal scales in heterogeneous networks.",
+            "11": "The concept of Kadanoff supernodes as block nodes across multiple scales is introduced in analogy with real-space renormalization group procedures.",
+            "12": "Kadanoff supernodes help to overcome detrimental small-world effects.",
+            "13": "Detrimental small-world effects are responsible for cross-scale correlations.",
+            "14": "The momentum space procedure is rigorously defined to progressively integrate out fast diffusion modes.",
+            "15": "The momentum space procedure is used to generate coarse-grained graphs.",
+            "16": "The method is validated through application to several real-world networks.",
+            "17": "The method demonstrates its ability to perform network reduction while keeping crucial properties of the systems intact."
+          }
+        },
+        "viewpoints": [
+          "An approach based on Laplacian renormalization was proposed.",
+          "The approach is based on diffusion dynamics on top of the network.",
+          "The approach corresponds to the renormalization of a free field theory in network structures."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "This method pushed the boundaries of RG to include structural heterogeneity by preserving the slow modes of diffusion.",
+        "references": {},
+        "viewpoints": [
+          "The Laplacian renormalization method pushed the boundaries of renormalization group (RG) to include structural heterogeneity.",
+          "The Laplacian renormalization method preserves the slow modes of diffusion."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "However, none of these renormalization methods is designed to preserve the macroscopic features of information dynamics simultaneously at all propagation scales for all network types.",
+        "references": {},
+        "viewpoints": [
+          "None of these renormalization methods is designed to preserve the macroscopic features of information dynamics simultaneously at all propagation scales.",
+          "None of these renormalization methods is designed to preserve the macroscopic features of information dynamics for all network types."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Similar to the Laplacian renormalization group, we capitalize on network density matrices [33] to describe the information dynamics in the system [53].",
+        "references": {
+          "33": [],
+          "53": {
+            "1": "The constituents of a complex system need to exchange information for the system to function properly.",
+            "2": "The signaling dynamics of the constituents of a complex system often lead to emergent phenomena.",
+            "3": "Phase transitions are examples of emergent phenomena resulting from signaling dynamics in complex systems.",
+            "4": "Collective behaviors are examples of emergent phenomena resulting from signaling dynamics in complex systems.",
+            "5": "Information exchange in complex systems has been widely modeled using distinct spreading processes.",
+            "6": "Continuous-time diffusion is one of the spreading processes used to model information exchange in complex systems.",
+            "7": "Random walks are one of the spreading processes used to model information exchange in complex systems.",
+            "8": "Synchronization is one of the spreading processes used to model information exchange in complex systems.",
+            "9": "Consensus is one of the spreading processes used to model information exchange in complex systems.",
+            "10": "These models are applied on top of complex networks.",
+            "11": "A unified and physically grounded framework to study information dynamics in complex systems is currently lacking.",
+            "12": "A unified framework is needed to gain insights about the macroscopic effects of microscopic interactions in complex systems.",
+            "13": "The paper presents a unified framework in terms of a statistical field theory of information dynamics.",
+            "14": "The framework unifies a range of dynamical processes governing the evolution of information.",
+            "15": "The framework applies to static structures in complex systems.",
+            "16": "The framework applies to time-varying structures in complex systems.",
+            "17": "Information operators form a meaningful statistical ensemble.",
+            "18": "The superposition of information operators defines a density matrix.",
+            "19": "The density matrix can be used for the analysis of complex dynamics.",
+            "20": "The von Neumann entropy of the statistical ensemble can measure the functional diversity of complex systems.",
+            "21": "Functional diversity is defined in terms of the functional differentiation of higher-order interactions among components of complex systems.",
+            "22": "Modularity is a key feature of empirical complex systems, such as the human brain and social networks.",
+            "23": "Hierarchy is a key feature of empirical complex systems, such as the human brain and urban networks.",
+            "24": "Modularity plays a key role in guaranteeing functional diversity in complex systems.",
+            "25": "Hierarchy plays a key role in guaranteeing functional diversity in complex systems.",
+            "26": "Modularity and hierarchy are favored in complex systems because they contribute to functional diversity."
+          }
+        },
+        "viewpoints": [
+          "Similar to the Laplacian renormalization group, network density matrices are used to describe the information dynamics in the system."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "From density matrices, we derive the typical macroscopic indicators like network entropy and free energy, which, respectively, quantify how diverse the diffusion pathways are [53], [54], [55] and how fast signals travel in the system [55], [56].",
+        "references": {
+          "53": {
+            "1": "The constituents of a complex system need to exchange information for the system to function properly.",
+            "2": "The signaling dynamics of the constituents of a complex system often lead to emergent phenomena.",
+            "3": "Phase transitions are examples of emergent phenomena resulting from signaling dynamics in complex systems.",
+            "4": "Collective behaviors are examples of emergent phenomena resulting from signaling dynamics in complex systems.",
+            "5": "Information exchange in complex systems has been widely modeled using distinct spreading processes.",
+            "6": "Continuous-time diffusion is one of the spreading processes used to model information exchange in complex systems.",
+            "7": "Random walks are one of the spreading processes used to model information exchange in complex systems.",
+            "8": "Synchronization is one of the spreading processes used to model information exchange in complex systems.",
+            "9": "Consensus is one of the spreading processes used to model information exchange in complex systems.",
+            "10": "These models are applied on top of complex networks.",
+            "11": "A unified and physically grounded framework to study information dynamics in complex systems is currently lacking.",
+            "12": "A unified framework is needed to gain insights about the macroscopic effects of microscopic interactions in complex systems.",
+            "13": "The paper presents a unified framework in terms of a statistical field theory of information dynamics.",
+            "14": "The framework unifies a range of dynamical processes governing the evolution of information.",
+            "15": "The framework applies to static structures in complex systems.",
+            "16": "The framework applies to time-varying structures in complex systems.",
+            "17": "Information operators form a meaningful statistical ensemble.",
+            "18": "The superposition of information operators defines a density matrix.",
+            "19": "The density matrix can be used for the analysis of complex dynamics.",
+            "20": "The von Neumann entropy of the statistical ensemble can measure the functional diversity of complex systems.",
+            "21": "Functional diversity is defined in terms of the functional differentiation of higher-order interactions among components of complex systems.",
+            "22": "Modularity is a key feature of empirical complex systems, such as the human brain and social networks.",
+            "23": "Hierarchy is a key feature of empirical complex systems, such as the human brain and urban networks.",
+            "24": "Modularity plays a key role in guaranteeing functional diversity in complex systems.",
+            "25": "Hierarchy plays a key role in guaranteeing functional diversity in complex systems.",
+            "26": "Modularity and hierarchy are favored in complex systems because they contribute to functional diversity."
+          },
+          "54": {
+            "1": "The network density matrix formalism allows for describing the dynamics of information on complex structures.",
+            "2": "The network density matrix formalism has been successfully used to analyze a system's robustness.",
+            "3": "The network density matrix formalism has been successfully used to analyze perturbations.",
+            "4": "The network density matrix formalism has been successfully used to perform coarse-graining multilayer networks.",
+            "5": "The network density matrix formalism has been successfully used for characterization of emergent network states.",
+            "6": "The network density matrix formalism has been successfully used for performing multiscale analysis.",
+            "7": "The network density matrix formalism framework is usually limited to diffusion dynamics on undirected networks.",
+            "8": "An approach is proposed to derive density matrices based on dynamical systems and information theory to overcome some limitations of the network density matrix formalism.",
+            "9": "The proposed approach allows for encapsulating a much wider range of linear and nonlinear dynamics.",
+            "10": "The proposed approach allows for encapsulating richer classes of structure, such as directed networks.",
+            "11": "The proposed approach allows for encapsulating richer classes of structure, such as signed networks.",
+            "12": "The framework is used to study the response to local stochastic perturbations of synthetic networks.",
+            "13": "The framework is used to study the response to local stochastic perturbations of empirical networks.",
+            "14": "The framework is used to study the response to local stochastic perturbations in neural systems consisting of excitatory and inhibitory links.",
+            "15": "The framework is used to study the response to local stochastic perturbations in neural systems consisting of gene-regulatory interactions.",
+            "16": "Topological complexity does not necessarily lead to functional diversity.",
+            "17": "Functional diversity is a complex and heterogeneous response to stimuli or perturbations.",
+            "18": "Functional diversity is a genuine emergent property.",
+            "19": "Functional diversity cannot be deduced from the knowledge of topological features such as heterogeneity.",
+            "20": "Functional diversity cannot be deduced from the knowledge of topological features such as modularity.",
+            "21": "Functional diversity cannot be deduced from the knowledge of topological features such as the presence of asymmetries.",
+            "22": "Functional diversity cannot be deduced from the knowledge of topological features such as dynamical properties of a system."
+          },
+          "55": [],
+          "56": {
+            "1": "Units of complex systems, such as neurons in the brain, must communicate efficiently to function properly.",
+            "2": "Units of complex systems, such as individuals in societies, must communicate efficiently to function properly.",
+            "3": "Efficient communication in the human brain involves electrochemical signals traveling quickly among functionally connected neuronal areas.",
+            "4": "Efficient communication in societies allows for fast navigation of humans and goods in complex transportation landscapes.",
+            "5": "The coexistence of different types of relationships among units plays an important role in the quality of information exchange among them.",
+            "6": "The coexistence of different types of relationships entails a multilayer representation in which types are considered as networks encoded by layers.",
+            "7": "Altering the structure of complex systems by adding or removing units, connections, or layers might be costly.",
+            "8": "Coupling the dynamics of subsets of layers in a way that reduces redundant diffusion pathways across the multilayer system can potentially accelerate the overall information flow.",
+            "9": "A framework for functional reducibility is introduced to enhance transport phenomena in multilayer systems.",
+            "10": "The framework for functional reducibility works by coupling layers together with respect to dynamics rather than structure.",
+            "11": "The optimal configuration is obtained by maximizing the deviation of system's entropy from the limit of free and noninteracting layers.",
+            "12": "The results provide a transparent procedure to reduce diffusion time in empirical multilayer systems.",
+            "13": "The results provide a transparent procedure to optimize noncompact search processes in empirical multilayer systems.",
+            "14": "The procedure reduces diffusion time and optimizes search processes without the cost of altering the underlying structure."
+          }
+        },
+        "viewpoints": [
+          "From density matrices, typical macroscopic indicators like network entropy and free energy are derived.",
+          "Network entropy quantifies how diverse the diffusion pathways are.",
+          "Free energy quantifies how fast signals travel in the system."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "We show that such measures can be derived from the network partition function Z τ, as in equilibrium thermodynamics.",
+        "references": {},
+        "viewpoints": [
+          "These measures can be derived from the network partition function Z τ, as in equilibrium thermodynamics."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "On this theoretical basis, we deduce that a coarse-graining that preserves the shape of the partition function across the propagation scale τ preserves the macroscopic indicators of information flow.",
+        "references": {},
+        "viewpoints": [
+          "A coarse-graining that preserves the shape of the partition function across the propagation scale τ preserves the macroscopic indicators of information flow."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Therefore, we aim to reach a coarse-graining with minimum deviations from the full partition function profile.",
+        "references": {},
+        "viewpoints": [
+          "The aim is to reach a coarse-graining with minimum deviations from the full partition function profile."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "We bypass the challenge of finding an analytically closed solution for general complex networks.",
+        "references": {},
+        "viewpoints": [
+          "The challenge of finding an analytically closed solution for general complex networks is bypassed."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Avoiding simplifying assumptions and cases of poor practical interest, we leverage recent advances in machine learning based on graphs to develop the framework of the Network Flow Compression Model(NFC Model), as depicted in Fig. 1.",
+        "references": {},
+        "viewpoints": [
+          "Recent advances in machine learning based on graphs are leveraged to develop the framework of the Network Flow Compression Model (NFC Model)."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "More technically, we use graph neural networks [57], [58] to process and aggregate nodes’ local features like the number of connections (degree), and reach a high-level representation of them.",
+        "references": {
+          "57": {
+            "1": "Many learning tasks involve handling graph data.",
+            "2": "Graph data contains rich relation information among elements.",
+            "3": "Modeling physics systems requires a model to learn from graph inputs.",
+            "4": "Learning molecular fingerprints demands a model to learn from graph inputs.",
+            "5": "Predicting protein interface requires a model to learn from graph inputs.",
+            "6": "Classifying diseases requires a model to learn from graph inputs.",
+            "7": "Reasoning on extracted structures is important in learning from non-structural data such as texts and images.",
+            "8": "The dependency trees of sentences are examples of extracted structures requiring graph reasoning models.",
+            "9": "Scene graphs of images are examples of extracted structures requiring graph reasoning models.",
+            "10": "Reasoning on extracted structures is an important research topic.",
+            "11": "Reasoning on extracted structures also needs graph reasoning models.",
+            "12": "Graph neural networks (GNNs) are neural models.",
+            "13": "GNNs capture the dependence of graphs via message passing.",
+            "14": "Message passing occurs between the nodes of graphs in GNNs.",
+            "15": "In recent years, variants of GNNs have demonstrated ground-breaking performances on many deep learning tasks.",
+            "16": "Graph convolutional network (GCN) is a variant of GNNs.",
+            "17": "Graph attention network (GAT) is a variant of GNNs.",
+            "18": "Graph recurrent network (GRN) is a variant of GNNs.",
+            "19": "This survey proposes a general design pipeline for GNN models.",
+            "20": "This survey discusses the variants of each component of GNN models.",
+            "21": "This survey systematically categorizes the applications of GNN models.",
+            "22": "This survey proposes four open problems for future research."
+          },
+          "58": []
+        },
+        "viewpoints": [
+          "Graph neural networks are used to process and aggregate nodes’ local features like the number of connections (degree).",
+          "Graph neural networks are used to reach a high-level representation of nodes’ local features."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "In the representation space, it identifies groups of nodes that play redundant roles in information flow whose aggregation does not drastically change the flow and coarse-grain them to reach suitable compressions, minimizing the partition function deviation.",
+        "references": {},
+        "viewpoints": [
+          "In the representation space, groups of nodes that play redundant roles in information flow are identified.",
+          "The aggregation of identified groups of nodes does not drastically change the flow.",
+          "The identified groups of nodes are coarse-grained to reach suitable compressions.",
+          "The identified groups of nodes are coarse-grained to minimize the partition function deviation."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "While most coarse-graning methods define and identify supernodes by grouping nodes with similar local structures, their notion of similarity is typically predefined [48], [49].",
+        "references": {
+          "48": {
+            "1": "Symmetries in physical theories denote invariance under certain transformations.",
+            "2": "One example of symmetry in physical theories is self-similarity under a change of scale.",
+            "3": "The renormalization group provides a powerful framework to study symmetries in physical theories.",
+            "4": "Studying symmetries with the renormalization group leads to a better understanding of the universal properties of phase transitions.",
+            "5": "The small-world property of complex networks complicates the application of the renormalization group.",
+            "6": "The small-world property introduces correlations between coexisting scales in complex networks.",
+            "7": "A framework is provided for the investigation of complex networks at different resolutions.",
+            "8": "The approach for investigating complex networks at different resolutions is based on geometric representations.",
+            "9": "Geometric representations have been shown to sustain network navigability.",
+            "10": "Geometric representations reveal the mechanisms that govern network structure and evolution.",
+            "11": "A geometric renormalization group for networks is defined by embedding networks into an underlying hidden metric space.",
+            "12": "Real scale-free networks show geometric scaling under the defined geometric renormalization group transformation.",
+            "13": "Networks are unfolded in a self-similar multilayer shell.",
+            "14": "The self-similar multilayer shell distinguishes the coexisting scales in networks.",
+            "15": "The self-similar multilayer shell distinguishes the interactions of coexisting scales in networks.",
+            "16": "Unfolding networks in a self-similar multilayer shell offers a basis for exploring critical phenomena in complex networks.",
+            "17": "Unfolding networks in a self-similar multilayer shell offers a basis for exploring universality in complex networks.",
+            "18": "Unfolding networks in a self-similar multilayer shell affords immediate practical applications.",
+            "19": "Practical applications include high-fidelity smaller-scale replicas of large networks.",
+            "20": "Practical applications include a multiscale navigation protocol in hyperbolic space.",
+            "21": "The multiscale navigation protocol in hyperbolic space is better than those on single layers."
+          },
+          "49": {
+            "1": "The geometric renormalization technique for complex networks has successfully revealed the multiscale self-similarity of real network topologies.",
+            "2": "The geometric renormalization technique for complex networks can be applied to generate replicas at different length scales.",
+            "3": "The geometric renormalization framework is extended to weighted networks.",
+            "4": "In weighted networks, the intensities of the interactions play a crucial role in their structural organization.",
+            "5": "In weighted networks, the intensities of the interactions play a crucial role in their function.",
+            "6": "The weighted organization of real networks exhibits multiscale self-similarity under a renormalization protocol.",
+            "7": "The renormalization protocol selects the connections with the maximum weight across increasingly longer length scales.",
+            "8": "A theory is presented that elucidates the multiscale self-similarity symmetry in weighted networks.",
+            "9": "The presented theory sustains the selection of the maximum weight as a meaningful procedure.",
+            "10": "Scaled-down replicas of weighted networks can be straightforwardly derived based on the results.",
+            "11": "The derivation of scaled-down replicas facilitates the investigation of various size-dependent phenomena in downstream applications."
+          }
+        },
+        "viewpoints": [
+          "Most coarse-graining methods define and identify supernodes by grouping nodes with similar local structures.",
+          "The notion of similarity in most coarse-graining methods is typically predefined."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "In contrast, our approach leverages a machine learning model to automatically learn the vital similarity features that can be used to compress the network while preserving the macroscopic flow properties.",
+        "references": {},
+        "viewpoints": [
+          "Our approach leverages a machine learning model to automatically learn the vital similarity features.",
+          "The learned similarity features can be used to compress the network while preserving the macroscopic flow properties."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "For instance, in the BA network, hub nodes are coarsened together, while leaf nodes are coarsened together.",
+        "references": {},
+        "viewpoints": [
+          "In the BA network, hub nodes are coarsened together.",
+          "In the BA network, leaf nodes are coarsened together."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "In real-world scientist collaboration networks, scientists with the highest number of collaborations are coarsened into one group, even if they don’t collaborate with (are connected to) each other.",
+        "references": {},
+        "viewpoints": [
+          "In real-world scientist collaboration networks, scientists with the highest number of collaborations are coarsened into one group.",
+          "Scientists with the highest number of collaborations are coarsened into one group even if they don’t collaborate with (are connected to) each other."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Experimental results in subsequent sections and show that our approach preserves the information flow even for large compressions, in synthetic and empirical systems.",
+        "references": {},
+        "viewpoints": [
+          "Our approach preserves the information flow even for large compressions in synthetic systems.",
+          "Our approach preserves the information flow even for large compressions in empirical systems."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "The analysis of the model’s interpretability in subsequent sections indicates that this strategy is reasonable: it preserves the function of local structures in the process of information diffusion while reducing the number of redundant structures.",
+        "references": {},
+        "viewpoints": [
+          "The analysis of the model’s interpretability indicates that the strategy is reasonable.",
+          "The strategy preserves the function of local structures in the process of information diffusion.",
+          "The strategy reduces the number of redundant structures."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Fig. 1: A Schematic representation of our framework.",
+        "references": {},
+        "viewpoints": [
+          "Not applicable (figure caption)."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "The message-passing mechanism of the GNN collects neighbors' information to create a vector representation for each node.",
+        "references": {},
+        "viewpoints": [
+          "The message-passing mechanism of the Graph Neural Network (GNN) collects neighbors' information to create a vector representation for each node."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "The Softmax method normalizes the vector leading to a node grouping.",
+        "references": {},
+        "viewpoints": [
+          "The Softmax method normalizes the vector leading to a node grouping."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "The node features we use here include degree σ d, degree’s \\({{{{\\mathcal{X}}}}}^{2}\\) --- i.e., given by \\({{{{\\mathcal{X}}}}}_{i}^{2}={(E[d]-{\\sigma }_{d})}^{2}/E[d]\\) where d is the degree of neighboring nodes---, clustering coefficient and core-number.",
+        "references": {},
+        "viewpoints": [
+          "The node features used include degree σ d.",
+          "The node features used include degree’s \\({{{{\\mathcal{X}}}}}^{2}\\), given by \\({{{{\\mathcal{X}}}}}_{i}^{2}={(E[d]-{\\sigma }_{d})}^{2}/E[d]\\) where d is the degree of neighboring nodes.",
+          "The node features used include clustering coefficient.",
+          "The node features used include core-number."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "In this case, 3 groups are considered for simplicity, represented in the group matrix S.",
+        "references": {},
+        "viewpoints": [
+          "Three groups are considered for simplicity, represented in the group matrix S."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Using both S and the original adjacency matrix A, we proceed with a compression operation expressed as: \\(\\hat{{{{\\bf{A}}}}}=\\frac{M}{N}{{{{\\bf{S}}}}}^{T}{{{\\bf{A}}}}{{{\\bf{S}}}}\\).",
+        "references": {},
+        "viewpoints": [
+          "The compression operation is expressed using both group matrix S and the original adjacency matrix A as \\(\\hat{{{{\\bf{A}}}}}=\\frac{M}{N}{{{{\\bf{S}}}}}^{T}{{{\\bf{A}}}}{{{\\bf{S}}}}\\)."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "In this operation, \\(\\hat{{{{\\bf{A}}}}}\\) stands for the adjacency matrix of the macro network, whereas M and N symbolize the number of nodes within the macro and micro networks, respectively.",
+        "references": {},
+        "viewpoints": [
+          "In the compression operation, \\(\\hat{{{{\\bf{A}}}}}\\) stands for the adjacency matrix of the macro network.",
+          "In the compression operation, M symbolizes the number of nodes within the macro network.",
+          "In the compression operation, N symbolizes the number of nodes within the micro network."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "The deviation of macro network’s normalized partition function from the original network is used as the loss function to supervise the GNN.",
+        "references": {},
+        "viewpoints": [
+          "The deviation of the macro network’s normalized partition function from the original network is used as the loss function to supervise the Graph Neural Network (GNN)."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "Full size image",
+        "references": {},
+        "viewpoints": [
+          "Not applicable (image caption)."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "Our work serves a purpose that is ultimately different from the network renormalization group methods.",
+        "references": {},
+        "viewpoints": [
+          "The purpose of our work is ultimately different from the network renormalization group methods."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "In fact, these methods aim to uncover the scaling behavior of systems.",
+        "references": {},
+        "viewpoints": [
+          "Network renormalization group methods aim to uncover the scaling behavior of systems."
+        ]
+      },
+      {
+        "idx": 44,
+        "sentence": "For instance, renormalization group methods preserve specific topological properties when compressing networks, like the degree distribution of scale-free networks.",
+        "references": {},
+        "viewpoints": [
+          "Renormalization group methods preserve specific topological properties when compressing networks.",
+          "Renormalization group methods preserve the degree distribution of scale-free networks when compressing networks."
+        ]
+      },
+      {
+        "idx": 45,
+        "sentence": "However, in other cases, for instance, in network with one or multiple characteristic topological scales, these methods are expected to capture the changes in network properties, including the flow, as it gets compressed.",
+        "references": {},
+        "viewpoints": [
+          "In networks with one or multiple characteristic topological scales, renormalization group methods are expected to capture changes in network properties, including the flow, as the network gets compressed."
+        ]
+      },
+      {
+        "idx": 46,
+        "sentence": "In contrast, our approach seeks to find a coarse-graining that preserves the flow properties, regardless of the specific features of a topology.",
+        "references": {},
+        "viewpoints": [
+          "Our approach seeks to find a coarse-graining that preserves the flow properties.",
+          "Our approach aims to preserve the flow properties regardless of the specific features of a topology."
+        ]
+      },
+      {
+        "idx": 47,
+        "sentence": "Therefore, it is expected to outperform others in preserving the flow, when compared across distinct network families.",
+        "references": {},
+        "viewpoints": [
+          "Our approach is expected to outperform others in preserving the flow when compared across distinct network families."
+        ]
+      },
+      {
+        "idx": 48,
+        "sentence": "We confirm this expectation through a series of numerical experiments demonstrated in Fig. 2.",
+        "references": {},
+        "viewpoints": [
+          "The expectation that our approach outperforms others in preserving the flow is confirmed through a series of numerical experiments demonstrated in Fig. 2."
+        ]
+      },
+      {
+        "idx": 49,
+        "sentence": "Fig. 2: Compression for Synthetic Networks.",
+        "references": {},
+        "viewpoints": [
+          "Not applicable (figure caption)."
+        ]
+      },
+      {
+        "idx": 50,
+        "sentence": "Visual representation of the compression process applied to two representative Stochastic Block Model (SBM) networks (mixing parameters μ of 0.029 and 0.127, respectively) and Barabasi-Albert (BA) networks (numbers of links per node m of 1 and 2).",
+        "references": {},
+        "viewpoints": [
+          "Visual representation of the compression process is applied to two representative Stochastic Block Model (SBM) networks with mixing parameters μ of 0.029 and 0.127, respectively.",
+          "Visual representation of the compression process is applied to Barabasi-Albert (BA) networks with numbers of links per node m of 1 and 2."
+        ]
+      },
+      {
+        "idx": 51,
+        "sentence": "The second row visualizes the structure of the macro network that was compressed to 35 nodes.",
+        "references": {},
+        "viewpoints": [
+          "The second row visualizes the structure of the macro network that was compressed to 35 nodes."
+        ]
+      },
+      {
+        "idx": 52,
+        "sentence": "The third row shows the Mean Absolute Error in the partition function before and after compression at different sizes.",
+        "references": {},
+        "viewpoints": [
+          "The third row shows the Mean Absolute Error in the partition function before and after compression at different sizes."
+        ]
+      },
+      {
+        "idx": 53,
+        "sentence": "We selected 10 different sizes uniformly in the logarithmic space between 5 and 200.",
+        "references": {},
+        "viewpoints": [
+          "Ten different sizes were selected uniformly in the logarithmic space between 5 and 200."
+        ]
+      },
+      {
+        "idx": 54,
+        "sentence": "The last row shows the Mean Absolute Error of the partition function curve for different methods when compressing the network to 35 nodes.",
+        "references": {},
+        "viewpoints": [
+          "The last row shows the Mean Absolute Error of the partition function curve for different methods when compressing the network to 35 nodes."
+        ]
+      },
+      {
+        "idx": 55,
+        "sentence": "Full size image",
+        "references": {},
+        "viewpoints": [
+          "Not applicable (image caption)."
+        ]
+      },
+      {
+        "idx": 56,
+        "sentence": "Finally, we train our graph neural networks on a vast number of real-world networks, enabling generalization to the datasets it has not seen before.",
+        "references": {},
+        "viewpoints": [
+          "The graph neural networks are trained on a vast number of real-world networks.",
+          "Training on a vast number of real-world networks enables the graph neural networks to generalize to datasets it has not seen before."
+        ]
+      },
+      {
+        "idx": 57,
+        "sentence": "We show that it leads to rapid and highly effective compressions across networks from various domains.",
+        "references": {},
+        "viewpoints": [
+          "Training leads to rapid and highly effective compressions across networks from various domains."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56034-2_with_abstracts",
+    "base_id": "s41467-025-56034-2",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56034-2_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

@@ -1,0 +1,822 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "In the past several years, there has been an explosion in the discovery of bacterial phage defense systems [1] . Not lagging far behind have been the discoveries of counter-defense mechanisms by which phages block these bacterial immune mechanisms [2] . Most phage counter-defense mechanisms described to date are non-enzymatic in nature. Such direct, but non-enzymatic defenses consist of phage counter-defense elements that function by directly blocking the bacterial defense system via binding of the defense effector protein [3] , [4] , titrating an intermediate signaling molecule [5] , [6] , or structurally mimicking the defense target [7] , [8] , [9] . These proteins rarely have homologs outside of phage genomes and are typically highly specific for the defense system that they inhibit. In contrast, relatively fewer enzymatic counter-defense proteins have been identified [2] . Examples of enzymatic counter-defense elements include proteins that either degrade small molecule alarmone signals or produce competing decoy small molecules [10] , [11] , [12] , covalently modify a protein target [13] , [14] , or replenish a molecule degraded by the defense system [15] . Whether enzymatic counter-defenses are less common, or just more challenging to characterize, is not yet clear. One family of toxin-antitoxin (TA) systems, the DarTG systems, were recently shown to provide robust phage defense [16] . TA systems are two-gene operons that encode a toxin, which typically inhibits growth of the bacterial cell, and a cognate, neutralizing antitoxin that prevents toxin activity under homeostatic conditions [17] . DarT1 and DarT2 are DNA ADP-ribosyltransferase toxins that modify single-stranded DNA (ssDNA), targeting guanosine and thymidine, respectively [18] , [19] , [20] . ADP-ribosylated DNA cannot be replicated, and in some cases also cannot be transcribed, thereby preventing phage replication [16] . Two different types of DarTG systems have been identified: DarTG1 systems, in which the antitoxin, DarG1, is a protein of the NADAR (NAD and ADP-ribose) superfamily [18] , and DarTG2 systems, in which the antitoxin DarG2 contains a macrodomain, another type of ADP-ribosylglycohydrolase domain that has been extensively characterized as an ADP-ribose eraser in eukaryotic cells [19] . The antitoxins display specificity, with each antitoxin only able to remove ADPr from the base modified by its cognate toxin. In addition to its ADP-ribosylglycohydrolase macrodomain, DarG2 proteins have a second, DarT2-interacting domain which contributes to their ability to neutralize the toxin [21] , [22] . The NADAR domain of DarG1 contains an N-terminal extension of unknown function, but has not been shown to interact with its cognate toxin [18] . The two systems defend against different sets of diverse phages with only some overlap in the targets [16] . To date, three phage counter-defense strategies have been discovered for phage evasion of DarTG-mediated defense [16] , [23] . The SECϕ18 phage, normally susceptible to DarTG2 defense, was shown to acquire resistance by accumulating mutations in its DNA polymerase that enable phage replication of ADP-ribosylated DNA. The other two known anti-DarTG counter-defenses, termed AdfA and AdfB, were identified in E. coli phage RB69 and Vibrio cholera phage ICP1, respectively, via escape mutant analyzes. Escape mutants in both cases had acquired a single nucleotide polymorphism that appeared to enable an existing counter-defense element to neutralize the DarT toxin [23] . Both AdfA and AdfB are small proteins with no homology to known proteins families that seem to block DarT activity through an interaction with the toxin. In both cases, the DarT-neutralizing variants of the genes were found to naturally exist within related phages, suggesting that the inactive variant may have evolved to neutralize another DarT homolog. We previously found that while the T4 phage encodes an active DarT1-blocking AdfA allele, a T4 ∆ adfA phage remains resistant to DarTG1, even though this protein restores RB69 infectivity of DarTG1 cells when ectopically expressed [16] . These data suggest the presence of a second, unknown anti-DarTG1 factor in T4 phage. Here, we investigate the molecular basis for the resistance of T4 and most of its relatives of the Tevenvirinae subfamily to the DarTG1 phage defense system. Using an expanded set of Tevenvirinae from the BASEL phage collection [24] , we find that neither the presence of AdfA in the genomes of these phages, nor its allele type (active or inactive), correlate with DarTG1 susceptibility. Instead, all Tevenvirinae – with the exception of RB69 – are resistant to DarTG1 defense. By co-infecting with a sensitive and resistant phage and characterizing the resulting chimeric viruses that have acquired DarTG1 resistance, we identified a second anti-DarTG1 counter defense element that is conserved within the T-even subfamily of phages. This element, which we have termed a nti- D arT f actor N ADAR (AdfN), is both necessary and sufficient for phage counter-defense. AdfN T4 is a member of the NADAR super family, which also includes the DarG1 antitoxin, and we show that like DarG1, AdfN T4 has enzymatic activity that allows it to remove ADP-ribose from DNA. We further find that other phage NADARs have similar enzymatic activity. Phylogenetic analyzes indicate that phages have likely independently co-opted NADAR domain proteins multiple times from different bacterial or archaeal sources, and that these NADAR proteins function as orphan antitoxins to reverse the activity of a TA-associated DarT1 toxin.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "In the past several years, there has been an explosion in the discovery of bacterial phage defense systems [1].",
+        "references": {
+          "1": {
+            "1": "Bacteria have coevolved with their viruses for billions of years.",
+            "2": "The coevolutionary arms race between bacteria and their viruses has led bacteria to develop a vast antiphage arsenal.",
+            "3": "The development of high-throughput screening methods expanded knowledge of bacterial defence systems from a few to more than a hundred systems.",
+            "4": "High-throughput screening methods unveiled many different molecular mechanisms in bacterial defence systems.",
+            "5": "Bacterial immunity is much more complex than previously thought.",
+            "6": "The Review explores recently discovered bacterial antiphage defence systems with a focus on their molecular diversity.",
+            "7": "The Review discusses the ecological and evolutionary drivers of the diversity of antiphage defence mechanisms.",
+            "8": "The Review discusses the implications of the existing diversity of antiphage defence mechanisms."
+          }
+        },
+        "viewpoints": [
+          "There has been a significant increase in the discovery of bacterial phage defense systems in the past several years."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Not lagging far behind have been the discoveries of counter-defense mechanisms by which phages block these bacterial immune mechanisms [2].",
+        "references": {
+          "2": {
+            "1": "Bacteria have developed an arsenal of immune defence mechanisms to contend with the diversity and ubiquity of bacteriophages.",
+            "2": "Bacteria have developed immune defence mechanisms to contend with the diversity and ubiquity of other mobile genetic elements.",
+            "3": "Bacterial defences include CRISPR-Cas systems.",
+            "4": "Bacterial defences include restriction-modification systems.",
+            "5": "The list of bacterial defences is growing and is mechanistically diverse.",
+            "6": "The diverse systems of bacterial defences constitute the bacterial 'immune system'.",
+            "7": "Bacteriophages have evolved direct mechanisms to circumvent bacterial defence pathways.",
+            "8": "Bacteriophages have evolved indirect mechanisms to circumvent bacterial defence pathways.",
+            "9": "Bacteriophages have evolved mechanisms to block bacterial defence pathways.",
+            "10": "Bacteriophages have evolved mechanisms to ensure successful infection.",
+            "11": "Mobile genetic elements have evolved direct mechanisms to circumvent bacterial defence pathways.",
+            "12": "Mobile genetic elements have evolved indirect mechanisms to circumvent bacterial defence pathways.",
+            "13": "Mobile genetic elements have evolved mechanisms to block bacterial defence pathways.",
+            "14": "Mobile genetic elements have evolved mechanisms to ensure successful infection.",
+            "15": "Recent advances in methodological approaches have boosted the discovery of direct inhibitors of bacterial defence systems.",
+            "16": "Recent advances in computational approaches have boosted the discovery of direct inhibitors of bacterial defence systems.",
+            "17": "The increasing availability of genome sequences has boosted the discovery of direct inhibitors of bacterial defence systems.",
+            "18": "The Review discusses methods for the discovery of direct inhibitors of bacterial defence systems.",
+            "19": "The Review discusses the diverse mechanisms of action of direct inhibitors.",
+            "20": "The Review presents perspectives on the emerging applications of direct inhibitors in biotechnology.",
+            "21": "The Review presents perspectives on the emerging applications of direct inhibitors beyond biotechnology."
+          }
+        },
+        "viewpoints": [
+          "Discoveries of counter-defense mechanisms by which phages block bacterial immune mechanisms have also increased significantly."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Most phage counter-defense mechanisms described to date are non-enzymatic in nature.",
+        "references": {},
+        "viewpoints": [
+          "Most phage counter-defense mechanisms described so far are non-enzymatic."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Such direct, but non-enzymatic defenses consist of phage counter-defense elements that function by directly blocking the bacterial defense system via binding of the defense effector protein [3] , [4] , titrating an intermediate signaling molecule [5] , [6] , or structurally mimicking the defense target [7] , [8] , [9].",
+        "references": {
+          "3": {
+            "1": "Enterohaemorrhagic Escherichia coli O157:H7 contains a cryptic plasmid named pOSAK1.",
+            "2": "The cryptic plasmid pOSAK1 carries only three ORFs: mobA, ORF1, and ORF2.",
+            "3": "The ORF mobA is involved in plasmid mobilization.",
+            "4": "Predicted proteins encoded by ORF1 and ORF2 share a weak homology with RnlA and RnlB, respectively.",
+            "5": "RnlA and RnlB form a toxin–antitoxin system encoded on the E. coli K-12 chromosome.",
+            "6": "lsoA, which is ORF1, encodes a toxin.",
+            "7": "lsoB, which is ORF2, encodes an antitoxin.",
+            "8": "RnlB functioned as an antitoxin only against its cognate toxin.",
+            "9": "LsoB functioned as an antitoxin only against its cognate toxin.",
+            "10": "RnlB and LsoB did not function interchangeably as antitoxins.",
+            "11": "T4 phage Dmd suppressed the toxicity of RnlA by direct interaction.",
+            "12": "T4 phage Dmd suppressed the toxicity of LsoA by direct interaction.",
+            "13": "T4 phage Dmd is the first example of a phage with an antitoxin against multiple toxins."
+          },
+          "4": {
+            "1": "Bacteria encode hundreds of diverse defence systems.",
+            "2": "Diverse defence systems in bacteria protect them from viral infection.",
+            "3": "Diverse defence systems in bacteria inhibit phage propagation."
+          },
+          "5": {
+            "1": "Cyclic-oligonucleotide-based anti-phage signaling system (CBASS) is a common immune system.",
+            "2": "CBASS uses cyclic oligonucleotide signals to limit phage replication.",
+            "3": "Phages encode anti-CBASS (Acb) proteins such as Acb2.",
+            "4": "Acb2 can sequester some cyclic dinucleotides (CDNs).",
+            "5": "Sequestering cyclic dinucleotides (CDNs) by Acb2 limits downstream effector activation.",
+            "6": "Acb2 sequesters many cyclic dinucleotides (CDNs) produced by CBASS systems.",
+            "7": "Acb2 inhibits stimulator of interferon genes (STING) activity in human cells.",
+            "8": "The Acb2 hexamer binds with high affinity to CBASS cyclic trinucleotides (CTNs) 3'3'3'-cyclic AMP-AMP-AMP.",
+            "9": "The Acb2 hexamer binds with high affinity to CBASS cyclic trinucleotides (CTNs) 3'3'3'-cAAG.",
+            "10": "The binding site for CBASS cyclic trinucleotides (CTNs) on Acb2 hexamer is distinct from the binding site for cyclic dinucleotides (CDNs).",
+            "11": "One Acb2 hexamer can simultaneously bind two cyclic trinucleotides (CTNs).",
+            "12": "One Acb2 hexamer can simultaneously bind three cyclic dinucleotides (CDNs).",
+            "13": "Phage-encoded Acb2 provides protection from type III-C CBASS."
+          },
+          "6": {
+            "1": "The Toll/interleukin-1 receptor (TIR) domain is a key component of immune receptors.",
+            "2": "Immune receptors that include the TIR domain identify pathogen invasion.",
+            "3": "The identification of pathogen invasion by TIR domain-containing immune receptors occurs in bacteria.",
+            "4": "The identification of pathogen invasion by TIR domain-containing immune receptors occurs in plants.",
+            "5": "The identification of pathogen invasion by TIR domain-containing immune receptors occurs in animals."
+          },
+          "7": {
+            "1": "The structure of a protein that can mimic approximately 20 base pairs of B-form DNA has been solved by X-ray crystallography to a resolution of 1.8 Å.",
+            "2": "The ocr protein is encoded by gene 0.3 of bacteriophage T7.",
+            "3": "The ocr protein mimics the size and shape of a bent DNA molecule.",
+            "4": "The ocr protein mimics the arrangement of negative charges along the phosphate backbone of B-form DNA.",
+            "5": "The ocr protein is an efficient inhibitor in vivo of all known families of complex type I DNA restriction enzymes.",
+            "6": "Atomic force microscopy has been used to observe that type I enzymes induce a bend in DNA.",
+            "7": "The bend induced by type I enzymes in DNA is of similar magnitude to the bend in the ocr molecule.",
+            "8": "The first structure of an antirestriction protein demonstrates the construction of structural mimetics of long segments of B-form DNA."
+          },
+          "8": [],
+          "9": {
+            "1": "RecBCD processes double-stranded DNA breaks in Escherichia coli during the initial stages of homologous recombination.",
+            "2": "RecBCD contains helicase activities.",
+            "3": "RecBCD contains nuclease activities.",
+            "4": "RecBCD unwinds blunt-ended DNA.",
+            "5": "RecBCD digests blunt-ended DNA until the eight-nucleotide sequence Chi is encountered.",
+            "6": "Chi modulates the nuclease activity of RecBCD.",
+            "7": "The modulation of nuclease activity by Chi results in a resected DNA end.",
+            "8": "The resected DNA end is a substrate for RecA during subsequent steps in recombination.",
+            "9": "RecBCD acts as a defense mechanism against bacteriophage infection.",
+            "10": "RecBCD digests linear viral DNA present during virus replication.",
+            "11": "RecBCD digests linear viral DNA resulting from the action of restriction endonucleases.",
+            "12": "Bacteriophage lambda encodes the gene Gam.",
+            "13": "The product of the gene Gam is an inhibitor of RecBCD.",
+            "14": "Encoding the gene Gam helps bacteriophage lambda avoid digestion by RecBCD.",
+            "15": "Gam binds to RecBCD.",
+            "16": "Gam inhibits the helicase activities of RecBCD.",
+            "17": "Gam inhibits the nuclease activities of RecBCD.",
+            "18": "Gam inhibits RecBCD by preventing RecBCD from binding DNA.",
+            "19": "The crystal structure of Gam has been solved from two different crystal forms.",
+            "20": "Models for the molecular mechanism of Gam-mediated inhibition of RecBCD are suggested using the published crystal structure of RecBCD in complex with DNA.",
+            "21": "It is proposed that Gam could be a mimetic of single-stranded DNA.",
+            "22": "It is proposed that Gam could be a mimetic of double-stranded DNA."
+          }
+        },
+        "viewpoints": [
+          "Non-enzymatic defenses consist of phage counter-defense elements that block the bacterial defense system by binding the defense effector protein.",
+          "Non-enzymatic defenses consist of phage counter-defense elements that block the bacterial defense system by titrating an intermediate signaling molecule.",
+          "Non-enzymatic defenses consist of phage counter-defense elements that block the bacterial defense system by structurally mimicking the defense target."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "These proteins rarely have homologs outside of phage genomes and are typically highly specific for the defense system that they inhibit.",
+        "references": {},
+        "viewpoints": [
+          "Non-enzymatic defense proteins rarely have homologs outside of phage genomes.",
+          "Non-enzymatic defense proteins are typically highly specific for the defense system that they inhibit."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "In contrast, relatively fewer enzymatic counter-defense proteins have been identified [2].",
+        "references": {
+          "2": {
+            "1": "Bacteria have developed an arsenal of immune defence mechanisms to contend with the diversity and ubiquity of bacteriophages.",
+            "2": "Bacteria have developed immune defence mechanisms to contend with the diversity and ubiquity of other mobile genetic elements.",
+            "3": "Bacterial defences include CRISPR-Cas systems.",
+            "4": "Bacterial defences include restriction-modification systems.",
+            "5": "The list of bacterial defences is growing and is mechanistically diverse.",
+            "6": "The diverse systems of bacterial defences constitute the bacterial 'immune system'.",
+            "7": "Bacteriophages have evolved direct mechanisms to circumvent bacterial defence pathways.",
+            "8": "Bacteriophages have evolved indirect mechanisms to circumvent bacterial defence pathways.",
+            "9": "Bacteriophages have evolved mechanisms to block bacterial defence pathways.",
+            "10": "Bacteriophages have evolved mechanisms to ensure successful infection.",
+            "11": "Mobile genetic elements have evolved direct mechanisms to circumvent bacterial defence pathways.",
+            "12": "Mobile genetic elements have evolved indirect mechanisms to circumvent bacterial defence pathways.",
+            "13": "Mobile genetic elements have evolved mechanisms to block bacterial defence pathways.",
+            "14": "Mobile genetic elements have evolved mechanisms to ensure successful infection.",
+            "15": "Recent advances in methodological approaches have boosted the discovery of direct inhibitors of bacterial defence systems.",
+            "16": "Recent advances in computational approaches have boosted the discovery of direct inhibitors of bacterial defence systems.",
+            "17": "The increasing availability of genome sequences has boosted the discovery of direct inhibitors of bacterial defence systems.",
+            "18": "The Review discusses methods for the discovery of direct inhibitors of bacterial defence systems.",
+            "19": "The Review discusses the diverse mechanisms of action of direct inhibitors.",
+            "20": "The Review presents perspectives on the emerging applications of direct inhibitors in biotechnology.",
+            "21": "The Review presents perspectives on the emerging applications of direct inhibitors beyond biotechnology."
+          }
+        },
+        "viewpoints": [
+          "Relatively fewer enzymatic counter-defense proteins have been identified compared to non-enzymatic ones."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Examples of enzymatic counter-defense elements include proteins that either degrade small molecule alarmone signals or produce competing decoy small molecules [10] , [11] , [12] , covalently modify a protein target [13] , [14] , or replenish a molecule degraded by the defense system [15].",
+        "references": {
+          "10": [],
+          "11": {
+            "1": "The cyclic oligonucleotide-based antiphage signalling system (CBASS) is an antiphage defence system in diverse bacteria.",
+            "2": "The pyrimidine cyclase system for antiphage resistance (Pycsar) is an antiphage defence system in diverse bacteria.",
+            "3": "CBASS uses cyclic nucleotide signals to induce cell death.",
+            "4": "Pycsar uses cyclic nucleotide signals to induce cell death.",
+            "5": "CBASS uses cyclic nucleotide signals to prevent viral propagation.",
+            "6": "Pycsar uses cyclic nucleotide signals to prevent viral propagation."
+          },
+          "12": [],
+          "13": {
+            "1": "CRISPR-Cas systems function as bacterial anti-viral systems.",
+            "2": "Phages use anti-CRISPR proteins (Acrs) to inactivate CRISPR-Cas systems.",
+            "3": "AcrIF11 inhibits the type I-F CRISPR system through a novel mechanism.",
+            "4": "AcrIF11 functions as a novel mono-ADP-ribosyltransferase (mART).",
+            "5": "AcrIF11 modifies N250 of the Cas8f subunit.",
+            "6": "N250 of the Cas8f subunit is a residue required for recognition of the protospacer-adjacent motif.",
+            "7": "The modification of N250 occurs within the crRNA-guided surveillance (Csy) complex from Pseudomonas aeruginosa.",
+            "8": "AcrIF11-mediated ADP-ribosylation of the Csy complex results in a complete loss of the Csy complex's double-stranded DNA (dsDNA) binding activity.",
+            "9": "AcrIF11 requires, besides Cas8f, the Cas7.6f subunit for binding to the Csy complex.",
+            "10": "AcrIF11 requires, besides Cas8f, the Cas7.6f subunit for modifying the Csy complex.",
+            "11": "The study reveals an unprecedented mechanism of type I CRISPR-Cas inhibition.",
+            "12": "The study reveals the evolutionary arms race between phages and bacteria.",
+            "13": "The study suggests an approach for designing highly potent regulatory tools in the future applications of type I CRISPR-Cas systems."
+          },
+          "14": {
+            "1": "Phages use anti-CRISPR proteins to deactivate the CRISPR-Cas system.",
+            "2": "The mechanisms for the inhibition of type I CRISPR-Cas systems by anti-CRISPRs have been elucidated.",
+            "3": "The mechanisms for the inhibition of type II CRISPR-Cas systems by anti-CRISPRs have been elucidated.",
+            "4": "It has remained unknown how the type V CRISPR-Cas12a (Cpf1) system is inhibited by anti-CRISPRs.",
+            "5": "The study identifies the anti-CRISPR protein AcrVA5.",
+            "6": "The study reports the mechanisms by which AcrVA5 inhibits CRISPR-Cas12a.",
+            "7": "Structural and biochemical data show that AcrVA5 functions as an acetyltransferase.",
+            "8": "AcrVA5 modifies Moraxella bovoculi (Mb) Cas12a at Lys635.",
+            "9": "Lys635 is a residue required for recognition of the protospacer-adjacent motif.",
+            "10": "The AcrVA5-mediated modification of MbCas12a results in complete loss of double-stranded DNA (dsDNA)-cleavage activity.",
+            "11": "The Lys635Arg mutation renders MbCas12a completely insensitive to inhibition by AcrVA5.",
+            "12": "A cryo-EM structure of the AcrVA5-acetylated MbCas12a reveals that Lys635 acetylation provides sufficient steric hindrance.",
+            "13": "The steric hindrance provided by Lys635 acetylation prevents dsDNA substrates from binding to the Cas protein.",
+            "14": "The study reveals an unprecedented mechanism of CRISPR-Cas inhibition.",
+            "15": "The study suggests an evolutionary arms race between phages and bacteria."
+          },
+          "15": {
+            "1": "The biological interplay between phages and bacteria has driven the evolution of phage anti-defence systems.",
+            "2": "Phage anti-defence systems evade bacterial defence mechanisms.",
+            "3": "Phage ADSs bind and inhibit host defence proteins.",
+            "4": "Phage ADSs add covalent modifications to deactivate defence proteins.",
+            "5": "Phage ADSs degrade or sequester signalling molecules utilised by host defence systems.",
+            "6": "Phage ADSs synthesise and restore essential molecules depleted by bacterial defences.",
+            "7": "Phage ADSs add covalent modifications to phage molecules to avoid recognition.",
+            "8": "145 phage ADSs have been characterised to date.",
+            "9": "Phage ADSs counteract 27 of the 152 different bacterial defence families.",
+            "10": "There is a hypothesis that many more phage ADSs are yet to be discovered.",
+            "11": "High-throughput approaches (computational and experimental) are indispensable for discovering new phage ADSs.",
+            "12": "There are limitations to high-throughput approaches for discovering new phage ADSs.",
+            "13": "A comprehensive characterisation of phage ADSs is critical for understanding phage-host interplay.",
+            "14": "A comprehensive characterisation of phage ADSs is critical for developing clinical applications.",
+            "15": "One clinical application of phage ADSs is treatment for multidrug-resistant bacterial infections."
+          }
+        },
+        "viewpoints": [
+          "Enzymatic counter-defense elements include proteins that degrade small molecule alarmone signals.",
+          "Enzymatic counter-defense elements include proteins that produce competing decoy small molecules.",
+          "Enzymatic counter-defense elements include proteins that covalently modify a protein target.",
+          "Enzymatic counter-defense elements include proteins that replenish a molecule degraded by the defense system."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Whether enzymatic counter-defenses are less common, or just more challenging to characterize, is not yet clear.",
+        "references": {},
+        "viewpoints": [
+          "It is not yet clear whether enzymatic counter-defenses are less common or more challenging to characterize."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "One family of toxin-antitoxin (TA) systems, the DarTG systems, were recently shown to provide robust phage defense [16].",
+        "references": {
+          "16": {
+            "1": "Toxin-antitoxin (TA) systems are broadly distributed genetic elements.",
+            "2": "Toxin-antitoxin (TA) systems are poorly conserved genetic elements.",
+            "3": "The biological functions of toxin-antitoxin (TA) systems are unclear.",
+            "4": "The biological functions of toxin-antitoxin (TA) systems are controversial.",
+            "5": "Some toxin-antitoxin (TA) systems may provide bacteria with immunity to infection by bacteriophages.",
+            "6": "Bacteriophages are ubiquitous viral predators of bacteria.",
+            "7": "A search was conducted bioinformatically to identify toxin-antitoxin (TA) systems that provide bacterial immunity to infection by bacteriophages.",
+            "8": "The search focused on toxin-antitoxin (TA) systems frequently encoded near known phage defence genes in bacterial genomes.",
+            "9": "The search bioinformatically identified homologues of DarTG.",
+            "10": "DarTG is a recently discovered family of toxin-antitoxin (TA) systems.",
+            "11": "The biological functions of DarTG were unclear at the time of its discovery.",
+            "12": "The natural activating conditions of DarTG were unclear at the time of its discovery.",
+            "13": "Representatives from the DarTG1 subfamily strongly protected E. coli MG1655 against phages.",
+            "14": "Representatives from the DarTG2 subfamily strongly protected E. coli MG1655 against phages.",
+            "15": "Infection with RB69 phage triggers the release of the DarT toxin in the DarTG1 system.",
+            "16": "Infection with T5 phage triggers the release of the DarT toxin in the DarTG2 system.",
+            "17": "The DarT toxin is a DNA ADP-ribosyltransferase.",
+            "18": "The DarT toxin modifies viral DNA.",
+            "19": "The modification of viral DNA by the DarT toxin prevents replication of the virus.",
+            "20": "Preventing replication of the virus blocks the production of mature virions.",
+            "21": "Phages have evolved to overcome DarTG defence through mutations to their DNA polymerase.",
+            "22": "Phages have evolved to overcome DarTG defence through mutations to an anti-DarT factor, gp61.2.",
+            "23": "The anti-DarT factor gp61.2 is encoded by many T-even phages.",
+            "24": "Phage defence may be a common function for toxin-antitoxin (TA) systems.",
+            "25": "The mechanism by which DarTG systems inhibit phage infection has been revealed."
+          }
+        },
+        "viewpoints": [
+          "The DarTG systems, a family of toxin-antitoxin (TA) systems, were recently shown to provide robust phage defense."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "TA systems are two-gene operons that encode a toxin, which typically inhibits growth of the bacterial cell, and a cognate, neutralizing antitoxin that prevents toxin activity under homeostatic conditions [17].",
+        "references": {
+          "17": {
+            "1": "Bacterial toxin-antitoxin (TA) modules are abundant genetic elements.",
+            "2": "Bacterial toxin-antitoxin modules encode a toxin protein capable of inhibiting cell growth.",
+            "3": "Bacterial toxin-antitoxin modules encode an antitoxin that counteracts the toxin.",
+            "4": "The majority of toxins in bacterial toxin-antitoxin modules are enzymes that interfere with translation or DNA replication.",
+            "5": "A wide variety of molecular activities of toxins in bacterial toxin-antitoxin modules have been described.",
+            "6": "A wide variety of cellular targets of toxins in bacterial toxin-antitoxin modules have been described.",
+            "7": "Antitoxins can be proteins or RNAs.",
+            "8": "Antitoxins often control their cognate toxins through direct interactions.",
+            "9": "Antitoxins often control their cognate toxins through transcriptional regulation of TA module expression in conjunction with other signaling elements.",
+            "10": "Antitoxins often control their cognate toxins through translational regulation of TA module expression in conjunction with other signaling elements.",
+            "11": "Three major biological functions of TA modules have been discovered.",
+            "12": "The first major biological function of TA modules is post-segregational killing, also known as plasmid addiction.",
+            "13": "The second major biological function of TA modules is abortive infection, also known as bacteriophage immunity through altruistic suicide.",
+            "14": "The third major biological function of TA modules is persister formation, also known as antibiotic tolerance through dormancy.",
+            "15": "The review summarizes the current state of the field regarding bacterial toxin-antitoxin modules.",
+            "16": "The review highlights how multiple levels of regulation shape the conditions of toxin activation.",
+            "17": "The review highlights how the conditions of toxin activation achieve the different biological functions of TA modules."
+          }
+        },
+        "viewpoints": [
+          "TA systems are two-gene operons that encode a toxin which typically inhibits growth of the bacterial cell.",
+          "TA systems are two-gene operons that encode a cognate, neutralizing antitoxin that prevents toxin activity under homeostatic conditions."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "DarT1 and DarT2 are DNA ADP-ribosyltransferase toxins that modify single-stranded DNA (ssDNA), targeting guanosine and thymidine, respectively [18] , [19] , [20].",
+        "references": {
+          "18": {
+            "1": "ADP-ribosylation modifies nucleic acids.",
+            "2": "Various ADP-ribosyltransferases catalyze ADP-ribosylation of nucleic acids.",
+            "3": "The DarT enzyme is an ADP-ribosyltransferase that catalyzes nucleic acid modification by ADP-ribosylation.",
+            "4": "The DarT enzyme is part of the bacterial toxin-antitoxin system DarTG.",
+            "5": "The DarTG system provides control of DNA replication.",
+            "6": "The DarTG system provides control of bacterial growth.",
+            "7": "The DarTG system provides protection against bacteriophages.",
+            "8": "Two subfamilies of DarTG have been identified: DarTG1 and DarTG2.",
+            "9": "DarTG1 and DarTG2 are distinguished by their associated antitoxins.",
+            "10": "DarTG2 catalyzes reversible ADP-ribosylation of thymidine bases.",
+            "11": "DarTG2 employs a macrodomain as an antitoxin.",
+            "12": "The DNA ADP-ribosylation activity of DarTG1 is currently unknown.",
+            "13": "The biochemical function of the DarTG1-associated antitoxin, which is a NADAR domain, is currently unknown.",
+            "14": "Structural and biochemical approaches were used to study DarT1-NADAR.",
+            "15": "DarT1-NADAR is a toxin-antitoxin system for reversible ADP-ribosylation of guanosine bases.",
+            "16": "DarT1 evolved the ability to link ADP-ribose to the guanine amino group.",
+            "17": "The guanine amino group linked with ADP-ribose by DarT1 is specifically hydrolyzed by NADAR.",
+            "18": "Guanine de-ADP-ribosylation is conserved among eukaryotic NADAR members.",
+            "19": "Guanine de-ADP-ribosylation is conserved among non-DarT-associated NADAR members.",
+            "20": "Conserved guanine de-ADP-ribosylation indicates a wide distribution of reversible guanine modifications beyond DarTG systems."
+          },
+          "19": {
+            "1": "The discovery and study of toxin-antitoxin (TA) systems help advance our understanding of prokaryotic strategies for regulating cellular processes related to the general stress response.",
+            "2": "Prokaryotic strategies include defense against phages.",
+            "3": "Prokaryotic strategies include growth control.",
+            "4": "Prokaryotic strategies include biofilm formation.",
+            "5": "Prokaryotic strategies include persistence.",
+            "6": "Prokaryotic strategies include programmed cell death.",
+            "7": "A toxin-antitoxin (TA) system is identified in various bacteria, including Mycobacterium tuberculosis.",
+            "8": "The identified TA system is characterized in the study.",
+            "9": "The toxin of the identified system is DarT, which is a domain of unknown function (DUF) 4433.",
+            "10": "The antitoxin of the identified system is DarG, which is a macrodomain protein.",
+            "11": "DarT is an enzyme.",
+            "12": "DarT specifically modifies thymidines on single-stranded DNA.",
+            "13": "The modification by DarT is sequence-specific.",
+            "14": "The modification by DarT is a nucleotide-type modification called ADP-ribosylation.",
+            "15": "The ADP-ribosylation modification on thymidines by DarT can be removed by DarG.",
+            "16": "The study provides an example of reversible DNA ADP-ribosylation.",
+            "17": "There are potential therapeutic benefits in targeting the enzyme-enzyme TA system in bacterial pathogens.",
+            "18": "The TA system in Mycobacterium tuberculosis could be targeted for therapeutic benefits."
+          },
+          "20": {}
+        },
+        "viewpoints": [
+          "DarT1 is a DNA ADP-ribosyltransferase toxin that modifies single-stranded DNA (ssDNA) targeting guanosine.",
+          "DarT2 is a DNA ADP-ribosyltransferase toxin that modifies single-stranded DNA (ssDNA) targeting thymidine."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "ADP-ribosylated DNA cannot be replicated, and in some cases also cannot be transcribed, thereby preventing phage replication [16].",
+        "references": {
+          "16": {
+            "1": "Toxin-antitoxin (TA) systems are broadly distributed genetic elements.",
+            "2": "Toxin-antitoxin (TA) systems are poorly conserved genetic elements.",
+            "3": "The biological functions of toxin-antitoxin (TA) systems are unclear.",
+            "4": "The biological functions of toxin-antitoxin (TA) systems are controversial.",
+            "5": "Some toxin-antitoxin (TA) systems may provide bacteria with immunity to infection by bacteriophages.",
+            "6": "Bacteriophages are ubiquitous viral predators of bacteria.",
+            "7": "A search was conducted bioinformatically to identify toxin-antitoxin (TA) systems that provide bacterial immunity to infection by bacteriophages.",
+            "8": "The search focused on toxin-antitoxin (TA) systems frequently encoded near known phage defence genes in bacterial genomes.",
+            "9": "The search bioinformatically identified homologues of DarTG.",
+            "10": "DarTG is a recently discovered family of toxin-antitoxin (TA) systems.",
+            "11": "The biological functions of DarTG were unclear at the time of its discovery.",
+            "12": "The natural activating conditions of DarTG were unclear at the time of its discovery.",
+            "13": "Representatives from the DarTG1 subfamily strongly protected E. coli MG1655 against phages.",
+            "14": "Representatives from the DarTG2 subfamily strongly protected E. coli MG1655 against phages.",
+            "15": "Infection with RB69 phage triggers the release of the DarT toxin in the DarTG1 system.",
+            "16": "Infection with T5 phage triggers the release of the DarT toxin in the DarTG2 system.",
+            "17": "The DarT toxin is a DNA ADP-ribosyltransferase.",
+            "18": "The DarT toxin modifies viral DNA.",
+            "19": "The modification of viral DNA by the DarT toxin prevents replication of the virus.",
+            "20": "Preventing replication of the virus blocks the production of mature virions.",
+            "21": "Phages have evolved to overcome DarTG defence through mutations to their DNA polymerase.",
+            "22": "Phages have evolved to overcome DarTG defence through mutations to an anti-DarT factor, gp61.2.",
+            "23": "The anti-DarT factor gp61.2 is encoded by many T-even phages.",
+            "24": "Phage defence may be a common function for toxin-antitoxin (TA) systems.",
+            "25": "The mechanism by which DarTG systems inhibit phage infection has been revealed."
+          }
+        },
+        "viewpoints": [
+          "ADP-ribosylated DNA cannot be replicated.",
+          "In some cases, ADP-ribosylated DNA also cannot be transcribed.",
+          "The inability to replicate or transcribe ADP-ribosylated DNA prevents phage replication."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Two different types of DarTG systems have been identified: DarTG1 systems, in which the antitoxin, DarG1, is a protein of the NADAR (NAD and ADP-ribose) superfamily [18], and DarTG2 systems, in which the antitoxin DarG2 contains a macrodomain, another type of ADP-ribosylglycohydrolase domain that has been extensively characterized as an ADP-ribose eraser in eukaryotic cells [19].",
+        "references": {
+          "18": {
+            "1": "ADP-ribosylation modifies nucleic acids.",
+            "2": "Various ADP-ribosyltransferases catalyze ADP-ribosylation of nucleic acids.",
+            "3": "The DarT enzyme is an ADP-ribosyltransferase that catalyzes nucleic acid modification by ADP-ribosylation.",
+            "4": "The DarT enzyme is part of the bacterial toxin-antitoxin system DarTG.",
+            "5": "The DarTG system provides control of DNA replication.",
+            "6": "The DarTG system provides control of bacterial growth.",
+            "7": "The DarTG system provides protection against bacteriophages.",
+            "8": "Two subfamilies of DarTG have been identified: DarTG1 and DarTG2.",
+            "9": "DarTG1 and DarTG2 are distinguished by their associated antitoxins.",
+            "10": "DarTG2 catalyzes reversible ADP-ribosylation of thymidine bases.",
+            "11": "DarTG2 employs a macrodomain as an antitoxin.",
+            "12": "The DNA ADP-ribosylation activity of DarTG1 is currently unknown.",
+            "13": "The biochemical function of the DarTG1-associated antitoxin, which is a NADAR domain, is currently unknown.",
+            "14": "Structural and biochemical approaches were used to study DarT1-NADAR.",
+            "15": "DarT1-NADAR is a toxin-antitoxin system for reversible ADP-ribosylation of guanosine bases.",
+            "16": "DarT1 evolved the ability to link ADP-ribose to the guanine amino group.",
+            "17": "The guanine amino group linked with ADP-ribose by DarT1 is specifically hydrolyzed by NADAR.",
+            "18": "Guanine de-ADP-ribosylation is conserved among eukaryotic NADAR members.",
+            "19": "Guanine de-ADP-ribosylation is conserved among non-DarT-associated NADAR members.",
+            "20": "Conserved guanine de-ADP-ribosylation indicates a wide distribution of reversible guanine modifications beyond DarTG systems."
+          },
+          "19": {
+            "1": "The discovery and study of toxin-antitoxin (TA) systems help advance our understanding of prokaryotic strategies for regulating cellular processes related to the general stress response.",
+            "2": "Prokaryotic strategies include defense against phages.",
+            "3": "Prokaryotic strategies include growth control.",
+            "4": "Prokaryotic strategies include biofilm formation.",
+            "5": "Prokaryotic strategies include persistence.",
+            "6": "Prokaryotic strategies include programmed cell death.",
+            "7": "A toxin-antitoxin (TA) system is identified in various bacteria, including Mycobacterium tuberculosis.",
+            "8": "The identified TA system is characterized in the study.",
+            "9": "The toxin of the identified system is DarT, which is a domain of unknown function (DUF) 4433.",
+            "10": "The antitoxin of the identified system is DarG, which is a macrodomain protein.",
+            "11": "DarT is an enzyme.",
+            "12": "DarT specifically modifies thymidines on single-stranded DNA.",
+            "13": "The modification by DarT is sequence-specific.",
+            "14": "The modification by DarT is a nucleotide-type modification called ADP-ribosylation.",
+            "15": "The ADP-ribosylation modification on thymidines by DarT can be removed by DarG.",
+            "16": "The study provides an example of reversible DNA ADP-ribosylation.",
+            "17": "There are potential therapeutic benefits in targeting the enzyme-enzyme TA system in bacterial pathogens.",
+            "18": "The TA system in Mycobacterium tuberculosis could be targeted for therapeutic benefits."
+          }
+        },
+        "viewpoints": [
+          "Two different types of DarTG systems have been identified.",
+          "In DarTG1 systems, the antitoxin DarG1 is a protein of the NADAR (NAD and ADP-ribose) superfamily.",
+          "In DarTG2 systems, the antitoxin DarG2 contains a macrodomain.",
+          "The macrodomain in DarG2 is a type of ADP-ribosylglycohydrolase domain characterized as an ADP-ribose eraser in eukaryotic cells."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The antitoxins display specificity, with each antitoxin only able to remove ADPr from the base modified by its cognate toxin.",
+        "references": {},
+        "viewpoints": [
+          "The antitoxins display specificity.",
+          "Each antitoxin is only able to remove ADPr from the base modified by its cognate toxin."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "In addition to its ADP-ribosylglycohydrolase macrodomain, DarG2 proteins have a second, DarT2-interacting domain which contributes to their ability to neutralize the toxin [21] , [22].",
+        "references": {
+          "21": [],
+          "22": []
+        },
+        "viewpoints": [
+          "DarG2 proteins have a second DarT2-interacting domain in addition to their ADP-ribosylglycohydrolase macrodomain.",
+          "The DarT2-interacting domain in DarG2 proteins contributes to their ability to neutralize the toxin."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "The NADAR domain of DarG1 contains an N-terminal extension of unknown function, but has not been shown to interact with its cognate toxin [18].",
+        "references": {
+          "18": {
+            "1": "ADP-ribosylation modifies nucleic acids.",
+            "2": "Various ADP-ribosyltransferases catalyze ADP-ribosylation of nucleic acids.",
+            "3": "The DarT enzyme is an ADP-ribosyltransferase that catalyzes nucleic acid modification by ADP-ribosylation.",
+            "4": "The DarT enzyme is part of the bacterial toxin-antitoxin system DarTG.",
+            "5": "The DarTG system provides control of DNA replication.",
+            "6": "The DarTG system provides control of bacterial growth.",
+            "7": "The DarTG system provides protection against bacteriophages.",
+            "8": "Two subfamilies of DarTG have been identified: DarTG1 and DarTG2.",
+            "9": "DarTG1 and DarTG2 are distinguished by their associated antitoxins.",
+            "10": "DarTG2 catalyzes reversible ADP-ribosylation of thymidine bases.",
+            "11": "DarTG2 employs a macrodomain as an antitoxin.",
+            "12": "The DNA ADP-ribosylation activity of DarTG1 is currently unknown.",
+            "13": "The biochemical function of the DarTG1-associated antitoxin, which is a NADAR domain, is currently unknown.",
+            "14": "Structural and biochemical approaches were used to study DarT1-NADAR.",
+            "15": "DarT1-NADAR is a toxin-antitoxin system for reversible ADP-ribosylation of guanosine bases.",
+            "16": "DarT1 evolved the ability to link ADP-ribose to the guanine amino group.",
+            "17": "The guanine amino group linked with ADP-ribose by DarT1 is specifically hydrolyzed by NADAR.",
+            "18": "Guanine de-ADP-ribosylation is conserved among eukaryotic NADAR members.",
+            "19": "Guanine de-ADP-ribosylation is conserved among non-DarT-associated NADAR members.",
+            "20": "Conserved guanine de-ADP-ribosylation indicates a wide distribution of reversible guanine modifications beyond DarTG systems."
+          }
+        },
+        "viewpoints": [
+          "The NADAR domain of DarG1 contains an N-terminal extension of unknown function.",
+          "The NADAR domain of DarG1 has not been shown to interact with its cognate toxin."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "The two systems defend against different sets of diverse phages with only some overlap in the targets [16].",
+        "references": {
+          "16": {
+            "1": "Toxin-antitoxin (TA) systems are broadly distributed genetic elements.",
+            "2": "Toxin-antitoxin (TA) systems are poorly conserved genetic elements.",
+            "3": "The biological functions of toxin-antitoxin (TA) systems are unclear.",
+            "4": "The biological functions of toxin-antitoxin (TA) systems are controversial.",
+            "5": "Some toxin-antitoxin (TA) systems may provide bacteria with immunity to infection by bacteriophages.",
+            "6": "Bacteriophages are ubiquitous viral predators of bacteria.",
+            "7": "A search was conducted bioinformatically to identify toxin-antitoxin (TA) systems that provide bacterial immunity to infection by bacteriophages.",
+            "8": "The search focused on toxin-antitoxin (TA) systems frequently encoded near known phage defence genes in bacterial genomes.",
+            "9": "The search bioinformatically identified homologues of DarTG.",
+            "10": "DarTG is a recently discovered family of toxin-antitoxin (TA) systems.",
+            "11": "The biological functions of DarTG were unclear at the time of its discovery.",
+            "12": "The natural activating conditions of DarTG were unclear at the time of its discovery.",
+            "13": "Representatives from the DarTG1 subfamily strongly protected E. coli MG1655 against phages.",
+            "14": "Representatives from the DarTG2 subfamily strongly protected E. coli MG1655 against phages.",
+            "15": "Infection with RB69 phage triggers the release of the DarT toxin in the DarTG1 system.",
+            "16": "Infection with T5 phage triggers the release of the DarT toxin in the DarTG2 system.",
+            "17": "The DarT toxin is a DNA ADP-ribosyltransferase.",
+            "18": "The DarT toxin modifies viral DNA.",
+            "19": "The modification of viral DNA by the DarT toxin prevents replication of the virus.",
+            "20": "Preventing replication of the virus blocks the production of mature virions.",
+            "21": "Phages have evolved to overcome DarTG defence through mutations to their DNA polymerase.",
+            "22": "Phages have evolved to overcome DarTG defence through mutations to an anti-DarT factor, gp61.2.",
+            "23": "The anti-DarT factor gp61.2 is encoded by many T-even phages.",
+            "24": "Phage defence may be a common function for toxin-antitoxin (TA) systems.",
+            "25": "The mechanism by which DarTG systems inhibit phage infection has been revealed."
+          }
+        },
+        "viewpoints": [
+          "The two DarTG systems defend against different sets of diverse phages.",
+          "There is only some overlap in the targets of the two DarTG systems."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "To date, three phage counter-defense strategies have been discovered for phage evasion of DarTG-mediated defense [16], [23].",
+        "references": {
+          "16": {
+            "1": "Toxin-antitoxin (TA) systems are broadly distributed genetic elements.",
+            "2": "Toxin-antitoxin (TA) systems are poorly conserved genetic elements.",
+            "3": "The biological functions of toxin-antitoxin (TA) systems are unclear.",
+            "4": "The biological functions of toxin-antitoxin (TA) systems are controversial.",
+            "5": "Some toxin-antitoxin (TA) systems may provide bacteria with immunity to infection by bacteriophages.",
+            "6": "Bacteriophages are ubiquitous viral predators of bacteria.",
+            "7": "A search was conducted bioinformatically to identify toxin-antitoxin (TA) systems that provide bacterial immunity to infection by bacteriophages.",
+            "8": "The search focused on toxin-antitoxin (TA) systems frequently encoded near known phage defence genes in bacterial genomes.",
+            "9": "The search bioinformatically identified homologues of DarTG.",
+            "10": "DarTG is a recently discovered family of toxin-antitoxin (TA) systems.",
+            "11": "The biological functions of DarTG were unclear at the time of its discovery.",
+            "12": "The natural activating conditions of DarTG were unclear at the time of its discovery.",
+            "13": "Representatives from the DarTG1 subfamily strongly protected E. coli MG1655 against phages.",
+            "14": "Representatives from the DarTG2 subfamily strongly protected E. coli MG1655 against phages.",
+            "15": "Infection with RB69 phage triggers the release of the DarT toxin in the DarTG1 system.",
+            "16": "Infection with T5 phage triggers the release of the DarT toxin in the DarTG2 system.",
+            "17": "The DarT toxin is a DNA ADP-ribosyltransferase.",
+            "18": "The DarT toxin modifies viral DNA.",
+            "19": "The modification of viral DNA by the DarT toxin prevents replication of the virus.",
+            "20": "Preventing replication of the virus blocks the production of mature virions.",
+            "21": "Phages have evolved to overcome DarTG defence through mutations to their DNA polymerase.",
+            "22": "Phages have evolved to overcome DarTG defence through mutations to an anti-DarT factor, gp61.2.",
+            "23": "The anti-DarT factor gp61.2 is encoded by many T-even phages.",
+            "24": "Phage defence may be a common function for toxin-antitoxin (TA) systems.",
+            "25": "The mechanism by which DarTG systems inhibit phage infection has been revealed."
+          },
+          "23": []
+        },
+        "viewpoints": [
+          "Three phage counter-defense strategies have been discovered for phage evasion of DarTG-mediated defense."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The SECϕ18 phage, normally susceptible to DarTG2 defense, was shown to acquire resistance by accumulating mutations in its DNA polymerase that enable phage replication of ADP-ribosylated DNA.",
+        "references": {},
+        "viewpoints": [
+          "The SECϕ18 phage is normally susceptible to DarTG2 defense.",
+          "The SECϕ18 phage acquires resistance by accumulating mutations in its DNA polymerase.",
+          "These mutations enable phage replication of ADP-ribosylated DNA."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The other two known anti-DarTG counter-defenses, termed AdfA and AdfB, were identified in E. coli phage RB69 and Vibrio cholera phage ICP1, respectively, via escape mutant analyses.",
+        "references": {},
+        "viewpoints": [
+          "The anti-DarTG counter-defense AdfA was identified in E. coli phage RB69.",
+          "The anti-DarTG counter-defense AdfB was identified in Vibrio cholera phage ICP1.",
+          "AdfA and AdfB were identified through escape mutant analyses."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Escape mutants in both cases had acquired a single nucleotide polymorphism that appeared to enable an existing counter-defense element to neutralize the DarT toxin [23].",
+        "references": {
+          "23": []
+        },
+        "viewpoints": [
+          "Escape mutants acquired a single nucleotide polymorphism.",
+          "The single nucleotide polymorphism appeared to enable an existing counter-defense element to neutralize the DarT toxin."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Both AdfA and AdfB are small proteins with no homology to known protein families that seem to block DarT activity through an interaction with the toxin.",
+        "references": {},
+        "viewpoints": [
+          "AdfA and AdfB are small proteins with no homology to known protein families.",
+          "AdfA and AdfB seem to block DarT activity through an interaction with the toxin."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "In both cases, the DarT-neutralizing variants of the genes were found to naturally exist within related phages, suggesting that the inactive variant may have evolved to neutralize another DarT homolog.",
+        "references": {},
+        "viewpoints": [
+          "The DarT-neutralizing variants of the genes naturally exist within related phages.",
+          "The existence of DarT-neutralizing variants suggests that the inactive variant may have evolved to neutralize another DarT homolog."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "We previously found that while the T4 phage encodes an active DarT1-blocking AdfA allele, a T4 ∆ adfA phage remains resistant to DarTG1, even though this protein restores RB69 infectivity of DarTG1 cells when ectopically expressed [16].",
+        "references": {
+          "16": {
+            "1": "Toxin-antitoxin (TA) systems are broadly distributed genetic elements.",
+            "2": "Toxin-antitoxin (TA) systems are poorly conserved genetic elements.",
+            "3": "The biological functions of toxin-antitoxin (TA) systems are unclear.",
+            "4": "The biological functions of toxin-antitoxin (TA) systems are controversial.",
+            "5": "Some toxin-antitoxin (TA) systems may provide bacteria with immunity to infection by bacteriophages.",
+            "6": "Bacteriophages are ubiquitous viral predators of bacteria.",
+            "7": "A search was conducted bioinformatically to identify toxin-antitoxin (TA) systems that provide bacterial immunity to infection by bacteriophages.",
+            "8": "The search focused on toxin-antitoxin (TA) systems frequently encoded near known phage defence genes in bacterial genomes.",
+            "9": "The search bioinformatically identified homologues of DarTG.",
+            "10": "DarTG is a recently discovered family of toxin-antitoxin (TA) systems.",
+            "11": "The biological functions of DarTG were unclear at the time of its discovery.",
+            "12": "The natural activating conditions of DarTG were unclear at the time of its discovery.",
+            "13": "Representatives from the DarTG1 subfamily strongly protected E. coli MG1655 against phages.",
+            "14": "Representatives from the DarTG2 subfamily strongly protected E. coli MG1655 against phages.",
+            "15": "Infection with RB69 phage triggers the release of the DarT toxin in the DarTG1 system.",
+            "16": "Infection with T5 phage triggers the release of the DarT toxin in the DarTG2 system.",
+            "17": "The DarT toxin is a DNA ADP-ribosyltransferase.",
+            "18": "The DarT toxin modifies viral DNA.",
+            "19": "The modification of viral DNA by the DarT toxin prevents replication of the virus.",
+            "20": "Preventing replication of the virus blocks the production of mature virions.",
+            "21": "Phages have evolved to overcome DarTG defence through mutations to their DNA polymerase.",
+            "22": "Phages have evolved to overcome DarTG defence through mutations to an anti-DarT factor, gp61.2.",
+            "23": "The anti-DarT factor gp61.2 is encoded by many T-even phages.",
+            "24": "Phage defence may be a common function for toxin-antitoxin (TA) systems.",
+            "25": "The mechanism by which DarTG systems inhibit phage infection has been revealed."
+          }
+        },
+        "viewpoints": [
+          "The T4 phage encodes an active DarT1-blocking AdfA allele.",
+          "A T4 ∆ adfA phage remains resistant to DarTG1.",
+          "The active AdfA allele restores RB69 infectivity of DarTG1 cells when ectopically expressed."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "These data suggest the presence of a second, unknown anti-DarTG1 factor in T4 phage.",
+        "references": {},
+        "viewpoints": [
+          "The data suggest the presence of a second, unknown anti-DarTG1 factor in T4 phage."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Here, we investigate the molecular basis for the resistance of T4 and most of its relatives of the Tevenvirinae subfamily to the DarTG1 phage defense system.",
+        "references": {},
+        "viewpoints": [
+          "The authors investigate the molecular basis for the resistance of T4 to the DarTG1 phage defense system.",
+          "The authors investigate the molecular basis for the resistance of most relatives of T4 in the Tevenvirinae subfamily to the DarTG1 phage defense system."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Using an expanded set of Tevenvirinae from the BASEL phage collection [24], we find that neither the presence of AdfA in the genomes of these phages, nor its allele type (active or inactive), correlate with DarTG1 susceptibility.",
+        "references": {
+          "24": {
+            "1": "Bacteriophages are viruses that infect bacteria.",
+            "2": "Bacteriophages hold great potential for the treatment of multidrug-resistant bacterial infections.",
+            "3": "Bacteriophages have potential for other applications besides the treatment of multidrug-resistant bacterial infections.",
+            "4": "The potential of bacteriophages is due to their unparalleled diversity.",
+            "5": "The potential of bacteriophages is due to recent breakthroughs in their genetic engineering.",
+            "6": "Fundamental knowledge of the molecular mechanisms underlying phage-host interactions is mostly confined to a few traditional model systems.",
+            "7": "The knowledge of the molecular mechanisms underlying phage-host interactions has not kept pace with the recent massive expansion of the field.",
+            "8": "The true potential of molecular biology encoded by bacteriophages has remained largely untapped.",
+            "9": "Phages for therapy or other applications are often still selected empirically.",
+            "10": "The authors sought to promote a systematic exploration of phage-host interactions.",
+            "11": "The authors composed a well-assorted library of 68 newly isolated phages infecting the model organism Escherichia coli.",
+            "12": "The library of 68 newly isolated phages is shared with the community as the BASEL (BActeriophage SElection for your Laboratory) collection.",
+            "13": "The BASEL collection is largely representative of natural E. coli phage diversity.",
+            "14": "The BASEL collection was intensively characterized phenotypically alongside 10 well-studied traditional model phages.",
+            "15": "The BASEL collection was intensively characterized genomically alongside 10 well-studied traditional model phages.",
+            "16": "The authors experimentally determined essential host receptors of all phages in the BASEL collection.",
+            "17": "The authors quantified the sensitivity of all phages in the BASEL collection to 11 defense systems across different layers of bacterial immunity.",
+            "18": "The authors matched the results of host receptor determination and sensitivity quantification to the phages' host range across a panel of pathogenic enterobacterial strains.",
+            "19": "Clear patterns in the distribution of phage phenotypes and genomic features were observed.",
+            "20": "There are systematic differences in the potency of different immunity systems as highlighted by the distribution patterns.",
+            "21": "The patterns suggested the molecular basis of receptor specificity in several phage groups.",
+            "22": "There are strong trade-offs between fitness traits like broad host recognition and resistance to bacterial immunity.",
+            "23": "The trade-offs between fitness traits might drive the divergent adaptation of different phage groups to specific ecological niches.",
+            "24": "The authors envision that the BASEL collection will inspire future work exploring the biology of bacteriophages and their hosts.",
+            "25": "The BASEL collection will facilitate the discovery of underlying molecular mechanisms.",
+            "26": "The discovered molecular mechanisms may serve as the basis for effective translation into biotechnology or therapeutic applications."
+          }
+        },
+        "viewpoints": [
+          "An expanded set of Tevenvirinae from the BASEL phage collection was used.",
+          "The presence of AdfA in the genomes of these phages does not correlate with DarTG1 susceptibility.",
+          "The allele type (active or inactive) of AdfA does not correlate with DarTG1 susceptibility."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Instead, all Tevenvirinae – with the exception of RB69 – are resistant to DarTG1 defense.",
+        "references": {},
+        "viewpoints": [
+          "All Tevenvirinae, except for RB69, are resistant to DarTG1 defense."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "By co-infecting with a sensitive and resistant phage and characterizing the resulting chimeric viruses that have acquired DarTG1 resistance, we identified a second anti-DarTG1 counter defense element that is conserved within the T-even subfamily of phages.",
+        "references": {},
+        "viewpoints": [
+          "The authors co-infected with a sensitive and resistant phage.",
+          "The resulting chimeric viruses acquired DarTG1 resistance.",
+          "The authors identified a second anti-DarTG1 counter defense element.",
+          "The second anti-DarTG1 counter defense element is conserved within the T-even subfamily of phages."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "This element, which we have termed anti-DarT factor NADAR (AdfN), is both necessary and sufficient for phage counter-defense.",
+        "references": {},
+        "viewpoints": [
+          "The second anti-DarTG1 counter defense element is termed anti-DarT factor NADAR (AdfN).",
+          "Anti-DarT factor NADAR (AdfN) is necessary for phage counter-defense.",
+          "Anti-DarT factor NADAR (AdfN) is sufficient for phage counter-defense."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "AdfN T4 is a member of the NADAR superfamily, which also includes the DarG1 antitoxin, and we show that like DarG1, AdfN T4 has enzymatic activity that allows it to remove ADP-ribose from DNA.",
+        "references": {},
+        "viewpoints": [
+          "AdfN T4 is a member of the NADAR superfamily.",
+          "The NADAR superfamily also includes the DarG1 antitoxin.",
+          "AdfN T4 has enzymatic activity that allows it to remove ADP-ribose from DNA.",
+          "AdfN T4 has enzymatic activity similar to DarG1."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "We further find that other phage NADARs have similar enzymatic activity.",
+        "references": {},
+        "viewpoints": [
+          "Other phage NADARs have similar enzymatic activity to AdfN T4."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Phylogenetic analyses indicate that phages have likely independently co-opted NADAR domain proteins multiple times from different bacterial or archaeal sources, and that these NADAR proteins function as orphan antitoxins to reverse the activity of a TA-associated DarT1 toxin.",
+        "references": {},
+        "viewpoints": [
+          "Phylogenetic analyses indicate that phages have likely independently co-opted NADAR domain proteins multiple times.",
+          "Phages have co-opted NADAR domain proteins from different bacterial or archaeal sources.",
+          "These NADAR proteins function as orphan antitoxins to reverse the activity of a TA-associated DarT1 toxin."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56887-7_with_abstracts",
+    "base_id": "s41467-025-56887-7",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56887-7_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

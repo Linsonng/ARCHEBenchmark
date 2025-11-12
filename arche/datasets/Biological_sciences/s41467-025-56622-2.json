@@ -1,0 +1,993 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Cytometric analysis has gained tremendous attention in immunological experiments, as a method that produces reliable, high-throughput measurements of single cells. Flow cytometry, introduced in the 1960s to separate and count immune cell subtypes, underwent a critical evolution with increased speed and parameters [1] , [2] , [3] , [4] . Mass cytometry, also known as cytometry by time-of-flight, was developed in 2009 to include more parameters in the analysis and avoid the difficulty of fluorescence compensation [5] , [6] , [7] . Flow cytometry labels the antibodies with fluorophores, whose emission spectra overlap to some extent, causing spillover of signal between channels. In contrast, mass cytometry tags antibodies with heavy metal ions, whose discrete atomic masses can be distinguished by mass spectrometry very precisely and with minimal spillover. Although flow cytometry and mass cytometry aim for similar functionality with labeled antibodies, they do not have similar strategies to detect cell aggregates [8] . The most important and widely used method of subtyping cell populations is referred to as gating, which is usually a boundary or polygon defined on a bivariate density map of the entire cell population (2D density map represented by two selected protein measurements). Gating for different cell types is usually configured hierarchically [9] , to mimic the biological hierarchy of immune cell differentiation. Even though mass cytometry and flow cytometry rely on different technologies, they both employ similar gating procedures for cell type identification. However, manually defining boundaries for each cell subtype and each sample can be time-consuming and labor-intensive. Thus, algorithms have been developed that attempt to automate this task, including unsupervised clustering to identify cell subtypes [10] , [11] , [12] , [13] , supervised deep learning methods [14] , [15] , [16] , [17] , as well as some density-based gating methods [18] , [19] . Although unsupervised methods can target certain cell subpopulations effectively, their results often contain some remaining cell clusters that are unrecognizable and/or sometimes can fail to capture rare cell types making interpretation challenging [20] . Such methods usually lack the ability to reproduce cytometric gating from human experts, and it is hard for those methods to adapt to existing domain knowledge to satisfactorily explain the clustering results. A typical manual analysis pipeline of this data first separates live, viable single cells from unwanted events, then gates these into different cell populations. A major challenge is that methods, like those described above, typically assume that single cells have been separated from doublets, debris, and other unwanted events, a process that we call “pre-gating”. Efficient open-source methods employing pre-gating using adaptive approaches to define populations and account for variability in signal intensity between samples, however, do not exist. Indeed, current unsupervised clustering methods typically require manual “pre-gating” before applying unsupervised analysis. While manual pre-gating still requires much human labor to annotate and draw polygons for the region of interest, existing bivariate pipelines also need human input to pre-define the relevant parameters. For example, those parameters include where the actual population is located as well as the approximate percentage of the target cell population. Currently, no software can configure a series of bivariate pre-gating (and gating) tasks where gates are set in a hierarchical order. Our goal is to automate the analysis process. The application of deep learning has been effective in disentangling complex relationships in different cytometric domains including cell type identification and cell sorting in cytometric time series data [14] , [15] , [16] , [17] . Most of the existing methods focus on providing a global classification of different cell types in one step by using a multi-channel dense neural network. Moreover, these methods also usually assume pre-gated data as input, and they have not been validated for complex pre-gating tasks. In particular, one of the major challenges in performing automatic pre-gating is the technical and biological variance across different subjects. Even if the experimental protocol and the panel of measured proteins are held constant, differences in sample preparation and even instrument variation, can cause fluctuations in protein detection and precise population “shape” in the data. In addition, only predicting terminal cell types (such as naïve T cells) will prevent accurate gating of the intermediate cell types (such as T cells or lymphocytes). In the bivariate setting from manual gating, gates are configured in a tree-like structure, and at each level, the parent cell population is split into smaller subpopulations so that gating results for all intermediate cell types are obtained. The hierarchy structure guarantees the interpretability of the target cell populations. It also clearly defines some cells that are not included in the subsequent gating but still belong to the current gating step (out-of-boundary cells that are not included in any subsequent cell types). The same strategy used for manual pre-gating can be easily extended to downstream automatic gating of immune cell types, since cell-type gates have a more stable and fixed bivariate boundary compared to pre-gates. Therefore, we combined those two types of tasks and refer to all of them, onward, as “gating”. While existing methods are suboptimal to accommodate biological variance within the protein expression data, deep neural networks with convolutional kernels have the ability to address such data challenges, using the properties of translational invariance and equivariance [21] , [22] . The convolutional architecture was originally designed for image classification tasks. It can detect target objects regardless of their positions in the image space and learn the general features of each target object. This versatility led to their adaptation for image segmentation tasks. The reason manual gating is challenging for automated software is that human experts have a global view of the cell density in certain protein measurement spaces so that they can visually inspect and quantify the desired cell type. Therefore, to address this challenge together with the biological and technical variance, we propose and validate UNITO, a method employing image segmentation for automated gating. UNITO converts the cytometrically derived protein expression into an image of bivariate density to enable a global identification of the cell population. Furthermore, with the ability to perform pixel-level prediction, UNITO intuitively defines the region of interest on the bivariate density maps for cytometric gating. By validating UNITO on three independent study cohorts and two cytometric modalities, we hypothesize that the framework can learn any pre-gating and gating tasks from human annotation, and then adaptively draw contours and assign labels to cells from independent data. This ability to perform inference on unseen samples without human supervision will enable applications to large-scale immunology studies.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Cytometric analysis has gained tremendous attention in immunological experiments, as a method that produces reliable, high-throughput measurements of single cells.",
+        "references": {},
+        "viewpoints": [
+          "Cytometric analysis produces reliable, high-throughput measurements of single cells.",
+          "Cytometric analysis has gained tremendous attention in immunological experiments."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Flow cytometry, introduced in the 1960s to separate and count immune cell subtypes, underwent a critical evolution with increased speed and parameters [1] , [2] , [3] , [4].",
+        "references": {
+          "1": {
+            "1": "A device has been developed to separate biological cells suspended in a conducting medium according to their volume.",
+            "2": "Cell volume is measured using a Coulter aperture.",
+            "3": "Cells are isolated in droplets of the conducting medium after their volume is measured.",
+            "4": "The droplets containing cells are charged according to the sensed volume of the cells.",
+            "5": "Charged droplets containing cells enter an electrostatic field.",
+            "6": "Charged droplets are deflected into a collection vessel by the electrostatic field.",
+            "7": "Mixtures of mouse and human erythrocytes were separated successfully by the device.",
+            "8": "A large volume component of mouse lymphoma cells were separated successfully by the device.",
+            "9": "In tests with Chinese hamster ovary cells, essentially all cells survived the separation process.",
+            "10": "In tests with Chinese hamster ovary cells, essentially all cells grew at their normal rate after separation."
+          },
+          "2": {
+            "1": "A system for high-speed sorting of fluorescent cells was developed.",
+            "2": "The system was able to sort mouse spleen cells from Chinese hamster ovarian cells.",
+            "3": "The sorting occurred after the development of fluorochromasia.",
+            "4": "Highly fluorescent fractions were separated from mouse spleen cells after treatment similar to the development of fluorochromasia.",
+            "5": "The mouse spleen cells were immunized to sheep erythrocytes.",
+            "6": "The highly fluorescent fractions were enriched in antibody-producing cells.",
+            "7": "The enrichment of antibody-producing cells was by factors of 4 to 10."
+          },
+          "3": {
+            "1": "A flow microfluorometer was used to measure metaphase chromosomes in suspension.",
+            "2": "The rate of measuring metaphase chromosomes in suspension was up to 100,000 per minute.",
+            "3": "Chromosomes from cells of the Chinese hamster M3-1 cell line were isolated.",
+            "4": "The isolated chromosomes from the Chinese hamster M3-1 cell line were stained for DNA with the fluorescent dye ethidium bromide.",
+            "5": "The stained chromosomes were analyzed for DNA content.",
+            "6": "Nine distinct peaks were resolved from the analysis of the chromosomes.",
+            "7": "The resolved peaks correspond well with independent chromosomal DNA measurements made with a high-resolution scanning cytophotometer.",
+            "8": "Chromosomes were sorted from each resolved peak by an electronic cell sorter.",
+            "9": "Visual examination of each fraction indicated the purity of the sorted chromosomes.",
+            "10": "This novel technology allows the separation of purified populations of individual chromosomes.",
+            "11": "The separated populations of individual chromosomes are suitable for biochemical and biological characterizations."
+          },
+          "4": {
+            "1": "Novel developments in flow cytometry hardware, software, and dye-chemistry make it possible to simultaneously measure up to 11 distinct fluorescences on each cell.",
+            "2": "Novel developments in flow cytometry hardware, software, and dye-chemistry make it possible to simultaneously measure two scattered light parameters on each cell.",
+            "3": "Advanced multicolor systems have a number of advantages over two-color flow cytometric measurements.",
+            "4": "Advanced multicolor systems have a number of advantages over three-color flow cytometric measurements.",
+            "5": "Advanced multicolor systems provide a large amount of novel information for each sample studied.",
+            "6": "Advanced multicolor systems provide exquisitely accurate quantitation of even rare cell populations.",
+            "7": "Advanced multicolor systems allow identification and characterization of novel cell subsets.",
+            "8": "Multicolor flow cytometry is crucial to identifying functionally homogeneous subsets of cells within the immune system.",
+            "9": "Identifying functionally homogeneous subsets of cells within the immune system is important for understanding disease pathogenesis.",
+            "10": "Multicolor flow cytometry comes with a new set of technical problems.",
+            "11": "The technical problems associated with multicolor flow cytometry are sometimes difficult to overcome.",
+            "12": "Users must overcome the technical problems in multicolor flow cytometry to derive meaningful results.",
+            "13": "The manuscript describes the basic aspects of multicolor flow cytometry.",
+            "14": "The manuscript includes a description of the technical hurdles and artefacts that may occur in multicolor flow cytometry.",
+            "15": "The manuscript provides suggestions for how to best overcome the technical hurdles in multicolor flow cytometry.",
+            "16": "The principles described in the manuscript are inspired by the 11-color technology currently in use.",
+            "17": "The principles described apply to all flow cytometric experiments using more than one fluorescent dye."
+          }
+        },
+        "viewpoints": [
+          "Flow cytometry was introduced in the 1960s to separate and count immune cell subtypes.",
+          "Flow cytometry underwent a critical evolution with increased speed and parameters."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Mass cytometry, also known as cytometry by time-of-flight, was developed in 2009 to include more parameters in the analysis and avoid the difficulty of fluorescence compensation [5] , [6] , [7].",
+        "references": {
+          "5": {
+            "1": "A novel instrument is developed for real-time analysis of individual biological cells.",
+            "2": "The instrument is also applicable for analyzing other microparticles in real-time.",
+            "3": "The instrument is based on inductively coupled plasma time-of-flight mass spectrometry.",
+            "4": "The instrument includes a three-aperture plasma-vacuum interface.",
+            "5": "The instrument features a dc quadrupole turning optics for decoupling ions from neutral components.",
+            "6": "An rf quadrupole ion guide in the instrument discriminates against low-mass dominant plasma ions.",
+            "7": "The instrument has a point-to-parallel focusing dc quadrupole doublet.",
+            "8": "The instrument includes an orthogonal acceleration reflectron analyzer.",
+            "9": "The instrument is equipped with a discrete dynode fast ion detector.",
+            "10": "The instrument has an 8-bit 1 GHz digitizer.",
+            "11": "The instrument has a high spectrum generation frequency of 76.8 kHz.",
+            "12": "The high spectrum generation frequency allows for collecting multiple spectra from each particle-induced transient ion cloud.",
+            "13": "Typical duration for each particle-induced transient ion cloud is 200-300 microseconds.",
+            "14": "Transients can be resolved and characterized individually by the instrument.",
+            "15": "The peak frequency at which particles can be analyzed is 1100 particles per second.",
+            "16": "Design considerations for the instrument are presented.",
+            "17": "Optimization data for the instrument are presented.",
+            "18": "The figures of merit of the instrument are evaluated under standard inductively coupled plasma operating conditions.",
+            "19": "The standard ICP operating conditions used for measurement include a cerium oxide ratio of less than 3%.",
+            "20": "The mass resolution of the instrument is greater than 900 for m/z = 159.",
+            "21": "The sensitivity with a standard sample introduction system is greater than 1.4 x 10^8 ion counts per second per mg L^-1 of Tb.",
+            "22": "The abundance sensitivity for trailing masses is 6 x 10^-4.",
+            "23": "The abundance sensitivity for leading masses is 1.4 x 10^-3.",
+            "24": "The mass range of the instrument is m/z = 125-215.",
+            "25": "The abundance sensitivity and mass range are sufficient for elemental immunoassay.",
+            "26": "Up to 60 distinct available elemental tags can be used in the elemental immunoassay.",
+            "27": "Using less than 15 elemental tags allows a higher sensitivity mode at a lower resolution.",
+            "28": "The lower resolution in higher sensitivity mode is M/DeltaM greater than 500.",
+            "29": "The higher sensitivity mode provides greater than 2.4 x 10^8 cps per mg L^-1 of Tb.",
+            "30": "The abundance sensitivity in this mode is between 1.5 x 10^-3 and 5.0 x 10^-3.",
+            "31": "The instrument can detect multiple isotopes simultaneously in real-time.",
+            "32": "Detection is demonstrated on individual 1.8 micrometer polystyrene beads labeled with lanthanides.",
+            "33": "A real-time single cell 20 antigen expression assay is presented.",
+            "34": "The assay involves model cell lines and leukemia patient samples.",
+            "35": "The samples are immuno-labeled with lanthanide-tagged antibodies."
+          },
+          "6": {
+            "1": "Mass cytometry addresses the analytical challenges of polychromatic flow cytometry.",
+            "2": "Mass cytometry uses metal atoms as tags instead of fluorophores.",
+            "3": "Mass cytometry uses atomic mass spectrometry as the detector instead of photon optics.",
+            "4": "The enriched stable isotopes of transition elements can provide up to 100 distinguishable reporting tags.",
+            "5": "The reporting tags provided by transition elements' enriched stable isotopes can be measured simultaneously.",
+            "6": "The simultaneous measurement of reporting tags is possible due to the essential independence of detection provided by the mass spectrometer.",
+            "7": "The adaptation of traditional inductively coupled plasma mass spectrometry to cytometry applications is discussed.",
+            "8": "The focus is on the generation of cytometry-compatible data.",
+            "9": "The focus is on approaches to unsupervised multivariate clustering analysis.",
+            "10": "A high-level review is provided of some recent benchmark reports.",
+            "11": "Recent benchmark reports highlight the potential for massively multi-parameter mass cytometry."
+          },
+          "7": {
+            "1": "Technology development in biological research often aims to increase the number of cellular features that can be surveyed simultaneously.",
+            "2": "Technology development in biological research often aims to enhance the resolution at which cellular observations are possible.",
+            "3": "Flow cytometry has balanced the goals of increasing the number of cellular features and enhancing resolution for decades.",
+            "4": "Flow cytometry has filled a critical need by enabling the measurement of multiple features in single cells.",
+            "5": "Flow cytometry is commonly used to examine complex or hierarchical cellular systems.",
+            "6": "A format for flow cytometry has been developed that leverages the precision of mass spectrometry.",
+            "7": "Mass cytometry is a fusion of flow cytometry and mass spectrometry.",
+            "8": "Mass cytometry provides measurement of over 40 simultaneous cellular parameters at single-cell resolution.",
+            "9": "Mass cytometry significantly augments the ability of cytometry to evaluate complex cellular systems and processes.",
+            "10": "The Primer reviews the current state of mass cytometry.",
+            "11": "The Primer provides an overview of the instrumentation of mass cytometry.",
+            "12": "The Primer provides an overview of the present capabilities of mass cytometry.",
+            "13": "The Primer provides an overview of methods of data analysis in mass cytometry.",
+            "14": "The Primer provides thoughts on future developments and applications of mass cytometry."
+          }
+        },
+        "viewpoints": [
+          "Mass cytometry is also known as cytometry by time-of-flight.",
+          "Mass cytometry was developed in 2009 to include more parameters in the analysis.",
+          "Mass cytometry was developed to avoid the difficulty of fluorescence compensation."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Flow cytometry labels the antibodies with fluorophores, whose emission spectra overlap to some extent, causing spillover of signal between channels.",
+        "references": {},
+        "viewpoints": [
+          "Flow cytometry labels antibodies with fluorophores.",
+          "The emission spectra of fluorophores overlap to some extent.",
+          "Overlapping of emission spectra causes spillover of signal between channels in flow cytometry."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In contrast, mass cytometry tags antibodies with heavy metal ions, whose discrete atomic masses can be distinguished by mass spectrometry very precisely and with minimal spillover.",
+        "references": {},
+        "viewpoints": [
+          "Mass cytometry tags antibodies with heavy metal ions.",
+          "Discrete atomic masses of heavy metal ions can be distinguished by mass spectrometry very precisely.",
+          "Mass spectrometry distinguishes heavy metal ions with minimal spillover in mass cytometry."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Although flow cytometry and mass cytometry aim for similar functionality with labeled antibodies, they do not have similar strategies to detect cell aggregates [8].",
+        "references": {
+          "8": {
+            "1": "Flow cytometry is a technology.",
+            "2": "Flow cytometry provides rapid multi-parametric analysis of single cells.",
+            "3": "Flow cytometry analyzes single cells in solution.",
+            "4": "Flow cytometers utilize lasers as light sources.",
+            "5": "Flow cytometers produce scattered light signals.",
+            "6": "Flow cytometers produce fluorescent light signals.",
+            "7": "Scattered and fluorescent light signals produced by flow cytometers are read by detectors such as photodiodes.",
+            "8": "Scattered and fluorescent light signals produced by flow cytometers are read by detectors such as photomultiplier tubes.",
+            "9": "Light signals are converted into electronic signals.",
+            "10": "Electronic signals are analyzed by a computer.",
+            "11": "Electronic signals are written to a standardized format (.fcs) data file.",
+            "12": "Cell populations can be analyzed based on their fluorescent characteristics.",
+            "13": "Cell populations can be analyzed based on their light scattering characteristics.",
+            "14": "Cell populations can be purified based on their fluorescent characteristics.",
+            "15": "Cell populations can be purified based on their light scattering characteristics.",
+            "16": "A variety of fluorescent reagents are utilized in flow cytometry.",
+            "17": "Fluorescent reagents in flow cytometry include fluorescently conjugated antibodies.",
+            "18": "Fluorescent reagents in flow cytometry include nucleic acid binding dyes.",
+            "19": "Fluorescent reagents in flow cytometry include viability dyes.",
+            "20": "Fluorescent reagents in flow cytometry include ion indicator dyes.",
+            "21": "Fluorescent reagents in flow cytometry include fluorescent expression proteins.",
+            "22": "Flow cytometry is a powerful tool.",
+            "23": "Flow cytometry has applications in immunology.",
+            "24": "Flow cytometry has applications in molecular biology.",
+            "25": "Flow cytometry has applications in bacteriology.",
+            "26": "Flow cytometry has applications in virology.",
+            "27": "Flow cytometry has applications in cancer biology.",
+            "28": "Flow cytometry has applications in infectious disease monitoring.",
+            "29": "Flow cytometry has seen dramatic advances over the last 30 years.",
+            "30": "Flow cytometry advances have allowed unprecedented detail in studies of the immune system.",
+            "31": "Flow cytometry advances have allowed unprecedented detail in other areas of cell biology."
+          }
+        },
+        "viewpoints": [
+          "Flow cytometry and mass cytometry aim for similar functionality with labeled antibodies.",
+          "Flow cytometry and mass cytometry do not have similar strategies to detect cell aggregates."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The most important and widely used method of subtyping cell populations is referred to as gating, which is usually a boundary or polygon defined on a bivariate density map of the entire cell population (2D density map represented by two selected protein measurements).",
+        "references": {},
+        "viewpoints": [
+          "The most important method of subtyping cell populations is referred to as gating.",
+          "The widely used method of subtyping cell populations is referred to as gating.",
+          "Gating is usually a boundary or polygon defined on a bivariate density map of the entire cell population.",
+          "A bivariate density map is a 2D density map represented by two selected protein measurements."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Gating for different cell types is usually configured hierarchically [9], to mimic the biological hierarchy of immune cell differentiation.",
+        "references": {
+          "9": {
+            "1": "Flow cytometry is a sophisticated instrument.",
+            "2": "Flow cytometry measures multiple physical characteristics of a single cell.",
+            "3": "Flow cytometry measures characteristics such as size and granularity.",
+            "4": "Flow cytometry measures characteristics as the cell flows in suspension through a measuring device.",
+            "5": "The working of flow cytometry depends on the light scattering features of the cells under investigation.",
+            "6": "The light scattering features may be derived from dyes or monoclonal antibodies.",
+            "7": "Monoclonal antibodies target either extracellular molecules located on the surface of the cell or intracellular molecules inside the cell.",
+            "8": "Using light scattering features derived from dyes or monoclonal antibodies makes flow cytometry a powerful tool.",
+            "9": "Flow cytometry is a powerful tool for detailed analysis of complex populations.",
+            "10": "Flow cytometry allows analysis in a short period of time.",
+            "11": "The review covers the general principles of flow cytometry.",
+            "12": "The review covers selected applications of flow cytometry such as immunophenotyping of peripheral blood cells, analysis of apoptosis, and detection of cytokines.",
+            "13": "The report provides a basic understanding of flow cytometry technology essential for all users.",
+            "14": "The report provides the methods used to analyze and interpret the data from flow cytometry.",
+            "15": "Recent progress in flow cytometry is discussed in the report.",
+            "16": "Discussing recent progress in flow cytometry is intended to provide an opinion about the future importance of the technology."
+          }
+        },
+        "viewpoints": [
+          "Gating for different cell types is usually configured hierarchically.",
+          "Hierarchical gating mimics the biological hierarchy of immune cell differentiation."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Even though mass cytometry and flow cytometry rely on different technologies, they both employ similar gating procedures for cell type identification.",
+        "references": {},
+        "viewpoints": [
+          "Mass cytometry relies on different technologies than flow cytometry.",
+          "Flow cytometry relies on different technologies than mass cytometry.",
+          "Mass cytometry and flow cytometry employ similar gating procedures for cell type identification."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "However, manually defining boundaries for each cell subtype and each sample can be time-consuming and labor-intensive.",
+        "references": {},
+        "viewpoints": [
+          "Manually defining boundaries for each cell subtype can be time-consuming.",
+          "Manually defining boundaries for each sample can be labor-intensive."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Thus, algorithms have been developed that attempt to automate this task, including unsupervised clustering to identify cell subtypes [10], [11], [12], [13], supervised deep learning methods [14], [15], [16], [17], as well as some density-based gating methods [18], [19].",
+        "references": {
+          "10": {
+            "1": "The number of markers measured in flow cytometry is increasing steadily.",
+            "2": "The number of markers measured in mass cytometry is increasing steadily.",
+            "3": "The increasing number of markers in flow and mass cytometry provides a wealth of information.",
+            "4": "It becomes infeasible to analyze datasets with a large number of markers in flow and mass cytometry manually.",
+            "5": "The number of possible 2D scatter plots increases exponentially with the number of markers in flow and mass cytometry.",
+            "6": "Relevant information might be missed in flow and mass cytometry data when using 2D scatter plots.",
+            "7": "A new visualization technique called FlowSOM is introduced.",
+            "8": "FlowSOM analyzes flow cytometry data using a Self-Organizing Map.",
+            "9": "FlowSOM analyzes mass cytometry data using a Self-Organizing Map.",
+            "10": "FlowSOM uses a two-level clustering approach.",
+            "11": "FlowSOM uses star charts.",
+            "12": "FlowSOM helps to obtain a clear overview of how all markers are behaving on all cells.",
+            "13": "FlowSOM helps to detect cell subsets that might be missed otherwise.",
+            "14": "R code for FlowSOM is available at https://github.com/SofieVG/FlowSOM.",
+            "15": "R code for FlowSOM will be made available at Bioconductor."
+          },
+          "11": {
+            "1": "Accurate identification of cell subsets in complex populations is essential for discovering novelty in multidimensional single-cell experiments.",
+            "2": "X-shift is an algorithm that processes data sets using fast k-nearest-neighbor estimation of cell event density.",
+            "3": "X-shift arranges populations by marker-based classification.",
+            "4": "X-shift is presented in this study.",
+            "5": "X-shift enables automated cell-subset clustering.",
+            "6": "X-shift provides access to biological insights that might be overlooked due to 'prior knowledge'."
+          },
+          "12": {
+            "1": "Analyzing multiple single-cell parameters is critical for understanding cellular heterogeneity.",
+            "2": "Recent advances in measurement technology for single-cell data have been made.",
+            "3": "Methods for analyzing high-dimensional single-cell data are often subjective.",
+            "4": "Methods for analyzing high-dimensional single-cell data are often labor intensive.",
+            "5": "Methods for analyzing high-dimensional single-cell data often require prior knowledge of the biological system.",
+            "6": "An objective method is needed to uncover cellular heterogeneity from single-cell measurements.",
+            "7": "The paper presents a versatile computational approach named spanning-tree progression analysis of density-normalized events (SPADE).",
+            "8": "SPADE was applied to flow cytometry data of mouse bone marrow.",
+            "9": "SPADE was applied to mass cytometry data of human bone marrow.",
+            "10": "In both cases, SPADE organized cells in a hierarchy of related phenotypes.",
+            "11": "The hierarchy of related phenotypes partially recapitulated well-described patterns of hematopoiesis.",
+            "12": "SPADE is robust to measurement noise.",
+            "13": "SPADE is robust to the choice of cellular markers.",
+            "14": "SPADE facilitates the analysis of cellular heterogeneity.",
+            "15": "SPADE facilitates the identification of cell types.",
+            "16": "SPADE facilitates the comparison of functional markers in response to perturbations."
+          },
+          "13": {
+            "1": "For epidemic prevention and control, identifying SARS-CoV-2 subpopulations sharing similar micro-epidemiological patterns and evolutionary histories is necessary.",
+            "2": "Targeted investigation into links among COVID-19 outbreaks caused by SARS-CoV-2 with similar genetic backgrounds can be achieved by identifying SARS-CoV-2 subpopulations.",
+            "3": "Genomic sequencing analysis can uncover viral genetic diversity.",
+            "4": "Objective analysis is necessary for identifying SARS-CoV-2 subpopulations.",
+            "5": "All the mutations in 186,682 SARS-CoV-2 isolates were detected.",
+            "6": "The GC content of the SARS-CoV-2 genome has evolved to be lower.",
+            "7": "Lower GC content in the SARS-CoV-2 genome may be conducive to viral spread.",
+            "8": "Frameshift mutations are rare in the global SARS-CoV-2 population.",
+            "9": "Genomic mutations were encoded in binary form.",
+            "10": "An unsupervised learning classifier named PhenoGraph was used to classify the encoded genomic mutations.",
+            "11": "PhenoGraph successfully identified 303 SARS-CoV-2 subpopulations.",
+            "12": "The PhenoGraph classification was consistent with the known GISAID clades.",
+            "13": "The PhenoGraph classification was more detailed and precise than the known GISAID clades.",
+            "14": "The growth rate of SARS-CoV-2 diversity has slowed down significantly, as found by change trend analysis.",
+            "15": "Temporal, spatial, and phylogenetic relationships among SARS-CoV-2 subpopulations were analyzed.",
+            "16": "The evolutionary trajectory of SARS-CoV-2 was revealed to a certain extent.",
+            "17": "The results provide a better understanding of the patterns in the genomic evolution of SARS-CoV-2.",
+            "18": "The results provide a better understanding of the trends in the genomic evolution of SARS-CoV-2.",
+            "19": "The results provide a better understanding of the epidemiology of SARS-CoV-2."
+          },
+          "14": {
+            "1": "Mass cytometry, also known as CyTOF, is an emerging technology for high-dimensional multiparameter single cell analysis.",
+            "2": "CyTOF overcomes many limitations of fluorescence-based flow cytometry.",
+            "3": "New methods for analyzing CyTOF data attempt to improve automation of data generation in large studies.",
+            "4": "New methods for analyzing CyTOF data attempt to improve scalability of data generation in large studies.",
+            "5": "New methods for analyzing CyTOF data attempt to improve performance of data generation in large studies.",
+            "6": "New methods for analyzing CyTOF data attempt to improve interpretation of data generated in large studies.",
+            "7": "Assigning individual cells into discrete groups of cell types through gating involves time-consuming sequential manual steps.",
+            "8": "Time-consuming sequential manual steps are untenable for larger studies.",
+            "9": "DeepCyTOF is a standardization approach for gating.",
+            "10": "DeepCyTOF is based on deep learning techniques.",
+            "11": "The authors introduce DeepCyTOF.",
+            "12": "DeepCyTOF requires labeled cells from only a single sample.",
+            "13": "DeepCyTOF is based on domain adaptation principles.",
+            "14": "DeepCyTOF is a generalization of previous work.",
+            "15": "DeepCyTOF allows calibration between a target distribution and a source distribution in an unsupervised manner.",
+            "16": "DeepCyTOF is highly concordant (98%) with cell classification obtained by individual manual gating of each sample.",
+            "17": "DeepCyTOF maintains high concordance even when applied to a collection of 16 biological replicates of primary immune blood cells.",
+            "18": "DeepCyTOF maintains high concordance when measured across several instruments.",
+            "19": "DeepCyTOF achieves very high accuracy on the semi-automated gating challenge of the FlowCAP-I competition.",
+            "20": "DeepCyTOF achieves very high accuracy on two CyTOF datasets generated from primary immune blood cells.",
+            "21": "The first CyTOF dataset includes 14 subjects with a history of infection with West Nile virus (WNV).",
+            "22": "The second CyTOF dataset includes 34 healthy subjects of different ages.",
+            "23": "Deep learning offers a powerful computational approach for semi-automated gating of CyTOF and flow cytometry data.",
+            "24": "DeepCyTOF specifically offers a powerful computational approach for semi-automated gating of CyTOF and flow cytometry data.",
+            "25": "The authors' codes and data for DeepCyTOF are publicly available at https://github.com/KlugerLab/deepcytof.git.",
+            "26": "Yuval Kluger's contact email is yuval.kluger@yale.edu.",
+            "27": "Supplementary data are available at Bioinformatics online."
+          },
+          "15": {
+            "1": "Single-cell mass cytometry is also known as cytometry by time of flight (CyTOF).",
+            "2": "Single-cell mass cytometry is a powerful high-throughput technology.",
+            "3": "Single-cell mass cytometry allows analysis of up to 50 protein markers per cell.",
+            "4": "Single-cell mass cytometry is used for the quantification and classification of single cells.",
+            "5": "Traditional manual gating used to identify new cell populations has been inadequate.",
+            "6": "Traditional manual gating used to identify new cell populations has been inefficient.",
+            "7": "Traditional manual gating used to identify new cell populations has been unreliable.",
+            "8": "Traditional manual gating used to identify new cell populations has been difficult to use.",
+            "9": "No algorithms to identify both calibration and new cell populations have been well established.",
+            "10": "A deep learning with graphic cluster (DGCyTOF) visualization is developed.",
+            "11": "DGCyTOF is a new integrated embedding visualization approach.",
+            "12": "DGCyTOF is used in identifying canonical cell types.",
+            "13": "DGCyTOF is used in identifying new cell types.",
+            "14": "DGCyTOF combines deep-learning classification methods.",
+            "15": "DGCyTOF combines hierarchical stable-clustering methods.",
+            "16": "DGCyTOF sequentially builds a tri-layer construct for known cell types.",
+            "17": "DGCyTOF is used for the identification of new cell types.",
+            "18": "Deep classification learning is constructed to distinguish calibration cell populations from all cells.",
+            "19": "The distinction of calibration cell populations is done by softmax classification assignment under a probability threshold.",
+            "20": "Graph embedding clustering is used to identify new cell populations sequentially.",
+            "21": "Cell labels are automatically adjusted between new and unknown cell populations via a feedback loop.",
+            "22": "A feedback loop uses an iteration calibration system to reduce the rate of error in the identification of cell types.",
+            "23": "A 3-dimensional (3D) visualization platform is developed to display cell clusters.",
+            "24": "The 3D visualization platform annotates all cell-population types.",
+            "25": "Two benchmark CyTOF databases comprising up to 43 million cells were utilized.",
+            "26": "Accuracy in the identification of cell types was compared among DGCyTOF, DeepCyTOF, and other technologies.",
+            "27": "Speed in the identification of cell types was compared among DGCyTOF, DeepCyTOF, and other technologies.",
+            "28": "The technologies compared included dimension reduction with clustering methods.",
+            "29": "The dimension reduction with clustering methods included Principal Component Analysis (PCA), Factor Analysis (FA), Independent Component Analysis (ICA), Isometric Feature Mapping (Isomap), t-distributed Stochastic Neighbor Embedding (t-SNE), and Uniform Manifold Approximation and Projection (UMAP).",
+            "30": "The clustering methods included k-means clustering and Gaussian mixture clustering.",
+            "31": "DGCyTOF represents a robust learning system.",
+            "32": "DGCyTOF is a complete learning system.",
+            "33": "DGCyTOF has high accuracy.",
+            "34": "DGCyTOF has high speed.",
+            "35": "DGCyTOF has effective visualization.",
+            "36": "The high accuracy, speed, and visualization of DGCyTOF were evaluated by eight measurement criteria.",
+            "37": "DGCyTOF displayed an F-score of 0.9921 for the CyTOF1 dataset.",
+            "38": "DGCyTOF displayed an F-score of 0.9992 for the CyTOF2 dataset.",
+            "39": "t-SNE+k-means displayed an F-score of 0.507 for the CyTOF1 dataset.",
+            "40": "t-SNE+k-means displayed an F-score of 0.529 for the CyTOF2 dataset.",
+            "41": "UMAP+k-means displayed an F-score of 0.565 for the CyTOF1 dataset.",
+            "42": "UMAP+k-means displayed an F-score of 0.59 for the CyTOF2 dataset.",
+            "43": "Comparison in accuracy was made between DGCyTOF and t-SNE visualization.",
+            "44": "Comparison in accuracy was made between DGCyTOF and UMAP visualization.",
+            "45": "DGCyTOF demonstrated approximately 35% superiority in predicting cell types compared to t-SNE and UMAP visualizations.",
+            "46": "Observation of cell-population distribution was more intuitive in the 3D visualization in DGCyTOF than in t-SNE visualization.",
+            "47": "Observation of cell-population distribution was more intuitive in the 3D visualization in DGCyTOF than in UMAP visualization.",
+            "48": "The DGCyTOF model can automatically assign known labels to single cells.",
+            "49": "The DGCyTOF model assigns labels with high accuracy.",
+            "50": "The DGCyTOF model uses deep-learning classification.",
+            "51": "The DGCyTOF model uses traditional graph-clustering strategies.",
+            "52": "The DGCyTOF model uses dimension-reduction strategies.",
+            "53": "The DGCyTOF model is guided by a calibration system.",
+            "54": "The DGCyTOF model seeks optimal accuracy balance among calibration cell populations.",
+            "55": "The DGCyTOF model seeks optimal accuracy balance among unknown cell types.",
+            "56": "The DGCyTOF model yields a complete learning system.",
+            "57": "The DGCyTOF model yields a robust learning system.",
+            "58": "The DGCyTOF model is highly accurate in the identification of cell populations.",
+            "59": "The DGCyTOF model is more accurate in the identification of cell populations compared to other methods used in the analysis of single-cell CyTOF data.",
+            "60": "The application of the DGCyTOF method to identify cell populations could be extended to the analysis of single-cell RNASeq data.",
+            "61": "The application of the DGCyTOF method could be extended to the analysis of other omics data."
+          },
+          "16": {
+            "1": "Deep learning has achieved spectacular performance in image recognition.",
+            "2": "Deep learning has achieved spectacular performance in speech recognition.",
+            "3": "Deep learning has achieved spectacular performance in speech synthesis.",
+            "4": "Deep learning outperforms other machine learning algorithms in problems where large amounts of data are available.",
+            "5": "Instruments based on the photonic time stretch have established record real-time measurement throughput in spectroscopy.",
+            "6": "Instruments based on the photonic time stretch have established record real-time measurement throughput in optical coherence tomography.",
+            "7": "Instruments based on the photonic time stretch have established record real-time measurement throughput in imaging flow cytometry.",
+            "8": "Extreme-throughput instruments generate approximately 1 Tbit/s of continuous measurement data.",
+            "9": "Extreme-throughput instruments have led to the discovery of rare phenomena in nonlinear and complex systems.",
+            "10": "Extreme-throughput instruments have led to the discovery of new types of biomedical instruments.",
+            "11": "The abundance of data generated by time-stretch instruments makes them a natural fit for deep learning classification.",
+            "12": "High-throughput label-free cell classification with high accuracy can be achieved through a combination of time-stretch microscopy, image processing, and feature extraction.",
+            "13": "High-throughput label-free cell classification with high accuracy can be achieved by following these steps by deep learning for finding cancer cells in the blood.",
+            "14": "The technology of high-throughput label-free cell classification holds promise for early detection of primary cancer.",
+            "15": "The technology of high-throughput label-free cell classification holds promise for early detection of metastasis.",
+            "16": "A new deep learning pipeline is described, which entirely avoids the slow and computationally costly signal processing and feature extraction steps.",
+            "17": "The new deep learning pipeline uses a convolutional neural network that directly operates on the measured signals.",
+            "18": "The improvement in computational efficiency enables low-latency inference in the new deep learning pipeline.",
+            "19": "The improvement in computational efficiency makes the new deep learning pipeline suitable for cell sorting via deep learning.",
+            "20": "The neural network takes less than a few milliseconds to classify the cells.",
+            "21": "The neural network's speed is fast enough to provide a decision to a cell sorter for real-time separation of individual target cells.",
+            "22": "The new method demonstrates applicability in the classification of OT-II white blood cells with more than 95% accuracy in a label-free fashion.",
+            "23": "The new method demonstrates applicability in the classification of SW-480 epithelial cancer cells with more than 95% accuracy in a label-free fashion."
+          },
+          "17": {
+            "1": "Cytometry technologies are essential tools for immunology research.",
+            "2": "Cytometry technologies provide high-throughput measurements of immune cells at the single-cell level.",
+            "3": "Existing approaches in interpreting and using cytometry measurements include manual or automated gating to identify cell subsets from the cytometry data.",
+            "4": "Manual or automated gating to identify cell subsets from the cytometry data provides highly intuitive results.",
+            "5": "Manual or automated gating to identify cell subsets from the cytometry data may lead to significant information loss.",
+            "6": "Significant information loss may occur when additional details in measured or correlated cell signals are missed.",
+            "7": "The study proposes a deep convolutional neural network for analyzing cytometry data in an end-to-end fashion.",
+            "8": "The study tests the deep convolutional neural network for analyzing cytometry data in an end-to-end fashion.",
+            "9": "Analyzing cytometry data in an end-to-end fashion allows a direct association between raw cytometry data and the clinical outcome of interest.",
+            "10": "Nine large cytometry by time-of-flight mass spectrometry or mass cytometry (CyTOF) studies from the open-access ImmPort database were used in the research.",
+            "11": "The deep convolutional neural network model can accurately diagnose latent cytomegalovirus (CMV) in healthy individuals.",
+            "12": "The accuracy of the diagnosis of latent cytomegalovirus (CMV) by the deep convolutional neural network model is maintained even when using highly heterogeneous data from different studies.",
+            "13": "The study developed a permutation-based method for interpreting the deep convolutional neural network model.",
+            "14": "The study identified a CD27- CD94+ CD8+ T cell population significantly associated with latent CMV infection.",
+            "15": "The identification of a CD27- CD94+ CD8+ T cell population significantly associated with latent CMV infection confirms findings in previous studies.",
+            "16": "The study provides a tutorial for creating the tailored deep learning model for cytometry data using Keras and TensorFlow.",
+            "17": "The study provides a tutorial for training the tailored deep learning model for cytometry data using Keras and TensorFlow.",
+            "18": "The study provides a tutorial for interpreting the tailored deep learning model for cytometry data using Keras and TensorFlow."
+          },
+          "18": {
+            "1": "flowDensity facilitates reproducible analysis of flow cytometry data.",
+            "2": "flowDensity facilitates high-throughput analysis of flow cytometry data.",
+            "3": "flowDensity automates a predefined manual gating approach for flow cytometry data.",
+            "4": "The algorithm is based on a sequential bivariate gating approach.",
+            "5": "The sequential bivariate gating approach generates a set of predefined cell populations.",
+            "6": "The algorithm chooses the best cut-off for individual markers.",
+            "7": "The best cut-off for individual markers is chosen using characteristics of the density distribution.",
+            "8": "The Supplementary Material is linked to the online version of the manuscript.",
+            "9": "R source code is freely available through BioConductor.",
+            "10": "Data is available from FlowRepository.org (dataset FR-FCM-ZZBW).",
+            "11": "Contact email for queries related to the study is rbrinkman@bccrc.ca.",
+            "12": "Supplementary data are available at Bioinformatics online."
+          },
+          "19": {
+            "1": "Identification of cell populations in flow cytometry is a critical part of the analysis.",
+            "2": "Identification of cell populations in flow cytometry lays the groundwork for many applications and research discovery.",
+            "3": "Manual analysis in flow cytometry is time consuming.",
+            "4": "Manual analysis in flow cytometry is subjective.",
+            "5": "A common goal of users is to replace manual analysis with automated methods.",
+            "6": "Automated methods are intended to replicate the results of manual analysis.",
+            "7": "Supervised tools provide the best performance in replacing manual analysis with automated methods.",
+            "8": "Supervised tools require fine parameterization to obtain the best results.",
+            "9": "There is a strong need for methods that are fast to setup in flow cytometry analysis.",
+            "10": "There is a strong need for methods that are accurate in flow cytometry analysis.",
+            "11": "There is a strong need for methods that are interpretable in flow cytometry analysis.",
+            "12": "flowLearn is a semi-supervised approach.",
+            "13": "flowLearn is used for the quality-checked identification of cell populations.",
+            "14": "flowLearn uses a very small number of manually gated samples.",
+            "15": "flowLearn uses density alignments.",
+            "16": "FlowLearn is able to predict gates on other samples with high accuracy.",
+            "17": "FlowLearn is able to predict gates on other samples with high speed.",
+            "18": "flowLearn achieves median(F1)-measures exceeding 0.99 for 31% of all analyzed populations on two state-of-the-art datasets.",
+            "19": "flowLearn achieves median(F1)-measures exceeding 0.90 for 80% of all analyzed populations on two state-of-the-art datasets.",
+            "20": "Users can directly interpret automated gates on new sample files.",
+            "21": "Users can adjust automated gates on new sample files.",
+            "22": "Adjusting automated gates on new sample files allows for iterative improvement of the initial training.",
+            "23": "flowLearn is available as an R package.",
+            "24": "The R package for flowLearn is available on https://github.com/mlux86/flowLearn.",
+            "25": "Evaluation data for flowLearn is publicly available online.",
+            "26": "Details about flowLearn can be found in the Supplementary Material.",
+            "27": "Supplementary data are available at Bioinformatics online."
+          }
+        },
+        "viewpoints": [
+          "Algorithms have been developed to attempt to automate the task of defining cell subtype boundaries.",
+          "Unsupervised clustering is used to identify cell subtypes.",
+          "Supervised deep learning methods are developed for automating cell subtype boundary definition.",
+          "Density-based gating methods are developed for automating cell subtype boundary definition."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Although unsupervised methods can target certain cell subpopulations effectively, their results often contain some remaining cell clusters that are unrecognizable and/or sometimes can fail to capture rare cell types making interpretation challenging [20].",
+        "references": {
+          "20": []
+        },
+        "viewpoints": [
+          "Unsupervised methods can target certain cell subpopulations effectively.",
+          "The results of unsupervised methods often contain some remaining cell clusters that are unrecognizable.",
+          "Unsupervised methods sometimes fail to capture rare cell types.",
+          "Unsupervised methods can make interpretation challenging."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Such methods usually lack the ability to reproduce cytometric gating from human experts, and it is hard for those methods to adapt to existing domain knowledge to satisfactorily explain the clustering results.",
+        "references": {},
+        "viewpoints": [
+          "Unsupervised methods usually lack the ability to reproduce cytometric gating from human experts.",
+          "It is hard for unsupervised methods to adapt to existing domain knowledge.",
+          "It is hard for unsupervised methods to satisfactorily explain clustering results."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "A typical manual analysis pipeline of this data first separates live, viable single cells from unwanted events, then gates these into different cell populations.",
+        "references": {},
+        "viewpoints": [
+          "A typical manual analysis pipeline first separates live, viable single cells from unwanted events.",
+          "The manual analysis pipeline then gates the separated cells into different cell populations."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "A major challenge is that methods, like those described above, typically assume that single cells have been separated from doublets, debris, and other unwanted events, a process that we call “pre-gating”.",
+        "references": {},
+        "viewpoints": [
+          "A major challenge is that methods assume that single cells have been separated from doublets, debris, and other unwanted events.",
+          "The process of separating single cells from doublets, debris, and other unwanted events is called “pre-gating”."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Efficient open-source methods employing pre-gating using adaptive approaches to define populations and account for variability in signal intensity between samples, however, do not exist.",
+        "references": {},
+        "viewpoints": [
+          "Efficient open-source methods employing pre-gating do not exist.",
+          "Adaptive approaches are needed to define populations and account for variability in signal intensity between samples."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Indeed, current unsupervised clustering methods typically require manual “pre-gating” before applying unsupervised analysis.",
+        "references": {},
+        "viewpoints": [
+          "Current unsupervised clustering methods typically require manual “pre-gating” before applying unsupervised analysis."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "While manual pre-gating still requires much human labor to annotate and draw polygons for the region of interest, existing bivariate pipelines also need human input to pre-define the relevant parameters.",
+        "references": {},
+        "viewpoints": [
+          "Manual pre-gating requires much human labor to annotate and draw polygons for the region of interest.",
+          "Existing bivariate pipelines need human input to pre-define the relevant parameters."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "For example, those parameters include where the actual population is located as well as the approximate percentage of the target cell population.",
+        "references": {},
+        "viewpoints": [
+          "Parameters in bivariate pipelines include where the actual population is located.",
+          "Parameters in bivariate pipelines include the approximate percentage of the target cell population."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Currently, no software can configure a series of bivariate pre-gating (and gating) tasks where gates are set in a hierarchical order.",
+        "references": {},
+        "viewpoints": [
+          "Currently, no software can configure a series of bivariate pre-gating tasks where gates are set in a hierarchical order.",
+          "Currently, no software can configure a series of bivariate gating tasks where gates are set in a hierarchical order."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Our goal is to automate the analysis process.",
+        "references": {},
+        "viewpoints": [
+          "The goal is to automate the analysis process."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The application of deep learning has been effective in disentangling complex relationships in different cytometric domains including cell type identification and cell sorting in cytometric time series data [14], [15], [16], [17].",
+        "references": {
+          "14": {
+            "1": "Mass cytometry, also known as CyTOF, is an emerging technology for high-dimensional multiparameter single cell analysis.",
+            "2": "CyTOF overcomes many limitations of fluorescence-based flow cytometry.",
+            "3": "New methods for analyzing CyTOF data attempt to improve automation of data generation in large studies.",
+            "4": "New methods for analyzing CyTOF data attempt to improve scalability of data generation in large studies.",
+            "5": "New methods for analyzing CyTOF data attempt to improve performance of data generation in large studies.",
+            "6": "New methods for analyzing CyTOF data attempt to improve interpretation of data generated in large studies.",
+            "7": "Assigning individual cells into discrete groups of cell types through gating involves time-consuming sequential manual steps.",
+            "8": "Time-consuming sequential manual steps are untenable for larger studies.",
+            "9": "DeepCyTOF is a standardization approach for gating.",
+            "10": "DeepCyTOF is based on deep learning techniques.",
+            "11": "The authors introduce DeepCyTOF.",
+            "12": "DeepCyTOF requires labeled cells from only a single sample.",
+            "13": "DeepCyTOF is based on domain adaptation principles.",
+            "14": "DeepCyTOF is a generalization of previous work.",
+            "15": "DeepCyTOF allows calibration between a target distribution and a source distribution in an unsupervised manner.",
+            "16": "DeepCyTOF is highly concordant (98%) with cell classification obtained by individual manual gating of each sample.",
+            "17": "DeepCyTOF maintains high concordance even when applied to a collection of 16 biological replicates of primary immune blood cells.",
+            "18": "DeepCyTOF maintains high concordance when measured across several instruments.",
+            "19": "DeepCyTOF achieves very high accuracy on the semi-automated gating challenge of the FlowCAP-I competition.",
+            "20": "DeepCyTOF achieves very high accuracy on two CyTOF datasets generated from primary immune blood cells.",
+            "21": "The first CyTOF dataset includes 14 subjects with a history of infection with West Nile virus (WNV).",
+            "22": "The second CyTOF dataset includes 34 healthy subjects of different ages.",
+            "23": "Deep learning offers a powerful computational approach for semi-automated gating of CyTOF and flow cytometry data.",
+            "24": "DeepCyTOF specifically offers a powerful computational approach for semi-automated gating of CyTOF and flow cytometry data.",
+            "25": "The authors' codes and data for DeepCyTOF are publicly available at https://github.com/KlugerLab/deepcytof.git.",
+            "26": "Yuval Kluger's contact email is yuval.kluger@yale.edu.",
+            "27": "Supplementary data are available at Bioinformatics online."
+          },
+          "15": {
+            "1": "Single-cell mass cytometry is also known as cytometry by time of flight (CyTOF).",
+            "2": "Single-cell mass cytometry is a powerful high-throughput technology.",
+            "3": "Single-cell mass cytometry allows analysis of up to 50 protein markers per cell.",
+            "4": "Single-cell mass cytometry is used for the quantification and classification of single cells.",
+            "5": "Traditional manual gating used to identify new cell populations has been inadequate.",
+            "6": "Traditional manual gating used to identify new cell populations has been inefficient.",
+            "7": "Traditional manual gating used to identify new cell populations has been unreliable.",
+            "8": "Traditional manual gating used to identify new cell populations has been difficult to use.",
+            "9": "No algorithms to identify both calibration and new cell populations have been well established.",
+            "10": "A deep learning with graphic cluster (DGCyTOF) visualization is developed.",
+            "11": "DGCyTOF is a new integrated embedding visualization approach.",
+            "12": "DGCyTOF is used in identifying canonical cell types.",
+            "13": "DGCyTOF is used in identifying new cell types.",
+            "14": "DGCyTOF combines deep-learning classification methods.",
+            "15": "DGCyTOF combines hierarchical stable-clustering methods.",
+            "16": "DGCyTOF sequentially builds a tri-layer construct for known cell types.",
+            "17": "DGCyTOF is used for the identification of new cell types.",
+            "18": "Deep classification learning is constructed to distinguish calibration cell populations from all cells.",
+            "19": "The distinction of calibration cell populations is done by softmax classification assignment under a probability threshold.",
+            "20": "Graph embedding clustering is used to identify new cell populations sequentially.",
+            "21": "Cell labels are automatically adjusted between new and unknown cell populations via a feedback loop.",
+            "22": "A feedback loop uses an iteration calibration system to reduce the rate of error in the identification of cell types.",
+            "23": "A 3-dimensional (3D) visualization platform is developed to display cell clusters.",
+            "24": "The 3D visualization platform annotates all cell-population types.",
+            "25": "Two benchmark CyTOF databases comprising up to 43 million cells were utilized.",
+            "26": "Accuracy in the identification of cell types was compared among DGCyTOF, DeepCyTOF, and other technologies.",
+            "27": "Speed in the identification of cell types was compared among DGCyTOF, DeepCyTOF, and other technologies.",
+            "28": "The technologies compared included dimension reduction with clustering methods.",
+            "29": "The dimension reduction with clustering methods included Principal Component Analysis (PCA), Factor Analysis (FA), Independent Component Analysis (ICA), Isometric Feature Mapping (Isomap), t-distributed Stochastic Neighbor Embedding (t-SNE), and Uniform Manifold Approximation and Projection (UMAP).",
+            "30": "The clustering methods included k-means clustering and Gaussian mixture clustering.",
+            "31": "DGCyTOF represents a robust learning system.",
+            "32": "DGCyTOF is a complete learning system.",
+            "33": "DGCyTOF has high accuracy.",
+            "34": "DGCyTOF has high speed.",
+            "35": "DGCyTOF has effective visualization.",
+            "36": "The high accuracy, speed, and visualization of DGCyTOF were evaluated by eight measurement criteria.",
+            "37": "DGCyTOF displayed an F-score of 0.9921 for the CyTOF1 dataset.",
+            "38": "DGCyTOF displayed an F-score of 0.9992 for the CyTOF2 dataset.",
+            "39": "t-SNE+k-means displayed an F-score of 0.507 for the CyTOF1 dataset.",
+            "40": "t-SNE+k-means displayed an F-score of 0.529 for the CyTOF2 dataset.",
+            "41": "UMAP+k-means displayed an F-score of 0.565 for the CyTOF1 dataset.",
+            "42": "UMAP+k-means displayed an F-score of 0.59 for the CyTOF2 dataset.",
+            "43": "Comparison in accuracy was made between DGCyTOF and t-SNE visualization.",
+            "44": "Comparison in accuracy was made between DGCyTOF and UMAP visualization.",
+            "45": "DGCyTOF demonstrated approximately 35% superiority in predicting cell types compared to t-SNE and UMAP visualizations.",
+            "46": "Observation of cell-population distribution was more intuitive in the 3D visualization in DGCyTOF than in t-SNE visualization.",
+            "47": "Observation of cell-population distribution was more intuitive in the 3D visualization in DGCyTOF than in UMAP visualization.",
+            "48": "The DGCyTOF model can automatically assign known labels to single cells.",
+            "49": "The DGCyTOF model assigns labels with high accuracy.",
+            "50": "The DGCyTOF model uses deep-learning classification.",
+            "51": "The DGCyTOF model uses traditional graph-clustering strategies.",
+            "52": "The DGCyTOF model uses dimension-reduction strategies.",
+            "53": "The DGCyTOF model is guided by a calibration system.",
+            "54": "The DGCyTOF model seeks optimal accuracy balance among calibration cell populations.",
+            "55": "The DGCyTOF model seeks optimal accuracy balance among unknown cell types.",
+            "56": "The DGCyTOF model yields a complete learning system.",
+            "57": "The DGCyTOF model yields a robust learning system.",
+            "58": "The DGCyTOF model is highly accurate in the identification of cell populations.",
+            "59": "The DGCyTOF model is more accurate in the identification of cell populations compared to other methods used in the analysis of single-cell CyTOF data.",
+            "60": "The application of the DGCyTOF method to identify cell populations could be extended to the analysis of single-cell RNASeq data.",
+            "61": "The application of the DGCyTOF method could be extended to the analysis of other omics data."
+          },
+          "16": {
+            "1": "Deep learning has achieved spectacular performance in image recognition.",
+            "2": "Deep learning has achieved spectacular performance in speech recognition.",
+            "3": "Deep learning has achieved spectacular performance in speech synthesis.",
+            "4": "Deep learning outperforms other machine learning algorithms in problems where large amounts of data are available.",
+            "5": "Instruments based on the photonic time stretch have established record real-time measurement throughput in spectroscopy.",
+            "6": "Instruments based on the photonic time stretch have established record real-time measurement throughput in optical coherence tomography.",
+            "7": "Instruments based on the photonic time stretch have established record real-time measurement throughput in imaging flow cytometry.",
+            "8": "Extreme-throughput instruments generate approximately 1 Tbit/s of continuous measurement data.",
+            "9": "Extreme-throughput instruments have led to the discovery of rare phenomena in nonlinear and complex systems.",
+            "10": "Extreme-throughput instruments have led to the discovery of new types of biomedical instruments.",
+            "11": "The abundance of data generated by time-stretch instruments makes them a natural fit for deep learning classification.",
+            "12": "High-throughput label-free cell classification with high accuracy can be achieved through a combination of time-stretch microscopy, image processing, and feature extraction.",
+            "13": "High-throughput label-free cell classification with high accuracy can be achieved by following these steps by deep learning for finding cancer cells in the blood.",
+            "14": "The technology of high-throughput label-free cell classification holds promise for early detection of primary cancer.",
+            "15": "The technology of high-throughput label-free cell classification holds promise for early detection of metastasis.",
+            "16": "A new deep learning pipeline is described, which entirely avoids the slow and computationally costly signal processing and feature extraction steps.",
+            "17": "The new deep learning pipeline uses a convolutional neural network that directly operates on the measured signals.",
+            "18": "The improvement in computational efficiency enables low-latency inference in the new deep learning pipeline.",
+            "19": "The improvement in computational efficiency makes the new deep learning pipeline suitable for cell sorting via deep learning.",
+            "20": "The neural network takes less than a few milliseconds to classify the cells.",
+            "21": "The neural network's speed is fast enough to provide a decision to a cell sorter for real-time separation of individual target cells.",
+            "22": "The new method demonstrates applicability in the classification of OT-II white blood cells with more than 95% accuracy in a label-free fashion.",
+            "23": "The new method demonstrates applicability in the classification of SW-480 epithelial cancer cells with more than 95% accuracy in a label-free fashion."
+          },
+          "17": {
+            "1": "Cytometry technologies are essential tools for immunology research.",
+            "2": "Cytometry technologies provide high-throughput measurements of immune cells at the single-cell level.",
+            "3": "Existing approaches in interpreting and using cytometry measurements include manual or automated gating to identify cell subsets from the cytometry data.",
+            "4": "Manual or automated gating to identify cell subsets from the cytometry data provides highly intuitive results.",
+            "5": "Manual or automated gating to identify cell subsets from the cytometry data may lead to significant information loss.",
+            "6": "Significant information loss may occur when additional details in measured or correlated cell signals are missed.",
+            "7": "The study proposes a deep convolutional neural network for analyzing cytometry data in an end-to-end fashion.",
+            "8": "The study tests the deep convolutional neural network for analyzing cytometry data in an end-to-end fashion.",
+            "9": "Analyzing cytometry data in an end-to-end fashion allows a direct association between raw cytometry data and the clinical outcome of interest.",
+            "10": "Nine large cytometry by time-of-flight mass spectrometry or mass cytometry (CyTOF) studies from the open-access ImmPort database were used in the research.",
+            "11": "The deep convolutional neural network model can accurately diagnose latent cytomegalovirus (CMV) in healthy individuals.",
+            "12": "The accuracy of the diagnosis of latent cytomegalovirus (CMV) by the deep convolutional neural network model is maintained even when using highly heterogeneous data from different studies.",
+            "13": "The study developed a permutation-based method for interpreting the deep convolutional neural network model.",
+            "14": "The study identified a CD27- CD94+ CD8+ T cell population significantly associated with latent CMV infection.",
+            "15": "The identification of a CD27- CD94+ CD8+ T cell population significantly associated with latent CMV infection confirms findings in previous studies.",
+            "16": "The study provides a tutorial for creating the tailored deep learning model for cytometry data using Keras and TensorFlow.",
+            "17": "The study provides a tutorial for training the tailored deep learning model for cytometry data using Keras and TensorFlow.",
+            "18": "The study provides a tutorial for interpreting the tailored deep learning model for cytometry data using Keras and TensorFlow."
+          }
+        },
+        "viewpoints": [
+          "The application of deep learning has been effective in disentangling complex relationships in cytometric domains.",
+          "The application of deep learning has been effective in cell type identification.",
+          "The application of deep learning has been effective in cell sorting in cytometric time series data."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Most of the existing methods focus on providing a global classification of different cell types in one step by using a multi-channel dense neural network.",
+        "references": {},
+        "viewpoints": [
+          "Most existing methods focus on providing a global classification of different cell types in one step.",
+          "Most existing methods use a multi-channel dense neural network for global classification of different cell types."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Moreover, these methods also usually assume pre-gated data as input, and they have not been validated for complex pre-gating tasks.",
+        "references": {},
+        "viewpoints": [
+          "Existing methods usually assume pre-gated data as input.",
+          "Existing methods have not been validated for complex pre-gating tasks."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "In particular, one of the major challenges in performing automatic pre-gating is the technical and biological variance across different subjects.",
+        "references": {},
+        "viewpoints": [
+          "One of the major challenges in performing automatic pre-gating is the technical variance across different subjects.",
+          "One of the major challenges in performing automatic pre-gating is the biological variance across different subjects."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Even if the experimental protocol and the panel of measured proteins are held constant, differences in sample preparation and even instrument variation, can cause fluctuations in protein detection and precise population “shape” in the data.",
+        "references": {},
+        "viewpoints": [
+          "Differences in sample preparation can cause fluctuations in protein detection.",
+          "Instrument variation can cause fluctuations in protein detection.",
+          "Differences in sample preparation can cause fluctuations in precise population “shape” in the data.",
+          "Instrument variation can cause fluctuations in precise population “shape” in the data.",
+          "Holding the experimental protocol constant does not prevent fluctuations in protein detection.",
+          "Holding the panel of measured proteins constant does not prevent fluctuations in protein detection."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "In addition, only predicting terminal cell types (such as naïve T cells) will prevent accurate gating of the intermediate cell types (such as T cells or lymphocytes).",
+        "references": {},
+        "viewpoints": [
+          "Only predicting terminal cell types will prevent accurate gating of intermediate cell types."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "In the bivariate setting from manual gating, gates are configured in a tree-like structure, and at each level, the parent cell population is split into smaller subpopulations so that gating results for all intermediate cell types are obtained.",
+        "references": {},
+        "viewpoints": [
+          "In the bivariate setting from manual gating, gates are configured in a tree-like structure.",
+          "In the bivariate setting, at each level, the parent cell population is split into smaller subpopulations.",
+          "Gating results for all intermediate cell types are obtained by splitting the parent cell population."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "The hierarchy structure guarantees the interpretability of the target cell populations.",
+        "references": {},
+        "viewpoints": [
+          "The hierarchy structure guarantees the interpretability of the target cell populations."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "It also clearly defines some cells that are not included in the subsequent gating but still belong to the current gating step (out-of-boundary cells that are not included in any subsequent cell types).",
+        "references": {},
+        "viewpoints": [
+          "The hierarchy structure clearly defines cells that are not included in subsequent gating.",
+          "Some cells still belong to the current gating step even if not included in subsequent cell types."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "The same strategy used for manual pre-gating can be easily extended to downstream automatic gating of immune cell types, since cell-type gates have a more stable and fixed bivariate boundary compared to pre-gates.",
+        "references": {},
+        "viewpoints": [
+          "The strategy used for manual pre-gating can be easily extended to downstream automatic gating of immune cell types.",
+          "Cell-type gates have a more stable and fixed bivariate boundary compared to pre-gates."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Therefore, we combined those two types of tasks and refer to all of them, onward, as “gating”.",
+        "references": {},
+        "viewpoints": [
+          "The task of manual pre-gating and automatic gating of immune cell types are combined and referred to as “gating.”"
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "While existing methods are suboptimal to accommodate biological variance within the protein expression data, deep neural networks with convolutional kernels have the ability to address such data challenges, using the properties of translational invariance and equivariance [21], [22].",
+        "references": {
+          "21": [],
+          "22": {
+            "1": "Deep learning has led to very good performance on visual recognition in the last few years.",
+            "2": "Deep learning has led to very good performance on speech recognition in the last few years.",
+            "3": "Deep learning has led to very good performance on natural language processing in the last few years.",
+            "4": "Convolutional neural networks have been most extensively studied among different types of deep neural networks.",
+            "5": "The research on convolutional neural networks has emerged swiftly.",
+            "6": "The research on convolutional neural networks has achieved state-of-the-art results on various tasks.",
+            "7": "The rapid growth in the amount of annotated data has contributed to the swift emergence and success of convolutional neural networks research.",
+            "8": "The improvements in the strengths of graphics processor units have contributed to the swift emergence and success of convolutional neural networks research.",
+            "9": "The paper provides a broad survey of the recent advances in convolutional neural networks.",
+            "10": "The paper details improvements of convolutional neural networks on layer design.",
+            "11": "The paper details improvements of convolutional neural networks on activation function.",
+            "12": "The paper details improvements of convolutional neural networks on loss function.",
+            "13": "The paper details improvements of convolutional neural networks on regularization.",
+            "14": "The paper details improvements of convolutional neural networks on optimization.",
+            "15": "The paper details improvements of convolutional neural networks on fast computation.",
+            "16": "The paper introduces various applications of convolutional neural networks in computer vision.",
+            "17": "The paper introduces various applications of convolutional neural networks in speech processing.",
+            "18": "The paper introduces various applications of convolutional neural networks in natural language processing."
+          }
+        },
+        "viewpoints": [
+          "Existing methods are suboptimal to accommodate biological variance within protein expression data.",
+          "Deep neural networks with convolutional kernels have the ability to address data challenges in protein expression.",
+          "Deep neural networks use the properties of translational invariance to address data challenges.",
+          "Deep neural networks use equivariance to address data challenges."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "The convolutional architecture was originally designed for image classification tasks.",
+        "references": {},
+        "viewpoints": [
+          "The convolutional architecture was originally designed for image classification tasks."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "It can detect target objects regardless of their positions in the image space and learn the general features of each target object.",
+        "references": {},
+        "viewpoints": [
+          "The convolutional architecture can detect target objects regardless of their positions in the image space.",
+          "The convolutional architecture can learn the general features of each target object."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "This versatility led to their adaptation for image segmentation tasks.",
+        "references": {},
+        "viewpoints": [
+          "The versatility of the convolutional architecture led to its adaptation for image segmentation tasks."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "The reason manual gating is challenging for automated software is that human experts have a global view of the cell density in certain protein measurement spaces so that they can visually inspect and quantify the desired cell type.",
+        "references": {},
+        "viewpoints": [
+          "Manual gating is challenging for automated software because human experts have a global view of cell density.",
+          "Human experts have a global view of cell density in certain protein measurement spaces.",
+          "Human experts can visually inspect and quantify the desired cell type."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Therefore, to address this challenge together with the biological and technical variance, we propose and validate UNITO, a method employing image segmentation for automated gating.",
+        "references": {},
+        "viewpoints": [
+          "UNITO is proposed to address the challenge of manual gating and biological and technical variance.",
+          "UNITO is a method employing image segmentation for automated gating.",
+          "UNITO is proposed and validated to address challenges in automated gating."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "UNITO converts the cytometrically derived protein expression into an image of bivariate density to enable a global identification of the cell population.",
+        "references": {},
+        "viewpoints": [
+          "UNITO converts cytometrically derived protein expression into an image of bivariate density.",
+          "UNITO enables a global identification of the cell population."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "Furthermore, with the ability to perform pixel-level prediction, UNITO intuitively defines the region of interest on the bivariate density maps for cytometric gating.",
+        "references": {},
+        "viewpoints": [
+          "UNITO performs pixel-level prediction.",
+          "UNITO intuitively defines the region of interest on bivariate density maps for cytometric gating."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "By validating UNITO on three independent study cohorts and two cytometric modalities, we hypothesize that the framework can learn any pre-gating and gating tasks from human annotation, and then adaptively draw contours and assign labels to cells from independent data.",
+        "references": {},
+        "viewpoints": [
+          "UNITO is validated on three independent study cohorts.",
+          "UNITO is validated on two cytometric modalities.",
+          "The hypothesis is that the UNITO framework can learn any pre-gating tasks from human annotation.",
+          "The hypothesis is that the UNITO framework can learn any gating tasks from human annotation.",
+          "The hypothesis is that the UNITO framework can adaptively draw contours from independent data.",
+          "The hypothesis is that the UNITO framework can assign labels to cells from independent data."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "This ability to perform inference on unseen samples without human supervision will enable applications to large-scale immunology studies.",
+        "references": {},
+        "viewpoints": [
+          "The ability to perform inference on unseen samples without human supervision will enable applications to large-scale immunology studies."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56622-2_with_abstracts",
+    "base_id": "s41467-025-56622-2",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56622-2_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

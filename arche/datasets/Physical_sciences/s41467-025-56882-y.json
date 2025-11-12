@@ -1,0 +1,696 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Dirac equation, proposed by Paul Dirac in 1928 as the first reconciliation of special relativity and quantum mechanics, has a profound impact on the development of many aspects of modern physics [1] . While the Dirac equation was mainly studied in the context of particle physics and quantum field theories in the early years, people later found that Dirac physics can also be accessed in crystals with band degeneracies called Dirac points [2] . In the low-energy limit, the states around a Dirac point are effectively governed by the Dirac equation and thus behave as Dirac quasiparticles [3] . Beyond Dirac, other types of quasiparticles can also emerge in certain band degeneracies [4] , [5] , such as Weyl quasiparticles [6] and even those not allowed in particle physics [7] . These quasiparticles, apart from their own theoretical interest as fundamental particles, are responsible for many topological phenomena and offer new insights for controlling the transport in crystals. For example, Dirac quasiparticles in graphene give rise to the quantum Hall effect under a magnetic field [2] , [3] , and their valley contrasting physics opens a route to manipulate electrons and forms the basis for valleytronics [8] , [9] . In recent years, nonconservative systems have appeared as a new playground for studying band degeneracies [10] , [11] . In contrast to closed systems, nonconservative systems modeled by non-Hermitian Hamiltonians typically host exceptional points where both eigenvalues and eigenstates coalesce [12] , [13] , [14] . Dirac points and other Hermitian band degeneracies, on the other hand, are usually unstable under non-Hermitian perturbations [15] , [16] , [17] and can only survive under symmetry protection [18] , [19] . In the latter case, the Dirac quasiparticles still obey the conventional Hermitian Dirac equation and behave much like those in Hermitian systems [18] , [19] . To date, it is still unclear whether unique non-Hermitian physics can be obtained for conventional band degeneracies like Dirac points. In this work, we design and experimentally realize a non-Hermitian extension of the graphene lattice with a complex conjugate pair of Dirac cones. Unlike all previously realized Dirac cones in either Hermitian or non-Hermitian systems [3] , [19] , the Dirac cones in our study are intrinsically non-Hermitian. That is, the Dirac quasiparticles are governed by non-Hermitian Dirac Hamiltonians with a valley-dependent background imaginary term (see Fig. 1 and Eq. ( 2 ) below). This also differs from the trivial scenario where a uniform background loss added to a Hermitian graphene lattice induces the same imaginary term for both valleys. Given these differences, we dub the excitations around the non-Hermitian Dirac cones in our system non-Hermitian Dirac quasiparticles. We fabricate a circuit lattice to implement the theoretical model. Owing to the sharp imaginary eigenvalue contrast, one of the Dirac cones with a shorter lifetime is wiped out in the long time limit, making our system effectively exhibit single Dirac cone physics. In the experiments, we consistently find that only one of the valleys can be excited without using any tailored excitation (Fig. 2 ). This situation also holds for the massive case where the Dirac cones are gapped by a staggered on-site potential, and vortex states can be simply excited by a point source (Fig. 3 ). We then use the massive non-Hermitian Dirac cones to construct mass-flipping interfaces. It is found that the valley kink states inherit the non-Hermitian properties from the bulk and have valley-dependent lifetimes. Their propagation is effectively unidirectional and the valley flipping is significantly suppressed due to the difference in the imaginary eigenvalues between the two valleys (Figs. 4 and 5 ). These results clearly reveal that Dirac cones can be induced in non-Hermitian lattices and can have interesting non-Hermitian physics beyond their Hermitian counterparts. Fig. 1: Model for realizing non-Hermitian Dirac quasiparticles. a – c Upper panels: Tight-binding model of conventional graphene ( a ), the Haldane model ( b ), and this work ( c ). The red (blue) circles represent the sublattices with on-site energy m ( − m ) and the black lines indicate the nearest-neighbor couplings with strength t . The Orange arrows in ( b ) indicate the next-nearest-neighbor (NNN) couplings t 2 e i ϕ ( t 2 e − i ϕ ) along (opposite to) the arrow. The larger (smaller) black arrows in ( c ) denote the NNN couplings t 2 + δ ( t 2 − δ ). Lower panels: Schematics of the Dirac cone dispersion of the graphene model ( a ), the Haldane model ( b ), and the non-Hermitian model in this work ( c ). For graphene, the K and \\({{{{\\rm{K}}}}}^{{\\prime} }\\) valleys are related to each other by the time-reversal symmetry (TRS). For the Haldane model, the TRS breaking leads to a single Dirac cone in the K valley in the energy range within the bandgap of the \\({{{{\\rm{K}}}}}^{{\\prime} }\\) valley, as denoted by the orange dashed lines. In this work, a complex conjugate pair of Dirac cones at the K and \\({{{{\\rm{K}}}}}^{{\\prime} }\\) valleys are related to one another by the TRS, with colors denoting the imaginary parts of the eigenvalues. In the long time limit, only states at the K valley will survive due to the sharp contrast in lifetime between the two valleys, leading to an effective single Dirac cone behavior over a large energy range as indicated by the orange dashed lines. d Complex band structure of our proposed model for m = 0, t = 1, t 2 = 0.1, and δ = 0.1, with the colors showing the imaginary parts of the eigenvalues. Full size image Fig. 2: Observation of massless non-Hermitian Dirac quasiparticles. a Photo of the fabricated circuit sample. The dashed box outlines a hexagonal cell. b Left panel: The enlarged view of the hexagonal cell in ( a ). The orange arrow denotes the components for realizing the nonreciprocal couplings. Right panel: The schematic diagram of the designed circuit realizing the hexagonal unit cell. The next-neighbor couplings are achieved through capacitors C . The nonreciprocal next-nearest-neighbor couplings are achieved via nonreciprocal capacitance ( C 1 ± C 2 ). Sublattices A/B are grounded with an LC resonator circuit containing a capacitor C a / b , an inductor L , and a resistor R s . The resistor R s is added as the global dissipation for circuit stability. c Calculated bulk dispersion of the circuit lattice with parameters C a = C b = C = 100 nF, C 1 = C 2 = 10 nF, L = 1.043 μ H and R s = 13.3 Ω. The colors denote the imaginary part of the eigenfrequencies. d , e Experimentally measured dispersions of the circuit lattice along high-symmetry lines ( d ) and in the two-dimensional momentum space at different frequencies ( e ). The colors represent the normalized Fourier intensity. The dashed lines in ( d ) represent the theoretical results. f Plot of the measured valley polarization against the driving frequency. The circles in ( e ) denote the integral region for calculating the valley polarization. Full size image Fig. 3: Observation of massive non-Hermitian Dirac quasiparticles. a Calculated bulk dispersion of the circuit lattice with parameters C a = 100 nF, C b = 200 nF, C = 100 nF, C 1 = C 2 = 10 nF, L = 1.043 μ H and R s = 30 Ω. The colors denote the imaginary part of the eigenfrequencies. b , c Experimentally measured dispersions of the circuit lattice along high-symmetry lines when exciting at the sublattice A ( b ) and the sublattice B ( c ), respectively. The colors represent the normalized Fourier intensity, and the dashed lines represent the theoretical results. d Experimentally measured dispersion of the circuit lattice in the two-dimensional momentum space. The measurements are taken at 222 kHz (upper panel) and 200 kHz (lower panel) with excitations at the sublattices A and B, respectively. e Measured voltage amplitudes at 222 kHz (left panel) and 200 kHz (right panel) with excitations at the sublattices A and B, respectively. The black star denotes the source. Zoomed-in bar diagrams plot the amplitudes (heights) and phases (colors) distribution in a hexagonal cell and demonstrate the clockwise and anti-clockwise phase vortices at sublattices A (lower panel) and B (upper panel). Full size image Fig. 4: Topological valley kink states with valley-dependent imaginary eigenfrequencies. a Calculated dispersion of a heterostructure with a zigzag interface constructed by a lattice with C a = 200 nF and C b = 100 nF at the upper domain and a lattice with C a = 100 nF and C b = 200 nF at the lower domain. Other parameters are C = 100 nF, C 1 = C 2 = 10 nF, L = 1.043 μ H and R s = 30 Ω. The colors denote the imaginary part of eigenfrequencies. b Measured voltage field distributions at 215 kHz with excitations at the left (upper panel) and right (lower panel) sides. The black star denotes the source and the dashed lines mark the location of the zigzag interface. c , d Experimentally measured edge dispersion from Fourier transform of the fields at the interface with excitations at the left ( c ) and right ( d ) sides, respectively. The colors represent the normalized Fourier intensity and the dashed lines represent the theoretical results. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Dirac equation, proposed by Paul Dirac in 1928 as the first reconciliation of special relativity and quantum mechanics, has a profound impact on the development of many aspects of modern physics [1].",
+        "references": {
+          "1": []
+        },
+        "viewpoints": [
+          "The Dirac equation was proposed by Paul Dirac in 1928.",
+          "The Dirac equation was the first reconciliation of special relativity and quantum mechanics.",
+          "The Dirac equation has a profound impact on the development of many aspects of modern physics."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "While the Dirac equation was mainly studied in the context of particle physics and quantum field theories in the early years, people later found that Dirac physics can also be accessed in crystals with band degeneracies called Dirac points [2].",
+        "references": {
+          "2": {
+            "1": "The article reviews the basic theoretical aspects of graphene.",
+            "2": "Graphene is a one-atom-thick allotrope of carbon.",
+            "3": "Graphene has unusual two-dimensional Dirac-like electronic excitations.",
+            "4": "Dirac electrons in graphene can be controlled by the application of external electric fields.",
+            "5": "Dirac electrons in graphene can be controlled by the application of external magnetic fields.",
+            "6": "Dirac electrons in graphene can be controlled by altering sample geometry.",
+            "7": "Dirac electrons in graphene can be controlled by altering sample topology.",
+            "8": "Dirac electrons in graphene behave in unusual ways in tunneling.",
+            "9": "Dirac electrons in graphene behave in unusual ways in confinement.",
+            "10": "Dirac electrons in graphene behave in unusual ways in the integer quantum Hall effect.",
+            "11": "The article discusses the electronic properties of graphene stacks.",
+            "12": "The electronic properties of graphene stacks vary with stacking order.",
+            "13": "The electronic properties of graphene stacks vary with the number of layers.",
+            "14": "Edge states in graphene depend on the edge termination being zigzag.",
+            "15": "Edge states in graphene depend on the edge termination being armchair.",
+            "16": "Edge states in graphene affect the physical properties of nanoribbons.",
+            "17": "Different types of disorder modify the Dirac equation in graphene.",
+            "18": "Modification of the Dirac equation by disorder leads to unusual spectroscopic properties in graphene.",
+            "19": "Modification of the Dirac equation by disorder leads to unusual transport properties in graphene.",
+            "20": "The article presents the effects of electron-electron interactions in single layer graphene.",
+            "21": "The article presents the effects of electron-electron interactions in multilayer graphene.",
+            "22": "The article presents the effects of electron-phonon interactions in single layer graphene.",
+            "23": "The article presents the effects of electron-phonon interactions in multilayer graphene."
+          }
+        },
+        "viewpoints": [
+          "The Dirac equation was mainly studied in the context of particle physics and quantum field theories in the early years.",
+          "People later found that Dirac physics can be accessed in crystals with band degeneracies called Dirac points."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In the low-energy limit, the states around a Dirac point are effectively governed by the Dirac equation and thus behave as Dirac quasiparticles [3].",
+        "references": {
+          "3": {
+            "1": "Quantum electrodynamics results from the merger of quantum mechanics and relativity theory.",
+            "2": "Quantum electrodynamics provides a clear understanding of phenomena in particle physics.",
+            "3": "Quantum electrodynamics provides a clear understanding of phenomena in cosmology.",
+            "4": "Quantum electrodynamics provides a clear understanding of phenomena in astrophysics.",
+            "5": "Quantum electrodynamics provides a clear understanding of phenomena in quantum chemistry.",
+            "6": "The ideas underlying quantum electrodynamics influence the theory of condensed matter.",
+            "7": "Quantum relativistic effects are usually minute in the known experimental systems.",
+            "8": "The known experimental systems in condensed matter theory can be described accurately by the non-relativistic Schrödinger equation.",
+            "9": "The study is an experimental study of a condensed-matter system.",
+            "10": "The condensed-matter system studied is graphene, a single atomic layer of carbon.",
+            "11": "In the studied condensed-matter system, electron transport is essentially governed by Dirac's relativistic equation.",
+            "12": "The charge carriers in graphene mimic relativistic particles with zero rest mass.",
+            "13": "The charge carriers in graphene have an effective 'speed of light' of approximately 10⁶ m s⁻¹.",
+            "14": "The study reveals a variety of unusual phenomena.",
+            "15": "The unusual phenomena are characteristic of two-dimensional Dirac fermions.",
+            "16": "Graphene's conductivity never falls below a minimum value corresponding to the quantum unit of conductance, even when concentrations of charge carriers tend to zero.",
+            "17": "The integer quantum Hall effect in graphene is anomalous.",
+            "18": "The integer quantum Hall effect in graphene occurs at half-integer filling factors.",
+            "19": "The cyclotron mass mₐ of massless carriers in graphene is described by E = mₐc*².",
+            "20": "The two-dimensional system is interesting in itself.",
+            "21": "The two-dimensional system allows access to the subtle and rich physics of quantum electrodynamics.",
+            "22": "The two-dimensional system allows access to quantum electrodynamics in a bench-top experiment."
+          }
+        },
+        "viewpoints": [
+          "In the low-energy limit, the states around a Dirac point are effectively governed by the Dirac equation.",
+          "In the low-energy limit, the states around a Dirac point behave as Dirac quasiparticles."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Beyond Dirac, other types of quasiparticles can also emerge in certain band degeneracies [4], [5], such as Weyl quasiparticles [6] and even those not allowed in particle physics [7].",
+        "references": {
+          "4": {
+            "1": "Weyl semimetals are three-dimensional phases of matter with gapless electronic excitations.",
+            "2": "Dirac semimetals are three-dimensional phases of matter with gapless electronic excitations.",
+            "3": "Gapless electronic excitations in Weyl semimetals are protected by topology and symmetry.",
+            "4": "Gapless electronic excitations in Dirac semimetals are protected by topology and symmetry.",
+            "5": "Weyl semimetals are three-dimensional analogs of graphene.",
+            "6": "Dirac semimetals are three-dimensional analogs of graphene.",
+            "7": "Weyl semimetals have generated much recent interest.",
+            "8": "Dirac semimetals have generated much recent interest.",
+            "9": "There are deep connections between Weyl and Dirac semimetals and particle physics models of relativistic chiral fermions.",
+            "10": "There are deep connections between Weyl and Dirac semimetals and solid-state topological insulators, despite Weyl and Dirac semimetals being gapless.",
+            "11": "There are deep connections between Weyl and Dirac semimetals and Chern insulators, despite Weyl and Dirac semimetals being gapless.",
+            "12": "Weyl and Dirac semimetals have characteristic electronic properties.",
+            "13": "The characteristic electronic properties of Weyl and Dirac semimetals lead to protected surface states.",
+            "14": "The characteristic electronic properties of Weyl and Dirac semimetals lead to novel responses to applied electric fields.",
+            "15": "The characteristic electronic properties of Weyl and Dirac semimetals lead to novel responses to applied magnetic fields.",
+            "16": "The theoretical foundations of Weyl and Dirac semimetals are reviewed.",
+            "17": "The proposed realizations of Weyl and Dirac semimetals in solid-state systems are reviewed.",
+            "18": "Recent experiments on candidate materials of Weyl and Dirac semimetals are reviewed.",
+            "19": "The relation of Weyl and Dirac semimetals to other states of matter is reviewed."
+          },
+          "5": {
+            "1": "Quantum materials hosting Weyl fermions have initiated a new era of research in condensed matter physics.",
+            "2": "Weyl fermions were first proposed in 1929 within the context of particle physics.",
+            "3": "Weyl fermions have not yet been observed as elementary particles.",
+            "4": "In 2015, Weyl fermions were detected as collective electronic excitations.",
+            "5": "Weyl fermions were detected in the strong spin–orbit coupled material tantalum arsenide, TaAs.",
+            "6": "The discovery of Weyl fermions was followed by numerous experimental explorations of Weyl phenomena in materials.",
+            "7": "The discovery of Weyl fermions was followed by numerous theoretical explorations of Weyl phenomena in materials.",
+            "8": "Weyl materials naturally allow exploration of the topological index associated with Weyl fermions.",
+            "9": "Weyl materials naturally allow exploration of the divergent Berry curvature field of Weyl fermions.",
+            "10": "Weyl materials naturally allow exploration of the topological bulk–boundary correspondence.",
+            "11": "The topological bulk–boundary correspondence in Weyl materials gives rise to protected conducting surface states.",
+            "12": "The review covers the broader class of Weyl topological phenomena in materials.",
+            "13": "The review starts with the observation of emergent Weyl fermions in the bulk of TaAs family crystals.",
+            "14": "The review includes the observation of Fermi arc states on the surface of TaAs family crystals.",
+            "15": "The observations of Weyl fermions and Fermi arc states in TaAs were made using photoemission spectroscopy.",
+            "16": "Exotic optical responses have been observed in these Weyl materials.",
+            "17": "Exotic magnetic responses have been observed in these Weyl materials.",
+            "18": "Progress has been made in developing related chiral materials.",
+            "19": "The conceptual development of high-fold chiral fermions generalizes Weyl fermions.",
+            "20": "Observations of high-fold chiral fermion phases were made using the RhSi family of crystals as an example.",
+            "21": "Recent advances in Weyl line phases have been made in magnetic topological materials.",
+            "22": "The Review aims to provide an introduction to the basic concepts underlying Weyl physics in condensed matter.",
+            "23": "The Review aims to introduce representative materials related to Weyl physics.",
+            "24": "The Review covers the electronic structures and topology of these materials as revealed by spectroscopic studies.",
+            "25": "The authors hope this work serves as a guide for future theoretical explorations of chiral fermions.",
+            "26": "The authors hope this work serves as a guide for future experimental explorations of chiral fermions.",
+            "27": "The work aims to guide explorations of related topological quantum systems with potentially enhanced functionalities."
+          },
+          "6": {
+            "1": "Novel phases emerge from the interplay of electron correlations and strong spin-orbit interactions.",
+            "2": "The investigation focuses on novel phases emerging from electron correlations and strong spin-orbit interactions.",
+            "3": "The study focuses on describing the topological semimetal, which is a three-dimensional phase of a magnetic solid.",
+            "4": "The topological semimetal may be realized in a class of pyrochlore iridates based on calculations using the LDA+U method.",
+            "5": "Y₂Ir₂O₇ is mentioned as an example of pyrochlore iridates where the topological semimetal may be realized.",
+            "6": "The topological semimetal state is a three-dimensional analog of graphene.",
+            "7": "The topological semimetal state has linearly dispersing excitations.",
+            "8": "The topological semimetal state provides a condensed-matter realization of Weyl fermions.",
+            "9": "The Weyl fermions in the topological semimetal state obey a two-component Dirac equation.",
+            "10": "The topological semimetal state exhibits remarkable topological properties.",
+            "11": "The topological properties of the topological semimetal state are manifested by surface states in the form of Fermi arcs.",
+            "12": "Fermi arcs are surface states that are impossible to realize in purely two-dimensional band structures.",
+            "13": "For intermediate correlation strengths, the topological semimetal state is the ground state of the pyrochlore iridates.",
+            "14": "The ground state of the pyrochlore iridates coexists with noncollinear magnetic order.",
+            "15": "A narrow window of magnetic “axion” insulator may be present in the pyrochlore iridates.",
+            "16": "An applied magnetic field induces a metallic ground state in the pyrochlore iridates."
+          },
+          "7": {
+            "1": "In quantum field theory, fermions are classified into three varieties: Majorana, Weyl, and Dirac.",
+            "2": "The classification of fermions as Majorana, Weyl, and Dirac is incomplete in solid-state systems.",
+            "3": "There are several additional types of crystal symmetry-protected free fermionic excitations in solid-state systems.",
+            "4": "Linear and quadratic three-band crossings stabilized by space group symmetries in solid-state systems with spin-orbit coupling and time-reversal symmetry are exhaustively classified.",
+            "5": "Linear and quadratic six-band crossings stabilized by space group symmetries in solid-state systems with spin-orbit coupling and time-reversal symmetry are exhaustively classified.",
+            "6": "Linear and quadratic eight-band crossings stabilized by space group symmetries in solid-state systems with spin-orbit coupling and time-reversal symmetry are exhaustively classified.",
+            "7": "Several distinct types of fermions arise in solid-state systems.",
+            "8": "The distinct types of fermions are differentiated by their degeneracies at and along high-symmetry points.",
+            "9": "The distinct types of fermions are differentiated by their degeneracies at and along high-symmetry lines.",
+            "10": "The distinct types of fermions are differentiated by their degeneracies at and along high-symmetry surfaces.",
+            "11": "The presence of Fermi arcs in non-Weyl systems is a notable consequence of these fermions.",
+            "12": "The existence of Dirac lines is a notable consequence of these fermions.",
+            "13": "Ab initio calculations identify a number of materials that have exotic fermions close to the Fermi level."
+          }
+        },
+        "viewpoints": [
+          "Other types of quasiparticles can emerge in certain band degeneracies beyond Dirac.",
+          "Weyl quasiparticles are an example of other types of quasiparticles that can emerge in certain band degeneracies.",
+          "Some quasiparticles that emerge in certain band degeneracies are not allowed in particle physics."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "These quasiparticles, apart from their own theoretical interest as fundamental particles, are responsible for many topological phenomena and offer new insights for controlling the transport in crystals.",
+        "references": {},
+        "viewpoints": [
+          "These quasiparticles have their own theoretical interest as fundamental particles.",
+          "These quasiparticles are responsible for many topological phenomena.",
+          "These quasiparticles offer new insights for controlling the transport in crystals."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "For example, Dirac quasiparticles in graphene give rise to the quantum Hall effect under a magnetic field [2], [3], and their valley contrasting physics opens a route to manipulate electrons and forms the basis for valleytronics [8], [9].",
+        "references": {
+          "2": {
+            "1": "The article reviews the basic theoretical aspects of graphene.",
+            "2": "Graphene is a one-atom-thick allotrope of carbon.",
+            "3": "Graphene has unusual two-dimensional Dirac-like electronic excitations.",
+            "4": "Dirac electrons in graphene can be controlled by the application of external electric fields.",
+            "5": "Dirac electrons in graphene can be controlled by the application of external magnetic fields.",
+            "6": "Dirac electrons in graphene can be controlled by altering sample geometry.",
+            "7": "Dirac electrons in graphene can be controlled by altering sample topology.",
+            "8": "Dirac electrons in graphene behave in unusual ways in tunneling.",
+            "9": "Dirac electrons in graphene behave in unusual ways in confinement.",
+            "10": "Dirac electrons in graphene behave in unusual ways in the integer quantum Hall effect.",
+            "11": "The article discusses the electronic properties of graphene stacks.",
+            "12": "The electronic properties of graphene stacks vary with stacking order.",
+            "13": "The electronic properties of graphene stacks vary with the number of layers.",
+            "14": "Edge states in graphene depend on the edge termination being zigzag.",
+            "15": "Edge states in graphene depend on the edge termination being armchair.",
+            "16": "Edge states in graphene affect the physical properties of nanoribbons.",
+            "17": "Different types of disorder modify the Dirac equation in graphene.",
+            "18": "Modification of the Dirac equation by disorder leads to unusual spectroscopic properties in graphene.",
+            "19": "Modification of the Dirac equation by disorder leads to unusual transport properties in graphene.",
+            "20": "The article presents the effects of electron-electron interactions in single layer graphene.",
+            "21": "The article presents the effects of electron-electron interactions in multilayer graphene.",
+            "22": "The article presents the effects of electron-phonon interactions in single layer graphene.",
+            "23": "The article presents the effects of electron-phonon interactions in multilayer graphene."
+          },
+          "3": {
+            "1": "Quantum electrodynamics results from the merger of quantum mechanics and relativity theory.",
+            "2": "Quantum electrodynamics provides a clear understanding of phenomena in particle physics.",
+            "3": "Quantum electrodynamics provides a clear understanding of phenomena in cosmology.",
+            "4": "Quantum electrodynamics provides a clear understanding of phenomena in astrophysics.",
+            "5": "Quantum electrodynamics provides a clear understanding of phenomena in quantum chemistry.",
+            "6": "The ideas underlying quantum electrodynamics influence the theory of condensed matter.",
+            "7": "Quantum relativistic effects are usually minute in the known experimental systems.",
+            "8": "The known experimental systems in condensed matter theory can be described accurately by the non-relativistic Schrödinger equation.",
+            "9": "The study is an experimental study of a condensed-matter system.",
+            "10": "The condensed-matter system studied is graphene, a single atomic layer of carbon.",
+            "11": "In the studied condensed-matter system, electron transport is essentially governed by Dirac's relativistic equation.",
+            "12": "The charge carriers in graphene mimic relativistic particles with zero rest mass.",
+            "13": "The charge carriers in graphene have an effective 'speed of light' of approximately 10⁶ m s⁻¹.",
+            "14": "The study reveals a variety of unusual phenomena.",
+            "15": "The unusual phenomena are characteristic of two-dimensional Dirac fermions.",
+            "16": "Graphene's conductivity never falls below a minimum value corresponding to the quantum unit of conductance, even when concentrations of charge carriers tend to zero.",
+            "17": "The integer quantum Hall effect in graphene is anomalous.",
+            "18": "The integer quantum Hall effect in graphene occurs at half-integer filling factors.",
+            "19": "The cyclotron mass mₐ of massless carriers in graphene is described by E = mₐc*².",
+            "20": "The two-dimensional system is interesting in itself.",
+            "21": "The two-dimensional system allows access to the subtle and rich physics of quantum electrodynamics.",
+            "22": "The two-dimensional system allows access to quantum electrodynamics in a bench-top experiment."
+          },
+          "8": {
+            "1": "The investigation focuses on physical properties that can be used to distinguish the valley degree of freedom.",
+            "2": "The analysis applies to systems where inversion symmetry is broken.",
+            "3": "Graphene systems are used as examples in the investigation.",
+            "4": "The pseudospin associated with the valley index of carriers has an intrinsic magnetic moment.",
+            "5": "The intrinsic magnetic moment of the pseudospin is analogous to the Bohr magneton for the electron spin.",
+            "6": "A valley dependent Berry phase effect exists.",
+            "7": "The valley dependent Berry phase effect can result in valley contrasting Hall transport.",
+            "8": "Carriers in different valleys can turn into opposite directions transverse to an in-plane electric field due to the valley dependent Berry phase effect.",
+            "9": "The effects of the intrinsic magnetic moment and valley dependent Berry phase can be used to generate and detect valley polarization.",
+            "10": "Valley polarization can be generated and detected by magnetic means.",
+            "11": "Valley polarization can be generated and detected by electric means.",
+            "12": "The capability to generate and detect valley polarization forms the basis for valley-based electronics applications."
+          },
+          "9": {
+            "1": "Semiconductor technology is currently based on the manipulation of electronic charge.",
+            "2": "Electrons have additional degrees of freedom, such as spin and valley.",
+            "3": "The spin and valley degrees of freedom of electrons can be used to encode and process information.",
+            "4": "There has been significant progress in manipulating electron spin for semiconductor spintronic devices over the past several decades.",
+            "5": "The progress in manipulating electron spin has been motivated by potential spin-based information processing applications.",
+            "6": "The progress in manipulating electron spin has been motivated by potential spin-based storage applications.",
+            "7": "Experimental progress towards manipulating the valley degree of freedom for potential valleytronic devices has been limited until very recently.",
+            "8": "We review the latest advances in valleytronics.",
+            "9": "The latest advances in valleytronics have largely been enabled by the isolation of 2D materials.",
+            "10": "2D materials, such as graphene and semiconducting transition metal dichalcogenides, host an easily accessible electronic valley degree of freedom.",
+            "11": "The electronic valley degree of freedom in 2D materials allows for dynamic control."
+          }
+        },
+        "viewpoints": [
+          "Dirac quasiparticles in graphene give rise to the quantum Hall effect under a magnetic field.",
+          "The valley contrasting physics of Dirac quasiparticles opens a route to manipulate electrons.",
+          "The valley contrasting physics of Dirac quasiparticles forms the basis for valleytronics."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "In recent years, nonconservative systems have appeared as a new playground for studying band degeneracies [10], [11].",
+        "references": {
+          "10": {
+            "1": "The Hamiltonian H specifies the energy levels of a quantum theory.",
+            "2": "The Hamiltonian H specifies the time evolution of a quantum theory.",
+            "3": "A standard axiom of quantum mechanics requires that the Hamiltonian H be Hermitian.",
+            "4": "Hermiticity guarantees that the energy spectrum is real.",
+            "5": "Hermiticity guarantees that time evolution is unitary (probability-preserving).",
+            "6": "This paper describes an alternative formulation of quantum mechanics.",
+            "7": "In this alternative formulation, the mathematical axiom of Hermiticity is replaced by the condition of space-time reflection (PT) symmetry.",
+            "8": "The condition of space-time reflection (PT) symmetry is considered physically transparent.",
+            "9": "If the Hamiltonian H has an unbroken PT symmetry, then the spectrum is real.",
+            "10": "Examples of PT-symmetric non-Hermitian quantum-mechanical Hamiltonians are H = p^2 + i x^3.",
+            "11": "Examples of PT-symmetric non-Hermitian quantum-mechanical Hamiltonians are H = p^2 - x^4.",
+            "12": "The energy levels of the PT-symmetric non-Hermitian quantum-mechanical Hamiltonians are all real.",
+            "13": "The energy levels of the PT-symmetric non-Hermitian quantum-mechanical Hamiltonians are all positive.",
+            "14": "The question is posed whether a PT-symmetric Hamiltonian H specifies a physical quantum theory with positive norms of states.",
+            "15": "The question is posed whether a PT-symmetric Hamiltonian H specifies a physical quantum theory with unitary time evolution.",
+            "16": "If the Hamiltonian H has an unbroken PT symmetry, then it also has another symmetry represented by a linear operator C.",
+            "17": "In terms of the symmetry represented by the linear operator C, one can construct a time-independent inner product.",
+            "18": "The constructed time-independent inner product has a positive-definite norm.",
+            "19": "PT-symmetric Hamiltonians describe a new class of complex quantum theories.",
+            "20": "The new class of complex quantum theories has positive probabilities.",
+            "21": "The new class of complex quantum theories has unitary time evolution.",
+            "22": "The Lee model is an excellent example of a PT-symmetric Hamiltonian.",
+            "23": "The renormalized Lee-model Hamiltonian has a negative-norm 'ghost' state.",
+            "24": "Renormalization causes the Lee-model Hamiltonian to become non-Hermitian.",
+            "25": "For the past 50 years, many attempts have been made to find a physical interpretation for the 'ghost' in the Lee model.",
+            "26": "All attempts to find a physical interpretation for the 'ghost' in the Lee model failed.",
+            "27": "The correct interpretation of the ghost is that the non-Hermitian Lee-model Hamiltonian is PT-symmetric.",
+            "28": "The C operator for the Lee model is calculated exactly and in closed form.",
+            "29": "The ghost in the Lee model is shown to be a physical state having a positive norm.",
+            "30": "The ideas of PT symmetry are illustrated using many quantum-mechanical models.",
+            "31": "The ideas of PT symmetry are illustrated using many quantum-field-theoretic models."
+          },
+          "11": []
+        },
+        "viewpoints": [
+          "Nonconservative systems have appeared as a new playground for studying band degeneracies in recent years."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "In contrast to closed systems, nonconservative systems modeled by non-Hermitian Hamiltonians typically host exceptional points where both eigenvalues and eigenstates coalesce [12], [13], [14].",
+        "references": {
+          "12": [],
+          "13": {
+            "1": "Exceptional points are branch point singularities in the parameter space of a system.",
+            "2": "At exceptional points, two or more eigenvalues coalesce.",
+            "3": "At exceptional points, the corresponding eigenvectors of the coalescing eigenvalues become degenerate.",
+            "4": "The peculiar degeneracies at exceptional points are distinct features of non-Hermitian systems.",
+            "5": "Non-Hermitian systems do not obey conservation laws.",
+            "6": "Non-Hermitian systems exchange energy with the surrounding environment.",
+            "7": "Non-Hermiticity has been of great interest in recent years.",
+            "8": "Non-Hermiticity is particularly of interest in connection with the quantum mechanical notion of parity-time symmetry.",
+            "9": "Hamiltonians satisfying parity-time symmetry can exhibit entirely real spectra.",
+            "10": "The concepts of non-Hermitian physics, parity-time symmetry, and exceptional points have become of particular interest in photonics.",
+            "11": "Optical gain and loss can be integrated in nanoscale structures.",
+            "12": "Optical gain and loss can be controlled with high resolution in nanoscale structures.",
+            "13": "Nanoscale structures realize an ideal playground for non-Hermitian physics, parity-time symmetry, and exceptional points in photonics.",
+            "14": "Controlling dissipation and amplification in a nanophotonic system allows the emergence of exceptional point singularities.",
+            "15": "The emergence of exceptional point singularities dramatically alters the overall response of nanophotonic systems.",
+            "16": "Exceptional point singularities lead to a range of exotic optical functionalities.",
+            "17": "Exceptional point singularities are associated with abrupt phase transitions in the eigenvalue spectrum.",
+            "18": "The concepts of exceptional points in photonics enable ultrasensitive measurements.",
+            "19": "The concepts of exceptional points in photonics enable superior manipulation of the modal content of multimode lasers.",
+            "20": "The concepts of exceptional points in photonics enable adiabatic control of topological energy transfer for mode conversion.",
+            "21": "The concepts of exceptional points in photonics enable adiabatic control of topological energy transfer for polarization conversion.",
+            "22": "Non-Hermitian degeneracies have been exploited in exotic laser systems.",
+            "23": "Non-Hermitian degeneracies have been exploited in new nonlinear optics schemes.",
+            "24": "Non-Hermitian degeneracies have been exploited in exotic scattering features in open systems.",
+            "25": "The paper reviews the opportunities offered by exceptional point physics in photonics.",
+            "26": "The paper discusses recent developments in theoretical research based on photonic exceptional points.",
+            "27": "The paper discusses recent developments in experimental research based on photonic exceptional points.",
+            "28": "The paper examines future opportunities in the area of exceptional point physics in photonics from basic science to applied technology."
+          },
+          "14": {
+            "1": "Non-Hermitian theory is a theoretical framework.",
+            "2": "Non-Hermitian theory is used to describe open systems.",
+            "3": "Non-Hermitian theory offers a powerful tool for characterizing the intrinsic degrees of freedom of a system.",
+            "4": "Non-Hermitian theory offers a powerful tool for characterizing the interactions of a system with the external environment.",
+            "5": "The non-Hermitian framework consists of mathematical structures.",
+            "6": "The mathematical structures of the non-Hermitian framework are fundamentally different from those of Hermitian theories.",
+            "7": "The mathematical structures of the non-Hermitian framework underpin novel approaches for precisely tailoring non-Hermitian systems for applications.",
+            "8": "The mathematical structures of the non-Hermitian framework give rise to topologies not found in Hermitian systems.",
+            "9": "This Review provides an overview of non-Hermitian topology.",
+            "10": "The overview of non-Hermitian topology in this Review establishes the relationship of non-Hermitian topology with the behaviors of complex eigenvalues.",
+            "11": "The overview of non-Hermitian topology in this Review establishes the relationship of non-Hermitian topology with the behaviors of biorthogonal eigenvectors.",
+            "12": "The Review gives special attention to exceptional points.",
+            "13": "Exceptional points are branch-point singularities on the complex eigenvalue manifolds.",
+            "14": "Exceptional points exhibit nontrivial topological properties.",
+            "15": "The Review discusses recent developments in non-Hermitian band topology.",
+            "16": "The Review discusses the non-Hermitian skin effect as a development in non-Hermitian band topology.",
+            "17": "The Review discusses non-Hermitian topological classifications as a development in non-Hermitian band topology."
+          }
+        },
+        "viewpoints": [
+          "Nonconservative systems are modeled by non-Hermitian Hamiltonians.",
+          "Nonconservative systems typically host exceptional points where both eigenvalues and eigenstates coalesce."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Dirac points and other Hermitian band degeneracies, on the other hand, are usually unstable under non-Hermitian perturbations [15], [16], [17] and can only survive under symmetry protection [18], [19].",
+        "references": {
+          "15": {
+            "1": "The Dirac cone underlies many unique electronic properties of graphene.",
+            "2": "The Dirac cone underlies many unique electronic properties of topological insulators.",
+            "3": "The band structure of a Dirac cone consists of two conical bands touching at a single point.",
+            "4": "The band structure of a Dirac cone has been realized for photons in waveguide arrays.",
+            "5": "The band structure of a Dirac cone has been realized for atoms in optical lattices.",
+            "6": "The band structure of a Dirac cone has been realized through accidental degeneracy.",
+            "7": "Deformation of the Dirac cone often reveals intriguing properties.",
+            "8": "The quantum Hall effect is an example of the intriguing properties revealed by deformation of the Dirac cone.",
+            "9": "A constant magnetic field breaks the Dirac cone into isolated Landau levels in the context of the quantum Hall effect.",
+            "10": "Exceptional points are phenomena where two resonances coincide in both their positions and widths.",
+            "11": "Exceptional points are also known as parity–time symmetry breaking points.",
+            "12": "Exceptional points lead to counter-intuitive phenomena such as loss-induced transparency.",
+            "13": "Exceptional points lead to counter-intuitive phenomena such as unidirectional transmission or reflection.",
+            "14": "Exceptional points lead to counter-intuitive phenomena such as lasers with reversed pump dependence or single-mode operation.",
+            "15": "Dirac cones and exceptional points are connected.",
+            "16": "It was theoretically suggested that certain non-Hermitian perturbations can deform a Dirac cone.",
+            "17": "It was theoretically suggested that certain non-Hermitian perturbations can spawn a ring of exceptional points by deforming a Dirac cone.",
+            "18": "An 'exceptional ring' is experimentally demonstrated in a photonic crystal slab.",
+            "19": "Angle-resolved reflection measurements of the photonic crystal slab reveal that the peaks of reflectivity follow the conical band structure of a Dirac cone resulting from accidental degeneracy.",
+            "20": "The complex eigenvalues of the system in the photonic crystal slab are deformed into a two-dimensional flat band enclosed by an exceptional ring.",
+            "21": "The deformation into a two-dimensional flat band arises from the dissimilar radiation rates of dipole and quadrupole resonances.",
+            "22": "The dissimilar radiation rates of dipole and quadrupole resonances play a role analogous to the loss and gain in parity–time symmetric systems.",
+            "23": "The radiation existing in any open system can fundamentally alter its physical properties.",
+            "24": "The fundamental alteration of physical properties by radiation in open systems was previously expected only in the presence of material loss and gain."
+          },
+          "16": {
+            "1": "The ideas of topology have found tremendous success in closed physical systems.",
+            "2": "Even richer properties exist in the more general open or dissipative framework compared to closed physical systems.",
+            "3": "A bulk Fermi arc develops from non-Hermitian radiative losses in an open system of photonic crystal slabs.",
+            "4": "A bulk Fermi arc is both theoretically proposed and experimentally demonstrated.",
+            "5": "Half-integer topological charges are discovered in the polarization of far-field radiation around the bulk Fermi arc.",
+            "6": "The development of a bulk Fermi arc is a direct consequence of the non-Hermitian topological properties of exceptional points.",
+            "7": "The discovery of half-integer topological charges is a direct consequence of the non-Hermitian topological properties of exceptional points.",
+            "8": "Resonances coincide in their frequencies and linewidths at exceptional points.",
+            "9": "The work connects the fields of topological photonics, non-Hermitian physics, and singular optics.",
+            "10": "The work provides a framework to explore more complex non-Hermitian topological systems."
+          },
+          "17": {
+            "1": "Weyl points are isolated degeneracies in reciprocal space.",
+            "2": "Weyl points act as monopoles of the Berry curvature.",
+            "3": "The topological charge of Weyl points makes Weyl points inherently robust to Hermitian perturbations of the system.",
+            "4": "Non-Hermitian effects are usually inaccessible in condensed-matter systems.",
+            "5": "Non-Hermitian effects are an important feature of photonic systems.",
+            "6": "When non-Hermitian effects are added to an otherwise Hermitian Weyl material, they are predicted to spread the Berry charge of the Weyl point onto a ring of exceptional points.",
+            "7": "The spread of the Berry charge onto a ring of exceptional points creates a Weyl exceptional ring.",
+            "8": "The creation of a Weyl exceptional ring fundamentally alters the properties of a Weyl material.",
+            "9": "The implications of the Weyl exceptional ring are observed using real-space measurements of an evanescently coupled bipartite optical waveguide array.",
+            "10": "The observation involves probing the effects of the Weyl exceptional ring on the Fermi arc surface states.",
+            "11": "The observation involves probing the effects of the Weyl exceptional ring on the bulk diffraction properties of the two constituent sublattices.",
+            "12": "The implications are observed in an experimental realization of a distributed Berry charge in a topological material."
+          },
+          "18": {
+            "1": "Non-Hermitian systems containing gain or loss commonly host exceptional point degeneracies.",
+            "2": "Diabolic points play a key role in topological transitions and related phenomena in Hermitian systems.",
+            "3": "Non-Hermitian systems containing gain or loss do not commonly host diabolic points.",
+            "4": "Non-Hermitian Hamiltonians with parity-time symmetry can have real spectra.",
+            "5": "Non-Hermitian Hamiltonians with parity-time symmetry generally have nonorthogonal eigenstates.",
+            "6": "Nonorthogonal eigenstates in non-Hermitian Hamiltonians with parity-time symmetry impede the emergence of diabolic points.",
+            "7": "A pair of symmetries can induce real eigenvalues in non-Hermitian systems.",
+            "8": "A pair of symmetries can induce pairwise eigenstate orthogonality in non-Hermitian systems.",
+            "9": "Inducing real eigenvalues and pairwise eigenstate orthogonality allows non-Hermitian systems to host Dirac points.",
+            "10": "Inducing real eigenvalues and pairwise eigenstate orthogonality allows non-Hermitian systems to host other diabolic points.",
+            "11": "Non-Hermitian models can exhibit the Haldane-type topological phase transition, previously limited to the Hermitian regime.",
+            "12": "Non-Hermitian models can exhibit Landau levels without magnetic fields, previously limited to the Hermitian regime.",
+            "13": "Non-Hermitian models can exhibit Weyl points, previously limited to the Hermitian regime.",
+            "14": "There is a new connection between non-Hermitian physics and the rich phenomenology of diabolic points."
+          },
+          "19": {
+            "1": "Mass is commonly considered an intrinsic property of matter.",
+            "2": "Modern physics reveals that particle masses have complex origins.",
+            "3": "The Higgs mechanism is an example of a complex origin of particle mass in high-energy physics.",
+            "4": "In crystal lattices such as graphene, relativistic Dirac particles can exist as low-energy quasiparticles.",
+            "5": "In crystal lattices such as graphene, the masses of low-energy quasiparticles are imparted by lattice symmetry-breaking perturbations.",
+            "6": "Mass-generating mechanisms for quasiparticles assume Hermiticity.",
+            "7": "Hermiticity involves the conservation of energy in detail.",
+            "8": "Using a photonic synthetic lattice, it is shown experimentally that Dirac masses can be generated by non-Hermitian perturbations.",
+            "9": "Non-Hermitian perturbations are based on optical gain and loss.",
+            "10": "The spacetime engineering of gain and loss-induced Dirac mass is explored.",
+            "11": "The spacetime engineering of gain and loss-induced Dirac mass affects the quasiparticles.",
+            "12": "Quasiparticles undergo Klein tunnelling at spatial boundaries.",
+            "13": "A local breaking of a non-Hermitian symmetry can produce a new flux non-conservation effect at the domain walls.",
+            "14": "At a temporal boundary that abruptly flips the sign of the Dirac mass, a variant of the time-reflection phenomenon is observed.",
+            "15": "In the non-relativistic limit, the Dirac quasiparticle reverses its velocity at a temporal boundary that abruptly flips the sign of the Dirac mass.",
+            "16": "In the relativistic limit, the original velocity is retained at a temporal boundary that abruptly flips the sign of the Dirac mass."
+          }
+        },
+        "viewpoints": [
+          "Dirac points and other Hermitian band degeneracies are usually unstable under non-Hermitian perturbations.",
+          "Dirac points and other Hermitian band degeneracies can only survive under symmetry protection."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "In the latter case, the Dirac quasiparticles still obey the conventional Hermitian Dirac equation and behave much like those in Hermitian systems [18], [19].",
+        "references": {
+          "18": {
+            "1": "Non-Hermitian systems containing gain or loss commonly host exceptional point degeneracies.",
+            "2": "Diabolic points play a key role in topological transitions and related phenomena in Hermitian systems.",
+            "3": "Non-Hermitian systems containing gain or loss do not commonly host diabolic points.",
+            "4": "Non-Hermitian Hamiltonians with parity-time symmetry can have real spectra.",
+            "5": "Non-Hermitian Hamiltonians with parity-time symmetry generally have nonorthogonal eigenstates.",
+            "6": "Nonorthogonal eigenstates in non-Hermitian Hamiltonians with parity-time symmetry impede the emergence of diabolic points.",
+            "7": "A pair of symmetries can induce real eigenvalues in non-Hermitian systems.",
+            "8": "A pair of symmetries can induce pairwise eigenstate orthogonality in non-Hermitian systems.",
+            "9": "Inducing real eigenvalues and pairwise eigenstate orthogonality allows non-Hermitian systems to host Dirac points.",
+            "10": "Inducing real eigenvalues and pairwise eigenstate orthogonality allows non-Hermitian systems to host other diabolic points.",
+            "11": "Non-Hermitian models can exhibit the Haldane-type topological phase transition, previously limited to the Hermitian regime.",
+            "12": "Non-Hermitian models can exhibit Landau levels without magnetic fields, previously limited to the Hermitian regime.",
+            "13": "Non-Hermitian models can exhibit Weyl points, previously limited to the Hermitian regime.",
+            "14": "There is a new connection between non-Hermitian physics and the rich phenomenology of diabolic points."
+          },
+          "19": {
+            "1": "Mass is commonly considered an intrinsic property of matter.",
+            "2": "Modern physics reveals that particle masses have complex origins.",
+            "3": "The Higgs mechanism is an example of a complex origin of particle mass in high-energy physics.",
+            "4": "In crystal lattices such as graphene, relativistic Dirac particles can exist as low-energy quasiparticles.",
+            "5": "In crystal lattices such as graphene, the masses of low-energy quasiparticles are imparted by lattice symmetry-breaking perturbations.",
+            "6": "Mass-generating mechanisms for quasiparticles assume Hermiticity.",
+            "7": "Hermiticity involves the conservation of energy in detail.",
+            "8": "Using a photonic synthetic lattice, it is shown experimentally that Dirac masses can be generated by non-Hermitian perturbations.",
+            "9": "Non-Hermitian perturbations are based on optical gain and loss.",
+            "10": "The spacetime engineering of gain and loss-induced Dirac mass is explored.",
+            "11": "The spacetime engineering of gain and loss-induced Dirac mass affects the quasiparticles.",
+            "12": "Quasiparticles undergo Klein tunnelling at spatial boundaries.",
+            "13": "A local breaking of a non-Hermitian symmetry can produce a new flux non-conservation effect at the domain walls.",
+            "14": "At a temporal boundary that abruptly flips the sign of the Dirac mass, a variant of the time-reflection phenomenon is observed.",
+            "15": "In the non-relativistic limit, the Dirac quasiparticle reverses its velocity at a temporal boundary that abruptly flips the sign of the Dirac mass.",
+            "16": "In the relativistic limit, the original velocity is retained at a temporal boundary that abruptly flips the sign of the Dirac mass."
+          }
+        },
+        "viewpoints": [
+          "In cases where Dirac points survive under symmetry protection, Dirac quasiparticles still obey the conventional Hermitian Dirac equation.",
+          "Dirac quasiparticles behave much like those in Hermitian systems when they survive under symmetry protection."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "To date, it is still unclear whether unique non-Hermitian physics can be obtained for conventional band degeneracies like Dirac points.",
+        "references": {},
+        "viewpoints": [
+          "It is still unclear whether unique non-Hermitian physics can be obtained for conventional band degeneracies like Dirac points."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "In this work, we design and experimentally realize a non-Hermitian extension of the graphene lattice with a complex conjugate pair of Dirac cones.",
+        "references": {},
+        "viewpoints": [
+          "The authors design a non-Hermitian extension of the graphene lattice.",
+          "The authors experimentally realize a non-Hermitian extension of the graphene lattice.",
+          "The authors' non-Hermitian extension of the graphene lattice has a complex conjugate pair of Dirac cones."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Unlike all previously realized Dirac cones in either Hermitian or non-Hermitian systems [3], [19], the Dirac cones in our study are intrinsically non-Hermitian.",
+        "references": {
+          "3": {
+            "1": "Quantum electrodynamics results from the merger of quantum mechanics and relativity theory.",
+            "2": "Quantum electrodynamics provides a clear understanding of phenomena in particle physics.",
+            "3": "Quantum electrodynamics provides a clear understanding of phenomena in cosmology.",
+            "4": "Quantum electrodynamics provides a clear understanding of phenomena in astrophysics.",
+            "5": "Quantum electrodynamics provides a clear understanding of phenomena in quantum chemistry.",
+            "6": "The ideas underlying quantum electrodynamics influence the theory of condensed matter.",
+            "7": "Quantum relativistic effects are usually minute in the known experimental systems.",
+            "8": "The known experimental systems in condensed matter theory can be described accurately by the non-relativistic Schrödinger equation.",
+            "9": "The study is an experimental study of a condensed-matter system.",
+            "10": "The condensed-matter system studied is graphene, a single atomic layer of carbon.",
+            "11": "In the studied condensed-matter system, electron transport is essentially governed by Dirac's relativistic equation.",
+            "12": "The charge carriers in graphene mimic relativistic particles with zero rest mass.",
+            "13": "The charge carriers in graphene have an effective 'speed of light' of approximately 10⁶ m s⁻¹.",
+            "14": "The study reveals a variety of unusual phenomena.",
+            "15": "The unusual phenomena are characteristic of two-dimensional Dirac fermions.",
+            "16": "Graphene's conductivity never falls below a minimum value corresponding to the quantum unit of conductance, even when concentrations of charge carriers tend to zero.",
+            "17": "The integer quantum Hall effect in graphene is anomalous.",
+            "18": "The integer quantum Hall effect in graphene occurs at half-integer filling factors.",
+            "19": "The cyclotron mass mₐ of massless carriers in graphene is described by E = mₐc*².",
+            "20": "The two-dimensional system is interesting in itself.",
+            "21": "The two-dimensional system allows access to the subtle and rich physics of quantum electrodynamics.",
+            "22": "The two-dimensional system allows access to quantum electrodynamics in a bench-top experiment."
+          },
+          "19": {
+            "1": "Mass is commonly considered an intrinsic property of matter.",
+            "2": "Modern physics reveals that particle masses have complex origins.",
+            "3": "The Higgs mechanism is an example of a complex origin of particle mass in high-energy physics.",
+            "4": "In crystal lattices such as graphene, relativistic Dirac particles can exist as low-energy quasiparticles.",
+            "5": "In crystal lattices such as graphene, the masses of low-energy quasiparticles are imparted by lattice symmetry-breaking perturbations.",
+            "6": "Mass-generating mechanisms for quasiparticles assume Hermiticity.",
+            "7": "Hermiticity involves the conservation of energy in detail.",
+            "8": "Using a photonic synthetic lattice, it is shown experimentally that Dirac masses can be generated by non-Hermitian perturbations.",
+            "9": "Non-Hermitian perturbations are based on optical gain and loss.",
+            "10": "The spacetime engineering of gain and loss-induced Dirac mass is explored.",
+            "11": "The spacetime engineering of gain and loss-induced Dirac mass affects the quasiparticles.",
+            "12": "Quasiparticles undergo Klein tunnelling at spatial boundaries.",
+            "13": "A local breaking of a non-Hermitian symmetry can produce a new flux non-conservation effect at the domain walls.",
+            "14": "At a temporal boundary that abruptly flips the sign of the Dirac mass, a variant of the time-reflection phenomenon is observed.",
+            "15": "In the non-relativistic limit, the Dirac quasiparticle reverses its velocity at a temporal boundary that abruptly flips the sign of the Dirac mass.",
+            "16": "In the relativistic limit, the original velocity is retained at a temporal boundary that abruptly flips the sign of the Dirac mass."
+          }
+        },
+        "viewpoints": [
+          "The Dirac cones in the authors' study are intrinsically non-Hermitian.",
+          "The Dirac cones in the authors' study differ from all previously realized Dirac cones in either Hermitian or non-Hermitian systems."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "That is, the Dirac quasiparticles are governed by non-Hermitian Dirac Hamiltonians with a valley-dependent background imaginary term (see Fig. 1 and Eq. (2) below).",
+        "references": {},
+        "viewpoints": [
+          "The Dirac quasiparticles in the authors' study are governed by non-Hermitian Dirac Hamiltonians.",
+          "The non-Hermitian Dirac Hamiltonians have a valley-dependent background imaginary term."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "This also differs from the trivial scenario where a uniform background loss added to a Hermitian graphene lattice induces the same imaginary term for both valleys.",
+        "references": {},
+        "viewpoints": [
+          "The non-Hermitian Dirac Hamiltonians differ from the scenario where a uniform background loss added to a Hermitian graphene lattice induces the same imaginary term for both valleys."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Given these differences, we dub the excitations around the non-Hermitian Dirac cones in our system non-Hermitian Dirac quasiparticles.",
+        "references": {},
+        "viewpoints": [
+          "The authors dub the excitations around the non-Hermitian Dirac cones in their system non-Hermitian Dirac quasiparticles."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "We fabricate a circuit lattice to implement the theoretical model.",
+        "references": {},
+        "viewpoints": [
+          "The authors fabricate a circuit lattice to implement the theoretical model."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Owing to the sharp imaginary eigenvalue contrast, one of the Dirac cones with a shorter lifetime is wiped out in the long time limit, making our system effectively exhibit single Dirac cone physics.",
+        "references": {},
+        "viewpoints": [
+          "Due to the sharp imaginary eigenvalue contrast, one of the Dirac cones with a shorter lifetime is wiped out in the long time limit.",
+          "The system effectively exhibits single Dirac cone physics in the long time limit."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "In the experiments, we consistently find that only one of the valleys can be excited without using any tailored excitation (Fig. 2).",
+        "references": {},
+        "viewpoints": [
+          "In the experiments, the authors consistently find that only one of the valleys can be excited without using any tailored excitation."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "This situation also holds for the massive case where the Dirac cones are gapped by a staggered on-site potential, and vortex states can be simply excited by a point source (Fig. 3).",
+        "references": {},
+        "viewpoints": [
+          "The situation where only one of the valleys can be excited holds for the massive case where the Dirac cones are gapped by a staggered on-site potential.",
+          "In the massive case, vortex states can be simply excited by a point source."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "We then use the massive non-Hermitian Dirac cones to construct mass-flipping interfaces.",
+        "references": {},
+        "viewpoints": [
+          "The authors use the massive non-Hermitian Dirac cones to construct mass-flipping interfaces."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "It is found that the valley kink states inherit the non-Hermitian properties from the bulk and have valley-dependent lifetimes.",
+        "references": {},
+        "viewpoints": [
+          "The valley kink states inherit the non-Hermitian properties from the bulk.",
+          "The valley kink states have valley-dependent lifetimes."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Their propagation is effectively unidirectional and the valley flipping is significantly suppressed due to the difference in the imaginary eigenvalues between the two valleys (Figs. 4 and 5).",
+        "references": {},
+        "viewpoints": [
+          "The propagation of valley kink states is effectively unidirectional.",
+          "Valley flipping of kink states is significantly suppressed due to the difference in the imaginary eigenvalues between the two valleys."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "These results clearly reveal that Dirac cones can be induced in non-Hermitian lattices and can have interesting non-Hermitian physics beyond their Hermitian counterparts.",
+        "references": {},
+        "viewpoints": [
+          "The results reveal that Dirac cones can be induced in non-Hermitian lattices.",
+          "Dirac cones in non-Hermitian lattices can have interesting non-Hermitian physics beyond their Hermitian counterparts."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56882-y_with_abstracts",
+    "base_id": "s41467-025-56882-y",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56882-y_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

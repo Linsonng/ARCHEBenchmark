@@ -1,0 +1,905 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "In recent decades, drug-resistant pathogens have emerged as major global health challenge [1] . These bacteria are notorious for their ability to evade commonly used antibiotics through various multi-drug resistance mechanisms [2] , [3] . The six most frequently occurring pathogens associated with drug-resistant infections include Escherichia coli , Staphylococcus aureus , Klebsiella pneumoniae , Streptococcus pneumoniae , Acinetobacter baumannii , and Pseudomonas aeruginosa , which were linked to an estimated 3.57 million deaths related to antibiotic resistance in 2019 [4] , [5] . The acronym ESKAPEE (often simplified to ESKAPE) is commonly used to refer to a closely related group of highly virulent and antibiotic-resistant bacterial pathogens that includes all the above, except for Streptococcus pneumoniae , and adds Enterobacter spp. and Enterococcus faecium . Given the scale of this threat, new approaches to develop effective antibiotics against these pathogens are urgently needed [3] , [6] . In this context, antimicrobial peptides (AMPs) are increasingly being explored as promising candidates to combat ESKAPE pathogens [7] . Naturally occurring AMPs are integral components of the innate immune system of many species, including humans, where they play a crucial role in preventing infections [8] . To harness this potential, researchers have developed both natural and synthetic AMPs valued for their fast and efficient bactericidal actvity [7] , [9] . AMPs are typically short, cationic, amphipathic peptides with variable sequences and structures [8] . Initially, they were regarded as a uniform group of molecules that exert their antimicrobial effects primarily by disrupting bacterial membranes through mechanisms such as pore formation, insertion into the lipid bilayer, disruption of the membrane lipid backbone, or transmembrane channel formation [8] . However, it is now recognized that the mechanism of action of AMPs is more diverse and can also involve interaction with intracellular targets, enhancing their potential as candidate therapeutics against drug-resistant microbes [10] . Interestingly, a subclass of AMPs has been shown to undergo amyloid formation, although the importance of their antimicrobial activity remains unclear [11] . We recently designed antimicrobial peptides with a novel mechanism of action that induces aggregation of a target protein, thereby causing loss of function [12] , [13] , [14] , [15] , [16] . The mode of action of these peptides is based on aggregation-prone regions (APRs) within their polypeptide sequence, which can drive the misfolding and aggregation of proteins containing homologous APRs [17] . Most proteins have at least one APR in their sequence [18] and targeting can be highly specific. APRs are typically located in the hydrophobic core of globular proteins or in transmembrane (TM) regions of TM proteins [18] , which are sites where mutation rates are intrinsically low. For instance, peptides designed to target beta-lactamases exhibit a knock-out phenotype, meaning they show conditional toxicity in the presence of beta-lactam antibiotics [12] . These peptides can even differentiate between related classes of beta-lactamases whose APRs differ by a few amino acids. An alternative design principle for antibacterial aggregating peptides is to find APRs that occur in multiple proteins within the bacterial proteome [14] , thereby targeting a broader range of proteins simultaneously. This strategy aims to reduce the impact of single resistance-conferring mutations [19] and cause widespread aggregation, leading to proteostatic collapse. Given the known value of bacterial membrane homeostasis as a target for broad spectrum antibiotics, we explored whether disruption of membrane protein folding could yield broad-spectrum antibacterial activity against ESKAPE pathogens. For this purpose, we turned to a peptide called P33 that we previously identified in a screen against E. coli using randomly selected APRs of E. coli proteins [14] . The screen was designed to select APRs that have a maximal number of homologous fragments occurring in different proteins across the E. coli proteome, with the goal of inducing the aggregation of multiple proteins at once and causing a failure of protein homeostasis [14] . P33 emerged as a potent hit and is based on an APR from the transmembrane region of E. coli threonine/homoserine exporter RhtA (UniProt identifier RHTA_ECOLI, Fig. 1A ). The peptide follows our typical design pattern, consisting of a tandem repeat of an APR of RhtA ( 97 LGIAVAL 103 ,), flanked by arginine residues and separated by a linker (to yield R-LGIAVAL-RR-P-R-LGIAVAL-RR, Fig. 1A ). The arginine residues are known to be critical for bacterial cell uptake and hence the overall antibiotic effect [19] . This profile of hydrophobic peptides with a positive charge is also seen in ‘classical’ AMPs that act directly on the membrane [8] . In a subsequent study on resistance development in E. coli , we observed a lack of resistance build-up against this peptide, including in the hypermutating E. coli strain XL-1 Red [19] , consistent with a mode of action involving multiple targets. Fig. 1: The mechanism of action of P33 is dependent on protein aggregation. A Structural views of the RhtA protein image generated with Yasara. The peptide P33 is derived from an APR sequence of the E. coli threonine/homoserine exporter RhtA (left). The peptide is designed according to the standard pattern, which consists of an APR of RhtA (L 97 GIAVAL 103 ) repeated in tandem, flanked by arginine residues and separated by a linker (right). Super resolution structured illumination microscopy (SIM) of E. coli ATCC 25922 cells stained with pFTAA upon treatment with (B) the beta-lactam antibiotic Ampicillin, ( C) the classic membrane disrupting polymyxin antibiotic colistin, or (D , E) P33. Images show a single representative micrograph of one out of three independent repeats performed. F Atomic force microscopy-based infrared spectroscopy (AFM-IR) image of E. coli ATC 15922 treated with P33, highlighting inclusion body (blue), cytoplasm (orange) and epoxy (green) spectra indicated. The experiment was independently repeated three times with similar results. G Normalized AFM-IR spectra from locations indicated in (F). The inclusion body spectra exhibit a shoulder at 1630 cm-1, indicative of amyloid formation. Scanning Electron Microscopy (SEM) image of E.coli cells treated with (H) the vehicle control (I) P33 or (J) colistin. The experiments were conducted independently on three separate trials. K , L SIM microscopy of E. coli cells treated with FITC-P33 (K, green channel) and stained with the amyloid dye HS169, a red-shifted version of pFTAA (L, red channel). Fluorescence-activated cell sorting (FACS) analysis of 40,000 E. coli cells, treated with FITC-P33 for 10 minutes ( M ), 30 minutes (N) and 1 hour (O) . Cells were stained with Sytox for viability assessment and HS169 to monitor aggregation simultaneously. Full size image In the current study, we focused on the mode of action and broad-spectrum activity of P33 and discovered it causes aggregation of many proteins, with a bias towards transmembrane proteins and ribosomal components. Given the importance of this type of proteins as drug targets in broad-spectrum antibiotics, we screened for activity against other ESKAPE pathogens in which the targets are conserved and found broad-spectrum activity of our peptide, with a conserved mode of action across the tested spectrum. Although these linear hydrophobic peptides are challenging drug candidates, we obtained encouraging results in models of urinary tract infection and sepsis.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "In recent decades, drug-resistant pathogens have emerged as major global health challenge [1].",
+        "references": {
+          "1": {
+            "1": "The ESKAPE pathogens (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, and Enterobacter species) are the major cause of nosocomial infections worldwide.",
+            "2": "The ESKAPE pathogens are multidrug resistant.",
+            "3": "The multidrug resistance of ESKAPE pathogens has brought serious health challenges to many countries worldwide.",
+            "4": "The multidrug resistance of ESKAPE pathogens has brought an economic burden on many countries worldwide.",
+            "5": "The narrative review explores different emerging alternative therapeutic strategies for treating ESKAPE pathogens.",
+            "6": "The narrative review includes combination antibiotics as an emerging alternative therapeutic strategy.",
+            "7": "The narrative review includes antimicrobial peptides as an emerging alternative therapeutic strategy.",
+            "8": "The narrative review includes bacteriophage therapies as an emerging alternative therapeutic strategy.",
+            "9": "The narrative review includes photodynamic therapies as an emerging alternative therapeutic strategy.",
+            "10": "The narrative review discusses the merits of emerging alternative therapeutic strategies for treating ESKAPE pathogens.",
+            "11": "The narrative review discusses the limitations of emerging alternative therapeutic strategies for treating ESKAPE pathogens.",
+            "12": "The narrative review discusses the future prospects of emerging alternative therapeutic strategies for treating ESKAPE pathogens.",
+            "13": "ESKAPE pathogens exhibit resistance to drugs using different mechanisms.",
+            "14": "One mechanism of drug resistance exhibited by ESKAPE pathogens is drug inactivation by irreversible enzyme cleavage.",
+            "15": "One mechanism of drug resistance exhibited by ESKAPE pathogens is drug-binding site alteration.",
+            "16": "One mechanism of drug resistance exhibited by ESKAPE pathogens is diminution in drug permeability.",
+            "17": "One mechanism of drug resistance exhibited by ESKAPE pathogens is the increment of drug efflux to reduce drug accumulation.",
+            "18": "One mechanism of drug resistance exhibited by ESKAPE pathogens is biofilm production.",
+            "19": "The scientific community has shown significant interest in using novel strategies against ESKAPE pathogens.",
+            "20": "The novel strategies against ESKAPE pathogens have numerous benefits.",
+            "21": "The novel strategies against ESKAPE pathogens have some limitations.",
+            "22": "The novel strategies against ESKAPE pathogens may have limitations due to the instability of the therapeutic agents.",
+            "23": "The novel strategies against ESKAPE pathogens may have limitations due to the toxicity of the therapeutic agents.",
+            "24": "The novel strategies against ESKAPE pathogens may have limitations if the host develops an immune response against the therapeutic agents.",
+            "25": "Comprehension of the resistance mechanisms of ESKAPE pathogens is necessary to further develop therapeutic approaches.",
+            "26": "Comprehension of the resistance mechanisms of ESKAPE pathogens is necessary to modify therapeutic approaches.",
+            "27": "The development or modification of therapeutic approaches is necessary to overcome health challenges posed by ESKAPE pathogens.",
+            "28": "The development or modification of therapeutic approaches is necessary to overcome the barriers of bacterial resistance posed by ESKAPE pathogens."
+          }
+        },
+        "viewpoints": [
+          "Drug-resistant pathogens have emerged as a major global health challenge in recent decades."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "These bacteria are notorious for their ability to evade commonly used antibiotics through various multi-drug resistance mechanisms [2] , [3].",
+        "references": {
+          "2": {
+            "1": "The human-bacterial association is long-known.",
+            "2": "The human-bacterial association is well-established in terms of augmentations of human health.",
+            "3": "The human-bacterial association is well-established in terms of attenuation of human health.",
+            "4": "The incidents of nosocomial infections caused by the ESKAPE pathogens are growing."
+          },
+          "3": {
+            "1": "Antibiotic resistance is a global health emergency.",
+            "2": "Resistance has been detected to all antibiotics currently in clinical use.",
+            "3": "There are only a few novel antibiotics currently in the development pipeline.",
+            "4": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical to recognizing global patterns of resistance.",
+            "5": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical to improving the use of current drugs.",
+            "6": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical for the design of new drugs that are less susceptible to resistance development.",
+            "7": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical for developing novel strategies to combat resistance.",
+            "8": "The Review explores recent advances in understanding how resistance genes contribute to the biology of the host.",
+            "9": "The Review explores new structural details of relevant molecular events underpinning resistance.",
+            "10": "The Review explores the identification of new resistance gene families.",
+            "11": "The Review explores the interactions between different resistance mechanisms.",
+            "12": "The Review discusses how to use information about resistance mechanisms to develop the next generation of antimicrobial therapies."
+          }
+        },
+        "viewpoints": [
+          "Drug-resistant bacteria are notorious for their ability to evade commonly used antibiotics.",
+          "Drug-resistant bacteria use various multi-drug resistance mechanisms to evade antibiotics."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "The six most frequently occurring pathogens associated with drug-resistant infections include Escherichia coli, Staphylococcus aureus, Klebsiella pneumoniae, Streptococcus pneumoniae, Acinetobacter baumannii, and Pseudomonas aeruginosa, which were linked to an estimated 3.57 million deaths related to antibiotic resistance in 2019 [4] , [5].",
+        "references": {
+          "4": {
+            "1": "Antimicrobial resistance is a major threat to human health globally.",
+            "2": "Previous publications have estimated the effect of antimicrobial resistance on incidence of infections.",
+            "3": "Previous publications have estimated the effect of antimicrobial resistance on deaths.",
+            "4": "Previous publications have estimated the effect of antimicrobial resistance on hospital length of stay.",
+            "5": "Previous publications have estimated the effect of antimicrobial resistance on health-care costs for specific pathogen-drug combinations.",
+            "6": "Previous publications have focused on select locations in estimating these effects.",
+            "7": "This study presents the most comprehensive estimates of antimicrobial resistance burden known to the authors to date.",
+            "8": "The study estimated deaths attributable to bacterial antimicrobial resistance for 23 pathogens and 88 pathogen-drug combinations.",
+            "9": "The study estimated disability-adjusted life-years (DALYs) attributable to bacterial antimicrobial resistance for 23 pathogens and 88 pathogen-drug combinations.",
+            "10": "The study estimated deaths associated with bacterial antimicrobial resistance for 23 pathogens and 88 pathogen-drug combinations.",
+            "11": "The study estimated disability-adjusted life-years (DALYs) associated with bacterial antimicrobial resistance for 23 pathogens and 88 pathogen-drug combinations.",
+            "12": "These estimates were made for 204 countries and territories in 2019.",
+            "13": "The study obtained data from systematic literature reviews.",
+            "14": "The study obtained data from hospital systems.",
+            "15": "The study obtained data from surveillance systems.",
+            "16": "The study obtained data from other sources.",
+            "17": "The data covered 471 million individual records or isolates.",
+            "18": "The data covered 7585 study-location-years.",
+            "19": "Predictive statistical modelling was used to produce estimates of antimicrobial resistance burden.",
+            "20": "Estimates of antimicrobial resistance burden were produced for all locations, including those with no data.",
+            "21": "The approach used in the study can be divided into five broad components.",
+            "22": "One component is the number of deaths where infection played a role.",
+            "23": "Another component is the proportion of infectious deaths attributable to a given infectious syndrome.",
+            "24": "Another component is the proportion of infectious syndrome deaths attributable to a given pathogen.",
+            "25": "Another component is the percentage of a given pathogen resistant to an antibiotic of interest.",
+            "26": "Another component is the excess risk of death or duration of an infection associated with this resistance.",
+            "27": "The study estimated disease burden based on two counterfactual scenarios.",
+            "28": "One counterfactual scenario was deaths attributable to antimicrobial resistance, assuming all drug-resistant infections were replaced by drug-susceptible infections.",
+            "29": "Another counterfactual scenario was deaths associated with antimicrobial resistance, assuming all drug-resistant infections were replaced by no infection.",
+            "30": "The study generated 95% uncertainty intervals for final estimates by taking the 25th and 975th ordered values across 1000 posterior draws.",
+            "31": "Models were cross-validated for out-of-sample predictive validity.",
+            "32": "Final estimates were aggregated to the global level.",
+            "33": "Final estimates were aggregated to the regional level.",
+            "34": "The predictive statistical models estimated 4.95 million deaths associated with bacterial antimicrobial resistance in 2019.",
+            "35": "The predictive statistical models estimated 1.27 million deaths attributable to bacterial antimicrobial resistance in 2019.",
+            "36": "The estimates provided include a range with uncertainty intervals: 3.62 to 6.57 million for deaths associated with bacterial AMR, and 0.911 to 1.71 million for deaths attributable to bacterial AMR.",
+            "37": "The all-age death rate attributable to resistance was estimated to be highest in western sub-Saharan Africa.",
+            "38": "The all-age death rate attributable to resistance in western sub-Saharan Africa was 27.3 deaths per 100,000, with a range of 20.9-35.3 deaths per 100,000.",
+            "39": "The all-age death rate attributable to resistance was estimated to be lowest in Australasia.",
+            "40": "The all-age death rate attributable to resistance in Australasia was 6.5 deaths per 100,000, with a range of 4.3-9.4 deaths per 100,000.",
+            "41": "Lower respiratory infections accounted for more than 1.5 million deaths associated with resistance in 2019.",
+            "42": "Lower respiratory infections were the most burdensome infectious syndrome in 2019.",
+            "43": "The leading pathogens for deaths associated with resistance were Escherichia coli, Staphylococcus aureus, Klebsiella pneumoniae, Streptococcus pneumoniae, Acinetobacter baumannii, and Pseudomonas aeruginosa.",
+            "44": "These six leading pathogens were responsible for 929,000 deaths attributable to antimicrobial resistance in 2019.",
+            "45": "These six leading pathogens were responsible for 3.57 million deaths associated with antimicrobial resistance in 2019.",
+            "46": "The range for deaths attributable to AMR was 660,000 to 1,270,000 deaths.",
+            "47": "The range for deaths associated with AMR was 2.62 to 4.78 million deaths.",
+            "48": "Meticillin-resistant Staphylococcus aureus caused more than 100,000 deaths attributable to antimicrobial resistance in 2019.",
+            "49": "Six other pathogen-drug combinations each caused between 50,000 and 100,000 deaths attributable to antimicrobial resistance.",
+            "50": "The six other pathogen-drug combinations are: multidrug-resistant excluding extensively drug-resistant tuberculosis, third-generation cephalosporin-resistant Escherichia coli, carbapenem-resistant Acinetobacter baumannii, fluoroquinolone-resistant Escherichia coli, carbapenem-resistant Klebsiella pneumoniae, and third-generation cephalosporin-resistant Klebsiella pneumoniae.",
+            "51": "This study provides the first comprehensive assessment of the global burden of antimicrobial resistance known to the authors.",
+            "52": "This study provides an evaluation of the availability of data on antimicrobial resistance.",
+            "53": "Antimicrobial resistance is a leading cause of death globally.",
+            "54": "The highest burdens of antimicrobial resistance are in low-resource settings.",
+            "55": "Understanding the burden of antimicrobial resistance is crucial to making informed and location-specific policy decisions.",
+            "56": "Understanding the leading pathogen-drug combinations contributing to antimicrobial resistance is crucial to making informed and location-specific policy decisions.",
+            "57": "Informed and location-specific policy decisions are particularly important for infection prevention and control programmes.",
+            "58": "Informed and location-specific policy decisions are particularly important for access to essential antibiotics.",
+            "59": "Informed and location-specific policy decisions are particularly important for research and development of new vaccines and antibiotics.",
+            "60": "There are serious data gaps in many low-income settings.",
+            "61": "The existence of data gaps in many low-income settings emphasizes the need to expand microbiology laboratory capacity.",
+            "62": "The existence of data gaps in many low-income settings emphasizes the need to expand data collection systems.",
+            "63": "Expanding microbiology laboratory capacity and data collection systems is needed to improve understanding of antimicrobial resistance as an important human health threat.",
+            "64": "The study received support from the Bill & Melinda Gates Foundation.",
+            "65": "The study received support from the Wellcome Trust.",
+            "66": "The study received support from the Department of Health and Social Care using UK aid funding managed by the Fleming Fund."
+          },
+          "5": []
+        },
+        "viewpoints": [
+          "Escherichia coli, Staphylococcus aureus, Klebsiella pneumoniae, Streptococcus pneumoniae, Acinetobacter baumannii, and Pseudomonas aeruginosa are the six most frequently occurring pathogens associated with drug-resistant infections.",
+          "These six pathogens were linked to an estimated 3.57 million deaths related to antibiotic resistance in 2019."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The acronym ESKAPEE (often simplified to ESKAPE) is commonly used to refer to a closely related group of highly virulent and antibiotic-resistant bacterial pathogens that includes all the above, except for Streptococcus pneumoniae, and adds Enterobacter spp. and Enterococcus faecium.",
+        "references": {},
+        "viewpoints": [
+          "ESKAPEE refers to a group of highly virulent and antibiotic-resistant bacterial pathogens.",
+          "The ESKAPEE group includes Escherichia coli, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, Enterobacter spp., and Enterococcus faecium.",
+          "Streptococcus pneumoniae is not included in the ESKAPEE group."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Given the scale of this threat, new approaches to develop effective antibiotics against these pathogens are urgently needed [3] , [6].",
+        "references": {
+          "3": {
+            "1": "Antibiotic resistance is a global health emergency.",
+            "2": "Resistance has been detected to all antibiotics currently in clinical use.",
+            "3": "There are only a few novel antibiotics currently in the development pipeline.",
+            "4": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical to recognizing global patterns of resistance.",
+            "5": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical to improving the use of current drugs.",
+            "6": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical for the design of new drugs that are less susceptible to resistance development.",
+            "7": "Understanding the molecular mechanisms that bacteria use to resist antimicrobials is critical for developing novel strategies to combat resistance.",
+            "8": "The Review explores recent advances in understanding how resistance genes contribute to the biology of the host.",
+            "9": "The Review explores new structural details of relevant molecular events underpinning resistance.",
+            "10": "The Review explores the identification of new resistance gene families.",
+            "11": "The Review explores the interactions between different resistance mechanisms.",
+            "12": "The Review discusses how to use information about resistance mechanisms to develop the next generation of antimicrobial therapies."
+          },
+          "6": {
+            "1": "The inappropriate use of antibiotics has led to the emergence of antibiotic-resistant strains.",
+            "2": "An inadequate control of infections has led to the emergence of antibiotic-resistant strains.",
+            "3": "Antibiotic-resistant strains represent a major threat to public health.",
+            "4": "Antibiotic-resistant strains represent a major threat to the global economy.",
+            "5": "Research and development of a new generation of antimicrobials is imperative to mitigate the spread of antibiotic resistance.",
+            "6": "Current research and technology developments have promoted the improvement of antimicrobial agents.",
+            "7": "Antimicrobial agents can selectively interact with a target site, such as a gene or a cellular process.",
+            "8": "Antimicrobial agents can selectively interact with a specific pathogen.",
+            "9": "Antimicrobial peptides exemplify a novel approach to treat infectious diseases.",
+            "10": "Metal nanoparticles exemplify a novel approach to treat infectious diseases.",
+            "11": "Combinatorial treatments have been recently considered as an excellent platform to design the next generation of antibacterial agents.",
+            "12": "Combinatorial treatments have been recently considered as an excellent platform to develop the next generation of antibacterial agents.",
+            "13": "The combination of different drugs offers many advantages over their use as individual chemical moieties.",
+            "14": "The combination of different drugs includes a reduction in dosage of the individual drugs.",
+            "15": "The combination of different drugs results in fewer side effects compared to monotherapy.",
+            "16": "The combination of different drugs offers reduced risk for the development of drug resistance.",
+            "17": "The combination of different drugs provides a better combined response compared to the effect of the individual drugs, due to synergistic effects.",
+            "18": "The combination of different drugs offers wide-spectrum antibacterial action.",
+            "19": "The combination of different drugs provides the ability to attack simultaneously multiple target sites.",
+            "20": "The combination of different drugs can lead to an increased antibacterial effect.",
+            "21": "The selection of the appropriate combinatorial treatment is critical for the successful treatment of infections.",
+            "22": "The design of combinatorial treatments provides a pathway to develop antimicrobial therapeutics with broad-spectrum antibacterial action.",
+            "23": "The design of combinatorial treatments provides a pathway to develop antimicrobial therapeutics with bactericidal instead of bacteriostatic mechanisms of action.",
+            "24": "The design of combinatorial treatments provides a pathway to develop antimicrobial therapeutics with better efficacy against multidrug-resistant bacteria."
+          }
+        },
+        "viewpoints": [
+          "New approaches to develop effective antibiotics against drug-resistant pathogens are urgently needed due to the scale of the threat they pose."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "In this context, antimicrobial peptides (AMPs) are increasingly being explored as promising candidates to combat ESKAPE pathogens [7].",
+        "references": {
+          "7": []
+        },
+        "viewpoints": [
+          "Antimicrobial peptides (AMPs) are increasingly being explored to combat ESKAPE pathogens.",
+          "AMPs are considered promising candidates against ESKAPE pathogens."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Naturally occurring AMPs are integral components of the innate immune system of many species, including humans, where they play a crucial role in preventing infections [8].",
+        "references": {
+          "8": []
+        },
+        "viewpoints": [
+          "Naturally occurring AMPs are integral components of the innate immune system of many species.",
+          "AMPs play a crucial role in preventing infections in humans."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "To harness this potential, researchers have developed both natural and synthetic AMPs valued for their fast and efficient bactericidal activity [7] , [9].",
+        "references": {
+          "7": [],
+          "9": {
+            "1": "Antimicrobial peptides (AMPs) are a class of small peptides that widely exist in nature.",
+            "2": "Antimicrobial peptides (AMPs) are an important part of the innate immune system of different organisms.",
+            "3": "Antimicrobial peptides (AMPs) have a wide range of inhibitory effects against bacteria.",
+            "4": "Antimicrobial peptides (AMPs) have a wide range of inhibitory effects against fungi.",
+            "5": "Antimicrobial peptides (AMPs) have a wide range of inhibitory effects against parasites.",
+            "6": "Antimicrobial peptides (AMPs) have a wide range of inhibitory effects against viruses.",
+            "7": "The emergence of antibiotic-resistant microorganisms resulted in the development of antimicrobial peptides (AMPs).",
+            "8": "The increasing concerns about the use of antibiotics resulted in the development of antimicrobial peptides (AMPs).",
+            "9": "Antimicrobial peptides (AMPs) have a good application prospect in medicine.",
+            "10": "Antimicrobial peptides (AMPs) have a good application prospect in food.",
+            "11": "Antimicrobial peptides (AMPs) have a good application prospect in animal husbandry.",
+            "12": "Antimicrobial peptides (AMPs) have a good application prospect in agriculture.",
+            "13": "Antimicrobial peptides (AMPs) have a good application prospect in aquaculture.",
+            "14": "This review comprehensively and systematically introduces the research progress on antimicrobial peptides (AMPs).",
+            "15": "The review includes the classification of antimicrobial peptides (AMPs).",
+            "16": "The review includes the mechanism of action of antimicrobial peptides (AMPs).",
+            "17": "The review includes design methods for antimicrobial peptides (AMPs).",
+            "18": "The review includes environmental factors affecting the activity of antimicrobial peptides (AMPs).",
+            "19": "The review includes the application status of antimicrobial peptides (AMPs).",
+            "20": "The review includes the prospects of antimicrobial peptides (AMPs) in various fields.",
+            "21": "The review includes problems to be solved concerning antimicrobial peptides (AMPs).",
+            "22": "The review introduces the research progress on antivirus peptides.",
+            "23": "The review gives special attention to anti-coronavirus (COVID-19) peptides.",
+            "24": "The introduction of anti-coronavirus (COVID-19) peptides research progress is given in the context of the COVID-19 pandemic worldwide in 2020."
+          }
+        },
+        "viewpoints": [
+          "Researchers have developed both natural and synthetic AMPs.",
+          "Natural and synthetic AMPs are valued for their fast and efficient bactericidal activity."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "AMPs are typically short, cationic, amphipathic peptides with variable sequences and structures [8].",
+        "references": {
+          "8": []
+        },
+        "viewpoints": [
+          "AMPs are typically short, cationic, amphipathic peptides.",
+          "AMPs have variable sequences and structures."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Initially, they were regarded as a uniform group of molecules that exert their antimicrobial effects primarily by disrupting bacterial membranes through mechanisms such as pore formation, insertion into the lipid bilayer, disruption of the membrane lipid backbone, or transmembrane channel formation [8].",
+        "references": {
+          "8": []
+        },
+        "viewpoints": [
+          "AMPs were initially regarded as a uniform group of molecules.",
+          "AMPs exert their antimicrobial effects primarily by disrupting bacterial membranes.",
+          "Disruption mechanisms of AMPs include pore formation, insertion into the lipid bilayer, disruption of the membrane lipid backbone, and transmembrane channel formation."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "However, it is now recognized that the mechanism of action of AMPs is more diverse and can also involve interaction with intracellular targets, enhancing their potential as candidate therapeutics against drug-resistant microbes [10].",
+        "references": {
+          "10": []
+        },
+        "viewpoints": [
+          "The mechanism of action of AMPs is now recognized as more diverse than initially thought.",
+          "AMPs can interact with intracellular targets.",
+          "Interaction with intracellular targets enhances AMPs' potential as candidate therapeutics against drug-resistant microbes."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Interestingly, a subclass of AMPs has been shown to undergo amyloid formation, although the importance of their antimicrobial activity remains unclear [11].",
+        "references": {
+          "11": {
+            "1": "The amyloid-antimicrobial link hypothesis is based on antimicrobial properties found in human amyloids involved in neurodegenerative and systemic diseases.",
+            "2": "The amyloid-antimicrobial link hypothesis is based on amyloidal structural properties found in antimicrobial peptides (AMPs).",
+            "3": "The study supports the amyloid-antimicrobial link hypothesis by determining the fibril structure of two AMPs from amphibians, uperin 3.5 and aurein 3.3, using cryogenic electron microscopy (cryo-EM).",
+            "4": "The fibril structures of uperin 3.5 and aurein 3.3 reveal amyloid cross-β fibrils of mated β-sheets at atomic resolution.",
+            "5": "Uperin 3.5 formed a 3-blade symmetrical propeller structure.",
+            "6": "Uperin 3.5 has nine peptides per fibril layer.",
+            "7": "Uperin 3.5 includes tight β-sheet interfaces.",
+            "8": "The cross-β cryo-EM structure of uperin 3.5 complements the cross-α fibril conformation previously determined by crystallography.",
+            "9": "The findings substantiate a secondary structure switch mechanism of uperin 3.5.",
+            "10": "The aurein 3.3 arrangement consists of six peptides per fibril layer.",
+            "11": "The aurein 3.3 structure shows kinked β-sheets.",
+            "12": "The kinked β-sheets in aurein 3.3 allow a rounded compactness of the fibril.",
+            "13": "The kinked β-sheets in aurein 3.3 are similar to LARKS (Low-complexity, Amyloid-like, Reversible, Kinked Segments) found in human functional amyloids."
+          }
+        },
+        "viewpoints": [
+          "A subclass of AMPs has been shown to undergo amyloid formation.",
+          "The importance of the antimicrobial activity of amyloid-forming AMPs remains unclear."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "We recently designed antimicrobial peptides with a novel mechanism of action that induces aggregation of a target protein, thereby causing loss of function [12] , [13] , [14] , [15] , [16].",
+        "references": {
+          "12": {
+            "1": "There is an arms race between beta-lactam antibiotics development and co-evolving beta-lactamases.",
+            "2": "Beta-lactamases provide resistance by breaking down beta-lactam rings.",
+            "3": "Certain beta-lactamases tend to aggregate.",
+            "4": "The tendency of certain beta-lactamases to aggregate persists throughout their evolution.",
+            "5": "The aggregation of certain beta-lactamases occurs under the selective pressure of antibiotics on their active sites.",
+            "6": "Existing beta-lactamase active site inhibitors can act as molecular chaperones.",
+            "7": "Beta-lactamase active site inhibitors that act as molecular chaperones promote the proper folding of resistance factors.",
+            "8": "Pept-Ins are synthetic peptides created to exploit the structural weaknesses of beta-lactamases.",
+            "9": "Pept-Ins cause beta-lactamases to misfold into intracellular inclusion bodies.",
+            "10": "The approach of using Pept-Ins restores sensitivity to a wide range of beta-lactam antibiotics in resistant clinical isolates.",
+            "11": "The approach of using Pept-Ins restores sensitivity in resistant clinical isolates, including those with Extended Spectrum variants.",
+            "12": "Extended Spectrum variants of resistant clinical isolates pose significant challenges in medical practice.",
+            "13": "Targeted aggregation of resistance factors could offer a strategy for identifying molecules.",
+            "14": "Targeted aggregation of resistance factors could aid in addressing the global antibiotic resistance crisis."
+          },
+          "13": {
+            "1": "Human amyloids have been shown to interact with viruses.",
+            "2": "Human amyloids have been shown to interfere with viral replication.",
+            "3": "The observation that human amyloids interact with viruses was used to employ a synthetic biology approach.",
+            "4": "The synthetic biology approach involved engineering virus-specific amyloids.",
+            "5": "The engineered amyloids were specific to influenza A proteins.",
+            "6": "The engineered amyloids were specific to Zika proteins.",
+            "7": "Each engineered amyloid shares a homologous aggregation-prone fragment with a specific viral target protein.",
+            "8": "A designer amyloid against PB2 accumulates in influenza A-infected tissue in vivo.",
+            "9": "The designer amyloid acts specifically against influenza A.",
+            "10": "The designer amyloid acts specifically against common PB2 polymorphisms of influenza A.",
+            "11": "The designer amyloid does not act against influenza B.",
+            "12": "Influenza B lacks the homologous fragment present in the designer amyloid's target.",
+            "13": "The sequence specificity of amyloid interactions has the capacity to tune amyloid-virus interactions.",
+            "14": "The sequence specificity of amyloid interactions allows for flexibility to maintain activity on evolutionary diverging variants."
+          },
+          "14": {
+            "1": "Aggregation is a sequence-specific process.",
+            "2": "Aggregation is nucleated by short aggregation-prone regions (APRs).",
+            "3": "Short aggregation-prone regions (APRs) can be exploited to induce aggregation of proteins containing the same APR.",
+            "4": "Most aggregation-prone regions (APRs) are unique within a proteome.",
+            "5": "A small minority of aggregation-prone regions (APRs) occur in many proteins.",
+            "6": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to massive inclusion body formation.",
+            "7": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to lethal inclusion body formation.",
+            "8": "The inclusion body formation contains a large number of proteins.",
+            "9": "The buildup of bacterial resistance against these peptides is slow.",
+            "10": "The approach is effective against drug-resistant clinical isolates of Escherichia coli.",
+            "11": "The approach is effective against drug-resistant clinical isolates of Acinetobacter baumannii.",
+            "12": "The approach reduces bacterial load in a murine bladder infection model.",
+            "13": "Redundant aggregation-prone regions (APRs) are weak points of bacterial protein homeostasis.",
+            "14": "Targeting redundant aggregation-prone regions (APRs) may be an attractive antibacterial strategy."
+          },
+          "15": [],
+          "16": {
+            "1": "Mutant KRAS is a major driver of oncogenesis in many cancers.",
+            "2": "Mutant KRAS is a challenging target for classical small molecule drugs.",
+            "3": "The challenge of targeting mutant KRAS with classical small molecule drugs motivates the exploration of alternative approaches.",
+            "4": "Aggregation-prone regions in the primary sequence of the oncoprotein constitute intrinsic vulnerabilities.",
+            "5": "Intrinsic vulnerabilities in the oncoprotein can be exploited to misfold KRAS into protein aggregates.",
+            "6": "The propensity for intrinsic vulnerabilities is present in wild-type KRAS.",
+            "7": "The propensity for intrinsic vulnerabilities is increased in common oncogenic mutations at positions 12 and 13.",
+            "8": "Synthetic peptides derived from two distinct KRAS APRs could induce the misfolding of oncogenic KRAS.",
+            "9": "Synthetic peptides derived from two distinct KRAS APRs could cause the subsequent loss of function of oncogenic KRAS.",
+            "10": "The misfolding and loss of function of oncogenic KRAS were observed in recombinantly produced protein in solution.",
+            "11": "The misfolding and loss of function of oncogenic KRAS were observed during cell-free translation.",
+            "12": "The misfolding and loss of function of oncogenic KRAS were observed in cancer cells.",
+            "13": "The Pept-ins exerted antiproliferative activity against a range of mutant KRAS cell lines.",
+            "14": "The Pept-ins abrogated tumor growth in a syngeneic lung adenocarcinoma mouse model driven by mutant KRAS G12V.",
+            "15": "The findings provide proof-of-concept that the intrinsic misfolding propensity of the KRAS oncoprotein can be exploited.",
+            "16": "The findings provide proof-of-concept that exploiting the intrinsic misfolding propensity of the KRAS oncoprotein can cause its functional inactivation."
+          }
+        },
+        "viewpoints": [
+          "Researchers recently designed antimicrobial peptides with a novel mechanism of action.",
+          "The novel mechanism of action involves inducing aggregation of a target protein, resulting in loss of function."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The mode of action of these peptides is based on aggregation-prone regions (APRs) within their polypeptide sequence, which can drive the misfolding and aggregation of proteins containing homologous APRs [17].",
+        "references": {
+          "17": {
+            "1": "Cells have evolved a complex molecular network called the protein homeostasis (proteostasis) network.",
+            "2": "The protein homeostasis network is evolved to produce proteins in the appropriate conformation.",
+            "3": "The protein homeostasis network is evolved to maintain proteins in the appropriate conformation.",
+            "4": "The protein homeostasis network is evolved to maintain proteins in the appropriate concentration.",
+            "5": "The protein homeostasis network is evolved to maintain proteins in the appropriate subcellular localization.",
+            "6": "Loss of proteostasis leads to a reduction in cell viability.",
+            "7": "Loss of proteostasis occurs to some degree during healthy ageing.",
+            "8": "Loss of proteostasis is the root cause of a group of diverse human pathologies.",
+            "9": "The accumulation of proteins in aberrant conformations is particularly detrimental to cell viability.",
+            "10": "The aggregation of proteins into specific beta-rich assemblies is particularly detrimental to cell viability.",
+            "11": "The accumulation of proteins in aberrant conformations is challenging to the protein homeostasis network.",
+            "12": "The aggregation of proteins into specific beta-rich assemblies is challenging to the protein homeostasis network.",
+            "13": "Bacteria are especially vulnerable to the disruption of protein homeostasis.",
+            "14": "Bacteria are especially vulnerable to protein misfolding and aggregation.",
+            "15": "The need to adapt to changing environments renders bacteria particularly vulnerable to the disruption of protein homeostasis.",
+            "16": "High protein turnover rates render bacteria particularly vulnerable to protein misfolding and aggregation.",
+            "17": "Targeting bacterial proteostasis could be an attractive strategy for the development of novel antibacterial therapeutics.",
+            "18": "An antibacterial strategy is based on deliberately inducing aggregation of target proteins in bacterial cells.",
+            "19": "The strategy aims to induce a lethal collapse of protein homeostasis.",
+            "20": "The approach exploits the intrinsic aggregation propensity of regions in the hydrophobic core regions of the polypeptide sequence of proteins.",
+            "21": "The hydrophobic core regions of the polypeptide sequence of proteins are genetically conserved.",
+            "22": "The hydrophobic core regions are genetically conserved due to their essential role in protein folding.",
+            "23": "The hydrophobic core regions are genetically conserved due to their essential role in protein stability.",
+            "24": "The molecules were designed to target multiple proteins.",
+            "25": "Targeting multiple proteins is intended to slow down the build-up of resistance.",
+            "26": "More research is required on the strategy.",
+            "27": "Results so far allow the hope that the strategy may contribute to combating multidrug-resistant bacterial infections."
+          }
+        },
+        "viewpoints": [
+          "The mode of action of these peptides is based on aggregation-prone regions (APRs) within their polypeptide sequence.",
+          "APRs can drive the misfolding and aggregation of proteins containing homologous APRs."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Most proteins have at least one APR in their sequence [18] and targeting can be highly specific.",
+        "references": {
+          "18": {
+            "1": "Advances in machine learning-based protein structure prediction have been made.",
+            "2": "We are still far from fully understanding how proteins fold into their native conformation.",
+            "3": "The conventional notion was that polypeptides fold spontaneously to their biologically active states.",
+            "4": "Cellular protein folding often requires context-dependent guidance from molecular chaperones to avoid misfolding.",
+            "5": "The conventional notion about protein folding has been gradually replaced by the understanding that molecular chaperones play a role in preventing misfolding.",
+            "6": "Misfolded proteins can aggregate into larger structures, such as amyloid fibrils.",
+            "7": "Amyloid fibrils perpetuate the misfolding process.",
+            "8": "The misfolding process creates a self-reinforcing cascade.",
+            "9": "There has been a surge in amyloid fibril structures.",
+            "10": "The surge in amyloid fibril structures has deepened our comprehension of amyloid conformations.",
+            "11": "A single polypeptide sequence can exhibit multiple amyloid conformations.",
+            "12": "Multiple amyloid conformations are known as polymorphism.",
+            "13": "The assembly of amyloid polymorphs is not a random process.",
+            "14": "The assembly of amyloid polymorphs is influenced by the specific conditions and tissues in which they originate.",
+            "15": "The kinetics of pathological amyloid assembly are modulated by interactions specific to cells and tissues.",
+            "16": "This modulation is similar to the folding of native proteins.",
+            "17": "The review focuses on the current understanding of how intrinsic protein conformational propensities are modulated by physiological interactions in the cell.",
+            "18": "Intrinsic protein conformational propensities are modulated by pathological interactions in the cell.",
+            "19": "This modulation shapes protein misfolding and aggregation pathology."
+          }
+        },
+        "viewpoints": [
+          "Most proteins have at least one APR in their sequence.",
+          "Targeting APRs can be highly specific."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "APRs are typically located in the hydrophobic core of globular proteins or in transmembrane regions of transmembrane proteins [18], which are sites where mutation rates are intrinsically low.",
+        "references": {
+          "18": {
+            "1": "Advances in machine learning-based protein structure prediction have been made.",
+            "2": "We are still far from fully understanding how proteins fold into their native conformation.",
+            "3": "The conventional notion was that polypeptides fold spontaneously to their biologically active states.",
+            "4": "Cellular protein folding often requires context-dependent guidance from molecular chaperones to avoid misfolding.",
+            "5": "The conventional notion about protein folding has been gradually replaced by the understanding that molecular chaperones play a role in preventing misfolding.",
+            "6": "Misfolded proteins can aggregate into larger structures, such as amyloid fibrils.",
+            "7": "Amyloid fibrils perpetuate the misfolding process.",
+            "8": "The misfolding process creates a self-reinforcing cascade.",
+            "9": "There has been a surge in amyloid fibril structures.",
+            "10": "The surge in amyloid fibril structures has deepened our comprehension of amyloid conformations.",
+            "11": "A single polypeptide sequence can exhibit multiple amyloid conformations.",
+            "12": "Multiple amyloid conformations are known as polymorphism.",
+            "13": "The assembly of amyloid polymorphs is not a random process.",
+            "14": "The assembly of amyloid polymorphs is influenced by the specific conditions and tissues in which they originate.",
+            "15": "The kinetics of pathological amyloid assembly are modulated by interactions specific to cells and tissues.",
+            "16": "This modulation is similar to the folding of native proteins.",
+            "17": "The review focuses on the current understanding of how intrinsic protein conformational propensities are modulated by physiological interactions in the cell.",
+            "18": "Intrinsic protein conformational propensities are modulated by pathological interactions in the cell.",
+            "19": "This modulation shapes protein misfolding and aggregation pathology."
+          }
+        },
+        "viewpoints": [
+          "APRs are typically located in the hydrophobic core of globular proteins.",
+          "APRs are also located in transmembrane regions of transmembrane proteins.",
+          "Mutation rates in these sites are intrinsically low."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "For instance, peptides designed to target beta-lactamases exhibit a knock-out phenotype, meaning they show conditional toxicity in the presence of beta-lactam antibiotics [12].",
+        "references": {
+          "12": {
+            "1": "There is an arms race between beta-lactam antibiotics development and co-evolving beta-lactamases.",
+            "2": "Beta-lactamases provide resistance by breaking down beta-lactam rings.",
+            "3": "Certain beta-lactamases tend to aggregate.",
+            "4": "The tendency of certain beta-lactamases to aggregate persists throughout their evolution.",
+            "5": "The aggregation of certain beta-lactamases occurs under the selective pressure of antibiotics on their active sites.",
+            "6": "Existing beta-lactamase active site inhibitors can act as molecular chaperones.",
+            "7": "Beta-lactamase active site inhibitors that act as molecular chaperones promote the proper folding of resistance factors.",
+            "8": "Pept-Ins are synthetic peptides created to exploit the structural weaknesses of beta-lactamases.",
+            "9": "Pept-Ins cause beta-lactamases to misfold into intracellular inclusion bodies.",
+            "10": "The approach of using Pept-Ins restores sensitivity to a wide range of beta-lactam antibiotics in resistant clinical isolates.",
+            "11": "The approach of using Pept-Ins restores sensitivity in resistant clinical isolates, including those with Extended Spectrum variants.",
+            "12": "Extended Spectrum variants of resistant clinical isolates pose significant challenges in medical practice.",
+            "13": "Targeted aggregation of resistance factors could offer a strategy for identifying molecules.",
+            "14": "Targeted aggregation of resistance factors could aid in addressing the global antibiotic resistance crisis."
+          }
+        },
+        "viewpoints": [
+          "Peptides designed to target beta-lactamases exhibit a knock-out phenotype.",
+          "These peptides show conditional toxicity in the presence of beta-lactam antibiotics."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "These peptides can even differentiate between related classes of beta-lactamases whose APRs differ by a few amino acids.",
+        "references": {},
+        "viewpoints": [
+          "Peptides can differentiate between related classes of beta-lactamases.",
+          "The differentiation is based on differences in APRs by a few amino acids."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "An alternative design principle for antibacterial aggregating peptides is to find APRs that occur in multiple proteins within the bacterial proteome [14], thereby targeting a broader range of proteins simultaneously.",
+        "references": {
+          "14": {
+            "1": "Aggregation is a sequence-specific process.",
+            "2": "Aggregation is nucleated by short aggregation-prone regions (APRs).",
+            "3": "Short aggregation-prone regions (APRs) can be exploited to induce aggregation of proteins containing the same APR.",
+            "4": "Most aggregation-prone regions (APRs) are unique within a proteome.",
+            "5": "A small minority of aggregation-prone regions (APRs) occur in many proteins.",
+            "6": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to massive inclusion body formation.",
+            "7": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to lethal inclusion body formation.",
+            "8": "The inclusion body formation contains a large number of proteins.",
+            "9": "The buildup of bacterial resistance against these peptides is slow.",
+            "10": "The approach is effective against drug-resistant clinical isolates of Escherichia coli.",
+            "11": "The approach is effective against drug-resistant clinical isolates of Acinetobacter baumannii.",
+            "12": "The approach reduces bacterial load in a murine bladder infection model.",
+            "13": "Redundant aggregation-prone regions (APRs) are weak points of bacterial protein homeostasis.",
+            "14": "Targeting redundant aggregation-prone regions (APRs) may be an attractive antibacterial strategy."
+          }
+        },
+        "viewpoints": [
+          "An alternative design principle is to find APRs that occur in multiple proteins within the bacterial proteome.",
+          "This approach targets a broader range of proteins simultaneously."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "This strategy aims to reduce the impact of single resistance-conferring mutations [19] and cause widespread aggregation, leading to proteostatic collapse.",
+        "references": {
+          "19": {
+            "1": "Aggregation can be selectively induced by aggregation-prone regions contained in target proteins.",
+            "2": "Aggregation-inducing antimicrobial peptides contain sequences homologous to aggregation-prone regions of target proteins.",
+            "3": "Aggregation-inducing antimicrobial peptides exert their bactericidal effect by causing aggregation of a large number of proteins.",
+            "4": "The analysis was conducted to better understand the mechanism of action of aggregation-inducing antimicrobial peptides.",
+            "5": "The analysis was conducted to better understand the resistance mechanisms to aggregation-inducing antimicrobial peptides.",
+            "6": "The analysis involved phenotypic, lipidomic, transcriptomic, and genotypic changes in laboratory-derived Pept-in-resistant E. coli mutator cells.",
+            "7": "The analysis showed that the Pept-in resistance mechanism in laboratory-derived mutator cells is dominated by a decreased Pept-in uptake.",
+            "8": "The analysis showed that the Pept-in resistance mechanism in clinical isolates is dominated by a decreased Pept-in uptake.",
+            "9": "Pept-in uptake involves an electrostatic attraction between the Pept-in and the bacterial membrane.",
+            "10": "Pept-in uptake follows a complex mechanism potentially involving many transporters.",
+            "11": "It is more challenging for bacteria to become resistant toward Pept-ins that are less dependent on electrostatic attraction for uptake.",
+            "12": "Future Pept-ins should be selected for the property of being less dependent on electrostatic attraction for uptake."
+          }
+        },
+        "viewpoints": [
+          "The strategy of targeting multiple APRs aims to reduce the impact of single resistance-conferring mutations.",
+          "This approach causes widespread aggregation and leads to proteostatic collapse."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Given the known value of bacterial membrane homeostasis as a target for broad-spectrum antibiotics, we explored whether disruption of membrane protein folding could yield broad-spectrum antibacterial activity against ESKAPE pathogens.",
+        "references": {},
+        "viewpoints": [
+          "Bacterial membrane homeostasis is a known target for broad-spectrum antibiotics.",
+          "Researchers explored whether disrupting membrane protein folding could yield broad-spectrum antibacterial activity against ESKAPE pathogens."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "For this purpose, we turned to a peptide called P33 that we previously identified in a screen against E. coli using randomly selected APRs of E. coli proteins [14].",
+        "references": {
+          "14": {
+            "1": "Aggregation is a sequence-specific process.",
+            "2": "Aggregation is nucleated by short aggregation-prone regions (APRs).",
+            "3": "Short aggregation-prone regions (APRs) can be exploited to induce aggregation of proteins containing the same APR.",
+            "4": "Most aggregation-prone regions (APRs) are unique within a proteome.",
+            "5": "A small minority of aggregation-prone regions (APRs) occur in many proteins.",
+            "6": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to massive inclusion body formation.",
+            "7": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to lethal inclusion body formation.",
+            "8": "The inclusion body formation contains a large number of proteins.",
+            "9": "The buildup of bacterial resistance against these peptides is slow.",
+            "10": "The approach is effective against drug-resistant clinical isolates of Escherichia coli.",
+            "11": "The approach is effective against drug-resistant clinical isolates of Acinetobacter baumannii.",
+            "12": "The approach reduces bacterial load in a murine bladder infection model.",
+            "13": "Redundant aggregation-prone regions (APRs) are weak points of bacterial protein homeostasis.",
+            "14": "Targeting redundant aggregation-prone regions (APRs) may be an attractive antibacterial strategy."
+          }
+        },
+        "viewpoints": [
+          "Researchers turned to a peptide called P33 for disrupting membrane protein folding.",
+          "P33 was previously identified in a screen against E. coli using randomly selected APRs of E. coli proteins."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The screen was designed to select APRs that have a maximal number of homologous fragments occurring in different proteins across the E. coli proteome, with the goal of inducing the aggregation of multiple proteins at once and causing a failure of protein homeostasis [14].",
+        "references": {
+          "14": {
+            "1": "Aggregation is a sequence-specific process.",
+            "2": "Aggregation is nucleated by short aggregation-prone regions (APRs).",
+            "3": "Short aggregation-prone regions (APRs) can be exploited to induce aggregation of proteins containing the same APR.",
+            "4": "Most aggregation-prone regions (APRs) are unique within a proteome.",
+            "5": "A small minority of aggregation-prone regions (APRs) occur in many proteins.",
+            "6": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to massive inclusion body formation.",
+            "7": "When aggregation is nucleated in bacteria by frequently occurring APRs, it leads to lethal inclusion body formation.",
+            "8": "The inclusion body formation contains a large number of proteins.",
+            "9": "The buildup of bacterial resistance against these peptides is slow.",
+            "10": "The approach is effective against drug-resistant clinical isolates of Escherichia coli.",
+            "11": "The approach is effective against drug-resistant clinical isolates of Acinetobacter baumannii.",
+            "12": "The approach reduces bacterial load in a murine bladder infection model.",
+            "13": "Redundant aggregation-prone regions (APRs) are weak points of bacterial protein homeostasis.",
+            "14": "Targeting redundant aggregation-prone regions (APRs) may be an attractive antibacterial strategy."
+          }
+        },
+        "viewpoints": [
+          "The screen was designed to select APRs with a maximal number of homologous fragments in different proteins across the E. coli proteome.",
+          "The goal was to induce aggregation of multiple proteins at once.",
+          "The aggregation was intended to cause a failure of protein homeostasis."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "P33 emerged as a potent hit and is based on an APR from the transmembrane region of E. coli threonine/homoserine exporter RhtA (UniProt identifier RHTA_ECOLI, Fig. 1A).",
+        "references": {},
+        "viewpoints": [
+          "P33 emerged as a potent hit for disrupting membrane protein folding.",
+          "P33 is based on an APR from the transmembrane region of E. coli threonine/homoserine exporter RhtA."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "The peptide follows our typical design pattern, consisting of a tandem repeat of an APR of RhtA ( 97 LGIAVAL 103 ), flanked by arginine residues and separated by a linker (to yield R-LGIAVAL-RR-P-R-LGIAVAL-RR, Fig. 1A).",
+        "references": {},
+        "viewpoints": [
+          "P33 follows a typical design pattern for peptides.",
+          "P33 consists of a tandem repeat of an APR of RhtA, flanked by arginine residues and separated by a linker."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "The arginine residues are known to be critical for bacterial cell uptake and hence the overall antibiotic effect [19].",
+        "references": {
+          "19": {
+            "1": "Aggregation can be selectively induced by aggregation-prone regions contained in target proteins.",
+            "2": "Aggregation-inducing antimicrobial peptides contain sequences homologous to aggregation-prone regions of target proteins.",
+            "3": "Aggregation-inducing antimicrobial peptides exert their bactericidal effect by causing aggregation of a large number of proteins.",
+            "4": "The analysis was conducted to better understand the mechanism of action of aggregation-inducing antimicrobial peptides.",
+            "5": "The analysis was conducted to better understand the resistance mechanisms to aggregation-inducing antimicrobial peptides.",
+            "6": "The analysis involved phenotypic, lipidomic, transcriptomic, and genotypic changes in laboratory-derived Pept-in-resistant E. coli mutator cells.",
+            "7": "The analysis showed that the Pept-in resistance mechanism in laboratory-derived mutator cells is dominated by a decreased Pept-in uptake.",
+            "8": "The analysis showed that the Pept-in resistance mechanism in clinical isolates is dominated by a decreased Pept-in uptake.",
+            "9": "Pept-in uptake involves an electrostatic attraction between the Pept-in and the bacterial membrane.",
+            "10": "Pept-in uptake follows a complex mechanism potentially involving many transporters.",
+            "11": "It is more challenging for bacteria to become resistant toward Pept-ins that are less dependent on electrostatic attraction for uptake.",
+            "12": "Future Pept-ins should be selected for the property of being less dependent on electrostatic attraction for uptake."
+          }
+        },
+        "viewpoints": [
+          "Arginine residues are critical for bacterial cell uptake.",
+          "Arginine residues enhance the overall antibiotic effect of peptides."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "This profile of hydrophobic peptides with a positive charge is also seen in 'classical' AMPs that act directly on the membrane [8].",
+        "references": {
+          "8": []
+        },
+        "viewpoints": [
+          "Hydrophobic peptides with a positive charge are characteristic of 'classical' AMPs.",
+          "'Classical' AMPs act directly on the membrane."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "In a subsequent study on resistance development in E. coli, we observed a lack of resistance build-up against this peptide, including in the hypermutating E. coli strain XL-1 Red [19], consistent with a mode of action involving multiple targets.",
+        "references": {
+          "19": {
+            "1": "Aggregation can be selectively induced by aggregation-prone regions contained in target proteins.",
+            "2": "Aggregation-inducing antimicrobial peptides contain sequences homologous to aggregation-prone regions of target proteins.",
+            "3": "Aggregation-inducing antimicrobial peptides exert their bactericidal effect by causing aggregation of a large number of proteins.",
+            "4": "The analysis was conducted to better understand the mechanism of action of aggregation-inducing antimicrobial peptides.",
+            "5": "The analysis was conducted to better understand the resistance mechanisms to aggregation-inducing antimicrobial peptides.",
+            "6": "The analysis involved phenotypic, lipidomic, transcriptomic, and genotypic changes in laboratory-derived Pept-in-resistant E. coli mutator cells.",
+            "7": "The analysis showed that the Pept-in resistance mechanism in laboratory-derived mutator cells is dominated by a decreased Pept-in uptake.",
+            "8": "The analysis showed that the Pept-in resistance mechanism in clinical isolates is dominated by a decreased Pept-in uptake.",
+            "9": "Pept-in uptake involves an electrostatic attraction between the Pept-in and the bacterial membrane.",
+            "10": "Pept-in uptake follows a complex mechanism potentially involving many transporters.",
+            "11": "It is more challenging for bacteria to become resistant toward Pept-ins that are less dependent on electrostatic attraction for uptake.",
+            "12": "Future Pept-ins should be selected for the property of being less dependent on electrostatic attraction for uptake."
+          }
+        },
+        "viewpoints": [
+          "A lack of resistance build-up against P33 was observed in E. coli.",
+          "This observation included the hypermutating E. coli strain XL-1 Red.",
+          "The lack of resistance is consistent with a mode of action involving multiple targets."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Fig. 1: The mechanism of action of P33 is dependent on protein aggregation.",
+        "references": {},
+        "viewpoints": [
+          "The mechanism of action of P33 depends on protein aggregation."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "A Structural views of the RhtA protein image generated with Yasara.",
+        "references": {},
+        "viewpoints": [
+          "Structural views of the RhtA protein image were generated with Yasara."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "The peptide P33 is derived from an APR sequence of the E. coli threonine/homoserine exporter RhtA (left).",
+        "references": {},
+        "viewpoints": [
+          "The peptide P33 is derived from an APR sequence of the E. coli threonine/homoserine exporter RhtA."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "The peptide is designed according to the standard pattern, which consists of an APR of RhtA (L 97 GIAVAL 103 ) repeated in tandem, flanked by arginine residues and separated by a linker (right).",
+        "references": {},
+        "viewpoints": [
+          "The peptide is designed according to the standard pattern for peptides.",
+          "The design consists of an APR of RhtA repeated in tandem, flanked by arginine residues, and separated by a linker."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Super resolution structured illumination microscopy (SIM) of E. coli ATCC 25922 cells stained with pFTAA upon treatment with (B) the beta-lactam antibiotic Ampicillin, ( C) the classic membrane disrupting polymyxin antibiotic colistin, or (D, E) P33.",
+        "references": {},
+        "viewpoints": [
+          "Super resolution structured illumination microscopy (SIM) was used on E. coli ATCC 25922 cells stained with pFTAA.",
+          "The microscopy followed treatment with the beta-lactam antibiotic Ampicillin, polymyxin antibiotic colistin, or P33."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "Images show a single representative micrograph of one out of three independent repeats performed.",
+        "references": {},
+        "viewpoints": [
+          "The images show a single representative micrograph from three independent repeats performed."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "F Atomic force microscopy-based infrared spectroscopy (AFM-IR) image of E. coli ATC 15922 treated with P33, highlighting inclusion body (blue), cytoplasm (orange) and epoxy (green) spectra indicated.",
+        "references": {},
+        "viewpoints": [
+          "An atomic force microscopy-based infrared spectroscopy (AFM-IR) image of E. coli ATC 15922 treated with P33 was produced.",
+          "The AFM-IR image highlights inclusion body, cytoplasm, and epoxy spectra."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "The experiment was independently repeated three times with similar results.",
+        "references": {},
+        "viewpoints": [
+          "The experiment was independently repeated three times.",
+          "Similar results were obtained in the repeats."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "G Normalized AFM-IR spectra from locations indicated in (F).",
+        "references": {},
+        "viewpoints": [
+          "Normalized AFM-IR spectra were obtained from locations indicated in the previous figure."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "The inclusion body spectra exhibit a shoulder at 1630 cm-1, indicative of amyloid formation.",
+        "references": {},
+        "viewpoints": [
+          "The inclusion body spectra exhibit a shoulder at 1630 cm-1.",
+          "This shoulder is indicative of amyloid formation."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "Scanning Electron Microscopy (SEM) image of E.coli cells treated with (H) the vehicle control (I) P33 or (J) colistin.",
+        "references": {},
+        "viewpoints": [
+          "Scanning Electron Microscopy (SEM) images of E. coli cells were produced.",
+          "The E. coli cells were treated with the vehicle control, P33, or colistin."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "The experiments were conducted independently on three separate trials.",
+        "references": {},
+        "viewpoints": [
+          "The experiments were conducted independently on three separate trials."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "K, L SIM microscopy of E. coli cells treated with FITC-P33 (K, green channel) and stained with the amyloid dye HS169, a red-shifted version of pFTAA (L, red channel).",
+        "references": {},
+        "viewpoints": [
+          "SIM microscopy was conducted on E. coli cells treated with FITC-P33 and stained with the amyloid dye HS169.",
+          "The green channel shows FITC-P33 and the red channel shows HS169, a red-shifted version of pFTAA."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "Fluorescence-activated cell sorting (FACS) analysis of 40,000 E. coli cells, treated with FITC-P33 for 10 minutes (M), 30 minutes (N) and 1 hour (O).",
+        "references": {},
+        "viewpoints": [
+          "Fluorescence-activated cell sorting (FACS) analysis was done on 40,000 E. coli cells.",
+          "E. coli cells were treated with FITC-P33 for 10 minutes, 30 minutes, and 1 hour."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "Cells were stained with Sytox for viability assessment and HS169 to monitor aggregation simultaneously.",
+        "references": {},
+        "viewpoints": [
+          "Cells were stained with Sytox for viability assessment.",
+          "Cells were stained with HS169 to monitor aggregation simultaneously."
+        ]
+      },
+      {
+        "idx": 44,
+        "sentence": "Full size image In the current study, we focused on the mode of action and broad-spectrum activity of P33 and discovered it causes aggregation of many proteins, with a bias towards transmembrane proteins and ribosomal components.",
+        "references": {},
+        "viewpoints": [
+          "The study focused on the mode of action and broad-spectrum activity of P33.",
+          "P33 causes aggregation of many proteins.",
+          "Aggregation by P33 has a bias towards transmembrane proteins and ribosomal components."
+        ]
+      },
+      {
+        "idx": 45,
+        "sentence": "Given the importance of this type of proteins as drug targets in broad-spectrum antibiotics, we screened for activity against other ESKAPE pathogens in which the targets are conserved and found broad-spectrum activity of our peptide, with a conserved mode of action across the tested spectrum.",
+        "references": {},
+        "viewpoints": [
+          "The study screened for activity of P33 against other ESKAPE pathogens.",
+          "The screened targets are conserved in these pathogens.",
+          "P33 showed broad-spectrum activity with a conserved mode of action across the tested spectrum."
+        ]
+      },
+      {
+        "idx": 46,
+        "sentence": "Although these linear hydrophobic peptides are challenging drug candidates, we obtained encouraging results in models of urinary tract infection and sepsis.",
+        "references": {},
+        "viewpoints": [
+          "Linear hydrophobic peptides are challenging drug candidates.",
+          "Encouraging results were obtained with P33 in models of urinary tract infection and sepsis."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56873-z_with_abstracts",
+    "base_id": "s41467-025-56873-z",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56873-z_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

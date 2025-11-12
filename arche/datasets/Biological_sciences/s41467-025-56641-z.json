@@ -1,0 +1,611 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Expansion microscopy (ExM) [1] physically magnifies preserved biological specimens by covalently anchoring biomolecules and/or their labels to a swellable polymer network (such as sodium polyacrylate) synthesized in situ throughout a specimen, followed by chemical softening of the sample, and the addition of water to swell the hydrogel. As the hydrogel swells, the anchored biomolecules and/or their labels are pulled apart from each other isotropically, typically to a physical magnification of ~4-10x in each linear dimension. With an iterative form of ExM [2] , [3] , the expanded sample can be expanded a second time, resulting in an overall physical magnification of beyond 10x in each linear dimension. The net result of the expansion is that biomolecules and/or their labels that are initially localized within the diffraction limit of a traditional optical microscope can now be separated in space to distances far enough to resolve them. Expansion microscopy protocols are increasingly prevalent in biology for visualizing proteins [4] , [5] , [6] , [7] , [8] , nucleic acids [9] , [10] , [11] , and membrane or lipids [6] , [7] , [8] , [11] , [12] , [13] , [14] , [15] , [16] . ExM also enables the visualization of anatomical features of specimens through dense labeling of total protein [4] , [7] , [8] via N -hydroxyl succinimide (NHS) ester staining. While several ExM methods have been reported for membrane or lipid labeling and visualization [6] , [7] , [8] , [11] , [12] , [13] , [14] , [15] , [16] , achieving dense labeling in fixed tissues has remained challenging (Supplementary Table 1 ). Ideally, one would enable uniform and continuous membrane labeling, yielding a high signal-to-background ratio, in order to preserve ultrastructure alongside visualization of associated proteins, in fixed tissues. Such a membrane labeling method would enable not just imaging of proteins with nanoscale registration relevant to membrane landmarks, but facilitate the segmentation and tracing of membranous structures, such as axons and dendrites, on a confocal microscope. Here, we report a strategy to achieve the set of features described above. We rationally and systematically designed innovative membrane labeling probes, and optimized the ExM protocol, to achieve dense labeling of membranes, including plasma membranes, with ExM. We found that our probe, in the context of ExM, labels plasma membranes, mitochondrial membranes, nuclear membranes, ciliary membranes, myelin sheaths, and extracellular vesicle membranes in fixed mouse brain tissue (Supplementary Table 1 ). We named our protocol ultrastructural membrane expansion microscopy (umExM), using the word ultrastructure in the same sense as an earlier protocol in the expansion microscopy community, called ultrastructure expansion microscopy [17] . umExM preserves ultrastructure and enables the visualization of membranous structures in 100 µm-thick slices of fixed mouse brain at a resolution of ~60 nm with excellent uniformity and continuity of membrane labeling as well as a high signal-to-background ratio (40-80 fold higher than background). umExM could support co-visualization of membranous structures along with proteins and RNAs. The dense membrane labeling of umExM enabled the segmentation of neuronal compartments (e.g., cell bodies, dendrites, and axons), and tracing of neuronal processes (e.g., axons). Finally, we explored combining umExM with optical fluctuation imaging, as well as an iterative form of umExM that achieves a higher expansion factor, enabling ~35 nm resolution imaging of membranes with a standard confocal microscope. We anticipate umExM to have a variety of uses in neuroscience and biology, for the investigation of ultrastructure, cellular compartments, and molecular content, in intact tissues, with nanoscale precision.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Expansion microscopy (ExM) [1] physically magnifies preserved biological specimens by covalently anchoring biomolecules and/or their labels to a swellable polymer network (such as sodium polyacrylate) synthesized in situ throughout a specimen, followed by chemical softening of the sample, and the addition of water to swell the hydrogel.",
+        "references": {
+          "1": {
+            "1": "In optical microscopy, refraction is used to magnify images of a specimen.",
+            "2": "Using refraction to magnify images helps resolve fine structural details in optical microscopy.",
+            "3": "A swellable polymer network can be synthesized within a specimen.",
+            "4": "Synthesizing a swellable polymer network within a specimen allows the specimen to be physically expanded.",
+            "5": "Physical expansion of a specimen through a swellable polymer network results in physical magnification.",
+            "6": "Specific labels located within the specimen can be covalently anchored directly to the polymer network.",
+            "7": "Covalently anchoring labels to the polymer network allows labels spaced closer than the optical diffraction limit to be isotropically separated.",
+            "8": "Labels spaced closer than the optical diffraction limit can be optically resolved through this process.",
+            "9": "The process of covalently anchoring labels to a polymer network and resolving them is called expansion microscopy (ExM).",
+            "10": "Expansion microscopy (ExM) can be used to perform scalable superresolution microscopy.",
+            "11": "Expansion microscopy allows scalable superresolution microscopy to be performed with diffraction-limited microscopes.",
+            "12": "Expansion microscopy (ExM) is demonstrated with apparent ~70-nanometer lateral resolution.",
+            "13": "Expansion microscopy (ExM) is demonstrated in both cultured cells and brain tissue.",
+            "14": "Expansion microscopy (ExM) is used to perform three-color superresolution imaging of ~10(7) cubic micrometers of the mouse hippocampus.",
+            "15": "Three-color superresolution imaging of the mouse hippocampus is performed with a conventional confocal microscope using ExM."
+          }
+        },
+        "viewpoints": [
+          "Expansion microscopy physically magnifies preserved biological specimens.",
+          "Expansion microscopy works by covalently anchoring biomolecules and/or their labels to a swellable polymer network.",
+          "The described swellable polymer network can be sodium polyacrylate.",
+          "The polymer network is synthesized in situ throughout a specimen.",
+          "After synthesis, chemical softening of the sample occurs.",
+          "Water is added to swell the hydrogel in expansion microscopy."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "As the hydrogel swells, the anchored biomolecules and/or their labels are pulled apart from each other isotropically, typically to a physical magnification of ~4-10x in each linear dimension.",
+        "references": {},
+        "viewpoints": [
+          "When the hydrogel swells, the anchored biomolecules and/or their labels are pulled apart isotropically.",
+          "The pulling apart of these biomolecules and/or their labels typically results in a physical magnification of approximately 4-10x in each linear dimension."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "With an iterative form of ExM [2], [3], the expanded sample can be expanded a second time, resulting in an overall physical magnification of beyond 10x in each linear dimension.",
+        "references": {
+          "2": {
+            "1": "A method called expansion microscopy has been developed.",
+            "2": "In expansion microscopy, preserved biological specimens are physically magnified.",
+            "3": "In expansion microscopy, specimens are embedded in a densely crosslinked polyelectrolyte gel.",
+            "4": "In expansion microscopy, key labels or biomolecules are anchored to the gel.",
+            "5": "In expansion microscopy, the specimen is mechanically homogenized.",
+            "6": "In expansion microscopy, the gel-specimen composite is swelled by ∼4.5× in linear dimension.",
+            "7": "Iterative expansion microscopy (iExM) is a method described here.",
+            "8": "In iterative expansion microscopy, a sample is expanded ∼20×.",
+            "9": "In iterative expansion microscopy, after preliminary expansion, a second swellable polymer mesh is formed.",
+            "10": "The second swellable polymer mesh is formed in the space newly opened by the first expansion.",
+            "11": "In iterative expansion microscopy, the sample is expanded again after the second swellable polymer mesh is formed.",
+            "12": "Iterative expansion microscopy expands biological specimens ∼4.5 × 4.5, or ∼20×.",
+            "13": "Iterative expansion microscopy enables ∼25-nm-resolution imaging of cells and tissues on conventional microscopes.",
+            "14": "Iterative expansion microscopy was used to visualize synaptic proteins in mouse brain circuitry.",
+            "15": "Iterative expansion microscopy was used to visualize the detailed architecture of dendritic spines in mouse brain circuitry."
+          },
+          "3": {
+            "1": "Many crowded biomolecular structures in cells and tissues cannot be accessed by labelling antibodies.",
+            "2": "Decrowding these crowded biomolecular structures is necessary before labelling to understand the arrangement of proteins within them with nanoscale precision.",
+            "3": "An iterative variant of expansion microscopy involves the permeation of cells and tissues by a swellable hydrogel followed by isotropic hydrogel expansion.",
+            "4": "This iterative variant of expansion microscopy allows for enhanced imaging resolution with ordinary microscopes.",
+            "5": "This iterative variant of expansion microscopy enables imaging of nanostructures in expanded yet otherwise intact tissues at a resolution of about 20 nm.",
+            "6": "The name of the method is 'expansion revealing.'",
+            "7": "The method was validated with DNA-probe-based super-resolution microscopy.",
+            "8": "'Expansion revealing' involves gel-anchoring reagents.",
+            "9": "'Expansion revealing' involves the embedding, expansion, and re-embedding of the sample in homogeneous swellable hydrogels.",
+            "10": "'Expansion revealing' enabled the use of confocal microscopy to image the alignment of pre-synaptic calcium channels with post-synaptic scaffolding proteins in intact brain circuits.",
+            "11": "'Expansion revealing' enabled the uncovering of periodic amyloid nanoclusters containing ion-channel proteins in brain tissue from a mouse model of Alzheimer's disease.",
+            "12": "'Expansion revealing' will enable the further discovery of previously unseen nanostructures within cells and tissues."
+          }
+        },
+        "viewpoints": [
+          "An iterative form of expansion microscopy allows the expanded sample to be expanded a second time.",
+          "The second expansion results in an overall physical magnification of beyond 10x in each linear dimension."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The net result of the expansion is that biomolecules and/or their labels that are initially localized within the diffraction limit of a traditional optical microscope can now be separated in space to distances far enough to resolve them.",
+        "references": {},
+        "viewpoints": [
+          "The expansion in expansion microscopy allows biomolecules and/or their labels that are initially within the diffraction limit of a traditional optical microscope to be separated in space.",
+          "The separation allows these biomolecules and/or their labels to be resolved."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Expansion microscopy protocols are increasingly prevalent in biology for visualizing proteins [4], [5], [6], [7], [8], nucleic acids [9], [10], [11], and membrane or lipids [6], [7], [8], [11], [12], [13], [14], [15], [16].",
+        "references": {
+          "4": {},
+          "5": {
+            "1": "Expansion microscopy (ExM) enables imaging of preserved specimens with nanoscale precision.",
+            "2": "Expansion microscopy (ExM) allows imaging with diffraction-limited microscopes instead of specialized super-resolution microscopes.",
+            "3": "Expansion microscopy (ExM) works by physically separating fluorescent probes.",
+            "4": "Fluorescent probes are separated after being anchored to a swellable gel in expansion microscopy (ExM).",
+            "5": "The first expansion microscopy (ExM) method did not result in the retention of native proteins in the gel.",
+            "6": "The first expansion microscopy (ExM) method relied on custom-made reagents.",
+            "7": "The custom-made reagents used in the first expansion microscopy (ExM) method are not widely available.",
+            "8": "Protein retention ExM (proExM) is a variant of expansion microscopy (ExM).",
+            "9": "In protein retention ExM (proExM), proteins are anchored to the swellable gel.",
+            "10": "Protein retention ExM (proExM) allows the use of conventional fluorescently labeled antibodies.",
+            "11": "Protein retention ExM (proExM) allows the use of streptavidin.",
+            "12": "Protein retention ExM (proExM) allows the use of fluorescent proteins.",
+            "13": "The utility of protein retention ExM (proExM) was validated for multicolor super-resolution imaging of cells.",
+            "14": "The utility of protein retention ExM (proExM) was demonstrated for multicolor super-resolution imaging of mammalian tissues.",
+            "15": "The multicolor super-resolution imaging achieved by protein retention ExM (proExM) has a precision of approximately 70 nm.",
+            "16": "Protein retention ExM (proExM) allows imaging of cells and mammalian tissues on conventional microscopes."
+          },
+          "6": [],
+          "7": [],
+          "8": {
+            "1": "Expansion microscopy enables nanoimaging using conventional microscopes.",
+            "2": "Expansion microscopy works by physically and isotropically magnifying preserved biological specimens.",
+            "3": "Biological specimens are embedded in a crosslinked water-swellable hydrogel for expansion microscopy.",
+            "4": "Current expansion microscopy protocols require prior treatment with reactive anchoring chemicals.",
+            "5": "Reactive anchoring chemicals are used to link specific labels and biomolecule classes to the gel in expansion microscopy.",
+            "6": "Magnify is a strategy described in the paper.",
+            "7": "Magnify uses a mechanically sturdy gel.",
+            "8": "The gel in Magnify retains nucleic acids, proteins, and lipids.",
+            "9": "Magnify does not require a separate anchoring step for retaining nucleic acids, proteins, and lipids.",
+            "10": "Magnify expands biological specimens up to 11 times their original size.",
+            "11": "Magnify facilitates imaging of cells and tissues with effectively around 25-nm resolution using a diffraction-limited objective lens of about 280 nm on conventional optical microscopes.",
+            "12": "Magnify facilitates imaging with around 15 nm effective resolution if combined with super-resolution optical fluctuation imaging.",
+            "13": "Magnify is demonstrated on a broad range of biological specimens.",
+            "14": "Magnify provides insight into nanoscopic subcellular structures.",
+            "15": "Magnify is demonstrated to provide insight into synaptic proteins from mouse brain.",
+            "16": "Magnify is demonstrated to provide insight into podocyte foot processes in formalin-fixed paraffin-embedded human kidney.",
+            "17": "Magnify is demonstrated to provide insight into defects in cilia and basal bodies in drug-treated human lung organoids."
+          },
+          "9": {
+            "1": "Imaging RNA identity and location with nanoscale precision in intact tissues is of great interest.",
+            "2": "The ability to image RNA identity and location is important for defining cell types and states in normal biological settings.",
+            "3": "The ability to image RNA identity and location is important for defining cell types and states in pathological biological settings.",
+            "4": "A strategy for expansion microscopy of RNA is presented.",
+            "5": "A small-molecule linker was developed.",
+            "6": "The small-molecule linker enables RNA to be covalently attached to a swellable polyelectrolyte gel.",
+            "7": "The swellable polyelectrolyte gel is synthesized throughout a biological specimen.",
+            "8": "Postexpansion, fluorescent in situ hybridization (FISH) imaging of RNA can be performed with high yield.",
+            "9": "Postexpansion, fluorescent in situ hybridization (FISH) imaging of RNA can be performed with high specificity.",
+            "10": "Postexpansion, fluorescent in situ hybridization (FISH) imaging of RNA can be performed with single-molecule precision.",
+            "11": "Fluorescent in situ hybridization (FISH) imaging of RNA can be performed in both cultured cells and intact brain tissue.",
+            "12": "Expansion FISH (ExFISH) separates RNAs.",
+            "13": "Expansion FISH (ExFISH) supports amplification of single-molecule signals.",
+            "14": "Amplification of single-molecule signals is supported via hybridization chain reaction.",
+            "15": "Expansion FISH (ExFISH) supports multiplexed RNA FISH readout.",
+            "16": "ExFISH enables super-resolution imaging of RNA structure with diffraction-limited microscopes.",
+            "17": "ExFISH enables super-resolution imaging of RNA location with diffraction-limited microscopes.",
+            "18": "Super-resolution imaging of RNA structure and location is enabled in thick specimens.",
+            "19": "Thick specimens include intact brain tissue and other tissues of importance to biology and medicine."
+          },
+          "10": [],
+          "11": {
+            "1": "Expansion microscopy (ExM) physically enlarges specimens in an isotropic fashion.",
+            "2": "Expansion microscopy (ExM) enables nanoimaging on standard light microscopes by physically enlarging specimens.",
+            "3": "Existing ExM protocols require equipping different kinds of molecules with different kinds of anchoring moieties.",
+            "4": "Equipping molecules with anchoring moieties allows them to be pulled apart from each other by polymer swelling in ExM protocols.",
+            "5": "A multifunctional anchor, an acrylate epoxide, is presented.",
+            "6": "The acrylate epoxide multifunctional anchor enables proteins and RNAs to be equipped with anchors in a single experimental step.",
+            "7": "The acrylate epoxide multifunctional anchor simplifies ExM protocols.",
+            "8": "The acrylate epoxide multifunctional anchor reduces cost by 2-10-fold for a typical multiplexed ExM experiment.",
+            "9": "The cost reduction is compared to previous strategies for equipping RNAs with anchors.",
+            "10": "The united ExM (uniExM) protocol can be used to preserve and visualize RNA transcripts.",
+            "11": "The united ExM (uniExM) protocol can be used to preserve and visualize proteins in biologically relevant ultrastructures.",
+            "12": "The united ExM (uniExM) protocol can be used to preserve and visualize sets of RNA transcripts in patient-derived xenograft (PDX) cancer tissues.",
+            "13": "The united ExM (uniExM) protocol may support the visualization of other kinds of biomolecular species.",
+            "14": "uniExM may find many uses in the simple nanoscale analysis of cells and tissues.",
+            "15": "uniExM may find many uses in the multimodal nanoscale analysis of cells and tissues."
+          },
+          "12": [],
+          "13": {
+            "1": "Expansion microscopy (ExM) allows super-resolution imaging on conventional fluorescence microscopes.",
+            "2": "Expansion microscopy (ExM) has been limited to imaging proteins and nucleic acids.",
+            "3": "Click-ExM integrates click labeling into Expansion microscopy (ExM).",
+            "4": "Click-ExM enables a 'one-stop-shop' method for nanoscale imaging of various types of biomolecules.",
+            "5": "Click labeling with biotin is used in the click-ExM method.",
+            "6": "Fluorescently labeled streptavidin is used for staining in the click-ExM method.",
+            "7": "A large range of biomolecules can be imaged by the standard Expansion microscopy (ExM) procedure normally used for proteins.",
+            "8": "Click-ExM was demonstrated using 18 clickable labels.",
+            "9": "Click-ExM was demonstrated on lipids.",
+            "10": "Click-ExM was demonstrated on glycans.",
+            "11": "Click-ExM was demonstrated on proteins.",
+            "12": "Click-ExM was demonstrated on DNA.",
+            "13": "Click-ExM was demonstrated on RNA.",
+            "14": "Click-ExM was demonstrated on small molecules.",
+            "15": "Click-ExM is applicable in cell culture systems.",
+            "16": "Click-ExM is applicable for tissue imaging.",
+            "17": "Click-ExM is compatible with signal-amplification techniques.",
+            "18": "Click-ExM is compatible with two-color imaging.",
+            "19": "Click-ExM provides a convenient method for super-resolution imaging.",
+            "20": "Click-ExM provides a versatile method for super-resolution imaging.",
+            "21": "Click-ExM may be routinely used for cell samples.",
+            "22": "Click-ExM may be routinely used for tissue samples."
+          },
+          "14": {
+            "1": "Expansion microscopy (ExM) enables super-resolution imaging of proteins on conventional microscopes.",
+            "2": "Expansion microscopy (ExM) enables super-resolution imaging of nucleic acids on conventional microscopes.",
+            "3": "Imaging of details of the organization of lipid bilayers by light microscopy remains challenging.",
+            "4": "An unnatural short-chain azide- and amino-modified sphingolipid ceramide is introduced.",
+            "5": "The unnatural short-chain azide- and amino-modified sphingolipid ceramide, upon incorporation into membranes, can be labeled by click chemistry.",
+            "6": "The unnatural short-chain azide- and amino-modified sphingolipid ceramide can be linked into hydrogels.",
+            "7": "The incorporation into hydrogels is followed by 4× to 10× expansion.",
+            "8": "Confocal microscopy enables imaging of sphingolipids in the plasma membrane.",
+            "9": "Structured illumination microscopy (SIM) enables imaging of sphingolipids in the plasma membrane.",
+            "10": "Confocal microscopy enables imaging of sphingolipids in the membrane of intracellular organelles.",
+            "11": "Structured illumination microscopy (SIM) enables imaging of sphingolipids in the membrane of intracellular organelles.",
+            "12": "Confocal microscopy enables imaging of interactions of sphingolipids with proteins in the plasma membrane.",
+            "13": "Structured illumination microscopy (SIM) enables imaging of interactions of sphingolipids with proteins in the plasma membrane.",
+            "14": "Confocal microscopy enables imaging of interactions of sphingolipids with proteins in the membrane of intracellular organelles.",
+            "15": "Structured illumination microscopy (SIM) enables imaging of interactions of sphingolipids with proteins in the membrane of intracellular organelles.",
+            "16": "The imaging of sphingolipids and their interactions with proteins has a spatial resolution of 10-20 nm.",
+            "17": "Functionalized sphingolipids accumulate efficiently in pathogens.",
+            "18": "Sphingolipid ExM is used to investigate bacterial infections of human HeLa229 cells.",
+            "19": "The bacterial infections investigated involve Neisseria gonorrhoeae.",
+            "20": "The bacterial infections investigated involve Chlamydia trachomatis.",
+            "21": "The bacterial infections investigated involve Simkania negevensis.",
+            "22": "The investigation using sphingolipid ExM is conducted with a resolution so far only provided by electron microscopy.",
+            "23": "Sphingolipid ExM allows visualization of the inner membrane of intracellular bacteria.",
+            "24": "Sphingolipid ExM allows visualization of the outer membrane of intracellular bacteria.",
+            "25": "Sphingolipid ExM allows determination of the distance between the inner and outer membrane of intracellular bacteria as 27.6 ± 7.7 nm."
+          },
+          "15": {
+            "1": "Super-resolution fluorescence microscopy is a key tool in elucidating biological fine structures.",
+            "2": "Super-resolution fluorescence microscopy provides insights into the distribution of biomolecular complexes.",
+            "3": "Super-resolution fluorescence microscopy provides insights into the interactions of biomolecular complexes.",
+            "4": "Super-resolution fluorescence microscopy provides insights down to the nanometer scale.",
+            "5": "Expansion microscopy is a recently developed approach.",
+            "6": "Expansion microscopy achieves nanoscale resolution using a conventional microscope.",
+            "7": "Biological samples in expansion microscopy are embedded in an isotropically swollen hydrogel.",
+            "8": "The physical expansion of the sample in expansion microscopy allows imaging with resolutions down to tens-of-nanometers.",
+            "9": "Fluorescent labels must be covalently bound to the hydrogel in expansion microscopy.",
+            "10": "Standard, small-molecule targeting of fluorophores is incompatible with expansion microscopy.",
+            "11": "A chemical linking approach enables direct, covalent grafting of a targeting molecule to the hydrogel in expansion microscopy.",
+            "12": "A chemical linking approach enables direct, covalent grafting of a fluorophore to the hydrogel in expansion microscopy.",
+            "13": "The series of molecules is applied in antibody-free targeting of the cell cytoskeleton for expansion microscopy.",
+            "14": "The series of molecules is applied in lipid membrane staining for expansion microscopy.",
+            "15": "The trivalent linker strategy allows the introduction of fluorescent labels post-expansion.",
+            "16": "The introduction of fluorescent labels post-expansion has the benefit of visualizing an immunostaining.",
+            "17": "The introduction of fluorescent labels post-expansion is achieved through fluorescent oligonucleotide hybridization after expanding the polymer.",
+            "18": "Our probes allow different labeling approaches.",
+            "19": "The different labeling approaches are compatible with expansion microscopy."
+          },
+          "16": {
+            "1": "Expansion microscopy involves physically increasing the relative positions of biomolecules via hydrogel expansion.",
+            "2": "Expansion microscopy can be used to reveal ultrafine structures of cells under a conventional microscope.",
+            "3": "Expansion microscopy is useful for achieving super-resolution imaging.",
+            "4": "Expansion microscopy suffers from reduced fluorescence signals.",
+            "5": "Reduced fluorescence signals in expansion microscopy are caused by excessive proteolysis.",
+            "6": "Reduced fluorescence signals in expansion microscopy are caused by swelling effects.",
+            "7": "Reduced fluorescence signals in expansion microscopy result in a lower photon budget.",
+            "8": "Reduced fluorescence signals in expansion microscopy disfavor fluorescence imaging over a large field of view.",
+            "9": "The large field of view in fluorescence imaging can cover an entire expanded cell, especially in 3D.",
+            "10": "The complex procedures of expansion microscopy hinder its popularization.",
+            "11": "The specialized reagents of expansion microscopy hinder its popularization.",
+            "12": "The modification of expansion microscopy involves deploying trypsin digestion to reduce protein loss.",
+            "13": "The modification of expansion microscopy involves deploying tyramide signal amplification to enhance fluorescence signal.",
+            "14": "The enhanced fluorescence signal is intended for point-scanning-based imaging.",
+            "15": "The new methodology is named TT-ExM.",
+            "16": "TT-ExM indicates dual trypsin and tyramide treatments.",
+            "17": "TT-ExM may be applied for antibody staining.",
+            "18": "TT-ExM may be applied for lipid staining.",
+            "19": "TT-ExM displayed enhanced protein retention for endoplasmic reticulum markers in COS-7 cell cultures.",
+            "20": "TT-ExM displayed enhanced protein retention for mitochondrial markers in COS-7 cell cultures.",
+            "21": "TT-ExM-based lipid staining clearly revealed the complex 3D membrane structures in entire expanded cells.",
+            "22": "TT-ExM methodology highlighted mitochondria through combined lipid and DNA staining.",
+            "23": "TT-ExM revealed the DNA structures of mitochondria in cytoplasm.",
+            "24": "TT-ExM revealed the membrane structures of mitochondria in cytoplasm.",
+            "25": "TT-ExM revealed the lipid-rich structures formed via phase separation in nuclei at interphase.",
+            "26": "Lipid-rich chromosome matrices were observed in the mitotic cells.",
+            "27": "High-quality 3D images demonstrate the practicality of TT-ExM.",
+            "28": "Readily available reagents can be deployed in TT-ExM to significantly enhance fluorescence signals.",
+            "29": "Readily available reagents can be deployed in TT-ExM to generate high-quality and ultrafine-resolution images under confocal microscopy."
+          }
+        },
+        "viewpoints": [
+          "Expansion microscopy protocols are increasingly prevalent in biology.",
+          "Expansion microscopy is used for visualizing proteins.",
+          "Expansion microscopy is used for visualizing nucleic acids.",
+          "Expansion microscopy is used for visualizing membranes or lipids."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "ExM also enables the visualization of anatomical features of specimens through dense labeling of total protein [4], [7], [8] via N-hydroxyl succinimide (NHS) ester staining.",
+        "references": {
+          "4": {},
+          "7": [],
+          "8": {
+            "1": "Expansion microscopy enables nanoimaging using conventional microscopes.",
+            "2": "Expansion microscopy works by physically and isotropically magnifying preserved biological specimens.",
+            "3": "Biological specimens are embedded in a crosslinked water-swellable hydrogel for expansion microscopy.",
+            "4": "Current expansion microscopy protocols require prior treatment with reactive anchoring chemicals.",
+            "5": "Reactive anchoring chemicals are used to link specific labels and biomolecule classes to the gel in expansion microscopy.",
+            "6": "Magnify is a strategy described in the paper.",
+            "7": "Magnify uses a mechanically sturdy gel.",
+            "8": "The gel in Magnify retains nucleic acids, proteins, and lipids.",
+            "9": "Magnify does not require a separate anchoring step for retaining nucleic acids, proteins, and lipids.",
+            "10": "Magnify expands biological specimens up to 11 times their original size.",
+            "11": "Magnify facilitates imaging of cells and tissues with effectively around 25-nm resolution using a diffraction-limited objective lens of about 280 nm on conventional optical microscopes.",
+            "12": "Magnify facilitates imaging with around 15 nm effective resolution if combined with super-resolution optical fluctuation imaging.",
+            "13": "Magnify is demonstrated on a broad range of biological specimens.",
+            "14": "Magnify provides insight into nanoscopic subcellular structures.",
+            "15": "Magnify is demonstrated to provide insight into synaptic proteins from mouse brain.",
+            "16": "Magnify is demonstrated to provide insight into podocyte foot processes in formalin-fixed paraffin-embedded human kidney.",
+            "17": "Magnify is demonstrated to provide insight into defects in cilia and basal bodies in drug-treated human lung organoids."
+          }
+        },
+        "viewpoints": [
+          "Expansion microscopy enables the visualization of anatomical features of specimens.",
+          "Visualization is achieved through dense labeling of total protein.",
+          "N-hydroxyl succinimide (NHS) ester staining is used for dense labeling in expansion microscopy."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "While several ExM methods have been reported for membrane or lipid labeling and visualization [6], [7], [8], [11], [12], [13], [14], [15], [16], achieving dense labeling in fixed tissues has remained challenging (Supplementary Table 1).",
+        "references": {
+          "6": [],
+          "7": [],
+          "8": {
+            "1": "Expansion microscopy enables nanoimaging using conventional microscopes.",
+            "2": "Expansion microscopy works by physically and isotropically magnifying preserved biological specimens.",
+            "3": "Biological specimens are embedded in a crosslinked water-swellable hydrogel for expansion microscopy.",
+            "4": "Current expansion microscopy protocols require prior treatment with reactive anchoring chemicals.",
+            "5": "Reactive anchoring chemicals are used to link specific labels and biomolecule classes to the gel in expansion microscopy.",
+            "6": "Magnify is a strategy described in the paper.",
+            "7": "Magnify uses a mechanically sturdy gel.",
+            "8": "The gel in Magnify retains nucleic acids, proteins, and lipids.",
+            "9": "Magnify does not require a separate anchoring step for retaining nucleic acids, proteins, and lipids.",
+            "10": "Magnify expands biological specimens up to 11 times their original size.",
+            "11": "Magnify facilitates imaging of cells and tissues with effectively around 25-nm resolution using a diffraction-limited objective lens of about 280 nm on conventional optical microscopes.",
+            "12": "Magnify facilitates imaging with around 15 nm effective resolution if combined with super-resolution optical fluctuation imaging.",
+            "13": "Magnify is demonstrated on a broad range of biological specimens.",
+            "14": "Magnify provides insight into nanoscopic subcellular structures.",
+            "15": "Magnify is demonstrated to provide insight into synaptic proteins from mouse brain.",
+            "16": "Magnify is demonstrated to provide insight into podocyte foot processes in formalin-fixed paraffin-embedded human kidney.",
+            "17": "Magnify is demonstrated to provide insight into defects in cilia and basal bodies in drug-treated human lung organoids."
+          },
+          "11": {
+            "1": "Expansion microscopy (ExM) physically enlarges specimens in an isotropic fashion.",
+            "2": "Expansion microscopy (ExM) enables nanoimaging on standard light microscopes by physically enlarging specimens.",
+            "3": "Existing ExM protocols require equipping different kinds of molecules with different kinds of anchoring moieties.",
+            "4": "Equipping molecules with anchoring moieties allows them to be pulled apart from each other by polymer swelling in ExM protocols.",
+            "5": "A multifunctional anchor, an acrylate epoxide, is presented.",
+            "6": "The acrylate epoxide multifunctional anchor enables proteins and RNAs to be equipped with anchors in a single experimental step.",
+            "7": "The acrylate epoxide multifunctional anchor simplifies ExM protocols.",
+            "8": "The acrylate epoxide multifunctional anchor reduces cost by 2-10-fold for a typical multiplexed ExM experiment.",
+            "9": "The cost reduction is compared to previous strategies for equipping RNAs with anchors.",
+            "10": "The united ExM (uniExM) protocol can be used to preserve and visualize RNA transcripts.",
+            "11": "The united ExM (uniExM) protocol can be used to preserve and visualize proteins in biologically relevant ultrastructures.",
+            "12": "The united ExM (uniExM) protocol can be used to preserve and visualize sets of RNA transcripts in patient-derived xenograft (PDX) cancer tissues.",
+            "13": "The united ExM (uniExM) protocol may support the visualization of other kinds of biomolecular species.",
+            "14": "uniExM may find many uses in the simple nanoscale analysis of cells and tissues.",
+            "15": "uniExM may find many uses in the multimodal nanoscale analysis of cells and tissues."
+          },
+          "12": [],
+          "13": {
+            "1": "Expansion microscopy (ExM) allows super-resolution imaging on conventional fluorescence microscopes.",
+            "2": "Expansion microscopy (ExM) has been limited to imaging proteins and nucleic acids.",
+            "3": "Click-ExM integrates click labeling into Expansion microscopy (ExM).",
+            "4": "Click-ExM enables a 'one-stop-shop' method for nanoscale imaging of various types of biomolecules.",
+            "5": "Click labeling with biotin is used in the click-ExM method.",
+            "6": "Fluorescently labeled streptavidin is used for staining in the click-ExM method.",
+            "7": "A large range of biomolecules can be imaged by the standard Expansion microscopy (ExM) procedure normally used for proteins.",
+            "8": "Click-ExM was demonstrated using 18 clickable labels.",
+            "9": "Click-ExM was demonstrated on lipids.",
+            "10": "Click-ExM was demonstrated on glycans.",
+            "11": "Click-ExM was demonstrated on proteins.",
+            "12": "Click-ExM was demonstrated on DNA.",
+            "13": "Click-ExM was demonstrated on RNA.",
+            "14": "Click-ExM was demonstrated on small molecules.",
+            "15": "Click-ExM is applicable in cell culture systems.",
+            "16": "Click-ExM is applicable for tissue imaging.",
+            "17": "Click-ExM is compatible with signal-amplification techniques.",
+            "18": "Click-ExM is compatible with two-color imaging.",
+            "19": "Click-ExM provides a convenient method for super-resolution imaging.",
+            "20": "Click-ExM provides a versatile method for super-resolution imaging.",
+            "21": "Click-ExM may be routinely used for cell samples.",
+            "22": "Click-ExM may be routinely used for tissue samples."
+          },
+          "14": {
+            "1": "Expansion microscopy (ExM) enables super-resolution imaging of proteins on conventional microscopes.",
+            "2": "Expansion microscopy (ExM) enables super-resolution imaging of nucleic acids on conventional microscopes.",
+            "3": "Imaging of details of the organization of lipid bilayers by light microscopy remains challenging.",
+            "4": "An unnatural short-chain azide- and amino-modified sphingolipid ceramide is introduced.",
+            "5": "The unnatural short-chain azide- and amino-modified sphingolipid ceramide, upon incorporation into membranes, can be labeled by click chemistry.",
+            "6": "The unnatural short-chain azide- and amino-modified sphingolipid ceramide can be linked into hydrogels.",
+            "7": "The incorporation into hydrogels is followed by 4× to 10× expansion.",
+            "8": "Confocal microscopy enables imaging of sphingolipids in the plasma membrane.",
+            "9": "Structured illumination microscopy (SIM) enables imaging of sphingolipids in the plasma membrane.",
+            "10": "Confocal microscopy enables imaging of sphingolipids in the membrane of intracellular organelles.",
+            "11": "Structured illumination microscopy (SIM) enables imaging of sphingolipids in the membrane of intracellular organelles.",
+            "12": "Confocal microscopy enables imaging of interactions of sphingolipids with proteins in the plasma membrane.",
+            "13": "Structured illumination microscopy (SIM) enables imaging of interactions of sphingolipids with proteins in the plasma membrane.",
+            "14": "Confocal microscopy enables imaging of interactions of sphingolipids with proteins in the membrane of intracellular organelles.",
+            "15": "Structured illumination microscopy (SIM) enables imaging of interactions of sphingolipids with proteins in the membrane of intracellular organelles.",
+            "16": "The imaging of sphingolipids and their interactions with proteins has a spatial resolution of 10-20 nm.",
+            "17": "Functionalized sphingolipids accumulate efficiently in pathogens.",
+            "18": "Sphingolipid ExM is used to investigate bacterial infections of human HeLa229 cells.",
+            "19": "The bacterial infections investigated involve Neisseria gonorrhoeae.",
+            "20": "The bacterial infections investigated involve Chlamydia trachomatis.",
+            "21": "The bacterial infections investigated involve Simkania negevensis.",
+            "22": "The investigation using sphingolipid ExM is conducted with a resolution so far only provided by electron microscopy.",
+            "23": "Sphingolipid ExM allows visualization of the inner membrane of intracellular bacteria.",
+            "24": "Sphingolipid ExM allows visualization of the outer membrane of intracellular bacteria.",
+            "25": "Sphingolipid ExM allows determination of the distance between the inner and outer membrane of intracellular bacteria as 27.6 ± 7.7 nm."
+          },
+          "15": {
+            "1": "Super-resolution fluorescence microscopy is a key tool in elucidating biological fine structures.",
+            "2": "Super-resolution fluorescence microscopy provides insights into the distribution of biomolecular complexes.",
+            "3": "Super-resolution fluorescence microscopy provides insights into the interactions of biomolecular complexes.",
+            "4": "Super-resolution fluorescence microscopy provides insights down to the nanometer scale.",
+            "5": "Expansion microscopy is a recently developed approach.",
+            "6": "Expansion microscopy achieves nanoscale resolution using a conventional microscope.",
+            "7": "Biological samples in expansion microscopy are embedded in an isotropically swollen hydrogel.",
+            "8": "The physical expansion of the sample in expansion microscopy allows imaging with resolutions down to tens-of-nanometers.",
+            "9": "Fluorescent labels must be covalently bound to the hydrogel in expansion microscopy.",
+            "10": "Standard, small-molecule targeting of fluorophores is incompatible with expansion microscopy.",
+            "11": "A chemical linking approach enables direct, covalent grafting of a targeting molecule to the hydrogel in expansion microscopy.",
+            "12": "A chemical linking approach enables direct, covalent grafting of a fluorophore to the hydrogel in expansion microscopy.",
+            "13": "The series of molecules is applied in antibody-free targeting of the cell cytoskeleton for expansion microscopy.",
+            "14": "The series of molecules is applied in lipid membrane staining for expansion microscopy.",
+            "15": "The trivalent linker strategy allows the introduction of fluorescent labels post-expansion.",
+            "16": "The introduction of fluorescent labels post-expansion has the benefit of visualizing an immunostaining.",
+            "17": "The introduction of fluorescent labels post-expansion is achieved through fluorescent oligonucleotide hybridization after expanding the polymer.",
+            "18": "Our probes allow different labeling approaches.",
+            "19": "The different labeling approaches are compatible with expansion microscopy."
+          },
+          "16": {
+            "1": "Expansion microscopy involves physically increasing the relative positions of biomolecules via hydrogel expansion.",
+            "2": "Expansion microscopy can be used to reveal ultrafine structures of cells under a conventional microscope.",
+            "3": "Expansion microscopy is useful for achieving super-resolution imaging.",
+            "4": "Expansion microscopy suffers from reduced fluorescence signals.",
+            "5": "Reduced fluorescence signals in expansion microscopy are caused by excessive proteolysis.",
+            "6": "Reduced fluorescence signals in expansion microscopy are caused by swelling effects.",
+            "7": "Reduced fluorescence signals in expansion microscopy result in a lower photon budget.",
+            "8": "Reduced fluorescence signals in expansion microscopy disfavor fluorescence imaging over a large field of view.",
+            "9": "The large field of view in fluorescence imaging can cover an entire expanded cell, especially in 3D.",
+            "10": "The complex procedures of expansion microscopy hinder its popularization.",
+            "11": "The specialized reagents of expansion microscopy hinder its popularization.",
+            "12": "The modification of expansion microscopy involves deploying trypsin digestion to reduce protein loss.",
+            "13": "The modification of expansion microscopy involves deploying tyramide signal amplification to enhance fluorescence signal.",
+            "14": "The enhanced fluorescence signal is intended for point-scanning-based imaging.",
+            "15": "The new methodology is named TT-ExM.",
+            "16": "TT-ExM indicates dual trypsin and tyramide treatments.",
+            "17": "TT-ExM may be applied for antibody staining.",
+            "18": "TT-ExM may be applied for lipid staining.",
+            "19": "TT-ExM displayed enhanced protein retention for endoplasmic reticulum markers in COS-7 cell cultures.",
+            "20": "TT-ExM displayed enhanced protein retention for mitochondrial markers in COS-7 cell cultures.",
+            "21": "TT-ExM-based lipid staining clearly revealed the complex 3D membrane structures in entire expanded cells.",
+            "22": "TT-ExM methodology highlighted mitochondria through combined lipid and DNA staining.",
+            "23": "TT-ExM revealed the DNA structures of mitochondria in cytoplasm.",
+            "24": "TT-ExM revealed the membrane structures of mitochondria in cytoplasm.",
+            "25": "TT-ExM revealed the lipid-rich structures formed via phase separation in nuclei at interphase.",
+            "26": "Lipid-rich chromosome matrices were observed in the mitotic cells.",
+            "27": "High-quality 3D images demonstrate the practicality of TT-ExM.",
+            "28": "Readily available reagents can be deployed in TT-ExM to significantly enhance fluorescence signals.",
+            "29": "Readily available reagents can be deployed in TT-ExM to generate high-quality and ultrafine-resolution images under confocal microscopy."
+          }
+        },
+        "viewpoints": [
+          "Several expansion microscopy methods have been reported for membrane or lipid labeling and visualization.",
+          "Achieving dense labeling in fixed tissues has remained challenging."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Ideally, one would enable uniform and continuous membrane labeling, yielding a high signal-to-background ratio, in order to preserve ultrastructure alongside visualization of associated proteins, in fixed tissues.",
+        "references": {},
+        "viewpoints": [
+          "Uniform and continuous membrane labeling is ideal.",
+          "Uniform labeling should yield a high signal-to-background ratio.",
+          "Uniform labeling aims to preserve ultrastructure in fixed tissues.",
+          "Uniform labeling aids in the visualization of associated proteins in fixed tissues."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Such a membrane labeling method would enable not just imaging of proteins with nanoscale registration relevant to membrane landmarks, but facilitate the segmentation and tracing of membranous structures, such as axons and dendrites, on a confocal microscope.",
+        "references": {},
+        "viewpoints": [
+          "A membrane labeling method would enable imaging of proteins with nanoscale registration relevant to membrane landmarks.",
+          "Such a method would facilitate the segmentation of membranous structures.",
+          "The tracing of membranous structures, such as axons and dendrites, would be facilitated on a confocal microscope."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Here, we report a strategy to achieve the set of features described above.",
+        "references": {},
+        "viewpoints": [
+          "A strategy is reported to achieve the features of uniform and continuous membrane labeling, high signal-to-background ratio, preservation of ultrastructure, and visualization of associated proteins."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "We rationally and systematically designed innovative membrane labeling probes, and optimized the ExM protocol, to achieve dense labeling of membranes, including plasma membranes, with ExM.",
+        "references": {},
+        "viewpoints": [
+          "Innovative membrane labeling probes were designed rationally and systematically.",
+          "The ExM protocol was optimized.",
+          "The goal was to achieve dense labeling of membranes, including plasma membranes, with expansion microscopy."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "We found that our probe, in the context of ExM, labels plasma membranes, mitochondrial membranes, nuclear membranes, ciliary membranes, myelin sheaths, and extracellular vesicle membranes in fixed mouse brain tissue (Supplementary Table 1).",
+        "references": {},
+        "viewpoints": [
+          "The probe developed in the context of expansion microscopy labels plasma membranes.",
+          "The probe labels mitochondrial membranes.",
+          "The probe labels nuclear membranes.",
+          "The probe labels ciliary membranes.",
+          "The probe labels myelin sheaths.",
+          "The probe labels extracellular vesicle membranes.",
+          "These labeling results were observed in fixed mouse brain tissue."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "We named our protocol ultrastructural membrane expansion microscopy (umExM), using the word ultrastructure in the same sense as an earlier protocol in the expansion microscopy community, called ultrastructure expansion microscopy [17].",
+        "references": {
+          "17": {
+            "1": "Determining the structure of macromolecular assemblies is a major challenge in biology.",
+            "2": "Determining the composition of macromolecular assemblies is a major challenge in biology.",
+            "3": "Ultrastructure expansion microscopy (U-ExM) is an extension of expansion microscopy.",
+            "4": "Ultrastructure expansion microscopy (U-ExM) allows for the visualization of preserved ultrastructures by optical microscopy.",
+            "5": "Ultrastructure expansion microscopy (U-ExM) allows for near-native expansion of diverse structures in vitro.",
+            "6": "Ultrastructure expansion microscopy (U-ExM) allows for near-native expansion of diverse structures in cells.",
+            "7": "When combined with super-resolution microscopy, ultrastructure expansion microscopy (U-ExM) unveiled details of ultrastructural organization, such as centriolar chirality.",
+            "8": "Details such as centriolar chirality could otherwise be observed only by electron microscopy."
+          }
+        },
+        "viewpoints": [
+          "The protocol was named ultrastructural membrane expansion microscopy (umExM).",
+          "The term ultrastructure is used in the same sense as in the earlier ultrastructure expansion microscopy protocol."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "umExM preserves ultrastructure and enables the visualization of membranous structures in 100 µm-thick slices of fixed mouse brain at a resolution of ~60 nm with excellent uniformity and continuity of membrane labeling as well as a high signal-to-background ratio (40-80 fold higher than background).",
+        "references": {},
+        "viewpoints": [
+          "umExM preserves ultrastructure.",
+          "umExM enables visualization of membranous structures in 100 µm-thick slices of fixed mouse brain.",
+          "umExM provides a resolution of approximately 60 nm.",
+          "umExM achieves excellent uniformity and continuity of membrane labeling.",
+          "umExM achieves a high signal-to-background ratio, which is 40-80 fold higher than background."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "umExM could support co-visualization of membranous structures along with proteins and RNAs.",
+        "references": {},
+        "viewpoints": [
+          "umExM could support the co-visualization of membranous structures and proteins.",
+          "umExM could support the co-visualization of membranous structures and RNAs."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "The dense membrane labeling of umExM enabled the segmentation of neuronal compartments (e.g., cell bodies, dendrites, and axons), and tracing of neuronal processes (e.g., axons).",
+        "references": {},
+        "viewpoints": [
+          "The dense membrane labeling of umExM enabled the segmentation of neuronal compartments, such as cell bodies, dendrites, and axons.",
+          "The dense membrane labeling of umExM enabled the tracing of neuronal processes, such as axons."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Finally, we explored combining umExM with optical fluctuation imaging, as well as an iterative form of umExM that achieves a higher expansion factor, enabling ~35 nm resolution imaging of membranes with a standard confocal microscope.",
+        "references": {},
+        "viewpoints": [
+          "umExM was combined with optical fluctuation imaging.",
+          "An iterative form of umExM was explored to achieve a higher expansion factor.",
+          "The iterative form of umExM enabled approximately 35 nm resolution imaging of membranes with a standard confocal microscope."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "We anticipate umExM to have a variety of uses in neuroscience and biology, for the investigation of ultrastructure, cellular compartments, and molecular content, in intact tissues, with nanoscale precision.",
+        "references": {},
+        "viewpoints": [
+          "umExM is anticipated to have various uses in neuroscience and biology.",
+          "umExM is expected to aid in the investigation of ultrastructure in intact tissues.",
+          "umExM is expected to provide insights into cellular compartments in intact tissues.",
+          "umExM is expected to offer an understanding of molecular content in intact tissues.",
+          "umExM provides nanoscale precision."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56641-z_with_abstracts",
+    "base_id": "s41467-025-56641-z",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56641-z_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

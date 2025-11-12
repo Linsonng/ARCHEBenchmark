@@ -1,0 +1,885 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Plasma without a breakdown threshold can support an acceleration gradient six orders of magnitude higher than that in conventional accelerators [1] . When a driving laser propagates inside a gas-density plasma, its wakefield can form a well-controlled bubble structure, resulting in the successful acceleration of electrons to around 10 GeV on a decimetre scale [2] , [3] . For the acceleration of protons with a much larger mass-to-charge ratio, solid-density plasmas are usually utilized as they can support a stronger electric field [4] , [5] . The accelerated protons with ultralow transverse emittance and picosecond duration have been applied for the production of high-energy-density matter [6] , measurement of transient electromagnetic field [7] , and flash radiotherapy of cancer at an ultrahigh dose rate [8] . However, limitations, including the lack of a long acceleration structure [9] , deflection of protons by the self-generated magnetic field [10] , and dephasing of the fastest protons during acceleration [11] , lead to a proton energy below 100 MeV in experiments [12] , [13] , [14] except one very recent work reporting the generation of 150-MeV protons [15] . Improving the energy of laser-accelerated protons is thus essential for applications, especially for the instantaneous radiography of dense objects and clinical therapy of deep-seated tumours [16] . To increase the proton energy, a series of efforts has been made in the past two decades [1] . Among them, the utilization of structured targets has been intensively studied, and several effective designs have been demonstrated. A straightforward solution is modifying the target front surface to enhance the laser-plasma coupling, and different coating structures, including surface grating [17] , carbon nanotube foam [18] , and arrays of microwire [19] or microtube [20] , have been attempted. Another method is modulating the acceleration field in the target rear surface by adopting hydrogen-rich micro-dots [21] , hemispherical pits [22] , or helical coils [23] . Besides, a number of experiments have employed mass-limited targets to improve the proton quality, which can be roughly categorized into two schemes. The first utilizes isolated high-repetition targets, like microspheres [24] , [25] , [26] , and cryogenic hydrogen jets [27] , where protons are accelerated mainly via the mechanism of collisionless shock acceleration [24] or Coulomb explosion [25] , [26] . The second scheme uses foils with a reduced transverse size to enhance the target normal sheath acceleration (TNSA) of protons, since the laterally spreading electrons would be reflected around the foil edges [28] , [29] and reaccelerated to higher energies if a sub-picosecond driving laser [10] , [30] , [31] , [32] , [33] , [34] was employed. Several experiments have also tried a femtosecond driving laser with a relatively low power of less than 200 TW, demonstrating a robust enhancement of proton energy [35] , [36] , [37] . The major challenge in further improving the proton energy by irradiating a petawatt femtosecond laser on structured targets is to preserve the nano- or micro-structures before the arrival of the main pulse. High temporal contrast of laser is a prerequisite for such experiments since the intensity of prepulse should be suppressed below the damage threshold of the targets, which is relatively low due to the structures [38] . Another difficulty is to maintain an excellent laser pointing accuracy within a few microns [28] , which is crucial to precisely align the focal spot on the structures of targets. Moreover, since the peak intensity of a multi-petawatt laser can be orders of magnitude higher than that of terawatt pulses, proton acceleration may occur via a novel and complex mechanism, and a proper understanding of the acceleration process is critical for the optimization of laser parameters and the design of target structures. In this article, we demonstrate an enhanced acceleration of protons from a structured nanometre-thick polymer foil driven by a multi-petawatt femtosecond laser. The temporal contrast and pointing stability of the petawatt laser were well controlled, and the transverse shape of the polymer foils was tailored with a 100-kHz, μJ femtosecond laser. From a 100-nm-thick, 30-μm-wide foil, 110-MeV protons were successfully measured by several detection methods and unambiguously confirmed by the CR-39 plate in a stack detector. With the help of two- and three-dimensional (3D) particle-in-cell (PIC) simulations, we revealed that such energetic protons were accelerated by a hybrid mechanism of radiation pressure and Coulomb repulsion, the latter of which was enhanced in laser-tailored foils by suppressing the conduction of cold electrons. Our experimental result, thus, clearly demonstrated the enhancement of proton energy by employing conduction-restricted nanometre targets. Furthermore, our work indicates that the current technology is ready to support the desired interaction of a petawatt femtosecond driving laser with structured foils, and further improving the proton quality can be realized by employing well-designed targets with controllable acceleration structures.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Plasma without a breakdown threshold can support an acceleration gradient six orders of magnitude higher than that in conventional accelerators [1].",
+        "references": {
+          "1": {
+            "1": "Plasma-based accelerators use strong electromagnetic fields.",
+            "2": "Strong electromagnetic fields can be supported by plasmas.",
+            "3": "Plasma-based accelerators accelerate charged particles to high energies.",
+            "4": "Powerful laser pulses can generate accelerating field structures in plasma.",
+            "5": "Charged particle beams can generate accelerating field structures in plasma.",
+            "6": "The research field of plasma-based accelerators has recently transitioned from involving a few small-scale efforts to larger efforts.",
+            "7": "The research field of plasma-based accelerators is now involving the development of national and international networks of scientists.",
+            "8": "The development of national and international networks of scientists in this research field is supported by substantial investment in large-scale research infrastructure.",
+            "9": "The New Journal of Physics 2020 Plasma Accelerator Roadmap includes perspectives from experts in the field of plasma-based accelerators.",
+            "10": "Perspectives from experts provide a summary overview of the field of plasma-based accelerators.",
+            "11": "Perspectives from experts provide insights into the research needs for plasma-based accelerators.",
+            "12": "Perspectives from experts provide insights into developments in the field of plasma-based accelerators.",
+            "13": "The summary overview and insights are intended for an international audience of scientists.",
+            "14": "The intended audience includes graduate students and researchers entering the field of plasma-based accelerators."
+          }
+        },
+        "viewpoints": [
+          "Plasma without a breakdown threshold can support an acceleration gradient six orders of magnitude higher than the acceleration gradient in conventional accelerators."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "When a driving laser propagates inside a gas-density plasma, its wakefield can form a well-controlled bubble structure, resulting in the successful acceleration of electrons to around 10 GeV on a decimetre scale [2], [3].",
+        "references": {
+          "2": {
+            "1": "Relativistically intense laser pulses were guided with peak power of 0.85 PW over 15 diffraction lengths.",
+            "2": "The guiding of laser pulses was achieved by increasing the focusing strength of a capillary discharge waveguide.",
+            "3": "The focusing strength of the capillary discharge waveguide was increased using laser inverse bremsstrahlung heating.",
+            "4": "Guiding relativistically intense laser pulses allowed for the production of electron beams with quasimonoenergetic peaks up to 7.8 GeV.",
+            "5": "The electron beam peaks of 7.8 GeV represent double the energy that was previously demonstrated.",
+            "6": "The charge of the electron beams was 5 pC at 7.8 GeV.",
+            "7": "The charge was up to 62 pC in 6 GeV peaks.",
+            "8": "The typical beam divergence of the electron beams was 0.2 mrad."
+          },
+          "3": {
+            "1": "An intense laser pulse focused onto a plasma can excite nonlinear plasma waves.",
+            "2": "Under appropriate conditions, electrons from the background plasma are trapped in the plasma wave.",
+            "3": "Under appropriate conditions, electrons from the background plasma are accelerated to ultra-relativistic velocities.",
+            "4": "The scheme where electrons are trapped and accelerated by plasma waves is called a laser wakefield accelerator.",
+            "5": "The work presents results from a laser wakefield acceleration experiment.",
+            "6": "The experiment uses a petawatt-class laser to excite the wakefields.",
+            "7": "The experiment uses nanoparticles to assist the injection of electrons into the accelerating phase of the wakefields.",
+            "8": "A 10-cm-long, nanoparticle-assisted laser wakefield accelerator can generate 340 pC, 10 ± 1.86 GeV electron bunches.",
+            "9": "The 10 ± 1.86 GeV electron bunches have a 3.4 GeV rms convolved energy spread.",
+            "10": "The 10 ± 1.86 GeV electron bunches have a 0.9 mrad rms divergence.",
+            "11": "The nanoparticle-assisted laser wakefield accelerator can produce electron bunches with lower energies in the 4–6 GeV range."
+          }
+        },
+        "viewpoints": [
+          "The wakefield of a driving laser propagating inside a gas-density plasma can form a well-controlled bubble structure.",
+          "The formation of a well-controlled bubble structure in gas-density plasma allows for the successful acceleration of electrons to around 10 GeV on a decimetre scale."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "For the acceleration of protons with a much larger mass-to-charge ratio, solid-density plasmas are usually utilized as they can support a stronger electric field [4], [5].",
+        "references": {
+          "4": {
+            "1": "Laser-driven ion acceleration, mainly proton acceleration, has been proposed for many years.",
+            "2": "A number of proof-of-principle experiments with laser-driven ion acceleration have been carried out with lasers whose pulse duration was in the nanosecond range.",
+            "3": "In the 1990s, ion acceleration in a relativistic plasma was demonstrated with ultra-short pulse lasers.",
+            "4": "Ultra-short pulse lasers based on the chirped pulse amplification technique can provide picosecond or femtosecond laser pulse duration.",
+            "5": "Ultra-short pulse lasers based on the chirped pulse amplification technique can provide ultra-high peak power of terawatt to petawatt levels.",
+            "6": "Starting from the year 2000, several groups demonstrated low transverse emittance in proton beams.",
+            "7": "Starting from the year 2000, several groups demonstrated tens of MeV proton beams with a conversion efficiency of up to several percent.",
+            "8": "The laser-accelerated particle beams have a duration of the order of a few picoseconds at the source.",
+            "9": "The laser-accelerated particle beams have an ultra-high peak current.",
+            "10": "The laser-accelerated particle beams have a broad energy spectrum.",
+            "11": "The characteristics of laser-accelerated particle beams make them suitable for many applications, including several unique applications.",
+            "12": "This paper reviews the historical background of laser-driven ion acceleration.",
+            "13": "The historical background includes early laser-matter interaction studies on energetic ion acceleration relevant to inertial confinement fusion.",
+            "14": "The paper describes several implemented mechanisms of proton and/or ion acceleration driven by ultra-short high-intensity lasers.",
+            "15": "The paper describes several proposed mechanisms of proton and/or ion acceleration driven by ultra-short high-intensity lasers.",
+            "16": "The paper pays special attention to relatively simple models of several acceleration regimes.",
+            "17": "The models connect laser, plasma, and proton/ion beam parameters.",
+            "18": "The models predict important features such as energy spectral shape.",
+            "19": "The models predict optimum conditions for maximum ion energy.",
+            "20": "The models predict scalings under optimum conditions for factors like maximum ion energy and conversion efficiency.",
+            "21": "The models suggest possible ways to manipulate proton/ion beams by tailoring the target.",
+            "22": "The models suggest possible ways to manipulate proton/ion beams by tailoring irradiation conditions.",
+            "23": "The paper reviews experimental results on proton/ion acceleration.",
+            "24": "The review starts with the description of driving lasers.",
+            "25": "The paper lists experimental results on proton/ion acceleration.",
+            "26": "The paper shows general trends of parameter dependences in the experimental results.",
+            "27": "The paper compares experimental results with theoretical predictions and simulations.",
+            "28": "The fourth topic of the paper includes a review of scientific applications of laser-driven proton or ion sources.",
+            "29": "The fourth topic of the paper includes a review of industrial applications of laser-driven proton or ion sources.",
+            "30": "The fourth topic of the paper includes a review of medical applications of laser-driven proton or ion sources.",
+            "31": "Some scientific, industrial, and medical applications of laser-driven proton or ion sources have already been established.",
+            "32": "Other scientific, industrial, and medical applications of laser-driven proton or ion sources are yet to be demonstrated.",
+            "33": "In most applications, laser-driven ion sources are complementary to conventional accelerators.",
+            "34": "Laser-driven ion sources exhibit significantly different properties compared to conventional accelerators.",
+            "35": "The paper concludes with a summary."
+          },
+          "5": {
+            "1": "Ion acceleration driven by superintense laser pulses is attracting impressive research efforts.",
+            "2": "Ion acceleration driven by superintense laser pulses is attracting steadily increasing research efforts.",
+            "3": "Motivations for research into ion acceleration driven by superintense laser pulses include its applicative potential.",
+            "4": "Motivations for research into ion acceleration driven by superintense laser pulses include the perspective to investigate novel regimes.",
+            "5": "Available laser intensities will be increasing, providing perspective to investigate novel regimes in ion acceleration.",
+            "6": "Experiments have demonstrated the generation of multi-MeV proton and ion beams using superintense laser pulses.",
+            "7": "The generation of proton and ion beams with superintense laser pulses occurs over a wide range of laser and target parameters.",
+            "8": "The generated multi-MeV proton and ion beams have unique properties such as ultrashort duration.",
+            "9": "The generated multi-MeV proton and ion beams have unique properties such as high brilliance.",
+            "10": "The generated multi-MeV proton and ion beams have unique properties such as low emittance.",
+            "11": "An overview is given of the state of the art of ion acceleration by laser pulses.",
+            "12": "An outlook is given on the future development of ion acceleration by laser pulses.",
+            "13": "An outlook is given on the perspectives of ion acceleration by laser pulses.",
+            "14": "The main features observed in ion acceleration experiments are described.",
+            "15": "The observed scaling of ion acceleration with laser and plasma parameters is described.",
+            "16": "The main models used to interpret experimental data in ion acceleration research are described.",
+            "17": "The main models used to suggest new research directions in ion acceleration are described."
+          }
+        },
+        "viewpoints": [
+          "Protons have a much larger mass-to-charge ratio than electrons.",
+          "Solid-density plasmas are usually utilized for the acceleration of protons.",
+          "Solid-density plasmas can support a stronger electric field than gas-density plasmas."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The accelerated protons with ultralow transverse emittance and picosecond duration have been applied for the production of high-energy-density matter [6], measurement of transient electromagnetic field [7], and flash radiotherapy of cancer at an ultrahigh dose rate [8].",
+        "references": {
+          "6": {
+            "1": "A new technique has been developed for the isochoric heating of matter.",
+            "2": "The technique heats matter to high energy-density plasma states greater than 10⁵ J/g.",
+            "3": "The heating occurs on a picosecond time scale (10⁻¹² sec).",
+            "4": "An intense, collimated, ultrashort-pulse beam of protons is used to isochorically heat a solid density material.",
+            "5": "The proton beam is generated by a high-intensity laser pulse.",
+            "6": "The proton beam heats the material to a temperature of several electron volts (eV).",
+            "7": "The duration of heating is shorter than the time scale for significant hydrodynamic expansion to occur.",
+            "8": "The material is heated to a solid density warm dense plasma state.",
+            "9": "Spherically shaped laser targets are used to produce a focused proton beam.",
+            "10": "The focused proton beam is used to heat a smaller volume to over 20 electron volts (eV).",
+            "11": "The technique of ultrafast proton heating provides a unique method for creating isochorically heated high-energy density plasma states."
+          },
+          "7": {
+            "1": "Proton imaging is used as a key diagnostic for measuring electromagnetic fields.",
+            "2": "Proton imaging is applied in high-energy-density laboratory plasmas.",
+            "3": "Proton imaging can offer high spatial resolution simultaneously compared to other techniques for diagnosing fields.",
+            "4": "Proton imaging can offer high temporal resolution simultaneously compared to other techniques for diagnosing fields.",
+            "5": "Proton imaging can distinguish between electric and magnetic fields compared to other techniques for diagnosing fields.",
+            "6": "Proton imaging does not cause proton perturbation of the plasma of interest.",
+            "7": "Proton imaging has been used in inertial-confinement fusion HED experiments.",
+            "8": "Proton imaging has been used in laboratory astrophysics HED experiments.",
+            "9": "An overview is provided on the state of the art of proton imaging.",
+            "10": "The overview includes a discussion of experimental considerations like proton sources and detectors.",
+            "11": "The overview includes the theory of proton-imaging analysis.",
+            "12": "The overview includes a survey of experimental results demonstrating the breadth of applications of proton imaging.",
+            "13": "Topics at the frontiers of proton-imaging development are described.",
+            "14": "An outlook on the future of the field of proton imaging is provided."
+          },
+          "8": {
+            "1": "Recent oncological studies identified beneficial properties of radiation applied at ultrahigh dose rates.",
+            "2": "The ultrahigh dose rates are several orders of magnitude higher than the clinical standard, which is of the order of Gy min^{–1}.",
+            "3": "Sources capable of providing ultrahigh dose rates are under investigation.",
+            "4": "A stable, compact laser-driven proton source with energies greater than 60 MeV enables radiobiological in vivo studies.",
+            "5": "A pilot irradiation study was performed on human tumours in a mouse model.",
+            "6": "The study included the concerted preparation of mice and a laser accelerator.",
+            "7": "The study involved dose-controlled, tumour-conform irradiation using a laser-driven proton source.",
+            "8": "The study involved dose-controlled, tumour-conform irradiation using a clinical reference proton source.",
+            "9": "The study included the radiobiological evaluation of irradiated mice for radiation-induced tumour growth delay.",
+            "10": "The study included the radiobiological evaluation of unirradiated mice for radiation-induced tumour growth delay.",
+            "11": "The prescribed homogeneous dose of 4 Gy was precisely delivered at the laser-driven source.",
+            "12": "The results demonstrate a complete laser-driven proton research platform for diverse user-specific small animal models.",
+            "13": "The platform can deliver tunable single-shot doses up to around 20 Gy to millimetre-scale volumes on nanosecond timescales.",
+            "14": "The platform can deliver doses equivalent to around 10^{9} Gy s^{–1}.",
+            "15": "The platform delivers doses that are spatially homogenized and tailored to the sample.",
+            "16": "The platform provides a unique infrastructure for translational research with protons at ultrahigh dose rates."
+          }
+        },
+        "viewpoints": [
+          "Accelerated protons with ultralow transverse emittance have been applied for the production of high-energy-density matter.",
+          "Accelerated protons with picosecond duration have been applied for the production of high-energy-density matter.",
+          "Accelerated protons with ultralow transverse emittance have been used for the measurement of transient electromagnetic fields.",
+          "Accelerated protons with picosecond duration have been used for the measurement of transient electromagnetic fields.",
+          "Accelerated protons with ultralow transverse emittance have been employed in flash radiotherapy of cancer at an ultrahigh dose rate.",
+          "Accelerated protons with picosecond duration have been employed in flash radiotherapy of cancer at an ultrahigh dose rate."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "However, limitations, including the lack of a long acceleration structure [9], deflection of protons by the self-generated magnetic field [10], and dephasing of the fastest protons during acceleration [11], lead to a proton energy below 100 MeV in experiments [12], [13], [14] except one very recent work reporting the generation of 150-MeV protons [15].",
+        "references": {
+          "9": {
+            "1": "The transverse stability of the target is crucial for obtaining high quality ion beams.",
+            "2": "Obtaining high quality ion beams is a goal of the laser radiation pressure acceleration (RPA) mechanism.",
+            "3": "A theoretical model is presented to clarify the physical mechanism of the transverse instability in the RPA process.",
+            "4": "Supporting two-dimensional (2D) particle-in-cell (PIC) simulations are presented to clarify the physical mechanism of the transverse instability in the RPA process.",
+            "5": "The density ripples of the target foil are mainly induced by the coupling between the transverse oscillating electrons and the quasistatic ions.",
+            "6": "The coupling mechanism between transverse oscillating electrons and quasistatic ions is similar to the oscillating two stream instability in inertial confinement fusion research.",
+            "7": "The predictions of the mode structure from the theory agree well with the results obtained from the PIC simulations in various regimes.",
+            "8": "The predictions of the growth rates from the theory agree well with the results obtained from the PIC simulations in various regimes.",
+            "9": "The agreement between theory and PIC simulations indicates that the model contains the essence of the underlying physics of the transverse breakup of the target."
+          },
+          "10": {
+            "1": "High-intensity lasers interacting with solid foils produce copious numbers of relativistic electrons.",
+            "2": "Relativistic electrons created by high-intensity lasers interacting with solid foils generate strong sheath electric fields around the target.",
+            "3": "Proton beams accelerated in strong sheath electric fields have remarkable properties.",
+            "4": "Proton beams accelerated in strong sheath electric fields enable ultrafast radiography of plasma phenomena.",
+            "5": "Proton beams accelerated in strong sheath electric fields enable isochoric heating of dense materials.",
+            "6": "The current challenge for longer-term multidisciplinary purposes is to achieve proton energies well in excess of 100 MeV.",
+            "7": "Achieving proton energies well in excess of 100 MeV is thought to be possible by raising the on-target laser intensity.",
+            "8": "Longer-term multidisciplinary purposes include spallation neutron sources and cancer therapy.",
+            "9": "Experimental and numerical results show that magnetostatic fields self-generated on the target surface may pose a fundamental limit to sheath-driven ion acceleration.",
+            "10": "Magnetostatic fields may limit sheath-driven ion acceleration for high enough laser intensities.",
+            "11": "Magnetostatic fields can be strong enough at laser intensities of about 10²¹ W cm⁻² to reach approximately 10⁵ T.",
+            "12": "Magnetostatic fields can magnetize sheath electrons.",
+            "13": "Magnetostatic fields can deflect protons off the accelerating region.",
+            "14": "Magnetostatic fields reducing the maximum energy protons can acquire."
+          },
+          "11": {
+            "1": "The study involves experimental results on laser-driven proton acceleration.",
+            "2": "The experimental results use high-intensity laser pulses.",
+            "3": "Power law scalings of the maximum proton energy with laser pulse energy are presented.",
+            "4": "The scaling exponent of proton energy with laser pulse energy strongly depends on the scale length of the preplasma.",
+            "5": "The scale length of the preplasma is affected by the temporal intensity contrast.",
+            "6": "At lower laser intensities, shortening the scale length causes a transition from a square root scaling to a linear scaling.",
+            "7": "Above a certain laser intensity threshold, there is a significant deviation from the observed scaling.",
+            "8": "Two-dimensional particle-in-cell simulations indicate that the electric field accelerating the ions is generated earlier.",
+            "9": "In this case, the electric field accelerating the ions has a higher amplitude.",
+            "10": "The acceleration process starts earlier in the scenario described.",
+            "11": "The fastest protons outrun the region of highest field strength.",
+            "12": "The acceleration process becomes less effective because the fastest protons outrun the region of highest field strength.",
+            "13": "The investigations point to a principle limitation of proton energy in the target normal sheath acceleration regime.",
+            "14": "This limitation may explain why a significant increase of the maximum proton energy above 100 MeV has not yet been achieved."
+          },
+          "12": {
+            "1": "The study focuses on laser-driven ion acceleration using micrometer and submicrometer thick plastic targets.",
+            "2": "Laser pulses with high temporal contrast and an intensity of the order of 10²⁰ W/cm² were used.",
+            "3": "Proton beams with cutoff energies in excess of 85 MeV were observed.",
+            "4": "Proton beams with particle numbers of 10⁹ were observed in an energy bin of 1 MeV around the maximum energy.",
+            "5": "The application of the target normal sheath acceleration mechanism with submicrometer thick targets is a robust method to achieve high ion energies.",
+            "6": "The application of the target normal sheath acceleration mechanism with submicrometer thick targets is a robust method to achieve high particle fluxes.",
+            "7": "The results are supported by 2D particle-in-cell simulations.",
+            "8": "2D particle-in-cell simulations predict cutoff energies above 200 MeV for acceleration based on relativistic transparency.",
+            "9": "The predicted regime of cutoff energies above 200 MeV can be probed after technically feasible adjustments of the laser parameters.",
+            "10": "The predicted regime of cutoff energies above 200 MeV can be probed after technically feasible adjustments of the target parameters."
+          },
+          "13": {
+            "1": "The radiation pressure acceleration (RPA) of charged particles is challenging in laser-driven proton/ion acceleration.",
+            "2": "The challenges in radiation pressure acceleration arise due to stringent requirements in laser conditions.",
+            "3": "The challenges in radiation pressure acceleration arise due to stringent requirements in target conditions.",
+            "4": "The realization of radiation-pressure-driven proton acceleration requires irradiating ultrathin targets.",
+            "5": "The realization of radiation-pressure-driven proton acceleration requires using ultrahigh contrast laser pulses.",
+            "6": "The realization of radiation-pressure-driven proton acceleration requires using ultraintense laser pulses.",
+            "7": "The generation of 93-MeV proton beams was achieved by applying 800-nm laser pulses.",
+            "8": "The generation of 93-MeV proton beams was achieved with 30-fs circularly polarized laser pulses.",
+            "9": "The laser pulses used had an intensity of 6.1 × 10²⁰ W/cm².",
+            "10": "The laser pulses were applied to 15-nm-thick polymer targets.",
+            "11": "Radiation pressure acceleration was confirmed from the obtained optimal target thickness.",
+            "12": "Radiation pressure acceleration was confirmed through quadratic energy scaling.",
+            "13": "Radiation pressure acceleration was confirmed via polarization dependence.",
+            "14": "Radiation pressure acceleration was confirmed with three-dimensional particle-in-cell simulations.",
+            "15": "The clear demonstration of RPA is expected to facilitate the realization of laser-driven proton/ion sources.",
+            "16": "Laser-driven proton/ion sources are expected to deliver energetic particle beams.",
+            "17": "Laser-driven proton/ion sources are expected to deliver short-pulse particle beams.",
+            "18": "These laser-driven proton/ion sources are intended for novel applications."
+          },
+          "14": {
+            "1": "The potential applications of compact laser-plasma ion sources are numerous.",
+            "2": "The development of new acceleration schemes is motivated by the potential applications of compact laser-plasma ion sources.",
+            "3": "New acceleration schemes are developed to increase achievable ion energies.",
+            "4": "New acceleration schemes are developed to increase conversion efficiencies.",
+            "5": "The evolving nature of laser-plasma interactions can limit the effectiveness of individual acceleration mechanisms.",
+            "6": "The evolving nature of laser-plasma interactions can enable the development of hybrid schemes.",
+            "7": "Hybrid schemes allow additional degrees of control on the properties of the resulting ion beam.",
+            "8": "The experimental demonstration shows efficient proton acceleration to energies exceeding 94 MeV.",
+            "9": "The proton acceleration is achieved via a hybrid scheme of radiation pressure-sheath acceleration.",
+            "10": "The hybrid scheme involves an ultrathin foil irradiated by a linearly polarised laser pulse.",
+            "11": "The efficient proton acceleration occurs via a double-peaked electrostatic field structure.",
+            "12": "The double-peaked electrostatic field structure is significantly enhanced by relativistic transparency.",
+            "13": "The double-peaked electrostatic field structure is significantly enhanced by an associated jet of super-thermal electrons.",
+            "14": "The enhancement occurs at an optimum foil thickness.",
+            "15": "The range of parameters over which the hybrid scenario occurs is discussed.",
+            "16": "The implications for ion acceleration driven by next-generation multi-petawatt laser facilities are explored."
+          },
+          "15": {
+            "1": "Laser-driven ion accelerators can deliver high-energy, high-peak current beams.",
+            "2": "Laser-driven ion accelerators are attracting attention as a compact alternative to conventional accelerators.",
+            "3": "Achieving sufficiently high energy levels suitable for applications such as radiation therapy is a challenge for laser-driven ion accelerators.",
+            "4": "Proton beams with a spectrally separated high-energy component of up to 150 MeV are generated.",
+            "5": "Proton beams are generated by irradiating solid-density plastic foil targets with ultrashort laser pulses.",
+            "6": "The ultrashort laser pulses are emitted from a repetitive petawatt laser.",
+            "7": "The preceding laser light heats the solid-density plastic foil target.",
+            "8": "Heating the target leads to the onset of relativistically induced transparency upon the main pulse arrival.",
+            "9": "The laser peak penetrates the initially opaque target.",
+            "10": "The penetration of the laser peak into the target triggers proton acceleration.",
+            "11": "Proton acceleration is triggered through a cascade of different mechanisms.",
+            "12": "Three-dimensional particle-in-cell simulations reveal the cascade of mechanisms triggering proton acceleration.",
+            "13": "The transparency of the target can be used to identify the high-performance domain.",
+            "14": "The transparency of the target makes it a suitable feedback parameter for automated laser optimization.",
+            "15": "The transparency of the target makes it a suitable feedback parameter for automated target optimization.",
+            "16": "Using transparency as a feedback parameter can enhance the stability of plasma accelerators in the future."
+          }
+        },
+        "viewpoints": [
+          "The lack of a long acceleration structure limits the energy of protons to below 100 MeV in experiments.",
+          "The deflection of protons by the self-generated magnetic field limits the energy of protons to below 100 MeV in experiments.",
+          "The dephasing of the fastest protons during acceleration limits the energy of protons to below 100 MeV in experiments.",
+          "A very recent work reported the generation of 150-MeV protons in experiments."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Improving the energy of laser-accelerated protons is thus essential for applications, especially for the instantaneous radiography of dense objects and clinical therapy of deep-seated tumours [16].",
+        "references": {
+          "16": {
+            "1": "Remarkable progress has been made in the development of laser-based particle accelerators in the past few years.",
+            "2": "Laser-based particle accelerators can produce ultrabright beams of multi-megaelectronvolt protons routinely.",
+            "3": "Ultrabright beams of multi-megaelectronvolt protons have potential uses in fields ranging from engineering to medicine.",
+            "4": "Substantial improvements in the performances of laser-based particle accelerators must be made to realize their potential uses.",
+            "5": "A laser-driven accelerator has been demonstrated experimentally to produce the highest energy protons.",
+            "6": "Scaling laws derived from fluid models can be used to accurately describe the acceleration of proton beams in the laser-driven accelerator.",
+            "7": "Numerical simulations support the scaling laws derived from fluid models.",
+            "8": "The scaling laws can accurately describe the acceleration of proton beams for a large range of laser and target parameters.",
+            "9": "The ability to use scaling laws from fluid models and numerical simulations enables the evaluation of laser parameters needed to produce high-energy proton beams.",
+            "10": "The ability to use scaling laws from fluid models and numerical simulations enables the evaluation of laser parameters needed to produce high-quality proton beams.",
+            "11": "High-energy proton beams are of interest for the radiography of dense objects.",
+            "12": "High-quality proton beams are of interest for proton therapy of deep-seated tumors."
+          }
+        },
+        "viewpoints": [
+          "Improving the energy of laser-accelerated protons is essential for applications in instantaneous radiography of dense objects.",
+          "Improving the energy of laser-accelerated protons is essential for applications in clinical therapy of deep-seated tumors."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "To increase the proton energy, a series of efforts has been made in the past two decades [1].",
+        "references": {
+          "1": {
+            "1": "Plasma-based accelerators use strong electromagnetic fields.",
+            "2": "Strong electromagnetic fields can be supported by plasmas.",
+            "3": "Plasma-based accelerators accelerate charged particles to high energies.",
+            "4": "Powerful laser pulses can generate accelerating field structures in plasma.",
+            "5": "Charged particle beams can generate accelerating field structures in plasma.",
+            "6": "The research field of plasma-based accelerators has recently transitioned from involving a few small-scale efforts to larger efforts.",
+            "7": "The research field of plasma-based accelerators is now involving the development of national and international networks of scientists.",
+            "8": "The development of national and international networks of scientists in this research field is supported by substantial investment in large-scale research infrastructure.",
+            "9": "The New Journal of Physics 2020 Plasma Accelerator Roadmap includes perspectives from experts in the field of plasma-based accelerators.",
+            "10": "Perspectives from experts provide a summary overview of the field of plasma-based accelerators.",
+            "11": "Perspectives from experts provide insights into the research needs for plasma-based accelerators.",
+            "12": "Perspectives from experts provide insights into developments in the field of plasma-based accelerators.",
+            "13": "The summary overview and insights are intended for an international audience of scientists.",
+            "14": "The intended audience includes graduate students and researchers entering the field of plasma-based accelerators."
+          }
+        },
+        "viewpoints": [
+          "Efforts have been made in the past two decades to increase proton energy."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Among them, the utilization of structured targets has been intensively studied, and several effective designs have been demonstrated.",
+        "references": {},
+        "viewpoints": [
+          "The utilization of structured targets has been intensively studied to increase proton energy.",
+          "Several effective designs of structured targets have been demonstrated to increase proton energy."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "A straightforward solution is modifying the target front surface to enhance the laser-plasma coupling, and different coating structures, including surface grating [17], carbon nanotube foam [18], and arrays of microwire [19] or microtube [20], have been attempted.",
+        "references": {
+          "17": {
+            "1": "The interaction of laser pulses with thin grating targets is experimentally investigated.",
+            "2": "The thin grating targets have a periodic groove at the irradiated surface.",
+            "3": "Ultrahigh contrast (∼10¹²) pulses allow demonstration of enhanced laser-target coupling.",
+            "4": "Enhanced laser-target coupling is demonstrated for the first time in the relativistic regime of ultrahigh intensity >10¹⁹ W/cm².",
+            "5": "A maximum increase by a factor of 2.5 of the cutoff energy of protons produced by target normal sheath acceleration is observed.",
+            "6": "The increase in the cutoff energy of protons is observed with respect to plane targets.",
+            "7": "The increase in the cutoff energy of protons occurs around the incidence angle expected for the resonant excitation of surface waves.",
+            "8": "A significant enhancement is observed for small angles of incidence.",
+            "9": "The significant enhancement occurs out of resonance."
+          },
+          "18": [],
+          "19": {
+            "1": "Fine structured targets are promising in enhancing laser-driven proton acceleration.",
+            "2": "Fine structured targets are promising for various applications involving laser-driven proton acceleration.",
+            "3": "3D-printed microwire-array (MWA) structure is applied to boost the energy conversion efficiency from laser to proton beam.",
+            "4": "Under irradiation of high contrast femtosecond laser pulse, the MWA target generates over 1.2 × 10¹² protons with energies greater than 1 MeV.",
+            "5": "The cut-off energies of the protons generated by the MWA target extend to 25 MeV.",
+            "6": "The energy conversion efficiency from laser to proton beam using the MWA target is up to 8.7%.",
+            "7": "The energy conversion efficiency using the MWA target is enhanced by three times compared to flat foils.",
+            "8": "The cut-off energy using the MWA target is increased by 32% compared to flat foils.",
+            "9": "The proton energy depends on the spacing of the MWA.",
+            "10": "The conversion-efficiency depends on the spacing of the MWA.",
+            "11": "The experimental trend is well reproduced by hydrodynamic simulations.",
+            "12": "The experimental trend is well reproduced by Particle-In-Cell simulations.",
+            "13": "Hydrodynamic and Particle-In-Cell simulations reveal the modulation of pre-plasma profile.",
+            "14": "The modulation of pre-plasma profile is induced by laser diffraction within the fine structures.",
+            "15": "The work validates the use of 3D-printed micro-structures to produce high-efficiency laser-driven particle sources.",
+            "16": "The work points out the effect of 3D-printed micro-structures in optimizing experimental conditions for laser-driven particle sources."
+          },
+          "20": {
+            "1": "The interaction of an intense laser with a solid foil target can drive TV/m electric fields.",
+            "2": "The interaction of an intense laser with a solid foil target can accelerate ions to MeV energies.",
+            "3": "Structured targets can dramatically enhance proton acceleration in the target normal sheath acceleration regime.",
+            "4": "This study experimentally observes the enhancement of proton acceleration by structured targets.",
+            "5": "Proton acceleration from a flat Ag foil was compared to proton acceleration from a fixed microtube structure 3D printed on the front side of the same foil type.",
+            "6": "The comparison of proton acceleration was conducted at the Texas Petawatt Laser facility.",
+            "7": "A pulse length and intensity study was conducted on laser configurations.",
+            "8": "The optimum laser configuration was found to be 140 fs and 4 × 10²⁰ W/cm².",
+            "9": "In the optimum laser configuration, microtube targets increase the proton cutoff energy by 50%.",
+            "10": "In the optimum laser configuration, microtube targets increase the yield of highly energetic protons (>10 MeV) by a factor of 8.",
+            "11": "When the laser intensity reaches 10²¹ W/cm², the prepulse shutters the microtubes with an overcritical plasma.",
+            "12": "The performance of the microtubes is damped when the prepulse shutters them with an overcritical plasma at 10²¹ W/cm² laser intensity.",
+            "13": "2D particle-in-cell simulations are performed to better understand the coupling of laser energy to the microtube targets.",
+            "14": "The simulations are performed with and without the preplasma profile imported.",
+            "15": "The simulations are in qualitative agreement with the experimental results.",
+            "16": "The simulations show that the prepulse is necessary to account for when the laser intensity is sufficiently high."
+          }
+        },
+        "viewpoints": [
+          "A straightforward solution to enhance laser-plasma coupling is modifying the target front surface.",
+          "Different coating structures have been attempted to modify the target front surface, including surface grating.",
+          "Carbon nanotube foam has been used to modify the target front surface to enhance laser-plasma coupling.",
+          "Arrays of microwire have been used to modify the target front surface to enhance laser-plasma coupling.",
+          "Arrays of microtube have been used to modify the target front surface to enhance laser-plasma coupling."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Another method is modulating the acceleration field in the target rear surface by adopting hydrogen-rich micro-dots [21], hemispherical pits [22], or helical coils [23].",
+        "references": {
+          "21": {
+            "1": "Particle acceleration based on high intensity laser systems is known as laser–plasma acceleration.",
+            "2": "Laser–plasma acceleration has achieved high quality particle beams.",
+            "3": "High quality particle beams produced by laser–plasma acceleration compare favourably with conventional acceleration techniques in terms of emittance.",
+            "4": "High quality particle beams produced by laser–plasma acceleration compare favourably with conventional acceleration techniques in terms of brightness.",
+            "5": "High quality particle beams produced by laser–plasma acceleration compare favourably with conventional acceleration techniques in terms of pulse duration.",
+            "6": "A long-term difficulty associated with laser–plasma acceleration is the very broad, exponential energy spectrum of the emitted particles.",
+            "7": "The very broad, exponential energy spectrum of the emitted particles has been overcome recently for electron beams.",
+            "8": "Analogous results to those achieved for electron beams have been reported for ions.",
+            "9": "Quasi-monoenergetic proton beams have been produced using laser–plasma accelerators.",
+            "10": "Reliable laser-accelerated ion beams were achieved by intense laser irradiation of solid microstructured targets.",
+            "11": "Reproducible laser-accelerated ion beams were achieved by intense laser irradiation of solid microstructured targets.",
+            "12": "The proof-of-principle experiment serves to illuminate the role of laser-generated plasmas as feasible particle sources.",
+            "13": "Scalability studies show that table-top laser systems with high repetition rates have compact size.",
+            "14": "Scalability studies show that table-top laser systems with high repetition rates have reasonable cost.",
+            "15": "Scalability studies show that table-top laser systems with high repetition rates could contribute to the development of new generations of particle injectors.",
+            "16": "New generations of particle injectors developed with the contribution of table-top laser systems may be suitable for medical proton therapy."
+          },
+          "22": {
+            "1": "A detailed experimental and numerical study was conducted on the boosted acceleration of protons from ultra-thin hemispherical targets.",
+            "2": "The study utilized multi-Joule short-pulse laser systems.",
+            "3": "A laser intensity of 1 × 10^{20} W/cm^{2} with an on-target energy of 1.3 J using the current setup achieved a proton cut-off energy of 8.5 MeV.",
+            "4": "The proton cut-off energy of 8.5 MeV is 1.8 times higher compared to a flat foil target of the same thickness.",
+            "5": "A boost in the acceleration process by additionally injected electrons was previously observed for sophisticated targets at high-energy laser systems.",
+            "6": "The proton acceleration process can be utilized over at least two orders of magnitude in intensity.",
+            "7": "The proton acceleration process is suitable for a large number of currently existing laser systems.",
+            "8": "A cut-off energy of about 6.5 MeV of proton energy per Joule of incident laser energy was retrieved.",
+            "9": "This result is a noticeable enhancement compared to previous results employing this mechanism.",
+            "10": "The approach uses structure-wise simple targets.",
+            "11": "The approach is sustainable for numerous applications.",
+            "12": "The approach meets high repetition rate demands."
+          },
+          "23": {
+            "1": "Helical coil accelerators are a recent development in laser-driven ion production.",
+            "2": "Helical coil accelerators act on the intrinsically wide divergence of laser-accelerated protons to deliver ultra-low divergence beams.",
+            "3": "Helical coil accelerators act on the broadband energy spectrum of laser-accelerated protons to deliver quasi-monoenergetic beams.",
+            "4": "The modularity of helical coil accelerators provides the attractive prospective of multi-staging.",
+            "5": "A two-stage configuration of helical coil accelerators is shown on a proof-of-principle basis.",
+            "6": "The two-stage configuration allows optical tuning of the energy of the selected proton beamlet.",
+            "7": "Experimental data highlights the importance of controlling the beam injection precisely.",
+            "8": "Particle tracing simulations corroborate the experimental data.",
+            "9": "Protons were efficiently post-accelerated with an energy gain up to ∼16 MeV.",
+            "10": "The energy gain was ∼8 MeV per stage at an average rate of ∼1 GeV m−1.",
+            "11": "Efficient post-acceleration was achieved at an optimal time delay.",
+            "12": "The optimal time delay allows synchronisation of the selected protons with the accelerating longitudinal electric fields to be maintained through both stages."
+          }
+        },
+        "viewpoints": [
+          "Modulating the acceleration field in the target rear surface is another method to increase proton energy.",
+          "Hydrogen-rich micro-dots are adopted to modulate the acceleration field in the target rear surface.",
+          "Hemispherical pits are adopted to modulate the acceleration field in the target rear surface.",
+          "Helical coils are adopted to modulate the acceleration field in the target rear surface."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Besides, a number of experiments have employed mass-limited targets to improve the proton quality, which can be roughly categorized into two schemes.",
+        "references": {},
+        "viewpoints": [
+          "A number of experiments have employed mass-limited targets to improve proton quality.",
+          "Experiments employing mass-limited targets can be categorized into two schemes to improve proton quality."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "The first utilizes isolated high-repetition targets, like microspheres [24], [25], [26], and cryogenic hydrogen jets [27], where protons are accelerated mainly via the mechanism of collisionless shock acceleration [24] or Coulomb explosion [25], [26].",
+        "references": {
+          "24": {
+            "1": "Experimental studies were conducted on ion acceleration from spherical targets.",
+            "2": "The spherical targets have a diameter of 15 μm.",
+            "3": "The spherical targets were irradiated by ultraintense pulses.",
+            "4": "The intensity of the laser pulses is 1×10²⁰ W/cm².",
+            "5": "The laser system used is a 20-TW Ti:sapphire laser.",
+            "6": "A highly directed proton beam is observed in the laser propagation direction.",
+            "7": "The spectrum of the proton beam is plateau-shaped.",
+            "8": "The proton beam extends to energies up to 8 MeV.",
+            "9": "The proton beam arises from acceleration in a converging shock launched by the laser.",
+            "10": "The occurrence of the proton beam is confirmed by 3-dimensional particle-in-cell simulations.",
+            "11": "The temporal evolution of the shock-front curvature shows excellent agreement with a two-dimensional radiation pressure model."
+          },
+          "25": {
+            "1": "Experiments were conducted irradiating isolated plastic spheres.",
+            "2": "The peak laser intensity used in experiments was 2–3 × 10²⁰ W cm⁻².",
+            "3": "The laser focal spot size was 10 μm full width half maximum (FWHM) during experiments.",
+            "4": "The sphere diameter was varied between 520 nm and 19.3 μm in experiments.",
+            "5": "Maximum proton energies of ~25 MeV are achieved when target diameters match the focal spot size of 10 μm.",
+            "6": "Maximum proton energies of ~25 MeV are achieved when target diameters are slightly smaller than the focal spot size of 10 μm.",
+            "7": "For smaller spheres, the kinetic energy distributions of protons become nonmonotonic.",
+            "8": "The nonmonotonic energy distribution indicates a change in the accelerating mechanism for protons.",
+            "9": "The accelerating mechanism changes from ambipolar expansion to a regime dominated by Coulomb repulsion of ions for smaller spheres.",
+            "10": "The energy conversion efficiency from laser energy to proton kinetic energy is optimized when the target diameter matches the laser focal spot size.",
+            "11": "Energy conversion efficiencies can reach the percent level when the target diameter matches the laser focal spot size.",
+            "12": "The change in proton acceleration efficiency with target size can be attributed to reduced cross-sectional overlap of subfocus targets with the laser.",
+            "13": "Reported experimental observations are consistent with 3D3V particle-in-cell simulations.",
+            "14": "Experiments make use of well-defined targets.",
+            "15": "Experiments point out pathways for future applications and experiments."
+          },
+          "26": {
+            "1": "Interpretation of experiments on the manipulation of energy distribution of laser-accelerated ion bunches is often complicated.",
+            "2": "The complication arises from the multitude of competing dynamic processes that simultaneously contribute to recorded ion signals.",
+            "3": "The acceleration of a clean proton bunch is demonstrated experimentally.",
+            "4": "A microscopic and three-dimensionally confined near critical density plasma was used to achieve the acceleration of a clean proton bunch.",
+            "5": "The near critical density plasma evolves from a 1 µm diameter plastic sphere.",
+            "6": "The plastic sphere is levitated and positioned with micrometer precision in the focus of a Petawatt laser pulse.",
+            "7": "The emitted proton bunch is reproducibly observed with central energies between 20 and 40 MeV.",
+            "8": "The emitted proton bunch has a narrow energy spread down to 25%.",
+            "9": "The emitted proton bunch shows almost no low-energetic background.",
+            "10": "The complete acceleration process of the emitted proton bunch is tracked together with three-dimensional particle-in-cell simulations.",
+            "11": "The tracking evidences the transition from organized acceleration to Coulomb repulsion.",
+            "12": "The tracking and analysis reveal limitations of current high power lasers.",
+            "13": "Viable paths to optimize laser-driven ion sources are revealed."
+          },
+          "27": {
+            "1": "Laser plasma-based particle accelerators attract great interest in fields where conventional accelerators are limited by size.",
+            "2": "Laser plasma-based particle accelerators attract great interest in fields where conventional accelerators are limited by cost.",
+            "3": "Laser plasma-based particle accelerators attract great interest in fields where conventional accelerators are limited by beam parameters.",
+            "4": "Particle in cell simulations have predicted several advantageous ion acceleration schemes.",
+            "5": "Laser accelerators have not yet reached their full potential in producing simultaneous high-radiation doses at high particle energies.",
+            "6": "The most stringent limitation of laser plasma-based particle accelerators is the lack of a suitable high-repetition rate target.",
+            "7": "A suitable high-repetition rate target for laser plasma-based particle accelerators must provide a high degree of control of the plasma conditions required to access advanced regimes.",
+            "8": "The interaction of petawatt-class laser pulses with a pre-formed micrometer-sized cryogenic hydrogen jet plasma overcomes the limitations of high-repetition rate target and control of plasma conditions.",
+            "9": "The interaction of petawatt-class laser pulses with a pre-formed micrometer-sized cryogenic hydrogen jet plasma enables tailored density scans from the solid to the underdense regime.",
+            "10": "The near-critical plasma density profile produces proton energies of up to 80 MeV.",
+            "11": "This production of proton energies was demonstrated by a proof-of-concept experiment.",
+            "12": "Hydrodynamic and three-dimensional particle in cell simulations show the transition between different acceleration schemes.",
+            "13": "The transition between different acceleration schemes suggests enhanced proton acceleration at the relativistic transparency front for the optimal case."
+          }
+        },
+        "viewpoints": [
+          "The first scheme utilizes isolated high-repetition targets to improve proton quality.",
+          "Microspheres are used as isolated high-repetition targets where protons are accelerated mainly via collisionless shock acceleration.",
+          "Cryogenic hydrogen jets are used as isolated high-repetition targets where protons are accelerated mainly via the mechanism of Coulomb explosion."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The second scheme uses foils with a reduced transverse size to enhance the target normal sheath acceleration (TNSA) of protons, since the laterally spreading electrons would be reflected around the foil edges [28], [29] and reaccelerated to higher energies if a sub-picosecond driving laser [10], [30], [31], [32], [33], [34] was employed.",
+        "references": {
+          "28": {
+            "1": "This paper reports on simulations of solid mass-limited targets using electrodynamic two-dimensional, three velocity component particle-in-cell simulations.",
+            "2": "The paper describes in detail the interaction of long (300 fs), high intensity (10^{20} W/cm^{2}) laser pulses with targets of diameter down to 1 μm.",
+            "3": "The detailed description focuses on electron dynamics and proton and ion acceleration.",
+            "4": "Different effects arise depending on the foil diameter.",
+            "5": "Electrons laterally recirculate within the target.",
+            "6": "The lateral recirculation of electrons smoothens the target rear accelerating sheath.",
+            "7": "The lateral recirculation of electrons increases the hot electron density and temperature.",
+            "8": "The results suggest that the most significant ion energy enhancement should be expected for mass-limited targets with diameter below the laser focal spot size.",
+            "9": "The spread of energetic protons is decreased for medium-sized foils.",
+            "10": "The spread of energetic protons is greatly increased for foils of size near the laser focal spot size."
+          },
+          "29": {
+            "1": "Reduced surface area targets were studied using an ultra-high intensity femtosecond laser.",
+            "2": "The study aimed to determine the effect of electron sheath field confinement on electron dynamics.",
+            "3": "X-ray emission due to energetic electrons was imaged using a Kα imaging crystal.",
+            "4": "Electrons were observed to travel along the surface of wire targets.",
+            "5": "Electrons were slowed mainly by the induced fields.",
+            "6": "Targets with reduced surface areas were correlated with increased hot electron densities.",
+            "7": "Targets with reduced surface areas were correlated with increased proton energies.",
+            "8": "Hybrid Vlasov–Fokker–Planck simulations demonstrated increased electric sheath field strength in reduced surface area targets."
+          },
+          "10": {
+            "1": "High-intensity lasers interacting with solid foils produce copious numbers of relativistic electrons.",
+            "2": "Relativistic electrons created by high-intensity lasers interacting with solid foils generate strong sheath electric fields around the target.",
+            "3": "Proton beams accelerated in strong sheath electric fields have remarkable properties.",
+            "4": "Proton beams accelerated in strong sheath electric fields enable ultrafast radiography of plasma phenomena.",
+            "5": "Proton beams accelerated in strong sheath electric fields enable isochoric heating of dense materials.",
+            "6": "The current challenge for longer-term multidisciplinary purposes is to achieve proton energies well in excess of 100 MeV.",
+            "7": "Achieving proton energies well in excess of 100 MeV is thought to be possible by raising the on-target laser intensity.",
+            "8": "Longer-term multidisciplinary purposes include spallation neutron sources and cancer therapy.",
+            "9": "Experimental and numerical results show that magnetostatic fields self-generated on the target surface may pose a fundamental limit to sheath-driven ion acceleration.",
+            "10": "Magnetostatic fields may limit sheath-driven ion acceleration for high enough laser intensities.",
+            "11": "Magnetostatic fields can be strong enough at laser intensities of about 10²¹ W cm⁻² to reach approximately 10⁵ T.",
+            "12": "Magnetostatic fields can magnetize sheath electrons.",
+            "13": "Magnetostatic fields can deflect protons off the accelerating region.",
+            "14": "Magnetostatic fields reducing the maximum energy protons can acquire."
+          },
+          "30": {
+            "1": "Targets composed of V/Cu/Al layers are thin and mass-limited.",
+            "2": "Diameters of the V/Cu/Al targets range from 50 to 300 μm.",
+            "3": "The V/Cu/Al targets have been isochorically heated by a 300 fs laser pulse.",
+            "4": "The 300 fs laser pulse delivered up to 10 J.",
+            "5": "The 300 fs laser pulse had an irradiance of 2×10¹⁹ W/cm².",
+            "6": "Spectral analysis was detailed and involved Cu x-ray emission.",
+            "7": "The highest temperatures achieved were of the order of 100 eV.",
+            "8": "The highest temperatures were reached by irradiating the smallest targets.",
+            "9": "A high-contrast, frequency-doubled pulse was used for irradiating the smallest targets.",
+            "10": "Reaching the highest temperatures occurred despite a reduced laser energy.",
+            "11": "Collisional particle-in-cell simulations were used.",
+            "12": "Collisional particle-in-cell simulations confirm the influence of preformed plasma on bulk target heating.",
+            "13": "The influence of the preformed plasma on bulk target heating is detrimental."
+          },
+          "31": {
+            "1": "The coupling of ultraintense lasers at ∼2×10¹⁹ W/cm² with solid foils of limited transverse extent has been analyzed.",
+            "2": "The analysis was conducted by monitoring the electrons and ions emitted from the target.",
+            "3": "Reducing the target surface area allows electrons at the target surface to be reflected from the target edges during or shortly after the laser pulse.",
+            "4": "Transverse refluxing can maintain a hotter electron sheath around the target for a longer time.",
+            "5": "Transverse refluxing can maintain a denser electron sheath around the target for a longer time.",
+            "6": "Transverse refluxing can maintain a more homogeneous electron sheath around the target for a longer time.",
+            "7": "When transverse refluxing takes place within the acceleration time of associated ions, there is an increase in maximum proton energies up to threefold.",
+            "8": "When transverse refluxing takes place within the acceleration time of associated ions, there is an increase in laser-to-ion conversion efficiency up to a factor 30.",
+            "9": "When transverse refluxing takes place within the acceleration time of associated ions, there is reduced divergence.",
+            "10": "When transverse refluxing takes place within the acceleration time of associated ions, the observed effects bode well for a number of applications."
+          },
+          "32": {
+            "1": "The transverse refluxing of energetic electrons occurs in mass-limited foil targets irradiated with high intensity (1 × 10¹⁹ W cm⁻²), picosecond laser pulses.",
+            "2": "The maximum energies of protons accelerated by sheath fields formed at the rear and edges of the target increase as the target size decreases.",
+            "3": "This relationship between the maximum energies of protons and target size is demonstrated experimentally.",
+            "4": "The increase in maximum energies of protons with decreasing target size is due to the modification of the sheath field.",
+            "5": "The modification of the sheath field is caused by energetic electrons spreading laterally along the target surface.",
+            "6": "Energetic electrons reflect from the edges of the target, contributing to the modification of the sheath field.",
+            "7": "The transverse refluxing of energetic electrons can be used to tailor the spatial-intensity distribution of the proton beam.",
+            "8": "Tailoring the spatial-intensity distribution of the proton beam is achieved by engineering the shape and size of the target.",
+            "9": "This application of transverse refluxing of energetic electrons is shown experimentally."
+          },
+          "33": {
+            "1": "Experimental results of laser-to-proton conversion efficiency are presented as a function of lateral confinement of the refluxing electrons.",
+            "2": "Experiments were conducted using the T-Cubed laser.",
+            "3": "The experiments were conducted at the Center for Ultrafast Optical Science, University of Michigan.",
+            "4": "The laser-to-proton conversion efficiency increases by 50% with increased confinement of the target from surroundings.",
+            "5": "The increase in laser-to-proton conversion efficiency is measured with respect to a flat target of the same thickness.",
+            "6": "Three-dimensional hybrid particle-in-cell simulations using LSP code are conducted.",
+            "7": "The simulations using LSP code agree with the experimental data.",
+            "8": "The adopted target design is suitable for high repetition rate operation.",
+            "9": "The adopted target design is suitable for Inertial Confinement Fusion applications."
+          },
+          "34": {
+            "1": "High-energy short-pulse lasers are creating strong electromagnetic fields at the laser focus.",
+            "2": "High-energy short-pulse lasers are accelerating electrons to relativistic velocities.",
+            "3": "High-energy short-pulse lasers are pushing the limits of plasma-based particle acceleration.",
+            "4": "High-energy short-pulse lasers are pushing the limits of x-ray generation.",
+            "5": "High-energy short-pulse lasers are pushing the limits of high-harmonic generation.",
+            "6": "Understanding relativistic electron dynamics is essential for interpreting measurements accurately.",
+            "7": "A unified and self-consistent modeling approach is presented.",
+            "8": "The modeling approach is in quantitative agreement with measurements across multiple target types.",
+            "9": "The modeling approach agrees with differing trends across target types from two separate laser systems.",
+            "10": "The two laser systems differ only in their nanosecond to picosecond-scale rising edge.",
+            "11": "High-fidelity modeling of laser-plasma interaction provides insights into target evolution.",
+            "12": "The ps-scale, orders of magnitude weaker rising edge of the main pulse measurably alters target evolution compared to idealized pulse shapes.",
+            "13": "The ps-scale, orders of magnitude weaker rising edge of the main pulse measurably alters relativistic electron generation compared to idealized pulse shapes.",
+            "14": "Ps-scale prepulse variations can lead to differences in maximum energy protons between two nominally identical laser shots.",
+            "15": "The experimentally observed difference between 45 MeV and 75 MeV maximum energy protons is due to ps-scale prepulse variations.",
+            "16": "Realistic inclusion of temporal laser pulse profiles is required in modeling efforts for predictive capability.",
+            "17": "Realistic inclusion of temporal laser pulse profiles is required in modeling efforts for extrapolation in future target and laser designs.",
+            "18": "Realistic inclusion of temporal laser pulse profiles is required in modeling efforts for other relativistic laser ion acceleration schemes."
+          }
+        },
+        "viewpoints": [
+          "The second scheme uses foils with a reduced transverse size to enhance the target normal sheath acceleration (TNSA) of protons.",
+          "Foils with a reduced transverse size enhance TNSA because the laterally spreading electrons are reflected around the foil edges.",
+          "If a sub-picosecond driving laser is employed, reflected electrons are reaccelerated to higher energies."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Several experiments have also tried a femtosecond driving laser with a relatively low power of less than 200 TW, demonstrating a robust enhancement of proton energy [35], [36], [37].",
+        "references": {
+          "35": {
+            "1": "Proton acceleration from a thin foil irradiated by a laser pulse at relativistic intensities is highly dependent on electron dynamics at the rear side of the foil.",
+            "2": "Reducing the lateral size of the laser irradiated foil confines hot electrons in a small volume.",
+            "3": "Confined hot electrons in a small volume lead to an enhancement of the maximum proton energy in the target normal sheath acceleration regime.",
+            "4": "Confined hot electrons in a small volume lead to an enhancement of conversion efficiency in the target normal sheath acceleration regime.",
+            "5": "An optimal lateral size of the target can be found for proton acceleration in target normal sheath acceleration.",
+            "6": "A smaller target surface leads to better hot electron confinement.",
+            "7": "A smaller target surface enhances the Debye sheath accelerating the protons.",
+            "8": "A smaller target surface leads to an increase of preplasma formation due to limited laser contrast available experimentally.",
+            "9": "An increase of preplasma formation due to limited laser contrast available experimentally leads to a decrease of proton acceleration.",
+            "10": "The experimentally found optimum is in good agreement with analytic theory.",
+            "11": "The experimentally found optimum is in good agreement with 2D particle-in-cell simulations.",
+            "12": "The maximum proton energy as a function of pulse duration has been investigated.",
+            "13": "The experimental results fit an analytical model."
+          },
+          "36": {
+            "1": "The paper investigates the ultrashort pulse laser driven acceleration of protons from thin targets of finite size.",
+            "2": "The thin targets of finite size are referred to as reduced mass targets (RMTs).",
+            "3": "Targets were manufactured using lithographic techniques.",
+            "4": "The manufactured targets varied in size, thickness, and mounting geometry.",
+            "5": "The targets were irradiated with ultrashort laser pulses lasting 30 fs.",
+            "6": "The intensity of the laser pulses was approximately 8 × 10^{20} W cm^{−2}.",
+            "7": "A robust maximum energy enhancement was observed when comparing gold RMTs to plain gold foils.",
+            "8": "The maximum energy enhancement was almost a factor of two.",
+            "9": "The plain gold foils used in the comparison had the same thickness as the gold RMTs.",
+            "10": "The thickness change of RMTs has less influence on the measured maximum proton energy compared to standard foils.",
+            "11": "Detailed particle-in-cell simulations explain this observation.",
+            "12": "The influence of RMT geometry on the electron sheath explains the observation.",
+            "13": "The performance gain was restricted to lateral target sizes greater than 50 µm.",
+            "14": "This restriction can be attributed to the influences of edge and mounting structures."
+          },
+          "37": {
+            "1": "Experimental results are reported on the effects of laser contrast on beam divergence of protons.",
+            "2": "Experimental results are reported on the effects of laser contrast on the energy spectrum of protons.",
+            "3": "Protons are emitted from ultrashort intense laser interactions with normal large foil targets.",
+            "4": "Protons are emitted from ultrashort intense laser interactions with transverse-size-reduced targets.",
+            "5": "Correlations are found between the beam divergence of protons and the spectral shape of protons.",
+            "6": "Large proton beam divergence is observed for both normal large foil and transverse-size-reduced targets with low laser pulse contrast.",
+            "7": "A near-plateau shape energy spectrum of protons is observed for both normal large foil and transverse-size-reduced targets with low laser pulse contrast.",
+            "8": "With high contrast laser irradiation, proton beam divergence is remarkably reduced for large foil targets.",
+            "9": "With high contrast laser irradiation, the energy spectral shape of protons is changed to exponential for large foil targets.",
+            "10": "For transverse-size-reduced targets, a similar large proton beam divergence remains with high contrast laser irradiation.",
+            "11": "For transverse-size-reduced targets, the near-plateau spectral shape remains with high contrast laser irradiation.",
+            "12": "The results could be explained by preplasma formation at different laser contrasts.",
+            "13": "The results could be explained by target deformation at different laser contrasts.",
+            "14": "The results could be explained by modified accelerating sheath field evolution in transverse-size-reduced targets.",
+            "15": "The explanation of the results is supported by 2D hydrodynamic simulations.",
+            "16": "The explanation of the results is supported by PIC simulations."
+          }
+        },
+        "viewpoints": [
+          "Several experiments have tried a femtosecond driving laser with a power of less than 200 TW.",
+          "The use of a femtosecond driving laser with a power of less than 200 TW demonstrates a robust enhancement of proton energy."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The major challenge in further improving the proton energy by irradiating a petawatt femtosecond laser on structured targets is to preserve the nano- or micro-structures before the arrival of the main pulse.",
+        "references": {},
+        "viewpoints": [
+          "A major challenge in improving proton energy by irradiating a petawatt femtosecond laser on structured targets is preserving the nano- or micro-structures before the main pulse arrives."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "High temporal contrast of laser is a prerequisite for such experiments since the intensity of prepulse should be suppressed below the damage threshold of the targets, which is relatively low due to the structures [38].",
+        "references": {
+          "38": {
+            "1": "Brilliant X- and γ-ray sources with ultrashort duration are widely pursued in fundamental science.",
+            "2": "Brilliant X- and γ-ray sources with ultrashort duration are widely pursued in industry.",
+            "3": "Brilliant X- and γ-ray sources with ultrashort duration are widely pursued in medicine.",
+            "4": "Compact femtosecond X-ray sources based on relativistic electrons accelerated by the laser wakefield in gases have performed outstandingly.",
+            "5": "The energy conversion efficiency from laser to hard X-ray photons (>10 keV) for compact femtosecond X-ray sources is limited to 10−7–10−5.",
+            "6": "High-yield generation of hard X-ray flashes from targets made of carbon nanotubes is being reported.",
+            "7": "The targets used for the generation of hard X-ray flashes are made of carbon nanotubes instead of gases.",
+            "8": "Orders-of-magnitude more electrons are accelerated to relativistic energy inside a micrometre-scale, near-critical density plasma formed by the nanotube target.",
+            "9": "The micrometre-scale, near-critical density plasma is formed by the nanotube target.",
+            "10": "Electrons are strongly wiggled inside the micrometre-scale, near-critical density plasma.",
+            "11": "The wiggling of electrons inside the micrometre-scale, near-critical density plasma emits 10^12 high-energy photons per shot.",
+            "12": "The yield of hard X-rays exceeds 10^10 photons per joule.",
+            "13": "The yield corresponds to an unprecedented efficiency of 10−3.",
+            "14": "Carbon nanotube targets irradiated by upcoming 10-PW-class lasers can deliver 10-MeV photons.",
+            "15": "The brightness of 10-MeV photons from these targets outperforms existing sources by two orders of magnitude."
+          }
+        },
+        "viewpoints": [
+          "High temporal contrast of the laser is a prerequisite for experiments with a petawatt femtosecond laser on structured targets.",
+          "The intensity of the prepulse should be suppressed below the damage threshold of the targets.",
+          "The damage threshold of structured targets is relatively low."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Another difficulty is to maintain an excellent laser pointing accuracy within a few microns [28], which is crucial to precisely align the focal spot on the structures of targets.",
+        "references": {
+          "28": {
+            "1": "This paper reports on simulations of solid mass-limited targets using electrodynamic two-dimensional, three velocity component particle-in-cell simulations.",
+            "2": "The paper describes in detail the interaction of long (300 fs), high intensity (10^{20} W/cm^{2}) laser pulses with targets of diameter down to 1 μm.",
+            "3": "The detailed description focuses on electron dynamics and proton and ion acceleration.",
+            "4": "Different effects arise depending on the foil diameter.",
+            "5": "Electrons laterally recirculate within the target.",
+            "6": "The lateral recirculation of electrons smoothens the target rear accelerating sheath.",
+            "7": "The lateral recirculation of electrons increases the hot electron density and temperature.",
+            "8": "The results suggest that the most significant ion energy enhancement should be expected for mass-limited targets with diameter below the laser focal spot size.",
+            "9": "The spread of energetic protons is decreased for medium-sized foils.",
+            "10": "The spread of energetic protons is greatly increased for foils of size near the laser focal spot size."
+          }
+        },
+        "viewpoints": [
+          "Maintaining excellent laser pointing accuracy within a few microns is a difficulty in improving proton energy with structured targets.",
+          "Precise alignment of the focal spot on the structures of targets requires excellent laser pointing accuracy within a few microns."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Moreover, since the peak intensity of a multi-petawatt laser can be orders of magnitude higher than that of terawatt pulses, proton acceleration may occur via a novel and complex mechanism, and a proper understanding of the acceleration process is critical for the optimization of laser parameters and the design of target structures.",
+        "references": {},
+        "viewpoints": [
+          "The peak intensity of a multi-petawatt laser can be orders of magnitude higher than that of terawatt pulses.",
+          "Proton acceleration with a multi-petawatt laser may occur via a novel and complex mechanism.",
+          "A proper understanding of the proton acceleration process is critical for optimizing laser parameters.",
+          "A proper understanding of the proton acceleration process is critical for designing target structures."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "In this article, we demonstrate an enhanced acceleration of protons from a structured nanometre-thick polymer foil driven by a multi-petawatt femtosecond laser.",
+        "references": {},
+        "viewpoints": [
+          "The article demonstrates enhanced acceleration of protons from a structured nanometre-thick polymer foil.",
+          "Enhanced acceleration of protons is achieved using a multi-petawatt femtosecond laser."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The temporal contrast and pointing stability of the petawatt laser were well controlled, and the transverse shape of the polymer foils was tailored with a 100-kHz, μJ femtosecond laser.",
+        "references": {},
+        "viewpoints": [
+          "The temporal contrast of the petawatt laser was well controlled in the experiment.",
+          "The pointing stability of the petawatt laser was well controlled in the experiment.",
+          "The transverse shape of the polymer foils was tailored with a 100-kHz, μJ femtosecond laser."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "From a 100-nm-thick, 30-μm-wide foil, 110-MeV protons were successfully measured by several detection methods and unambiguously confirmed by the CR-39 plate in a stack detector.",
+        "references": {},
+        "viewpoints": [
+          "110-MeV protons were successfully measured from a 100-nm-thick, 30-μm-wide foil.",
+          "Several detection methods measured the 110-MeV protons.",
+          "The CR-39 plate in a stack detector unambiguously confirmed the 110-MeV protons."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "With the help of two- and three-dimensional (3D) particle-in-cell (PIC) simulations, we revealed that such energetic protons were accelerated by a hybrid mechanism of radiation pressure and Coulomb repulsion, the latter of which was enhanced in laser-tailored foils by suppressing the conduction of cold electrons.",
+        "references": {},
+        "viewpoints": [
+          "Two- and three-dimensional particle-in-cell simulations helped reveal the mechanism of proton acceleration.",
+          "Energetic protons were accelerated by a hybrid mechanism of radiation pressure and Coulomb repulsion.",
+          "Coulomb repulsion was enhanced in laser-tailored foils by suppressing the conduction of cold electrons."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Our experimental result, thus, clearly demonstrated the enhancement of proton energy by employing conduction-restricted nanometre targets.",
+        "references": {},
+        "viewpoints": [
+          "The experimental result demonstrated the enhancement of proton energy by employing conduction-restricted nanometre targets."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Furthermore, our work indicates that the current technology is ready to support the desired interaction of a petawatt femtosecond driving laser with structured foils, and further improving the proton quality can be realized by employing well-designed targets with controllable acceleration structures.",
+        "references": {},
+        "viewpoints": [
+          "The work indicates that current technology is ready to support the interaction of a petawatt femtosecond driving laser with structured foils.",
+          "Further improving proton quality can be realized by employing well-designed targets with controllable acceleration structures."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56667-3_with_abstracts",
+    "base_id": "s41467-025-56667-3",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56667-3_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

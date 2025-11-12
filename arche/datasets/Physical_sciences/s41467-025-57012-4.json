@@ -1,0 +1,1264 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "The photoinduced semiconductor-to-metal transition (PSMT) has demonstrated significant potential in various applications, such as information storage, sensing, optoelectronics, optical switches, and so on [1] , [2] , [3] . In the realm of fundamental science, the PSMT reflects photodynamic mechanisms, photoinduced excitations and transition processes, and the relationship between material electronic and atomic structures [4] , [5] , [6] , [7] , [8] , [9] . In most cases, the PSMTs are just temporary and disappear as the irradiation is switched off [10] . In rare cases, the transition can be sustained [3] , usually by a conversion between a material’s crystalline and amorphous forms. PSMTs can induce changes in atomic structures, e.g., Peierls distortion in TiSe 2 and VO 2 [11] , [12] , or just alter the electronic structures [13] . So far, evidence for these phase transitions has been primarily based on conductivity variations, diffraction spectra, or theoretical simulations [14] , [15] , [16] . A direct real-space proof at the atomic or molecular scale remains absent. Moreover, all of the reported PSMTs occurred between two structural phases of the same material [1] , [2] , [3] , [4] , [5] , [6] , [7] , [8] , [9] , [10] , [11] , [12] , [13] , [14] , [15] , [16] . There has been no precedent for PSMTs between two different materials. Surface reconstruction refers to structural changes in the surface lateral atomic arrangement, likely to be accompanied by the varied vertical interlayer spacing and surface dipole [17] , [18] , [19] , [20] , [21] . This transformation significantly affects the chemical and physical nature of materials, playing a vital role in catalysis, sensing, surface engineering, device design, and biomedical technologies [22] , [23] , [24] , [25] . Regulating and understanding surface reconstruction is thus critical for both fundamental and applied research. Surface reconstruction can be triggered through a variety of approaches, e.g., surface cleaning, cleavage, molecule adsorption, and surface reactions [26] , [27] , [28] . Photoinduced surface reconstruction is scarcely reported, despite its high controllability, remote operability, and possible interoperability with other photo-related techniques. In all reported cases, the chemical composition of the surface layers remains essentially unchanged. Copper selenide (Cu 2 Se) is an intrinsic semiconductor [29] , [30] , [31] , [32] . Its thin flake is known as a typical two-dimensional (2D) transition metal chalcogenide. The interaction of photons with 2D materials has sparked great interest due to their unique optical and photoelectrical properties, as well as their immense potential in optoelectronic sensing, photocatalysis, and optoelectronic devices [33] , [34] , [35] , [36] , [37] , [38] , [39] . Herein, we present atomic-scale evidence for a photoinduced transition from a Cu 2 Se layer on top of Cu(111) to the single-atomic Cu layer (Fig. 1 ). The Cu 2 Se single-atomic layer is produced by selenization of the Cu(111) surface in ultrahigh vacuum (UHV), forming a striped Moiré pattern. Combining scanning tunneling microscopy and spectroscopy (STM and STS) with density functional theory (DFT) calculations, we demonstrate that light irradiation can trigger a dramatic “face changing” of the surface, transforming it from the semiconducting Cu 2 Se layer into a close-packed Cu layer by sinking the Se atoms to the subsurface, creating a new Cu 2 Se sublayer, and lifting partial subsurface Cu atoms to the outermost layer. Upon thermal activation, the transition can be reversed to the original Cu 2 Se surface via segregation. The photoinduced transition of the surface into an electronically excited state is crucial, as the calculated Cu 2 Se-to-Cu transition barrier is significantly lower in the excited state than in the ground state. This work proposes an example of PSMT between two distinct materials. The interlayer atom exchange switches the surface layer from semiconducting to metallic. The findings shed fresh light on photoinduced surface reconstruction, with potential applications in photodetectors, catalysis, and, most notably, in the development of innovative materials with unique functions. Fig. 1: Schematic illustration of the photoinduced Cu 2 Se-to-Cu surface transition on Cu(111). The Cu 2 Se single layer is fabricated on Cu(111) by surface selenization, with the Se atoms, Cu atoms in the Cu 2 Se layer, and Cu atoms in all other layers colored orange, blue, and light blue, respectively. Upon light illumination, Se atoms sink to the sublayer, forming a new layer of Cu 2 Se there, while subsurface Cu atoms are lifted to the outermost surface. As a result, the surface reconstructs into a close-packed Cu layer. The photoinduced electronically excited state plays a crucial role in the semiconductor-to-metal transition. The transition is reversible upon thermal activation, reinstating the Cu 2 Se surface layer. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "The photoinduced semiconductor-to-metal transition (PSMT) has demonstrated significant potential in various applications, such as information storage, sensing, optoelectronics, optical switches, and so on [1] , [2] , [3] .",
+        "references": {
+          "1": {
+            "1": "In-sensor computing is an emerging field.",
+            "2": "Materials that respond to optical stimuli in conjunction with non-volatile phase transition are highly desired for realizing bioinspired neuromorphic vision components.",
+            "3": "The researchers report a non-volatile multi-level control of VO₂ films.",
+            "4": "The non-volatile multi-level control of VO₂ films is achieved by oxygen stoichiometry engineering under ultraviolet irradiation.",
+            "5": "The reversible regulation of VO₂ films using ultraviolet irradiation and electrolyte gating is the basis for demonstrating a proof-of-principle neuromorphic ultraviolet sensor.",
+            "6": "The neuromorphic ultraviolet sensor demonstrated has integrated sensing, memory, and processing functions at room temperature.",
+            "7": "The neuromorphic ultraviolet sensor has silicon compatible potential.",
+            "8": "The silicon compatible potential of the neuromorphic ultraviolet sensor is proven through the wafer-scale integration of a neuromorphic sensor array.",
+            "9": "The device displays linear weight update with optical writing.",
+            "10": "The linear weight update with optical writing is due to the metallic phase proportion increasing almost linearly with the light dosage.",
+            "11": "The artificial neural network consisting of this neuromorphic sensor can extract ultraviolet information from the surrounding environment.",
+            "12": "The artificial neural network consisting of this neuromorphic sensor significantly improves recognition accuracy from 24% to 93%.",
+            "13": "This work provides a path to design neuromorphic sensors.",
+            "14": "This work will facilitate the potential applications of neuromorphic sensors in artificial vision systems."
+          },
+          "2": {
+            "1": "Exploiting stable and earth-abundant electrocatalysts with high catalytic activity is a significant challenge for the hydrogen evolution reaction.",
+            "2": "This work focuses on a simple and feasible way to improve hydrogen evolution reaction performance.",
+            "3": "The method involves manipulation of intrinsic physical properties of the material, unlike complex nanostructuring.",
+            "4": "This work presents a semiconductor-metal transition in ultrathin troilite FeS nanosheets.",
+            "5": "The transition is triggered by near infrared radiation at near room temperature.",
+            "6": "This occurrence is reported for the first time.",
+            "7": "Photogenerated metal-phase FeS nanosheets demonstrate intrinsically high catalytic activity for the hydrogen evolution reaction.",
+            "8": "Photogenerated metal-phase FeS nanosheets demonstrate fast carrier transfer for the hydrogen evolution reaction.",
+            "9": "The FeS nanosheets lead to an overpotential of 142 mV at 10 mA cm<sup>−2</sup>.",
+            "10": "The FeS nanosheets lead to a lower Tafel slope of 36.9 mV per decade.",
+            "11": "The findings provide new inspirations for steering electron transfer.",
+            "12": "The findings provide new inspirations for designing new-type catalysts."
+          },
+          "3": {
+            "1": "Nanogranular trititanium pentaoxide (Ti₃O₅) is an oxide that shows a photoreversible phase transition at room temperature.",
+            "2": "Nanogranular trititanium pentaoxide (Ti₃O₅) has recently attracted considerable attention.",
+            "3": "The reason for the attention to nanogranular trititanium pentaoxide (Ti₃O₅) is its applicability in optical data storage.",
+            "4": "The paper reports on the dynamics of the photoinduced semiconductor-to-metal transition from the β phase to the λ phase of nanogranular trititanium pentaoxide (Ti₃O₅) at room temperature.",
+            "5": "Time-resolved diffuse reflection spectroscopy was conducted over a wide range of time scales, from femtoseconds to microseconds.",
+            "6": "The overall relaxation behavior of the photoinduced transition in nanogranular trititanium pentaoxide (Ti₃O₅) was characterized.",
+            "7": "A transient phase transition occurs within a few hundreds of femtoseconds in nanogranular trititanium pentaoxide (Ti₃O₅).",
+            "8": "40% of the converted λ-phase fractions of nanogranular trititanium pentaoxide (Ti₃O₅) revert to the β phase within 1 picosecond.",
+            "9": "Carriers in nanogranular trititanium pentaoxide (Ti₃O₅) are generated instantaneously.",
+            "10": "Carriers in nanogranular trititanium pentaoxide (Ti₃O₅) disappear within 20 nanoseconds.",
+            "11": "The λ phase in nanogranular trititanium pentaoxide (Ti₃O₅) increases from 1 to 10 picoseconds.",
+            "12": "The increase in the λ phase indicates the growth of the metallic domain.",
+            "13": "A slow recovery process with a duration ranging from 10⁻⁹ to 10⁻⁴ seconds was found in nanogranular trititanium pentaoxide (Ti₃O₅).",
+            "14": "The slow recovery process is ascribed to the shrinking and annihilation of the size-distributed metastable λ-phase domains.",
+            "15": "The fast onset of the phase transition in nanogranular trititanium pentaoxide (Ti₃O₅) occurs within a few hundreds of femtoseconds.",
+            "16": "The subsequent stabilization process of the phase transition in nanogranular trititanium pentaoxide (Ti₃O₅) is less than 10 picoseconds.",
+            "17": "The fast onset and subsequent stabilization process signal the applicability of nanogranular trititanium pentaoxide (Ti₃O₅) to ultrafast photoswitching."
+          }
+        },
+        "viewpoints": [
+          "The photoinduced semiconductor-to-metal transition (PSMT) has demonstrated significant potential in information storage.",
+          "The photoinduced semiconductor-to-metal transition (PSMT) has demonstrated significant potential in sensing.",
+          "The photoinduced semiconductor-to-metal transition (PSMT) has demonstrated significant potential in optoelectronics.",
+          "The photoinduced semiconductor-to-metal transition (PSMT) has demonstrated significant potential in optical switches."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "In the realm of fundamental science, the PSMT reflects photodynamic mechanisms, photoinduced excitations and transition processes, and the relationship between material electronic and atomic structures [4] , [5] , [6] , [7] , [8] , [9] .",
+        "references": {
+          "4": {
+            "1": "There is significant technological interest in developing faster switching between different electronic states of matter.",
+            "2": "There is significant technological interest in developing faster switching between different magnetic states of matter.",
+            "3": "Manipulating properties at terahertz rates requires accessing the intrinsic timescales of electrons.",
+            "4": "Manipulating properties at terahertz rates requires accessing the intrinsic timescales of associated phonons.",
+            "5": "Accessing the intrinsic timescales of both electrons and associated phonons is possible with short-pulse photoexcitation.",
+            "6": "In many Mott insulators, the electronic transition is accompanied by the nucleation of percolating domains of the changed lattice structure.",
+            "7": "In many Mott insulators, the electronic transition is accompanied by the growth of percolating domains of the changed lattice structure.",
+            "8": "The nucleation and growth of percolating domains of the changed lattice structure in Mott insulators lead to empirical timescales dominated by slowly coarsening dynamics.",
+            "9": "Time-resolved X-ray diffraction and reflectivity measurements are used to study the photoinduced insulator-to-metal transition in an epitaxially strained Mott insulating thin film.",
+            "10": "The photoinduced insulator-to-metal transition in an epitaxially strained Mott insulating thin film occurs without observable domain formation.",
+            "11": "The photoinduced insulator-to-metal transition in an epitaxially strained Mott insulating thin film occurs without coarsening effects.",
+            "12": "The lack of observable domain formation and coarsening effects allows the study of the intrinsic electronic dynamics.",
+            "13": "The lack of observable domain formation and coarsening effects allows the study of the intrinsic lattice dynamics.",
+            "14": "Above a fluence threshold, the initial electronic excitation drives a fast lattice rearrangement.",
+            "15": "The initial electronic excitation is followed by slower electronic evolution into a metastable nonequilibrium state.",
+            "16": "Microscopic model calculations are based on time-dependent dynamical mean-field theory.",
+            "17": "Microscopic model calculations are based on semiclassical lattice dynamics.",
+            "18": "Microscopic model calculations explain the threshold behaviour of the electronic phase transition.",
+            "19": "Microscopic model calculations elucidate the delayed onset of the electronic phase transition.",
+            "20": "Combined electronic and structural studies are important in unraveling the physics of dynamic transitions.",
+            "21": "Combined electronic and structural studies are important in understanding the timescales of photoinduced processes."
+          },
+          "5": {
+            "1": "MIT behaviors in vanadium dioxide (VO₂) involve a rapid reversible phase transition.",
+            "2": "The rapid reversible phase transition in vanadium dioxide (VO₂) has gained substantial attention for potential applications.",
+            "3": "The rapid reversible phase transition in vanadium dioxide (VO₂) is useful for studying strongly correlated electronic behaviors in transition metal oxides (TMOs).",
+            "4": "The phase-transition mechanism of vanadium dioxide (VO₂) is still controversial.",
+            "5": "Efforts have been made over the past few decades to understand the MIT mechanism in vanadium dioxide (VO₂).",
+            "6": "Understanding the MIT mechanism could benefit the investigation of MIT modulation in vanadium dioxide (VO₂).",
+            "7": "The review summarizes recent progress in the understanding of the phase-transition mechanism of VO₂ materials.",
+            "8": "The review summarizes recent progress in the modulation of VO₂ materials.",
+            "9": "The review discusses the representative understanding of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "10": "Lattice distortion is part of the representative understanding of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "11": "Electron correlations are part of the representative understanding of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "12": "The review summarizes modulation methods based on research of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "13": "Element doping is one of the modulation methods summarized in the review.",
+            "14": "Electric field (current and gating) is one of the modulation methods summarized in the review.",
+            "15": "Tensile/compression strain is one of the modulation methods summarized in the review.",
+            "16": "Employing lasers is one of the modulation methods summarized in the review.",
+            "17": "The review provides discussions on future trends related to MIT and phase-transition in vanadium dioxide (VO₂).",
+            "18": "The review provides discussions on perspectives related to MIT and phase-transition in vanadium dioxide (VO₂).",
+            "19": "The review provides a comprehensive understanding of the mechanism of MIT behaviors in vanadium dioxide (VO₂).",
+            "20": "The review provides a comprehensive understanding of the phase-transition modulations in vanadium dioxide (VO₂)."
+          },
+          "6": {
+            "1": "Ultrafast nonequilibrium dynamics provide a method to study microscopic interactions.",
+            "2": "Microscopic interactions govern macroscopic behavior.",
+            "3": "Photoinduced phase transitions in solids provide a test case for how forces originate from a nonequilibrium population of excited electronic states.",
+            "4": "Photoinduced phase transitions in solids provide a test case for how resulting atomic motion along a reaction coordinate originates from a nonequilibrium population of excited electronic states.",
+            "5": "Femtosecond photoemission is used to access the transient electronic structure during an ultrafast photoinduced phase transition.",
+            "6": "The model system used is indium nanowires on a silicon(111) surface.",
+            "7": "A detailed reaction pathway is uncovered.",
+            "8": "The detailed reaction pathway allows a direct comparison with the dynamics predicted by ab initio simulations.",
+            "9": "Localized photoholes play a crucial role in shaping the potential energy landscape.",
+            "10": "A combined momentum- and real-space description of photoinduced phase transitions is enabled.",
+            "11": "The combined description includes the ultrafast formation of chemical bonds."
+          },
+          "7": {
+            "1": "The temporal characteristics of the laser-driven phase transition from 2H to 1T′ have been studied in the prototype MoTe₂ monolayer.",
+            "2": "The phase transition from 2H to 1T′ is induced by fundamental electron-phonon interactions.",
+            "3": "There is an unexpected phonon excitation and coupling pathway involved in the phase transition.",
+            "4": "The unexpected phonon excitation and coupling pathway is closely related to the nonequilibrium relaxation of photoexcited electrons.",
+            "5": "The order-to-order phase transformation is divided into three substages.",
+            "6": "The substages involve energy and momentum scattering processes from optical (A₁′ and E′) to acoustic phonon modes [LA(M)].",
+            "7": "The energy and momentum scattering processes occur in a subpicosecond timescale.",
+            "8": "An intermediate metallic state is identified along the nonadiabatic transition pathway.",
+            "9": "The results of the study have profound implications on nonequilibrium phase engineering strategies."
+          },
+          "8": {
+            "1": "Light control is a widely used external stimulus for quantum materials.",
+            "2": "Light control is used for emergent quantum phenomena in quantum materials.",
+            "3": "Perovskite strontium ruthenate SrRuO₃ generally has itinerant ferromagnetism.",
+            "4": "Perovskite strontium ruthenate SrRuO₃ generally has a low-spin state.",
+            "5": "The phase of intermediate-spin ferromagnetic metallic state in perovskite strontium ruthenate has never been seen.",
+            "6": "UV-light irradiation induces a photocarrier-doping Mott-insulator-to-metal phase transition.",
+            "7": "The Mott-insulator-to-metal phase transition occurs in a few atomic layers of perovskite intermediate-spin ferromagnetic SrRuO₃₋ₓ.",
+            "8": "The new metastable intermediate-spin metallic phase can be reversibly regulated.",
+            "9": "The regulation of the metastable intermediate-spin metallic phase is due to photocharge transfer.",
+            "10": "The photocharge transfer occurs from SrTiO₃ substrates to SrRuO₃₋ₓ ultrathin films.",
+            "11": "Dynamical mean-field theory calculations verify the photoinduced electronic phase transformation.",
+            "12": "The photoinduced electronic phase transformation is related to oxygen vacancies.",
+            "13": "The photoinduced electronic phase transformation is related to orbital reconstruction.",
+            "14": "Optical manipulation of charge-transfer finesse is an alternative pathway toward discovering novel metastable phases in strongly correlated systems.",
+            "15": "Optical manipulation of charge-transfer finesse facilitates potential light-controlled device applications in optoelectronics.",
+            "16": "Optical manipulation of charge-transfer finesse facilitates potential light-controlled device applications in spintronics."
+          },
+          "9": {
+            "1": "Electron–electron interactions can render a conducting material insulating.",
+            "2": "The insulator–metal phase transition in correlated-electron materials is a canonical manifestation of the competition between charge-carrier itinerancy and localization.",
+            "3": "The insulator–metal transition can arise from microscopic interactions among charge, lattice, orbital, and spin degrees of freedom.",
+            "4": "The complexity of microscopic interactions among charge, lattice, orbital, and spin degrees of freedom leads to multiple phase-transition pathways.",
+            "5": "In many transition metal oxides, the insulator–metal transition has been achieved with external stimuli.",
+            "6": "The external stimuli that can achieve the insulator–metal transition in transition metal oxides include temperature, light, electric field, mechanical strain, and magnetic field.",
+            "7": "Vanadium dioxide is intriguing because both the lattice and on-site Coulomb repulsion contribute to the insulator-to-metal transition.",
+            "8": "The insulator-to-metal transition in vanadium dioxide occurs at 340 K.",
+            "9": "The precise microscopic origin of the phase transition in vanadium dioxide remains elusive.",
+            "10": "Vanadium dioxide serves as a testbed for studying correlated-electron phase-transition dynamics.",
+            "11": "A terahertz electric field can induce an insulator–metal transition in vanadium dioxide.",
+            "12": "There has been an observation of an insulator–metal transition in vanadium dioxide induced by a terahertz electric field.",
+            "13": "Metamaterial-enhanced picosecond, high-field terahertz pulses are used to achieve an insulator–metal transition in vanadium dioxide.",
+            "14": "The metamaterial-enhanced terahertz pulses reduce the Coulomb-induced potential barrier for carrier transport.",
+            "15": "A nonlinear metamaterial response is observed through the insulator–metal phase transition.",
+            "16": "High-field terahertz pulses provide alternative pathways to induce collective electronic and structural rearrangements.",
+            "17": "Metamaterial resonators provide sub-wavelength field enhancement that locally drives the nonlinear response.",
+            "18": "Metamaterial resonators provide global sensitivity to local changes, enabling macroscopic observation of the dynamics.",
+            "19": "The methodology provides a powerful platform to investigate low-energy dynamics in condensed matter.",
+            "20": "The methodology demonstrates that integration of metamaterials with complex matter is a viable pathway to realize functional nonlinear electromagnetic composites."
+          }
+        },
+        "viewpoints": [
+          "In fundamental science, the PSMT reflects photodynamic mechanisms.",
+          "In fundamental science, the PSMT reflects photoinduced excitations and transition processes.",
+          "In fundamental science, the PSMT reflects the relationship between material electronic and atomic structures."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In most cases, the PSMTs are just temporary and disappear as the irradiation is switched off [10] .",
+        "references": {
+          "10": {
+            "1": "Chemical doping can induce band bending at semiconductor surfaces.",
+            "2": "Electric fields can induce band bending at semiconductor surfaces.",
+            "3": "Band bending at semiconductor surfaces can create metallic surfaces with properties not found in the bulk.",
+            "4": "Metallic surfaces created by band bending can have high electron mobility.",
+            "5": "Metallic surfaces created by band bending can have magnetism.",
+            "6": "Metallic surfaces created by band bending can have superconductivity.",
+            "7": "Optical generation of metallic surfaces on ultrafast timescales would be appealing for high-speed electronics.",
+            "8": "The ultrafast generation of a metal at the (10-10) surface of ZnO upon photoexcitation is demonstrated.",
+            "9": "Ultrafast photoinduced semiconductor-to-metal transitions known so far occur in the bulk of inorganic semiconductors.",
+            "10": "The ultrafast metallization of the ZnO surface is launched by 3–4 orders of magnitude lower photon fluxes compared to transitions that occur in the bulk of inorganic semiconductors.",
+            "11": "Time- and angle-resolved photoelectron spectroscopy is used to study the phase transition.",
+            "12": "The phase transition is caused by photoinduced downward surface band bending.",
+            "13": "The downward surface band bending is due to photodepletion of donor-type deep surface defects.",
+            "14": "The discovered mechanism is analogous to chemical doping of semiconductor surfaces.",
+            "15": "The discovered mechanism presents a general route for controlling surface-confined metallicity on ultrafast timescales."
+          }
+        },
+        "viewpoints": [
+          "In most cases, the PSMTs are temporary.",
+          "In most cases, the PSMTs disappear when the irradiation is switched off."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "In rare cases, the transition can be sustained [3] , usually by a conversion between a material’s crystalline and amorphous forms.",
+        "references": {
+          "3": {
+            "1": "Nanogranular trititanium pentaoxide (Ti₃O₅) is an oxide that shows a photoreversible phase transition at room temperature.",
+            "2": "Nanogranular trititanium pentaoxide (Ti₃O₅) has recently attracted considerable attention.",
+            "3": "The reason for the attention to nanogranular trititanium pentaoxide (Ti₃O₅) is its applicability in optical data storage.",
+            "4": "The paper reports on the dynamics of the photoinduced semiconductor-to-metal transition from the β phase to the λ phase of nanogranular trititanium pentaoxide (Ti₃O₅) at room temperature.",
+            "5": "Time-resolved diffuse reflection spectroscopy was conducted over a wide range of time scales, from femtoseconds to microseconds.",
+            "6": "The overall relaxation behavior of the photoinduced transition in nanogranular trititanium pentaoxide (Ti₃O₅) was characterized.",
+            "7": "A transient phase transition occurs within a few hundreds of femtoseconds in nanogranular trititanium pentaoxide (Ti₃O₅).",
+            "8": "40% of the converted λ-phase fractions of nanogranular trititanium pentaoxide (Ti₃O₅) revert to the β phase within 1 picosecond.",
+            "9": "Carriers in nanogranular trititanium pentaoxide (Ti₃O₅) are generated instantaneously.",
+            "10": "Carriers in nanogranular trititanium pentaoxide (Ti₃O₅) disappear within 20 nanoseconds.",
+            "11": "The λ phase in nanogranular trititanium pentaoxide (Ti₃O₅) increases from 1 to 10 picoseconds.",
+            "12": "The increase in the λ phase indicates the growth of the metallic domain.",
+            "13": "A slow recovery process with a duration ranging from 10⁻⁹ to 10⁻⁴ seconds was found in nanogranular trititanium pentaoxide (Ti₃O₅).",
+            "14": "The slow recovery process is ascribed to the shrinking and annihilation of the size-distributed metastable λ-phase domains.",
+            "15": "The fast onset of the phase transition in nanogranular trititanium pentaoxide (Ti₃O₅) occurs within a few hundreds of femtoseconds.",
+            "16": "The subsequent stabilization process of the phase transition in nanogranular trititanium pentaoxide (Ti₃O₅) is less than 10 picoseconds.",
+            "17": "The fast onset and subsequent stabilization process signal the applicability of nanogranular trititanium pentaoxide (Ti₃O₅) to ultrafast photoswitching."
+          }
+        },
+        "viewpoints": [
+          "In rare cases, the PSMT can be sustained.",
+          "The sustained PSMT is usually by a conversion between a material’s crystalline and amorphous forms."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "PSMTs can induce changes in atomic structures, e.g., Peierls distortion in TiSe 2 and VO 2 [11] , [12] , or just alter the electronic structures [13] .",
+        "references": {
+          "11": {
+            "1": "The electronic properties of many oxides are thought to be determined by the complex interplay among several active degrees of freedom (charge, lattice, orbital, and spin).",
+            "2": "Combined ultrafast electron diffraction and infrared transmissivity experiments allow for direct monitoring and separation of lattice and charge density reorganizations.",
+            "3": "The lattice and charge density reorganizations are associated with the optically induced semiconductor-metal transition in vanadium dioxide (VO₂).",
+            "4": "Photoexciting the monoclinic semiconducting phase of vanadium dioxide induces a transition to a metastable state.",
+            "5": "The metastable state retains the periodic lattice distortion characteristic of the semiconductor phase.",
+            "6": "The metastable state acquires metal-like mid-infrared optical properties.",
+            "7": "Ultrafast electron diffraction is capable of following details of lattice structural dynamics on the ultrafast time scale.",
+            "8": "Ultrafast electron diffraction is capable of following details of electronic structural dynamics on the ultrafast time scale."
+          },
+          "12": {
+            "1": "Ultrafast solid phase transitions are often treated as chemical reactions that transform structures between two different unit cells along a reaction coordinate.",
+            "2": "Treating ultrafast solid phase transitions as chemical reactions neglects the role of disorder.",
+            "3": "Ultrafast diffraction provides insights into atomic dynamics during ultrafast solid phase transformations.",
+            "4": "Diffraction alone probes an averaged unit cell.",
+            "5": "Diffraction is less sensitive to randomness in the transition pathway.",
+            "6": "Total scattering of femtosecond x-ray pulses can demonstrate the role of atomic disordering in transition mechanisms.",
+            "7": "Atomic disordering in photoexcited vanadium dioxide (VO₂) is central to the transition mechanism.",
+            "8": "After photoexcitation, the vanadium dioxide (VO₂) system explores a large volume of phase space.",
+            "9": "The exploration of phase space occurs on a time scale comparable to that of a single phonon oscillation.",
+            "10": "The results overturn the current understanding of an archetypal ultrafast phase transition.",
+            "11": "The results provide new microscopic insights into the rapid evolution toward equilibrium in photoexcited matter."
+          },
+          "13": {
+            "1": "There is a demand for an ultrabroad optical material with a bandgap tunable from zero to at least 1–2 eV.",
+            "2": "The demand for an ultrabroad optical material has driven the exploration of new 2D materials.",
+            "3": "The exploration of new 2D materials began with the emergence of graphene, transition metal dichalcogenides, and black phosphorus.",
+            "4": "PtSe₂ is an ultra-broadband 2D material with an energy bandgap ranging from 0 to 1.2 eV.",
+            "5": "PtSe₂ shows much better air stability than black phosphorus.",
+            "6": "This work systematically studies the superior nonlinear optical performance of layered PtSe₂.",
+            "7": "This work systematically studies the ultrafast dynamics of layered PtSe₂.",
+            "8": "This work systematically studies the signatures of the transition from semiconductor to semimetal in layered PtSe₂.",
+            "9": "Rate equations, first-principles calculation, and electrical measurements are combined in this work.",
+            "10": "A comprehensive understanding about the evolution of nonlinear absorption with increasing layer thickness is provided.",
+            "11": "A comprehensive understanding about the evolution of carrier dynamics with increasing layer thickness is provided.",
+            "12": "The evolution of nonlinear absorption and carrier dynamics indicates the promising potential of PtSe₂ in nanophotonic devices.",
+            "13": "PtSe₂ shows promising potential in nanophotonic devices such as infrared detectors, optical switches, and saturable absorbers."
+          }
+        },
+        "viewpoints": [
+          "PSMTs can induce changes in atomic structures, such as Peierls distortion in TiSe2.",
+          "PSMTs can induce changes in atomic structures, such as Peierls distortion in VO2.",
+          "PSMTs can alter electronic structures."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "So far, evidence for these phase transitions has been primarily based on conductivity variations, diffraction spectra, or theoretical simulations [14] , [15] , [16] .",
+        "references": {
+          "14": {
+            "1": "Photo-induced phase transitions provide an ultrafast and energy-efficient method for manipulating the topological properties of transition-metal ditellurides.",
+            "2": "Photo-induced phase transitions can be used to stabilize a topological phase in a material that is otherwise semiconducting.",
+            "3": "First-principles calculations demonstrate that the photo-induced phase transition in monolayer MoTe₂ from the semiconducting 2H phase to the topological 1T′ phase can be triggered purely by electronic excitations.",
+            "4": "Electronic excitations that trigger the phase transition in monolayer MoTe₂ soften multiple lattice vibrational modes.",
+            "5": "The softenings of lattice vibrational modes are driven by a Peierls-like mechanism within the conduction bands.",
+            "6": "The softenings lead to structural symmetry breaking within sub-picosecond timescales.",
+            "7": "The timescale for structural symmetry breaking due to the softenings is shorter than the timescale of a thermally driven phase transition.",
+            "8": "The transition is predicted to be triggered by photons with energies over 1.96 eV.",
+            "9": "The transition is associated with an excited carrier density of 3.4 × 10¹⁴ cm⁻².",
+            "10": "The associated excited carrier density of 3.4 × 10¹⁴ cm⁻² enables a controllable phase transformation by varying the laser wavelength.",
+            "11": "The results provide insight into the underlying physics of the phase transition in 2D transition-metal ditellurides.",
+            "12": "The results show an ultrafast phase-transition mechanism for manipulation of the topological properties of 2D systems."
+          },
+          "15": {
+            "1": "Reversible polymorphism of monolayer transition-metal dichalcogenides (TMDC) has attracted attention from an academic perspective.",
+            "2": "Reversible polymorphism of monolayer transition-metal dichalcogenides (TMDC) has attracted attention from an applied perspective.",
+            "3": "MoTe₂ is of special interest in the study of reversible polymorphism.",
+            "4": "MoTe₂ has stable semiconducting 2H and metastable (semi)metallic 1T′ phases with a small energy difference.",
+            "5": "The small energy difference between the 2H and 1T′ phases of MoTe₂ implies a low-energy cost for the transition.",
+            "6": "The existence of a previously unknown phase of MoTe₂ is demonstrated using first-principles calculations.",
+            "7": "The previously unknown phase of MoTe₂ is a distorted trigonal prismatic phase.",
+            "8": "The distorted trigonal prismatic phase has alternating shorter and longer bonds and bond angles.",
+            "9": "The distorted trigonal prismatic phase of MoTe₂ forms in the electronically excited state due to population inversion.",
+            "10": "The distorted trigonal prismatic phase of MoTe₂ is unstable.",
+            "11": "The distorted trigonal prismatic phase of MoTe₂ decays to the ground 2H state after the cessation of excitation.",
+            "12": "The distorted trigonal prismatic phase of MoTe₂ is metallic.",
+            "13": "The distorted trigonal prismatic phase can act to lower the energy barrier to the metastable 1T′ phase.",
+            "14": "There exists a previously unexplored route of ultrafast local and selective band-structure control in monolayer TMDC using electronic excitation.",
+            "15": "The previously unexplored route of band-structure control will significantly broaden the application spectrum of monolayer transition-metal dichalcogenides (TMDC)."
+          },
+          "16": {
+            "1": "A main challenge in ultrafast material science is triggering phase transitions with short pulses of light.",
+            "2": "Strain waves determine a coherent macroscopic transformation pathway for the semiconducting-to-metal transition in bistable Ti₃O₅ nanocrystals.",
+            "3": "Strain waves are launched by electronic and structural precursor phenomena.",
+            "4": "Femtosecond powder X-ray diffraction is used to measure lattice deformation in the phase transition as a function of time.",
+            "5": "Lattice deformation during the phase transition in bistable Ti₃O₅ nanocrystals is measured as a function of time.",
+            "6": "Early intra-cell distortion around the light absorbing metal dimer is monitored.",
+            "7": "Long range deformations in the structure are governed by acoustic waves.",
+            "8": "Acoustic waves propagate from the laser-exposed Ti₃O₅ surface.",
+            "9": "A simplified elastic model was developed.",
+            "10": "The model demonstrates that picosecond switching in nanocrystals happens concomitantly with the propagating acoustic wavefront.",
+            "11": "Picosecond switching in nanocrystals is several decades faster than thermal processes governed by heat diffusion."
+          }
+        },
+        "viewpoints": [
+          "Evidence for PSMTs has been primarily based on conductivity variations.",
+          "Evidence for PSMTs has been primarily based on diffraction spectra.",
+          "Evidence for PSMTs has been primarily based on theoretical simulations."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "A direct real-space proof at the atomic or molecular scale remains absent.",
+        "references": {},
+        "viewpoints": [
+          "A direct real-space proof of PSMTs at the atomic scale remains absent.",
+          "A direct real-space proof of PSMTs at the molecular scale remains absent."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Moreover, all of the reported PSMTs occurred between two structural phases of the same material [1] , [2] , [3] , [4] , [5] , [6] , [7] , [8] , [9] , [10] , [11] , [12] , [13] , [14] , [15] , [16] .",
+        "references": {
+          "1": {
+            "1": "In-sensor computing is an emerging field.",
+            "2": "Materials that respond to optical stimuli in conjunction with non-volatile phase transition are highly desired for realizing bioinspired neuromorphic vision components.",
+            "3": "The researchers report a non-volatile multi-level control of VO₂ films.",
+            "4": "The non-volatile multi-level control of VO₂ films is achieved by oxygen stoichiometry engineering under ultraviolet irradiation.",
+            "5": "The reversible regulation of VO₂ films using ultraviolet irradiation and electrolyte gating is the basis for demonstrating a proof-of-principle neuromorphic ultraviolet sensor.",
+            "6": "The neuromorphic ultraviolet sensor demonstrated has integrated sensing, memory, and processing functions at room temperature.",
+            "7": "The neuromorphic ultraviolet sensor has silicon compatible potential.",
+            "8": "The silicon compatible potential of the neuromorphic ultraviolet sensor is proven through the wafer-scale integration of a neuromorphic sensor array.",
+            "9": "The device displays linear weight update with optical writing.",
+            "10": "The linear weight update with optical writing is due to the metallic phase proportion increasing almost linearly with the light dosage.",
+            "11": "The artificial neural network consisting of this neuromorphic sensor can extract ultraviolet information from the surrounding environment.",
+            "12": "The artificial neural network consisting of this neuromorphic sensor significantly improves recognition accuracy from 24% to 93%.",
+            "13": "This work provides a path to design neuromorphic sensors.",
+            "14": "This work will facilitate the potential applications of neuromorphic sensors in artificial vision systems."
+          },
+          "2": {
+            "1": "Exploiting stable and earth-abundant electrocatalysts with high catalytic activity is a significant challenge for the hydrogen evolution reaction.",
+            "2": "This work focuses on a simple and feasible way to improve hydrogen evolution reaction performance.",
+            "3": "The method involves manipulation of intrinsic physical properties of the material, unlike complex nanostructuring.",
+            "4": "This work presents a semiconductor-metal transition in ultrathin troilite FeS nanosheets.",
+            "5": "The transition is triggered by near infrared radiation at near room temperature.",
+            "6": "This occurrence is reported for the first time.",
+            "7": "Photogenerated metal-phase FeS nanosheets demonstrate intrinsically high catalytic activity for the hydrogen evolution reaction.",
+            "8": "Photogenerated metal-phase FeS nanosheets demonstrate fast carrier transfer for the hydrogen evolution reaction.",
+            "9": "The FeS nanosheets lead to an overpotential of 142 mV at 10 mA cm<sup>−2</sup>.",
+            "10": "The FeS nanosheets lead to a lower Tafel slope of 36.9 mV per decade.",
+            "11": "The findings provide new inspirations for steering electron transfer.",
+            "12": "The findings provide new inspirations for designing new-type catalysts."
+          },
+          "3": {
+            "1": "Nanogranular trititanium pentaoxide (Ti₃O₅) is an oxide that shows a photoreversible phase transition at room temperature.",
+            "2": "Nanogranular trititanium pentaoxide (Ti₃O₅) has recently attracted considerable attention.",
+            "3": "The reason for the attention to nanogranular trititanium pentaoxide (Ti₃O₅) is its applicability in optical data storage.",
+            "4": "The paper reports on the dynamics of the photoinduced semiconductor-to-metal transition from the β phase to the λ phase of nanogranular trititanium pentaoxide (Ti₃O₅) at room temperature.",
+            "5": "Time-resolved diffuse reflection spectroscopy was conducted over a wide range of time scales, from femtoseconds to microseconds.",
+            "6": "The overall relaxation behavior of the photoinduced transition in nanogranular trititanium pentaoxide (Ti₃O₅) was characterized.",
+            "7": "A transient phase transition occurs within a few hundreds of femtoseconds in nanogranular trititanium pentaoxide (Ti₃O₅).",
+            "8": "40% of the converted λ-phase fractions of nanogranular trititanium pentaoxide (Ti₃O₅) revert to the β phase within 1 picosecond.",
+            "9": "Carriers in nanogranular trititanium pentaoxide (Ti₃O₅) are generated instantaneously.",
+            "10": "Carriers in nanogranular trititanium pentaoxide (Ti₃O₅) disappear within 20 nanoseconds.",
+            "11": "The λ phase in nanogranular trititanium pentaoxide (Ti₃O₅) increases from 1 to 10 picoseconds.",
+            "12": "The increase in the λ phase indicates the growth of the metallic domain.",
+            "13": "A slow recovery process with a duration ranging from 10⁻⁹ to 10⁻⁴ seconds was found in nanogranular trititanium pentaoxide (Ti₃O₅).",
+            "14": "The slow recovery process is ascribed to the shrinking and annihilation of the size-distributed metastable λ-phase domains.",
+            "15": "The fast onset of the phase transition in nanogranular trititanium pentaoxide (Ti₃O₅) occurs within a few hundreds of femtoseconds.",
+            "16": "The subsequent stabilization process of the phase transition in nanogranular trititanium pentaoxide (Ti₃O₅) is less than 10 picoseconds.",
+            "17": "The fast onset and subsequent stabilization process signal the applicability of nanogranular trititanium pentaoxide (Ti₃O₅) to ultrafast photoswitching."
+          },
+          "4": {
+            "1": "There is significant technological interest in developing faster switching between different electronic states of matter.",
+            "2": "There is significant technological interest in developing faster switching between different magnetic states of matter.",
+            "3": "Manipulating properties at terahertz rates requires accessing the intrinsic timescales of electrons.",
+            "4": "Manipulating properties at terahertz rates requires accessing the intrinsic timescales of associated phonons.",
+            "5": "Accessing the intrinsic timescales of both electrons and associated phonons is possible with short-pulse photoexcitation.",
+            "6": "In many Mott insulators, the electronic transition is accompanied by the nucleation of percolating domains of the changed lattice structure.",
+            "7": "In many Mott insulators, the electronic transition is accompanied by the growth of percolating domains of the changed lattice structure.",
+            "8": "The nucleation and growth of percolating domains of the changed lattice structure in Mott insulators lead to empirical timescales dominated by slowly coarsening dynamics.",
+            "9": "Time-resolved X-ray diffraction and reflectivity measurements are used to study the photoinduced insulator-to-metal transition in an epitaxially strained Mott insulating thin film.",
+            "10": "The photoinduced insulator-to-metal transition in an epitaxially strained Mott insulating thin film occurs without observable domain formation.",
+            "11": "The photoinduced insulator-to-metal transition in an epitaxially strained Mott insulating thin film occurs without coarsening effects.",
+            "12": "The lack of observable domain formation and coarsening effects allows the study of the intrinsic electronic dynamics.",
+            "13": "The lack of observable domain formation and coarsening effects allows the study of the intrinsic lattice dynamics.",
+            "14": "Above a fluence threshold, the initial electronic excitation drives a fast lattice rearrangement.",
+            "15": "The initial electronic excitation is followed by slower electronic evolution into a metastable nonequilibrium state.",
+            "16": "Microscopic model calculations are based on time-dependent dynamical mean-field theory.",
+            "17": "Microscopic model calculations are based on semiclassical lattice dynamics.",
+            "18": "Microscopic model calculations explain the threshold behaviour of the electronic phase transition.",
+            "19": "Microscopic model calculations elucidate the delayed onset of the electronic phase transition.",
+            "20": "Combined electronic and structural studies are important in unraveling the physics of dynamic transitions.",
+            "21": "Combined electronic and structural studies are important in understanding the timescales of photoinduced processes."
+          },
+          "5": {
+            "1": "MIT behaviors in vanadium dioxide (VO₂) involve a rapid reversible phase transition.",
+            "2": "The rapid reversible phase transition in vanadium dioxide (VO₂) has gained substantial attention for potential applications.",
+            "3": "The rapid reversible phase transition in vanadium dioxide (VO₂) is useful for studying strongly correlated electronic behaviors in transition metal oxides (TMOs).",
+            "4": "The phase-transition mechanism of vanadium dioxide (VO₂) is still controversial.",
+            "5": "Efforts have been made over the past few decades to understand the MIT mechanism in vanadium dioxide (VO₂).",
+            "6": "Understanding the MIT mechanism could benefit the investigation of MIT modulation in vanadium dioxide (VO₂).",
+            "7": "The review summarizes recent progress in the understanding of the phase-transition mechanism of VO₂ materials.",
+            "8": "The review summarizes recent progress in the modulation of VO₂ materials.",
+            "9": "The review discusses the representative understanding of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "10": "Lattice distortion is part of the representative understanding of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "11": "Electron correlations are part of the representative understanding of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "12": "The review summarizes modulation methods based on research of the phase-transition mechanism in vanadium dioxide (VO₂).",
+            "13": "Element doping is one of the modulation methods summarized in the review.",
+            "14": "Electric field (current and gating) is one of the modulation methods summarized in the review.",
+            "15": "Tensile/compression strain is one of the modulation methods summarized in the review.",
+            "16": "Employing lasers is one of the modulation methods summarized in the review.",
+            "17": "The review provides discussions on future trends related to MIT and phase-transition in vanadium dioxide (VO₂).",
+            "18": "The review provides discussions on perspectives related to MIT and phase-transition in vanadium dioxide (VO₂).",
+            "19": "The review provides a comprehensive understanding of the mechanism of MIT behaviors in vanadium dioxide (VO₂).",
+            "20": "The review provides a comprehensive understanding of the phase-transition modulations in vanadium dioxide (VO₂)."
+          },
+          "6": {
+            "1": "Ultrafast nonequilibrium dynamics provide a method to study microscopic interactions.",
+            "2": "Microscopic interactions govern macroscopic behavior.",
+            "3": "Photoinduced phase transitions in solids provide a test case for how forces originate from a nonequilibrium population of excited electronic states.",
+            "4": "Photoinduced phase transitions in solids provide a test case for how resulting atomic motion along a reaction coordinate originates from a nonequilibrium population of excited electronic states.",
+            "5": "Femtosecond photoemission is used to access the transient electronic structure during an ultrafast photoinduced phase transition.",
+            "6": "The model system used is indium nanowires on a silicon(111) surface.",
+            "7": "A detailed reaction pathway is uncovered.",
+            "8": "The detailed reaction pathway allows a direct comparison with the dynamics predicted by ab initio simulations.",
+            "9": "Localized photoholes play a crucial role in shaping the potential energy landscape.",
+            "10": "A combined momentum- and real-space description of photoinduced phase transitions is enabled.",
+            "11": "The combined description includes the ultrafast formation of chemical bonds."
+          },
+          "7": {
+            "1": "The temporal characteristics of the laser-driven phase transition from 2H to 1T′ have been studied in the prototype MoTe₂ monolayer.",
+            "2": "The phase transition from 2H to 1T′ is induced by fundamental electron-phonon interactions.",
+            "3": "There is an unexpected phonon excitation and coupling pathway involved in the phase transition.",
+            "4": "The unexpected phonon excitation and coupling pathway is closely related to the nonequilibrium relaxation of photoexcited electrons.",
+            "5": "The order-to-order phase transformation is divided into three substages.",
+            "6": "The substages involve energy and momentum scattering processes from optical (A₁′ and E′) to acoustic phonon modes [LA(M)].",
+            "7": "The energy and momentum scattering processes occur in a subpicosecond timescale.",
+            "8": "An intermediate metallic state is identified along the nonadiabatic transition pathway.",
+            "9": "The results of the study have profound implications on nonequilibrium phase engineering strategies."
+          },
+          "8": {
+            "1": "Light control is a widely used external stimulus for quantum materials.",
+            "2": "Light control is used for emergent quantum phenomena in quantum materials.",
+            "3": "Perovskite strontium ruthenate SrRuO₃ generally has itinerant ferromagnetism.",
+            "4": "Perovskite strontium ruthenate SrRuO₃ generally has a low-spin state.",
+            "5": "The phase of intermediate-spin ferromagnetic metallic state in perovskite strontium ruthenate has never been seen.",
+            "6": "UV-light irradiation induces a photocarrier-doping Mott-insulator-to-metal phase transition.",
+            "7": "The Mott-insulator-to-metal phase transition occurs in a few atomic layers of perovskite intermediate-spin ferromagnetic SrRuO₃₋ₓ.",
+            "8": "The new metastable intermediate-spin metallic phase can be reversibly regulated.",
+            "9": "The regulation of the metastable intermediate-spin metallic phase is due to photocharge transfer.",
+            "10": "The photocharge transfer occurs from SrTiO₃ substrates to SrRuO₃₋ₓ ultrathin films.",
+            "11": "Dynamical mean-field theory calculations verify the photoinduced electronic phase transformation.",
+            "12": "The photoinduced electronic phase transformation is related to oxygen vacancies.",
+            "13": "The photoinduced electronic phase transformation is related to orbital reconstruction.",
+            "14": "Optical manipulation of charge-transfer finesse is an alternative pathway toward discovering novel metastable phases in strongly correlated systems.",
+            "15": "Optical manipulation of charge-transfer finesse facilitates potential light-controlled device applications in optoelectronics.",
+            "16": "Optical manipulation of charge-transfer finesse facilitates potential light-controlled device applications in spintronics."
+          },
+          "9": {
+            "1": "Electron–electron interactions can render a conducting material insulating.",
+            "2": "The insulator–metal phase transition in correlated-electron materials is a canonical manifestation of the competition between charge-carrier itinerancy and localization.",
+            "3": "The insulator–metal transition can arise from microscopic interactions among charge, lattice, orbital, and spin degrees of freedom.",
+            "4": "The complexity of microscopic interactions among charge, lattice, orbital, and spin degrees of freedom leads to multiple phase-transition pathways.",
+            "5": "In many transition metal oxides, the insulator–metal transition has been achieved with external stimuli.",
+            "6": "The external stimuli that can achieve the insulator–metal transition in transition metal oxides include temperature, light, electric field, mechanical strain, and magnetic field.",
+            "7": "Vanadium dioxide is intriguing because both the lattice and on-site Coulomb repulsion contribute to the insulator-to-metal transition.",
+            "8": "The insulator-to-metal transition in vanadium dioxide occurs at 340 K.",
+            "9": "The precise microscopic origin of the phase transition in vanadium dioxide remains elusive.",
+            "10": "Vanadium dioxide serves as a testbed for studying correlated-electron phase-transition dynamics.",
+            "11": "A terahertz electric field can induce an insulator–metal transition in vanadium dioxide.",
+            "12": "There has been an observation of an insulator–metal transition in vanadium dioxide induced by a terahertz electric field.",
+            "13": "Metamaterial-enhanced picosecond, high-field terahertz pulses are used to achieve an insulator–metal transition in vanadium dioxide.",
+            "14": "The metamaterial-enhanced terahertz pulses reduce the Coulomb-induced potential barrier for carrier transport.",
+            "15": "A nonlinear metamaterial response is observed through the insulator–metal phase transition.",
+            "16": "High-field terahertz pulses provide alternative pathways to induce collective electronic and structural rearrangements.",
+            "17": "Metamaterial resonators provide sub-wavelength field enhancement that locally drives the nonlinear response.",
+            "18": "Metamaterial resonators provide global sensitivity to local changes, enabling macroscopic observation of the dynamics.",
+            "19": "The methodology provides a powerful platform to investigate low-energy dynamics in condensed matter.",
+            "20": "The methodology demonstrates that integration of metamaterials with complex matter is a viable pathway to realize functional nonlinear electromagnetic composites."
+          },
+          "10": {
+            "1": "Chemical doping can induce band bending at semiconductor surfaces.",
+            "2": "Electric fields can induce band bending at semiconductor surfaces.",
+            "3": "Band bending at semiconductor surfaces can create metallic surfaces with properties not found in the bulk.",
+            "4": "Metallic surfaces created by band bending can have high electron mobility.",
+            "5": "Metallic surfaces created by band bending can have magnetism.",
+            "6": "Metallic surfaces created by band bending can have superconductivity.",
+            "7": "Optical generation of metallic surfaces on ultrafast timescales would be appealing for high-speed electronics.",
+            "8": "The ultrafast generation of a metal at the (10-10) surface of ZnO upon photoexcitation is demonstrated.",
+            "9": "Ultrafast photoinduced semiconductor-to-metal transitions known so far occur in the bulk of inorganic semiconductors.",
+            "10": "The ultrafast metallization of the ZnO surface is launched by 3–4 orders of magnitude lower photon fluxes compared to transitions that occur in the bulk of inorganic semiconductors.",
+            "11": "Time- and angle-resolved photoelectron spectroscopy is used to study the phase transition.",
+            "12": "The phase transition is caused by photoinduced downward surface band bending.",
+            "13": "The downward surface band bending is due to photodepletion of donor-type deep surface defects.",
+            "14": "The discovered mechanism is analogous to chemical doping of semiconductor surfaces.",
+            "15": "The discovered mechanism presents a general route for controlling surface-confined metallicity on ultrafast timescales."
+          },
+          "11": {
+            "1": "The electronic properties of many oxides are thought to be determined by the complex interplay among several active degrees of freedom (charge, lattice, orbital, and spin).",
+            "2": "Combined ultrafast electron diffraction and infrared transmissivity experiments allow for direct monitoring and separation of lattice and charge density reorganizations.",
+            "3": "The lattice and charge density reorganizations are associated with the optically induced semiconductor-metal transition in vanadium dioxide (VO₂).",
+            "4": "Photoexciting the monoclinic semiconducting phase of vanadium dioxide induces a transition to a metastable state.",
+            "5": "The metastable state retains the periodic lattice distortion characteristic of the semiconductor phase.",
+            "6": "The metastable state acquires metal-like mid-infrared optical properties.",
+            "7": "Ultrafast electron diffraction is capable of following details of lattice structural dynamics on the ultrafast time scale.",
+            "8": "Ultrafast electron diffraction is capable of following details of electronic structural dynamics on the ultrafast time scale."
+          },
+          "12": {
+            "1": "Ultrafast solid phase transitions are often treated as chemical reactions that transform structures between two different unit cells along a reaction coordinate.",
+            "2": "Treating ultrafast solid phase transitions as chemical reactions neglects the role of disorder.",
+            "3": "Ultrafast diffraction provides insights into atomic dynamics during ultrafast solid phase transformations.",
+            "4": "Diffraction alone probes an averaged unit cell.",
+            "5": "Diffraction is less sensitive to randomness in the transition pathway.",
+            "6": "Total scattering of femtosecond x-ray pulses can demonstrate the role of atomic disordering in transition mechanisms.",
+            "7": "Atomic disordering in photoexcited vanadium dioxide (VO₂) is central to the transition mechanism.",
+            "8": "After photoexcitation, the vanadium dioxide (VO₂) system explores a large volume of phase space.",
+            "9": "The exploration of phase space occurs on a time scale comparable to that of a single phonon oscillation.",
+            "10": "The results overturn the current understanding of an archetypal ultrafast phase transition.",
+            "11": "The results provide new microscopic insights into the rapid evolution toward equilibrium in photoexcited matter."
+          },
+          "13": {
+            "1": "There is a demand for an ultrabroad optical material with a bandgap tunable from zero to at least 1–2 eV.",
+            "2": "The demand for an ultrabroad optical material has driven the exploration of new 2D materials.",
+            "3": "The exploration of new 2D materials began with the emergence of graphene, transition metal dichalcogenides, and black phosphorus.",
+            "4": "PtSe₂ is an ultra-broadband 2D material with an energy bandgap ranging from 0 to 1.2 eV.",
+            "5": "PtSe₂ shows much better air stability than black phosphorus.",
+            "6": "This work systematically studies the superior nonlinear optical performance of layered PtSe₂.",
+            "7": "This work systematically studies the ultrafast dynamics of layered PtSe₂.",
+            "8": "This work systematically studies the signatures of the transition from semiconductor to semimetal in layered PtSe₂.",
+            "9": "Rate equations, first-principles calculation, and electrical measurements are combined in this work.",
+            "10": "A comprehensive understanding about the evolution of nonlinear absorption with increasing layer thickness is provided.",
+            "11": "A comprehensive understanding about the evolution of carrier dynamics with increasing layer thickness is provided.",
+            "12": "The evolution of nonlinear absorption and carrier dynamics indicates the promising potential of PtSe₂ in nanophotonic devices.",
+            "13": "PtSe₂ shows promising potential in nanophotonic devices such as infrared detectors, optical switches, and saturable absorbers."
+          },
+          "14": {
+            "1": "Photo-induced phase transitions provide an ultrafast and energy-efficient method for manipulating the topological properties of transition-metal ditellurides.",
+            "2": "Photo-induced phase transitions can be used to stabilize a topological phase in a material that is otherwise semiconducting.",
+            "3": "First-principles calculations demonstrate that the photo-induced phase transition in monolayer MoTe₂ from the semiconducting 2H phase to the topological 1T′ phase can be triggered purely by electronic excitations.",
+            "4": "Electronic excitations that trigger the phase transition in monolayer MoTe₂ soften multiple lattice vibrational modes.",
+            "5": "The softenings of lattice vibrational modes are driven by a Peierls-like mechanism within the conduction bands.",
+            "6": "The softenings lead to structural symmetry breaking within sub-picosecond timescales.",
+            "7": "The timescale for structural symmetry breaking due to the softenings is shorter than the timescale of a thermally driven phase transition.",
+            "8": "The transition is predicted to be triggered by photons with energies over 1.96 eV.",
+            "9": "The transition is associated with an excited carrier density of 3.4 × 10¹⁴ cm⁻².",
+            "10": "The associated excited carrier density of 3.4 × 10¹⁴ cm⁻² enables a controllable phase transformation by varying the laser wavelength.",
+            "11": "The results provide insight into the underlying physics of the phase transition in 2D transition-metal ditellurides.",
+            "12": "The results show an ultrafast phase-transition mechanism for manipulation of the topological properties of 2D systems."
+          },
+          "15": {
+            "1": "Reversible polymorphism of monolayer transition-metal dichalcogenides (TMDC) has attracted attention from an academic perspective.",
+            "2": "Reversible polymorphism of monolayer transition-metal dichalcogenides (TMDC) has attracted attention from an applied perspective.",
+            "3": "MoTe₂ is of special interest in the study of reversible polymorphism.",
+            "4": "MoTe₂ has stable semiconducting 2H and metastable (semi)metallic 1T′ phases with a small energy difference.",
+            "5": "The small energy difference between the 2H and 1T′ phases of MoTe₂ implies a low-energy cost for the transition.",
+            "6": "The existence of a previously unknown phase of MoTe₂ is demonstrated using first-principles calculations.",
+            "7": "The previously unknown phase of MoTe₂ is a distorted trigonal prismatic phase.",
+            "8": "The distorted trigonal prismatic phase has alternating shorter and longer bonds and bond angles.",
+            "9": "The distorted trigonal prismatic phase of MoTe₂ forms in the electronically excited state due to population inversion.",
+            "10": "The distorted trigonal prismatic phase of MoTe₂ is unstable.",
+            "11": "The distorted trigonal prismatic phase of MoTe₂ decays to the ground 2H state after the cessation of excitation.",
+            "12": "The distorted trigonal prismatic phase of MoTe₂ is metallic.",
+            "13": "The distorted trigonal prismatic phase can act to lower the energy barrier to the metastable 1T′ phase.",
+            "14": "There exists a previously unexplored route of ultrafast local and selective band-structure control in monolayer TMDC using electronic excitation.",
+            "15": "The previously unexplored route of band-structure control will significantly broaden the application spectrum of monolayer transition-metal dichalcogenides (TMDC)."
+          },
+          "16": {
+            "1": "A main challenge in ultrafast material science is triggering phase transitions with short pulses of light.",
+            "2": "Strain waves determine a coherent macroscopic transformation pathway for the semiconducting-to-metal transition in bistable Ti₃O₅ nanocrystals.",
+            "3": "Strain waves are launched by electronic and structural precursor phenomena.",
+            "4": "Femtosecond powder X-ray diffraction is used to measure lattice deformation in the phase transition as a function of time.",
+            "5": "Lattice deformation during the phase transition in bistable Ti₃O₅ nanocrystals is measured as a function of time.",
+            "6": "Early intra-cell distortion around the light absorbing metal dimer is monitored.",
+            "7": "Long range deformations in the structure are governed by acoustic waves.",
+            "8": "Acoustic waves propagate from the laser-exposed Ti₃O₅ surface.",
+            "9": "A simplified elastic model was developed.",
+            "10": "The model demonstrates that picosecond switching in nanocrystals happens concomitantly with the propagating acoustic wavefront.",
+            "11": "Picosecond switching in nanocrystals is several decades faster than thermal processes governed by heat diffusion."
+          }
+        },
+        "viewpoints": [
+          "All reported PSMTs occurred between two structural phases of the same material."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "There has been no precedent for PSMTs between two different materials.",
+        "references": {},
+        "viewpoints": [
+          "There has been no precedent for PSMTs between two different materials."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Surface reconstruction refers to structural changes in the surface lateral atomic arrangement, likely to be accompanied by the varied vertical interlayer spacing and surface dipole [17] , [18] , [19] , [20] , [21] .",
+        "references": {
+          "17": {
+            "1": "The origin of the herringbone reconstruction on Au(111) surface has never been explained properly at the atomic level.",
+            "2": "The large periodic length (~30 nm) of the Au(111) surface does not allow ab initio simulations of the system.",
+            "3": "There is a lack of highly accurate empirical force fields for the herringbone reconstruction on Au(111) surface.",
+            "4": "A machine learning force field was trained with high accuracy.",
+            "5": "The trained machine learning force field was used to explore the herringbone reconstruction on Au(111) surface.",
+            "6": "Lattice deformation in Au deeper layers is critical for the herringbone reconstruction.",
+            "7": "Lattice deformation in deeper layers allows the effective relaxation of the densified and anisotropic top layer lattice in the herringbone reconstruction.",
+            "8": "The herringbone reconstruction is energetically more favorable than the stripe reconstruction if the slab thickness exceeds 12 atomic layers.",
+            "9": "The herringbone reconstruction is highly stable at high temperatures.",
+            "10": "A slight strain of about ±0.2% can induce a transition from the herringbone pattern to the stripe pattern.",
+            "11": "The observed high stability of herringbone reconstruction and the transition induced by strain agree well with experimental observations."
+          },
+          "18": {
+            "1": "The polarity of a surface can affect the electronic properties of oxide thin films through electrostatic effects.",
+            "2": "The polarity of a surface can affect the structural properties of oxide thin films through electrostatic effects.",
+            "3": "Understanding the mechanism behind the electrostatic effects on the surface requires knowledge of the atomic structure at the surface.",
+            "4": "Understanding the mechanism behind the electrostatic effects on the surface requires knowledge of the electrostatic characteristics at the surface.",
+            "5": "Annular bright-field imaging is used to investigate the surface structure of a Pr<sub>0.8</sub>Sr<sub>0.2</sub>NiO<sub>2+x</sub> (0 < x < 1) film in this study.",
+            "6": "A polar distortion coupled with octahedral rotations is observed in a fully oxidized Pr<sub>0.8</sub>Sr<sub>0.2</sub>NiO<sub>3</sub> sample.",
+            "7": "A stronger polar distortion is observed in a partially reduced Pr<sub>0.8</sub>Sr<sub>0.2</sub>NiO sample.",
+            "8": "The spatial depth extent of the polar distortion in the Pr<sub>0.8</sub>Sr<sub>0.2</sub>NiO sample is about three unit cells from the surface.",
+            "9": "Four-dimensional scanning transmission electron microscopy (4D-STEM) is used to directly image the local atomic electric field surrounding Ni atoms near the surface.",
+            "10": "Distinct valence variations of Ni atoms near the surface are discovered using 4D-STEM.",
+            "11": "Distinct valence variations of Ni atoms near the surface are confirmed by atomic-resolution electron energy-loss spectroscopy (EELS).",
+            "12": "The strong surface reconstruction in the reduced Pr<sub>0.8</sub>Sr<sub>0.2</sub>NiO sample is closely related to the formation of oxygen vacancies.",
+            "13": "Oxygen vacancies form from topochemical reduction in the reduced Pr<sub>0.8</sub>Sr<sub>0.2</sub>NiO sample.",
+            "14": "The findings provide insights into the understanding of surface polarity at the atomic level.",
+            "15": "The findings provide insights into the evolution of surface polarity at the atomic level."
+          },
+          "19": {
+            "1": "The structures of vdW heterojunctions between semiconducting 2D TMDs and conductive metals, such as gold, influence the performances of 2D-TMD based electronic devices.",
+            "2": "The properties of vdW heterojunctions between semiconducting 2D TMDs and conductive metals, such as gold, influence the performances of 2D-TMD based electronic devices.",
+            "3": "Chemical vapor deposition is a promising approach for the large-scale synthesis of 2D TMD electronics.",
+            "4": "Chemical vapor deposition is a promising approach for the fabrication of 2D TMD electronics.",
+            "5": "Chemical vapor deposition enables the formation of naturally formed TMD/metal vdW interfaces.",
+            "6": "The structure of vdW interfaces between semiconducting 2D TMDs and conductive metals is less known.",
+            "7": "The chemistry of vdW interfaces between semiconducting 2D TMDs and conductive metals is less known.",
+            "8": "Interfacial reconstruction occurs between TMD monolayers and gold substrates.",
+            "9": "Sulfur participation leads to the reconstruction of Au {001} surface.",
+            "10": "The reconstruction of the Au {001} surface leads to the formation of a metastable Au₄S₄ interfacial phase.",
+            "11": "The metastable Au₄S₄ interfacial phase is stabilized by top MoS₂ monolayers.",
+            "12": "The metastable Au₄S₄ interfacial phase is stabilized by top WS₂ monolayers.",
+            "13": "Enhanced vdW interaction between the reconstructed Au₄S₄ interfacial phase and TMD monolayers results in a transition from n-type TMD-Au Schottky contact to p-type one.",
+            "14": "Enhanced vdW interaction between the reconstructed Au₄S₄ interfacial phase and TMD monolayers results in a reduced energy barrier height."
+          },
+          "20": {
+            "1": "Grain boundaries (GBs) have diversity in both structure and structural transitions.",
+            "2": "Grain boundaries (GBs) play an essential role in tailoring the properties of polycrystalline materials.",
+            "3": "{112} incoherent twin boundaries (ITBs) are a unique subset of grain boundaries.",
+            "4": "{112} incoherent twin boundaries (ITBs) are ubiquitous in nanotwinned, face-centred cubic materials.",
+            "5": "Multiple ITB configurations and transitions have been reported.",
+            "6": "The transition mechanisms of ITBs remain largely unexplored.",
+            "7": "The impacts of ITB transition mechanisms on mechanical properties remain largely unexplored.",
+            "8": "The impacts of ITB transition mechanisms on mechanical properties are especially unexplored in covalent materials.",
+            "9": "Six ITB configurations in diamond have been observed at room temperature.",
+            "10": "Structural transitions of ITBs in diamond have been observed at room temperature.",
+            "11": "The observed ITB configurations and structural transitions in diamond show a dislocation-mediated mechanism.",
+            "12": "The dislocation-mediated mechanism observed in ITB configurations in diamond is different from metallic systems.",
+            "13": "The dominant ITBs in diamond are asymmetric.",
+            "14": "The dominant ITBs in diamond are less mobile.",
+            "15": "The dominant ITBs in diamond contribute strongly to continuous hardening in nanotwinned diamond.",
+            "16": "The potential driving forces of ITB activities are discussed.",
+            "17": "The findings provide new insights into grain boundary behavior in diamond and covalent materials.",
+            "18": "The findings point to a new strategy for the development of high-performance, nanotwinned materials."
+          },
+          "21": {
+            "1": "The reconstruction of rutile TiO₂ (110) is important because it influences the surface chemistry of the material.",
+            "2": "The reconstruction of rutile TiO₂ (110) is important because it influences the catalytic properties of the material.",
+            "3": "Rutile TiO₂ is a widely used material in various applications including photocatalysis and solar energy conversion.",
+            "4": "The asymmetric surface reconstruction of rutile TiO₂ (110)-(1×2) is observed with atomic-resolution.",
+            "5": "In situ spherical aberration-corrected scanning transmission electron microscopy is used to observe the asymmetric surface reconstruction of rutile TiO₂ (110)-(1×2).",
+            "6": "Density functional theory calculations were used to complement the experimental observations of the asymmetric surface reconstruction of rutile TiO₂ (110).",
+            "7": "Repulsive electrostatic interaction among small polarons plays a pivotal role in the surface reconstruction of rutile TiO₂ (110).",
+            "8": "Small polarons are formed by excess electrons following the removal of neutral oxygen atoms.",
+            "9": "Surface relaxations are induced by small polarons.",
+            "10": "The emergence of asymmetric structures in rutile TiO₂ (110) can be controlled by adjusting the oxygen partial pressure.",
+            "11": "The disappearance of asymmetric structures in rutile TiO₂ (110) can be controlled by adjusting the oxygen partial pressure.",
+            "12": "This research provides a deeper understanding of the surface reconstructions of rutile TiO₂ (110).",
+            "13": "This research provides a means to predict the surface reconstructions of rutile TiO₂ (110).",
+            "14": "This research provides a means to manipulate the surface reconstructions of rutile TiO₂ (110).",
+            "15": "Research on the surface reconstructions of rutile TiO₂ (110) holds implications for a diverse range of applications involving rutile-based materials.",
+            "16": "Research on the surface reconstructions of rutile TiO₂ (110) holds implications for technological advancements involving rutile-based materials."
+          }
+        },
+        "viewpoints": [
+          "Surface reconstruction refers to structural changes in the surface lateral atomic arrangement.",
+          "Surface reconstruction is likely to be accompanied by varied vertical interlayer spacing.",
+          "Surface reconstruction is likely to be accompanied by varied surface dipole."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "This transformation significantly affects the chemical and physical nature of materials, playing a vital role in catalysis, sensing, surface engineering, device design, and biomedical technologies [22] , [23] , [24] , [25] .",
+        "references": {
+          "22": {
+            "1": "Rational reconstruction of OER pre-catalysts is crucial for universal water electrolysis.",
+            "2": "Rational reconstruction of OER pre-catalysts is challenging for universal water electrolysis.",
+            "3": "The performance index of OER catalysts is crucial for universal water electrolysis.",
+            "4": "The performance index of OER catalysts is challenging for universal water electrolysis.",
+            "5": "A double-cation etching strategy is developed to tailor the electronic structure of NiMoO₄.",
+            "6": "The prepared NiMoO₄ nanorods are etched by H₂O₂.",
+            "7": "The prepared NiMoO₄ nanorods reconstruct their surface with abundant cation deficiencies.",
+            "8": "The prepared NiMoO₄ nanorods reconstruct their surface with lattice distortion.",
+            "9": "The double cation deficiencies can make the upshift of d-band center for Ni atoms.",
+            "10": "The double cation deficiencies can make the active sites have better oxygen adsorption capacity.",
+            "11": "The optimized sample NMO-30M possesses an overpotential of 260 mV at 10 mA cm⁻².",
+            "12": "The optimized sample NMO-30M possesses excellent long-term durability of 162 hours.",
+            "13": "In situ Raman test reveals the rapid formation of high-oxidation-state transition metal hydroxide species.",
+            "14": "The rapid formation of high-oxidation-state transition metal hydroxide species can further help to improve the catalytic activity of NiMoO₄ in OER.",
+            "15": "This work highlights the influence of surface remodification on catalysts.",
+            "16": "This work sheds some light on activating catalysts."
+          },
+          "23": {
+            "1": "Catalysts are dynamic in nature.",
+            "2": "Catalysts respond to the environment by changing their local structures.",
+            "3": "Catalysts respond to the environment by changing their extended structures.",
+            "4": "Surface reconstruction is a dynamic behavior of catalysts.",
+            "5": "Surface reconstruction greatly affects the physical properties of catalysts.",
+            "6": "Surface reconstruction greatly affects the chemical properties of catalysts.",
+            "7": "Surface reconstruction greatly affects the electronic properties of catalysts.",
+            "8": "Surface reconstruction greatly affects the catalytic performances of catalysts.",
+            "9": "Understanding the nature of the catalytic sites of reconstructed surfaces is essential for establishing structure–catalysis relations.",
+            "10": "Understanding the nature of the catalytic sites of reconstructed surfaces has attracted much interest in catalysis research.",
+            "11": "Knowledge of the reconstruction of metal oxides is limited compared to metal surfaces.",
+            "12": "The nature of oxide surfaces is generally more complex than metal surfaces.",
+            "13": "Significant progress has been made in recent years in the study of oxide surfaces.",
+            "14": "Advances in synthesizing model oxide nanocrystals have contributed to progress in oxide surfaces.",
+            "15": "Advances in characterizing surface reconstruction behaviors under in situ and operando conditions have contributed to progress in oxide surfaces.",
+            "16": "Advanced spectroscopy and microscopy aided by computational modeling have contributed to progress in oxide surfaces.",
+            "17": "The Perspective summarizes advances in understanding the surface reconstruction behaviors of metal oxide nanoshapes and thin films with well-defined surface structures.",
+            "18": "The understanding of surface reconstruction behaviors is considered under as-synthesized, various pretreatment, and reaction environments.",
+            "19": "The catalytic consequences of surface reconstructions will be highlighted.",
+            "20": "The combination of model oxides and in situ/operando investigations is imperative in shaping the fundamental understanding of dynamic reconstructions of oxide surfaces.",
+            "21": "It is challenging to study surface reconstructions of oxide catalysts with meaningful temporal resolution under operating conditions.",
+            "22": "It is challenging to study surface reconstructions of oxide catalysts with meaningful spatial resolution under operating conditions.",
+            "23": "Future opportunities are discussed on how to address the challenges of studying surface reconstructions.",
+            "24": "Future opportunities discuss how to design more efficient catalysts by taking advantage of surface reconstructions."
+          },
+          "24": {
+            "1": "The surface reconstruction of electrocatalysts at the initial stage occurs in the form of phase transitions, defect migrations, and valence regulations.",
+            "2": "The initial surface reconstruction of electrocatalysts plays a critical role in generating real, surface active catalytic centers.",
+            "3": "The initial surface reconstruction of electrocatalysts plays a critical role in achieving steady surface reactions.",
+            "4": "A low activation energy barrier for initiating surface reconstruction is crucial for rapid electrochemical catalysis.",
+            "5": "A low activation energy barrier for initiating surface reconstruction is crucial for stable electrochemical catalysis.",
+            "6": "The surface reconstruction kinetics have been rarely investigated.",
+            "7": "The effects of surface reconstruction kinetics on catalytic reactions have been rarely investigated.",
+            "8": "Phase modulated polymorphic cobalt-based catalysts with tailorable nitrogen-metal bonds are used through a cationic molybdenum-substitution strategy.",
+            "9": "Real-time X-ray photoelectron spectroscopy (XPS) structural monitoring is performed to observe surface chemical state evolution during the catalytic reaction.",
+            "10": "The purpose of real-time X-ray photoelectron spectroscopy (XPS) structural monitoring is to track the initial surface reconstruction kinetics during the alkaline oxygen evolution reaction (OER).",
+            "11": "The molybdenum-modulated cobalt-based nanocatalyst can be tuned with favorable initial surface reconstruction.",
+            "12": "The molybdenum-modulated cobalt-based nanocatalyst can be tuned with stabilized active centers.",
+            "13": "Tuning the molybdenum-modulated cobalt-based nanocatalyst with favorable initial surface reconstruction and stabilized active centers reaches optimized OER catalysis.",
+            "14": "The optimized OER catalysis with the molybdenum-modulated cobalt-based nanocatalyst is accompanied by a low onset overpotential of 210 mV.",
+            "15": "The optimized OER catalysis with the molybdenum-modulated cobalt-based nanocatalyst is accompanied by a favorable overpotential at 10 mA cm^{–2} of 290 mV.",
+            "16": "The molybdenum-modulated cobalt-based nanocatalyst outperforms the commercial, noble-metallic RuO_{2} catalyst.",
+            "17": "This study provides new conceptual insights into rationally regulating the initial surface reconstruction kinetics.",
+            "18": "Rationally regulating initial surface reconstruction kinetics can lead to high-performance electrocatalysis reactions."
+          },
+          "25": {
+            "1": "The instability of Ni-rich layered cathode materials in lithium-ion batteries is attributed to the labile surface reactivity of Ni-rich layered cathode materials.",
+            "2": "The labile surface reactivity of Ni-rich layered cathode materials induces the formation of residual lithium impurities on the cathode surface.",
+            "3": "The labile surface reactivity of Ni-rich layered cathode materials induces severe side reactions with the electrolyte.",
+            "4": "A washing process using Co-dissolved water is proposed for removing residual lithium from Ni-rich layered cathodes.",
+            "5": "A washing process using Co-dissolved water is proposed for forming a protective coating on Ni-rich layered cathodes.",
+            "6": "The washing process using Co-dissolved water induces the reconstruction of the near-surface structure of Ni-rich layered cathodes through reactions with residual lithium compounds.",
+            "7": "The reconstruction of the near-surface structure prevents direct contact between the electrolyte and the Ni-rich surface.",
+            "8": "An additional fluorine coating on the washed cathode impedes the decomposition of salts.",
+            "9": "An additional fluorine coating on the washed cathode prevents the by-products from triggering autocatalytic side reactions at the electrolyte–cathode interface.",
+            "10": "An additional fluorine coating on the washed cathode suppresses gas generation during cycling.",
+            "11": "The combination of the near-surface reconstructions synergistically extends the cycle lives of Ni-rich cathodes.",
+            "12": "The combination of the near-surface reconstructions satisfies the energy density requirements for next-generation batteries in practical applications.",
+            "13": "The combination of the near-surface reconstructions satisfies the durability requirements for next-generation batteries in practical applications.",
+            "14": "The combination of the near-surface reconstructions satisfies the safety requirements for next-generation batteries in practical applications."
+          }
+        },
+        "viewpoints": [
+          "Surface reconstruction significantly affects the chemical nature of materials.",
+          "Surface reconstruction significantly affects the physical nature of materials.",
+          "Surface reconstruction plays a vital role in catalysis.",
+          "Surface reconstruction plays a vital role in sensing.",
+          "Surface reconstruction plays a vital role in surface engineering.",
+          "Surface reconstruction plays a vital role in device design.",
+          "Surface reconstruction plays a vital role in biomedical technologies."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Regulating and understanding surface reconstruction is thus critical for both fundamental and applied research.",
+        "references": {},
+        "viewpoints": [
+          "Regulating surface reconstruction is critical for fundamental research.",
+          "Regulating surface reconstruction is critical for applied research.",
+          "Understanding surface reconstruction is critical for fundamental research.",
+          "Understanding surface reconstruction is critical for applied research."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Surface reconstruction can be triggered through a variety of approaches, e.g., surface cleaning, cleavage, molecule adsorption, and surface reactions [26] , [27] , [28] .",
+        "references": {
+          "26": {
+            "1": "Weak interlayer van der Waals (vdW) bonding significantly impacts the surface and interface structure of vdW layered materials.",
+            "2": "Weak interlayer van der Waals (vdW) bonding significantly impacts the electronic properties of vdW layered materials.",
+            "3": "Weak interlayer van der Waals (vdW) bonding significantly impacts the transport properties of vdW layered materials.",
+            "4": "Unraveling the complex atomistic dynamics at vdW surfaces is critical for the design and synthesis of the next-generation vdW layered materials.",
+            "5": "Unraveling the structural evolution at vdW surfaces is critical for the design and synthesis of the next-generation vdW layered materials.",
+            "6": "Ge/Bi cation diffusion along the vdW gap in layered GeBi₂Te₄ (GBT) can be directly observed using in situ heating scanning transmission electron microscopy (STEM).",
+            "7": "The cation concentration variation during diffusion was correlated with the local Te₆ octahedron distortion.",
+            "8": "A quantitative analysis of the atomic column intensity and position in time-elapsed STEM images was used to correlate cation concentration variation with Te₆ octahedron distortion.",
+            "9": "In-plane cation diffusion leads to out-of-plane surface etching through complex structural evolutions.",
+            "10": "The structural evolutions involve the formation and propagation of a non-centrosymmetric GeTe₂ triple layer surface reconstruction on fresh vdW surfaces.",
+            "11": "The structural evolutions involve GBT subsurface reconstruction from a septuple layer to a quintuple layer.",
+            "12": "The results provide atomistic insight into the cation diffusion in vdW layered materials.",
+            "13": "The results provide atomistic insight into the surface reconstruction in vdW layered materials."
+          },
+          "27": {
+            "1": "Two-dimensional (2D) materials have been studied extensively as monolayers.",
+            "2": "Two-dimensional (2D) materials have been studied extensively as vertical heterostructures.",
+            "3": "Two-dimensional (2D) materials have been studied extensively as lateral heterostructures.",
+            "4": "Monolayers are often patterned using soft lithography to achieve functionalization.",
+            "5": "Monolayers are often selectively decorated with molecules to achieve functionalization.",
+            "6": "A family of 2D materials that are intrinsically patterned is demonstrated.",
+            "7": "A monolayer of PtSe₂ can be grown on a Pt substrate.",
+            "8": "The monolayer of PtSe₂ can be grown in the form of a triangular pattern of alternating 1T and 1H phases.",
+            "9": "Strain relaxation in a monolayer of CuSe grown on a Cu substrate leads to periodic patterns of triangular nanopores.",
+            "10": "The triangular nanopores in the monolayer of CuSe have a uniform size.",
+            "11": "Adsorption of different species at preferred pattern sites is achieved.",
+            "12": "The materials can serve as templates for selective self-assembly of molecules.",
+            "13": "The materials can serve as templates for selective self-assembly of nanoclusters.",
+            "14": "The materials can serve for the functionalization of the same substrate with two different species."
+          },
+          "28": {
+            "1": "Materials possessing structural phase transformations exhibit a rich set of physical properties.",
+            "2": "Materials possessing structural phase transformations exhibit a rich set of chemical properties.",
+            "3": "The rich set of physical and chemical properties of materials possessing structural phase transformations can be used for a variety of applications.",
+            "4": "In 2D materials, structural transformations have been induced by strain.",
+            "5": "In 2D materials, structural transformations have been induced by lasers.",
+            "6": "In 2D materials, structural transformations have been induced by electron injection.",
+            "7": "In 2D materials, structural transformations have been induced by electron/ion beams.",
+            "8": "In 2D materials, structural transformations have been induced by thermal loss of stoichiometry.",
+            "9": "In 2D materials, structural transformations have been induced by chemical treatments.",
+            "10": "In 2D materials, structural transformations have been induced by a combination of strain, lasers, electron injection, electron/ion beams, thermal loss of stoichiometry, chemical treatments, and annealing.",
+            "11": "Stoichiometry-preserving phase transitions have not been observed in 2D materials.",
+            "12": "Purely thermal phase transitions have not been observed in 2D materials.",
+            "13": "Reversible phase transitions have not been observed in 2D materials.",
+            "14": "Stoichiometry-preserving, purely thermal, reversible phase transitions are fundamental in physics.",
+            "15": "Stoichiometry-preserving, purely thermal, reversible phase transitions can be easily induced.",
+            "16": "The fabrication of monolayer Cu₂Se, a new 2D material, has been reported.",
+            "17": "The fabrication of monolayer Cu₂Se demonstrates the existence of a purely thermal structural phase transition.",
+            "18": "Scanning tunneling microscopy identifies two structural phases in monolayer Cu₂Se at 78 K and 300 K.",
+            "19": "Scanning transmission electron microscopy identifies two structural phases in monolayer Cu₂Se at 78 K and 300 K.",
+            "20": "Density functional theory (DFT) identifies two structural phases in monolayer Cu₂Se at 78 K and 300 K.",
+            "21": "DFT calculations trace the phase-transition mechanism in monolayer Cu₂Se.",
+            "22": "The phase-transition mechanism in monolayer Cu₂Se involves the existence of imaginary (unstable) phonon modes at low temperatures.",
+            "23": "The phase-transition mechanism in monolayer Cu₂Se involves the absence of imaginary (unstable) phonon modes at high temperatures.",
+            "24": "Variable-temperature low-energy electron diffraction patterns demonstrate that the phase transition in monolayer Cu₂Se occurs across the whole sample.",
+            "25": "The phase transition in monolayer Cu₂Se occurs at approximately 147 K.",
+            "26": "Angle-resolved photoemission spectra show that a degeneracy at the Γ point of the energy bands of the high-temperature phase in monolayer Cu₂Se is lifted in the low-temperature phase.",
+            "27": "DFT calculations show that a degeneracy at the Γ point of the energy bands of the high-temperature phase in monolayer Cu₂Se is lifted in the low-temperature phase.",
+            "28": "This work opens up possibilities for studying purely thermal structural phase transitions in 2D materials."
+          }
+        },
+        "viewpoints": [
+          "Surface reconstruction can be triggered through surface cleaning.",
+          "Surface reconstruction can be triggered through cleavage.",
+          "Surface reconstruction can be triggered through molecule adsorption.",
+          "Surface reconstruction can be triggered through surface reactions."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Photoinduced surface reconstruction is scarcely reported, despite its high controllability, remote operability, and possible interoperability with other photo-related techniques.",
+        "references": {},
+        "viewpoints": [
+          "Photoinduced surface reconstruction is scarcely reported.",
+          "Photoinduced surface reconstruction has high controllability.",
+          "Photoinduced surface reconstruction has remote operability.",
+          "Photoinduced surface reconstruction has possible interoperability with other photo-related techniques."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "In all reported cases, the chemical composition of the surface layers remains essentially unchanged.",
+        "references": {},
+        "viewpoints": [
+          "In all reported cases, the chemical composition of the surface layers remains essentially unchanged."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Copper selenide (Cu 2 Se) is an intrinsic semiconductor [29] , [30] , [31] , [32].",
+        "references": {
+          "29": {
+            "1": "Thermoelectric materials can convert heat directly into electricity.",
+            "2": "Thermoelectric materials can convert electricity directly into heat.",
+            "3": "Thermoelectric materials have excellent potential for waste heat recovery.",
+            "4": "Cu₂Se is a superionic conductor thermoelectric material.",
+            "5": "Cu₂Se has extraordinary ZT values.",
+            "6": "The superionic feature of Cu₂Se causes poor service stability.",
+            "7": "The superionic feature of Cu₂Se causes low mobility.",
+            "8": "A fast preparation method of self-propagating high-temperature synthesis was reported.",
+            "9": "The method achieves in situ compositing of BiCuSeO and Cu₂Se.",
+            "10": "The in situ compositing of BiCuSeO and Cu₂Se aims to optimize service stability.",
+            "11": "Introducing graphene in the composites is part of the interface design.",
+            "12": "Introducing graphene in these composites enhances carrier mobility.",
+            "13": "Strong phonon scatterings in the composites could lead to lower lattice thermal conductivity.",
+            "14": "The Cu₂Se-BiCuSeO-graphene composites presented excellent thermoelectric properties.",
+            "15": "The ZTmax value of Cu₂Se-BiCuSeO-graphene composites is about 2.82 at 1000 K.",
+            "16": "The ZTave value of Cu₂Se-BiCuSeO-graphene composites is about 1.73 from 473 K to 1000 K.",
+            "17": "The work provides a facile and effective strategy to largely improve the performance of Cu₂Se-based thermoelectric materials.",
+            "18": "The strategy could be adopted in other thermoelectric systems."
+          },
+          "30": [],
+          "31": {
+            "1": "Thermoelectric power generation offers a promising method to recover waste heat.",
+            "2": "The geometrical design of thermoelectric legs in modules is important for sustainable power generation.",
+            "3": "The geometrical design of thermoelectric legs in modules cannot be easily achieved by traditional fabrication processes.",
+            "4": "The design of cellular thermoelectric architectures is proposed for efficient power generation.",
+            "5": "The design of cellular thermoelectric architectures is proposed for durable power generation.",
+            "6": "The design of cellular thermoelectric architectures is realized by the extrusion-based 3D printing process of Cu₂Se thermoelectric materials.",
+            "7": "The optimum aspect ratio of a cuboid thermoelectric leg is designed to maximize power output.",
+            "8": "The design is extended to mechanically stiff cellular architectures of hollow hexagonal column-based thermoelectric legs.",
+            "9": "The design is extended to mechanically stiff cellular architectures of honeycomb-based thermoelectric legs.",
+            "10": "Organic binder-free Cu₂Se-based 3D-printing inks with desirable viscoelasticity are developed.",
+            "11": "The 3D-printing inks are tailored with an additive of inorganic Se₈²⁻ polyanion.",
+            "12": "The 3D-printing inks are used to fabricate the designed topologies.",
+            "13": "Computational simulation demonstrates the superior power output of proposed cellular thermoelectric architectures compared to other designs.",
+            "14": "Experimental measurement demonstrates the superior power output of proposed cellular thermoelectric architectures compared to other designs.",
+            "15": "Computational simulation demonstrates the superior mechanical stiffness of proposed cellular thermoelectric architectures compared to other designs.",
+            "16": "Experimental measurement demonstrates the superior mechanical stiffness of proposed cellular thermoelectric architectures compared to other designs.",
+            "17": "The importance of topological designs of thermoelectric legs is unveiled for achieving higher power.",
+            "18": "The importance of topological designs of thermoelectric legs is unveiled for achieving longer durability."
+          },
+          "32": {
+            "1": "Selenium is an appealing alternative cathode material for secondary battery systems.",
+            "2": "Selenium has recently attracted research interests in the electrochemical energy storage field.",
+            "3": "Selenium has high theoretical specific capacity.",
+            "4": "Selenium has good electronic conductivity.",
+            "5": "Se-based cathodes generally show poor rate capability behavior despite relevant capacity contents reported in the literature.",
+            "6": "A series of selenium@carbon composite positive electrode active materials are proposed to circumvent the poor rate capability behavior of Se-based cathodes.",
+            "7": "Selenium@carbon composite positive electrode active materials are capable of delivering a four-electron redox reaction.",
+            "8": "Selenium@carbon composite positive electrode active materials need to be in contact with an aqueous copper-ion electrolyte solution (0.5 M CuSO₄) and copper or zinc foils as negative electrodes to deliver a four-electron redox reaction.",
+            "9": "The lab-scale Zn | |Se@C cell delivers a discharge voltage of about 1.2 V at 0.5 A g⁻¹.",
+            "10": "The lab-scale Zn | |Se@C cell delivers an initial discharge capacity of 1263 mAh gₛₑ⁻¹.",
+            "11": "When a specific charging current of 6 A g⁻¹ is applied, the Zn | |Se@C cell delivers a stable discharge capacity of around 900 mAh gₛₑ⁻¹.",
+            "12": "The stable discharge capacity of around 900 mAh gₛₑ⁻¹ is independent of the discharge rate when a specific charging current of 6 A g⁻¹ is applied.",
+            "13": "Battery performance is strongly associated with the reversible structural changes occurring at the Se-based cathode.",
+            "14": "Physicochemical characterizations and first-principle calculations were used to demonstrate the association between battery performance and reversible structural changes at the Se-based cathode."
+          }
+        },
+        "viewpoints": [
+          "Copper selenide (Cu2Se) is an intrinsic semiconductor."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Its thin flake is known as a typical two-dimensional (2D) transition metal chalcogenide.",
+        "references": {},
+        "viewpoints": [
+          "The thin flake of copper selenide (Cu2Se) is known as a typical two-dimensional (2D) transition metal chalcogenide."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "The interaction of photons with 2D materials has sparked great interest due to their unique optical and photoelectrical properties, as well as their immense potential in optoelectronic sensing, photocatalysis, and optoelectronic devices [33] , [34] , [35] , [36] , [37] , [38] , [39] .",
+        "references": {
+          "33": {
+            "1": "Light–matter interaction in 2D materials provides a fascinating control knob for inducing emergent, non-equilibrium properties in the ultrafast timescale.",
+            "2": "Light–matter interaction in topological materials provides a fascinating control knob for achieving new functionalities in the ultrafast timescale.",
+            "3": "Bloch–Floquet states are examples of intriguing light-induced phenomena that have been reported experimentally over the past decade.",
+            "4": "Photo-induced phase transitions are examples of intriguing light-induced phenomena that have been reported experimentally over the past decade.",
+            "5": "Many intriguing light-induced phenomena still await experimental realization.",
+            "6": "Recent progress on light-induced phenomena includes the light field acting as a time-periodic field to drive Floquet states.",
+            "7": "Recent progress on light-induced phenomena includes the light field inducing structural phase transitions in quantum materials.",
+            "8": "Recent progress on light-induced phenomena includes the light field inducing topological phase transitions in quantum materials.",
+            "9": "Recent progress on light-induced phenomena includes the light field coupling with spin.",
+            "10": "Recent progress on light-induced phenomena includes the light field coupling with various pseudospins.",
+            "11": "Recent progress on light-induced phenomena includes the light field inducing nonlinear optical responses affected by the geometric phase.",
+            "12": "Perspectives on the opportunities of proposed light-induced phenomena are discussed.",
+            "13": "Open experimental challenges related to light-induced phenomena are discussed."
+          },
+          "34": {
+            "1": "Many-body interactions between carriers are central to correlated physics.",
+            "2": "Tuning many-body interactions between carriers could enable access and control of complex electronic phase diagrams.",
+            "3": "Two-dimensional moiré superlattices are a promising platform for quantum engineering of phenomena related to many-body interactions.",
+            "4": "The moiré system is powerful due to the high tunability of its physical parameters.",
+            "5": "The physical parameters of the moiré system can be tuned by adjusting the layer twist angle, electrical field, moiré carrier filling, and interlayer coupling.",
+            "6": "Optical excitation can highly tune the spin–spin interactions between moiré-trapped carriers.",
+            "7": "Optical excitation results in ferromagnetic order in WS₂/WSe₂ moiré superlattices.",
+            "8": "Near the filling factor of −1/3, there is one hole per three moiré unit cells.",
+            "9": "As the excitation power at the exciton resonance increases, a well-developed hysteresis loop emerges in the reflective magnetic circular dichroism signal as a function of magnetic field.",
+            "10": "The emergence of a well-developed hysteresis loop in the reflective magnetic circular dichroism signal is a hallmark of ferromagnetism.",
+            "11": "The hysteresis loop persists down to charge neutrality.",
+            "12": "The shape of the hysteresis loop evolves as the moiré superlattice is gradually filled.",
+            "13": "The evolving shape of the hysteresis loop indicates changes in magnetic ground state properties.",
+            "14": "The observed phenomenon suggests a mechanism where itinerant photoexcited excitons mediate exchange coupling between moiré-trapped holes.",
+            "15": "Exciton-mediated interaction can be of longer range than direct coupling between moiré-trapped holes.",
+            "16": "Magnetic order arises even in the dilute hole regime due to exciton-mediated interaction.",
+            "17": "The discovery adds a dynamic tuning knob to the rich many-body Hamiltonian of moiré quantum matter."
+          },
+          "35": {
+            "1": "The notion of the Berry phase has been significant in all branches of physics since its discovery.",
+            "2": "The Berry phase plays an important part in a variety of quantum phenomena.",
+            "3": "All realizations of the Berry phase have relied on a continuous evolution of the quantum state.",
+            "4": "The continuous evolution of the quantum state involves following a cyclic path.",
+            "5": "A conceptually new manifestation of the Berry phase is introduced and demonstrated in light-driven crystals.",
+            "6": "In this new manifestation, the electronic wavefunction accumulates a geometric phase during a discrete evolution between different bands.",
+            "7": "The coherence of the process is preserved during the discrete evolution between different bands.",
+            "8": "The new manifestation of the Berry phase is experimentally revealed using a strong laser field.",
+            "9": "A strong laser field is used to engineer an internal interferometer.",
+            "10": "The internal interferometer is induced during less than one cycle of the driving field.",
+            "11": "The internal interferometer maps the phase onto the emission of higher-order harmonics.",
+            "12": "The work provides an opportunity for the study of geometric phases.",
+            "13": "The study of geometric phases can lead to a variety of observations in light-driven topological phenomena.",
+            "14": "The study of geometric phases can lead to a variety of observations in attosecond solid-state physics."
+          },
+          "36": {
+            "1": "The search for topological triplet-pairing superconductivity has remained a challenge.",
+            "2": "Recent developments in optically stabilizing metastable superconducting states suggest a new route to realizing topological triplet-pairing superconductivity.",
+            "3": "A testable theory of competing superconducting orders is devised.",
+            "4": "The devised theory permits ultrafast switching to an opposite-parity superconducting phase in centrosymmetric crystals with strong spin-orbit coupling.",
+            "5": "Both microscopic and phenomenological models are used.",
+            "6": "Dynamical inversion symmetry breaking with a tailored light pulse can induce odd-parity (spin triplet) order parameter oscillations in a conventional even-parity (spin singlet) superconductor.",
+            "7": "Strong driving of the system can send it to a competing minimum in its free energy landscape.",
+            "8": "The results provide new guiding principles for engineering unconventional electronic phases using light.",
+            "9": "The results suggest a fundamentally non-equilibrium route toward realizing topological superconductivity."
+          },
+          "37": {
+            "1": "Photoexcitation of solids often induces structural phase transitions between different ordered phases.",
+            "2": "Some ordered phases induced by photoexcitation of solids are unprecedented and thermodynamically inaccessible.",
+            "3": "Photoinduced structural phase transition (PSPT) is of significant interest to the technological progress of advanced materials processing.",
+            "4": "Photoinduced structural phase transition (PSPT) is of significant interest to the fundamental understanding of material physics.",
+            "5": "Scanning tunnelling microscopy (STM) was applied to directly characterise the primary processes of the PSPT in graphite.",
+            "6": "The PSPT in graphite forms a sp<sup>3</sup>-like carbon nano-phase called diaphite.",
+            "7": "The primary challenge was to provide microscopic views of the graphite-to-diaphite transition.",
+            "8": "STM imaging of the photoexcited surface revealed the nucleation and proliferation processes of the diaphite phase on an atomic scale.",
+            "9": "The nucleation and proliferation processes of the diaphite phase were governed by the formation of sp<sup>3</sup>-like interlayer bonds.",
+            "10": "The growth mode of the diaphite phase depends strongly on the photon energy of excitation laser light.",
+            "11": "Different dynamical pathways were proposed to explain the formation of a sp<sup>3</sup>-like interlayer bonding.",
+            "12": "Potential mechanisms for photon-energy-dependent growth were examined based on the experimental results.",
+            "13": "Potential mechanisms for photon-energy-dependent growth were examined based on the calculated results.",
+            "14": "The present results provide insight towards realising optical control of sp<sup>2</sup>-to-sp<sup>3</sup> conversions.",
+            "15": "The present results provide insight towards the organisation of nanoscale structures in graphene-related materials."
+          },
+          "38": {
+            "1": "High-intensity femtosecond pulses from an X-ray free-electron laser enable pump–probe experiments.",
+            "2": "Pump–probe experiments can investigate electronic changes during light-induced reactions.",
+            "3": "Pump–probe experiments can investigate nuclear changes during light-induced reactions.",
+            "4": "Time-resolved serial femtosecond crystallography (TR-SFX) provides detailed structural data on timescales ranging from femtoseconds to milliseconds.",
+            "5": "Time-resolved serial femtosecond crystallography (TR-SFX) provides detailed structural data for a variety of biological systems.",
+            "6": "Time-resolved serial femtosecond crystallography (TR-SFX) provides detailed structural data for light-induced isomerization.",
+            "7": "Time-resolved serial femtosecond crystallography (TR-SFX) provides detailed structural data for the breakage or formation of chemical bonds.",
+            "8": "Time-resolved serial femtosecond crystallography (TR-SFX) provides detailed structural data for electron transfer.",
+            "9": "All ultrafast TR-SFX studies to date have employed high pump laser energies.",
+            "10": "High pump laser energies in ultrafast TR-SFX studies resulted in the absorption of several photons per chromophore.",
+            "11": "Multiphoton absorption may force the protein response into non-physiological pathways.",
+            "12": "It is of great concern whether the experimental approach with high pump laser energies allows valid conclusions to be drawn concerning biologically relevant single-photon-induced reactions.",
+            "13": "Ultrafast pump–probe SFX experiments were conducted on the photodissociation of carboxymyoglobin.",
+            "14": "Different pump laser fluences yield markedly different results in the experiments on the photodissociation of carboxymyoglobin.",
+            "15": "The dynamics of structural changes in carboxymyoglobin depend strongly on pump laser energy.",
+            "16": "The observed indicators of the mechanistically important coherent oscillations of the Fe–CO bond distance depend strongly on pump laser energy.",
+            "17": "The dependence of structural changes and Fe–CO bond oscillations on pump laser energy is in line with quantum chemical analysis.",
+            "18": "The mechanistically important coherent oscillations of the Fe–CO bond distance were predicted by recent quantum wavepacket dynamics.",
+            "19": "The results confirm the feasibility of performing ultrafast TR-SFX pump–probe experiments in the linear photoexcitation regime.",
+            "20": "The results confirm the necessity of performing ultrafast TR-SFX pump–probe experiments in the linear photoexcitation regime.",
+            "21": "This study is considered a starting point for reassessing the design of ultrafast TR-SFX pump–probe experiments.",
+            "22": "This study is considered a starting point for reassessing the interpretation of ultrafast TR-SFX pump–probe experiments.",
+            "23": "Reassessing the design and interpretation of ultrafast TR-SFX pump–probe experiments aims to ensure mechanistically relevant insight emerges."
+          },
+          "39": {
+            "1": "The one-dimensional CDW on the surface exhibits immediate damping of the CDW oscillation during the photoinduced phase transition.",
+            "2": "This behavior contrasts with conventional charge density wave materials.",
+            "3": "The experimental observation of the photoinduced CDW transition on the surface is successfully reproduced.",
+            "4": "Real-time time-dependent density functional theory simulations are used to reproduce the experimental observation of the photoinduced CDW transition on the surface.",
+            "5": "Photoexcitation promotes valence electrons from the Si substrate to the empty surface bands.",
+            "6": "The empty surface bands are composed primarily of the covalent bonding states of the long In-In bonds.",
+            "7": "Photoexcitation generates interatomic forces.",
+            "8": "Interatomic forces generated by photoexcitation shorten the long In-In bonds.",
+            "9": "Shortening of the long In-In bonds drives the structural transition.",
+            "10": "After the structural transition, surface bands switch among different In-In bonds.",
+            "11": "The switch among different In-In bonds causes a rotation of the interatomic forces.",
+            "12": "The rotation of the interatomic forces quickly damps the oscillations in feature CDW modes.",
+            "13": "The findings provide a deeper understanding of photoinduced phase transitions."
+          }
+        },
+        "viewpoints": [
+          "The interaction of photons with 2D materials has sparked great interest due to their unique optical properties.",
+          "The interaction of photons with 2D materials has sparked great interest due to their unique photoelectrical properties.",
+          "2D materials have immense potential in optoelectronic sensing.",
+          "2D materials have immense potential in photocatalysis.",
+          "2D materials have immense potential in optoelectronic devices."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Herein, we present atomic-scale evidence for a photoinduced transition from a Cu 2 Se layer on top of Cu(111) to the single-atomic Cu layer (Fig. 1 ).",
+        "references": {},
+        "viewpoints": [
+          "This study presents atomic-scale evidence for a photoinduced transition from a Cu2Se layer on top of Cu(111) to a single-atomic Cu layer."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The Cu 2 Se single-atomic layer is produced by selenization of the Cu(111) surface in ultrahigh vacuum (UHV), forming a striped Moiré pattern.",
+        "references": {},
+        "viewpoints": [
+          "The Cu2Se single-atomic layer is produced by selenization of the Cu(111) surface in ultrahigh vacuum (UHV).",
+          "The Cu2Se single-atomic layer forms a striped Moiré pattern."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Combining scanning tunneling microscopy and spectroscopy (STM and STS) with density functional theory (DFT) calculations, we demonstrate that light irradiation can trigger a dramatic “face changing” of the surface, transforming it from the semiconducting Cu 2 Se layer into a close-packed Cu layer by sinking the Se atoms to the subsurface, creating a new Cu 2 Se sublayer, and lifting partial subsurface Cu atoms to the outermost layer.",
+        "references": {},
+        "viewpoints": [
+          "Scanning tunneling microscopy and spectroscopy (STM and STS) combined with density functional theory (DFT) calculations demonstrate that light irradiation can trigger a “face changing” of the surface.",
+          "Light irradiation transforms the semiconducting Cu2Se layer into a close-packed Cu layer by sinking Se atoms to the subsurface.",
+          "Light irradiation creates a new Cu2Se sublayer.",
+          "Light irradiation lifts partial subsurface Cu atoms to the outermost layer."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Upon thermal activation, the transition can be reversed to the original Cu 2 Se surface via segregation.",
+        "references": {},
+        "viewpoints": [
+          "Upon thermal activation, the transition from a close-packed Cu layer to the original Cu2Se surface can be reversed.",
+          "The transition reverses to the original Cu2Se surface via segregation."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The photoinduced transition of the surface into an electronically excited state is crucial, as the calculated Cu 2 Se-to-Cu transition barrier is significantly lower in the excited state than in the ground state.",
+        "references": {},
+        "viewpoints": [
+          "The photoinduced transition of the surface into an electronically excited state is crucial.",
+          "The calculated Cu2Se-to-Cu transition barrier is significantly lower in the excited state than in the ground state."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "This work proposes an example of PSMT between two distinct materials.",
+        "references": {},
+        "viewpoints": [
+          "This work proposes an example of PSMT between two distinct materials."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "The interlayer atom exchange switches the surface layer from semiconducting to metallic.",
+        "references": {},
+        "viewpoints": [
+          "The interlayer atom exchange switches the surface layer from semiconducting to metallic."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "The findings shed fresh light on photoinduced surface reconstruction, with potential applications in photodetectors, catalysis, and, most notably, in the development of innovative materials with unique functions.",
+        "references": {},
+        "viewpoints": [
+          "The findings shed fresh light on photoinduced surface reconstruction.",
+          "The findings have potential applications in photodetectors.",
+          "The findings have potential applications in catalysis.",
+          "The findings have potential applications in the development of innovative materials with unique functions."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Fig. 1: Schematic illustration of the photoinduced Cu 2 Se-to-Cu surface transition on Cu(111).",
+        "references": {},
+        "viewpoints": [
+          "Fig. 1 provides a schematic illustration of the photoinduced Cu2Se-to-Cu surface transition on Cu(111)."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "The Cu 2 Se single layer is fabricated on Cu(111) by surface selenization, with the Se atoms, Cu atoms in the Cu 2 Se layer, and Cu atoms in all other layers colored orange, blue, and light blue, respectively.",
+        "references": {},
+        "viewpoints": [
+          "The Cu2Se single layer is fabricated on Cu(111) by surface selenization.",
+          "In the schematic illustration, Se atoms in the Cu2Se layer are colored orange, Cu atoms in the Cu2Se layer are colored blue, and Cu atoms in all other layers are colored light blue."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Upon light illumination, Se atoms sink to the sublayer, forming a new layer of Cu 2 Se there, while subsurface Cu atoms are lifted to the outermost surface.",
+        "references": {},
+        "viewpoints": [
+          "Upon light illumination, Se atoms sink to the sublayer.",
+          "Upon light illumination, a new layer of Cu2Se is formed in the sublayer.",
+          "Upon light illumination, subsurface Cu atoms are lifted to the outermost surface."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "As a result, the surface reconstructs into a close-packed Cu layer.",
+        "references": {},
+        "viewpoints": [
+          "As a result of light illumination, the surface reconstructs into a close-packed Cu layer."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "The photoinduced electronically excited state plays a crucial role in the semiconductor-to-metal transition.",
+        "references": {},
+        "viewpoints": [
+          "The photoinduced electronically excited state plays a crucial role in the semiconductor-to-metal transition."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "The transition is reversible upon thermal activation, reinstating the Cu 2 Se surface layer.",
+        "references": {},
+        "viewpoints": [
+          "The transition to a close-packed Cu layer is reversible upon thermal activation.",
+          "Reversal of the transition reinstates the Cu2Se surface layer."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-57012-4_with_abstracts",
+    "base_id": "s41467-025-57012-4",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-57012-4_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

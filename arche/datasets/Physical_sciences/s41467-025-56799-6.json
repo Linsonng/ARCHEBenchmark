@@ -1,0 +1,792 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Organic solar cells (OSCs) have distinct merits such as lightness, thinness, flexibility, translucency, and colorization [1] , [2] , [3] , [4] , [5] , which can meet special applications in multiple scenarios such as the Internet of Things, smart buildings, indoor photovoltaics, and wearable devices [6] , [7] , [8] , [9] , and have become one of the most promising green energy technologies. Thanks to advances in organic semiconductor photovoltaic materials and device processing techniques, particularly the swift advancement of A-DA’D-A type small-molecule acceptors (SMAs) [10] , [11] , [12] , the power conversion efficiency (PCE) has exceeded 19% currently for a single junction OSC [13] , [14] , [15] . However, compared to the more efficient inorganic materials-based photovoltaic technologies, e.g. the devices based on crystalline silicon, GaAs, or perovskite, there is still considerable room for further improvement in the photovoltaic performance of OSCs due to the relatively higher energy loss ( E loss ) and lower fill factor (FF). Generally, minimizing the non-radiative voltage loss (Δ V nr ) is essential for enhancing the open-circuit voltage ( V OC ) and hence the photovoltaic properties of OSCs. Further innovation and development of organic semiconductor materials have been recognized as the key to solving this issue. Gao et al. demonstrated that a low energy offset between donor and acceptor molecular states and high photoluminescence yield of the low bandgap material are the two key factors for minimizing the voltage losses ( V loss ) of OSCs [16] , [17] . Recent studies have demonstrated that introducing luminescent moieties such as fused ring groups (thiophene, benzene, etc.) to enhance the rigidity of molecular structures and/or the extent of electron delocalization could be an effective method for achieving highly luminescent donor and acceptor molecules, as well as optimal photovoltaic performance [18] , [19] . In addition, the film morphology is closely related to the charge transport properties, and thus the FF and overall efficiency of OSCs. Synergistically improving the luminescence efficiencies of materials and optimizing the morphological structure of the active layer have become the key to further improve the photovoltaic properties but with great challenges. Therefore, manipulating the intermolecular interactions between donor molecules, acceptor molecules, and/or donor–acceptor molecules to control the intermolecular coupling properties becomes a more viable strategy to realize suppressed E loss and improved FF. Inspired by their specific electronic structure and physical properties, modulating the chemical structures of A-DA’D-A type SMAs have been extensively utilized by regulating the three fundamental building blocks, including the central fused ring core unit (DA’D), electron-withdrawing end unit (A), and solubilizing side chains. Owing to the special electron delocalization characteristics, the singlet exciton (SE) excited state of Y-series acceptors could be transferred into the intra-moiety excited (i-EX) state (or namely delocalized singlet exciton (DSE)), which is beneficial for charge generation and decreased non-radiative energy loss [20] , [21] . Modifications of the side chains, such as the variation of length, topology (linear or branched), branching points, and dimension are the most frequently employed approaches for precisely modulating the solubility, molecular crystallization, and stacking behavior of SMAs [22] , [23] , [24] . For instance, Yan et al. discovered that different positions of alkyl-chain-branching can alter the molecular stacking of SMAs, optimizing phase separation and exciton dissociation [25] . It has been well established that the molecular stacking behavior can be regulated with improved structural order and charge transport in thin films by replacing the linear n-undecyl chain on Y6 with branched 2-butyloctyl, delivering significantly promoted open-circuit voltage ( V OC ) and fill factor (FF) [26] . Additionally, breaking the symmetry of the alkyl chains is also an effective way to boost photovoltaic performance [20] , [27] . For example, Yang and coworkers developed the hybrid cycloalkyl-alkyl chain-based symmetric/asymmetric acceptors Y-C10ch/A-C10ch, and the PM6:A-C10ch device based on asymmetric molecules had less energy loss [28] . Development of the acceptors with asymmetric side chains, and an in-depth understanding of the intrinsic properties of their molecules, such as molecular packing, electron coupling, and charge transport properties, especially the electron-vibrational coupling, which describes the deformations of the molecular geometries in the course of the electron-transfer process and reflects the interactions between electrons and intramolecular vibrations. Reducing the electron-vibrational coupling has been demonstrated as an effective strategy to suppress the non-radiative recombination, thus leading to suppressed non-radiative energy loss [29] . Therefore, a comprehensive investigation of the molecular performance of side-chain asymmetric acceptors in combination with detailed density functional theory (DFT) horizontal calculations and single-crystal structures is essential for a deeper understanding of the energy loss and charge transport mechanisms of their devices. To investigate deeply the effects of SMAs with symmetric or asymmetric alkyl-thienyl chains on the device performance from the perspectives of photophysical properties, morphological features, charge dynamic behaviors, etc., two SMAs with asymmetric alkyl/thienyl outer side chains (BTP-C11-TBO and BTP-BO-TBO, respectively) were synthesized in this study and compared in detail with symmetric SMAs (BTP-DC11, BTP-DBO and BTP-DTBO). In comparison to the symmetrical SMAs, the side-chain asymmetrical structure of BTP-C11-TBO and BTP-BO-TBO presented slightly broader optical bandgaps with elevated LUMO energy levels. The molecular packing results examined by GIWAXS indicate that the asymmetric alkyl/thienyl outer side chains endow the acceptors with a more planar skeleton and promote a denser network packing than the corresponding symmetric SMAs, resulting in the higher domain purity in active layers. Furthermore, the asymmetric alkyl/thienyl outer side chains can subtly modulate the D/A interfacial energetics and inhibit molecular vibration, thereby expediting exciton dissociation and mitigating energetic disorder, resulting in enhanced charge generation efficiency and reduced charge recombination. Consequently, these factors contribute to the remarkable photovoltaic performance of the OSCs based on PM6:BTP-BO-TBO and PM6:BTP-C11-TBO, with the maximum PCEs of 19.76% and 18.51%, respectively. Overall, our research not only demonstrated that the asymmetric alkyl/thienyl outer side chain strategy is a feasible approach for reducing non-radiative energy loss, improving charge generation, suppressing charge recombination, and thus boosting the efficiency of OSCs but also provided an instructive guideline for the further development of emerging organic semiconductor materials and organic optoelectronics.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Organic solar cells (OSCs) have distinct merits such as lightness, thinness, flexibility, translucency, and colorization [1] , [2] , [3] , [4] , [5] , which can meet special applications in multiple scenarios such as the Internet of Things, smart buildings, indoor photovoltaics, and wearable devices [6] , [7] , [8] , [9] , and have become one of the most promising green energy technologies.",
+        "references": {
+          "1": {
+            "1": "High power conversion efficiency (PCE) is a key requirement for wearable applications of organic solar cells (OSCs).",
+            "2": "Mechanical robustness is a key requirement for wearable applications of organic solar cells (OSCs).",
+            "3": "Almost all highly efficient photoactive films comprising polymer donors (P<sub>D</sub>) and small molecule acceptors (SMAs) are mechanically brittle.",
+            "4": "Highly efficient (PCE = 17.91%) flexible OSCs were fabricated by incorporating a ductile oligomeric acceptor (DOA) into the P<sub>D</sub>:SMA system.",
+            "5": "Mechanically robust (crack-onset strain [COS] = 11.7%) flexible OSCs were fabricated by incorporating a ductile oligomeric acceptor (DOA) into the P<sub>D</sub>:SMA system.",
+            "6": "The flexible OSCs fabricated in this study represent the most flexible OSCs to date.",
+            "7": "The photophysical properties of D18:N3 with different DOAs are characterized.",
+            "8": "The mechanical properties of D18:N3 with different DOAs are characterized.",
+            "9": "The photovoltaic properties of D18:N3 with different DOAs are characterized.",
+            "10": "The introduction of DOA DOY-C4 with a longer flexible alkyl linker results in D18:N3:DOY-C4-based flexible OSCs with a significantly higher PCE of 17.91%.",
+            "11": "The introduction of DOA DOY-C4 with lower polymerization results in D18:N3:DOY-C4-based flexible OSCs with a 50% higher COS of 11.7%.",
+            "12": "The D18:N3:DOY-C4-based flexible OSCs exhibit higher PCE and COS than the D18:N3-based device.",
+            "13": "The flexible OSCs based on D18:N3:DOY-C4 retain 98% of the initial PCE after 2000 consecutive bending cycles.",
+            "14": "The flexible OSCs based on D18:N3:DOY-C4 show greater mechanical stability than the reference device.",
+            "15": "The reference device maintains 89% of the initial PCE after 2000 consecutive bending cycles.",
+            "16": "The enhancement in mechanical properties is hypothesized to be mainly due to the formation of tie chains in the ternary blend films.",
+            "17": "The enhancement in mechanical properties is hypothesized to be mainly due to the formation of entanglement in the ternary blend films.",
+            "18": "DOAs have great potential for achieving high-performance flexible OSCs."
+          },
+          "2": {
+            "1": "Semi-transparent organic solar cells (ST-OSCs) have unique abilities such as transparency and color tunability.",
+            "2": "Semi-transparent organic solar cells (ST-OSCs) have revolutionized the field of photovoltaics (PVs).",
+            "3": "Semi-transparent organic solar cells (ST-OSCs) have transformed normal power-harvesting OSC devices into multifunctional devices.",
+            "4": "Semi-transparent organic solar cells (ST-OSCs) enable applications in building-integrated photovoltaics.",
+            "5": "Semi-transparent organic solar cells (ST-OSCs) enable applications in agrivoltaics.",
+            "6": "Semi-transparent organic solar cells (ST-OSCs) enable applications in floating photovoltaics.",
+            "7": "Semi-transparent organic solar cells (ST-OSCs) enable applications in wearable electronics.",
+            "8": "ST-OSCs have seen remarkable progress very recently.",
+            "9": "The power conversion efficiency of ST-OSCs has increased from below 7% to 12–14%.",
+            "10": "ST-OSCs have an average visible transparency of 9–25%.",
+            "11": "The use of low bandgap semiconductors, including polymer donors and non-fullerene acceptors, has contributed to the progress in ST-OSCs.",
+            "12": "Low bandgap semiconductors exhibit absorption in the near-infrared region as photoabsorbent materials.",
+            "13": "The latest developments in ST-OSCs stem from innovations in photovoltaic materials.",
+            "14": "Developments in photovoltaic materials have delivered multifunctional ST-OSCs with top-of-the-line power conversion efficiencies.",
+            "15": "The paper aims to shed light on the structure-property relationship between molecular design and current challenges in the research field of ST-OSCs.",
+            "16": "Personal perspectives on future uses of ST-OSCs in multifunctional applications are proposed.",
+            "17": "Research directions for the future use of ST-OSCs in multifunctional applications are proposed."
+          },
+          "3": [],
+          "4": {
+            "1": "Converting non-visual light into photocurrent is vital for semitransparent organic solar cells (ST-OSCs) applications.",
+            "2": "Maintaining high visual transparency is vital for semitransparent organic solar cells (ST-OSCs) applications.",
+            "3": "Converting non-visual light into photocurrent while maintaining high visual transparency is often challenging because of insufficient invisible light-harvesting.",
+            "4": "Spectrally selective optical manipulation for ST-OSCs with high visual light transparency is proposed.",
+            "5": "Full-spectral non-visual light reflection for ST-OSCs is proposed by matching the optical admittance of ultrathin Ag films using ZnS and MgF₂.",
+            "6": "The reflection of optically enhanced ST-OSCs at the spectral region beyond the human eye's response spectrum is improved.",
+            "7": "The transmission in the visual region of optically enhanced ST-OSCs is simultaneously enhanced.",
+            "8": "Integrating an anti-reflective structure boosts the average visible transmittance of ST-OSCs to 44.3%.",
+            "9": "Integrating an anti-reflective structure boosts the power conversion efficiency of ST-OSCs to 12.6%.",
+            "10": "The optimal structure yields a record light utilization efficiency of 5.6%.",
+            "11": "Corresponding flexible ST-OSCs exhibit high mechanical stability.",
+            "12": "The work provides a facile and universal strategy for ST-OSCs aiming at building integrated photovoltaics."
+          },
+          "5": {
+            "1": "Organic solar cells (OSCs) have potential for applications in wearable electronics.",
+            "2": "High power conversion efficiency (PCE) is not the only requirement for achieving high-performance wearable OSCs.",
+            "3": "Excellent tensile properties and mechanical stability are required for achieving high-performance wearable OSCs.",
+            "4": "The present metrics for OSCs barely meet the stretchable requirements for high-performance wearable applications.",
+            "5": "This work proposes a facile and low-cost strategy for constructing intrinsically stretchable OSCs.",
+            "6": "The strategy involves introducing a readily accessible polymer elastomer as a diluent for all-polymer photovoltaic blends.",
+            "7": "The OSCs active layers achieve record-high stretchability with a fracture strain of up to 1000% for the first time.",
+            "8": "Mechanical stability with elastic recovery greater than 90% under cyclic tensile tests is realized in the OSCs active layers for the first time.",
+            "9": "The tensile properties of best-performing all-polymer photovoltaic blends are increased by up to 250 times after blending.",
+            "10": "Previously unattainable performance metrics, such as a fracture strain greater than 50%, are achieved for the resulting photovoltaic films.",
+            "11": "Previously unattainable performance metrics, such as a power conversion efficiency greater than 10%, are achieved for the resulting photovoltaic films.",
+            "12": "An overall evaluation parameter y is proposed for the efficiency-cost-stretchability balance of photovoltaic blend films.",
+            "13": "The y value of the dilute-absorber system is two orders of magnitude greater than those of prior state-of-the-art systems.",
+            "14": "Intrinsically stretchable devices are prepared to showcase the mechanical stability.",
+            "15": "This work offers a new avenue for constructing intrinsically stretchable organic electronic films.",
+            "16": "This work offers a new avenue for comprehensively evaluating intrinsically stretchable organic electronic films."
+          },
+          "6": {
+            "1": "Tandem organic photovoltaics have the ability to achieve high efficiency.",
+            "2": "The high efficiency of tandem organic photovoltaics makes them a competitive technique for potential indoor applications.",
+            "3": "Reliable indoor energy supply demands outstanding stability in addition to high efficiency.",
+            "4": "Unstable voltage supply from the circuit control system is unavoidable for indoor light sources like LEDs and incandescent lamps.",
+            "5": "Unstable voltage supply can cause carrier density fluctuation in indoor photovoltaic systems.",
+            "6": "Unstable voltage supply driven by periodic light/dark switching can cause device fatigue in indoor photovoltaic systems.",
+            "7": "The strobing-induced fatigue within the bulk heterojunction/interconnecting layer interface is first revealed in this work.",
+            "8": "The strobing-induced fatigue within the bulk heterojunction/interconnecting layer interface is overcome in this work.",
+            "9": "Reliable and effective interfacial doping between conjugated acceptor and metal oxide is used in this work.",
+            "10": "Interfacial capacitance determines strobing-induced fatigue in these systems.",
+            "11": "Interfacial capacitance that determines strobing-induced fatigue has been significantly restrained in this work.",
+            "12": "Light strobing causes imbalanced carrier migration during the burn-in stage.",
+            "13": "Light strobing causes intense inter-layer accommodation during the burn-in stage.",
+            "14": "Imbalanced carrier migration caused by light strobing during the burn-in stage is substantially diminished in this work.",
+            "15": "Intense inter-layer accommodation caused by light strobing during the burn-in stage is substantially diminished in this work.",
+            "16": "The stability of tandem devices is highly enhanced under strobing indoor illumination by benefiting from the method used in this work.",
+            "17": "A champion efficiency of 35.02% is obtained for tandem devices under strobing indoor illumination as a result of the method used in this work.",
+            "18": "The method used in this work provides guidance for further material design for interconnecting layers in organic photovoltaics."
+          },
+          "7": {
+            "1": "The human body requires a specific temperature range for comfort.",
+            "2": "The human body requires a specific temperature range for safety.",
+            "3": "Thermoregulatory clothing faces challenges in harsh application scenarios.",
+            "4": "Full day/night cycles present challenges for thermoregulatory clothing.",
+            "5": "Frigid polar regions present challenges for thermoregulatory clothing.",
+            "6": "Space travel presents challenges for thermoregulatory clothing.",
+            "7": "A flexible and sustainable personal thermoregulatory clothing system has been developed.",
+            "8": "The system integrates a flexible organic photovoltaic (OPV) module to directly acquire energy from sunlight.",
+            "9": "The system integrates bidirectional electrocaloric (EC) devices.",
+            "10": "The flexible OPV-EC thermoregulatory clothing (OETC) extends the human thermal comfort zone from 22°–28°C to 12.5°–37.6°C.",
+            "11": "The flexible OPV-EC thermoregulatory clothing (OETC) provides a fast thermoregulation rate.",
+            "12": "The low energy consumption of the EC device allows for 24 hours of controllable thermoregulation.",
+            "13": "The high efficiency of the EC device allows for 24 hours of controllable thermoregulation.",
+            "14": "The EC device allows for dual-mode thermoregulation.",
+            "15": "The EC device requires 12 hours of sunlight energy input to allow for 24 hours of controllable thermoregulation.",
+            "16": "The self-powered wearable thermoregulatory platform has a simple structure.",
+            "17": "The self-powered wearable thermoregulatory platform has a compact design.",
+            "18": "The self-powered wearable thermoregulatory platform has high efficiency.",
+            "19": "The self-powered wearable thermoregulatory platform has strong self-adaptability.",
+            "20": "The self-powered wearable thermoregulatory platform uses sunlight as the sole energy source."
+          },
+          "8": {
+            "1": "Clean energy production has a vital impact on the sustainability of the global community.",
+            "2": "Energy saving has a vital impact on the sustainability of the global community.",
+            "3": "High-performance semitransparent organic solar cells (ST‐OSCs) are capable of power generation.",
+            "4": "High-performance semitransparent organic solar cells (ST‐OSCs) are see-through.",
+            "5": "High-performance semitransparent organic solar cells (ST‐OSCs) have infrared reflection for heat dissipation.",
+            "6": "High-performance semitransparent organic solar cells (ST‐OSCs) have promising perspectives for building-integrated photovoltaics (BIPVs).",
+            "7": "Improving average visible transmittance (AVT) and power conversion efficiency (PCE) in ST‐OSCs is traditionally a trade‐off relationship.",
+            "8": "New ternary blends with alloy‐like near‐infrared (NIR) acceptors are employed to improve device efficiency.",
+            "9": "The new ternary blends maintain visible absorption unchanged.",
+            "10": "The new ternary blends result in power conversion efficiencies (PCEs) of 16.8% for opaque devices and 13.1% for semitransparent OSCs.",
+            "11": "The semitransparent OSCs achieve an average visible transmittance (AVT) of 22.4%.",
+            "12": "The semitransparent OSCs achieve an infrared photon radiation rejection (IRR) of 77%.",
+            "13": "Multifunctional ST‐OSCs are realized by introducing simple, yet effective photonic reflectors and optical simulation.",
+            "14": "The introduction of photonic reflectors and optical simulation leads to perfect fitting of the visible transmittance peak (555 nm) to the photopic response of the human eye.",
+            "15": "The multifunctional ST‐OSCs achieve an excellent infrared photon radiation rejection (IRR) of 90% (780–2500 nm).",
+            "16": "The multifunctional ST‐OSCs achieve a 23% average visible transmittance (AVT).",
+            "17": "The multifunctional ST‐OSCs achieve over 12% power conversion efficiency (PCE).",
+            "18": "The multifunctional ST‐OSC is thought to be the best-performing in terms of power generation, heat dissipation, and being see-through.",
+            "19": "The multifunctional ST‐OSC has promising prospects as building-integrated photovoltaics (BIPVs)."
+          },
+          "9": {
+            "1": "Recent advances in the power conversion efficiency of organic solar cells have greatly enhanced the commercial viability of organic solar cells.",
+            "2": "Wearable electronics, which are promising application platforms for organic solar cells, require technical standards such as mechanical robustness.",
+            "3": "The development of fully stretchable organic solar cells should be accelerated to meet the technical standards required for wearable electronics.",
+            "4": "A comprehensive overview of fully stretchable organic solar cells is provided.",
+            "5": "Fully stretchable organic solar cells are aimed to reliably operate under various forms of mechanical stress, including bending and multidirectional stretching.",
+            "6": "The mechanical requirements of fully stretchable organic solar cells are summarized in terms of tensile properties.",
+            "7": "The mechanical requirements of fully stretchable organic solar cells are summarized in terms of cohesion/adhesion properties.",
+            "8": "Experimental methods to evaluate the tensile and cohesion/adhesion properties of fully stretchable organic solar cells are summarized.",
+            "9": "Essential studies to make each layer of fully stretchable organic solar cells stretchable and efficient are discussed.",
+            "10": "Strategies to simultaneously enhance the photovoltaic properties and mechanical properties of the active layer of fully stretchable organic solar cells are emphasized.",
+            "11": "Strategies for the active layer enhancement range from material design to fabrication control.",
+            "12": "Key improvements to the substrate of fully stretchable organic solar cells are covered.",
+            "13": "Key improvements to the electrodes of fully stretchable organic solar cells are covered.",
+            "14": "Key improvements to the interlayers of fully stretchable organic solar cells are covered.",
+            "15": "Research on fully stretchable organic solar cells is in its infancy.",
+            "16": "The current challenges of fully stretchable organic solar cells research are explored.",
+            "17": "The future prospects of fully stretchable organic solar cells research are explored."
+          }
+        },
+        "viewpoints": [
+          "Organic solar cells have distinct merits such as lightness, thinness, flexibility, translucency, and colorization.",
+          "Organic solar cells can meet special applications in scenarios such as the Internet of Things, smart buildings, indoor photovoltaics, and wearable devices.",
+          "Organic solar cells are considered one of the most promising green energy technologies."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Thanks to advances in organic semiconductor photovoltaic materials and device processing techniques, particularly the swift advancement of A-DA’D-A type small-molecule acceptors (SMAs) [10] , [11] , [12] , the power conversion efficiency (PCE) has exceeded 19% currently for a single junction OSC [13] , [14] , [15] .",
+        "references": {
+          "10": {
+            "1": "A novel non-fullerene electron acceptor named ITIC is designed and synthesized.",
+            "2": "The ITIC electron acceptor overcomes some of the shortcomings of fullerene acceptors.",
+            "3": "Fullerene acceptors have the shortcoming of weak absorption in the visible spectral region.",
+            "4": "Fullerene acceptors have the shortcoming of limited energy-level variability.",
+            "5": "Polymer solar cells using the ITIC acceptor are demonstrated to be free of fullerenes.",
+            "6": "Polymer solar cells using the ITIC acceptor exhibit power conversion efficiencies of up to 6.8%.",
+            "7": "The power conversion efficiency of up to 6.8% is a record for fullerene-free polymer solar cells."
+          },
+          "11": {
+            "1": "Non-fullerene n-type organic semiconductors have attracted significant attention as acceptors in organic photovoltaics (OPVs).",
+            "2": "Non-fullerene n-type organic semiconductors have great potential to realize high-power conversion efficiencies in organic photovoltaics (OPVs).",
+            "3": "The rational design of the central fused ring unit of non-fullerene n-type organic semiconductor acceptor molecules is crucial to maximize device performance.",
+            "4": "Y6 is a new class of non-fullerene acceptor reported in this work.",
+            "5": "Y6 employs a ladder-type electron-deficient-core-based central fused ring, specifically dithienothiophen[3.2-b]-pyrrolobenzothiadiazole, to fine-tune its absorption and electron affinity.",
+            "6": "Y6 has a benzothiadiazole (BT) core.",
+            "7": "OPVs made from Y6 in conventional architecture exhibited a high efficiency of 15.7%.",
+            "8": "OPVs made from Y6 in inverted architecture exhibited a high efficiency of 15.7%.",
+            "9": "The high efficiency of 15.7% for OPVs made from Y6 was measured in two separate labs.",
+            "10": "Inverted device structures made from Y6 were certified at Enli Tech Laboratory.",
+            "11": "Inverted device structures made from Y6 demonstrated an efficiency of 14.9%.",
+            "12": "Y6-based devices maintain a high efficiency of 13.6% with an active layer thickness of 300 nm.",
+            "13": "The electron-deficient-core-based fused ring reported in this work opens a new door in the molecular design of high-performance acceptors for organic photovoltaics (OPVs)."
+          },
+          "12": [],
+          "13": {
+            "1": "Non-fullerene acceptors based organic solar cells are at the forefront of solar cell research.",
+            "2": "The frontier status of non-fullerene acceptors based organic solar cells is due to materials innovations.",
+            "3": "The frontier status of non-fullerene acceptors based organic solar cells is due to morphology manipulation innovations.",
+            "4": "Non-radiative recombination loss suppression is a central focus of organic solar cell research.",
+            "5": "Performance boosting is a central focus of organic solar cell research.",
+            "6": "A non-monotonic intermediate state manipulation strategy was developed for state-of-the-art organic solar cells.",
+            "7": "1,3,5-trichlorobenzene was used as a crystallization regulator in the developed strategy.",
+            "8": "The employed crystallization regulator (1,3,5-trichlorobenzene) optimizes the film crystallization process.",
+            "9": "The developed strategy regulates the self-organization of bulk-heterojunction in a non-monotonic manner.",
+            "10": "The non-monotonic regulation involves first enhancing and then relaxing molecular aggregation.",
+            "11": "The developed strategy avoids excessive aggregation of non-fullerene acceptors.",
+            "12": "Efficient organic solar cells were achieved with reduced non-radiative recombination loss.",
+            "13": "The strategy offers a record binary organic solar cell efficiency of 19.31% in PM6:BTP-eC9 organic solar cell.",
+            "14": "The strategy offers a certified efficiency of 18.93% in PM6:BTP-eC9 organic solar cell.",
+            "15": "In PM6:BTP-eC9 organic solar cells, the strategy results in very low non-radiative recombination loss of 0.190 eV.",
+            "16": "A lower non-radiative recombination loss of 0.168 eV is achieved in PM1:BTP-eC9 organic solar cell.",
+            "17": "An efficiency of 19.10% is achieved in PM1:BTP-eC9 organic solar cell.",
+            "18": "Achieving lower non-radiative recombination loss and high efficiency in PM1:BTP-eC9 gives great promise to future organic solar cell research."
+          },
+          "14": {
+            "1": "Se-functionalized SMAs have unique advantages in constructing materials with near-infrared absorption.",
+            "2": "The photovoltaic performance of Se-functionalized SMAs is inferior to that of S-containing analogs in organic solar cells.",
+            "3": "Two new Se-containing SMAs, Se-EH and Se-EHp, are designed and synthesized.",
+            "4": "The design and synthesis of Se-EH and Se-EHp involve regulating the bifurcation site of the outer alkyl chain.",
+            "5": "The regulation of the bifurcation site enables Se-EH and Se-EHp to form different 3D crystal frameworks from CH1007.",
+            "6": "Se-EH displays tighter π–π stacking compared to other structures.",
+            "7": "Se-EH exhibits a denser packing framework due to a smaller-sized pore structure.",
+            "8": "The smaller-sized pore structure in Se-EH is induced by the larger steric hindrance effect of the outer alkyl chain branched at the 2-position.",
+            "9": "A higher dielectric constant can be obtained in the PM6:Se-EH active layer.",
+            "10": "OSCs based on PM6:Se-EH achieved a PCE of 18.58% in binary devices.",
+            "11": "OSCs based on PM6:Se-EH achieved a PCE of 19.03% in ternary devices.",
+            "12": "OSCs based on PM6:Se-EH have a high fill factor approaching 80% for Se-containing SMAs.",
+            "13": "The significant alkyl chain steric hindrance effect in Se-EH adjusts the molecular crystallization.",
+            "14": "The adjustment in molecular crystallization forms a favorable nanofiber interpenetrating network in Se-EH.",
+            "15": "The nanofiber interpenetrating network in Se-EH has an appropriate domain size.",
+            "16": "The nanofiber interpenetrating network in Se-EH reduces the rate of sub-ns recombination.",
+            "17": "The nanofiber interpenetrating network in Se-EH promotes balanced transport of carriers.",
+            "18": "This work provides references for the further design of highly efficient Se-functionalized SMAs.",
+            "19": "This work provides references for the development of highly efficient Se-functionalized SMAs."
+          },
+          "15": []
+        },
+        "viewpoints": [
+          "Advances in organic semiconductor photovoltaic materials and device processing techniques have increased the power conversion efficiency of organic solar cells.",
+          "The swift advancement of A-DA’D-A type small-molecule acceptors contributes significantly to increases in power conversion efficiency.",
+          "The power conversion efficiency has exceeded 19% for a single junction organic solar cell."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "However, compared to the more efficient inorganic materials-based photovoltaic technologies, e.g. the devices based on crystalline silicon, GaAs, or perovskite, there is still considerable room for further improvement in the photovoltaic performance of OSCs due to the relatively higher energy loss ( E loss ) and lower fill factor (FF).",
+        "references": {},
+        "viewpoints": [
+          "Inorganic materials-based photovoltaic technologies, such as devices based on crystalline silicon, GaAs, or perovskite, are more efficient than organic solar cells.",
+          "There is considerable room for improvement in the photovoltaic performance of organic solar cells.",
+          "The relatively higher energy loss of organic solar cells contributes to their lower photovoltaic performance compared to inorganic materials-based photovoltaic technologies.",
+          "The relatively lower fill factor of organic solar cells contributes to their lower photovoltaic performance compared to inorganic materials-based photovoltaic technologies."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Generally, minimizing the non-radiative voltage loss (Δ V nr ) is essential for enhancing the open-circuit voltage ( V OC ) and hence the photovoltaic properties of OSCs.",
+        "references": {},
+        "viewpoints": [
+          "Minimizing the non-radiative voltage loss is essential for enhancing the open-circuit voltage of organic solar cells.",
+          "Enhancing the open-circuit voltage is essential for improving the photovoltaic properties of organic solar cells."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Further innovation and development of organic semiconductor materials have been recognized as the key to solving this issue.",
+        "references": {},
+        "viewpoints": [
+          "Innovation and development of organic semiconductor materials are recognized as key to minimizing the non-radiative voltage loss issue."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Gao et al. demonstrated that a low energy offset between donor and acceptor molecular states and high photoluminescence yield of the low bandgap material are the two key factors for minimizing the voltage losses ( V loss ) of OSCs [16] , [17] .",
+        "references": {
+          "16": {
+            "1": "Recent advances in organic solar cells based on non-fullerene acceptors (NFAs) result in reduced non-radiative voltage losses (ΔV_{nr}).",
+            "2": "In conventional donor:fullerene blends, ΔV_{nr} values depend on the energy-gap-law.",
+            "3": "The ΔV_{nr} values in state-of-the-art donor:NFA organic solar cells show no correlation with the energies of charge-transfer electronic states at donor:acceptor interfaces.",
+            "4": "Temperature-dependent electroluminescence experiments and dynamic vibronic simulations are used to provide a unified description of ΔV_{nr} for both fullerene- and NFA-based devices.",
+            "5": "The thermal population of local exciton states plays a critical role in low-ΔV_{nr} systems.",
+            "6": "The photoluminescence yield of pristine materials defines the lower limit of ΔV_{nr}.",
+            "7": "The reduction in ΔV_{nr} (for example, <0.2 V) can be obtained without sacrificing charge generation efficiency.",
+            "8": "Designing donor and acceptor materials with high luminescence efficiency is suggested.",
+            "9": "Designing donor and acceptor materials with complementary optical absorption bands extending into the near-infrared region is suggested."
+          },
+          "17": {
+            "1": "The open-circuit voltage of organic solar cells is usually lower than that of inorganic photovoltaic devices with comparable bandgaps.",
+            "2": "The open-circuit voltage of organic solar cells is usually lower than that of perovskite photovoltaic devices with comparable bandgaps.",
+            "3": "Energy losses during charge separation at the donor–acceptor interface are a main cause of reduced open-circuit voltage in organic solar cells.",
+            "4": "Non-radiative recombination is a main cause of reduced open-circuit voltage in organic solar cells.",
+            "5": "Spectroscopic and quantum-chemistry approaches are combined to identify key rules for minimizing voltage losses in organic solar cells.",
+            "6": "A low energy offset between donor and acceptor molecular states is a key rule for minimizing voltage losses in organic solar cells.",
+            "7": "High photoluminescence yield of the low-gap material in the blend is a key rule for minimizing voltage losses in organic solar cells.",
+            "8": "Existing and new donor–acceptor systems are presented that combine efficient photocurrent generation with electroluminescence yield up to 0.03%.",
+            "9": "These donor–acceptor systems lead to non-radiative voltage losses as small as 0.21 V.",
+            "10": "The study provides a rationale to explain the performance of recently demonstrated high-open-circuit-voltage organic solar cells.",
+            "11": "The study provides a rationale to further improve the performance of recently demonstrated high-open-circuit-voltage organic solar cells."
+          }
+        },
+        "viewpoints": [
+          "A low energy offset between donor and acceptor molecular states is a key factor for minimizing voltage losses in organic solar cells.",
+          "High photoluminescence yield of the low bandgap material is a key factor for minimizing voltage losses in organic solar cells.",
+          "Gao et al. demonstrated the importance of low energy offset and high photoluminescence yield in minimizing voltage losses."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Recent studies have demonstrated that introducing luminescent moieties such as fused ring groups (thiophene, benzene, etc.) to enhance the rigidity of molecular structures and/or the extent of electron delocalization could be an effective method for achieving highly luminescent donor and acceptor molecules, as well as optimal photovoltaic performance [18] , [19] .",
+        "references": {
+          "18": {
+            "1": "Side-chain engineering is an important strategy to optimize Y-series nonfullerene acceptors (NFAs).",
+            "2": "Most previous reports focused on changing the branching positions of the alkyl side chains on Y6.",
+            "3": "Most previous reports focused on changing the size of the alkyl side chains on Y6.",
+            "4": "The paper investigates the influence of the orientation of side chains on the properties of NFAs.",
+            "5": "The paper investigates the influence of the orientation of side chains on the performance of organic solar cells (OSCs).",
+            "6": "Three isomeric NFAs, named o-BTP-PhC6, m-BTP-PhC6, and p-BTP-PhC6, are designed.",
+            "7": "The design of o-BTP-PhC6, m-BTP-PhC6, and p-BTP-PhC6 involves changing the substitution positions of the side chains.",
+            "8": "The design of o-BTP-PhC6, m-BTP-PhC6, and p-BTP-PhC6 involves changing the orientations of the side chains attached to the central core.",
+            "9": "The optimal side-chain orientation can be achieved by the meta-positioned hexylphenyl group of the m-BTP-PhC6 molecule.",
+            "10": "The meta-positioned hexylphenyl group of the m-BTP-PhC6 molecule introduces significant beneficial effects on optical absorption of the NFAs.",
+            "11": "The meta-positioned hexylphenyl group of the m-BTP-PhC6 molecule introduces significant beneficial effects on intermolecular packing of the NFAs.",
+            "12": "The meta-positioned hexylphenyl group of the m-BTP-PhC6 molecule introduces significant beneficial effects on phase separation of the NFAs.",
+            "13": "Pairing a donor polymer PTQ10 with m-BTP-PhC6 can achieve device efficiencies of 17.7%.",
+            "14": "Device efficiencies of 17.7% are among the best values for PTQ10-based nonfullerene OSC devices so far.",
+            "15": "Regulating side-chain orientations of Y-series NFAs is a promising strategy to achieve favorable morphology.",
+            "16": "Regulating side-chain orientations of Y-series NFAs is a promising strategy to achieve high charge mobility.",
+            "17": "Regulating side-chain orientations of Y-series NFAs is a promising strategy to achieve high solar cell performances."
+          },
+          "19": {
+            "1": "Side-chain modifications of non-fullerene acceptors are essential for harnessing the full potential of non-fullerene acceptors in organic solar cells.",
+            "2": "An effective alkyl-chain-branching approach is demonstrated for Y-series non-fullerene acceptors.",
+            "3": "The effective alkyl-chain-branching approach involves flanking meta-substituted phenyl side groups at the outer positions of Y-series non-fullerene acceptors.",
+            "4": "Two new acceptors named BTP-4F-P2EH and BTP-4F-P3EH are developed with bulkier alkyl chains compared to BTP-4F-PC6, which has linear m-hexylphenyl chains.",
+            "5": "BTP-4F-P2EH has alkyl chains branched at the β position.",
+            "6": "BTP-4F-P3EH has alkyl chains branched at the γ position.",
+            "7": "The branched alkyl chains result in altered molecular packing of the non-fullerene acceptors.",
+            "8": "The branched alkyl chains afford higher open-circuit voltage in the devices.",
+            "9": "The branched-chain non-fullerene acceptors exhibit blue-shifted absorption.",
+            "10": "Blends of branched-chain non-fullerene acceptors with PBDB-T-2F enable improved short-circuit current density for the corresponding devices.",
+            "11": "The improved short-circuit current density is owing to more suitable phase separation in the blends.",
+            "12": "The improved short-circuit current density is owing to better exciton dissociation in the blends.",
+            "13": "OSCs based on BTP-4F-P2EH yield enhanced device performance of 18.22%.",
+            "14": "OSCs based on BTP-4F-P3EH yield enhanced device performance of 17.57%.",
+            "15": "OSCs based on BTP-4F-P2EH and BTP-4F-P3EH outperform OSCs based on BTP-4F-PC6 with a performance of 17.22%.",
+            "16": "The side-chain branching design of non-fullerene acceptors has great potential in optimizing molecular properties.",
+            "17": "The side-chain branching design of non-fullerene acceptors has great potential in promoting photovoltaic performance."
+          }
+        },
+        "viewpoints": [
+          "Introducing luminescent moieties such as fused ring groups enhances the rigidity of molecular structures.",
+          "Introducing luminescent moieties such as fused ring groups enhances the extent of electron delocalization.",
+          "Introducing luminescent moieties can achieve highly luminescent donor and acceptor molecules.",
+          "Enhancing the rigidity of molecular structures leads to optimal photovoltaic performance.",
+          "Enhancing the extent of electron delocalization leads to optimal photovoltaic performance."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "In addition, the film morphology is closely related to the charge transport properties, and thus the FF and overall efficiency of OSCs.",
+        "references": {},
+        "viewpoints": [
+          "Film morphology is closely related to the charge transport properties of organic solar cells.",
+          "Film morphology is closely related to the fill factor of organic solar cells.",
+          "Film morphology is closely related to the overall efficiency of organic solar cells."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Synergistically improving the luminescence efficiencies of materials and optimizing the morphological structure of the active layer have become the key to further improve the photovoltaic properties but with great challenges.",
+        "references": {},
+        "viewpoints": [
+          "Improving the luminescence efficiencies of materials synergistically with optimizing the morphological structure is key to improving the photovoltaic properties.",
+          "Improving the photovoltaic properties by this method presents great challenges."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Therefore, manipulating the intermolecular interactions between donor molecules, acceptor molecules, and/or donor–acceptor molecules to control the intermolecular coupling properties becomes a more viable strategy to realize suppressed E loss and improved FF.",
+        "references": {},
+        "viewpoints": [
+          "Manipulating intermolecular interactions between donor molecules, acceptor molecules, and/or donor–acceptor molecules is a strategy to control intermolecular coupling properties.",
+          "Controlling intermolecular coupling properties is a strategy to suppress energy loss.",
+          "Controlling intermolecular coupling properties is a strategy to improve the fill factor."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Inspired by their specific electronic structure and physical properties, modulating the chemical structures of A-DA’D-A type SMAs have been extensively utilized by regulating the three fundamental building blocks, including the central fused ring core unit (DA’D), electron-withdrawing end unit (A), and solubilizing side chains.",
+        "references": {},
+        "viewpoints": [
+          "Modulating the chemical structures of A-DA’D-A type small-molecule acceptors is inspired by their specific electronic structure and physical properties.",
+          "The chemical structures of A-DA’D-A type small-molecule acceptors are modulated by regulating the central fused ring core unit, the electron-withdrawing end unit, and solubilizing side chains.",
+          "Regulation of the central fused ring core unit, electron-withdrawing end unit, and solubilizing side chains has been extensively utilized."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Owing to the special electron delocalization characteristics, the singlet exciton (SE) excited state of Y-series acceptors could be transferred into the intra-moiety excited (i-EX) state (or namely delocalized singlet exciton (DSE)), which is beneficial for charge generation and decreased non-radiative energy loss [20] , [21] .",
+        "references": {
+          "20": {
+            "1": "Asymmetric molecular design has been widely demonstrated as effective for organic photovoltaics (OPVs).",
+            "2": "The correlation between asymmetric molecular geometry and their optoelectronic properties is still unclear.",
+            "3": "Several symmetric-asymmetric non-fullerene acceptors (NFAs) pairs with identical physical and optoelectronic properties have been designed and synthesized to access the issue of unclear correlation between asymmetric molecular geometry and optoelectronic properties.",
+            "4": "Asymmetric non-fullerene acceptors (NFAs) universally exhibited increased open-circuit voltage compared to symmetric counterparts.",
+            "5": "The increased open-circuit voltage of asymmetric NFAs is due to reduced non-radiative charge recombination.",
+            "6": "Molecular-dynamic simulations show that asymmetric NFA exhibits more diverse molecular interaction patterns at the donor (D):acceptor (A) interface compared to symmetric ones.",
+            "7": "Asymmetric NFA has higher D:A interfacial charge-transfer state energy compared to symmetric NFAs.",
+            "8": "The asymmetric structure can effectively suppress triplet state formation.",
+            "9": "The advantages of the asymmetric structure enable a best efficiency of 18.80% for binary OPVs.",
+            "10": "An efficiency of 18.80% is one of the champion results among binary OPVs.",
+            "11": "This work unambiguously demonstrates the unique advantage of asymmetric molecular geometry.",
+            "12": "This work unveils the underlying mechanism of the advantages conferred by asymmetric molecular geometry.",
+            "13": "This work highlights the manipulation of the donor (D):acceptor (A) interface as an important consideration for future molecular design."
+          },
+          "21": {
+            "1": "The photoinduced charge generation process in NFA-based OSCs is mysterious.",
+            "2": "The implications of the photoinduced charge generation process for device performance are key issues for NFA-based OSCs.",
+            "3": "The hole transfer from photoexcited NFAs is well explored.",
+            "4": "The photoinduced process after donor light absorption is not well understood.",
+            "5": "The implications of the photoinduced process after donor light absorption for device performance remain unclear.",
+            "6": "The study uses ultrafast spectroscopy and photovoltaic characterization.",
+            "7": "The study shows a dominant ultrafast (~80 fs) and lossless Förster resonance energy transfer (FRET) from photoexcited polymer donors to Y6.",
+            "8": "The FRET process in nonfullerene OSCs has an efficiency of over 65%.",
+            "9": "The FRET process is followed by reverse hole transfer in nonfullerene OSCs, bypassing direct electron transfer.",
+            "10": "The reverse hole transfer becomes a more efficient charge generation channel in high-efficiency nonfullerene OSCs.",
+            "11": "The efficient charge generation channel is especially significant for Y-series NFA based OSC systems.",
+            "12": "The nonfullerene FRET process contrasts with fullerene OSCs.",
+            "13": "The synergistic two-step process facilitates spectral uniform photocurrent generation.",
+            "14": "The synergistic two-step process lowers non-radiative recombination energy loss.",
+            "15": "The formation of intermedia non-luminous CT exciton is suppressed by the synergistic two-step process.",
+            "16": "The study emphasizes the great potential of FRET in OSCs.",
+            "17": "The study emphasizes the central role of hole transfer in OSCs.",
+            "18": "The study provides new guidelines to engineer FRET for high-efficiency OSCs."
+          }
+        },
+        "viewpoints": [
+          "The singlet exciton excited state of Y-series acceptors can be transferred into the intra-moiety excited state due to special electron delocalization characteristics.",
+          "The intra-moiety excited state is also called the delocalized singlet exciton.",
+          "The intra-moiety excited state is beneficial for charge generation.",
+          "The intra-moiety excited state is beneficial for decreasing non-radiative energy loss."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Modifications of the side chains, such as the variation of length, topology (linear or branched), branching points, and dimension are the most frequently employed approaches for precisely modulating the solubility, molecular crystallization, and stacking behavior of SMAs [22] , [23] , [24] .",
+        "references": {
+          "22": {
+            "1": "The power conversion efficiency (PCE) of organic solar cells (OSCs) processed by nonhalogenated solvents is unsatisfactory.",
+            "2": "The unsatisfactory PCE of OSCs processed by nonhalogenated solvents is due to unfavorable morphology.",
+            "3": "Two new small molecule acceptors (SMAs) Y6-Ph and L8-Ph are synthesized.",
+            "4": "A phenyl end group is introduced in the inner side chains of the SMAs of Y6 and L8-BO to synthesize Y6-Ph and L8-Ph.",
+            "5": "The introduction of a phenyl end group aims to overcome the excessive aggregation of SMAs during long-time film forming processed by nonhalogenated solvents.",
+            "6": "The effect of the film forming time on the aggregation property of Y6, L8-BO, Y6-Ph, and L8-Ph is studied.",
+            "7": "The effect of the film forming time on the photovoltaic performance of Y6, L8-BO, Y6-Ph, and L8-Ph is studied.",
+            "8": "The study uses the solvent chloroform (CF) for a rapid film forming process.",
+            "9": "The study uses the solvent chlorobenzene (CB) for a slow film forming process.",
+            "10": "Y6- and L8-BO-based OSCs exhibit a dramatic drop in PCE from CF- to CB-processed devices.",
+            "11": "The drop in PCE for Y6- and L8-BO-based OSCs is due to large phase separation.",
+            "12": "Y6-Ph and L8-Ph based OSCs show obviously increased PCEs from CF- to CB-processed devices.",
+            "13": "L8-Ph-based OSCs processed by nonhalogenated solvent o-xylene (o-XY) achieved a high PCE of 18.40%.",
+            "14": "L8-Ph-based OSCs processed by o-xylene achieved a fill factor (FF) of 80.11%.",
+            "15": "Introducing a phenyl end group in the inner side chains is an effective strategy to modulate the morphology of OSCs.",
+            "16": "Introducing a phenyl end group in the inner side chains is an effective strategy to improve the photovoltaic performance of OSCs processed by nonhalogenated solvents."
+          },
+          "23": {
+            "1": "The development of A-DA′D-A type small molecule acceptors (SMAs) has promoted the rapid progress of polymer solar cells (PSCs).",
+            "2": "The development of A-DA′D-A type SMAs has occurred in recent years.",
+            "3": "The outer side chains on the terminal thiophene ring of the DA′D fused ring play important roles in the photovoltaic performance of the small molecule acceptors (SMAs).",
+            "4": "The inner side chains on nitrogen atoms of the pyrrole ring of the DA′D fused ring play important roles in the photovoltaic performance of the SMAs.",
+            "5": "Two new small molecule acceptors (SMAs) were synthesized: T2EH and P2EH.",
+            "6": "T2EH was synthesized with 2-ethylhexyl β-substituted thienyl as the outer side chains.",
+            "7": "P2EH was synthesized with 2-ethylhexyl β-substituted phenyl as the outer side chains.",
+            "8": "The synthesis of T2EH and P2EH was aimed at improving the photovoltaic properties of the small molecule acceptors (SMAs).",
+            "9": "T2EH exhibits closer π−π stacking compared with P2EH.",
+            "10": "T2EH exhibits slightly red-shifted absorption compared with P2EH.",
+            "11": "T2EH exhibits higher electron mobility compared with P2EH.",
+            "12": "The active layer of T2EH blended with PTQ10 possesses higher mobilities than the active layer of PTQ10:P2EH.",
+            "13": "The active layer of T2EH blended with PTQ10 possesses a longer lifetime than the active layer of PTQ10:P2EH.",
+            "14": "The active layer of T2EH blended with PTQ10 possesses less recombination of the charge carriers than the active layer of PTQ10:P2EH.",
+            "15": "PTQ10:T2EH-based polymer solar cells (PSCs) showed a power conversion efficiency (PCE) of 18.55%.",
+            "16": "The PSC based on PTQ10:P2EH displayed a power conversion efficiency (PCE) of 17.50%.",
+            "17": "A power conversion efficiency (PCE) of 18.55% is the highest PCE in PTQ10-based binary polymer solar cells (PSCs) so far.",
+            "18": "T2EH is one of the best small molecule acceptors (SMAs) for PTQ10-based polymer solar cells (PSCs).",
+            "19": "T2EH is a promising SMA for the application of polymer solar cells (PSCs)."
+          },
+          "24": {
+            "1": "The side chain configuration has a significant influence on the intermolecular interaction of organic small molecule acceptors (SMAs).",
+            "2": "The side chain configuration has a significant influence on the aggregation morphology of organic small molecule acceptors (SMAs).",
+            "3": "Two isomeric A–DA′D–A type SMAs were designed and synthesized in this work.",
+            "4": "The SMAs were synthesized with thienyl outer side chains attaching a 2-ethylhexyl substituent at the α-position, named o-TEH.",
+            "5": "The SMAs were synthesized with thienyl outer side chains attaching a 2-ethylhexyl substituent at the β-position, named m-TEH.",
+            "6": "The purpose of designing and synthesizing o-TEH and m-TEH was to investigate the effect of thienyl conjugated outer side chains on the properties of SMAs.",
+            "7": "The purpose of designing and synthesizing o-TEH and m-TEH was to investigate the effect of the alkyl substitution position of thienyl outer side chains on the properties of SMAs.",
+            "8": "m-TEH with β-substitution shows closer π–π stacking compared to o-TEH with α-substitution.",
+            "9": "m-TEH with β-substitution shows stronger intermolecular interaction compared to o-TEH with α-substitution.",
+            "10": "m-TEH with β-substitution shows higher electron mobility compared to o-TEH with α-substitution.",
+            "11": "Blend films of m-TEH with the PBQ6 polymer donor possess more suitable phase separation than PBQ6:o-TEH-based blend films.",
+            "12": "Blend films of m-TEH with the PBQ6 polymer donor possess enhanced molecular packing compared to PBQ6:o-TEH-based blend films.",
+            "13": "Blend films of m-TEH with the PBQ6 polymer donor possess higher hole and electron mobilities compared to PBQ6:o-TEH-based blend films.",
+            "14": "Blend films of m-TEH with the PBQ6 polymer donor possess more balanced hole and electron mobilities than PBQ6:o-TEH-based blend films.",
+            "15": "Blend films of m-TEH with the PBQ6 polymer donor exhibit longer charge carrier lifetime than PBQ6:o-TEH-based blend films.",
+            "16": "Blend films of m-TEH with the PBQ6 polymer donor exhibit less charge carrier recombination than PBQ6:o-TEH-based blend films.",
+            "17": "Organic solar cells (OSCs) based on PBQ6:m-TEH achieved a power conversion efficiency (PCE) of 18.51%.",
+            "18": "The power conversion efficiency (PCE) of PBQ6:m-TEH-based OSCs is significantly higher than the PCE of 16.22% for PBQ6:o-TEH-based OSCs.",
+            "19": "18.51% is one of the highest power conversion efficiencies (PCEs) reported for binary organic solar cells (OSCs).",
+            "20": "The high PCE of m-TEH-based OSCs suggests that m-TEH with 2-ethylhexyl β-substituted thienyl outer side chains is an excellent high-performance small molecule acceptor (SMA) for OSCs."
+          }
+        },
+        "viewpoints": [
+          "Modifications of the side chains, such as variations of length, topology, branching points, and dimension, are employed approaches.",
+          "These modifications are employed to precisely modulate the solubility of small-molecule acceptors.",
+          "These modifications are employed to precisely modulate the molecular crystallization of small-molecule acceptors.",
+          "These modifications are employed to precisely modulate the stacking behavior of small-molecule acceptors."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "For instance, Yan et al. discovered that different positions of alkyl-chain-branching can alter the molecular stacking of SMAs, optimizing phase separation and exciton dissociation [25] .",
+        "references": {
+          "25": {
+            "1": "The field of organic solar cells has experienced rapid developments following the report of a high-efficiency (15.7%) small molecule acceptor named Y6.",
+            "2": "Y6 is a small molecule acceptor with a reported high efficiency of 15.7%.",
+            "3": "The paper involves designing and synthesizing a family of small molecule acceptors with an aromatic backbone identical to that of Y6.",
+            "4": "The small molecule acceptors designed in the paper have different alkyl chains compared to Y6.",
+            "5": "The purpose of designing and synthesizing the small molecule acceptors is to investigate the influence of alkyl chains on the properties and performance of the small molecule acceptors.",
+            "6": "Using branched alkyl chains on the nitrogen atoms of the pyrrole motif of Y6 is beneficial.",
+            "7": "The branching position of the alkyl chains has a major influence on material properties of the small molecule acceptors.",
+            "8": "The branching position of the alkyl chains has a major influence on the device properties of the small molecule acceptors.",
+            "9": "The small molecule acceptor with 3rd-position branched alkyl chains, named N3, exhibits optimal solubility.",
+            "10": "The small molecule acceptor N3 exhibits optimal electronic properties.",
+            "11": "The small molecule acceptor N3 exhibits optimal morphological properties.",
+            "12": "The small molecule acceptor N3 yields the best performance.",
+            "13": "Further device optimization using a ternary strategy allows achieving a high efficiency of 16.74% for the small molecule acceptors.",
+            "14": "Further device optimization using a ternary strategy allows achieving a certified efficiency of 16.42% for the small molecule acceptors."
+          }
+        },
+        "viewpoints": [
+          "Different positions of alkyl-chain-branching can alter the molecular stacking of small-molecule acceptors.",
+          "Altering the molecular stacking can optimize phase separation.",
+          "Altering the molecular stacking can optimize exciton dissociation.",
+          "Yan et al. discovered the effects of different alkyl-chain-branching positions."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "It has been well established that the molecular stacking behavior can be regulated with improved structural order and charge transport in thin films by replacing the linear n-undecyl chain on Y6 with branched 2-butyloctyl, delivering significantly promoted open-circuit voltage ( V OC ) and fill factor (FF) [26] .",
+        "references": {
+          "26": {
+            "1": "Molecular design of non-fullerene acceptors is vital for achieving high efficiency in organic solar cells.",
+            "2": "Branched alkyl chain modification is often regarded as a counter-intuitive approach in molecular design.",
+            "3": "Branched alkyl chain modification may introduce an undesirable steric hindrance in non-fullerene acceptors.",
+            "4": "Steric hindrance introduced by branched alkyl chain modification may reduce charge transport in non-fullerene acceptors.",
+            "5": "Design and synthesis of a highly efficient non-fullerene acceptor family involves substituting the beta position of the thiophene unit.",
+            "6": "The substitution involves a Y6-based dithienothiophen[3,2-b]-pyrrolobenzothiadiazole core with branched alkyl chains.",
+            "7": "The substitution of the beta position with branched alkyl chains is used to create a highly efficient non-fullerene acceptor family.",
+            "8": "Modification to a different alkyl chain length can completely change the molecular packing behaviour of non-fullerene acceptors.",
+            "9": "A change in molecular packing behaviour can lead to improved structural order in thin films.",
+            "10": "Improved charge transport in thin films can result from a change in molecular packing behaviour.",
+            "11": "An unprecedented efficiency of 18.32% is achieved for single-junction organic solar cells.",
+            "12": "The certified value of the efficiency achieved is 17.9%.",
+            "13": "A fill factor of 81.5% is achieved for single-junction organic solar cells.",
+            "14": "The branched alkyl chain topology is important for tuning the molecular packing in non-fullerene acceptors.",
+            "15": "The branched alkyl chain topology is important for tuning the blend morphology in non-fullerene acceptors.",
+            "16": "Tuning molecular packing and blend morphology leads to improved organic photovoltaic performance."
+          }
+        },
+        "viewpoints": [
+          "Replacing the linear n-undecyl chain on Y6 with branched 2-butyloctyl regulates the molecular stacking behavior.",
+          "Regulating the molecular stacking behavior improves the structural order in thin films.",
+          "Regulating the molecular stacking behavior improves charge transport in thin films.",
+          "These regulations lead to significantly promoted open-circuit voltage.",
+          "These regulations lead to significantly promoted fill factor."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Additionally, breaking the symmetry of the alkyl chains is also an effective way to boost photovoltaic performance [20] , [27] .",
+        "references": {
+          "20": {
+            "1": "Asymmetric molecular design has been widely demonstrated as effective for organic photovoltaics (OPVs).",
+            "2": "The correlation between asymmetric molecular geometry and their optoelectronic properties is still unclear.",
+            "3": "Several symmetric-asymmetric non-fullerene acceptors (NFAs) pairs with identical physical and optoelectronic properties have been designed and synthesized to access the issue of unclear correlation between asymmetric molecular geometry and optoelectronic properties.",
+            "4": "Asymmetric non-fullerene acceptors (NFAs) universally exhibited increased open-circuit voltage compared to symmetric counterparts.",
+            "5": "The increased open-circuit voltage of asymmetric NFAs is due to reduced non-radiative charge recombination.",
+            "6": "Molecular-dynamic simulations show that asymmetric NFA exhibits more diverse molecular interaction patterns at the donor (D):acceptor (A) interface compared to symmetric ones.",
+            "7": "Asymmetric NFA has higher D:A interfacial charge-transfer state energy compared to symmetric NFAs.",
+            "8": "The asymmetric structure can effectively suppress triplet state formation.",
+            "9": "The advantages of the asymmetric structure enable a best efficiency of 18.80% for binary OPVs.",
+            "10": "An efficiency of 18.80% is one of the champion results among binary OPVs.",
+            "11": "This work unambiguously demonstrates the unique advantage of asymmetric molecular geometry.",
+            "12": "This work unveils the underlying mechanism of the advantages conferred by asymmetric molecular geometry.",
+            "13": "This work highlights the manipulation of the donor (D):acceptor (A) interface as an important consideration for future molecular design."
+          },
+          "27": {
+            "1": "Achieving high open-circuit voltage (V<sub>oc</sub>) is a major challenge for organic solar cells (OSCs).",
+            "2": "Achieving high short-circuit current density (J<sub>sc</sub>) is a major challenge for organic solar cells (OSCs).",
+            "3": "Boosting power-conversion efficiency (PCE) is a major challenge for organic solar cells (OSCs).",
+            "4": "High energy loss (E<sub>loss</sub>) usually takes place in organic solar cells (OSCs).",
+            "5": "Inefficient charge transfer usually takes place in organic solar cells (OSCs).",
+            "6": "Three new Y-series acceptors, namely mono-asymmetric asy-YC11, dual-asymmetric bi-asy-YC9, and dual-asymmetric bi-asy-YC12, have been developed.",
+            "7": "The three new Y-series acceptors share the same asymmetric D<sub>1</sub>AD<sub>2</sub> fused-core.",
+            "8": "In the asymmetric D<sub>1</sub>AD<sub>2</sub> fused-core, D<sub>1</sub> equals thieno[3,2-b]thiophene.",
+            "9": "In the asymmetric D<sub>1</sub>AD<sub>2</sub> fused-core, D<sub>2</sub> equals selenopheno[3,2-b]thiophene.",
+            "10": "The three new Y-series acceptors have different unidirectional sidechains on the D<sub>1</sub> side.",
+            "11": "Different unidirectional sidechains on the D<sub>1</sub> side allow fine-tuned molecular properties such as intermolecular interaction, packing pattern, and crystallinity.",
+            "12": "Among the binary blends, the PM6 : bi-asy-YC12 blend has better morphology than the PM6 : asy-YC9 and PM6 : bi-asy-YC11 blends.",
+            "13": "The PM6 : bi-asy-YC12 blend has appropriate phase separation.",
+            "14": "The PM6 : bi-asy-YC12 blend has higher order packing.",
+            "15": "The PM6 : bi-asy-YC12-based OSCs offer a higher power-conversion efficiency (PCE) of 17.16%.",
+            "16": "The PM6 : bi-asy-YC12-based OSCs have both high open-circuit voltage (V<sub>oc</sub>) and high short-circuit current density (J<sub>sc</sub>).",
+            "17": "Reduced energy loss (E<sub>loss</sub>) contributes to the higher PCE in PM6 : bi-asy-YC12-based OSCs.",
+            "18": "Efficient charge transfer properties contribute to the higher PCE in PM6 : bi-asy-YC12-based OSCs.",
+            "19": "The high open-circuit voltage (V<sub>oc</sub>) of bi-asy-YC12 inspires its use in ternary organic solar cells (OSCs).",
+            "20": "The strong near-infrared (NIR) absorption of bi-asy-YC12 inspires its use in ternary organic solar cells (OSCs).",
+            "21": "Bi-asy-YC12 is introduced into efficient binary PM6 : L8-BO to construct ternary OSCs.",
+            "22": "The broadened absorption of PM6 : L8-BO : bi-asy-YC12-based OSCs contributes to a champion power-conversion efficiency (PCE) of 19.23%.",
+            "23": "The optimized morphology of PM6 : L8-BO : bi-asy-YC12-based OSCs contributes to a champion PCE of 19.23%.",
+            "24": "The further minimized energy loss (E<sub>loss</sub>) in PM6 : L8-BO : bi-asy-YC12-based OSCs contributes to a champion PCE of 19.23%.",
+            "25": "The PM6 : L8-BO : bi-asy-YC12-based OSCs achieve a PCE of 19.23%.",
+            "26": "This efficiency is one of the highest among annealing-free devices.",
+            "27": "Unidirectional sidechain engineering is used for constructing bi-asymmetric Y-series acceptors.",
+            "28": "The development of unidirectional sidechain engineering provides an approach to boost power-conversion efficiency (PCE) of organic solar cells (OSCs)."
+          }
+        },
+        "viewpoints": [
+          "Breaking the symmetry of the alkyl chains is an effective way to boost photovoltaic performance."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "For example, Yang and coworkers developed the hybrid cycloalkyl-alkyl chain-based symmetric/asymmetric acceptors Y-C10ch/A-C10ch, and the PM6:A-C10ch device based on asymmetric molecules had less energy loss [28] .",
+        "references": {
+          "28": {
+            "1": "Hybrid cycloalkyl-alkyl side chains are a unique composite side-chain system.",
+            "2": "Hybrid cycloalkyl-alkyl side chains are used for the construction of novel organic semiconductor materials.",
+            "3": "There is a lack of fundamental understanding of the variations in the single-crystal structures caused by the introduction of hybrid side chains in electron acceptors.",
+            "4": "There is a lack of fundamental understanding of the optoelectronic properties generated by the introduction of hybrid side chains in electron acceptors.",
+            "5": "There is a lack of fundamental understanding of the energetic properties generated by the introduction of hybrid side chains in electron acceptors.",
+            "6": "Symmetric acceptors (Y-C10ch) bearing bilateral 10-cyclohexyldecyl are designed.",
+            "7": "Asymmetric acceptors (A-C10ch) bearing unilateral 10-cyclohexyldecyl are designed.",
+            "8": "Y-C10ch and A-C10ch are synthesized.",
+            "9": "Y-C10ch and A-C10ch are compared with the symmetric acceptor L8-BO.",
+            "10": "The stepwise introduction of 10-cyclohexyldecyl side chains decreases the optical bandgap.",
+            "11": "The stepwise introduction of 10-cyclohexyldecyl side chains deepens the energy level.",
+            "12": "The stepwise introduction of 10-cyclohexyldecyl side chains enables the acceptor molecules to pack closely in a regular manner.",
+            "13": "The 10-cyclohexyldecyl chain endows the acceptor with a more planar skeleton.",
+            "14": "The 10-cyclohexyldecyl chain enforces more compact 3D network packing.",
+            "15": "The 10-cyclohexyldecyl chain results in an active layer with higher domain purity.",
+            "16": "The 10-cyclohexyldecyl chain affects the donor/acceptor interfacial energetics.",
+            "17": "The 10-cyclohexyldecyl chain accelerates exciton dissociation.",
+            "18": "The 10-cyclohexyldecyl chain enables a power conversion efficiency (PCE) of >18% in Y6 (PM6):A-C10ch-based organic solar cells (OSCs).",
+            "19": "The incorporation of Y-C10ch as the third component of the PM6:L8-BO blend results in a higher PCE of 19.1%.",
+            "20": "The superior molecular packing behavior of the 10-cyclohexyldecyl side chain is highlighted for the fabrication of high-performance OSCs."
+          }
+        },
+        "viewpoints": [
+          "Yang and coworkers developed hybrid cycloalkyl-alkyl chain-based symmetric/asymmetric acceptors Y-C10ch/A-C10ch.",
+          "The PM6:A-C10ch device based on asymmetric molecules had less energy loss."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Development of the acceptors with asymmetric side chains, and an in-depth understanding of the intrinsic properties of their molecules, such as molecular packing, electron coupling, and charge transport properties, especially the electron-vibrational coupling, which describes the deformations of the molecular geometries in the course of the electron-transfer process and reflects the interactions between electrons and intramolecular vibrations.",
+        "references": {},
+        "viewpoints": [
+          "Intrinsic properties of molecules like molecular packing and electron coupling are important for asymmetric side-chain acceptors.",
+          "Charge transport properties are crucial for acceptors with asymmetric side chains.",
+          "Understanding electron-vibrational coupling is crucial for developing acceptors with asymmetric side chains.",
+          "Electron-vibrational coupling describes the deformations of molecular geometries during electron-transfer.",
+          "Electron-vibrational coupling reflects interactions between electrons and intramolecular vibrations."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Reducing the electron-vibrational coupling has been demonstrated as an effective strategy to suppress the non-radiative recombination, thus leading to suppressed non-radiative energy loss [29] .",
+        "references": {
+          "29": {
+            "1": "Organic solar cells have external quantum efficiencies approaching those of conventional photovoltaic technologies.",
+            "2": "Organic solar cells have fill factors approaching those of conventional photovoltaic technologies.",
+            "3": "The open-circuit voltage of organic solar cells is much lower than the optical gap of the absorber materials.",
+            "4": "The open-circuit voltage of organic solar cells is lower largely due to significant non-radiative recombination.",
+            "5": "A large data set of published and new material combinations was studied.",
+            "6": "Non-radiative voltage losses decrease with increasing charge-transfer-state energies.",
+            "7": "Non-radiative charge-transfer-state decay is considered as electron transfer in the Marcus inverted regime.",
+            "8": "Non-radiative charge-transfer-state decay is facilitated by a common skeletal molecular vibrational mode.",
+            "9": "There is an intrinsic link between non-radiative voltage losses and electron-vibration coupling.",
+            "10": "Non-radiative voltage losses are indicated to be unavoidable.",
+            "11": "The theoretical upper limit for the power conversion efficiency of single-junction organic solar cells would be reduced to about 25.5%.",
+            "12": "The optimal optical gap for single-junction organic solar cells increases to 1.45–1.65 eV.",
+            "13": "The optimal optical gap for single-junction organic solar cells is 0.2–0.3 eV higher than for technologies with minimized non-radiative voltage losses."
+          }
+        },
+        "viewpoints": [
+          "Reducing the electron-vibrational coupling is an effective strategy to suppress non-radiative recombination.",
+          "Suppressing non-radiative recombination leads to suppressed non-radiative energy loss."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Therefore, a comprehensive investigation of the molecular performance of side-chain asymmetric acceptors in combination with detailed density functional theory (DFT) horizontal calculations and single-crystal structures is essential for a deeper understanding of the energy loss and charge transport mechanisms of their devices.",
+        "references": {},
+        "viewpoints": [
+          "A comprehensive investigation of molecular performance in side-chain asymmetric acceptors is essential.",
+          "Combination of this investigation with detailed density functional theory horizontal calculations is essential.",
+          "Combination of this investigation with single-crystal structures is essential.",
+          "These investigations provide a deeper understanding of energy loss mechanisms.",
+          "These investigations provide a deeper understanding of charge transport mechanisms."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "To investigate deeply the effects of SMAs with symmetric or asymmetric alkyl-thienyl chains on the device performance from the perspectives of photophysical properties, morphological features, charge dynamic behaviors, etc., two SMAs with asymmetric alkyl/thienyl outer side chains (BTP-C11-TBO and BTP-BO-TBO, respectively) were synthesized in this study and compared in detail with symmetric SMAs (BTP-DC11, BTP-DBO and BTP-DTBO).",
+        "references": {},
+        "viewpoints": [
+          "Two small-molecule acceptors with asymmetric alkyl/thienyl outer side chains were synthesized (BTP-C11-TBO and BTP-BO-TBO).",
+          "These acceptors were compared in detail with symmetric small-molecule acceptors (BTP-DC11, BTP-DBO, and BTP-DTBO).",
+          "The effects of small-molecule acceptors with symmetric or asymmetric alkyl-thienyl chains on device performance were investigated from perspectives of photophysical properties, morphological features, and charge dynamic behaviors."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "In comparison to the symmetrical SMAs, the side-chain asymmetrical structure of BTP-C11-TBO and BTP-BO-TBO presented slightly broader optical bandgaps with elevated LUMO energy levels.",
+        "references": {},
+        "viewpoints": [
+          "The side-chain asymmetrical structure of BTP-C11-TBO and BTP-BO-TBO presented slightly broader optical bandgaps compared to symmetrical small-molecule acceptors.",
+          "The side-chain asymmetrical structure of BTP-C11-TBO and BTP-BO-TBO presented elevated LUMO energy levels compared to symmetrical small-molecule acceptors."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The molecular packing results examined by GIWAXS indicate that the asymmetric alkyl/thienyl outer side chains endow the acceptors with a more planar skeleton and promote a denser network packing than the corresponding symmetric SMAs, resulting in the higher domain purity in active layers.",
+        "references": {},
+        "viewpoints": [
+          "Asymmetric alkyl/thienyl outer side chains endow the acceptors with a more planar skeleton.",
+          "Asymmetric alkyl/thienyl outer side chains promote denser network packing than symmetrical small-molecule acceptors.",
+          "Denser network packing results in higher domain purity in active layers."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Furthermore, the asymmetric alkyl/thienyl outer side chains can subtly modulate the D/A interfacial energetics and inhibit molecular vibration, thereby expediting exciton dissociation and mitigating energetic disorder, resulting in enhanced charge generation efficiency and reduced charge recombination.",
+        "references": {},
+        "viewpoints": [
+          "Asymmetric alkyl/thienyl outer side chains modulate donor/acceptor interfacial energetics.",
+          "These chains inhibit molecular vibration.",
+          "Inhibition of molecular vibration expediates exciton dissociation.",
+          "Inhibition of molecular vibration mitigates energetic disorder.",
+          "These modifications result in enhanced charge generation efficiency.",
+          "These modifications result in reduced charge recombination."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Consequently, these factors contribute to the remarkable photovoltaic performance of the OSCs based on PM6:BTP-BO-TBO and PM6:BTP-C11-TBO, with the maximum PCEs of 19.76% and 18.51%, respectively.",
+        "references": {},
+        "viewpoints": [
+          "These modifications contribute to remarkable photovoltaic performance in OSCs based on PM6:BTP-BO-TBO.",
+          "These modifications contribute to remarkable photovoltaic performance in OSCs based on PM6:BTP-C11-TBO.",
+          "The maximum power conversion efficiency of OSC based on PM6:BTP-BO-TBO is 19.76%.",
+          "The maximum power conversion efficiency of OSC based on PM6:BTP-C11-TBO is 18.51%."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Overall, our research not only demonstrated that the asymmetric alkyl/thienyl outer side chain strategy is a feasible approach for reducing non-radiative energy loss, improving charge generation, suppressing charge recombination, and thus boosting the efficiency of OSCs but also provided an instructive guideline for the further development of emerging organic semiconductor materials and organic optoelectronics.",
+        "references": {},
+        "viewpoints": [
+          "The asymmetric alkyl/thienyl outer side chain strategy is a feasible approach for reducing non-radiative energy loss.",
+          "The strategy improves charge generation and suppresses charge recombination.",
+          "It boosts the efficiency of organic solar cells.",
+          "The research provides an instructive guideline for developing emerging organic semiconductor materials.",
+          "The research provides an instructive guideline for developing organic optoelectronics."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56799-6_with_abstracts",
+    "base_id": "s41467-025-56799-6",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56799-6_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

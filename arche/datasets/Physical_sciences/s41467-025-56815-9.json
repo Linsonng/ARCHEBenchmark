@@ -1,0 +1,646 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Two-dimensional (2D) semiconductors, as exemplified by transition metal dichalcogenides (TMDs), have gradually delivered their potential to ease the significant challenges silicon integrated circuits encounter, that is, increasingly scaled size, heat, and memory walls [1] , [2] , [3] . Performances of both field-effect transistors (FETs) and memory devices can be boosted by leveraging 2D semiconductors’ characteristics, mainly including the atomic-scale thickness allowing exceptional electrostatic control and the dangling-bond-free surface with van der Waals (vdW) interactions responsible for the Lego-type integration [4] . Recently, all-in-one perceptual, memory and computational fusing in 2D devices have achieved tremendous success by creating technologies beyond von Neumann architecture, enabling in-sensor/memory computing for, e.g., image and acoustic pattern recognition and processing [1] , [5] , [6] . The vdW surface of 2D semiconductors, however, also leads to one critical challenge: integrating high-quality, high- k dielectrics as silicon did. For conventional amorphous high- k dielectrics, including hafnium oxide (HfO 2 ) and aluminum oxide (Al 2 O 3 ), the absence of dangling bonds on 2D surfaces results in poor nucleation during the direct deposition methods such as atomic layer deposition (ALD), leading to suboptimal interface quality characterized by increased defects and undesirable doping to TMDs layers [7] . Thus, a buffer/seeding layer had to be performed first for ALD process [8] , [9] . CaF 2 epitaxially grown also by the gas-to-solid method has been demonstrated as excellent dielectrics for the back-gate configuration [10] . On the other side, by using the transfer technique, one can feasibly separate the fabrication and integration of dielectrics, loosening restrictions in dielectric elements and synthesis temperatures but asking for its transferrable feature [11] , [12] , [13] , [14] , [15] , [16] . For instance, single-crystal perovskite strontium titanium oxide (SrTiO 3 ), which holds a high static permittivity, can be first fabricated on sacrificial layers by pulsed laser deposition and then transferred as a freestanding flake to be incorporated into TMDs devices [17] , [18] . More importantly, in these devices, the omnipresent nanogap between TMDs and transferred oxides denies physical contact with the channel materials and also suppresses the gate leakage currents, allowing metal oxides with moderate bandgaps (3.3 eV for SrTiO 3 , and 3.8 eV for Sr 2 Nb 3 O 10 )) as good dielectrics that’s somewhat counterintuitive [17] , [18] , [19] . In the context of all-in-one in-sensor computing in 2D devices, one will expect that one certain layer in heterostructures is a sensing layer, for example, sensitively responsible to external stimuli (such as optical, electrical, and thermal ones) and effectively transferring this signal to neighboring layers, or even a multifunctional layer to reduce the layer number and simply the structure [20] . Deeply engineering the dielectric layer by rendering it multifunctional (beyond dielectric) is worth exploring [21] . When used as a component in 2D devices, the traditional dielectrics prepared by the gas-to-solid method are limited in material types and functions because of either the restricted gaseous precursors or the transferable prerequisite. On a parallel front, metal oxides obtained from the liquid-to-solid approach, i.e., the wet chemistry, are low-cost, massively prepared, and, more importantly, versatile in category and function, being widely used in thin-film electronics, including displays and sensors, and multi-energy areas like capacitors and batteries [22] , [23] . Merging two broad trajectories in separate fields, solution-processed metal oxides as dielectrics in 2D devices, remains an unexplored regime, and it can in principle offer more possibilities and candidates for advanced 2D electronics if the resulting metal oxides are compatible with 2D technology, for example, being able to be transferred and vdW integrated to form heterostructures. In this work, we report a wet-chemistry-derived method to unprecedentedly prepare amorphous copper calcium titanate (CCTO), a perovskite-type complex oxide, which can be transferred and further incorporated into 2D devices. Benefiting from its superior dielectric properties and the nanogap between transferred oxides and 2D semiconductors, CCTO/TMDs devices exhibit a subthreshold swing (SS) of 67 mV dec −1 and ultra-small hysteresis (~1 mV/(MV cm −1 ), corroborating a high-quality CCTO-2D materials interface. Furthermore, utilizing the optical properties of CCTO, in a simple FET device, optically writing and electrically erasing the floating gate are achieved, leading to a reconfigurable logic-in-sensor operation.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Two-dimensional (2D) semiconductors, as exemplified by transition metal dichalcogenides (TMDs), have gradually delivered their potential to ease the significant challenges silicon integrated circuits encounter, that is, increasingly scaled size, heat, and memory walls [1] , [2] , [3] .",
+        "references": {
+          "1": [],
+          "2": {
+            "1": "The conventional von Neumann computing architecture has a bottleneck between the processing and memory units.",
+            "2": "The bottleneck between the processing and memory units of the conventional von Neumann computing architecture limits its ability to meet the demands of future data-intensive computing applications.",
+            "3": "In-memory computing technology involves carrying out calculations in situ within each nonvolatile memory unit.",
+            "4": "In-memory computing technology has been intensively studied as a solution to the bottleneck problem of the von Neumann computing architecture.",
+            "5": "Various candidate materials exist for building next-generation electronics.",
+            "6": "2D layered materials have recently demonstrated many new features for building next-generation electronics.",
+            "7": "The new features of 2D layered materials have been uniquely exploited to build next-generation electronics.",
+            "8": "The recent progress of 2D memory devices for in-memory computing is reviewed in the paper.",
+            "9": "The operation mechanisms of each memory configuration are described.",
+            "10": "The memory characteristics of each memory configuration are described.",
+            "11": "The pros and cons of each memory configuration are weighed.",
+            "12": "The versatile applications of memory configurations for in-memory computing technology are presented.",
+            "13": "Applications of memory configurations for in-memory computing technology include logic operations.",
+            "14": "Applications of memory configurations for in-memory computing technology include electronic synapses.",
+            "15": "Applications of memory configurations for in-memory computing technology include random number generation.",
+            "16": "The current challenges for future 2D in-memory computing systems are discussed at the material level.",
+            "17": "The current challenges for future 2D in-memory computing systems are discussed at the device level.",
+            "18": "The current challenges for future 2D in-memory computing systems are discussed at the circuit level.",
+            "19": "The current challenges for future 2D in-memory computing systems are discussed at the architecture level.",
+            "20": "The potential strategies for future 2D in-memory computing systems are discussed at the material level.",
+            "21": "The potential strategies for future 2D in-memory computing systems are discussed at the device level.",
+            "22": "The potential strategies for future 2D in-memory computing systems are discussed at the circuit level.",
+            "23": "The potential strategies for future 2D in-memory computing systems are discussed at the architecture level.",
+            "24": "The manuscript aims to provide a comprehensive review of 2D memory devices for in-memory computing.",
+            "25": "The manuscript aims to provide a comprehensive review of the applications of 2D memory devices in in-memory computing.",
+            "26": "The manuscript aims to be helpful for research in the area of 2D memory devices and in-memory computing."
+          },
+          "3": {
+            "1": "The development of silicon semiconductor technology has produced breakthroughs in electronics from the microprocessor era of the late 1960s to early 1970s.",
+            "2": "The development of silicon semiconductor technology has produced breakthroughs in electronics, leading to advancements in automation, computers, and smartphones.",
+            "3": "Silicon semiconductor technology enables breakthroughs in electronics by downscaling the physical size of devices and wires to the nanometre regime.",
+            "4": "Graphene and related two-dimensional materials offer prospects of unprecedented advances in device performance at the atomic limit.",
+            "5": "A synergistic combination of two-dimensional materials with silicon chips promises a heterogeneous platform to deliver massively enhanced potential.",
+            "6": "The enhanced potential is based on silicon technology combined with two-dimensional materials.",
+            "7": "Integration of two-dimensional materials with silicon chips is achieved through three-dimensional monolithic construction of multifunctional high-rise silicon chips.",
+            "8": "Three-dimensional monolithic construction enables enhanced performance by exploiting the vertical direction.",
+            "9": "Exploiting the vertical direction allows for the functional diversification of the silicon platform for applications in opto-electronics and sensing.",
+            "10": "This work reviews the opportunities of integrating atomically thin materials with silicon-based nanosystems.",
+            "11": "This work reviews the progress of integrating atomically thin materials with silicon-based nanosystems.",
+            "12": "This work reviews the challenges of integrating atomically thin materials with silicon-based nanosystems.",
+            "13": "This work considers the prospects for computational applications of integrating atomically thin materials with silicon-based nanosystems.",
+            "14": "This work considers the prospects for non-computational applications of integrating atomically thin materials with silicon-based nanosystems."
+          }
+        },
+        "viewpoints": [
+          "Two-dimensional semiconductors exemplified by transition metal dichalcogenides have potential to address scaling size challenges in silicon integrated circuits.",
+          "Two-dimensional semiconductors exemplified by transition metal dichalcogenides have potential to address heat challenges in silicon integrated circuits.",
+          "Two-dimensional semiconductors exemplified by transition metal dichalcogenides have potential to address memory walls in silicon integrated circuits."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Performances of both field-effect transistors (FETs) and memory devices can be boosted by leveraging 2D semiconductors’ characteristics, mainly including the atomic-scale thickness allowing exceptional electrostatic control and the dangling-bond-free surface with van der Waals (vdW) interactions responsible for the Lego-type integration [4] .",
+        "references": {
+          "4": {
+            "1": "Research on graphene and other two-dimensional atomic crystals is intense.",
+            "2": "Research on graphene and other two-dimensional atomic crystals is likely to remain a leading topic in condensed matter physics and materials science for many years.",
+            "3": "Isolated atomic planes can be reassembled into designer heterostructures.",
+            "4": "These designer heterostructures are made layer by layer in a precisely chosen sequence.",
+            "5": "The first heterostructures referred to as 'van der Waals' have been recently fabricated.",
+            "6": "The first 'van der Waals' heterostructures are remarkably complex.",
+            "7": "The first 'van der Waals' heterostructures have been investigated.",
+            "8": "The investigation of 'van der Waals' heterostructures has revealed unusual properties.",
+            "9": "The investigation of 'van der Waals' heterostructures has revealed new phenomena.",
+            "10": "The paper reviews the emerging research area of graphene and two-dimensional atomic crystals.",
+            "11": "The paper identifies possible future directions in the research of graphene and two-dimensional atomic crystals.",
+            "12": "There is a steady improvement in fabrication techniques for van der Waals heterostructures.",
+            "13": "Van der Waals heterostructures are expected to develop into a large field of their own.",
+            "14": "Graphene serves as a springboard for the development of van der Waals heterostructures."
+          }
+        },
+        "viewpoints": [
+          "Performance of field-effect transistors can be boosted by leveraging two-dimensional semiconductors' characteristics.",
+          "Performance of memory devices can be boosted by leveraging two-dimensional semiconductors' characteristics.",
+          "Atomic-scale thickness of two-dimensional semiconductors allows exceptional electrostatic control.",
+          "Dangling-bond-free surface with van der Waals interactions in two-dimensional semiconductors is responsible for Lego-type integration."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Recently, all-in-one perceptual, memory and computational fusing in 2D devices have achieved tremendous success by creating technologies beyond von Neumann architecture, enabling in-sensor/memory computing for, e.g., image and acoustic pattern recognition and processing [1] , [5] , [6] .",
+        "references": {
+          "1": [],
+          "5": {
+            "1": "The importance of applications based on machine learning is growing.",
+            "2": "The growing importance of applications based on machine learning is driving the need for dedicated, energy-efficient electronic hardware.",
+            "3": "Von Neumann architectures have separate processing and storage units.",
+            "4": "Brain-inspired in-memory computing uses the same basic device structure for logic operations and data storage.",
+            "5": "Brain-inspired in-memory computing promises to substantially reduce the energy cost of data-centred computing compared with von Neumann architectures.",
+            "6": "Ample research is focused on exploring new device architectures.",
+            "7": "The engineering of material platforms suitable for new device designs remains a challenge.",
+            "8": "Two-dimensional materials could be promising candidates for platforms for new device designs.",
+            "9": "Semiconducting molybdenum disulphide (MoS₂) is an example of a two-dimensional material with exceptional electrical and mechanical properties.",
+            "10": "Semiconducting molybdenum disulphide (MoS₂) could be a promising candidate for platforms for new device designs.",
+            "11": "The exploration of large-area MoS₂ as an active channel material for developing logic-in-memory devices is reported.",
+            "12": "Large-area MoS₂ is used to develop circuits based on floating-gate field-effect transistors (FGFETs).",
+            "13": "The conductance of the reported FGFETs can be precisely and continuously tuned.",
+            "14": "The tunability of the conductance of the FGFETs allows their use as building blocks for reconfigurable logic circuits.",
+            "15": "Logic operations can be directly performed using the memory elements in reconfigurable logic circuits developed from the FGFETs.",
+            "16": "A programmable NOR gate is demonstrated.",
+            "17": "The design of the programmable NOR gate can be simply extended to implement more complex programmable logic.",
+            "18": "The design of the programmable NOR gate can be simply extended to implement a functionally complete set of operations.",
+            "19": "The findings highlight the potential of atomically thin semiconductors.",
+            "20": "Atomically thin semiconductors have potential for the development of next-generation low-power electronics."
+          },
+          "6": {
+            "1": "Machine vision technology has taken huge leaps in recent years.",
+            "2": "Machine vision technology is becoming an integral part of various intelligent systems.",
+            "3": "Machine vision technology is becoming an integral part of autonomous vehicles.",
+            "4": "Machine vision technology is becoming an integral part of robotics.",
+            "5": "Visual information is usually captured by a frame-based camera.",
+            "6": "Visual information is converted into a digital format.",
+            "7": "Digital format visual information is processed using a machine-learning algorithm.",
+            "8": "A machine-learning algorithm used for processing digital visual information is an artificial neural network (ANN).",
+            "9": "The large amount of data passed through the signal chain is mostly redundant.",
+            "10": "Mostly redundant data passed through the signal chain results in low frame rates.",
+            "11": "Mostly redundant data passed through the signal chain results in high power consumption.",
+            "12": "Various visual data preprocessing techniques have been developed.",
+            "13": "Visual data preprocessing techniques are developed to increase the efficiency of subsequent signal processing in an ANN.",
+            "14": "An image sensor can constitute an ANN.",
+            "15": "An image sensor as an ANN can simultaneously sense and process optical images.",
+            "16": "The process of sensing and processing optical images with an image sensor functioning as an ANN occurs without latency.",
+            "17": "The device is based on a reconfigurable two-dimensional (2D) semiconductor photodiode array.",
+            "18": "The synaptic weights of the network are stored in a continuously tunable photoresponsivity matrix.",
+            "19": "Both supervised and unsupervised learning are demonstrated.",
+            "20": "The sensor is trained to classify images projected onto the chip.",
+            "21": "The sensor is trained to encode images projected onto the chip.",
+            "22": "The throughput of the sensor classifying and encoding images is 20 million bins per second."
+          }
+        },
+        "viewpoints": [
+          "All-in-one perceptual, memory, and computational fusing in two-dimensional devices has achieved tremendous success by creating technologies beyond von Neumann architecture.",
+          "In-sensor/memory computing enables image pattern recognition in two-dimensional devices.",
+          "In-sensor/memory computing enables acoustic pattern recognition in two-dimensional devices.",
+          "In-sensor/memory computing enables image pattern processing in two-dimensional devices.",
+          "In-sensor/memory computing enables acoustic pattern processing in two-dimensional devices."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The vdW surface of 2D semiconductors, however, also leads to one critical challenge: integrating high-quality, high- k dielectrics as silicon did.",
+        "references": {},
+        "viewpoints": [
+          "Van der Waals surface of two-dimensional semiconductors leads to the challenge of integrating high-quality, high-k dielectrics as silicon did."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "For conventional amorphous high- k dielectrics, including hafnium oxide (HfO 2 ) and aluminum oxide (Al 2 O 3 ), the absence of dangling bonds on 2D surfaces results in poor nucleation during the direct deposition methods such as atomic layer deposition (ALD), leading to suboptimal interface quality characterized by increased defects and undesirable doping to TMDs layers [7] .",
+        "references": {
+          "7": {
+            "1": "Nanoelectronic devices based on 2D materials have not yet achieved their full theoretical performance potential.",
+            "2": "The lack of scalable insulators is a reason for the underperformance of nanoelectronic devices based on 2D materials.",
+            "3": "Amorphous oxides that work well in silicon technology have ill-defined interfaces with 2D materials.",
+            "4": "Amorphous oxides that work well in silicon technology have numerous defects when used with 2D materials.",
+            "5": "2D hexagonal boron nitride does not meet required dielectric specifications.",
+            "6": "The list of suitable alternative insulators for 2D materials is currently very limited.",
+            "7": "A radically different mindset regarding suitable insulators for 2D technologies may be required.",
+            "8": "Possible solution scenarios include the creation of clean interfaces for 2D materials.",
+            "9": "Possible solution scenarios include the production of native oxides from 2D semiconductors.",
+            "10": "Possible solution scenarios include more intensive studies on crystalline insulators."
+          }
+        },
+        "viewpoints": [
+          "Absence of dangling bonds on two-dimensional surfaces results in poor nucleation during atomic layer deposition for conventional amorphous high-k dielectrics like hafnium oxide and aluminum oxide.",
+          "Poor nucleation during atomic layer deposition leads to suboptimal interface quality characterized by increased defects in transition metal dichalcogenides layers.",
+          "Poor nucleation during atomic layer deposition leads to undesirable doping in transition metal dichalcogenides layers."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Thus, a buffer/seeding layer had to be performed first for ALD process [8] , [9] .",
+        "references": {
+          "8": {
+            "1": "Two-dimensional semiconductors could be used as a channel material in low-power transistors.",
+            "2": "The deposition of high-quality, ultrathin high-κ dielectrics on two-dimensional semiconductors has proved challenging.",
+            "3": "Atomic layer deposition on two-dimensional semiconductors typically leads to non-uniform nucleation and island formation.",
+            "4": "Non-uniform nucleation and island formation create a porous dielectric layer.",
+            "5": "A porous dielectric layer suffers from current leakage, particularly when the equivalent oxide thickness is small.",
+            "6": "The atomic layer deposition of high-κ gate dielectrics on two-dimensional semiconductors is reported using a monolayer molecular crystal as a seeding layer.",
+            "7": "The approach using a monolayer molecular crystal as a seeding layer can grow dielectrics with an equivalent oxide thickness of 1 nm.",
+            "8": "The approach can be applied to graphene, molybdenum disulfide (MoS₂), and tungsten diselenide (WSe₂).",
+            "9": "Dielectrics created using a monolayer molecular crystal as a seeding layer exhibit reduced roughness compared to dielectrics created using established methods.",
+            "10": "Dielectrics created using a monolayer molecular crystal as a seeding layer exhibit a reduced density of interface states compared to dielectrics created using established methods.",
+            "11": "Dielectrics created using a monolayer molecular crystal as a seeding layer exhibit reduced leakage current compared to dielectrics created using established methods.",
+            "12": "Dielectrics created using a monolayer molecular crystal as a seeding layer exhibit an improved breakdown field compared to dielectrics created using established methods.",
+            "13": "The technique using a monolayer molecular crystal as a seeding layer is used to fabricate graphene radio-frequency transistors that operate at 60 GHz.",
+            "14": "The technique is used to fabricate MoS₂ complementary metal–oxide–semiconductor transistors with a supply voltage of 0.8 V and a subthreshold swing down to 60 mV dec⁻¹.",
+            "15": "The technique is used to fabricate WSe₂ complementary metal–oxide–semiconductor transistors with a supply voltage of 0.8 V and a subthreshold swing down to 60 mV dec⁻¹.",
+            "16": "MoS₂ transistors with a channel length of 20 nm are created using the technique.",
+            "17": "MoS₂ transistors created using the technique exhibit an on/off ratio of over 10⁷."
+          },
+          "9": {
+            "1": "Two-dimensional semiconductors are promising channel materials for next-generation field-effect transistors.",
+            "2": "Integrating ultrathin and uniform high-κ dielectrics on two-dimensional semiconductors to fabricate field-effect transistors with large gate capacitance remains challenging.",
+            "3": "A versatile two-step approach to integrating high-quality dielectric film with sub-1 nm equivalent oxide thickness on two-dimensional semiconductors is reported.",
+            "4": "Inorganic molecular crystal Sb₂O₃ is homogeneously deposited on two-dimensional semiconductors as a buffer layer.",
+            "5": "Sb₂O₃ forms a high-quality oxide-to-semiconductor interface on two-dimensional semiconductors.",
+            "6": "Sb₂O₃ offers a highly hydrophilic surface on two-dimensional semiconductors.",
+            "7": "Sb₂O₃ enables the integration of high-κ dielectrics via atomic layer deposition on two-dimensional semiconductors.",
+            "8": "Monolayer molybdenum disulfide-based field-effect transistors can be fabricated using this approach with the thinnest equivalent oxide thickness of 0.67 nm.",
+            "9": "The transistors exhibit an on/off ratio of over 10⁶.",
+            "10": "The transistors use an ultra-low operating voltage of 0.4 V.",
+            "11": "The transistors achieve unprecedented high gating efficiency.",
+            "12": "The results may pave the way for the application of two-dimensional materials in low-power ultrascaling electronics."
+          }
+        },
+        "viewpoints": [
+          "A buffer/seeding layer needs to be used first in atomic layer deposition for two-dimensional surfaces."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "CaF 2 epitaxially grown also by the gas-to-solid method has been demonstrated as excellent dielectrics for the back-gate configuration [10] .",
+        "references": {
+          "10": []
+        },
+        "viewpoints": [
+          "Calcium fluoride epitaxially grown by the gas-to-solid method is excellent dielectrics for the back-gate configuration."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "On the other side, by using the transfer technique, one can feasibly separate the fabrication and integration of dielectrics, loosening restrictions in dielectric elements and synthesis temperatures but asking for its transferrable feature [11] , [12] , [13] , [14] , [15] , [16] .",
+        "references": {
+          "11": {
+            "1": "The practical application of two-dimensional (2D) semiconductors for high-performance electronics requires integration with large-scale and high-quality dielectrics.",
+            "2": "Integrating large-scale and high-quality dielectrics with 2D semiconductors has been challenging.",
+            "3": "The challenge in integrating dielectrics lies in the dangling-bonds-free surface of 2D semiconductors.",
+            "4": "A dry dielectric integration strategy is reported.",
+            "5": "The dry dielectric integration strategy enables the transfer of wafer-scale and high-κ dielectrics on top of 2D semiconductors.",
+            "6": "An ultra-thin buffer layer is utilized to assist in dielectric integration.",
+            "7": "Sub-3 nm thin Al₂O₃ or HfO₂ dielectrics can be pre-deposited.",
+            "8": "The pre-deposited Al₂O₃ or HfO₂ dielectrics are mechanically dry-transferred on top of MoS₂ monolayers.",
+            "9": "The transferred ultra-thin dielectric film can retain wafer-scale flatness and uniformity without any cracks.",
+            "10": "The ultra-thin dielectric film demonstrates a capacitance up to 2.8 μF/cm².",
+            "11": "The ultra-thin dielectric film demonstrates an equivalent oxide thickness down to 1.2 nm.",
+            "12": "The ultra-thin dielectric film demonstrates leakage currents of ~10⁻⁷ A/cm².",
+            "13": "The fabricated top-gate MoS₂ transistors show intrinsic properties without doping effects.",
+            "14": "The fabricated top-gate MoS₂ transistors exhibit on-off ratios of ~10⁷.",
+            "15": "The fabricated top-gate MoS₂ transistors exhibit a subthreshold swing down to 68 mV/dec.",
+            "16": "The fabricated top-gate MoS₂ transistors have the lowest interface states of 7.6×10⁹ cm⁻² eV⁻¹.",
+            "17": "The scalable top-gate arrays can be used to construct functional logic gates.",
+            "18": "The study provides a feasible route towards the van der Waals integration of high-κ dielectric films.",
+            "19": "The integration uses an industry-compatible ALD process.",
+            "20": "The ALD process has well-controlled thickness, uniformity, and scalability."
+          },
+          "12": {
+            "1": "Two-dimensional semiconductors have potential for monolithic three-dimensional integration due to their dangling-bonds-free surface.",
+            "2": "Two-dimensional semiconductors can integrate to various substrates without the constraint of lattice matching.",
+            "3": "Two-dimensional semiconductors have atomically thin body thickness.",
+            "4": "Two-dimensional semiconductors are not compatible with various high-energy processes in microelectronics.",
+            "5": "Monolithic three-dimensional integration of multiple two-dimensional circuit tiers is challenging due to the incompatibility with high-energy processes.",
+            "6": "An alternative low-temperature monolithic three-dimensional integration approach is achieved by van der Waals lamination of entire prefabricated circuit tiers.",
+            "7": "The processing temperature in the alternative monolithic three-dimensional integration approach is controlled to 120 °C.",
+            "8": "Repeating the van der Waals lamination process tier by tier results in a monolithic three-dimensional integrated system with 10 circuit tiers in the vertical direction.",
+            "9": "The system with 10 circuit tiers in the vertical direction overcomes previous thermal budget limitations.",
+            "10": "Detailed electrical characterization shows the bottom two-dimensional transistor is not impacted after repetitively laminating van der Waals circuit tiers on top.",
+            "11": "Vertically connecting devices within different tiers through van der Waals inter-tier vias enables the realization of various logic and heterogeneous structures.",
+            "12": "The realized logic and heterogeneous structures have desired system functions.",
+            "13": "The demonstration provides a low-temperature route for fabricating monolithic three-dimensional circuits.",
+            "14": "The fabrication approach allows an increased number of tiers in three-dimensional circuits."
+          },
+          "13": {
+            "1": "Two-dimensional structures composed of atomically thin materials have high carrier mobility.",
+            "2": "Two-dimensional structures with high carrier mobility are candidates for future transistors.",
+            "3": "The unavailability of suitable high-quality dielectrics prevents 2D field-effect transistors from attaining their full theoretical potential and advantages.",
+            "4": "2D field-effect transistors have superior physical and electrical properties but are limited by the lack of suitable high-quality dielectrics.",
+            "5": "Atomically thin single-crystalline Al₂O₃ is fabricated as a high-quality top-gate dielectric in 2D field-effect transistors.",
+            "6": "Intercalative oxidation techniques are used to form a stable, stoichiometric and atomically thin c-Al₂O₃ layer.",
+            "7": "The c-Al₂O₃ layer has a thickness of 1.25 nm.",
+            "8": "The c-Al₂O₃ layer is formed on the single-crystalline Al surface at room temperature.",
+            "9": "The c-Al₂O₃ has a favourable crystalline structure and well-defined interfaces.",
+            "10": "The gate leakage current of c-Al₂O₃ meets the International Roadmap for Devices and Systems requirements.",
+            "11": "The interface state density of c-Al₂O₃ meets the International Roadmap for Devices and Systems requirements.",
+            "12": "The dielectric strength of c-Al₂O₃ meets the International Roadmap for Devices and Systems requirements.",
+            "13": "A one-step transfer process consists of the source, drain, dielectric materials, and gate.",
+            "14": "Top-gate MoS₂ field-effect transistors are achieved using this one-step transfer process.",
+            "15": "The top-gate MoS₂ field-effect transistors have a steep subthreshold swing of 61 mV/decade.",
+            "16": "The top-gate MoS₂ field-effect transistors have a high on/off current ratio of 10⁸.",
+            "17": "The top-gate MoS₂ field-effect transistors have very small hysteresis of 10 mV.",
+            "18": "The technique and material demonstrate the possibility of producing high-quality single-crystalline oxides.",
+            "19": "High-quality single-crystalline oxides are suitable for integration into fully scalable advanced 2D field-effect transistors.",
+            "20": "The fully scalable advanced 2D field-effect transistors include negative capacitance transistors.",
+            "21": "The fully scalable advanced 2D field-effect transistors include spin transistors."
+          },
+          "14": {
+            "1": "Two-dimensional molybdenum disulfide (MoS₂) is a potential alternative to silicon as a channel material for future scaled transistors.",
+            "2": "Scaling down the gate dielectric and maintaining a high-quality interface is challenging for materials like MoS₂.",
+            "3": "The atomic thickness of MoS₂ makes it sensitive to defects in amorphous gate oxides such as hafnium oxide (HfOₓ).",
+            "4": "A van der Waals gap of 5.3 Å can be formed between HfOₓ and MoS₂.",
+            "5": "The formation of the van der Waals gap occurs via the ozone treatment of a hafnium disulfide (HfS₂)/MoS₂ stack.",
+            "6": "The ozone treatment converts the HfS₂ flake into a HfOₓ dielectric.",
+            "7": "Excess oxygen accumulation at the interface widens the van der Waals gap.",
+            "8": "Experimental results show that the increased gap decouples the interaction between the HfOₓ dielectric and MoS₂ channel.",
+            "9": "Density functional theory calculations show that the increased gap decouples the interaction between the HfOₓ dielectric and MoS₂ channel.",
+            "10": "The increased gap allows the intrinsic properties of the MoS₂ semiconductor to be preserved.",
+            "11": "The resulting MoS₂ van der Waals-gap-gated transistors exhibit a negligible hysteresis of 10 mV.",
+            "12": "The resulting MoS₂ van der Waals-gap-gated transistors exhibit an average subthreshold slope of 63.1 mV dec⁻¹.",
+            "13": "The average subthreshold slope of the transistors, 63.1 mV dec⁻¹, is close to the physical Boltzmann limit of 60.0 mV dec⁻¹.",
+            "14": "The transistors can be used to construct NOT logic gates.",
+            "15": "The transistors can be used to construct OR logic gates.",
+            "16": "The transistors can be used to construct AND logic gates."
+          },
+          "15": {
+            "1": "Two-dimensional dielectrics show great promise to overcome the scaling limits in miniaturized integrated circuits.",
+            "2": "Two-dimensional dielectrics are integrated with high-mobility semiconductors.",
+            "3": "Two-dimensional dielectrics explored to date face the challenge of low crystallinity.",
+            "4": "Two-dimensional dielectrics explored to date face the challenge of a diminished dielectric constant.",
+            "5": "Two-dimensional dielectrics explored to date face the challenge of lacking effective synthesis methods.",
+            "6": "The synthesis of ultra-thin gadolinium oxychloride nanosheets is controllable.",
+            "7": "The synthesis of ultra-thin gadolinium oxychloride nanosheets is achieved via a chloride hydrate-assisted chemical vapor deposition method.",
+            "8": "The GdOCl nanosheets display good dielectric properties.",
+            "9": "The GdOCl nanosheets have a high dielectric constant (high-κ) of 15.3.",
+            "10": "The GdOCl nanosheets have robust breakdown field strengths exceeding 9.9 MV/cm.",
+            "11": "The GdOCl nanosheets have minimal gate leakage currents of approximately 10−6 A/cm2.",
+            "12": "The top-gated GdOCl/MoS2 field-effect transistors exhibit commendable switch characteristics.",
+            "13": "The top-gated GdOCl/MoS2 field-effect transistors exhibit a negligible hysteresis of ~5 mV.",
+            "14": "The top-gated GdOCl/MoS2 field-effect transistors have a subthreshold swing down to 67.9 mV dec−1.",
+            "15": "The GdOCl/MoS2 field-effect transistors can be employed to construct functional logic gates.",
+            "16": "The study underscores the significant potential of the two-dimensional GdOCl dielectric for innovative high-speed operated nanoelectronic devices."
+          },
+          "16": {
+            "1": "The deposition of a metal oxide layer with good dielectric properties is critical for fabricating the gate dielectric of transistors based on two-dimensional semiconductors.",
+            "2": "Current techniques for depositing ultrathin metal oxide layers on two-dimensional semiconductors suffer from quality issues.",
+            "3": "Quality issues in the deposition of ultrathin metal oxide layers can compromise transistor performance.",
+            "4": "An ultrathin and uniform native oxide of gallium (Ga₂O₃) naturally forms on the surface of liquid metals in an ambient environment.",
+            "5": "The ultrathin and uniform native oxide of gallium (Ga₂O₃) can be prepared on the surface of molybdenum disulfide (MoS₂) by squeeze-printing and surface-tension-driven methods.",
+            "6": "The Ga₂O₃ layer possesses a high dielectric constant of around 30.",
+            "7": "The Ga₂O₃ layer possesses an equivalent oxide thickness of around 0.4 nm.",
+            "8": "MoS₂ transistors with Ga₂O₃ gate dielectrics exhibit a subthreshold swing down to 60 mV dec⁻¹ due to the good dielectric properties and van der Waals integration.",
+            "9": "MoS₂ transistors with Ga₂O₃ gate dielectrics exhibit an on/off ratio of 10⁸ due to the good dielectric properties and van der Waals integration.",
+            "10": "MoS₂ transistors with Ga₂O₃ gate dielectrics exhibit a gate leakage down to around 4 × 10⁻⁷ A cm⁻² due to the good dielectric properties and van der Waals integration."
+          }
+        },
+        "viewpoints": [
+          "Using the transfer technique allows the separation of fabrication and integration of dielectrics.",
+          "Using the transfer technique loosens restrictions in dielectric elements.",
+          "Using the transfer technique loosens restrictions in synthesis temperatures.",
+          "Using the transfer technique requires the transferrable feature of the dielectric elements."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "For instance, single-crystal perovskite strontium titanium oxide (SrTiO 3 ), which holds a high static permittivity, can be first fabricated on sacrificial layers by pulsed laser deposition and then transferred as a freestanding flake to be incorporated into TMDs devices [17] , [18] .",
+        "references": {
+          "17": {
+            "1": "Two-dimensional semiconductors can be used to build next-generation electronic devices.",
+            "2": "Two-dimensional semiconductors can enable ultrascaled channel lengths in electronic devices.",
+            "3": "Semiconductors need to be integrated with high-quality dielectrics.",
+            "4": "High-quality dielectrics are challenging to deposit.",
+            "5": "Single-crystal strontium titanate is a high-κ perovskite oxide.",
+            "6": "Single-crystal strontium titanate can be integrated with two-dimensional semiconductors.",
+            "7": "Single-crystal strontium titanate can be integrated with two-dimensional semiconductors using van der Waals forces.",
+            "8": "Strontium titanate thin films are grown on a sacrificial layer.",
+            "9": "Strontium titanate thin films are lifted off from a sacrificial layer.",
+            "10": "Strontium titanate thin films are transferred onto molybdenum disulfide to make n-type transistors.",
+            "11": "Strontium titanate thin films are transferred onto tungsten diselenide to make p-type transistors.",
+            "12": "Molybdenum disulfide transistors exhibit an on/off current ratio of 10⁸ at a supply voltage of 1 V.",
+            "13": "Molybdenum disulfide transistors exhibit a minimum subthreshold swing of 66 mV dec⁻¹.",
+            "14": "The devices can be used to create low-power complementary metal-oxide-semiconductor inverter circuits."
+          },
+          "18": {
+            "1": "Silicon metal–oxide–semiconductor field-effect transistors have scaled according to Moore’s law for decades.",
+            "2": "The physical thinning of silicon at sub-ten-nanometre technology nodes introduces issues such as leakage currents.",
+            "3": "Two-dimensional layered semiconductors with atomic thickness allow superior gate-field penetration.",
+            "4": "Two-dimensional layered semiconductors are of interest as channel materials for future transistors.",
+            "5": "Integrating high-dielectric-constant materials with 2D materials while scaling their capacitance equivalent thickness has proved challenging.",
+            "6": "Transferrable ultrahigh-κ single-crystalline perovskite strontium-titanium-oxide membranes are explored as a gate dielectric for 2D field-effect transistors.",
+            "7": "The perovskite membranes exhibit a desirable sub-one-nanometre capacitance equivalent thickness.",
+            "8": "The perovskite membranes exhibit a low leakage current of less than 10−2 amperes per square centimetre at 2.5 megavolts per centimetre.",
+            "9": "The van der Waals gap between strontium-titanium-oxide dielectrics and 2D semiconductors mitigates the unfavourable fringing-induced barrier-lowering effect.",
+            "10": "The unfavourable fringing-induced barrier-lowering effect results from the use of ultrahigh-κ dielectrics.",
+            "11": "Typical short-channel transistors made of scalable molybdenum-disulfide films by chemical vapour deposition and strontium-titanium-oxide dielectrics exhibit steep subthreshold swings down to about 70 millivolts per decade.",
+            "12": "Typical short-channel transistors made of scalable molybdenum-disulfide films by chemical vapour deposition and strontium-titanium-oxide dielectrics exhibit on/off current ratios up to 10^7.",
+            "13": "The on/off current ratios up to 10^7 match the low-power specifications suggested by the latest International Roadmap for Devices and Systems."
+          }
+        },
+        "viewpoints": [
+          "Single-crystal perovskite strontium titanium oxide has high static permittivity.",
+          "Single-crystal perovskite strontium titanium oxide can be first fabricated on sacrificial layers by pulsed laser deposition.",
+          "Single-crystal perovskite strontium titanium oxide can be transferred as a freestanding flake to be incorporated into transition metal dichalcogenides devices."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "More importantly, in these devices, the omnipresent nanogap between TMDs and transferred oxides denies physical contact with the channel materials and also suppresses the gate leakage currents, allowing metal oxides with moderate bandgaps (3.3 eV for SrTiO 3 , and 3.8 eV for Sr 2 Nb 3 O 10 ) as good dielectrics that’s somewhat counterintuitive [17] , [18] , [19] .",
+        "references": {
+          "17": {
+            "1": "Two-dimensional semiconductors can be used to build next-generation electronic devices.",
+            "2": "Two-dimensional semiconductors can enable ultrascaled channel lengths in electronic devices.",
+            "3": "Semiconductors need to be integrated with high-quality dielectrics.",
+            "4": "High-quality dielectrics are challenging to deposit.",
+            "5": "Single-crystal strontium titanate is a high-κ perovskite oxide.",
+            "6": "Single-crystal strontium titanate can be integrated with two-dimensional semiconductors.",
+            "7": "Single-crystal strontium titanate can be integrated with two-dimensional semiconductors using van der Waals forces.",
+            "8": "Strontium titanate thin films are grown on a sacrificial layer.",
+            "9": "Strontium titanate thin films are lifted off from a sacrificial layer.",
+            "10": "Strontium titanate thin films are transferred onto molybdenum disulfide to make n-type transistors.",
+            "11": "Strontium titanate thin films are transferred onto tungsten diselenide to make p-type transistors.",
+            "12": "Molybdenum disulfide transistors exhibit an on/off current ratio of 10⁸ at a supply voltage of 1 V.",
+            "13": "Molybdenum disulfide transistors exhibit a minimum subthreshold swing of 66 mV dec⁻¹.",
+            "14": "The devices can be used to create low-power complementary metal-oxide-semiconductor inverter circuits."
+          },
+          "18": {
+            "1": "Silicon metal–oxide–semiconductor field-effect transistors have scaled according to Moore’s law for decades.",
+            "2": "The physical thinning of silicon at sub-ten-nanometre technology nodes introduces issues such as leakage currents.",
+            "3": "Two-dimensional layered semiconductors with atomic thickness allow superior gate-field penetration.",
+            "4": "Two-dimensional layered semiconductors are of interest as channel materials for future transistors.",
+            "5": "Integrating high-dielectric-constant materials with 2D materials while scaling their capacitance equivalent thickness has proved challenging.",
+            "6": "Transferrable ultrahigh-κ single-crystalline perovskite strontium-titanium-oxide membranes are explored as a gate dielectric for 2D field-effect transistors.",
+            "7": "The perovskite membranes exhibit a desirable sub-one-nanometre capacitance equivalent thickness.",
+            "8": "The perovskite membranes exhibit a low leakage current of less than 10−2 amperes per square centimetre at 2.5 megavolts per centimetre.",
+            "9": "The van der Waals gap between strontium-titanium-oxide dielectrics and 2D semiconductors mitigates the unfavourable fringing-induced barrier-lowering effect.",
+            "10": "The unfavourable fringing-induced barrier-lowering effect results from the use of ultrahigh-κ dielectrics.",
+            "11": "Typical short-channel transistors made of scalable molybdenum-disulfide films by chemical vapour deposition and strontium-titanium-oxide dielectrics exhibit steep subthreshold swings down to about 70 millivolts per decade.",
+            "12": "Typical short-channel transistors made of scalable molybdenum-disulfide films by chemical vapour deposition and strontium-titanium-oxide dielectrics exhibit on/off current ratios up to 10^7.",
+            "13": "The on/off current ratios up to 10^7 match the low-power specifications suggested by the latest International Roadmap for Devices and Systems."
+          },
+          "19": []
+        },
+        "viewpoints": [
+          "The omnipresent nanogap between transition metal dichalcogenides and transferred oxides denies physical contact with the channel materials.",
+          "The omnipresent nanogap suppresses the gate leakage currents.",
+          "The suppression of gate leakage currents allows metal oxides with moderate bandgaps to be good dielectrics."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "In the context of all-in-one in-sensor computing in 2D devices, one will expect that one certain layer in heterostructures is a sensing layer, for example, sensitively responsible to external stimuli (such as optical, electrical, and thermal ones) and effectively transferring this signal to neighboring layers, or even a multifunctional layer to reduce the layer number and simplify the structure [20] .",
+        "references": {
+          "20": {
+            "1": "Rapid digital technology advancement has led to a tremendous increase in computing tasks.",
+            "2": "The increase in computing tasks has imposed stringent energy efficiency requirements on next-generation computing.",
+            "3": "The increase in computing tasks has imposed stringent area efficiency requirements on next-generation computing.",
+            "4": "In-memory computing has emerged as a potent technology to meet the growing data-driven demand.",
+            "5": "Transistor-based computing has emerged as a potent technology to meet the growing data-driven demand.",
+            "6": "In-memory computing is a potent technology for the implementation of matrix computing.",
+            "7": "In-memory computing is a potent technology for the implementation of logic computing.",
+            "8": "Transistor-based computing is a potent technology for the implementation of matrix computing.",
+            "9": "Transistor-based computing is a potent technology for the implementation of logic computing.",
+            "10": "New materials are urgently needed to complement the existing Si complementary metal-oxide-semiconductor technology to fulfil future computing requirements.",
+            "11": "New technologies must be developed to enable further diversification of electronics.",
+            "12": "New technologies must be developed to enable further diversification of electronic applications.",
+            "13": "Two-dimensional materials have an abundance of electronic properties.",
+            "14": "Two-dimensional materials have a rich variety of electronic properties.",
+            "15": "The abundance and variety of electronic properties give two-dimensional materials the potential to enhance computing energy efficiency.",
+            "16": "Two-dimensional materials have the potential to enable continued device downscaling to a feature size below 5 nm.",
+            "17": "The Review discusses the opportunities of integrating two-dimensional materials with in-memory computing technologies.",
+            "18": "The Review discusses the opportunities of integrating two-dimensional materials with transistor-based computing technologies.",
+            "19": "The Review discusses the progress of integrating two-dimensional materials with in-memory computing technologies.",
+            "20": "The Review discusses the progress of integrating two-dimensional materials with transistor-based computing technologies.",
+            "21": "The Review discusses the challenges of integrating two-dimensional materials with in-memory computing technologies.",
+            "22": "The Review discusses the challenges of integrating two-dimensional materials with transistor-based computing technologies.",
+            "23": "The discussion is from the perspective of matrix and logic computing."
+          }
+        },
+        "viewpoints": [
+          "In all-in-one in-sensor computing in two-dimensional devices, one layer in heterostructures is expected to be a sensing layer.",
+          "The sensing layer in heterostructures is expected to be sensitive to external stimuli such as optical, electrical, and thermal ones.",
+          "The sensing layer in heterostructures is expected to effectively transfer signals to neighboring layers.",
+          "A multifunctional layer is expected to reduce the number of layers in heterostructures.",
+          "A multifunctional layer is expected to simplify the structure of heterostructures."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Deeply engineering the dielectric layer by rendering it multifunctional (beyond dielectric) is worth exploring [21] .",
+        "references": {
+          "21": {
+            "1": "Correlated oxides and related heterostructures are intriguing for developing future multifunctional devices.",
+            "2": "Correlated oxides and related heterostructures exploit exotic properties.",
+            "3": "The integration of correlated oxides and related heterostructures with other materials is challenging.",
+            "4": "Integrating correlated oxides and related heterostructures with Si-based platforms is especially challenging.",
+            "5": "Van der Waals heterostructures of La₀.₇Sr₀.₃MnO₃ (LSMO) and MoS₂ are demonstrated on Si substrates.",
+            "6": "LSMO is a correlated manganite perovskite.",
+            "7": "The van der Waals heterostructures of LSMO and MoS₂ have multiple functions.",
+            "8": "The growth process for fabricating LSMO-MoS₂ heterostructures is incompatible.",
+            "9": "Freestanding LSMO membranes are used to fabricate LSMO-MoS₂ heterostructures.",
+            "10": "Van der Waals force-mediated transfer is used to fabricate LSMO-MoS₂ heterostructures.",
+            "11": "LSMO-MoS₂ heterostructures exhibit a gate-tunable rectifying behavior.",
+            "12": "Metal-semiconductor field-effect transistors (MESFETs) with on-off ratios of over 10⁴ can be achieved based on the gate-tunable rectifying behavior of LSMO-MoS₂ heterostructures.",
+            "13": "LSMO-MoS₂ heterostructures can function as photodiodes.",
+            "14": "LSMO-MoS₂ heterostructures as photodiodes display considerable open-circuit voltages.",
+            "15": "LSMO-MoS₂ heterostructures as photodiodes display considerable photocurrents.",
+            "16": "The colossal magnetoresistance of LSMO endows LSMO-MoS₂ heterostructures with an electrically tunable magnetoresponse.",
+            "17": "The electrically tunable magnetoresponse in LSMO-MoS₂ heterostructures occurs at room temperature.",
+            "18": "The work proves the applicability of LSMO-MoS₂ heterostructure devices on Si-based platforms.",
+            "19": "The work demonstrates a paradigm to create multifunctional heterostructures from materials with disparate properties."
+          }
+        },
+        "viewpoints": [
+          "Deeply engineering the dielectric layer to render it multifunctional is worth exploring."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "When used as a component in 2D devices, the traditional dielectrics prepared by the gas-to-solid method are limited in material types and functions because of either the restricted gaseous precursors or the transferable prerequisite.",
+        "references": {},
+        "viewpoints": [
+          "Traditional dielectrics prepared by the gas-to-solid method are limited in material types when used in two-dimensional devices.",
+          "Traditional dielectrics prepared by the gas-to-solid method are limited in functions when used in two-dimensional devices.",
+          "Restrictions in gaseous precursors limit the material types and functions of traditional dielectrics.",
+          "The transferable prerequisite limits the material types and functions of traditional dielectrics."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "On a parallel front, metal oxides obtained from the liquid-to-solid approach, i.e., the wet chemistry, are low-cost, massively prepared, and, more importantly, versatile in category and function, being widely used in thin-film electronics, including displays and sensors, and multi-energy areas like capacitors and batteries [22] , [23] .",
+        "references": {
+          "22": {
+            "1": "Amorphous metal-oxide semiconductors are potential replacements for organic materials in thin-film electronics.",
+            "2": "Amorphous metal-oxide semiconductors are potential replacements for silicon materials in thin-film electronics.",
+            "3": "Amorphous metal-oxide semiconductors have high carrier mobility in the amorphous state.",
+            "4": "Amorphous metal-oxide semiconductors have excellent large-area uniformity.",
+            "5": "The high carrier mobility and excellent large-area uniformity of amorphous metal-oxide semiconductors have extended their applications to active-matrix electronics.",
+            "6": "The applications of amorphous metal-oxide semiconductors in active-matrix electronics include displays.",
+            "7": "The applications of amorphous metal-oxide semiconductors in active-matrix electronics include sensor arrays.",
+            "8": "The applications of amorphous metal-oxide semiconductors in active-matrix electronics include X-ray detectors.",
+            "9": "Amorphous metal-oxide semiconductors have solution processability.",
+            "10": "Amorphous metal-oxide semiconductors have optical transparency.",
+            "11": "The solution processability and optical transparency of amorphous metal-oxide semiconductors have opened new horizons for low-cost printable electronics on plastic substrates.",
+            "12": "The solution processability and optical transparency of amorphous metal-oxide semiconductors have opened new horizons for transparent electronics on plastic substrates.",
+            "13": "Metal-oxide formation by the sol–gel route requires an annealing step at relatively high temperature.",
+            "14": "The high-temperature annealing step in the sol–gel route has prevented the incorporation of metal-oxide semiconductors with polymer substrates.",
+            "15": "Polymer substrates are used in high-performance flexible electronics.",
+            "16": "A general method is reported for forming high-performance metal-oxide semiconductors at room temperature.",
+            "17": "A general method is reported for forming operationally stable metal-oxide semiconductors at room temperature.",
+            "18": "The method involves deep-ultraviolet photochemical activation of sol–gel films.",
+            "19": "Deep-ultraviolet irradiation induces efficient condensation of oxide semiconducting films.",
+            "20": "Deep-ultraviolet irradiation induces efficient densification of oxide semiconducting films.",
+            "21": "The process is accomplished by photochemical activation at low temperature.",
+            "22": "The photochemical activation method is applicable to numerous metal-oxide semiconductors.",
+            "23": "The performance of thin-film transistors fabricated by photochemical activation compares favourably with thin-film transistors based on thermally annealed materials.",
+            "24": "The performance comparison considers transistor mobility.",
+            "25": "The performance comparison considers operational stability.",
+            "26": "The field-effect mobility of photo-activated metal-oxide semiconductors is as high as 14 cm² V⁻¹ s⁻¹ on glass substrates with an Al₂O₃ gate insulator.",
+            "27": "The field-effect mobility of photo-activated metal-oxide semiconductors is as high as 7 cm² V⁻¹ s⁻¹ on polymer substrates with an Al₂O₃ gate insulator.",
+            "28": "Seven-stage ring oscillators fabricated on polymer substrates operate with an oscillation frequency of more than 340 kHz.",
+            "29": "The oscillation frequency of more than 340 kHz corresponds to a propagation delay of less than 210 nanoseconds per stage."
+          },
+          "23": {
+            "1": "Solution processing, including printing technology, is a promising technique for oxide thin-film transistor fabrication.",
+            "2": "Solution processing tends to be a cost-effective process for oxide thin-film transistor fabrication.",
+            "3": "Solution processing offers high composition controllability for oxide thin-film transistor fabrication.",
+            "4": "Solution processing provides high throughput for oxide thin-film transistor fabrication.",
+            "5": "Solution-processed oxide thin-film transistors are limited by low-performance issues.",
+            "6": "Solution-processed oxide thin-film transistors are limited by stability issues.",
+            "7": "Low-performance and stability issues in solution-processed oxide thin-film transistors require high-temperature annealing.",
+            "8": "The high thermal budget in the fabrication process of solution-processed oxide thin-film transistors inhibits their application to flexible electronics.",
+            "9": "Numerous attempts have been made to promote the desired electrical characteristics of solution-processed oxide thin-film transistors at lower fabrication temperatures.",
+            "10": "Recent techniques for achieving low-temperature solution-processed oxide thin-film transistors are reviewed.",
+            "11": "Recent techniques for achieving printed oxide thin-film transistors at temperatures below 350 °C are reviewed.",
+            "12": "Materials currently in use for low-temperature solution-processed and printed oxide thin-film transistors are reviewed.",
+            "13": "Processes currently in use for low-temperature solution-processed and printed oxide thin-film transistors are reviewed.",
+            "14": "Structural engineering methods currently in use for low-temperature solution-processed and printed oxide thin-film transistors are reviewed.",
+            "15": "Core techniques for n-type oxide-based channel layers in oxide thin-film transistors are addressed.",
+            "16": "Core techniques for p-type oxide-based channel layers in oxide thin-film transistors are addressed.",
+            "17": "Core techniques for gate dielectric layers in oxide thin-film transistors are addressed.",
+            "18": "Core techniques for electrode layers in oxide thin-film transistors are addressed.",
+            "19": "Various multifunctional applications based on low-temperature solution-processed oxide thin-film transistors are introduced.",
+            "20": "Emerging applications based on low-temperature solution-processed oxide thin-film transistors are introduced.",
+            "21": "Future outlooks for research on low-temperature solution-processed oxide thin-film transistors are suggested.",
+            "22": "Low-temperature solution-processed oxide thin-film transistors are considered highly promising for future research."
+          }
+        },
+        "viewpoints": [
+          "Metal oxides obtained from the liquid-to-solid approach are low-cost.",
+          "Metal oxides obtained from the liquid-to-solid approach are massively prepared.",
+          "Metal oxides obtained from the liquid-to-solid approach are versatile in category.",
+          "Metal oxides obtained from the liquid-to-solid approach are versatile in function.",
+          "Metal oxides obtained from the liquid-to-solid approach are widely used in thin-film electronics.",
+          "Metal oxides obtained from the liquid-to-solid approach are widely used in displays.",
+          "Metal oxides obtained from the liquid-to-solid approach are widely used in sensors.",
+          "Metal oxides obtained from the liquid-to-solid approach are widely used in multi-energy areas like capacitors and batteries."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Merging two broad trajectories in separate fields, solution-processed metal oxides as dielectrics in 2D devices, remains an unexplored regime, and it can in principle offer more possibilities and candidates for advanced 2D electronics if the resulting metal oxides are compatible with 2D technology, for example, being able to be transferred and vdW integrated to form heterostructures.",
+        "references": {},
+        "viewpoints": [
+          "Solution-processed metal oxides as dielectrics in two-dimensional devices remains an unexplored regime.",
+          "Solution-processed metal oxides as dielectrics can offer more possibilities for advanced two-dimensional electronics.",
+          "Solution-processed metal oxides as dielectrics can offer more candidates for advanced two-dimensional electronics.",
+          "Solution-processed metal oxides need to be compatible with two-dimensional technology.",
+          "Solution-processed metal oxides should be able to be transferred and van der Waals integrated to form heterostructures."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "In this work, we report a wet-chemistry-derived method to unprecedentedly prepare amorphous copper calcium titanate (CCTO), a perovskite-type complex oxide, which can be transferred and further incorporated into 2D devices.",
+        "references": {},
+        "viewpoints": [
+          "A wet-chemistry-derived method is reported in this work to prepare amorphous copper calcium titanate.",
+          "Amorphous copper calcium titanate is a perovskite-type complex oxide.",
+          "Amorphous copper calcium titanate can be transferred into two-dimensional devices.",
+          "Amorphous copper calcium titanate can be incorporated into two-dimensional devices."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Benefiting from its superior dielectric properties and the nanogap between transferred oxides and 2D semiconductors, CCTO/TMDs devices exhibit a subthreshold swing (SS) of 67 mV dec −1 and ultra-small hysteresis (~1 mV/(MV cm −1 ), corroborating a high-quality CCTO-2D materials interface.",
+        "references": {},
+        "viewpoints": [
+          "Copper calcium titanate/transition metal dichalcogenides devices benefit from its superior dielectric properties.",
+          "Copper calcium titanate/transition metal dichalcogenides devices benefit from the nanogap between transferred oxides and two-dimensional semiconductors.",
+          "Copper calcium titanate/transition metal dichalcogenides devices exhibit a subthreshold swing of 67 mV dec −1.",
+          "Copper calcium titanate/transition metal dichalcogenides devices exhibit ultra-small hysteresis of ~1 mV/(MV cm −1).",
+          "The observed subthreshold swing and hysteresis corroborate a high-quality copper calcium titanate-two-dimensional materials interface."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Furthermore, utilizing the optical properties of CCTO, in a simple FET device, optically writing and electrically erasing the floating gate are achieved, leading to a reconfigurable logic-in-sensor operation.",
+        "references": {},
+        "viewpoints": [
+          "Optical properties of copper calcium titanate are used in a simple field-effect transistor device.",
+          "In a simple field-effect transistor device, optically writing of the floating gate is achieved.",
+          "In a simple field-effect transistor device, electrically erasing the floating gate is achieved.",
+          "Optically writing and electrically erasing the floating gate leads to reconfigurable logic-in-sensor operation."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56815-9_with_abstracts",
+    "base_id": "s41467-025-56815-9",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56815-9_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

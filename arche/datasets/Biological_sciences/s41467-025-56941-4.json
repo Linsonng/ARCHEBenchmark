@@ -1,0 +1,737 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Collective cell migration is a hallmark of morphogenesis, tissue homeostasis, and wound healing [1] , [2] , [3] . A central element that determines whether cells migrate collectively or individually is the strength of intercellular adhesions [4] . Cell-cell adhesions mediated by classical cadherins link neighboring cells through interactions between their extracellular domains, while α-catenin and β-catenin recruit to the cytoplasmic tail, forming a mechanosensitive link to the actin cytoskeleton [5] , [6] . Hence, cadherins both mechanically connect cells as structural elements and activate intercellular signaling circuits that regulate cytoskeletal dynamics and gene expression [7] , [8] , [9] , [10] , [11] , [12] . In contrast to signaling circuits emanating from protein complexes that link the cytoskeletons of adjacent cells, the contribution of signaling cues originating directly from the plasma membrane in collective cell dynamics has been largely overlooked. The membrane is often regarded as a passive structure whose primary role is to separate the cell’s exterior from its interior, thereby enabling signal transduction via transmembrane protein complexes. However, recent studies challenge this view. In single cells, changes in membrane properties have been shown to significantly influence leading edge dynamics [13] , [14] , [15] and migration behavior [16] , [17] , [18] . Notably, these alterations in membrane properties are accomplished not only by direct mechano-chemical feedback loops, but also by intracellular signaling and changes in gene expression [19] , [20] . Consequently, changes at the plasma membrane not only yield short-term changes in cell, but also have long-term effects [21] , [22] . Collectively, these studies suggest that protein-independent signaling cascades that originate from within the plasma membrane are suitable for initiating sustained changes in cell dynamics. Despite this, although it is evident that membrane mechanics regulate the dynamics of individual cells, the contribution of plasma membrane-derived signals to collective cell migration—independent of the direct link between adhesions and cytoskeleton and the associated biochemical signaling cascades—remains unclear. A significant challenge in addressing this question is the lack of tools capable of dissecting the mechanical cues at the plasma membrane from the mechano-transduction through cell-cell adhesion molecules to the cytoskeleton and biochemical signals. For example, the truncation of the cytoplasmic catenin-binding domains renders E-cadherin nonfunctional, as the membrane-anchored extracellular domain alone is insufficient to sustain intercellular cell-cell adhesions [23] , [24] . Here, we set out to explore the relevance of membrane-based signaling for collective cell dynamics. To selectively elicit signals that originate from within the plasma membrane, we used artificial photoswitchable cell-cell adhesions based on the cyanobacterial phytochrome 1 (Cph1), which induce cell-cell adhesions on red light illumination without directly linking to the actin cytoskeleton [25] . We found that an increase in cell-cell connections leads to coordinated and collective cell movement in cells that otherwise would migrate as single cells. Increased cell-cell adhesions did not slow cells down, as would be expected when augmenting friction [26] , but made them faster. At the cellular level, the photoactivated increase in cell-cell adhesions resulted in an increase in membrane tension. Notably, it also activated the enzyme phospholipase D2 (PLD2), resulting in an increase in phosphatidic acid (PA) and activation of mammalian target of rapamycin (mTOR) signaling. These findings demonstrate that mechanical coupling of cells at their membranes via artificial adhesion proteins that do not link directly to the actin cytoskeleton induces increased membrane tension, which is sufficient to achieve collective cell migration.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Collective cell migration is a hallmark of morphogenesis, tissue homeostasis, and wound healing [1] , [2] , [3] .",
+        "references": {
+          "1": {
+            "1": "Cell migration is essential for developmental processes.",
+            "2": "Cell migration is essential for immune defence processes.",
+            "3": "Cell migration is essential for wound healing processes.",
+            "4": "Cell migration is a hallmark of cancer malignancy.",
+            "5": "Thousands of publications have elucidated detailed molecular mechanisms of cultured cells migrating on flat, 2D substrates of glass and plastic.",
+            "6": "Thousands of publications have elucidated detailed biophysical mechanisms of cultured cells migrating on flat, 2D substrates of glass and plastic.",
+            "7": "Much less is known about how cells successfully navigate complex 3D environments of living tissues.",
+            "8": "In complex native environments, cells use multiple modes of migration, including mesenchymal, amoeboid, lobopodial, and collective migration.",
+            "9": "The modes of migration used by cells are governed by the local extracellular microenvironment.",
+            "10": "The modes of migration used by cells are governed by specific modalities of Rho GTPase signalling.",
+            "11": "The modes of migration used by cells are governed by non-muscle myosin contractility.",
+            "12": "Migration through 3D environments is challenging because it requires the cell to squeeze through complex extracellular structures.",
+            "13": "Migration through 3D environments is challenging because it requires the cell to squeeze through dense extracellular structures.",
+            "14": "Squeezing through complex or dense extracellular structures requires specific cellular adaptations to mechanical features of the extracellular matrix.",
+            "15": "Squeezing through complex or dense extracellular structures requires specific cellular adaptations to the remodelling of the extracellular matrix.",
+            "16": "Cells navigate through diverse extracellular matrix environments.",
+            "17": "Cells overcome extracellular barriers during migration.",
+            "18": "Cells often interact with neighbouring cells through physical interactions.",
+            "19": "Cells often interact with neighbouring cells through signalling interactions.",
+            "20": "Cells interact with neighbouring tissues through physical interactions.",
+            "21": "Cells interact with neighbouring tissues through signalling interactions.",
+            "22": "Cells need to use an impressively wide diversity of mechanisms to navigate complex 3D environments and interact with neighbouring cells and tissues.",
+            "23": "The Review examines how cells use classical mechanisms of locomotion to traverse challenging 3D matrices and cellular environments.",
+            "24": "The Review examines how cells use novel mechanisms of locomotion to traverse challenging 3D matrices and cellular environments.",
+            "25": "The Review focuses on the principles of migratory mechanisms rather than the details.",
+            "26": "The Review draws comparisons between 1D migration and 2D migration.",
+            "27": "The Review draws comparisons between 1D migration and 3D migration.",
+            "28": "The Review draws comparisons between 2D migration and 3D migration."
+          },
+          "2": {
+            "1": "Sharp boundaries are essential for the segregation of embryonic tissues during development.",
+            "2": "The underlying mechanism of cell sorting in embryonic tissues has remained unclear.",
+            "3": "Opposing hypotheses have been proposed regarding the mechanism of cell sorting.",
+            "4": "One hypothesis is based on global tissue adhesive properties.",
+            "5": "One hypothesis is based on global tissue contractile properties.",
+            "6": "One hypothesis is based on local signaling through cell contact cues.",
+            "7": "The study uses ectoderm-mesoderm separation in Xenopus to directly evaluate the role of global adhesive, contractile properties, and local signaling in cell sorting.",
+            "8": "Ephrin-Eph-based repulsion is very effective at inducing separation of tissues.",
+            "9": "Ephrin-Eph-based repulsion is very effective at maintaining separation of tissues.",
+            "10": "Differences in tissue adhesion have surprisingly little impact on separation.",
+            "11": "Differences in tissue contractility have surprisingly little impact on separation.",
+            "12": "Computer simulations support the experimental results.",
+            "13": "Computer simulations generalize the experimental results.",
+            "14": "A high heterotypic interfacial tension between tissues is key to their segregation according to computer simulations.",
+            "15": "A unifying model is proposed for cell sorting.",
+            "16": "Conditions of sorting previously considered as driven by differential adhesion/tension are viewed as suboptimal cases of heterotypic interfacial tension in the proposed model.",
+            "17": "The mechanisms that cause different cells to segregate into distinct tissues are unclear.",
+            "18": "In Xenopus, the formation of a boundary between two tissues is driven by local tension along the interface.",
+            "19": "In Xenopus, the formation of a boundary between two tissues is not driven by global differences in adhesion.",
+            "20": "In Xenopus, the formation of a boundary between two tissues is not driven by global differences in cortical contractility."
+          },
+          "3": {
+            "1": "Mammalian preimplantation development extends from fertilization to implantation.",
+            "2": "Mammalian preimplantation development results in the formation of a blastocyst with three distinct cell lineages.",
+            "3": "The epiblast is the only lineage that contributes to the embryo itself.",
+            "4": "The trophectoderm and the primitive endoderm become extra-embryonic tissues.",
+            "5": "Significant gains have been made in understanding the major events of mouse preimplantation development.",
+            "6": "Recent discoveries have shed new light on the establishment of the three blastocyst lineages in the mouse.",
+            "7": "It is unclear how closely human preimplantation development mimics mouse preimplantation development.",
+            "8": "A greater understanding of the similarities between mouse and human preimplantation development has implications for improving assisted reproductive technologies.",
+            "9": "A greater understanding of the differences between mouse and human preimplantation development has implications for improving assisted reproductive technologies.",
+            "10": "A greater understanding of the similarities between mouse and human preimplantation development has implications for deriving human embryonic stem cells.",
+            "11": "A greater understanding of the differences between mouse and human preimplantation development has implications for deriving human embryonic stem cells."
+          }
+        },
+        "viewpoints": [
+          "Collective cell migration is a hallmark of morphogenesis.",
+          "Collective cell migration is a hallmark of tissue homeostasis.",
+          "Collective cell migration is a hallmark of wound healing."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "A central element that determines whether cells migrate collectively or individually is the strength of intercellular adhesions [4] .",
+        "references": {
+          "4": {
+            "1": "Most invasive solid tumours predominantly display collective invasion.",
+            "2": "In collective invasion, groups of cells invade the peritumoral stroma.",
+            "3": "In collective invasion, groups of cells maintain cell-cell contacts.",
+            "4": "The concepts for functional analysis of collective cancer cell invasion are rapidly developing.",
+            "5": "The experimental models for functional analysis of collective cancer cell invasion are rapidly developing.",
+            "6": "A framework is proposed for addressing potential mechanisms in the study of collective cancer cell invasion.",
+            "7": "A framework is proposed for addressing experimental strategies in the study of collective cancer cell invasion.",
+            "8": "A framework is proposed for addressing technical challenges in the study of collective cancer cell invasion."
+          }
+        },
+        "viewpoints": [
+          "The strength of intercellular adhesions determines whether cells migrate collectively or individually."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Cell-cell adhesions mediated by classical cadherins link neighboring cells through interactions between their extracellular domains, while α-catenin and β-catenin recruit to the cytoplasmic tail, forming a mechanosensitive link to the actin cytoskeleton [5] , [6] .",
+        "references": {
+          "5": {
+            "1": "During embryonic development, tissues undergo major rearrangements.",
+            "2": "Tissue rearrangements during embryonic development lead to germ layer positioning.",
+            "3": "Tissue rearrangements during embryonic development lead to patterning.",
+            "4": "Tissue rearrangements during embryonic development lead to organ morphogenesis.",
+            "5": "Morphogenetic movements are often accomplished by the coordinated migration of constituent cells.",
+            "6": "Morphogenetic movements are often accomplished by the cooperative migration of constituent cells.",
+            "7": "The coordinated and cooperative migration of constituent cells is referred to as collective cell migration.",
+            "8": "Molecular mechanisms underlying collective migration of developing tissues have been investigated in various models.",
+            "9": "Biomechanical mechanisms underlying collective migration of developing tissues have been investigated in various models.",
+            "10": "Models used to investigate collective migration include border cell migration, tracheal branching, blood vessel sprouting, and lateral line primordium migration.",
+            "11": "Models used to investigate collective migration include the migration of neural crest cells and head mesendoderm.",
+            "12": "Recent advances in understanding collective migration in developmental models are reviewed.",
+            "13": "The review focuses on the interaction between cells and guidance cues presented by the microenvironment.",
+            "14": "The review focuses on the role of cell-cell adhesion in mechanical coupling of cells within the collective.",
+            "15": "The review focuses on the role of cell-cell adhesion in behavioral coupling of cells within the collective."
+          },
+          "6": {
+            "1": "Collective cell migration critically depends on cell-cell interactions.",
+            "2": "Collective cell migration critically depends on a dynamic actin cytoskeleton.",
+            "3": "Cadherins are important cell-cell adhesion receptor systems controlling collective movements.",
+            "4": "Immunoglobulin superfamily members (L1CAM, NCAM, ALCAM) are important cell-cell adhesion receptor systems controlling collective movements.",
+            "5": "Ephrin/Eph receptors are important cell-cell adhesion receptor systems controlling collective movements.",
+            "6": "Slit/Robo are important cell-cell adhesion receptor systems controlling collective movements.",
+            "7": "Connexins and integrins are important cell-cell adhesion receptor systems controlling collective movements.",
+            "8": "An adaptive array of intracellular adapter and signaling proteins is part of the cell-cell adhesion receptor systems implicated in controlling collective movements.",
+            "9": "The shape and stability of cell-cell junctions adapt depending on molecular composition.",
+            "10": "The shape and stability of cell-cell junctions adapt depending on signaling context.",
+            "11": "Gradual junction plasticity enables epithelial sheet and cluster migration.",
+            "12": "Gradual junction plasticity enables branching morphogenesis and sprouting.",
+            "13": "Gradual junction plasticity enables collective network migration.",
+            "14": "Gradual junction plasticity enables coordinated individual-cell migration and streaming.",
+            "15": "Plasticity of cell-cell junction composition and turnover defines the type of collective movements in epithelial cells.",
+            "16": "Plasticity of cell-cell junction composition and turnover defines the type of collective movements in mesenchymal cells.",
+            "17": "Plasticity of cell-cell junction composition and turnover defines the type of collective movements in neuronal cells.",
+            "18": "Plasticity of cell-cell junction composition and turnover defines the type of collective movements in immune cells.",
+            "19": "Plasticity of cell-cell junction composition and turnover defines migration coordination.",
+            "20": "Plasticity of cell-cell junction composition and turnover defines anchorage.",
+            "21": "Plasticity of cell-cell junction composition and turnover defines cell dissociation.",
+            "22": "The study reviews cell-cell adhesion systems as key regulators of collective plasticity.",
+            "23": "The study reviews the functions of cell-cell adhesion systems in different types of collective cell migration."
+          }
+        },
+        "viewpoints": [
+          "Classical cadherins mediate cell-cell adhesions by linking neighboring cells through interactions between their extracellular domains.",
+          "α-catenin and β-catenin recruit to the cytoplasmic tail, forming a mechanosensitive link to the actin cytoskeleton."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Hence, cadherins both mechanically connect cells as structural elements and activate intercellular signaling circuits that regulate cytoskeletal dynamics and gene expression [7] , [8] , [9] , [10] , [11] , [12] .",
+        "references": {
+          "7": {
+            "1": "Cadherins are the principal adhesion proteins at intercellular junctions.",
+            "2": "Cadherins function as the biochemical Velcro that binds cells together.",
+            "3": "Cadherin complexes are mechanotransducers that sense changes in tension.",
+            "4": "Cadherin complexes trigger adaptive reinforcement of intercellular junctions in response to changes in tension.",
+            "5": "The assembly and regulation of cadherin adhesions are central to the mechanical functions of cadherins.",
+            "6": "New evidence is presented for a comprehensive model of cadherin adhesion.",
+            "7": "The new model of cadherin adhesion is surprisingly more complex than previously appreciated.",
+            "8": "Recent findings shed new light on mechanisms that regulate cadherin junction assembly.",
+            "9": "Recent findings shed new light on mechanisms that regulate cadherin adhesion.",
+            "10": "Recent findings shed new light on mechanisms that regulate cadherin mechanotransduction.",
+            "11": "Recent evidence is described for cadherin-based mechanotransduction.",
+            "12": "The rudiments of the molecular mechanism of cadherin-based mechanotransduction involve α-catenin as a key element.",
+            "13": "The rudiments of the molecular mechanism of cadherin-based mechanotransduction involve vinculin as a key element.",
+            "14": "Potential roles of a broader cast of possible force-sensitive partners are considered.",
+            "15": "Known biological consequences of adhesion at cadherin-mediated junctions are considered.",
+            "16": "Speculative biological consequences of adhesion at cadherin-mediated junctions are considered.",
+            "17": "Known biological consequences of force transduction at cadherin-mediated junctions are considered.",
+            "18": "Speculative biological consequences of force transduction at cadherin-mediated junctions are considered."
+          },
+          "8": {
+            "1": "The development of tissues requires collective cell movement.",
+            "2": "The maintenance of tissues requires collective cell movement.",
+            "3": "During collective cell movement, neighbouring cells coordinate the polarity of their migration machineries.",
+            "4": "The research questions how polarity signals are transmitted from one cell to another across symmetrical cadherin junctions during collective migration.",
+            "5": "Collectively migrating endothelial cells have polarized VE-cadherin-rich membrane protrusions called 'cadherin fingers'.",
+            "6": "Leading endothelial cells extend cadherin fingers from their rear.",
+            "7": "Follower endothelial cells engulf cadherin fingers at their front.",
+            "8": "The extension and engulfment of cadherin fingers generate opposite membrane curvatures.",
+            "9": "The extension and engulfment of cadherin fingers result in asymmetric recruitment of curvature-sensing proteins.",
+            "10": "In follower cells, the engulfment of cadherin fingers occurs with the formation of a lamellipodia-like zone.",
+            "11": "The lamellipodia-like zone formed during cadherin finger engulfment has low actomyosin contractility.",
+            "12": "The engulfment of cadherin fingers in follower cells requires VE-cadherin/catenin complexes.",
+            "13": "The engulfment of cadherin fingers in follower cells requires Arp2/3-driven actin polymerization.",
+            "14": "The lateral accumulation of cadherin fingers in follower cells precedes turning.",
+            "15": "Increased actomyosin contractility can initiate cadherin finger extension in a cell.",
+            "16": "Increased actomyosin contractility can initiate the engulfment of cadherin fingers by a neighbouring cell.",
+            "17": "Increased actomyosin contractility promotes follower behaviour.",
+            "18": "Cadherin fingers serve as guidance cues that direct collective cell migration."
+          },
+          "9": {
+            "1": "E-cadherin-based cell-cell adhesions are dynamically regulated in embryogenesis.",
+            "2": "E-cadherin-based cell-cell adhesions are locally regulated in embryogenesis.",
+            "3": "E-cadherin-based cell-cell adhesions are dynamically regulated in wound healing.",
+            "4": "E-cadherin-based cell-cell adhesions are locally regulated in wound healing.",
+            "5": "E-cadherin-based cell-cell adhesions are dynamically regulated in tissue organization.",
+            "6": "E-cadherin-based cell-cell adhesions are locally regulated in tissue organization.",
+            "7": "Dysregulation of E-cadherin-based cell-cell adhesions manifests as tumorigenesis.",
+            "8": "Dysregulation of E-cadherin-based cell-cell adhesions manifests as metastasis.",
+            "9": "The lack of tools providing control of the high spatiotemporal precision observed with E-cadherin adhesions hampers investigation of the underlying mechanisms.",
+            "10": "Opto-E-cadherin is an optogenetic tool.",
+            "11": "Opto-E-cadherin allows reversible control of E-cadherin-mediated cell-cell adhesions with blue light.",
+            "12": "Opto-E-cadherin photoregulates functionally essential calcium binding.",
+            "13": "Cells expressing opto-E-cadherin at their surface adhere to each other in the dark.",
+            "14": "Cells expressing opto-E-cadherin at their surface do not adhere to each other upon illumination.",
+            "15": "Opto-E-cadherin provides remote control over multicellular aggregation in 2D and 3D cell cultures.",
+            "16": "Opto-E-cadherin provides remote control over E-cadherin-associated intracellular signalling in 2D and 3D cell cultures.",
+            "17": "Opto-E-cadherin provides remote control over F-actin organization in 2D and 3D cell cultures.",
+            "18": "Opto-E-cadherin allows switching of multicellular behaviour between single cell migration and collective cell migration.",
+            "19": "Opto-E-cadherin allows switching of cell invasiveness in vitro.",
+            "20": "Opto-E-cadherin allows switching of cell invasiveness in vivo.",
+            "21": "Opto-E-cadherin is a powerful optogenetic tool capable of controlling cell-cell adhesions at the molecular level.",
+            "22": "Opto-E-cadherin is a powerful optogenetic tool capable of controlling cell-cell adhesions at the cellular level.",
+            "23": "Opto-E-cadherin is a powerful optogenetic tool capable of controlling cell-cell adhesions at the behavioural level.",
+            "24": "Opto-E-cadherin opens up perspectives for the study of dynamics of E-cadherin in biological processes.",
+            "25": "Opto-E-cadherin opens up perspectives for the study of spatiotemporal control of E-cadherin in biological processes."
+          },
+          "10": {
+            "1": "Multicellularity in animals requires dynamic maintenance of cell-cell contacts.",
+            "2": "Intercellularly ligated cadherins recruit numerous proteins to form supramolecular complexes.",
+            "3": "Supramolecular complexes formed by cadherins connect with the actin cytoskeleton.",
+            "4": "Supramolecular complexes formed by cadherins support force transmission.",
+            "5": "The molecular organization within supramolecular complexes connecting cadherins to the actin cytoskeleton remains unknown.",
+            "6": "Protein organization in cadherin-based adhesions was mapped using super-resolution microscopy.",
+            "7": "A multi-compartment nanoscale architecture was revealed in cadherin-based adhesions.",
+            "8": "The plasma-membrane-proximal cadherin-catenin compartment is segregated from the actin cytoskeletal compartment in cadherin-based adhesions.",
+            "9": "An interface zone containing vinculin bridges the cadherin-catenin and actin compartments.",
+            "10": "Vinculin position is determined by α-catenin.",
+            "11": "Following activation, vinculin can extend ∼30 nm to bridge the cadherin-catenin and actin compartments.",
+            "12": "Vinculin modulates the nanoscale positions of the actin regulators zyxin and VASP.",
+            "13": "Vinculin conformational activation requires tension.",
+            "14": "Vinculin conformational activation requires tyrosine phosphorylation.",
+            "15": "Vinculin tyrosine phosphorylation is regulated by Abl kinase.",
+            "16": "Vinculin tyrosine phosphorylation is regulated by PTP1B phosphatase.",
+            "17": "The modular architecture of cadherin-based adhesions provides a structural framework for mechanical and biochemical signal integration by vinculin.",
+            "18": "The modular architecture may allow vinculin to differentially engage cadherin-catenin complexes with the actomyosin machinery.",
+            "19": "Vinculin engagement with cadherin-catenin complexes regulates cell adhesions."
+          },
+          "11": {
+            "1": "Cadherins maintain the structural integrity of cells.",
+            "2": "Cadherins maintain the structural integrity of tissues.",
+            "3": "Cadherins control a wide array of cellular behaviours.",
+            "4": "Cadherins are instrumental for cell polarization.",
+            "5": "Cadherins are instrumental for tissue polarization.",
+            "6": "Cadherins regulate cell movements.",
+            "7": "Cadherins regulate cell sorting.",
+            "8": "Cadherins regulate cell migration.",
+            "9": "Cadherins regulate cell rearrangements.",
+            "10": "Cadherins may contribute to neurite outgrowth.",
+            "11": "Cadherins may contribute to neurite pathfinding.",
+            "12": "Cadherins may contribute to synaptic specificity in the central nervous system.",
+            "13": "Cadherins may contribute to synaptic modulation in the central nervous system."
+          },
+          "12": {
+            "1": "Cadherins are a family of cell adhesion receptors.",
+            "2": "Cadherins are crucial for the mutual association of vertebrate cells.",
+            "3": "Cadherins have homophilic binding interactions.",
+            "4": "Cadherins play a role in cell-sorting mechanisms through their homophilic binding interactions.",
+            "5": "Cadherins confer adhesion specificities on cells through their homophilic binding interactions.",
+            "6": "The regulated expression of cadherins controls cell polarity.",
+            "7": "The regulated expression of cadherins controls tissue morphology.",
+            "8": "Cadherins are considered to be important regulators of morphogenesis.",
+            "9": "Pathological examinations suggest that the down-regulation of cadherin expression is associated with the invasiveness of tumor cells."
+          }
+        },
+        "viewpoints": [
+          "Cadherins mechanically connect cells as structural elements.",
+          "Cadherins activate intercellular signaling circuits.",
+          "Intercellular signaling circuits activated by cadherins regulate cytoskeletal dynamics.",
+          "Intercellular signaling circuits activated by cadherins regulate gene expression."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In contrast to signaling circuits emanating from protein complexes that link the cytoskeletons of adjacent cells, the contribution of signaling cues originating directly from the plasma membrane in collective cell dynamics has been largely overlooked.",
+        "references": {},
+        "viewpoints": [
+          "The contribution of signaling cues originating directly from the plasma membrane in collective cell dynamics has been largely overlooked.",
+          "Signaling circuits from protein complexes link the cytoskeletons of adjacent cells."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "The membrane is often regarded as a passive structure whose primary role is to separate the cell’s exterior from its interior, thereby enabling signal transduction via transmembrane protein complexes.",
+        "references": {},
+        "viewpoints": [
+          "The membrane is often regarded as a passive structure.",
+          "The primary role of the membrane is to separate the cell’s exterior from its interior.",
+          "The membrane enables signal transduction via transmembrane protein complexes."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "However, recent studies challenge this view.",
+        "references": {},
+        "viewpoints": [
+          "Recent studies challenge the view of the membrane as a passive structure whose primary role is separating the cell’s exterior from its interior and enabling signal transduction via transmembrane protein complexes."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "In single cells, changes in membrane properties have been shown to significantly influence leading edge dynamics [13] , [14] , [15] and migration behavior [16] , [17] , [18] .",
+        "references": {
+          "13": {
+            "1": "Cell spreading requires the extension of the plasma membrane.",
+            "2": "Cell motility requires the extension of the plasma membrane.",
+            "3": "The extension of the plasma membrane is associated with the assembly of actin.",
+            "4": "In vitro, extension must overcome resistance from tension within the plasma membrane.",
+            "5": "The addition of amphiphilic compounds expanded the plasma membrane.",
+            "6": "The addition of fluorescent lipids expanded the plasma membrane.",
+            "7": "The expansion of the plasma membrane by amphiphilic compounds increased the rate of cell spreading.",
+            "8": "The expansion of the plasma membrane by fluorescent lipids increased the rate of cell spreading.",
+            "9": "The expansion of the plasma membrane by amphiphilic compounds increased the rate of lamellipodial extension.",
+            "10": "The expansion of the plasma membrane by fluorescent lipids increased the rate of lamellipodial extension.",
+            "11": "The expansion of the plasma membrane by amphiphilic compounds stimulated new lamellipodial extensions.",
+            "12": "The expansion of the plasma membrane by fluorescent lipids stimulated new lamellipodial extensions.",
+            "13": "The expansion of the plasma membrane caused a decrease in the apparent membrane tension.",
+            "14": "In PDGF-stimulated motility, the increase in the lamellipodial extension rate was associated with a decrease in the apparent membrane tension.",
+            "15": "In PDGF-stimulated motility, the increase in the lamellipodial extension rate was associated with decreased membrane-cytoskeleton adhesion.",
+            "16": "The decrease in membrane-cytoskeleton adhesion occurred through phosphatidylinositol diphosphate hydrolysis.",
+            "17": "When membrane tension was increased by osmotically swelling cells, the extension rate decreased.",
+            "18": "The lamellipodial extension process can be activated by a physical signal.",
+            "19": "The activation of the lamellipodial extension process by a physical signal may be secondary.",
+            "20": "The rate of lamellipodial extension is directly dependent upon the tension in the plasma membrane.",
+            "21": "The lamellipodial extension rate is inversely correlated with the apparent membrane tension according to quantitative analysis.",
+            "22": "These studies describe a physical chemical mechanism for modulating the biochemical processes that power lamellipodial extension.",
+            "23": "The mechanism involves changes in membrane-cytoskeleton adhesion.",
+            "24": "The changes in membrane-cytoskeleton adhesion occur through phosphatidylinositol 4,5-biphosphate-protein interactions.",
+            "25": "These studies describe a physical chemical mechanism for stimulating the biochemical processes that power lamellipodial extension."
+          },
+          "14": {
+            "1": "Dimethyl sulfoxide (DMSO) is a small amphiphilic molecule.",
+            "2": "DMSO is widely employed in cell biology as an effective penetration enhancer.",
+            "3": "DMSO is widely employed in cell biology as a cell fusogen.",
+            "4": "DMSO is widely employed in cell biology as a cryoprotectant.",
+            "5": "The molecular basis of DMSO's action on lipid membranes is still obscure despite the vast number of experimental studies.",
+            "6": "A recent simulation study employing coarse-grained models has suggested that DMSO induces pores in the membrane.",
+            "7": "The molecular mechanism for DMSO's interaction with phospholipid membranes is ascertained from atomic-scale molecular dynamics simulations.",
+            "8": "DMSO exhibits three distinct modes of action.",
+            "9": "Each mode of action of DMSO occurs over a different concentration range.",
+            "10": "At low concentrations, DMSO induces membrane thinning.",
+            "11": "At low concentrations, DMSO increases fluidity of the membrane's hydrophobic core.",
+            "12": "At higher concentrations, DMSO induces transient water pores in the membrane.",
+            "13": "At still higher concentrations, individual lipid molecules are desorbed from the membrane.",
+            "14": "At still higher concentrations, desorption of lipid molecules is followed by disintegration of the bilayer structure.",
+            "15": "The study provides further evidence that a key aspect of DMSO's mechanism of action is pore formation.",
+            "16": "Pore formation explains the significant enhancement in permeability of membranes to hydrophilic molecules by DMSO.",
+            "17": "Pore formation also explains DMSO's cryoprotectant activity.",
+            "18": "The reduction in rigidity of the membrane induced by DMSO is considered to be a prerequisite for membrane fusion processes.",
+            "19": "The general disruption of the membrane induced by DMSO is considered to be a prerequisite for membrane fusion processes.",
+            "20": "The findings indicate that the choice of DMSO concentration for a given application is critical.",
+            "21": "The concentration of DMSO defines the specific mode of DMSO's action.",
+            "22": "Knowledge of the distinct modes of action of DMSO should enable optimization of current application protocols on a rational basis.",
+            "23": "Knowledge of the associated concentration dependency of DMSO should enable optimization of current application protocols on a rational basis.",
+            "24": "Knowledge of the distinct modes of action and concentration dependency of DMSO should promote new applications for DMSO."
+          },
+          "15": {
+            "1": "Application of 5% dimethyl sulfoxide (DMSO) to Dictyostelium cells causes the cells to round up in shape.",
+            "2": "Application of 5% dimethyl sulfoxide (DMSO) to Dictyostelium cells causes cytoplasmic streaming to cease.",
+            "3": "Dictyostelium cells resume cytoplasmic streaming in 20 minutes after the application of DMSO.",
+            "4": "Dictyostelium cells resume locomotion in 20 minutes after the application of DMSO.",
+            "5": "SDS PAGE of isolated plasma membrane fractions shows that actin dissociates from the plasma membrane by the action of DMSO.",
+            "6": "SDS PAGE of isolated plasma membrane fractions shows that myosin dissociates from the plasma membrane by the action of DMSO.",
+            "7": "Scanning electron microscopy reveals that many filopodelike projections form on the surface of cells treated with 5% DMSO for 5 minutes.",
+            "8": "The projections formed on the surface of cells treated with 5% DMSO were restricted to a portion of the cell surface.",
+            "9": "The phagokinetic track technique showed that the projection region corresponded to the anterior part of a migrating cell.",
+            "10": "The relationship between the DMSO-induced projection region on the cell surface and intracellular organization of cell organelles was investigated using serial thin sections.",
+            "11": "DMSO-induced projections contained arrays of microfilaments.",
+            "12": "The microtubule organizing center (MTOC) was usually located at the anterior end of the cell.",
+            "13": "The nucleus was usually located following the microtubule organizing center from the anterior end of the cell.",
+            "14": "The vesicular structure was usually located following the nucleus from the anterior end of the cell.",
+            "15": "An indirect immunofluorescent study using monoclonal anti-alpha-tubulin antibody was performed with a new fixation technique.",
+            "16": "The new fixation technique greatly improved the phase of microscopy.",
+            "17": "The new fixation technique greatly improved the immunofluorescent microscopy.",
+            "18": "The intracellular positioning of the microtubule organizing center (MTOC) had significant correlation with cell polarity.",
+            "19": "The intracellular positioning of the nucleus had significant correlation with cell polarity.",
+            "20": "DMSO is a powerful tool to manipulate cellular microfilaments.",
+            "21": "DMSO is a powerful tool to make visible the differentiation in the cortex layer.",
+            "22": "The differentiation in the cortex layer is relevant to the intracellular positioning of cell organelles.",
+            "23": "The differentiation in the cortex layer is relevant to cell polarity."
+          },
+          "16": [],
+          "17": {
+            "1": "The cell surface is a mechanobiological unit.",
+            "2": "The cell surface encompasses the plasma membrane.",
+            "3": "The cell surface encompasses interacting proteins of the plasma membrane.",
+            "4": "The cell surface encompasses the complex underlying cytoskeleton.",
+            "5": "Recent attention has been directed to the mechanics of the plasma membrane.",
+            "6": "Recent attention has been directed to membrane tension in the plasma membrane.",
+            "7": "Membrane tension has been linked to diverse cellular processes such as cell migration.",
+            "8": "Membrane tension has been linked to membrane trafficking.",
+            "9": "The regulation of tension across the plasma membrane is still not completely understood.",
+            "10": "The propagation of tension across the plasma membrane is still not completely understood.",
+            "11": "Recent efforts have been made to study the interplay between membrane tension and cytoskeletal machinery.",
+            "12": "Efforts are being made to understand how membrane tension and cytoskeletal machinery control cell form.",
+            "13": "Efforts are being made to understand how membrane tension and cytoskeletal machinery control cell function.",
+            "14": "Factors have been proposed to affect the propagation of membrane tension.",
+            "15": "Proposed factors could determine whether membrane tension can act as a global regulator of cell behavior.",
+            "16": "Proposed factors could determine whether membrane tension can act as a local regulator of cell behavior.",
+            "17": "There are limitations in the available tool kit to study membrane tension.",
+            "18": "New approaches are needed to reveal the dynamics of membrane tension in cells.",
+            "19": "New approaches are needed to decipher how membrane tension regulates diverse cellular processes."
+          },
+          "18": {
+            "1": "Cells need to regulate the magnitude of actin assembly for efficient polarity and migration.",
+            "2": "Cells need to regulate the spatial distribution of actin assembly for efficient polarity and migration.",
+            "3": "Reciprocal interactions between the actin cytoskeleton and mechanical forces coordinate the regulation of actin assembly.",
+            "4": "Actin polymerization-based protrusion increases tension in the plasma membrane.",
+            "5": "Increased tension in the plasma membrane acts as a long-range inhibitor of actin assembly.",
+            "6": "Interactions between actin polymerization-based protrusion and plasma membrane tension form a negative feedback circuit.",
+            "7": "The negative feedback circuit limits the magnitude of membrane tension in neutrophils.",
+            "8": "The negative feedback circuit prevents the expansion of the existing front in neutrophils.",
+            "9": "The negative feedback circuit prevents the formation of secondary fronts in neutrophils.",
+            "10": "The plasma membrane is suggested to directly inhibit actin assembly.",
+            "11": "The plasma membrane serves as a physical barrier that opposes protrusion.",
+            "12": "Efficient control of actin polymerization-based protrusion requires an additional mechanosensory feedback cascade.",
+            "13": "The additional mechanosensory feedback cascade indirectly links membrane tension with actin assembly.",
+            "14": "Elevated membrane tension acts through phospholipase D2 (PLD2) to limit actin nucleation.",
+            "15": "Elevated membrane tension acts through the mammalian target of rapamycin complex 2 (mTORC2) to limit actin nucleation.",
+            "16": "In the absence of the mechanosensory feedback cascade, neutrophils exhibit larger leading edges.",
+            "17": "In the absence of the mechanosensory feedback cascade, neutrophils exhibit higher membrane tension.",
+            "18": "In the absence of the mechanosensory feedback cascade, neutrophils exhibit profoundly defective chemotaxis.",
+            "19": "Mathematical modeling suggests roles for the direct feedback loop in organizing cell polarity and motility.",
+            "20": "Mathematical modeling suggests roles for the indirect feedback loop in organizing cell polarity and motility.",
+            "21": "The indirect feedback loop is better suited to enable competition between fronts.",
+            "22": "The direct feedback loop helps spatially organize actin nucleation for efficient leading edge formation.",
+            "23": "The direct feedback loop helps spatially organize actin nucleation for efficient cell movement.",
+            "24": "The feedback circuit is essential for cell polarity.",
+            "25": "The feedback circuit is essential for cell motility.",
+            "26": "The feedback circuit is essential for the control of membrane tension."
+          }
+        },
+        "viewpoints": [
+          "Changes in membrane properties significantly influence leading edge dynamics in single cells.",
+          "Changes in membrane properties significantly influence migration behavior in single cells."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Notably, these alterations in membrane properties are accomplished not only by direct mechano-chemical feedback loops, but also by intracellular signaling and changes in gene expression [19] , [20] .",
+        "references": {
+          "19": {
+            "1": "Internalization of macromolecules and membrane into cells through endocytosis is critical for cellular growth.",
+            "2": "Internalization of macromolecules and membrane into cells through endocytosis is critical for signaling.",
+            "3": "Internalization of macromolecules and membrane into cells through endocytosis is critical for plasma membrane (PM) tension homeostasis.",
+            "4": "Endocytosis is responsive to biochemical stimuli.",
+            "5": "Endocytosis is responsive to physical stimuli.",
+            "6": "How physical cues modulate endocytic pathways is less understood compared to biochemical stimuli.",
+            "7": "There are accumulating discoveries on the effects of increased PM tension on endocytosis.",
+            "8": "Less is known about how a decrease of PM tension impacts membrane trafficking.",
+            "9": "An acute decrease of plasma membrane tension results in phosphatidic acid (PA) production.",
+            "10": "An acute decrease of plasma membrane tension results in F-actin production.",
+            "11": "An acute decrease of plasma membrane tension results in phosphatidylinositol (4,5)-bisphosphate [PI(4,5)P production."
+          },
+          "20": {
+            "1": "Extracellular vesicles released by viable cells are exosomes and microvesicles.",
+            "2": "Exosomes and microvesicles have emerged as important organelles.",
+            "3": "Exosomes and microvesicles support cell-cell communication.",
+            "4": "Exosomes and microvesicles have potential therapeutic significance.",
+            "5": "Important efforts are being made toward characterizing the contents of exosomes and microvesicles.",
+            "6": "Important efforts are being made toward understanding the mechanisms that govern the biogenesis of exosomes and microvesicles.",
+            "7": "The lipid modifying enzyme, phospholipase D (PLD)2, is involved in exosome production.",
+            "8": "Phospholipase D (PLD)2 acts downstream of the small GTPase, ARF6.",
+            "9": "The review aims to recapitulate current knowledge of the role of phospholipase D (PLD)2 in the biogenesis of exosomes.",
+            "10": "The review aims to recapitulate current knowledge of the role of phosphatidic acid in the biogenesis of exosomes.",
+            "11": "The review aims to propose hypotheses for further investigation of a possible central role of phospholipase D (PLD)2 in the biology of exosomes.",
+            "12": "The review aims to propose hypotheses for further investigation of a possible central role of phosphatidic acid in the biology of exosomes."
+          }
+        },
+        "viewpoints": [
+          "Alterations in membrane properties are accomplished by direct mechano-chemical feedback loops.",
+          "Alterations in membrane properties are accomplished by intracellular signaling.",
+          "Alterations in membrane properties are accomplished by changes in gene expression."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Consequently, changes at the plasma membrane not only yield short-term changes in cell, but also have long-term effects [21] , [22] .",
+        "references": {
+          "21": {
+            "1": "Filopodia explore the environment.",
+            "2": "Filopodia sense soluble cues during directional motility.",
+            "3": "Filopodia sense mechanical cues during directional motility.",
+            "4": "Filopodia are involved in tissue morphogenesis.",
+            "5": "The initiation of filopodia on the plasma membrane is unclear.",
+            "6": "The spatial restriction of filopodia to specific sites on the plasma membrane is unclear.",
+            "7": "The IRSp53 protein deforms membranes.",
+            "8": "The IRSp53 protein senses membrane curvature.",
+            "9": "The IRSp53 protein slows down actin filament barbed end growth.",
+            "10": "CDC42 relieves the inhibition of actin filament barbed end growth by IRSp53.",
+            "11": "VASP counteracts the inhibition of actin filament barbed end growth by IRSp53.",
+            "12": "VASP binds to IRSp53.",
+            "13": "Activated CDC42 regulates the interaction between VASP and IRSp53.",
+            "14": "The interaction between VASP and IRSp53 promotes high-density clustering of VASP.",
+            "15": "High-density clustering of VASP is required for processive actin filament elongation.",
+            "16": "The interaction between VASP and IRSp53 mediates VASP recruitment to liposomes.",
+            "17": "IRSp53 accumulates at discrete foci at the leading edge in cells.",
+            "18": "VASP accumulates at discrete foci at the leading edge in cells.",
+            "19": "Filopodia are initiated at the leading edge in cells.",
+            "20": "Genetic removal of IRSp53 impairs the formation of VASP foci.",
+            "21": "Genetic removal of IRSp53 impairs the formation of filopodia.",
+            "22": "Genetic removal of IRSp53 impairs chemotactic motility.",
+            "23": "IRSp53 null mice display defective wound healing.",
+            "24": "IRSp53 dampens barbed end growth of actin filaments.",
+            "25": "CDC42 activation inhibits the activity of IRSp53 in damping barbed end growth.",
+            "26": "CDC42 activation promotes IRSp53-dependent recruitment of VASP.",
+            "27": "CDC42 activation promotes IRSp53-dependent clustering of VASP.",
+            "28": "VASP recruitment and clustering drive actin assembly.",
+            "29": "Spatial restriction of VASP filament elongation results from the events described.",
+            "30": "The spatial restriction of VASP filament elongation is important for initiation of filopodia.",
+            "31": "Spatial restriction of VASP filament elongation occurs during cell migration.",
+            "32": "Spatial restriction of VASP filament elongation occurs during cell invasion.",
+            "33": "Spatial restriction of VASP filament elongation occurs during tissue repair."
+          },
+          "22": {
+            "1": "Cells change their structure when subjected to mechanical strain.",
+            "2": "The translation of mechanical forces into biochemical signals that coordinate structural changes at the plasma membrane (PM) during mechanoadaptation is unclear.",
+            "3": "The translation of mechanical forces into biochemical signals that coordinate structural changes at the underlying cytoskeleton during mechanoadaptation is unclear.",
+            "4": "PM mechanoadaptation is controlled by a tension-sensing pathway.",
+            "5": "The tension-sensing pathway is composed of c-Abl tyrosine kinase and membrane curvature regulator FBP17.",
+            "6": "FBP17 is recruited to caveolae.",
+            "7": "FBP17 induces the formation of caveolar rosettes.",
+            "8": "FBP17 deficient cells have reduced rosette density.",
+            "9": "FBP17 deficient cells lack PM tension buffering capacity under osmotic shock.",
+            "10": "FBP17 deficient cells cannot adapt to mechanical strain.",
+            "11": "Tension is transduced to the FBP17 F-BAR domain by direct phosphorylation.",
+            "12": "The phosphorylation of the FBP17 F-BAR domain is mediated by c-Abl.",
+            "13": "c-Abl is a mechanosensitive molecule.",
+            "14": "The phosphorylation modification inhibits FBP17 membrane bending activity.",
+            "15": "The phosphorylation modification releases FBP17-controlled inhibition of mDia1-dependent stress fibers.",
+            "16": "The release of FBP17-controlled inhibition of mDia1-dependent stress fibers favors membrane adaptation to increased tension.",
+            "17": "This mechanoprotective mechanism adapts the cell to changes in mechanical tension.",
+            "18": "The mechanoprotective mechanism adapts the cell by coupling PM remodeling.",
+            "19": "The mechanoprotective mechanism adapts the cell by coupling actin cytoskeleton remodeling."
+          }
+        },
+        "viewpoints": [
+          "Changes at the plasma membrane yield short-term changes in cell dynamics.",
+          "Changes at the plasma membrane have long-term effects on cell dynamics."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Collectively, these studies suggest that protein-independent signaling cascades that originate from within the plasma membrane are suitable for initiating sustained changes in cell dynamics.",
+        "references": {},
+        "viewpoints": [
+          "Protein-independent signaling cascades originating from within the plasma membrane are suitable for initiating sustained changes in cell dynamics."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Despite this, although it is evident that membrane mechanics regulate the dynamics of individual cells, the contribution of plasma membrane-derived signals to collective cell migration—independent of the direct link between adhesions and cytoskeleton and the associated biochemical signaling cascades—remains unclear.",
+        "references": {},
+        "viewpoints": [
+          "It is evident that membrane mechanics regulate the dynamics of individual cells.",
+          "The contribution of plasma membrane-derived signals to collective cell migration remains unclear when independent of the direct link between adhesions and cytoskeleton and the associated biochemical signaling cascades."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "A significant challenge in addressing this question is the lack of tools capable of dissecting the mechanical cues at the plasma membrane from the mechano-transduction through cell-cell adhesion molecules to the cytoskeleton and biochemical signals.",
+        "references": {},
+        "viewpoints": [
+          "There is a lack of tools capable of dissecting the mechanical cues at the plasma membrane from the mechano-transduction through cell-cell adhesion molecules to the cytoskeleton and biochemical signals.",
+          "The lack of tools is a significant challenge in addressing the question of the contribution of plasma membrane-derived signals to collective cell migration."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "For example, the truncation of the cytoplasmic catenin-binding domains renders E-cadherin nonfunctional, as the membrane-anchored extracellular domain alone is insufficient to sustain intercellular cell-cell adhesions [23] , [24] .",
+        "references": {
+          "23": {
+            "1": "Cadherins are transmembrane glycoproteins.",
+            "2": "Cadherins are responsible for Ca2+-dependent cell-cell adhesion.",
+            "3": "The amino acid sequences of cadherins are highly conserved in the cytoplasmic domain.",
+            "4": "The role of the cytoplasmic domain in the function of cadherins was studied by constructing expression vectors with cDNAs.",
+            "5": "The cDNAs encoded deletion mutants of E-cadherin polypeptides.",
+            "6": "The E-cadherin polypeptides had their carboxy terminus truncated at various lengths.",
+            "7": "The expression vectors were introduced into L cells by transfection.",
+            "8": "Cell lines expressing the mutant E-cadherin molecules were isolated.",
+            "9": "In all transfectants, the extracellular domain of the mutant E-cadherins was exposed on the cell surface.",
+            "10": "The extracellular domain of the mutant E-cadherins had normal Ca2+-sensitivity.",
+            "11": "The extracellular domain of the mutant E-cadherins had normal molecular size.",
+            "12": "The cells with mutant E-cadherin molecules did not show any Ca2+-dependent aggregation.",
+            "13": "The inability of cells with mutant E-cadherin molecules to show Ca2+-dependent aggregation indicates that the mutant molecules cannot mediate cell-cell binding.",
+            "14": "The mutant E-cadherin molecules could be released from cells by nonionic detergents.",
+            "15": "A fraction of normal E-cadherin molecules could not be extracted with the detergent.",
+            "16": "A fraction of normal E-cadherin molecules appeared to be anchored to the cytoskeleton at cell-cell junctions.",
+            "17": "The cytoplasmic domain regulates the cell-cell binding function of the extracellular domain of E-cadherin.",
+            "18": "The regulation of cell-cell binding by the cytoplasmic domain is possibly through interaction with some cytoskeletal components."
+          },
+          "24": {
+            "1": "In the E-cadherin-β-catenin-αE-catenin complex (CCC), mammalian αE-catenin binds F-actin weakly when there is no force.",
+            "2": "Cytosolic αE-catenin forms a homodimer that interacts more strongly with F-actin compared to αE-catenin in the CCC.",
+            "3": "The cytosolic αE-catenin homodimer is not considered important for intercellular adhesion.",
+            "4": "E-cadherin/αE-catenin chimeras that are thought to mimic the CCC can induce cell-cell adhesion.",
+            "5": "E-cadherin/αE-catenin chimeras homodimerize, which is unlike αE-catenin in the CCC.",
+            "6": "E-cadherin/αE-catenin chimeras bind F-actin strongly, unlike αE-catenin in the CCC.",
+            "7": "E-cadherin/αE-catenin chimeras inhibit the Arp2/3 complex, unlike αE-catenin in the CCC.",
+            "8": "The properties of E-cadherin/αE-catenin chimeras are similar to those of the αE-catenin homodimer.",
+            "9": "The authors designed a constitutively monomeric chimera to more accurately mimic the junctional CCC.",
+            "10": "E-cadherin-dependent cell adhesion is weaker in cells expressing the monomeric chimera compared to cells where αE-catenin homodimers are present.",
+            "11": "E-cadherin/αE-catenin chimeras used previously do not mimic αE-catenin in the native CCC.",
+            "12": "Both CCC-bound monomer and cytosolic homodimer αE-catenin are required for strong cell-cell adhesion."
+          }
+        },
+        "viewpoints": [
+          "The truncation of the cytoplasmic catenin-binding domains renders E-cadherin nonfunctional.",
+          "The membrane-anchored extracellular domain alone is insufficient to sustain intercellular cell-cell adhesions."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Here, we set out to explore the relevance of membrane-based signaling for collective cell dynamics.",
+        "references": {},
+        "viewpoints": [
+          "The study aims to explore the relevance of membrane-based signaling for collective cell dynamics."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "To selectively elicit signals that originate from within the plasma membrane, we used artificial photoswitchable cell-cell adhesions based on the cyanobacterial phytochrome 1 (Cph1), which induce cell-cell adhesions on red light illumination without directly linking to the actin cytoskeleton [25] .",
+        "references": {
+          "25": {
+            "1": "The self-assembly of different cell types into multicellular structures is challenging.",
+            "2": "The organization of multicellular structures into spatiotemporally controlled patterns is challenging.",
+            "3": "Understanding the self-assembly of multicellular structures is extremely powerful for understanding how cells function within tissues.",
+            "4": "Understanding the organization of multicellular structures into patterns is extremely powerful for bottom-up tissue engineering.",
+            "5": "The self-assembly of two cell types into multicellular architectures is independently controlled with blue and red light.",
+            "6": "Self-sorting of two cell types into distinct assemblies is achieved.",
+            "7": "Development of two cell types was required to form selective and homophilic cell-cell interactions.",
+            "8": "Photoswitchable proteins were used as artificial adhesion molecules for forming interactions under blue or red light.",
+            "9": "The interactions can be individually triggered with different colors of light.",
+            "10": "The interactions are reversible in the dark.",
+            "11": "The interactions provide noninvasive control over cell-cell adhesions.",
+            "12": "The interactions provide temporal control over cell-cell adhesions.",
+            "13": "In mixtures of the two cells, each cell type self-assembled independently upon orthogonal photoactivation.",
+            "14": "In mixtures of the two cells, cells sorted into separate assemblies based on specific self-recognition.",
+            "15": "The self-sorted multicellular architectures provide a powerful tool for producing tissue-like structures from multiple cell types.",
+            "16": "The self-sorted multicellular architectures provide a tool to investigate principles that govern tissue-like structures."
+          }
+        },
+        "viewpoints": [
+          "Artificial photoswitchable cell-cell adhesions based on cyanobacterial phytochrome 1 (Cph1) were used to selectively elicit signals that originate from within the plasma membrane.",
+          "Artificial photoswitchable cell-cell adhesions induce cell-cell adhesions on red light illumination.",
+          "Artificial photoswitchable cell-cell adhesions based on Cph1 do not directly link to the actin cytoskeleton."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "We found that an increase in cell-cell connections leads to coordinated and collective cell movement in cells that otherwise would migrate as single cells.",
+        "references": {},
+        "viewpoints": [
+          "An increase in cell-cell connections leads to coordinated and collective cell movement in cells that otherwise would migrate as single cells."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Increased cell-cell adhesions did not slow cells down, as would be expected when augmenting friction [26] , but made them faster.",
+        "references": {
+          "26": {
+            "1": "Growth factor-induced migration of endothelial cell monolayers enables embryonic development.",
+            "2": "Growth factor-induced migration of endothelial cell monolayers enables wound healing.",
+            "3": "Growth factor-induced migration of endothelial cell monolayers enables angiogenesis.",
+            "4": "Collective migration is widespread.",
+            "5": "Collective migration is therapeutically relevant.",
+            "6": "The mechanism by which cell monolayers respond to growth factor is only partially understood.",
+            "7": "The mechanism by which cell monolayers sense directional signals is only partially understood.",
+            "8": "The mechanism by which cell monolayers induce motility is only partially understood.",
+            "9": "The mechanism by which cell monolayers coordinate individual cell movements is only partially understood.",
+            "10": "RNAi was used to identify 100 regulatory proteins that enhance endothelial sheet migration into cell-free space.",
+            "11": "RNAi was used to identify 100 regulatory proteins that suppress endothelial sheet migration into cell-free space.",
+            "12": "Multiple live-cell migration parameters were measured for all siRNA perturbations.",
+            "13": "Each targeted protein primarily regulates one of four functional outputs: cell motility, directed migration, cell-cell coordination, or cell density.",
+            "14": "Cell motility regulators drive random motility in the presence of open space.",
+            "15": "Cell motility regulators drive random motility in the absence of open space.",
+            "16": "Cell motility regulators drive growth factor-independent motility in the presence or absence of open space.",
+            "17": "Directed migration regulators selectively transduce growth factor signals.",
+            "18": "Directed migration regulators direct cells along the monolayer boundary toward open space.",
+            "19": "Regulators of cell-cell coordination are growth factor-independent.",
+            "20": "Regulators of cell-cell coordination reorient randomly migrating cells inside the sheet when boundary cells begin to migrate.",
+            "21": "Cells transition from random to collective migration through a modular control system.",
+            "22": "Growth factor signals convert boundary cells into pioneers.",
+            "23": "Cells inside the monolayer reorient and follow pioneers through growth factor-independent migration.",
+            "24": "Cells inside the monolayer reorient and follow pioneers through cell-cell coordination."
+          }
+        },
+        "viewpoints": [
+          "Increased cell-cell adhesions did not slow cells down.",
+          "Increased cell-cell adhesions made cells faster."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "At the cellular level, the photoactivated increase in cell-cell adhesions resulted in an increase in membrane tension.",
+        "references": {},
+        "viewpoints": [
+          "The photoactivated increase in cell-cell adhesions resulted in an increase in membrane tension at the cellular level."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Notably, it also activated the enzyme phospholipase D2 (PLD2), resulting in an increase in phosphatidic acid (PA) and activation of mammalian target of rapamycin (mTOR) signaling.",
+        "references": {},
+        "viewpoints": [
+          "The photoactivated increase in cell-cell adhesions activated the enzyme phospholipase D2 (PLD2).",
+          "Activation of phospholipase D2 (PLD2) resulted in an increase in phosphatidic acid (PA).",
+          "Activation of phospholipase D2 (PLD2) resulted in activation of mammalian target of rapamycin (mTOR) signaling."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "These findings demonstrate that mechanical coupling of cells at their membranes via artificial adhesion proteins that do not link directly to the actin cytoskeleton induces increased membrane tension, which is sufficient to achieve collective cell migration.",
+        "references": {},
+        "viewpoints": [
+          "Mechanical coupling of cells at their membranes via artificial adhesion proteins that do not link directly to the actin cytoskeleton induces increased membrane tension.",
+          "Increased membrane tension is sufficient to achieve collective cell migration."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56941-4_with_abstracts",
+    "base_id": "s41467-025-56941-4",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56941-4_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

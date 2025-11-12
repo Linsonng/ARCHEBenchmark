@@ -1,0 +1,738 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Understanding and predicting phase transformations is one of the crucial tasks of condensed matter physics and materials science. Irradiation, which induces lattice atom displacement, is a common means of probing phase transformation dynamics, since irradiation can provide the driving force for overcoming the energy barrier between stable and metastable phases [1] . Study of irradiation-induced polymorphism has been used to elucidate transformation mechanisms in a broad range of both ionic-covalent [2] , [3] , [4] , [5] , [6] and metallic materials [7] , [8] . Many materials undergo multi-stage phase transformations under irradiation, such as the transition of pyrochlore- or spinel-structured complex oxides first to disordered defect-fluorite structures, then to amorphous structures as irradiation proceeds [3] , [4] , [9] . MAX phases show similar behavior in response to irradiation. These ternary layered carbides/nitrides, known as metallic ceramics [10] , [11] , [12] , have been proposed as candidate materials for wide-ranging applications due to their unique properties, such as nuclear fuel cladding materials and joint materials [13] , [14] , [15] , [16] . They also exhibit a unique multiphase transformation from an initial hex-phase (hexagonal structure) to a γ-phase (hexagonal close-packed structure), and then to a fcc-phase (face-centered cubic structure) under irradiation [17] , [18] , [19] , [20] , [21] . However, almost all analyses to date were based on the initial phase or structure, and the role of intermediate phases in the transformation process has been rarely studied. It is a challenge to understand the mechanisms by only analyzing the initial phases. For example, antisite defect formation energy in the initial phases was considered as a criterion to assess the resistance to the irradiation-induced phase transformation, yet this approach cannot fully explain the phase behavior or offer a generalizable predictive capability, since it is restricted to the early stages of the phase transformation process, prior to the formation of the intermediate γ-phase [17] , [22] . For the material family of MAX phases (over 340 types), previous irradiation experiments were mostly performed under ex situ irradiation conditions, which does not provide direct observation of the evolving atomic structure as a function of irradiation damage level, and thus fails to describe the complete, multi-stage phase transformation pathway. In addition, prior analyses also mainly focused on the initial hexagonal phases [23] , [24] , [25] , [26] and provided only a phenomenological description of irradiation-induced phase behaviors [18] , [19] , [27] , [28] . No substantial theoretical investigation of compositional trends in the dynamics of these multi-stage phase transformations has been reported, thus far. Hence, there is a clear need for a comprehensive understanding of the multi-stage phase transformation behavior in this class of materials. In this work, we report an investigation of the distinct phase transformation behaviors of three representative MAX phases, M 2 AlC (M=Cr, V, Nb), under in situ ion irradiation with real-time TEM observation. The anomalous case of Cr 2 AlC is observed, which does not follow the common hex-γ-fcc phase transition pathway as in V 2 AlC and Nb 2 AlC. Instead, Cr 2 AlC follows a hex-γ-amorphous transition pathway, without forming the fcc-phase. Using ab initio calculations, we explain the compositional origin of these phase transformation dynamics. Unlike prior computational work which considered only the energetics of structural transitions from the initial hex-phase [23] , [24] , [25] , [26] , this improved description of phase energetics captures the key role of the intermediate γ-phase in mediating the radiation response. An atomic-scale mechanism for the observed phase behavior is developed through the quantitative description of energetics along the transformation pathway and the underlying characteristics associated with the lattice and electronic structures of the intermediate γ-phase. We ultimately develop a generalized rule for prediction of the extreme environment phase transition behaviors of MAX phases of varying composition based on atomic radius and electronegativity. This method can be potentially extended to similar complex ceramics that undergo multi-stage phase transformations.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Understanding and predicting phase transformations is one of the crucial tasks of condensed matter physics and materials science.",
+        "references": {},
+        "viewpoints": [
+          "Understanding phase transformations is a crucial task of condensed matter physics.",
+          "Predicting phase transformations is a crucial task of condensed matter physics.",
+          "Understanding phase transformations is a crucial task of materials science.",
+          "Predicting phase transformations is a crucial task of materials science."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Irradiation, which induces lattice atom displacement, is a common means of probing phase transformation dynamics, since irradiation can provide the driving force for overcoming the energy barrier between stable and metastable phases [1].",
+        "references": {
+          "1": []
+        },
+        "viewpoints": [
+          "Irradiation induces lattice atom displacement.",
+          "Irradiation is a common means of probing phase transformation dynamics.",
+          "Irradiation provides the driving force for overcoming the energy barrier between stable and metastable phases."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Study of irradiation-induced polymorphism has been used to elucidate transformation mechanisms in a broad range of both ionic-covalent [2], [3], [4], [5], [6] and metallic materials [7], [8].",
+        "references": {
+          "2": {
+            "1": "Theoretical demonstrations indicate that particle irradiation may destabilize graphitic structures.",
+            "2": "Particle irradiation may destabilize graphitic structures concerning low-pressure growth of diamond.",
+            "3": "The destabilization of graphitic structures is due to the large difference in the cross sections for irradiation-induced displacements of carbon atoms between diamond and graphite.",
+            "4": "A nonequilibrium phase diagram is calculated.",
+            "5": "The nonequilibrium phase diagram shows the stability of graphite and diamond as a function of the displacement rate of atoms.",
+            "6": "The theoretical results relate to the experimentally observed transformation of spherical graphitic onions to diamond.",
+            "7": "The transformation of spherical graphitic onions to diamond is observed under electron irradiation."
+          },
+          "3": {
+            "1": "The propensity of a material to accommodate lattice point defects is used to predict the radiation performance of a variety of complex oxides.",
+            "2": "Oxides possessing the fluorite crystal structure should accept radiation-induced defects into their lattices far more readily than oxides based on the pyrochlore crystal structure.",
+            "3": "Preliminary radiation damage experiments substantiate the prediction that fluorites are inherently more radiation resistant than pyrochlores.",
+            "4": "The results may permit the tailoring of chemical durability and radiation tolerance of potential hosts for actinides.",
+            "5": "The results may permit the tailoring of chemical durability and radiation tolerance of potential hosts for radioactive wastes."
+          },
+          "4": {
+            "1": "Ceramics used in hostile environments must be highly durable.",
+            "2": "Ceramics used in hostile environments must be especially resistant to radiation damage effects.",
+            "3": "Ceramics used in nuclear reactors must be highly durable and especially resistant to radiation damage effects.",
+            "4": "Ceramics used for waste immobilization must be highly durable and especially resistant to radiation damage effects.",
+            "5": "Ceramics used in hostile environments must not be prone to amorphization.",
+            "6": "Ceramics used in hostile environments must not be prone to swelling.",
+            "7": "Few ceramics are resistant to both amorphization and swelling.",
+            "8": "Much work has been devoted in recent years to identifying radiation-tolerant ceramics.",
+            "9": "Much work has been devoted in recent years to identifying the characteristics that promote radiation tolerance in ceramics.",
+            "10": "The trends in radiation damage behaviour are examined for families of compounds related by crystal structure.",
+            "11": "The study considers oxides with structures related to the fluorite crystal structure.",
+            "12": "Improved amorphization resistance characteristics are found in compounds that have a natural tendency to accommodate lattice disorder."
+          },
+          "5": {
+            "1": "Radiation tolerance is defined as the ability of crystalline materials to withstand the accumulation of radiation-induced disorder.",
+            "2": "At sufficiently high fluences, all known semiconductors result in either very high disorder levels or amorphization.",
+            "3": "Gamma/beta (γ/β) double polymorph Ga₂O₃ structures exhibit remarkably high radiation tolerance.",
+            "4": "Gamma/beta (γ/β) double polymorph Ga₂O₃ structures at room temperature tolerate a disorder equivalent to hundreds of displacements per atom without severe degradations of crystallinity.",
+            "5": "Silicon becomes amorphous when the lattice atoms are displaced just once.",
+            "6": "The high radiation tolerance of γ-Ga₂O₃ is explained by the combined properties of the Ga- and O- sublattices.",
+            "7": "The O-sublattice in γ-Ga₂O₃ exhibits a strong recrystallization trend to recover the face-centered-cubic stacking.",
+            "8": "The O atoms in γ-Ga₂O₃ experience stronger displacement than Ga atoms during the active periods of cascades.",
+            "9": "The origin of the β-to-γ Ga₂O₃ transformation is explained as a function of the increased disorder in β-Ga₂O₃.",
+            "10": "The origin of the β-to-γ Ga₂O₃ transformation is studied as a function of the chemical nature of the implanted atoms.",
+            "11": "Gamma/beta (γ/β) double polymorph Ga₂O₃ structures benchmark a class of universal radiation-tolerant semiconductors due to their radiation tolerance properties."
+          },
+          "6": {
+            "1": "Atomic disorder in irradiated materials is investigated using x-ray diffraction.",
+            "2": "Cubic SiC single crystals are used as a model material to investigate atomic disorder in irradiated materials.",
+            "3": "X-ray diffraction can determine depth-resolved strain profiles.",
+            "4": "X-ray diffraction can determine damage profiles in irradiated materials.",
+            "5": "X-ray diffraction can be efficiently used to determine the probability density function (PDF) of atomic displacements within cubic SiC single crystals.",
+            "6": "The determination of the probability density function (PDF) of atomic displacements is achieved by analyzing the diffraction-order dependence of the damage profiles.",
+            "7": "Atomic displacements within the crystal undergo Lévy flights.",
+            "8": "The displacement probability density function (PDF) exhibits heavy tails.",
+            "9": "The tail index of the displacement PDF is in a range far from the commonly assumed Gaussian case.",
+            "10": "The heavy tails of the displacement PDF are crucial to account for the amorphization kinetics in SiC.",
+            "11": "A dimensionless parameter to quantify disordering is introduced from the retrieved displacement PDFs.",
+            "12": "The introduced dimensionless parameter is consistent with independent measurements using ion channeling.",
+            "13": "The introduced dimensionless parameter is consistent with molecular dynamics calculations."
+          },
+          "7": {
+            "1": "Ion-irradiated tungsten undergoes a series of nonlinear structural transformations with increasing radiation exposure.",
+            "2": "Spatially resolved x-ray Laue diffraction and atomic-scale simulations are combined to observe how ion-irradiated tungsten transforms structurally.",
+            "3": "Nanoscale defect-induced deformations accumulate above 0.02 displacements per atom (dpa).",
+            "4": "The accumulated defect-induced deformations lead to highly fluctuating strains at approximately 0.1 dpa.",
+            "5": "Highly fluctuating strains collapse into a driven quasisteady structural state above approximately 1 dpa.",
+            "6": "The driven asymptotic state is characterized by finely dispersed vacancy defects coexisting with an extended dislocation network.",
+            "7": "The driven asymptotic state exhibits positive volumetric swelling.",
+            "8": "Positive volumetric swelling occurs due to the creation of new crystallographic planes through self-interstitial coalescence.",
+            "9": "The driven asymptotic state exhibits negative lattice strain."
+          },
+          "8": {
+            "1": "A nanoscale hierarchical dual-phase structure forms in a nanocrystalline NiFeCoCrCu high-entropy-alloy film via ion irradiation.",
+            "2": "The original single-phase face-centered-cubic structure partially transforms into alternating nanometer layers of a body-centered-cubic structure under extreme energy deposition and thermal energy dissipation induced by energetic particles.",
+            "3": "A fundamentally new phenomenon is revealed during the transformation from face-centered-cubic structure to body-centered-cubic structure.",
+            "4": "The orientation relationship between the face-centered-cubic and body-centered-cubic structures follows the Nishiyama–Wasserman relationship.",
+            "5": "The orientation relationship is (011)<sub>BCC</sub> || (1̅1̅1)<sub>FCC</sub> and [100]<sub>BCC</sub> || [1̅1̅0]<sub>FCC</sub>.",
+            "6": "Simulation results indicate that chromium, as a body-centered-cubic stabilizing element, exhibits a tendency to segregate to the stacking faults.",
+            "7": "High densities of stacking faults and twin boundaries in each nanocrystalline grain accelerate the nucleation and growth of the body-centered-cubic phase during irradiation.",
+            "8": "Adjusting the irradiation parameters allows the achievement of desired thicknesses of the face-centered-cubic and body-centered-cubic phases in the laminates.",
+            "9": "This work demonstrates the controlled formation of a dual-phase nanolaminate structure under ion irradiation.",
+            "10": "This work provides a strategy for designing new derivative structures of high-entropy alloys."
+          }
+        },
+        "viewpoints": [
+          "Study of irradiation-induced polymorphism has been used to elucidate transformation mechanisms in ionic-covalent materials.",
+          "Study of irradiation-induced polymorphism has been used to elucidate transformation mechanisms in metallic materials."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Many materials undergo multi-stage phase transformations under irradiation, such as the transition of pyrochlore- or spinel-structured complex oxides first to disordered defect-fluorite structures, then to amorphous structures as irradiation proceeds [3], [4], [9].",
+        "references": {
+          "3": {
+            "1": "The propensity of a material to accommodate lattice point defects is used to predict the radiation performance of a variety of complex oxides.",
+            "2": "Oxides possessing the fluorite crystal structure should accept radiation-induced defects into their lattices far more readily than oxides based on the pyrochlore crystal structure.",
+            "3": "Preliminary radiation damage experiments substantiate the prediction that fluorites are inherently more radiation resistant than pyrochlores.",
+            "4": "The results may permit the tailoring of chemical durability and radiation tolerance of potential hosts for actinides.",
+            "5": "The results may permit the tailoring of chemical durability and radiation tolerance of potential hosts for radioactive wastes."
+          },
+          "4": {
+            "1": "Ceramics used in hostile environments must be highly durable.",
+            "2": "Ceramics used in hostile environments must be especially resistant to radiation damage effects.",
+            "3": "Ceramics used in nuclear reactors must be highly durable and especially resistant to radiation damage effects.",
+            "4": "Ceramics used for waste immobilization must be highly durable and especially resistant to radiation damage effects.",
+            "5": "Ceramics used in hostile environments must not be prone to amorphization.",
+            "6": "Ceramics used in hostile environments must not be prone to swelling.",
+            "7": "Few ceramics are resistant to both amorphization and swelling.",
+            "8": "Much work has been devoted in recent years to identifying radiation-tolerant ceramics.",
+            "9": "Much work has been devoted in recent years to identifying the characteristics that promote radiation tolerance in ceramics.",
+            "10": "The trends in radiation damage behaviour are examined for families of compounds related by crystal structure.",
+            "11": "The study considers oxides with structures related to the fluorite crystal structure.",
+            "12": "Improved amorphization resistance characteristics are found in compounds that have a natural tendency to accommodate lattice disorder."
+          },
+          "9": {
+            "1": "Understanding radiation damage evolution in complex materials is crucial for developing next-generation nuclear energy sources.",
+            "2": "Predicting radiation damage evolution in complex materials is crucial for developing next-generation nuclear energy sources.",
+            "3": "Ion beam irradiation, transmission electron microscopy, and X-ray diffraction show that the amorphization resistance of spinel compounds correlates directly with the energy to disorder the structure.",
+            "4": "The amorphization resistance of spinel compounds correlates directly with the energy to disorder the structure.",
+            "5": "The behavior of spinel compounds is contrary to what is observed in pyrochlores regarding amorphization resistance.",
+            "6": "Atomistic simulation techniques are used to analyze the behavior of spinel compounds.",
+            "7": "Structural defects on the cation sublattice are present in spinel but not in pyrochlore.",
+            "8": "The behavior of spinel compounds is ascribed to structural defects on the cation sublattice.",
+            "9": "There are kinetic pathways for the relaxation of disorder in spinel.",
+            "10": "Kinetic pathways for the relaxation of disorder in spinel are absent in pyrochlore.",
+            "11": "The presence of structural defects in spinel leads to kinetic pathways for the relaxation of disorder.",
+            "12": "The correlation between amorphization resistance and disordering energetics in spinel is direct.",
+            "13": "The correlation between amorphization resistance and disordering energetics in spinel is the opposite of what is observed in pyrochlores.",
+            "14": "These results provide new insight into the origins of amorphization resistance in complex oxides.",
+            "15": "The new insight provided by these results applies beyond fluorite derivatives."
+          }
+        },
+        "viewpoints": [
+          "Many materials undergo multi-stage phase transformations under irradiation.",
+          "Pyrochlore-structured complex oxides transition first to disordered defect-fluorite structures under irradiation.",
+          "Spinel-structured complex oxides transition first to disordered defect-fluorite structures under irradiation.",
+          "Pyrochlore-structured complex oxides transition to amorphous structures as irradiation proceeds.",
+          "Spinel-structured complex oxides transition to amorphous structures as irradiation proceeds."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "MAX phases show similar behavior in response to irradiation.",
+        "references": {},
+        "viewpoints": [
+          "MAX phases show similar multi-stage phase transformation behavior in response to irradiation."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "These ternary layered carbides/nitrides, known as metallic ceramics [10], [11], [12], have been proposed as candidate materials for wide-ranging applications due to their unique properties, such as nuclear fuel cladding materials and joint materials [13], [14], [15], [16].",
+        "references": {
+          "10": [],
+          "11": [],
+          "12": {
+            "1": "MAX phases are nanolayered.",
+            "2": "MAX phases are hexagonal.",
+            "3": "MAX phases are machinable.",
+            "4": "MAX phases are early transition-metal carbides and nitrides.",
+            "5": "In MAX phases, n equals 1, 2, or 3.",
+            "6": "In MAX phases, M is an early transition metal.",
+            "7": "In MAX phases, A is an A-group element, mostly from groups 13 and 14.",
+            "8": "In MAX phases, X is carbon (C) and/or nitrogen (N).",
+            "9": "MAX phases have a unique combination of metallic properties.",
+            "10": "MAX phases have a unique combination of ceramic properties.",
+            "11": "MAX phases are precursors for MXenes.",
+            "12": "There is a dramatic increase in interest in MXenes for a large host of applications.",
+            "13": "The value of MAX phases is increased by being precursors for MXenes and the increasing interest in MXenes.",
+            "14": "The structure of most, if not all, known MAX phases is described in this review.",
+            "15": "This review covers approximately 155 MAX compositions.",
+            "16": "16 different A elements have been incorporated into MAX phases.",
+            "17": "14 different M elements have been incorporated into MAX phases.",
+            "18": "There has been a recent discovery of quaternary in-plane ordered MAX phases.",
+            "19": "There has been a recent discovery of quaternary out-of-plane ordered MAX phases.",
+            "20": "The discovery of quaternary in- and out-of-plane ordered MAX phases opens the door to the discovery of many more types of MAX phases.",
+            "21": "The chemical diversity of MAX phases holds the key to eventually optimizing properties.",
+            "22": "Optimizing properties of MAX phases will be important for prospective applications.",
+            "23": "Many of the newer quaternary MAX phases have yet to be characterized.",
+            "24": "Much work remains to be done to characterize newer quaternary and higher MAX phases."
+          },
+          "13": {
+            "1": "In severe accident conditions with loss of active cooling in the core, zirconium alloys undergo rapid oxidation by high temperature steam.",
+            "2": "Zirconium alloys are used as fuel cladding materials for current light water reactors (LWR).",
+            "3": "Rapid oxidation of zirconium alloys by high temperature steam results in consequent hydrogen generation.",
+            "4": "Novel fuel technologies are named accident tolerant fuels (ATF).",
+            "5": "Accident tolerant fuels (ATF) seek to improve the endurance of severe accident conditions in light water reactors (LWRs).",
+            "6": "Accident tolerant fuels (ATF) aim to eliminate or at least mitigate detrimental steam-cladding interaction.",
+            "7": "Most accident tolerant fuel (ATF) concepts are expected to work within the design framework of current and future light water reactors.",
+            "8": "Accident tolerant fuel (ATF) concepts are required to match or exceed the performance of conventional fuel in normal conditions to work within the design framework.",
+            "9": "This study analyzed the neutronic performance of accident tolerant fuels (ATF).",
+            "10": "The study focused on the neutronic performance of ATF when employed in both pressurized and boiling water reactors.",
+            "11": "Two concepts were evaluated in the study regarding accident tolerant fuels (ATF).",
+            "12": "The first concept involves coating the exterior of zirconium-alloy cladding with thin ceramics to limit zirconium available for reaction with high-temperature steam.",
+            "13": "The second concept involves replacing zirconium alloys with alternative materials possessing slower oxidation kinetics and reduced hydrogen production.",
+            "14": "The findings show that ceramic coatings should remain 10–30 μm thick.",
+            "15": "Maintaining ceramic coatings at 10–30 μm thick is necessary to limit the neutronic penalty.",
+            "16": "Alternative cladding materials enhance neutron loss compared to zirconium-alloys.",
+            "17": "Silicon carbide (SiC) is an exception among alternative cladding materials in the context of enhancing neutron loss.",
+            "18": "An extensive parametric analysis was conducted in the study.",
+            "19": "Reference performance metrics can be met by employing cladding that is 300-μm or less thick.",
+            "20": "Increasing fuel enrichment by up to 1.74% can help meet reference performance metrics.",
+            "21": "The ability to meet performance metrics depends on the material and geometry according to the analysis."
+          },
+          "14": {
+            "1": "Ti₂AlC MAX phase compound coatings have been successfully deposited on Zircaloy-4 test flats.",
+            "2": "The goal of depositing Ti₂AlC MAX phase compound coatings on Zircaloy-4 test flats is to enhance the accident tolerance of LWR fuel cladding.",
+            "3": "A low temperature powder spray process, also known as cold spray, has been used to deposit coatings approximately 90 μm in thickness.",
+            "4": "The coatings were deposited using powder particles of less than 20 μm.",
+            "5": "X-ray diffraction analysis showed the phase-content of the deposited coatings to be identical to the powders.",
+            "6": "No phase transformation had occurred during the coating deposition process.",
+            "7": "No oxidation had occurred during the coating deposition process.",
+            "8": "The coating exhibited a high hardness of about 800 Hₖ.",
+            "9": "The coating's wear resistance was significantly superior to the Zry-4 substrate in pin-on-disk wear tests using an abrasive ruby ball counter-surface.",
+            "10": "Scratch tests revealed the coatings to be well-adhered to the Zircaloy-4 substrate.",
+            "11": "Mechanical integrity of claddings is required for fretting wear resistance.",
+            "12": "Mechanical integrity of claddings is required for resisting wear during handling and insertion.",
+            "13": "Air oxidation tests at 700 °C showed the coatings to be significantly more oxidation resistant compared to Zircaloy-4.",
+            "14": "Simulated LOCA tests at 1005 °C in a steam environment showed the coatings to be significantly more oxidation resistant compared to Zircaloy-4.",
+            "15": "The coatings can potentially provide accident tolerance to nuclear fuel cladding."
+          },
+          "15": {
+            "1": "The study reports on the effect of neutron irradiation on polycrystalline samples of Ti₃AlC₂, Ti₂AlC, Ti₃SiC₂, and Ti₂AlN.",
+            "2": "The neutron irradiation is up to 0.1 displacements per atom at temperatures of 360(20) °C or 695(25) °C.",
+            "3": "Rietveld refinement of X-ray diffraction patterns was conducted on the irradiated samples.",
+            "4": "Irradiation enhanced the dissociation into TiC of the Ti₃AlC₂ phase more prominently than Ti₃SiC₂ phase.",
+            "5": "Ti₂AlN showed an increase in TiN content after irradiation.",
+            "6": "Ti₂AlN formed Ti₄AlN₃ after irradiation.",
+            "7": "Ti₂AlC was quite stable under the specified irradiation conditions.",
+            "8": "Dislocation loops formed in Ti₂AlC after irradiation at 360(20) °C.",
+            "9": "Dislocation loops formed in Ti₃AlC₂ after irradiation at 360(20) °C.",
+            "10": "The room temperature electrical resistivity of all samples increased by an order of magnitude after irradiation at 360(20) °C.",
+            "11": "The room temperature electrical resistivity of all samples increased by only 25% after irradiation at 695(25) °C.",
+            "12": "The results provide evidence for the dynamic recovery of the MAX phases at temperatures as low as 695(25) °C.",
+            "13": "Ti₂AlC appears to be a promising material for high-temperature nuclear applications based on preliminary results.",
+            "14": "Ti₃SiC₂ appears to be a promising material for high-temperature nuclear applications based on preliminary results."
+          },
+          "16": {
+            "1": "Defects form in polycrystalline Ti₃SiC₂ and Ti₃AlC₂ samples in response to neutron irradiation.",
+            "2": "Ti₃SiC₂ and Ti₃AlC₂ samples were exposed to neutron irradiation at fluences of ≈6 × 10²⁰ n/m², 5 × 10²¹ n/m², and 1.7 × 10²² n/m².",
+            "3": "The irradiation temperatures for Ti₃SiC₂ and Ti₃AlC₂ samples were 121°C, 735°C, and 1085°C, with respective uncertainties of 12°C, 6°C, and 68°C.",
+            "4": "Fluence of ≈6 × 10²⁰ n/m² corresponds to 0.14 displacements per atom (dpa).",
+            "5": "Fluence of 5 × 10²¹ n/m² corresponds to 1.6 displacements per atom (dpa).",
+            "6": "Fluence of 1.7 × 10²² n/m² corresponds to 3.4 displacements per atom (dpa).",
+            "7": "Black spots are observed in Ti₃SiC₂ after irradiation to 0.14 dpa at 121°C and 735°C.",
+            "8": "Black spots are observed in Ti₃AlC₂ after irradiation to 0.14 dpa at 121°C and 735°C.",
+            "9": "The observation of black spots in Ti₃SiC₂ and Ti₃AlC₂ is done via transmission electron microscopy.",
+            "10": "Basal dislocation loops are observed in Ti₃SiC₂ after irradiation to 1.6 dpa at 735°C.",
+            "11": "Basal dislocation loops with a Burgers vector of b = ½ [0001] are observed in Ti₃SiC₂.",
+            "12": "Loop diameters of 21 nm, with an uncertainty of 6 nm, are observed after 1.6 dpa.",
+            "13": "Basal dislocation loops are observed in Ti₃SiC₂ after irradiation to 3.4 dpa at 735°C.",
+            "14": "Loop diameters of 30 nm, with an uncertainty of 8 nm, are observed after 3.4 dpa.",
+            "15": "Larger dislocation loops are observed in Ti₃AlC₂ after 3.4 dpa at 735°C.",
+            "16": "The diameter of the dislocation loops in Ti₃AlC₂ is 75 nm, with an uncertainty of 34 nm.",
+            "17": "Stacking faults are also observed in Ti₃AlC₂ after 3.4 dpa at 735°C.",
+            "18": "Impurity particles of TiC form extensive dislocation loops under all conditions.",
+            "19": "Stacking fault TiC platelets in the MAX phases form extensive dislocation loops under all conditions.",
+            "20": "Cavities are observed at grain boundaries after 3.4 dpa irradiation.",
+            "21": "Cavities are observed within stacking faults after 3.4 dpa irradiation.",
+            "22": "Extensive cavity formation is observed in the TiC regions at 1085°C.",
+            "23": "Denuded zones on the order of 1 μm are observed in Ti₃SiC₂ after irradiation to 3.4 dpa at 735°C.",
+            "24": "Small grains, 3–5 μm in diameter, are damage-free after irradiation at 1085°C at a dose of 3.4 dpa.",
+            "25": "The presence of the A-layers in the MAX phases considerably enhances their irradiation tolerance.",
+            "26": "The results confirm the enhancement of irradiation tolerance by A-layers in the MAX phases.",
+            "27": "Ti₃SiC₂ is a promising candidate for high-temperature nuclear applications based on these results and up to 3.4 dpa.",
+            "28": "For Ti₃SiC₂ to remain a promising candidate for high-temperature nuclear applications, the temperature must remain greater than 700°C."
+          }
+        },
+        "viewpoints": [
+          "MAX phases are ternary layered carbides/nitrides known as metallic ceramics.",
+          "MAX phases have been proposed as candidate materials for wide-ranging applications.",
+          "MAX phases have been proposed as nuclear fuel cladding materials due to their unique properties.",
+          "MAX phases have been proposed as joint materials due to their unique properties."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "They also exhibit a unique multiphase transformation from an initial hex-phase (hexagonal structure) to a γ-phase (hexagonal close-packed structure), and then to a fcc-phase (face-centered cubic structure) under irradiation [17], [18], [19], [20], [21].",
+        "references": {
+          "17": {
+            "1": "Atomic disordering in materials alters the physical properties of materials.",
+            "2": "Atomic disordering in materials alters the chemical properties of materials.",
+            "3": "Atomic disordering in materials can affect the performance of materials.",
+            "4": "Understanding the nature of structural disordering in complex ceramic materials is challenging.",
+            "5": "The difficulty of direct, atomic-scale experimental observations is a reason for the challenge in understanding the nature of structural disordering in complex ceramic materials.",
+            "6": "This report includes the direct imaging of ion irradiation-induced antisite defects in M_{n+1}AX_{n} phases.",
+            "7": "Double C_{S}-corrected scanning transmission electron microscopy is used for imaging ion irradiation-induced antisite defects in M_{n+1}AX_{n} phases.",
+            "8": "There is compelling evidence of order-to-disorder phase transformations in M_{n+1}AX_{n} phases.",
+            "9": "The conventional view has been that irradiation causes phase decomposition to binary fcc-structured M_{n+1}X_{n}.",
+            "10": "This evidence overturns the conventional view that irradiation causes phase decomposition to binary fcc-structured M_{n+1}X_{n}.",
+            "11": "Formation of uniformly distributed cation antisite defects occurs.",
+            "12": "Rearrangement of X anions occurs.",
+            "13": "Disordered solid solution γ-(M_{n+1}A)X_{n} phases are formed at low ion fluences.",
+            "14": "There are gradual transitions to solid solution fcc-structured (M_{n+1}A)X_{n} phases following the formation of disordered solid solution γ-(M_{n+1}A)X_{n} phases.",
+            "15": "This study provides a comprehensive understanding of order-to-disorder transformations in M_{n+1}AX_{n} phases.",
+            "16": "This study proposes a method for the synthesis of new solid solution (M_{n+1}A)X_{n} phases.",
+            "17": "The synthesis method involves tailoring the disorder in the material."
+          },
+          "18": [],
+          "19": {
+            "1": "Phase transitions in hcp M<sub>n+1</sub>AX<sub>n</sub> phases can be induced by 1 MeV Au<sup>+</sup> ion irradiation.",
+            "2": "The investigation of phase transitions in hcp M<sub>n+1</sub>AX<sub>n</sub> phases was done using ion fluences ranging from 1 × 10<sup>14</sup> to 2 × 10<sup>16</sup> ions cm<sup>−2</sup>.",
+            "3": "Transmission electron microscopy (TEM) and synchrotron grazing incidence X-ray diffraction (GIXRD) were used to investigate phase transitions in hcp M<sub>n+1</sub>AX<sub>n</sub> phases.",
+            "4": "Structural evolutions induced by ion irradiation were observed in hcp M<sub>n+1</sub>AX<sub>n</sub> phases.",
+            "5": "High-resolution TEM (HRTEM) imaging was used to observe irradiation-induced structural evolutions.",
+            "6": "Selected area electron diffraction (SAED) was used to observe irradiation-induced structural evolutions.",
+            "7": "Atomic-scale mechanisms for the phase transitions were determined.",
+            "8": "Phase contrast imaging was used to determine atomic-scale mechanisms for the phase transitions.",
+            "9": "Electron diffraction pattern (EDP) simulations were used to determine atomic-scale mechanisms for the phase transitions.",
+            "10": "The initial hcp phases transformed into intermediate γ-phases.",
+            "11": "The initial hcp phases transformed into fcc phases.",
+            "12": "Transformations to γ-phases and fcc phases were driven by the formation of Ti/Al antisite defects.",
+            "13": "Extended stacking faults induced by ion irradiation drove transformations to intermediate γ-phases and fcc phases.",
+            "14": "The transformation behavior of Ti<sub>2</sub>AlN was compared with Ti<sub>2</sub>AlC and Ti<sub>4</sub>AlN<sub>3</sub> under the same irradiation conditions.",
+            "15": "Experimental data and first-principles calculations were used to compare transformation behavior under ion irradiation.",
+            "16": "The role of the X parameter in the radiation responses of M<sub>n+1</sub>AX<sub>n</sub> phases was elucidated.",
+            "17": "The role of the n parameter in the radiation responses of M<sub>n+1</sub>AX<sub>n</sub> phases was elucidated.",
+            "18": "The susceptibilities of materials in the Ti–Al–X system to irradiation-induced phase transitions were determined.",
+            "19": "The bonding characteristics of MAX phases affect their susceptibilities to irradiation-induced phase transitions.",
+            "20": "The compositions of MAX phases affect their susceptibilities to irradiation-induced phase transitions.",
+            "21": "Ti<sub>2</sub>AlC is slightly less susceptible to radiation-induced phase transformation than Ti<sub>2</sub>AlN.",
+            "22": "The stronger Ti–Al bond covalency in Ti<sub>2</sub>AlN is a reason for its susceptibility to radiation-induced phase transformation.",
+            "23": "Ti<sub>4</sub>AlN<sub>3</sub> is more resistant to radiation-induced phase transformations than Ti<sub>2</sub>AlN.",
+            "24": "The lower Al content in Ti<sub>4</sub>AlN<sub>3</sub> is a reason for its resistance to radiation-induced phase transformations.",
+            "25": "The lower anion vacancy ratio in Ti<sub>4</sub>AlN<sub>3</sub> is a reason for its resistance to radiation-induced phase transformations."
+          },
+          "20": {
+            "1": "The strongly environment radiation source is a significant concern for structure materials applied in the innovative nuclear energy system.",
+            "2": "The strongly environment radiation source will severely degrade materials performance, especially at high temperature.",
+            "3": "The mechanisms of the anti-irradiation properties in Ti3AlC2, a typical MAX phase material, were explored.",
+            "4": "Ti3AlC2 shows excellent irradiation damage tolerance and resistance to amorphization.",
+            "5": "A series of 1 MeV C4+ ions irradiation experiments were conducted on Ti3AlC2 at different temperatures (RT, 300°C, 500°C, and 800°C).",
+            "6": "The anti-irradiation properties of Ti3AlC2 were systematically investigated using Grazing Incidence X-ray Diffraction (GIXRD).",
+            "7": "The anti-irradiation properties of Ti3AlC2 were systematically investigated using Raman spectra.",
+            "8": "The anti-irradiation properties of Ti3AlC2 were systematically investigated using slow positron annihilation Doppler Broadening Spectroscopy (DBS).",
+            "9": "The anti-irradiation properties of Ti3AlC2 were systematically investigated using high resolution Transmission Electron Microscopy (HRTEM).",
+            "10": "An entire microstructure phase transformation process of Ti3AlC2 from α to β to γ and to perfect fcc structure phase induced by irradiation at RT has been found and confirmed for the first time.",
+            "11": "The inverse (recovery) process of phase transformation of Ti3AlC2 under high temperature (≥300 °C) irradiation conditions has been found and confirmed for the first time.",
+            "12": "Simple vacancies are induced by irradiation in Ti3AlC2.",
+            "13": "The density of simple vacancies in Ti3AlC2 gets saturated above 5 × 10^15 ions/cm^2 fluences.",
+            "14": "The phase transformation and recovery processes are primary reasons for the excellent irradiation damage tolerance of Ti3AlC2.",
+            "15": "The vacancy saturation phenomenon is a primary reason for the excellent irradiation damage tolerance of Ti3AlC2.",
+            "16": "The phase transformation and recovery processes contribute to the resistance to amorphization in Ti3AlC2.",
+            "17": "The vacancy saturation phenomenon contributes to the resistance to amorphization in Ti3AlC2.",
+            "18": "The micro strain in Ti3AlC2 is affected by microstructure transformation.",
+            "19": "The lattice parameters in Ti3AlC2 are affected by microstructure transformation.",
+            "20": "The effects of microstructure transformation on micro strain and lattice parameters have been discussed.",
+            "21": "Ti3AlC2 materials show good anti-irradiation properties, especially at high temperature.",
+            "22": "Ti3AlC2 is a primary candidate as the coating of the cladding material in the Chinese ADS project.",
+            "23": "Ti3AlC2 is a primary candidate as the spallation target beam windows material in the Chinese ADS project.",
+            "24": "Studies on materials like Ti3AlC2 provide a promising new concept for designing the structural materials for innovative nuclear energy systems.",
+            "25": "Studies on materials like Ti3AlC2 provide a promising new way for designing the structural materials for innovative nuclear energy systems."
+          },
+          "21": {
+            "1": "Phase transitions in Ti₃AlC₂ with sequential He ions implantation and Fe ions irradiation at room temperature were investigated.",
+            "2": "He bubble evolution in Ti₃AlC₂ with sequential He ions implantation and Fe ions irradiation at room temperature was investigated.",
+            "3": "Grazing incidence X-ray diffraction was used to investigate phase transitions and He bubble evolution in Ti₃AlC₂.",
+            "4": "Transmission electron microscopy was used to investigate phase transitions and He bubble evolution in Ti₃AlC₂.",
+            "5": "Pre-implanted He suppresses phase transitions caused by following Fe ions irradiation.",
+            "6": "Following Fe ions irradiation creates a competitive effect on the evolution of pre-formed He bubbles.",
+            "7": "Following Fe ions irradiation can cause the growth of He bubbles.",
+            "8": "Following Fe ions irradiation can cause the shrinkage of He bubbles.",
+            "9": "Following Fe ions irradiation can cause the re-solution of He bubbles.",
+            "10": "Improved resistance to He bubbles induced damage for Ti₃AlC₂ can result from following Fe ions irradiation.",
+            "11": "He ions implantation inhibits irradiation damage caused by Fe ions irradiation in Ti₃AlC₂.",
+            "12": "Fe ions irradiation inhibits irradiation damage caused by He ions implantation in Ti₃AlC₂.",
+            "13": "Inhibition of each other's irradiation damage by He ions implantation and Fe ions irradiation may reduce irradiation damage to Ti₃AlC₂.",
+            "14": "Inhibition of each other's irradiation damage by He ions implantation and Fe ions irradiation provides new insight into irradiation resistance of Ti₃AlC₂."
+          }
+        },
+        "viewpoints": [
+          "MAX phases exhibit a unique multiphase transformation from an initial hex-phase under irradiation.",
+          "MAX phases exhibit a unique multiphase transformation to a γ-phase under irradiation.",
+          "MAX phases exhibit a unique multiphase transformation to a fcc-phase under irradiation."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "However, almost all analyses to date were based on the initial phase or structure, and the role of intermediate phases in the transformation process has been rarely studied.",
+        "references": {},
+        "viewpoints": [
+          "Almost all analyses of phase transformation in MAX phases were based on the initial phase or structure.",
+          "The role of intermediate phases in the transformation process of MAX phases has been rarely studied."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "It is a challenge to understand the mechanisms by only analyzing the initial phases.",
+        "references": {},
+        "viewpoints": [
+          "Understanding the mechanisms of phase transformation is a challenge when analyzing only the initial phases."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "For example, antisite defect formation energy in the initial phases was considered as a criterion to assess the resistance to the irradiation-induced phase transformation, yet this approach cannot fully explain the phase behavior or offer a generalizable predictive capability, since it is restricted to the early stages of the phase transformation process, prior to the formation of the intermediate γ-phase [17], [22].",
+        "references": {
+          "17": {
+            "1": "Atomic disordering in materials alters the physical properties of materials.",
+            "2": "Atomic disordering in materials alters the chemical properties of materials.",
+            "3": "Atomic disordering in materials can affect the performance of materials.",
+            "4": "Understanding the nature of structural disordering in complex ceramic materials is challenging.",
+            "5": "The difficulty of direct, atomic-scale experimental observations is a reason for the challenge in understanding the nature of structural disordering in complex ceramic materials.",
+            "6": "This report includes the direct imaging of ion irradiation-induced antisite defects in M_{n+1}AX_{n} phases.",
+            "7": "Double C_{S}-corrected scanning transmission electron microscopy is used for imaging ion irradiation-induced antisite defects in M_{n+1}AX_{n} phases.",
+            "8": "There is compelling evidence of order-to-disorder phase transformations in M_{n+1}AX_{n} phases.",
+            "9": "The conventional view has been that irradiation causes phase decomposition to binary fcc-structured M_{n+1}X_{n}.",
+            "10": "This evidence overturns the conventional view that irradiation causes phase decomposition to binary fcc-structured M_{n+1}X_{n}.",
+            "11": "Formation of uniformly distributed cation antisite defects occurs.",
+            "12": "Rearrangement of X anions occurs.",
+            "13": "Disordered solid solution γ-(M_{n+1}A)X_{n} phases are formed at low ion fluences.",
+            "14": "There are gradual transitions to solid solution fcc-structured (M_{n+1}A)X_{n} phases following the formation of disordered solid solution γ-(M_{n+1}A)X_{n} phases.",
+            "15": "This study provides a comprehensive understanding of order-to-disorder transformations in M_{n+1}AX_{n} phases.",
+            "16": "This study proposes a method for the synthesis of new solid solution (M_{n+1}A)X_{n} phases.",
+            "17": "The synthesis method involves tailoring the disorder in the material."
+          },
+          "22": []
+        },
+        "viewpoints": [
+          "Antisite defect formation energy in the initial phases was considered as a criterion to assess resistance to irradiation-induced phase transformation.",
+          "The approach of using antisite defect formation energy in the initial phases cannot fully explain phase behavior.",
+          "This approach does not offer a generalizable predictive capability for phase transformation.",
+          "This approach is restricted to the early stages of the phase transformation process prior to the formation of the intermediate γ-phase."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "For the material family of MAX phases (over 340 types), previous irradiation experiments were mostly performed under ex situ irradiation conditions, which does not provide direct observation of the evolving atomic structure as a function of irradiation damage level, and thus fails to describe the complete, multi-stage phase transformation pathway.",
+        "references": {},
+        "viewpoints": [
+          "MAX phases consist of over 340 types of materials.",
+          "Previous irradiation experiments on MAX phases were mostly performed under ex situ irradiation conditions.",
+          "Ex situ irradiation conditions do not provide direct observation of the evolving atomic structure as a function of irradiation damage level.",
+          "Ex situ irradiation conditions fail to describe the complete, multi-stage phase transformation pathway."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "In addition, prior analyses also mainly focused on the initial hexagonal phases [23], [24], [25], [26] and provided only a phenomenological description of irradiation-induced phase behaviors [18], [19], [27], [28].",
+        "references": {
+          "23": {
+            "1": "Layered ternary M<sub>n+1</sub>AX<sub>n</sub> (MAX) materials are promising candidates for future fission and fusion programmes.",
+            "2": "Layered ternary M<sub>n+1</sub>AX<sub>n</sub> (MAX) materials have unique properties inherited from both ceramics and metals.",
+            "3": "Different M<sub>n+1</sub>AX<sub>n</sub> materials demonstrate different behaviors when exposed to energetic neutron irradiations.",
+            "4": "Different M<sub>n+1</sub>AX<sub>n</sub> materials demonstrate different behaviors when exposed to energetic ion irradiations.",
+            "5": "First-principles calculations were used to investigate the irradiation tolerance of Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "6": "First-principles calculations were used to investigate the irradiation tolerance of Ti<sub>3</sub>AlC<sub>2</sub>.",
+            "7": "The investigation of Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub> irradiation tolerance was conducted from two aspects.",
+            "8": "A detailed analysis was made on the interatomic bonding characters of Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub>.",
+            "9": "Interatomic bonding characters are believed to be responsible for resistance to radiation-induced amorphization.",
+            "10": "The formation energies of various intrinsic defects in Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub> are calculated.",
+            "11": "The formation energies of various antisite defects in Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub> are calculated.",
+            "12": "The calculations aim to elucidate the amorphization mechanism of Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub>.",
+            "13": "The absence of orbitals overlap of Al-C in Ti<sub>3</sub>AlC<sub>2</sub> renders Ti<sub>3</sub>AlC<sub>2</sub> more resistant to amorphization compared to Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "14": "The antisite defects Al<sub>Ti(1)</sub> and Al<sub>Ti(2)</sub> in Ti<sub>3</sub>AlC<sub>2</sub> have much lower formation energies compared to Si<sub>Ti(1)</sub> and Si<sub>Ti(2)</sub> in Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "15": "The replacement of Ti with Al is easier than with Si in Ti<sub>3</sub>AlC<sub>2</sub>, providing an alternative way to accommodate defects from irradiation damage cascades.",
+            "16": "Ti<sub>3</sub>AlC<sub>2</sub> is more irradiation tolerant than Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "17": "The findings are in accordance with experimental observations.",
+            "18": "The results have profound implications for the choice of appropriate MAX phase for best performance in future reaction reactors."
+          },
+          "24": {
+            "1": "The effect of helium irradiation on Ti₃SiC₂ has been investigated using the first-principles method based on density functional theory.",
+            "2": "Helium atoms prefer to accumulate within the layers where Si atoms have been dislodged in Ti₃SiC₂.",
+            "3": "Helium accumulation creates two-dimensional channels and bubbles.",
+            "4": "Two-dimensional channels and bubbles strongly promote cleavage fractures between adjacent Ti–Si layers.",
+            "5": "At high temperature, He atoms diffuse out of the bubbles in Ti₃SiC₂.",
+            "6": "The diffusion of He atoms enables the diffusion of mobile Si atoms back to their original sites.",
+            "7": "The annealing of the material back to the original structure is enabled by the diffusion of Si atoms to their original sites.",
+            "8": "The behavior of He atoms diffusing out of bubbles and enabling Si diffusion may play a positive role in the resistance of Ti₃SiC₂ to helium irradiation.",
+            "9": "Ti₃SiC₂ is a potential candidate for future nuclear reactor applications due to its resistance to helium irradiation."
+          },
+          "25": [],
+          "26": {
+            "1": "First principles calculations are performed on Zr₂AlC MAX phases.",
+            "2": "First principles calculations are performed on Cr₂AlC MAX phases.",
+            "3": "The purpose of performing first principles calculations on Zr₂AlC and Cr₂AlC MAX phases is to compare their ability to accommodate point defects under irradiation.",
+            "4": "Interatomic bonding is stronger in Cr₂AlC than in Zr₂AlC.",
+            "5": "Despite stronger interatomic bonding in Cr₂AlC, Zr₂AlC exhibits higher vacancy formation energies.",
+            "6": "Despite stronger interatomic bonding in Cr₂AlC, Zr₂AlC exhibits higher antisite pair formation energies.",
+            "7": "Interstitials are generally more difficult to form in Cr₂AlC than in Zr₂AlC.",
+            "8": "Frenkel defects are generally more difficult to form in Cr₂AlC than in Zr₂AlC.",
+            "9": "The mixed covalent/ionic/metallic nature of the bonding is attributed to the results regarding point defect formation in Zr₂AlC and Cr₂AlC.",
+            "10": "The preferred defect in Zr₂AlC is the V_Al+Al_i Frenkel defect.",
+            "11": "The preferred defect in Cr₂AlC is the Cr_Al+Al_Cr antisite defect.",
+            "12": "The preference for different defects in Zr₂AlC and Cr₂AlC is suggested by detailed energy comparisons.",
+            "13": "The potential response of Zr₂AlC to irradiation is different from the potential response of Cr₂AlC.",
+            "14": "Taking into account other competing defects, it is suggested that Zr₂AlC is less susceptible to amorphization than Cr₂AlC."
+          },
+          "18": [],
+          "19": {
+            "1": "Phase transitions in hcp M<sub>n+1</sub>AX<sub>n</sub> phases can be induced by 1 MeV Au<sup>+</sup> ion irradiation.",
+            "2": "The investigation of phase transitions in hcp M<sub>n+1</sub>AX<sub>n</sub> phases was done using ion fluences ranging from 1 × 10<sup>14</sup> to 2 × 10<sup>16</sup> ions cm<sup>−2</sup>.",
+            "3": "Transmission electron microscopy (TEM) and synchrotron grazing incidence X-ray diffraction (GIXRD) were used to investigate phase transitions in hcp M<sub>n+1</sub>AX<sub>n</sub> phases.",
+            "4": "Structural evolutions induced by ion irradiation were observed in hcp M<sub>n+1</sub>AX<sub>n</sub> phases.",
+            "5": "High-resolution TEM (HRTEM) imaging was used to observe irradiation-induced structural evolutions.",
+            "6": "Selected area electron diffraction (SAED) was used to observe irradiation-induced structural evolutions.",
+            "7": "Atomic-scale mechanisms for the phase transitions were determined.",
+            "8": "Phase contrast imaging was used to determine atomic-scale mechanisms for the phase transitions.",
+            "9": "Electron diffraction pattern (EDP) simulations were used to determine atomic-scale mechanisms for the phase transitions.",
+            "10": "The initial hcp phases transformed into intermediate γ-phases.",
+            "11": "The initial hcp phases transformed into fcc phases.",
+            "12": "Transformations to γ-phases and fcc phases were driven by the formation of Ti/Al antisite defects.",
+            "13": "Extended stacking faults induced by ion irradiation drove transformations to intermediate γ-phases and fcc phases.",
+            "14": "The transformation behavior of Ti<sub>2</sub>AlN was compared with Ti<sub>2</sub>AlC and Ti<sub>4</sub>AlN<sub>3</sub> under the same irradiation conditions.",
+            "15": "Experimental data and first-principles calculations were used to compare transformation behavior under ion irradiation.",
+            "16": "The role of the X parameter in the radiation responses of M<sub>n+1</sub>AX<sub>n</sub> phases was elucidated.",
+            "17": "The role of the n parameter in the radiation responses of M<sub>n+1</sub>AX<sub>n</sub> phases was elucidated.",
+            "18": "The susceptibilities of materials in the Ti–Al–X system to irradiation-induced phase transitions were determined.",
+            "19": "The bonding characteristics of MAX phases affect their susceptibilities to irradiation-induced phase transitions.",
+            "20": "The compositions of MAX phases affect their susceptibilities to irradiation-induced phase transitions.",
+            "21": "Ti<sub>2</sub>AlC is slightly less susceptible to radiation-induced phase transformation than Ti<sub>2</sub>AlN.",
+            "22": "The stronger Ti–Al bond covalency in Ti<sub>2</sub>AlN is a reason for its susceptibility to radiation-induced phase transformation.",
+            "23": "Ti<sub>4</sub>AlN<sub>3</sub> is more resistant to radiation-induced phase transformations than Ti<sub>2</sub>AlN.",
+            "24": "The lower Al content in Ti<sub>4</sub>AlN<sub>3</sub> is a reason for its resistance to radiation-induced phase transformations.",
+            "25": "The lower anion vacancy ratio in Ti<sub>4</sub>AlN<sub>3</sub> is a reason for its resistance to radiation-induced phase transformations."
+          },
+          "27": {
+            "1": "The effect of 320 keV Xe²⁺ ion-irradiation in Cr₂AlC is investigated in the transmission electron microscope.",
+            "2": "The effect of 320 keV Xe²⁺ ion-irradiation in Cr₂GeC is investigated in the transmission electron microscope.",
+            "3": "The investigation of ion-irradiation effects is conducted in situ in the transmission electron microscope.",
+            "4": "Cr₂AlC amorphizes at moderate fluences (10¹³–10¹⁴ Xe cm⁻²).",
+            "5": "Cr₂GeC amorphizes at moderate fluences (10¹³–10¹⁴ Xe cm⁻²).",
+            "6": "Cr₂AlC and Cr₂GeC exhibit different amorphization mechanisms.",
+            "7": "The different amorphization mechanisms in Cr₂AlC and Cr₂GeC indicate the major influence of the chemical composition on the amorphization process.",
+            "8": "The chemical composition of the nanolaminated Mₙ₊₁AXₙ phases has a major influence on the amorphization mechanisms.",
+            "9": "Amorphization in Cr₂GeC takes place via a direct impact amorphization process.",
+            "10": "Amorphization in Cr₂AlC is governed by a defect accumulation process."
+          },
+          "28": {
+            "1": "Mn+1AXn phases exhibit unique laminated atomic structures.",
+            "2": "The unique laminated atomic structures of Mn+1AXn phases result in properties typical of ceramics.",
+            "3": "The unique laminated atomic structures of Mn+1AXn phases result in properties typical of metals.",
+            "4": "Mn+1AXn phases have unusual characteristics.",
+            "5": "Mn+1AXn phases have been proposed for use in a wide variety of industrial applications.",
+            "6": "Mn+1AXn phases have been proposed for use in nuclear reactors, including both fission and fusion systems.",
+            "7": "Mn+1AXn phases will be exposed to extreme irradiation conditions in nuclear reactors.",
+            "8": "Mn+1AXn phases will be exposed to high temperatures in nuclear reactors.",
+            "9": "Numerous studies have recently investigated radiation effects on Mn+1AXn phases.",
+            "10": "Radiation effects on Mn+1AXn phases reveal complex behavior.",
+            "11": "Radiation effects on Mn+1AXn phases include phase transformations.",
+            "12": "Radiation effects on Mn+1AXn phases include surface modification.",
+            "13": "Radiation effects on Mn+1AXn phases include mechanical property changes.",
+            "14": "Phase transformations in Mn+1AXn phases are induced by ion or neutron irradiation.",
+            "15": "Surface modification in Mn+1AXn phases is induced by ion or neutron irradiation.",
+            "16": "Mechanical property changes in Mn+1AXn phases are induced by ion or neutron irradiation.",
+            "17": "Ion or neutron irradiation over a range of temperatures affects Mn+1AXn phases.",
+            "18": "This review summarizes recent experimental work on the response of the Mn+1AXn phases to irradiation.",
+            "19": "This review summarizes recent theoretical work on the response of the Mn+1AXn phases to irradiation.",
+            "20": "This review discusses intrinsic controls on the radiation tolerance of Mn+1AXn phases.",
+            "21": "A comprehensive understanding of the mechanisms of irradiation-induced structural modification in Mn+1AXn phases is developed based on the review of the present body of work.",
+            "22": "A comprehensive understanding of defect evolution in Mn+1AXn phases is developed based on the review of the present body of work.",
+            "23": "Strategies are proposed for designing novel Mn+1AXn phases with enhanced performance under extreme irradiation conditions based on the review of the present body of work."
+          }
+        },
+        "viewpoints": [
+          "Prior analyses mainly focused on the initial hexagonal phases of MAX phases.",
+          "Prior analyses provided only a phenomenological description of irradiation-induced phase behaviors in MAX phases."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "No substantial theoretical investigation of compositional trends in the dynamics of these multi-stage phase transformations has been reported, thus far.",
+        "references": {},
+        "viewpoints": [
+          "No substantial theoretical investigation of compositional trends in the dynamics of multi-stage phase transformations of MAX phases has been reported."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Hence, there is a clear need for a comprehensive understanding of the multi-stage phase transformation behavior in this class of materials.",
+        "references": {},
+        "viewpoints": [
+          "There is a clear need for a comprehensive understanding of the multi-stage phase transformation behavior in MAX phases."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "In this work, we report an investigation of the distinct phase transformation behaviors of three representative MAX phases, M2AlC (M=Cr, V, Nb), under in situ ion irradiation with real-time TEM observation.",
+        "references": {},
+        "viewpoints": [
+          "An investigation of the distinct phase transformation behaviors of three representative MAX phases, M₂AlC (M=Cr, V, Nb), was conducted under in situ ion irradiation.",
+          "The investigation included real-time TEM observation."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "The anomalous case of Cr2AlC is observed, which does not follow the common hex-γ-fcc phase transition pathway as in V2AlC and Nb2AlC.",
+        "references": {},
+        "viewpoints": [
+          "The anomalous case of Cr₂AlC does not follow the common hex-γ-fcc phase transition pathway.",
+          "V₂AlC and Nb₂AlC follow the common hex-γ-fcc phase transition pathway."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Instead, Cr2AlC follows a hex-γ-amorphous transition pathway, without forming the fcc-phase.",
+        "references": {},
+        "viewpoints": [
+          "Cr₂AlC follows a hex-γ-amorphous transition pathway.",
+          "Cr₂AlC does not form the fcc-phase."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Using ab initio calculations, we explain the compositional origin of these phase transformation dynamics.",
+        "references": {},
+        "viewpoints": [
+          "The compositional origin of phase transformation dynamics is explained using ab initio calculations."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Unlike prior computational work which considered only the energetics of structural transitions from the initial hex-phase [23], [24], [25], [26], this improved description of phase energetics captures the key role of the intermediate γ-phase in mediating the radiation response.",
+        "references": {
+          "23": {
+            "1": "Layered ternary M<sub>n+1</sub>AX<sub>n</sub> (MAX) materials are promising candidates for future fission and fusion programmes.",
+            "2": "Layered ternary M<sub>n+1</sub>AX<sub>n</sub> (MAX) materials have unique properties inherited from both ceramics and metals.",
+            "3": "Different M<sub>n+1</sub>AX<sub>n</sub> materials demonstrate different behaviors when exposed to energetic neutron irradiations.",
+            "4": "Different M<sub>n+1</sub>AX<sub>n</sub> materials demonstrate different behaviors when exposed to energetic ion irradiations.",
+            "5": "First-principles calculations were used to investigate the irradiation tolerance of Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "6": "First-principles calculations were used to investigate the irradiation tolerance of Ti<sub>3</sub>AlC<sub>2</sub>.",
+            "7": "The investigation of Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub> irradiation tolerance was conducted from two aspects.",
+            "8": "A detailed analysis was made on the interatomic bonding characters of Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub>.",
+            "9": "Interatomic bonding characters are believed to be responsible for resistance to radiation-induced amorphization.",
+            "10": "The formation energies of various intrinsic defects in Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub> are calculated.",
+            "11": "The formation energies of various antisite defects in Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub> are calculated.",
+            "12": "The calculations aim to elucidate the amorphization mechanism of Ti<sub>3</sub>SiC<sub>2</sub> and Ti<sub>3</sub>AlC<sub>2</sub>.",
+            "13": "The absence of orbitals overlap of Al-C in Ti<sub>3</sub>AlC<sub>2</sub> renders Ti<sub>3</sub>AlC<sub>2</sub> more resistant to amorphization compared to Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "14": "The antisite defects Al<sub>Ti(1)</sub> and Al<sub>Ti(2)</sub> in Ti<sub>3</sub>AlC<sub>2</sub> have much lower formation energies compared to Si<sub>Ti(1)</sub> and Si<sub>Ti(2)</sub> in Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "15": "The replacement of Ti with Al is easier than with Si in Ti<sub>3</sub>AlC<sub>2</sub>, providing an alternative way to accommodate defects from irradiation damage cascades.",
+            "16": "Ti<sub>3</sub>AlC<sub>2</sub> is more irradiation tolerant than Ti<sub>3</sub>SiC<sub>2</sub>.",
+            "17": "The findings are in accordance with experimental observations.",
+            "18": "The results have profound implications for the choice of appropriate MAX phase for best performance in future reaction reactors."
+          },
+          "24": {
+            "1": "The effect of helium irradiation on Ti₃SiC₂ has been investigated using the first-principles method based on density functional theory.",
+            "2": "Helium atoms prefer to accumulate within the layers where Si atoms have been dislodged in Ti₃SiC₂.",
+            "3": "Helium accumulation creates two-dimensional channels and bubbles.",
+            "4": "Two-dimensional channels and bubbles strongly promote cleavage fractures between adjacent Ti–Si layers.",
+            "5": "At high temperature, He atoms diffuse out of the bubbles in Ti₃SiC₂.",
+            "6": "The diffusion of He atoms enables the diffusion of mobile Si atoms back to their original sites.",
+            "7": "The annealing of the material back to the original structure is enabled by the diffusion of Si atoms to their original sites.",
+            "8": "The behavior of He atoms diffusing out of bubbles and enabling Si diffusion may play a positive role in the resistance of Ti₃SiC₂ to helium irradiation.",
+            "9": "Ti₃SiC₂ is a potential candidate for future nuclear reactor applications due to its resistance to helium irradiation."
+          },
+          "25": [],
+          "26": {
+            "1": "First principles calculations are performed on Zr₂AlC MAX phases.",
+            "2": "First principles calculations are performed on Cr₂AlC MAX phases.",
+            "3": "The purpose of performing first principles calculations on Zr₂AlC and Cr₂AlC MAX phases is to compare their ability to accommodate point defects under irradiation.",
+            "4": "Interatomic bonding is stronger in Cr₂AlC than in Zr₂AlC.",
+            "5": "Despite stronger interatomic bonding in Cr₂AlC, Zr₂AlC exhibits higher vacancy formation energies.",
+            "6": "Despite stronger interatomic bonding in Cr₂AlC, Zr₂AlC exhibits higher antisite pair formation energies.",
+            "7": "Interstitials are generally more difficult to form in Cr₂AlC than in Zr₂AlC.",
+            "8": "Frenkel defects are generally more difficult to form in Cr₂AlC than in Zr₂AlC.",
+            "9": "The mixed covalent/ionic/metallic nature of the bonding is attributed to the results regarding point defect formation in Zr₂AlC and Cr₂AlC.",
+            "10": "The preferred defect in Zr₂AlC is the V_Al+Al_i Frenkel defect.",
+            "11": "The preferred defect in Cr₂AlC is the Cr_Al+Al_Cr antisite defect.",
+            "12": "The preference for different defects in Zr₂AlC and Cr₂AlC is suggested by detailed energy comparisons.",
+            "13": "The potential response of Zr₂AlC to irradiation is different from the potential response of Cr₂AlC.",
+            "14": "Taking into account other competing defects, it is suggested that Zr₂AlC is less susceptible to amorphization than Cr₂AlC."
+          }
+        },
+        "viewpoints": [
+          "Prior computational work considered only the energetics of structural transitions from the initial hex-phase.",
+          "This improved description of phase energetics captures the key role of the intermediate γ-phase in mediating the radiation response."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "An atomic-scale mechanism for the observed phase behavior is developed through the quantitative description of energetics along the transformation pathway and the underlying characteristics associated with the lattice and electronic structures of the intermediate γ-phase.",
+        "references": {},
+        "viewpoints": [
+          "An atomic-scale mechanism for the observed phase behavior is developed.",
+          "The mechanism is developed through the quantitative description of energetics along the transformation pathway.",
+          "The mechanism is developed through the underlying characteristics associated with the lattice and electronic structures of the intermediate γ-phase."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "We ultimately develop a generalized rule for prediction of the extreme environment phase transition behaviors of MAX phases of varying composition based on atomic radius and electronegativity.",
+        "references": {},
+        "viewpoints": [
+          "A generalized rule is developed for the prediction of extreme environment phase transition behaviors of MAX phases.",
+          "The rule is based on atomic radius and electronegativity.",
+          "The rule applies to MAX phases of varying composition."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "This method can be potentially extended to similar complex ceramics that undergo multi-stage phase transformations.",
+        "references": {},
+        "viewpoints": [
+          "The method can be potentially extended to similar complex ceramics.",
+          "The method applies to ceramics that undergo multi-stage phase transformations."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56921-8_with_abstracts",
+    "base_id": "s41467-025-56921-8",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56921-8_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

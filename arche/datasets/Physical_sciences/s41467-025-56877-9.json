@@ -1,0 +1,812 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "The demand for higher-durability concrete that can withstand ion corrosion and dissolution degradation is increasing, particularly in harsh service environments such as marine settings. In these environments, enhancing the surface hydrophobicity of concrete is crucial for protecting the underlying substrate from water infiltration [1] . One effective strategy to improve the impermeability of concrete is the incorporation of silane coupling agents (SCAs) [2] , SCAs typically have a bifunctional structure consisting of organic and inorganic components [3] , which can be expressed as \\({\\left({{\\rm{RO}}}\\right)}_{3}-{{\\rm{Si}}}-{{\\rm{X}}}\\) . In acidic or alkaline solutions, the alkoxy groups \\({\\left(-{{\\rm{RO}}}\\right)}_{3}\\) , such as -CH 3 or -C 2 H 5 , undergo hydrolysis to form hydroxyl groups (-OH) [4] . These hydroxyl groups can then participate in condensation reactions with calcium silicate hydrate (C-S-H), forming robust siloxane linkages on particle surfaces [5] . The organo-functional groups provided by SCAs impart hydrophobicity to concrete, effectively preventing water from penetrating its pores [6] . In practical engineering, the application of silane in concrete can be categorized into two approaches: surface treatment and initial admixture [7] . In surface treatment, the hydrolyzed silane monomers diffuse into the concrete through capillary pores, driven by a concentration gradient [8] . These monomers subsequently adsorb physically or bond chemically with C-S-H phases, gradually developing interfacial adhesion [9] . Alternatively, in the initial admixture method, pre-treated silane is directly incorporated into the fresh paste, ensuring a more uniform distribution of the silane [10] . The highly alkaline environment provided by cement hydration facilitates the endothermic hydrolysis of silane, leading to C-S-H condensation and the formation of a Si-O-Si network [11] . Therefore, blending SCAs in fresh paste is regarded as a more effective approach for designing durable cementitious materials, while also enhancing the workability of fresh paste. A study noted that incorporation of 3-aminopropyl triethoxysilane (APTES) into the montmorillonite partial substituted system significantly improved the fluidity of the cement paste, increasing it from 26.89% to 65.25%, and induced the formation of acicular hydration products that improved microstructure [12] . Recent reports have also confirmed that silane modification improves the flexural performance of cement paste [13] . Feng et al. found that incorporating a small amount of silanes increased both the flexural and compressive strength of ordinary mortars after 7 and 28 days of curing [14] . Despite these benefits, the inclusion of SCAs can introduce adverse effects, such as the inhibition of initial cement hydration. Rodríguez et al. [15] reported that incorporating SCAs significantly delays the emergence of hydration peak, thereby inhibiting initial hydration. This effect could be attributed to the increased repulsive force between free water and cement particles, introduced by the hydrophobic groups of the silane. Kong et al. [16] also identified this inhibitory effect on cement hydration and indicated that the influence of the hydrolysis byproducts, such as alcohols is negligible. Moreover, the hydrophobic groups of silanes negatively impact the silicate polymerization and hydrogen bond formation, thereby influencing the nucleation of the hydration product C-S-H (calcium-silicate-hydrate) and further retarding the hydration. Xie et al. [17] demonstrated that incorporating silane reduces the quantity and cumulative density of C-S-H, subsequently hindering the cement hydration process. More recent findings indicated that silane hydrolysates can form complexes with calcium ions, potentially accounting for the delayed hydration [18] . Despite these insights, there remain gaps in understanding the mechanisms of silane-induced delayed hydration. While the two aforementioned hypotheses provide plausible explanations, hydration is an inherently complex and prolonged process, where silane may exhibit different retarding mechanisms at various stages. It is worth mentioning that the mechanism of complexation and inhibition of C-S-H growth appears more relevant to the post-induction stage of hydration. However, the precise impact of silane on clinker dissolution during the induction stage warrants further exploration. Given that mineral dissolution occurs instantaneously (within seconds), direct observation poses significant challenges. As such, atomic-scale simulations offer a promising approach for studying this phenomenon. Atomistic simulations have emerged as an alternative method to provide valuable insights into the nanoscale mechanisms of the inhibition of SCAs on cement hydration [19] , [20] , [21] . Molecular dynamics (MD) simulations using empirical force fields have been applied to explore lots of physical properties of cement-based materials, such as the efficiency of solution transport in calcium-silicate-hydrate (C-S-H) nanopores functionalized with silane [22] . Additionally, MD simulations based on reactive force field (ReaxFF) are extensively used to model clinker hydration processes. Li et al. [23] demonstrated that the degree of hydrolytic separation on the surfaces of M3- and T1-C3S is comparable and independent of the polycrystalline state of the crystal. Xu et al. [24] found that the complete dissolution of calcium ions in C 3 S required two dissolution processes. Otherwise, density functional theory (DFT) calculations have also been performed to elucidate the adsorption behavior of water on clinker phases and SCAs on the C-S-H surface without considering the dynamics information of the reaction [25] . As theoretical methods continue to advance, ab initio molecular dynamics (AIMD) simulations have been increasingly adopted to accurately probe chemical reactions involving electron transfer, including key transformations in cement hydration such as adsorption and nucleation [26] . In this context, enhanced sampling techniques like metadynamics (MetaD), offer a powerful approach for exploring significant configurational changes within a system, from reactants to products [27] . Recently, it has been reported that the combination of AIMD and MetaD successfully drew a full picture of the calcium dissolution from the Ca 3 SiO 5 and Ca 2 SiO 4 surface [28] , [29] , which sheds light on the understanding of the effect of SCAs on Ca 3 SiO 5 dissolution. To elucidate the retardation effect of SCAs on cement hydration, we employed a combination of ab initio simulations and experimental corroboration to investigate the impact of APTES on the early Ca 3 SiO 5 hydration at the nanoscale. First, the accuracy of the MetaD sampling model was validated through DFT adsorption tests, followed by the exploration of the dissolution behavior of surface penta-coordinated calcium under the influence of APTES using ab initio MetaD simulations. The results indicated that the shielding effect of SCAs causes the dissolution of calcium ions to shift from a spontaneous to a non-spontaneous process. Secondly, the early hydration kinetics of silane-treated cement paste were examined through hydration experiments, which not only corroborated the interactions between Ca 3 SiO 5 particles and APTES molecules but also demonstrated that the reduced concentration of calcium ions in the hydrolytic solution is a critical factor in the retardation of cement hydration. Finally, these discoveries provide a molecular-level explanation for the delayed hydration effect of SCAs, contributing to a deeper understanding of the initial hydration of cement in organic systems.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "The demand for higher-durability concrete that can withstand ion corrosion and dissolution degradation is increasing, particularly in harsh service environments such as marine settings.",
+        "references": {},
+        "viewpoints": [
+          "The demand for higher-durability concrete is increasing.",
+          "Higher-durability concrete is needed to withstand ion corrosion and dissolution degradation.",
+          "Marine settings are examples of harsh service environments where higher-durability concrete is particularly needed."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "In these environments, enhancing the surface hydrophobicity of concrete is crucial for protecting the underlying substrate from water infiltration [1].",
+        "references": {
+          "1": []
+        },
+        "viewpoints": [
+          "In harsh service environments, enhancing the surface hydrophobicity of concrete is crucial.",
+          "Enhancing surface hydrophobicity of concrete protects the underlying substrate from water infiltration."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "One effective strategy to improve the impermeability of concrete is the incorporation of silane coupling agents (SCAs) [2].",
+        "references": {
+          "2": {
+            "1": "Anchoring steel rebar in concrete structures is a common method in the building industry.",
+            "2": "Anchoring steel rebar in concrete structures is a common method in the construction industry.",
+            "3": "The research focuses on improving the mechanical properties of epoxy nanocomposite adhesive.",
+            "4": "The research focuses on improving the bonding properties of epoxy nanocomposite adhesive.",
+            "5": "The improvement is achieved using surface treatment of SiO₂ nano fillers by glycidoxypropyltrimethoxysilane (GPTMS).",
+            "6": "Nano silica particles were silanized via a facile sol–gel method.",
+            "7": "Silanization was performed at silane concentrations of 1, 5, 10, and 20X.",
+            "8": "X represents stoichiometric silane concentration.",
+            "9": "The nanoparticles were characterized by FTIR technique.",
+            "10": "The nanoparticles were characterized by TGA technique.",
+            "11": "The nanoparticles were characterized by XRD technique.",
+            "12": "The nanoparticles were characterized by XPS technique.",
+            "13": "The highest GPTMS grafting ratio was obtained at a silane concentration of 10X.",
+            "14": "Pure nanoparticles were added to a two-pack epoxy resin.",
+            "15": "Silanized nanoparticles were added to a two-pack epoxy resin.",
+            "16": "Pure and silanized nanoparticles were compared for tensile properties.",
+            "17": "Pure and silanized nanoparticles were compared for compressive properties.",
+            "18": "Surface modification of nano silica caused a 56% improvement in strength compared to the pristine epoxy adhesive.",
+            "19": "Surface modification of nano silica caused an 81% improvement in modulus compared to the pristine epoxy adhesive.",
+            "20": "Surface modification of nano silica caused a 200% improvement in compressive strength compared to the pristine epoxy adhesive.",
+            "21": "Surface modification of nano silica caused a 66% improvement in compressive modulus compared to the pristine epoxy adhesive.",
+            "22": "Surface modification of nano silica caused a 70% improvement in strength compared to the pure nano silica containing adhesive.",
+            "23": "Surface modification of nano silica caused a 20% improvement in modulus compared to the pure nano silica containing adhesive.",
+            "24": "Surface modification of nano silica caused a 17% improvement in compressive strength compared to the pure nano silica containing adhesive.",
+            "25": "Surface modification of nano silica caused a 21% improvement in compressive modulus compared to the pure nano silica containing adhesive.",
+            "26": "Surface modification of nano silica caused a 40% improvement in pullout strength compared to the pristine adhesive.",
+            "27": "Surface modification of nano silica caused a 25% improvement in pullout strength compared to the raw silica-containing adhesive.",
+            "28": "Surface modification of nano silica caused a 33% enhancement in pullout displacement compared to the pristine adhesive.",
+            "29": "Surface modification of nano silica caused an 18% enhancement in pullout displacement compared to the raw silica-containing adhesive.",
+            "30": "Surface modification of nano silica caused a 130% improvement in adhesion energy compared to the pristine adhesive.",
+            "31": "Surface modification of nano silica caused a 50% improvement in adhesion energy compared to the raw silica-containing adhesive."
+          }
+        },
+        "viewpoints": [
+          "Incorporating silane coupling agents (SCAs) is an effective strategy to improve concrete impermeability."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "SCAs typically have a bifunctional structure consisting of organic and inorganic components [3], which can be expressed as \\({\\left({{\\rm{RO}}}\\right)}_{3}-{{\\rm{Si}}}-{{\\rm{X}}}\\).",
+        "references": {
+          "3": {
+            "1": "Silane coupling agents (SCAs) were used as an admixture in cement paste in the present study.",
+            "2": "The influence of silane coupling agents on cement hydration in different stages was investigated.",
+            "3": "The influence of silane coupling agents on the mechanical properties of cement paste was investigated.",
+            "4": "Silanes play the role of a retardant in cement paste at the very early age.",
+            "5": "The retardant effect of silanes is due to the attraction force between intermediate hydrolysis products of silanes and cement hydrated products.",
+            "6": "Intermediate hydrolysis products of silanes can form a gel-like barrier covering cement hydrated products.",
+            "7": "The formation of a gel-like barrier by intermediate hydrolysis products of silanes was proved by pre-hydrolysis experiments using a calorimeter.",
+            "8": "The formation of a gel-like barrier by intermediate hydrolysis products of silanes was proved by Fourier transform infrared spectroscopy (FTIR).",
+            "9": "Cement paste modified by silane has a denser structure compared to neat paste after 28 days of curing.",
+            "10": "The dense structure of silane-modified cement paste results from the reaction between polycondensated silane and CH.",
+            "11": "Silane-modified cement paste has lower porosity than neat paste after 28 days of curing.",
+            "12": "Silane-modified cement paste has a higher hydration degree than neat paste after 28 days of curing.",
+            "13": "Silane-modified cement paste has better mechanical performance than neat paste after 28 days of curing."
+          }
+        },
+        "viewpoints": [
+          "Silane coupling agents (SCAs) typically have a bifunctional structure consisting of organic and inorganic components.",
+          "The structure of SCAs can be expressed as \\({\\left({{\\rm{RO}}}\\right)}_{3}-{{\\rm{Si}}}-{{\\rm{X}}}\\)."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In acidic or alkaline solutions, the alkoxy groups \\({\\left(-{{\\rm{RO}}}\\right)}_{3}\\), such as -CH3 or -C2H5, undergo hydrolysis to form hydroxyl groups (-OH) [4].",
+        "references": {
+          "4": {
+            "1": "Surface functionalization is a critical process in developing a highly sensitive and selective biosensor.",
+            "2": "Bioreceptor immobilization is a critical process in developing a highly sensitive and selective biosensor.",
+            "3": "The silanization process with 3-aminopropyltriethoxysilane (APTES) on oxide surfaces is frequently used for surface functionalization.",
+            "4": "The bifunctional nature of APTES is a beneficial characteristic for its use in surface functionalization.",
+            "5": "The low cost of APTES is a beneficial characteristic for its use in surface functionalization.",
+            "6": "Optimizing the deposition process of the APTES layer to obtain a monolayer is crucial to having a stable surface.",
+            "7": "Optimizing the deposition process of the APTES layer to obtain a monolayer is crucial to effectively immobilizing the bioreceptors.",
+            "8": "A stable surface and effective immobilization of bioreceptors lead to improved repeatability of the biosensor.",
+            "9": "A stable surface and effective immobilization of bioreceptors lead to improved sensitivity of the biosensor.",
+            "10": "This review provides an overview of APTES deposition methods categorized into solution-phase.",
+            "11": "This review provides an overview of APTES deposition methods categorized into vapor-phase.",
+            "12": "This review provides a comprehensive summary and guide for creating stable APTES monolayers on oxide surfaces for biosensing applications.",
+            "13": "A brief explanation of APTES is introduced in the review.",
+            "14": "APTES deposition methods with their pre-treatments are discussed in the review.",
+            "15": "APTES deposition methods with their post-treatments are discussed in the review.",
+            "16": "APTES deposition methods with their characterization results are discussed in the review.",
+            "17": "APTES deposition methods on nanoparticles used for biosensors are briefly described."
+          }
+        },
+        "viewpoints": [
+          "In acidic or alkaline solutions, the alkoxy groups \\({\\left(-{{\\rm{RO}}}\\right)}_{3}\\) undergo hydrolysis.",
+          "Hydrolysis of alkoxy groups \\({\\left(-{{\\rm{RO}}}\\right)}_{3}\\) forms hydroxyl groups (-OH).",
+          "Examples of alkoxy groups include -CH3 and -C2H5."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "These hydroxyl groups can then participate in condensation reactions with calcium silicate hydrate (C-S-H), forming robust siloxane linkages on particle surfaces [5].",
+        "references": {
+          "5": []
+        },
+        "viewpoints": [
+          "Hydroxyl groups can participate in condensation reactions with calcium silicate hydrate (C-S-H).",
+          "Condensation reactions of hydroxyl groups with C-S-H form robust siloxane linkages on particle surfaces."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "The organo-functional groups provided by SCAs impart hydrophobicity to concrete, effectively preventing water from penetrating its pores [6].",
+        "references": {
+          "6": []
+        },
+        "viewpoints": [
+          "Organo-functional groups provided by SCAs impart hydrophobicity to concrete.",
+          "Hydrophobicity imparted by SCAs' organo-functional groups effectively prevents water from penetrating concrete pores."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "In practical engineering, the application of silane in concrete can be categorized into two approaches: surface treatment and initial admixture [7].",
+        "references": {
+          "7": {
+            "1": "The paper aims to investigate the durability properties of recycled aggregate concrete treated with silane-based water repellent agents.",
+            "2": "High water absorption of recycled aggregate concrete is a major factor jeopardizing its durability.",
+            "3": "Different dosages of silane-based water repellent agents were coated on the surface of the concrete, referred to as \"surface silane treatment.\"",
+            "4": "Different dosages of silane-based water repellent agents were integrally added into the concrete mixture, referred to as \"integral silane treatment.\"",
+            "5": "The mechanical properties of the treated concrete were evaluated.",
+            "6": "The durability properties of the treated concrete were evaluated.",
+            "7": "Integral silane treatment can improve the durability of recycled aggregate concrete.",
+            "8": "Integral silane treatment may lead to reductions in compressive strength of recycled aggregate concrete.",
+            "9": "Surface silane treatment is more effective than integral silane treatment in improving the resistance of recycled aggregate concrete to capillary water absorption.",
+            "10": "Surface silane treatment is more effective than integral silane treatment in improving the resistance of recycled aggregate concrete to carbonation.",
+            "11": "Surface silane treatment is more effective than integral silane treatment in improving the resistance of recycled aggregate concrete to chloride penetration."
+          }
+        },
+        "viewpoints": [
+          "The application of silane in concrete can be categorized into surface treatment and initial admixture in practical engineering."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "In surface treatment, the hydrolyzed silane monomers diffuse into the concrete through capillary pores, driven by a concentration gradient [8].",
+        "references": {
+          "8": {
+            "1": "There are a variety of surface treatments used for the protection of concrete structures.",
+            "2": "This paper presents a review of the effect of surface treatments on the mechanical properties of concrete.",
+            "3": "This paper presents a review of the effect of surface treatments on the durability of concrete.",
+            "4": "This paper presents a review of the durability of the treatment materials themselves.",
+            "5": "The paper reviews several common surface treatments, including acrylic coating, polyurethane coating, epoxy coating, silanes, siloxanes, sodium silicate, and nano-SiO₂.",
+            "6": "Surface treatments showed different impacts on the physical properties of concrete.",
+            "7": "Surface treatments showed different impacts on the mechanical properties of concrete.",
+            "8": "Surface treatments showed different impacts on water permeability in concrete.",
+            "9": "Surface treatments showed different impacts on chloride migration in concrete.",
+            "10": "Surface treatments showed different impacts on carbonation resistance in concrete.",
+            "11": "Surface treatments showed different impacts on sulphate attack on concrete.",
+            "12": "Surface treatments showed different impacts on freeze-thaw cycles of concrete.",
+            "13": "It is important to consider the strengths of surface treatments when choosing one.",
+            "14": "It is important to consider the weaknesses of surface treatments when choosing one.",
+            "15": "There are limited prediction models for the service-life of treated concretes.",
+            "16": "Many tests were conducted to measure the barrier properties of surface treatments.",
+            "17": "Many surface treatments are generally subjected to aging.",
+            "18": "Many surface treatments are generally subjected to weathering.",
+            "19": "Long-term protection of many surface treatments cannot be promised.",
+            "20": "Organic treatments are especially subject to aging and weathering.",
+            "21": "The protective effect of surface treatments should be taken into account in service-life modeling.",
+            "22": "The long-term durability of surface treatments should be taken into account in service-life modeling."
+          }
+        },
+        "viewpoints": [
+          "In surface treatment, hydrolyzed silane monomers diffuse into concrete through capillary pores.",
+          "The diffusion of hydrolyzed silane monomers through capillary pores is driven by a concentration gradient."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "These monomers subsequently adsorb physically or bond chemically with C-S-H phases, gradually developing interfacial adhesion [9].",
+        "references": {
+          "9": {
+            "1": "Using waste rubbers as aggregates in concrete is a feasible approach to recycle waste rubbers.",
+            "2": "The poor adhesion of rubber to cement paste causes a reduction in the mechanical strength of concrete when normal aggregate is replaced with rubber.",
+            "3": "A new approach is presented to overcome the deficiency of poor adhesion of rubber to cement paste in concrete.",
+            "4": "The approach involves treating waste rubbers with silane coupling agent (SCA) and carboxylated styrene–butadiene rubber (CSBR) latex.",
+            "5": "Treating waste rubbers with SCA and CSBR latex aims to develop chemical bonds between rubbers and cement paste.",
+            "6": "The study investigates the influence of surface treatment of waste rubbers with SCA and CSBR latex on the mechanical strength of rubberized concrete.",
+            "7": "The study investigates the influence of surface treatment of waste rubbers with SCA and CSBR latex on the chloride penetration resistance of rubberized concrete.",
+            "8": "Experiments were conducted with six different volume fractions of rubbers, ranging between 0% and 30%, to replace fine aggregate in concrete.",
+            "9": "The experimental results showed that the compressive strength of concretes incorporating proper amounts of treated rubbers could be improved by 4% compared to control concrete with no rubbers.",
+            "10": "The experimental results showed that the flexural strength of concretes incorporating proper amounts of treated rubbers could be improved by 13% compared to control concrete with no rubbers.",
+            "11": "The chloride penetration resistance was improved by 35% in concretes incorporating proper amounts of treated rubbers compared to control concrete with no rubbers.",
+            "12": "The good adhesion of waste rubbers to cement paste explains the enhancement in mechanical strength and durability for treated rubber concrete.",
+            "13": "The formation of rubber networks explains the enhancement in mechanical strength and durability for treated rubber concrete.",
+            "14": "The embedding effect of rubbers, as shown in SEM images, explains the enhancement in mechanical strength and durability for treated rubber concrete."
+          }
+        },
+        "viewpoints": [
+          "Hydrolyzed silane monomers adsorb physically or bond chemically with C-S-H phases.",
+          "Adsorption or chemical bonding of silane monomers with C-S-H phases gradually develops interfacial adhesion."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Alternatively, in the initial admixture method, pre-treated silane is directly incorporated into the fresh paste, ensuring a more uniform distribution of the silane [10].",
+        "references": {
+          "10": {
+            "1": "The application of silane in cement-based materials has attracted increasing attention.",
+            "2": "Silane offers positive benefits in cement-based materials in terms of particle dispersion.",
+            "3": "Silane enhances wettability in cement-based materials.",
+            "4": "Silane improves durability in cement-based materials.",
+            "5": "The use of silane in cement-based materials results in the negative effect of hydration retarding.",
+            "6": "Silane causes strength reduction in cement-based materials.",
+            "7": "The problems of hydration retarding and strength reducing due to silane use remain unsolved.",
+            "8": "The paper starts by examining the enhancement effect of nano-silica on cement paste.",
+            "9": "The paper studies the influence of nano-silica and silane on the flowability of cement paste.",
+            "10": "The study examines the impact of nano-silica and silane on the setting time of cement paste.",
+            "11": "The paper investigates the effects of nano-silica and silane on strength development in cement paste.",
+            "12": "The study evaluates the impact of nano-silica and silane on wettability in cement paste.",
+            "13": "The research examines the effects of nano-silica and silane on water absorption in cement paste.",
+            "14": "The hydration process of cement paste is evaluated using isothermal calorimetry.",
+            "15": "The chemical composition of cement paste is studied using XRD.",
+            "16": "FT-IR is used to evaluate the microstructure of cement paste.",
+            "17": "SEM is employed for analyzing the microstructure of cement paste.",
+            "18": "The profilometer is used to evaluate the microstructure of cement paste.",
+            "19": "Nano-silica counterbalances the retarding effect of silane (IBTEO) on cement hydration.",
+            "20": "Nano-silica counteracts the negative effect of silane on early age strength development of cement paste.",
+            "21": "The flowability of NS-cement paste is improved due to the dispersing effect of silane on nano-silica.",
+            "22": "There is a synergistic enhancement effect of nano-silica and silane (IBTEO) on water resistance of cement paste.",
+            "23": "The 3D superhydrophobic behavior of the cement paste is evidenced by a water contact angle of 153.5°.",
+            "24": "The water absorption rate of cement paste is reduced by 70%.",
+            "25": "The hydrophobic mechanism of the hydrophobic cement specimen is due to the lower surface free energy provided by IBTEO.",
+            "26": "The hydrophobic mechanism also relies on more micro and nano roughness caused by NS."
+          }
+        },
+        "viewpoints": [
+          "In the initial admixture method, pre-treated silane is directly incorporated into fresh paste.",
+          "Direct incorporation of pre-treated silane into fresh paste ensures a more uniform distribution of the silane."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "The highly alkaline environment provided by cement hydration facilitates the endothermic hydrolysis of silane, leading to C-S-H condensation and the formation of a Si-O-Si network [11].",
+        "references": {
+          "11": []
+        },
+        "viewpoints": [
+          "The highly alkaline environment provided by cement hydration facilitates the endothermic hydrolysis of silane.",
+          "Endothermic hydrolysis of silane leads to C-S-H condensation.",
+          "Endothermic hydrolysis of silane leads to the formation of a Si-O-Si network."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Therefore, blending SCAs in fresh paste is regarded as a more effective approach for designing durable cementitious materials, while also enhancing the workability of fresh paste.",
+        "references": {},
+        "viewpoints": [
+          "Blending SCAs in fresh paste is regarded as a more effective approach for designing durable cementitious materials.",
+          "Blending SCAs in fresh paste enhances the workability of fresh paste."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "A study noted that incorporation of 3-aminopropyl triethoxysilane (APTES) into the montmorillonite partial substituted system significantly improved the fluidity of the cement paste, increasing it from 26.89% to 65.25%, and induced the formation of acicular hydration products that improved microstructure [12].",
+        "references": {
+          "12": {
+            "1": "Clays have emerged as potential partial replacements for cement.",
+            "2": "Using clays as partial replacements for cement can reduce global CO₂ emissions.",
+            "3": "Using clays as partial replacements for cement does not sacrifice strength.",
+            "4": "Smectite clay minerals such as montmorillonite (MMT) have dramatic shrink and swell properties.",
+            "5": "The dramatic shrink and swell properties of MMT hamper the consistency of cement paste.",
+            "6": "The dramatic shrink and swell properties of MMT generate micro cracks at the interface.",
+            "7": "MMT shows strong adsorption of poly carboxylate-based superplasticizer.",
+            "8": "MMT shows strong intercalation of poly carboxylate-based superplasticizer.",
+            "9": "Numerous active sites in the interlayer of MMT cause strong adsorption and intercalation of poly carboxylate-based superplasticizer.",
+            "10": "The strong adsorption and intercalation of poly carboxylate-based superplasticizer by MMT affects the properties of fresh concrete.",
+            "11": "The strong adsorption and intercalation of poly carboxylate-based superplasticizer by MMT affects the properties of hardened concrete.",
+            "12": "In this study, the interlayer alkali cation was exchanged by (3-Aminopropyl) triethoxysilane.",
+            "13": "The silane treatment increased the interlayer spacing of MMT.",
+            "14": "The silane treatment increased the hydrophobicity of MMT.",
+            "15": "The shrink and swell index of MMT showed an 84% reduction after silane treatment.",
+            "16": "Cement pastes with silane-modified clay showed needle-shaped hydration products.",
+            "17": "Cement pastes with silane-modified clay showed less portlandite content.",
+            "18": "The mortar fabricated with silane-treated MMT showed improved consistency.",
+            "19": "The mortar fabricated with silane-treated MMT showed higher mechanical strength."
+          }
+        },
+        "viewpoints": [
+          "Incorporation of 3-aminopropyl triethoxysilane (APTES) into montmorillonite partial substituted system significantly improved the fluidity of cement paste.",
+          "The fluidity of cement paste increased from 26.89% to 65.25% through APTES incorporation.",
+          "APTES incorporation induced the formation of acicular hydration products.",
+          "Formation of acicular hydration products improved the microstructure of the cement paste."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Recent reports have also confirmed that silane modification improves the flexural performance of cement paste [13].",
+        "references": {
+          "13": {
+            "1": "Fiber concrete is considered a technological revolution in the concrete construction industry.",
+            "2": "Polyvinyl alcohol (PVA) fibers used in plain concrete can substantially improve the crack resistance of concrete.",
+            "3": "Differences in the physical and chemical properties of materials lead to differences in the interfacial properties of those materials.",
+            "4": "The interfacial properties largely determine the effectiveness of the interaction between fibers and the cementitious base.",
+            "5": "PVA fiber was pretreated with Silane coupling agent (KH560) in this study.",
+            "6": "The pretreatment was performed to enhance the interface performance of high performance fiber concrete.",
+            "7": "Macro test data showed that KH560 can significantly improve the 7-day flexural strength of PVA fiber cement based materials.",
+            "8": "Macro test data showed that KH560 can significantly improve the 28-day flexural strength of PVA fiber cement based materials.",
+            "9": "SEM, FTIR, and XRD analysis showed that pretreated PVA can be better embedded in the cement base.",
+            "10": "Chemical interactions between the gel and the polymer contribute to the embedding of pretreated PVA in the cement base.",
+            "11": "Chemical interactions increase the tightness of the interface structure between the fiber and the cement base.",
+            "12": "The molecular dynamics simulation study revealed the interaction mechanism between the fiber and the cementitious matrix interface.",
+            "13": "The pretreated PVA fibers formed more H bonds on the C-S-H interface.",
+            "14": "The pretreated PVA fibers formed more Ca ion bonds on the C-S-H interface.",
+            "15": "The analysis of different scales proves that the flexural strength of PVA fiber cement-based materials is further improved after KH560 pretreatment.",
+            "16": "No viewpoints extracted; this sentence references a visual element not provided here."
+          }
+        },
+        "viewpoints": [
+          "Silane modification improves the flexural performance of cement paste."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Feng et al. found that incorporating a small amount of silanes increased both the flexural and compressive strength of ordinary mortars after 7 and 28 days of curing [14].",
+        "references": {
+          "14": {
+            "1": "The experimental research aimed to study the effects of silanes (amino, vinyl, and epoxy-based) on cement hydration.",
+            "2": "The experimental research aimed to study the effects of silane derivatives (silane oligomers and silane nanoparticles) on cement hydration.",
+            "3": "The experimental research aimed to study the effects of silanes on the mechanical properties of mortars.",
+            "4": "The experimental research aimed to study the effects of silane derivatives on the mechanical properties of mortars.",
+            "5": "Silanes are used as coupling agents to combine different compositions in mortars.",
+            "6": "Silane derivatives are used as coupling agents to combine different compositions in mortars.",
+            "7": "Silanes chemically react with calcium silicate hydrates to introduce an organic component into CSH structure.",
+            "8": "Silane derivatives chemically react with calcium silicate hydrates to introduce an organic component into CSH structure.",
+            "9": "The use of silanes retarded the cement hydration.",
+            "10": "Silane derivatives effectively mitigated the retardation of cement hydration caused by silanes.",
+            "11": "²⁹Si nuclear magnetic resonance (NMR) spectroscopy showed that silanes and silane derivatives have different hydrolysis products in the solutions of cement pastes.",
+            "12": "²⁹Si nuclear magnetic resonance (NMR) spectroscopy showed that silanes and silane derivatives have different condensation products in the solutions of cement pastes.",
+            "13": "The hydrolysis products of silane oligomer tend to remain in the solution rather than adsorb onto the surface of cement hydration products, which retards cement hydration.",
+            "14": "The condensation products of silane oligomer tend to remain in the solution rather than adsorb onto the surface of cement hydration products, which retards cement hydration.",
+            "15": "Ordinary mortars with silanes showed general enhancement in flexural strength after curing for 7 days and 28 days.",
+            "16": "Ordinary mortars with silanes showed some improvement in compressive strength after curing for 7 days and 28 days.",
+            "17": "Ordinary mortars with silane derivatives showed general enhancement in flexural strength after curing for 7 days and 28 days.",
+            "18": "Ordinary mortars with silane derivatives showed some improvement in compressive strength after curing for 7 days and 28 days.",
+            "19": "Epoxy-based silane oligomer has good strength properties.",
+            "20": "Epoxy-based silane oligomer causes negligible hydration retardation.",
+            "21": "Epoxy-based silane oligomer has a simple preparation method.",
+            "22": "Epoxy-based silane oligomer was selected for further study in high-strength mortar.",
+            "23": "The compressive strength of the high-strength mortar was increased by 20% compared with the control mortar.",
+            "24": "The splitting tensile strength of the high-strength mortar was increased by 38% compared with the control mortar.",
+            "25": "The elastic modulus of the high-strength mortar was increased by 13% compared with the control mortar."
+          }
+        },
+        "viewpoints": [
+          "Incorporating a small amount of silanes increased the flexural strength of ordinary mortars after 7 and 28 days of curing.",
+          "Incorporating a small amount of silanes increased the compressive strength of ordinary mortars after 7 and 28 days of curing."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Despite these benefits, the inclusion of SCAs can introduce adverse effects, such as the inhibition of initial cement hydration.",
+        "references": {},
+        "viewpoints": [
+          "The inclusion of SCAs can introduce adverse effects such as the inhibition of initial cement hydration."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Rodríguez et al. [15] reported that incorporating SCAs significantly delays the emergence of hydration peak, thereby inhibiting initial hydration.",
+        "references": {
+          "15": {
+            "1": "Silanes added during mortar or concrete preparation may modify the fresh state properties of the final product.",
+            "2": "Silanes added during mortar or concrete preparation may modify the hydration kinetics of the final product.",
+            "3": "Silanes added during mortar or concrete preparation may modify the mechanical strength of the final product.",
+            "4": "The effects of silanes on cement hydration have been widely studied in the literature.",
+            "5": "There is some controversy about the effect of silanes on cement hydration at short ages.",
+            "6": "The present study was undertaken to determine the effect of a TEOS-based alkoxysilane (UCA-T) on early age cement paste hydration.",
+            "7": "The TEOS-based alkoxysilane (UCA-T) is produced by ultrasound-assisted pre-hydrolysis of an oligomeric precursor.",
+            "8": "The nature of the processes modifying the various stages of cement hydration kinetics in the presence of the alkoxysilane was ascertained by analyzing paste composition at several ages.",
+            "9": "The ages at which paste composition was analyzed were defined on the grounds of calorimetric curve results.",
+            "10": "XRD, TG-DTG, FTIR, and Raman spectroscopy were used to analyze paste composition.",
+            "11": "The calorimetric curve of pastes containing UCA-T exhibited a new early age, pre-induction period exothermal peak.",
+            "12": "The pre-induction period exothermal peak is indicative of UCA-T hydrolysis.",
+            "13": "The pre-induction period exothermal peak is indicative of C₃A and C₃S dissolution.",
+            "14": "The pre-induction period exothermal peak is indicative of ettringite precipitation.",
+            "15": "The pre-induction period exothermal peak is indicative of C–S–H gel precipitation.",
+            "16": "Portlandite did not precipitate.",
+            "17": "Portlandite reacts with the Si(OH)₄ sourced from UCA-T hydrolysis.",
+            "18": "Portlandite and Si(OH)₄ reaction generates further C–S–H gel.",
+            "19": "The induction period following the new exothermal peak was considerably longer than the period observed in the reference cement.",
+            "20": "The effect of a longer induction period intensified at higher UCA-T content."
+          }
+        },
+        "viewpoints": [
+          "Incorporating SCAs significantly delays the emergence of the hydration peak.",
+          "The delay of hydration peak by SCAs results in the inhibition of initial hydration."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "This effect could be attributed to the increased repulsive force between free water and cement particles, introduced by the hydrophobic groups of the silane.",
+        "references": {},
+        "viewpoints": [
+          "The increased repulsive force between free water and cement particles may cause the inhibition of initial hydration.",
+          "The increased repulsive force is introduced by the hydrophobic groups of the silane."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Kong et al. [16] also identified this inhibitory effect on cement hydration and indicated that the influence of the hydrolysis byproducts, such as alcohols is negligible.",
+        "references": {
+          "16": {
+            "1": "The influences of tetraethoxysilane (TEOS), 3-aminopropyltriethoxysilane (APTES), and N-2-aminoethyl-3-aminopropyltrimethoxysilane (AEAPTMS) on flowability of cement pastes and mortars are systematically investigated.",
+            "2": "The influences of tetraethoxysilane (TEOS), 3-aminopropyltriethoxysilane (APTES), and N-2-aminoethyl-3-aminopropyltrimethoxysilane (AEAPTMS) on strength development of cement pastes and mortars are systematically investigated.",
+            "3": "The influences of tetraethoxysilane (TEOS), 3-aminopropyltriethoxysilane (APTES), and N-2-aminoethyl-3-aminopropyltrimethoxysilane (AEAPTMS) on hydration kinetics of cement pastes and mortars are systematically investigated.",
+            "4": "All three silanes exhibit a dispersing effect on cement pastes.",
+            "5": "The dispersing effect of the three silanes on cement pastes is indicated by the increased flowability of fresh cement pastes.",
+            "6": "AEAPTMS shows the strongest dispersing power among the three silanes on cement pastes.",
+            "7": "AEAPTMS retards cement hydration by extending the induction period.",
+            "8": "APTES retards cement hydration by extending the induction period.",
+            "9": "AEAPTMS reduces the hydration degree of cement at certain ages.",
+            "10": "APTES reduces the hydration degree of cement at certain ages.",
+            "11": "The retardation of cement hydration by AEAPTMS and APTES is determined by isothermal calorimetry, measurements of non-evaporable water amount, and portlandite content in hydration products before 90 days.",
+            "12": "AEAPTMS has a positive effect on the toughness of mortars after 7 days of curing.",
+            "13": "APTES has a positive effect on the toughness of mortars after 7 days of curing.",
+            "14": "The three silanes act differently on the strength growth of cement at various ages.",
+            "15": "The difference in the effect of the three silanes on strength growth at various ages is likely a result of the counterbalance between their influences on hydration kinetics, pore structure, composition, and morphology of hydration products."
+          }
+        },
+        "viewpoints": [
+          "Kong et al. identified the inhibitory effect of silane on cement hydration.",
+          "The influence of hydrolysis byproducts such as alcohols on cement hydration is negligible."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Moreover, the hydrophobic groups of silanes negatively impact the silicate polymerization and hydrogen bond formation, thereby influencing the nucleation of the hydration product C-S-H (calcium-silicate-hydrate) and further retarding the hydration.",
+        "references": {},
+        "viewpoints": [
+          "The hydrophobic groups of silanes negatively impact silicate polymerization.",
+          "The hydrophobic groups of silanes negatively impact hydrogen bond formation.",
+          "Negative impact on silicate polymerization influences the nucleation of C-S-H and retards hydration.",
+          "Negative impact on hydrogen bond formation influences the nucleation of C-S-H and retards hydration."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Xie et al. [17] demonstrated that incorporating silane reduces the quantity and cumulative density of C-S-H, subsequently hindering the cement hydration process.",
+        "references": {
+          "17": {
+            "1": "Three silanes with different alkyl chain lengths were incorporated into PII 52.5 ordinary Portland cement.",
+            "2": "The purpose of incorporating three silanes with different alkyl chain lengths into PII 52.5 ordinary Portland cement was to investigate their effects on cement hydration.",
+            "3": "The purpose of incorporating three silanes with different alkyl chain lengths into PII 52.5 ordinary Portland cement was to investigate their effects on mechanical development.",
+            "4": "The micro-mechanism of the hydration process was studied using Calorimeter, Fourier transform infrared spectroscopy (FT-IR), X-ray diffraction (XRD), Thermal gravimetric-Differential scanning calorimetry (TG-DSC).",
+            "5": "The hydrated products were studied using Calorimeter, Fourier transform infrared spectroscopy (FT-IR), X-ray diffraction (XRD), Thermal gravimetric-Differential scanning calorimetry (TG-DSC).",
+            "6": "Different alkylsilanes had diverse effects on cement hydration.",
+            "7": "Shorter alkyl chain lengths generally result in stronger retardation of cement hydration.",
+            "8": "The porosity change due to the incorporated silane could be a reason for the decrease of mechanical properties in the cement.",
+            "9": "SEM images show fiber-like needle products formed on the surface of the hydrated cement substrate.",
+            "10": "According to EDS analysis, fiber-like needle products are likely composed of 2,4,4-trimethyl pentyl triethoxysilane (S1) and n-dodecyl triethoxysilane (S3).",
+            "11": "2,4,4-trimethyl pentyl triethoxysilane (S1) and n-dodecyl triethoxysilane (S3) might be produced from the reaction between calcium hydroxide and silane.",
+            "12": "In terms of water absorption reduction, 2,4,4-trimethyl pentyl triethoxysilane (S1) shows the lowest water uptake.",
+            "13": "The low water uptake of 2,4,4-trimethyl pentyl triethoxysilane (S1) benefits from the branched structure in the alkyl group of S1."
+          }
+        },
+        "viewpoints": [
+          "Incorporating silane reduces the quantity of C-S-H.",
+          "Incorporating silane reduces the cumulative density of C-S-H.",
+          "Reduction in quantity and cumulative density of C-S-H hinders the cement hydration process."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "More recent findings indicated that silane hydrolysates can form complexes with calcium ions, potentially accounting for the delayed hydration [18].",
+        "references": {
+          "18": []
+        },
+        "viewpoints": [
+          "Silane hydrolysates can form complexes with calcium ions.",
+          "Complex formation with calcium ions by silane hydrolysates potentially accounts for delayed hydration."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Despite these insights, there remain gaps in understanding the mechanisms of silane-induced delayed hydration.",
+        "references": {},
+        "viewpoints": [
+          "Gaps remain in understanding the mechanisms of silane-induced delayed hydration."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "While the two aforementioned hypotheses provide plausible explanations, hydration is an inherently complex and prolonged process, where silane may exhibit different retarding mechanisms at various stages.",
+        "references": {},
+        "viewpoints": [
+          "The two aforementioned hypotheses provide plausible explanations for silane-induced delayed hydration.",
+          "Hydration is an inherently complex and prolonged process.",
+          "Silane may exhibit different retarding mechanisms at various stages of hydration."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "It is worth mentioning that the mechanism of complexation and inhibition of C-S-H growth appears more relevant to the post-induction stage of hydration.",
+        "references": {},
+        "viewpoints": [
+          "The mechanism of complexation and inhibition of C-S-H growth is more relevant to the post-induction stage of hydration."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "However, the precise impact of silane on clinker dissolution during the induction stage warrants further exploration.",
+        "references": {},
+        "viewpoints": [
+          "The precise impact of silane on clinker dissolution during the induction stage warrants further exploration."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Given that mineral dissolution occurs instantaneously (within seconds), direct observation poses significant challenges.",
+        "references": {},
+        "viewpoints": [
+          "Mineral dissolution occurs instantaneously within seconds.",
+          "Direct observation of mineral dissolution poses significant challenges."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "As such, atomic-scale simulations offer a promising approach for studying this phenomenon.",
+        "references": {},
+        "viewpoints": [
+          "Atomic-scale simulations offer a promising approach for studying mineral dissolution."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Atomistic simulations have emerged as an alternative method to provide valuable insights into the nanoscale mechanisms of the inhibition of SCAs on cement hydration [19], [20], [21].",
+        "references": {
+          "19": [],
+          "20": [],
+          "21": []
+        },
+        "viewpoints": [
+          "Atomistic simulations have emerged as an alternative method.",
+          "Atomistic simulations provide valuable insights into the nanoscale mechanisms of the inhibition of SCAs on cement hydration."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Molecular dynamics (MD) simulations using empirical force fields have been applied to explore lots of physical properties of cement-based materials, such as the efficiency of solution transport in calcium-silicate-hydrate (C-S-H) nanopores functionalized with silane [22].",
+        "references": {
+          "22": []
+        },
+        "viewpoints": [
+          "Molecular dynamics (MD) simulations using empirical force fields have been applied to explore many physical properties of cement-based materials.",
+          "MD simulations have been applied to explore the efficiency of solution transport in C-S-H nanopores functionalized with silane."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Additionally, MD simulations based on reactive force field (ReaxFF) are extensively used to model clinker hydration processes.",
+        "references": {},
+        "viewpoints": [
+          "MD simulations based on reactive force field (ReaxFF) are extensively used to model clinker hydration processes."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Li et al. [23] demonstrated that the degree of hydrolytic separation on the surfaces of M3- and T1-C3S is comparable and independent of the polycrystalline state of the crystal.",
+        "references": {
+          "23": {
+            "1": "The hydration of tricalcium silicate plays a critical role in improving the mechanical properties of cement-based materials.",
+            "2": "The study investigated the hydration mechanism of M3-C₃S polymorph using molecular dynamics simulations with the ReaxFF force field.",
+            "3": "The study investigated the hydration mechanism of T1-C₃S polymorph using molecular dynamics simulations with the ReaxFF force field.",
+            "4": "Six surfaces were selected to study their hydration processes based on low-index surface energy and surface areas of the Wulff structure.",
+            "5": "The selected surfaces included M3-C₃S (100), (001), and (111) surfaces.",
+            "6": "The selected surfaces included T1-C₃S (001), (010), and (111) surfaces.",
+            "7": "Bond formation kinetics were analyzed.",
+            "8": "Radial distribution functions were analyzed.",
+            "9": "Water dissociation degrees on the studied surfaces were comparable.",
+            "10": "Water dissociation degrees were independent of the crystal polymorphs.",
+            "11": "The final bond formation percentages of Ca–OwH on all the surfaces exhibited little difference.",
+            "12": "The final bond formation percentages of Os/Oi–H on all the surfaces exhibited little difference.",
+            "13": "The formation of pentacoordinate silicon atoms with a [SiO₅]⁶⁻ trigonal bipyramid structure was observed.",
+            "14": "The formation of pentacoordinate silicon atoms with a [SiO₅]⁶⁻ trigonal bipyramid structure occurred earlier in M3-C₃S than in T1-C₃S.",
+            "15": "M3-C₃S exhibited a higher abundance of pentacoordinate silicon atoms compared to the T1 crystal.",
+            "16": "The higher abundance of pentacoordinate silicon atoms in M3-C₃S suggests greater reactivity of M3-C₃S.",
+            "17": "This study provides valuable insights into enhancing the quality of cement clinker.",
+            "18": "This study provides valuable insights into activating other silicate minerals in supplementary cementitious materials."
+          }
+        },
+        "viewpoints": [
+          "The degree of hydrolytic separation on the surfaces of M3- and T1-C3S is comparable.",
+          "The degree of hydrolytic separation on the surfaces of M3- and T1-C3S is independent of the polycrystalline state of the crystal."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "Xu et al. [24] found that the complete dissolution of calcium ions in C3S required two dissolution processes.",
+        "references": {
+          "24": {
+            "1": "Cement hydration is crucial for the strength development of cement-based materials.",
+            "2": "The mechanism of cement hydration remains poorly understood at the molecular level.",
+            "3": "In-depth understanding of cement hydration is required for the development of environmentally friendly cement.",
+            "4": "The development of environmentally friendly cement can contribute to the reduction of carbon emissions in the cement industry.",
+            "5": "Molecular dynamics simulations with a reactive force field are used to investigate the initial hydration processes of tricalcium silicate (C₃S) and dicalcium silicate (C₂S) up to 40 ns.",
+            "6": "The simulations provide theoretical support for the rapid initial hydration of tricalcium silicate (C₃S) compared to dicalcium silicate (C₂S) at the molecular level.",
+            "7": "The dissolution pathways of calcium ions in tricalcium silicate (C₃S) and dicalcium silicate (C₂S) are revealed.",
+            "8": "Two dissolution processes are required for the complete dissolution of calcium ions in tricalcium silicate (C₃S).",
+            "9": "The findings promote the understanding of the calcium dissolution stage.",
+            "10": "The findings serve as a valuable reference for the investigation of the initial cement hydration."
+          }
+        },
+        "viewpoints": [
+          "Complete dissolution of calcium ions in C3S requires two dissolution processes."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Otherwise, density functional theory (DFT) calculations have also been performed to elucidate the adsorption behavior of water on clinker phases and SCAs on the C-S-H surface without considering the dynamics information of the reaction [25].",
+        "references": {
+          "25": []
+        },
+        "viewpoints": [
+          "Density functional theory (DFT) calculations have been performed to elucidate the adsorption behavior of water on clinker phases.",
+          "DFT calculations have been performed to elucidate the adsorption behavior of SCAs on the C-S-H surface.",
+          "The DFT calculations do not consider the dynamics information of the reaction."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "As theoretical methods continue to advance, ab initio molecular dynamics (AIMD) simulations have been increasingly adopted to accurately probe chemical reactions involving electron transfer, including key transformations in cement hydration such as adsorption and nucleation [26].",
+        "references": {
+          "26": {
+            "1": "Calcium Silicate Hydrate (C-S-H) nucleation is a crucial step during cement hydration.",
+            "2": "C-S-H nucleation determines to a great extent the rheology of the cement paste.",
+            "3": "C-S-H nucleation determines to a great extent the microstructure of the cement paste.",
+            "4": "C-S-H nucleation determines to a great extent the properties of the cement paste.",
+            "5": "Recent evidence indicates that the C-S-H nucleation involves at least two steps.",
+            "6": "The underlying atomic scale mechanism of C-S-H nucleation is unknown.",
+            "7": "The nature of the primary particles involved in C-S-H nucleation is unknown.",
+            "8": "The stability of the primary particles involved in C-S-H nucleation is unknown.",
+            "9": "How the primary particles merge or aggregate to form larger structures in C-S-H nucleation is unknown.",
+            "10": "This work uses atomistic simulation methods to investigate the structure of C-S-H primary particles from the ions in solution.",
+            "11": "This work uses atomistic simulation methods to investigate the formation of C-S-H primary particles from the ions in solution.",
+            "12": "This work uses DFT, evolutionary algorithms (EA), and Molecular Dynamics (MD) as atomistic simulation methods.",
+            "13": "This work discusses a possible formation pathway for the C-S-H nucleation.",
+            "14": "The simulations indicate that even for small sizes the most stable clusters encode C-S-H structural motifs.",
+            "15": "The simulations identified a C₄S₄H₂ cluster candidate to be the C-S-H basic building block.",
+            "16": "A formation path is suggested in which small clusters formed by silicate dimers merge into large elongated aggregates.",
+            "17": "Upon dehydration, the C-S-H basic building blocks can be formed within the aggregates.",
+            "18": "Upon dehydration, the C-S-H basic building blocks can eventually crystallize."
+          }
+        },
+        "viewpoints": [
+          "Ab initio molecular dynamics (AIMD) simulations have been increasingly adopted to probe chemical reactions involving electron transfer.",
+          "AIMD simulations probe key transformations in cement hydration such as adsorption and nucleation."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "In this context, enhanced sampling techniques like metadynamics (MetaD), offer a powerful approach for exploring significant configurational changes within a system, from reactants to products [27].",
+        "references": {
+          "27": {
+            "1": "The kinetic stability of any material in water relies on the presence of surface weak spots.",
+            "2": "Surface weak spots are responsible for chemical weathering by hydrolysis.",
+            "3": "Identifying the atomistic nature of surface weak spots is critical to master decomposition processes.",
+            "4": "Identifying the first steps of transformation of surface weak spots is critical to master decomposition processes.",
+            "5": "The challenge is to tackle the identification of atomistic nature and transformation steps of surface weak spots.",
+            "6": "Combining experimental and modeling studies helps investigate the stability of alumina in water.",
+            "7": "The reactivity of shape-controlled crystals is explored.",
+            "8": "A specific facet is identified experimentally as the location of the weak spots.",
+            "9": "Biased ab initio molecular dynamics is used to recognize the weak spot as a surface exposed tetra-coordinated Al atom.",
+            "10": "A detailed mechanism of the first steps of hydrolysis is provided.",
+            "11": "Understanding of the hydrolysis mechanism is of great importance to heterogeneous catalysis.",
+            "12": "Alumina is a major support in heterogeneous catalysis.",
+            "13": "Understanding the hydrolysis mechanism paves the way to an atomistic understanding of interfacial reactions.",
+            "14": "Interfacial reactions are at the crossroad of a variety of fields of research."
+          }
+        },
+        "viewpoints": [
+          "Enhanced sampling techniques like metadynamics (MetaD) offer a powerful approach for exploring significant configurational changes within a system.",
+          "MetaD explores configurational changes from reactants to products."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Recently, it has been reported that the combination of AIMD and MetaD successfully drew a full picture of the calcium dissolution from the Ca3SiO5 and Ca2SiO4 surface [28], [29], which sheds light on the understanding of the effect of SCAs on Ca3SiO5 dissolution.",
+        "references": {
+          "28": {
+            "1": "Dissolution of minerals in water is common in nature.",
+            "2": "Dissolution of minerals in water is common in industry.",
+            "3": "Calcium silicate species are especially involved in the dissolution of minerals in water.",
+            "4": "The behavior of dissolution of minerals in water is complex and not fully understood at the atomic level.",
+            "5": "Ab initio molecular dynamics and metadynamics simulations enable quantitative analyses of reaction pathways of calcium ion dissolution from the tricalcium silicate surface.",
+            "6": "Ab initio molecular dynamics and metadynamics simulations enable quantitative analyses of thermodynamics of calcium ion dissolution from the tricalcium silicate surface.",
+            "7": "Ab initio molecular dynamics and metadynamics simulations enable quantitative analyses of kinetics of calcium ion dissolution from the tricalcium silicate surface.",
+            "8": "Calcium sites with different coordination environments lead to different reaction pathways in calcium ion dissolution.",
+            "9": "Calcium sites with different coordination environments lead to different free energy barriers in calcium ion dissolution.",
+            "10": "Low free energy barriers cause the detachment of the calcium ion to be a ligand exchange process.",
+            "11": "Low free energy barriers cause the detachment of the calcium ion to be an auto-catalytic process.",
+            "12": "Water adsorption accelerates the leaching of the calcium ion from the surface.",
+            "13": "Proton exchange accelerates the leaching of the calcium ion from the surface.",
+            "14": "Diffusion of water into the surface layer accelerates the leaching of the calcium ion from the surface.",
+            "15": "The discovery in this work is a landmark for revealing the mechanism of tricalcium silicate hydration."
+          },
+          "29": {
+            "1": "Quantitative analyses of the thermodynamics of silicate minerals dissolution at the atomic level are currently difficult.",
+            "2": "Quantitative analyses of the kinetics of silicate minerals dissolution at the atomic level are currently difficult.",
+            "3": "Analyses are difficult both experimentally and computationally.",
+            "4": "Deep learning is applied to determine the free energy surfaces, minimum free-energy reaction pathways, and kinetic rates for Ca dissolution from the water/dicalcium silicate interface at different temperatures.",
+            "5": "Enhancing sampling molecular dynamics and density functional theory are applied to determine the free energy surfaces, minimum free-energy reaction pathways, and kinetic rates for Ca dissolution from the water/dicalcium silicate interface at different temperatures.",
+            "6": "A deep neural network potential with quantum mechanics accuracy is built to determine the free energy surfaces for Ca dissolution.",
+            "7": "A deep neural network potential with quantum mechanics accuracy is built to determine the minimum free-energy reaction pathways for Ca dissolution.",
+            "8": "A deep neural network potential with quantum mechanics accuracy is built to determine the kinetic rates for Ca dissolution.",
+            "9": "The Ca dissolution is a spontaneous reaction.",
+            "10": "Ca dissolution follows different minimum free-energy reaction pathways at different temperatures.",
+            "11": "The dissolution time of the five-coordinated Ca ion is on the order of hundreds of seconds at ambient temperature.",
+            "12": "The dissolution time of the five-coordinated Ca ion increases to the order of nanoseconds after heating.",
+            "13": "Dissolution kinetics are relatively slow compared to the low free energy barriers of each elementary reaction.",
+            "14": "The slow dissolution kinetics are attributed to the multi-directional nature of the dissolution reaction.",
+            "15": "The slow dissolution kinetics are attributed to the multi-step nature of the dissolution reaction.",
+            "16": "This new atomistic insight promotes a better understanding of dicalcium silicate hydration.",
+            "17": "This new atomistic insight promotes a better understanding of cement hydration."
+          }
+        },
+        "viewpoints": [
+          "The combination of AIMD and MetaD successfully drew a full picture of calcium dissolution from the Ca3SiO5 and Ca2SiO4 surface.",
+          "The combination of AIMD and MetaD sheds light on the understanding of the effect of SCAs on Ca3SiO5 dissolution."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "To elucidate the retardation effect of SCAs on cement hydration, we employed a combination of ab initio simulations and experimental corroboration to investigate the impact of APTES on the early Ca3SiO5 hydration at the nanoscale.",
+        "references": {},
+        "viewpoints": [
+          "A combination of ab initio simulations and experimental corroboration was employed to investigate the impact of APTES on early Ca3SiO5 hydration at the nanoscale.",
+          "The combination of simulations and experiments aimed to elucidate the retardation effect of SCAs on cement hydration."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "First, the accuracy of the MetaD sampling model was validated through DFT adsorption tests, followed by the exploration of the dissolution behavior of surface penta-coordinated calcium under the influence of APTES using ab initio MetaD simulations.",
+        "references": {},
+        "viewpoints": [
+          "The accuracy of the MetaD sampling model was validated through DFT adsorption tests.",
+          "The dissolution behavior of surface penta-coordinated calcium under the influence of APTES was explored using ab initio MetaD simulations."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "The results indicated that the shielding effect of SCAs causes the dissolution of calcium ions to shift from a spontaneous to a non-spontaneous process.",
+        "references": {},
+        "viewpoints": [
+          "The shielding effect of SCAs causes the dissolution of calcium ions to shift from a spontaneous to a non-spontaneous process."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "Secondly, the early hydration kinetics of silane-treated cement paste were examined through hydration experiments, which not only corroborated the interactions between Ca3SiO5 particles and APTES molecules but also demonstrated that the reduced concentration of calcium ions in the hydrolytic solution is a critical factor in the retardation of cement hydration.",
+        "references": {},
+        "viewpoints": [
+          "The early hydration kinetics of silane-treated cement paste were examined through hydration experiments.",
+          "Hydration experiments corroborated the interactions between Ca3SiO5 particles and APTES molecules.",
+          "Hydration experiments demonstrated that the reduced concentration of calcium ions in the hydrolytic solution is a critical factor in the retardation of cement hydration."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "Finally, these discoveries provide a molecular-level explanation for the delayed hydration effect of SCAs, contributing to a deeper understanding of the initial hydration of cement in organic systems.",
+        "references": {},
+        "viewpoints": [
+          "These discoveries provide a molecular-level explanation for the delayed hydration effect of SCAs.",
+          "These discoveries contribute to a deeper understanding of the initial hydration of cement in organic systems."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56877-9_with_abstracts",
+    "base_id": "s41467-025-56877-9",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract_v2/Physical sciences/s41467-025-56877-9_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

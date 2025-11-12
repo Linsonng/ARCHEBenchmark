@@ -1,0 +1,829 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "The morphogenesis of epithelia displays remarkable plasticity and robustness during embryo development: living tissues actively remodel their shape while maintaining their structural integrity to establish functional organisms. Tissue remodelling relies on the ability of epithelial cells to generate mechanical forces and to acquire new shape and position while maintaining cell-cell contacts [1] , [2] . To achieve this, cells remodel their cytoskeleton in an orchestrated fashion [3] , [4] , [5] under the control of signalling cues established both at the local and organismal levels [6] . An outstanding example of epithelial plasticity and robustness is composite morphogenesis, the process by which an epithelial tissue undergoes multiple and simultaneous shape transformations [7] . For instance, epithelia can simultaneously fold and extend to drive embryo gastrulation, neurulation or tubulogenesis [8] , [9] , [10] . While great advances have been made to unveil the mechanisms underlying single morphogenetic processes, how composite morphogenesis is directed and coordinated is largely unexplored. To tackle this question, we study the concomitant folding and extension of the prospective mesoderm during early Drosophila gastrulation. Recent work has shown that mesoderm epithelial cells establish two junctional tiers formed by actomyosin networks tethered to E-cadherin and tailored for distinct functions. The first tier is apically located and mediates cell apical constriction for tissue furrowing (Fig. 1a, b and b’, bottom) [11] . The second tier is positioned laterally ( ~ 10 µm from the apical side) and is planar cell polarized to initiate cell intercalation for tissue convergence-extension (Fig. 1a, b and b’, top) [8] . With this study, we aim to shine light on the mechanisms that spatio-temporally coordinate the formation of functionally distinct cytoskeletal networks for simultaneous cell shape and topology changes. While the two tiers share the same nature, their origin differs. The first tier is under the control of the cell apical-basal polarity [12] and it is shaped by apical-medial actomyosin contractions [13] . The second tier is formed by the coalescence of the cell lateral actomyosin network, focusing E-cadherin to form a cluster [8] . Overall, the formation of the two-tier junctional system is under the control of the synergistic interaction between the embryo anterior-posterior (AP) and dorsal-ventral (DV) gene patterning systems [8] . How the lateral actomyosin network is spatio-temporally controlled is still unknown. Fig. 1: Nuclear migration precedes MyoII-LC formation. a The prospective mesoderm simultaneously folds and extends at the onset of Drosophila gastrulation. Cross-section (left), surface view (top-right) and sagittal section (bottom-right). White arrowhead and dashed line indicate the furrow position. Scale bar, 50 µm. b Sagittal view of mesoderm cells showing a two-tier organization of MyoII. Scale bar, 5 µm. b’ Time-lapse showing the lateral and apical pool of MyoII driving cell intercalation (top) and apical constriction (bottom), respectively. Scale bars, 5 µm. c Time-lapse of the mesoderm cross-section during ventral furrowing. Arrowheads indicate MyoII-LCs. Scale bar, 10 µm. d MyoII lateral intensity and nuclear position in function of time. Inset: temporal cross-correlation between the peak of nuclear migration speed and the peak of MyoII lateral recruitment. Apex-to-nucleus distance: distance between the apical side of the cell and the apical side of the nucleus. Data points represent the mean values with error bars indicating the 95% confidence interval ( n = 3 embryos, N = 45 junctions, N = 30 nuclei). e Mesoderm front view (left) and cross-section (right) time-lapse showing apical constriction and the associated nuclear displacement. Scale bars, 10 µm. f Mean nuclear position in function of the mean apical cell surface at different phases of mesoderm invagination. Inset: raw individual values with an exponential fit ( y = 69.212*e -0.096x ). Data points represent the mean values with error bars indicating the 95% confidence intervals ( n = 5 embryos, N = 925 cells, N = 925 nuclei). Source data are provided as a Source Data file. Full size image In addition to the molecular signalling, the change in position and shape of cellular organelles play a role in cell remodelling [14] , [15] . During the phase of apical constriction of mesoderm epithelial cells, the cell nuclei migrate basally [16] , [17] . While a great body of work has highlighted the mechanisms controlling nuclear relocation and the role of nuclear mechanotransduction in cell polarity, migration, division, or fate determination [18] , [19] , [20] , how the position of the nucleus participates in tissue remodelling remains elusive. We now investigate this during mesoderm folding and extension. We provide evidence that the nucleus functions as a cellular compartmentalizer and that its relocation spatio-temporally organizes the cell cytoskeleton and the distribution of the Rho guanine exchange factor RhoGEF2 to establish a second actomyosin tier for cell intercalation. Overall, by implementing advanced live imaging, laser manipulation, optogenetics, and molecular modelling, this study reveals the mechanisms underlying the spatiotemporal control of the cortical actomyosin cytoskeleton to form a modular scaffold for simultaneous morphogenetic events.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "The morphogenesis of epithelia displays remarkable plasticity and robustness during embryo development: living tissues actively remodel their shape while maintaining their structural integrity to establish functional organisms.",
+        "references": {},
+        "viewpoints": [
+          "The morphogenesis of epithelia exhibits plasticity during embryo development.",
+          "The morphogenesis of epithelia exhibits robustness during embryo development.",
+          "Living tissues actively remodel their shape during embryo development.",
+          "Living tissues maintain their structural integrity during embryo development to establish functional organisms."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Tissue remodelling relies on the ability of epithelial cells to generate mechanical forces and to acquire new shape and position while maintaining cell-cell contacts [1] , [2] .",
+        "references": {
+          "1": {
+            "1": "Mechanical forces cause changes in the size of cells during development.",
+            "2": "Mechanical forces cause changes in the shape of cells during development.",
+            "3": "Mechanical forces cause changes in the number of cells during development.",
+            "4": "Mechanical forces cause changes in the position of cells during development.",
+            "5": "Mechanical forces cause changes in gene expression of cells during development.",
+            "6": "Mechanical forces are integral to morphogenetic processes.",
+            "7": "Force generation by actin-myosin networks is a self-organizing phenomenon driving tissue morphogenesis.",
+            "8": "Force transmission through adhesive complexes is a self-organizing phenomenon driving tissue morphogenesis.",
+            "9": "Coordination and integration of forces by long-range force transmission produce large-scale tissue shape changes.",
+            "10": "Coordination and integration of forces by mechanosensing of cells within tissues produce large-scale tissue shape changes.",
+            "11": "Extrinsic mechanical forces control tissue patterning by modulating cell fate specification.",
+            "12": "Extrinsic mechanical forces control tissue patterning by modulating cell differentiation.",
+            "13": "The interplay between tissue mechanics and biochemical signaling orchestrates tissue morphogenesis in development.",
+            "14": "The interplay between tissue mechanics and biochemical signaling orchestrates tissue patterning in development."
+          },
+          "2": {
+            "1": "E-cadherin adhesive junctions are important during epithelial morphogenesis.",
+            "2": "E-cadherin adhesive junctions mechanically couple the contractile cortices of cells together.",
+            "3": "E-cadherin adhesive junctions distribute the stresses that drive cell rearrangements at the local level.",
+            "4": "E-cadherin adhesive junctions distribute the stresses that drive cell rearrangements at the tissue level.",
+            "5": "Cellular contractility and E-cadherin-based adhesion are functionally integrated by biomechanical feedback pathways.",
+            "6": "Biomechanical feedback pathways integrating cellular contractility and E-cadherin-based adhesion operate on the molecular scale.",
+            "7": "Biomechanical feedback pathways integrating cellular contractility and E-cadherin-based adhesion operate on the cellular scale.",
+            "8": "Biomechanical feedback pathways integrating cellular contractility and E-cadherin-based adhesion operate on the tissue scale."
+          }
+        },
+        "viewpoints": [
+          "Tissue remodeling relies on the ability of epithelial cells to generate mechanical forces.",
+          "Tissue remodeling relies on the ability of epithelial cells to acquire new shape and position.",
+          "Tissue remodeling relies on epithelial cells maintaining cell-cell contacts."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "To achieve this, cells remodel their cytoskeleton in an orchestrated fashion [3] , [4] , [5] under the control of signalling cues established both at the local and organismal levels [6] .",
+        "references": {
+          "3": {
+            "1": "The cortex in animal cells is a thin, crosslinked actin network.",
+            "2": "The cortex lies immediately beneath the plasma membrane of animal cells.",
+            "3": "Myosin motors exert contractile forces in the actin meshwork.",
+            "4": "The cortex is attached to the cell membrane.",
+            "5": "The cortex plays a central role in cell shape control.",
+            "6": "The proteic constituents of the cortex undergo rapid turnover.",
+            "7": "The rapid turnover of proteic constituents makes the cortex mechanically rigid.",
+            "8": "The rapid turnover of proteic constituents makes the cortex highly plastic.",
+            "9": "Mechanical rigidity is essential to the cortex's function.",
+            "10": "High plasticity is essential to the cortex's function.",
+            "11": "The cortex has recently attracted increasing attention.",
+            "12": "The functions of the cortex in cellular processes such as cytokinesis are progressively being dissected.",
+            "13": "The functions of the cortex in cellular processes such as cell migration are progressively being dissected.",
+            "14": "The functions of the cortex in cellular processes such as embryogenesis are progressively being dissected.",
+            "15": "We summarize current knowledge on the structural organization of the actin cortex.",
+            "16": "We summarize current knowledge on the composition of the actin cortex.",
+            "17": "We summarize current knowledge on the mechanics of the actin cortex.",
+            "18": "We focus on the link between molecular processes and macroscopic physical properties of the actin cortex.",
+            "19": "We highlight consequences of cortex dysfunction in disease."
+          },
+          "4": {
+            "1": "Cell shape changes are crucial for observable changes at the tissue level during morphogenesis.",
+            "2": "Cell shape changes are crucial for observable changes at the tissue level during organ formation.",
+            "3": "The actin cytoskeleton is the major driver of cell shape changes.",
+            "4": "The actin cytoskeleton drives cell shape changes in the form of protrusive linear or branched dynamic networks.",
+            "5": "The actin cytoskeleton drives cell shape changes in the form of contractile actomyosin.",
+            "6": "Over the last 20 years, actomyosin has become recognized as the major cytoskeletal system that deforms cells in epithelial sheets during morphogenesis.",
+            "7": "Microtubules have been mostly assumed to serve 'house-keeping' functions during morphogenetic events.",
+            "8": "The 'house-keeping' functions served by microtubules during morphogenetic events include directed transport.",
+            "9": "The 'house-keeping' functions served by microtubules during morphogenetic events include cell division.",
+            "10": "Microtubules are considered the second major cytoskeletal system during morphogenetic events.",
+            "11": "A subset of studies over the last 10 years has shown a major direct role for the microtubule cytoskeleton in epithelial morphogenesis.",
+            "12": "Our focus will need to be widened to give more attention and credit to the microtubule cytoskeleton in playing an active morphogenetic role.",
+            "13": "This article is part of a discussion meeting issue titled 'Contemporary morphogenesis'."
+          },
+          "5": {
+            "1": "The cytoskeleton is composed of actin microfilaments, microtubules, and intermediate filaments.",
+            "2": "The cytoskeleton is crucial for cell motility.",
+            "3": "The cytoskeleton is crucial for tissue integrity.",
+            "4": "Prior studies largely focused on individual cytoskeletal networks.",
+            "5": "Recent research underscores the interconnected nature of cytoskeletal systems in fundamental cellular functions.",
+            "6": "The interconnected nature of cytoskeletal systems is significant for cellular adhesion.",
+            "7": "The interconnected nature of cytoskeletal systems is significant for cellular migration.",
+            "8": "The interconnected nature of cytoskeletal systems is significant for cellular division.",
+            "9": "Understanding the coordination of distinct cytoskeletal networks in both time and space is essential.",
+            "10": "This review synthesizes current findings on the intricate interplay between cytoskeletal networks.",
+            "11": "This review emphasizes the pivotal role of intermediate filaments.",
+            "12": "Intermediate filaments engage in extensive crosstalk with actin microfilaments through direct molecular interactions.",
+            "13": "Intermediate filaments engage in extensive crosstalk with microtubules through direct molecular interactions.",
+            "14": "Intermediate filaments engage in crosstalk with microfilaments and microtubules through cytoskeletal linkers.",
+            "15": "Intermediate filaments engage in crosstalk with microfilaments and microtubules through molecular motors that form molecular bridges.",
+            "16": "Intermediate filaments engage in crosstalk with microfilaments and microtubules via complex regulation of intracellular signaling."
+          },
+          "6": {
+            "1": "A long-term aim of the life sciences is to understand the encoding of organismal shape by the genome.",
+            "2": "An important challenge in understanding organismal shape is identifying mechanistic links between genes controlling cell-fate decisions and cellular machines generating shape.",
+            "3": "Closing the gap between genotype and phenotype requires identifying these mechanistic links.",
+            "4": "The logic and mechanisms integrating different levels of shape control are beginning to be described.",
+            "5": "Recently discovered mechanisms of cross-talk and feedback explain the remarkable robustness of organ assembly.",
+            "6": "The emerging 'full-circle' understanding of morphogenesis solves a key puzzle in biology.",
+            "7": "The 'full-circle' understanding of morphogenesis provides a mechanistic framework for future approaches to tissue engineering."
+          }
+        },
+        "viewpoints": [
+          "Cells remodel their cytoskeleton in an orchestrated fashion to generate mechanical forces and acquire new shape and position.",
+          "The remodeling of the cytoskeleton is controlled by signaling cues.",
+          "Signaling cues for cytoskeleton remodeling are established at both the local and organismal levels."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "An outstanding example of epithelial plasticity and robustness is composite morphogenesis, the process by which an epithelial tissue undergoes multiple and simultaneous shape transformations [7] .",
+        "references": {
+          "7": {
+            "1": "Morphogenesis drives the formation of living shapes.",
+            "2": "Morphogenesis leads to functional living shapes.",
+            "3": "Gene expression patterns define the body plans of the animal.",
+            "4": "Signaling pathways define the body plans of the animal.",
+            "5": "Gene expression patterns control the morphogenetic processes shaping embryonic tissues.",
+            "6": "Signaling pathways control the morphogenetic processes shaping embryonic tissues.",
+            "7": "During embryogenesis, a tissue can undergo composite morphogenesis.",
+            "8": "Composite morphogenesis results from multiple concomitant shape changes.",
+            "9": "Previous studies have unraveled the mechanisms that drive simple morphogenetic processes.",
+            "10": "It is still not known how a tissue can undergo multiple and simultaneous changes in shape.",
+            "11": "How a tissue can undergo multiple and simultaneous changes in shape is not much explored.",
+            "12": "The chapter focuses on the process of concomitant tissue folding.",
+            "13": "The chapter focuses on the process of tissue extension.",
+            "14": "Concomitant tissue folding and extension are vital for the animal.",
+            "15": "Concomitant tissue folding and extension are key for embryo gastrulation.",
+            "16": "Concomitant tissue folding and extension are key for neurulation.",
+            "17": "Recent pioneering studies focus on the problem of concomitant tissue folding and extension.",
+            "18": "Recent pioneering studies highlight the roles of different spatially coordinated cell mechanisms to drive composite morphogenesis.",
+            "19": "Recent pioneering studies highlight the roles of the synergy between different patterns of gene expression to drive composite morphogenesis."
+          }
+        },
+        "viewpoints": [
+          "Composite morphogenesis is an example of epithelial plasticity.",
+          "Composite morphogenesis is an example of epithelial robustness.",
+          "Composite morphogenesis is the process by which an epithelial tissue undergoes multiple and simultaneous shape transformations."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "For instance, epithelia can simultaneously fold and extend to drive embryo gastrulation, neurulation or tubulogenesis [8] , [9] , [10] .",
+        "references": {
+          "8": {
+            "1": "During embryo development, tissues often undergo multiple concomitant changes in shape.",
+            "2": "It is unclear which signaling pathways are responsible for multiple simultaneous tissue shape transformations.",
+            "3": "It is unclear which cellular mechanisms are responsible for multiple simultaneous tissue shape transformations.",
+            "4": "The process of concomitant tissue folding and extension is key during gastrulation.",
+            "5": "The process of concomitant tissue folding and extension is key during neurulation.",
+            "6": "The Drosophila embryo is used as a model system.",
+            "7": "The focus is on the process of mesoderm invagination.",
+            "8": "The prospective mesoderm simultaneously folds and extends.",
+            "9": "Mesoderm cells are under the control of anterior-posterior and dorsal-ventral gene patterning synergy.",
+            "10": "Mesoderm cells establish two sets of adherens junctions at different apical-basal positions.",
+            "11": "Adherens junctions have specialized functions.",
+            "12": "Apical junctions drive apical constriction initiating tissue bending.",
+            "13": "Lateral junctions drive polarized cell intercalation.",
+            "14": "Polarized cell intercalation results in tissue convergence-extension.",
+            "15": "Epithelial cells devise multiple specialized junctional sets.",
+            "16": "Specialized junctional sets drive composite morphogenetic processes.",
+            "17": "Composite morphogenetic processes are under the synergistic control of apparently orthogonal signaling sources."
+          },
+          "9": {
+            "1": "Neural-tube closure is a critical step of embryogenesis.",
+            "2": "Failure of neural-tube closure causes serious birth defects.",
+            "3": "Coordination of convergent extension and neural-plate apical constriction ensures the complete closure of the neural tube.",
+            "4": "Convergent extension is a morphogenetic process involved in neural-tube closure.",
+            "5": "Neural-plate apical constriction is a morphogenetic process involved in neural-tube closure.",
+            "6": "Planar cell polarity (PCP) signaling directly links the processes of convergent extension and neural-plate apical constriction.",
+            "7": "In bending neural plates, Celsr1, a PCP-regulating cadherin, is concentrated in adherens junctions.",
+            "8": "Adherens junctions where Celsr1 is concentrated are oriented toward the mediolateral axes of the neural plates.",
+            "9": "At these adherens junctions, Celsr1 cooperates with Dishevelled, DAAM1, and the PDZ-RhoGEF to upregulate Rho kinase.",
+            "10": "The cooperation of Celsr1 with Dishevelled, DAAM1, and the PDZ-RhoGEF causes actomyosin-dependent contraction in a planar-polarized manner.",
+            "11": "Planar-polarized contraction promotes simultaneous apical constriction of neuroepithelial cells.",
+            "12": "Planar-polarized contraction promotes midline convergence of neuroepithelial cells.",
+            "13": "PCP signals confer anisotropic contractility on the adherens junctions.",
+            "14": "Anisotropic contractility on the adherens junctions produces cellular forces.",
+            "15": "Cellular forces produced by anisotropic contractility promote the polarized bending of the neural plate."
+          },
+          "10": []
+        },
+        "viewpoints": [
+          "Epithelia can simultaneously fold and extend to drive embryo gastrulation.",
+          "Epithelia can simultaneously fold and extend to drive neurulation.",
+          "Epithelia can simultaneously fold and extend to drive tubulogenesis."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "While great advances have been made to unveil the mechanisms underlying single morphogenetic processes, how composite morphogenesis is directed and coordinated is largely unexplored.",
+        "references": {},
+        "viewpoints": [
+          "Great advances have been made to unveil the mechanisms underlying single morphogenetic processes.",
+          "How composite morphogenesis is directed is largely unexplored.",
+          "How composite morphogenesis is coordinated is largely unexplored."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "To tackle this question, we study the concomitant folding and extension of the prospective mesoderm during early Drosophila gastrulation.",
+        "references": {},
+        "viewpoints": [
+          "The study focuses on the concomitant folding and extension of the prospective mesoderm during early Drosophila gastrulation to understand the direction and coordination of composite morphogenesis."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Recent work has shown that mesoderm epithelial cells establish two junctional tiers formed by actomyosin networks tethered to E-cadherin and tailored for distinct functions.",
+        "references": {},
+        "viewpoints": [
+          "Recent work has shown that mesoderm epithelial cells establish two junctional tiers.",
+          "The junctional tiers in mesoderm epithelial cells are formed by actomyosin networks tethered to E-cadherin.",
+          "The junctional tiers are tailored for distinct functions."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "The first tier is apically located and mediates cell apical constriction for tissue furrowing (Fig. 1a, b and b’, bottom) [11] .",
+        "references": {
+          "11": {
+            "1": "Apical constriction facilitates epithelial sheet bending during morphogenesis.",
+            "2": "Apical constriction facilitates epithelial sheet invagination during morphogenesis.",
+            "3": "Apical constriction is conventionally thought to be driven by continuous purse-string-like contraction.",
+            "4": "The purse-string-like contraction involves a circumferential actin and non-muscle myosin-II belt.",
+            "5": "The circumferential actin and non-muscle myosin-II belt underlies adherens junctions.",
+            "6": "It is unclear whether other force-generating mechanisms besides the purse-string-like contraction can drive apical constriction.",
+            "7": "Real-time imaging and quantitative image analysis of Drosophila gastrulation were used to study apical constriction.",
+            "8": "The apical constriction of ventral furrow cells is pulsed.",
+            "9": "The repeated constrictions are asynchronous between neighbouring cells.",
+            "10": "The repeated constrictions are interrupted by pauses.",
+            "11": "Pauses maintain the constricted state of the cell apex.",
+            "12": "Constriction pulses are powered by actin-myosin network contractions.",
+            "13": "Actin-myosin network contractions occur at the medial apical cortex.",
+            "14": "Actin-myosin network contractions pull discrete adherens junction sites inwards.",
+            "15": "This mechanism contrasts with the purse-string model.",
+            "16": "The transcription factor Twist regulates pulsed constriction.",
+            "17": "The transcription factor Snail regulates pulsed constriction.",
+            "18": "Twist and Snail differentially regulate pulsed constriction.",
+            "19": "Expression of snail initiates actin-myosin network contractions.",
+            "20": "Expression of twist stabilizes the constricted state of the cell apex.",
+            "21": "A cortical actin-myosin cytoskeleton functions as a developmentally controlled subcellular ratchet.",
+            "22": "The cortical actin-myosin cytoskeleton reduces apical area incrementally.",
+            "23": "This mechanism suggests a new model for apical constriction."
+          }
+        },
+        "viewpoints": [
+          "The first junctional tier is apically located.",
+          "The first junctional tier mediates cell apical constriction for tissue furrowing."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "The second tier is positioned laterally ( ~ 10 µm from the apical side) and is planar cell polarized to initiate cell intercalation for tissue convergence-extension (Fig. 1a, b and b’, top) [8] .",
+        "references": {
+          "8": {
+            "1": "During embryo development, tissues often undergo multiple concomitant changes in shape.",
+            "2": "It is unclear which signaling pathways are responsible for multiple simultaneous tissue shape transformations.",
+            "3": "It is unclear which cellular mechanisms are responsible for multiple simultaneous tissue shape transformations.",
+            "4": "The process of concomitant tissue folding and extension is key during gastrulation.",
+            "5": "The process of concomitant tissue folding and extension is key during neurulation.",
+            "6": "The Drosophila embryo is used as a model system.",
+            "7": "The focus is on the process of mesoderm invagination.",
+            "8": "The prospective mesoderm simultaneously folds and extends.",
+            "9": "Mesoderm cells are under the control of anterior-posterior and dorsal-ventral gene patterning synergy.",
+            "10": "Mesoderm cells establish two sets of adherens junctions at different apical-basal positions.",
+            "11": "Adherens junctions have specialized functions.",
+            "12": "Apical junctions drive apical constriction initiating tissue bending.",
+            "13": "Lateral junctions drive polarized cell intercalation.",
+            "14": "Polarized cell intercalation results in tissue convergence-extension.",
+            "15": "Epithelial cells devise multiple specialized junctional sets.",
+            "16": "Specialized junctional sets drive composite morphogenetic processes.",
+            "17": "Composite morphogenetic processes are under the synergistic control of apparently orthogonal signaling sources."
+          }
+        },
+        "viewpoints": [
+          "The second junctional tier is positioned laterally (~10 µm from the apical side).",
+          "The second junctional tier is planar cell polarized.",
+          "The second junctional tier initiates cell intercalation for tissue convergence-extension."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "With this study, we aim to shine light on the mechanisms that spatio-temporally coordinate the formation of functionally distinct cytoskeletal networks for simultaneous cell shape and topology changes.",
+        "references": {},
+        "viewpoints": [
+          "The study aims to shine light on the mechanisms that spatio-temporally coordinate the formation of functionally distinct cytoskeletal networks for simultaneous cell shape changes.",
+          "The study aims to shine light on the mechanisms that spatio-temporally coordinate the formation of functionally distinct cytoskeletal networks for simultaneous cell topology changes."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "While the two tiers share the same nature, their origin differs.",
+        "references": {},
+        "viewpoints": [
+          "The two junctional tiers share the same nature.",
+          "The origin of the two junctional tiers differs."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The first tier is under the control of the cell apical-basal polarity [12] and it is shaped by apical-medial actomyosin contractions [13] .",
+        "references": {
+          "12": {
+            "1": "Adherens junctions (AJs) are thought to be key landmarks for establishing epithelial cell polarity.",
+            "2": "The origin of epithelial polarity in Drosophila remains unclear.",
+            "3": "The research examined epithelial polarity establishment during early Drosophila development.",
+            "4": "Apical accumulation of Drosophila E-Cadherin (DE-Cad) occurs as cells first form.",
+            "5": "Apical accumulation of the apical cue Bazooka (Baz) occurs as cells first form.",
+            "6": "Apical Baz accumulations can be established in the absence of adherens junctions (AJs).",
+            "7": "The assembly of apical Drosophila E-Cadherin (DE-Cad) complexes requires Baz.",
+            "8": "Baz acts upstream of adherens junctions (AJs) during epithelial polarity establishment.",
+            "9": "During gastrulation, the absence of adherens junctions (AJs) results in widespread cell dissociation.",
+            "10": "During gastrulation, the absence of adherens junctions (AJs) results in depolarization.",
+            "11": "Some epithelial structures are retained despite the absence of adherens junctions (AJs).",
+            "12": "In the absence of adherens junctions (AJs), retained epithelial structures maintain apical Baz.",
+            "13": "In the absence of adherens junctions (AJs), retained epithelial structures accumulate apical Crumbs.",
+            "14": "In the absence of adherens junctions (AJs), retained epithelial structures organize polarized cytoskeletons.",
+            "15": "Retained epithelial structures display abnormal cell morphology in the absence of adherens junctions (AJs).",
+            "16": "Retained epithelial structures fail to segregate the basolateral cue Discs large from the apical domain in the absence of adherens junctions (AJs).",
+            "17": "Epithelial polarity develops in the absence of adherens junctions (AJs).",
+            "18": "Adherens junctions (AJs) play specific roles in maintaining epithelial architecture.",
+            "19": "Adherens junctions (AJs) play specific roles in segregating basolateral cues."
+          },
+          "13": {
+            "1": "Snail is essential for the disassembly of adherens junctions during epithelial-mesenchymal transitions (EMTs).",
+            "2": "Loss of adherens junctions in Drosophila melanogaster gastrula is delayed until mesoderm is internalized.",
+            "3": "Snail is expressed early in the primordium of Drosophila melanogaster gastrula.",
+            "4": "Live imaging and quantitative image analysis can track the behavior of E-cadherin-rich junction clusters.",
+            "5": "In the early stages of gastrulation, most subapical clusters in the mesoderm persist.",
+            "6": "Most subapical clusters in the mesoderm move apically during the early stages of gastrulation.",
+            "7": "Most subapical clusters in the mesoderm enhance in density during the early stages of gastrulation.",
+            "8": "Most subapical clusters in the mesoderm enhance in total intensity during the early stages of gastrulation.",
+            "9": "The persistence, apical movement, and enhancement in density and total intensity of subapical clusters depend on myosin II.",
+            "10": "The persistence, apical movement, and enhancement in density and total intensity of subapical clusters are temporally correlated with the pulses of actomyosin accumulation.",
+            "11": "The pulses of actomyosin accumulation drive initial cell shape changes during gastrulation.",
+            "12": "When contractile myosin is absent, normal Snail expression in the mesoderm is sufficient to drive early disassembly of junctions.",
+            "13": "When contractile myosin is absent, ectopic Snail expression in the ectoderm is sufficient to drive early disassembly of junctions.",
+            "14": "Junctional disassembly can be blocked by the simultaneous induction of myosin contractility when contractile myosin is absent and either normal Snail expression in mesoderm or ectopic Snail expression in ectoderm occurs.",
+            "15": "The findings provide in vivo evidence for the mechanosensitivity of cell-cell junctions.",
+            "16": "The findings imply that myosin-mediated tension can prevent Snail-driven epithelial-mesenchymal transitions (EMT)."
+          }
+        },
+        "viewpoints": [
+          "The first junctional tier is under the control of the cell apical-basal polarity.",
+          "The first junctional tier is shaped by apical-medial actomyosin contractions."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The second tier is formed by the coalescence of the cell lateral actomyosin network, focusing E-cadherin to form a cluster [8] .",
+        "references": {
+          "8": {
+            "1": "During embryo development, tissues often undergo multiple concomitant changes in shape.",
+            "2": "It is unclear which signaling pathways are responsible for multiple simultaneous tissue shape transformations.",
+            "3": "It is unclear which cellular mechanisms are responsible for multiple simultaneous tissue shape transformations.",
+            "4": "The process of concomitant tissue folding and extension is key during gastrulation.",
+            "5": "The process of concomitant tissue folding and extension is key during neurulation.",
+            "6": "The Drosophila embryo is used as a model system.",
+            "7": "The focus is on the process of mesoderm invagination.",
+            "8": "The prospective mesoderm simultaneously folds and extends.",
+            "9": "Mesoderm cells are under the control of anterior-posterior and dorsal-ventral gene patterning synergy.",
+            "10": "Mesoderm cells establish two sets of adherens junctions at different apical-basal positions.",
+            "11": "Adherens junctions have specialized functions.",
+            "12": "Apical junctions drive apical constriction initiating tissue bending.",
+            "13": "Lateral junctions drive polarized cell intercalation.",
+            "14": "Polarized cell intercalation results in tissue convergence-extension.",
+            "15": "Epithelial cells devise multiple specialized junctional sets.",
+            "16": "Specialized junctional sets drive composite morphogenetic processes.",
+            "17": "Composite morphogenetic processes are under the synergistic control of apparently orthogonal signaling sources."
+          }
+        },
+        "viewpoints": [
+          "The second junctional tier is formed by the coalescence of the cell lateral actomyosin network.",
+          "The coalescence of the cell lateral actomyosin network focuses E-cadherin to form a cluster."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Overall, the formation of the two-tier junctional system is under the control of the synergistic interaction between the embryo anterior-posterior (AP) and dorsal-ventral (DV) gene patterning systems [8] .",
+        "references": {
+          "8": {
+            "1": "During embryo development, tissues often undergo multiple concomitant changes in shape.",
+            "2": "It is unclear which signaling pathways are responsible for multiple simultaneous tissue shape transformations.",
+            "3": "It is unclear which cellular mechanisms are responsible for multiple simultaneous tissue shape transformations.",
+            "4": "The process of concomitant tissue folding and extension is key during gastrulation.",
+            "5": "The process of concomitant tissue folding and extension is key during neurulation.",
+            "6": "The Drosophila embryo is used as a model system.",
+            "7": "The focus is on the process of mesoderm invagination.",
+            "8": "The prospective mesoderm simultaneously folds and extends.",
+            "9": "Mesoderm cells are under the control of anterior-posterior and dorsal-ventral gene patterning synergy.",
+            "10": "Mesoderm cells establish two sets of adherens junctions at different apical-basal positions.",
+            "11": "Adherens junctions have specialized functions.",
+            "12": "Apical junctions drive apical constriction initiating tissue bending.",
+            "13": "Lateral junctions drive polarized cell intercalation.",
+            "14": "Polarized cell intercalation results in tissue convergence-extension.",
+            "15": "Epithelial cells devise multiple specialized junctional sets.",
+            "16": "Specialized junctional sets drive composite morphogenetic processes.",
+            "17": "Composite morphogenetic processes are under the synergistic control of apparently orthogonal signaling sources."
+          }
+        },
+        "viewpoints": [
+          "The formation of the two-tier junctional system is under the control of the synergistic interaction between the embryo anterior-posterior gene patterning systems.",
+          "The formation of the two-tier junctional system is under the control of the synergistic interaction between the embryo dorsal-ventral gene patterning systems."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "How the lateral actomyosin network is spatio-temporally controlled is still unknown.",
+        "references": {},
+        "viewpoints": [
+          "How the lateral actomyosin network is spatio-temporally controlled is still unknown."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Fig. 1: Nuclear migration precedes MyoII-LC formation.",
+        "references": {},
+        "viewpoints": [
+          "Nuclear migration precedes MyoII-LC formation."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "a The prospective mesoderm simultaneously folds and extends at the onset of Drosophila gastrulation.",
+        "references": {},
+        "viewpoints": [
+          "The prospective mesoderm simultaneously folds and extends at the onset of Drosophila gastrulation."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Cross-section (left), surface view (top-right) and sagittal section (bottom-right).",
+        "references": {},
+        "viewpoints": [
+          "The cross-section, surface view, and sagittal section of the prospective mesoderm are depicted in the figure."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "White arrowhead and dashed line indicate the furrow position.",
+        "references": {},
+        "viewpoints": [
+          "The white arrowhead and dashed line in the figure indicate the furrow position."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Scale bar, 50 µm.",
+        "references": {},
+        "viewpoints": [
+          "The scale bar in the figure represents 50 µm."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "b Sagittal view of mesoderm cells showing a two-tier organization of MyoII.",
+        "references": {},
+        "viewpoints": [
+          "The sagittal view of mesoderm cells in the figure shows a two-tier organization of MyoII."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Scale bar, 5 µm.",
+        "references": {},
+        "viewpoints": [
+          "The scale bar in the figure represents 5 µm."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "b’ Time-lapse showing the lateral and apical pool of MyoII driving cell intercalation (top) and apical constriction (bottom), respectively.",
+        "references": {},
+        "viewpoints": [
+          "The time-lapse in the figure shows the lateral pool of MyoII driving cell intercalation.",
+          "The time-lapse in the figure shows the apical pool of MyoII driving apical constriction."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Scale bars, 5 µm.",
+        "references": {},
+        "viewpoints": [
+          "The scale bars in the time-lapse represent 5 µm."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "c Time-lapse of the mesoderm cross-section during ventral furrowing.",
+        "references": {},
+        "viewpoints": [
+          "The time-lapse in the figure shows the mesoderm cross-section during ventral furrowing."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Arrowheads indicate MyoII-LCs.",
+        "references": {},
+        "viewpoints": [
+          "The arrowheads in the time-lapse indicate MyoII-LCs."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Scale bar, 10 µm.",
+        "references": {},
+        "viewpoints": [
+          "The scale bar in the time-lapse represents 10 µm."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "d MyoII lateral intensity and nuclear position in function of time.",
+        "references": {},
+        "viewpoints": [
+          "MyoII lateral intensity is shown as a function of time in the figure.",
+          "Nuclear position is shown as a function of time in the figure."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Inset: temporal cross-correlation between the peak of nuclear migration speed and the peak of MyoII lateral recruitment.",
+        "references": {},
+        "viewpoints": [
+          "The inset in the figure shows the temporal cross-correlation between the peak of nuclear migration speed and the peak of MyoII lateral recruitment."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Apex-to-nucleus distance: distance between the apical side of the cell and the apical side of the nucleus.",
+        "references": {},
+        "viewpoints": [
+          "The figure includes the apex-to-nucleus distance, which is the distance between the apical side of the cell and the apical side of the nucleus."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Data points represent the mean values with error bars indicating the 95% confidence interval ( n = 3 embryos, N = 45 junctions, N = 30 nuclei).",
+        "references": {},
+        "viewpoints": [
+          "The data points in the figure represent mean values with error bars indicating the 95% confidence interval. The sample includes n = 3 embryos, N = 45 junctions, and N = 30 nuclei."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "e Mesoderm front view (left) and cross-section (right) time-lapse showing apical constriction and the associated nuclear displacement.",
+        "references": {},
+        "viewpoints": [
+          "The mesoderm front view and cross-section in the time-lapse show apical constriction and the associated nuclear displacement."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "Scale bars, 10 µm.",
+        "references": {},
+        "viewpoints": [
+          "The scale bars in the time-lapse represent 10 µm."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "f Mean nuclear position in function of the mean apical cell surface at different phases of mesoderm invagination.",
+        "references": {},
+        "viewpoints": [
+          "The figure shows mean nuclear position as a function of the mean apical cell surface at different phases of mesoderm invagination."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Inset: raw individual values with an exponential fit ( y = 69.212*e -0.096x ).",
+        "references": {},
+        "viewpoints": [
+          "The inset in the figure shows raw individual values with an exponential fit formula ( y = 69.212*e^-0.096x )."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "Data points represent the mean values with error bars indicating the 95% confidence intervals ( n = 5 embryos, N = 925 cells, N = 925 nuclei).",
+        "references": {},
+        "viewpoints": [
+          "The data points represent mean values with error bars indicating the 95% confidence intervals. The sample includes n = 5 embryos, N = 925 cells, and N = 925 nuclei."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Source data are provided as a Source Data file.",
+        "references": {},
+        "viewpoints": [
+          "The source data are provided as a Source Data file."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "Full size image In addition to the molecular signalling, the change in position and shape of cellular organelles play a role in cell remodelling [14] , [15] .",
+        "references": {
+          "14": {
+            "1": "Asymmetric divisions are essential for generating cell fate diversity.",
+            "2": "Asymmetric divisions are essential for generating cell size diversity.",
+            "3": "Asymmetric divisions implicate cortical domains where minus end-directed motors are activated.",
+            "4": "Minus end-directed motors, such as dynein, are activated to pull on microtubules to decenter asters.",
+            "5": "Asters are attached to centrosomes, nuclei, or spindles.",
+            "6": "In asymmetrically dividing cells, aster decentration typically follows a centering phase.",
+            "7": "There is a time-dependent regulation in the competition between microtubule centering and decentering forces.",
+            "8": "Symmetrically dividing sea urchin zygotes were used to generate cortical domains of magnetic particles.",
+            "9": "The cortical domains of magnetic particles spontaneously cluster endogenous dynein activity.",
+            "10": "The cortical domains of magnetic particles efficiently attract asters.",
+            "11": "The cortical domains of magnetic particles efficiently attract nuclei.",
+            "12": "The attraction of asters and nuclei by the domains yields marked asymmetric divisions.",
+            "13": "Aster decentration only occurred after asters had first reached the cell center.",
+            "14": "The time-regulated imbalance results from a global reduction of centering forces.",
+            "15": "The time-regulated imbalance does not result from a local maturation of dynein activity at the domain.",
+            "16": "Intracellular force measurement and models were used to demonstrate the source of the time-regulated imbalance.",
+            "17": "The findings define a novel paradigm for the regulation of division asymmetry."
+          },
+          "15": {
+            "1": "Cells use actomyosin contractility to move through three-dimensional extracellular matrices.",
+            "2": "Actomyosin contractility affects the type of protrusions cells use to migrate in three-dimensional conditions.",
+            "3": "The mechanisms by which contractility affects cell protrusions in three-dimensional migration are unclear.",
+            "4": "Contractility generated high-pressure lobopodial protrusions in human cells migrating in a three-dimensional matrix.",
+            "5": "In human cells with high-pressure lobopodial protrusions, the nucleus physically divided the cytoplasm into forward and rear compartments.",
+            "6": "Actomyosin contractility with the linker protein nesprin-3 pulled the nucleus forward in human cells.",
+            "7": "Actomyosin contractility with the linker protein nesprin-3 pressurized the front of the cell in human cells.",
+            "8": "Reducing expression of nesprin-3 decreased intracellular pressure in human cells.",
+            "9": "Reducing expression of nesprin-3 equalized the intracellular pressure in human cells.",
+            "10": "The nucleus can act as a piston that physically compartmentalizes the cytoplasm in human cells.",
+            "11": "The nucleus increases hydrostatic pressure between itself and the leading edge of the cell.",
+            "12": "The increased hydrostatic pressure helps drive lamellipodia-independent three-dimensional cell migration."
+          }
+        },
+        "viewpoints": [
+          "In addition to molecular signaling, the change in position of cellular organelles plays a role in cell remodeling.",
+          "In addition to molecular signaling, the change in shape of cellular organelles plays a role in cell remodeling."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "During the phase of apical constriction of mesoderm epithelial cells, the cell nuclei migrate basally [16] , [17] .",
+        "references": {
+          "16": {
+            "1": "The formation of the ventral furrow is the first event of Drosophila gastrulation.",
+            "2": "The formation of the ventral furrow leads to the invagination of the mesoderm.",
+            "3": "The formation of the ventral furrow is a classical example of epithelial folding.",
+            "4": "Three-dimensional time-lapse microscopy was used to examine living Drosophila embryos.",
+            "5": "The examination of living Drosophila embryos aimed to better understand the cellular changes and dynamics of furrow formation.",
+            "6": "Fluorescent markers that visualize cell outlines and nuclei were injected to monitor changes in cell shapes and nuclear positions.",
+            "7": "The ventral furrow invaginates in two phases.",
+            "8": "In the first 'preparatory' phase, many prospective furrow cells in apparently random positions gradually begin to change shape.",
+            "9": "In the first 'preparatory' phase, the curvature of the epithelium hardly changes.",
+            "10": "In the second phase, the furrow suddenly invaginates when a critical number of cells have begun to change shape.",
+            "11": "Furrow formation does not result from an ordered wave of cell shape changes.",
+            "12": "A model for epithelial invagination suggests a wave of apical contractions causes invagination.",
+            "13": "Cells change their shape independently and in a stochastic manner during furrow formation.",
+            "14": "The sum of the individual cell shape changes alters the curvature of the whole epithelium during furrow formation."
+          },
+          "17": {
+            "1": "The first morphogenetic movement during Drosophila development is the invagination of the mesoderm.",
+            "2": "The invagination of the mesoderm folds a one-layered epithelium into a multilayered structure.",
+            "3": "The paper describes the shape changes and behaviour of the cells participating in the invagination of the mesoderm.",
+            "4": "The paper shows how mutations that change cell fate affect the shape changes and behaviour of cells participating in the invagination of the mesoderm.",
+            "5": "The formation of the mesodermal germ layer is divided into two phases.",
+            "6": "During the first phase, the ventral epithelium folds into a tube.",
+            "7": "The folding of the ventral epithelium into a tube is accomplished by a series of concerted cell shape changes.",
+            "8": "The first phase of mesodermal germ layer formation is referred to as ventral furrow formation.",
+            "9": "The prospective mesoderm is not a homogeneous cell population.",
+            "10": "The prospective mesoderm consists of two subpopulations.",
+            "11": "The conclusion about the mesoderm being two subpopulations is based on the behaviour of cells during the first phase of ventral epithelium folding.",
+            "12": "Each subpopulation of the prospective mesoderm goes through a distinctive sequence of specific cell shape changes.",
+            "13": "The sequences of specific cell shape changes in the subpopulations together mediate the invagination of the ventral furrow.",
+            "14": "In the second phase, the invaginated tube of mesoderm loses its epithelial character.",
+            "15": "In the second phase, the mesoderm cells disperse.",
+            "16": "In the second phase, the mesoderm cells divide.",
+            "17": "In the second phase, the mesoderm cells spread out along the ectoderm to form a single cell layer.",
+            "18": "The authors test how ventral furrow formation depends on cell fates in the mesoderm.",
+            "19": "The authors test how ventral furrow formation depends on cell fates in neighbouring cells.",
+            "20": "The fates of cells in the mesoderm and neighbouring cells are altered genetically using maternal mutations.",
+            "21": "The fates of cells in the mesoderm and neighbouring cells are altered genetically using zygotic mutations.",
+            "22": "Some aspects of cell behaviour specific for ventral furrow cells are part of an autonomous differentiation programme.",
+            "23": "The conclusion about the autonomous differentiation programme comes from experiments altering cell fates genetically.",
+            "24": "The force driving the invagination is generated within the region of the ventral furrow.",
+            "25": "The lateral cell populations contribute little or none of the force driving the invagination.",
+            "26": "The dorsal cell populations contribute little or none of the force driving the invagination.",
+            "27": "The zygotic gene twist is required for the formation of the mesoderm.",
+            "28": "The zygotic gene snail is required for the formation of the mesoderm.",
+            "29": "The zygotic gene twist is expressed in ventral furrow cells.",
+            "30": "The zygotic gene snail is expressed in ventral furrow cells.",
+            "31": "The correct execution of cell shape changes in the mesoderm depends on the gene twist.",
+            "32": "The correct execution of cell shape changes in the mesoderm depends on the gene snail.",
+            "33": "The region where the ventral furrow forms is determined by the expression of mesoderm-specific genes.",
+            "34": "The formation of the ventral furrow region is not determined by mechanical properties of the egg.",
+            "35": "The formation of the ventral furrow region is not determined by other epigenetic properties of the egg."
+          }
+        },
+        "viewpoints": [
+          "During the phase of apical constriction of mesoderm epithelial cells, the cell nuclei migrate basally."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "While a great body of work has highlighted the mechanisms controlling nuclear relocation and the role of nuclear mechanotransduction in cell polarity, migration, division, or fate determination [18] , [19] , [20] , how the position of the nucleus participates in tissue remodelling remains elusive.",
+        "references": {
+          "18": {
+            "1": "The nucleus is the home of cellular genetic information.",
+            "2": "The nucleus has a critical role in determining cell fate in response to various signals and stimuli.",
+            "3": "The nucleus has a critical role in determining cell function in response to various signals and stimuli.",
+            "4": "The nucleus is constantly exposed to biochemical inputs.",
+            "5": "The nucleus is exposed to intrinsic mechanical forces.",
+            "6": "The nucleus is exposed to extrinsic mechanical forces.",
+            "7": "Intrinsic mechanical forces trigger dynamic changes in nuclear structure and morphology.",
+            "8": "Extrinsic mechanical forces trigger dynamic changes in nuclear structure and morphology.",
+            "9": "Emerging data suggest that physical deformation of the nucleus modulates many cellular functions.",
+            "10": "Emerging data suggest that physical deformation of the nucleus modulates many nuclear functions.",
+            "11": "Many cellular and nuclear functions have long been considered downstream of cytoplasmic signaling pathways.",
+            "12": "Many cellular and nuclear functions have long been considered to be dictated by gene expression.",
+            "13": "This Review discusses an emerging perspective on the mechanoregulation of the nucleus.",
+            "14": "The emerging perspective on the mechanoregulation of the nucleus considers physical connections from chromatin to nuclear lamina and cytoskeletal filaments as a single mechanical unit.",
+            "15": "The Review describes key mechanisms of nuclear deformations in time.",
+            "16": "The Review describes key mechanisms of nuclear deformations in space.",
+            "17": "The Review provides a critical review of the structural adaptive responses of the nucleus to deformations.",
+            "18": "The Review provides a critical review of the functional adaptive responses of the nucleus to deformations.",
+            "19": "The Review considers the contribution of nuclear deformations to the regulation of important cellular functions.",
+            "20": "The Review considers the contribution of nuclear deformations to muscle contraction.",
+            "21": "The Review considers the contribution of nuclear deformations to cell migration.",
+            "22": "The Review considers the contribution of nuclear deformations to human disease pathogenesis.",
+            "23": "Emerging insights shed new light on the dynamics of nuclear deformations.",
+            "24": "Emerging insights shed new light on the roles of nuclear deformations in cellular mechanobiology."
+          },
+          "19": {
+            "1": "The nucleus is the largest organelle in a cell.",
+            "2": "The nucleus is commonly depicted in the center of the cell.",
+            "3": "During cell division, the nucleus frequently moves to an asymmetric position aligned with cell function.",
+            "4": "During cell migration, the nucleus frequently moves to an asymmetric position aligned with cell function.",
+            "5": "During cell differentiation, the nucleus frequently moves to an asymmetric position aligned with cell function.",
+            "6": "There exists a toolbox of proteins that move the nucleus within the cell.",
+            "7": "There exists a toolbox of proteins that anchor the nucleus within the cell.",
+            "8": "Forces generated by the cytoskeleton are coupled to the nucleus to move it.",
+            "9": "The significance of proper nuclear positioning is underscored by numerous diseases.",
+            "10": "Numerous diseases result from genetic alterations in the toolbox proteins.",
+            "11": "Nuclear position may influence cellular organization.",
+            "12": "Nuclear position may influence signaling pathways."
+          },
+          "20": {
+            "1": "Cells are the building units of living organisms.",
+            "2": "Cells adapt to their environment by modulating their intracellular architecture.",
+            "3": "Cells modulate the position of their nucleus as part of adapting to their environment.",
+            "4": "Efforts have been made to decipher the molecular mechanisms involved in nuclear positioning.",
+            "5": "The LINC complex at the nuclear envelope is a very important part of the molecular connectivity between the cell outside and the intranuclear compartment.",
+            "6": "The LINC complex at the nuclear envelope emerged as a central player in nuclear mechanotransduction.",
+            "7": "Recent concepts in nuclear mechanotransduction came from studies involving nuclear confined migration.",
+            "8": "Recent concepts in nuclear mechanotransduction came from studies involving nuclear compression.",
+            "9": "Recent concepts in nuclear mechanotransduction came from studies involving nuclear swelling.",
+            "10": "The effect of nuclear mechanosensitive properties in driving cell differentiation raises the question of nuclear mechanotransduction and gene expression.",
+            "11": "Recent efforts have been made to tackle the question of nuclear mechanotransduction and gene expression.",
+            "12": "Addressing the question of nuclear mechanotransduction and gene expression directly remains difficult.",
+            "13": "An original mechanism of nucleus positioning in the non-adherent, non-polarized mouse oocyte highlights the importance of nuclear positioning as a developmental issue.",
+            "14": "An original mechanism of mechanotransduction and regulation of gene expression in the non-adherent, non-polarized mouse oocyte highlights the importance of nuclear positioning as a developmental issue."
+          }
+        },
+        "viewpoints": [
+          "A great body of work has highlighted the mechanisms controlling nuclear relocation.",
+          "A great body of work has highlighted the role of nuclear mechanotransduction in cell polarity.",
+          "A great body of work has highlighted the role of nuclear mechanotransduction in cell migration.",
+          "A great body of work has highlighted the role of nuclear mechanotransduction in cell division.",
+          "A great body of work has highlighted the role of nuclear mechanotransduction in cell fate determination.",
+          "How the position of the nucleus participates in tissue remodeling remains elusive."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "We now investigate this during mesoderm folding and extension.",
+        "references": {},
+        "viewpoints": [
+          "The study investigates how the position of the nucleus participates in tissue remodeling during mesoderm folding and extension."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "We provide evidence that the nucleus functions as a cellular compartmentalizer and that its relocation spatio-temporally organizes the cell cytoskeleton and the distribution of the Rho guanine exchange factor RhoGEF2 to establish a second actomyosin tier for cell intercalation.",
+        "references": {},
+        "viewpoints": [
+          "The study provides evidence that the nucleus functions as a cellular compartmentalizer.",
+          "The relocation of the nucleus spatio-temporally organizes the cell cytoskeleton.",
+          "The relocation of the nucleus organizes the distribution of the Rho guanine exchange factor RhoGEF2.",
+          "The organized distribution of Rho guanine exchange factor RhoGEF2 helps establish a second actomyosin tier for cell intercalation."
+        ]
+      },
+      {
+        "idx": 44,
+        "sentence": "Overall, by implementing advanced live imaging, laser manipulation, optogenetics, and molecular modelling, this study reveals the mechanisms underlying the spatiotemporal control of the cortical actomyosin cytoskeleton to form a modular scaffold for simultaneous morphogenetic events.",
+        "references": {},
+        "viewpoints": [
+          "The study implements advanced live imaging to reveal mechanisms underlying the spatiotemporal control of the cortical actomyosin cytoskeleton.",
+          "The study implements laser manipulation to reveal mechanisms underlying the spatiotemporal control of the cortical actomyosin cytoskeleton.",
+          "The study implements optogenetics to reveal mechanisms underlying the spatiotemporal control of the cortical actomyosin cytoskeleton.",
+          "The study implements molecular modelling to reveal mechanisms underlying the spatiotemporal control of the cortical actomyosin cytoskeleton.",
+          "The spatiotemporal control of the cortical actomyosin cytoskeleton forms a modular scaffold for simultaneous morphogenetic events."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56880-0_with_abstracts",
+    "base_id": "s41467-025-56880-0",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56880-0_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

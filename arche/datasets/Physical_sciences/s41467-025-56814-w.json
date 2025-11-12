@@ -1,0 +1,869 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "The conversion of external information into biological signals by the sensory nervous system is at the core of how living organisms interact with their environment [1] , [2] , [3] . Receiving the majority of the external information as visual cues, the human visual system is able to recognize and remember the identity of a wide range of objects. The processes in human visual system processes have thus inspired the development of artificial visual systems implemented through electronic devices [4] , [5] . Optoelectronic synapses have been instrumental in the progression of such neuromorphic devices that can decode images [6] , [7] , [8] or enable artificial vision [9] . However, most optoelectronic devices utilized in hardware neural networks and neural interfaces are composed of inorganic materials, which are often mechanically hard, not biocompatible and lack additional functionalities. Rendering these devices light responsive requires additional circuit elements whose operational mechanisms are fundamentally different than those found in biological systems [10] . Organic mixed ionic-electronic charge conductors (OMIECs) are ideal electronic materials for developing artificial circuits as they can emulate the ion-mediated mechanisms of biological synapses [11] , [12] , [13] , [14] , [15] , [16] . OMIECs are soft conjugated polymers that exhibit volumetric ionic and electronic charge transport in their films with often compatibility with living systems. Organic electrochemical transistors (OECTs) leverage the mixed conductivity of OMIECs by incorporating their solution-processed films in microscale channels and translating ionic, biological information in aqueous media into amplified electronic signals [17] , [18] . The OMIEC channel achieves multiple, distinct doping states through small ionic fluxes in the electrolyte, generating high device transconductance at low operating voltages (<1 V) [19] , [20] , [21] . OECTs have been shown to exhibit both long-term and short-term plasticity behavior, with high potential for integration as artificial synapses [22] , [23] . For neuromorphic vision engineering, OMIECs feature one crucial property that has yet to be exploited: the ability to absorb light [24] , [25] . A few recent reports have demonstrated the application of OECTs as optoelectronic synapses converting light-based signals into spike-train signal patterns [26] . However, these studies do not leverage the light sensitivity of OMIECs in the channel but rather depend on light-sensitive materials integrated into large-area gate electrodes [25] , [27] , rendering these systems difficult to operate, miniaturize, and integrate. The only demonstration of a miniaturized OECT-based optoelectronic synapse, which generated a non-volatile light-induced memory, used conventional organic semiconductors [10] (a bi-component donor/acceptor system, P3HT:PCBM), in the channel, which are not compatible with aqueous electrolytes and require a toxic ionic liquid as the electrolyte. Moreover, while current organic synaptic transistors have demonstrated light signal processing capability, they can process information at only one wavelength or a restricted range of wavelengths [28] , [29] , [30] . Furthermore, mimicking the human visual system demands multi-functional materials that are responsive to both light and electrical stimuli, as visual memory and recognition rely on photoreceptor cells that capture visual information and afferent neurons that transmit this input as electrical signals. Thus, to build a biomimetic optoelectronic synapse, the development of multi-stimuli-responsive OMIECs with the ability to perceive multispectral visual information is key to surpassing the functionality of single-mode (electric or optical) drives [31] . Here we develop an organic ion-tunable optoelectrochemical synapse by using a single-component OMIEC as the OECT channel that responds to both light and voltage stimuli applied through an aqueous electrolyte (Fig. 1a ). The OMIEC we designed is an n-type, all electron-accepting copolymer consisting of bisistain-lactone and bithiazole (p(C2F-z)) (Fig. 1b ), synthesized through the green Aldol polymerization technique. Our synapse demonstrates multispectral visual perception covering a broad wavelength range (ultraviolet, visible, and near-infrared regions), even beyond the perception range of the human visual system. Our single-component material is responsive not only to optical stimuli but also to electrical input, further mimicking the electrical transmission in the retina. The optoelectrochemical synapse emulates the functionality of a biological synapse such as synaptic plasticity and pair-pulse facilitation, and it exhibits the transition of a short-term memory to a long-term memory at low programming voltages (0.4 V), emulating the learning experience of the brain. Through a combination of in situ and ex situ optoelectrochemical methods, we investigate the working mechanism of these devices, which relies on the light-induced aqueous ion-based doping of the channel, with the extent precisely controlled by the training pattern. By building a synaptic array based on an 8 \\(\\times\\) 8 array of these devices on a 9.4 \\(\\times\\) 6.6 mm 2 area, we show this aquoues electrolyte compatible device’s capability for image recognition, preprocessing, and memory. In addition, we demonstrate the use of our device for in-sensor reservoir computing and full-color image processing, highlighting its capability for decoding multitask spatiotemporal events and extracting color information in biological media. Lastly, our synaptic device performs temporal summation under high-frequency electrical pulses, which we leverage for motion recognition. Fig. 1: Optoelectrochemical synapse based on an n-type organic electrochemical transistor. Schematic illustrations of ( a ) a biological synapse (left) and our transistor design that acts as an ion-tunable optoelectrochemical synapse (right). In the human visual system, communication between neurons occurs through synapses. The stimulation of the presynaptic membrane generates an action potential that results in the flow of ions towards the postsynaptic neuron. The OECT based synapse mimics this function by responding to external optical and electrical signals and converting them into a frequency encoded current output. In synapses, synaptic weight is responsible for learning and storing visual information and memory. b Chemical structure of p(C2F-z) with the microscope image of its film in the microscale OECT channel (length = 10 µm, width = 100 µm, d = 79 nm) and the lateral Au gate electrode. The schematic representation and a microscope image of the OECT are shown in Fig. S9a, b . c The transfer ( I D – V G ) and transconductance (g m – V G ) characteristics of the p(C2F-z) OECT. V D = 0.6 V. d Comparison of p(C2F-z) device performance metrics ( \\(\\mu\\) and V TH ) with those of other high-performance n-type OECTs. e Transient characteristics of p(C2F-z) OECT. The blue lines show the exponential fit with the corresponding turn ON and OFF speeds (τ ON and τ OFF ). f The operational stability of a p(C2F-z) OECT. V G pulses of 0.4 V with 10 s ON and 10 s OFF were applied for 3600 s at V D = 0.5 V. All device characteristics were recorded with an Ag/AgCl reference electrode used as the gate. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "The conversion of external information into biological signals by the sensory nervous system is at the core of how living organisms interact with their environment [1] , [2] , [3].",
+        "references": {
+          "1": {
+            "1": "The distributed network of receptors, neurons, and synapses in the somatosensory system efficiently processes complex tactile information.",
+            "2": "Flexible organic electronics can be used to mimic the functions of a sensory nerve.",
+            "3": "The artificial afferent nerve collects pressure information (1 to 80 kilopascals) from clusters of pressure sensors.",
+            "4": "The artificial afferent nerve converts the pressure information into action potentials (0 to 100 hertz) by using ring oscillators.",
+            "5": "The artificial afferent nerve integrates the action potentials from multiple ring oscillators with a synaptic transistor.",
+            "6": "Biomimetic hierarchical structures can detect the movement of an object.",
+            "7": "Biomimetic hierarchical structures can combine simultaneous pressure inputs.",
+            "8": "Biomimetic hierarchical structures can distinguish braille characters.",
+            "9": "The artificial afferent nerve was connected to motor nerves to construct a hybrid bioelectronic reflex arc.",
+            "10": "The hybrid bioelectronic reflex arc was used to actuate muscles.",
+            "11": "The system has potential applications in neurorobotics.",
+            "12": "The system has potential applications in neuroprosthetics."
+          },
+          "2": {
+            "1": "Humans have a myriad of sensory receptors in different sense organs.",
+            "2": "The five traditionally recognized senses are sight, hearing, smell, taste, and touch.",
+            "3": "Sensory receptors detect diverse stimuli originating from the world.",
+            "4": "Sensory receptors turn detected stimuli into brain-interpretable electrical impulses for sensory cognitive processing.",
+            "5": "Sensory cognitive processing enables humans to communicate.",
+            "6": "Sensory cognitive processing enables humans to socialize.",
+            "7": "Developments in biologically inspired electronics have led to the demonstration of a wide range of electronic sensors.",
+            "8": "Electronic sensors have been developed in all five traditional senses categories: sight, hearing, smell, taste, and touch.",
+            "9": "Biologically inspired electronic sensors have the potential to impact a broad spectrum of applications.",
+            "10": "Recent advances in bioinspired electronics are reviewed.",
+            "11": "Recent advances in bioinspired electronics can function as potential artificial sensory systems.",
+            "12": "Bioinspired electronics can be used in prosthesis.",
+            "13": "Bioinspired electronics can be used in humanoid robots.",
+            "14": "The mechanisms in mimicking biological sensory systems are individually discussed.",
+            "15": "The demonstrations in mimicking biological sensory systems are individually discussed.",
+            "16": "The remaining future challenges for the versatile use of bioinspired electronic sensory systems are analyzed.",
+            "17": "Recent progress in bioinspired electronic sensors shows that the five traditional senses are successfully mimicked using novel electronic components.",
+            "18": "The performance of bioinspired electronic sensors regarding sensitivity, selectivity, and accuracy has improved to levels that outperform human sensory organs.",
+            "19": "Neural interfacing techniques for connecting artificial sensors to the brain are discussed."
+          },
+          "3": {
+            "1": "Living organisms have a sensory computing system based on ion activity that is mysterious.",
+            "2": "Living organisms have a sensory computing system based on ion activity that is powerful.",
+            "3": "Studies on iontronic devices have proposed a promising platform for simulating the sensing and computing functions of living organisms.",
+            "4": "Iontronic devices can generate, store, and transmit a variety of signals by adjusting the concentration and spatiotemporal distribution of ions.",
+            "5": "Iontronic devices generating, storing, and transmitting signals analogs to how the brain performs intelligent functions by alternating ion flux and polarization.",
+            "6": "Iontronic devices can bridge the biosystem with electronics through ionic-electronic coupling.",
+            "7": "Iontronic devices offer profound implications for soft electronics through ionic-electronic coupling.",
+            "8": "The diversity of ions allows iontronic devices to be designed to recognize specific ions or molecules by customizing the charge selectivity.",
+            "9": "The ionic conductivity and capacitance of iontronic devices can be adjusted to respond to external stimuli for a variety of sensing schemes.",
+            "10": "Adjusting ionic conductivity and capacitance for sensing schemes can be more difficult for electron-based devices.",
+            "11": "This review provides a comprehensive overview of emerging neuromorphic sensory computing by iontronic devices.",
+            "12": "The review highlights representative concepts of both low-level and high-level sensory computing.",
+            "13": "The review introduces important material and device breakthroughs in neuromorphic sensory computing by iontronic devices.",
+            "14": "Iontronic devices as a means of neuromorphic sensing and computing are discussed regarding pending challenges.",
+            "15": "Iontronic devices as a means of neuromorphic sensing and computing are discussed regarding future directions."
+          }
+        },
+        "viewpoints": [
+          "The conversion of external information into biological signals is performed by the sensory nervous system.",
+          "The conversion of external information into biological signals is fundamental to how living organisms interact with their environment."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Receiving the majority of the external information as visual cues, the human visual system is able to recognize and remember the identity of a wide range of objects.",
+        "references": {},
+        "viewpoints": [
+          "The human visual system receives the majority of external information as visual cues.",
+          "The human visual system is able to recognize the identity of a wide range of objects.",
+          "The human visual system is able to remember the identity of a wide range of objects."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "The processes in human visual system processes have thus inspired the development of artificial visual systems implemented through electronic devices [4] , [5].",
+        "references": {
+          "4": {
+            "1": "High-performance robotic vision empowers mobile and humanoid robots to detect surrounding objects efficiently.",
+            "2": "High-performance robotic vision empowers mobile and humanoid robots to identify surrounding objects efficiently.",
+            "3": "Detecting and identifying surrounding objects efficiently enables mobile and humanoid robots to cooperate with humans.",
+            "4": "Detecting and identifying surrounding objects efficiently enables mobile and humanoid robots to assist human activities.",
+            "5": "Efficient imaging capabilities are essential for the error-free execution of robots' tasks.",
+            "6": "Efficient data processing capabilities are essential for the error-free execution of robots' tasks.",
+            "7": "Efficient imaging and data processing capabilities are essential even under diverse and complex environments for the error-free execution of robots' tasks.",
+            "8": "Conventional technologies fall short of meeting the high-standard requirements of robotic vision under diverse and complex environments.",
+            "9": "Recent progress in artificial vision systems includes high-performance imaging capabilities enabled by nanomaterials.",
+            "10": "Recent progress in artificial vision systems includes high-performance data processing capabilities enabled by nanomaterials.",
+            "11": "Distinctive electrical, optical, and mechanical characteristics of nanomaterials enable high-performance imaging and data processing capabilities.",
+            "12": "Nanomaterials surpass the limitations of traditional silicon technologies in artificial vision systems.",
+            "13": "The focus is on nanomaterial-based electronic eyes inspired by biological eyes.",
+            "14": "The focus is on in-sensor processing devices inspired by animal visual recognition systems.",
+            "15": "Perspectives are provided on key nanomaterials used in artificial vision systems.",
+            "16": "Perspectives are provided on device components used in artificial vision systems.",
+            "17": "Perspectives are provided on the functionalities of nanomaterials and device components in artificial vision systems.",
+            "18": "The remaining challenges of artificial vision systems are explained.",
+            "19": "The future prospects of artificial vision systems are explained."
+          },
+          "5": {
+            "1": "Reconfigurable phototransistor memory is attracting considerable attention.",
+            "2": "Reconfigurable phototransistor memory offers highly efficient sensing, memory, and processing functions.",
+            "3": "Reconfigurable phototransistor memory integrates sensing, memory, and processing functions onto a single device.",
+            "4": "Reconfigurable phototransistor memory is useful for adaptive visuomorphic computing.",
+            "5": "Developing reconfigurable phototransistor memory is challenging due to the lack of an all-optically controlled transition.",
+            "6": "The lack of an all-optically controlled transition is between short-term plasticity (STP) and long-term plasticity (LTP).",
+            "7": "A Zr-CsPbI₃ perovskite nanocrystal (PNC)-based phototransistor memory is designed.",
+            "8": "The Zr-CsPbI₃ perovskite nanocrystal (PNC)-based phototransistor memory is air-stable.",
+            "9": "The Zr-CsPbI₃ perovskite nanocrystal (PNC)-based phototransistor memory is capable of broadband photoresponses.",
+            "10": "The different electron capture ability of Zr-CsPbI₃ PNCs benefits the creation of an artificial synapse and non-volatile memory.",
+            "11": "The electron capture ability of Zr-CsPbI₃ PNCs differs between 650 nm and 405 nm light.",
+            "12": "An artificial synapse can be created on-demand within a single device.",
+            "13": "Non-volatile memory can be created on-demand within a single device.",
+            "14": "The artificial synapse and non-volatile memory can be quickly reconfigured within a single device for specific purposes.",
+            "15": "The operation between short-term plasticity (STP) and long-term plasticity (LTP) modes is optically reconfigurable and wavelength-aware.",
+            "16": "The optically reconfigurable and wavelength-aware operation enables integrated blue feature extraction.",
+            "17": "Integrated blue feature extraction can be demonstrated in a homogeneous neuromorphic vision sensor array.",
+            "18": "Target recognition can be demonstrated in a homogeneous neuromorphic vision sensor array.",
+            "19": "This work suggests a new way of developing perovskite optoelectronic transistors.",
+            "20": "The new way of developing perovskite optoelectronic transistors is for highly efficient in-sensor computing."
+          }
+        },
+        "viewpoints": [
+          "The processes in the human visual system have inspired the development of artificial visual systems.",
+          "Artificial visual systems are implemented through electronic devices."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Optoelectronic synapses have been instrumental in the progression of such neuromorphic devices that can decode images [6] , [7] , [8] or enable artificial vision [9].",
+        "references": {
+          "6": [],
+          "7": {
+            "1": "Neuromorphic computing can potentially solve the von Neumann bottleneck of current mainstream computing.",
+            "2": "Neuromorphic computing excels at self‐adaptive learning.",
+            "3": "Neuromorphic computing excels at highly parallel computing.",
+            "4": "Neuromorphic computing consumes much less energy than current mainstream computing.",
+            "5": "Synaptic devices that mimic biological synapses are critical building blocks for neuromorphic computing.",
+            "6": "Recent progress in optogenetics and visual sensing has inspired the increased incorporation of light into synaptic devices.",
+            "7": "Incorporating light into synaptic devices paves the way for optoelectronic synaptic devices.",
+            "8": "Optoelectronic synaptic devices have advantages such as wide bandwidth.",
+            "9": "Optoelectronic synaptic devices have advantages such as negligible resistance–capacitance (RC) delay and power loss.",
+            "10": "Optoelectronic synaptic devices allow for global regulation of multiple synaptic devices.",
+            "11": "The Review introduces the recent progress in optoelectronic synaptic devices.",
+            "12": "The Review discusses the working mechanisms of optoelectronic synaptic devices.",
+            "13": "The working mechanisms discussed include carrier trapping/detrapping.",
+            "14": "The working mechanisms discussed include ferroelectric polarization.",
+            "15": "The working mechanisms discussed include phase transition.",
+            "16": "The Review presents the materials of optoelectronic synaptic devices.",
+            "17": "The Review presents the structures of optoelectronic synaptic devices.",
+            "18": "Optoelectronic synaptic devices are classified into photonic synapses.",
+            "19": "Optoelectronic synaptic devices are classified into photoelectric synergetic synapses.",
+            "20": "Optoelectronic synaptic devices are classified into all‐optical synapses.",
+            "21": "The Review compares the advantages of photonic synapses, photoelectric synergetic synapses, and all‐optical synapses.",
+            "22": "The Review compares the disadvantages of photonic synapses, photoelectric synergetic synapses, and all‐optical synapses.",
+            "23": "The Review discusses the challenges of optoelectronic synaptic devices.",
+            "24": "The Review discusses the future development of optoelectronic synaptic devices."
+          },
+          "8": {
+            "1": "Neuromorphic visual systems have potential to emulate basic functions of the human visual system.",
+            "2": "Neuromorphic visual systems have potential to emulate functions of the human visual system beyond the visible light region.",
+            "3": "The complex circuitry of artificial visual systems presents challenges in device integration.",
+            "4": "The complex circuitry of artificial visual systems presents challenges in power consumption.",
+            "5": "Artificial visual systems are based on conventional image sensors, memory, and processing units.",
+            "6": "Simple two-terminal optoelectronic resistive random access memory (ORRAM) synaptic devices are shown for an efficient neuromorphic visual system.",
+            "7": "ORRAM synaptic devices exhibit non-volatile optical resistive switching.",
+            "8": "ORRAM synaptic devices exhibit light-tunable synaptic behaviours.",
+            "9": "The ORRAM arrays enable image sensing functions.",
+            "10": "The ORRAM arrays enable memory functions.",
+            "11": "The ORRAM arrays enable neuromorphic visual pre-processing.",
+            "12": "The ORRAM arrays improve processing efficiency in subsequent processing tasks.",
+            "13": "The ORRAM arrays improve image recognition rate in subsequent processing tasks.",
+            "14": "The proof-of-concept device provides potential to simplify the circuitry of a neuromorphic visual system.",
+            "15": "The proof-of-concept device has potential to contribute to the development of applications in edge computing.",
+            "16": "The proof-of-concept device has potential to contribute to the development of applications in the internet of things."
+          },
+          "9": {
+            "1": "The traditional von Neumann architecture is gradually failing to meet the urgent need for highly parallel computing.",
+            "2": "The traditional von Neumann architecture is gradually failing to meet the urgent need for high-efficiency.",
+            "3": "The traditional von Neumann architecture is gradually failing to meet the urgent need for ultra-low power consumption.",
+            "4": "The traditional von Neumann architecture is inadequate for the current explosion of data.",
+            "5": "Brain-inspired neuromorphic computing can break the inherent limitations of traditional computers.",
+            "6": "Neuromorphic devices are the key hardware units of neuromorphic chips.",
+            "7": "Neuromorphic devices are essential for implementing intelligent computing.",
+            "8": "The development of optogenetics in recent years has provided new avenues for the research of neuromorphic devices.",
+            "9": "The development of photosensitive materials in recent years has provided new avenues for the research of neuromorphic devices.",
+            "10": "Emerging optoelectronic neuromorphic devices have received a lot of attention.",
+            "11": "Optoelectronic neuromorphic devices have shown great potential in the field of visual bionics.",
+            "12": "The paper summarizes the latest visual bionic applications of optoelectronic synaptic memristors based on different photosensitive materials.",
+            "13": "The paper summarizes the latest visual bionic applications of transistors based on different photosensitive materials.",
+            "14": "The basic principle of bio-vision formation is introduced in the paper.",
+            "15": "The device structures of optoelectronic memristors are discussed in the paper.",
+            "16": "The operating mechanisms of optoelectronic memristors are discussed in the paper.",
+            "17": "The device structures of optoelectronic transistors are discussed in the paper.",
+            "18": "The operating mechanisms of optoelectronic transistors are discussed in the paper.",
+            "19": "The recent progresses of optoelectronic synaptic devices based on various photosensitive materials in the fields of visual perception are described in the paper.",
+            "20": "The problems and challenges of optoelectronic neuromorphic devices are summarized in the paper.",
+            "21": "The future development of visual bionics is proposed in the paper."
+          }
+        },
+        "viewpoints": [
+          "Optoelectronic synapses have been instrumental in the progression of neuromorphic devices that can decode images.",
+          "Optoelectronic synapses have been instrumental in the progression of neuromorphic devices that can enable artificial vision."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "However, most optoelectronic devices utilized in hardware neural networks and neural interfaces are composed of inorganic materials, which are often mechanically hard, not biocompatible and lack additional functionalities.",
+        "references": {},
+        "viewpoints": [
+          "Most optoelectronic devices utilized in hardware neural networks are composed of inorganic materials.",
+          "Most optoelectronic devices utilized in neural interfaces are composed of inorganic materials.",
+          "Inorganic materials are often mechanically hard.",
+          "Inorganic materials are often not biocompatible.",
+          "Inorganic materials often lack additional functionalities."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Rendering these devices light responsive requires additional circuit elements whose operational mechanisms are fundamentally different than those found in biological systems [10].",
+        "references": {
+          "10": {
+            "1": "Optoelectronic synapses can perceive visual information.",
+            "2": "Optoelectronic synapses can memorize visual information.",
+            "3": "Optoelectronic synapses are appealing for future bionic eyes.",
+            "4": "Optoelectronic synapses are appealing for vision automation.",
+            "5": "Organic field-effect transistors are a promising platform for optoelectronic synaptic devices.",
+            "6": "The flexibility of organic field-effect transistors contributes to their promise for optoelectronic synaptic devices.",
+            "7": "The biocompatibility of organic field-effect transistors contributes to their promise for optoelectronic synaptic devices.",
+            "8": "Charge screening effects occur at channel–dielectric interfaces.",
+            "9": "Charge screening effects hinder the implementation of programmable multilevel memories.",
+            "10": "The paper reports photonic organic synapses based on photon-modulated electrochemical doping in electrochemical transistors.",
+            "11": "In these photonic organic synapses, light can manipulate ion insertion into the photoactive layer.",
+            "12": "The photoactive layer is composed of donor–acceptor heterojunction interfaces.",
+            "13": "Photon-modulated electrochemical doping enables high-density multilevel conductance modulation at low operating voltages (<1 V).",
+            "14": "Photon-modulated electrochemical doping enables the imitation of ion flux-driven synaptic activity of living systems.",
+            "15": "The photonic organic synaptic devices can recognize different optical signals.",
+            "16": "The photonic organic synaptic devices can mimic the learning processes of the human brain.",
+            "17": "A single-layer synapse array exploits the integrated functions of perception, processing, and memorization of visual information.",
+            "18": "The single-layer synapse array acts as an artificial retina.",
+            "19": "The single-layer synapse array enables facial recognition without the use of a complex artificial neural network."
+          }
+        },
+        "viewpoints": [
+          "Rendering optoelectronic devices light responsive requires additional circuit elements.",
+          "The operational mechanisms of additional circuit elements are fundamentally different than those found in biological systems."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Organic mixed ionic-electronic charge conductors (OMIECs) are ideal electronic materials for developing artificial circuits as they can emulate the ion-mediated mechanisms of biological synapses [11] , [12] , [13] , [14] , [15] , [16].",
+        "references": {
+          "11": {
+            "1": "Biointegrated neuromorphic hardware holds promise for developing new protocols.",
+            "2": "Biointegrated neuromorphic hardware can be used to record signalling in biological systems.",
+            "3": "Biointegrated neuromorphic hardware can be used to regulate signalling in biological systems.",
+            "4": "Successful artificial neural circuits require minimal device complexity.",
+            "5": "Successful artificial neural circuits require minimal circuit complexity.",
+            "6": "Successful artificial neural circuits require ion-based operating mechanisms.",
+            "7": "Ion-based operating mechanisms in successful artificial neural circuits should be akin to those found in biology.",
+            "8": "Artificial spiking neurons can emulate several neural features.",
+            "9": "Artificial spiking neurons based on silicon-based complementary metal-oxide semiconductors are complicated to fabricate.",
+            "10": "Artificial spiking neurons based on negative differential resistance device circuits are complicated to fabricate.",
+            "11": "Artificial spiking neurons based on silicon-based complementary metal-oxide semiconductors are not biocompatible.",
+            "12": "Artificial spiking neurons based on negative differential resistance device circuits are not biocompatible.",
+            "13": "Artificial spiking neurons lack ion-based modulation features.",
+            "14": "Artificial spiking neurons lack chemical-based modulation features.",
+            "15": "A biorealistic conductance-based organic electrochemical neuron (c-OECN) is reported.",
+            "16": "The c-OECN uses a mixed ion–electron conducting ladder-type polymer.",
+            "17": "The c-OECN has stable ion-tunable antiambipolarity.",
+            "18": "The c-OECN is used to emulate the activation of sodium channels of biological neurons.",
+            "19": "The c-OECN is used to emulate the inactivation of sodium channels of biological neurons.",
+            "20": "The c-OECN is used to emulate the delayed activation of potassium channels of biological neurons.",
+            "21": "The c-OECNs can spike at bioplausible frequencies nearing 100 Hz.",
+            "22": "The c-OECNs can emulate most critical biological neural features.",
+            "23": "The c-OECNs demonstrate stochastic spiking.",
+            "24": "The c-OECNs enable neurotransmitter-based spiking modulation.",
+            "25": "The c-OECNs enable amino acid-based spiking modulation.",
+            "26": "The c-OECNs enable ion-based spiking modulation.",
+            "27": "The spiking modulation enabled by the c-OECNs is used to stimulate biological nerves in vivo.",
+            "28": "The combined features of the c-OECNs are impossible to achieve using previous technologies."
+          },
+          "12": {
+            "1": "The development of neuromorphic electronics relies on the effective mimicry of neurons.",
+            "2": "Artificial neurons are not typically capable of operating in biological environments.",
+            "3": "The inability of artificial neurons to operate in biological environments limits their ability to interface with biological components.",
+            "4": "The inability of artificial neurons to operate in biological environments limits their ability to offer realistic neuronal emulation.",
+            "5": "Organic artificial neurons based on conventional circuit oscillators have been created.",
+            "6": "Organic artificial neurons based on conventional circuit oscillators require many elements for their implementation.",
+            "7": "An organic artificial neuron has been reported that is based on a compact nonlinear electrochemical element.",
+            "8": "The artificial neuron can operate in a liquid.",
+            "9": "The artificial neuron is sensitive to the concentration of biological species, such as dopamine or ions, in its surroundings.",
+            "10": "The system offers in situ operation in biologically relevant environments.",
+            "11": "The system offers spiking behaviour in biologically relevant environments.",
+            "12": "The system operates in typical physiological concentration ranges.",
+            "13": "The system operates in typical pathological concentration ranges.",
+            "14": "The system offers ion specificity.",
+            "15": "Small-amplitude electrochemical oscillations (1–150 mV) in the electrolytic medium shape the neuronal dynamics.",
+            "16": "Noise in the electrolytic medium shapes the neuronal dynamics.",
+            "17": "Changes in ionic concentrations (≥2% over the physiological baseline) modulate the neuronal excitability.",
+            "18": "Changes in biomolecular concentrations (≥ 0.1 mM dopamine) modulate the neuronal excitability.",
+            "19": "Biohybrid interfaces have been created where an artificial neuron functions synergistically with epithelial cell biological membranes.",
+            "20": "Biohybrid interfaces have been created where an artificial neuron functions in real time with epithelial cell biological membranes."
+          },
+          "13": [],
+          "14": {
+            "1": "Artificial synaptic devices are the basic composition units for neuromorphic computing processors.",
+            "2": "Artificial synaptic devices enable neuromorphic computing processors to realize massive parallel computing.",
+            "3": "N-type organic transistors have failed to achieve good performance as an artificial synaptic device for neuromorphic computing until now.",
+            "4": "A vertical three-terminal n-type organic artificial synapse (TNOAS) is proposed.",
+            "5": "The proposed TNOAS uses a lithium ion-based organic dielectric.",
+            "6": "The proposed TNOAS uses n-type donor-acceptor (D–A) conjugated polymer-naphthalene-1,4,5,8-tetracarboxylic-diimide-thiophene-vinyl-thiophene (NDI-gTVT) as the channel.",
+            "7": "The TNOAS achieves nonvolatile conductance modulation.",
+            "8": "The TNOAS operates with high current density (≈10 KA cm^{−2}).",
+            "9": "The TNOAS operates at low voltage.",
+            "10": "The TNOAS mimics basic functions of biological synapses, such as long-term synaptic plasticity.",
+            "11": "The TNOAS mimics basic functions of biological synapses, such as paired-pulse facilitation.",
+            "12": "The minimum energy consumption of a response event in TNOAS triggered by a single action potential is 6.16 pJ.",
+            "13": "The minimum energy consumption of TNOAS can be comparable with p-type counterparts.",
+            "14": "Simulation using handwritten digital datasets for TNOAS exhibits a high recognition accuracy of 94%."
+          },
+          "15": {
+            "1": "Biological nervous systems integrate sensing, memory, and processing functionalities.",
+            "2": "Biological nervous systems are energy efficient.",
+            "3": "Biological nervous systems are area efficient.",
+            "4": "Emulating the capabilities of biological nervous systems in artificial systems is challenging.",
+            "5": "The emulation of biological nervous system capabilities in artificial systems is limited by device heterogeneity of sensing and processing cores.",
+            "6": "An organic electrochemical transistor is capable of sensing functionalities.",
+            "7": "An organic electrochemical transistor is capable of memory functionalities.",
+            "8": "An organic electrochemical transistor is capable of processing functionalities.",
+            "9": "The organic electrochemical transistor has a vertical traverse architecture.",
+            "10": "The organic electrochemical transistor has a crystalline–amorphous channel.",
+            "11": "The crystalline–amorphous channel can be selectively doped by ions to enable two reconfigurable modes.",
+            "12": "The two reconfigurable modes enabled by ion doping are a volatile receptor and a non-volatile synapse.",
+            "13": "As a volatile receptor, the organic electrochemical transistor is capable of multi-modal sensing.",
+            "14": "As a volatile receptor, the organic electrochemical transistor is responsive to stimuli such as ions.",
+            "15": "As a volatile receptor, the organic electrochemical transistor is responsive to stimuli such as light.",
+            "16": "As a non-volatile synapse, the organic electrochemical transistor is capable of 10-bit analogue states.",
+            "17": "As a non-volatile synapse, the organic electrochemical transistor has low switching stochasticity.",
+            "18": "As a non-volatile synapse, the organic electrochemical transistor has good state retention.",
+            "19": "The homogeneous integration of the organic electrochemical transistors could provide functions such as conditioned reflexes.",
+            "20": "The homogeneous integration of the organic electrochemical transistors could be used for real-time cardiac disease diagnoses via reservoir computing."
+          },
+          "16": {
+            "1": "Organic artificial synapses are desirable for neuromorphic computing.",
+            "2": "Organic artificial synapses have highly tunable resistive states.",
+            "3": "Low analog switching range hinders the development of organic synapses.",
+            "4": "Inferior memory retention hinders the development of organic synapses.",
+            "5": "Operational instability hinders the development of organic synapses.",
+            "6": "Two donor-acceptor copolymers for TOSTs are reported.",
+            "7": "The copolymers consist of electron-deficient isoindigo coupled with variable donating moieties.",
+            "8": "Enhancing the electron-donating strength of donor units improves the synaptic function of TOSTs.",
+            "9": "Enhancing the electron-donating strength of donor units improves the device stability of TOSTs.",
+            "10": "Polymer alkylated isoindigo-bis-ethylenedioxythiophene exhibits a high analog switching range.",
+            "11": "The analog switching range of polymer alkylated isoindigo-bis-ethylenedioxythiophene is 170 ×.",
+            "12": "This range is two orders of magnitude higher than that of normal organic neuromorphic devices.",
+            "13": "Polymer alkylated isoindigo-bis-ethylenedioxythiophene demonstrates excellent memory retention of over 5 × 10³ s.",
+            "14": "Polymer alkylated isoindigo-bis-ethylenedioxythiophene demonstrates low switching energy of 13 fJ.",
+            "15": "Polymer alkylated isoindigo-bis-ethylenedioxythiophene demonstrates ultrahigh operational stability with 99% of its original current after 100,000 write-read events in air.",
+            "16": "The strong donor strategy showcases high viability.",
+            "17": "Flexible TOSTs demonstrate stable synaptic function after repeated mechanical bending.",
+            "18": "Organic synapses are capable of simulating image information processing.",
+            "19": "The strong donor functionalization strategy boosts the synaptic performance of TOSTs.",
+            "20": "The strong donor functionalization strategy boosts the device stability of TOSTs."
+          }
+        },
+        "viewpoints": [
+          "Organic mixed ionic-electronic charge conductors (OMIECs) are ideal electronic materials for developing artificial circuits.",
+          "OMIECs can emulate the ion-mediated mechanisms of biological synapses."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "OMIECs are soft conjugated polymers that exhibit volumetric ionic and electronic charge transport in their films with often compatibility with living systems.",
+        "references": {},
+        "viewpoints": [
+          "OMIECs are soft conjugated polymers.",
+          "OMIECs exhibit volumetric ionic charge transport in their films.",
+          "OMIECs exhibit electronic charge transport in their films.",
+          "OMIECs often have compatibility with living systems."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Organic electrochemical transistors (OECTs) leverage the mixed conductivity of OMIECs by incorporating their solution-processed films in microscale channels and translating ionic, biological information in aqueous media into amplified electronic signals [17] , [18].",
+        "references": {
+          "17": [],
+          "18": {
+            "1": "The COVID-19 pandemic has highlighted the need for rapid protein detection and quantification.",
+            "2": "The COVID-19 pandemic has highlighted the need for sensitive protein detection and quantification.",
+            "3": "The COVID-19 pandemic has highlighted the need for simple formats for protein detection and quantification for widespread point-of-care applications.",
+            "4": "The COVID-19 pandemic has highlighted the need for robust formats for protein detection and quantification for widespread point-of-care applications.",
+            "5": "Nanobody-functionalized organic electrochemical transistors have a modular architecture.",
+            "6": "Nanobody-functionalized organic electrochemical transistors are used for rapid quantification of single-molecule-to-nanomolar levels of specific antigens.",
+            "7": "Nanobody-functionalized organic electrochemical transistors can be used in complex bodily fluids.",
+            "8": "The sensors combine a solution-processable conjugated polymer in the transistor channel.",
+            "9": "The sensors use high-density bioconjugation of nanobody–SpyCatcher fusion proteins on disposable gate electrodes.",
+            "10": "The sensors use orientation-controlled bioconjugation of nanobody–SpyCatcher fusion proteins on disposable gate electrodes.",
+            "11": "The devices provide results after 10 minutes of exposure to 5 μl of unprocessed samples.",
+            "12": "The devices maintain high specificity in human saliva and serum.",
+            "13": "The devices maintain single-molecule sensitivity in human saliva and serum.",
+            "14": "The devices can be reprogrammed to detect any protein antigen if a corresponding specific nanobody is available.",
+            "15": "The sensors were used to detect green fluorescent protein.",
+            "16": "The sensors were used to detect SARS-CoV-2 spike proteins.",
+            "17": "The sensors were used to detect MERS-CoV spike proteins.",
+            "18": "The sensors were used for the COVID-19 screening of unprocessed clinical nasopharyngeal swab samples with a wide range of viral loads.",
+            "19": "The sensors were used for the COVID-19 screening of unprocessed saliva samples with a wide range of viral loads."
+          }
+        },
+        "viewpoints": [
+          "Organic electrochemical transistors (OECTs) leverage the mixed conductivity of OMIECs.",
+          "OECTs incorporate solution-processed films of OMIECs in microscale channels.",
+          "OECTs translate ionic, biological information into amplified electronic signals.",
+          "OECTs translate ionic, biological information in aqueous media into amplified electronic signals."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "The OMIEC channel achieves multiple, distinct doping states through small ionic fluxes in the electrolyte, generating high device transconductance at low operating voltages (<1 V) [19] , [20] , [21].",
+        "references": {
+          "19": {
+            "1": "Device geometry can be varied to engineer organic electrochemical transistors.",
+            "2": "Organic electrochemical transistors can be engineered to exhibit their maximum transconductance at zero gate bias.",
+            "3": "Engineering organic electrochemical transistors to exhibit their maximum transconductance at zero gate bias enables the design of a simplified amplifying transducer.",
+            "4": "The design of a simplified amplifying transducer allows for improved integration with biomedical systems.",
+            "5": "Prolonged gate bias can be detrimental to biomedical systems."
+          },
+          "20": {
+            "1": "Hydrogels have adjustable mechanical properties.",
+            "2": "Hydrogels have diverse biochemical functions.",
+            "3": "Hydrogels have good ionic conductivity.",
+            "4": "Hydrogels are an attractive category of biointerfacing materials due to their adjustable mechanical properties, diverse biochemical functions, and good ionic conductivity.",
+            "5": "The application of hydrogels in electronics has been restricted because of their lack of semiconducting properties.",
+            "6": "Hydrogels have traditionally only served as insulators or conductors in electronics.",
+            "7": "Single-network hydrogels were developed based on a water-soluble n-type semiconducting polymer.",
+            "8": "Multiple-network hydrogels were developed based on a water-soluble n-type semiconducting polymer.",
+            "9": "The development of these hydrogels endowed conventional hydrogels with semiconducting capabilities.",
+            "10": "These hydrogels show good electron mobilities.",
+            "11": "These hydrogels show high on/off ratios.",
+            "12": "The hydrogels with good electron mobilities and high on/off ratios enable the fabrication of complementary logic circuits.",
+            "13": "The hydrogels enable the fabrication of signal amplifiers with low power consumption and high gains.",
+            "14": "Hydrogel electronics with a good bioadhesive interface can sense electrophysiological signals.",
+            "15": "Hydrogel electronics with a good biocompatible interface can sense electrophysiological signals.",
+            "16": "Hydrogel electronics can amplify electrophysiological signals with enhanced signal-to-noise ratios."
+          },
+          "21": {
+            "1": "Organic electrochemical transistors (OECTs) and OECT-based circuitry offer great potential in bioelectronics.",
+            "2": "OECTs and OECT-based circuitry offer great potential in wearable electronics.",
+            "3": "OECTs and OECT-based circuitry offer great potential in artificial neuromorphic electronics.",
+            "4": "OECTs and OECT-based circuitry have exceptionally low driving voltages (<1 V).",
+            "5": "OECTs and OECT-based circuitry have low power consumption (<1 µW).",
+            "6": "OECTs and OECT-based circuitry have high transconductances (>10 mS).",
+            "7": "OECTs and OECT-based circuitry are biocompatible.",
+            "8": "The successful realization of critical complementary logic OECTs is currently limited by temporal instability.",
+            "9": "The successful realization of critical complementary logic OECTs is currently limited by operational instability.",
+            "10": "The successful realization of critical complementary logic OECTs is currently limited by slow redox processes.",
+            "11": "The successful realization of critical complementary logic OECTs is currently limited by slow switching.",
+            "12": "The successful realization of critical complementary logic OECTs is currently limited by incompatibility with high-density monolithic integration.",
+            "13": "The successful realization of critical complementary logic OECTs is currently limited by inferior n-type OECT performance.",
+            "14": "p- and n-type vertical OECTs with balanced and ultra-high performance are demonstrated by blending redox-active semiconducting polymers with a redox-inactive photocurable polymer.",
+            "15": "p- and n-type vertical OECTs with balanced and ultra-high performance are demonstrated by blending redox-active semiconducting polymers with a redox-inactive photopatternable polymer.",
+            "16": "The blending of redox-active semiconducting polymers with a redox-inactive polymer forms an ion-permeable semiconducting channel.",
+            "17": "The ion-permeable semiconducting channel is implemented in a simple, scalable vertical architecture.",
+            "18": "The vertical architecture has a dense, impermeable top contact.",
+            "19": "Footprint current densities exceeding 1 kA cm^{-2} at less than ±0.7 V are achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "20": "Transconductances of 0.2–0.4 S are achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "21": "Short transient times of less than 1 ms are achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "22": "Ultra-stable switching (>50,000 cycles) is achieved in the first vertically stacked complementary vertical OECT logic circuits.",
+            "23": "The architecture opens many possibilities for fundamental studies of organic semiconductor redox chemistry in nanoscopically confined spaces without macroscopic electrolyte contact.",
+            "24": "The architecture opens many possibilities for fundamental studies of organic semiconductor physics in nanoscopically confined spaces without macroscopic electrolyte contact.",
+            "25": "The architecture opens many possibilities for wearable device applications.",
+            "26": "The architecture opens many possibilities for implantable device applications."
+          }
+        },
+        "viewpoints": [
+          "The OMIEC channel achieves multiple, distinct doping states through small ionic fluxes in the electrolyte.",
+          "The OMIEC channel generates high device transconductance at low operating voltages (<1 V)."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "OECTs have been shown to exhibit both long-term and short-term plasticity behavior, with high potential for integration as artificial synapses [22] , [23].",
+        "references": {
+          "22": {
+            "1": "Soft matter closely resembles biological systems and materials.",
+            "2": "Soft matter has been successfully implemented in numerous bioelectronic applications.",
+            "3": "Soft matter has been successfully implemented in numerous biosensing applications.",
+            "4": "Soft matter has been successfully implemented in bioinspired computing.",
+            "5": "Soft matter has been successfully implemented in neuromorphic electronics.",
+            "6": "Organic mixed ionic–electronic conductors possess favorable characteristics for efficient use in organic electrochemical transistors.",
+            "7": "Organic mixed ionic–electronic conductors possess favorable characteristics for efficient use in electrochemical memory.",
+            "8": "Organic mixed ionic–electronic conductors possess favorable characteristics for efficient use in artificial synapses and neurons.",
+            "9": "Mixed ionic–electronic conduction in these materials leads to high amplification.",
+            "10": "These materials are ideal for translating chemical signals, such as ions or neurotransmitters, into electrical signals.",
+            "11": "These materials are ideal for accurately controlling stable conductance states.",
+            "12": "These materials are ideal for efficiently emulating synaptic weights in artificial neural networks.",
+            "13": "These mixed conductors operate with ionic charges similar to signaling in biological neuronal networks.",
+            "14": "These mixed conductors exhibit ideal properties to emulate biological spiking neurons.",
+            "15": "The potential of soft matter, especially based on organic mixed conductors, for bioinspired systems is considered.",
+            "16": "The potential applications of soft matter, especially based on organic mixed conductors, are considered.",
+            "17": "These materials have potential in applications where low power is key.",
+            "18": "These materials have potential in applications where conformability is key.",
+            "19": "These materials have potential in applications where tunability is key.",
+            "20": "These materials have potential in smart and adaptive biosensors.",
+            "21": "These materials have potential in low-power in-sensor and edge computing.",
+            "22": "These materials have potential in intelligent agents and robotics.",
+            "23": "These materials have potential in event-driven systems and biohybrid spiking circuits at the interface with biology.",
+            "24": "A comprehensive perspective of the potential of biomimetic and bioinspired electronics based on soft matter to integrate artificial intelligence into everyday life is presented."
+          },
+          "23": {
+            "1": "Human eyes assimilate the majority of information for learning and memory.",
+            "2": "The main process for visual perception is the transduction of the color and intensity of incident light into neural signals.",
+            "3": "Artificial retinal systems require neuromorphic devices in addition to light-sensitive elements such as rods and cones.",
+            "4": "Neuromorphic devices in artificial retinal systems are needed to transform light stimuli into post-synaptic signals.",
+            "5": "Synapses with short-term plasticity (STP) and long-term potentiation (LTP) represent the neural foundation for experience acquisition.",
+            "6": "Synapses with short-term plasticity (STP) and long-term potentiation (LTP) represent the neural foundation for memory formation.",
+            "7": "Electrochemical transistors are currently being researched as short-term plasticity (STP) and long-term potentiation (LTP) devices.",
+            "8": "The long-term potentiation (LTP) timescale of electrochemical transistors is confined to a second-to-minute level.",
+            "9": "The confinement of the LTP timescale of electrochemical transistors to a second-to-minute level results in unreliable non-volatile memory.",
+            "10": "The issue of unreliable non-volatile memory limits multiple-plasticity synapses with tunable temporal characteristics.",
+            "11": "The issue of unreliable non-volatile memory limits the development of efficient sensory-memory systems.",
+            "12": "A ferroelectric/electrochemical modulated organic synapse is proposed.",
+            "13": "The proposed ferroelectric/electrochemical modulated organic synapse attains three prototypes of plasticity.",
+            "14": "The proposed ferroelectric/electrochemical modulated organic synapse attains short-term plasticity (STP) and long-term potentiation (LTP) by electrochemical doping/de-doping.",
+            "15": "The proposed ferroelectric/electrochemical modulated organic synapse attains ferroelectric-long-term potentiation (LTP) from dipole switching.",
+            "16": "The proposed device supplements conventional electrochemical transistors.",
+            "17": "The proposed device provides 10000-second-persistent non-volatile plasticity for conventional electrochemical transistors.",
+            "18": "The proposed device provides unique threshold switching properties to conventional electrochemical transistors.",
+            "19": "An ultraflexible, light-triggered organic neuromorphic device (LOND) is constructed by the proposed synapse as a proof-of-concept for an artificial visual-perception system.",
+            "20": "The ultraflexible, light-triggered organic neuromorphic device (LOND) transduces incident light signals into synaptic signals.",
+            "21": "The LOND transduces light signals of different frequency into synaptic signals.",
+            "22": "The LOND transduces light signals of different intensity into synaptic signals.",
+            "23": "The LOND transduces light signals of different wavelength into synaptic signals.",
+            "24": "The LOND transduces incident light signals into both volatile and non-volatile synaptic signals."
+          }
+        },
+        "viewpoints": [
+          "OECTs exhibit long-term plasticity behavior.",
+          "OECTs exhibit short-term plasticity behavior.",
+          "OECTs have high potential for integration as artificial synapses."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "For neuromorphic vision engineering, OMIECs feature one crucial property that has yet to be exploited: the ability to absorb light [24] , [25].",
+        "references": {
+          "24": {
+            "1": "An organic photoelectrochemical transistor is a type of organic electrochemical transistor.",
+            "2": "The organic photoelectrochemical transistor utilizes light to toggle between ON and OFF states.",
+            "3": "The current response to light and voltage fluxes in aqueous media makes the organic photoelectrochemical transistor ideal for developing next-generation bioelectronic devices.",
+            "4": "Next-generation bioelectronic devices include light-assisted biosensors, light-controlled logic gates, and artificial photoreceptors.",
+            "5": "Existing organic photoelectrochemical transistor architectures are complex.",
+            "6": "Existing organic photoelectrochemical transistors often require photoactive nanostructures prepared through labor-intensive synthetic methods.",
+            "7": "Despite the complexity of existing organic photoelectrochemical transistor architectures, their performance remains limited.",
+            "8": "The study develops aqueous electrolyte-compatible optoelectronic transistors.",
+            "9": "The optoelectronic transistors are developed using a single n-type semiconducting polymer.",
+            "10": "The n-type film gates the channel.",
+            "11": "The n-type film generates a photovoltage in response to light.",
+            "12": "The n-type film couples and transports cations and electrons in the channel.",
+            "13": "The study systematically investigates the photoelectrochemical properties of a range of n-type polymeric mixed conductors.",
+            "14": "The investigation aims to understand the material requirements for maximizing phototransistor performance.",
+            "15": "The study's findings contribute to the identification of crucial material properties necessary for constructing high-performance organic photoelectrochemical transistors.",
+            "16": "The study's findings contribute to the identification of crucial device properties necessary for constructing high-performance organic photoelectrochemical transistors.",
+            "17": "The identified properties are necessary for constructing high-performance organic photoelectrochemical transistors with simplified design features.",
+            "18": "The identified properties are necessary for constructing high-performance organic photoelectrochemical transistors that have a direct interface with biological systems."
+          },
+          "25": {
+            "1": "Conjugated polymer films can conduct both ionic and electronic charges.",
+            "2": "Conjugated polymer films are central to building soft electronic sensors.",
+            "3": "Conjugated polymer films are central to building actuators.",
+            "4": "There is a possible interplay between light absorption and the mixed conductivity of conjugated polymer materials in aqueous biological media.",
+            "5": "No single polymer film has been utilized to create a solar-switchable organic bioelectronic circuit that relies on fully reversible potentiometric photodetection.",
+            "6": "No single polymer film has been utilized to create a solar-switchable organic bioelectronic circuit that relies on redox reaction-free current modulation.",
+            "7": "The absorption of light by an electron and cation-transporting polymer film reversibly modulates the film's electrochemical potential in an aqueous electrolyte.",
+            "8": "The absorption of light by an electron and cation-transporting polymer film reversibly modulates the film's conductivity in an aqueous electrolyte.",
+            "9": "The reversible modulation of electrochemical potential and conductivity by light absorption is harnessed to design an n-type photo-electrochemical transistor (n-OPECT).",
+            "10": "Controlling the intensity of light incident on the n-type polymeric gate electrode generates transistor output characteristics.",
+            "11": "The transistor output characteristics mimic the modulation of the polymeric channel current achieved through gate voltage control.",
+            "12": "The micron-scale n-OPECT exhibits a high signal-to-noise ratio.",
+            "13": "The micron-scale n-OPECT exhibits excellent sensitivity to low light intensities.",
+            "14": "Three direct applications of the n-OPECT are demonstrated: a photoplethysmogram recorder, a light-controlled inverter circuit, and a light-gated artificial synapse.",
+            "15": "The demonstration of the n-OPECT applications underscores the suitability of this platform for a myriad of biomedical applications.",
+            "16": "The suitability of the n-OPECT platform is particularly noted for biomedical applications that involve light intensity changes."
+          }
+        },
+        "viewpoints": [
+          "OMIECs feature the ability to absorb light.",
+          "The ability of OMIECs to absorb light is crucial for neuromorphic vision engineering.",
+          "The ability of OMIECs to absorb light has yet to be exploited for neuromorphic vision engineering."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "A few recent reports have demonstrated the application of OECTs as optoelectronic synapses converting light-based signals into spike-train signal patterns [26].",
+        "references": {
+          "26": []
+        },
+        "viewpoints": [
+          "A few recent reports have demonstrated the application of OECTs as optoelectronic synapses.",
+          "OECTs convert light-based signals into spike-train signal patterns."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "However, these studies do not leverage the light sensitivity of OMIECs in the channel but rather depend on light-sensitive materials integrated into large-area gate electrodes [25] , [27], rendering these systems difficult to operate, miniaturize, and integrate.",
+        "references": {
+          "25": {
+            "1": "Conjugated polymer films can conduct both ionic and electronic charges.",
+            "2": "Conjugated polymer films are central to building soft electronic sensors.",
+            "3": "Conjugated polymer films are central to building actuators.",
+            "4": "There is a possible interplay between light absorption and the mixed conductivity of conjugated polymer materials in aqueous biological media.",
+            "5": "No single polymer film has been utilized to create a solar-switchable organic bioelectronic circuit that relies on fully reversible potentiometric photodetection.",
+            "6": "No single polymer film has been utilized to create a solar-switchable organic bioelectronic circuit that relies on redox reaction-free current modulation.",
+            "7": "The absorption of light by an electron and cation-transporting polymer film reversibly modulates the film's electrochemical potential in an aqueous electrolyte.",
+            "8": "The absorption of light by an electron and cation-transporting polymer film reversibly modulates the film's conductivity in an aqueous electrolyte.",
+            "9": "The reversible modulation of electrochemical potential and conductivity by light absorption is harnessed to design an n-type photo-electrochemical transistor (n-OPECT).",
+            "10": "Controlling the intensity of light incident on the n-type polymeric gate electrode generates transistor output characteristics.",
+            "11": "The transistor output characteristics mimic the modulation of the polymeric channel current achieved through gate voltage control.",
+            "12": "The micron-scale n-OPECT exhibits a high signal-to-noise ratio.",
+            "13": "The micron-scale n-OPECT exhibits excellent sensitivity to low light intensities.",
+            "14": "Three direct applications of the n-OPECT are demonstrated: a photoplethysmogram recorder, a light-controlled inverter circuit, and a light-gated artificial synapse.",
+            "15": "The demonstration of the n-OPECT applications underscores the suitability of this platform for a myriad of biomedical applications.",
+            "16": "The suitability of the n-OPECT platform is particularly noted for biomedical applications that involve light intensity changes."
+          },
+          "27": {
+            "1": "Exploiting the light–matter interplay is an emerging strategy to engineer bioinspired systems.",
+            "2": "Advanced light responsive multimodal platforms can be realized by exploiting the light–matter interplay.",
+            "3": "Bioinspired systems include optoelectronic synaptic devices.",
+            "4": "Existing neuroinspired optoelectronic devices rely on complex processing of hybrid materials.",
+            "5": "The hybrid materials used in existing neuroinspired optoelectronic devices often do not exhibit biocompatibility.",
+            "6": "The hybrid materials used in existing neuroinspired optoelectronic devices often do not exhibit low Young’s modulus.",
+            "7": "Biocompatibility and low Young’s modulus are required features for biological interfacing.",
+            "8": "Organic photoelectrochemical transistors have paved the way towards multimodal devices.",
+            "9": "Multimodal devices can better couple to biological systems.",
+            "10": "Multimodal devices benefit from the characteristics of conjugated polymers.",
+            "11": "Neurohybrid organic photoelectrochemical transistors can be designed to optimally interface neuronal systems.",
+            "12": "Neurohybrid organic photoelectrochemical transistors resemble typical plasticity-driven processes.",
+            "13": "Sophisticated integrated architectures can be created between neuron and neuromorphic ends by neurohybrid organic photoelectrochemical transistors.",
+            "14": "An innovative photo-switchable PEDOT:PSS was synthesized.",
+            "15": "The innovative photo-switchable PEDOT:PSS was successfully integrated into an organic photoelectrochemical transistor.",
+            "16": "The organic photoelectrochemical transistor device uses an azobenzene-based organic neuro-hybrid building block.",
+            "17": "The organic photoelectrochemical transistor device mimics the retina’s structure.",
+            "18": "The organic photoelectrochemical transistor device exhibits the capability to emulate visual pathways.",
+            "19": "The device can be operated with both opto- and electrical functions.",
+            "20": "Light-dependent conditioning and extinction processes were achieved by the device.",
+            "21": "The achieved light-dependent processes faithfully mimic synaptic neural functions.",
+            "22": "The synaptic neural functions mimicked include short-term plasticity.",
+            "23": "The synaptic neural functions mimicked include long-term plasticity."
+          }
+        },
+        "viewpoints": [
+          "These studies do not leverage the light sensitivity of OMIECs in the channel.",
+          "These studies depend on light-sensitive materials integrated into large-area gate electrodes.",
+          "The use of light-sensitive materials in large-area gate electrodes renders these systems difficult to operate.",
+          "The use of light-sensitive materials in large-area gate electrodes renders these systems difficult to miniaturize.",
+          "The use of light-sensitive materials in large-area gate electrodes renders these systems difficult to integrate."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The only demonstration of a miniaturized OECT-based optoelectronic synapse, which generated a non-volatile light-induced memory, used conventional organic semiconductors [10] (a bi-component donor/acceptor system, P3HT:PCBM), in the channel, which are not compatible with aqueous electrolytes and require a toxic ionic liquid as the electrolyte.",
+        "references": {
+          "10": {
+            "1": "Optoelectronic synapses can perceive visual information.",
+            "2": "Optoelectronic synapses can memorize visual information.",
+            "3": "Optoelectronic synapses are appealing for future bionic eyes.",
+            "4": "Optoelectronic synapses are appealing for vision automation.",
+            "5": "Organic field-effect transistors are a promising platform for optoelectronic synaptic devices.",
+            "6": "The flexibility of organic field-effect transistors contributes to their promise for optoelectronic synaptic devices.",
+            "7": "The biocompatibility of organic field-effect transistors contributes to their promise for optoelectronic synaptic devices.",
+            "8": "Charge screening effects occur at channel–dielectric interfaces.",
+            "9": "Charge screening effects hinder the implementation of programmable multilevel memories.",
+            "10": "The paper reports photonic organic synapses based on photon-modulated electrochemical doping in electrochemical transistors.",
+            "11": "In these photonic organic synapses, light can manipulate ion insertion into the photoactive layer.",
+            "12": "The photoactive layer is composed of donor–acceptor heterojunction interfaces.",
+            "13": "Photon-modulated electrochemical doping enables high-density multilevel conductance modulation at low operating voltages (<1 V).",
+            "14": "Photon-modulated electrochemical doping enables the imitation of ion flux-driven synaptic activity of living systems.",
+            "15": "The photonic organic synaptic devices can recognize different optical signals.",
+            "16": "The photonic organic synaptic devices can mimic the learning processes of the human brain.",
+            "17": "A single-layer synapse array exploits the integrated functions of perception, processing, and memorization of visual information.",
+            "18": "The single-layer synapse array acts as an artificial retina.",
+            "19": "The single-layer synapse array enables facial recognition without the use of a complex artificial neural network."
+          }
+        },
+        "viewpoints": [
+          "The only demonstration of a miniaturized OECT-based optoelectronic synapse generated a non-volatile light-induced memory.",
+          "The miniaturized OECT-based optoelectronic synapse used conventional organic semiconductors (a bi-component donor/acceptor system, P3HT:PCBM) in the channel.",
+          "The conventional organic semiconductors used are not compatible with aqueous electrolytes.",
+          "The conventional organic semiconductors require a toxic ionic liquid as the electrolyte."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Moreover, while current organic synaptic transistors have demonstrated light signal processing capability, they can process information at only one wavelength or a restricted range of wavelengths [28] , [29] , [30].",
+        "references": {
+          "28": [],
+          "29": {
+            "1": "An artificial visual sensory system requires optoelectronic materials and devices.",
+            "2": "Optoelectronic materials and devices for an artificial visual sensory system need to mimic the behavior of biological synapses.",
+            "3": "Organic/polymeric semiconductors have emerged as promising candidates for optoelectronic synapses.",
+            "4": "The promising nature of organic/polymeric semiconductors for optoelectronic synapses is due to their tunable optoelectronic properties.",
+            "5": "The promising nature of organic/polymeric semiconductors for optoelectronic synapses is due to their mechanical flexibility.",
+            "6": "The promising nature of organic/polymeric semiconductors for optoelectronic synapses is due to their biological compatibility.",
+            "7": "The review discusses recent progress in organic optoelectronic synaptic materials and devices.",
+            "8": "Recent progress in organic optoelectronic synaptic materials and devices includes their design principles.",
+            "9": "Recent progress in organic optoelectronic synaptic materials and devices includes their working mechanisms.",
+            "10": "Recent progress in organic optoelectronic synaptic materials and devices includes their applications.",
+            "11": "The review highlights the challenges in the field of organic optoelectronic synaptic materials and devices.",
+            "12": "The review highlights the opportunities in the field of organic optoelectronic synaptic materials and devices.",
+            "13": "The review provides insights into potential applications of organic optoelectronic synaptic materials and devices in next-generation artificial visual systems.",
+            "14": "Advances in organic optoelectronic materials and devices can be leveraged for future development in artificial intelligence.",
+            "15": "Future development in artificial intelligence can be envisioned by leveraging the advances in organic optoelectronic materials and devices."
+          },
+          "30": {
+            "1": "Sensing from the ultraviolet-visible to the infrared is critical for industrial applications.",
+            "2": "Sensing from the ultraviolet-visible to the infrared is critical for scientific applications.",
+            "3": "Gallium nitride–based detectors are used for different sub-bands within the ultraviolet to near-infrared wavelength range.",
+            "4": "Silicon-based detectors are used for different sub-bands within the ultraviolet to near-infrared wavelength range.",
+            "5": "Indium gallium arsenide–based detectors are used for different sub-bands within the ultraviolet to near-infrared wavelength range.",
+            "6": "Polymer photodetectors with broad spectral response from 300 to 1450 nanometers have been demonstrated.",
+            "7": "The polymer photodetectors are fabricated using a small-band-gap semiconducting polymer blended with a fullerene derivative.",
+            "8": "The polymer photodetectors operate at room temperature.",
+            "9": "The polymer photodetectors exhibit detectivities greater than 10¹² cm Hz¹/²/W.",
+            "10": "The polymer photodetectors have a linear dynamic range over 100 decibels.",
+            "11": "The self-assembled nanomorphology of the polymer photodetectors results in high photodetectivity over a wide spectral range.",
+            "12": "The device architecture of the polymer photodetectors results in high photodetectivity over a wide spectral range.",
+            "13": "The self-assembled nanomorphology of the polymer photodetectors reduces the dark current and noise to values well below those in narrow-band photodetectors made with inorganic semiconductors.",
+            "14": "The device architecture of the polymer photodetectors reduces the dark current and noise to values well below those in narrow-band photodetectors made with inorganic semiconductors."
+          }
+        },
+        "viewpoints": [
+          "Current organic synaptic transistors have demonstrated light signal processing capability.",
+          "Current organic synaptic transistors can process information at only one wavelength.",
+          "Current organic synaptic transistors can process information at a restricted range of wavelengths."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Furthermore, mimicking the human visual system demands multi-functional materials that are responsive to both light and electrical stimuli, as visual memory and recognition rely on photoreceptor cells that capture visual information and afferent neurons that transmit this input as electrical signals.",
+        "references": {},
+        "viewpoints": [
+          "Mimicking the human visual system demands multi-functional materials.",
+          "Multi-functional materials must be responsive to both light and electrical stimuli for mimicking the human visual system.",
+          "Visual memory and recognition rely on photoreceptor cells that capture visual information.",
+          "Visual memory and recognition rely on afferent neurons that transmit visual information as electrical signals."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Thus, to build a biomimetic optoelectronic synapse, the development of multi-stimuli-responsive OMIECs with the ability to perceive multispectral visual information is key to surpassing the functionality of single-mode (electric or optical) drives [31].",
+        "references": {
+          "31": []
+        },
+        "viewpoints": [
+          "To build a biomimetic optoelectronic synapse, the development of multi-stimuli-responsive OMIECs is key.",
+          "The ability to perceive multispectral visual information is crucial for OMIECs to surpass the functionality of single-mode (electric or optical) drives."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Here we develop an organic ion-tunable optoelectrochemical synapse by using a single-component OMIEC as the OECT channel that responds to both light and voltage stimuli applied through an aqueous electrolyte (Fig. 1a).",
+        "references": {},
+        "viewpoints": [
+          "An organic ion-tunable optoelectrochemical synapse is developed by using a single-component OMIEC as the OECT channel.",
+          "The single-component OMIEC responds to both light and voltage stimuli.",
+          "The stimuli are applied through an aqueous electrolyte."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The OMIEC we designed is an n-type, all electron-accepting copolymer consisting of bisistain-lactone and bithiazole (p(C2F-z)) (Fig. 1b), synthesized through the green Aldol polymerization technique.",
+        "references": {},
+        "viewpoints": [
+          "The OMIEC designed is an n-type copolymer.",
+          "The OMIEC is an all electron-accepting copolymer.",
+          "The OMIEC consists of bisistain-lactone and bithiazole (p(C2F-z)).",
+          "The synthesis of the OMIEC is achieved through the green Aldol polymerization technique."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Our synapse demonstrates multispectral visual perception covering a broad wavelength range (ultraviolet, visible, and near-infrared regions), even beyond the perception range of the human visual system.",
+        "references": {},
+        "viewpoints": [
+          "Our synapse demonstrates multispectral visual perception.",
+          "The synapse covers a broad wavelength range (ultraviolet, visible, and near-infrared regions).",
+          "The synapse's wavelength range is beyond the perception range of the human visual system."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Our single-component material is responsive not only to optical stimuli but also to electrical input, further mimicking the electrical transmission in the retina.",
+        "references": {},
+        "viewpoints": [
+          "The single-component material is responsive to optical stimuli.",
+          "The single-component material is responsive to electrical input.",
+          "The responsiveness to optical and electrical stimuli mimics the electrical transmission in the retina."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The optoelectrochemical synapse emulates the functionality of a biological synapse such as synaptic plasticity and pair-pulse facilitation, and it exhibits the transition of a short-term memory to a long-term memory at low programming voltages (0.4 V), emulating the learning experience of the brain.",
+        "references": {},
+        "viewpoints": [
+          "The optoelectrochemical synapse emulates synaptic plasticity of a biological synapse.",
+          "The optoelectrochemical synapse emulates pair-pulse facilitation of a biological synapse.",
+          "The optoelectrochemical synapse exhibits the transition of a short-term memory to a long-term memory.",
+          "The transition occurs at low programming voltages (0.4 V).",
+          "The transition emulates the learning experience of the brain."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Through a combination of in situ and ex situ optoelectrochemical methods, we investigate the working mechanism of these devices, which relies on the light-induced aqueous ion-based doping of the channel, with the extent precisely controlled by the training pattern.",
+        "references": {},
+        "viewpoints": [
+          "The investigation of the working mechanism of these devices uses a combination of in situ and ex situ optoelectrochemical methods.",
+          "The device's working mechanism relies on light-induced aqueous ion-based doping of the channel.",
+          "The extent of aqueous ion-based doping is precisely controlled by the training pattern."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "By building a synaptic array based on an 8 \\(\\times\\) 8 array of these devices on a 9.4 \\(\\times\\) 6.6 mm 2 area, we show this aquoues electrolyte compatible device’s capability for image recognition, preprocessing, and memory.",
+        "references": {},
+        "viewpoints": [
+          "A synaptic array is built based on an 8 \\(\\times\\) 8 array of these devices.",
+          "The synaptic array is located on a 9.4 \\(\\times\\) 6.6 mm\\(^2 \\) area.",
+          "The device demonstrates capability for image recognition.",
+          "The device demonstrates capability for preprocessing.",
+          "The device demonstrates capability for memory.",
+          "The device is compatible with an aqueous electrolyte."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "In addition, we demonstrate the use of our device for in-sensor reservoir computing and full-color image processing, highlighting its capability for decoding multitask spatiotemporal events and extracting color information in biological media.",
+        "references": {},
+        "viewpoints": [
+          "The device is used for in-sensor reservoir computing.",
+          "The device is used for full-color image processing.",
+          "The device is capable of decoding multitask spatiotemporal events.",
+          "The device is capable of extracting color information in biological media."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Lastly, our synaptic device performs temporal summation under high-frequency electrical pulses, which we leverage for motion recognition.",
+        "references": {},
+        "viewpoints": [
+          "The synaptic device performs temporal summation under high-frequency electrical pulses.",
+          "Temporal summation is leveraged for motion recognition."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56814-w_with_abstracts",
+    "base_id": "s41467-025-56814-w",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56814-w_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

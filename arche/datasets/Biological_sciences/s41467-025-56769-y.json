@@ -1,0 +1,971 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Rice ( Oryza sativa ) is one of the most important crops, cultivated in more than 100 countries and regions [1] . However, it confronts persistent threats from a wide range of diseases, with global yield losses attributed to pathogens and pests reaching up to 30% [2] . Especially viral diseases, which are often caused by insect-borne viruses, such as rice tungro viruses, rice Dwarf Virus (RDV), Rice Gall Dwarf Virus (RGDV), Rice Grassy Stunt Virus (RGSV), Rice Ragged Stunt Virus (RRSV) and Southern rice black-streaked dwarf virus (SRBSDV), alongside their insect vectors, such as leafhoppers and planthoppers, wreaked havoc on rice production in East, South, and Southeast Asia [3] , [4] , [5] . Of particular concern is that these insect-borne viruses sporadically lead to devastating epidemics, often with unclear origins [6] . Therefore, the surrounding wild plants were deemed to be associated with rice viruses, due to their potential to act as reservoirs or intermediates for crop viruses [7] , [8] . Recent discoveries, exemplified by the identification of rice tiller inhibition virus (RTIV), a novel insect-borne positive-strand RNA virus found in wild rice through metagenomic sequencing, underscore the possibility of spillover from wild rice to cultivated rice [6] . Also noteworthy is that some insect-borne viruses can suddenly disseminate with minimal or no overt symptoms in the early stages, poses significant challenges to viral disease prevention [3] , [4] . Currently, 20 viruses are known to infect rice plants, predominantly inducing overt disease and characterized by RNA genomes, signifying the prevalence of RNA viruses in rice akin to other plants [3] , [4] . However, recent studies also showed that several novel viruses resembling insect viruses were associated with rice plants, and they appeared to cause dwarfing or curling symptoms [9] , [10] . These findings prompt a reassessment of the breadth and depth of rice viruses, suggesting that our current understanding may fall short, with additional viruses potentially lurking overtly or covertly within rice ecosystems. Viral metagenomics has emerged as a potent tool for uncovering hidden viruses without prior knowledge, offering ample coverage to reconstruct complete or near-complete viral genomes and facilitating straightforward characterization of viral diversity [11] , [12] . In the recent decade, viral metagenomics has been used to explore the viral diversity in plants [13] , animals [14] , prokaryotes [15] , pollen [16] , soil [17] , aquatic environments [18] and ocean [19] . In addition, the public sequencing database (SRA, Sequence Read Archive) has experienced exponential growth annually, and they probably contain viral nucleic acids that were inadvertently captured for their original purpose [20] . Therefore, viral metagenomic approaches were also applied to these data resource for the mining of related viruses and other pathogens [21] , [22] . Particularly, RNA viruses, characterized by the hallmark gene RNA-dependent RNA polymerase (RdRP), exhibit a notable degree of conservation in both protein sequences and structures [23] . Accordingly, a variety of RdRP-based searching strategies, such as profile HMM (hidden Markov model) searching [24] , RdRP structural alignment [24] , and “plamprint” (the three essential motifs A, B and C forming the catalytic core in RdRP) scanning [22] , [25] , were developed, facilitating the rapid detection of RNA viruses. Furthermore, the detection of virus-derived sRNAs and negative strand RNAs has uncovered highly divergent viruses, such as Quenyavirus in Drosophila [26] and ORFan Mycovirus in powdery mildew [27] , from contigs commonly referred as “dark matter”, devoid of similarities with any reference nucleotide or amino acid sequences [28] . By contrast, although viral metagenomics has been utilized to identify viruses in rice plants, earlier investigations have struggled with small sample sizes, leading to a limited scope of virus identification [6] , [9] , [10] . To date, RNA viruses have been classified into over 6000 species according to the International Committee on Taxonomy of Viruses (ICTV, https://ictv.global/taxonomy/ ), displaying extraordinary genetic diversity. Recently, the Serratus project conducted a massive analysis of all public RNA-seq data released before January 2021 in the SRA database, resulting in the identification of RdRP for over 10 5 RNA viruses, thereby significantly expanding viral diversity [22] . However, the viral RdRP information provided by Serratus typically represents only a fraction of complete RdRP domains, often insufficient for genome annotation and phylogenetic analysis. Nevertheless, this fragmentary RdRP information from Serratus proves valuable for screening appropriate RNA-seq libraries for virus identification, laying the groundwork for more specialized, in-depth analyses such as viral genome assembly, annotation, and classification [29] , [30] . Being one of the most crucial food crops, rice has long been a focal point of research, resulting in the accumulation of vast amounts of publicly available RNA-seq data submitted by scientists worldwide. However, up to now, these data have not undergone systematic analysis for virus identification. Besides, rice plants have long been threatened by fungal pathogens and insect pests, and the identification of viruses associated with these fungi or insects may offer valuable insights for developing innovative strategies to prevent both fungal infections and insect infestations. In this study, we conducted a large-scale analysis of 17,115 RNA-seq libraries encompassing 24 Oryza species to explore viral diversity in rice plants. Employing both homology-based and homology-independent approaches, we identified 810 complete or near-complete viruses and additional 49 RdRPs. Furthermore, we analyzed the metadata of SRA runs from Serratus, and estimated viral abundance in rice samples, facilitating the screening of 427 viruses closely associated with rice plants. These findings hold significant potential for advancing viral research, enhancing surveillance efforts against viral diseases, and implementing effective measures to mitigate viral epidemics in rice plants.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Rice (Oryza sativa) is one of the most important crops, cultivated in more than 100 countries and regions [1].",
+        "references": {
+          "1": {
+            "1": "Rice is a staple food for more than half of the world's population.",
+            "2": "Rice is grown in over 100 countries.",
+            "3": "90% of the total global production of rice comes from Asia.",
+            "4": "There are more than 110,000 cultivated varieties of rice.",
+            "5": "Rice varieties vary in quality.",
+            "6": "Rice varieties vary in nutritional content.",
+            "7": "After post-harvest processing, rice can be categorized as either white or brown.",
+            "8": "Regional preferences are determinants of market availability and final consumption of rice.",
+            "9": "Cultural preferences are determinants of market availability and final consumption of rice.",
+            "10": "The need for stability during storage is a determinant of market availability and final consumption of rice.",
+            "11": "The need for stability during transport is a determinant of market availability and final consumption of rice.",
+            "12": "Rice is a good source of calories.",
+            "13": "Rice is a good source of magnesium.",
+            "14": "Rice is a good source of phosphorus.",
+            "15": "Rice is a good source of manganese.",
+            "16": "Rice is a good source of selenium.",
+            "17": "Rice is a good source of iron.",
+            "18": "Rice is a good source of folic acid.",
+            "19": "Rice is a good source of thiamin.",
+            "20": "Rice is a good source of niacin.",
+            "21": "Rice is low in fiber.",
+            "22": "Rice is low in fat.",
+            "23": "Brown rice is promoted as being \"healthier\" because of bioactive compounds.",
+            "24": "Brown rice contains minerals not present in white rice after polishing.",
+            "25": "Brown rice contains vitamins not present in white rice after polishing.",
+            "26": "White rice is more widely consumed than brown rice.",
+            "27": "White rice is more widely consumed than brown for cooking ease.",
+            "28": "White rice is more widely consumed than brown for palatability.",
+            "29": "White rice is more widely consumed than brown for shelf life.",
+            "30": "Polished rice has a higher glycemic load.",
+            "31": "Polished rice may impact glucose homeostasis.",
+            "32": "When combined with other foods, polished rice can be considered part of a \"healthy\" plate.",
+            "33": "Rice will remain a staple with the projected increase in the global population.",
+            "34": "It is important to encourage intake of brown rice.",
+            "35": "It is important to identify ways to harness the phytonutrients lost during milling.",
+            "36": "The world is facing environmental challenges.",
+            "37": "The world is experiencing changing demographics.",
+            "38": "The world is experiencing changing consumer demands.",
+            "39": "Farmers must work collaboratively to assure adequate supply of rice.",
+            "40": "Healthcare providers must work collaboratively to assure adequate supply of rice.",
+            "41": "Food manufacturers must work collaboratively to assure adequate supply of rice.",
+            "42": "Nutritionists must work collaboratively to assure adequate supply of rice.",
+            "43": "Farmers must work collaboratively to assure nutritional integrity of rice.",
+            "44": "Healthcare providers must work collaboratively to assure nutritional integrity of rice.",
+            "45": "Food manufacturers must work collaboratively to assure nutritional integrity of rice.",
+            "46": "Nutritionists must work collaboratively to assure nutritional integrity of rice.",
+            "47": "Farmers must work collaboratively to assure sustainability of rice production systems globally.",
+            "48": "Healthcare providers must work collaboratively to assure sustainability of rice production systems globally.",
+            "49": "Food manufacturers must work collaboratively to assure sustainability of rice production systems globally.",
+            "50": "Nutritionists must work collaboratively to assure sustainability of rice production systems globally."
+          }
+        },
+        "viewpoints": [
+          "Rice (Oryza sativa) is one of the most important crops.",
+          "Rice (Oryza sativa) is cultivated in more than 100 countries and regions."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "However, rice confronts persistent threats from a wide range of diseases, with global yield losses attributed to pathogens and pests reaching up to 30% [2].",
+        "references": {
+          "2": {
+            "1": "Crop pathogens and pests reduce the yield of agricultural production.",
+            "2": "Crop pathogens and pests reduce the quality of agricultural production.",
+            "3": "Crop pathogens and pests cause substantial economic losses.",
+            "4": "Crop pathogens and pests reduce food security at the household level.",
+            "5": "Crop pathogens and pests reduce food security at the national level.",
+            "6": "Crop pathogens and pests reduce food security at the global level.",
+            "7": "Quantitative, standardized information on crop losses is difficult to compile across crops.",
+            "8": "Quantitative, standardized information on crop losses is difficult to compile across agroecosystems.",
+            "9": "Quantitative, standardized information on crop losses is difficult to compile across regions.",
+            "10": "Quantitative, standardized information on crop losses is difficult to compare across crops.",
+            "11": "Quantitative, standardized information on crop losses is difficult to compare across agroecosystems.",
+            "12": "Quantitative, standardized information on crop losses is difficult to compare across regions.",
+            "13": "The paper reports on an expert-based assessment of crop health.",
+            "14": "The paper provides numerical estimates of yield losses on an individual pathogen basis for five major crops globally.",
+            "15": "The paper provides numerical estimates of yield losses on an individual pest basis for five major crops globally.",
+            "16": "The paper provides numerical estimates of yield losses on an individual pathogen basis in food security hotspots.",
+            "17": "The paper provides numerical estimates of yield losses on an individual pest basis in food security hotspots.",
+            "18": "The results document losses associated with 137 pathogens and pests.",
+            "19": "The losses are associated with wheat worldwide.",
+            "20": "The losses are associated with rice worldwide.",
+            "21": "The losses are associated with maize worldwide.",
+            "22": "The losses are associated with potato worldwide.",
+            "23": "The losses are associated with soybean worldwide.",
+            "24": "The global yield loss estimate for wheat is 21.5% (range 10.1-28.1%).",
+            "25": "The global yield loss estimate for rice is 30.0% (range 24.6-40.9%).",
+            "26": "The global yield loss estimate for maize is 22.5% (range 19.5-41.1%).",
+            "27": "The global yield loss estimate for potato is 17.2% (range 8.1-21.0%).",
+            "28": "The global yield loss estimate for soybean is 21.4% (range 11.0-32.4%).",
+            "29": "The highest yield losses are associated with food-deficit regions.",
+            "30": "The highest yield losses are associated with fast-growing populations.",
+            "31": "The highest yield losses are frequently associated with emerging pests.",
+            "32": "The highest yield losses are frequently associated with re-emerging pests.",
+            "33": "The highest yield losses are frequently associated with emerging diseases.",
+            "34": "The highest yield losses are frequently associated with re-emerging diseases.",
+            "35": "The assessment highlights differences in impacts among crop pathogens.",
+            "36": "The assessment highlights differences in impacts among pests.",
+            "37": "The assessment highlights differences in impacts among food security hotspots.",
+            "38": "The analysis contributes critical information to prioritize crop health management.",
+            "39": "The analysis contributes critical information to improve the sustainability of agroecosystems.",
+            "40": "The analysis contributes critical information to improve the ability of agroecosystems to deliver services to societies."
+          }
+        },
+        "viewpoints": [
+          "Rice confronts persistent threats from a wide range of diseases.",
+          "Global yield losses in rice can reach up to 30% due to pathogens and pests."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Especially viral diseases, which are often caused by insect-borne viruses, such as rice tungro viruses, rice Dwarf Virus (RDV), Rice Gall Dwarf Virus (RGDV), Rice Grassy Stunt Virus (RGSV), Rice Ragged Stunt Virus (RRSV) and Southern rice black-streaked dwarf virus (SRBSDV), alongside their insect vectors, such as leafhoppers and planthoppers, wreaked havoc on rice production in East, South, and Southeast Asia [3], [4], [5].",
+        "references": {
+          "3": {
+            "1": "There are 15 known viruses that occur in rice.",
+            "2": "The names of the 15 known viruses that occur in rice are rice black-streaked dwarf, rice bunchy stunt, rice dwarf, rice gall dwarf, rice giallume, rice grassy stunt, rice hoja blanca, rice necrosis mosaic, rice ragged stunt, rice stripe necrosis, rice stripe, rice transitory yellowing, rice tungro bacilliform, rice tungro spherical, and rice yellow mottle viruses.",
+            "3": "The paper describes the geographical distribution of the 15 known rice viruses.",
+            "4": "The paper describes the relation of the 15 known rice viruses to vectors.",
+            "5": "The paper describes the infection cycles of the 15 known rice viruses.",
+            "6": "The paper describes the field dispersal of the 15 known rice viruses.",
+            "7": "The paper describes the development of the 15 known rice viruses.",
+            "8": "The paper lists recorded outbreaks of the 15 known rice viruses.",
+            "9": "Intensified rice cultivation has led to many rice viruses becoming serious problems.",
+            "10": "Double-cropping of rice has significantly influenced the incidence of rice viruses.",
+            "11": "Using improved, photo-insensitive cultivars of rice with short growth duration has significantly influenced the incidence of rice viruses."
+          },
+          "4": [],
+          "5": {
+            "1": "Southern rice black-streaked dwarf virus (SRBSDV) is a non-enveloped icosahedral virus.",
+            "2": "SRBSDV has a genome of 10 double-stranded RNA segments.",
+            "3": "SRBSDV is a novel species in the genus Fijivirus, family Reoviridae.",
+            "4": "SRBSDV was first recognized in 2008.",
+            "5": "Rice plants infected with SRBSDV exhibit symptoms similar to symptoms caused by Rice black-streaked dwarf virus.",
+            "6": "Since 2009, SRBSDV has rapidly spread in East and Southeast Asia.",
+            "7": "Since 2009, SRBSDV has caused serious rice losses in East and Southeast Asia.",
+            "8": "Significant progress has been made in recent years in understanding SRBSDV disease.",
+            "9": "Progress has been made in understanding the functions of SRBSDV viral genes.",
+            "10": "Progress has been made in understanding rice-virus-insect interactions involving SRBSDV.",
+            "11": "Progress has been made in understanding the epidemiology and control measures for SRBSDV.",
+            "12": "SRBSDV can be efficiently transmitted by the white-backed planthopper (Sogatella furcifera) in a persistent circulative propagative manner.",
+            "13": "SRBSDV cannot be transmitted by the brown planthopper (Nilaparvata lugens).",
+            "14": "SRBSDV cannot be transmitted by the small brown planthopper (Laodelphax striatellus).",
+            "15": "Rice can be infected by SRBSDV via the white-backed planthopper (WBPH).",
+            "16": "Maize can be infected by SRBSDV via the white-backed planthopper (WBPH).",
+            "17": "Chinese sorghum (Coix lacryma-jobi) can be infected by SRBSDV via the white-backed planthopper (WBPH).",
+            "18": "Other grass weeds can be infected by SRBSDV via the white-backed planthopper (WBPH).",
+            "19": "Only rice plays a major role in the SRBSDV infection cycle.",
+            "20": "The white-backed planthopper (WBPH) has a preference for rice as a host, impacting the SRBSDV infection cycle.",
+            "21": "In Southeast Asia, the white-backed planthopper (WBPH) is a long-distance migratory rice pest.",
+            "22": "SRBSDV and its white-backed planthopper (WBPH) vector overwinter in warm tropical or sub-tropical areas.",
+            "23": "Viruliferous white-backed planthopper (WBPH) adults carry SRBSDV from south to north via long-distance migration in early spring.",
+            "24": "White-backed planthopper (WBPH) adults transmit SRBSDV to rice seedlings in newly colonized areas.",
+            "25": "White-backed planthopper (WBPH) lay eggs on rice seedlings infected with SRBSDV.",
+            "26": "The next generation of white-backed planthoppers (WBPHs) propagate on SRBSDV-infected seedlings.",
+            "27": "The next generation of white-backed planthoppers (WBPHs) become viruliferous.",
+            "28": "The next generation of white-backed planthoppers (WBPHs) disperse and cause new SRBSDV disease outbreaks.",
+            "29": "Several molecular methods have been developed to detect SRBSDV in plant tissues.",
+            "30": "Several molecular methods have been developed to detect SRBSDV in individual insects.",
+            "31": "Several serological methods have been developed to detect SRBSDV in plant tissues.",
+            "32": "Several serological methods have been developed to detect SRBSDV in individual insects.",
+            "33": "Control measures based on protection from the white-backed planthopper (WBPH) have proven effective in China.",
+            "34": "Seedbed coverage is a control measure that protects from the white-backed planthopper (WBPH) and is effective in China.",
+            "35": "Chemical seed treatments are a control measure that protects from the white-backed planthopper (WBPH) and are effective in China.",
+            "36": "Chemical spraying of seedlings is a control measure that protects from the white-backed planthopper (WBPH) and is effective in China."
+          }
+        },
+        "viewpoints": [
+          "Viral diseases are often caused by insect-borne viruses.",
+          "Examples of insect-borne viruses include rice tungro viruses, RDV, RGDV, RGSV, RRSV, and SRBSDV.",
+          "Leafhoppers and planthoppers are insect vectors for rice viral diseases.",
+          "Insect-borne viruses wreak havoc on rice production in East, South, and Southeast Asia."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Of particular concern is that these insect-borne viruses sporadically lead to devastating epidemics, often with unclear origins [6].",
+        "references": {
+          "6": {
+            "1": "Rice production is threatened by disease epidemics caused by insect-borne viruses.",
+            "2": "The origins of these insect-borne viruses are undefined, and they emerge and re-emerge.",
+            "3": "Some human viruses have zoonotic origins from wild animals.",
+            "4": "It is unknown whether native plants host uncharacterized endemic viruses with spillover potential to rice as emerging pathogens.",
+            "5": "Rice tiller inhibition virus (RTIV) is a novel RNA virus species.",
+            "6": "RTIV was discovered from colonies of Asian wild rice (O. rufipogon) in a genetic reserve.",
+            "7": "The discovery of RTIV was made by metagenomic sequencing.",
+            "8": "A specific aphid vector is able to transmit RTIV.",
+            "9": "RTIV causes low-tillering disease in rice cultivar after transmission by the specific aphid vector.",
+            "10": "An infectious molecular clone of RTIV can initiate systemic infection and cause low-tillering disease in an elite rice variety.",
+            "11": "Agrobacterium-mediated inoculation or stable plant transformation can initiate systemic infection by an infectious molecular clone of RTIV.",
+            "12": "RTIV can be transmitted from transgenic rice plants through its aphid vector to cause disease.",
+            "13": "Global transcriptome analysis indicated that RTIV may disturb the defense pathway in rice cultivar.",
+            "14": "Global transcriptome analysis indicated that RTIV may disturb the tillering pathway in rice cultivar.",
+            "15": "RTIV may cause low tillering disease in rice cultivar by disturbing defense and tillering pathways.",
+            "16": "New rice viral pathogens can emerge from native habitats.",
+            "17": "RTIV is a rare aphid-transmitted rice viral pathogen from native wild rice.",
+            "18": "RTIV can threaten the production of rice cultivar after spillover."
+          }
+        },
+        "viewpoints": [
+          "Insect-borne viruses sporadically lead to devastating epidemics in rice production.",
+          "The origins of these insect-borne virus epidemics are often unclear."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Therefore, the surrounding wild plants were deemed to be associated with rice viruses, due to their potential to act as reservoirs or intermediates for crop viruses [7], [8].",
+        "references": {
+          "7": [],
+          "8": {
+            "1": "Disease emergence events often occur as a result of human activities like agriculture.",
+            "2": "Agriculture frequently brings large populations of genetically uniform hosts into contact with potential pathogens.",
+            "3": "Viruses are responsible for nearly 50% of emerging plant diseases.",
+            "4": "There is little systematic information about virus distribution across agro-ecological interfaces.",
+            "5": "There are large gaps in understanding of virus diversity in nature.",
+            "6": "A novel landscape-scale geometagenomics approach was applied to examine relationships between agricultural land use and distributions of plant-associated viruses.",
+            "7": "The study was conducted in two Mediterranean-climate biodiversity hotspots: the Western Cape region of South Africa and the Rhône river delta region of France.",
+            "8": "A total of 1725 geo-referenced plant samples were analyzed.",
+            "9": "The plant samples were collected over two years.",
+            "10": "The plant samples were collected from a 4.5 × 4.5 km area."
+          }
+        },
+        "viewpoints": [
+          "Surrounding wild plants are associated with rice viruses.",
+          "Wild plants have the potential to act as reservoirs or intermediates for crop viruses."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Recent discoveries, exemplified by the identification of rice tiller inhibition virus (RTIV), a novel insect-borne positive-strand RNA virus found in wild rice through metagenomic sequencing, underscore the possibility of spillover from wild rice to cultivated rice [6].",
+        "references": {
+          "6": {
+            "1": "Rice production is threatened by disease epidemics caused by insect-borne viruses.",
+            "2": "The origins of these insect-borne viruses are undefined, and they emerge and re-emerge.",
+            "3": "Some human viruses have zoonotic origins from wild animals.",
+            "4": "It is unknown whether native plants host uncharacterized endemic viruses with spillover potential to rice as emerging pathogens.",
+            "5": "Rice tiller inhibition virus (RTIV) is a novel RNA virus species.",
+            "6": "RTIV was discovered from colonies of Asian wild rice (O. rufipogon) in a genetic reserve.",
+            "7": "The discovery of RTIV was made by metagenomic sequencing.",
+            "8": "A specific aphid vector is able to transmit RTIV.",
+            "9": "RTIV causes low-tillering disease in rice cultivar after transmission by the specific aphid vector.",
+            "10": "An infectious molecular clone of RTIV can initiate systemic infection and cause low-tillering disease in an elite rice variety.",
+            "11": "Agrobacterium-mediated inoculation or stable plant transformation can initiate systemic infection by an infectious molecular clone of RTIV.",
+            "12": "RTIV can be transmitted from transgenic rice plants through its aphid vector to cause disease.",
+            "13": "Global transcriptome analysis indicated that RTIV may disturb the defense pathway in rice cultivar.",
+            "14": "Global transcriptome analysis indicated that RTIV may disturb the tillering pathway in rice cultivar.",
+            "15": "RTIV may cause low tillering disease in rice cultivar by disturbing defense and tillering pathways.",
+            "16": "New rice viral pathogens can emerge from native habitats.",
+            "17": "RTIV is a rare aphid-transmitted rice viral pathogen from native wild rice.",
+            "18": "RTIV can threaten the production of rice cultivar after spillover."
+          }
+        },
+        "viewpoints": [
+          "The rice tiller inhibition virus (RTIV) is a novel insect-borne positive-strand RNA virus.",
+          "RTIV was found in wild rice through metagenomic sequencing.",
+          "The identification of RTIV underscores the possibility of spillover from wild rice to cultivated rice."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Also noteworthy is that some insect-borne viruses can suddenly disseminate with minimal or no overt symptoms in the early stages, poses significant challenges to viral disease prevention [3], [4].",
+        "references": {
+          "3": {
+            "1": "There are 15 known viruses that occur in rice.",
+            "2": "The names of the 15 known viruses that occur in rice are rice black-streaked dwarf, rice bunchy stunt, rice dwarf, rice gall dwarf, rice giallume, rice grassy stunt, rice hoja blanca, rice necrosis mosaic, rice ragged stunt, rice stripe necrosis, rice stripe, rice transitory yellowing, rice tungro bacilliform, rice tungro spherical, and rice yellow mottle viruses.",
+            "3": "The paper describes the geographical distribution of the 15 known rice viruses.",
+            "4": "The paper describes the relation of the 15 known rice viruses to vectors.",
+            "5": "The paper describes the infection cycles of the 15 known rice viruses.",
+            "6": "The paper describes the field dispersal of the 15 known rice viruses.",
+            "7": "The paper describes the development of the 15 known rice viruses.",
+            "8": "The paper lists recorded outbreaks of the 15 known rice viruses.",
+            "9": "Intensified rice cultivation has led to many rice viruses becoming serious problems.",
+            "10": "Double-cropping of rice has significantly influenced the incidence of rice viruses.",
+            "11": "Using improved, photo-insensitive cultivars of rice with short growth duration has significantly influenced the incidence of rice viruses."
+          },
+          "4": []
+        },
+        "viewpoints": [
+          "Some insect-borne viruses can suddenly disseminate with minimal or no overt symptoms in the early stages.",
+          "The dissemination of insect-borne viruses with minimal symptoms poses significant challenges to viral disease prevention."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Currently, 20 viruses are known to infect rice plants, predominantly inducing overt disease and characterized by RNA genomes, signifying the prevalence of RNA viruses in rice akin to other plants [3], [4].",
+        "references": {
+          "3": {
+            "1": "There are 15 known viruses that occur in rice.",
+            "2": "The names of the 15 known viruses that occur in rice are rice black-streaked dwarf, rice bunchy stunt, rice dwarf, rice gall dwarf, rice giallume, rice grassy stunt, rice hoja blanca, rice necrosis mosaic, rice ragged stunt, rice stripe necrosis, rice stripe, rice transitory yellowing, rice tungro bacilliform, rice tungro spherical, and rice yellow mottle viruses.",
+            "3": "The paper describes the geographical distribution of the 15 known rice viruses.",
+            "4": "The paper describes the relation of the 15 known rice viruses to vectors.",
+            "5": "The paper describes the infection cycles of the 15 known rice viruses.",
+            "6": "The paper describes the field dispersal of the 15 known rice viruses.",
+            "7": "The paper describes the development of the 15 known rice viruses.",
+            "8": "The paper lists recorded outbreaks of the 15 known rice viruses.",
+            "9": "Intensified rice cultivation has led to many rice viruses becoming serious problems.",
+            "10": "Double-cropping of rice has significantly influenced the incidence of rice viruses.",
+            "11": "Using improved, photo-insensitive cultivars of rice with short growth duration has significantly influenced the incidence of rice viruses."
+          },
+          "4": []
+        },
+        "viewpoints": [
+          "Currently, 20 viruses are known to infect rice plants.",
+          "These viruses predominantly induce overt disease in rice plants.",
+          "These viruses infecting rice plants are characterized by RNA genomes.",
+          "The prevalence of RNA viruses in rice is akin to their prevalence in other plants."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "However, recent studies also showed that several novel viruses resembling insect viruses were associated with rice plants, and they appeared to cause dwarfing or curling symptoms [9], [10].",
+        "references": {
+          "9": [],
+          "10": {
+            "1": "Picornaviruses cause diseases in a wide range of vertebrates.",
+            "2": "Picornaviruses cause diseases in a wide range of invertebrates.",
+            "3": "Picornaviruses cause diseases in a wide range of plants.",
+            "4": "A novel picornavirus was identified by RNA-seq technology.",
+            "5": "The novel picornavirus was identified from rice plants showing dwarfing and curling symptoms.",
+            "6": "The name rice curl dwarf-associated virus (RCDaV) is tentatively proposed for the novel picornavirus.",
+            "7": "The RCDaV genome consists of an 8,987 nt positive-stranded RNA molecule.",
+            "8": "The RCDaV genome excludes a poly(A) tail.",
+            "9": "The RCDaV genome encodes two large polyproteins."
+          }
+        },
+        "viewpoints": [
+          "Recent studies showed that several novel viruses resembling insect viruses are associated with rice plants.",
+          "These novel viruses appeared to cause dwarfing or curling symptoms in rice plants."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "These findings prompt a reassessment of the breadth and depth of rice viruses, suggesting that our current understanding may fall short, with additional viruses potentially lurking overtly or covertly within rice ecosystems.",
+        "references": {},
+        "viewpoints": [
+          "These findings prompt a reassessment of the breadth and depth of rice viruses.",
+          "Our current understanding of rice viruses may fall short.",
+          "Additional viruses may potentially be lurking overtly or covertly within rice ecosystems."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Viral metagenomics has emerged as a potent tool for uncovering hidden viruses without prior knowledge, offering ample coverage to reconstruct complete or near-complete viral genomes and facilitating straightforward characterization of viral diversity [11], [12].",
+        "references": {
+          "11": {
+            "1": "Characterisation of new viruses is often hindered by difficulties in amplifying new viruses in cell culture.",
+            "2": "Characterisation of new viruses is often hindered by limited antigenic/serological cross-reactivity.",
+            "3": "Characterisation of new viruses is often hindered by the lack of nucleic acid hybridisation to known viral sequences.",
+            "4": "Numerous molecular methods have been used to genetically characterise new viruses without prior in vitro replication.",
+            "5": "Numerous molecular methods have been used to genetically characterise new viruses without the use of virus-specific reagents.",
+            "6": "In recent metagenomic studies, viral particles from uncultured environmental samples have been purified.",
+            "7": "In recent metagenomic studies, viral particles from clinical samples have been purified.",
+            "8": "In recent metagenomic studies, nucleic acids of purified viral particles have been randomly amplified prior to subcloning and sequencing.",
+            "9": "Already known viruses were identified by comparing their translated sequences to those of viral proteins in public sequence databases.",
+            "10": "Novel viruses were identified by comparing their translated sequences to those of viral proteins in public sequence databases.",
+            "11": "Metagenomic approaches to viral characterisation have been applied to seawater.",
+            "12": "Metagenomic approaches to viral characterisation have been applied to near shore sediments.",
+            "13": "Metagenomic approaches to viral characterisation have been applied to faeces.",
+            "14": "Metagenomic approaches to viral characterisation have been applied to serum.",
+            "15": "Metagenomic approaches to viral characterisation have been applied to plasma.",
+            "16": "Metagenomic approaches to viral characterisation have been applied to respiratory secretions.",
+            "17": "Metagenomic approaches have broadened the range of known viral diversity.",
+            "18": "Selection of samples with high viral loads can improve the yield of new viruses.",
+            "19": "Purification of viral particles can improve the yield of new viruses.",
+            "20": "Removal of cellular nucleic acids can improve the yield of new viruses.",
+            "21": "Efficient sequence-independent amplification of viral RNA and DNA can improve the yield of new viruses.",
+            "22": "Recognisable sequence similarities to known viral sequences can improve the yield of new viruses.",
+            "23": "Deep sampling of nucleic acid populations through large scale sequencing can improve the yield of new viruses.",
+            "24": "This review lists some of the animal viruses recently identified using sequence-independent methods.",
+            "25": "This review lists current laboratory methods used to identify animal viruses.",
+            "26": "This review lists current bioinformatics methods used to identify animal viruses.",
+            "27": "This review discusses the limitations of current laboratory and bioinformatics methods.",
+            "28": "This review discusses potential improvements for current laboratory and bioinformatics methods.",
+            "29": "Viral metagenomic approaches provide novel opportunities to generate an unbiased characterisation of the viral populations in various organisms.",
+            "30": "Viral metagenomic approaches provide novel opportunities to generate an unbiased characterisation of the viral populations in various environments."
+          },
+          "12": {
+            "1": "A novel, unbiased approach to plant viral disease diagnosis has been developed.",
+            "2": "This novel approach to plant viral disease diagnosis requires no a priori knowledge of the host.",
+            "3": "This novel approach to plant viral disease diagnosis requires no a priori knowledge of the pathogen.",
+            "4": "Next-generation sequencing was used to produce large quantities of cDNA sequence in a model system of tomato infected with Pepino mosaic virus.",
+            "5": "Metagenomic analysis was coupled with next-generation sequencing to produce large quantities of cDNA sequence.",
+            "6": "The model system used was a tomato infected with Pepino mosaic virus to produce cDNA sequence.",
+            "7": "The novel method was applied to a sample of Gomphrena globosa.",
+            "8": "Gomphrena globosa was infected with an unknown pathogen.",
+            "9": "The unknown pathogen was originally isolated from the flowering plant Liatris spicata.",
+            "10": "Gomphrena globosa was found to contain a new cucumovirus.",
+            "11": "The suggested name for the new cucumovirus is 'Gayfeather mild mottle virus'.",
+            "12": "The full viral genome of the virus infecting the tomato model system was sequenced.",
+            "13": "The full viral genome of the new cucumovirus in Gomphrena globosa was sequenced.",
+            "14": "The novel method expedites the process of novel virus discovery.",
+            "15": "The novel method expedites the identification of viruses.",
+            "16": "The novel method expedites viral genome sequencing.",
+            "17": "The novel method expedites the development of more routine assays for new viral pathogens."
+          }
+        },
+        "viewpoints": [
+          "Viral metagenomics is a potent tool for uncovering hidden viruses without prior knowledge.",
+          "Viral metagenomics offers ample coverage to reconstruct complete or near-complete viral genomes.",
+          "Viral metagenomics facilitates straightforward characterization of viral diversity."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "In the recent decade, viral metagenomics has been used to explore the viral diversity in plants [13], animals [14], prokaryotes [15], pollen [16], soil [17], aquatic environments [18], and ocean [19].",
+        "references": {
+          "13": {
+            "1": "Viruses in agroecosystems are well known to influence crop health.",
+            "2": "Some viruses in agroecosystems cause phytosanitary problems.",
+            "3": "Some viruses in agroecosystems cause economic problems.",
+            "4": "The diversity of viruses in non-crop plants is less known.",
+            "5": "The role of viruses in agroecosystems outside the disease perspective is less known.",
+            "6": "Extensive virome explorations are needed to better understand the roles of viruses in agroecosystems.",
+            "7": "Virome explorations should include both crop plants and diverse weed plants.",
+            "8": "Viromics provides an unbiased exploration of viruses in agroecosystems.",
+            "9": "Viromics can generate biological insights from high-throughput sequencing (HTS) data.",
+            "10": "Viromics can generate ecological insights from high-throughput sequencing (HTS) data.",
+            "11": "HTS-based viromics was implemented to explore viral diversity in tomatoes.",
+            "12": "HTS-based viromics was implemented to explore viral diversity in weeds.",
+            "13": "The exploration of viral diversity was conducted in farming areas at a nation-wide scale.",
+            "14": "A total of 125 viruses were detected.",
+            "15": "79 novel virus species were detected.",
+            "16": "65 novel virus species were found exclusively in weeds.",
+            "17": "The detected viruses spanned 21 higher-level plant virus taxa.",
+            "18": "The detected plant virus taxa were dominated by Potyviridae.",
+            "19": "The detected plant virus taxa were dominated by Rhabdoviridae.",
+            "20": "The detected plant virus taxa were dominated by Tombusviridae.",
+            "21": "Four non-plant virus families were detected.",
+            "22": "Viruses of non-plant hosts were detected.",
+            "23": "Viroid-like sequences were detected.",
+            "24": "The infectivity of a novel tobamovirus was demonstrated in plants of the Solanaceae family.",
+            "25": "The diversities of predominant tomato viruses were variable.",
+            "26": "In some cases, the diversity of predominant tomato viruses was comparable to that of global isolates of the same species.",
+            "27": "Novel viruses were phylogenetically classified.",
+            "28": "Links were shown between a subgroup of phylogenetically related rhabdoviruses and their taxonomically related host plants.",
+            "29": "Ten classified viruses detected in tomatoes were also detected in weeds.",
+            "30": "The detection of the same viruses in tomatoes and weeds might indicate the possible role of weeds as virus reservoirs.",
+            "31": "The detection of the same viruses in tomatoes and weeds might indicate that these viruses could be exchanged between the two compartments.",
+            "32": "A large part of very diverse plant viromes can still be unknown even in relatively well studied agroecosystems.",
+            "33": "A large part of the unknown plant viromes is mostly present in understudied non-crop plants.",
+            "34": "The overlapping presence of viruses in tomatoes and weeds implicates a possible presence of a virus reservoir.",
+            "35": "The overlapping presence of viruses in tomatoes and weeds implicates a possible exchange between the weed and crop compartments.",
+            "36": "The possible presence of a virus reservoir and exchange may influence weed management decisions.",
+            "37": "The observed variability and widespread presence of predominant tomato viruses provided a foundation for further investigation of virus disease dynamics.",
+            "38": "The infectivity of a novel tobamovirus in solanaceous plants provided a foundation for further investigation of virus disease dynamics.",
+            "39": "Further investigation of virus disease dynamics can explore their effect on tomato health.",
+            "40": "Extensive insights generated from in-depth agroecosystem virome exploration will be valuable in anticipating possible emergences of plant virus diseases.",
+            "41": "Extensive insights generated from in-depth agroecosystem virome exploration would serve as a baseline for further post-discovery characterization studies."
+          },
+          "14": {
+            "1": "Game animals are wildlife species traded and consumed as food.",
+            "2": "Game animals are potential reservoirs for SARS-CoV.",
+            "3": "Game animals are potential reservoirs for SARS-CoV-2.",
+            "4": "A meta-transcriptomic analysis was performed on 1,941 game animals.",
+            "5": "The analyzed game animals represented 18 species.",
+            "6": "The analyzed game animals represented five mammalian orders.",
+            "7": "The analysis sampled game animals across China.",
+            "8": "102 mammalian-infecting viruses were identified from the analysis.",
+            "9": "65 of the identified viruses were described for the first time.",
+            "10": "Twenty-one viruses were considered potentially high risk to humans.",
+            "11": "Twenty-one viruses were considered potentially high risk to domestic animals.",
+            "12": "Civets (Paguma larvata) carried the highest number of potentially high-risk viruses among the studied animals.",
+            "13": "The transmission of bat-associated coronavirus from bats to civets was inferred.",
+            "14": "Cross-species jumps of coronaviruses from bats to hedgehogs were inferred.",
+            "15": "Cross-species jumps of coronaviruses from birds to porcupines were inferred.",
+            "16": "Cross-species jumps of coronaviruses from dogs to raccoon dogs were inferred.",
+            "17": "Avian Influenza A virus H9N2 was identified in civets.",
+            "18": "Avian Influenza A virus H9N2 was identified in Asian badgers.",
+            "19": "Asian badgers displaying respiratory symptoms was noted in connection with avian Influenza A virus H9N2.",
+            "20": "Cases of likely human-to-wildlife virus transmission were identified.",
+            "21": "The data highlight the importance of game animals as potential drivers of disease emergence."
+          },
+          "15": [],
+          "16": {
+            "1": "Pollen acts as a unique vehicle for the spread of viruses.",
+            "2": "Pollen-associated viruses hitchhike on or within pollen grains.",
+            "3": "Pollen-associated viruses are transported to other plants by pollinators.",
+            "4": "Pollen-associated viruses are deposited on flowers.",
+            "5": "Pollen-associated viruses have a direct pathway into the plant via seeds.",
+            "6": "Pollen-associated viruses have a direct pathway into the next generation via seeds.",
+            "7": "The study aims to discover the diversity of pollen-associated viruses.",
+            "8": "The study aims to identify contributing landscape and floral features to pollen-associated virus diversity.",
+            "9": "Researchers perform a species-level metagenomic survey of pollen from wild, visually asymptomatic plants.",
+            "10": "The survey is conducted in one of four regions in the United States of America varying in land use.",
+            "11": "Researchers identify many known pollen-associated viruses.",
+            "12": "Researchers identify many novel pollen-associated viruses.",
+            "13": "Half of the identified pollen-associated viruses belong to the Bromoviridae, Partitiviridae, and Secoviridae viral families.",
+            "14": "Many viral families are represented among the identified pollen-associated viruses.",
+            "15": "Species harbor more viruses when surrounded by less natural environments.",
+            "16": "Species harbor more viruses when surrounded by more human-modified environments.",
+            "17": "Other region-level differences may covary with the number of viruses harbored by species.",
+            "18": "There is a novel connection between virus richness and floral traits.",
+            "19": "Species with multiple, bilaterally symmetric flowers harbor more viruses than species with opposite traits.",
+            "20": "Species with smaller, spikier pollen harbor more viruses than species with opposite traits.",
+            "21": "The association of viral diversity with floral traits highlights the need to incorporate plant-pollinator interactions into the study of plant-viral interactions.",
+            "22": "Plant-pollinator interactions act as a driver of pollen-associated virus transport."
+          },
+          "17": {
+            "1": "Viruses impact nearly all organisms on Earth.",
+            "2": "Viruses have influence in agriculture.",
+            "3": "Viruses have influence in health.",
+            "4": "Viruses have influence in biogeochemical processes.",
+            "5": "Very little is known about RNA viruses in an environmental context.",
+            "6": "Even less is known about the diversity of RNA viruses in soil.",
+            "7": "Even less is known about the ecology of RNA viruses in soil.",
+            "8": "Soil is one of the most complex microbial systems.",
+            "9": "48 individual metatranscriptomes were assembled from 4 habitats within a planted soil.",
+            "10": "The planted soil was sampled over a 22-day time series.",
+            "11": "The habitats include rhizosphere alone, detritosphere alone, rhizosphere with added root detritus, and unamended soil.",
+            "12": "Sampling was done at 4 time points.",
+            "13": "Sampling was done with 3 biological replicates.",
+            "14": "The RNA viral community was resolved.",
+            "15": "A high diversity of viral sequences was uncovered.",
+            "16": "Possible host organisms were investigated by analyzing metatranscriptome marker genes.",
+            "17": "Much of the diversity was based on viral phylogeny."
+          },
+          "18": {
+            "1": "RNA viruses in aquatic environments are not well-studied.",
+            "2": "The RNA virome from approximately 10 l water from Yangshan Deep-Water Harbour near the Yangtze River estuary in China was analyzed.",
+            "3": "More than 4,500 distinct RNA viruses were identified in the Yangshan Deep-Water Harbour.",
+            "4": "The number of RNA viruses identified in the Yangshan Deep-Water Harbour doubles the previously known set of RNA viruses.",
+            "5": "Phylogenomic analysis identified several major lineages of RNA viruses.",
+            "6": "The identified lineages correspond roughly to the taxonomic ranks of class, order, and family.",
+            "7": "The Yangshan virus assemblage consists of 719 members.",
+            "8": "The Yangshan virus assemblage is the sister clade to the class Alsuviricetes.",
+            "9": "Viruses in the Yangshan virus assemblage have simple genomes.",
+            "10": "Viruses in the Yangshan virus assemblage typically encode only RNA-dependent RNA polymerase (RdRP), capping enzyme, and capsid protein.",
+            "11": "Several clades within the Yangshan virus assemblage independently evolved domain permutation in RNA-dependent RNA polymerase (RdRP).",
+            "12": "A previously unknown clade of RNA viruses shares ancestry with Potyviridae.",
+            "13": "Potyviridae is the largest known plant virus family.",
+            "14": "The 'Aquatic picorna-like viruses/Marnaviridae' clade was greatly expanded.",
+            "15": "More than 800 viruses were added to the 'Aquatic picorna-like viruses/Marnaviridae' clade.",
+            "16": "Several RNA-dependent RNA polymerase (RdRP)-linked protein domains not previously detected in any RNA viruses were identified.",
+            "17": "The newly identified RdRP-linked protein domains include the small ubiquitin-like modifier (SUMO) domain, phospholipase A2, and PrsW-family protease domain.",
+            "18": "Multiple RNA viruses utilize alternative genetic codes.",
+            "19": "The use of alternative genetic codes by some RNA viruses implies protist hosts.",
+            "20": "The use of alternative genetic codes implies ciliate hosts as part of the protist group.",
+            "21": "The study reveals a vast RNA virome.",
+            "22": "The vast RNA virome includes many previously unknown groups of RNA viruses.",
+            "23": "Phylogenetic analysis of the RNA-dependent RNA polymerases (RdRPs) was conducted.",
+            "24": "The phylogenetic analysis supports the previously established five-branch structure of the RNA virus evolutionary tree.",
+            "25": "No additional phyla for RNA viruses were identified in the analysis."
+          },
+          "19": {
+            "1": "Viruses are the most abundant biological entities on Earth.",
+            "2": "Challenges in detecting, isolating, and classifying unknown viruses have prevented exhaustive surveys of the global virome.",
+            "3": "Over 5 Tb of metagenomic sequence data from 3,042 geographically diverse samples were analyzed.",
+            "4": "The analysis aimed to assess the global distribution of viruses.",
+            "5": "The analysis aimed to assess the phylogenetic diversity of viruses.",
+            "6": "The analysis aimed to assess the host specificity of viruses.",
+            "7": "Over 125,000 partial DNA viral genomes were discovered.",
+            "8": "The largest phage yet identified was discovered.",
+            "9": "The number of known viral genes was increased by 16-fold.",
+            "10": "Half of the predicted partial viral genomes were clustered into genetically distinct groups.",
+            "11": "Most of the genetically distinct groups included genes unrelated to those in known viruses.",
+            "12": "CRISPR spacers and transfer RNA matches were used to link viral groups to microbial hosts.",
+            "13": "The number of microbial phyla known to be infected by viruses was doubled.",
+            "14": "Viruses that can infect organisms from different phyla were identified.",
+            "15": "Analysis of viral distribution across diverse ecosystems revealed strong habitat-type specificity for the vast majority of viruses.",
+            "16": "The analysis also identified some cosmopolitan groups of viruses.",
+            "17": "The results highlight an extensive global viral diversity.",
+            "18": "The results provide detailed insight into viral habitat distribution.",
+            "19": "The results provide detailed insight into host-virus interactions."
+          }
+        },
+        "viewpoints": [
+          "In the recent decade, viral metagenomics has been used to explore viral diversity in plants.",
+          "Viral metagenomics has been used to explore viral diversity in animals.",
+          "Viral metagenomics has been used to explore viral diversity in prokaryotes.",
+          "Viral metagenomics has been used to explore viral diversity in pollen.",
+          "Viral metagenomics has been used to explore viral diversity in soil.",
+          "Viral metagenomics has been used to explore viral diversity in aquatic environments.",
+          "Viral metagenomics has been used to explore viral diversity in the ocean."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "In addition, the public sequencing database (SRA, Sequence Read Archive) has experienced exponential growth annually, and they probably contain viral nucleic acids that were inadvertently captured for their original purpose [20].",
+        "references": {
+          "20": {
+            "1": "Massively parallel sequencing technology provides the opportunity to comprehensively sample the transcriptome of a given tissue.",
+            "2": "Transcripts at only a few copies per cell are readily detectable with massively parallel sequencing technology.",
+            "3": "Massively parallel sequencing technology allows the discovery of low abundance viral transcripts in human tissue samples.",
+            "4": "Massively parallel sequencing technology allows the discovery of low abundance bacterial transcripts in human tissue samples.",
+            "5": "An approach is described for mining large sequence data sets for the presence of microbial sequences.",
+            "6": "The sensitivity of the approach for mining large sequence data sets is demonstrated by sequencing human RNA-seq libraries spiked with decreasing amounts of an RNA-virus.",
+            "7": "Viral transcripts can be detected at frequencies less than 1 in 1,000,000 at a modest depth of sequencing using the described approach.",
+            "8": "Current sequencing platforms are approaching outputs of one billion reads per run.",
+            "9": "The described approach is a highly sensitive method for detecting putative infectious agents associated with human tissues."
+          }
+        },
+        "viewpoints": [
+          "The public sequencing database (SRA) has experienced exponential growth annually.",
+          "The SRA probably contains viral nucleic acids that were inadvertently captured for their original purpose."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Therefore, viral metagenomic approaches were also applied to these data resource for the mining of related viruses and other pathogens [21], [22].",
+        "references": {
+          "21": {
+            "1": "Bacteriophages have important roles in the ecology of the human gut microbiome.",
+            "2": "Bacteriophages are under-represented in reference databases.",
+            "3": "The Metagenomic Gut Virus catalogue was assembled to address the under-representation of bacteriophages in reference databases.",
+            "4": "The Metagenomic Gut Virus catalogue comprises 189,680 viral genomes.",
+            "5": "The viral genomes in the Metagenomic Gut Virus catalogue were obtained from 11,810 publicly available human stool metagenomes.",
+            "6": "Over 75% of the genomes in the Metagenomic Gut Virus catalogue represent double-stranded DNA phages.",
+            "7": "Double-stranded DNA phages in the Metagenomic Gut Virus catalogue infect members of the Bacteroidia class.",
+            "8": "Double-stranded DNA phages in the Metagenomic Gut Virus catalogue infect members of the Clostridia class.",
+            "9": "Sequence clustering was used to identify 54,118 candidate viral species.",
+            "10": "92% of the 54,118 candidate viral species identified were not found in existing databases.",
+            "11": "The Metagenomic Gut Virus catalogue improves detection of viruses in stool metagenomes.",
+            "12": "The Metagenomic Gut Virus catalogue accounts for nearly 40% of CRISPR spacers found in human gut Bacteria.",
+            "13": "The Metagenomic Gut Virus catalogue accounts for nearly 40% of CRISPR spacers found in human gut Archaea.",
+            "14": "A catalogue of 459,375 viral protein clusters was produced to explore the functional potential of the gut virome.",
+            "15": "The catalogue of viral protein clusters revealed tens of thousands of diversity-generating retroelements.",
+            "16": "Diversity-generating retroelements use error-prone reverse transcription to mutate target genes.",
+            "17": "Diversity-generating retroelements may be involved in the molecular arms race between phages and their bacterial hosts."
+          },
+          "22": {
+            "1": "Public databases contain a planetary collection of nucleic acid sequences.",
+            "2": "The systematic exploration of nucleic acid sequences in public databases has been inhibited by a lack of efficient methods for searching this corpus.",
+            "3": "The corpus of nucleic acid sequences in public databases exceeds 20 petabases at the time of writing.",
+            "4": "The corpus of nucleic acid sequences in public databases is growing exponentially."
+          }
+        },
+        "viewpoints": [
+          "Viral metagenomic approaches were applied to the data in the SRA for the mining of related viruses.",
+          "Viral metagenomic approaches were applied for the mining of other pathogens in the SRA."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Particularly, RNA viruses, characterized by the hallmark gene RNA-dependent RNA polymerase (RdRP), exhibit a notable degree of conservation in both protein sequences and structures [23].",
+        "references": {
+          "23": {
+            "1": "Eukaryotes can be infected with a wide variety of RNA viruses.",
+            "2": "Bacteria can be infected with a wide variety of RNA viruses.",
+            "3": "RNA viruses, on average, share little sequence similarity.",
+            "4": "RNA viruses use different replication strategies.",
+            "5": "RNA viruses use different transcription strategies.",
+            "6": "Members of nearly all RNA virus families depend on the activity of a virally encoded RNA-dependent polymerase.",
+            "7": "The virally encoded RNA-dependent polymerase is used for the condensation of nucleotide triphosphates in RNA viruses.",
+            "8": "This review provides an overview of the current understanding of viral RNA-dependent polymerase structure.",
+            "9": "This review provides an overview of the biochemistry involved in replicating and transcribing the genetic material of RNA viruses.",
+            "10": "This review provides an overview of the biophysics involved in replicating and transcribing the genetic material of RNA viruses."
+          }
+        },
+        "viewpoints": [
+          "RNA viruses are characterized by the hallmark gene RNA-dependent RNA polymerase (RdRP).",
+          "RNA viruses exhibit a notable degree of conservation in protein sequences.",
+          "RNA viruses exhibit a notable degree of conservation in structures."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Accordingly, a variety of RdRP-based searching strategies, such as profile HMM (hidden Markov model) searching [24], RdRP structural alignment [24], and “plamprint” (the three essential motifs A, B and C forming the catalytic core in RdRP) scanning [22], [25], were developed, facilitating the rapid detection of RNA viruses.",
+        "references": {
+          "24": {
+            "1": "DNA viruses are abundant.",
+            "2": "DNA viruses are diverse.",
+            "3": "DNA viruses are commonly key ecosystem players.",
+            "4": "RNA viruses are insufficiently studied outside disease settings.",
+            "5": "The study analyzed ≈28 terabases of Global Ocean RNA sequences.",
+            "6": "The study aimed to expand Earth's RNA virus catalogs.",
+            "7": "The study aimed to expand Earth's RNA virus taxonomy.",
+            "8": "The study aimed to investigate the evolutionary origins of RNA viruses.",
+            "9": "The study aimed to assess the marine biogeography of RNA viruses from pole to pole.",
+            "10": "New approaches were used to optimize discovery and classification of RNA viruses.",
+            "11": "The identification of RNA viruses necessitates substantive revisions of taxonomy.",
+            "12": "The revisions of taxonomy involve doubling phyla.",
+            "13": "The revisions of taxonomy involve adding >50% new classes.",
+            "14": "The identification of RNA viruses necessitates revisions of evolutionary understanding."
+          },
+          "22": {
+            "1": "Public databases contain a planetary collection of nucleic acid sequences.",
+            "2": "The systematic exploration of nucleic acid sequences in public databases has been inhibited by a lack of efficient methods for searching this corpus.",
+            "3": "The corpus of nucleic acid sequences in public databases exceeds 20 petabases at the time of writing.",
+            "4": "The corpus of nucleic acid sequences in public databases is growing exponentially."
+          },
+          "25": {
+            "1": "Earth's life may have originated as self-replicating RNA.",
+            "2": "RNA viruses are argued to be remnants of the pre-cellular RNA world.",
+            "3": "Viroid-like elements are argued to be remnants of the pre-cellular RNA world.",
+            "4": "RNA viruses are defined by linear RNA genomes encoding an RNA-dependent RNA polymerase (RdRp).",
+            "5": "Viroid-like elements consist of small, single-stranded, circular RNA genomes.",
+            "6": "Some viroid-like elements encode paired self-cleaving ribozymes.",
+            "7": "The number of candidate viroid-like elements occurring in geographically diverse niches is much higher than previously thought.",
+            "8": "The number of candidate viroid-like elements occurring in ecologically diverse niches is much higher than previously thought.",
+            "9": "Fungal ambiviruses are viroid-like elements amongst circular genomes.",
+            "10": "Fungal ambiviruses undergo rolling circle replication.",
+            "11": "Fungal ambiviruses encode their own viral RNA-dependent RNA polymerase (RdRp).",
+            "12": "Ambiviruses are distinct infectious RNAs.",
+            "13": "Ambiviruses show hybrid features of viroid-like RNAs and viruses.",
+            "14": "Similar circular RNAs were detected.",
+            "15": "Similar circular RNAs contain active ribozymes.",
+            "16": "Similar circular RNAs encode RNA-dependent RNA polymerases (RdRps).",
+            "17": "Similar circular RNAs are related to mitochondrial-like fungal viruses.",
+            "18": "Fungi are highlighted as an evolutionary hub for RNA viruses.",
+            "19": "Fungi are highlighted as an evolutionary hub for viroid-like elements.",
+            "20": "There is a deep co-evolutionary history between RNA viruses and subviral elements.",
+            "21": "The findings offer new perspectives in the origin of primordial infectious agents.",
+            "22": "The findings offer new perspectives in the evolution of primordial infectious agents.",
+            "23": "The findings offer new perspectives in the origin of RNA life.",
+            "24": "The findings offer new perspectives in the evolution of RNA life."
+          }
+        },
+        "viewpoints": [
+          "A variety of RdRP-based searching strategies were developed to facilitate rapid detection of RNA viruses.",
+          "Profile HMM searching is an RdRP-based searching strategy.",
+          "RdRP structural alignment is an RdRP-based searching strategy.",
+          "“Plamprint” scanning is an RdRP-based searching strategy involving the three essential motifs A, B, and C forming the catalytic core in RdRP."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Furthermore, the detection of virus-derived sRNAs and negative strand RNAs has uncovered highly divergent viruses, such as Quenyavirus in Drosophila [26] and ORFan Mycovirus in powdery mildew [27], from contigs commonly referred as “dark matter”, devoid of similarities with any reference nucleotide or amino acid sequences [28].",
+        "references": {
+          "26": {},
+          "27": {
+            "1": "High throughput sequencing allowed the discovery of many new viruses.",
+            "2": "High throughput sequencing allowed the discovery of many new viral organizations.",
+            "3": "The discovery of many new viruses and viral organizations has increased our comprehension of virus origin.",
+            "4": "The discovery of many new viruses and viral organizations has increased our comprehension of virus evolution.",
+            "5": "Most RNA viruses are currently characterized through similarity searches of annotated virus databases.",
+            "6": "The approach of characterizing RNA viruses through similarity searches of annotated virus databases limits the possibility to detect completely new virus-encoded proteins with no detectable similarities to existing ones.",
+            "7": "ORFan proteins are virus-encoded proteins with no detectable similarities to existing proteins.",
+            "8": "A strong indication of the ORFan viral origin in a metatranscriptome is the lack of DNA corresponding to an assembled RNA sequence in the biological sample.",
+            "9": "Sequence homology among ORFans provides further indication of a viral origin.",
+            "10": "Evidence of co-occurrence of ORFans in specific host individuals provides further indication of a viral origin.",
+            "11": "The theoretical framework is used to report the finding of three conserved clades of protein-coding RNA segments without a corresponding DNA in fungi.",
+            "12": "Protein sequence and structural alignment suggest these proteins are distantly related to viral RNA-dependent RNA polymerases (RdRP).",
+            "13": "In these new putative viral RdRP clades, no GDD catalytic triad is present.",
+            "14": "The most common putative catalytic triad in these new viral RdRP clades is NDD.",
+            "15": "A clade with GDQ is present in these new viral RdRP clades, a triad previously unreported at that site.",
+            "16": "SDD is also represented in these new viral RdRP clades.",
+            "17": "HDD is also represented in these new viral RdRP clades.",
+            "18": "ADD is also represented in these new viral RdRP clades.",
+            "19": "For most members of these three clades, a second genomic segment was associated.",
+            "20": "The second genomic segment codes for a protein of unknown function.",
+            "21": "The new group of viruses is provisionally named ormycovirus.",
+            "22": "All the members of the gammaormycovirus sub-clade accumulate more minus sense RNA than plus sense RNA during infection."
+          },
+          "28": {
+            "1": "Viral dark matter consists of metagenomic sequences that originate from viruses but do not align to any reference virus sequences.",
+            "2": "Accurate classification of viral dark matter is a major obstacle in comprehensively defining the virome.",
+            "3": "Viral dark matter can constitute anywhere between 40 and 90% of sequences depending on the sample.",
+            "4": "The review focuses on the specific nature of viral dark matter as it relates to viral sequences.",
+            "5": "The divergence and length of virus sequences contribute to the existence of viral dark matter.",
+            "6": "The limitations of alignment-based classification contribute to the existence of viral dark matter.",
+            "7": "Limited representation of viruses in reference sequence databases contributes to the existence of viral dark matter.",
+            "8": "Current methods have been developed to at least partially circumvent the limitations contributing to viral dark matter.",
+            "9": "Current methods have been developed to reduce the extent of viral dark matter by circumventing its contributing limitations."
+          }
+        },
+        "viewpoints": [
+          "The detection of virus-derived sRNAs and negative strand RNAs has uncovered highly divergent viruses.",
+          "Quenyavirus in Drosophila is an example of a highly divergent virus uncovered by detecting virus-derived sRNAs and negative strand RNAs.",
+          "ORFan Mycovirus in powdery mildew is an example of a highly divergent virus uncovered by detecting virus-derived sRNAs and negative strand RNAs.",
+          "These highly divergent viruses, such as Quenyavirus and ORFan Mycovirus, come from contigs referred to as “dark matter\".",
+          "These \"dark matter\" contigs are devoid of similarities with any reference nucleotide or amino acid sequences."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "By contrast, although viral metagenomics has been utilized to identify viruses in rice plants, earlier investigations have struggled with small sample sizes, leading to a limited scope of virus identification [6], [9], [10].",
+        "references": {
+          "6": {
+            "1": "Rice production is threatened by disease epidemics caused by insect-borne viruses.",
+            "2": "The origins of these insect-borne viruses are undefined, and they emerge and re-emerge.",
+            "3": "Some human viruses have zoonotic origins from wild animals.",
+            "4": "It is unknown whether native plants host uncharacterized endemic viruses with spillover potential to rice as emerging pathogens.",
+            "5": "Rice tiller inhibition virus (RTIV) is a novel RNA virus species.",
+            "6": "RTIV was discovered from colonies of Asian wild rice (O. rufipogon) in a genetic reserve.",
+            "7": "The discovery of RTIV was made by metagenomic sequencing.",
+            "8": "A specific aphid vector is able to transmit RTIV.",
+            "9": "RTIV causes low-tillering disease in rice cultivar after transmission by the specific aphid vector.",
+            "10": "An infectious molecular clone of RTIV can initiate systemic infection and cause low-tillering disease in an elite rice variety.",
+            "11": "Agrobacterium-mediated inoculation or stable plant transformation can initiate systemic infection by an infectious molecular clone of RTIV.",
+            "12": "RTIV can be transmitted from transgenic rice plants through its aphid vector to cause disease.",
+            "13": "Global transcriptome analysis indicated that RTIV may disturb the defense pathway in rice cultivar.",
+            "14": "Global transcriptome analysis indicated that RTIV may disturb the tillering pathway in rice cultivar.",
+            "15": "RTIV may cause low tillering disease in rice cultivar by disturbing defense and tillering pathways.",
+            "16": "New rice viral pathogens can emerge from native habitats.",
+            "17": "RTIV is a rare aphid-transmitted rice viral pathogen from native wild rice.",
+            "18": "RTIV can threaten the production of rice cultivar after spillover."
+          },
+          "9": [],
+          "10": {
+            "1": "Picornaviruses cause diseases in a wide range of vertebrates.",
+            "2": "Picornaviruses cause diseases in a wide range of invertebrates.",
+            "3": "Picornaviruses cause diseases in a wide range of plants.",
+            "4": "A novel picornavirus was identified by RNA-seq technology.",
+            "5": "The novel picornavirus was identified from rice plants showing dwarfing and curling symptoms.",
+            "6": "The name rice curl dwarf-associated virus (RCDaV) is tentatively proposed for the novel picornavirus.",
+            "7": "The RCDaV genome consists of an 8,987 nt positive-stranded RNA molecule.",
+            "8": "The RCDaV genome excludes a poly(A) tail.",
+            "9": "The RCDaV genome encodes two large polyproteins."
+          }
+        },
+        "viewpoints": [
+          "Viral metagenomics has been utilized to identify viruses in rice plants.",
+          "Earlier investigations using viral metagenomics have struggled with small sample sizes in rice plants.",
+          "Small sample sizes have led to a limited scope of virus identification in rice plants."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "To date, RNA viruses have been classified into over 6000 species according to the International Committee on Taxonomy of Viruses (ICTV, https://ictv.global/taxonomy/), displaying extraordinary genetic diversity.",
+        "references": {},
+        "viewpoints": [
+          "RNA viruses have been classified into over 6000 species according to the International Committee on Taxonomy of Viruses (ICTV).",
+          "RNA viruses display extraordinary genetic diversity."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Recently, the Serratus project conducted a massive analysis of all public RNA-seq data released before January 2021 in the SRA database, resulting in the identification of RdRP for over 10^5 RNA viruses, thereby significantly expanding viral diversity [22].",
+        "references": {
+          "22": {
+            "1": "Public databases contain a planetary collection of nucleic acid sequences.",
+            "2": "The systematic exploration of nucleic acid sequences in public databases has been inhibited by a lack of efficient methods for searching this corpus.",
+            "3": "The corpus of nucleic acid sequences in public databases exceeds 20 petabases at the time of writing.",
+            "4": "The corpus of nucleic acid sequences in public databases is growing exponentially."
+          }
+        },
+        "viewpoints": [
+          "The Serratus project conducted a massive analysis of all public RNA-seq data released before January 2021 in the SRA database.",
+          "The Serratus project's analysis resulted in the identification of RdRP for over 10^5 RNA viruses.",
+          "The identification of RdRP for over 10^5 RNA viruses by the Serratus project significantly expanded viral diversity."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "However, the viral RdRP information provided by Serratus typically represents only a fraction of complete RdRP domains, often insufficient for genome annotation and phylogenetic analysis.",
+        "references": {},
+        "viewpoints": [
+          "The viral RdRP information provided by Serratus typically represents only a fraction of complete RdRP domains.",
+          "The incomplete RdRP domains information is often insufficient for genome annotation.",
+          "The incomplete RdRP domains information is often insufficient for phylogenetic analysis."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Nevertheless, this fragmentary RdRP information from Serratus proves valuable for screening appropriate RNA-seq libraries for virus identification, laying the groundwork for more specialized, in-depth analyses such as viral genome assembly, annotation, and classification [29], [30].",
+        "references": {
+          "29": {
+            "1": "Hepatitis delta virus (HDV) is an unusual RNA agent.",
+            "2": "HDV replicates using host machinery.",
+            "3": "HDV exploits hepatitis B virus (HBV) to mobilize its spread within and between hosts.",
+            "4": "HDV enhances the virulence of HBV.",
+            "5": "The emergence of the hyperparasitic lifestyle of HDV is unknown.",
+            "6": "There is a likelihood that HDV and related deltaviruses may alter other host-virus interactions.",
+            "7": "Deltaviruses diversify by transmitting between mammalian species.",
+            "8": "Deltaviruses infected bats, rodents, and an artiodactyl from the Americas among 96,695 RNA sequence datasets.",
+            "9": "Deltaviruses were absent from geographically overrepresented Old World representatives of each mammalian order.",
+            "10": "The absence of deltaviruses from Old World representatives suggests a relatively recent diversification within the Americas.",
+            "11": "The paraphyletic nature of bat and rodent-infecting deltaviruses is consistent with diversification by host shifting.",
+            "12": "Coevolutionary modeling rejected cospeciation of deltaviruses with mammalian hosts.",
+            "13": "A 2-year field study showed common vampire bats in Peru were infected by two divergent deltaviruses.",
+            "14": "The infection of common vampire bats by two divergent deltaviruses indicates multiple introductions to a single host species.",
+            "15": "One vampire bat-associated deltavirus was detected in the saliva of up to 35% of individuals.",
+            "16": "The vampire bat-associated deltavirus formed phylogeographically compartmentalized clades.",
+            "17": "The vampire bat-associated deltavirus infected a sympatric bat.",
+            "18": "The infection of sympatric bats illustrates horizontal transmission of the deltavirus within and between species on ecological timescales.",
+            "19": "The consistent absence of HBV-like viruses in two deltavirus-infected bat species indicated the acquisition of novel viral associations.",
+            "20": "The acquisitions of novel viral associations occurred during the divergence of bat and human-infecting deltaviruses.",
+            "21": "The analyses support an American zoonotic origin of HDV.",
+            "22": "The analyses reveal prospects for future cross-species emergence of deltaviruses.",
+            "23": "Due to their peculiar life history, deltavirus host shifts will have different constraints compared to ordinary animal pathogens.",
+            "24": "Deltavirus host shifts will have different disease outcomes compared to ordinary animal pathogens."
+          },
+          "30": {}
+        },
+        "viewpoints": [
+          "The fragmentary RdRP information from Serratus is valuable for screening appropriate RNA-seq libraries for virus identification.",
+          "The fragmentary RdRP information from Serratus lays the groundwork for more specialized, in-depth analyses such as viral genome assembly.",
+          "The fragmentary RdRP information from Serratus lays the groundwork for more specialized, in-depth analyses such as annotation.",
+          "The fragmentary RdRP information from Serratus lays the groundwork for more specialized, in-depth analyses such as virus classification."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Being one of the most crucial food crops, rice has long been a focal point of research, resulting in the accumulation of vast amounts of publicly available RNA-seq data submitted by scientists worldwide.",
+        "references": {},
+        "viewpoints": [
+          "Rice is one of the most crucial food crops.",
+          "Rice has long been a focal point of research.",
+          "The focus on rice research has resulted in the accumulation of vast amounts of publicly available RNA-seq data submitted by scientists worldwide."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "However, up to now, these data have not undergone systematic analysis for virus identification.",
+        "references": {},
+        "viewpoints": [
+          "Up to now, publicly available RNA-seq data for rice have not undergone systematic analysis for virus identification."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Besides, rice plants have long been threatened by fungal pathogens and insect pests, and the identification of viruses associated with these fungi or insects may offer valuable insights for developing innovative strategies to prevent both fungal infections and insect infestations.",
+        "references": {},
+        "viewpoints": [
+          "Rice plants have long been threatened by fungal pathogens.",
+          "Rice plants have long been threatened by insect pests.",
+          "Identifying viruses associated with fungi may offer valuable insights for developing innovative strategies to prevent fungal infections.",
+          "Identifying viruses associated with insects may offer valuable insights for developing innovative strategies to prevent insect infestations."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "In this study, we conducted a large-scale analysis of 17,115 RNA-seq libraries encompassing 24 Oryza species to explore viral diversity in rice plants.",
+        "references": {},
+        "viewpoints": [
+          "The study conducted a large-scale analysis of 17,115 RNA-seq libraries.",
+          "The analysis encompassed 24 Oryza species.",
+          "The purpose of the analysis was to explore viral diversity in rice plants."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Employing both homology-based and homology-independent approaches, we identified 810 complete or near-complete viruses and additional 49 RdRPs.",
+        "references": {},
+        "viewpoints": [
+          "The study employed both homology-based and homology-independent approaches.",
+          "The study identified 810 complete or near-complete viruses in rice plants.",
+          "The study identified an additional 49 RdRPs in rice plants."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Furthermore, we analyzed the metadata of SRA runs from Serratus, and estimated viral abundance in rice samples, facilitating the screening of 427 viruses closely associated with rice plants.",
+        "references": {},
+        "viewpoints": [
+          "The study analyzed the metadata of SRA runs from Serratus.",
+          "The study estimated viral abundance in rice samples.",
+          "The analysis facilitated the screening of 427 viruses closely associated with rice plants."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "These findings hold significant potential for advancing viral research, enhancing surveillance efforts against viral diseases, and implementing effective measures to mitigate viral epidemics in rice plants.",
+        "references": {},
+        "viewpoints": [
+          "The findings hold significant potential for advancing viral research.",
+          "The findings hold significant potential for enhancing surveillance efforts against viral diseases in rice plants.",
+          "The findings hold significant potential for implementing effective measures to mitigate viral epidemics in rice plants."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56769-y_with_abstracts",
+    "base_id": "s41467-025-56769-y",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56769-y_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

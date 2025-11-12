@@ -1,0 +1,950 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Proteins play a vital role in various field, including medicine, chemical manufacturing, energy, agriculture, and consumer products. However, for industrial applications, proteins often require engineering to enhance properties such as stability, activity, selectivity, and binding affinity [1] , [2] . Numerous strategies have been developed for protein engineering, with directed evolution being a well-established and powerful approach [3] , [4] , [5] . Traditional directed evolution relies on iterative cycles of random mutagenesis and high-throughput screening to identify variants with desired traits. While effective, this process is time-consuming and labor-intensive [6] . Additionally, since directed evolution typically introduces one mutation at a time, it can be trapped in local fitness optima, limiting further improvement [7] , [8] . Recently, targeted mutagenesis guided by structure or sequence information has become a popular way to produce so-called small-but-smart libraries [9] . These libraries, which contain a higher ratio of beneficial mutations and fewer deleterious ones, improve the efficiency of directed evolution. For example, iterative saturation mutagenesis (ISM) and CASTing methods have been effectively used for enzyme evolution, requiring screening of only moderate-sized libraries including 5000 to 20,000 variants [10] , [11] . However, the success of targeted mutagenesis is highly dependent on the choice of target site, which requires a deep understanding of the protein’s structure-function relationship [12] . Moreover, software tools such as Rosetta and HotSpot Wizard have shown promise in enzyme redesign and functional enhancement, but de novo enzyme design remains in its infancy, and these methods are generally effective only for relatively simple reactions [13] , [14] , [15] . Machine learning (ML) has recently emerged as a promising tool for exploring protein fitness landscapes [16] . One specific application, ML-assisted directed evolution (MLDE), employs supervised ML models to predict the fitness of protein variants that carry multiple mutations [17] , [18] . This technique facilitates larger jumps in protein sequence space, helping to bypass local optima that often occur in landscapes with strong epistasis. Bayesian optimization (BO), a method within active learning, is particularly well-suited for identifying protein variants with substantially improved fitness. Several studies have applied Gaussian process models with BO to optimize proteins. For instance, an iterative BO has demonstrated its effectiveness in enhancing thermostability of a P450 enzyme [19] . Similar methods have been applied to engineer activity a halogenase [20] , enantioselectivity of a putative nitric oxide dioxygenase [21] , fluorescence wavelength of green fluorescent protein (GFP) [22] and so forth. Despite these advances, the widespread application of ML in protein engineering remains challenging, in both acquiring and modeling protein function data. Experimentally collecting functional data is time-consuming and labor-intensive, particularly for enzymes with polyspecificity due to the substrate diversity and complexity [18] . Additionally, it was difficult to know how to efficiently sample and utilize informative protein mutants to train the ML models, especially for the protein without any prior information about the relationship between structure and function. Protein language models (PLMs) were trained on extensive datasets of protein sequences spanning the evolutionary tree of life, and hence learned the fundamental principles of protein structure and function. PLMs have proven powerful in modeling functional proteins [23] , predicting the direction of natural evolution [24] and designing novel proteins [25] . The captured knowledge in PLMs could be applied to “zero-shot” optimization of specific proteins. Affinity maturation of antibodies has been guided by PLMs, through which screening 20 or fewer variants improved the binding affinities up to 160-fold [26] . PLMs have also been used to assist optimization of an uracil-N-glycosylase variant activity that enables programmable T-to-G and T-to-C base editing [27] . However, a major open question is whether general evolutionary information learned from sequence variation across past evolution is sufficient to enable efficient evolution of a specific protein under specific selection pressure. Additionally, laboratory automation aided by biofoundries would be invaluable for generating the large volumes of data needed to develop ML models for protein engineering. A fully integrated biofoundry combines high-throughput core instruments, including liquid handlers, thermocyclers, fragment analyzers, and high-content screening systems, with peripheral devices such as plate sealers, shakers, and incubators. These components are seamlessly coordinated by robotic arms and scheduling software [28] . One example is PlasmidMaker which was developed for automated high-throughput plasmid design and construction [29] . Furthermore, the combination of biofoundries and ML models has led to the application of BioAutomata, an automated closed-loop system designed for engineering the lycopene production pathway [30] . An automated high-throughput genome editing platform was recently devised through which thousands of samples were automatically edited within a week [31] . However, protein engineering has yet to fully leverage recent developments in biofoundries. A so-called self-driving autonomous machine for protein landscape exploration (SAMPLE) platform was developed for fully autonomous protein engineering [32] . However, the platform only assembled pre-synthesized DNA fragments from different homologues for exploring a small protein landscape containing 1352 protein sequences. A Bayesian optimization-guided evolutionary algorithm along with robotic experiments were also developed for protein engineering, and a four-site combinatorial library was explored by sampling 384 mutants each round for 4 rounds, 1536 mutants in total [33] . However, the BO algorithm could not guide the mutant residue selection, and the generality of the algorithm remains unknown. In this study, we propose a protein engineering strategy that integrates the predictive power of PLMs with the operational efficiencies of an automated biofoundry. Within the Design-Build-Test-Learn cycle, the Learning and Design phases utilize insights from PLMs to elucidate protein sequence-fitness relationships and to sample novel mutants, while the Build and Test phases are efficiently conducted using automated biofoundry. Specifically, when applying PLMs for protein variants design, two modules were developed to predict high-fitness mutants for proteins without knowing the mutation sites and the proteins with mutation sites known, respectively. Our robotic systems are adept at building protein variants and collecting protein variants functional data continuously, ensuring high reproducibility with comprehensive metadata tracking and real-time data sharing. By combining the advanced predictive capabilities of PLMs with the high-throughput functionalities of robotic systems, this method is designed to surpass traditional constraints and expedite the discovery and enhancement of proteins crucial for industrial applications. We used the Methanocaldococcus jannaschii p -cyanophenylalanine tRNA synthetase (pCNF-RS) as a model enzyme for validating the process. In each round, 96 variants were designed by PLMs or a supervised ML model, and then constructed and tested by an automated biofoundry. Four rounds were performed within half a month with the enzyme activity progressively improving, reaching its peak in the fourth round. The PLMeAE system exhibited superior performance compared to random selection and the traditional directed evolution strategy, and it has the potential to accelerate the engineering of other proteins.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Proteins play a vital role in various fields, including medicine, chemical manufacturing, energy, agriculture, and consumer products.",
+        "references": {},
+        "viewpoints": [
+          "Proteins are important in the field of medicine.",
+          "Proteins are important in the field of chemical manufacturing.",
+          "Proteins are important in the field of energy.",
+          "Proteins are important in the field of agriculture.",
+          "Proteins are important in the field of consumer products."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "However, for industrial applications, proteins often require engineering to enhance properties such as stability, activity, selectivity, and binding affinity [1] , [2].",
+        "references": {
+          "1": {
+            "1": "Antibody-based protein therapeutics have been successfully introduced into the arsenal of treatments for patients.",
+            "2": "The introduction of antibody-based protein therapeutics has fostered intense innovation in the production and engineering of antibodies within a few decades.",
+            "3": "The paper reviews the methods currently used to produce antibodies.",
+            "4": "Knowledge of the structural characterization of immunoglobulins has resulted in the engineering of antibodies.",
+            "5": "Knowledge of the functional characterization of immunoglobulins has resulted in the engineering of antibodies.",
+            "6": "The engineering of antibodies has resulted in the production of protein therapeutics with unique biological properties.",
+            "7": "The engineering of antibodies has resulted in the production of protein therapeutics with unique biophysical properties.",
+            "8": "Protein therapeutics with unique properties lead to novel therapeutic approaches.",
+            "9": "Antibody engineering includes the introduction of the antibody combining site (variable regions) into various architectures.",
+            "10": "Antibody engineering includes bi-specific formats that impact therapeutic properties.",
+            "11": "Antibody engineering includes multi-specific formats that impact therapeutic properties.",
+            "12": "Bi and multi-specific formats in antibody engineering lead to further advantages in patient treatment.",
+            "13": "Bi and multi-specific formats in antibody engineering lead to further successes in patient treatment."
+          },
+          "2": {
+            "1": "Protein engineering is an important tool.",
+            "2": "Protein engineering helps to overcome the limitations of natural enzymes as biocatalysts.",
+            "3": "Recent advances in protein engineering have focused on applying directed evolution to enzymes.",
+            "4": "Directed evolution is applied to enzymes important for organic synthesis, such as monooxygenases, ketoreductases, lipases, or aldolases.",
+            "5": "The application of directed evolution aims to improve the activity, enantioselectivity, and stability of enzymes used in organic synthesis.",
+            "6": "Combining directed evolution and rational protein design with computational tools is becoming increasingly important.",
+            "7": "The combination of directed evolution with rational protein design helps explore enzyme sequence-space.",
+            "8": "The combination of directed evolution with rational protein design helps create improved or novel enzymes.",
+            "9": "Developments in protein engineering are expected to expand the application of microbial enzymes in industry."
+          }
+        },
+        "viewpoints": [
+          "Proteins often require engineering to enhance stability for industrial applications.",
+          "Proteins often require engineering to enhance activity for industrial applications.",
+          "Proteins often require engineering to enhance selectivity for industrial applications.",
+          "Proteins often require engineering to enhance binding affinity for industrial applications."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Numerous strategies have been developed for protein engineering, with directed evolution being a well-established and powerful approach [3] , [4] , [5].",
+        "references": {
+          "3": {
+            "1": "Directed evolution is widely used to improve enzymes.",
+            "2": "Directed evolution is particularly used for industrial biocatalytic processes.",
+            "3": "Advances in molecular biology present many new strategies for directed evolution.",
+            "4": "Commonly used techniques in directed evolution have led to many successful examples of enzyme improvement.",
+            "5": "There is still a need to improve the efficiency of directed evolution.",
+            "6": "There is still a need to improve the capability of directed evolution.",
+            "7": "Recent strategies aim to make directed evolution faster.",
+            "8": "Recent strategies aim to make directed evolution more efficient.",
+            "9": "Recent strategies take better advantage of available structural information.",
+            "10": "Recent strategies take better advantage of available sequence information.",
+            "11": "The underlying principles that lead to early dead-ends for directed evolution experiments are discussed.",
+            "12": "Recent strategies designed to bypass early dead-ends in directed evolution experiments are discussed.",
+            "13": "Several emerging methods for creating novel enzymes are discussed.",
+            "14": "Examples of catalytic activity for which there is no precedent in nature are discussed.",
+            "15": "The combined use of several strategies is likely to be required in practice to improve multiple target properties of an enzyme.",
+            "16": "A recent industrial example successfully shows the use of combined strategies to improve multiple target properties of an enzyme."
+          },
+          "4": {
+            "1": "Directed evolution circumvents the profound ignorance of how a protein's sequence encodes its function.",
+            "2": "Directed evolution uses iterative rounds of random mutation and artificial selection to discover new and useful proteins.",
+            "3": "Proteins can be tuned to adapt to new functions by simple adaptive walks.",
+            "4": "Proteins can be tuned to adapt to new environments by simple adaptive walks.",
+            "5": "Simple adaptive walks involve small numbers of mutations.",
+            "6": "Directed evolution studies have shown that some proteins can evolve rapidly under strong selection pressures.",
+            "7": "The entire 'fossil record' of evolutionary intermediates is available for detailed study in directed evolution.",
+            "8": "Directed evolution studies have provided new insight into the relationship between sequence and function.",
+            "9": "Directed evolution has shown that functionally neutral mutations can set the stage for further adaptation."
+          },
+          "5": {
+            "1": "Work with proteins, particularly enzymes, is a rapidly growing segment of the biotechnology industry.",
+            "2": "Directed evolution promises to become an increasingly important strategy in the development of proteins.",
+            "3": "Directed evolution allows one to sidestep some difficult questions relating the structural properties of proteins to their industrial utility.",
+            "4": "Directed evolution allows one to sidestep some difficult questions relating the functional properties of proteins to their industrial utility.",
+            "5": "A greater understanding of how to engineer basic enzyme properties such as stability is beginning to emerge.",
+            "6": "A greater understanding of how to engineer basic enzyme properties such as activity is beginning to emerge.",
+            "7": "A greater understanding of how to engineer basic enzyme properties such as surface properties is beginning to emerge.",
+            "8": "This understanding of basic enzyme properties will make rational design more efficient.",
+            "9": "To engineer a commercially useful protein, many properties need to be changed.",
+            "10": "These property changes in proteins are frequently interdependent.",
+            "11": "Recent protein engineering studies on protease illustrate some of the progress in this area.",
+            "12": "Recent protein engineering studies on amylase illustrate some of the progress in this area.",
+            "13": "Recent protein engineering studies on lipase illustrate some of the progress in this area.",
+            "14": "Recent protein engineering studies on cellulase illustrate some of the progress in this area."
+          }
+        },
+        "viewpoints": [
+          "Numerous strategies have been developed for protein engineering.",
+          "Directed evolution is a well-established approach to protein engineering.",
+          "Directed evolution is a powerful approach to protein engineering."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Traditional directed evolution relies on iterative cycles of random mutagenesis and high-throughput screening to identify variants with desired traits.",
+        "references": {},
+        "viewpoints": [
+          "Traditional directed evolution relies on iterative cycles of random mutagenesis.",
+          "Traditional directed evolution relies on high-throughput screening to identify variants with desired traits."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "While effective, this process is time-consuming and labor-intensive [6].",
+        "references": {
+          "6": {
+            "1": "Directed evolution aims to expedite the natural evolution process of biological molecules and systems.",
+            "2": "Directed evolution is conducted in a test tube.",
+            "3": "Directed evolution involves iterative rounds of gene diversifications.",
+            "4": "Directed evolution involves library screening/selection.",
+            "5": "Directed evolution is one of the most powerful and widespread tools for engineering.",
+            "6": "Directed evolution is used for engineering improved or novel functions in proteins.",
+            "7": "Directed evolution is used for engineering improved or novel functions in metabolic pathways.",
+            "8": "Directed evolution is used for engineering improved or novel functions in whole genomes.",
+            "9": "The review describes commonly used gene diversification strategies for directed evolution.",
+            "10": "The review describes screening/selection methods for directed evolution.",
+            "11": "The review describes recently developed continuous evolution strategies for directed evolution.",
+            "12": "The review highlights representative applications of directed evolution in engineering nucleic acids.",
+            "13": "The review highlights representative applications of directed evolution in engineering proteins.",
+            "14": "The review highlights representative applications of directed evolution in engineering pathways.",
+            "15": "The review highlights representative applications of directed evolution in engineering genetic circuits.",
+            "16": "The review highlights representative applications of directed evolution in engineering viruses.",
+            "17": "The review highlights representative applications of directed evolution in engineering whole cells.",
+            "18": "The review discusses the challenges in directed evolution.",
+            "19": "The review discusses future perspectives in directed evolution."
+          }
+        },
+        "viewpoints": [
+          "The process of traditional directed evolution is time-consuming.",
+          "The process of traditional directed evolution is labor-intensive.",
+          "Traditional directed evolution is effective."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Additionally, since directed evolution typically introduces one mutation at a time, it can be trapped in local fitness optima, limiting further improvement [7] , [8].",
+        "references": {
+          "7": {
+            "1": "Directed evolution is a widely-used engineering strategy.",
+            "2": "Directed evolution improves the stabilities of proteins.",
+            "3": "Directed evolution improves the biochemical functions of proteins.",
+            "4": "Directed evolution uses repeated rounds of mutation.",
+            "5": "Directed evolution uses repeated rounds of selection.",
+            "6": "Directed evolution experiments offer empirical lessons about how proteins evolve.",
+            "7": "Laboratory selection pressures in directed evolution experiments are clearly-defined.",
+            "8": "Directed evolution has revealed that single amino acid mutations can enhance catalytic activity.",
+            "9": "Directed evolution has revealed that single amino acid mutations can enhance stability.",
+            "10": "Adaptation can often occur through pathways consisting of sequential beneficial mutations.",
+            "11": "If there are no single mutations that improve a protein property, experiments find many mutations that are neutral.",
+            "12": "Neutral mutations are neutral with respect to the laboratory-defined measure of fitness.",
+            "13": "Neutral mutations can open new adaptive pathways.",
+            "14": "There are at least 2 different mechanisms by which neutral mutations can open new adaptive pathways.",
+            "15": "Functionally-neutral mutations can enhance a protein's stability.",
+            "16": "Enhanced protein stability from functionally-neutral mutations increases tolerance for subsequent functionally beneficial but destabilizing mutations.",
+            "17": "Functionally-neutral mutations can lead to changes in \"promiscuous\" functions.",
+            "18": "\"Promiscuous\" functions are not currently under selective pressure.",
+            "19": "Changes in \"promiscuous\" functions can become the starting points for the adaptive evolution of new functions.",
+            "20": "Lessons about the coupling between adaptive and neutral protein evolution in the laboratory offer insight.",
+            "21": "Insights from laboratory protein evolution apply to the evolution of proteins in nature."
+          },
+          "8": {
+            "1": "Enzymes can be engineered at the level of their amino acid sequences.",
+            "2": "Amino acid sequence engineering optimizes key enzyme properties such as expression, stability, substrate range, and catalytic efficiency.",
+            "3": "Amino acid sequence engineering can unlock new catalytic activities not found in nature.",
+            "4": "The search space of possible proteins is vast.",
+            "5": "Enzyme engineering usually involves discovering an enzyme starting point that has some level of the desired activity.",
+            "6": "Enzyme engineering uses directed evolution to improve the enzyme's \"fitness\" for a desired application.",
+            "7": "Machine learning has emerged as a powerful tool to complement the empirical process of enzyme engineering.",
+            "8": "ML models can contribute to starting point discovery by functional annotation of known protein sequences.",
+            "9": "ML models can contribute to starting point discovery by generating novel protein sequences with desired functions.",
+            "10": "ML models can contribute to navigating protein fitness landscapes for fitness optimization.",
+            "11": "ML models can learn mappings between protein sequences and their associated fitness values.",
+            "12": "The authors explain how machine learning complements enzyme engineering.",
+            "13": "The authors discuss the future potential of machine learning to unlock improved engineering outcomes."
+          }
+        },
+        "viewpoints": [
+          "Directed evolution typically introduces one mutation at a time.",
+          "Directed evolution can be trapped in local fitness optima.",
+          "Being trapped in local fitness optima limits further improvement in directed evolution."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Recently, targeted mutagenesis guided by structure or sequence information has become a popular way to produce so-called small-but-smart libraries [9].",
+        "references": {
+          "9": {
+            "1": "Directed evolution is a powerful strategy.",
+            "2": "Directed evolution is used to engineer various properties of proteins.",
+            "3": "Traditional methods to construct libraries include error-prone PCR and DNA shuffling.",
+            "4": "Error-prone PCR and DNA shuffling commonly produce large libraries.",
+            "5": "Error-prone PCR and DNA shuffling commonly produce relatively inefficient libraries.",
+            "6": "In the absence of a high-throughput screening method, searching large libraries is time-consuming.",
+            "7": "In the absence of a high-throughput screening method, searching large libraries is laborious.",
+            "8": "In the absence of a high-throughput screening method, searching large libraries is costly.",
+            "9": "Targeted mutagenesis is guided by structure information.",
+            "10": "Targeted mutagenesis is guided by sequence information.",
+            "11": "Targeted mutagenesis is a popular way to produce smart libraries.",
+            "12": "Smart libraries have an increased ratio of advantageous to deleterious mutations.",
+            "13": "Smart libraries increase the efficiency of directed evolution.",
+            "14": "This efficiency increase occurs if target site prediction is reliable.",
+            "15": "Mutation target site prediction is critical to the quality of libraries.",
+            "16": "Mutation target site prediction is critical to the performance of directed evolution.",
+            "17": "Hot spot prediction is critical to the quality of libraries.",
+            "18": "Hot spot prediction is critical to the performance of directed evolution.",
+            "19": "Appropriate selection of hot spots enables efficient generation of proteins with desired properties.",
+            "20": "Appropriate selection of hot spots enables rational generation of proteins with desired properties.",
+            "21": "There are seven kinds of hot spots.",
+            "22": "Hot spots are divided into sequence-based and 3D structure-based categories.",
+            "23": "Sequence-based hot spots include CbD (conserved but different) sites.",
+            "24": "Sequence-based hot spots include coevolving residues.",
+            "25": "3D structure-based hot spots include active-site residues.",
+            "26": "3D structure-based hot spots include access tunnel sites.",
+            "27": "3D structure-based hot spots include flexible sites.",
+            "28": "3D structure-based hot spots include distal sites coupled to the active center.",
+            "29": "3D structure-based hot spots include interface sites.",
+            "30": "This review covers the latest advances in computational tools for identifying hot spots.",
+            "31": "This review covers successful cases using hot spots for enzyme engineering."
+          }
+        },
+        "viewpoints": [
+          "Targeted mutagenesis guided by structure or sequence information has become a popular way to produce small-but-smart libraries."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "These libraries, which contain a higher ratio of beneficial mutations and fewer deleterious ones, improve the efficiency of directed evolution.",
+        "references": {},
+        "viewpoints": [
+          "Small-but-smart libraries contain a higher ratio of beneficial mutations than deleterious ones.",
+          "Small-but-smart libraries improve the efficiency of directed evolution."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "For example, iterative saturation mutagenesis (ISM) and CASTing methods have been effectively used for enzyme evolution, requiring screening of only moderate-sized libraries including 5000 to 20,000 variants [10] , [11].",
+        "references": {
+          "10": [],
+          "11": []
+        },
+        "viewpoints": [
+          "Iterative saturation mutagenesis (ISM) has been effectively used for enzyme evolution.",
+          "CASTing methods have been effectively used for enzyme evolution.",
+          "Iterative saturation mutagenesis (ISM) and CASTing methods require only moderate-sized libraries for screening.",
+          "Moderate-sized libraries for ISM and CASTing methods include 5000 to 20,000 variants."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "However, the success of targeted mutagenesis is highly dependent on the choice of target site, which requires a deep understanding of the protein’s structure-function relationship [12].",
+        "references": {
+          "12": []
+        },
+        "viewpoints": [
+          "The success of targeted mutagenesis is highly dependent on the choice of target site.",
+          "Choosing a target site for targeted mutagenesis requires a deep understanding of the protein’s structure-function relationship."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Moreover, software tools such as Rosetta and HotSpot Wizard have shown promise in enzyme redesign and functional enhancement, but de novo enzyme design remains in its infancy, and these methods are generally effective only for relatively simple reactions [13] , [14] , [15].",
+        "references": {
+          "13": {
+            "1": "Pentacoordinated iron shows catalytic versatility.",
+            "2": "Pentacoordinated iron's versatility is highlighted by natural and engineered activities of heme enzymes.",
+            "3": "Cytochrome P450s are examples of heme enzymes with versatile activities.",
+            "4": "Heme enzymes like cytochrome P450s position a porphyrin cofactor coordinating a central iron atom.",
+            "5": "Cytochrome P450s have an open substrate binding pocket below the porphyrin cofactor.",
+            "6": "The catalytic prowess of heme enzymes has inspired the design of de novo helical bundle scaffolds.",
+            "7": "De novo helical bundle scaffolds are designed to bind porphyrin cofactors.",
+            "8": "De novo helical bundle scaffolds lack the large open substrate binding pocket of cytochrome P450s.",
+            "9": "The chemical transformations accessible to de novo helical bundle scaffolds are limited due to the lack of a large open substrate binding pocket.",
+            "10": "The design of dnHEM1 aims to combine the advantages of P450 catalytic site geometry with the customizability of de novo protein design.",
+            "11": "dnHEM1 is a high-affinity heme-binding protein.",
+            "12": "dnHEM1 has an axial histidine ligand.",
+            "13": "dnHEM1 has a vacant coordination site for generating reactive intermediates.",
+            "14": "dnHEM1 has a tunable distal pocket for substrate binding.",
+            "15": "The X-ray crystal structure of dnHEM1 is resolved at 1.6 Å.",
+            "16": "The X-ray crystal structure of dnHEM1 shows excellent agreement with the design model.",
+            "17": "Key features of dnHEM1 were programmed as intended in the design.",
+            "18": "Distal pocket substitutions in dnHEM1 converted it into a proficient peroxidase.",
+            "19": "dnHEM1 with distal pocket substitutions contains a stable neutral ferryl intermediate.",
+            "20": "dnHEM1 was redesigned to generate enantiocomplementary carbene transferases.",
+            "21": "The redesign targeted styrene cyclopropanation reactions.",
+            "22": "dnHEM1 achieved up to 93% isolated yield for styrene cyclopropanation.",
+            "23": "dnHEM1 achieved 5000 turnovers for styrene cyclopropanation.",
+            "24": "dnHEM1 achieved a 97:3 enantiomeric ratio for styrene cyclopropanation.",
+            "25": "The distal pocket of dnHEM1 was reconfigured to accommodate calculated transition state models.",
+            "26": "The approach enables the custom design of enzymes with cofactors adjacent to binding pockets.",
+            "27": "The binding pockets in these enzymes can have an almost unlimited variety of shapes and functionalities."
+          },
+          "14": {
+            "1": "There are 20(200) possible amino-acid sequences for a 200-residue protein.",
+            "2": "The natural evolutionary process has sampled only an infinitesimal subset of the possible amino-acid sequences for a 200-residue protein.",
+            "3": "De novo protein design explores the full amino-acid sequence space.",
+            "4": "De novo protein design is guided by the physical principles that underlie protein folding.",
+            "5": "Computational methodology has advanced to the point that a wide range of protein structures can be designed from scratch.",
+            "6": "These protein structures can be designed with atomic-level accuracy.",
+            "7": "Almost all protein engineering so far has involved the modification of naturally occurring proteins.",
+            "8": "It should now be possible to design new functional proteins from the ground up.",
+            "9": "New functional proteins can be designed to tackle current challenges in biomedicine.",
+            "10": "New functional proteins can be designed to tackle current challenges in nanotechnology."
+          },
+          "15": {
+            "1": "HotSpot Wizard is a web server used for the automated identification of hotspots in semi-rational protein design.",
+            "2": "The automated identification of hotspots in semi-rational protein design using HotSpot Wizard aims to improve protein stability.",
+            "3": "The automated identification of hotspots in semi-rational protein design using HotSpot Wizard aims to improve catalytic activity.",
+            "4": "The automated identification of hotspots in semi-rational protein design using HotSpot Wizard aims to improve substrate specificity.",
+            "5": "The automated identification of hotspots in semi-rational protein design using HotSpot Wizard aims to improve enantioselectivity.",
+            "6": "There are three orders of magnitude fewer protein structures than sequences in bioinformatic databases.",
+            "7": "The major limitation to the usability of previous versions of HotSpot Wizard was the requirement for the protein structure to be a compulsory input for the calculation.",
+            "8": "HotSpot Wizard 3.0 accepts the protein sequence as input data.",
+            "9": "The protein structure for the query sequence is obtained from eight repositories of homology models.",
+            "10": "The protein structure for the query sequence is modeled using Modeller and I-Tasser.",
+            "11": "The quality of the models is evaluated using WHAT_CHECK.",
+            "12": "The quality of the models is evaluated using PROCHECK.",
+            "13": "The quality of the models is evaluated using MolProbity.",
+            "14": "During follow-up analyses, the system automatically warns users when they attempt to redesign poorly predicted parts of their homology models.",
+            "15": "The second main limitation of HotSpot Wizard's predictions is that it identifies suitable positions for mutagenesis.",
+            "16": "HotSpot Wizard does not provide reliable advice on particular substitutions for mutagenesis.",
+            "17": "A new module for the estimation of thermodynamic stabilities using the Rosetta suite has been introduced.",
+            "18": "A new module for the estimation of thermodynamic stabilities using the FoldX suite has been introduced.",
+            "19": "The new module prevents destabilizing mutations among pre-selected variants entering experimental testing.",
+            "20": "HotSpot Wizard is freely available at http://loschmidt.chemi.muni.cz/hotspotwizard."
+          }
+        },
+        "viewpoints": [
+          "Rosetta shows promise in enzyme redesign and functional enhancement.",
+          "HotSpot Wizard shows promise in enzyme redesign and functional enhancement.",
+          "De novo enzyme design remains in its infancy.",
+          "Rosetta and HotSpot Wizard are generally effective only for relatively simple reactions."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Machine learning (ML) has recently emerged as a promising tool for exploring protein fitness landscapes [16].",
+        "references": {
+          "16": {
+            "1": "Machine-learning-guided directed evolution allows for optimization of protein functions.",
+            "2": "Machine-learning approaches predict how protein sequence maps to function using a data-driven method.",
+            "3": "Machine-learning approaches do not require a detailed model of the underlying physics or biological pathways to predict sequence-function mapping.",
+            "4": "Machine-learning methods learn from the properties of characterized protein variants.",
+            "5": "Machine-learning methods use information from characterized variants to select sequences that are likely to exhibit improved properties.",
+            "6": "Machine-learning methods accelerate directed evolution.",
+            "7": "The introduction includes steps required to build machine-learning sequence-function models.",
+            "8": "The introduction includes how to use machine-learning sequence-function models to guide protein engineering.",
+            "9": "Recommendations are made at each stage of building and using machine-learning sequence-function models.",
+            "10": "The review covers basic concepts relevant to using machine learning for protein engineering.",
+            "11": "The review covers current literature related to machine learning in protein engineering.",
+            "12": "The review covers applications of machine learning in protein engineering.",
+            "13": "Two case studies are used to illustrate the machine-learning-guided protein engineering process.",
+            "14": "Future opportunities for machine learning include enabling the discovery of unknown protein functions.",
+            "15": "Future opportunities for machine learning include uncovering the relationship between protein sequence and function."
+          }
+        },
+        "viewpoints": [
+          "Machine learning has emerged as a promising tool for exploring protein fitness landscapes."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "One specific application, ML-assisted directed evolution (MLDE), employs supervised ML models to predict the fitness of protein variants that carry multiple mutations [17] , [18].",
+        "references": {
+          "17": [],
+          "18": []
+        },
+        "viewpoints": [
+          "ML-assisted directed evolution (MLDE) employs supervised machine learning models.",
+          "MLDE predicts the fitness of protein variants that carry multiple mutations."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "This technique facilitates larger jumps in protein sequence space, helping to bypass local optima that often occur in landscapes with strong epistasis.",
+        "references": {},
+        "viewpoints": [
+          "ML-assisted directed evolution facilitates larger jumps in protein sequence space.",
+          "ML-assisted directed evolution helps to bypass local optima in landscapes with strong epistasis."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Bayesian optimization (BO), a method within active learning, is particularly well-suited for identifying protein variants with substantially improved fitness.",
+        "references": {},
+        "viewpoints": [
+          "Bayesian optimization is a method within active learning.",
+          "Bayesian optimization is well-suited for identifying protein variants with substantially improved fitness."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Several studies have applied Gaussian process models with BO to optimize proteins.",
+        "references": {},
+        "viewpoints": [
+          "Several studies have applied Gaussian process models with Bayesian optimization to optimize proteins."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "For instance, an iterative BO has demonstrated its effectiveness in enhancing thermostability of a P450 enzyme [19].",
+        "references": {
+          "19": {
+            "1": "Knowing how protein sequence maps to function is critical for understanding protein evolution.",
+            "2": "Knowing how protein sequence maps to function is critical for engineering proteins with new and useful properties.",
+            "3": "The protein fitness landscape can be inferred from experimental data.",
+            "4": "Gaussian processes, a Bayesian learning technique, are used to infer the protein fitness landscape from experimental data.",
+            "5": "Gaussian process landscapes can model the functional status of protein sequences.",
+            "6": "Gaussian process landscapes can model the thermostability of protein sequences.",
+            "7": "Gaussian process landscapes can model the enzyme activity of protein sequences.",
+            "8": "Gaussian process landscapes can model the ligand binding affinity of protein sequences.",
+            "9": "Models trained on experimental data achieve unrivaled quantitative accuracy.",
+            "10": "The explicit representation of model uncertainty allows for efficient searches through the vast space of possible sequences.",
+            "11": "Two protein sequence design algorithms motivated by Bayesian decision theory were developed and tested.",
+            "12": "The first protein sequence design algorithm identifies small sets of sequences that are informative about the landscape.",
+            "13": "The second protein sequence design algorithm identifies optimized sequences by iteratively improving the Gaussian process model in regions of the landscape predicted to be optimized.",
+            "14": "The ability of Gaussian processes to guide the search through protein sequence space is demonstrated by designing, constructing, and testing chimeric cytochrome P450s.",
+            "15": "The protein sequence design algorithms allowed the engineering of active P450 enzymes that are more thermostable than any previously made by chimeragenesis, rational design, or directed evolution."
+          }
+        },
+        "viewpoints": [
+          "Iterative Bayesian optimization has demonstrated effectiveness in enhancing thermostability of a P450 enzyme."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Similar methods have been applied to engineer activity of a halogenase [20], enantioselectivity of a putative nitric oxide dioxygenase [21], fluorescence wavelength of green fluorescent protein (GFP) [22] and so forth.",
+        "references": {
+          "20": {
+            "1": "Late-stage functionalization of natural products offers an elegant route to create novel entities.",
+            "2": "Late-stage functionalization of natural products allows for the creation of novel entities in a relevant biological target space.",
+            "3": "In the context of creating novel entities in a relevant biological target space, enzymes capable of halogenating are important."
+          },
+          "21": {
+            "1": "Experimental effort associated with directed protein evolution is reduced by incorporating machine learning into the directed evolution workflow.",
+            "2": "Machine learning is incorporated into the directed evolution workflow to explore the sequence space encoded by mutating multiple positions simultaneously.",
+            "3": "Combinatorial sequence space is expensive to sample experimentally.",
+            "4": "Machine-learning models trained on tested variants provide a fast method for testing sequence space computationally.",
+            "5": "The approach of incorporating machine learning into directed evolution was validated on a large published empirical fitness landscape for human GB1 binding protein.",
+            "6": "Machine learning-guided directed evolution finds variants with higher fitness than those found by other directed evolution approaches.",
+            "7": "An example application was provided in evolving an enzyme to produce each of the two possible product enantiomers of a new-to-nature carbene Si-H insertion reaction.",
+            "8": "The approach predicted libraries enriched in functional enzymes.",
+            "9": "The approach fixed seven mutations in two rounds of evolution to identify variants for selective catalysis with 93% and 79% enantiomeric excess."
+          },
+          "22": {
+            "1": "Molecular evolution based on mutagenesis is widely used in protein engineering.",
+            "2": "Optimal proteins are often difficult to obtain due to a large sequence space in protein engineering.",
+            "3": "A novel approach is proposed that combines molecular evolution with machine learning.",
+            "4": "An initial library of protein variants is used to train a machine-learning model.",
+            "5": "The machine-learning model guides mutagenesis for the second-round library.",
+            "6": "The approach involves two rounds of mutagenesis.",
+            "7": "The approach enables the preparation of a small library suited for screening experiments.",
+            "8": "The small library has high enrichment of functional proteins.",
+            "9": "The approach was demonstrated as a proof-of-concept by altering the reference green fluorescent protein (GFP).",
+            "10": "The fluorescence of the reference green fluorescent protein was changed into yellow.",
+            "11": "A number of proteins showing yellow fluorescence were successfully obtained.",
+            "12": "12 proteins obtained had longer wavelengths than the reference yellow fluorescent protein (YFP).",
+            "13": "The results show the potential of the approach as a powerful method for directed evolution of fluorescent proteins."
+          }
+        },
+        "viewpoints": [
+          "Bayesian optimization methods have been applied to engineer activity of a halogenase.",
+          "Bayesian optimization methods have been applied to engineer enantioselectivity of a putative nitric oxide dioxygenase.",
+          "Bayesian optimization methods have been applied to engineer fluorescence wavelength of green fluorescent protein (GFP)."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Despite these advances, the widespread application of ML in protein engineering remains challenging, in both acquiring and modeling protein function data.",
+        "references": {},
+        "viewpoints": [
+          "The widespread application of machine learning in protein engineering remains challenging.",
+          "Challenges in widespread application of machine learning in protein engineering include acquiring protein function data.",
+          "Challenges in widespread application of machine learning in protein engineering include modeling protein function data."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Experimentally collecting functional data is time-consuming and labor-intensive, particularly for enzymes with polyspecificity due to the substrate diversity and complexity [18].",
+        "references": {
+          "18": []
+        },
+        "viewpoints": [
+          "Experimentally collecting functional data is time-consuming.",
+          "Experimentally collecting functional data is labor-intensive.",
+          "Collecting functional data is particularly time-consuming and labor-intensive for enzymes with polyspecificity.",
+          "Collecting functional data for enzymes with polyspecificity is challenging due to substrate diversity and complexity."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Additionally, it was difficult to know how to efficiently sample and utilize informative protein mutants to train the ML models, especially for the protein without any prior information about the relationship between structure and function.",
+        "references": {},
+        "viewpoints": [
+          "It is difficult to know how to efficiently sample informative protein mutants to train ML models.",
+          "It is difficult to know how to utilize informative protein mutants to train ML models.",
+          "Efficient sampling and utilization of informative mutants are particularly difficult for proteins without prior information about structure-function relationship."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Protein language models (PLMs) were trained on extensive datasets of protein sequences spanning the evolutionary tree of life, and hence learned the fundamental principles of protein structure and function.",
+        "references": {},
+        "viewpoints": [
+          "Protein language models were trained on extensive datasets of protein sequences spanning the evolutionary tree of life.",
+          "Protein language models have learned the fundamental principles of protein structure.",
+          "Protein language models have learned the fundamental principles of protein function."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "PLMs have proven powerful in modeling functional proteins [23], predicting the direction of natural evolution [24] and designing novel proteins [25].",
+        "references": {
+          "23": [],
+          "24": {
+            "1": "The predictability of evolution is a fundamental question in biology.",
+            "2": "Previous attempts to predict the evolution of protein sequences have been limited to specific proteins.",
+            "3": "Previous attempts to predict the evolution of protein sequences have been limited to small changes such as single-residue mutations.",
+            "4": "Using a protein language model to predict the local evolution within protein families allows for the recovery of a dynamic \"vector field\" of protein evolution called evolutionary velocity (evo-velocity).",
+            "5": "Evo-velocity generalizes to evolution over vastly different timescales, including viral proteins evolving over years and eukaryotic proteins evolving over geologic eons.",
+            "6": "Evo-velocity can predict the evolutionary dynamics of proteins that were not used to develop the original model.",
+            "7": "Evo-velocity yields new evolutionary insights by predicting strategies of viral-host immune escape.",
+            "8": "Evo-velocity yields new evolutionary insights by resolving conflicting theories on the evolution of serpins.",
+            "9": "Evo-velocity yields new evolutionary insights by revealing a key role of horizontal gene transfer in the evolution of eukaryotic glycolysis."
+          },
+          "25": {
+            "1": "Deep-learning language models have shown promise in biotechnological applications.",
+            "2": "Deep-learning language models have shown promise in protein design.",
+            "3": "Deep-learning language models have shown promise in protein engineering.",
+            "4": "ProGen is a language model.",
+            "5": "ProGen can generate protein sequences with a predictable function across large protein families.",
+            "6": "Generating protein sequences with ProGen is akin to generating grammatically correct natural language sentences.",
+            "7": "Generating protein sequences with ProGen is akin to generating semantically correct natural language sentences on diverse topics.",
+            "8": "ProGen was trained on 280 million protein sequences.",
+            "9": "The protein sequences used to train ProGen come from more than 19,000 families.",
+            "10": "ProGen is augmented with control tags specifying protein properties.",
+            "11": "ProGen can be further fine-tuned to curated sequences.",
+            "12": "ProGen can be further fine-tuned to tags.",
+            "13": "Fine-tuning ProGen improves the controllable generation performance of proteins.",
+            "14": "The improvement in controllable generation performance applies to protein families with sufficient homologous samples.",
+            "15": "Artificial proteins fine-tuned to five distinct lysozyme families showed similar catalytic efficiencies to natural lysozymes.",
+            "16": "The sequence identity of artificially fine-tuned proteins to natural proteins is as low as 31.4%.",
+            "17": "ProGen is readily adapted to diverse protein families.",
+            "18": "ProGen's adaptability to diverse protein families is demonstrated with chorismate mutase.",
+            "19": "ProGen's adaptability to diverse protein families is demonstrated with malate dehydrogenase."
+          }
+        },
+        "viewpoints": [
+          "Protein language models have proven powerful in modeling functional proteins.",
+          "Protein language models have proven powerful in predicting the direction of natural evolution.",
+          "Protein language models have proven powerful in designing novel proteins."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "The captured knowledge in PLMs could be applied to “zero-shot” optimization of specific proteins.",
+        "references": {},
+        "viewpoints": [
+          "The captured knowledge in protein language models could be applied to zero-shot optimization of specific proteins."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Affinity maturation of antibodies has been guided by PLMs, through which screening 20 or fewer variants improved the binding affinities up to 160-fold [26].",
+        "references": {
+          "26": {
+            "1": "Natural evolution explores a vast landscape of possible sequences for desirable yet rare mutations.",
+            "2": "Learning from natural evolutionary strategies could guide artificial evolution.",
+            "3": "General protein language models can efficiently evolve human antibodies.",
+            "4": "General protein language models suggest mutations that are evolutionarily plausible.",
+            "5": "The general protein language models evolve human antibodies without information about the target antigen, binding specificity, or protein structure.",
+            "6": "Language-model-guided affinity maturation was performed on seven antibodies.",
+            "7": "20 or fewer variants of each antibody were screened across two rounds of laboratory evolution.",
+            "8": "The binding affinities of four clinically relevant, highly mature antibodies were improved up to sevenfold.",
+            "9": "The binding affinities of three unmatured antibodies were improved up to 160-fold.",
+            "10": "Many antibody designs demonstrated favorable thermostability.",
+            "11": "Many antibody designs demonstrated viral neutralization activity against Ebola pseudoviruses.",
+            "12": "Many antibody designs demonstrated viral neutralization activity against severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) pseudoviruses.",
+            "13": "The models that improve antibody binding also guide efficient evolution across diverse protein families.",
+            "14": "The models guide efficient evolution across selection pressures, including antibiotic resistance.",
+            "15": "The models guide efficient evolution across selection pressures, including enzyme activity.",
+            "16": "The results with the models are suggested to generalize to many settings."
+          }
+        },
+        "viewpoints": [
+          "Affinity maturation of antibodies has been guided by protein language models.",
+          "Screening 20 or fewer variants improved binding affinities up to 160-fold when guided by protein language models."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "PLMs have also been used to assist optimization of an uracil-N-glycosylase variant activity that enables programmable T-to-G and T-to-C base editing [27].",
+        "references": {
+          "27": {
+            "1": "Current base editors (BEs) use DNA deaminases to facilitate transition nucleotide substitutions.",
+            "2": "Cytidine BE (CBE) uses cytidine deaminase to facilitate transition nucleotide substitutions.",
+            "3": "Adenine BE (ABE) uses adenine deaminase to facilitate transition nucleotide substitutions.",
+            "4": "Combining cytidine BE (CBE) with glycosylase enzymes can induce limited transversion mutations.",
+            "5": "Combining adenine BE (ABE) with glycosylase enzymes can induce limited transversion mutations.",
+            "6": "There is a critical demand for base editors (BEs) capable of generating alternative mutation types.",
+            "7": "There is a critical demand for BEs capable of generating T>G corrections.",
+            "8": "Pre-trained protein language models were leveraged to optimize a uracil-N-glycosylase (UNG) variant.",
+            "9": "The optimized uracil-N-glycosylase (UNG) variant has altered specificity for thymines and is referred to as eTDG.",
+            "10": "After two rounds of testing fewer than 50 top-ranking variants, more than 50% of these variants exhibited over 1.5-fold enhancement in enzymatic activities.",
+            "11": "When eTDG was fused with nCas9, it induced programmable T-to-S (G/C) substitutions.",
+            "12": "The fusion of eTDG with nCas9 corrected the db/db diabetic mutation in mice, with up to 55% correction efficiency.",
+            "13": "The findings establish orthogonal strategies for developing novel base editors (BEs).",
+            "14": "The findings demonstrate the capacities of protein language models for optimizing enzymes.",
+            "15": "Protein language models can optimize enzymes without extensive task-specific training data."
+          }
+        },
+        "viewpoints": [
+          "Protein language models have been used to assist optimization of an uracil-N-glycosylase variant activity.",
+          "Optimized uracil-N-glycosylase variant activity enables programmable T-to-G base editing.",
+          "Optimized uracil-N-glycosylase variant activity enables programmable T-to-C base editing."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "However, a major open question is whether general evolutionary information learned from sequence variation across past evolution is sufficient to enable efficient evolution of a specific protein under specific selection pressure.",
+        "references": {},
+        "viewpoints": [
+          "It is a major open question whether general evolutionary information from sequence variation is sufficient for efficient evolution of a specific protein.",
+          "Efficient evolution of a specific protein under specific selection pressure is questioned in terms of relying on general evolutionary information."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Additionally, laboratory automation aided by biofoundries would be invaluable for generating the large volumes of data needed to develop ML models for protein engineering.",
+        "references": {},
+        "viewpoints": [
+          "Laboratory automation aided by biofoundries would be invaluable for generating large volumes of data.",
+          "Large volumes of data are needed to develop machine learning models for protein engineering."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "A fully integrated biofoundry combines high-throughput core instruments, including liquid handlers, thermocyclers, fragment analyzers, and high-content screening systems, with peripheral devices such as plate sealers, shakers, and incubators.",
+        "references": {},
+        "viewpoints": [
+          "A fully integrated biofoundry combines high-throughput core instruments.",
+          "A fully integrated biofoundry includes liquid handlers.",
+          "A fully integrated biofoundry includes thermocyclers.",
+          "A fully integrated biofoundry includes fragment analyzers.",
+          "A fully integrated biofoundry includes high-content screening systems.",
+          "A fully integrated biofoundry includes peripheral devices such as plate sealers.",
+          "A fully integrated biofoundry includes peripheral devices such as shakers.",
+          "A fully integrated biofoundry includes peripheral devices such as incubators."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "These components are seamlessly coordinated by robotic arms and scheduling software [28].",
+        "references": {
+          "28": {
+            "1": "Directed evolution is one of the most successful tools for protein engineering.",
+            "2": "Directed evolution is one of the most powerful tools for protein engineering.",
+            "3": "Designing a large library of variants for directed evolution can be laborious.",
+            "4": "Designing a large library of variants for directed evolution can be time-consuming.",
+            "5": "Designing a large library of variants for directed evolution can be costly.",
+            "6": "Constructing a large library of variants for directed evolution can be laborious.",
+            "7": "Constructing a large library of variants for directed evolution can be time-consuming.",
+            "8": "Constructing a large library of variants for directed evolution can be costly.",
+            "9": "Screening a large library of variants for directed evolution can be laborious.",
+            "10": "Screening a large library of variants for directed evolution can be time-consuming.",
+            "11": "Screening a large library of variants for directed evolution can be costly.",
+            "12": "The advent of machine learning in directed evolution is recent.",
+            "13": "Machine learning in directed evolution allows researchers to evaluate variants in silico.",
+            "14": "Machine learning in directed evolution allows researchers to guide a more efficient directed evolution campaign.",
+            "15": "Advancements in laboratory automation are recent.",
+            "16": "Recent advancements in laboratory automation have enabled the rapid execution of long, complex experiments.",
+            "17": "Recent advancements in laboratory automation enable high-throughput data acquisition in industrial settings.",
+            "18": "Recent advancements in laboratory automation enable high-throughput data acquisition in academic settings.",
+            "19": "High-throughput data acquisition provides the means to collect a large quantity of data required to develop machine learning models for protein engineering.",
+            "20": "A closed-loop in vitro continuous protein evolution framework is proposed.",
+            "21": "The proposed framework leverages machine learning.",
+            "22": "The proposed framework leverages laboratory automation.",
+            "23": "The paper provides a brief overview of recent developments in the field of directed evolution and related technologies."
+          }
+        },
+        "viewpoints": [
+          "The components of a fully integrated biofoundry are seamlessly coordinated by robotic arms.",
+          "The components of a fully integrated biofoundry are seamlessly coordinated by scheduling software."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "One example is PlasmidMaker which was developed for automated high-throughput plasmid design and construction [29].",
+        "references": {
+          "29": {
+            "1": "Plasmids are used extensively in basic biology.",
+            "2": "Plasmids are used extensively in applied biology.",
+            "3": "Design and construction of plasmids carrying complex genetic information remain time-consuming.",
+            "4": "Design and construction of plasmids carrying complex genetic information remain labor-intensive.",
+            "5": "Design and construction of plasmids carrying complex genetic information remain a rate-limiting step in performing sophisticated biological experiments.",
+            "6": "A versatile, robust, automated end-to-end platform named PlasmidMaker has been developed.",
+            "7": "PlasmidMaker allows error-free construction of plasmids with virtually any sequence.",
+            "8": "PlasmidMaker enables high throughput construction of plasmids.",
+            "9": "PlasmidMaker includes a versatile DNA assembly method using Pyrococcus furiosus Argonaute (PfAgo)-based artificial restriction enzymes.",
+            "10": "PlasmidMaker includes a user-friendly frontend for plasmid design.",
+            "11": "PlasmidMaker includes a backend that streamlines the workflow.",
+            "12": "PlasmidMaker integrates with a robotic system.",
+            "13": "PlasmidMaker was used as a proof of concept to generate 101 plasmids.",
+            "14": "The generated plasmids were from six different species.",
+            "15": "The generated plasmids ranged from 5 to 18 kb in size.",
+            "16": "The generated plasmids were made from up to 11 DNA fragments.",
+            "17": "PlasmidMaker should greatly expand the potential of synthetic biology."
+          }
+        },
+        "viewpoints": [
+          "PlasmidMaker was developed for automated high-throughput plasmid design.",
+          "PlasmidMaker was developed for automated high-throughput plasmid construction."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Furthermore, the combination of biofoundries and ML models has led to the application of BioAutomata, an automated closed-loop system designed for engineering the lycopene production pathway [30].",
+        "references": {
+          "30": {
+            "1": "Large-scale data acquisition and analysis are often required for successful implementation of the DBTL cycle in biosystems design.",
+            "2": "The implementation of the DBTL cycle has been hindered by experimental cost.",
+            "3": "The implementation of the DBTL cycle has been hindered by variability.",
+            "4": "The implementation of the DBTL cycle has been hindered by biases.",
+            "5": "The implementation of the DBTL cycle has been hindered by missed insights from traditional analysis methods.",
+            "6": "An integrated robotic system coupled with machine learning algorithms has been applied to fully automate the DBTL process for biosystems design.",
+            "7": "The capacity of the integrated robotic system and machine learning algorithms has been demonstrated by optimizing the lycopene biosynthetic pathway.",
+            "8": "The fully-automated robotic platform, BioAutomata, evaluates less than 1% of possible variants.",
+            "9": "BioAutomata outperforms random screening by 77%.",
+            "10": "A paired predictive model and Bayesian algorithm select experiments for the DBTL process.",
+            "11": "The experiments are performed by Illinois Biological Foundry for Advanced Biomanufacturing (iBioFAB).",
+            "12": "BioAutomata excels with black-box optimization problems.",
+            "13": "In black-box optimization problems, experiments are expensive.",
+            "14": "In black-box optimization problems, experiments are noisy.",
+            "15": "In black-box optimization problems, the success of the experiment is not dependent on extensive prior knowledge of biological mechanisms."
+          }
+        },
+        "viewpoints": [
+          "The combination of biofoundries and machine learning models has led to the application of BioAutomata.",
+          "BioAutomata is an automated closed-loop system designed for engineering the lycopene production pathway."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "An automated high-throughput genome editing platform was recently devised through which thousands of samples were automatically edited within a week [31].",
+        "references": {
+          "31": {
+            "1": "A great number of cell disease models with pathogenic SNVs are needed for the development of genome editing-based therapeutics.",
+            "2": "A great number of cell disease models with pathogenic SNVs are needed for broadly basic scientific research.",
+            "3": "The generation of traditional cell disease models is heavily dependent on large-scale manual operations.",
+            "4": "Large-scale manual operations in the generation of traditional cell disease models are time-consuming.",
+            "5": "Large-scale manual operations in the generation of traditional cell disease models are costly.",
+            "6": "Large-scale manual operations in the generation of traditional cell disease models are error-prone.",
+            "7": "An automated high-throughput platform is devised in this study.",
+            "8": "The automated high-throughput platform allows for thousands of samples to be automatically edited within a week.",
+            "9": "The automated high-throughput platform provides edited cells with high efficiency.",
+            "10": "Large in situ genome editing data is obtained by the automatic high-throughput platform.",
+            "11": "The Chromatin Accessibility Enabled Learning Model (CAELM) is developed to predict the performance of cytosine base editors (CBEs).",
+            "12": "Both chromatin accessibility and the context-sequence are utilized to build the Chromatin Accessibility Enabled Learning Model (CAELM).",
+            "13": "The Chromatin Accessibility Enabled Learning Model (CAELM) accurately predicts the result of in situ base editing.",
+            "14": "This work is expected to accelerate the development of base editing (BE)-based genetic therapies."
+          }
+        },
+        "viewpoints": [
+          "An automated high-throughput genome editing platform was devised.",
+          "The automated high-throughput genome editing platform enabled automatic editing of thousands of samples within a week."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "However, protein engineering has yet to fully leverage recent developments in biofoundries.",
+        "references": {},
+        "viewpoints": [
+          "Protein engineering has yet to fully leverage recent developments in biofoundries."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "A so-called self-driving autonomous machine for protein landscape exploration (SAMPLE) platform was developed for fully autonomous protein engineering [32].",
+        "references": {
+          "32": {
+            "1": "Protein engineering has nearly limitless applications in chemistry.",
+            "2": "Protein engineering has nearly limitless applications in energy.",
+            "3": "Protein engineering has nearly limitless applications in medicine.",
+            "4": "Creating new proteins with improved functions is slow, labor-intensive, and inefficient.",
+            "5": "Creating new proteins with novel functions is slow, labor-intensive, and inefficient.",
+            "6": "The Self-driving Autonomous Machines for Protein Landscape Exploration (SAMPLE) platform is presented for fully autonomous protein engineering.",
+            "7": "SAMPLE is driven by an intelligent agent that learns protein sequence-function relationships.",
+            "8": "SAMPLE is driven by an intelligent agent that designs new proteins.",
+            "9": "The intelligent agent in SAMPLE sends designs to a fully automated robotic system for experimental testing.",
+            "10": "The fully automated robotic system experimentally tests the designed proteins.",
+            "11": "The fully automated robotic system provides feedback to improve the intelligent agent's understanding of the system.",
+            "12": "Four SAMPLE agents are deployed with the goal of engineering glycoside hydrolase enzymes with enhanced thermal tolerance.",
+            "13": "The four SAMPLE agents show individual differences in their search behavior.",
+            "14": "All four SAMPLE agents quickly converge on thermostable enzymes.",
+            "15": "Self-driving laboratories automate the scientific discovery process.",
+            "16": "Self-driving laboratories accelerate the scientific discovery process.",
+            "17": "Self-driving laboratories hold great potential for protein engineering.",
+            "18": "Self-driving laboratories hold great potential for synthetic biology."
+          }
+        },
+        "viewpoints": [
+          "A self-driving autonomous machine for protein landscape exploration (SAMPLE) platform was developed.",
+          "The SAMPLE platform is used for fully autonomous protein engineering."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "However, the platform only assembled pre-synthesized DNA fragments from different homologues for exploring a small protein landscape containing 1352 protein sequences.",
+        "references": {},
+        "viewpoints": [
+          "The SAMPLE platform assembled pre-synthesized DNA fragments from different homologues.",
+          "The SAMPLE platform explored a small protein landscape containing 1352 protein sequences."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "A Bayesian optimization-guided evolutionary algorithm along with robotic experiments were also developed for protein engineering, and a four-site combinatorial library was explored by sampling 384 mutants each round for 4 rounds, 1536 mutants in total [33].",
+        "references": {
+          "33": []
+        },
+        "viewpoints": [
+          "A Bayesian optimization-guided evolutionary algorithm was developed for protein engineering.",
+          "Robotic experiments were developed for protein engineering.",
+          "A four-site combinatorial library was explored by sampling 384 mutants each round for 4 rounds, totaling 1536 mutants."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "However, the BO algorithm could not guide the mutant residue selection, and the generality of the algorithm remains unknown.",
+        "references": {},
+        "viewpoints": [
+          "The Bayesian optimization algorithm could not guide the mutant residue selection.",
+          "The generality of the Bayesian optimization algorithm remains unknown."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "In this study, we propose a protein engineering strategy that integrates the predictive power of PLMs with the operational efficiencies of an automated biofoundry.",
+        "references": {},
+        "viewpoints": [
+          "The study proposes a protein engineering strategy that integrates the predictive power of protein language models with operational efficiencies of an automated biofoundry."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "Within the Design-Build-Test-Learn cycle, the Learning and Design phases utilize insights from PLMs to elucidate protein sequence-fitness relationships and to sample novel mutants, while the Build and Test phases are efficiently conducted using automated biofoundries.",
+        "references": {},
+        "viewpoints": [
+          "In the Design-Build-Test-Learn cycle, the Learning and Design phases utilize insights from protein language models to elucidate protein sequence-fitness relationships.",
+          "In the Design-Build-Test-Learn cycle, the Learning and Design phases use insights from PLMs to sample novel mutants.",
+          "In the Design-Build-Test-Learn cycle, the Build and Test phases are efficiently conducted using automated biofoundries."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "Specifically, when applying PLMs for protein variants design, two modules were developed to predict high-fitness mutants for proteins without knowing the mutation sites and the proteins with mutation sites known, respectively.",
+        "references": {},
+        "viewpoints": [
+          "When applying protein language models for protein variants design, two modules were developed to predict high-fitness mutants for proteins without knowing the mutation sites.",
+          "When applying PLMs for protein variants design, two modules were developed to predict high-fitness mutants for proteins with mutation sites known."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "Our robotic systems are adept at building protein variants and collecting protein variants functional data continuously, ensuring high reproducibility with comprehensive metadata tracking and real-time data sharing.",
+        "references": {},
+        "viewpoints": [
+          "Robotic systems are adept at building protein variants.",
+          "Robotic systems are adept at collecting protein variants functional data continuously.",
+          "Robotic systems ensure high reproducibility with comprehensive metadata tracking.",
+          "Robotic systems ensure high reproducibility with real-time data sharing."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "By combining the advanced predictive capabilities of PLMs with the high-throughput functionalities of robotic systems, this method is designed to surpass traditional constraints and expedite the discovery and enhancement of proteins crucial for industrial applications.",
+        "references": {},
+        "viewpoints": [
+          "This method combines advanced predictive capabilities of protein language models with high-throughput functionalities of robotic systems.",
+          "The method is designed to surpass traditional constraints in protein engineering.",
+          "The method is designed to expedite the discovery and enhancement of proteins crucial for industrial applications."
+        ]
+      },
+      {
+        "idx": 44,
+        "sentence": "We used the Methanocaldococcus jannaschii p -cyanophenylalanine tRNA synthetase (pCNF-RS) as a model enzyme for validating the process.",
+        "references": {},
+        "viewpoints": [
+          "Methanocaldococcus jannaschii p-cyanophenylalanine tRNA synthetase (pCNF-RS) was used as a model enzyme for validating the process."
+        ]
+      },
+      {
+        "idx": 45,
+        "sentence": "In each round, 96 variants were designed by PLMs or a supervised ML model, and then constructed and tested by an automated biofoundry.",
+        "references": {},
+        "viewpoints": [
+          "In each round, 96 variants were designed by protein language models or a supervised machine learning model.",
+          "Designed variants were constructed and tested by an automated biofoundry."
+        ]
+      },
+      {
+        "idx": 46,
+        "sentence": "Four rounds were performed within half a month with the enzyme activity progressively improving, reaching its peak in the fourth round.",
+        "references": {},
+        "viewpoints": [
+          "Four rounds were performed within half a month.",
+          "Enzyme activity progressively improved over the rounds.",
+          "Enzyme activity reached its peak in the fourth round."
+        ]
+      },
+      {
+        "idx": 47,
+        "sentence": "The PLMeAE system exhibited superior performance compared to random selection and the traditional directed evolution strategy, and it has the potential to accelerate the engineering of other proteins.",
+        "references": {},
+        "viewpoints": [
+          "The PLMeAE system exhibited superior performance compared to random selection.",
+          "The PLMeAE system exhibited superior performance compared to the traditional directed evolution strategy.",
+          "The PLMeAE system has the potential to accelerate the engineering of other proteins."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56751-8_with_abstracts",
+    "base_id": "s41467-025-56751-8",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56751-8_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

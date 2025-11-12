@@ -1,0 +1,1071 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Rice ( Oryza sativa L.) is a major food crop with tropical origins and is sensitive to low temperatures. Temperate rice of the japonica subspecies is grown in a wider geographic range than indica and tropical japonica rice and can be grown in colder regions at higher altitudes and latitudes. In contrast, indica and tropical japonica rice are better suited for cultivation in regions with more abundant light and higher temperatures [1] , [2] . Considering the increased frequency of extreme weather events on a global scale, low-temperature stress is becoming a serious threat to rice production. In China, an estimated 3–5 million tons of rice production is lost annually due to low temperatures in the autumn [3] . From 1999 to 2012, rice production in China decreased by about 3.7% due to extreme cold [4] . Cold injury at the booting stage leads to spikelet sterility, a lower seed setting, and consequently a direct decrease in yield, resulting in irreparable losses [5] , [6] . Therefore, identifying new genes that confer cold tolerance at the booting stage would be beneficial for rice production. Cold tolerance is a complex trait controlled by multiple genes in rice, with different genes playing roles at various developmental stages. At the early stage of germination, favorable alleles of genes such as qLTG3-1 , OsLTPL159 and OsUBC12 promote rice germination and growth under low-temperature [7] , [8] , [9] . For instance, OsUBC12 encodes an E2 ubiquitin-conjugating enzyme, increase low temperature germinability in japonica rice by inhibiting ABA signaling [9] . At the seedling stage, genes such as LTG1 , COLD1 , qCTS9 , bZIP73 , HAN1 , COLD11 , COG1 , COG2 and COG3 have been identified through linkage analysis or association studies [10] , [11] , [12] , [13] , [14] , [15] , [16] , [17] , [18] . For example, COLD1 encodes a G-protein signaling regulator that interacts with the G-protein α subunit RGA1 to perceive cold signals, activating Ca 2+ channels to initiate cold-specific signaling [10] . COG1 encodes a receptor-like protein that, together with its co-receptor kinase OsSERL2, senses low temperatures and activates downstream defense responses through the MAPK cascade [11] . Other genes like LTG1 , qCTS9 , HAN1 and bZIP73 modulate cold tolerance through pathways involving auxin, brassinosteroid (BR) signaling, jasmonic acid (JA) and abscisic acid (ABA) [12] , [13] , [14] , [15] . COLD11 , COG2 and COG3 are involved in rice responses to cold stress through distinct pathways, including DNA repair, cell wall remodeling and maintenance of photosynthesis, respectively [16] , [17] , [18] . Although the studies on cold tolerance at the early stages have provided valuable insights, understanding the molecular mechanisms of cold tolerance at the booting stage is crucial due to its direct impact on grain yield. However, fewer genes for cold tolerance at the booting stage have been identified. bZIP73 involves in the bZIP73 Jap –qLTG3-1 Nip –sugar transport pathway, which promotes sugar transport to pollen at low temperatures [19] . CTB4a encodes a leucine-rich repeat receptor-like kinase that interacts with AtpB to increase energy supply, thereby improving the seed setting in rice grown at high altitudes [20] . CTB2 encodes a UDP-glucose sterol glucosyltransferase that mediates the accumulation of steryl glycoside and acyl steryl glycoside to maintain cell membrane permeability and reduce damage to pollen grains and pollen walls under cold stress conditions [21] . Other genes, such as Ctb1 (an F-box protein) [22] , qCTB7 (a PHD-finger domain protein) [23] and OsLEA9 (a late embryogenesis abundant protein) [24] , have been implicated in cold tolerance, although their precise molecular roles remain to be clarified. The calmodulin-binding transcriptional activator (CAMTA) family of transcription factors plays important roles in plant response to biotic and abiotic stresses. In Arabidopsis , AtSR1 (AtCAMTA3), AtCAMTA1 and AtCAMTA2 negatively regulate the biosynthesis of salicylic acid and N -hydroxypipecolic acid by suppressing the expression of AtSARD1 and AtCBP60g , which in turn suppresses plant immunity [25] . AtSR1, AtCAMTA1 and AtCAMTA2 along with AtCAMTA5 positively regulate freezing tolerance in Arabidopsis and can respond to low temperatures and activate the expression of AtDREB1 ( CBF ) genes and other cold-inducible genes [26] . AtSR1 activates several RNA interference (RNAi)-related genes for defense against viral invasion [27] . AtSR1 also functions as a transcriptional activator in drought stress and positively regulates drought tolerance [28] . Furthermore, CAMTA6 negatively regulate salt tolerance [29] . In rice, the CAMTA transcription factor OsCBT1 and OsCAMTA3 also negatively regulates plant immune responses to pathogens [30] , [31] , whereas the rice CAMTAs SCT1 and SCT2 synergistically repress wax synthesis regulatory 2 ( OsWR2 ) expression and negatively regulate heat tolerance [32] . However, whether CAMTA family transcription factors play a role in rice cold acclimatization remains unknown. In this work, we identify the CTB3 gene, which encodes a calmodulin-binding transcription factor controlling cold tolerance at the booting stage. The allele of CTB3 with the 57-bp and 284-bp deletions is derived from Chinese wild rice ( O. rufipogon ) and promotes the cold adaptation of japonica rice. OsTCP19 suppresses CTB3 expression by binding to the two indel regions and thereby negatively regulates cold tolerance at the booting stage. Furthermore, CTB3 activates the expression of OsTPP1 , leading to reduced Tre6P content. The lower Tre6P content promotes the expression of sugar-transporter-related genes, which increase the accumulation of sugar in the panicles, thereby enhancing cold tolerance. Our results show that the two favorable alleles of OsTCP19 and CTB3 have been selected and retained in japonica rice to improve cold tolerance and promote the expansion of rice to high-latitude regions. These findings highlight the role of CTB3 in promoting cold adaptation and offer a potential target for improving cold tolerance in rice breeding.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Rice (Oryza sativa L.) is a major food crop with tropical origins and is sensitive to low temperatures.",
+        "references": {},
+        "viewpoints": [
+          "Rice (Oryza sativa L.) is a major food crop.",
+          "Rice has tropical origins.",
+          "Rice is sensitive to low temperatures."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Temperate rice of the japonica subspecies is grown in a wider geographic range than indica and tropical japonica rice and can be grown in colder regions at higher altitudes and latitudes.",
+        "references": {},
+        "viewpoints": [
+          "Temperate rice of the japonica subspecies is grown in a wider geographic range than indica rice.",
+          "Temperate rice of the japonica subspecies is grown in a wider geographic range than tropical japonica rice.",
+          "Temperate rice of the japonica subspecies can be grown in colder regions.",
+          "Temperate rice of the japonica subspecies can be grown at higher altitudes.",
+          "Temperate rice of the japonica subspecies can be grown at higher latitudes."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In contrast, indica and tropical japonica rice are better suited for cultivation in regions with more abundant light and higher temperatures [1], [2].",
+        "references": {
+          "1": {
+            "1": "Crop domestications are long-term selection experiments.",
+            "2": "Crop domestications have greatly advanced human civilization.",
+            "3": "The domestication of cultivated rice (Oryza sativa L.) is one of the most important developments in history.",
+            "4": "The origins of cultivated rice (Oryza sativa L.) are controversial and have long been debated.",
+            "5": "The domestication processes of cultivated rice (Oryza sativa L.) are controversial and have long been debated.",
+            "6": "Genome sequences were generated from 446 geographically diverse accessions of the wild rice species Oryza rufipogon.",
+            "7": "Oryza rufipogon is the immediate ancestral progenitor of cultivated rice.",
+            "8": "Genome sequences were generated from 1,083 cultivated indica and japonica varieties.",
+            "9": "A comprehensive map of rice genome variation was constructed.",
+            "10": "In the search for signatures of selection, 55 selective sweeps that have occurred during domestication were identified.",
+            "11": "In-depth analyses of the domestication sweeps and genome-wide patterns reveal that Oryza sativa japonica rice was first domesticated from a specific population of Oryza rufipogon around the middle area of the Pearl River in southern China.",
+            "12": "Oryza sativa indica rice was subsequently developed from crosses between japonica rice and local wild rice.",
+            "13": "Oryza sativa indica rice development occurred as the initial cultivars spread into South East and South Asia.",
+            "14": "Domestication-associated traits are analysed through high-resolution genetic mapping.",
+            "15": "This study provides an important resource for rice breeding.",
+            "16": "This study provides an effective genomics approach for crop domestication research."
+          },
+          "2": []
+        },
+        "viewpoints": [
+          "Indica rice is better suited for cultivation in regions with more abundant light.",
+          "Indica rice is better suited for cultivation in regions with higher temperatures.",
+          "Tropical japonica rice is better suited for cultivation in regions with more abundant light.",
+          "Tropical japonica rice is better suited for cultivation in regions with higher temperatures."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Considering the increased frequency of extreme weather events on a global scale, low-temperature stress is becoming a serious threat to rice production.",
+        "references": {},
+        "viewpoints": [
+          "Low-temperature stress is becoming a serious threat to rice production due to the increased frequency of extreme weather events on a global scale."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In China, an estimated 3–5 million tons of rice production is lost annually due to low temperatures in the autumn [3].",
+        "references": {
+          "3": {
+            "1": "Cold stress is a major abiotic stress.",
+            "2": "Cold stress impedes rice production.",
+            "3": "An interconnected breeding (IB) population consisted of 497 advanced lines.",
+            "4": "The interconnected breeding (IB) population was developed using HHZ as the recurrent parent.",
+            "5": "Eight diverse elite indica lines were used as donors in developing the interconnected breeding (IB) population.",
+            "6": "The interconnected breeding (IB) population was used to identify stably expressed QTLs for cold tolerance at the booting stage.",
+            "7": "41,754 high-quality SNPs were obtained.",
+            "8": "The high-quality SNPs were obtained through re-sequencing of the interconnected breeding (IB) population.",
+            "9": "Phenotyping was conducted under field conditions.",
+            "10": "Phenotyping was conducted over a period of two years.",
+            "11": "Phenotyping was conducted in three locations.",
+            "12": "Association analysis identified six QTLs for cold tolerance.",
+            "13": "The identified QTLs for cold tolerance are located on chromosomes 3, 4, and 12.",
+            "14": "QTL qCT-3-2 showed stable cold tolerance across years.",
+            "15": "QTL qCT-3-2 showed stable cold tolerance across locations.",
+            "16": "QTL qCT-3-2 was fine-mapped to an approximately 192.9 kb region.",
+            "17": "Genome-wide association studies (GWAS) applied to an interconnected breeding (IB) population allow better integration of gene discovery and breeding.",
+            "18": "QTLs can be mapped in high resolution.",
+            "19": "QTLs can be quickly utilized in breeding."
+          }
+        },
+        "viewpoints": [
+          "In China, an estimated 3–5 million tons of rice production is lost annually due to low temperatures in the autumn."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "From 1999 to 2012, rice production in China decreased by about 3.7% due to extreme cold [4].",
+        "references": {
+          "4": {
+            "1": "Extreme climate events are a major risk to global food production.",
+            "2": "Extreme rainfall is often dismissed from historical analyses.",
+            "3": "Extreme rainfall is often dismissed from future projections.",
+            "4": "The impacts of extreme rainfall remain poorly understood.",
+            "5": "The mechanisms of extreme rainfall remain poorly understood.",
+            "6": "Long-term nationwide observations and multi-level rainfall manipulative experiments were used to explore the magnitude of extreme rainfall impacts on rice yield in China.",
+            "7": "Long-term nationwide observations and multi-level rainfall manipulative experiments were used to explore the mechanisms of extreme rainfall impacts on rice yield in China.",
+            "8": "Rice yield reductions due to extreme rainfall were comparable to those induced by extreme heat over the last two decades.",
+            "9": "Rice yield reductions due to extreme rainfall reached 7.6 ± 0.9% according to nationwide observations.",
+            "10": "Rice yield reductions due to extreme rainfall reached 8.1 ± 1.1% according to the crop model incorporating the mechanisms revealed from manipulative experiments.",
+            "11": "Extreme rainfall reduces rice yield by limiting nitrogen availability for tillering.",
+            "12": "Limiting nitrogen availability for tillering lowers per-area effective panicles.",
+            "13": "Extreme rainfall exerts physical disturbance on pollination.",
+            "14": "Physical disturbance on pollination declines per-panicle filled grains.",
+            "15": "Considering the mechanisms of nitrogen limitation and pollination disturbance, there is a projected ~8% additional yield reduction due to extreme rainfall under warmer climate by the end of the century.",
+            "16": "It is critical to account for extreme rainfall in food security assessments based on the findings."
+          }
+        },
+        "viewpoints": [
+          "From 1999 to 2012, rice production in China decreased by about 3.7% due to extreme cold."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Cold injury at the booting stage leads to spikelet sterility, a lower seed setting, and consequently a direct decrease in yield, resulting in irreparable losses [5], [6].",
+        "references": {
+          "5": {
+            "1": "Rice is generally sensitive to chilling stress.",
+            "2": "Chilling stress seriously affects the growth of rice.",
+            "3": "Chilling stress seriously affects the yield of rice.",
+            "4": "Since early in the last century, considerable efforts have been made to understand the physiological mechanisms underlying the response to chilling stress in rice.",
+            "5": "Since early in the last century, considerable efforts have been made to understand the molecular mechanisms underlying the response to chilling stress in rice.",
+            "6": "Considerable efforts have been made to improve rice chilling tolerance.",
+            "7": "The research trends and advances in the field of rice chilling stress response are reviewed.",
+            "8": "Phenotypic changes caused by cold stress in rice are briefly summarized.",
+            "9": "Biochemical changes caused by cold stress in rice are briefly summarized.",
+            "10": "Physiological explanations for changes caused by cold stress in rice are briefly summarized.",
+            "11": "Progress in the identification of quantitative trait loci (QTL) involved in rice chilling tolerance has been reviewed using data from the past 20 years.",
+            "12": "Progress in the identification of novel genes involved in rice chilling tolerance has been reviewed using data from the past 20 years.",
+            "13": "Progress in the identification of cellular pathways involved in rice chilling tolerance has been reviewed using data from the past 20 years.",
+            "14": "Important techniques used in the identification of QTL, novel genes, and cellular pathways involved in rice chilling tolerance have been reviewed.",
+            "15": "The advent of novel technologies has significantly advanced studies of cold tolerance in rice.",
+            "16": "Characterization of QTLs has sped up molecular design breeding for cold tolerance in rice varieties.",
+            "17": "Characterization of key genes has sped up molecular design breeding for cold tolerance in rice varieties.",
+            "18": "Characterization of molecular modules has sped up molecular design breeding for cold tolerance in rice varieties.",
+            "19": "Gene function studies in rice cold tolerance have been based on overexpression.",
+            "20": "Gene function studies in rice cold tolerance have been based on artificially generated mutants.",
+            "21": "Elucidating natural allelic variation in specific backgrounds is emerging as a novel approach for the study of cold tolerance in rice.",
+            "22": "Superior alleles identified through elucidation of natural allelic variation can directly facilitate breeding for cold tolerance in rice."
+          },
+          "6": {
+            "1": "Pollen viability directly affects the pollination process in rice.",
+            "2": "Pollen viability directly affects the ultimate grain yield of rice.",
+            "3": "MORN motif-containing proteins, OsMORN1 and OsMORN2, play a crucial role in maintaining pollen fertility.",
+            "4": "The pollen viability of the osmorn1 and osmorn2 mutants was reduced compared with the wild type (WT).",
+            "5": "Pollen germination in osmorn1 and osmorn2 mutants was abnormal compared with the wild type (WT).",
+            "6": "Osmorn1 and osmorn2 mutants showed significantly lower spikelet fertility than the wild type (WT).",
+            "7": "Osmorn1 and osmorn2 mutants had a lower seed-setting rate compared with the wild type (WT).",
+            "8": "Osmorn1 and osmorn2 mutants had a lower grain yield per plant compared with the wild type (WT).",
+            "9": "OsMORN1 is localized to the Golgi apparatus.",
+            "10": "OsMORN1 is localized to lipid droplets.",
+            "11": "Lipids associated with pollen viability underwent alterations in osmorn mutants.",
+            "12": "In osmorn1, diacylglyceride (18:3_18:3) was 5.1-fold higher than in the wild type (WT).",
+            "13": "In osmorn1, digalactosyldiacylglycerol (18:2_18:2) was 5.2-fold lower than in the wild type (WT).",
+            "14": "In osmorn2, triacylglycerol (TG) (16:0_18:2_18:3) was 8.3-fold higher than in the wild type (WT).",
+            "15": "In osmorn2, TG (16:0_18:1_18:3) was 8.5-fold lower than in the wild type (WT).",
+            "16": "OsMORN1 and OsMORN2 are associated with rice cold tolerance.",
+            "17": "Osmorn1 and osmorn2 mutants were more sensitive to chilling stress than the wild type (WT).",
+            "18": "Osmorn mutants displayed increased hydrogen peroxide accumulation.",
+            "19": "Osmorn mutants displayed reduced antioxidant enzyme activities.",
+            "20": "Osmorn mutants showed elevated malondialdehyde content.",
+            "21": "Osmorn mutants exhibited a significantly decreased seedling survival rate.",
+            "22": "Lipidomics analysis revealed distinct alterations in lipids under low temperature in osmorn mutants.",
+            "23": "Significant changes were observed in TG (18:2_18:3_18:3) in osmorn1 compared to the wild type (WT) under low temperature.",
+            "24": "Significant changes were observed in TG (18:4_18:2_18:2) in osmorn1 compared to the wild type (WT) under low temperature.",
+            "25": "Significant changes were observed in TG (16:0_18:2_18:2) in osmorn2 compared to the wild type (WT) under low temperature.",
+            "26": "Significant changes were observed in PI (17:2_18:3) in osmorn2 compared to the wild type (WT) under low temperature.",
+            "27": "OsMORN1 and OsMORN2 regulate pollen viability through maintaining lipid homeostasis.",
+            "28": "OsMORN1 and OsMORN2 regulate cold tolerance through maintaining lipid homeostasis."
+          }
+        },
+        "viewpoints": [
+          "Cold injury at the booting stage leads to spikelet sterility.",
+          "Cold injury at the booting stage leads to a lower seed setting.",
+          "Cold injury at the booting stage leads to a direct decrease in yield.",
+          "Cold injury at the booting stage results in irreparable losses."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Therefore, identifying new genes that confer cold tolerance at the booting stage would be beneficial for rice production.",
+        "references": {},
+        "viewpoints": [
+          "Identifying new genes that confer cold tolerance at the booting stage would be beneficial for rice production."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Cold tolerance is a complex trait controlled by multiple genes in rice, with different genes playing roles at various developmental stages.",
+        "references": {},
+        "viewpoints": [
+          "Cold tolerance is a complex trait controlled by multiple genes in rice.",
+          "Different genes control cold tolerance at various developmental stages in rice."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "At the early stage of germination, favorable alleles of genes such as qLTG3-1, OsLTPL159 and OsUBC12 promote rice germination and growth under low temperature [7], [8], [9].",
+        "references": {
+          "7": {
+            "1": "Tolerance to abiotic stress is an important agronomic trait in crops.",
+            "2": "Tolerance to abiotic stress in crops is controlled by many genes.",
+            "3": "The genes controlling tolerance to abiotic stress in crops are called quantitative trait loci (QTLs).",
+            "4": "Identification of quantitative trait loci (QTLs) will contribute to the understanding of plant biology.",
+            "5": "Identification of quantitative trait loci (QTLs) will contribute to plant breeding.",
+            "6": "Identification of quantitative trait loci (QTLs) will help achieve stable crop production around the world.",
+            "7": "Three quantitative trait loci (QTLs) controlling low-temperature tolerance at the germination stage were previously mapped.",
+            "8": "Map-based cloning was performed to understand the molecular basis of the QTL qLTG3-1.",
+            "9": "The QTL qLTG3-1 is a quantitative trait locus for low-temperature germinability on chromosome 3.",
+            "10": "The QTL qLTG3-1 is encoded by a protein of unknown function.",
+            "11": "The QTL qLTG3-1 is strongly expressed in the embryo during seed germination.",
+            "12": "Before and during seed germination, specific localization of beta-glucuronidase staining was observed in the tissues covering the embryo.",
+            "13": "The tissues covering the embryo that showed beta-glucuronidase staining involved the epiblast covering the coleoptile.",
+            "14": "The tissues covering the embryo that showed beta-glucuronidase staining involved the aleurone layer of the seed coat.",
+            "15": "Expression of qLTG3-1 was tightly associated with vacuolation of the tissues covering the embryo.",
+            "16": "The vacuolation of the tissues covering the embryo may cause tissue weakening.",
+            "17": "The weakening of tissues may result in a reduction of the mechanical resistance to the growth potential of the coleoptile.",
+            "18": "The phenomena observed in the expression and effects of qLTG3-1 are similar to the model system of seed germination presented by dicot plants.",
+            "19": "The similarity in seed germination processes suggests that the model may be conserved in both dicot and monocot plants."
+          },
+          "8": {
+            "1": "Nonspecific lipid transfer proteins (nsLTPs) play critical roles in plant development.",
+            "2": "Nonspecific lipid transfer proteins (nsLTPs) play critical roles in plant response to abiotic stresses.",
+            "3": "The rice lipid transfer protein, OsLTPL159, is associated with cold tolerance at the early seedling stage.",
+            "4": "Overexpression of OsLTPL159 is being studied but the exact context or outcome is not fully provided in this section."
+          },
+          "9": {
+            "1": "Low-temperature germination (LTG) is an important agronomic trait for rice (Oryza sativa).",
+            "2": "Japonica rice has a greater capacity for germination at low temperatures than the indica subpopulation.",
+            "3": "The genetic basis underlying low-temperature germination in rice is poorly understood.",
+            "4": "The molecular mechanisms underlying low-temperature germination in rice are poorly understood.",
+            "5": "OsUBC12 encodes an E2 ubiquitin-conjugating enzyme.",
+            "6": "OsUBC12 increases low-temperature germinability in japonica rice.",
+            "7": "A transposon insertion in the promoter of OsUBC12 enhances its expression.",
+            "8": "The increased expression of OsUBC12 due to the transposon insertion is responsible for increasing low-temperature germinability in japonica rice.",
+            "9": "Transposon insertion in the OsUBC12 promoter mainly occurs in the japonica lineage according to natural variation analysis.",
+            "10": "Variation detected in eight representative two-line male sterile lines suggests allele introgression by indica-japonica hybridization breeding.",
+            "11": "Varieties carrying the japonica OsUBC12 locus (transposon insertion) have higher low-temperature germinability than varieties without the locus.",
+            "12": "OsUBC12 negatively regulates ABA signaling according to further molecular analysis.",
+            "13": "OsUBC12-regulated seed germination depends on a conserved active site required for ubiquitin-conjugating enzyme activity.",
+            "14": "OsUBC12-regulated ABA signaling depends on a conserved active site required for ubiquitin-conjugating enzyme activity.",
+            "15": "OsUBC12 directly associates with rice SUCROSE NON-FERMENTING 1-RELATED PROTEIN KINASE 1.1 (OsSnRK1.1).",
+            "16": "OsUBC12 promotes the degradation of OsSnRK1.1.",
+            "17": "OsSnRK1.1 inhibits low-temperature germination by enhancing ABA signaling.",
+            "18": "OsSnRK1.1 acts downstream of OsUBC12.",
+            "19": "The findings shed light on the underlying mechanisms of UBC12 regulating low-temperature germination.",
+            "20": "The findings provide genetic reference points for improving low-temperature germination in indica rice."
+          }
+        },
+        "viewpoints": [
+          "At the early stage of germination, favorable alleles of the gene qLTG3-1 promote rice germination and growth under low temperature.",
+          "At the early stage of germination, favorable alleles of the gene OsLTPL159 promote rice germination and growth under low temperature.",
+          "At the early stage of germination, favorable alleles of the gene OsUBC12 promote rice germination and growth under low temperature."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "For instance, OsUBC12 encodes an E2 ubiquitin-conjugating enzyme, increase low temperature germinability in japonica rice by inhibiting ABA signaling [9].",
+        "references": {
+          "9": {
+            "1": "Low-temperature germination (LTG) is an important agronomic trait for rice (Oryza sativa).",
+            "2": "Japonica rice has a greater capacity for germination at low temperatures than the indica subpopulation.",
+            "3": "The genetic basis underlying low-temperature germination in rice is poorly understood.",
+            "4": "The molecular mechanisms underlying low-temperature germination in rice are poorly understood.",
+            "5": "OsUBC12 encodes an E2 ubiquitin-conjugating enzyme.",
+            "6": "OsUBC12 increases low-temperature germinability in japonica rice.",
+            "7": "A transposon insertion in the promoter of OsUBC12 enhances its expression.",
+            "8": "The increased expression of OsUBC12 due to the transposon insertion is responsible for increasing low-temperature germinability in japonica rice.",
+            "9": "Transposon insertion in the OsUBC12 promoter mainly occurs in the japonica lineage according to natural variation analysis.",
+            "10": "Variation detected in eight representative two-line male sterile lines suggests allele introgression by indica-japonica hybridization breeding.",
+            "11": "Varieties carrying the japonica OsUBC12 locus (transposon insertion) have higher low-temperature germinability than varieties without the locus.",
+            "12": "OsUBC12 negatively regulates ABA signaling according to further molecular analysis.",
+            "13": "OsUBC12-regulated seed germination depends on a conserved active site required for ubiquitin-conjugating enzyme activity.",
+            "14": "OsUBC12-regulated ABA signaling depends on a conserved active site required for ubiquitin-conjugating enzyme activity.",
+            "15": "OsUBC12 directly associates with rice SUCROSE NON-FERMENTING 1-RELATED PROTEIN KINASE 1.1 (OsSnRK1.1).",
+            "16": "OsUBC12 promotes the degradation of OsSnRK1.1.",
+            "17": "OsSnRK1.1 inhibits low-temperature germination by enhancing ABA signaling.",
+            "18": "OsSnRK1.1 acts downstream of OsUBC12.",
+            "19": "The findings shed light on the underlying mechanisms of UBC12 regulating low-temperature germination.",
+            "20": "The findings provide genetic reference points for improving low-temperature germination in indica rice."
+          }
+        },
+        "viewpoints": [
+          "OsUBC12 encodes an E2 ubiquitin-conjugating enzyme.",
+          "OsUBC12 increases low temperature germinability in japonica rice by inhibiting ABA signaling."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "At the seedling stage, genes such as LTG1, COLD1, qCTS9, bZIP73, HAN1, COLD11, COG1, COG2 and COG3 have been identified through linkage analysis or association studies [10], [11], [12], [13], [14], [15], [16], [17], [18].",
+        "references": {
+          "10": {
+            "1": "Rice is sensitive to cold.",
+            "2": "Rice can be grown only in certain climate zones.",
+            "3": "Human selection of japonica rice has extended its growth zone to regions with lower temperatures.",
+            "4": "The molecular basis of japonica rice's adaptation to regions with lower temperatures remains unknown.",
+            "5": "The quantitative trait locus COLD1 confers chilling tolerance in japonica rice.",
+            "6": "Overexpression of COLD1(jap) significantly enhances chilling tolerance in japonica rice.",
+            "7": "Rice lines with deficiency of COLD1(jap) are sensitive to cold.",
+            "8": "Rice lines with downregulation of COLD1(jap) are sensitive to cold.",
+            "9": "COLD1 encodes a regulator of G-protein signaling.",
+            "10": "The regulator of G-protein signaling encoded by COLD1 localizes on the plasma membrane.",
+            "11": "The regulator of G-protein signaling encoded by COLD1 localizes on the endoplasmic reticulum (ER).",
+            "12": "The regulator of G-protein signaling encoded by COLD1 interacts with the G-protein α subunit to activate the Ca(2+) channel for sensing low temperature.",
+            "13": "The regulator of G-protein signaling encoded by COLD1 interacts with the G-protein α subunit to accelerate G-protein GTPase activity.",
+            "14": "A SNP in COLD1, SNP2, is responsible for the ability of COLD(jap/ind) to confer chilling tolerance.",
+            "15": "SNP2 in COLD1 originated from Chinese Oryza rufipogon.",
+            "16": "The importance of COLD1 in plant adaptation is supported by the fact that SNP2 is responsible for the ability of COLD(jap/ind) to confer chilling tolerance."
+          },
+          "11": {
+            "1": "Improvement of chilling tolerance is a key strategy to address the potential threat from abnormal temperatures in rice production.",
+            "2": "The signaling network triggered by receptors is crucial for the improvement of chilling tolerance.",
+            "3": "Little is known about the QTL genes encoding membrane complexes for sensing cold in rice.",
+            "4": "Chilling-tolerance in Gengdao/japonica rice 1 (COG1) is isolated from a chromosome segment substitution line.",
+            "5": "The chromosome segment substitution line contains a QTL (qCS11-jap) for chilling sensitivity.",
+            "6": "The major gene COG1 confers chilling tolerance in japonica rice.",
+            "7": "In natural rice populations, only haplogroup1 encodes a functional COG1.",
+            "8": "COG1 originates from Chinese O. Rufipogon.",
+            "9": "COG1 is fixed in japonica rice during domestication.",
+            "10": "COG1 is a membrane-localized LRR-RLP.",
+            "11": "COG1 targets and activates the kinase OsSERL2 in a cold-induced manner.",
+            "12": "Activation of the kinase OsSERL2 by COG1 promotes chilling tolerance.",
+            "13": "The cold signal transmitted by COG1-OsSERL2 activates OsMAPK3 in the cytoplasm.",
+            "14": "The findings reveal a cold-sensing complex.",
+            "15": "The cold-sensing complex mediates the signaling network for chilling defense in rice."
+          },
+          "12": {
+            "1": "Low temperature is a prevalent factor limiting the productivity of rice.",
+            "2": "Low temperature is a prevalent factor limiting the geographical distribution of rice.",
+            "3": "Significant progress has been made in elucidating the effect of low temperature on seed germination in rice.",
+            "4": "Significant progress has been made in elucidating the effect of low temperature on reproductive development in rice.",
+            "5": "The genetic component affecting vegetative growth under low temperature in rice is poorly understood.",
+            "6": "Rice cultivars with the dominant LTG1 allele are more tolerant of low temperatures than those with the ltg1 allele.",
+            "7": "The temperature range of 15-25°C is prevalent in high-altitude, temperate zones and high-latitude areas.",
+            "8": "LTG1 encodes a casein kinase I.",
+            "9": "A map-based cloning strategy was used to show that LTG1 encodes a casein kinase I.",
+            "10": "A functional nucleotide polymorphism was identified in the coding region of LTG1.",
+            "11": "The functional nucleotide polymorphism causes a single amino acid substitution (I357K).",
+            "12": "The amino acid substitution (I357K) is associated with the growth rate of rice plants grown at low temperatures.",
+            "13": "The amino acid substitution (I357K) is associated with the heading date of rice plants grown at low temperatures.",
+            "14": "The amino acid substitution (I357K) is associated with the yield of rice plants grown at low temperatures.",
+            "15": "LTG1 affects rice growth at low temperatures via an auxin-dependent process.",
+            "16": "Phylogenetic analysis suggests that the ltg1 haplotype arose before the domestication of rice in tropical climates.",
+            "17": "LTG1 plays an important role in the adaptive growth of rice cultivars under conditions of low ambient temperature.",
+            "18": "LTG1 plays an important role in the fitness of rice cultivars under conditions of low ambient temperature."
+          },
+          "13": {
+            "1": "Identification and cloning of cold-tolerant genes are crucial for molecular rice breeding for cold tolerance.",
+            "2": "Cold-tolerant genes need to stably express under different cold environments for effective molecular rice breeding.",
+            "3": "In a previous study, a cold-tolerant QTL at the seedling stage, qCTS-9, was identified.",
+            "4": "The QTL qCTS-9 could be detected under different cold environments.",
+            "5": "The detection of qCTS-9 was conducted using a recombinant inbred line (RIL) population.",
+            "6": "The RIL population was derived from a cold-tolerant variety, Lijiangxintuanheigu (LTH), and a cold-sensitive variety, Shanhuangzhan 2 (SHZ-2).",
+            "7": "In this study, eight candidate genes within the qCTS-9 interval were identified.",
+            "8": "The identification was achieved through integrated analysis of QTL mapping with genomewide differential expression profiling of Lijiangxintuanheigu (LTH).",
+            "9": "The qRT-PCR assay showed that only Os09g0410300 exhibited different expression patterns between Lijiangxintuanheigu (LTH) and Shanhuangzhan 2 (SHZ-2) during cold stress.",
+            "10": "There was a significantly positive correlation between the cold induction of Os09g0410300 and seedling cold tolerance in the RI lines.",
+            "11": "Five SNPs in the promoters of Os09g0410300 were detected between Lijiangxintuanheigu (LTH) and Shanhuangzhan 2 (SHZ-2).",
+            "12": "One InDel in the promoters of Os09g0410300 was detected between Lijiangxintuanheigu (LTH) and Shanhuangzhan 2 (SHZ-2).",
+            "13": "The InDel marker ID410300, designed based on the insertion-deletion polymorphism in the promoter, was significantly associated with seedling cold tolerance in the RIL population.",
+            "14": "Os09g0410300 over-expression plants exhibited enhanced cold tolerance at the seedling stage.",
+            "15": "Os09g0410300 over-expression plants exhibited more cold tolerance compared with the wild-type plants.",
+            "16": "The results suggest that Os09g0410300 is the functional gene underlying qCTS-9.",
+            "17": "Os09g0410300 is a novel gene that contributes to enhancing cold tolerance at the seedling stage in rice.",
+            "18": "Identification of the functional gene underlying qCTS-9 will facilitate molecular breeding for cold tolerance at the seedling stage in rice.",
+            "19": "Development of the gene-specific marker will facilitate molecular breeding for cold tolerance at the seedling stage in rice.",
+            "20": "The facilitation of molecular breeding for cold tolerance in rice will occur through a transgenic approach and marker-assisted selection (MAS)."
+          },
+          "14": {},
+          "15": {
+            "1": "Cold stress limits the production of rice (Oryza sativa).",
+            "2": "Cold stress limits the geographic distribution of rice (Oryza sativa).",
+            "3": "The growth range of japonica subspecies has expanded northward compared to modern wild rice (O. rufipogon).",
+            "4": "The molecular basis of the adaptation of japonica subspecies to expanded growth range remains unclear.",
+            "5": "bZIP73 is a bZIP transcription factor-coding gene with only one functional polymorphism (+511 G>A) between the two subspecies japonica and indica.",
+            "6": "bZIP73 may have facilitated the adaptation of japonica subspecies to cold climates."
+          },
+          "16": {
+            "1": "Abnormal temperature is caused by global climate change.",
+            "2": "Global climate change threatens rice production.",
+            "3": "A defense signaling network for chilling has been uncovered in plants.",
+            "4": "Less is known about repairing DNA damage produced from overwhelmed defense in plants.",
+            "5": "Less is known about the evolution of DNA damage repair during domestication.",
+            "6": "A major QTL was genetically identified in this study."
+          },
+          "17": {
+            "1": "COG2 encodes an extensin.",
+            "2": "COG2 represses chilling tolerance by affecting cell wall composition.",
+            "3": "Rice is a major crop.",
+            "4": "Rice is susceptible to chilling stress.",
+            "5": "Chilling tolerance is a complex trait.",
+            "6": "Chilling tolerance is controlled by multiple quantitative trait loci (QTLs).",
+            "7": "The QTL gene COG2 negatively regulates cold tolerance at the seedling stage in rice.",
+            "8": "COG2 overexpression transgenic plants are sensitive to cold.",
+            "9": "COG2 knockout transgenic lines enhance chilling tolerance.",
+            "10": "Hap1 is a specific haplotype in japonica/Geng rice.",
+            "11": "Hap1 correlates with chilling tolerance.",
+            "12": "SNP1 in the COG2 promoter is a specific divergence.",
+            "13": "SNP1 leads to the difference in COG2 expression levels between japonica/Geng and indica/Xian cultivars.",
+            "14": "COG2 encodes a cell wall-localized extensin.",
+            "15": "COG2 affects cell wall composition, including pectin and cellulose.",
+            "16": "COG2 affects cell wall composition to defend against chilling stress.",
+            "17": "The results extend the understanding of environmental adaptation in rice.",
+            "18": "The results provide an editing target for molecular design breeding of cold tolerance in rice."
+          },
+          "18": {
+            "1": "Chilling stress induced by global climate change harms rice production.",
+            "2": "Rice production is especially harmed at the seedling and booting stage by chilling stress.",
+            "3": "Rice production harms from chilling stress impact the food supply for half the population of the world.",
+            "4": "Key quantitative trait locus genes have been identified in individual stages of rice development.",
+            "5": "Few genes have been reported to function at both the seedling and booting stages of rice development.",
+            "6": "Chromosome segment substitution lines (CSSLs) were used to help identify the major gene Chilling-tolerance in Geng/japonica rice 3 (COG3).",
+            "7": "A combination of map-based cloning and phenotypes of the mutants and overexpression lines were used to identify COG3.",
+            "8": "COG3 is a major gene of q chilling-tolerance at the booting and seedling stage 11 (qCTBS11).",
+            "9": "COG3 confers chilling tolerance at both seedling and booting stages in rice.",
+            "10": "COG3 was significantly upregulated in Nipponbare rice under chilling treatment.",
+            "11": "COG3 expression in Nipponbare under chilling treatment was higher compared to COG3 expression in 93-11.",
+            "12": "Loss-of-function mutants cog3 showed reduced chilling tolerance.",
+            "13": "Overexpression of COG3 enhanced chilling tolerance.",
+            "14": "Genome evolution and genetic analysis suggest that COG3 may have undergone strong selection during domestication.",
+            "15": "COG3 may have undergone strong selection specifically in temperate japonica rice during domestication.",
+            "16": "COG3 is a putative calmodulin-binding protein.",
+            "17": "COG3 physically interacts with OsFtsH2 in the chloroplast.",
+            "18": "In cog3-1 mutants, OsFtsH2-mediated D1 degradation was impaired under chilling treatment.",
+            "19": "OsFtsH2-mediated D1 degradation under chilling treatment is less impaired in wild-type compared to cog3-1 mutants.",
+            "20": "COG3 is necessary for maintaining OsFtsH2 protease activity.",
+            "21": "Maintaining OsFtsH2 protease activity is necessary to regulate chilling tolerance at the booting and seedling stage in rice."
+          }
+        },
+        "viewpoints": [
+          "At the seedling stage, the gene LTG1 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene COLD1 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene qCTS9 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene bZIP73 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene HAN1 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene COLD11 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene COG1 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene COG2 has been identified through linkage analysis or association studies.",
+          "At the seedling stage, the gene COG3 has been identified through linkage analysis or association studies."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "For example, COLD1 encodes a G-protein signaling regulator that interacts with the G-protein α subunit RGA1 to perceive cold signals, activating Ca2+ channels to initiate cold-specific signaling [10].",
+        "references": {
+          "10": {
+            "1": "Rice is sensitive to cold.",
+            "2": "Rice can be grown only in certain climate zones.",
+            "3": "Human selection of japonica rice has extended its growth zone to regions with lower temperatures.",
+            "4": "The molecular basis of japonica rice's adaptation to regions with lower temperatures remains unknown.",
+            "5": "The quantitative trait locus COLD1 confers chilling tolerance in japonica rice.",
+            "6": "Overexpression of COLD1(jap) significantly enhances chilling tolerance in japonica rice.",
+            "7": "Rice lines with deficiency of COLD1(jap) are sensitive to cold.",
+            "8": "Rice lines with downregulation of COLD1(jap) are sensitive to cold.",
+            "9": "COLD1 encodes a regulator of G-protein signaling.",
+            "10": "The regulator of G-protein signaling encoded by COLD1 localizes on the plasma membrane.",
+            "11": "The regulator of G-protein signaling encoded by COLD1 localizes on the endoplasmic reticulum (ER).",
+            "12": "The regulator of G-protein signaling encoded by COLD1 interacts with the G-protein α subunit to activate the Ca(2+) channel for sensing low temperature.",
+            "13": "The regulator of G-protein signaling encoded by COLD1 interacts with the G-protein α subunit to accelerate G-protein GTPase activity.",
+            "14": "A SNP in COLD1, SNP2, is responsible for the ability of COLD(jap/ind) to confer chilling tolerance.",
+            "15": "SNP2 in COLD1 originated from Chinese Oryza rufipogon.",
+            "16": "The importance of COLD1 in plant adaptation is supported by the fact that SNP2 is responsible for the ability of COLD(jap/ind) to confer chilling tolerance."
+          }
+        },
+        "viewpoints": [
+          "COLD1 encodes a G-protein signaling regulator.",
+          "COLD1 interacts with the G-protein α subunit RGA1 to perceive cold signals.",
+          "COLD1 activates Ca2+ channels to initiate cold-specific signaling."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "COG1 encodes a receptor-like protein that, together with its co-receptor kinase OsSERL2, senses low temperatures and activates downstream defense responses through the MAPK cascade [11].",
+        "references": {
+          "11": {
+            "1": "Improvement of chilling tolerance is a key strategy to address the potential threat from abnormal temperatures in rice production.",
+            "2": "The signaling network triggered by receptors is crucial for the improvement of chilling tolerance.",
+            "3": "Little is known about the QTL genes encoding membrane complexes for sensing cold in rice.",
+            "4": "Chilling-tolerance in Gengdao/japonica rice 1 (COG1) is isolated from a chromosome segment substitution line.",
+            "5": "The chromosome segment substitution line contains a QTL (qCS11-jap) for chilling sensitivity.",
+            "6": "The major gene COG1 confers chilling tolerance in japonica rice.",
+            "7": "In natural rice populations, only haplogroup1 encodes a functional COG1.",
+            "8": "COG1 originates from Chinese O. Rufipogon.",
+            "9": "COG1 is fixed in japonica rice during domestication.",
+            "10": "COG1 is a membrane-localized LRR-RLP.",
+            "11": "COG1 targets and activates the kinase OsSERL2 in a cold-induced manner.",
+            "12": "Activation of the kinase OsSERL2 by COG1 promotes chilling tolerance.",
+            "13": "The cold signal transmitted by COG1-OsSERL2 activates OsMAPK3 in the cytoplasm.",
+            "14": "The findings reveal a cold-sensing complex.",
+            "15": "The cold-sensing complex mediates the signaling network for chilling defense in rice."
+          }
+        },
+        "viewpoints": [
+          "COG1 encodes a receptor-like protein.",
+          "COG1, together with its co-receptor kinase OsSERL2, senses low temperatures.",
+          "COG1 activates downstream defense responses through the MAPK cascade."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Other genes like LTG1, qCTS9, HAN1 and bZIP73 modulate cold tolerance through pathways involving auxin, brassinosteroid (BR) signaling, jasmonic acid (JA) and abscisic acid (ABA) [12], [13], [14], [15].",
+        "references": {
+          "12": {
+            "1": "Low temperature is a prevalent factor limiting the productivity of rice.",
+            "2": "Low temperature is a prevalent factor limiting the geographical distribution of rice.",
+            "3": "Significant progress has been made in elucidating the effect of low temperature on seed germination in rice.",
+            "4": "Significant progress has been made in elucidating the effect of low temperature on reproductive development in rice.",
+            "5": "The genetic component affecting vegetative growth under low temperature in rice is poorly understood.",
+            "6": "Rice cultivars with the dominant LTG1 allele are more tolerant of low temperatures than those with the ltg1 allele.",
+            "7": "The temperature range of 15-25°C is prevalent in high-altitude, temperate zones and high-latitude areas.",
+            "8": "LTG1 encodes a casein kinase I.",
+            "9": "A map-based cloning strategy was used to show that LTG1 encodes a casein kinase I.",
+            "10": "A functional nucleotide polymorphism was identified in the coding region of LTG1.",
+            "11": "The functional nucleotide polymorphism causes a single amino acid substitution (I357K).",
+            "12": "The amino acid substitution (I357K) is associated with the growth rate of rice plants grown at low temperatures.",
+            "13": "The amino acid substitution (I357K) is associated with the heading date of rice plants grown at low temperatures.",
+            "14": "The amino acid substitution (I357K) is associated with the yield of rice plants grown at low temperatures.",
+            "15": "LTG1 affects rice growth at low temperatures via an auxin-dependent process.",
+            "16": "Phylogenetic analysis suggests that the ltg1 haplotype arose before the domestication of rice in tropical climates.",
+            "17": "LTG1 plays an important role in the adaptive growth of rice cultivars under conditions of low ambient temperature.",
+            "18": "LTG1 plays an important role in the fitness of rice cultivars under conditions of low ambient temperature."
+          },
+          "13": {
+            "1": "Identification and cloning of cold-tolerant genes are crucial for molecular rice breeding for cold tolerance.",
+            "2": "Cold-tolerant genes need to stably express under different cold environments for effective molecular rice breeding.",
+            "3": "In a previous study, a cold-tolerant QTL at the seedling stage, qCTS-9, was identified.",
+            "4": "The QTL qCTS-9 could be detected under different cold environments.",
+            "5": "The detection of qCTS-9 was conducted using a recombinant inbred line (RIL) population.",
+            "6": "The RIL population was derived from a cold-tolerant variety, Lijiangxintuanheigu (LTH), and a cold-sensitive variety, Shanhuangzhan 2 (SHZ-2).",
+            "7": "In this study, eight candidate genes within the qCTS-9 interval were identified.",
+            "8": "The identification was achieved through integrated analysis of QTL mapping with genomewide differential expression profiling of Lijiangxintuanheigu (LTH).",
+            "9": "The qRT-PCR assay showed that only Os09g0410300 exhibited different expression patterns between Lijiangxintuanheigu (LTH) and Shanhuangzhan 2 (SHZ-2) during cold stress.",
+            "10": "There was a significantly positive correlation between the cold induction of Os09g0410300 and seedling cold tolerance in the RI lines.",
+            "11": "Five SNPs in the promoters of Os09g0410300 were detected between Lijiangxintuanheigu (LTH) and Shanhuangzhan 2 (SHZ-2).",
+            "12": "One InDel in the promoters of Os09g0410300 was detected between Lijiangxintuanheigu (LTH) and Shanhuangzhan 2 (SHZ-2).",
+            "13": "The InDel marker ID410300, designed based on the insertion-deletion polymorphism in the promoter, was significantly associated with seedling cold tolerance in the RIL population.",
+            "14": "Os09g0410300 over-expression plants exhibited enhanced cold tolerance at the seedling stage.",
+            "15": "Os09g0410300 over-expression plants exhibited more cold tolerance compared with the wild-type plants.",
+            "16": "The results suggest that Os09g0410300 is the functional gene underlying qCTS-9.",
+            "17": "Os09g0410300 is a novel gene that contributes to enhancing cold tolerance at the seedling stage in rice.",
+            "18": "Identification of the functional gene underlying qCTS-9 will facilitate molecular breeding for cold tolerance at the seedling stage in rice.",
+            "19": "Development of the gene-specific marker will facilitate molecular breeding for cold tolerance at the seedling stage in rice.",
+            "20": "The facilitation of molecular breeding for cold tolerance in rice will occur through a transgenic approach and marker-assisted selection (MAS)."
+          },
+          "14": {},
+          "15": {
+            "1": "Cold stress limits the production of rice (Oryza sativa).",
+            "2": "Cold stress limits the geographic distribution of rice (Oryza sativa).",
+            "3": "The growth range of japonica subspecies has expanded northward compared to modern wild rice (O. rufipogon).",
+            "4": "The molecular basis of the adaptation of japonica subspecies to expanded growth range remains unclear.",
+            "5": "bZIP73 is a bZIP transcription factor-coding gene with only one functional polymorphism (+511 G>A) between the two subspecies japonica and indica.",
+            "6": "bZIP73 may have facilitated the adaptation of japonica subspecies to cold climates."
+          }
+        },
+        "viewpoints": [
+          "LTG1 modulates cold tolerance through pathways involving auxin.",
+          "qCTS9 modulates cold tolerance through pathways involving brassinosteroid (BR) signaling.",
+          "HAN1 modulates cold tolerance through pathways involving jasmonic acid (JA).",
+          "bZIP73 modulates cold tolerance through pathways involving abscisic acid (ABA)."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "COLD11, COG2 and COG3 are involved in rice responses to cold stress through distinct pathways, including DNA repair, cell wall remodeling and maintenance of photosynthesis, respectively [16], [17], [18].",
+        "references": {
+          "16": {
+            "1": "Abnormal temperature is caused by global climate change.",
+            "2": "Global climate change threatens rice production.",
+            "3": "A defense signaling network for chilling has been uncovered in plants.",
+            "4": "Less is known about repairing DNA damage produced from overwhelmed defense in plants.",
+            "5": "Less is known about the evolution of DNA damage repair during domestication.",
+            "6": "A major QTL was genetically identified in this study."
+          },
+          "17": {
+            "1": "COG2 encodes an extensin.",
+            "2": "COG2 represses chilling tolerance by affecting cell wall composition.",
+            "3": "Rice is a major crop.",
+            "4": "Rice is susceptible to chilling stress.",
+            "5": "Chilling tolerance is a complex trait.",
+            "6": "Chilling tolerance is controlled by multiple quantitative trait loci (QTLs).",
+            "7": "The QTL gene COG2 negatively regulates cold tolerance at the seedling stage in rice.",
+            "8": "COG2 overexpression transgenic plants are sensitive to cold.",
+            "9": "COG2 knockout transgenic lines enhance chilling tolerance.",
+            "10": "Hap1 is a specific haplotype in japonica/Geng rice.",
+            "11": "Hap1 correlates with chilling tolerance.",
+            "12": "SNP1 in the COG2 promoter is a specific divergence.",
+            "13": "SNP1 leads to the difference in COG2 expression levels between japonica/Geng and indica/Xian cultivars.",
+            "14": "COG2 encodes a cell wall-localized extensin.",
+            "15": "COG2 affects cell wall composition, including pectin and cellulose.",
+            "16": "COG2 affects cell wall composition to defend against chilling stress.",
+            "17": "The results extend the understanding of environmental adaptation in rice.",
+            "18": "The results provide an editing target for molecular design breeding of cold tolerance in rice."
+          },
+          "18": {
+            "1": "Chilling stress induced by global climate change harms rice production.",
+            "2": "Rice production is especially harmed at the seedling and booting stage by chilling stress.",
+            "3": "Rice production harms from chilling stress impact the food supply for half the population of the world.",
+            "4": "Key quantitative trait locus genes have been identified in individual stages of rice development.",
+            "5": "Few genes have been reported to function at both the seedling and booting stages of rice development.",
+            "6": "Chromosome segment substitution lines (CSSLs) were used to help identify the major gene Chilling-tolerance in Geng/japonica rice 3 (COG3).",
+            "7": "A combination of map-based cloning and phenotypes of the mutants and overexpression lines were used to identify COG3.",
+            "8": "COG3 is a major gene of q chilling-tolerance at the booting and seedling stage 11 (qCTBS11).",
+            "9": "COG3 confers chilling tolerance at both seedling and booting stages in rice.",
+            "10": "COG3 was significantly upregulated in Nipponbare rice under chilling treatment.",
+            "11": "COG3 expression in Nipponbare under chilling treatment was higher compared to COG3 expression in 93-11.",
+            "12": "Loss-of-function mutants cog3 showed reduced chilling tolerance.",
+            "13": "Overexpression of COG3 enhanced chilling tolerance.",
+            "14": "Genome evolution and genetic analysis suggest that COG3 may have undergone strong selection during domestication.",
+            "15": "COG3 may have undergone strong selection specifically in temperate japonica rice during domestication.",
+            "16": "COG3 is a putative calmodulin-binding protein.",
+            "17": "COG3 physically interacts with OsFtsH2 in the chloroplast.",
+            "18": "In cog3-1 mutants, OsFtsH2-mediated D1 degradation was impaired under chilling treatment.",
+            "19": "OsFtsH2-mediated D1 degradation under chilling treatment is less impaired in wild-type compared to cog3-1 mutants.",
+            "20": "COG3 is necessary for maintaining OsFtsH2 protease activity.",
+            "21": "Maintaining OsFtsH2 protease activity is necessary to regulate chilling tolerance at the booting and seedling stage in rice."
+          }
+        },
+        "viewpoints": [
+          "COLD11 is involved in rice responses to cold stress through pathways including DNA repair.",
+          "COG2 is involved in rice responses to cold stress through pathways including cell wall remodeling.",
+          "COG3 is involved in rice responses to cold stress through pathways including maintenance of photosynthesis."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Although the studies on cold tolerance at the early stages have provided valuable insights, understanding the molecular mechanisms of cold tolerance at the booting stage is crucial due to its direct impact on grain yield.",
+        "references": {},
+        "viewpoints": [
+          "Studies on cold tolerance at the early stages have provided valuable insights.",
+          "Understanding the molecular mechanisms of cold tolerance at the booting stage is crucial due to its direct impact on grain yield."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "However, fewer genes for cold tolerance at the booting stage have been identified.",
+        "references": {},
+        "viewpoints": [
+          "Fewer genes for cold tolerance at the booting stage have been identified."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "bZIP73 involves in the bZIP73Jap–qLTG3-1Nip–sugar transport pathway, which promotes sugar transport to pollen at low temperatures [19].",
+        "references": {
+          "19": {
+            "1": "Cold temperature during the reproductive stage causes yield loss of grain crops in subtropical and temperate regions.",
+            "2": "The yield loss caused by cold temperature during the reproductive stage is often great.",
+            "3": "The rice transcription factor bZIP73 was previously shown by us to have a significant role in a study."
+          }
+        },
+        "viewpoints": [
+          "bZIP73 is involved in the bZIP73Jap–qLTG3-1Nip–sugar transport pathway.",
+          "The bZIP73Jap–qLTG3-1Nip–sugar transport pathway promotes sugar transport to pollen at low temperatures."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "CTB4a encodes a leucine-rich repeat receptor-like kinase that interacts with AtpB to increase energy supply, thereby improving the seed setting in rice grown at high altitudes [20].",
+        "references": {
+          "20": {
+            "1": "Low temperature is a major factor limiting rice productivity.",
+            "2": "Low temperature is a major factor limiting the geographical distribution of rice.",
+            "3": "Improved cold tolerance in rice would help meet growing rice demand.",
+            "4": "Expanded cultivation of rice to high-altitude regions would help meet growing rice demand.",
+            "5": "Expanded cultivation of rice to high-latitude regions would help meet growing rice demand.",
+            "6": "The paper explored a QTL for cold tolerance in rice.",
+            "7": "The gene CTB4a (cold tolerance at booting stage) was cloned by the researchers.",
+            "8": "CTB4a encodes a conserved leucine-rich repeat receptor-like kinase.",
+            "9": "Different CTB4a alleles confer distinct levels of cold tolerance.",
+            "10": "Selection for variation in the CTB4a promoter region has occurred based on environmental temperature.",
+            "11": "The newly generated cold-tolerant haplotype Tej-Hap-KMXBG was retained by artificial selection.",
+            "12": "Tej-Hap-KMXBG was retained during temperate japonica evolution in cold habitats.",
+            "13": "Tej-Hap-KMXBG was retained for low-temperature acclimation.",
+            "14": "CTB4a interacts with AtpB.",
+            "15": "AtpB is a beta subunit of ATP synthase.",
+            "16": "Upregulation of CTB4a correlates with increased ATP synthase activity.",
+            "17": "Upregulation of CTB4a correlates with increased ATP content.",
+            "18": "Upregulation of CTB4a correlates with enhanced seed setting.",
+            "19": "Upregulation of CTB4a correlates with improved yield under cold stress conditions.",
+            "20": "The findings suggest strategies to improve cold tolerance in crop plants."
+          }
+        },
+        "viewpoints": [
+          "CTB4a encodes a leucine-rich repeat receptor-like kinase.",
+          "CTB4a interacts with AtpB to increase energy supply.",
+          "CTB4a improves the seed setting in rice grown at high altitudes."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "CTB2 encodes a UDP-glucose sterol glucosyltransferase that mediates the accumulation of steryl glycoside and acyl steryl glycoside to maintain cell membrane permeability and reduce damage to pollen grains and pollen walls under cold stress conditions [21].",
+        "references": {
+          "21": {
+            "1": "The improvement of cold adaptation in rice has contributed to an increased growing area.",
+            "2": "Standing variation is a natural source of beneficial alleles in plant adaptation.",
+            "3": "De novo mutation is a natural source of beneficial alleles in plant adaptation.",
+            "4": "The genetic mechanisms underlying standing variation and de novo mutation during crop domestication in a single population remain elusive.",
+            "5": "The evolutionary patterns underlying standing variation and de novo mutation during crop domestication in a single population remain elusive.",
+            "6": "The CTB2 gene was cloned for cold tolerance in rice at the booting stage.",
+            "7": "CTB2 encodes a UDP-glucose sterol glucosyltransferase.",
+            "8": "A single standing variation (I408V) in the conserved UDPGT domain of CTB2 originated from Chinese Oryza rufipogon.",
+            "9": "The single standing variation (I408V) in CTB2 contributed to the cold adaptation of Oryza sativa ssp. japonica.",
+            "10": "CTB2 is located in a 56.8 kb region.",
+            "11": "The 56.8 kb region includes the previously reported gene CTB4a.",
+            "12": "A de novo mutation in CTB4a arose around 3200 years BP in Yunnan province, China.",
+            "13": "The de novo mutation in CTB4a confers cold tolerance.",
+            "14": "Standing variation of CTB2 underwent stepwise selection to facilitate cold adaptation.",
+            "15": "De novo mutation of CTB4a underwent stepwise selection to facilitate cold adaptation.",
+            "16": "The cold adaptation facilitated by standing variation and de novo mutation helped expand rice cultivation from high-altitude to high-latitude regions.",
+            "17": "The results provide an example of stepwise selection on standing variation and de novo mutation.",
+            "18": "The results describe a new molecular mechanism of cold adaptation in japonica rice."
+          }
+        },
+        "viewpoints": [
+          "CTB2 encodes a UDP-glucose sterol glucosyltransferase.",
+          "CTB2 mediates the accumulation of steryl glycoside and acyl steryl glycoside.",
+          "CTB2 maintains cell membrane permeability under cold stress conditions.",
+          "CTB2 reduces damage to pollen grains under cold stress conditions.",
+          "CTB2 reduces damage to pollen walls under cold stress conditions."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Other genes, such as Ctb1 (an F-box protein) [22], qCTB7 (a PHD-finger domain protein) [23] and OsLEA9 (a late embryogenesis abundant protein) [24], have been implicated in cold tolerance, although their precise molecular roles remain to be clarified.",
+        "references": {
+          "22": [],
+          "23": {
+            "1": "LOC_Os07g07690 on qCTB7 is associated with cold tolerance at the booting stage in rice.",
+            "2": "Analysis of transgenic plants demonstrated that qCTB7 influenced cold tolerance by altering the morphology and cytoarchitecture of rice anthers.",
+            "3": "Analysis of transgenic plants demonstrated that qCTB7 influenced cold tolerance by altering the morphology and cytoarchitecture of rice pollen.",
+            "4": "Cold tolerance at the booting stage in rice can significantly affect rice yield in high-latitude regions.",
+            "5": "Several CTB genes have been isolated.",
+            "6": "The ability of several isolated CTB genes to induce cold tolerance is insufficient to ensure adequate rice yields in cold regions at high latitudes.",
+            "7": "The PHD-finger domain-containing protein gene qCTB7 was identified using QTL-seq.",
+            "8": "The PHD-finger domain-containing protein gene qCTB7 was identified using linkage analysis.",
+            "9": "QTL-seq and linkage analysis involved the systematic measurement of CTB differences between the Longjing31 and Longdao3 cultivars.",
+            "10": "QTL-seq and linkage analysis involved the systematic measurement of the spike fertility of the Longjing31 and Longdao3 cultivars.",
+            "11": "The derivation of 1570 F2 progeny occurred under cold stress.",
+            "12": "The function of qCTB7 in rice was characterized.",
+            "13": "Overexpression of qCTB7 promoted cold tolerance at the booting stage in rice under normal growing conditions.",
+            "14": "Overexpression of qCTB7 resulted in the same rice yield as Longdao3 under normal growing conditions.",
+            "15": "The phenotype of qctb7 knockout showed rice anther failure under cold stress.",
+            "16": "The phenotype of qctb7 knockout showed rice pollen failure under cold stress.",
+            "17": "Under cold stress, the germination of qctb7 pollen on the stigma was reduced.",
+            "18": "The reduced germination of qctb7 pollen on the stigma resulted in lower spike fertility.",
+            "19": "qCTB7 regulates the appearance of the anthers.",
+            "20": "qCTB7 regulates the appearance of the pollen.",
+            "21": "qCTB7 regulates the morphology of the anthers.",
+            "22": "qCTB7 regulates the morphology of the pollen.",
+            "23": "qCTB7 regulates the cytoarchitecture of the anthers.",
+            "24": "qCTB7 regulates the cytoarchitecture of the pollen.",
+            "25": "Three SNPs in the promoter region and coding region of qCTB7 were identified as recognition signals for cold tolerance at the booting stage in rice.",
+            "26": "The recognition signals could assist breeding efforts to improve cold tolerance in rice production in high latitudes."
+          },
+          "24": {
+            "1": "Cold stress at the reproductive stage severely affects the production of rice.",
+            "2": "Cold stress at the reproductive stage severely affects the geographic distribution of rice.",
+            "3": "The Geng/japonica subpopulation developed stronger cold adaptation during the domestication of cultivated rice.",
+            "4": "The Geng/japonica subpopulation developed stronger cold adaptation than the Xian/indica subpopulation.",
+            "5": "The evolutionary path underlying the cold adaptability of intra-Geng subspecies is largely unknown.",
+            "6": "The natural alleles underlying the cold adaptability of intra-Geng subspecies are largely unknown.",
+            "7": "MITOGEN-ACTIVATED PROTEIN KINASE 3 (OsMAPK3) is an important regulator for the cold adaptation of Geng subspecies.",
+            "8": "LATE EMBRYOGENESIS ABUNDANT PROTEIN 9 (OsLEA9) is an important regulator for the cold adaptation of Geng subspecies.",
+            "9": "The identification of OsMAPK3 and OsLEA9 as regulators was made from a combination of transcriptome analysis and genome-wide association study.",
+            "10": "Transgenic validation showed that OsMAPK3 confers cold tolerance at the reproductive stage.",
+            "11": "Transgenic validation showed that OsLEA9 confers cold tolerance at the reproductive stage."
+          }
+        },
+        "viewpoints": [
+          "Ctb1 (an F-box protein) has been implicated in cold tolerance.",
+          "qCTB7 (a PHD-finger domain protein) has been implicated in cold tolerance.",
+          "OsLEA9 (a late embryogenesis abundant protein) has been implicated in cold tolerance.",
+          "The precise molecular roles of Ctb1, qCTB7, and OsLEA9 in cold tolerance remain to be clarified."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The calmodulin-binding transcriptional activator (CAMTA) family of transcription factors plays important roles in plant response to biotic and abiotic stresses.",
+        "references": {},
+        "viewpoints": [
+          "The calmodulin-binding transcriptional activator (CAMTA) family of transcription factors plays important roles in plant response to biotic stresses.",
+          "The calmodulin-binding transcriptional activator (CAMTA) family of transcription factors plays important roles in plant response to abiotic stresses."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "In Arabidopsis, AtSR1 (AtCAMTA3), AtCAMTA1 and AtCAMTA2 negatively regulate the biosynthesis of salicylic acid and N-hydroxypipecolic acid by suppressing the expression of AtSARD1 and AtCBP60g, which in turn suppresses plant immunity [25].",
+        "references": {
+          "25": {
+            "1": "Salicylic acid (SA) plays a critical role in plant immunity.",
+            "2": "N-hydroxypipecolic acid (NHP) plays a critical role in plant immunity.",
+            "3": "The biosynthetic genes of salicylic acid (SA) are positively regulated by the transcription factor SARD1.",
+            "4": "The biosynthetic genes of N-hydroxypipecolic acid (NHP) are positively regulated by the transcription factor SARD1.",
+            "5": "The biosynthetic genes of salicylic acid (SA) are positively regulated by the transcription factor CBP60g.",
+            "6": "The biosynthetic genes of N-hydroxypipecolic acid (NHP) are positively regulated by the transcription factor CBP60g.",
+            "7": "The relationship between the salicylic acid (SA) pathway and the N-hydroxypipecolic acid (NHP) pathway is unclear.",
+            "8": "CAMTA1 is a redundant negative regulator of plant immunity.",
+            "9": "CAMTA2 is a redundant negative regulator of plant immunity.",
+            "10": "CAMTA3 is a redundant negative regulator of plant immunity.",
+            "11": "The underlying mechanism of CAMTA1, CAMTA2, and CAMTA3’s regulation of plant immunity is largely unknown.",
+            "12": "CBP60g is a direct target of CAMTA3.",
+            "13": "CAMTA3 negatively regulates the expression of SARD1, presumably via an indirect effect.",
+            "14": "The autoimmunity of camta3-1 is suppressed by the sard1 cbp60g double mutant.",
+            "15": "The autoimmunity of camta3-1 is suppressed by the ald1 single mutant, which is defective in NHP biosynthesis.",
+            "16": "The autoimmunity of camta3-1 is suppressed by the fmo1 single mutant, which is defective in NHP biosynthesis.",
+            "17": "A suppressor screen in the camta1/2/3 triple mutant background yielded various mutants blocking biosynthesis or signaling of either salicylic acid (SA) or N-hydroxypipecolic acid (NHP).",
+            "18": "Blocking biosynthesis or signaling of either SA or NHP led to nearly complete suppression of the extreme autoimmunity of camta1/2/3.",
+            "19": "The SA and NHP pathways can mutually amplify each other.",
+            "20": "CAMTAs repress the biosynthesis of salicylic acid (SA) by modulating the expression of SARD1.",
+            "21": "CAMTAs repress the biosynthesis of N-hydroxypipecolic acid (NHP) by modulating the expression of SARD1.",
+            "22": "CAMTAs repress the biosynthesis of salicylic acid (SA) by modulating the expression of CBP60g.",
+            "23": "CAMTAs repress the biosynthesis of N-hydroxypipecolic acid (NHP) by modulating the expression of CBP60g.",
+            "24": "The salicylic acid (SA) and N-hydroxypipecolic acid (NHP) pathways are coordinated to optimize plant immune response."
+          }
+        },
+        "viewpoints": [
+          "In Arabidopsis, AtSR1 (AtCAMTA3) negatively regulates the biosynthesis of salicylic acid by suppressing the expression of AtSARD1 and AtCBP60g.",
+          "In Arabidopsis, AtCAMTA1 negatively regulates the biosynthesis of salicylic acid by suppressing the expression of AtSARD1 and AtCBP60g.",
+          "In Arabidopsis, AtCAMTA2 negatively regulates the biosynthesis of salicylic acid by suppressing the expression of AtSARD1 and AtCBP60g.",
+          "In Arabidopsis, AtSR1 (AtCAMTA3) negatively regulates the biosynthesis of N-hydroxypipecolic acid by suppressing the expression of AtSARD1 and AtCBP60g.",
+          "In Arabidopsis, AtCAMTA1 negatively regulates the biosynthesis of N-hydroxypipecolic acid by suppressing the expression of AtSARD1 and AtCBP60g.",
+          "In Arabidopsis, AtCAMTA2 negatively regulates the biosynthesis of N-hydroxypipecolic acid by suppressing the expression of AtSARD1 and AtCBP60g.",
+          "The suppression of AtSARD1 and AtCBP60g expression suppresses plant immunity in Arabidopsis."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "AtSR1, AtCAMTA1 and AtCAMTA2 along with AtCAMTA5 positively regulate freezing tolerance in Arabidopsis and can respond to low temperatures and activate the expression of AtDREB1 (CBF) genes and other cold-inducible genes [26].",
+        "references": {
+          "26": {}
+        },
+        "viewpoints": [
+          "AtSR1 positively regulates freezing tolerance in Arabidopsis.",
+          "AtCAMTA1 positively regulates freezing tolerance in Arabidopsis.",
+          "AtCAMTA2 positively regulates freezing tolerance in Arabidopsis.",
+          "AtCAMTA5 positively regulates freezing tolerance in Arabidopsis.",
+          "AtSR1, AtCAMTA1, AtCAMTA2, and AtCAMTA5 can respond to low temperatures.",
+          "AtSR1, AtCAMTA1, AtCAMTA2, and AtCAMTA5 activate the expression of AtDREB1 (CBF) genes.",
+          "AtSR1, AtCAMTA1, AtCAMTA2, and AtCAMTA5 activate the expression of other cold-inducible genes."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "AtSR1 activates several RNA interference (RNAi)-related genes for defense against viral invasion [27].",
+        "references": {
+          "27": {
+            "1": "RNA interference (RNAi) is a gene regulatory mechanism.",
+            "2": "RNA interference (RNAi) is a defense mechanism.",
+            "3": "RNA interference (RNAi) functions across kingdoms.",
+            "4": "Little is known about how organisms sense initial cues to mobilize RNA interference (RNAi).",
+            "5": "Wounding to Nicotiana benthamiana cells during virus intrusion activates RNAi-related gene expression.",
+            "6": "Calcium signaling is the mechanism through which wounding during virus intrusion activates RNAi-related gene expression in Nicotiana benthamiana cells.",
+            "7": "A rapid elevation in calcium fluxes is induced by wounding.",
+            "8": "Wound-induced elevation in calcium fluxes triggers calmodulin-dependent activation of calmodulin-binding transcription activator-3 (CAMTA3).",
+            "9": "Calmodulin-binding transcription activator-3 (CAMTA3) activation leads to the activation of RNA-dependent RNA polymerase-6 transcription.",
+            "10": "Calmodulin-binding transcription activator-3 (CAMTA3) activation leads to the activation of Bifunctional nuclease-2 (BN2) transcription.",
+            "11": "Bifunctional nuclease-2 (BN2) stabilizes mRNAs encoding key components of RNAi machinery.",
+            "12": "BN2 stabilizes mRNAs by degrading their cognate microRNAs.",
+            "13": "AGONAUTE1/2 is a key component of RNAi machinery encoded by mRNAs stabilized by BN2.",
+            "14": "DICER-LIKE1 is a key component of RNAi machinery encoded by mRNAs stabilized by BN2.",
+            "15": "Multiple RNAi genes are primed for combating virus invasion.",
+            "16": "Calmodulin-knockdown/knockout plants show increased susceptibility to geminivirus, cucumovirus, and potyvirus.",
+            "17": "CAMTA3-knockdown/knockout plants show increased susceptibility to geminivirus, cucumovirus, and potyvirus.",
+            "18": "BN2-knockdown/knockout plants show increased susceptibility to geminivirus, cucumovirus, and potyvirus.",
+            "19": "Geminivirus V2 protein can disrupt the calmodulin-CAMTA3 interaction.",
+            "20": "Geminivirus V2 protein counteracts RNAi defense by disrupting the calmodulin-CAMTA3 interaction."
+          }
+        },
+        "viewpoints": [
+          "AtSR1 activates several RNA interference (RNAi)-related genes for defense against viral invasion."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "AtSR1 also functions as a transcriptional activator in drought stress and positively regulates drought tolerance [28].",
+        "references": {
+          "28": {
+            "1": "Calcium/calmodulin signals are important for various cellular activities in plants.",
+            "2": "Calcium/calmodulin signals are important for various physiological activities in plants.",
+            "3": "Calmodulin binding transcription activators are also named Signal Responsive (SR) proteins.",
+            "4": "Signal Responsive (SR) proteins belong to an important calcium/calmodulin-dependent transcription factor family.",
+            "5": "The calcium/calmodulin-dependent transcription factor family plays critical roles in stress responses.",
+            "6": "The role of Signal Responsive (SR) proteins in ABA-regulated plant responses to drought stress is largely unknown.",
+            "7": "The study characterized the role of Arabidopsis SR1 in drought stress tolerance.",
+            "8": "The study characterized the role of Arabidopsis SR1 in ABA response.",
+            "9": "The characterization involved analyzing the phenotypes of SR1 knockout plants.",
+            "10": "The characterization also involved analyzing the phenotypes of SR1-overexpression plants.",
+            "11": "sr1 mutants accumulate salicylic acid (SA).",
+            "12": "sr1 mutants were found more sensitive to drought stress than wild-type.",
+            "13": "sr1 mutants showed a higher water loss rate than wild-type.",
+            "14": "SR1-overexpression lines exhibited increased drought tolerance compared to wild-type.",
+            "15": "SR1-overexpression lines exhibited less water loss than wild-type.",
+            "16": "sr1 mutants showed reduced ABA response in seed germination.",
+            "17": "sr1 mutants showed reduced ABA response in root elongation.",
+            "18": "sr1 mutants showed reduced ABA response in stomatal closure.",
+            "19": "SR1-overexpression lines displayed more sensitivity to ABA than wild-type.",
+            "20": "The drought-sensitive phenotypes of sr1 mutants were recovered by diminishing SA accumulation.",
+            "21": "The ABA-insensitive phenotypes of sr1 mutants were recovered by diminishing SA accumulation.",
+            "22": "Diminishing SA accumulation was achieved via knockouts of SA synthesizer ICS1.",
+            "23": "Diminishing SA accumulation was achieved via knockouts of activator PAD4.",
+            "24": "Diminishing SA accumulation was also achieved through the expression of SA-degrading enzyme NahG.",
+            "25": "Some drought/ABA-responsive genes exhibited differential expression in sr1 mutants.",
+            "26": "Some drought/ABA-responsive genes exhibited differential expression in SR1-overexpression plants.",
+            "27": "SR1 plays a positive role in drought stress tolerance.",
+            "28": "SR1 plays a positive role in ABA response.",
+            "29": "Drought/ABA responses are antagonized by SA accumulation.",
+            "30": "SA accumulation is negatively regulated by SR1."
+          }
+        },
+        "viewpoints": [
+          "AtSR1 functions as a transcriptional activator in drought stress.",
+          "AtSR1 positively regulates drought tolerance."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Furthermore, CAMTA6 negatively regulate salt tolerance [29].",
+        "references": {
+          "29": {}
+        },
+        "viewpoints": [
+          "CAMTA6 negatively regulates salt tolerance."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "In rice, the CAMTA transcription factor OsCBT1 and OsCAMTA3 also negatively regulates plant immune responses to pathogens [30], [31].",
+        "references": {
+          "30": {
+            "1": "The OsCBT gene encodes a calmodulin (CaM)-binding protein.",
+            "2": "The OsCBT gene was isolated from a rice expression library.",
+            "3": "The rice expression library was constructed from fungal elicitor-treated rice suspension cells.",
+            "4": "A T-DNA insertion mutant allele named oscbt-1 was isolated and characterized to understand the function of OsCBT in rice.",
+            "5": "The oscbt-1 mutant exhibits reduced levels of OsCBT transcripts.",
+            "6": "The oscbt-1 mutant shows no significant morphological changes compared to wild-type plants.",
+            "7": "The growth of the oscbt-1 mutant is stunted.",
+            "8": "The oscbt-1 mutants showed significant resistance to two major rice pathogens.",
+            "9": "The growth of Magnaporthe grisea was significantly suppressed in oscbt-1 plants.",
+            "10": "The growth of Xanthomonas oryzae pv. oryzae was significantly suppressed in oscbt-1 plants.",
+            "11": "Histochemical analysis indicated that the hypersensitive-response was induced in the oscbt-1 mutant.",
+            "12": "The hypersensitive-response was induced in response to compatible strains of fungal pathogens.",
+            "13": "OsCBT expression was induced upon challenge with fungal elicitor.",
+            "14": "There was a significant increase in the level of pathogenesis-related genes in the oscbt-1 mutant.",
+            "15": "The increase in the level of pathogenesis-related genes was observed even under pathogen-free conditions.",
+            "16": "The results support the idea that OsCBT might act as a negative regulator on plant defense."
+          },
+          "31": {}
+        },
+        "viewpoints": [
+          "In rice, the CAMTA transcription factor OsCBT1 negatively regulates plant immune responses to pathogens.",
+          "In rice, OsCAMTA3 negatively regulates plant immune responses to pathogens."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Whereas the rice CAMTAs SCT1 and SCT2 synergistically repress wax synthesis regulatory 2 (OsWR2) expression and negatively regulate heat tolerance [32].",
+        "references": {
+          "32": {
+            "1": "Global warming poses a threat to crop production.",
+            "2": "G proteins mediate plant responses to multiple abiotic stresses.",
+            "3": "A natural quantitative trait locus, TT2 (THERMOTOLERANCE 2), was identified, which encodes a Gγ subunit.",
+            "4": "The TT2 locus confers thermotolerance in rice during both vegetative and reproductive growth.",
+            "5": "The TT2 locus allows rice to maintain thermotolerance without experiencing a yield penalty.",
+            "6": "A natural allele with loss of TT2 function was associated with greater retention of wax at high temperatures.",
+            "7": "The natural allele with loss of TT2 function was associated with increased thermotolerance.",
+            "8": "The sentence is incomplete and does not provide a complete viewpoint."
+          }
+        },
+        "viewpoints": [
+          "The rice CAMTA SCT1 synergistically represses wax synthesis regulatory 2 (OsWR2) expression.",
+          "The rice CAMTA SCT2 synergistically represses wax synthesis regulatory 2 (OsWR2) expression.",
+          "The rice CAMTA SCT1 negatively regulates heat tolerance.",
+          "The rice CAMTA SCT2 negatively regulates heat tolerance."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "However, whether CAMTA family transcription factors play a role in rice cold acclimatization remains unknown.",
+        "references": {},
+        "viewpoints": [
+          "Whether CAMTA family transcription factors play a role in rice cold acclimatization remains unknown."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "In this work, we identify the CTB3 gene, which encodes a calmodulin-binding transcription factor controlling cold tolerance at the booting stage.",
+        "references": {},
+        "viewpoints": [
+          "The CTB3 gene encodes a calmodulin-binding transcription factor.",
+          "The calmodulin-binding transcription factor encoded by CTB3 controls cold tolerance at the booting stage."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "The allele of CTB3 with the 57-bp and 284-bp deletions is derived from Chinese wild rice (O. rufipogon) and promotes the cold adaptation of japonica rice.",
+        "references": {},
+        "viewpoints": [
+          "The allele of CTB3 with the 57-bp and 284-bp deletions is derived from Chinese wild rice (O. rufipogon).",
+          "The allele of CTB3 with the 57-bp and 284-bp deletions promotes the cold adaptation of japonica rice."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "OsTCP19 suppresses CTB3 expression by binding to the two indel regions and thereby negatively regulates cold tolerance at the booting stage.",
+        "references": {},
+        "viewpoints": [
+          "OsTCP19 suppresses CTB3 expression by binding to the two indel regions.",
+          "OsTCP19 negatively regulates cold tolerance at the booting stage."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Furthermore, CTB3 activates the expression of OsTPP1, leading to reduced Tre6P content.",
+        "references": {},
+        "viewpoints": [
+          "CTB3 activates the expression of OsTPP1.",
+          "The activation of OsTPP1 expression leads to reduced Tre6P content."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "The lower Tre6P content promotes the expression of sugar-transporter-related genes, which increase the accumulation of sugar in the panicles, thereby enhancing cold tolerance.",
+        "references": {},
+        "viewpoints": [
+          "The lower Tre6P content promotes the expression of sugar-transporter-related genes.",
+          "The expression of sugar-transporter-related genes increases the accumulation of sugar in the panicles.",
+          "The increased accumulation of sugar in the panicles enhances cold tolerance."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "Our results show that the two favorable alleles of OsTCP19 and CTB3 have been selected and retained in japonica rice to improve cold tolerance and promote the expansion of rice to high-latitude regions.",
+        "references": {},
+        "viewpoints": [
+          "The two favorable alleles of OsTCP19 and CTB3 have been selected and retained in japonica rice.",
+          "The two favorable alleles of OsTCP19 and CTB3 improve cold tolerance in japonica rice.",
+          "The two favorable alleles of OsTCP19 and CTB3 promote the expansion of rice to high-latitude regions."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "These findings highlight the role of CTB3 in promoting cold adaptation and offer a potential target for improving cold tolerance in rice breeding.",
+        "references": {},
+        "viewpoints": [
+          "The findings highlight the role of CTB3 in promoting cold adaptation.",
+          "CTB3 offers a potential target for improving cold tolerance in rice breeding."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56992-7_with_abstracts",
+    "base_id": "s41467-025-56992-7",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56992-7_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

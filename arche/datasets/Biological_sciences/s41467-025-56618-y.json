@@ -1,0 +1,662 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Spatially resolved transcriptomics (SRT) data captures the spatial organisation and heterogeneity of genes in tissues at high resolution, fundamentally transforming the way we study and understand biological processes. It has enabled the identification of key genes and pathways involved in intricate mechanisms underlying diverse biological processes and complex cellular phenomena [1] , [2] , [3] , [4] . While these new SRT technologies hold promise for producing new insights, they remain costly, preventing their direct adoption into routine clinical use at this stage. In contrast, haematoxylin-and-eosin-stained (H&E) histopathology images are more cost-effective and are routinely used in clinical practice. Thus, if we can leverage modern machine learning together with information from SRT technologies to predict in silico spatial profiles of gene expression values from paired histology images of the same tissue, we could enhance information gained from existing H&E images. This would facilitate large-scale examinations of spatial gene expression variations and lead to the potential discovery of biomarkers and therapeutic targets for complex diseases. To date, several approaches have been developed to predict in silico spatially resolved gene expression (SGE) patterns using H&E data alone (Fig. 1a , Supplementary Table 1 ). Among these methods, Convolutional Neural Networks (CNN) and Transformers are commonly selected architectures for extracting local and global 2D vision features around each sequenced spot from corresponding histology image patches. Some methods further implemented extra components, including super-resolution enhancement of SGE and Graph Neural Networks (GNN) to capture neighbourhood relationships between adjacent spots. Furthermore, an exemplar module had been used to guide predictions by inferring from the gene expression (GE) of the most similar exemplars. These learned features are then used to predict SGE that enables image-based screening for molecular biomarkers with spatial variation. As these methods were recently published in the last 3 years and are continuously evolving, their performance has not yet been comprehensively benchmarked. While there exist general reviews on various aspects of SRT analysis [5] , [6] , [7] , they have only surveyed and categorised methods predicting SGE from H&E without any benchmarking. Fig. 1: Overview of the benchmarking process and the key aspects of the evaluation. a Illustration of the machine learning task of predicting spatial gene expression from H&E images. b Overview of the evaluation categories used in the benchmarking of each method. Figure generated using Adobe Illustrator, with some graphics adapted from Adobe Stock under an Education License. Full size image Evaluation studies that are presented when proposing a new method are limited in nature and often not independent. Among the current literature, methods for predicting SGE from H&E have been mainly assessed and evaluated for their efficacy by their developers. Evidently, different evaluation frameworks have been used to assess the methods. For instance, ST-Net [8] , DeepSpaCE [9] , DeepPT [10] and TCGN [11] evaluated the performance of their models on external The Cancer Genome Atlas (TCGA) [12] data to determine the generalisability of their models. Hist2ST [13] , EGNv1 [14] , EGNv2 [15] , TCGN and THItoGene [16] performed an ablation study to assess the contributions of different components of their deep-learning architecture. BrST-Net [17] conducted a comparison of 10 state-of-the-art CNN and transformer architectures to determine the effectiveness of the backbone models. iStar [18] demonstrated the application of its predictions by performing tissue region segmentation. Overall, there is no consistent and detailed evaluation framework comparing the performance of these approaches in predicting in silico SGE, due in part to the recent development of this field, limited data availability and the complexity of executing these methods. Consequently, we lack a comprehensive understanding of the performance, stability and the broader applicability of individual methods. Additionally, there is a lack of critical evaluation regarding how different spatial characteristics of H&E images can affect the accuracy of SGE predictions, especially on their impact on downstream analysis as well as potential clinical translation. To this end, we provide a benchmark and review of methods predicting SGE from H&E images. We compared the performance of eleven methods using 28 different metrics broadly grouped into five categories. These include metrics that focus on the evaluation of spatial and biological characteristics of genes that are predicted effectively. Metrics also include the impact of prediction performance on downstream applications. Given the ongoing development in predicting SGE from H&E providing exciting potential for clinical usage, our benchmark study provides an analysis of significant achievements of existing methods, demonstrating their practical impact. Importantly, we provide a vital assessment of the limitations and generalisability of their translational potential. Ultimately, we offer guidance for new users of these methods and highlight current challenges for developers aiming to advance methodologies. Furthermore, our study can serve as a valuable tool, facilitating the rapid and independent evaluation of future methods.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Spatially resolved transcriptomics (SRT) data captures the spatial organisation and heterogeneity of genes in tissues at high resolution, fundamentally transforming the way we study and understand biological processes.",
+        "references": {},
+        "viewpoints": [
+          "Spatially resolved transcriptomics (SRT) data captures the spatial organisation of genes in tissues at high resolution.",
+          "Spatially resolved transcriptomics (SRT) data captures the heterogeneity of genes in tissues at high resolution.",
+          "Spatially resolved transcriptomics (SRT) data is fundamentally transforming the way we study biological processes.",
+          "Spatially resolved transcriptomics (SRT) data is fundamentally transforming the way we understand biological processes."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "It has enabled the identification of key genes and pathways involved in intricate mechanisms underlying diverse biological processes and complex cellular phenomena [1] , [2] , [3] , [4].",
+        "references": {
+          "1": {
+            "1": "The analysis of the pattern of proteins in histological tissue sections is fundamental in biomedical research.",
+            "2": "The analysis of the pattern of proteins in histological tissue sections is fundamental in diagnostics.",
+            "3": "The analysis of the pattern of messengerRNAs (mRNAs) in histological tissue sections is fundamental in biomedical research.",
+            "4": "The analysis of the pattern of messengerRNAs (mRNAs) in histological tissue sections is fundamental in diagnostics.",
+            "5": "The typical analysis of proteins or mRNAs in histological tissue sections involves the visualization of a few proteins at a time.",
+            "6": "The typical analysis of proteins or mRNAs in histological tissue sections involves the visualization of a few expressed genes at a time.",
+            "7": "A strategy called \"spatial transcriptomics\" has been devised to allow for visualization of the transcriptome with spatial resolution in individual tissue sections.",
+            "8": "Spatial transcriptomics allows for quantitative analysis of the transcriptome with spatial resolution in individual tissue sections.",
+            "9": "Positioning histological sections on arrayed reverse transcription primers with unique positional barcodes allows for high-quality RNA-sequencing data.",
+            "10": "The RNA-sequencing data maintains two-dimensional positional information from the mouse brain.",
+            "11": "The RNA-sequencing data maintains two-dimensional positional information from human breast cancer.",
+            "12": "Spatial transcriptomics provides quantitative gene expression data.",
+            "13": "Spatial transcriptomics provides visualization of the distribution of mRNAs within tissue sections.",
+            "14": "Spatial transcriptomics enables novel types of bioinformatics analyses.",
+            "15": "Spatial transcriptomics is valuable in research.",
+            "16": "Spatial transcriptomics is valuable in diagnostics."
+          },
+          "2": {
+            "1": "Complex inflammatory-like alterations are observed around the amyloid plaques of Alzheimer's disease.",
+            "2": "Little is known about the molecular changes and cellular interactions that characterize the response to amyloid plaques in Alzheimer's disease.",
+            "3": "In an Alzheimer's disease mouse model, transcriptional changes occurring in tissue domains in a 100-μm diameter around amyloid plaques are investigated.",
+            "4": "Spatial transcriptomics is used to investigate transcriptional changes in tissue domains around amyloid plaques in an Alzheimer's disease mouse model.",
+            "5": "Early alterations in a gene co-expression network enriched for myelin and oligodendrocyte genes are demonstrated.",
+            "6": "A multicellular gene co-expression network of plaque-induced genes involving the complement system, oxidative stress, lysosomes, and inflammation is prominent in the later phase of Alzheimer's disease.",
+            "7": "The majority of the observed alterations are confirmed at the cellular level using in situ sequencing.",
+            "8": "In situ sequencing is used on mouse and human brain sections to confirm alterations.",
+            "9": "Genome-wide spatial transcriptomics analysis provides an unprecedented approach to untangle the dysregulated cellular network near the pathogenic hallmarks of Alzheimer's disease.",
+            "10": "Genome-wide spatial transcriptomics analysis provides an unprecedented approach to untangle the dysregulated cellular network near the pathogenic hallmarks of other brain diseases."
+          },
+          "3": {
+            "1": "The bone marrow is the primary site for life-long blood production.",
+            "2": "The bone marrow is the primary site for skeletal regeneration.",
+            "3": "The cellular organization of bone marrow remains controversial.",
+            "4": "The spatial organization of bone marrow remains controversial.",
+            "5": "Single-cell and spatially resolved transcriptomics are combined to systematically map the molecular composition of distinct bone marrow niches.",
+            "6": "Single-cell and spatially resolved transcriptomics are combined to systematically map the cellular composition of distinct bone marrow niches.",
+            "7": "Single-cell and spatially resolved transcriptomics are combined to systematically map the spatial composition of distinct bone marrow niches.",
+            "8": "Single-cell and spatially resolved transcriptomics allow profiling of all major bone-marrow-resident cell types transcriptionally.",
+            "9": "The use of single-cell and spatially resolved transcriptomics help determine the localization of all major bone-marrow-resident cell types.",
+            "10": "The use of single-cell and spatially resolved transcriptomics help clarify sources of pro-haematopoietic factors.",
+            "11": "Cxcl12-abundant-reticular (CAR) cell subsets (Adipo-CAR and Osteo-CAR) differentially localize to sinusoidal surfaces.",
+            "12": "Cxcl12-abundant-reticular (CAR) cell subsets (Adipo-CAR and Osteo-CAR) differentially localize to arteriolar surfaces.",
+            "13": "Cxcl12-abundant-reticular (CAR) cell subsets act locally as 'professional cytokine-secreting cells'.",
+            "14": "Cxcl12-abundant-reticular (CAR) cell subsets establish peri-vascular micro-niches.",
+            "15": "The three-dimensional bone-marrow organization can be accurately inferred from single-cell transcriptome data.",
+            "16": "The RNA-Magnet algorithm is used to accurately infer the three-dimensional bone-marrow organization from single-cell transcriptome data.",
+            "17": "The study reveals the cellular organization of bone marrow niches.",
+            "18": "The study reveals the spatial organization of bone marrow niches.",
+            "19": "The study offers a systematic approach to dissect the complex organization of whole organs."
+          },
+          "4": {
+            "1": "The development of spatial transcriptomics techniques has been rapid.",
+            "2": "Spatial transcriptomics techniques allow the measurement of transcriptional levels across many genes.",
+            "3": "Spatial transcriptomics techniques provide the spatial positions of cells.",
+            "4": "There is an explosion of interest in computational methods for harnessing spatial information in analysis of spatial transcriptomics datasets.",
+            "5": "There is an explosion of interest in computational methods for harnessing transcriptional information in analysis of spatial transcriptomics datasets.",
+            "6": "The explosion of interest is due to the ability of spatial transcriptomics techniques to measure transcriptional levels across genes and spatial positions of cells.",
+            "7": "There is a wide diversity of approaches in aim for spatial transcriptomics.",
+            "8": "There is a wide diversity of approaches in methodology for spatial transcriptomics.",
+            "9": "There is a wide diversity of approaches in technology for spatial transcriptomics.",
+            "10": "The diversity of approaches in spatial transcriptomics provides challenges in dissecting cellular functions in spatial contexts.",
+            "11": "The paper synthesizes and reviews key problems in the analysis of spatial transcriptomics data.",
+            "12": "The paper reviews methods currently applied in the analysis of spatial transcriptomics data.",
+            "13": "The paper expands on open questions in the field of spatial transcriptomics.",
+            "14": "The paper discusses areas of future development in spatial transcriptomics."
+          }
+        },
+        "viewpoints": [
+          "Spatially resolved transcriptomics (SRT) has enabled the identification of key genes involved in intricate mechanisms underlying diverse biological processes.",
+          "Spatially resolved transcriptomics (SRT) has enabled the identification of pathways involved in intricate mechanisms underlying diverse biological processes.",
+          "Spatially resolved transcriptomics (SRT) has enabled the identification of key genes involved in complex cellular phenomena.",
+          "Spatially resolved transcriptomics (SRT) has enabled the identification of pathways involved in complex cellular phenomena."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "While these new SRT technologies hold promise for producing new insights, they remain costly, preventing their direct adoption into routine clinical use at this stage.",
+        "references": {},
+        "viewpoints": [
+          "New spatially resolved transcriptomics (SRT) technologies hold promise for producing new insights.",
+          "New spatially resolved transcriptomics (SRT) technologies remain costly.",
+          "The costliness of spatially resolved transcriptomics (SRT) technologies prevents their direct adoption into routine clinical use at this stage."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "In contrast, haematoxylin-and-eosin-stained (H&E) histopathology images are more cost-effective and are routinely used in clinical practice.",
+        "references": {},
+        "viewpoints": [
+          "Haematoxylin-and-eosin-stained (H&E) histopathology images are more cost-effective than spatially resolved transcriptomics (SRT) technologies.",
+          "Haematoxylin-and-eosin-stained (H&E) histopathology images are routinely used in clinical practice."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Thus, if we can leverage modern machine learning together with information from SRT technologies to predict in silico spatial profiles of gene expression values from paired histology images of the same tissue, we could enhance information gained from existing H&E images.",
+        "references": {},
+        "viewpoints": [
+          "Leveraging modern machine learning together with information from spatially resolved transcriptomics (SRT) technologies can help predict in silico spatial profiles of gene expression values from paired histology images of the same tissue.",
+          "Predicting in silico spatial profiles of gene expression values can enhance information gained from existing haematoxylin-and-eosin-stained (H&E) images."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "This would facilitate large-scale examinations of spatial gene expression variations and lead to the potential discovery of biomarkers and therapeutic targets for complex diseases.",
+        "references": {},
+        "viewpoints": [
+          "Facilitating large-scale examinations of spatial gene expression variations can lead to the potential discovery of biomarkers for complex diseases.",
+          "Facilitating large-scale examinations of spatial gene expression variations can lead to the potential discovery of therapeutic targets for complex diseases."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "To date, several approaches have been developed to predict in silico spatially resolved gene expression (SGE) patterns using H&E data alone (Fig. 1a , Supplementary Table 1).",
+        "references": {},
+        "viewpoints": [
+          "Several approaches have been developed to predict in silico spatially resolved gene expression (SGE) patterns using haematoxylin-and-eosin-stained (H&E) data alone."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Among these methods, Convolutional Neural Networks (CNN) and Transformers are commonly selected architectures for extracting local and global 2D vision features around each sequenced spot from corresponding histology image patches.",
+        "references": {},
+        "viewpoints": [
+          "Among the methods predicting in silico spatially resolved gene expression (SGE) patterns, Convolutional Neural Networks (CNN) are commonly selected architectures.",
+          "Among the methods predicting in silico spatially resolved gene expression (SGE) patterns, Transformers are commonly selected architectures.",
+          "Convolutional Neural Networks (CNN) and Transformers extract local 2D vision features around each sequenced spot from corresponding histology image patches.",
+          "Convolutional Neural Networks (CNN) and Transformers extract global 2D vision features around each sequenced spot from corresponding histology image patches."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Some methods further implemented extra components, including super-resolution enhancement of SGE and Graph Neural Networks (GNN) to capture neighbourhood relationships between adjacent spots.",
+        "references": {},
+        "viewpoints": [
+          "Some methods implemented super-resolution enhancement of spatially resolved gene expression (SGE).",
+          "Some methods implemented Graph Neural Networks (GNN) to capture neighbourhood relationships between adjacent spots."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Furthermore, an exemplar module had been used to guide predictions by inferring from the gene expression (GE) of the most similar exemplars.",
+        "references": {},
+        "viewpoints": [
+          "An exemplar module has been used to guide predictions by inferring from the gene expression (GE) of the most similar exemplars."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "These learned features are then used to predict SGE that enables image-based screening for molecular biomarkers with spatial variation.",
+        "references": {},
+        "viewpoints": [
+          "Learned features are used to predict spatially resolved gene expression (SGE).",
+          "Predicted spatially resolved gene expression (SGE) enables image-based screening for molecular biomarkers with spatial variation."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "As these methods were recently published in the last 3 years and are continuously evolving, their performance has not yet been comprehensively benchmarked.",
+        "references": {},
+        "viewpoints": [
+          "The methods for predicting spatially resolved gene expression (SGE) have been published in the last 3 years.",
+          "The methods for predicting spatially resolved gene expression (SGE) are continuously evolving.",
+          "The performance of methods for predicting spatially resolved gene expression (SGE) has not yet been comprehensively benchmarked."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "While there exist general reviews on various aspects of SRT analysis [5] , [6] , [7] , they have only surveyed and categorised methods predicting SGE from H&E without any benchmarking.",
+        "references": {
+          "5": {
+            "1": "The function of embryos depends on the spatial organization of their cells.",
+            "2": "The function of liver lobules depends on the spatial organization of their cells.",
+            "3": "The function of intestinal villi depends on the spatial organization of their cells.",
+            "4": "The function of tumors depends on the spatial organization of their cells.",
+            "5": "High-throughput technologies have been developed in the past decade to quantify gene expression in space.",
+            "6": "Computational methods have been developed to leverage spatial gene expression data to identify genes with spatial patterns.",
+            "7": "Computational methods have been developed to leverage spatial gene expression data to delineate neighborhoods within tissues.",
+            "8": "A curated review of literature on spatial transcriptomics dating back to 1987 is presented to comprehensively document spatial gene expression technologies and data-analysis methods.",
+            "9": "A thorough analysis of trends in the field of spatial transcriptomics is presented, focusing on usage of experimental techniques, species studied, tissues studied, and computational approaches used.",
+            "10": "The Review places current methods of spatial gene expression in a historical context.",
+            "11": "Insights about the field of spatial gene expression that can guide current research strategies are derived from the Review.",
+            "12": "A companion supplement offers a more detailed look at the technologies analyzed.",
+            "13": "A companion supplement offers a more detailed look at the methods analyzed.",
+            "14": "The URL for the companion supplement is https://pachterlab.github.io/LP_2021/."
+          },
+          "6": {
+            "1": "Spatial transcriptomics (ST) has made significant advancements in the last few years.",
+            "2": "The advancements in spatial transcriptomics (ST) have created an urgent need for novel computational methods.",
+            "3": "There are unique challenges associated with ST data analysis that require novel computational methods to handle.",
+            "4": "Many AI methods have been developed for computational spatial transcriptomics (ST) analysis.",
+            "5": "AI methods for ST analysis utilize various machine learning techniques.",
+            "6": "AI methods for ST analysis utilize various deep learning techniques.",
+            "7": "This review provides a comprehensive survey of current AI methods for spatial transcriptomics (ST) analysis.",
+            "8": "This review provides an up-to-date survey of current AI methods for ST analysis."
+          },
+          "7": {
+            "1": "Spatially resolved transcriptomics (SRT) allows for the simultaneous study of morphological contexts and gene expression.",
+            "2": "SRT provides single-cell precision in the study of morphological contexts and gene expression.",
+            "3": "Data from SRT are multifaceted.",
+            "4": "SRT data provide researchers with intricate gene expression matrices.",
+            "5": "SRT data provide researchers with precise spatial details.",
+            "6": "SRT data provide researchers with comprehensive histology visuals.",
+            "7": "Rich and intricate datasets from SRT render many conventional methods like traditional machine learning and statistical models ineffective.",
+            "8": "The specialized nature of SRT data poses unique challenges.",
+            "9": "The scientific community is exploring more sophisticated analytical avenues due to the unique challenges posed by SRT data.",
+            "10": "There is an increasing reliance on deep learning algorithms for analyzing SRT data.",
+            "11": "Deep learning algorithms are increasingly used in spatial clustering of SRT data.",
+            "12": "Deep learning algorithms are increasingly used in the identification of spatially variable genes in SRT data.",
+            "13": "Deep learning algorithms are increasingly used in data alignment tasks of SRT data.",
+            "14": "The manuscript provides a rigorous critique of advanced deep learning methodologies for SRT data.",
+            "15": "The manuscript probes into the merits of advanced deep learning methodologies for SRT data.",
+            "16": "The manuscript probes into the limitations of advanced deep learning methodologies for SRT data.",
+            "17": "The manuscript examines avenues for further refinement of advanced deep learning methodologies for SRT data.",
+            "18": "Recent innovations in deep learning tailored for SRT have been promising.",
+            "19": "There remains substantial potential for enhancement in deep learning methodologies for SRT.",
+            "20": "The development of models that incorporate intricate biological nuances in SRT demands attention.",
+            "21": "Phylogeny-aware processing is an intricate biological nuance to be incorporated into models for SRT.",
+            "22": "In-depth analysis of minuscule histology image segments is an intricate biological nuance to be incorporated into models for SRT.",
+            "23": "Elimination of batch effects is a challenge that needs addressing in SRT.",
+            "24": "Perfecting data normalization techniques is a challenge that needs addressing in SRT.",
+            "25": "Countering overdispersion patterns in gene expression is a challenge that needs addressing in SRT.",
+            "26": "Countering zero inflation patterns in gene expression is a challenge that needs addressing in SRT.",
+            "27": "A comprehensive directory of readily accessible SRT databases has been assembled to support the scientific community.",
+            "28": "The directory of SRT databases is intended to serve as a foundation for future research initiatives."
+          }
+        },
+        "viewpoints": [
+          "General reviews on various aspects of spatially resolved transcriptomics (SRT) analysis exist.",
+          "The general reviews on spatially resolved transcriptomics (SRT) analysis have only surveyed methods predicting spatially resolved gene expression (SGE) from haematoxylin-and-eosin-stained (H&E) images.",
+          "The general reviews on spatially resolved transcriptomics (SRT) analysis have only categorised methods predicting spatially resolved gene expression (SGE) from haematoxylin-and-eosin-stained (H&E) images.",
+          "The general reviews on spatially resolved transcriptomics (SRT) analysis have not included any benchmarking of methods predicting spatially resolved gene expression (SGE)."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Fig. 1: Overview of the benchmarking process and the key aspects of the evaluation.",
+        "references": {},
+        "viewpoints": [
+          "The figure provides an overview of the benchmarking process and the key aspects of the evaluation."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "a Illustration of the machine learning task of predicting spatial gene expression from H&E images.",
+        "references": {},
+        "viewpoints": [
+          "An illustration shows the machine learning task of predicting spatial gene expression from H&E images."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "b Overview of the evaluation categories used in the benchmarking of each method.",
+        "references": {},
+        "viewpoints": [
+          "The figure provides an overview of the evaluation categories used in the benchmarking of each method."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Figure generated using Adobe Illustrator, with some graphics adapted from Adobe Stock under an Education License.",
+        "references": {},
+        "viewpoints": [
+          "The figure was generated using Adobe Illustrator.",
+          "Some graphics in the figure were adapted from Adobe Stock under an Education License."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Full size image.",
+        "references": {},
+        "viewpoints": [
+          "The figure is in full size."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Evaluation studies that are presented when proposing a new method are limited in nature and often not independent.",
+        "references": {},
+        "viewpoints": [
+          "Evaluation studies that are presented when proposing a new method are limited in nature.",
+          "Evaluation studies that are presented when proposing a new method are often not independent."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Among the current literature, methods for predicting SGE from H&E have been mainly assessed and evaluated for their efficacy by their developers.",
+        "references": {},
+        "viewpoints": [
+          "Among the current literature, methods for predicting spatially resolved gene expression (SGE) from haematoxylin-and-eosin-stained (H&E) have been mainly assessed by their developers.",
+          "Among the current literature, methods for predicting spatially resolved gene expression (SGE) from haematoxylin-and-eosin-stained (H&E) have been mainly evaluated for their efficacy by their developers."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Evidently, different evaluation frameworks have been used to assess the methods.",
+        "references": {},
+        "viewpoints": [
+          "Different evaluation frameworks have been used to assess methods for predicting spatially resolved gene expression (SGE)."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "For instance, ST-Net [8] , DeepSpaCE [9] , DeepPT [10] and TCGN [11] evaluated the performance of their models on external The Cancer Genome Atlas (TCGA) [12] data to determine the generalisability of their models.",
+        "references": {
+          "8": {
+            "1": "Spatial transcriptomics measures RNA abundance at a high spatial resolution.",
+            "2": "Spatial transcriptomics makes it possible to systematically link the morphology of cellular neighbourhoods and spatially localized gene expression.",
+            "3": "A new deep learning algorithm has been developed for the prediction of local gene expression from haematoxylin-and-eosin-stained histopathology images.",
+            "4": "The algorithm uses a dataset of 30,612 spatially resolved gene expression data matched to histopathology images from 23 patients with breast cancer.",
+            "5": "Over 100 genes have been identified, the expression of which can be predicted from histopathology images at a resolution of 100 µm.",
+            "6": "The identified genes include known breast cancer biomarkers of intratumoral heterogeneity.",
+            "7": "The identified genes include known breast cancer biomarkers related to the co-localization of tumour growth and immune activation.",
+            "8": "The developed algorithm generalizes well to The Cancer Genome Atlas without the need for re-training.",
+            "9": "The developed algorithm generalizes well to other breast cancer gene expression datasets without the need for re-training.",
+            "10": "Predicting the spatially resolved transcriptome of a tissue directly from tissue images may enable image-based screening for molecular biomarkers.",
+            "11": "Image-based screening for molecular biomarkers may reveal spatial variation."
+          },
+          "9": {
+            "1": "Spatial transcriptomics is an emerging technology.",
+            "2": "Spatial transcriptomics requires costly reagents.",
+            "3": "Spatial transcriptomics requires considerable skills.",
+            "4": "The cost and skill requirements of spatial transcriptomics limit the identification of transcriptional markers related to histology.",
+            "5": "Predicted spatial gene-expression in unmeasured regions and tissues can enhance biologists' histological interpretations.",
+            "6": "The Deep learning model for Spatial gene Clusters and Expression, DeepSpaCE, was developed.",
+            "7": "The performance of DeepSpaCE was confirmed using spatial-transcriptome profiles of consecutive human breast cancer tissue sections.",
+            "8": "The performance of DeepSpaCE was confirmed using immunohistochemistry images of consecutive human breast cancer tissue sections.",
+            "9": "The predicted expression patterns of SPARC, an invasion marker, highlighted a small tumor-invasion region.",
+            "10": "The small tumor-invasion region was difficult to identify using raw spatial transcriptome data alone because of a lack of measurements.",
+            "11": "Semi-supervised DeepSpaCE was developed using unlabeled histology images.",
+            "12": "The use of unlabeled histology images increased the imputation accuracy in consecutive sections.",
+            "13": "The increased imputation accuracy of consecutive sections enhanced the applicability of DeepSpaCE for a small sample size.",
+            "14": "The method enables users to derive hidden histological characters via spatial transcriptome.",
+            "15": "The method enables users to derive hidden histological characters via gene annotations.",
+            "16": "The ability to derive hidden histological characters can lead to accelerated biological discoveries.",
+            "17": "The accelerated biological discoveries can be achieved without additional experiments."
+          },
+          "10": [],
+          "11": {
+            "1": "Inferring gene expressions from histopathological images is a fascinating task.",
+            "2": "Inferring gene expressions from histopathological images is a challenging task.",
+            "3": "The challenge in inferring gene expressions from histopathological images is primarily due to substantial disparities between the two modalities.",
+            "4": "Existing strategies utilize local or global features of histological images.",
+            "5": "Existing strategies suffer from model complexity.",
+            "6": "Existing strategies suffer from high GPU consumption.",
+            "7": "Existing strategies suffer from low interpretability.",
+            "8": "Existing strategies suffer from insufficient encoding of local features.",
+            "9": "Existing strategies suffer from over-smooth prediction of gene expressions among neighboring sites.",
+            "10": "The paper develops TCGN (Transformer with Convolution and Graph-Node co-embedding method).",
+            "11": "TCGN is developed for gene expression estimation from H&E-stained pathological slide images.",
+            "12": "TCGN comprises a combination of convolutional layers, transformer encoders, and graph neural networks.",
+            "13": "TCGN is the first to integrate convolutional layers, transformer encoders, and graph neural networks in a general and interpretable computer vision backbone.",
+            "14": "TCGN uniquely operates with just a single spot image as input for histopathological image analysis.",
+            "15": "TCGN simplifies the process of histopathological image analysis while maintaining interpretability.",
+            "16": "The authors validate TCGN on three publicly available spatial transcriptomic datasets.",
+            "17": "TCGN consistently exhibited the best performance with a median PCC of 0.232.",
+            "18": "TCGN offers superior accuracy.",
+            "19": "TCGN keeps parameters to a minimum, with just 86.241 million.",
+            "20": "TCGN consumes minimal memory.",
+            "21": "TCGN runs smoothly even on personal computers.",
+            "22": "TCGN can be extended to handle bulk RNA-seq data.",
+            "23": "TCGN provides interpretability when handling bulk RNA-seq data.",
+            "24": "Enhancing the accuracy of omics information prediction from pathological images establishes a connection between genotype and phenotype.",
+            "25": "Enhancing the accuracy of omics information prediction from pathological images enables the prediction of costly-to-measure biomarkers from affordable histopathological images.",
+            "26": "Enhancing the accuracy of omics information prediction from pathological images lays the groundwork for future multi-modal data modeling.",
+            "27": "The results confirm that TCGN is a powerful tool for inferring gene expressions from histopathological images in precision health applications."
+          },
+          "12": {
+            "1": "Primary breast cancers were analyzed using genomic DNA copy number arrays.",
+            "2": "Primary breast cancers were analyzed using DNA methylation.",
+            "3": "Primary breast cancers were analyzed using exome sequencing.",
+            "4": "Primary breast cancers were analyzed using messenger RNA arrays.",
+            "5": "Primary breast cancers were analyzed using microRNA sequencing.",
+            "6": "Primary breast cancers were analyzed using reverse-phase protein arrays.",
+            "7": "Integrating information across genomic DNA copy number arrays, DNA methylation, exome sequencing, messenger RNA arrays, and microRNA sequencing provided key insights into previously defined gene expression subtypes.",
+            "8": "Integrating data from the five platforms demonstrated the existence of four main breast cancer classes.",
+            "9": "Each of the four main breast cancer classes shows significant molecular heterogeneity.",
+            "10": "Somatic mutations in TP53, PIK3CA, and GATA3 occurred at >10% incidence across all breast cancers.",
+            "11": "There were numerous subtype-associated gene mutations across different subtypes of breast cancer.",
+            "12": "There were novel gene mutations identified across different subtypes of breast cancer.",
+            "13": "Specific mutations in GATA3 were enriched in the luminal A subtype.",
+            "14": "Specific mutations in PIK3CA were enriched in the luminal A subtype.",
+            "15": "Specific mutations in MAP3K1 were enriched in the luminal A subtype.",
+            "16": "Two novel protein-expression-defined subgroups were identified.",
+            "17": "The two novel subgroups may be produced by stromal/microenvironmental elements.",
+            "18": "Integrated analyses identified specific signalling pathways dominant in each molecular subtype.",
+            "19": "A HER2/phosphorylated HER2/EGFR/phosphorylated EGFR signature was identified within the HER2-enriched expression subtype.",
+            "20": "Comparison of basal-like breast tumours with high-grade serous ovarian tumours showed many molecular commonalities.",
+            "21": "The molecular commonalities indicate a related aetiology between basal-like breast tumours and high-grade serous ovarian tumours.",
+            "22": "The molecular commonalities indicate similar therapeutic opportunities for basal-like breast tumours and high-grade serous ovarian tumours.",
+            "23": "The four main breast cancer subtypes are caused by different subsets of genetic and epigenetic abnormalities.",
+            "24": "The finding raises the hypothesis that much of the clinically observable plasticity and heterogeneity occurs within these major biological subtypes of breast cancer.",
+            "25": "The finding raises the hypothesis that much of the clinically observable plasticity and heterogeneity does not occur across these major biological subtypes of breast cancer."
+          }
+        },
+        "viewpoints": [
+          "ST-Net evaluated the performance of its models on external The Cancer Genome Atlas (TCGA) data to determine the generalisability.",
+          "DeepSpaCE evaluated the performance of its models on external The Cancer Genome Atlas (TCGA) data to determine the generalisability.",
+          "DeepPT evaluated the performance of its models on external The Cancer Genome Atlas (TCGA) data to determine the generalisability.",
+          "TCGN evaluated the performance of its models on external The Cancer Genome Atlas (TCGA) data to determine the generalisability."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Hist2ST [13] , EGNv1 [14] , EGNv2 [15] , TCGN and THItoGene [16] performed an ablation study to assess the contributions of different components of their deep-learning architecture.",
+        "references": {
+          "13": {
+            "1": "The rapid development of spatial transcriptomics allows the measurement of RNA abundance at a high spatial resolution.",
+            "2": "It is possible to simultaneously profile gene expression, spatial locations of cells or spots, and hematoxylin and eosin-stained histology images due to the rapid development of spatial transcriptomics.",
+            "3": "Predicting gene expression from histology images is promising.",
+            "4": "Histology images are relatively easy and cheap to obtain.",
+            "5": "Several methods have been devised to predict gene expression from histology images.",
+            "6": "The devised methods have not fully captured the internal relations of the 2D vision features.",
+            "7": "The devised methods have not fully captured the spatial dependency between spots.",
+            "8": "Hist2ST is a deep learning-based model developed to predict RNA-seq expression from histology images.",
+            "9": "The corresponding histology image around each sequenced spot is cropped into an image patch.",
+            "10": "The image patch is fed into a convolutional module to extract 2D vision features.",
+            "11": "The spatial relations with the whole image are captured through a Transformer module.",
+            "12": "The spatial relations with neighbored patches are captured through graph neural network modules.",
+            "13": "The learned features are used to predict gene expression.",
+            "14": "The prediction of gene expression follows the zero-inflated negative binomial distribution.",
+            "15": "A self-distillation mechanism is employed to alleviate the impact of the small spatial transcriptomics data.",
+            "16": "The self-distillation mechanism is used for efficient learning of the model.",
+            "17": "Hist2ST was shown to outperform existing methods in gene expression prediction.",
+            "18": "Hist2ST was shown to outperform existing methods in spatial region identification.",
+            "19": "The performance of Hist2ST was evaluated through comprehensive tests on cancer and normal datasets.",
+            "20": "Pathway analyses indicated that Hist2ST could reserve biological information.",
+            "21": "Hist2ST enables the generation of spatial transcriptomics data from histology images.",
+            "22": "Hist2ST is used for elucidating molecular signatures of tissues."
+          },
+          "14": [],
+          "15": {
+            "1": "Spatial transcriptomics is essential for understanding diseases.",
+            "2": "Spatial transcriptomics is essential for developing novel treatments.",
+            "3": "Spatial transcriptomics measures the gene expression of each fine-grained area in the tissue slide.",
+            "4": "Spatial transcriptomics measures the gene expression with low throughput.",
+            "5": "This paper proposes an exemplar guided graph network dubbed EGGN.",
+            "6": "EGGN is proposed to accurately predict gene expression from each window of a tissue slide image.",
+            "7": "EGGN is proposed to efficiently predict gene expression from each window of a tissue slide image.",
+            "8": "Exemplar learning is applied to dynamically boost gene expression prediction.",
+            "9": "Gene expression prediction is boosted from nearest/similar exemplars of a given tissue slide image window.",
+            "10": "The framework has three main components connected in a sequence.",
+            "11": "The first component is an extractor to structure a feature space for exemplar retrievals.",
+            "12": "The second component is a graph construction strategy to connect windows and exemplars as a graph.",
+            "13": "The third component is a graph convolutional network backbone to process window and exemplar features.",
+            "14": "A graph exemplar bridging block is used to adaptively revise the window features using its exemplars.",
+            "15": "The gene expression prediction task is completed with a simple attention-based prediction block.",
+            "16": "Experiments on standard benchmark datasets indicate the superiority of the proposed approach.",
+            "17": "The superiority of the proposed approach is indicated when compared with past state-of-the-art methods.",
+            "18": "The code for the proposed work is released at https://github.com/Yan98/EGN."
+          },
+          "16": {
+            "1": "Spatial transcriptomics unveils the complex dynamics of cell regulation.",
+            "2": "Spatial transcriptomics unveils the complex dynamics of transcriptomes.",
+            "3": "Spatial transcriptomics is typically cost-prohibitive.",
+            "4": "Predicting spatial gene expression from histological images via artificial intelligence offers a more affordable option than spatial transcriptomics.",
+            "5": "Existing methods fall short in extracting deep-level information from pathological images when predicting spatial gene expression via artificial intelligence.",
+            "6": "THItoGene is a hybrid neural network presented in this paper.",
+            "7": "THItoGene utilizes dynamic convolutional networks.",
+            "8": "THItoGene utilizes capsule networks.",
+            "9": "THItoGene adaptively senses potential molecular signals in histological images.",
+            "10": "THItoGene explores the relationship between high-resolution pathology image phenotypes and regulation of gene expression.",
+            "11": "A comprehensive benchmark evaluation was conducted using datasets from human breast cancer and cutaneous squamous cell carcinoma.",
+            "12": "The comprehensive benchmark evaluation demonstrated the superior performance of THItoGene in spatial gene expression prediction.",
+            "13": "THItoGene has demonstrated its capacity to decipher the spatial context within specific tissue regions.",
+            "14": "THItoGene has demonstrated its capacity to decipher enrichment signals within specific tissue regions.",
+            "15": "THItoGene can be freely accessed at https://github.com/yrjia1015/THItoGene."
+          }
+        },
+        "viewpoints": [
+          "Hist2ST performed an ablation study to assess the contributions of different components of its deep-learning architecture.",
+          "EGNv1 performed an ablation study to assess the contributions of different components of its deep-learning architecture.",
+          "EGNv2 performed an ablation study to assess the contributions of different components of its deep-learning architecture.",
+          "TCGN performed an ablation study to assess the contributions of different components of its deep-learning architecture.",
+          "THItoGene performed an ablation study to assess the contributions of different components of its deep-learning architecture."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "BrST-Net [17] conducted a comparison of 10 state-of-the-art CNN and transformer architectures to determine the effectiveness of the backbone models.",
+        "references": {
+          "17": {
+            "1": "Tumour heterogeneity in breast cancer poses challenges in predicting the outcome of breast cancer.",
+            "2": "Tumour heterogeneity in breast cancer poses challenges in predicting the response to therapy in breast cancer.",
+            "3": "Spatial transcriptomics technologies may address the challenges posed by tumour heterogeneity in breast cancer.",
+            "4": "Spatial transcriptomics technologies provide a wealth of information about gene expression at the cell level.",
+            "5": "Spatial transcriptomics technologies are expensive.",
+            "6": "The expense of spatial transcriptomics technologies hinders their use in large-scale clinical oncology studies.",
+            "7": "Predicting gene expression from hematoxylin and eosin stained histology images provides a more affordable alternative to spatial transcriptomics technologies for large-scale clinical oncology studies.",
+            "8": "BrST-Net is a deep learning framework for predicting gene expression from histopathology images.",
+            "9": "BrST-Net uses spatial transcriptomics data for predicting gene expression from histopathology images.",
+            "10": "Four distinct state-of-the-art deep learning architectures were trained and evaluated using BrST-Net.",
+            "11": "The four deep learning architectures include ResNet101, Inception-v3, EfficientNet (with six different variants), and vision transformer (with two different variants).",
+            "12": "The deep learning architectures were trained and evaluated without utilizing pretrained weights for the prediction of 250 genes.",
+            "13": "An auxiliary network was introduced into the BrST-Net framework to enhance the generalisation performance of the main network.",
+            "14": "The methodology involving BrST-Net outperforms previous studies.",
+            "15": "The methodology identified 237 genes with positive correlation.",
+            "16": "The methodology identified 24 genes with a median correlation coefficient greater than 0.50.",
+            "17": "This improvement is notable compared to previous studies.",
+            "18": "Previous studies could only predict 102 genes with positive correlation.",
+            "19": "The highest correlation values in previous studies ranged from 0.29 to 0.34."
+          }
+        },
+        "viewpoints": [
+          "BrST-Net conducted a comparison of 10 state-of-the-art CNN architectures to determine the effectiveness of the backbone models.",
+          "BrST-Net conducted a comparison of 10 state-of-the-art transformer architectures to determine the effectiveness of the backbone models."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "iStar [18] demonstrated the application of its predictions by performing tissue region segmentation.",
+        "references": {
+          "18": {
+            "1": "Spatial transcriptomics (ST) has demonstrated enormous potential for generating intricate molecular maps of cells.",
+            "2": "Spatial transcriptomics (ST) is used within tissues.",
+            "3": "iStar is a method based on hierarchical image feature extraction.",
+            "4": "iStar integrates spatial transcriptomics (ST) data and high-resolution histology images.",
+            "5": "iStar predicts spatial gene expression with super-resolution.",
+            "6": "iStar enhances gene expression resolution to near-single-cell levels in spatial transcriptomics (ST).",
+            "7": "iStar enables gene expression prediction in tissue sections where only histology images are available."
+          }
+        },
+        "viewpoints": [
+          "iStar demonstrated the application of its predictions by performing tissue region segmentation."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Overall, there is no consistent and detailed evaluation framework comparing the performance of these approaches in predicting in silico SGE, due in part to the recent development of this field, limited data availability and the complexity of executing these methods.",
+        "references": {},
+        "viewpoints": [
+          "Overall, there is no consistent evaluation framework comparing the performance of approaches predicting in silico spatially resolved gene expression (SGE).",
+          "Overall, there is no detailed evaluation framework comparing the performance of approaches predicting in silico spatially resolved gene expression (SGE).",
+          "The lack of a consistent and detailed evaluation framework is due in part to the recent development of the field of predicting spatially resolved gene expression (SGE).",
+          "Limited data availability contributes to the lack of a consistent and detailed evaluation framework for predicting in silico spatially resolved gene expression (SGE).",
+          "The complexity of executing these methods contributes to the lack of a consistent and detailed evaluation framework for predicting in silico spatially resolved gene expression (SGE)."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Consequently, we lack a comprehensive understanding of the performance, stability and the broader applicability of individual methods.",
+        "references": {},
+        "viewpoints": [
+          "We lack a comprehensive understanding of the performance of individual methods for predicting spatially resolved gene expression (SGE).",
+          "We lack a comprehensive understanding of the stability of individual methods for predicting spatially resolved gene expression (SGE).",
+          "We lack a comprehensive understanding of the broader applicability of individual methods for predicting spatially resolved gene expression (SGE)."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Additionally, there is a lack of critical evaluation regarding how different spatial characteristics of H&E images can affect the accuracy of SGE predictions, especially on their impact on downstream analysis as well as potential clinical translation.",
+        "references": {},
+        "viewpoints": [
+          "There is a lack of critical evaluation regarding how different spatial characteristics of haematoxylin-and-eosin-stained (H&E) images can affect the accuracy of spatially resolved gene expression (SGE) predictions.",
+          "There is a lack of critical evaluation on the impact of different spatial characteristics of H&E images on downstream analysis.",
+          "There is a lack of critical evaluation on the potential clinical translation of different spatial characteristics of H&E image data on spatially resolved gene expression (SGE) predictions."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "To this end, we provide a benchmark and review of methods predicting SGE from H&E images.",
+        "references": {},
+        "viewpoints": [
+          "The study provides a benchmark and review of methods for predicting spatially resolved gene expression (SGE) from H&E images."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "We compared the performance of eleven methods using 28 different metrics broadly grouped into five categories.",
+        "references": {},
+        "viewpoints": [
+          "The study compared the performance of eleven methods for predicting spatially resolved gene expression (SGE).",
+          "The comparison used 28 different metrics broadly grouped into five categories."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "These include metrics that focus on the evaluation of spatial and biological characteristics of genes that are predicted effectively.",
+        "references": {},
+        "viewpoints": [
+          "The metrics include those that focus on the evaluation of spatial characteristics of genes that are predicted effectively.",
+          "The metrics include those that focus on the evaluation of biological characteristics of genes that are predicted effectively."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Metrics also include the impact of prediction performance on downstream applications.",
+        "references": {},
+        "viewpoints": [
+          "The metrics also include the impact of prediction performance on downstream applications."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "Given the ongoing development in predicting SGE from H&E providing exciting potential for clinical usage, our benchmark study provides an analysis of significant achievements of existing methods, demonstrating their practical impact.",
+        "references": {},
+        "viewpoints": [
+          "The ongoing development in predicting spatially resolved gene expression (SGE) from H&E provides exciting potential for clinical usage.",
+          "The benchmark study provides an analysis of significant achievements of existing methods for predicting spatially resolved gene expression (SGE).",
+          "The analysis demonstrates the practical impact of existing methods for predicting spatially resolved gene expression (SGE)."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "Importantly, we provide a vital assessment of the limitations and generalisability of their translational potential.",
+        "references": {},
+        "viewpoints": [
+          "The study provides a vital assessment of the limitations of existing methods for predicting spatially resolved gene expression (SGE).",
+          "The study provides a vital assessment of the generalisability of the translational potential of existing methods for predicting spatially resolved gene expression (SGE)."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Ultimately, we offer guidance for new users of these methods and highlight current challenges for developers aiming to advance methodologies.",
+        "references": {},
+        "viewpoints": [
+          "The study offers guidance for new users of methods for predicting spatially resolved gene expression (SGE).",
+          "The study highlights current challenges for developers aiming to advance methodologies for predicting spatially resolved gene expression (SGE)."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Furthermore, our study can serve as a valuable tool, facilitating the rapid and independent evaluation of future methods.",
+        "references": {},
+        "viewpoints": [
+          "The study can serve as a valuable tool for facilitating the rapid evaluation of future methods for predicting spatially resolved gene expression (SGE).",
+          "The study can serve as a valuable tool for facilitating the independent evaluation of future methods for predicting spatially resolved gene expression (SGE)."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56618-y_with_abstracts",
+    "base_id": "s41467-025-56618-y",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56618-y_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

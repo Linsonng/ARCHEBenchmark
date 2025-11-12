@@ -1,0 +1,918 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Many human autoimmune diseases are characterized by disease-specific autoantibodies. In most autoimmune diseases, like myasthenia gravis (MG), systemic lupus erythematosus (SLE), or rheumatoid arthritis (RA), broadly B cell-targeting therapies are effective, indicating that B cells play a pivotal role in disease pathogenesis. Targeting B cells can also offer valuable insights into which B cell subsets contribute to disease. However, how B cells contribute to disease is often unknown. A profound mechanistic understanding of B cell involvement in disease pathogenesis is important, however, as broadly B cell depleting interventions carry substantial risks [1] . So far, studies have focused preferentially on disease-specific autoreactive IgG which is routinely assessed in clinical practice. Clearly, this has revealed prominent roles for autoreactive IgG in several B cell-mediated autoimmune diseases. Also, it has provided the basis for emerging therapeutic approaches that target IgG, for example by enhancing IgG degradation through blockade of the neonatal Fcγ-receptor, FcRn [2] , [3] , [4] . A prototypic human autoimmune disease mediated by B cells is anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) [5] . AAV is hallmarked by the presence of disease-specific IgG and represents a group of severe systemic autoimmune diseases characterized by small vessel inflammation and organ-threatening tissue damage. To date, there is no known cure. Different ANCA-IgG associate with different clinical syndromes. Granulomatosis with polyangiitis (GPA) most frequently associates with ANCA targeting proteinase 3 (PR3). ANCA targeting myeloperoxidase (MPO) hallmark microscopic polyangiitis (MPA) and, less frequently, eosinophilic GPA (EGPA). The most severe AAV manifestations are alveolar hemorrhage and necrotizing crescentic glomerulonephritis (NCGN). These often cause irreversible organ damage and can be life-threatening. The rise of ANCA-IgG often precedes relapses [6] . Associations between ANCA-IgG levels and disease activity are variable, however, and relapses remain common and are difficult to predict [6] , [7] , [8] . Current therapies targeting B cells and, more recently, the complement system, have considerably improved disease management [9] , [10] . Hence, it is assumed that B cells and especially autoreactive antibodies are crucially involved in disease pathogenesis. This notion is supported by copious evidence from clinical, in vivo and in vitro studies [11] , [12] , [13] , [14] , [15] , [16] , [17] , [18] . Nonetheless, most patients require long-term, extensive immunosuppressive treatment with considerable side effects. Consequently, infections now represent the main cause of death [19] , [20] . Therefore, it remains crucial to understand the specific pathophysiological role of B cells in both disease relapses and remission. ANCA and, in particular, anti-MPO-ANCA are thought to be directly pathogenic, as shown by passive transfer experiments in rodents [11] , [21] . Anti-MPO-IgG induced in mice deficient for the MPO gene, for example, mediated severe vasculitis with NCGN and pulmonary hemorrhage when injected into wild-type mice. In these models, the alternative pathway of the complement system was identified as a crucial mediator of anti-MPO-IgG induced pathogenicity, as animals deficient in C5 and factor B developed no disease [22] . In humans, the C5a receptor antagonist avacopan clearly improves disease [9] . Experiments deciphering in vivo pathogenicity of anti-PR3 antibodies have given varying results, possibly due to significant differences between human PR3 and its murine homologs [12] . Still, also multiple in vitro experiments with either patient serum, isolated IgG or murine monoclonal antibodies (mAbs) have demonstrated direct effects of ANCA on neutrophils, such as the enhancement of neutrophil phagocytosis and cytokine production [13] , [14] . Additionally, ANCA increase adherence of neutrophils to, and cytotoxicity towards, endothelial cells [15] , [16] , [17] . Furthermore, ANCA-stimulated neutrophils release neutrophil extracellular traps (NETs) containing MPO and PR3 autoantigens [18] and complement activating components [22] , leading to higher autoantigen exposure and possibly a positive feedback loop capable of amplifying inflammation. While the above provide clear evidence for functional pathogenicity of ANCA and highlight the challenges of maintaining remission, it has proven challenging to study specific B cell responses underlying ANCA production in human AAV. The biology of these cells, however, may hold important information as to their generation and dynamics of activation in the disease context and may help identify triggers that such cells might receive leading to their activation. Therefore, we here set out to characterize autoreactive, MPO-directed B cell responses in MPO + AAV patients. Previous work has indicated the presence of MPO-reactive B cells in the circulation of AAV patients, as assessed by detecting ANCA-IgG production by stimulated peripheral blood mononuclear cells (PBMCs) from AAV patients, including patients post-rituximab treatment or during remission [23] , [24] , [25] . Here, we perform an analysis of the anti-IgM B cell compartment and show that most MPO-directed B cells in the circulation of MPO + AAV patients are IgM-positive. Analyzing the anti-MPO-Ig response, we provide the first evidence that anti-MPO-IgM may have a prominent, so far unrecognized, function in disease pathogenesis. This function may relate to complement activation, as the complement activating capacity of anti-MPO Ig in human serum is strongly dependent on anti-MPO IgM. Together, these results are relevant for future management of disease relapses and the design of targeted therapies. Moreover, these results highlight IgM B cell autoreactivity as an important component of pathogenicity in human autoimmune diseases.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Many human autoimmune diseases are characterized by disease-specific autoantibodies.",
+        "references": {},
+        "viewpoints": [
+          "Human autoimmune diseases are characterized by disease-specific autoantibodies."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "In most autoimmune diseases, like myasthenia gravis (MG), systemic lupus erythematosus (SLE), or rheumatoid arthritis (RA), broadly B cell-targeting therapies are effective, indicating that B cells play a pivotal role in disease pathogenesis.",
+        "references": {},
+        "viewpoints": [
+          "Broadly B cell-targeting therapies are effective in most autoimmune diseases like myasthenia gravis, systemic lupus erythematosus, or rheumatoid arthritis.",
+          "B cells play a pivotal role in the pathogenesis of most autoimmune diseases."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Targeting B cells can also offer valuable insights into which B cell subsets contribute to disease.",
+        "references": {},
+        "viewpoints": [
+          "Targeting B cells can offer valuable insights into which B cell subsets contribute to disease."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "However, how B cells contribute to disease is often unknown.",
+        "references": {},
+        "viewpoints": [
+          "The mechanism by which B cells contribute to autoimmune diseases is often unknown."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "A profound mechanistic understanding of B cell involvement in disease pathogenesis is important, however, as broadly B cell depleting interventions carry substantial risks [1].",
+        "references": {
+          "1": []
+        },
+        "viewpoints": [
+          "A profound mechanistic understanding of B cell involvement in disease pathogenesis is important.",
+          "Broadly B cell depleting interventions carry substantial risks."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "So far, studies have focused preferentially on disease-specific autoreactive IgG which is routinely assessed in clinical practice.",
+        "references": {},
+        "viewpoints": [
+          "Studies have focused preferentially on disease-specific autoreactive IgG.",
+          "Disease-specific autoreactive IgG is routinely assessed in clinical practice."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Clearly, this has revealed prominent roles for autoreactive IgG in several B cell-mediated autoimmune diseases.",
+        "references": {},
+        "viewpoints": [
+          "Prominent roles for autoreactive IgG have been revealed in several B cell-mediated autoimmune diseases."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Also, it has provided the basis for emerging therapeutic approaches that target IgG, for example by enhancing IgG degradation through blockade of the neonatal Fcγ-receptor, FcRn [2], [3], [4].",
+        "references": {
+          "2": {
+            "1": "There is an unmet need for effective treatment options for generalised myasthenia gravis.",
+            "2": "There is an unmet need for targeted treatment options for generalised myasthenia gravis.",
+            "3": "There is an unmet need for well-tolerated treatment options for generalised myasthenia gravis.",
+            "4": "There is an unmet need for treatment options for generalised myasthenia gravis that can be used in a broad population of patients.",
+            "5": "The study aimed to assess the safety of efgartigimod (ARGX-113) in patients with generalised myasthenia gravis.",
+            "6": "The study aimed to assess the efficacy of efgartigimod (ARGX-113) in patients with generalised myasthenia gravis.",
+            "7": "Efgartigimod (ARGX-113) is a human IgG1 antibody Fc fragment engineered to reduce pathogenic IgG autoantibody levels.",
+            "8": "ADAPT was a randomised, double-blind, placebo-controlled trial.",
+            "9": "ADAPT was a phase 3 trial.",
+            "10": "ADAPT was conducted at 56 neuromuscular academic and community centres.",
+            "11": "ADAPT was conducted in 15 countries in North America, Europe, and Japan.",
+            "12": "Patients aged at least 18 years were eligible to participate in the study.",
+            "13": "Patients with generalised myasthenia gravis were eligible to participate in the study.",
+            "14": "Eligibility was irrespective of anti-acetylcholine receptor antibody status.",
+            "15": "Patients needed a Myasthenia Gravis Activities of Daily Living (MG-ADL) score of at least 5 for eligibility.",
+            "16": "At least 50% of the MG-ADL score had to be non-ocular for eligibility.",
+            "17": "Patients needed to be on a stable dose of at least one treatment for generalised myasthenia gravis for eligibility.",
+            "18": "Patients were randomly assigned by interactive response technology to efgartigimod (10 mg/kg) or matching placebo.",
+            "19": "The assignment ratio was 1:1.",
+            "20": "Efgartigimod and placebo were administered as four infusions per cycle.",
+            "21": "One infusion per week was administered.",
+            "22": "Infusions were repeated as needed depending on clinical response.",
+            "23": "Infusions could be repeated no sooner than 8 weeks after initiation of the previous cycle.",
+            "24": "Patients were masked to treatment allocation.",
+            "25": "Investigators were masked to treatment allocation.",
+            "26": "Clinical site staff were masked to treatment allocation.",
+            "27": "The primary endpoint was the proportion of acetylcholine receptor antibody-positive patients who were MG-ADL responders.",
+            "28": "An MG-ADL responder was defined as having a ≥2-point MG-ADL improvement sustained for ≥4 weeks.",
+            "29": "The primary endpoint was assessed in the first treatment cycle.",
+            "30": "The primary analysis was done in the modified intention-to-treat population.",
+            "31": "The population included all acetylcholine receptor antibody-positive patients.",
+            "32": "Patients needed a valid baseline MG-ADL assessment for inclusion in the primary analysis.",
+            "33": "Patients needed at least one post-baseline MG-ADL assessment for inclusion in the primary analysis.",
+            "34": "The safety analysis included all randomly assigned patients.",
+            "35": "Patients included in the safety analysis needed to receive at least one dose of efgartigimod or placebo.",
+            "36": "Patients included in the safety analysis could receive a part dose of efgartigimod or placebo.",
+            "37": "The trial is registered at ClinicalTrials.gov (NCT03669588).",
+            "38": "An open-label extension (ADAPT+) is ongoing.",
+            "39": "The open-label extension is registered at ClinicalTrials.gov (NCT03770403).",
+            "40": "167 patients were enrolled, randomly assigned, and treated between Sept 5, 2018, and Nov 26, 2019.",
+            "41": "84 patients were in the efgartigimod group.",
+            "42": "83 patients were in the placebo group.",
+            "43": "129 patients (77%) were acetylcholine receptor antibody-positive.",
+            "44": "In cycle 1, 68% (44 out of 65) of acetylcholine receptor antibody-positive patients in the efgartigimod group were MG-ADL responders.",
+            "45": "In cycle 1, 30% (19 out of 64) of acetylcholine receptor antibody-positive patients in the placebo group were MG-ADL responders.",
+            "46": "The odds ratio for being an MG-ADL responder in the efgartigimod group compared to the placebo group was 4.95.",
+            "47": "The 95% confidence interval for the odds ratio was 2.21 to 11.53.",
+            "48": "The p-value for the odds ratio was less than 0.0001.",
+            "49": "77% (65 out of 84) of patients in the efgartigimod group had treatment-emergent adverse events.",
+            "50": "84% (70 out of 83) of patients in the placebo group had treatment-emergent adverse events.",
+            "51": "The most frequent treatment-emergent adverse event was headache.",
+            "52": "In the efgartigimod group, 29% (24 patients) experienced headache.",
+            "53": "In the placebo group, 28% (23 patients) experienced headache.",
+            "54": "The second most frequent treatment-emergent adverse event was nasopharyngitis.",
+            "55": "In the efgartigimod group, 12% (10 patients) experienced nasopharyngitis.",
+            "56": "In the placebo group, 18% (15 patients) experienced nasopharyngitis.",
+            "57": "5% (4 patients) of efgartigimod-treated patients had a serious adverse event.",
+            "58": "8% (7 patients) of patients in the placebo group had a serious adverse event.",
+            "59": "4% (3 patients) of the efgartigimod group discontinued treatment during the study.",
+            "60": "4% (3 patients) of the placebo group discontinued treatment during the study.",
+            "61": "There were no deaths during the study.",
+            "62": "Efgartigimod was well tolerated in patients with generalised myasthenia gravis.",
+            "63": "Efgartigimod was efficacious in patients with generalised myasthenia gravis.",
+            "64": "The individualised dosing based on clinical response was a unique feature of ADAPT.",
+            "65": "Translation of individualised dosing to clinical practice will be further informed by longer-term safety and efficacy data.",
+            "66": "Longer-term safety and efficacy data will be informed by the ongoing open-label extension.",
+            "67": "No extractable viewpoints."
+          },
+          "3": {
+            "1": "The Fc region of a human immunoglobulin G (IgG) has been engineered to generate a mutated antibody.",
+            "2": "The mutated antibody modulates the concentrations of endogenous immunoglobulin Gs (IgGs) in vivo.",
+            "3": "The modulation of endogenous IgG concentrations has been achieved by targeting the activity of the Fc receptor, FcRn.",
+            "4": "The Fc receptor, FcRn, serves through its IgG salvage function to maintain and regulate IgG concentrations in the body.",
+            "5": "An IgG with an Fc region engineered to bind with higher affinity to FcRn potently inhibits FcRn-IgG interactions.",
+            "6": "An IgG with an Fc region engineered to bind with reduced pH dependence to FcRn potently inhibits FcRn-IgG interactions.",
+            "7": "An IgG with an Fc region engineered to bind with higher affinity and reduced pH dependence to FcRn induces a rapid decrease of IgG levels in mice.",
+            "8": "FcRn blockers, also known as 'Abdegs,' may have uses in reducing IgG levels in antibody-mediated diseases.",
+            "9": "FcRn blockers, also known as 'Abdegs,' may have uses in inducing the rapid clearance of IgG-toxin complexes.",
+            "10": "FcRn blockers, also known as 'Abdegs,' may have uses in inducing the rapid clearance of IgG-drug complexes."
+          },
+          "4": {
+            "1": "Pemphigus is a group of IgG-mediated autoimmune diseases.",
+            "2": "These diseases affect stratified squamous epithelia, such as the skin and oral mucosa.",
+            "3": "In pemphigus, acantholysis, which is the loss of cell adhesion, causes blisters and erosions.",
+            "4": "Pemphigus has three major subtypes.",
+            "5": "The three major subtypes of pemphigus are pemphigus vulgaris, pemphigus foliaceus, and paraneoplastic pemphigus.",
+            "6": "IgG autoantibodies in pemphigus are characteristically raised against desmoglein 1 and desmoglein 3.",
+            "7": "Desmoglein 1 and desmoglein 3 are cell-cell adhesion molecules.",
+            "8": "Desmoglein 1 and desmoglein 3 are found in desmosomes.",
+            "9": "The sites of blister formation in pemphigus can be physiologically explained by the anti-desmoglein autoantibody profile.",
+            "10": "The tissue-specific expression pattern of desmoglein isoforms helps physiologically explain the sites of blister formation in pemphigus.",
+            "11": "The pathophysiological roles of T cells and B cells have been characterized in mouse models of pemphigus.",
+            "12": "The pathophysiological roles of T cells and B cells have been characterized in patients with pemphigus.",
+            "13": "Characterizing the roles of T cells and B cells in pemphigus has revealed insights into the mechanisms of autoimmunity.",
+            "14": "Diagnosis of pemphigus is based on clinical manifestations.",
+            "15": "Diagnosis of pemphigus is confirmed with histological testing.",
+            "16": "Diagnosis of pemphigus is confirmed with immunochemical testing.",
+            "17": "The current first-line treatment for pemphigus is systemic corticosteroids.",
+            "18": "Adjuvant therapies for treating pemphigus include immunosuppressive agents.",
+            "19": "Adjuvant therapies for treating pemphigus include intravenous immunoglobulin.",
+            "20": "Adjuvant therapies for treating pemphigus include plasmapheresis.",
+            "21": "Rituximab is a monoclonal antibody against CD20."
+          }
+        },
+        "viewpoints": [
+          "Studies of autoreactive IgG have provided the basis for emerging therapeutic approaches that target IgG.",
+          "Enhancing IgG degradation through blockade of the neonatal Fcγ-receptor, FcRn, is an example of a therapeutic approach targeting IgG."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "A prototypic human autoimmune disease mediated by B cells is anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV) [5].",
+        "references": {
+          "5": []
+        },
+        "viewpoints": [
+          "Anti-neutrophil cytoplasmic antibody-associated vasculitis is a prototypic human autoimmune disease mediated by B cells."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "AAV is hallmarked by the presence of disease-specific IgG and represents a group of severe systemic autoimmune diseases characterized by small vessel inflammation and organ-threatening tissue damage.",
+        "references": {},
+        "viewpoints": [
+          "AAV is hallmarked by the presence of disease-specific IgG.",
+          "AAV represents a group of severe systemic autoimmune diseases.",
+          "AAV is characterized by small vessel inflammation.",
+          "AAV is characterized by organ-threatening tissue damage."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "To date, there is no known cure.",
+        "references": {},
+        "viewpoints": [
+          "There is no known cure for AAV."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Different ANCA-IgG associate with different clinical syndromes.",
+        "references": {},
+        "viewpoints": [
+          "Different ANCA-IgG associate with different clinical syndromes."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Granulomatosis with polyangiitis (GPA) most frequently associates with ANCA targeting proteinase 3 (PR3).",
+        "references": {},
+        "viewpoints": [
+          "Granulomatosis with polyangiitis most frequently associates with ANCA targeting proteinase 3."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "ANCA targeting myeloperoxidase (MPO) hallmark microscopic polyangiitis (MPA) and, less frequently, eosinophilic GPA (EGPA).",
+        "references": {},
+        "viewpoints": [
+          "ANCA targeting myeloperoxidase hallmarks microscopic polyangiitis.",
+          "ANCA targeting myeloperoxidase hallmarks eosinophilic granulomatosis with polyangiitis less frequently."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The most severe AAV manifestations are alveolar hemorrhage and necrotizing crescentic glomerulonephritis (NCGN).",
+        "references": {},
+        "viewpoints": [
+          "The most severe AAV manifestations are alveolar hemorrhage.",
+          "The most severe AAV manifestations are necrotizing crescentic glomerulonephritis."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "These often cause irreversible organ damage and can be life-threatening.",
+        "references": {},
+        "viewpoints": [
+          "Alveolar hemorrhage and necrotizing crescentic glomerulonephritis often cause irreversible organ damage.",
+          "Alveolar hemorrhage and necrotizing crescentic glomerulonephritis can be life-threatening."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "The rise of ANCA-IgG often precedes relapses [6].",
+        "references": {
+          "6": []
+        },
+        "viewpoints": [
+          "The rise of ANCA-IgG often precedes relapses."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Associations between ANCA-IgG levels and disease activity are variable, however, and relapses remain common and are difficult to predict [6], [7], [8].",
+        "references": {
+          "6": [],
+          "7": [],
+          "8": {
+            "1": "The study aims to determine predictors of renal relapse in patients with ANCA-associated vasculitis.",
+            "2": "The study aims to determine predictors of end-stage renal failure (ESRF) in patients with ANCA-associated vasculitis.",
+            "3": "Data was pooled from four European Vasculitis Society randomized controlled trials to determine predictors of long-term renal outcome.",
+            "4": "The trials were conducted roughly simultaneously between 15 March 1995 and 30 September 2002.",
+            "5": "The trial inclusion criteria covered the entire spectrum of disease severity.",
+            "6": "Baseline predictors of time to first renal relapse were assessed by competing events analysis.",
+            "7": "Baseline predictors of time to ESRF were assessed by competing events analysis.",
+            "8": "Baseline predictors of time to first renal relapse were assessed by Cox proportional hazards regression.",
+            "9": "Baseline predictors of time to ESRF were assessed by Cox proportional hazards regression.",
+            "10": "The effect of renal relapse on time to ESRF was assessed by adding renal relapses to the competing events analysis.",
+            "11": "Renal relapses were added as a time-varying covariate in the analysis.",
+            "12": "The number of patients participating was 535.",
+            "13": "The mean serum creatinine at entry was 341 ± 321 µmol/l.",
+            "14": "19.7% of participants developed ESRF.",
+            "15": "101 patients experienced one or more renal relapses.",
+            "16": "Multivariable regression analysis demonstrated that impaired baseline renal function is a risk factor for ESRF.",
+            "17": "Developing one or more renal relapses is an independent risk factor for ESRF.",
+            "18": "The subhazard ratio for developing one or more renal relapses as a risk factor for ESRF is 9.",
+            "19": "The 95% confidence interval for the subhazard ratio is 4 to 19.",
+            "20": "The P-value for the statistical significance of the independent risk factor is less than 0.001.",
+            "21": "No predictive factors for renal relapse were identified.",
+            "22": "The occurrence of renal relapses is an important determinant of ESRF in addition to baseline renal function.",
+            "23": "In patients with ANCA-associated vasculitis, renal relapses are important determinants of ESRF.",
+            "24": "No clinical predictors for renal relapse were found.",
+            "25": "Disease activity elsewhere was not found to be a predictor for renal relapse.",
+            "26": "Renal relapse in ANCA-associated vasculitis is often silent.",
+            "27": "There is a need for long-term vigilant monitoring for early signs of renal relapse.",
+            "28": "A proposal was made to perform urinalysis every three months.",
+            "29": "Timely treatment will be enabled by regular monitoring.",
+            "30": "Regular monitoring is proposed to help further improve renal outcomes."
+          }
+        },
+        "viewpoints": [
+          "Associations between ANCA-IgG levels and disease activity are variable.",
+          "Relapses remain common in AAV.",
+          "Relapses are difficult to predict in AAV."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Current therapies targeting B cells and, more recently, the complement system, have considerably improved disease management [9], [10].",
+        "references": {
+          "9": {
+            "1": "The C5a receptor inhibitor avacopan is being studied for the treatment of ANCA-associated vasculitis.",
+            "2": "In this randomized, controlled trial, patients with ANCA-associated vasculitis were assigned in a 1:1 ratio to receive oral avacopan at a dose of 30 mg twice daily.",
+            "3": "In this randomized, controlled trial, patients with ANCA-associated vasculitis were assigned in a 1:1 ratio to receive oral prednisone on a tapering schedule.",
+            "4": "All the patients received cyclophosphamide followed by azathioprine.",
+            "5": "All the patients received rituximab.",
+            "6": "The first primary endpoint was remission.",
+            "7": "Remission was defined as a BVAS of 0 at week 26.",
+            "8": "BVAS is on a scale from 0 to 63, with higher scores indicating greater disease activity.",
+            "9": "Remission required no glucocorticoid use in the previous 4 weeks.",
+            "10": "The second primary endpoint was sustained remission.",
+            "11": "Sustained remission was defined as remission at both weeks 26 and 52.",
+            "12": "Both primary endpoints were tested for noninferiority with a margin of 20 percentage points.",
+            "13": "Both primary endpoints were tested for superiority.",
+            "14": "A total of 331 patients underwent randomization.",
+            "15": "166 patients were assigned to receive avacopan.",
+            "16": "165 patients were assigned to receive prednisone.",
+            "17": "The mean BVAS at baseline was 16 in the avacopan group.",
+            "18": "The mean BVAS at baseline was 16 in the prednisone group.",
+            "19": "Remission at week 26 was observed in 120 of 166 patients (72.3%) receiving avacopan.",
+            "20": "Remission at week 26 was observed in 115 of 164 patients (70.1%) receiving prednisone.",
+            "21": "The estimated common difference in remission at week 26 between the avacopan group and the prednisone group was 3.4 percentage points.",
+            "22": "The 95% confidence interval for the estimated common difference in remission at week 26 between the avacopan group and the prednisone group was -6.0 to 12.8.",
+            "23": "P-value for noninferiority in remission at week 26 was P<0.001.",
+            "24": "P-value for superiority in remission at week 26 was P=0.24.",
+            "25": "Sustained remission at week 52 was observed in 109 of 166 patients (65.7%) receiving avacopan.",
+            "26": "Sustained remission at week 52 was observed in 90 of 164 patients (54.9%) receiving prednisone.",
+            "27": "The estimated common difference in sustained remission at week 52 between the avacopan group and the prednisone group was 12.5 percentage points.",
+            "28": "The 95% confidence interval for the estimated common difference in sustained remission at week 52 between the avacopan group and the prednisone group was 2.6 to 22.3.",
+            "29": "P-value for noninferiority in sustained remission at week 52 was P<0.001.",
+            "30": "P-value for superiority in sustained remission at week 52 was P=0.007.",
+            "31": "Serious adverse events occurred in 37.3% of the patients receiving avacopan.",
+            "32": "Serious adverse events occurred in 39.0% of the patients receiving prednisone.",
+            "33": "Serious adverse events exclude worsening vasculitis.",
+            "34": "Avacopan was noninferior to prednisone taper with respect to remission at week 26.",
+            "35": "Avacopan was not superior to prednisone taper with respect to remission at week 26.",
+            "36": "Avacopan was superior to prednisone taper with respect to sustained remission at week 52.",
+            "37": "All the patients received cyclophosphamide.",
+            "38": "All the patients received rituximab.",
+            "39": "The safety of avacopan beyond 52 weeks was not addressed in the trial.",
+            "40": "The clinical effects of avacopan beyond 52 weeks were not addressed in the trial."
+          },
+          "10": {
+            "1": "Complement activation is associated with systemic lupus erythematosus (SLE).",
+            "2": "Complement activation is associated with rheumatoid arthritis (RA).",
+            "3": "Complement activation is associated with systemic vasculitis.",
+            "4": "Evidence linking complement activation to systemic lupus erythematosus, rheumatoid arthritis, and systemic vasculitis includes the presence of complement deposition in affected tissues.",
+            "5": "Evidence linking complement activation to systemic lupus erythematosus, rheumatoid arthritis, and systemic vasculitis includes decreased levels of complement proteins.",
+            "6": "Evidence linking complement activation to systemic lupus erythematosus, rheumatoid arthritis, and systemic vasculitis includes high levels of complement activation fragments in the blood of patients with these diseases.",
+            "7": "Evidence linking complement activation to systemic lupus erythematosus, rheumatoid arthritis, and systemic vasculitis includes high levels of complement activation fragments in the synovial fluid of patients with these diseases.",
+            "8": "Evidence linking complement activation to systemic lupus erythematosus, rheumatoid arthritis, and systemic vasculitis includes data from experimental models.",
+            "9": "Eculizumab is a monoclonal antibody that inhibits the complement component C5.",
+            "10": "Eculizumab is approved for the treatment of rare conditions involving complement hyperactivation.",
+            "11": "The success of eculizumab therapy has renewed interest in understanding the utility of complement inhibition in rheumatological practice.",
+            "12": "There is particular interest in understanding the utility of complement inhibition for systemic lupus erythematosus (SLE) in rheumatological practice.",
+            "13": "Inhibiting the complement component C5 is a potential means of reducing glomerular inflammation in lupus nephritis.",
+            "14": "Inhibiting the complement component C5 is a potential means of treating thrombotic microangiopathy in systemic lupus erythematosus (SLE).",
+            "15": "The complement system is one of multiple mediators of tissue injury in complex diseases such as systemic lupus erythematosus (SLE).",
+            "16": "Identifying the disease context in which complement activation has a predominant role in tissue injury is a challenge.",
+            "17": "An added difficulty in rheumatoid arthritis (RA) is identifying a role for therapeutic complement inhibition.",
+            "18": "Rheumatoid arthritis has diverse treatment modalities already available.",
+            "19": "Evidence for the therapeutic potential of complement manipulation in rheumatology practice is evaluated in this Review."
+          }
+        },
+        "viewpoints": [
+          "Current therapies targeting B cells have considerably improved disease management.",
+          "Therapies targeting the complement system have considerably improved disease management."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Hence, it is assumed that B cells and especially autoreactive antibodies are crucially involved in disease pathogenesis.",
+        "references": {},
+        "viewpoints": [
+          "B cells are assumed to be crucially involved in disease pathogenesis.",
+          "Autoreactive antibodies are assumed to be crucially involved in disease pathogenesis."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "This notion is supported by copious evidence from clinical, in vivo and in vitro studies [11], [12], [13], [14], [15], [16], [17], [18].",
+        "references": {
+          "11": [],
+          "12": {
+            "1": "Granulomatosis with polyangiitis (GPA) is a rare type of vasculitis.",
+            "2": "Granulomatosis with polyangiitis (GPA) is a serious necrotizing auto-immune disease.",
+            "3": "GPA is mostly associated with the presence of Anti-Neutrophil Cytoplasmic Antibody (ANCA) targeting proteinase 3 (PR3-ANCA).",
+            "4": "Proteinase 3 (PR3-ANCA) is a serine protease contained in neutrophil granules.",
+            "5": "Proteinase 3 (PR3-ANCA) is exposed at the membrane.",
+            "6": "PR3-ANCAs bind neutrophils.",
+            "7": "Binding of PR3-ANCAs to neutrophils allows their auto-immune activation.",
+            "8": "Auto-immune activation of neutrophils by PR3-ANCAs is responsible for vasculitis lesions.",
+            "9": "PR3-ANCAs have a proven fundamental role in GPA.",
+            "10": "PR3-ANCAs bind neutrophil surface by their Fab binding to PR3.",
+            "11": "PR3-ANCAs bind neutrophil surface by their Fc binding to Fc gamma receptors.",
+            "12": "GPA remains a serious disease despite current therapies.",
+            "13": "GPA has an important mortality rate.",
+            "14": "GPA has a high risk of relapse.",
+            "15": "PR3-ANCAs are a consistent biomarker for GPA diagnosis.",
+            "16": "Relapse management based on PR3-ANCA levels is inconsistent.",
+            "17": "PR3-ANCA level is not correlated with disease activity in 25% of patients.",
+            "18": "Not all PR3-ANCAs are pathogenic.",
+            "19": "The development of new biomarkers to evaluate disease activity is necessary.",
+            "20": "The development of new biomarkers to predict relapse is necessary.",
+            "21": "The development of new therapies is necessary."
+          },
+          "13": [],
+          "14": {
+            "1": "Anti-neutrophil cytoplasmic antibodies (ANCA) are triggered by the target protein myeloperoxidase (MPO) of polymorphonuclear neutrophils (PMN).",
+            "2": "Anti-neutrophil cytoplasmic antibodies (ANCA) are triggered by the proteinase 3 (PR3) of polymorphonuclear neutrophils (PMN).",
+            "3": "Anti-neutrophil cytoplasmic antibodies (ANCA) react with primed polymorphonuclear neutrophils (PMN) to exert the inflammatory process in vasculitis syndrome.",
+            "4": "The study aimed to clarify the crucial role of polymorphonuclear neutrophils (PMN) in ANCA-associated vasculitis.",
+            "5": "The study aimed to clarify the mechanism related to the role of polymorphonuclear neutrophils (PMN) in ANCA-associated vasculitis.",
+            "6": "Polymorphonuclear neutrophils (PMN) were cultured with monoclonal antibody MPO-ANCA to determine the function of phagocytosis, Interleukin-8 (IL-8) production, glucose uptake, and TNF-related apoptosis induced ligand (TRAIL) production.",
+            "7": "Polymorphonuclear neutrophils (PMN) were cultured with monoclonal antibody PR3-ANCA to determine the function of phagocytosis, Interleukin-8 (IL-8) production, glucose uptake, and TNF-related apoptosis induced ligand (TRAIL) production.",
+            "8": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could be significantly increased by lipopolysaccharide (LPS).",
+            "9": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could be significantly increased by lipopolysaccharide (LPS).",
+            "10": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could be significantly increased by TNF-alpha.",
+            "11": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could be significantly increased by TNF-alpha.",
+            "12": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could not be significantly increased by IL-8.",
+            "13": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could not be significantly increased by IL-8.",
+            "14": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could not be significantly increased by GRO-alpha.",
+            "15": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could not be significantly increased by GRO-alpha.",
+            "16": "The PMN-stimulating activity of ANCA was demonstrated by enhancing phagocytosis.",
+            "17": "The PMN-stimulating activity of ANCA was demonstrated by enhancing IL-8 production.",
+            "18": "The PMN-stimulating activity of ANCA was demonstrated by enhancing glucose uptake.",
+            "19": "The enhancement of phagocytosis, IL-8 production, and glucose uptake by ANCA was more prominent with MPO-ANCA than with PR3-ANCA.",
+            "20": "The stimulation of polymorphonuclear neutrophils (PMN) by ANCA was not mediated through protein kinase.",
+            "21": "The stimulation of polymorphonuclear neutrophils (PMN) by ANCA was not mediated through H2O2.",
+            "22": "The stimulation of polymorphonuclear neutrophils (PMN) by ANCA was not mediated through superoxide anion radicals.",
+            "23": "Inhibitors of protein kinase, H2O2, and superoxide anion radicals exerted no effect on ANCA-mediated activation of polymorphonuclear neutrophils (PMN).",
+            "24": "ANCA accelerated apoptosis in polymorphonuclear neutrophils (PMN).",
+            "25": "ANCA increased TNF-related apoptosis induced ligand (TRAIL) production in polymorphonuclear neutrophils (PMN).",
+            "26": "The activation-induced cell death (AICD) mechanism could be initiated in polymorphonuclear neutrophils (PMN) with the existence of ANCA.",
+            "27": "MPO-ANCA is more potent in stimulating polymorphonuclear neutrophils (PMN) than PR3-ANCA.",
+            "28": "ANCA-activated polymorphonuclear neutrophils (PMN) are responsible for the amplified inflammatory process in blood vessels.",
+            "29": "ANCA-activated polymorphonuclear neutrophils (PMN) initiate an immune circuit by triggering macrophages/monocytes through apoptotic polymorphonuclear neutrophils (PMN).",
+            "30": "The initiation of an immune circuit by ANCA-activated polymorphonuclear neutrophils (PMN) is through the mechanism of activation-induced cell death (AICD) elicited by ANCA."
+          },
+          "15": [],
+          "16": {
+            "1": "Anti-myeloperoxidase autoantibodies are associated with idiopathic necrotizing glomerulonephritis.",
+            "2": "Anti-myeloperoxidase autoantibodies are associated with systemic vasculitis.",
+            "3": "It is unknown if the presence of anti-myeloperoxidase autoantibodies is an epiphenomenon in idiopathic necrotizing glomerulonephritis and systemic vasculitis.",
+            "4": "It is unknown if the presence of anti-myeloperoxidase autoantibodies is an integral part of the pathogenic process in idiopathic necrotizing glomerulonephritis and systemic vasculitis.",
+            "5": "The study aimed to further delineate the hypothesized pathogenicity of anti-myeloperoxidase autoantibodies.",
+            "6": "The ability of anti-myeloperoxidase autoantibodies to stimulate neutrophils to damage human umbilical vein endothelial cells in vitro was studied.",
+            "7": "Anti-myeloperoxidase antibodies from human sources were utilized in the study.",
+            "8": "Anti-myeloperoxidase antibodies from rabbit sources were utilized in the study.",
+            "9": "Anti-myeloperoxidase antibodies from mouse sources were utilized in the study.",
+            "10": "The antibodies stimulated neutrophils to damage endothelial cells.",
+            "11": "The damage to endothelial cells was determined by 51Cr release.",
+            "12": "The effect of anti-myeloperoxidase antibodies on neutrophils was dependent on priming the neutrophils with tumor necrosis factor-alpha.",
+            "13": "The effect of anti-myeloperoxidase antibodies on neutrophils was further enhanced with the addition of endotoxin.",
+            "14": "The amount of endothelial cell damage was dependent on the dose of anti-myeloperoxidase.",
+            "15": "The amount of endothelial cell damage was dependent on the source of the neutrophils.",
+            "16": "The amount of endothelial cell damage was dependent on the concentration of tumor necrosis factor-alpha.",
+            "17": "The amount of endothelial cell damage was dependent on the presence of endotoxin.",
+            "18": "Under identical conditions, control antibodies did not stimulate neutrophils to damage endothelial cells.",
+            "19": "The effect of anti-myeloperoxidase antibodies on neutrophils was confirmed by labeling the endothelial cells with 3H-adenine.",
+            "20": "Labeling the endothelial cells with 3H-adenine yielded the same results as the 51Cr release method.",
+            "21": "The results provide further in vitro evidence that anti-myeloperoxidase autoantibodies may play a significant role in the pathogenesis of idiopathic pauci-immune glomerulonephritis.",
+            "22": "The results provide further in vitro evidence that anti-myeloperoxidase autoantibodies may play a significant role in the pathogenesis of vasculitis."
+          },
+          "17": [],
+          "18": []
+        },
+        "viewpoints": [
+          "The assumption that B cells and autoreactive antibodies are crucially involved in disease pathogenesis is supported by evidence from clinical studies.",
+          "The assumption that B cells and autoreactive antibodies are crucially involved in disease pathogenesis is supported by evidence from in vivo studies.",
+          "The assumption that B cells and autoreactive antibodies are crucially involved in disease pathogenesis is supported by evidence from in vitro studies."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Nonetheless, most patients require long-term, extensive immunosuppressive treatment with considerable side effects.",
+        "references": {},
+        "viewpoints": [
+          "Most patients require long-term, extensive immunosuppressive treatment.",
+          "Long-term, extensive immunosuppressive treatment has considerable side effects."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Consequently, infections now represent the main cause of death [19], [20].",
+        "references": {
+          "19": [],
+          "20": {
+            "1": "Wegener's granulomatosis is an ANCA-associated vasculitis with significant morbidity and mortality.",
+            "2": "Microscopic polyangiitis is an ANCA-associated vasculitis with significant morbidity and mortality.",
+            "3": "The long-term survival of patients with ANCA-associated vasculitis treated with current regimens is uncertain.",
+            "4": "The aim is to describe the long-term patient survival in an international, multicentre, prospectively recruited representative patient cohort with ANCA-associated vasculitis.",
+            "5": "The aim is to describe the possible prognostic factors at presentation in an international, multicentre, prospectively recruited representative patient cohort with ANCA-associated vasculitis.",
+            "6": "The patient cohort was treated according to strictly defined protocols at presentation.",
+            "7": "The patient cohort included the full spectrum of ANCA-associated vasculitis disease.",
+            "8": "Outcome data were collected for 535 patients with ANCA-associated vasculitis.",
+            "9": "The 535 patients were recruited at the time of diagnosis to four randomised controlled trials.",
+            "10": "The recruitment to the randomised controlled trials occurred between 1995 and 2002.",
+            "11": "Trial eligibility was defined by disease severity and extent.",
+            "12": "The trials covered the spectrum of severity of ANCA-associated vasculitis.",
+            "13": "Consistent diagnostic criteria were used in the trials.",
+            "14": "Demographic parameters at trial entry were tested as potential prognostic factors in multivariable models.",
+            "15": "Clinical parameters at trial entry were tested as potential prognostic factors in multivariable models.",
+            "16": "Laboratory parameters at trial entry were tested as potential prognostic factors in multivariable models.",
+            "17": "The median duration of follow-up was 5.2 years for the patient cohort.",
+            "18": "133 deaths were recorded in the patient cohort.",
+            "19": "25% of the patient cohort died during the follow-up period.",
+            "20": "The mortality ratio for the patient cohort compared to an age- and sex-matched general population was 2.6.",
+            "21": "The 95% confidence interval for the mortality ratio was 2.2 to 3.1.",
+            "22": "The main cause of death within the first year was infection, accounting for 48% of deaths.",
+            "23": "Active vasculitis accounted for 19% of deaths within the first year.",
+            "24": "After the first year, the major cause of death was cardiovascular disease, accounting for 26% of deaths.",
+            "25": "Malignancy was a major cause of death after the first year, accounting for 22% of deaths.",
+            "26": "Infection was a major cause of death after the first year, accounting for 20% of deaths.",
+            "27": "An estimated glomerular filtration rate <15 ml/min was a significant negative prognostic factor for patient survival.",
+            "28": "Advancing age was a significant negative prognostic factor for patient survival.",
+            "29": "A higher Birmingham Vasculitis Activity Score was a significant negative prognostic factor for patient survival.",
+            "30": "Lower haemoglobin was a significant negative prognostic factor for patient survival.",
+            "31": "A higher white cell count was a significant negative prognostic factor for patient survival.",
+            "32": "Patients with ANCA-associated vasculitis treated with conventional regimens are at increased risk of death compared with an age- and sex-matched population."
+          }
+        },
+        "viewpoints": [
+          "Infections now represent the main cause of death due to long-term, extensive immunosuppressive treatment."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Therefore, it remains crucial to understand the specific pathophysiological role of B cells in both disease relapses and remission.",
+        "references": {},
+        "viewpoints": [
+          "It remains crucial to understand the specific pathophysiological role of B cells in disease relapses.",
+          "It remains crucial to understand the specific pathophysiological role of B cells in disease remission."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "ANCA and, in particular, anti-MPO-ANCA are thought to be directly pathogenic, as shown by passive transfer experiments in rodents [11], [21].",
+        "references": {
+          "11": [],
+          "21": []
+        },
+        "viewpoints": [
+          "ANCA are thought to be directly pathogenic.",
+          "Anti-MPO-ANCA are thought to be directly pathogenic.",
+          "Passive transfer experiments in rodents have shown that ANCA and anti-MPO-ANCA are directly pathogenic."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Anti-MPO-IgG induced in mice deficient for the MPO gene, for example, mediated severe vasculitis with NCGN and pulmonary hemorrhage when injected into wild-type mice.",
+        "references": {},
+        "viewpoints": [
+          "Anti-MPO-IgG induced in mice deficient for the MPO gene mediated severe vasculitis when injected into wild-type mice.",
+          "Anti-MPO-IgG induced in mice deficient for the MPO gene mediated necrotizing crescentic glomerulonephritis when injected into wild-type mice.",
+          "Anti-MPO-IgG induced in mice deficient for the MPO gene mediated pulmonary hemorrhage when injected into wild-type mice."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "In these models, the alternative pathway of the complement system was identified as a crucial mediator of anti-MPO-IgG induced pathogenicity, as animals deficient in C5 and factor B developed no disease [22].",
+        "references": {
+          "22": {
+            "1": "Clinical data indicate that anti-neutrophil cytoplasmic autoantibodies (ANCAs) cause glomerulonephritis and vasculitis.",
+            "2": "Experimental data indicate that anti-neutrophil cytoplasmic autoantibodies (ANCAs) cause glomerulonephritis and vasculitis.",
+            "3": "Complement is an important mediator of ANCA disease.",
+            "4": "Transfer of anti-myeloperoxidase (MPO) IgG into wild-type mice caused crescentic glomerulonephritis.",
+            "5": "Transfer of anti-MPO splenocytes into immune-deficient mice caused crescentic glomerulonephritis.",
+            "6": "Crescentic glomerulonephritis caused by anti-MPO IgG or anti-MPO splenocytes could be completely blocked by complement depletion.",
+            "7": "The role of specific complement activation pathways was investigated using mice with knockout of the common pathway component C5.",
+            "8": "The role of specific complement activation pathways was investigated using mice with knockout of the classic and lectin binding pathway component C4.",
+            "9": "The role of specific complement activation pathways was investigated using mice with knockout of the alternative pathway component factor B.",
+            "10": "After injection of anti-MPO IgG, C4-/- mice developed disease comparable with wild-type disease.",
+            "11": "C5-/- mice developed no disease after injection of anti-MPO IgG.",
+            "12": "Factor B-/- mice developed no disease after injection of anti-MPO IgG.",
+            "13": "IgG was isolated from patients with myeloperoxidase ANCA (MPO-ANCA) to substantiate a role for complement in human ANCA disease.",
+            "14": "IgG was isolated from patients with proteinase 3 ANCA (PR3-ANCA) to substantiate a role for complement in human ANCA disease.",
+            "15": "IgG was isolated from controls to substantiate a role for complement in human ANCA disease.",
+            "16": "Incubation of MPO-ANCA IgG with human neutrophils caused release of factors that activated complement.",
+            "17": "Incubation of PR3-ANCA IgG with human neutrophils caused release of factors that activated complement.",
+            "18": "IgG from healthy controls did not cause release of factors that activated complement when incubated with human neutrophils.",
+            "19": "Stimulation of neutrophils by ANCA causes release of factors that activate complement via the alternative pathway.",
+            "20": "Activation of complement via the alternative pathway initiates an inflammatory amplification loop.",
+            "21": "The inflammatory amplification loop mediates the severe necrotizing inflammation of ANCA disease."
+          }
+        },
+        "viewpoints": [
+          "The alternative pathway of the complement system is a crucial mediator of anti-MPO-IgG induced pathogenicity.",
+          "Animals deficient in C5 and factor B developed no disease, indicating the alternative pathway's role in anti-MPO-IgG induced pathogenicity."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "In humans, the C5a receptor antagonist avacopan clearly improves disease [9].",
+        "references": {
+          "9": {
+            "1": "The C5a receptor inhibitor avacopan is being studied for the treatment of ANCA-associated vasculitis.",
+            "2": "In this randomized, controlled trial, patients with ANCA-associated vasculitis were assigned in a 1:1 ratio to receive oral avacopan at a dose of 30 mg twice daily.",
+            "3": "In this randomized, controlled trial, patients with ANCA-associated vasculitis were assigned in a 1:1 ratio to receive oral prednisone on a tapering schedule.",
+            "4": "All the patients received cyclophosphamide followed by azathioprine.",
+            "5": "All the patients received rituximab.",
+            "6": "The first primary endpoint was remission.",
+            "7": "Remission was defined as a BVAS of 0 at week 26.",
+            "8": "BVAS is on a scale from 0 to 63, with higher scores indicating greater disease activity.",
+            "9": "Remission required no glucocorticoid use in the previous 4 weeks.",
+            "10": "The second primary endpoint was sustained remission.",
+            "11": "Sustained remission was defined as remission at both weeks 26 and 52.",
+            "12": "Both primary endpoints were tested for noninferiority with a margin of 20 percentage points.",
+            "13": "Both primary endpoints were tested for superiority.",
+            "14": "A total of 331 patients underwent randomization.",
+            "15": "166 patients were assigned to receive avacopan.",
+            "16": "165 patients were assigned to receive prednisone.",
+            "17": "The mean BVAS at baseline was 16 in the avacopan group.",
+            "18": "The mean BVAS at baseline was 16 in the prednisone group.",
+            "19": "Remission at week 26 was observed in 120 of 166 patients (72.3%) receiving avacopan.",
+            "20": "Remission at week 26 was observed in 115 of 164 patients (70.1%) receiving prednisone.",
+            "21": "The estimated common difference in remission at week 26 between the avacopan group and the prednisone group was 3.4 percentage points.",
+            "22": "The 95% confidence interval for the estimated common difference in remission at week 26 between the avacopan group and the prednisone group was -6.0 to 12.8.",
+            "23": "P-value for noninferiority in remission at week 26 was P<0.001.",
+            "24": "P-value for superiority in remission at week 26 was P=0.24.",
+            "25": "Sustained remission at week 52 was observed in 109 of 166 patients (65.7%) receiving avacopan.",
+            "26": "Sustained remission at week 52 was observed in 90 of 164 patients (54.9%) receiving prednisone.",
+            "27": "The estimated common difference in sustained remission at week 52 between the avacopan group and the prednisone group was 12.5 percentage points.",
+            "28": "The 95% confidence interval for the estimated common difference in sustained remission at week 52 between the avacopan group and the prednisone group was 2.6 to 22.3.",
+            "29": "P-value for noninferiority in sustained remission at week 52 was P<0.001.",
+            "30": "P-value for superiority in sustained remission at week 52 was P=0.007.",
+            "31": "Serious adverse events occurred in 37.3% of the patients receiving avacopan.",
+            "32": "Serious adverse events occurred in 39.0% of the patients receiving prednisone.",
+            "33": "Serious adverse events exclude worsening vasculitis.",
+            "34": "Avacopan was noninferior to prednisone taper with respect to remission at week 26.",
+            "35": "Avacopan was not superior to prednisone taper with respect to remission at week 26.",
+            "36": "Avacopan was superior to prednisone taper with respect to sustained remission at week 52.",
+            "37": "All the patients received cyclophosphamide.",
+            "38": "All the patients received rituximab.",
+            "39": "The safety of avacopan beyond 52 weeks was not addressed in the trial.",
+            "40": "The clinical effects of avacopan beyond 52 weeks were not addressed in the trial."
+          }
+        },
+        "viewpoints": [
+          "The C5a receptor antagonist avacopan clearly improves disease in humans."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "Experiments deciphering in vivo pathogenicity of anti-PR3 antibodies have given varying results, possibly due to significant differences between human PR3 and its murine homologs [12].",
+        "references": {
+          "12": {
+            "1": "Granulomatosis with polyangiitis (GPA) is a rare type of vasculitis.",
+            "2": "Granulomatosis with polyangiitis (GPA) is a serious necrotizing auto-immune disease.",
+            "3": "GPA is mostly associated with the presence of Anti-Neutrophil Cytoplasmic Antibody (ANCA) targeting proteinase 3 (PR3-ANCA).",
+            "4": "Proteinase 3 (PR3-ANCA) is a serine protease contained in neutrophil granules.",
+            "5": "Proteinase 3 (PR3-ANCA) is exposed at the membrane.",
+            "6": "PR3-ANCAs bind neutrophils.",
+            "7": "Binding of PR3-ANCAs to neutrophils allows their auto-immune activation.",
+            "8": "Auto-immune activation of neutrophils by PR3-ANCAs is responsible for vasculitis lesions.",
+            "9": "PR3-ANCAs have a proven fundamental role in GPA.",
+            "10": "PR3-ANCAs bind neutrophil surface by their Fab binding to PR3.",
+            "11": "PR3-ANCAs bind neutrophil surface by their Fc binding to Fc gamma receptors.",
+            "12": "GPA remains a serious disease despite current therapies.",
+            "13": "GPA has an important mortality rate.",
+            "14": "GPA has a high risk of relapse.",
+            "15": "PR3-ANCAs are a consistent biomarker for GPA diagnosis.",
+            "16": "Relapse management based on PR3-ANCA levels is inconsistent.",
+            "17": "PR3-ANCA level is not correlated with disease activity in 25% of patients.",
+            "18": "Not all PR3-ANCAs are pathogenic.",
+            "19": "The development of new biomarkers to evaluate disease activity is necessary.",
+            "20": "The development of new biomarkers to predict relapse is necessary.",
+            "21": "The development of new therapies is necessary."
+          }
+        },
+        "viewpoints": [
+          "Experiments deciphering in vivo pathogenicity of anti-PR3 antibodies have given varying results.",
+          "Significant differences between human PR3 and its murine homologs may be a reason for the varying results in experiments on anti-PR3 antibodies."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "Still, also multiple in vitro experiments with either patient serum, isolated IgG or murine monoclonal antibodies (mAbs) have demonstrated direct effects of ANCA on neutrophils, such as the enhancement of neutrophil phagocytosis and cytokine production [13], [14].",
+        "references": {
+          "13": [],
+          "14": {
+            "1": "Anti-neutrophil cytoplasmic antibodies (ANCA) are triggered by the target protein myeloperoxidase (MPO) of polymorphonuclear neutrophils (PMN).",
+            "2": "Anti-neutrophil cytoplasmic antibodies (ANCA) are triggered by the proteinase 3 (PR3) of polymorphonuclear neutrophils (PMN).",
+            "3": "Anti-neutrophil cytoplasmic antibodies (ANCA) react with primed polymorphonuclear neutrophils (PMN) to exert the inflammatory process in vasculitis syndrome.",
+            "4": "The study aimed to clarify the crucial role of polymorphonuclear neutrophils (PMN) in ANCA-associated vasculitis.",
+            "5": "The study aimed to clarify the mechanism related to the role of polymorphonuclear neutrophils (PMN) in ANCA-associated vasculitis.",
+            "6": "Polymorphonuclear neutrophils (PMN) were cultured with monoclonal antibody MPO-ANCA to determine the function of phagocytosis, Interleukin-8 (IL-8) production, glucose uptake, and TNF-related apoptosis induced ligand (TRAIL) production.",
+            "7": "Polymorphonuclear neutrophils (PMN) were cultured with monoclonal antibody PR3-ANCA to determine the function of phagocytosis, Interleukin-8 (IL-8) production, glucose uptake, and TNF-related apoptosis induced ligand (TRAIL) production.",
+            "8": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could be significantly increased by lipopolysaccharide (LPS).",
+            "9": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could be significantly increased by lipopolysaccharide (LPS).",
+            "10": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could be significantly increased by TNF-alpha.",
+            "11": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could be significantly increased by TNF-alpha.",
+            "12": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could not be significantly increased by IL-8.",
+            "13": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could not be significantly increased by IL-8.",
+            "14": "The spontaneous membrane expression of MPO on polymorphonuclear neutrophils (PMN) could not be significantly increased by GRO-alpha.",
+            "15": "The spontaneous membrane expression of PR3 on polymorphonuclear neutrophils (PMN) could not be significantly increased by GRO-alpha.",
+            "16": "The PMN-stimulating activity of ANCA was demonstrated by enhancing phagocytosis.",
+            "17": "The PMN-stimulating activity of ANCA was demonstrated by enhancing IL-8 production.",
+            "18": "The PMN-stimulating activity of ANCA was demonstrated by enhancing glucose uptake.",
+            "19": "The enhancement of phagocytosis, IL-8 production, and glucose uptake by ANCA was more prominent with MPO-ANCA than with PR3-ANCA.",
+            "20": "The stimulation of polymorphonuclear neutrophils (PMN) by ANCA was not mediated through protein kinase.",
+            "21": "The stimulation of polymorphonuclear neutrophils (PMN) by ANCA was not mediated through H2O2.",
+            "22": "The stimulation of polymorphonuclear neutrophils (PMN) by ANCA was not mediated through superoxide anion radicals.",
+            "23": "Inhibitors of protein kinase, H2O2, and superoxide anion radicals exerted no effect on ANCA-mediated activation of polymorphonuclear neutrophils (PMN).",
+            "24": "ANCA accelerated apoptosis in polymorphonuclear neutrophils (PMN).",
+            "25": "ANCA increased TNF-related apoptosis induced ligand (TRAIL) production in polymorphonuclear neutrophils (PMN).",
+            "26": "The activation-induced cell death (AICD) mechanism could be initiated in polymorphonuclear neutrophils (PMN) with the existence of ANCA.",
+            "27": "MPO-ANCA is more potent in stimulating polymorphonuclear neutrophils (PMN) than PR3-ANCA.",
+            "28": "ANCA-activated polymorphonuclear neutrophils (PMN) are responsible for the amplified inflammatory process in blood vessels.",
+            "29": "ANCA-activated polymorphonuclear neutrophils (PMN) initiate an immune circuit by triggering macrophages/monocytes through apoptotic polymorphonuclear neutrophils (PMN).",
+            "30": "The initiation of an immune circuit by ANCA-activated polymorphonuclear neutrophils (PMN) is through the mechanism of activation-induced cell death (AICD) elicited by ANCA."
+          }
+        },
+        "viewpoints": [
+          "Multiple in vitro experiments with patient serum have demonstrated direct effects of ANCA on neutrophils.",
+          "Multiple in vitro experiments with isolated IgG have demonstrated direct effects of ANCA on neutrophils.",
+          "Multiple in vitro experiments with murine monoclonal antibodies have demonstrated direct effects of ANCA on neutrophils.",
+          "ANCA enhances neutrophil phagocytosis.",
+          "ANCA enhances neutrophil cytokine production."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "Additionally, ANCA increase adherence of neutrophils to, and cytotoxicity towards, endothelial cells [15], [16], [17].",
+        "references": {
+          "15": [],
+          "16": {
+            "1": "Anti-myeloperoxidase autoantibodies are associated with idiopathic necrotizing glomerulonephritis.",
+            "2": "Anti-myeloperoxidase autoantibodies are associated with systemic vasculitis.",
+            "3": "It is unknown if the presence of anti-myeloperoxidase autoantibodies is an epiphenomenon in idiopathic necrotizing glomerulonephritis and systemic vasculitis.",
+            "4": "It is unknown if the presence of anti-myeloperoxidase autoantibodies is an integral part of the pathogenic process in idiopathic necrotizing glomerulonephritis and systemic vasculitis.",
+            "5": "The study aimed to further delineate the hypothesized pathogenicity of anti-myeloperoxidase autoantibodies.",
+            "6": "The ability of anti-myeloperoxidase autoantibodies to stimulate neutrophils to damage human umbilical vein endothelial cells in vitro was studied.",
+            "7": "Anti-myeloperoxidase antibodies from human sources were utilized in the study.",
+            "8": "Anti-myeloperoxidase antibodies from rabbit sources were utilized in the study.",
+            "9": "Anti-myeloperoxidase antibodies from mouse sources were utilized in the study.",
+            "10": "The antibodies stimulated neutrophils to damage endothelial cells.",
+            "11": "The damage to endothelial cells was determined by 51Cr release.",
+            "12": "The effect of anti-myeloperoxidase antibodies on neutrophils was dependent on priming the neutrophils with tumor necrosis factor-alpha.",
+            "13": "The effect of anti-myeloperoxidase antibodies on neutrophils was further enhanced with the addition of endotoxin.",
+            "14": "The amount of endothelial cell damage was dependent on the dose of anti-myeloperoxidase.",
+            "15": "The amount of endothelial cell damage was dependent on the source of the neutrophils.",
+            "16": "The amount of endothelial cell damage was dependent on the concentration of tumor necrosis factor-alpha.",
+            "17": "The amount of endothelial cell damage was dependent on the presence of endotoxin.",
+            "18": "Under identical conditions, control antibodies did not stimulate neutrophils to damage endothelial cells.",
+            "19": "The effect of anti-myeloperoxidase antibodies on neutrophils was confirmed by labeling the endothelial cells with 3H-adenine.",
+            "20": "Labeling the endothelial cells with 3H-adenine yielded the same results as the 51Cr release method.",
+            "21": "The results provide further in vitro evidence that anti-myeloperoxidase autoantibodies may play a significant role in the pathogenesis of idiopathic pauci-immune glomerulonephritis.",
+            "22": "The results provide further in vitro evidence that anti-myeloperoxidase autoantibodies may play a significant role in the pathogenesis of vasculitis."
+          },
+          "17": []
+        },
+        "viewpoints": [
+          "ANCA increase adherence of neutrophils to endothelial cells.",
+          "ANCA increase cytotoxicity of neutrophils toward endothelial cells."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "Furthermore, ANCA-stimulated neutrophils release neutrophil extracellular traps (NETs) containing MPO and PR3 autoantigens [18] and complement activating components [22], leading to higher autoantigen exposure and possibly a positive feedback loop capable of amplifying inflammation.",
+        "references": {
+          "18": [],
+          "22": {
+            "1": "Clinical data indicate that anti-neutrophil cytoplasmic autoantibodies (ANCAs) cause glomerulonephritis and vasculitis.",
+            "2": "Experimental data indicate that anti-neutrophil cytoplasmic autoantibodies (ANCAs) cause glomerulonephritis and vasculitis.",
+            "3": "Complement is an important mediator of ANCA disease.",
+            "4": "Transfer of anti-myeloperoxidase (MPO) IgG into wild-type mice caused crescentic glomerulonephritis.",
+            "5": "Transfer of anti-MPO splenocytes into immune-deficient mice caused crescentic glomerulonephritis.",
+            "6": "Crescentic glomerulonephritis caused by anti-MPO IgG or anti-MPO splenocytes could be completely blocked by complement depletion.",
+            "7": "The role of specific complement activation pathways was investigated using mice with knockout of the common pathway component C5.",
+            "8": "The role of specific complement activation pathways was investigated using mice with knockout of the classic and lectin binding pathway component C4.",
+            "9": "The role of specific complement activation pathways was investigated using mice with knockout of the alternative pathway component factor B.",
+            "10": "After injection of anti-MPO IgG, C4-/- mice developed disease comparable with wild-type disease.",
+            "11": "C5-/- mice developed no disease after injection of anti-MPO IgG.",
+            "12": "Factor B-/- mice developed no disease after injection of anti-MPO IgG.",
+            "13": "IgG was isolated from patients with myeloperoxidase ANCA (MPO-ANCA) to substantiate a role for complement in human ANCA disease.",
+            "14": "IgG was isolated from patients with proteinase 3 ANCA (PR3-ANCA) to substantiate a role for complement in human ANCA disease.",
+            "15": "IgG was isolated from controls to substantiate a role for complement in human ANCA disease.",
+            "16": "Incubation of MPO-ANCA IgG with human neutrophils caused release of factors that activated complement.",
+            "17": "Incubation of PR3-ANCA IgG with human neutrophils caused release of factors that activated complement.",
+            "18": "IgG from healthy controls did not cause release of factors that activated complement when incubated with human neutrophils.",
+            "19": "Stimulation of neutrophils by ANCA causes release of factors that activate complement via the alternative pathway.",
+            "20": "Activation of complement via the alternative pathway initiates an inflammatory amplification loop.",
+            "21": "The inflammatory amplification loop mediates the severe necrotizing inflammation of ANCA disease."
+          }
+        },
+        "viewpoints": [
+          "ANCA-stimulated neutrophils release neutrophil extracellular traps containing MPO autoantigens.",
+          "ANCA-stimulated neutrophils release neutrophil extracellular traps containing PR3 autoantigens.",
+          "ANCA-stimulated neutrophils release neutrophil extracellular traps containing complement activating components.",
+          "The release of NETs leads to higher autoantigen exposure.",
+          "The release of NETs possibly creates a positive feedback loop capable of amplifying inflammation."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "While the above provide clear evidence for functional pathogenicity of ANCA and highlight the challenges of maintaining remission, it has proven challenging to study specific B cell responses underlying ANCA production in human AAV.",
+        "references": {},
+        "viewpoints": [
+          "There is clear evidence for the functional pathogenicity of ANCA.",
+          "There are challenges in maintaining remission in the presence of ANCA.",
+          "It has proven challenging to study specific B cell responses underlying ANCA production in human AAV."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "The biology of these cells, however, may hold important information as to their generation and dynamics of activation in the disease context and may help identify triggers that such cells might receive leading to their activation.",
+        "references": {},
+        "viewpoints": [
+          "The biology of B cells may hold important information as to their generation.",
+          "The biology of B cells may hold important information as to their dynamics of activation in the disease context.",
+          "The biology of B cells may help identify triggers that lead to their activation."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Therefore, we here set out to characterize autoreactive, MPO-directed B cell responses in MPO + AAV patients.",
+        "references": {},
+        "viewpoints": [
+          "The objective is to characterize autoreactive, MPO-directed B cell responses in MPO + AAV patients."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Previous work has indicated the presence of MPO-reactive B cells in the circulation of AAV patients, as assessed by detecting ANCA-IgG production by stimulated peripheral blood mononuclear cells (PBMCs) from AAV patients, including patients post-rituximab treatment or during remission [23], [24], [25].",
+        "references": {
+          "23": [],
+          "24": {
+            "1": "B-cell depletion with rituximab (RTX) is an effective treatment for patients with ANCA-associated vasculitis (AAV).",
+            "2": "Relapses are frequent after treatment with rituximab (RTX) for ANCA-associated vasculitis (AAV) patients.",
+            "3": "Relapses after RTX treatment are often preceded by B-cell repopulation.",
+            "4": "Residual autoreactive B-cells persist in ANCA-associated vasculitis (AAV) patients despite RTX therapy.",
+            "5": "The study aimed to identify minimal residual autoimmunity (MRA) in the B-cell compartment of ANCA-associated vasculitis (AAV) patients treated with rituximab (RTX).",
+            "6": "EuroFlow-based highly-sensitive flow cytometry (HSFC) was employed to study B-cell subsets in depth in ANCA-associated vasculitis (AAV) patients before and after RTX treatment.",
+            "7": "EuroFlow-based highly-sensitive flow cytometry (HSFC) was employed to study plasma cell (PC) subsets in depth in ANCA-associated vasculitis (AAV) patients before and after RTX treatment.",
+            "8": "Peripheral blood mononuclear cells (PBMCs) of RTX-treated ANCA-associated vasculitis (AAV) patients were cultured.",
+            "9": "By employing EuroFlow-based highly-sensitive flow cytometry (HSFC), circulating CD19 was detected.",
+            "10": "Rituximab (RTX) induced strong reductions in circulating B-cells.",
+            "11": "Rituximab (RTX) never resulted in complete B-cell depletion.",
+            "12": "Despite strongly reduced B-cell numbers after RTX, ANCA-specific memory B-cells were still detectable in ANCA-associated vasculitis (AAV) patients.",
+            "13": "Minimal residual autoimmunity (MRA) is identifiable in ANCA-associated vasculitis (AAV).",
+            "14": "Identifying MRA can provide a potential novel approach in personalizing rituximab (RTX) treatment in ANCA-associated vasculitis (AAV) patients."
+          },
+          "25": []
+        },
+        "viewpoints": [
+          "Previous work has indicated the presence of MPO-reactive B cells in the circulation of AAV patients.",
+          "The presence of MPO-reactive B cells in AAV patients is assessed by detecting ANCA-IgG production by stimulated peripheral blood mononuclear cells.",
+          "MPO-reactive B cells have been found in patients post-rituximab treatment.",
+          "MPO-reactive B cells have been found in patients during remission."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "Here, we perform an analysis of the anti-IgM B cell compartment and show that most MPO-directed B cells in the circulation of MPO + AAV patients are IgM-positive.",
+        "references": {},
+        "viewpoints": [
+          "An analysis of the anti-IgM B cell compartment is performed.",
+          "Most MPO-directed B cells in the circulation of MPO + AAV patients are IgM-positive."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Analyzing the anti-MPO-Ig response, we provide the first evidence that anti-MPO-IgM may have a prominent, so far unrecognized, function in disease pathogenesis.",
+        "references": {},
+        "viewpoints": [
+          "There is the first evidence that anti-MPO-IgM may have a prominent, so far unrecognized, function in disease pathogenesis."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "This function may relate to complement activation, as the complement activating capacity of anti-MPO Ig in human serum is strongly dependent on anti-MPO IgM.",
+        "references": {},
+        "viewpoints": [
+          "The function of anti-MPO-IgM in disease pathogenesis may relate to complement activation.",
+          "The complement activating capacity of anti-MPO Ig in human serum is strongly dependent on anti-MPO IgM."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "Together, these results are relevant for future management of disease relapses and the design of targeted therapies.",
+        "references": {},
+        "viewpoints": [
+          "These results are relevant for the future management of disease relapses.",
+          "These results are relevant for the design of targeted therapies."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "Moreover, these results highlight IgM B cell autoreactivity as an important component of pathogenicity in human autoimmune diseases.",
+        "references": {},
+        "viewpoints": [
+          "IgM B cell autoreactivity is highlighted as an important component of pathogenicity in human autoimmune diseases."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56786-x_with_abstracts",
+    "base_id": "s41467-025-56786-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56786-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

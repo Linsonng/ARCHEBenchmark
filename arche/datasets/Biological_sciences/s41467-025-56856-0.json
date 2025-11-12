@@ -1,0 +1,880 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Polymerase chain reaction (PCR) is one of the most widely used techniques for the selective amplification of target oligonucleotide molecules in complex library, identified by specific primer sequences [1] , [2] . PCR facilitates the selective amplification of both biological DNA and synthetic oligos from complex libraries containing millions of distinct sequences [3] , [4] , [5] , [6] . For effective PCR, each target subset must possess a unique selection region for primer pairs, comprising forward and reverse primers ~ 20 nucleotides (nt) in length, to ensure the specificity of primer hybridization [7] . Despite advancements, including the optimization of primer design and the incorporation of molecular probe-based mechanisms, the specificity of selecting oligos still largely depends on the length of the unique region for hybridization [8] . Also, users must identify the selection regions within the target and synthesize the corresponding primer pairs, with the synthesis burden increasing in proportion to the number of subsets [9] . In addition to PCR, other nucleic acid amplification, enrichment, and selection methods, such as hybridization-based capture and the CRISPR system, rely on hybridization and share this dependency on the length of the unique selection region [7] , [10] , [11] , [12] , [13] , [14] , [15] , [16] , [17] , [18] . Consequently, the scalability of current oligo-selection methods is limited. In addition, given that the current length limit for de novo oligonucleotide synthesis is 200 nt, dedicating 40 nt to the selection region regardless of the number of oligo subsets is inefficient [7] , [16] , [19] , [20] , [21] . To prevent library depletion during repeated subset selection, it is essential to enable oligo library amplification, which requires an additional 40 nt replication region where universal primers bind [7] , [13] , [22] . Although recent biotechnological advancements have expanded the scale by exploring diverse nucleic acid libraries, primer requirements have constrained these efforts. Furthermore, despite the introduction of multiplexed target selection methods, such as multiplexed PCR, which aim to select multiple oligo subsets in a single reaction, the requirement for primer synthesis proportionally increases with the number of target subsets, posing a bottleneck [9] , [22] , [23] . Here, we introduce a highly efficient method for selecting oligo subsets that can recognize barcodes in single-nucleotide resolutions, eliminating the need for individual primers for each subset. Through the implementation of synthesis and selection, which involves single-nucleotide resolution cyclic DNA synthesis and blocking of template oligos, we successfully demonstrated oligo subset selection with only a few nucleotides and without primer synthesis for each oligo subset. This advancement enables the application of a hierarchical data structure to oligo subsets, similar to the management of digital data in computer science, where data are organized into files with directories for streamlined searching, thereby facilitating the efficient selection of multiple subsets. The introduction of single-nucleotide resolution barcode identification through synthesis and selection enabled the development of a programmable and scalable directory system within a complex oligo library (Fig. 1 ). Theoretically, four to the power of N oligo subsets can be encoded by N nt, with four possible bases in each nucleotide. Thousands of oligo subsets can be identified using only 6 nt of selection region (4 6 ) – referred to as a “barcode” in our proposed method – reducing the complexity of primer design compared to PCR-based methods that require unique primer pairs for each subset [7] (Fig. 1a ). Moreover, the proposed method allows the selection of oligo subsets in a hierarchical manner. Because the synthesis- and selection-based approach involves cyclic reactions, higher groups in the hierarchy can be selected with fewer cycles. For example, if oligo subsets are encoded with a 3 nt barcode, three cycles of selection with sequences A, T, and G permit the selection of a single subset. However, if the selection stops after the 2nd cycle with barcodes A and T, the four subsets within the ATN barcode can be simultaneously selected. The proposed hierarchical selection contrasts with PCR-based selection, where the amplification of a subset exhibits a one-to-one correspondence between the primer and oligo subset, resulting in a planar and non-hierarchical structure [22] , [23] , [24] . Fig. 1: Synthesis and selection-based oligo selection enables 4 N subsets access with N nucleotide region and a hierarchical structure in complex oligo library. a Oligo library subset selection employing a hierarchical structure. Accessing a higher level of the hierarchy enables reaching all the oligo subsets below it. The DNA sequence-based barcoding system utilizes four base types and employs a quaternary barcode-based method for representing directories. By contrast, traditional PCR-based oligo selection requires a one-to-one mapping of specific primers to oligo subsets. The hierarchical structure within the oligo library demonstrates scalability through reduced nucleotide length requirements and improved programmability in oligo selection. b Details of the oligo selection include single-base resolution synthesis and selection cycles on the complementary template oligo strands. During synthesis and selection, nucleotides matching the target directory are introduced with reversible terminators, such as 3’-O-azidomethyl deoxynucleotides, while others are coupled with irreversible terminators, such as dideoxynucleotides. By repeating the cycles after deprotecting the reversible terminators, only the oligos with target barcodes will be retrieved. Full size image The proposed synthesis and selection-based oligo selection involves cyclic coupling of specific types of nucleotides with reversible terminators (such as 3’-O-azidomethyl deoxynucleotides) that match the target directory barcode, while others are coupled with nucleotides with irreversible terminators (such as dideoxynucleotides) (Fig. 1b , see Methods for detail). The original oligo library was immobilized onto solid substrates, such as magnetic beads, which facilitated the replacement of reagents during selection cycles. The selection process began with the hybridization of a primer complementary to the universal primer region. Following hybridization, two-step cycles continue until the desired barcode is reached. First, various combinations of nucleotides with reversible and irreversible terminators are introduced. For example, to select a single barcode A, a reversible terminator corresponding to the complementary T and irreversible terminators corresponding to A, C, and G were employed. Second, the blocker of the reversible terminator was removed using tris(2-carboxyethyl) phosphine hydrochloride treatments, enabling subsequent reactions. As a result, oligos that do not align with the target barcode are coupled with irreversible terminators and become incapable of further reactions. After identification of all barcodes, target oligo subsets were retrieved by denaturation from the original template, following the elongation with dNTPs to synthesize full-length oligos (See Methods for detail).",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Polymerase chain reaction (PCR) is one of the most widely used techniques for the selective amplification of target oligonucleotide molecules in complex library, identified by specific primer sequences [1], [2].",
+        "references": {
+          "1": [],
+          "2": {
+            "1": "Development of cheap gene synthesis methods will broadly stimulate progress in biology and biotechnology.",
+            "2": "Development of high-throughput gene synthesis methods will broadly stimulate progress in biology and biotechnology.",
+            "3": "Development of reliable gene synthesis methods will broadly stimulate progress in biology and biotechnology.",
+            "4": "Reliance on column-synthesized oligonucleotides as a source of DNA limits further cost reductions in gene synthesis.",
+            "5": "Oligonucleotides from DNA microchips can reduce costs by at least an order of magnitude.",
+            "6": "Efforts to scale the use of oligonucleotides from DNA microchips have been largely unsuccessful.",
+            "7": "High error rates of oligonucleotide mixtures from DNA microchips contribute to the unsuccessful scaling of their use.",
+            "8": "Complexity of oligonucleotide mixtures from DNA microchips contributes to the unsuccessful scaling of their use.",
+            "9": "High-fidelity DNA microchips are used to develop a method for highly parallel gene synthesis.",
+            "10": "Selective oligonucleotide pool amplification is used to develop a method for highly parallel gene synthesis.",
+            "11": "Optimized gene assembly protocols are used to develop a method for highly parallel gene synthesis.",
+            "12": "Enzymatic error correction is used to develop a method for highly parallel gene synthesis.",
+            "13": "The approach was tested by assembling 47 genes.",
+            "14": "The approach included assembling 42 challenging therapeutic antibody sequences.",
+            "15": "The total length of DNA encoded by the 47 assembled genes is approximately 35 kilobase pairs.",
+            "16": "The assemblies were performed from a complex background containing 13,000 oligonucleotides.",
+            "17": "The 13,000 oligonucleotides encode approximately 2.5 megabases of DNA.",
+            "18": "The scale of 2.5 megabases of DNA is at least 50 times larger than in previously published attempts."
+          }
+        },
+        "viewpoints": [
+          "Polymerase chain reaction (PCR) is widely used for the selective amplification of target oligonucleotide molecules in complex libraries.",
+          "Target oligonucleotide molecules are identified by specific primer sequences in PCR."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "PCR facilitates the selective amplification of both biological DNA and synthetic oligos from complex libraries containing millions of distinct sequences [3], [4], [5], [6].",
+        "references": {
+          "3": {
+            "1": "A thermostable DNA polymerase was used in the polymerase chain reaction.",
+            "2": "The polymerase chain reaction is an in vitro DNA amplification procedure.",
+            "3": "The enzyme used in the polymerase chain reaction is isolated from Thermus aquaticus.",
+            "4": "The enzyme isolated from Thermus aquaticus greatly simplifies the polymerase chain reaction procedure.",
+            "5": "The enzyme isolated from Thermus aquaticus enables the amplification reaction to be performed at higher temperatures.",
+            "6": "Performing the amplification reaction at higher temperatures significantly improves the specificity of products that can be amplified.",
+            "7": "Performing the amplification reaction at higher temperatures significantly improves the yield of products that can be amplified.",
+            "8": "Performing the amplification reaction at higher temperatures significantly improves the sensitivity of products that can be amplified.",
+            "9": "Performing the amplification reaction at higher temperatures significantly improves the length of products that can be amplified.",
+            "10": "Single-copy genomic sequences were amplified by a factor of more than 10 million with very high specificity in the polymerase chain reaction.",
+            "11": "DNA segments up to 2000 base pairs were readily amplified in the polymerase chain reaction.",
+            "12": "The polymerase chain reaction method was used to amplify a target DNA molecule present only once in a sample of 10(5) cells.",
+            "13": "The polymerase chain reaction method was used to detect a target DNA molecule present only once in a sample of 10(5) cells."
+          },
+          "4": {
+            "1": "Single-nucleotide polymorphisms (SNPs) are the most frequent type of variation in the human genome.",
+            "2": "Single-nucleotide polymorphisms (SNPs) provide powerful tools for a variety of medical genetic studies.",
+            "3": "2.3 megabases of human genomic DNA was examined in a large-scale survey for single-nucleotide polymorphisms (SNPs).",
+            "4": "The examination of 2.3 megabases of human genomic DNA used a combination of gel-based sequencing and high-density variation-detection DNA chips.",
+            "5": "3241 candidate single-nucleotide polymorphisms (SNPs) were identified.",
+            "6": "A genetic map was constructed.",
+            "7": "The genetic map shows the location of 2227 single-nucleotide polymorphisms (SNPs).",
+            "8": "Prototype genotyping chips were developed.",
+            "9": "The prototype genotyping chips allow simultaneous genotyping of 500 single-nucleotide polymorphisms (SNPs).",
+            "10": "The results provide a characterization of human diversity at the nucleotide level.",
+            "11": "The results demonstrate the feasibility of large-scale identification of human single-nucleotide polymorphisms (SNPs)."
+          },
+          "5": {
+            "1": "The 1.08-mega-base pair Mycoplasma mycoides JCVI-syn1.0 genome was designed, synthesized, and assembled starting from digitized genome sequence information.",
+            "2": "The JCVI-syn1.0 genome was transplanted into a Mycoplasma capricolum recipient cell to create new Mycoplasma mycoides cells.",
+            "3": "The new Mycoplasma mycoides cells are controlled only by the synthetic chromosome.",
+            "4": "The only DNA in the new Mycoplasma mycoides cells is the designed synthetic DNA sequence.",
+            "5": "The synthetic DNA sequence in the cells includes \"watermark\" sequences.",
+            "6": "The synthetic DNA sequence in the cells includes designed gene deletions and polymorphisms.",
+            "7": "The synthetic DNA sequence in the cells includes mutations acquired during the building process.",
+            "8": "The new Mycoplasma mycoides cells have the expected phenotypic properties.",
+            "9": "The new Mycoplasma mycoides cells are capable of continuous self-replication."
+          },
+          "6": {
+            "1": "The cost of DNA sequencing has dropped by five orders of magnitude in the past decade.",
+            "2": "DNA synthesis remains expensive for many applications despite the drop in DNA sequencing costs.",
+            "3": "DNA microarrays have decreased the cost of oligonucleotide synthesis.",
+            "4": "The practice of using array-synthesized oligos is limited by short synthesis lengths.",
+            "5": "The practice of using array-synthesized oligos is limited by high synthesis error rates.",
+            "6": "The practice of using array-synthesized oligos is limited by low yield.",
+            "7": "The practice of using array-synthesized oligos is limited by the challenges of assembling long constructs from complex pools.",
+            "8": "A protocol for multiplex pairwise assembly of oligos from array-synthesized oligonucleotide pools was developed to address the issues of array-synthesized oligos.",
+            "9": "An attempt was made to assemble up to 2271 targets ranging in length from 192-252 bases using pairs of array-synthesized oligos to evaluate the multiplex pairwise assembly method.",
+            "10": "Error-free assemblies were observed for 90.5% of all targets within sets of complexity ranging from 131-250 targets.",
+            "11": "Error-free constructs were observed for 70.6% when all 2271 targets were assembled in one reaction.",
+            "12": "The assembly method intrinsically increased accuracy to a small degree.",
+            "13": "Accuracy was further increased by using a high throughput 'Dial-Out PCR' protocol.",
+            "14": "The 'Dial-Out PCR' protocol combines Illumina sequencing with an in-house set of unique PCR tags.",
+            "15": "The combination of Illumina sequencing and unique PCR tags in the 'Dial-Out PCR' protocol selectively amplifies perfect assemblies from complex synthetic pools.",
+            "16": "The approach of using the 'Dial-Out PCR' protocol has broad applicability to DNA assembly.",
+            "17": "The approach of using the 'Dial-Out PCR' protocol has broad applicability to high-throughput functional screens."
+          }
+        },
+        "viewpoints": [
+          "PCR facilitates the selective amplification of biological DNA from complex libraries containing millions of distinct sequences.",
+          "PCR facilitates the selective amplification of synthetic oligonucleotides from complex libraries containing millions of distinct sequences."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "For effective PCR, each target subset must possess a unique selection region for primer pairs, comprising forward and reverse primers ~ 20 nucleotides (nt) in length, to ensure the specificity of primer hybridization [7].",
+        "references": {
+          "7": []
+        },
+        "viewpoints": [
+          "Each target subset must possess a unique selection region for primer pairs for effective PCR.",
+          "Primer pairs in PCR comprise forward and reverse primers approximately 20 nucleotides in length.",
+          "The unique selection region ensures the specificity of primer hybridization in PCR."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Despite advancements, including the optimization of primer design and the incorporation of molecular probe-based mechanisms, the specificity of selecting oligos still largely depends on the length of the unique region for hybridization [8].",
+        "references": {
+          "8": {
+            "1": "The complete thermodynamic library of all 10 Watson-Crick DNA nearest-neighbor interactions is reported.",
+            "2": "The relevant thermodynamic data were obtained from calorimetric studies on 19 DNA oligomers.",
+            "3": "The relevant thermodynamic data were obtained from calorimetric studies on 9 DNA polymers.",
+            "4": "The thermodynamic data can be used to calculate the stability of any DNA duplex structure from knowledge of its base sequence.",
+            "5": "The thermodynamic data can be used to predict the temperature-dependent behavior of any DNA duplex structure from knowledge of its base sequence.",
+            "6": "The method of calculation is illustrated by using the nearest-neighbor data to predict transition enthalpies for a series of DNA oligomers.",
+            "7": "The method of calculation is illustrated by using the nearest-neighbor data to predict free energies for a series of DNA oligomers.",
+            "8": "The predicted transition enthalpies for DNA oligomers are in excellent agreement with the corresponding values determined experimentally.",
+            "9": "The predicted free energies for DNA oligomers are in excellent agreement with the corresponding values determined experimentally.",
+            "10": "The agreement between predicted and experimental values demonstrates that a DNA duplex structure thermodynamically can be considered the sum of its nearest-neighbor interactions.",
+            "11": "With the knowledge and nearest-neighbor thermodynamic data, scientists will be able to predict the stability (delta G degree) of any DNA duplex structure from inspection of its primary sequence.",
+            "12": "With the knowledge and nearest-neighbor thermodynamic data, scientists will be able to predict the melting behavior (delta H degree) of any DNA duplex structure from inspection of its primary sequence.",
+            "13": "The capability to predict the stability and melting behavior of DNA duplex structures should prove valuable in predicting the stability of a probe-gene complex.",
+            "14": "The capability to predict the stability and melting behavior of DNA duplex structures should prove valuable in selecting optimal conditions for a hybridization experiment.",
+            "15": "The capability to predict the stability and melting behavior of DNA duplex structures should prove valuable in deciding on the minimum length of a probe.",
+            "16": "The capability to predict the stability and melting behavior of DNA duplex structures should prove valuable in predicting the influence of a specific transversion on the stability of an affected DNA region.",
+            "17": "The capability to predict the stability and melting behavior of DNA duplex structures should prove valuable in predicting the influence of a transition on the stability of an affected DNA region.",
+            "18": "The capability to predict the stability and melting behavior of DNA duplex structures should prove valuable in predicting the relative stabilities of local domains within a DNA duplex."
+          }
+        },
+        "viewpoints": [
+          "Advancements, including the optimization of primer design, have been made in PCR.",
+          "Molecular probe-based mechanisms have been incorporated into PCR.",
+          "The specificity of selecting oligonucleotides still largely depends on the length of the unique hybridization region."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Also, users must identify the selection regions within the target and synthesize the corresponding primer pairs, with the synthesis burden increasing in proportion to the number of subsets [9].",
+        "references": {
+          "9": {
+            "1": "The design of highly multiplexed PCR primer sets is challenged by a large number of potential primer dimer species.",
+            "2": "The number of potential primer dimer species grows quadratically with the number of primers to be designed.",
+            "3": "There are exponentially many choices for multiplex primer sequence selection.",
+            "4": "Systematic evaluation approaches for multiplex primer sequence selection are computationally intractable.",
+            "5": "Simulated Annealing Design using Dimer Likelihood Estimation (SADDLE) is a stochastic algorithm.",
+            "6": "SADDLE is used for the design of multiplex PCR primer sets.",
+            "7": "SADDLE minimizes primer dimer formation.",
+            "8": "The presentation of SADDLE includes its experimental validation.",
+            "9": "In a 96-plex PCR primer set with 192 primers, the fraction of primer dimers in a naively designed primer set is 90.7%.",
+            "10": "In a 96-plex PCR primer set with 192 primers, the fraction of primer dimers in an optimized primer set is 4.9%.",
+            "11": "The fraction of primer dimers decreases significantly in an optimized primer set compared to a naively designed primer set in a 96-plex PCR primer set.",
+            "12": "The optimized primer set maintains a low dimer fraction when scaled to 384-plex, which involves 768 primers.",
+            "13": "SADDLE-designed primer sets can be used in qPCR settings in addition to NGS.",
+            "14": "SADDLE-designed primer sets allow highly multiplexed detection of gene fusions in cDNA.",
+            "15": "A single-tube assay with SADDLE-designed primer sets can comprise 60 primers.",
+            "16": "A single-tube assay with SADDLE-designed primer sets can detect 56 distinct gene fusions.",
+            "17": "The 56 distinct gene fusions detected are recurrently observed in lung cancer."
+          }
+        },
+        "viewpoints": [
+          "Users must identify the selection regions within the target.",
+          "Users must synthesize the corresponding primer pairs.",
+          "The synthesis burden increases in proportion to the number of oligonucleotide subsets."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "In addition to PCR, other nucleic acid amplification, enrichment, and selection methods, such as hybridization-based capture and the CRISPR system, rely on hybridization and share this dependency on the length of the unique selection region [7], [10], [11], [12], [13], [14], [15], [16], [17], [18].",
+        "references": {
+          "7": [],
+          "10": {
+            "1": "Screening for genomic sequence variants in genes is important for predictive and prognostic purposes in precision medicine.",
+            "2": "Screening for genomic sequence variants is an integral part of precision medicine.",
+            "3": "Next-generation sequencing technologies are progressively becoming platforms of choice for screening genomic sequence variants.",
+            "4": "Next-generation sequencing technologies have massively parallel sequencing capability.",
+            "5": "Massively parallel sequencing capability allows simultaneous screening of multiple markers in multiple samples.",
+            "6": "Next-generation sequencing technologies can be used to screen for a variety of variants, including single nucleotide variants, multi nucleotide variants, insertions and deletions, gene copy number variations, and fusions.",
+            "7": "Enrichment of the genomic regions of interest to be sequenced is a crucial step in the workflow of targeted next-generation sequencing.",
+            "8": "Enrichment is done against the whole genomic background.",
+            "9": "Focusing the next-generation sequencing effort predominantly on target regions ensures minimal off-target sequencing.",
+            "10": "Minimal off-target sequencing makes next-generation sequencing more accurate.",
+            "11": "Minimal off-target sequencing makes next-generation sequencing more economical.",
+            "12": "Polymerase chain reaction-based methodologies are a prominent approach for target enrichment.",
+            "13": "Hybridization capture-based methodologies are a prominent approach for target enrichment.",
+            "14": "The review summarizes the basic principles of target enrichment utilized by polymerase chain reaction-based and hybridization capture-based methods.",
+            "15": "The review summarizes the multiple variations of polymerase chain reaction-based and hybridization capture-based methods that have evolved over time.",
+            "16": "The review summarizes the automation approaches for polymerase chain reaction-based and hybridization capture-based methods.",
+            "17": "The review provides an overall comparison of the advantages and drawbacks of polymerase chain reaction-based and hybridization capture-based methods.",
+            "18": "The review summarizes commercially available choices for polymerase chain reaction-based and hybridization capture-based methodologies."
+          },
+          "11": {
+            "1": "Genome-wide association studies suggest that common genetic variants explain only a modest fraction of heritable risk for common diseases.",
+            "2": "The modest fraction of heritable risk explained by common genetic variants raises the question of whether rare variants account for a significant fraction of unexplained heritability.",
+            "3": "DNA sequencing costs have fallen markedly.",
+            "4": "Despite the reduction in DNA sequencing costs, they remain too high for rare and novel variants to be routinely identified at a genome-wide scale in large cohorts.",
+            "5": "Researchers have sought to develop second-generation methods for targeted sequencing of all protein-coding regions ('exomes') to reduce costs.",
+            "6": "Targeted sequencing of all protein-coding regions ('exomes') is intended to enrich for discovery of highly penetrant variants.",
+            "7": "Researchers report on the targeted capture of exomes of 12 humans.",
+            "8": "Researchers report on the massively parallel sequencing of the exomes of 12 humans.",
+            "9": "The 12 humans include eight HapMap individuals representing three populations.",
+            "10": "The 12 humans include four unrelated individuals with a rare dominantly inherited disorder, Freeman-Sheldon syndrome (FSS).",
+            "11": "Researchers demonstrate the sensitive identification of rare and common variants in over 300 megabases of coding sequence.",
+            "12": "Researchers demonstrate the specific identification of rare and common variants in over 300 megabases of coding sequence.",
+            "13": "Freeman-Sheldon syndrome (FSS) is used as a proof-of-concept in the study.",
+            "14": "Candidate genes for Mendelian disorders can be identified by exome sequencing of a small number of unrelated, affected individuals.",
+            "15": "The strategy of identifying candidate genes for Mendelian disorders may be extendable to diseases with more complex genetics.",
+            "16": "Extension to diseases with more complex genetics may require larger sample sizes.",
+            "17": "Extension to diseases with more complex genetics may require appropriate weighting of non-synonymous variants by predicted functional impact."
+          },
+          "12": {
+            "1": "Improving the ability to construct DNA sequences would broadly accelerate progress in biology.",
+            "2": "Improving the ability to functionally characterize DNA sequences would broadly accelerate progress in biology.",
+            "3": "DropSynth is a scalable, low-cost method to build thousands of defined gene-length constructs.",
+            "4": "DropSynth builds gene-length constructs in a pooled (multiplexed) manner.",
+            "5": "DropSynth uses a library of barcoded beads to pull down the oligonucleotides necessary for a gene's assembly.",
+            "6": "The oligonucleotides pulled down by barcoded beads in DropSynth are then processed and assembled in water-in-oil emulsions.",
+            "7": "DropSynth was used to successfully build more than 7000 synthetic genes.",
+            "8": "The synthetic genes built using DropSynth encode phylogenetically diverse homologs of two essential genes."
+          },
+          "13": {
+            "1": "Accurate and cost-effective gene and genome synthesis is required to test the many hypotheses from genomics and systems biology experiments.",
+            "2": "A microchip-based technology is described for multiplex gene synthesis.",
+            "3": "Thousands of 'construction' oligonucleotides and tagged complementary 'selection' oligonucleotides are synthesized on photo-programmable microfluidic chips.",
+            "4": "The 'construction' and 'selection' oligonucleotides are released, amplified, and selected by hybridization to reduce synthesis errors.",
+            "5": "Errors in synthesis are reduced ninefold through the process of hybridization of oligonucleotides.",
+            "6": "A one-step polymerase assembly multiplexing reaction assembles oligonucleotides into multiple genes.",
+            "7": "The technology enabled the synthesis of all 21 genes that encode the proteins of the Escherichia coli 30S ribosomal subunit.",
+            "8": "The technology enables the optimization of translation efficiency in vitro through alteration of codon bias.",
+            "9": "The synthesis of 21 genes that encode the proteins of the Escherichia coli 30S ribosomal subunit is a significant step towards the synthesis of ribosomes in vitro.",
+            "10": "This step should have utility for synthetic biology in general."
+          },
+          "14": {
+            "1": "Complex DNA sequences are difficult to detect and profile.",
+            "2": "Complex DNA sequences are important contributors to human health.",
+            "3": "Complex DNA sequences are important contributors to disease.",
+            "4": "Existing hybridization probes lack the capability to selectively bind hypervariable sequences.",
+            "5": "Existing hybridization probes lack the capability to selectively bind long sequences.",
+            "6": "Existing hybridization probes lack the capability to selectively bind repetitive sequences.",
+            "7": "Existing hybridization probes lack the capability to enrich hypervariable sequences.",
+            "8": "Existing hybridization probes lack the capability to enrich long sequences.",
+            "9": "Existing hybridization probes lack the capability to enrich repetitive sequences.",
+            "10": "A generalized strategy for constructing modular hybridization probes (M-Probes) is presented.",
+            "11": "The generalized strategy for constructing M-Probes overcomes the challenges of binding and enriching hypervariable, long or repetitive sequences.",
+            "12": "M-Probes can tolerate sequence variations of up to 7 nt at prescribed positions.",
+            "13": "M-Probes maintain single nucleotide sensitivity at positions other than the ones with sequence variations.",
+            "14": "M-Probes are capable of sequence-selectively binding a continuous DNA sequence of more than 500 nt.",
+            "15": "M-Probes can detect genes with triplet repeats exceeding a programmed threshold.",
+            "16": "A hybrid capture method has been developed to determine the exact triplet repeat expansion number in the Huntington's gene of genomic DNA.",
+            "17": "The hybrid capture method determining the triplet repeat expansion number in the Huntington's gene uses quantitative PCR."
+          },
+          "15": {
+            "1": "Existing methods to enrich target regions of genomic DNA are based on PCR, hybridization capture, or molecular inversion probes.",
+            "2": "Existing methods to enrich target regions of genomic DNA have drawbacks such as long experiment times.",
+            "3": "Existing methods to enrich target regions of genomic DNA have drawbacks such as low throughput.",
+            "4": "Existing methods to enrich target regions of genomic DNA have drawbacks such as low enrichment quality.",
+            "5": "CRISPR-Cap is a simple and scalable CRISPR-based method developed to enrich target regions of dsDNA.",
+            "6": "CRISPR-Cap requires only two short experimental procedures.",
+            "7": "The experimental procedures of CRISPR-Cap can be completed within two hours.",
+            "8": "CRISPR-Cap was used to enrich 10 target genes 355.7-fold on average from Escherichia coli genomic DNA.",
+            "9": "CRISPR-Cap achieved a maximum on-target ratio of 81% when enriching target genes from Escherichia coli genomic DNA.",
+            "10": "CRISPR-Cap achieved high enrichment uniformity when enriching target genes from Escherichia coli genomic DNA.",
+            "11": "CRISPR-Cap was used to measure gene copy numbers.",
+            "12": "CRISPR-Cap was used to detect rare alleles with frequencies as low as 1%.",
+            "13": "CRISPR-Cap was used to enrich coding sequence regions of 20 genes from the human genome.",
+            "14": "CRISPR-Cap can be used as an alternative to other widely used target-enrichment methods.",
+            "15": "Using CRISPR-Cap as an alternative to other target-enrichment methods will broaden the scope of CRISPR applications in the field of target enrichment."
+          },
+          "16": {
+            "1": "Efficient methods for the generation of specific mutations enable the study of functional variations in natural populations.",
+            "2": "Efficient methods for the generation of specific mutations lead to advances in genetic engineering applications.",
+            "3": "A new approach called mutagenesis by template-guided amplicon assembly (MEGAA) is presented.",
+            "4": "The MEGAA approach is used for the rapid construction of kilobase-sized DNA variants.",
+            "5": "With the MEGAA method, many mutations can be generated at a time to a DNA template.",
+            "6": "Mutations generated using the MEGAA method have more than 90% efficiency per target.",
+            "7": "Mutations can be generated in a predictable manner using the MEGAA method.",
+            "8": "A robust and iterative protocol for an open-source laboratory automation robot has been devised.",
+            "9": "The protocol enables desktop production of variants.",
+            "10": "The protocol enables long-read sequencing validation of variants.",
+            "11": "Using the system, the construction of 31 natural SARS-CoV2 spike gene variants was demonstrated.",
+            "12": "Using the system, the construction of 10 recoded Escherichia coli genome fragments was demonstrated.",
+            "13": "Each 4 kb region constructed contains up to 150 mutations.",
+            "14": "Using the system, 125 defined combinatorial adeno-associated virus-2 cap gene variants were easily built.",
+            "15": "The built combinatorial adeno-associated virus-2 cap gene variants exhibited viral packaging enhancements of up to 10-fold compared with wild type.",
+            "16": "The MEGAA platform enables the generation of multi-site sequence variants quickly.",
+            "17": "The MEGAA platform enables the generation of multi-site sequence variants cheaply.",
+            "18": "The MEGAA platform enables the generation of multi-site sequence variants in a scalable manner.",
+            "19": "The MEGAA platform is suitable for diverse applications in biotechnology."
+          },
+          "17": {
+            "1": "CRISPR-based detection has great potential.",
+            "2": "CRISPR-based detection has not been competitive with other market diagnostics for on-site testing.",
+            "3": "CRISPR-based detection has not been competitive with other market diagnostics for in-home testing.",
+            "4": "Rate-limiting factors undermine the performance of Cas12b-mediated detection.",
+            "5": "Rate-limiting factors undermine the performance of Cas13a-mediated detection.",
+            "6": "In one-pot testing, Cas12b interferes with loop-mediated isothermal amplification by binding to the amplicon.",
+            "7": "In one-pot testing, Cas12b cleaves the amplicon.",
+            "8": "In one-pot testing, Cas13a directly degrades the viral RNA.",
+            "9": "The degradation of the viral RNA by Cas13a reduces its amplification in one-pot testing.",
+            "10": "The protospacer-adjacent motif-interacting domain engineered Cas12b accelerated one-pot testing.",
+            "11": "The protospacer-adjacent motif-interacting domain engineered Cas12b improved the sensitivity of one-pot testing by 10-10,000-fold.",
+            "12": "The protospacer-adjacent motif-interacting domain engineered Cas12b detected 85 out of 85 SARS-CoV-2 clinical samples.",
+            "13": "The protospacer-adjacent motif-interacting domain engineered Cas12b achieved a sensitivity of 0.5 cp μl in detecting SARS-CoV-2 clinical samples."
+          },
+          "18": {
+            "1": "There is a growing interest in archiving information in synthetic DNA to confront data explosion.",
+            "2": "Quantitatively querying the data stored in DNA remains a challenge.",
+            "3": "Search Enabled by Enzymatic Keyword Recognition (SEEKER) is presented as a method for querying data stored in DNA.",
+            "4": "SEEKER utilizes CRISPR-Cas12a to rapidly generate visible fluorescence.",
+            "5": "SEEKER generates visible fluorescence when a DNA target corresponding to the keyword of interest is present.",
+            "6": "SEEKER achieves quantitative text searching.",
+            "7": "The growth rate of fluorescence intensity in SEEKER is proportional to keyword frequency.",
+            "8": "Non-collision grouping coding is compatible with SEEKER.",
+            "9": "Non-collision grouping coding reduces the size of the dictionary.",
+            "10": "Non-collision grouping coding enables lossless compression.",
+            "11": "Non-collision grouping coding does not disrupt the original order of texts.",
+            "12": "Using four queries, keywords are correctly identified in 40 files.",
+            "13": "There is a background of approximately 8000 irrelevant terms during the identification of keywords in 40 files.",
+            "14": "Parallel searching with SEEKER can be performed.",
+            "15": "Parallel searching with SEEKER can be performed on a 3D-printed microfluidic chip.",
+            "16": "SEEKER provides a quantitative approach to conducting parallel searching over the complete content stored in DNA.",
+            "17": "SEEKER allows for simple implementation.",
+            "18": "SEEKER allows for rapid result generation."
+          }
+        },
+        "viewpoints": [
+          "Other nucleic acid amplification, enrichment, and selection methods rely on hybridization.",
+          "Hybridization-based capture methods rely on hybridization.",
+          "The CRISPR system relies on hybridization.",
+          "These methods share a dependency on the length of the unique selection region."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Consequently, the scalability of current oligo-selection methods is limited.",
+        "references": {},
+        "viewpoints": [
+          "The scalability of current oligonucleotide-selection methods is limited."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "In addition, given that the current length limit for de novo oligonucleotide synthesis is 200 nt, dedicating 40 nt to the selection region regardless of the number of oligo subsets is inefficient [7], [16], [19], [20], [21].",
+        "references": {
+          "7": [],
+          "16": {
+            "1": "Efficient methods for the generation of specific mutations enable the study of functional variations in natural populations.",
+            "2": "Efficient methods for the generation of specific mutations lead to advances in genetic engineering applications.",
+            "3": "A new approach called mutagenesis by template-guided amplicon assembly (MEGAA) is presented.",
+            "4": "The MEGAA approach is used for the rapid construction of kilobase-sized DNA variants.",
+            "5": "With the MEGAA method, many mutations can be generated at a time to a DNA template.",
+            "6": "Mutations generated using the MEGAA method have more than 90% efficiency per target.",
+            "7": "Mutations can be generated in a predictable manner using the MEGAA method.",
+            "8": "A robust and iterative protocol for an open-source laboratory automation robot has been devised.",
+            "9": "The protocol enables desktop production of variants.",
+            "10": "The protocol enables long-read sequencing validation of variants.",
+            "11": "Using the system, the construction of 31 natural SARS-CoV2 spike gene variants was demonstrated.",
+            "12": "Using the system, the construction of 10 recoded Escherichia coli genome fragments was demonstrated.",
+            "13": "Each 4 kb region constructed contains up to 150 mutations.",
+            "14": "Using the system, 125 defined combinatorial adeno-associated virus-2 cap gene variants were easily built.",
+            "15": "The built combinatorial adeno-associated virus-2 cap gene variants exhibited viral packaging enhancements of up to 10-fold compared with wild type.",
+            "16": "The MEGAA platform enables the generation of multi-site sequence variants quickly.",
+            "17": "The MEGAA platform enables the generation of multi-site sequence variants cheaply.",
+            "18": "The MEGAA platform enables the generation of multi-site sequence variants in a scalable manner.",
+            "19": "The MEGAA platform is suitable for diverse applications in biotechnology."
+          },
+          "19": {
+            "1": "Complex oligonucleotide libraries are essential materials for applications in synthetic biology.",
+            "2": "Complex oligonucleotide libraries are essential materials for applications in pharmaceutical production.",
+            "3": "Complex oligonucleotide libraries are essential materials for applications in nanotechnology.",
+            "4": "Complex oligonucleotide libraries are essential materials for applications in DNA-based data storage.",
+            "5": "The error rates in synthesizing complex oligonucleotide libraries can be substantial.",
+            "6": "High error rates in synthesizing complex oligonucleotide libraries lead to an increase in cost for the applications.",
+            "7": "High error rates in synthesizing complex oligonucleotide libraries lead to an increase in labor for the applications.",
+            "8": "Most synthesis errors in complex oligonucleotide libraries arise from faulty insertions.",
+            "9": "Most synthesis errors in complex oligonucleotide libraries arise from faulty deletions.",
+            "10": "A length-based method with single-base resolution was developed for purification of complex libraries containing oligonucleotides of identical lengths.",
+            "11": "A length-based method with single-base resolution was developed for purification of complex libraries containing oligonucleotides of different lengths.",
+            "12": "Purification of multiplex oligonucleotide libraries by synthesis and selection can be performed step-by-step manually.",
+            "13": "Purification of multiplex oligonucleotide libraries by synthesis and selection can be performed using a next-generation sequencer.",
+            "14": "The method was applied to a digital data-encoded library containing oligonucleotides of identical length.",
+            "15": "The method increased the purity of full-length oligonucleotides in a digital data-encoded library from 83% to 97%.",
+            "16": "Libraries encoding the complementarity-determining region H3 can have three different lengths.",
+            "17": "Libraries encoding the complementarity-determining region H3 can achieve empirically a diversity greater than 10..."
+          },
+          "20": {
+            "1": "Next-generation sequencing (NGS) has enabled the high-throughput analysis of DNA sequences.",
+            "2": "Next-generation sequencing (NGS) provides this capability at a very low cost.",
+            "3": "The advent of next-generation sequencing (NGS) has accelerated biomedical research.",
+            "4": "Next-generation sequencing (NGS) has limitations in detecting rare-frequency variants that are less than 1%.",
+            "5": "The limitations are due to high sequencing errors in NGS which are greater than 0.1% to 1%.",
+            "6": "NGS errors can be filtered out using molecular barcodes.",
+            "7": "The filtering is done by comparing read replicates among those with the same barcodes.",
+            "8": "Barcoding methods require redundant reads of non-target sequences.",
+            "9": "These redundant reads result in high sequencing cost.",
+            "10": "A cost-effective NGS error validation method is presented.",
+            "11": "The method is implemented in a barcode-free manner.",
+            "12": "The method involves physically extracting and individually amplifying the DNA clones of erroneous reads.",
+            "13": "Through this process, true variants of frequency greater than 0.003% are distinguished from systematic NGS errors.",
+            "14": "The method allows for selective validation of NGS error after NGS.",
+            "15": "The method achieves a PCR-induced error rate of 2.5×10."
+          },
+          "21": {
+            "1": "The demand for synthetic DNA is increasing across many sectors of research.",
+            "2": "The demand for synthetic DNA is increasing across commercial activities.",
+            "3": "Engineering biology is set for rapid developments if DNA can be provided at scale and low cost.",
+            "4": "Therapy is set for rapid developments if DNA can be provided at scale and low cost.",
+            "5": "Data storage is set for rapid developments if DNA can be provided at scale and low cost.",
+            "6": "Nanotechnology is set for rapid developments if DNA can be provided at scale and low cost.",
+            "7": "The success in next generation sequencing technologies is stimulating DNA synthesis to become a burgeoning industry.",
+            "8": "The success in gene editing technologies is stimulating DNA synthesis to become a burgeoning industry.",
+            "9": "The synthesis of sequences longer than 200 base pairs remains unaffordable.",
+            "10": "Alternative technologies have been developed to overcome the limitations of unaffordable synthesis of >200 bp sequences.",
+            "11": "Alternative technologies have been developed to start writing DNA as effectively as it is read.",
+            "12": "Molecular assembly and cloning methods are examples of alternative technologies developed for DNA synthesis.",
+            "13": "Template-independent enzymatic synthesis is an example of alternative technology developed for DNA synthesis.",
+            "14": "Microarray is an example of alternative technology developed for DNA synthesis.",
+            "15": "Rolling circle amplification techniques are examples of alternative technologies developed for DNA synthesis.",
+            "16": "The paper reviews the progress in developing alternative DNA synthesis technologies.",
+            "17": "The paper reviews the progress in commercializing alternative DNA synthesis technologies.",
+            "18": "The alternative DNA synthesis technologies are exemplified by innovations from leading companies.",
+            "19": "The paper discusses the pros of each alternative DNA synthesis technology.",
+            "20": "The paper discusses the cons of each alternative DNA synthesis technology.",
+            "21": "The paper discusses the need for oversight of processes related to DNA synthesis as a whole.",
+            "22": "The paper discusses the need for regulatory policies for DNA synthesis as a whole.",
+            "23": "The paper provides an overview of DNA synthesis business models."
+          }
+        },
+        "viewpoints": [
+          "The current length limit for de novo oligonucleotide synthesis is 200 nucleotides.",
+          "Dedicating 40 nucleotides to the selection region is inefficient regardless of the number of oligonucleotide subsets."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "To prevent library depletion during repeated subset selection, it is essential to enable oligo library amplification, which requires an additional 40 nt replication region where universal primers bind [7], [13], [22].",
+        "references": {
+          "7": [],
+          "13": {
+            "1": "Accurate and cost-effective gene and genome synthesis is required to test the many hypotheses from genomics and systems biology experiments.",
+            "2": "A microchip-based technology is described for multiplex gene synthesis.",
+            "3": "Thousands of 'construction' oligonucleotides and tagged complementary 'selection' oligonucleotides are synthesized on photo-programmable microfluidic chips.",
+            "4": "The 'construction' and 'selection' oligonucleotides are released, amplified, and selected by hybridization to reduce synthesis errors.",
+            "5": "Errors in synthesis are reduced ninefold through the process of hybridization of oligonucleotides.",
+            "6": "A one-step polymerase assembly multiplexing reaction assembles oligonucleotides into multiple genes.",
+            "7": "The technology enabled the synthesis of all 21 genes that encode the proteins of the Escherichia coli 30S ribosomal subunit.",
+            "8": "The technology enables the optimization of translation efficiency in vitro through alteration of codon bias.",
+            "9": "The synthesis of 21 genes that encode the proteins of the Escherichia coli 30S ribosomal subunit is a significant step towards the synthesis of ribosomes in vitro.",
+            "10": "This step should have utility for synthetic biology in general."
+          },
+          "22": {
+            "1": "Dial-out PCR is a highly parallel method.",
+            "2": "Dial-out PCR is used for retrieving accurate DNA molecules.",
+            "3": "Dial-out PCR is used for gene synthesis.",
+            "4": "A complex library of DNA molecules is modified with unique flanking tags.",
+            "5": "The modification with unique flanking tags occurs before massively parallel sequencing.",
+            "6": "Tag-directed primers enable the retrieval of DNA molecules with desired sequences.",
+            "7": "The retrieval of DNA molecules with desired sequences is conducted by PCR.",
+            "8": "Dial-out PCR enables multiplex in vitro clone screening.",
+            "9": "Dial-out PCR is a compelling alternative to in vivo cloning for accurate gene synthesis.",
+            "10": "Dial-out PCR is a compelling alternative to Sanger sequencing for accurate gene synthesis."
+          }
+        },
+        "viewpoints": [
+          "It is essential to enable oligonucleotide library amplification to prevent library depletion during repeated subset selection.",
+          "Oligonucleotide library amplification requires an additional 40 nt replication region where universal primers bind."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "Although recent biotechnological advancements have expanded the scale by exploring diverse nucleic acid libraries, primer requirements have constrained these efforts.",
+        "references": {},
+        "viewpoints": [
+          "Recent biotechnological advancements have expanded the scale of exploration of diverse nucleic acid libraries.",
+          "Primer requirements have constrained these efforts to expand scale."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Furthermore, despite the introduction of multiplexed target selection methods, such as multiplexed PCR, which aim to select multiple oligo subsets in a single reaction, the requirement for primer synthesis proportionally increases with the number of target subsets, posing a bottleneck [9], [22], [23].",
+        "references": {
+          "9": {
+            "1": "The design of highly multiplexed PCR primer sets is challenged by a large number of potential primer dimer species.",
+            "2": "The number of potential primer dimer species grows quadratically with the number of primers to be designed.",
+            "3": "There are exponentially many choices for multiplex primer sequence selection.",
+            "4": "Systematic evaluation approaches for multiplex primer sequence selection are computationally intractable.",
+            "5": "Simulated Annealing Design using Dimer Likelihood Estimation (SADDLE) is a stochastic algorithm.",
+            "6": "SADDLE is used for the design of multiplex PCR primer sets.",
+            "7": "SADDLE minimizes primer dimer formation.",
+            "8": "The presentation of SADDLE includes its experimental validation.",
+            "9": "In a 96-plex PCR primer set with 192 primers, the fraction of primer dimers in a naively designed primer set is 90.7%.",
+            "10": "In a 96-plex PCR primer set with 192 primers, the fraction of primer dimers in an optimized primer set is 4.9%.",
+            "11": "The fraction of primer dimers decreases significantly in an optimized primer set compared to a naively designed primer set in a 96-plex PCR primer set.",
+            "12": "The optimized primer set maintains a low dimer fraction when scaled to 384-plex, which involves 768 primers.",
+            "13": "SADDLE-designed primer sets can be used in qPCR settings in addition to NGS.",
+            "14": "SADDLE-designed primer sets allow highly multiplexed detection of gene fusions in cDNA.",
+            "15": "A single-tube assay with SADDLE-designed primer sets can comprise 60 primers.",
+            "16": "A single-tube assay with SADDLE-designed primer sets can detect 56 distinct gene fusions.",
+            "17": "The 56 distinct gene fusions detected are recurrently observed in lung cancer."
+          },
+          "22": {
+            "1": "Dial-out PCR is a highly parallel method.",
+            "2": "Dial-out PCR is used for retrieving accurate DNA molecules.",
+            "3": "Dial-out PCR is used for gene synthesis.",
+            "4": "A complex library of DNA molecules is modified with unique flanking tags.",
+            "5": "The modification with unique flanking tags occurs before massively parallel sequencing.",
+            "6": "Tag-directed primers enable the retrieval of DNA molecules with desired sequences.",
+            "7": "The retrieval of DNA molecules with desired sequences is conducted by PCR.",
+            "8": "Dial-out PCR enables multiplex in vitro clone screening.",
+            "9": "Dial-out PCR is a compelling alternative to in vivo cloning for accurate gene synthesis.",
+            "10": "Dial-out PCR is a compelling alternative to Sanger sequencing for accurate gene synthesis."
+          },
+          "23": {
+            "1": "Synthetic DNA is durable.",
+            "2": "Synthetic DNA can encode digital data with high density.",
+            "3": "The ability to encode digital data with high density makes synthetic DNA an attractive medium for data storage.",
+            "4": "Recovering stored data on a large-scale requires all the DNA in a pool to be sequenced.",
+            "5": "Sequencing all the DNA in a pool is necessary even if only a subset of the information needs to be extracted.",
+            "6": "35 distinct files, totaling over 200 MB of data, are encoded and stored in more than 13 million DNA oligonucleotides.",
+            "7": "Each file can be recovered individually and with no errors using a random access approach.",
+            "8": "A large library of primers is designed and validated.",
+            "9": "The large library of primers enables individual recovery of all files stored within the DNA.",
+            "10": "An algorithm is developed that greatly reduces the sequencing read coverage required for error-free decoding.",
+            "11": "The algorithm developed maximizes information from all sequence reads.",
+            "12": "The advances demonstrate a viable large-scale system for DNA data storage.",
+            "13": "The advances demonstrate a viable large-scale system for DNA data retrieval."
+          }
+        },
+        "viewpoints": [
+          "Multiplexed target selection methods have been introduced.",
+          "Multiplexed PCR aims to select multiple oligo subsets in a single reaction.",
+          "The requirement for primer synthesis proportionally increases with the number of target subsets.",
+          "The increasing requirement for primer synthesis poses a bottleneck."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Here, we introduce a highly efficient method for selecting oligo subsets that can recognize barcodes in single-nucleotide resolutions, eliminating the need for individual primers for each subset.",
+        "references": {},
+        "viewpoints": [
+          "A highly efficient method for selecting oligo subsets is introduced.",
+          "The introduced method can recognize barcodes in single-nucleotide resolutions.",
+          "The introduced method eliminates the need for individual primers for each oligo subset."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Through the implementation of synthesis and selection, which involves single-nucleotide resolution cyclic DNA synthesis and blocking of template oligos, we successfully demonstrated oligo subset selection with only a few nucleotides and without primer synthesis for each oligo subset.",
+        "references": {},
+        "viewpoints": [
+          "The introduced method involves single-nucleotide resolution cyclic DNA synthesis.",
+          "The method involves blocking of template oligonucleotides.",
+          "Oligo subset selection was demonstrated using only a few nucleotides.",
+          "The methodology does not require primer synthesis for each oligo subset."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "This advancement enables the application of a hierarchical data structure to oligo subsets, similar to the management of digital data in computer science, where data are organized into files with directories for streamlined searching, thereby facilitating the efficient selection of multiple subsets.",
+        "references": {},
+        "viewpoints": [
+          "The advancement enables the application of a hierarchical data structure to oligo subsets.",
+          "The hierarchical data structure is similar to the management of digital data in computer science.",
+          "In this structure, data are organized into files with directories for streamlined searching.",
+          "The hierarchical structure facilitates the efficient selection of multiple subsets."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The introduction of single-nucleotide resolution barcode identification through synthesis and selection enabled the development of a programmable and scalable directory system within a complex oligo library (Fig. 1).",
+        "references": {},
+        "viewpoints": [
+          "Single-nucleotide resolution barcode identification is introduced through synthesis and selection.",
+          "This introduction enabled the development of a programmable directory system within a complex oligo library.",
+          "The directory system within the complex oligo library is scalable."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Theoretically, four to the power of N oligo subsets can be encoded by N nt, with four possible bases in each nucleotide.",
+        "references": {},
+        "viewpoints": [
+          "Theoretically, four to the power of N oligo subsets can be encoded by N nucleotides.",
+          "Each nucleotide has four possible bases."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Thousands of oligo subsets can be identified using only 6 nt of selection region (4^6) – referred to as a “barcode” in our proposed method – reducing the complexity of primer design compared to PCR-based methods that require unique primer pairs for each subset [7] (Fig. 1a).",
+        "references": {
+          "7": []
+        },
+        "viewpoints": [
+          "Thousands of oligo subsets can be identified using only 6 nucleotides of the selection region.",
+          "The selection region is referred to as a \"barcode\" in the proposed method.",
+          "The proposed method reduces the complexity of primer design compared to PCR-based methods.",
+          "PCR-based methods require unique primer pairs for each oligo subset."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Moreover, the proposed method allows the selection of oligo subsets in a hierarchical manner.",
+        "references": {},
+        "viewpoints": [
+          "The proposed method allows the selection of oligo subsets in a hierarchical manner."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Because the synthesis- and selection-based approach involves cyclic reactions, higher groups in the hierarchy can be selected with fewer cycles.",
+        "references": {},
+        "viewpoints": [
+          "The synthesis- and selection-based approach involves cyclic reactions.",
+          "Higher groups in the hierarchy can be selected with fewer cycles."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "For example, if oligo subsets are encoded with a 3 nt barcode, three cycles of selection with sequences A, T, and G permit the selection of a single subset.",
+        "references": {},
+        "viewpoints": [
+          "Oligo subsets can be encoded with a 3 nt barcode.",
+          "Three cycles of selection with sequences A, T, and G permit the selection of a single subset."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "However, if the selection stops after the 2nd cycle with barcodes A and T, the four subsets within the ATN barcode can be simultaneously selected.",
+        "references": {},
+        "viewpoints": [
+          "If selection stops after the 2nd cycle with barcodes A and T, the four subsets within the ATN barcode can be simultaneously selected."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The proposed hierarchical selection contrasts with PCR-based selection, where the amplification of a subset exhibits a one-to-one correspondence between the primer and oligo subset, resulting in a planar and non-hierarchical structure [22], [23], [24].",
+        "references": {
+          "22": {
+            "1": "Dial-out PCR is a highly parallel method.",
+            "2": "Dial-out PCR is used for retrieving accurate DNA molecules.",
+            "3": "Dial-out PCR is used for gene synthesis.",
+            "4": "A complex library of DNA molecules is modified with unique flanking tags.",
+            "5": "The modification with unique flanking tags occurs before massively parallel sequencing.",
+            "6": "Tag-directed primers enable the retrieval of DNA molecules with desired sequences.",
+            "7": "The retrieval of DNA molecules with desired sequences is conducted by PCR.",
+            "8": "Dial-out PCR enables multiplex in vitro clone screening.",
+            "9": "Dial-out PCR is a compelling alternative to in vivo cloning for accurate gene synthesis.",
+            "10": "Dial-out PCR is a compelling alternative to Sanger sequencing for accurate gene synthesis."
+          },
+          "23": {
+            "1": "Synthetic DNA is durable.",
+            "2": "Synthetic DNA can encode digital data with high density.",
+            "3": "The ability to encode digital data with high density makes synthetic DNA an attractive medium for data storage.",
+            "4": "Recovering stored data on a large-scale requires all the DNA in a pool to be sequenced.",
+            "5": "Sequencing all the DNA in a pool is necessary even if only a subset of the information needs to be extracted.",
+            "6": "35 distinct files, totaling over 200 MB of data, are encoded and stored in more than 13 million DNA oligonucleotides.",
+            "7": "Each file can be recovered individually and with no errors using a random access approach.",
+            "8": "A large library of primers is designed and validated.",
+            "9": "The large library of primers enables individual recovery of all files stored within the DNA.",
+            "10": "An algorithm is developed that greatly reduces the sequencing read coverage required for error-free decoding.",
+            "11": "The algorithm developed maximizes information from all sequence reads.",
+            "12": "The advances demonstrate a viable large-scale system for DNA data storage.",
+            "13": "The advances demonstrate a viable large-scale system for DNA data retrieval."
+          },
+          "24": {
+            "1": "The researchers attempted to produce primer-dimers (PDs) from a variety of primers.",
+            "2": "The primers used had differing types and extents of complementarity.",
+            "3": "When primer-dimers were produced, they were cloned.",
+            "4": "When primer-dimers were produced, they were sequenced.",
+            "5": "The researchers were unable to produce detectable primer-dimers with individual primers alone.",
+            "6": "The researchers were unable to produce detectable primer-dimers with similar sequence primers even if they had 3' complementarity.",
+            "7": "The observations led to the hypothesis of developing a system to eliminate the accumulation of primer-dimers in a PCR.",
+            "8": "The researchers demonstrate a method for the general suppression of primer-dimer formation.",
+            "9": "The method uses a sequence of additional nucleotides (a Tail) at the 5' ends of amplimers.",
+            "10": "Tailed amplimers are present at low concentration.",
+            "11": "Tailed amplimers only participate during early cycles of PCR.",
+            "12": "In subsequent PCR cycles, amplification is achieved using a single primer.",
+            "13": "The single primer has the same sequence as the Tail portion of the early cycle primers.",
+            "14": "The researchers refer to the single primer used in subsequent PCR cycles as a Tag.",
+            "15": "When products are small, as with primer-dimers, there is a high local concentration of complementary sequences derived from the Tail.",
+            "16": "The high local concentration of complementary sequences favours the annealing of the complementary ends of a single strand produced by tailed primer interactions.",
+            "17": "The annealing of the complementary ends gives rise to 'pan-handle' structures.",
+            "18": "The formation of 'pan-handle' structures outcompetes the annealing of further Tag primers.",
+            "19": "The formation of 'pan-handle' structures prevents the accumulation of non-specific primer-dimer products.",
+            "20": "The suppression of primer-dimer formation aids the design of large multiplex reactions.",
+            "21": "The suppression of primer-dimer formation provides a means of detecting specific amplicons directly in the reaction vessel by using an intercalating dye."
+          }
+        },
+        "viewpoints": [
+          "The proposed hierarchical selection contrasts with PCR-based selection.",
+          "PCR-based selection exhibits a one-to-one correspondence between the primer and the oligo subset.",
+          "PCR-based selection results in a planar and non-hierarchical structure."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Fig. 1: Synthesis and selection-based oligo selection enables 4 N subsets access with N nucleotide region and a hierarchical structure in complex oligo library.",
+        "references": {},
+        "viewpoints": [
+          "Synthesis and selection-based oligo selection enable access to 4^N subsets with an N nucleotide region.",
+          "The synthesis and selection-based method results in a hierarchical structure in a complex oligo library."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "a Oligo library subset selection employing a hierarchical structure.",
+        "references": {},
+        "viewpoints": [
+          "Oligo library subset selection employs a hierarchical structure."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Accessing a higher level of the hierarchy enables reaching all the oligo subsets below it.",
+        "references": {},
+        "viewpoints": [
+          "Accessing a higher level of the hierarchy enables reaching all the oligo subsets below it."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "The DNA sequence-based barcoding system utilizes four base types and employs a quaternary barcode-based method for representing directories.",
+        "references": {},
+        "viewpoints": [
+          "The DNA sequence-based barcoding system utilizes four base types.",
+          "The system employs a quaternary barcode-based method for representing directories."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "By contrast, traditional PCR-based oligo selection requires a one-to-one mapping of specific primers to oligo subsets.",
+        "references": {},
+        "viewpoints": [
+          "Traditional PCR-based oligo selection requires a one-to-one mapping of specific primers to oligo subsets."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "The hierarchical structure within the oligo library demonstrates scalability through reduced nucleotide length requirements and improved programmability in oligo selection.",
+        "references": {},
+        "viewpoints": [
+          "The hierarchical structure within the oligo library demonstrates scalability.",
+          "The scalability is achieved through reduced nucleotide length requirements.",
+          "The hierarchical structure improves programmability in oligo selection."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "b Details of the oligo selection include single-base resolution synthesis and selection cycles on the complementary template oligo strands.",
+        "references": {},
+        "viewpoints": [
+          "The details of the oligo selection include single-base resolution synthesis.",
+          "Selection cycles are performed on the complementary template oligo strands."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "During synthesis and selection, nucleotides matching the target directory are introduced with reversible terminators, such as 3’-O-azidomethyl deoxynucleotides, while others are coupled with irreversible terminators, such as dideoxynucleotides.",
+        "references": {},
+        "viewpoints": [
+          "During synthesis and selection, nucleotides matching the target directory are introduced with reversible terminators.",
+          "An example of a reversible terminator used is 3’-O-azidomethyl deoxynucleotides.",
+          "Other nucleotides are coupled with irreversible terminators.",
+          "An example of an irreversible terminator used is dideoxynucleotides."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "By repeating the cycles after deprotecting the reversible terminators, only the oligos with target barcodes will be retrieved.",
+        "references": {},
+        "viewpoints": [
+          "Repeating the cycles after deprotecting the reversible terminators allows only the oligos with target barcodes to be retrieved."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "The proposed synthesis and selection-based oligo selection involves cyclic coupling of specific types of nucleotides with reversible terminators (such as 3’-O-azidomethyl deoxynucleotides) that match the target directory barcode, while others are coupled with nucleotides with irreversible terminators (such as dideoxynucleotides) (Fig. 1b, see Methods for detail).",
+        "references": {},
+        "viewpoints": [
+          "The proposed synthesis and selection-based oligo selection involves cyclic coupling of specific types of nucleotides with reversible terminators.",
+          "One type of reversible terminator used is 3’-O-azidomethyl deoxynucleotides.",
+          "The nucleotides with reversible terminators match the target directory barcode.",
+          "Other nucleotides are coupled with nucleotides with irreversible terminators.",
+          "One example of an irreversible terminator used is dideoxynucleotides."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "The original oligo library was immobilized onto solid substrates, such as magnetic beads, which facilitated the replacement of reagents during selection cycles.",
+        "references": {},
+        "viewpoints": [
+          "The original oligo library was immobilized onto solid substrates.",
+          "One example of solid substrates used is magnetic beads.",
+          "The solid substrates facilitated the replacement of reagents during selection cycles."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "The selection process began with the hybridization of a primer complementary to the universal primer region.",
+        "references": {},
+        "viewpoints": [
+          "The selection process began with the hybridization of a primer.",
+          "The primer is complementary to the universal primer region."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "Following hybridization, two-step cycles continue until the desired barcode is reached.",
+        "references": {},
+        "viewpoints": [
+          "After hybridization, two-step cycles continue until the desired barcode is reached."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "First, various combinations of nucleotides with reversible and irreversible terminators are introduced.",
+        "references": {},
+        "viewpoints": [
+          "Various combinations of nucleotides with reversible and irreversible terminators are introduced."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "For example, to select a single barcode A, a reversible terminator corresponding to the complementary T and irreversible terminators corresponding to A, C, and G were employed.",
+        "references": {},
+        "viewpoints": [
+          "To select a single barcode A, a reversible terminator corresponding to the complementary T is employed.",
+          "Irreversible terminators corresponding to A, C, and G are employed to select a single barcode A."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "Second, the blocker of the reversible terminator was removed using tris(2-carboxyethyl) phosphine hydrochloride treatments, enabling subsequent reactions.",
+        "references": {},
+        "viewpoints": [
+          "The blocker of the reversible terminator was removed using tris(2-carboxyethyl) phosphine hydrochloride treatments.",
+          "Removing the blocker enables subsequent reactions."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "As a result, oligos that do not align with the target barcode are coupled with irreversible terminators and become incapable of further reactions.",
+        "references": {},
+        "viewpoints": [
+          "Oligos that do not align with the target barcode are coupled with irreversible terminators.",
+          "The oligos coupled with irreversible terminators become incapable of further reactions."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "After identification of all barcodes, target oligo subsets were retrieved by denaturation from the original template, following the elongation with dNTPs to synthesize full-length oligos (See Methods for detail).",
+        "references": {},
+        "viewpoints": [
+          "After identification of all barcodes, target oligo subsets were retrieved by denaturation from the original template.",
+          "Following denaturation, target oligo subsets were elongated with dNTPs to synthesize full-length oligos."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56856-0_with_abstracts",
+    "base_id": "s41467-025-56856-0",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56856-0_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

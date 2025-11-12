@@ -1,0 +1,713 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Pathogens and their hosts employ various strategies to gain the upper hand in the tug-of-war [1] , [2] , [3] . Due to the miniature size of most pathogens, their life cycle is strongly affected by environmental factors including temperature and humidity, whose levels oscillate on a daily basis [4] . Consequently, increased success of pathogen colonization happens at a specific time of a day when the environmental conditions are more favourable [5] , [6] . Ingeniously, plants couple their immune system with the circadian clock, an endogenous timing system that enables plants to anticipate and prepare for such time-of-day infections [7] . Given the prevalence and importance of this circadian-mediated defence, it is conceivable that pathogens may interfere with plant circadian clock. Indeed, previous studies have shown that pathogen infection can alter the expression pattern of plant circadian clock genes [8] , [9] , [10] , [11] , [12] . However, how phytopathogens trigger these perturbations and the specific clock components targeted by pathogens remain elusive. The downy mildew pathogen Hyaloperonospora arabidopsidis ( Hpa ) belongs to oomycetes which also include notorious plant pathogens such as the soybean pathogen Phytophthora sojae and the potato late blight pathogen Phytophthora infestans which caused the Irish Great Famine. As an obligate biotroph, Hpa can only grow on living plants, including Arabidopsis thaliana [13] . The availability of genome sequences of both Hpa and Arabidopsis has led to the widespread use of the Hpa - Arabidopsis pathosystem for studying the co-evolution of the host and parasite [14] . And the circadian-mediated plant defence response was first reported in the studies of the interaction between Hpa and Arabidopsis [8] . To counteract plant defences, Hpa secretes apoplastic effectors to the plant extracellular space or cytoplastic effectors into the plant cells. A subset of the cytoplastic effectors is characterized by a highly conserved region known as the RXLR motif (which stands for arginine, any amino acid, leucine, arginine). These RXLR-type effectors typically contain an N-terminal signal peptide for secretion from the pathogen, a RXLR motif flanked by a high frequency of acidic (D/E) residues for targeting the host cell, and a C-terminal effector domain that determines their activity [15] . Bioinformatic analysis has predicted more than 130 RXLR-type effectors from Hpa [16] , but the functions of most of these effectors have not been characterized. In this study, we first conducted a yeast-two hybrid (Y2H) screen testing potential interaction between 50 predicted Hpa effectors which have been previously reported to be highly expressed during Hpa infection [17] and 11 Arabidopsis central clock components. We found that the effector named HaRxL10 interacted with several clock components including CCA1 HIKING EXPEDITION (CHE, also known as TCP21, AT5G08330) in yeast (Supplementary Fig. 1 ), implying that HaRxL10 may affect plant circadian clock in a CHE-dependent manner. CHE belongs to TCP (TEOSINTE BRANCHED 1/CYCLOIDEA/PCF) family transcription factors and recognises the TCP-binding site (TBS) cis-element in the gene promoters. CHE is a well-known central clock component, directly repressing the expression of the morning gene CIRCADIAN CLOCK ASSOCIATED 1 ( CCA1 , AT2G46830) [18] . CHE also interacts with other clock components, such as the evening-phased transcription factor TIMING OF CAB EXPRESSION 1 (TOC1, AT5G61380) and the E3 ubiquitin ligase ZETLUPE (ZTL, AT5G57360) [18] , [19] . CHE plays a crucial role in salicylic acid (SA)-mediated plant immunity [20] , [21] . Our subsequent molecular and genetic data showed that HaRxL10 interacted with CHE to interfere with ZTL-mediated CHE degradation. While HaRxL10 stabilised CHE, it repressed CHE’s binding to its downstream regulatory genes. HaRxL10 triggered a significant reprogramming of the transcriptome, particularly affecting the expression of several central clock genes, such as CHE , CCA1 , TCP22 and TOC1 . Additionally, HaRxL10 acted as a virulent effector to repress SA-mediated plant immunity and had a notable impact on leaf movement, maltose levels, hypocotyl growth and flowering time in a CHE-dependent manner. Overall, HaRxL10 perturbed the key clock component CHE’s transcriptional regulation function as well as several physiological processes.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Pathogens and their hosts employ various strategies to gain the upper hand in the tug-of-war [1] , [2] , [3] .",
+        "references": {
+          "1": {
+            "1": "There has been amazing progress in the molecular studies of plant-microbe interactions (MPMI) over the past three decades.",
+            "2": "Researchers have begun to ask what major questions remain in the molecular studies of plant-microbe interactions.",
+            "3": "The metaphorical puzzle of the molecular studies of plant-microbe interactions is thought to have only a few pieces missing.",
+            "4": "The exercise of asking remaining questions has led to the realization that there are more questions than answers in the molecular studies of plant-microbe interactions.",
+            "5": "It is impossible to project a coherent \"big picture\" of the molecular studies of plant-microbe interactions field in a single review.",
+            "6": "The authors provide their opinions on future research directions in the molecular studies of plant-microbe interactions.",
+            "7": "The authors extend an invitation to the scientific community to join them in exploring new frontiers in the molecular studies of plant-microbe interactions."
+          },
+          "2": {
+            "1": "Plants resist pathogen attacks through innate immune responses.",
+            "2": "Innate immune responses in plants are initiated by cell surface-localized pattern-recognition receptors (PRRs).",
+            "3": "Innate immune responses in plants are initiated by intracellular nucleotide-binding domain leucine-rich repeat containing receptors (NLRs).",
+            "4": "Pattern-recognition receptors (PRRs) in plants lead to pattern-triggered immunity (PTI).",
+            "5": "Nucleotide-binding domain leucine-rich repeat containing receptors (NLRs) in plants lead to effector-triggered immunity (ETI).",
+            "6": "The two classes of immune receptors in plants involve different activation mechanisms.",
+            "7": "The two classes of immune receptors in plants appear to require different early signalling components.",
+            "8": "Pattern-triggered immunity (PTI) and effector-triggered immunity (ETI) in plants eventually converge into many similar downstream responses.",
+            "9": "Pattern-triggered immunity (PTI) and effector-triggered immunity (ETI) in plants converge with distinct amplitudes.",
+            "10": "Pattern-triggered immunity (PTI) and effector-triggered immunity (ETI) in plants converge with distinct dynamics.",
+            "11": "Evidence suggests the existence of intricate interactions between PRR-mediated signalling cascades and NLR-mediated signalling cascades in plants.",
+            "12": "There are common signalling components shared by PRR-mediated and NLR-mediated signalling pathways in plants.",
+            "13": "Investigating the mechanisms underlying signal collaboration between PRR-initiated immunity and NLR-initiated immunity will enable a more complete understanding of the plant immune system.",
+            "14": "This review discusses recent advances in understanding the relationship between the PRR-initiated and NLR-initiated layers of plant innate immunity."
+          },
+          "3": {
+            "1": "Diverse pathogens cause plant diseases that threaten crop yield.",
+            "2": "Rapidly evolving pathogens cause plant epidemics that threaten food security worldwide.",
+            "3": "Research over the last 25 years has led to an increasingly clear conceptual understanding of the molecular components of the plant immune system.",
+            "4": "Ever-cheaper DNA-sequencing technology contributes to the development of durable disease resistance in plants.",
+            "5": "The rich diversity of germ plasm manipulated by plant breeders for over a century contributes to the development of durable disease resistance in plants.",
+            "6": "We now have the means to develop disease resistance in plants that is durable and long-lasting.",
+            "7": "The development of durable disease resistance can go beyond the limits imposed by conventional breeding.",
+            "8": "The development of durable disease resistance can replace costly chemical controls.",
+            "9": "The development of durable disease resistance can replace unsustainable chemical controls."
+          }
+        },
+        "viewpoints": [
+          "Pathogens employ various strategies to gain the upper hand against their hosts.",
+          "Hosts employ various strategies to gain the upper hand against pathogens."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Due to the miniature size of most pathogens, their life cycle is strongly affected by environmental factors including temperature and humidity, whose levels oscillate on a daily basis [4] .",
+        "references": {
+          "4": {
+            "1": "Early circadian studies in plants by de Mairan and de Candolle alluded to a regulation of circadian clocks by humidity.",
+            "2": "The regulation of circadian clocks by humidity has not been described in detail.",
+            "3": "The influence of humidity on plant physiology has not been demonstrated.",
+            "4": "Under constant light, circadian humidity oscillation can entrain the plant circadian clock to a period of 24 h.",
+            "5": "Circadian humidity oscillation probably entrains the plant circadian clock through the induction of clock genes such as CIRCADIAN CLOCK ASSOCIATED 1.",
+            "6": "Under simulated natural light and humidity cycles, humidity oscillation increases the amplitude of the circadian clock.",
+            "7": "Under simulated natural light and humidity cycles, humidity oscillation improves plant fitness-related traits.",
+            "8": "Humidity oscillation enhances effector-triggered immunity at night.",
+            "9": "Effector-triggered immunity enhancement by humidity oscillation possibly counters increased pathogen virulence under high humidity.",
+            "10": "Humidity oscillation regulates specific circadian outputs besides those co-regulated with the light-dark cycle."
+          }
+        },
+        "viewpoints": [
+          "The miniature size of most pathogens causes their life cycle to be strongly affected by environmental factors.",
+          "Environmental factors that affect the life cycle of pathogens include temperature and humidity.",
+          "The levels of temperature and humidity oscillate on a daily basis."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Consequently, increased success of pathogen colonization happens at a specific time of a day when the environmental conditions are more favourable [5] , [6] .",
+        "references": {
+          "5": {
+            "1": "Downy mildew of Arabidopsis is not a hugely destructive disease of an important crop plant.",
+            "2": "Downy mildew of Arabidopsis is not of any economic importance.",
+            "3": "The most obvious symptom of downy mildew of Arabidopsis is the aerial conidiophores.",
+            "4": "Aerial conidiophores might be mistaken for the trichomes normally present on the leaves by a casual observer.",
+            "5": "A huge research effort is being devoted to the pathosystem of downy mildew of Arabidopsis.",
+            "6": "The pathosystem of downy mildew of Arabidopsis became established as a laboratory model in the 1990s.",
+            "7": "Enormous progress has been made in cloning major genes for resistance (RPP genes) to downy mildew of Arabidopsis.",
+            "8": "Enormous progress has been made in characterizing major genes for resistance (RPP genes) to downy mildew of Arabidopsis.",
+            "9": "Enormous progress has been made in defining many downstream signalling components of RPP genes.",
+            "10": "Some downstream signalling components of RPP genes are RPP-gene specific.",
+            "11": "Resistance to downy mildew of Arabidopsis is generally associated with an oxidative burst.",
+            "12": "Resistance to downy mildew of Arabidopsis is generally associated with a salicylic acid dependent hypersensitive reaction type of programmed cell death.",
+            "13": "Biological induction of systemic acquired resistance (SAR) in Arabidopsis protecting against downy mildew was demonstrated early on.",
+            "14": "Chemical induction of systemic acquired resistance (SAR) in Arabidopsis protecting against downy mildew was demonstrated early on.",
+            "15": "Investigations of mutants have contributed fundamentally to understanding host-pathogen interactions in the context of downy mildew of Arabidopsis.",
+            "16": "Investigations of mutants have contributed fundamentally to understanding the mechanisms of plant defence against downy mildew of Arabidopsis.",
+            "17": "The review will attempt to collate the wealth of information which has accrued with the pathosystem of downy mildew of Arabidopsis in the last decade.",
+            "18": "The review will attempt to predict future research directions in the study of downy mildew of Arabidopsis.",
+            "19": "The review will draw attention to some still unanswered questions about downy mildew of Arabidopsis.",
+            "20": "Hyaloperonospora Constant. parasitica is formerly known as Peronospora parasitica.",
+            "21": "Hyaloperonospora Constant. parasitica belongs to Kingdom Chromista.",
+            "22": "Hyaloperonospora Constant. parasitica belongs to Phylum Oomycota.",
+            "23": "Hyaloperonospora Constant. parasitica belongs to Order Peronosporales.",
+            "24": "Hyaloperonospora Constant. parasitica belongs to Family Peronosporaceae.",
+            "25": "Hyaloperonospora Constant. parasitica belongs to Genus Hyaloperonospora.",
+            "26": "Hyaloperonospora Constant. parasitica is the type species of the Genus Hyaloperonospora.",
+            "27": "The taxonomy of the group of organisms causing downy mildew of brassicas has undergone a number of revisions.",
+            "28": "Corda originally coined the genus Peronospora in 1837.",
+            "29": "All isolates pathogenic on brassicas were described initially as P. parasitica.",
+            "30": "Gäumann classified isolates from different brassicaceous hosts distinctly in 1918.",
+            "31": "Gäumann defined 52 new species based on conidial dimensions and host range in 1918.",
+            "32": "It was decided to revert to the aggregate species of P. parasitica for all brassica-infecting downy mildews after much debate.",
+            "33": "Brassica-infecting downy mildews show some isolate-specific differences.",
+            "34": "Constantinescu and Fatehi re-examined P. parasitica in 2002.",
+            "35": "Constantinescu and Fatehi placed isolates of P. parasitica and five other downy mildew species in a new subgroup based on their hyaline conidiospores.",
+            "36": "Constantinescu and Fatehi placed isolates of P. parasitica and five other downy mildew species in a new subgroup based on their recurved conidiophore branch tips.",
+            "37": "Constantinescu and Fatehi placed isolates of P. parasitica and five other downy mildew species in a new subgroup based on ITS1, ITS2, and 5.8S rDNA sequence comparisons.",
+            "38": "The placement of these isolates merited the coining of the new genus 'Hyaloperonospora Constant'.",
+            "39": "The class Oomycetes is in the Kingdom Chromista (Straminipila).",
+            "40": "Oomycetes comprise fungus-like organisms with heterokont zoospores.",
+            "41": "Heterokont zoospores possess two types of flagellae: whiplash and tinsel.",
+            "42": "The Oomycetes have non-septate hyphae.",
+            "43": "The walls of the hyphae in Oomycetes are cellulose-based.",
+            "44": "The walls of the hyphae in Oomycetes contain very little or no chitin.",
+            "45": "The presence of cellulose-based walls containing very little or no chitin is a major distinction separating the Oomycetes from true fungi.",
+            "46": "Reports of the presence of chitin in Oomycetes had generally been regarded as due to small amounts of contamination.",
+            "47": "Werner et al. showed a chitin synthase gene in an Oomycete in 2002.",
+            "48": "Werner et al. demonstrated the presence of chitin in an Oomycete by an interaction with wheat germ agglutinin (WGA) in 2002.",
+            "49": "Further taxonomic revisions affecting Oomycetes are expected.",
+            "50": "The families within the Oomycetes show a clear evolutionary trend to a lesser absolute dependence on an aqueous environment.",
+            "51": "Some members of the Peronosporales, such as H. parasitica, have no zoosporic stage in the life cycle.",
+            "52": "Isolates infecting Arabidopsis thaliana have so far proven to be non-pathogenic on other crucifers tested.",
+            "53": "Isolates infecting Arabidopsis thaliana exist in a clear gene-for-gene relationship with different host ecotypes.",
+            "54": "Infections of downy mildew are first apparent to the naked eye as a carpet or 'down' of conidiophores.",
+            "55": "The 'down' of conidiophores covers the upper and lower surfaces of leaves and petioles.",
+            "56": "The symptom of a 'down' of conidiophores is characteristic of downy mildew diseases.",
+            "57": "The symptom of a 'down' of conidiophores lends downy mildew its name."
+          },
+          "6": {
+            "1": "Biological rhythms coordinate organisms' activities with daily environmental rhythms.",
+            "2": "Parasites' biological rhythms coordinate with rhythms in the external abiotic environment.",
+            "3": "Parasites' biological rhythms coordinate with rhythms in the within-host biotic environment.",
+            "4": "Hosts exhibit rhythms in behaviours.",
+            "5": "Hosts exhibit rhythms in physiologies.",
+            "6": "Hosts exhibit rhythms in immune responses.",
+            "7": "Parasites exhibit rhythms in traits underpinning virulence.",
+            "8": "Parasites exhibit rhythms in traits underpinning transmission.",
+            "9": "The evolutionary drivers of rhythms in traits underpinning host defence are largely unknown.",
+            "10": "The ecological drivers of rhythms in traits underpinning host defence are largely unknown.",
+            "11": "The evolutionary drivers of rhythms in traits underpinning parasite offence are largely unknown.",
+            "12": "The ecological drivers of rhythms in traits underpinning parasite offence are largely unknown.",
+            "13": "This study explores how hosts use rhythms to defend against infection.",
+            "14": "This study explores why parasites have rhythms.",
+            "15": "This study explores whether parasites can manipulate host clocks for their own purposes.",
+            "16": "Harnessing host rhythms could be exploited for clinical benefit.",
+            "17": "Disrupting parasite rhythms could be exploited for clinical benefit.",
+            "18": "An interdisciplinary effort is proposed to advance the emerging field of research on biological rhythms in hosts and parasites."
+          }
+        },
+        "viewpoints": [
+          "Pathogen colonization is more successful at a specific time of the day.",
+          "Pathogen colonization success is increased when environmental conditions are more favourable."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Ingeniously, plants couple their immune system with the circadian clock, an endogenous timing system that enables plants to anticipate and prepare for such time-of-day infections [7] .",
+        "references": {
+          "7": {
+            "1": "Many living organisms on Earth have evolved the ability to integrate environmental signals to determine time.",
+            "2": "Many living organisms on Earth have evolved the ability to integrate internal signals to determine time.",
+            "3": "Many living organisms adjust their metabolism appropriately according to the determined time.",
+            "4": "Many living organisms adjust their physiology appropriately according to the determined time.",
+            "5": "Many living organisms adjust their behavior appropriately according to the determined time.",
+            "6": "The circadian clock is the endogenous timekeeper for many organisms.",
+            "7": "The circadian clock is critical for multiple biological processes in many organisms.",
+            "8": "A growing body of evidence supports the importance of the circadian clock for plant health.",
+            "9": "Plants activate timed defense strategies to anticipate daily attacks of pathogens.",
+            "10": "Plants activate timed defense strategies to anticipate daily attacks of pests.",
+            "11": "Plants modulate responses to specific invaders in a time-of-day-dependent manner.",
+            "12": "Pathogen infection reciprocally modulates clock activity.",
+            "13": "The cross talk between the circadian clock and pathogen infection likely reflects the adaptive nature of plants.",
+            "14": "Plants use adaptive strategies to coordinate limited resources for growth.",
+            "15": "Plants use adaptive strategies to coordinate limited resources for development.",
+            "16": "Plants use adaptive strategies to coordinate limited resources for defense.",
+            "17": "This review summarizes recent progress in circadian regulation of plant innate immunity.",
+            "18": "This review focuses on the molecular events linking the circadian clock and defense.",
+            "19": "More and better knowledge of clock-defense cross talk could help improve disease resistance in economically important crops.",
+            "20": "More and better knowledge of clock-defense cross talk could help improve productivity in economically important crops."
+          }
+        },
+        "viewpoints": [
+          "Plants couple their immune system with the circadian clock.",
+          "The circadian clock is an endogenous timing system.",
+          "The circadian clock enables plants to anticipate and prepare for time-of-day infections."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Given the prevalence and importance of this circadian-mediated defence, it is conceivable that pathogens may interfere with plant circadian clock.",
+        "references": {},
+        "viewpoints": [
+          "Circadian-mediated defence is prevalent and important.",
+          "It is conceivable that pathogens may interfere with the plant circadian clock."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Indeed, previous studies have shown that pathogen infection can alter the expression pattern of plant circadian clock genes [8] , [9] , [10] , [11] , [12] .",
+        "references": {
+          "8": {
+            "1": "The principal immune mechanism against biotrophic pathogens in plants is the resistance (R)-gene-mediated defence.",
+            "2": "The resistance (R)-gene-mediated defence was proposed to share components with the broad-spectrum basal defence machinery.",
+            "3": "The underlying molecular mechanism of the resistance (R)-gene-mediated defence is largely unknown.",
+            "4": "Novel genes involved in R-gene-mediated resistance against downy mildew in Arabidopsis have been identified.",
+            "5": "These novel genes are under the regulatory control of the circadian regulator, CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1).",
+            "6": "Numerical clustering based on phenotypes of gene mutants revealed that programmed cell death (PCD) is the major contributor to resistance.",
+            "7": "Mutants compromised in the R-gene-mediated programmed cell death (PCD) were defective in basal resistance.",
+            "8": "An interconnection between R-gene-mediated resistance and basal resistance is established by the defectiveness observed in mutants.",
+            "9": "The new defence genes are under circadian control by CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1).",
+            "10": "Circadian control by CCA1 allows plants to 'anticipate' infection at dawn.",
+            "11": "The pathogen normally disperses the spores at dawn.",
+            "12": "Circadian control by CCA1 permits timing of immune responses according to the perception of different pathogenic signals upon infection.",
+            "13": "Temporal control of the defence genes by CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1) differentiates their involvement in basal defence.",
+            "14": "Temporal control of the defence genes by CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1) differentiates their involvement in R-gene-mediated defence.",
+            "15": "A key functional link between the circadian clock and plant immunity has been revealed in the study."
+          },
+          "9": {
+            "1": "A genome-wide analysis of transcription in Arabidopsis thaliana was conducted after treatment with Pseudomonas syringae pathovar tomato.",
+            "2": "The paper reports the results of this analysis.",
+            "3": "The time course RNA-Seq experiment uses over 500 million read pairs.",
+            "4": "The experiment provides a detailed characterization of the response to infection in both susceptible and resistant hosts.",
+            "5": "The set of observed differentially expressed genes is consistent with previous studies.",
+            "6": "The consistency confirms previous findings about genes likely to play an important role in the defense response to Pseudomonas syringae.",
+            "7": "The consistency extends existing findings about genes likely to play an important role in the defense response to Pseudomonas syringae.",
+            "8": "High coverage of the Arabidopsis transcriptome resulted in the discovery of a large number of alternative splicing events.",
+            "9": "More than 44% of multi-exon genes showed evidence for novel alternative splicing events in at least one of the probed conditions.",
+            "10": "The Arabidopsis transcriptome annotation is still highly incomplete.",
+            "11": "Alternative splicing events are more abundant than expected.",
+            "12": "Genes with statistically significant changes in the ratios of alternative isoforms between treatments were identified to further refine predictions.",
+            "13": "The set includes several genes previously known to be alternatively spliced or expressed during the defense response.",
+            "14": "The set may serve as a pool of candidate genes for regulated alternative splicing with possible biological relevance for the defense response against invasive pathogens."
+          },
+          "10": {
+            "1": "The circadian clock integrates temporal information with environmental cues.",
+            "2": "The integration of temporal information with environmental cues by the circadian clock regulates plant development.",
+            "3": "The integration of temporal information with environmental cues by the circadian clock regulates plant physiology.",
+            "4": "The circadian clock affects plant responses to biotic cues.",
+            "5": "Disease resistance was tested in mutants disrupted in CCA1 and LHY to examine the role of the circadian clock.",
+            "6": "CCA1 and LHY act synergistically to regulate clock activity.",
+            "7": "cca1 mutants and lhy mutants synergistically affect basal defense against Pseudomonas syringae.",
+            "8": "cca1 mutants and lhy mutants synergistically affect basal defense against Hyaloperonospora arabidopsidis.",
+            "9": "cca1 mutants and lhy mutants synergistically affect resistance gene-mediated defense against Pseudomonas syringae.",
+            "10": "cca1 mutants and lhy mutants synergistically affect resistance gene-mediated defense against Hyaloperonospora arabidopsidis.",
+            "11": "Overexpression of CCA1 disrupts the circadian clock.",
+            "12": "Overexpression of LHY disrupts the circadian clock.",
+            "13": "Disrupting the circadian clock results in severe susceptibility to P. syringae.",
+            "14": "GRP7 is a downstream target of CCA1 and LHY.",
+            "15": "GRP7 is a key constituent of a slave oscillator regulated by the circadian clock.",
+            "16": "GRP7 has been previously shown to influence plant defense.",
+            "17": "GRP7 has been previously shown to influence stomatal activity.",
+            "18": "The defense role of CCA1 and LHY against P. syringae is at least partially through circadian control of stomatal aperture.",
+            "19": "The defense role of CCA1 and LHY against P. syringae is independent of defense mediated by salicylic acid.",
+            "20": "Defense activation by P. syringae infection can feedback-regulate clock activity.",
+            "21": "Treatment with the elicitor flg22 can feedback-regulate clock activity.",
+            "22": "The data strongly supports a direct role of the circadian clock in defense control.",
+            "23": "The data reveals for the first time crosstalk between the circadian clock and plant innate immunity."
+          },
+          "11": {
+            "1": "The circadian clock modulates immune responses in plants.",
+            "2": "The circadian clock modulates immune responses in animals.",
+            "3": "It is unclear how host-pathogen interactions affect the circadian clock.",
+            "4": "Clock function was analyzed in Arabidopsis thaliana mutants with defective immune responses.",
+            "5": "Arabidopsis thaliana mutants with enhanced disease susceptibility 4 (eds4) displays alterations in several circadian rhythms.",
+            "6": "Mapping by sequencing revealed that EDS4 encodes the ortholog of NUCLEOPORIN 205.",
+            "7": "NUCLEOPORIN 205 is a core component of the inner ring of the nuclear pore complex (NPC).",
+            "8": "The NPC specifically modulates clock function.",
+            "9": "There is a strong enrichment in core clock genes among genes that were differentially expressed in eds4 mutants.",
+            "10": "There is an increased nuclear to total mRNA accumulation among genes that were differentially expressed in eds4 mutants.",
+            "11": "Infection with Pseudomonas syringae in wild-type (WT) plants downregulated the expression of several morning core clock genes as early as 1 h post-infection.",
+            "12": "The downregulation of several morning core clock genes by Pseudomonas syringae infection includes all members of the NIGHT LIGHT-INDUCIBLE AND CLOCK-REGULATED (LNK) gene family.",
+            "13": "The effect of Pseudomonas syringae infection on downregulating morning core clock genes was attenuated in eds4 mutants.",
+            "14": "lnk mutants were more susceptible to P. syringae infection than wild-type plants.",
+            "15": "Bacterial infection alters core clock gene expression and/or mRNA accumulation in a way that favors bacterial growth and disease susceptibility.",
+            "16": "Bacterial infection acts in part through the nuclear pore complex (NPC) to alter core clock gene expression and/or mRNA accumulation."
+          },
+          "12": {
+            "1": "Transcriptional reprogramming is a major component of a plant's response to pathogen infection.",
+            "2": "Many individual components operating during plant defense have been identified.",
+            "3": "Many pathways operating during plant defense have been identified.",
+            "4": "Knowledge of how different components during plant defense interact is still rudimentary.",
+            "5": "A high-resolution time series of gene expression profiles was generated from a single Arabidopsis thaliana leaf.",
+            "6": "The leaf was infected by the necrotrophic fungal pathogen Botrytis cinerea.",
+            "7": "Approximately one-third of the Arabidopsis genome is differentially expressed during the first 48 h after infection.",
+            "8": "The majority of changes in gene expression occur before significant lesion development.",
+            "9": "Computational tools were used to obtain a detailed chronology of the defense response against B. cinerea.",
+            "10": "The chronology highlights the times at which signaling and metabolic processes change.",
+            "11": "The chronology identifies transcription factor families operating at different times after infection.",
+            "12": "Motif enrichment and network inference predicted regulatory interactions.",
+            "13": "Testing of one such prediction identified a role for TGA3 in defense against necrotrophic pathogens.",
+            "14": "The data provide an unprecedented level of detail about transcriptional changes during a defense response.",
+            "15": "The data are suited to systems biology analyses.",
+            "16": "The data can be used to generate predictive models of the gene regulatory networks mediating the Arabidopsis response to B. cinerea."
+          }
+        },
+        "viewpoints": [
+          "Pathogen infection can alter the expression pattern of plant circadian clock genes.",
+          "Previous studies have shown that pathogen infection can alter the expression pattern of plant circadian clock genes."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "However, how phytopathogens trigger these perturbations and the specific clock components targeted by pathogens remain elusive.",
+        "references": {},
+        "viewpoints": [
+          "The mechanism by which phytopathogens trigger perturbations in plant circadian clock genes remains elusive.",
+          "The specific clock components targeted by pathogens remain elusive."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "The downy mildew pathogen Hyaloperonospora arabidopsidis ( Hpa ) belongs to oomycetes which also include notorious plant pathogens such as the soybean pathogen Phytophthora sojae and the potato late blight pathogen Phytophthora infestans which caused the Irish Great Famine.",
+        "references": {},
+        "viewpoints": [
+          "The downy mildew pathogen Hyaloperonospora arabidopsidis (Hpa) belongs to oomycetes.",
+          "Oomycetes include notorious plant pathogens such as the soybean pathogen Phytophthora sojae.",
+          "Oomycetes include the potato late blight pathogen Phytophthora infestans.",
+          "Phytophthora infestans caused the Irish Great Famine."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "As an obligate biotroph, Hpa can only grow on living plants, including Arabidopsis thaliana [13] .",
+        "references": {
+          "13": {
+            "1": "Many oomycete and fungal plant pathogens are obligate biotrophs.",
+            "2": "Obligate biotrophs extract nutrients only from living plant tissue.",
+            "3": "Obligate biotrophs cannot grow apart from their hosts.",
+            "4": "Oomycete and fungal plant pathogens cause substantial crop losses.",
+            "5": "There is little known about the molecular basis of obligate biotrophy.",
+            "6": "There is little known about the evolution of obligate biotrophy.",
+            "7": "The genome sequence of the oomycete Hyaloperonospora arabidopsidis (Hpa) is reported.",
+            "8": "Hyaloperonospora arabidopsidis (Hpa) is an obligate biotroph.",
+            "9": "Hyaloperonospora arabidopsidis (Hpa) is a natural pathogen of Arabidopsis thaliana.",
+            "10": "The genome of Hyaloperonospora arabidopsidis (Hpa) exhibits dramatic reductions in genes encoding RXLR effectors and other secreted pathogenicity proteins compared to related, hemibiotrophic Phytophthora species.",
+            "11": "The genome of Hyaloperonospora arabidopsidis (Hpa) exhibits dramatic reductions in genes encoding enzymes for assimilation of inorganic nitrogen and sulfur compared to related, hemibiotrophic Phytophthora species.",
+            "12": "The genome of Hyaloperonospora arabidopsidis (Hpa) exhibits dramatic reductions in genes encoding proteins associated with zoospore formation and motility compared to related, hemibiotrophic Phytophthora species.",
+            "13": "The attributes of the Hyaloperonospora arabidopsidis (Hpa) genome comprise a genomic signature of evolution toward obligate biotrophy."
+          }
+        },
+        "viewpoints": [
+          "Hyaloperonospora arabidopsidis (Hpa) is an obligate biotroph.",
+          "As an obligate biotroph, Hpa can only grow on living plants.",
+          "Hpa can grow on Arabidopsis thaliana."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "The availability of genome sequences of both Hpa and Arabidopsis has led to the widespread use of the Hpa - Arabidopsis pathosystem for studying the co-evolution of the host and parasite [14] .",
+        "references": {
+          "14": {
+            "1": "Plants can recognize conserved pathogen-encoded molecules to generate effective responses to infection.",
+            "2": "Plants can recognize variable pathogen-encoded molecules to generate effective responses to infection.",
+            "3": "Pathogens deploy virulence effector proteins into host cells.",
+            "4": "Virulence effector proteins interact physically with host proteins.",
+            "5": "Virulence effector proteins modulate host defense.",
+            "6": "An interaction network of plant-pathogen effectors was generated from two pathogens spanning the eukaryote-eubacteria divergence.",
+            "7": "The interaction network includes three classes of Arabidopsis immune system proteins.",
+            "8": "The interaction network includes ~8000 other Arabidopsis proteins.",
+            "9": "Effector proteins converge onto highly interconnected host proteins.",
+            "10": "Effector proteins have indirect, rather than direct, connections with plant immune receptors.",
+            "11": "Plant immune system functions were demonstrated for 15 of 17 tested host proteins.",
+            "12": "The tested host proteins interact with effectors from both pathogens.",
+            "13": "Pathogens from different kingdoms deploy independently evolved virulence proteins.",
+            "14": "Virulence proteins interact with a limited set of highly connected cellular hubs.",
+            "15": "Pathogens use interactions with cellular hubs to facilitate diverse life-cycle strategies."
+          }
+        },
+        "viewpoints": [
+          "The genome sequences of both Hpa and Arabidopsis are available.",
+          "The availability of genome sequences has led to the widespread use of the Hpa-Arabidopsis pathosystem.",
+          "The Hpa-Arabidopsis pathosystem is used for studying the co-evolution of the host and parasite."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "And the circadian-mediated plant defence response was first reported in the studies of the interaction between Hpa and Arabidopsis [8] .",
+        "references": {
+          "8": {
+            "1": "The principal immune mechanism against biotrophic pathogens in plants is the resistance (R)-gene-mediated defence.",
+            "2": "The resistance (R)-gene-mediated defence was proposed to share components with the broad-spectrum basal defence machinery.",
+            "3": "The underlying molecular mechanism of the resistance (R)-gene-mediated defence is largely unknown.",
+            "4": "Novel genes involved in R-gene-mediated resistance against downy mildew in Arabidopsis have been identified.",
+            "5": "These novel genes are under the regulatory control of the circadian regulator, CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1).",
+            "6": "Numerical clustering based on phenotypes of gene mutants revealed that programmed cell death (PCD) is the major contributor to resistance.",
+            "7": "Mutants compromised in the R-gene-mediated programmed cell death (PCD) were defective in basal resistance.",
+            "8": "An interconnection between R-gene-mediated resistance and basal resistance is established by the defectiveness observed in mutants.",
+            "9": "The new defence genes are under circadian control by CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1).",
+            "10": "Circadian control by CCA1 allows plants to 'anticipate' infection at dawn.",
+            "11": "The pathogen normally disperses the spores at dawn.",
+            "12": "Circadian control by CCA1 permits timing of immune responses according to the perception of different pathogenic signals upon infection.",
+            "13": "Temporal control of the defence genes by CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1) differentiates their involvement in basal defence.",
+            "14": "Temporal control of the defence genes by CIRCADIAN CLOCK-ASSOCIATED 1 (CCA1) differentiates their involvement in R-gene-mediated defence.",
+            "15": "A key functional link between the circadian clock and plant immunity has been revealed in the study."
+          }
+        },
+        "viewpoints": [
+          "The circadian-mediated plant defence response was first reported in studies of the interaction between Hpa and Arabidopsis."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "To counteract plant defences, Hpa secretes apoplastic effectors to the plant extracellular space or cytoplastic effectors into the plant cells.",
+        "references": {},
+        "viewpoints": [
+          "Hpa secretes apoplastic effectors to the plant extracellular space.",
+          "Hpa secretes cytoplastic effectors into the plant cells.",
+          "Hpa secretes these effectors to counteract plant defences."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "A subset of the cytoplastic effectors is characterized by a highly conserved region known as the RXLR motif (which stands for arginine, any amino acid, leucine, arginine).",
+        "references": {},
+        "viewpoints": [
+          "A subset of the cytoplastic effectors has a highly conserved region known as the RXLR motif.",
+          "RXLR motif stands for arginine, any amino acid, leucine, arginine."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "These RXLR-type effectors typically contain an N-terminal signal peptide for secretion from the pathogen, a RXLR motif flanked by a high frequency of acidic (D/E) residues for targeting the host cell, and a C-terminal effector domain that determines their activity [15] .",
+        "references": {
+          "15": {
+            "1": "Oomycetes are a phylogenetically distinct group of organisms.",
+            "2": "Oomycetes include some of the most devastating plant pathogens.",
+            "3": "Recent characterization of four oomycete Avr genes revealed that these genes encode effector proteins.",
+            "4": "The effector proteins encoded by the four oomycete Avr genes have a common modular structure.",
+            "5": "The effector proteins encoded by the four oomycete Avr genes contain a N-terminal conserved RXLR motif.",
+            "6": "Several lines of evidence indicated that the Avr proteins are secreted by the pathogen.",
+            "7": "Recent works support that Avr proteins are secreted by the pathogen.",
+            "8": "Several lines of evidence indicated that Avr proteins are translocated into the host cell during infection.",
+            "9": "Recent works support that Avr proteins are translocated into the host cell during infection.",
+            "10": "Future works need to elucidate the machinery required for host-cell transport of oomycete RXLR effector proteins.",
+            "11": "Future works remain to determine the myriad virulence functions of oomycete RXLR effector proteins."
+          }
+        },
+        "viewpoints": [
+          "RXLR-type effectors typically contain an N-terminal signal peptide for secretion from the pathogen.",
+          "RXLR-type effectors typically have an RXLR motif flanked by a high frequency of acidic (D/E) residues for targeting the host cell.",
+          "RXLR-type effectors typically contain a C-terminal effector domain that determines their activity."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Bioinformatic analysis has predicted more than 130 RXLR-type effectors from Hpa [16] , but the functions of most of these effectors have not been characterized.",
+        "references": {
+          "16": {
+            "1": "Oomycete pathogens are responsible for various plant diseases.",
+            "2": "Oomycete pathogens deliver a suite of effector proteins to successfully colonize their hosts.",
+            "3": "These effector proteins attenuate plant defenses.",
+            "4": "Effectors in oomycete downy mildews have a signal peptide.",
+            "5": "Effectors in oomycete downy mildews have an RxLR motif.",
+            "6": "Hyaloperonospora arabidopsidis (Hpa) causes downy mildew on Arabidopsis thaliana.",
+            "7": "Candidate effectors were predicted in the genome sequence of Hpa isolate Emoy2 (HaRxLs).",
+            "8": "The investigation was conducted to determine whether HaRxLs could manipulate host defenses in different Arabidopsis accessions.",
+            "9": "A rapid and sensitive screening method was developed to test HaRxLs.",
+            "10": "HaRxLs were delivered via the bacterial type-three secretion system (TTSS) of Pseudomonas syringae pv tomato DC3000-LUX (Pst-LUX).",
+            "11": "Changes in Pst-LUX growth in planta on 12 Arabidopsis accessions were assessed.",
+            "12": "Approximately 70% of the 64 HaRxL candidates tested positively contributed to Pst-LUX growth on more than one Arabidopsis accession.",
+            "13": "Hpa virulence is likely to involve multiple effectors with weak accession-specific effects.",
+            "14": "Further screening with a Pst mutant (ΔCEL) was conducted.",
+            "15": "HaRxLs that allow enhanced Pst-LUX growth usually suppress callose deposition.",
+            "16": "Callose deposition is a hallmark of pathogen-associated molecular pattern (PAMP)-triggered immunity (PTI).",
+            "17": "HaRxLs are rarely strong avirulence determinants.",
+            "18": "Some HaRxLs decreased Pst-LUX growth in particular Arabidopsis accessions.",
+            "19": "None of the HaRxLs tested activated macroscopic cell death.",
+            "20": "Fewer HaRxLs conferred enhanced Pst growth on turnip.",
+            "21": "Turnip is a non-host for Hpa.",
+            "22": "Several HaRxLs reduced Pst growth on turnip.",
+            "23": "Turnip's non-host resistance against Hpa could involve a combination of recognized HaRxLs and ineffective HaRxLs.",
+            "24": "Results were verified by constitutively expressing a subset of HaRxLs in Arabidopsis.",
+            "25": "Several transgenic lines showed increased susceptibility to Hpa.",
+            "26": "Several transgenic lines showed attenuation of Arabidopsis PTI responses.",
+            "27": "The transgenic line results confirmed HaRxLs' role in Hpa virulence.",
+            "28": "The TTSS screening system is a useful tool to test whether candidate effectors from eukaryotic pathogens can suppress plant defense mechanisms.",
+            "29": "The TTSS screening system is a useful tool to test whether candidate effectors from eukaryotic pathogens can trigger plant defense mechanisms.",
+            "30": "The TTSS screening system allows for ranking the effectiveness of candidate effectors prior to subsequent mechanistic investigation."
+          }
+        },
+        "viewpoints": [
+          "Bioinformatic analysis has predicted more than 130 RXLR-type effectors from Hpa.",
+          "The functions of most of the RXLR-type effectors from Hpa have not been characterized."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "In this study, we first conducted a yeast-two hybrid (Y2H) screen testing potential interaction between 50 predicted Hpa effectors which have been previously reported to be highly expressed during Hpa infection [17] and 11 Arabidopsis central clock components.",
+        "references": {
+          "17": {
+            "1": "Plants have evolved strong innate immunity mechanisms.",
+            "2": "Successful pathogens can evade or suppress plant immunity.",
+            "3": "Pathogens use effectors delivered into the plant cell to evade or suppress plant immunity.",
+            "4": "Hyaloperonospora arabidopsidis causes downy mildew on Arabidopsis thaliana.",
+            "5": "A genome sequence is available for Hyaloperonospora arabidopsidis isolate Emoy2.",
+            "6": "Genome sequences are available for both Hyaloperonospora arabidopsidis and Arabidopsis.",
+            "7": "The availability of these genome sequences is used to measure gene-expression changes in both Hyaloperonospora arabidopsidis and Arabidopsis simultaneously during infection.",
+            "8": "A high-throughput cDNA tag sequencing method is used.",
+            "9": "The method reveals expression patterns of Hyaloperonospora arabidopsidis predicted effectors in compatible and incompatible interactions.",
+            "10": "The method reveals expression patterns of Arabidopsis genes in compatible and incompatible interactions.",
+            "11": "The method reveals promoter elements associated with Hyaloperonospora arabidopsidis genes expressed during infection.",
+            "12": "Resequencing of Hyaloperonospora arabidopsidis isolate Waco9 was performed.",
+            "13": "Hyaloperonospora arabidopsidis isolate Waco9 evades Arabidopsis resistance gene RPP1.",
+            "14": "The evasion of Arabidopsis resistance gene RPP1 is achieved through deletion of the cognate recognized effector ATR1.",
+            "15": "Arabidopsis salicylic acid-responsive genes including PR1 were activated at early time points in the incompatible interaction.",
+            "16": "Arabidopsis salicylic acid-responsive genes including PR1 were activated at late time points in the compatible interaction.",
+            "17": "Histochemical analysis was used in the research.",
+            "18": "Hyaloperonospora arabidopsidis suppresses salicylic acid-inducible PR1 expression in haustoriated cells.",
+            "19": "Host-translocated effectors are delivered into haustoriated cells.",
+            "20": "Hyaloperonospora arabidopsidis does not suppress salicylic acid-inducible PR1 expression in non-haustoriated adjacent cells.",
+            "21": "A highly-expressed Hyaloperonospora arabidopsidis effector candidate was found.",
+            "22": "The effector candidate suppresses responsiveness to salicylic acid.",
+            "23": "The approach can be easily applied to host-pathogen interactions with available host and pathogen genome sequences.",
+            "24": "The work opens the door towards transcriptome studies in infection biology.",
+            "25": "Transcriptome studies in infection biology should help unravel pathogen infection strategies.",
+            "26": "Transcriptome studies in infection biology should help unravel the mechanisms by which host defense responses are overcome."
+          }
+        },
+        "viewpoints": [
+          "The study conducted a yeast-two hybrid (Y2H) screen testing potential interaction between 50 predicted Hpa effectors and 11 Arabidopsis central clock components.",
+          "The 50 predicted Hpa effectors were previously reported to be highly expressed during Hpa infection."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "We found that the effector named HaRxL10 interacted with several clock components including CCA1 HIKING EXPEDITION (CHE, also known as TCP21, AT5G08330) in yeast (Supplementary Fig. 1), implying that HaRxL10 may affect plant circadian clock in a CHE-dependent manner.",
+        "references": {},
+        "viewpoints": [
+          "The effector named HaRxL10 interacted with several clock components including CCA1 HIKING EXPEDITION (CHE) in yeast.",
+          "HaRxL10 may affect the plant circadian clock in a CHE-dependent manner."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "CHE belongs to TCP (TEOSINTE BRANCHED 1/CYCLOIDEA/PCF) family transcription factors and recognizes the TCP-binding site (TBS) cis-element in the gene promoters.",
+        "references": {},
+        "viewpoints": [
+          "CHE belongs to TCP (TEOSINTE BRANCHED 1/CYCLOIDEA/PCF) family transcription factors.",
+          "CHE recognizes the TCP-binding site (TBS) cis-element in the gene promoters."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "CHE is a well-known central clock component, directly repressing the expression of the morning gene CIRCADIAN CLOCK ASSOCIATED 1 (CCA1 , AT2G46830) [18] .",
+        "references": {
+          "18": {
+            "1": "Transcriptional feedback loops constitute the molecular circuitry of the plant circadian clock.",
+            "2": "A core transcriptional feedback loop is established between CCA1 and TOC1 in Arabidopsis.",
+            "3": "CCA1 directly represses TOC1.",
+            "4": "The TOC1 protein has no DNA binding domains.",
+            "5": "The lack of DNA binding domains in the TOC1 protein suggests that it cannot directly regulate CCA1.",
+            "6": "A functional genomic strategy was established to identify CHE.",
+            "7": "CHE is a TCP transcription factor.",
+            "8": "CHE binds specifically to the CCA1 promoter.",
+            "9": "CHE is a clock component.",
+            "10": "CHE shows partial redundancy with LHY in the repression of CCA1.",
+            "11": "The expression of CHE is regulated by CCA1.",
+            "12": "A CCA1/CHE feedback loop is added to the Arabidopsis circadian network.",
+            "13": "CHE and TOC1 interact.",
+            "14": "CHE binds to the CCA1 promoter.",
+            "15": "A molecular linkage between TOC1 and CCA1 gene regulation is established due to the interaction of CHE with TOC1 and its binding to the CCA1 promoter."
+          }
+        },
+        "viewpoints": [
+          "CHE is a well-known central clock component.",
+          "CHE directly represses the expression of the morning gene CIRCADIAN CLOCK ASSOCIATED 1 (CCA1)."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "CHE also interacts with other clock components, such as the evening-phased transcription factor TIMING OF CAB EXPRESSION 1 (TOC1, AT5G61380) and the E3 ubiquitin ligase ZETLUPE (ZTL, AT5G57360) [18] , [19] .",
+        "references": {
+          "18": {
+            "1": "Transcriptional feedback loops constitute the molecular circuitry of the plant circadian clock.",
+            "2": "A core transcriptional feedback loop is established between CCA1 and TOC1 in Arabidopsis.",
+            "3": "CCA1 directly represses TOC1.",
+            "4": "The TOC1 protein has no DNA binding domains.",
+            "5": "The lack of DNA binding domains in the TOC1 protein suggests that it cannot directly regulate CCA1.",
+            "6": "A functional genomic strategy was established to identify CHE.",
+            "7": "CHE is a TCP transcription factor.",
+            "8": "CHE binds specifically to the CCA1 promoter.",
+            "9": "CHE is a clock component.",
+            "10": "CHE shows partial redundancy with LHY in the repression of CCA1.",
+            "11": "The expression of CHE is regulated by CCA1.",
+            "12": "A CCA1/CHE feedback loop is added to the Arabidopsis circadian network.",
+            "13": "CHE and TOC1 interact.",
+            "14": "CHE binds to the CCA1 promoter.",
+            "15": "A molecular linkage between TOC1 and CCA1 gene regulation is established due to the interaction of CHE with TOC1 and its binding to the CCA1 promoter."
+          },
+          "19": {
+            "1": "Eukaryotic circadian clocks use the ubiquitin proteasome system.",
+            "2": "The ubiquitin proteasome system is used to precisely degrade clock proteins in eukaryotic circadian clocks.",
+            "3": "In plants, F-box-type E3 ubiquitin ligases regulate the clock period.",
+            "4": "F-box-type E3 ubiquitin ligases in plants couple the clock to photoperiodic flowering.",
+            "5": "The response of the coupling of the clock to photoperiodic flowering occurs in response to end-of-day light conditions.",
+            "6": "ZEITLUPE (ZTL), FKF1, and LKP2 are examples of F-box-type E3 ubiquitin ligases in plants.",
+            "7": "Decoy ZTL, FKF1, and LKP2 proteins were expressed to better understand the functions of F-box-type E3 ubiquitin ligases.",
+            "8": "Decoy ZTL, FKF1, and LKP2 proteins associate with target proteins in Arabidopsis.",
+            "9": "Decoy ZTL, FKF1, and LKP2 proteins are unable to ubiquitylate their targets in Arabidopsis."
+          }
+        },
+        "viewpoints": [
+          "CHE interacts with the evening-phased transcription factor TIMING OF CAB EXPRESSION 1 (TOC1).",
+          "CHE interacts with the E3 ubiquitin ligase ZETLUPE (ZTL)."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "CHE plays a crucial role in salicylic acid (SA)-mediated plant immunity [20] , [21] .",
+        "references": {
+          "20": {
+            "1": "Salicylic acid (SA) is essential for local defense in plants.",
+            "2": "Salicylic acid (SA) is essential for systemic acquired resistance (SAR) in plants.",
+            "3": "An increase in salicylic acid (SA) biosynthesis generally occurs through transcriptional induction of isochorismate synthase 1 (ICS1) when plants are challenged by different pathogens.",
+            "4": "Arabidopsis experiences an increase in salicylic acid (SA) biosynthesis through transcriptional induction of isochorismate synthase 1 (ICS1) when challenged by different pathogens.",
+            "5": "The regulatory mechanism for the induction of isochorismate synthase 1 (ICS1) during SA biosynthesis is poorly understood.",
+            "6": "NTM1-like 9 (NTL9) and CCA1 hiking expedition (CHE) are transcription factors identified as activators of isochorismate synthase 1 (ICS1) during specific immune responses.",
+            "7": "The identification of NTM1-like 9 (NTL9) and CCA1 hiking expedition (CHE) as activators was done using a yeast one-hybrid screen.",
+            "8": "NTM1-like 9 (NTL9) is essential for inducing isochorismate synthase 1 (ICS1) in guard cells that form stomata.",
+            "9": "NTM1-like 9 (NTL9) is essential for inducing phytoalexin-deficient 4 (PAD4) in guard cells that form stomata.",
+            "10": "NTM1-like 9 (NTL9) is essential for inducing enhanced disease susceptibility 1 (EDS1) in guard cells that form stomata.",
+            "11": "Stomata can quickly close to block pathogen entry when challenged.",
+            "12": "Stomatal immunity requires isochorismate synthase 1 (ICS1).",
+            "13": "Stomatal immunity requires the salicylic acid (SA) signaling pathway.",
+            "14": "The stomatal immunity response is defective in the ntl9 mutant.",
+            "15": "Exogenous application of salicylic acid (SA) can rescue the defective stomatal immunity response in the ntl9 mutant.",
+            "16": "NTL9-mediated salicylic acid (SA) synthesis is essential for stomatal immunity.",
+            "17": "CCA1 hiking expedition (CHE) is a central circadian clock oscillator.",
+            "18": "CCA1 hiking expedition (CHE) is required for the daily oscillation in salicylic acid (SA) levels.",
+            "19": "CCA1 hiking expedition (CHE) is required for pathogen-induced salicylic acid (SA) synthesis in systemic tissues during systemic acquired resistance (SAR).",
+            "20": "CCA1 hiking expedition (CHE) may regulate isochorismate synthase 1 (ICS1) through calmodulin binding protein 60g (CBP60g) and systemic acquired resistance deficient 1 (SARD1).",
+            "21": "Induction of calmodulin binding protein 60g (CBP60g) is compromised in the che-2 mutant.",
+            "22": "Induction of systemic acquired resistance deficient 1 (SARD1) is compromised in the che-2 mutant.",
+            "23": "Salicylic acid (SA) biosynthesis is regulated by multiple transcription factors (TFs) in a spatial manner.",
+            "24": "Salicylic acid (SA) biosynthesis is regulated by multiple transcription factors (TFs) in a temporal manner.",
+            "25": "The study fills a gap in the signal transduction pathway between pathogen recognition and salicylic acid (SA) production."
+          },
+          "21": {}
+        },
+        "viewpoints": [
+          "CHE plays a crucial role in salicylic acid (SA)-mediated plant immunity."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Our subsequent molecular and genetic data showed that HaRxL10 interacted with CHE to interfere with ZTL-mediated CHE degradation.",
+        "references": {},
+        "viewpoints": [
+          "Molecular and genetic data showed that HaRxL10 interacted with CHE.",
+          "HaRxL10 interfered with ZTL-mediated CHE degradation."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "While HaRxL10 stabilised CHE, it repressed CHE’s binding to its downstream regulatory genes.",
+        "references": {},
+        "viewpoints": [
+          "HaRxL10 stabilised CHE.",
+          "HaRxL10 repressed CHE’s binding to downstream regulatory genes."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "HaRxL10 triggered a significant reprogramming of the transcriptome, particularly affecting the expression of several central clock genes, such as CHE, CCA1, TCP22 and TOC1.",
+        "references": {},
+        "viewpoints": [
+          "HaRxL10 triggered significant reprogramming of the transcriptome.",
+          "HaRxL10 particularly affected the expression of several central clock genes.",
+          "The central clock genes affected include CHE, CCA1, TCP22, and TOC1."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "Additionally, HaRxL10 acted as a virulent effector to repress SA-mediated plant immunity and had a notable impact on leaf movement, maltose levels, hypocotyl growth and flowering time in a CHE-dependent manner.",
+        "references": {},
+        "viewpoints": [
+          "HaRxL10 acted as a virulent effector to repress SA-mediated plant immunity.",
+          "HaRxL10 had a notable impact on leaf movement in a CHE-dependent manner.",
+          "HaRxL10 had a notable impact on maltose levels in a CHE-dependent manner.",
+          "HaRxL10 had a notable impact on hypocotyl growth in a CHE-dependent manner.",
+          "HaRxL10 had a notable impact on flowering time in a CHE-dependent manner."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "Overall, HaRxL10 perturbed the key clock component CHE’s transcriptional regulation function as well as several physiological processes.",
+        "references": {},
+        "viewpoints": [
+          "HaRxL10 perturbed the key clock component CHE's transcriptional regulation function.",
+          "HaRxL10 perturbed several physiological processes."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56787-w_with_abstracts",
+    "base_id": "s41467-025-56787-w",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56787-w_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

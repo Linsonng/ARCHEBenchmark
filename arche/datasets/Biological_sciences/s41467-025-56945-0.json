@@ -1,0 +1,718 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Polygenic risk scores (PRS), which quantify the genetic risk for traits from common variants, have improved in their predictive performances over the past decade [1] . Building on classical approaches of pruning and thresholding, methods incorporating Bayesian approaches using prior knowledge about genetic architecture, relatedness of individuals, linkage disequilibrium patterns, and genetic effects across populations have improved the assignment of variant weights and PRS performance [2] , [3] , [4] , [5] . In parallel, genome-wide association studies (GWAS) have continued to expand in size, with the most recent iteration of the GWASs for human height and coronary artery disease reaching 5.4 million and 1.3 million participants, respectively [6] , [7] . The incorporation of multi-ancestry and multi-trait GWAS data has further improved PRS prediction in diverse ancestral groups [8] . In attempting to quantify total inherited risk, each of these PRS iterations for a given trait captures unique information contingent on source GWAS, method, and training dataset. PRS are increasingly being delivered to patients. Third-party genetic testing companies and healthcare system laboratories are already delivering polygenic scores for coronary artery disease, diabetes, cancers, and other diseases [9] , [10] . The eMERGE consortium has developed PRS reports for 10 diseases to return to participants within the healthcare system as part of a larger effort to study genomic risk assessment and management [11] , [12] , [13] . Furthermore, researchers recently developed clinically valid assays, clinical workflows, and patient- and physician-oriented information materials to accompany PRS reports delivered within the Mass General Brigham Biobank and the Veterans Affairs Genomic Medicine at Veterans Affairs (GenoVA) Study [14] , [15] . New clinical trials are incorporating PRS into medical decision-making (NCT05819814, NCT05850091), and medical societies have begun to release initial statements on their utility [16] , [17] . Although consistency in risk classification is important for clinical decision-making, risk prediction models for complex diseases will inherently have variability in high-risk classification. These differences often stem from differences in training population, outcome definition, and underlying statistical methodology. Even though different risk prediction models may be correlated at their mean, extreme value theory suggests they are inherently likely to differ in classifying risk in the extremes [18] . The introduction of new models often leads to significant reclassification of high-risk risk among patients, raising questions about the need for altering recommendations for interventions or therapies. For example, since 2013, the American College of Cardiology and the American Heart Association (AHA) have recommended using the Pooled Cohort Equations (PCE) [19] to estimate the 10-year risk for atherosclerotic cardiovascular disease, but the AHA recently developed the Predicting Risk of CVD EVENTs (PREVENT) equations [20] , which include kidney measures, exclude race, and include heart failure in the composite predicted outcome. When applied to representative cohorts, PREVENT predicts lower cardiovascular risk than PCE and could reclassify about half of US adults to lower risk categories, potentially leading to reduced statin and antihypertensive treatment eligibility and increasing incidence of composite cardiovascular outcomes [21] . Similarly, current reports of polygenic risk also provide a categorical assessment of high risk, and different studies and companies use different scores for the same traits [9] , [10] , [11] . As advances in GWAS size and statistical methods continue to fuel the release of improved new PRS, a framework is needed for updating scores or incorporating new data without causing confusion. Despite ongoing progress toward clinical implementation, the variability of individual-level classification of ‘high genetic risk’ using different PRS for a given trait remains largely untested, and consensus PRS for any trait currently does not exist. Previous efforts have focused on population-level prediction metrics, rather than consistency of high-risk classification presented in individual clinical reports now as a part of clinical implementation workflows [8] . Prior limited availability of large holdout diverse datasets has precluded individual-level benchmarking to assess agreement in classification between PRS. Furthermore, there is a need to aggregate and incorporate orthogonal data from available PRS while overcoming the correlation between scores and maximize predictive performance. In this work, we use the large and ancestrally-diverse All of Us (AOU) cohort [22] to compare the classification of individuals with high genetic risk based on published polygenic scores for three common, complex diseases: coronary artery disease (CAD), type 2 diabetes mellitus (T2DM), and major depressive disorder (MDD). We also test the effect of using PRSmix [23] — a tool that agnostically integrates information across several PRS for a given trait to improve prediction accuracy for a target population — in influencing high genetic risk classification over iterations of polygenic scores. We find extreme disagreement regarding individual-level high-risk classification between published scores and observe how integrative scoring via PRSmix mitigates this instability.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Polygenic risk scores (PRS), which quantify the genetic risk for traits from common variants, have improved in their predictive performances over the past decade [1].",
+        "references": {
+          "1": {
+            "1": "Polygenic scores quantify inherited risk.",
+            "2": "Polygenic scores integrate information from many common sites of DNA variation into a single number.",
+            "3": "Rapid increases in the scale of genetic association studies have enabled the development of polygenic scores.",
+            "4": "New statistical algorithms have enabled the development of polygenic scores.",
+            "5": "Polygenic scores developed with new statistical algorithms meaningfully measure risk of coronary artery disease as early as birth.",
+            "6": "Newer-generation polygenic scores identify up to 8% of the population with triple the normal risk based on genetic variation alone.",
+            "7": "Individuals identified by polygenic scores with increased risk cannot be identified based on family history alone.",
+            "8": "Individuals identified by polygenic scores with increased risk cannot be identified based on clinical risk factors alone.",
+            "9": "Evidence supports risk reduction for individuals identified with increased genetic risk using adherence to a healthy lifestyle.",
+            "10": "Evidence supports risk reduction for individuals identified with increased genetic risk using cholesterol-lowering therapies.",
+            "11": "Adherence to a healthy lifestyle can substantially reduce risk for individuals with increased genetic risk.",
+            "12": "Cholesterol-lowering therapies can substantially reduce risk for individuals with increased genetic risk.",
+            "13": "There is considerable enthusiasm for the potential of polygenic risk estimation to enable a new era of preventive clinical medicine.",
+            "14": "There is recognition of a need for ongoing research to ensure equitable performance of polygenic scores across diverse ancestries.",
+            "15": "There is recognition of a need for ongoing research into how to assess polygenic scores in clinical practice.",
+            "16": "There is recognition of a need for ongoing research into whom to assess with polygenic scores in clinical practice.",
+            "17": "There is a need for randomized trials to confirm the clinical utility of polygenic scores."
+          }
+        },
+        "viewpoints": [
+          "Polygenic risk scores quantify the genetic risk for traits from common genetic variants.",
+          "The predictive performance of polygenic risk scores has improved over the past decade."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "Building on classical approaches of pruning and thresholding, methods incorporating Bayesian approaches using prior knowledge about genetic architecture, relatedness of individuals, linkage disequilibrium patterns, and genetic effects across populations have improved the assignment of variant weights and PRS performance [2], [3], [4], [5].",
+        "references": {
+          "2": [],
+          "3": {
+            "1": "Linear mixed models are a powerful statistical tool for identifying genetic associations.",
+            "2": "Linear mixed models are a powerful statistical tool for avoiding confounding.",
+            "3": "Existing methods of linear mixed models are computationally intractable in large cohorts.",
+            "4": "Existing methods of linear mixed models may not optimize power.",
+            "5": "All existing methods require a time cost of O(MN(2)), where N is the number of samples and M is the number of SNPs.",
+            "6": "Existing methods implicitly assume an infinitesimal genetic architecture in which effect sizes are normally distributed.",
+            "7": "An infinitesimal genetic architecture, where effect sizes are normally distributed, can limit power.",
+            "8": "BOLT-LMM is a far more efficient mixed-model association method.",
+            "9": "BOLT-LMM requires only a small number of O(MN) time iterations.",
+            "10": "BOLT-LMM increases power by modeling more realistic, non-infinitesimal genetic architectures.",
+            "11": "BOLT-LMM uses a Bayesian mixture prior on marker effect sizes to model more realistic genetic architectures.",
+            "12": "BOLT-LMM was applied to 9 quantitative traits in 23,294 samples from the Women's Genome Health Study (WGHS).",
+            "13": "Significant increases in power were observed when applying BOLT-LMM, consistent with simulations.",
+            "14": "Theory shows that the boost in power from BOLT-LMM increases with cohort size.",
+            "15": "Simulations show that the boost in power from BOLT-LMM increases with cohort size.",
+            "16": "The increase in power with cohort size makes BOLT-LMM appealing for genome-wide association studies in large cohorts."
+          },
+          "4": {
+            "1": "Polygenic risk scores (PRS) perform poorly in predicting genetic risk across different populations.",
+            "2": "Existing genome-wide association studies (GWAS) have been conducted predominantly in individuals of European descent.",
+            "3": "The limited transferability of polygenic risk scores (PRS) reduces their clinical value in non-European populations.",
+            "4": "The limited transferability of polygenic risk scores (PRS) may exacerbate healthcare disparities.",
+            "5": "Recent efforts have been made to level ancestry imbalance in genomic research.",
+            "6": "Recent efforts have expanded the scale of non-European genome-wide association studies (GWAS).",
+            "7": "Most non-European genome-wide association studies (GWAS) remain underpowered.",
+            "8": "A new PRS construction method called PRS-CSx is presented.",
+            "9": "PRS-CSx improves cross-population polygenic prediction.",
+            "10": "PRS-CSx integrates GWAS summary statistics from multiple populations.",
+            "11": "PRS-CSx couples genetic effects across populations via a shared continuous shrinkage (CS) prior.",
+            "12": "PRS-CSx enables more accurate effect size estimation by sharing information between summary statistics.",
+            "13": "PRS-CSx leverages linkage disequilibrium diversity across discovery samples.",
+            "14": "PRS-CSx inherits computational efficiency from PRS-CS.",
+            "15": "PRS-CSx inherits robustness from PRS-CS.",
+            "16": "PRS-CSx outperforms alternative methods across traits with a wide range of genetic architectures in simulations.",
+            "17": "PRS-CSx outperforms alternative methods across traits with cross-population genetic overlaps in simulations.",
+            "18": "PRS-CSx outperforms alternative methods with different discovery GWAS sample sizes in simulations.",
+            "19": "PRS-CSx improves the prediction of quantitative traits in non-European populations.",
+            "20": "PRS-CSx improves the prediction of schizophrenia risk in non-European populations."
+          },
+          "5": {
+            "1": "Polygenic risk scores estimate genetic susceptibility of an individual to disease.",
+            "2": "Polygenic risk scores have the potential of providing utility in multiple clinical contexts.",
+            "3": "The performance of polygenic risk scores in diverse populations remains challenging.",
+            "4": "The computation of polygenic risk scores in diverse populations remains challenging.",
+            "5": "The reporting of polygenic risk scores in diverse populations remains challenging.",
+            "6": "A pragmatic approach is presented to optimize a polygenic risk score for a population of interest.",
+            "7": "This approach leverages publicly available data and methods.",
+            "8": "The approach consists of seven steps that are easily implemented without the requirement of expertise in complex genetics.",
+            "9": "Step 1 is selecting source genome-wide association studies and imputation.",
+            "10": "Step 2 is selecting methods to compute polygenic score.",
+            "11": "Step 3 is adjusting scores using principal components of genetic ancestry.",
+            "12": "Step 4 is selecting the best performing score.",
+            "13": "Step 5 is defining percentiles of a population distribution.",
+            "14": "Step 6 is validating performance of the optimized polygenic score.",
+            "15": "Step 7 is implementing the optimized polygenic score in clinical practice."
+          }
+        },
+        "viewpoints": [
+          "Bayesian approaches that use prior knowledge about genetic architecture improve the assignment of variant weights.",
+          "Bayesian approaches that consider the relatedness of individuals improve the assignment of variant weights.",
+          "Bayesian approaches considering linkage disequilibrium patterns improve the assignment of variant weights.",
+          "Bayesian approaches considering genetic effects across populations improve the assignment of variant weights.",
+          "The use of these Bayesian approaches has improved polygenic risk score performance."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "In parallel, genome-wide association studies (GWAS) have continued to expand in size, with the most recent iteration of the GWASs for human height and coronary artery disease reaching 5.4 million and 1.3 million participants, respectively [6], [7].",
+        "references": {
+          "6": {
+            "1": "Common single-nucleotide polymorphisms (SNPs) are predicted to collectively explain 40-50% of phenotypic variation in human height.",
+            "2": "Identifying the specific variants and associated regions of SNPs that explain phenotypic variation in human height requires huge sample sizes."
+          },
+          "7": {
+            "1": "The discovery of genetic loci associated with complex diseases has been faster than the elucidation of mechanisms of disease pathogenesis.",
+            "2": "A genome-wide association study (GWAS) for coronary artery disease (CAD) was conducted.",
+            "3": "The GWAS for CAD comprised 181,522 cases among 1,165,690 participants.",
+            "4": "The participants of the GWAS for CAD were predominantly of European ancestry.",
+            "5": "The GWAS detected 241 associations.",
+            "6": "The GWAS detected 30 new loci.",
+            "7": "Cross-ancestry meta-analysis with a Japanese GWAS yielded 38 additional new loci.",
+            "8": "Functionally informed fine-mapping was used to prioritize likely causal variants.",
+            "9": "The fine-mapping yielded 42 associations with less than five variants in the 95% credible set.",
+            "10": "Similarity-based clustering suggested roles for early developmental processes in the pathogenesis of CAD.",
+            "11": "Similarity-based clustering suggested roles for cell cycle signaling in the pathogenesis of CAD.",
+            "12": "Similarity-based clustering suggested roles for vascular cell migration and proliferation in the pathogenesis of CAD.",
+            "13": "220 candidate causal genes were prioritized.",
+            "14": "The prioritization combined eight complementary approaches.",
+            "15": "123 candidate causal genes were supported by three or more approaches.",
+            "16": "The effect of an enhancer in MYO9B was experimentally validated using CRISPR-Cas9.",
+            "17": "The enhancer in MYO9B appears to mediate CAD risk by regulating vascular cell motility.",
+            "18": "The analysis identifies and systematically characterizes more than 250 risk loci for CAD.",
+            "19": "The characterization aims to inform experimental interrogation of putative causal mechanisms for CAD."
+          }
+        },
+        "viewpoints": [
+          "Genome-wide association studies have continued to expand in size.",
+          "The most recent GWAS for human height includes 5.4 million participants.",
+          "The most recent GWAS for coronary artery disease includes 1.3 million participants."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The incorporation of multi-ancestry and multi-trait GWAS data has further improved PRS prediction in diverse ancestral groups [8].",
+        "references": {
+          "8": {
+            "1": "There is an important public health need to identify individuals at the highest risk of coronary artery disease.",
+            "2": "It is ideal to identify individuals at the highest risk of coronary artery disease before the onset of the disease.",
+            "3": "Prior studies have developed genome-wide polygenic scores to enable risk stratification for coronary artery disease.",
+            "4": "The development of genome-wide polygenic scores reflects the substantial inherited component of coronary artery disease risk.",
+            "5": "A new and significantly improved polygenic score for coronary artery disease has been developed and is termed GPS."
+          }
+        },
+        "viewpoints": [
+          "The incorporation of multi-ancestry GWAS data has improved polygenic risk score prediction in diverse ancestral groups.",
+          "The incorporation of multi-trait GWAS data has improved polygenic risk score prediction in diverse ancestral groups."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "In attempting to quantify total inherited risk, each of these PRS iterations for a given trait captures unique information contingent on source GWAS, method, and training dataset.",
+        "references": {},
+        "viewpoints": [
+          "Each iteration of polygenic risk scores for a given trait captures unique information.",
+          "The unique information captured by polygenic risk scores is contingent on the source GWAS, methods used, and the training dataset."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "PRS are increasingly being delivered to patients.",
+        "references": {},
+        "viewpoints": [
+          "Polygenic risk scores are increasingly being delivered to patients."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Third-party genetic testing companies and healthcare system laboratories are already delivering polygenic scores for coronary artery disease, diabetes, cancers, and other diseases [9], [10].",
+        "references": {
+          "9": [],
+          "10": []
+        },
+        "viewpoints": [
+          "Third-party genetic testing companies are delivering polygenic scores for coronary artery disease.",
+          "Healthcare system laboratories are delivering polygenic scores for coronary artery disease.",
+          "Third-party genetic testing companies are delivering polygenic scores for diabetes.",
+          "Healthcare system laboratories are delivering polygenic scores for diabetes.",
+          "Third-party genetic testing companies are delivering polygenic scores for cancers.",
+          "Healthcare system laboratories are delivering polygenic scores for cancers.",
+          "Polygenic scores are delivered for other diseases by third-party genetic testing companies.",
+          "Polygenic scores are delivered for other diseases by healthcare system laboratories."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "The eMERGE consortium has developed PRS reports for 10 diseases to return to participants within the healthcare system as part of a larger effort to study genomic risk assessment and management [11], [12], [13].",
+        "references": {
+          "11": {
+            "1": "Polygenic risk scores have improved in predictive performance.",
+            "2": "Several challenges remain to be addressed before polygenic risk scores can be implemented in the clinic.",
+            "3": "The predictive performance of polygenic risk scores is reduced in diverse populations.",
+            "4": "The interpretation and communication of genetic results to both providers and patients are challenges for the implementation of polygenic risk scores in the clinic.",
+            "5": "The National Human Genome Research Institute-funded Electronic Medical Records and Genomics Network has developed a framework to address the challenges of implementing polygenic risk scores in the clinic.",
+            "6": "The National Human Genome Research Institute-funded Electronic Medical Records and Genomics Network has developed a pipeline for return of a PRS-based genome-informed risk assessment.",
+            "7": "The pipeline and framework are being used to return a PRS-based genome-informed risk assessment to 25,000 diverse adults and children as part of a clinical study.",
+            "8": "From an initial list of 23 conditions, ten were selected for implementation based on polygenic risk score performance.",
+            "9": "The selection of conditions for implementation was based on medical actionability.",
+            "10": "The selection of conditions for implementation was based on potential clinical utility.",
+            "11": "The ten selected conditions include cardiometabolic diseases and cancer.",
+            "12": "Standardized metrics were considered in the selection process of conditions for implementation.",
+            "13": "Additional consideration in the selection process was given to the strength of evidence in African populations.",
+            "14": "Additional consideration in the selection process was given to the strength of evidence in Hispanic populations.",
+            "15": "A pipeline for clinical polygenic risk score implementation was developed.",
+            "16": "The pipeline for clinical polygenic risk score implementation includes score transfer to a clinical laboratory.",
+            "17": "The pipeline for clinical polygenic risk score implementation includes validation and verification of score performance.",
+            "18": "Genetic ancestry was used to calibrate polygenic risk score mean and variance.",
+            "19": "Genetically diverse data from 13,475 participants of the All of Us Research Program cohort was utilized to train and test model parameters.",
+            "20": "A framework for regulatory compliance was created.",
+            "21": "A polygenic risk score clinical report was developed for return to providers.",
+            "22": "The polygenic risk score clinical report was developed for inclusion in an additional genome-informed risk assessment.",
+            "23": "The initial experience from the Electronic Medical Records and Genomics Network can inform the approach needed to implement polygenic risk score-based testing in diverse clinical settings."
+          },
+          "12": [],
+          "13": {
+            "1": "The eMERGE Network is supported by NHGRI.",
+            "2": "The eMERGE Network is a consortium of five institutions.",
+            "3": "The purpose of the eMERGE Network is to explore the utility of DNA repositories coupled to EMR systems.",
+            "4": "The eMERGE Network aims to advance discovery in genome science.",
+            "5": "eMERGE places special emphasis on ethical issues related to DNA repositories and EMR systems.",
+            "6": "eMERGE places special emphasis on legal issues related to DNA repositories and EMR systems.",
+            "7": "eMERGE places special emphasis on social issues related to DNA repositories and EMR systems.",
+            "8": "The five sites in the eMERGE Network are supported by an Administrative Coordinating Center.",
+            "9": "Network goals for the eMERGE Network are initiated by the Genomics working group.",
+            "10": "Network goals for the eMERGE Network are initiated by the Informatics working group.",
+            "11": "Network goals for the eMERGE Network are initiated by the Consent & Community Consultation working group.",
+            "12": "The Consent & Community Consultation working group includes active participation by investigators outside the eMERGE funded sites.",
+            "13": "Network goals for the eMERGE Network are initiated by the Return of Results Oversight Committee.",
+            "14": "The Steering Committee in the eMERGE Network is comprised of site PIs, representatives, and NHGRI staff.",
+            "15": "The Steering Committee meets three times per year.",
+            "16": "The Steering Committee meets once per year with the External Scientific Panel.",
+            "17": "Samples have undergone GWAS genotyping for cataract.",
+            "18": "Samples have undergone GWAS genotyping for HDL.",
+            "19": "Samples have undergone GWAS genotyping for dementia.",
+            "20": "Samples have undergone GWAS genotyping for electrocardiographic QRS duration.",
+            "21": "Samples have undergone GWAS genotyping for peripheral arterial disease.",
+            "22": "Samples have undergone GWAS genotyping for type 2 diabetes.",
+            "23": "A GWAS is being undertaken for resistant hypertension.",
+            "24": "Approximately 2,000 additional samples have been identified across the network sites for the GWAS on resistant hypertension.",
+            "25": "Data for the GWAS on resistant hypertension will be added to data available for samples already genotyped.",
+            "26": "Secondary phenotypes have been added at all sites to leverage the genotyping data.",
+            "27": "The addition of secondary phenotypes is funded by ARRA supplements.",
+            "28": "Hypothyroidism is being analyzed as a cross-network phenotype.",
+            "29": "Results from eMERGE activities are being posted in dbGaP.",
+            "30": "eMERGE activities include evaluation of issues associated with cross-site deployment of common algorithms to identify cases and controls in EMRs.",
+            "31": "eMERGE activities include evaluation of data privacy of genomic and clinically-derived data.",
+            "32": "eMERGE activities include developing approaches for large-scale meta-analysis of GWAS data across five sites.",
+            "33": "eMERGE activities include a community consultation and consent initiative at each site.",
+            "34": "Plans are underway to expand the eMERGE Network in diversity of populations.",
+            "35": "Plans are underway to incorporate GWAS findings into clinical care.",
+            "36": "eMERGE combines advanced clinical informatics, genome science, and community consultation.",
+            "37": "eMERGE represents a first step in the development of data-driven approaches to incorporate genomic information into routine healthcare delivery."
+          }
+        },
+        "viewpoints": [
+          "The eMERGE consortium has developed polygenic risk score reports for 10 diseases.",
+          "The polygenic risk score reports are returned to participants within the healthcare system.",
+          "The development of polygenic risk score reports is part of a larger effort to study genomic risk assessment.",
+          "The development of polygenic risk score reports is part of a larger effort to study genomic risk management."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Furthermore, researchers recently developed clinically valid assays, clinical workflows, and patient- and physician-oriented information materials to accompany PRS reports delivered within the Mass General Brigham Biobank and the Veterans Affairs Genomic Medicine at Veterans Affairs (GenoVA) Study [14], [15].",
+        "references": {
+          "14": {
+            "1": "Implementation of polygenic risk scores may improve disease prevention.",
+            "2": "Implementation of polygenic risk scores may improve disease management.",
+            "3": "Implementation of polygenic risk scores poses challenges in constructing clinically valid assays.",
+            "4": "Implementation of polygenic risk scores poses challenges in interpretation for individual patients.",
+            "5": "Implementation of polygenic risk scores poses challenges in developing clinical workflows and resources to support their use in patient care.",
+            "6": "The ongoing Veterans Affairs Genomic Medicine at Veterans Affairs Study includes a clinical genotype array-based assay development.",
+            "7": "The clinical genotype array-based assay was developed for six published polygenic risk scores.",
+            "8": "Data from 36,423 Mass General Brigham Biobank participants were used in the study.",
+            "9": "Adjustment for population structure was used in the study.",
+            "10": "The study aimed to replicate known polygenic risk scores-disease associations.",
+            "11": "The study aimed to replicate published polygenic risk scores thresholds for a disease odds ratio of 2.",
+            "12": "The disease odds ratio for type 2 diabetes is 1.75 with a 95% confidence interval of 1.57 to 1.95.",
+            "13": "The disease odds ratio for breast cancer is 2.38 with a 95% confidence interval of 2.07 to 2.73.",
+            "14": "The pipeline was confirmed to have high performance for use as a clinical assay for individual patients.",
+            "15": "The pipeline was confirmed to have robustness for use as a clinical assay for individual patients.",
+            "16": "The first 227 prospective samples from the GenoVA Study were analyzed.",
+            "17": "The frequency of polygenic risk scores with published odds ratio greater than 2 was 5.7% for colorectal cancer.",
+            "18": "The frequency of polygenic risk scores with published odds ratio greater than 2 was 15.3% for prostate cancer.",
+            "19": "Physician-oriented informational materials were developed to support decision-making about polygenic risk scores results.",
+            "20": "Patient-oriented informational materials were developed to support decision-making about polygenic risk scores results.",
+            "21": "The polygenic risk scores laboratory report was prepared.",
+            "22": "The work illustrates the generalizable development of a clinical polygenic risk score assay for multiple conditions.",
+            "23": "The work highlights technical challenges for implementing polygenic risk scores information in the clinic.",
+            "24": "The work highlights reporting challenges for implementing polygenic risk scores information in the clinic.",
+            "25": "The work highlights clinical workflow challenges for implementing polygenic risk scores information in the clinic."
+          },
+          "15": []
+        },
+        "viewpoints": [
+          "Researchers developed clinically valid assays to accompany polygenic risk score reports.",
+          "Researchers developed clinical workflows to accompany polygenic risk score reports.",
+          "Researchers developed patient-oriented information materials to accompany polygenic risk score reports.",
+          "Researchers developed physician-oriented information materials to accompany polygenic risk score reports.",
+          "The developed materials are used within the Mass General Brigham Biobank.",
+          "The developed materials are used within the Veterans Affairs Genomic Medicine at Veterans Affairs (GenoVA) Study."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "New clinical trials are incorporating PRS into medical decision-making (NCT05819814, NCT05850091), and medical societies have begun to release initial statements on their utility [16], [17].",
+        "references": {
+          "16": {
+            "1": "Cardiovascular disease is the leading contributor to years lost due to disability among adults.",
+            "2": "Cardiovascular disease is the leading contributor to years lost due to premature death among adults.",
+            "3": "Current efforts in managing cardiovascular disease focus on risk prediction.",
+            "4": "Current efforts in managing cardiovascular disease focus on risk factor mitigation.",
+            "5": "Risk prediction and risk factor mitigation have been recognized as important for the past half-century.",
+            "6": "Risk prediction for cardiovascular disease remains imprecise despite advances.",
+            "7": "There are persistently high rates of incident cardiovascular disease.",
+            "8": "Genetic characterization has been proposed as an approach to enable earlier prevention of cardiovascular disease.",
+            "9": "Genetic characterization has been proposed as an approach to enable potentially tailored prevention of cardiovascular disease.",
+            "10": "Rare mendelian pathogenic variants predisposing to cardiometabolic conditions have been known to contribute to disease risk in some families for a long time.",
+            "11": "Twin studies imply that diverse cardiovascular conditions are heritable in the general population.",
+            "12": "Familial aggregation studies imply that diverse cardiovascular conditions are heritable in the general population.",
+            "13": "Significant technological advances since the Human Genome Project are facilitating population-based comprehensive genetic profiling.",
+            "14": "Significant methodological advances since the Human Genome Project are facilitating population-based comprehensive genetic profiling.",
+            "15": "The cost of population-based comprehensive genetic profiling is decreasing.",
+            "16": "Genome-wide association studies continue to elucidate causal mechanisms for cardiovascular diseases.",
+            "17": "Systematic cataloging for cardiovascular risk alleles enabled the development of polygenic risk scores.",
+            "18": "Genetic profiling is becoming widespread in large-scale research.",
+            "19": "Genetic profiling is being used in health care-associated biobanks.",
+            "20": "Genetic profiling is being used in randomized controlled trials.",
+            "21": "Genetic profiling is being used in direct-to-consumer profiling in tens of millions of people.",
+            "22": "Individuals are increasingly presented with polygenic risk scores for cardiovascular conditions in clinical encounters.",
+            "23": "Physicians are increasingly presented with polygenic risk scores for cardiovascular conditions in clinical encounters.",
+            "24": "The scientific statement reviews the contemporary science of polygenic risk scores for cardiovascular diseases.",
+            "25": "The scientific statement reviews clinical considerations for polygenic risk scores for cardiovascular diseases.",
+            "26": "The scientific statement reviews future challenges for polygenic risk scores for cardiovascular diseases.",
+            "27": "Five cardiometabolic diseases were selected: coronary artery disease, hypercholesterolemia, type 2 diabetes, atrial fibrillation, and venous thromboembolic disease.",
+            "28": "Response to drug therapy for these five cardiometabolic diseases is considered.",
+            "29": "Provisional guidance is offered to health care professionals regarding polygenic risk scores.",
+            "30": "Provisional guidance is offered to researchers regarding polygenic risk scores.",
+            "31": "Provisional guidance is offered to policymakers regarding polygenic risk scores.",
+            "32": "Provisional guidance is offered to patients regarding polygenic risk scores."
+          },
+          "17": {
+            "1": "It is unknown if knowledge of genetic risk for coronary heart disease affects health-related outcomes.",
+            "2": "The study investigated if incorporating a genetic risk score in coronary heart disease risk estimates lowers LDL-C levels.",
+            "3": "203 participants aged 45-65 years, at intermediate risk for coronary heart disease, and not on statins were studied.",
+            "4": "Participants were randomly assigned to receive their 10-year probability of coronary heart disease based on a conventional risk score.",
+            "5": "Participants were randomly assigned to receive their 10-year probability of coronary heart disease based on a conventional risk score plus a genetic risk score.",
+            "6": "Participants in the group receiving a combined conventional and genetic risk score were stratified as having high genetic risk score.",
+            "7": "Participants in the group receiving a combined conventional and genetic risk score were stratified as having average/low genetic risk score.",
+            "8": "Risk information was disclosed by a genetic counselor.",
+            "9": "Shared decision making regarding statin therapy occurred with a physician.",
+            "10": "The primary end point compared was LDL-C levels at 6 months.",
+            "11": "The study assessed if differences in LDL-C levels were attributable to changes in dietary fat intake.",
+            "12": "The study assessed if differences in LDL-C levels were attributable to changes in physical activity levels.",
+            "13": "The study assessed if differences in LDL-C levels were attributable to statin use.",
+            "14": "The mean age of participants was 59.4±5 years.",
+            "15": "48% of participants were men.",
+            "16": "The mean 10-year coronary heart disease risk of participants was 8.5±4.1%.",
+            "17": "100 participants received a conventional risk score.",
+            "18": "103 participants received a conventional risk score plus a genetic risk score.",
+            "19": "At the end of the study, the group receiving a combined conventional and genetic risk score had lower LDL-C levels than the group receiving only a conventional risk score.",
+            "20": "Participants with high genetic risk score had lower LDL-C levels compared to participants with only a conventional risk score.",
+            "21": "Participants with high genetic risk score did not have lower LDL-C levels compared to participants with low genetic risk score.",
+            "22": "Statins were initiated more often in the group receiving a combined conventional and genetic risk score than in the group receiving only a conventional risk score.",
+            "23": "There were no significant differences in dietary fat intake between the groups.",
+            "24": "There were no significant differences in physical activity levels between the groups.",
+            "25": "Disclosure of coronary heart disease risk estimates incorporating genetic risk information led to lower LDL-C levels than disclosure based on conventional risk factors alone."
+          }
+        },
+        "viewpoints": [
+          "New clinical trials are incorporating polygenic risk scores into medical decision-making.",
+          "Medical societies have begun to release initial statements on the utility of polygenic risk scores."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Although consistency in risk classification is important for clinical decision-making, risk prediction models for complex diseases will inherently have variability in high-risk classification.",
+        "references": {},
+        "viewpoints": [
+          "Consistency in risk classification is important for clinical decision-making.",
+          "Risk prediction models for complex diseases have inherent variability in high-risk classification."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "These differences often stem from differences in training population, outcome definition, and underlying statistical methodology.",
+        "references": {},
+        "viewpoints": [
+          "Variability in high-risk classification often stems from differences in training population.",
+          "Variability in high-risk classification often stems from differences in outcome definition.",
+          "Variability in high-risk classification often stems from differences in underlying statistical methodology."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Even though different risk prediction models may be correlated at their mean, extreme value theory suggests they are inherently likely to differ in classifying risk in the extremes [18].",
+        "references": {
+          "18": []
+        },
+        "viewpoints": [
+          "Different risk prediction models may be correlated at their mean.",
+          "Extreme value theory suggests risk prediction models inherently differ in classifying risk in the extremes."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "The introduction of new models often leads to significant reclassification of high-risk risk among patients, raising questions about the need for altering recommendations for interventions or therapies.",
+        "references": {},
+        "viewpoints": [
+          "The introduction of new models often leads to significant reclassification of high-risk patients.",
+          "Significant reclassification raises questions about the need for altering recommendations for interventions.",
+          "Significant reclassification raises questions about the need for altering recommendations for therapies."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "For example, since 2013, the American College of Cardiology and the American Heart Association (AHA) have recommended using the Pooled Cohort Equations (PCE) [19] to estimate the 10-year risk for atherosclerotic cardiovascular disease, but the AHA recently developed the Predicting Risk of CVD EVENTs (PREVENT) equations [20], which include kidney measures, exclude race, and include heart failure in the composite predicted outcome.",
+        "references": {
+          "19": [],
+          "20": {
+            "1": "Primary prevention guidelines recommend the use of multivariable equations to assess absolute risk of cardiovascular disease (CVD).",
+            "2": "Current equations for assessing absolute risk of cardiovascular disease have several limitations.",
+            "3": "The American Heart Association Predicting Risk of CVD EVENTs (PREVENT) equations were developed and validated among US adults 30 to 79 years of age without known cardiovascular disease.",
+            "4": "The derivation sample for developing the PREVENT equations included individual-level participant data from 25 data sets.",
+            "5": "The data sets used in the derivation sample spanned from 1992 to 2017.",
+            "6": "The derivation sample included 3,281,919 participants.",
+            "7": "The primary outcome for developing the PREVENT equations was cardiovascular disease.",
+            "8": "The primary outcome for developing the PREVENT equations included atherosclerotic cardiovascular disease and heart failure.",
+            "9": "Predictors for the PREVENT equations included traditional risk factors, such as smoking status, systolic blood pressure, cholesterol levels, and antihypertensive or statin use.",
+            "10": "The estimated glomerular filtration rate was included as a predictor in the PREVENT equations.",
+            "11": "Diabetes was included as a predictor in the PREVENT equations.",
+            "12": "The models for the PREVENT equations were sex-specific.",
+            "13": "The models for the PREVENT equations were race-free.",
+            "14": "The models for the PREVENT equations were developed on the age scale.",
+            "15": "The models for the PREVENT equations were adjusted for competing risk of non-cardiovascular disease death.",
+            "16": "Analyses for developing the PREVENT equations were conducted in each data set.",
+            "17": "The results of analyses from each data set were meta-analyzed.",
+            "18": "Discrimination for the PREVENT equations was assessed using the Harrell C-statistic.",
+            "19": "Calibration for the PREVENT equations was calculated as the slope of the observed versus predicted risk by decile.",
+            "20": "Additional equations were developed to predict each cardiovascular disease subtype, including atherosclerotic cardiovascular disease and heart failure.",
+            "21": "Optional predictors, including urine albumin-to-creatinine ratio and hemoglobin A1c, were included in the additional equations.",
+            "22": "The social deprivation index was included in the additional equations.",
+            "23": "External validation of the PREVENT equations was conducted with 3,330,085 participants.",
+            "24": "External validation used 21 additional data sets.",
+            "25": "A total of 6,612,004 adults were included in the study for the PREVENT equations.",
+            "26": "The mean±SD age of the adults included was 53±12 years.",
+            "27": "56% of the adults included in the study were women.",
+            "28": "The follow-up period had a mean±SD of 4.8±3.1 years.",
+            "29": "There were 211,515 incident total cardiovascular disease events during the follow-up period.",
+            "30": "In the external validation for cardiovascular disease, the median C-statistic for female participants was 0.794 (interquartile interval, 0.763-0.809).",
+            "31": "In the external validation for cardiovascular disease, the median C-statistic for male participants was 0.757 (interquartile interval, 0.727-0.778).",
+            "32": "The calibration slope among female participants was 1.03 (interquartile interval, 0.81-1.16).",
+            "33": "The calibration slope among male participants was 0.94 (interquartile interval, 0.81-1.13).",
+            "34": "Similar estimates for discrimination and calibration were observed for atherosclerotic cardiovascular disease-specific models.",
+            "35": "Similar estimates for discrimination and calibration were observed for heart failure-specific models.",
+            "36": "The improvement in discrimination was small but statistically significant when the urine albumin-to-creatinine ratio, hemoglobin A1c, and social deprivation index were added to the base model for total cardiovascular disease.",
+            "37": "The ΔC-statistic for discrimination improvement among female participants was 0.004 [0.004-0.005].",
+            "38": "The ΔC-statistic for discrimination improvement among male participants was 0.005 [0.004-0.007].",
+            "39": "Calibration improved significantly when the urine albumin-to-creatinine ratio was added to the base model for individuals with marked albuminuria (>300 mg/g).",
+            "40": "The calibration slope with the base model for marked albuminuria was 1.05 [0.84-1.20] compared to 1.39 [1.14-1.65] when the urine albumin-to-creatinine ratio was added.",
+            "41": "The PREVENT equations accurately predicted risk for incident cardiovascular disease and cardiovascular disease subtypes.",
+            "42": "The PREVENT equations precisely predicted risk for incident cardiovascular disease and cardiovascular disease subtypes.",
+            "43": "The PREVENT equations used routinely available clinical variables.",
+            "44": "The PREVENT equations were validated in a large, diverse, and contemporary sample of US adults."
+          }
+        },
+        "viewpoints": [
+          "Since 2013, the American College of Cardiology has recommended using the Pooled Cohort Equations to estimate the 10-year risk for atherosclerotic cardiovascular disease.",
+          "Since 2013, the American Heart Association has recommended using the Pooled Cohort Equations to estimate the 10-year risk for atherosclerotic cardiovascular disease.",
+          "The American Heart Association recently developed the Predicting Risk of CVD EVENTs equations.",
+          "The Predicting Risk of CVD EVENTs equations include kidney measures.",
+          "The Predicting Risk of CVD EVENTs equations exclude race.",
+          "The Predicting Risk of CVD EVENTs equations include heart failure in the composite predicted outcome."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "When applied to representative cohorts, PREVENT predicts lower cardiovascular risk than PCE and could reclassify about half of US adults to lower risk categories, potentially leading to reduced statin and antihypertensive treatment eligibility and increasing incidence of composite cardiovascular outcomes [21].",
+        "references": {
+          "21": {
+            "1": "Since 2013, the American College of Cardiology (ACC) and American Heart Association (AHA) have recommended the pooled cohort equations (PCEs) for estimating the 10-year risk of atherosclerotic cardiovascular disease (ASCVD).",
+            "2": "An AHA scientific advisory group recently developed the Predicting Risk of cardiovascular disease EVENTs (PREVENT) equations.",
+            "3": "The PREVENT equations incorporated kidney measures.",
+            "4": "The PREVENT equations removed race as an input.",
+            "5": "The PREVENT equations improved calibration in contemporary populations.",
+            "6": "PREVENT is known to produce ASCVD risk predictions that are lower than those produced by the pooled cohort equations (PCEs).",
+            "7": "The potential clinical implications of using PREVENT equations instead of PCEs have not been quantified.",
+            "8": "The intention was to estimate the number of US adults who would experience changes in risk categorization when applying PREVENT equations to existing ACC and AHA guidelines.",
+            "9": "The intention was to estimate the number of US adults who would experience changes in treatment eligibility when applying PREVENT equations to existing ACC and AHA guidelines.",
+            "10": "The intention was to estimate the number of US adults who would experience changes in clinical outcomes when applying PREVENT equations to existing ACC and AHA guidelines.",
+            "11": "A cross-sectional sample of 7765 US adults aged 30 to 79 years was used.",
+            "12": "The sample included participants from the National Health and Nutrition Examination Surveys of 2011 to March 2020.",
+            "13": "The surveys had response rates ranging from 47% to 70%.",
+            "14": "The sample was nationally representative.",
+            "15": "There were differences in predicted 10-year ASCVD risk.",
+            "16": "There were differences in ACC and AHA risk categorization.",
+            "17": "There were differences in eligibility for statin therapy.",
+            "18": "There were differences in eligibility for antihypertensive therapy.",
+            "19": "There were projected differences in occurrences of myocardial infarction.",
+            "20": "There were projected differences in occurrences of stroke.",
+            "21": "In a nationally representative sample of 7765 US adults aged 30 to 79 years, it was estimated that using PREVENT equations would reclassify approximately half of US adults to lower ACC and AHA risk categories.",
+            "22": "Using PREVENT equations would reclassify 53.0% [95% CI, 51.2%-54.8%] of US adults to lower ACC and AHA risk categories.",
+            "23": "Using PREVENT equations would reclassify very few US adults to higher ACC and AHA risk categories.",
+            "24": "PREVENT would reclassify 0.41% [95% CI, 0.25%-0.62%] of US adults to higher ACC and AHA risk categories.",
+            "25": "The median age of the sample was 53 years.",
+            "26": "51.3% of the sample were women.",
+            "27": "The number of US adults receiving or recommended for preventive treatment would decrease by an estimated 14.3 million for statin therapy.",
+            "28": "The decrease in the number of US adults for statin therapy has a confidence interval of 95% (12.6 million-15.9 million).",
+            "29": "The number of US adults receiving or recommended for preventive treatment would decrease by an estimated 2.62 million for antihypertensive therapy.",
+            "30": "The decrease in the number of US adults for antihypertensive therapy has a confidence interval of 95% (2.02 million-3.21 million).",
+            "31": "The study estimated that, over 10 years, the decreases in treatment eligibility could result in 107,000 additional occurrences of myocardial infarction or stroke.",
+            "32": "Eligibility changes would affect twice as many men as women.",
+            "33": "Eligibility changes would affect a greater proportion of Black adults than White adults.",
+            "34": "By assigning lower ASCVD risk predictions, the application of the PREVENT equations to existing treatment thresholds could reduce eligibility for statin therapy among 15.8 million US adults.",
+            "35": "The application of the PREVENT equations to existing treatment thresholds could reduce eligibility for antihypertensive therapy among 15.8 million US adults."
+          }
+        },
+        "viewpoints": [
+          "When applied to representative cohorts, the PREVENT equations predict lower cardiovascular risk than the Pooled Cohort Equations.",
+          "The application of PREVENT equations could reclassify about half of US adults to lower risk categories.",
+          "PREVENT reclassification could lead to reduced statin treatment eligibility.",
+          "PREVENT reclassification could lead to reduced antihypertensive treatment eligibility.",
+          "PREVENT reclassification could increase the incidence of composite cardiovascular outcomes."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Similarly, current reports of polygenic risk also provide a categorical assessment of high risk, and different studies and companies use different scores for the same traits [9], [10], [11].",
+        "references": {
+          "9": [],
+          "10": [],
+          "11": {
+            "1": "Polygenic risk scores have improved in predictive performance.",
+            "2": "Several challenges remain to be addressed before polygenic risk scores can be implemented in the clinic.",
+            "3": "The predictive performance of polygenic risk scores is reduced in diverse populations.",
+            "4": "The interpretation and communication of genetic results to both providers and patients are challenges for the implementation of polygenic risk scores in the clinic.",
+            "5": "The National Human Genome Research Institute-funded Electronic Medical Records and Genomics Network has developed a framework to address the challenges of implementing polygenic risk scores in the clinic.",
+            "6": "The National Human Genome Research Institute-funded Electronic Medical Records and Genomics Network has developed a pipeline for return of a PRS-based genome-informed risk assessment.",
+            "7": "The pipeline and framework are being used to return a PRS-based genome-informed risk assessment to 25,000 diverse adults and children as part of a clinical study.",
+            "8": "From an initial list of 23 conditions, ten were selected for implementation based on polygenic risk score performance.",
+            "9": "The selection of conditions for implementation was based on medical actionability.",
+            "10": "The selection of conditions for implementation was based on potential clinical utility.",
+            "11": "The ten selected conditions include cardiometabolic diseases and cancer.",
+            "12": "Standardized metrics were considered in the selection process of conditions for implementation.",
+            "13": "Additional consideration in the selection process was given to the strength of evidence in African populations.",
+            "14": "Additional consideration in the selection process was given to the strength of evidence in Hispanic populations.",
+            "15": "A pipeline for clinical polygenic risk score implementation was developed.",
+            "16": "The pipeline for clinical polygenic risk score implementation includes score transfer to a clinical laboratory.",
+            "17": "The pipeline for clinical polygenic risk score implementation includes validation and verification of score performance.",
+            "18": "Genetic ancestry was used to calibrate polygenic risk score mean and variance.",
+            "19": "Genetically diverse data from 13,475 participants of the All of Us Research Program cohort was utilized to train and test model parameters.",
+            "20": "A framework for regulatory compliance was created.",
+            "21": "A polygenic risk score clinical report was developed for return to providers.",
+            "22": "The polygenic risk score clinical report was developed for inclusion in an additional genome-informed risk assessment.",
+            "23": "The initial experience from the Electronic Medical Records and Genomics Network can inform the approach needed to implement polygenic risk score-based testing in diverse clinical settings."
+          }
+        },
+        "viewpoints": [
+          "Current reports of polygenic risk provide a categorical assessment of high risk.",
+          "Different studies use different polygenic risk scores for the same traits.",
+          "Different companies use different polygenic risk scores for the same traits."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "As advances in GWAS size and statistical methods continue to fuel the release of improved new PRS, a framework is needed for updating scores or incorporating new data without causing confusion.",
+        "references": {},
+        "viewpoints": [
+          "Advances in GWAS size continue to fuel the release of improved new polygenic risk scores.",
+          "Advances in statistical methods continue to fuel the release of improved new polygenic risk scores.",
+          "A framework is needed for updating polygenic risk scores without causing confusion.",
+          "A framework is needed for incorporating new data into polygenic risk scores without causing confusion."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Despite ongoing progress toward clinical implementation, the variability of individual-level classification of 'high genetic risk' using different PRS for a given trait remains largely untested, and consensus PRS for any trait currently does not exist.",
+        "references": {},
+        "viewpoints": [
+          "There is ongoing progress toward clinical implementation of polygenic risk scores.",
+          "Variability in individual-level classification of 'high genetic risk' using different polygenic risk scores remains largely untested.",
+          "A consensus polygenic risk score for any trait currently does not exist."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Previous efforts have focused on population-level prediction metrics, rather than consistency of high-risk classification presented in individual clinical reports now as a part of clinical implementation workflows [8].",
+        "references": {
+          "8": {
+            "1": "There is an important public health need to identify individuals at the highest risk of coronary artery disease.",
+            "2": "It is ideal to identify individuals at the highest risk of coronary artery disease before the onset of the disease.",
+            "3": "Prior studies have developed genome-wide polygenic scores to enable risk stratification for coronary artery disease.",
+            "4": "The development of genome-wide polygenic scores reflects the substantial inherited component of coronary artery disease risk.",
+            "5": "A new and significantly improved polygenic score for coronary artery disease has been developed and is termed GPS."
+          }
+        },
+        "viewpoints": [
+          "Previous efforts have focused on population-level prediction metrics.",
+          "Previous efforts have not focused on the consistency of high-risk classification in individual clinical reports as part of clinical implementation workflows."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "Prior limited availability of large holdout diverse datasets has precluded individual-level benchmarking to assess agreement in classification between PRS.",
+        "references": {},
+        "viewpoints": [
+          "Limited availability of large holdout diverse datasets has precluded individual-level benchmarking.",
+          "The lack of benchmarking has prevented assessment of agreement in classification between polygenic risk scores."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Furthermore, there is a need to aggregate and incorporate orthogonal data from available PRS while overcoming the correlation between scores and maximize predictive performance.",
+        "references": {},
+        "viewpoints": [
+          "There is a need to aggregate orthogonal data from available polygenic risk scores.",
+          "There is a need to incorporate orthogonal data from available polygenic risk scores.",
+          "There is a need to overcome the correlation between polygenic risk scores.",
+          "There is a need to maximize predictive performance of polygenic risk scores."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "In this work, we use the large and ancestrally-diverse All of Us (AOU) cohort [22] to compare the classification of individuals with high genetic risk based on published polygenic scores for three common, complex diseases: coronary artery disease (CAD), type 2 diabetes mellitus (T2DM), and major depressive disorder (MDD).",
+        "references": {
+          "22": {
+            "1": "Observational cohort studies have provided knowledge that has dramatically advanced the prevention of diseases.",
+            "2": "Observational cohort studies have provided knowledge that has dramatically advanced the treatment of diseases.",
+            "3": "Many observational cohorts are small.",
+            "4": "Many observational cohorts lack diversity.",
+            "5": "Many observational cohorts do not provide comprehensive phenotype data.",
+            "6": "The All of Us Research Program plans to enroll a diverse group of at least 1 million persons in the United States.",
+            "7": "The purpose of enrolling a diverse group of at least 1 million persons in the United States is to accelerate biomedical research.",
+            "8": "The purpose of enrolling a diverse group of at least 1 million persons in the United States is to improve health.",
+            "9": "The All of Us Research Program aims to make research results accessible to participants.",
+            "10": "The All of Us Research Program is developing new approaches to generate data.",
+            "11": "The All of Us Research Program is developing new approaches to access data.",
+            "12": "The All of Us Research Program is developing new approaches to make data broadly available to approved researchers.",
+            "13": "All of Us opened for enrollment in May 2018.",
+            "14": "All of Us currently enrolls participants who are 18 years of age or older.",
+            "15": "All of Us enrolls participants from a network of more than 340 recruitment sites.",
+            "16": "The program protocol includes health questionnaires.",
+            "17": "The program protocol includes electronic health records (EHRs).",
+            "18": "The program protocol includes physical measurements.",
+            "19": "The program protocol includes the use of digital health technology.",
+            "20": "The program protocol includes the collection and analysis of biospecimens.",
+            "21": "As of July 2019, more than 175,000 participants had contributed biospecimens.",
+            "22": "More than 80% of the participants who contributed biospecimens are from groups that have been historically underrepresented in biomedical research.",
+            "23": "EHR data on more than 112,000 participants have been collected.",
+            "24": "EHR data have been collected from 34 sites.",
+            "25": "The All of Us data repository should permit researchers to take into account individual differences in lifestyle.",
+            "26": "The All of Us data repository should permit researchers to take into account individual differences in socioeconomic factors.",
+            "27": "The All of Us data repository should permit researchers to take into account individual differences in environment.",
+            "28": "The All of Us data repository should permit researchers to take into account individual differences in biologic characteristics.",
+            "29": "Taking into account individual differences in lifestyle, socioeconomic factors, environment, and biologic characteristics aims to advance precision diagnosis.",
+            "30": "Taking into account individual differences in lifestyle, socioeconomic factors, environment, and biologic characteristics aims to advance precision prevention.",
+            "31": "Taking into account individual differences in lifestyle, socioeconomic factors, environment, and biologic characteristics aims to advance precision treatment."
+          }
+        },
+        "viewpoints": [
+          "The researchers use the large and ancestrally-diverse All of Us cohort to compare the classification of individuals with high genetic risk.",
+          "The comparison is based on published polygenic scores for coronary artery disease.",
+          "The comparison is based on published polygenic scores for type 2 diabetes mellitus.",
+          "The comparison is based on published polygenic scores for major depressive disorder."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "We also test the effect of using PRSmix [23] — a tool that agnostically integrates information across several PRS for a given trait to improve prediction accuracy for a target population — in influencing high genetic risk classification over iterations of polygenic scores.",
+        "references": {
+          "23": {
+            "1": "Polygenic risk scores (PRSs) are an emerging tool.",
+            "2": "Polygenic risk scores (PRSs) are used to predict the clinical phenotypes of individuals.",
+            "3": "Polygenic risk scores (PRSs) are used to predict the outcomes of individuals.",
+            "4": "PRSmix is a proposed framework that leverages the PRS corpus of a target trait to improve prediction accuracy.",
+            "5": "PRSmix+ incorporates genetically correlated traits to better capture the human genetic architecture.",
+            "6": "PRSmix+ is designed for 47 diseases/traits in European ancestries and 32 diseases/traits in South Asian ancestries.",
+            "7": "PRSmix demonstrated a mean prediction accuracy improvement of 1.20-fold.",
+            "8": "The 95% confidence interval for PRSmix's prediction accuracy improvement is [1.10; 1.3].",
+            "9": "The p-value of PRSmix's prediction accuracy improvement is 9.17 × 10."
+          }
+        },
+        "viewpoints": [
+          "The researchers test the effect of using PRSmix on high genetic risk classification.",
+          "PRSmix is a tool that agnostically integrates information across several polygenic risk scores for a given trait.",
+          "PRSmix aims to improve prediction accuracy for a target population."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "We find extreme disagreement regarding individual-level high-risk classification between published scores and observe how integrative scoring via PRSmix mitigates this instability.",
+        "references": {},
+        "viewpoints": [
+          "The researchers find extreme disagreement in individual-level high-risk classification between published polygenic risk scores.",
+          "Integrative scoring via PRSmix mitigates this instability in high-risk classification."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56945-0_with_abstracts",
+    "base_id": "s41467-025-56945-0",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56945-0_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

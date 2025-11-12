@@ -1,0 +1,653 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Since the discovery of ferroelectrics in Rochelle salt in the 1920s [1] , ferroelectric materials have garnered considerable attention due to their unique structural properties at the unit cell level for various applications. The symmetry-breaking nature of the electrostatic boundary condition, which generates a permanent depolarization field confers ferroelectrics with unique physical properties. Presently, studies on ferroelectrics mainly fall into two categories. One focuses on polarization variation, such as ferroelectric memories [2] , [3] , negative capacitance [4] , [5] , and the electrocaloric effect [6] , [7] . The other explores the coupling between ferroelectric polarization and light, such as the electro-optic (non-linear optics) effect [8] , bulk photovoltaic effect (BPVE) [9] , [10] , [11] , [12] , [13] , and photoelectric or photocatalytic applications [14] , [15] , [16] . Despite significant efforts in both areas, the practical application of ferroelectrics still faces significant challenges. One of the most promising and challenging applications of ferroelectrics is the conversion of solar energy into electricity or chemicals, facilitated by the intrinsic advantages of asymmetrical unit cells for charge separation and transfer [17] , [18] . Distinct from other semiconductors, where carrier migration primarily occurs through drift and diffusion, ferroelectrics exhibit a unique mechanism: before screening, carriers predominantly migrate by drifting within the depolarization electric field. Specifically, positive holes and negative electrons move in opposite polarization directions [19] , [20] , [21] , [22] , and increasing the thickness along the polarization direction of ferroelectric PbTiO 3 enhances the driving force for charge separation, consequently augmenting the photocatalytic hydrogen evolution activities [19] . This distinct structural characteristic of ferroelectrics makes them particularly suitable as photocatalysts. Despite the theoretical threshold of around 10 5 kV/cm for electric field present within ferroelectrics, which is about 3–4 orders of magnitude higher than that measured in conventional semiconductor photocatalysts [23] , ferroelectric catalysts have unexpectedly shown relatively poor water splitting performance in actual practice. In fact, the efficiencies reported so far for ferroelectrics are significantly lower compared to other strategies, such as p-n junctions [24] , [25] , [26] , heterojunctions [27] , [28] , [29] , [30] , [31] , facet engineering [32] , [33] , defect introduction and doping methods [34] , [35] , [36] , cocatalysts [37] , [38] , the Dember effect [39] , and Z-scheme systems [40] , [41] . Efforts have been made to enhance the depolarization field of ferroelectric catalysts by mitigating the internal screening charges, which naturally occur alongside the formation of the crystal structure. In this context, pioneering research has shown that the activity is moderately increased when these internal screening charges are partially eliminated, indicating that such elimination can contribute to improved activity [42] . In particular, a recent study has demonstrated that the growth of SrTiO 3 (STO) nanolayers on the positively polarized surface of PbTiO 3 (PTO) particles enhances the overall water-splitting activity by a factor of 15 [43] . It is hypothesized that the enhancement may be attributed to the reduced Schottky barrier height and increased dispersion of the cocatalyst. However, despite these significant advancements over the last several decades, it is worth noting that ferroelectrics have a larger electric field for charge separation compared to the other strategies mentioned above [19] , [44] . This suggests that the inherent driving force for charge separation within the bulk phase of ferroelectric materials is not an impediment to achieving high photocatalytic activity. This raises an important question: what are the key factors limiting the transfer of photogenerated charges to surface reaction sites? Understanding this challenge is essential for unlocking the full potential of ferroelectric materials to achieve significantly enhanced photocatalytic performance. In this work, a profound mechanistic study was carried out to investigate the role of defective structures on the efficiency of photogenerated electrons from the positive surface of PTO in the overall water-splitting reaction. Our study shows that the main obstacle for efficient photocatalytic water splitting by PTO is the existence of Ti defects at the positive polarization facets that inhibit efficient electron transfer for hydrogen production. By eliminating abundant Ti defective sites on the positive surface of PTO through the growth of STO nanolayers, AQE@365 nm of the overall water splitting was elevated by 400 times due to the construction of a highly efficient electron transfer route. Precise control of surface defects is a potent strategy for improving ferroelectric photocatalyst performance in water splitting.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Since the discovery of ferroelectrics in Rochelle salt in the 1920s [1], ferroelectric materials have garnered considerable attention due to their unique structural properties at the unit cell level for various applications.",
+        "references": {
+          "1": {
+            "1": "On the doublet theory of dielectric action, the dielectric displacement D, electric intensity E, and the polarization P are analogous to B, H, and I in the case of magnetism.",
+            "2": "Rochelle salt shows an electric hysteresis in polarization P.",
+            "3": "The electric hysteresis in polarization P in Rochelle salt is analogous to the magnetic hysteresis in the case of iron.",
+            "4": "The loops obtained in electric hysteresis of Rochelle salt are displaced from the origin.",
+            "5": "The displacement of loops from the origin gives a measure of the permanent polarization in the natural state.",
+            "6": "The moment per unit volume in the natural state of Rochelle salt is about 50 e.s.u./cm² under ordinary conditions.",
+            "7": "The moment per unit volume in the natural state of Rochelle salt is about 13.3 × 10⁻²¹ e.s.u./cm² per molecule.",
+            "8": "Mechanical force and electric field are to a certain extent equivalent in producing a change in the piezo-electric moment of Rochelle salt.",
+            "9": "Measurements of the piezo-electric response in various applied fields give curves of the same nature as the curves of dD/dE against E.",
+            "10": "The curves of piezo-electric response in various applied fields show maxima displaced from the origin by the effect of permanent polarization."
+          }
+        },
+        "viewpoints": [
+          "Ferroelectric materials have garnered considerable attention since their discovery in Rochelle salt in the 1920s.",
+          "Ferroelectric materials are noted for their unique structural properties at the unit cell level.",
+          "Ferroelectric materials are used in various applications."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "The symmetry-breaking nature of the electrostatic boundary condition, which generates a permanent depolarization field, confers ferroelectrics with unique physical properties.",
+        "references": {},
+        "viewpoints": [
+          "The symmetry-breaking nature of the electrostatic boundary condition generates a permanent depolarization field in ferroelectrics.",
+          "The symmetry-breaking nature of the electrostatic boundary condition confers unique physical properties on ferroelectrics."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Presently, studies on ferroelectrics mainly fall into two categories.",
+        "references": {},
+        "viewpoints": [
+          "Studies on ferroelectrics mainly fall into two categories."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "One focuses on polarization variation, such as ferroelectric memories [2], [3], negative capacitance [4], [5], and the electrocaloric effect [6], [7].",
+        "references": {
+          "2": {
+            "1": "It has become possible to fabricate ferroelectric thin-film memories onto standard silicon integrated circuits.",
+            "2": "Ferroelectric thin-film memories combine very high speed with 30-nanosecond read/erase/rewrite operation.",
+            "3": "Ferroelectric thin-film memories combine 5-volt standard silicon logic levels.",
+            "4": "Ferroelectric thin-film memories combine very high density with a 2 by 2 micrometer cell size.",
+            "5": "Ferroelectric thin-film memories are completely nonvolatile, requiring no standby power.",
+            "6": "Ferroelectric thin-film memories have extreme radiation hardness.",
+            "7": "Ferroelectric random-access memories are expected to replace magnetic core memory for many applications.",
+            "8": "Ferroelectric random-access memories are expected to replace magnetic bubble memory systems for many applications.",
+            "9": "Ferroelectric random-access memories are expected to replace electrically erasable read-only memory for many applications.",
+            "10": "The switching kinetics of ferroelectric films that are 100 to 300 nanometers thick are now well understood.",
+            "11": "The switching times of ferroelectric films fit an activation field dependence.",
+            "12": "The activation field dependence of switching times scales with applied field and temperature.",
+            "13": "Earlier problems of fatigue in ferroelectric thin-film memories are now understood.",
+            "14": "Earlier problems of retention failure in ferroelectric thin-film memories are now understood.",
+            "15": "Problems of fatigue in ferroelectric thin-film memories have been improved to acceptable levels.",
+            "16": "Problems of retention failure in ferroelectric thin-film memories have been improved to acceptable levels."
+          },
+          "3": {
+            "1": "Ferroelectricity has long been viewed as a topic in classical physics.",
+            "2": "Ferroelectricity can be described by a quantum mechanical ab initio theory.",
+            "3": "Thin-film nanoscale device structures integrated onto silicon chips have made inroads into the semiconductor industry.",
+            "4": "Ultrafast switching is a recent prototype application of thin-film nanoscale device structures.",
+            "5": "Cheap room-temperature magnetic-field detectors are a recent prototype application of thin-film nanoscale device structures.",
+            "6": "Piezoelectric nanotubes for microfluidic systems are a recent prototype application of thin-film nanoscale device structures.",
+            "7": "Electrocaloric coolers for computers are a recent prototype application of thin-film nanoscale device structures.",
+            "8": "Phased-array radar is a recent prototype application of thin-film nanoscale device structures.",
+            "9": "Three-dimensional trenched capacitors for dynamic random access memories are a recent prototype application of thin-film nanoscale device structures.",
+            "10": "Terabit-per-square-inch ferroelectric arrays of lead zirconate titanate have been reported.",
+            "11": "These ferroelectric arrays have been reported on platinum nanowire interconnects and nanorings with 5-nanometer diameters.",
+            "12": "Electron emission from ferroelectrics yields cheap, high-power microwave devices.",
+            "13": "Electron emission from ferroelectrics yields miniature x-ray sources.",
+            "14": "Electron emission from ferroelectrics yields miniature neutron sources."
+          },
+          "4": {
+            "1": "Negative capacitance is a newly discovered state of ferroelectric materials.",
+            "2": "Negative capacitance holds promise for electronics applications.",
+            "3": "Negative capacitance exploits a region of thermodynamic space that is normally not accessible.",
+            "4": "Existing reports of negative capacitance substantiate the importance of negative capacitance.",
+            "5": "Existing reports of negative capacitance have focused on the macroscale manifestation of negative capacitance.",
+            "6": "The macroscale manifestations of negative capacitance demonstrate possible uses of steady-state negative capacitance.",
+            "7": "Steady-state negative capacitance can be used to enhance the capacitance of a ferroelectric–dielectric heterostructure.",
+            "8": "Steady-state negative capacitance can be used to improve the subthreshold swing of a transistor.",
+            "9": "Macroscale manifestations constitute only indirect measurements of the local state of negative capacitance in which the ferroelectric resides.",
+            "10": "Spatial mapping of negative capacitance would help in understanding negative capacitance at a microscopic scale.",
+            "11": "Spatial mapping of negative capacitance would help to achieve optimal design of devices with potential technological applications.",
+            "12": "A direct measurement of steady-state negative capacitance in a ferroelectric–dielectric heterostructure is demonstrated.",
+            "13": "Electron microscopy is used to directly determine the local regions in the ferroelectric material where a state of negative capacitance is stabilized.",
+            "14": "Phase-field and first-principles-based (second-principles) simulations in SrTiO₃/PbTiO₃ superlattices complement electron microscopy.",
+            "15": "The local regions in the ferroelectric material where a state of negative capacitance is stabilized are determined with atomic resolution.",
+            "16": "Simultaneous vector mapping of atomic displacements is related to a complex pattern in the polarization field.",
+            "17": "Reconstruction of the local electric field, in conjunction with vector mapping, identifies the negative capacitance regions.",
+            "18": "Negative capacitance regions are identified as those with higher energy density and larger polarizability.",
+            "19": "Negative capacitance regions are located at the domain walls where the polarization is suppressed."
+          },
+          "5": {
+            "1": "Ferroelectric materials have properties that have been known for almost a century.",
+            "2": "The properties of ferroelectric materials have led to a wide range of applications.",
+            "3": "Applications of ferroelectric materials include digital information storage, pyroelectric energy conversion, and neuromorphic computing.",
+            "4": "Ferroelectrics can have negative capacitance.",
+            "5": "Negative capacitance in ferroelectrics could improve the energy efficiency of conventional electronics beyond fundamental limits.",
+            "6": "In Landau–Ginzburg–Devonshire theory, negative capacitance is directly related to the double-well shape of the ferroelectric polarization–energy landscape.",
+            "7": "The double-well shape of the ferroelectric polarization–energy landscape was thought for more than 70 years to be inaccessible to experiments.",
+            "8": "Electrical measurements of the intrinsic double-well energy landscape in a thin layer of ferroelectric Hf0.5Zr0.5O2 are reported.",
+            "9": "The ferroelectric was integrated into a heterostructure capacitor with a second dielectric layer.",
+            "10": "The second dielectric layer prevents immediate screening of polarization charges during switching.",
+            "11": "Negative capacitance has its origin in the energy barrier of a double-well landscape.",
+            "12": "Ferroelectric negative capacitance can be fast.",
+            "13": "Ferroelectric negative capacitance can be hysteresis-free.",
+            "14": "Being fast and hysteresis-free is important for prospective applications of ferroelectric negative capacitance.",
+            "15": "The Hf0.5Zr0.5O2 used in this work is currently the most industry-relevant ferroelectric material.",
+            "16": "HfO2 and ZrO2 thin films are already used in everyday electronics.",
+            "17": "The use of Hf0.5Zr0.5O2 could lead to fast adoption of negative capacitance effects.",
+            "18": "Future products could have markedly improved energy efficiency with the adoption of negative capacitance effects."
+          },
+          "6": {
+            "1": "More than a decade of research on the electrocaloric (EC) effect has resulted in EC materials.",
+            "2": "More than a decade of research on the electrocaloric (EC) effect has resulted in EC multilayer chips.",
+            "3": "EC materials and EC multilayer chips satisfy a minimum EC temperature change of 5 K required for caloric heat pumps.",
+            "4": "EC temperature changes are generated through the application of high electric fields.",
+            "5": "High electric fields used to generate EC temperature changes are close to the dielectric breakdown strengths.",
+            "6": "The application of high electric fields results in rapid degradation of EC performance.",
+            "7": "The application of high electric fields results in fatigue of EC performance.",
+            "8": "A reported class of EC polymer exhibits an EC entropy change of 37.5 J kg⁻¹ K⁻¹.",
+            "9": "The reported class of EC polymer exhibits a temperature change of 7.5 K under 50 MV m⁻¹.",
+            "10": "The reported EC polymer achieves a 275% enhancement in temperature change over state-of-the-art EC polymers under the same field strength.",
+            "11": "Converting a small number of chlorofluoroethylene groups in poly(vinylidene fluoride-trifluoroethylene-chlorofluoroethylene) terpolymer into covalent double bonds markedly increases the number of polar entities.",
+            "12": "Converting a small number of chlorofluoroethylene groups in poly(vinylidene fluoride-trifluoroethylene-chlorofluoroethylene) terpolymer into covalent double bonds enhances the polar–nonpolar interfacial areas of the polymer.",
+            "13": "The polar phases in the polymer adopt a loosely correlated state.",
+            "14": "The polar phases in the polymer adopt a high-entropy state.",
+            "15": "The polar phases in the polymer have a low energy barrier for electric-field-induced switching.",
+            "16": "The polymer maintains performance for more than one million cycles at low electric fields.",
+            "17": "Low electric fields are necessary for practical EC cooling applications.",
+            "18": "The strategy of using the reported polymer may yield materials suitable for use in caloric heat pumps."
+          },
+          "7": {
+            "1": "Pb0.8Ba0.2ZrO3 (PBZ) nanofibers were prepared through electrospinning.",
+            "2": "PBZ nanofibers were mixed at a volume composite ratio of 0–6% with polyvinylidene fluoride (PVDF).",
+            "3": "PVDF was dissolved in an organic solvent.",
+            "4": "The PBZ/PVDF composite film was prepared through casting.",
+            "5": "The nanocomposites with PBZ nanofibers of 3 vol% showed the best ferroelectric performance in this work.",
+            "6": "The maximum polarization value of the nanocomposite with PBZ nanofibers of 3 vol% was 9.69 μC/cm².",
+            "7": "The breakdown field strength of the nanocomposite with PBZ nanofibers of 3 vol% was 420 MV/m.",
+            "8": "The dielectric constant at a depolarization temperature of 285 K was 6.13.",
+            "9": "The dielectric loss at a depolarization temperature of 285 K was 0.21.",
+            "10": "The performance of the electrocaloric effect was studied using the direct method near room temperature.",
+            "11": "Under 150 MV/m and −30 °C, ΔT of the composite film was 13.99 K.",
+            "12": "Under 150 MV/m and −30 °C, ΔS of the composite film was 52.70 J/kg·K.",
+            "13": "When the temperature increased to 70 °C, ΔT of the composite film became 5.08 K.",
+            "14": "When the temperature increased to 70 °C, ΔS of the composite film became 13.56 J/kg·K."
+          }
+        },
+        "viewpoints": [
+          "One category of studies on ferroelectrics focuses on polarization variation.",
+          "Examples of polarization variation studies include ferroelectric memories, negative capacitance, and the electrocaloric effect."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "The other explores the coupling between ferroelectric polarization and light, such as the electro-optic (non-linear optics) effect [8], bulk photovoltaic effect (BPVE) [9], [10], [11], [12], [13], and photoelectric or photocatalytic applications [14], [15], [16].",
+        "references": {
+          "8": [],
+          "9": {
+            "1": "The theory of the bulk photovoltaic effect in ferroelectric and piezoelectric crystals has been reviewed.",
+            "2": "The experimental characteristics of the bulk photovoltaic effect in ferroelectric and piezoelectric crystals have been reviewed.",
+            "3": "The bulk photovoltaic effect in ferroelectric and piezoelectric crystals was first observed at the Institute of Crystallography.",
+            "4": "The review is dedicated to the memory of B.K. Vainshtein.",
+            "5": "B.K. Vainshtein's help in performing the works on the bulk photovoltaic effect was really inestimable."
+          },
+          "10": {
+            "1": "Optical absorption in pyroelectric crystals is accompanied by electrical effects.",
+            "2": "These electrical effects are in addition to the well-known pyroelectric effect.",
+            "3": "The electrical effects accompanying optical absorption in pyroelectric crystals are not present in other materials.",
+            "4": "Optical excitation between localized states causes an instantaneous macroscopic polarization change.",
+            "5": "The instantaneous macroscopic polarization change is due to the change of dipole moment at the absorbing center.",
+            "6": "Excitation of free carriers from localized states generally results in a bulk photovoltaic effect.",
+            "7": "The bulk photovoltaic effect results from asymmetric charge transfer.",
+            "8": "Spatially non-uniform illumination gives rise to internal fields.",
+            "9": "Internal fields resulting from spatially non-uniform illumination cause refractive index variations.",
+            "10": "The section will describe studies of electrical effects accompanying optical absorption for fast detection.",
+            "11": "The section will describe studies of electrical effects accompanying optical absorption for optical logic.",
+            "12": "The section will describe studies of electrical effects accompanying optical absorption for memories.",
+            "13": "The section will describe studies of electrical effects accompanying optical absorption for microwave generation."
+          },
+          "11": {
+            "1": "Ferroelectric absorbers promote carrier separation.",
+            "2": "Ferroelectric absorbers exhibit above-gap photovoltages.",
+            "3": "Ferroelectric absorbers are attractive candidates for constructing efficient solar cells.",
+            "4": "The ferroelectric insulator BaTiO₃ is used to demonstrate photogeneration and the collection of hot, non-equilibrium electrons.",
+            "5": "Photogeneration and the collection of hot, non-equilibrium electrons through the bulk photovoltaic effect yield a greater-than-unity quantum efficiency.",
+            "6": "The BPVE device absorbs less than a tenth of the solar spectrum.",
+            "7": "The power conversion efficiency of the BPVE device under 1 sun illumination exceeds the Shockley–Queisser limit for a material of this bandgap.",
+            "8": "Devices with a single-tip electrode contact and an array with 24 tips (total planar area of 1 × 1 μm²) can generate a current density of 17 mA cm⁻² under illumination of AM1.5 G.",
+            "9": "Data is presented for BPVE devices featuring a single-tip electrode contact and an array with 24 tips.",
+            "10": "The bulk photovoltaic effect at the nanoscale provides an exciting new route for obtaining high-efficiency photovoltaic solar energy conversion."
+          },
+          "12": {
+            "1": "A review of the Bulk Photovoltaic Effect (BPE) is presented.",
+            "2": "The Bulk Photovoltaic Effect could be observed in crystals belonging to 20 point groups without center of symmetry.",
+            "3": "The Bulk Photovoltaic Effect is observed in ferroelectrics.",
+            "4": "The Bulk Photovoltaic Effect is observed in piezoelectrics.",
+            "5": "Up to now, the Bulk Photovoltaic Effect was observed only in bulk crystals.",
+            "6": "The Bulk Photovoltaic Effect observed in bulk crystals has shown very low power conversion efficiency.",
+            "7": "At the nanoscale, the Bulk Photovoltaic Effect reveals much higher power conversion efficiency.",
+            "8": "The higher power conversion efficiency of the Bulk Photovoltaic Effect at the nanoscale opens perspectives for its application in solar cells.",
+            "9": "New applications of the Bulk Photovoltaic Effect in tunable band gap perovskites are considered.",
+            "10": "New applications of the Bulk Photovoltaic Effect in hybrid perovskites are considered.",
+            "11": "New applications of the Bulk Photovoltaic Effect in plasmonics are considered.",
+            "12": "New applications of the Bulk Photovoltaic Effect in topological insulators are considered."
+          },
+          "13": [],
+          "14": [],
+          "15": {
+            "1": "The development of ferroelectric materials into consumer-led applications has been a primary focus of recent ferroelectric material research.",
+            "2": "A ferroelectric can be viewed as a wide band gap semiconductor.",
+            "3": "A ferroelectric semiconductor can sustain a surface charge density.",
+            "4": "The surface charge density in ferroelectrics arises from the movement of ions in the crystal lattice.",
+            "5": "There is a need to compensate for the surface charge density in ferroelectrics.",
+            "6": "Viewing ferroelectrics as polarisable semiconductors allows for a large number of new interactions.",
+            "7": "The use of super band gap illumination can generate electron-hole pairs in ferroelectrics.",
+            "8": "Photogenerated carriers in ferroelectrics can perform local electrochemistry.",
+            "9": "In ferroelectric materials, REDOX chemistry can be chosen by selectively modifying the domain structure.",
+            "10": "It is possible to perform oxidation and reduction on the surface of the same ferroelectric material at spatially separate locations.",
+            "11": "The material can be used to drive photoexcited carriers apart in ferroelectric materials.",
+            "12": "It is possible to separate REDOX products in ferroelectric materials.",
+            "13": "Patterns of photogenerated material can be produced in predetermined places in ferroelectrics.",
+            "14": "The review aims to introduce the background research that has led to the current understanding of ferroelectric materials.",
+            "15": "The review aims to highlight some of the current areas in ferroelectric research that require further development."
+          },
+          "16": {
+            "1": "Ferroelectrics have attracted attention as a candidate class of materials for use in photovoltaic devices.",
+            "2": "Ferroelectrics have attracted attention for the coupling of light absorption with other functional properties.",
+            "3": "Strong inversion symmetry breaking in ferroelectrics is due to spontaneous electric polarization.",
+            "4": "Strong inversion symmetry breaking promotes the desirable separation of photo-excited carriers.",
+            "5": "Strong inversion symmetry breaking allows voltages higher than the bandgap.",
+            "6": "Voltages higher than the bandgap may enable efficiencies beyond the maximum possible in a conventional p–n junction solar cell.",
+            "7": "Ferroelectric oxides are stable in a wide range of mechanical conditions.",
+            "8": "Ferroelectric oxides are stable in a wide range of chemical conditions.",
+            "9": "Ferroelectric oxides are stable in a wide range of thermal conditions.",
+            "10": "Ferroelectric oxides can be fabricated using low-cost methods.",
+            "11": "Low-cost fabrication methods for ferroelectric oxides include sol–gel thin-film deposition.",
+            "12": "Low-cost fabrication methods for ferroelectric oxides include sputtering.",
+            "13": "Decreasing ferroelectric layer thickness can greatly increase the current harvested from ferroelectric absorber materials.",
+            "14": "Judicious engineering of domain structures can greatly increase the current harvested from ferroelectric absorber materials.",
+            "15": "Judicious engineering of ferroelectric–electrode interfaces can greatly increase the current harvested from ferroelectric absorber materials.",
+            "16": "Increased current harvested from ferroelectric absorber materials increases power conversion efficiency from about 10−4 to about 0.5 per cent.",
+            "17": "Wide bandgaps of ferroelectric oxides are 2.7–4 electronvolts.",
+            "18": "Wide bandgaps of ferroelectric oxides allow the use of only 8–20 per cent of the solar spectrum.",
+            "19": "Wide bandgaps of ferroelectric oxides inhibit further improvements in photovoltaic efficiency.",
+            "20": "A family of single-phase solid oxide solutions is described.",
+            "21": "The single-phase solid oxide solutions are made from low-cost elements.",
+            "22": "The single-phase solid oxide solutions are made from non-toxic elements.",
+            "23": "The single-phase solid oxide solutions are made using conventional solid-state methods.",
+            "24": "The composition of the single-phase solid oxide solutions is [KNbO3]1−x[BaNi1/2Nb1/2O3−δ]x, referred to as KBNNO.",
+            "25": "The oxides exhibit ferroelectricity.",
+            "26": "The oxides exhibit a wide variation of direct bandgaps in the range 1.1–3.8 electronvolts.",
+            "27": "The x = 0.1 composition of KBNNO is polar at room temperature.",
+            "28": "The x = 0.1 composition of KBNNO has a direct bandgap of 1.39 electronvolts.",
+            "29": "The x = 0.1 composition of KBNNO has a photocurrent density approximately 50 times larger than that of the classic ferroelectric (Pb,La)(Zr,Ti)O3 material.",
+            "30": "KBNNO can absorb three to six times more solar energy than the current ferroelectric materials.",
+            "31": "The ability of KBNNO to absorb more solar energy suggests a route to viable ferroelectric semiconductor-based cells for solar energy conversion.",
+            "32": "The ability of KBNNO to absorb more solar energy suggests a route to viable ferroelectric semiconductor-based cells for other applications."
+          }
+        },
+        "viewpoints": [
+          "The other category of studies on ferroelectrics explores the coupling between ferroelectric polarization and light.",
+          "Examples of light coupling studies include the electro-optic effect, bulk photovoltaic effect, and photoelectric or photocatalytic applications."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Despite significant efforts in both areas, the practical application of ferroelectrics still faces significant challenges.",
+        "references": {},
+        "viewpoints": [
+          "The practical application of ferroelectrics still faces significant challenges despite significant efforts in both categories of studies."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "One of the most promising and challenging applications of ferroelectrics is the conversion of solar energy into electricity or chemicals, facilitated by the intrinsic advantages of asymmetrical unit cells for charge separation and transfer [17], [18].",
+        "references": {
+          "17": {
+            "1": "Ferroelectric oxide materials have been considered promising for applications for more than 50 years.",
+            "2": "The potential of ferroelectric oxide materials has been recognized since the discovery of ferroelectric perovskites.",
+            "3": "The switchable electric polarization of ferroelectric oxide materials is ideal for use in memory storage devices.",
+            "4": "The switchable electric polarization of ferroelectric oxide materials is ideal for integrated microelectronics.",
+            "5": "Progress in utilizing ferroelectric oxide materials has been hampered by difficulties in materials processing.",
+            "6": "Recent breakthroughs in synthesizing complex oxides have advanced the field significantly.",
+            "7": "Complex artificial oxide structures can now be realized with atomic-level precision.",
+            "8": "The precision in creating artificial oxide structures is comparable to that known for semiconductor heterostructures.",
+            "9": "High-quality ferroelectric films can now be grown for new device capabilities.",
+            "10": "Ferroelectrics can be combined with high-temperature superconductors to create multifunctional materials and devices.",
+            "11": "Ferroelectrics can be combined with magnetic oxides to create multifunctional materials and devices.",
+            "12": "The shrinking of relevant lengths to the nanoscale produces new physical phenomena.",
+            "13": "Real-space characterization at atomic scales involves new kinds of local probes.",
+            "14": "Real-space manipulation at atomic scales involves new kinds of local probes.",
+            "15": "First-principles theory plays a key role in characterizing and manipulating structures and properties at atomic scales."
+          },
+          "18": {
+            "1": "The recombination of photogenerated electron-hole pairs in the photocatalyst limits the efficiency of various photocatalytic processes.",
+            "2": "The back-reaction of intermediate species limits the efficiency of various photocatalytic processes.",
+            "3": "The use of ferroelectric polarization can mitigate electron-hole recombination.",
+            "4": "The use of ferroelectric polarization can mitigate back-reactions.",
+            "5": "Mitigating electron-hole recombination and back-reactions can improve photochemical reactivity.",
+            "6": "Ferroelectric materials are considered wide band gap semiconductors.",
+            "7": "Ferroelectric materials are considered polarizable semiconductors.",
+            "8": "Surface polarization causes different regions of the surface to experience different extents of band bending.",
+            "9": "Different extents of band bending promote different carriers to move to spatially different locations.",
+            "10": "Surface polarization can lead to interesting interactions at the surface.",
+            "11": "Interesting interactions at the surface include spatially selective adsorption.",
+            "12": "Interesting interactions at the surface include surface redox reactions.",
+            "13": "The review covers the fundamental properties of ferroelectric materials.",
+            "14": "The review covers the effect of an internal electric field on charge carrier separation.",
+            "15": "The review covers the effect of polarization on charge carrier separation.",
+            "16": "The review covers the effect of polarization on surface photochemistry.",
+            "17": "The review reviews the work done on the use of ferroelectric materials for photocatalytic applications.",
+            "18": "Ferroelectric materials are used for photocatalytic applications such as dye degradation.",
+            "19": "Ferroelectric materials are used for photocatalytic applications such as water splitting.",
+            "20": "The manipulation of photogenerated charge carriers through an internal electric field is a promising strategy for the design of improved photocatalysts.",
+            "21": "The manipulation of photogenerated charge carriers through surface polarization is a promising strategy for the design of improved photocatalysts."
+          }
+        },
+        "viewpoints": [
+          "The conversion of solar energy into electricity or chemicals is one of the most promising and challenging applications of ferroelectrics.",
+          "The intrinsic advantages of asymmetrical unit cells facilitate charge separation and transfer in ferroelectrics."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "Distinct from other semiconductors, where carrier migration primarily occurs through drift and diffusion, ferroelectrics exhibit a unique mechanism: before screening, carriers predominantly migrate by drifting within the depolarization electric field.",
+        "references": {},
+        "viewpoints": [
+          "Carrier migration in other semiconductors primarily occurs through drift and diffusion.",
+          "Ferroelectrics exhibit a unique mechanism of carrier migration.",
+          "Before screening in ferroelectrics, carriers predominantly migrate by drifting within the depolarization electric field."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Specifically, positive holes and negative electrons move in opposite polarization directions [19], [20], [21], [22], and increasing the thickness along the polarization direction of ferroelectric PbTiO3 enhances the driving force for charge separation, consequently augmenting the photocatalytic hydrogen evolution activities [19].",
+        "references": {
+          "19": [],
+          "20": [],
+          "21": [],
+          "22": []
+        },
+        "viewpoints": [
+          "Positive holes and negative electrons move in opposite polarization directions in ferroelectrics.",
+          "Increasing the thickness along the polarization direction of ferroelectric PbTiO3 enhances the driving force for charge separation.",
+          "Increasing the thickness along the polarization direction of ferroelectric PbTiO3 augments photocatalytic hydrogen evolution activities."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "This distinct structural characteristic of ferroelectrics makes them particularly suitable as photocatalysts.",
+        "references": {},
+        "viewpoints": [
+          "The distinct structural characteristic of ferroelectrics makes them particularly suitable as photocatalysts."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Despite the theoretical threshold of around 105 kV/cm for electric field present within ferroelectrics, which is about 3–4 orders of magnitude higher than that measured in conventional semiconductor photocatalysts [23], ferroelectric catalysts have unexpectedly shown relatively poor water splitting performance in actual practice.",
+        "references": {
+          "23": {
+            "1": "Ferroelectrics are considered excellent photocatalytic candidates for solar fuel production.",
+            "2": "The unidirectional charge separation in ferroelectrics makes them excellent photocatalytic candidates.",
+            "3": "The above-gap photovoltage of ferroelectrics makes them excellent photocatalytic candidates.",
+            "4": "The performance of ferroelectric photocatalysts is often moderate.",
+            "5": "A few studies showed that ferroelectric photocatalysts could achieve overall water splitting.",
+            "6": "This paper proposes an approach to fabricating interfacial charge-collecting nanostructures on the positive and negative domains of ferroelectric.",
+            "7": "Fabricating interfacial charge-collecting nanostructures on the positive and negative domains of ferroelectric enables water splitting in ferroelectric photocatalysts.",
+            "8": "The present study observes efficient accumulations of photogenerated electrons within their thermalization length (~50 nm) around Au nanoparticles located in the positive domains of a BaTiO₃ single crystal.",
+            "9": "The present study observes efficient accumulations of photogenerated holes within their thermalization length (~50 nm) around Au nanoparticles located in the negative domains of a BaTiO₃ single crystal.",
+            "10": "Photocatalytic overall water splitting is observed on a ferroelectric BaTiO₃ single crystal.",
+            "11": "Oxidation cocatalysts are assembled on the positively charged Au nanoparticles on a BaTiO₃ single crystal.",
+            "12": "Reduction cocatalysts are assembled on the negatively charged Au nanoparticles on a BaTiO₃ single crystal.",
+            "13": "The fabrication of bipolar charge-collecting structures on ferroelectrics achieves overall water splitting.",
+            "14": "The fabrication of bipolar charge-collecting structures on ferroelectrics offers a way to utilize the energetic photogenerated charges in solar energy conversion."
+          }
+        },
+        "viewpoints": [
+          "The theoretical threshold for the electric field present within ferroelectrics is around 105 kV/cm.",
+          "This threshold is about 3–4 orders of magnitude higher than the electric field measured in conventional semiconductor photocatalysts.",
+          "Ferroelectric catalysts have unexpectedly shown relatively poor water splitting performance in actual practice."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "In fact, the efficiencies reported so far for ferroelectrics are significantly lower compared to other strategies, such as p-n junctions [24], [25], [26], heterojunctions [27], [28], [29], [30], [31], facet engineering [32], [33], defect introduction and doping methods [34], [35], [36], cocatalysts [37], [38], the Dember effect [39], and Z-scheme systems [40], [41].",
+        "references": {
+          "24": {
+            "1": "The detailed balance limit of efficiency is a calculated upper theoretical limit for the efficiency of p-n junction solar energy converters.",
+            "2": "The detailed balance limit of efficiency is based on an ideal case where radiative recombination is the only recombination mechanism for hole-electron pairs.",
+            "3": "The principle of detailed balance requires that radiative recombination is the only mechanism in the calculation of the limiting efficiency.",
+            "4": "Efficiency is calculated for a case where radiative recombination is only a fixed fraction f_{c} of the total recombination.",
+            "5": "The rest of the recombination, aside from the fixed fraction radiative, is nonradiative.",
+            "6": "Efficiencies at matched loads are calculated using band gap and fraction f_{c} as parameters.",
+            "7": "The sun and cell are assumed to be blackbodies with temperatures of 6000°K and 300°K, respectively, in the efficiency calculations.",
+            "8": "The maximum efficiency is 30% for an energy gap of 1.1 eV and a radiative recombination fraction f_{c} of 1.",
+            "9": "Actual junctions do not obey the predicted current-voltage relationship.",
+            "10": "The paper discusses reasons for the difference between actual junctions and predicted current-voltage relationships.",
+            "11": "The relevance of the difference to efficiency is discussed in the paper."
+          },
+          "25": [],
+          "26": [],
+          "27": [],
+          "28": [],
+          "29": [],
+          "30": [],
+          "31": {
+            "1": "Semiconductor-based photocatalysis furnishes a prospective solution to environmental and renewable energy issues.",
+            "2": "The efficiency of semiconductor-based photocatalysis greatly relies on the effective bulk and surface separation of photoexcited charge carriers.",
+            "3": "Exploitation of atomic-level strategies allows in-depth understanding of the mechanisms related to photocatalysis.",
+            "4": "Exploitation of atomic-level strategies enables the bottom-up precise design of photocatalysts.",
+            "5": "Exploitation of atomic-level strategies significantly enhances photocatalytic activity.",
+            "6": "Advances on atomic-level charge separation strategies toward developing robust photocatalysts are highlighted in the paper.",
+            "7": "The paper elucidates the fundamentals of charge separation processes.",
+            "8": "The paper elucidates the fundamentals of charge transfer processes.",
+            "9": "The paper elucidates advanced probing techniques.",
+            "10": "Atomic-level bulk charge separation strategies are embodied by the regulation of charge movement pathways.",
+            "11": "Atomic-level bulk charge separation strategies are embodied by the regulation of migration dynamics.",
+            "12": "Atomic-level bulk charge separation strategies involve shortening the charge diffusion distance to the atomic scale.",
+            "13": "Atomic-level bulk charge separation strategies involve establishing atomic-level charge transfer channels.",
+            "14": "Atomic-level bulk charge separation strategies involve enhancing the charge separation driving force.",
+            "15": "Regulating the in-plane surface structure is an atomic-level surface charge separation strategy.",
+            "16": "Regulating the spatial surface structure is an atomic-level surface charge separation strategy.",
+            "17": "Collaborative strategies for simultaneous manipulation of bulk and surface photocharges are introduced.",
+            "18": "The existing challenges for the fabrication of state-of-the-art photocatalysts are discussed.",
+            "19": "The future prospects for the fabrication of state-of-the-art photocatalysts are discussed.",
+            "20": "The discussion of challenges and prospects is based on a thorough comprehension of atomic-level charge separation strategies."
+          },
+          "32": [],
+          "33": [],
+          "34": {
+            "1": "A photocatalyst with high reactivity under visible light is needed to use solar irradiation or interior lighting efficiently.",
+            "2": "Films and powders of TiO₂₋ₓNₓ have shown improvement over titanium dioxide (TiO₂) under visible light in optical absorption.",
+            "3": "Films and powders of TiO₂₋ₓNₓ have shown improvement over titanium dioxide (TiO₂) under visible light in photocatalytic activity, such as photodegradations of methylene blue and gaseous acetaldehyde.",
+            "4": "Films and powders of TiO₂₋ₓNₓ have shown improvement over titanium dioxide (TiO₂) under visible light in the hydrophilicity of the film surface.",
+            "5": "Visible light in this context refers to a wavelength of less than 500 nanometers.",
+            "6": "Doping nitrogen into substitutional sites of TiO₂ is indispensable for band-gap narrowing of TiO₂.",
+            "7": "Doping nitrogen into substitutional sites of TiO₂ is indispensable for the photocatalytic activity of TiO₂.",
+            "8": "The indispensability of nitrogen doping in TiO₂ for band-gap narrowing and photocatalytic activity was assessed by first-principles calculations and x-ray photoemission spectroscopy."
+          },
+          "35": [],
+          "36": [],
+          "37": {
+            "1": "Cocatalysts of photocatalysts are indispensable for high efficiency in artificial photosynthesis for solar fuel production.",
+            "2": "Dual cocatalysts of photocatalysts are indispensable for high efficiency in artificial photosynthesis for solar fuel production.",
+            "3": "The reaction activity increased by cocatalysts cannot be directly ascribed to the accelerated catalytic kinetics.",
+            "4": "Photogenerated charges are involved in the elementary steps of photocatalytic reactions.",
+            "5": "There are diverging views about the role of cocatalysts in photocatalysis.",
+            "6": "The exact role of cocatalysts in photocatalysis is not well understood yet.",
+            "7": "The local separation of photogenerated charge carriers across single crystals of the BiVO₄ photocatalyst is imaged directly.",
+            "8": "The BiVO₄ photocatalyst is loaded locally with nanoparticles of a MnOₓ single cocatalyst.",
+            "9": "The BiVO₄ photocatalyst is loaded with nanoparticles of a spatially separated MnOₓ and Pt dual cocatalyst.",
+            "10": "The deposition of the MnOₓ single cocatalyst resulted in a strong increase of the interfacial charge transfer.",
+            "11": "The deposition of the MnOₓ single cocatalyst surprisingly resulted in a change of the direction of built-in electric fields beneath the uncovered surface of the photocatalyst.",
+            "12": "The additive electric fields caused a strong increase of local surface photovoltage signals up to 80 times.",
+            "13": "The increase of local surface photovoltage signals correlated with the increase of the photocatalytic performance.",
+            "14": "The local electric fields were further increased up to 2.5 kV·cm⁻¹ by a synergetic effect of the spatially separated dual cocatalysts.",
+            "15": "The cocatalyst has a conclusive effect on charge separation in the photocatalyst particle.",
+            "16": "The cocatalyst aligns the vectors of built-in electric fields in the photocatalyst particle.",
+            "17": "The effect of the cocatalyst on charge separation is beyond its catalytic function in thermal catalysis."
+          },
+          "38": [],
+          "39": [],
+          "40": [],
+          "41": {
+            "1": "Rapid industrial development causes serious energy crises.",
+            "2": "Rapid industrial development causes serious environmental crises.",
+            "3": "Photocatalysts provide a potential strategy to solve energy crises by directly converting solar energy into usable energy resources.",
+            "4": "Photocatalysts provide a potential strategy to solve energy crises by directly converting solar energy into storable energy resources.",
+            "5": "Photocatalysts provide a potential strategy to solve environmental crises by decomposing organic pollutants under solar-light irradiation.",
+            "6": "Photocatalysts require a wide absorption range for applications that convert solar energy and decompose pollutants.",
+            "7": "Photocatalysts require long-term stability for applications that convert solar energy and decompose pollutants.",
+            "8": "Photocatalysts require high charge-separation efficiency for applications that convert solar energy and decompose pollutants.",
+            "9": "Photocatalysts require strong redox ability for applications that convert solar energy and decompose pollutants.",
+            "10": "It is often difficult for a single-component photocatalyst to fulfill the requirement of a wide absorption range.",
+            "11": "It is often difficult for a single-component photocatalyst to fulfill the requirement of long-term stability.",
+            "12": "It is often difficult for a single-component photocatalyst to fulfill the requirement of high charge-separation efficiency.",
+            "13": "It is often difficult for a single-component photocatalyst to fulfill the requirement of strong redox ability.",
+            "14": "Artificial heterogeneous Z-scheme photocatalytic systems mimic the natural photosynthesis process.",
+            "15": "Artificial heterogeneous Z-scheme photocatalytic systems overcome the drawbacks of single-component photocatalysts.",
+            "16": "Artificial heterogeneous Z-scheme photocatalytic systems satisfy the requirements of a wide absorption range, long-term stability, high charge-separation efficiency, and strong redox ability.",
+            "17": "Multi-task systems like artificial heterogeneous Z-scheme photocatalytic systems have been extensively investigated in the past decade.",
+            "18": "All-solid-state Z-scheme photocatalytic systems without redox pair have been widely used in water splitting.",
+            "19": "All-solid-state Z-scheme photocatalytic systems have been widely used in solar cells.",
+            "20": "All-solid-state Z-scheme photocatalytic systems have been widely used in the degradation of pollutants.",
+            "21": "All-solid-state Z-scheme photocatalytic systems have been widely used in CO₂ conversion.",
+            "22": "All-solid-state Z-scheme photocatalytic systems have a huge potential to solve the current energy crises facing modern industrial development.",
+            "23": "All-solid-state Z-scheme photocatalytic systems have a huge potential to solve the current environmental crises facing modern industrial development.",
+            "24": "This review provides a concise overview of the composition of all-solid-state Z-scheme photocatalytic systems.",
+            "25": "This review provides a concise overview of the construction of all-solid-state Z-scheme photocatalytic systems.",
+            "26": "This review provides a concise overview of the optimization of all-solid-state Z-scheme photocatalytic systems.",
+            "27": "This review provides a concise overview of the applications of all-solid-state Z-scheme photocatalytic systems."
+          }
+        },
+        "viewpoints": [
+          "Efficiencies reported so far for ferroelectrics are significantly lower than p-n junctions, heterojunctions, facet engineering, defect introduction and doping methods, cocatalysts, the Dember effect, and Z-scheme systems."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Efforts have been made to enhance the depolarization field of ferroelectric catalysts by mitigating the internal screening charges, which naturally occur alongside the formation of the crystal structure.",
+        "references": {},
+        "viewpoints": [
+          "Efforts have been made to enhance the depolarization field of ferroelectric catalysts.",
+          "Enhancement efforts involve mitigating the internal screening charges in ferroelectric catalysts.",
+          "Internal screening charges naturally occur alongside the formation of the crystal structure of ferroelectric catalysts."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "In this context, pioneering research has shown that the activity is moderately increased when these internal screening charges are partially eliminated, indicating that such elimination can contribute to improved activity [42].",
+        "references": {
+          "42": []
+        },
+        "viewpoints": [
+          "Pioneering research has shown moderate increases in activity when internal screening charges are partially eliminated.",
+          "Elimination of internal screening charges can contribute to improved activity in ferroelectric catalysts."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "In particular, a recent study has demonstrated that the growth of SrTiO3 (STO) nanolayers on the positively polarized surface of PbTiO3 (PTO) particles enhances the overall water-splitting activity by a factor of 15 [43].",
+        "references": {
+          "43": []
+        },
+        "viewpoints": [
+          "The growth of SrTiO3 (STO) nanolayers on the positively polarized surface of PbTiO3 (PTO) particles enhances the overall water-splitting activity by a factor of 15."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "It is hypothesized that the enhancement may be attributed to the reduced Schottky barrier height and increased dispersion of the cocatalyst.",
+        "references": {},
+        "viewpoints": [
+          "The enhancement in water-splitting activity may be attributed to the reduced Schottky barrier height.",
+          "The enhancement may be attributed to the increased dispersion of the cocatalyst."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "However, despite these significant advancements over the last several decades, it is worth noting that ferroelectrics have a larger electric field for charge separation compared to the other strategies mentioned above [19], [44].",
+        "references": {
+          "19": [],
+          "44": {
+            "1": "Optimizing photocatalytic solar energy conversion efficiency requires understanding photogenerated charge separation on the nano- to micrometer scale.",
+            "2": "Spatially resolved surface photovoltage techniques have opened up new opportunities to directly image localized charge separation at surfaces or interfaces of photocatalysts.",
+            "3": "Spatially resolved surface photovoltage techniques have provided deep insights into the understanding of photocatalysis.",
+            "4": "The review covered SPV techniques with a focus on Kelvin probe force microscopy-based spatially resolved SPV techniques.",
+            "5": "The review included the applications of SPV techniques in charge separation imaging.",
+            "6": "The SPV principle was explained with regard to charge separation across a space charge region in a depletion layer at a semiconductor surface.",
+            "7": "The SPV principle was explained with regard to diffusion.",
+            "8": "The center of charge approach was described.",
+            "9": "The relaxation of SPV signals was described.",
+            "10": "The measurement of SPV signals, including SPV transients with fixed capacitors, was described.",
+            "11": "The review highlighted the fundamental principle of the spatially resolved SPV technique.",
+            "12": "The review highlighted the development of the spatially resolved SPV technique.",
+            "13": "The review highlighted the application of the spatially resolved SPV technique in photocatalysis.",
+            "14": "Important progress made by the spatially resolved SPV technique in the group is presented, focusing on understanding the nature of charge separation.",
+            "15": "Important progress made by the spatially resolved SPV technique in the group is presented, providing insights into the rational design of highly efficient photocatalytic systems.",
+            "16": "The prospects of further developments of the spatially resolved SPV technique are discussed.",
+            "17": "Developments of the spatially resolved SPV technique could help in understanding photocatalysis for solar energy conversion with high temporal resolution.",
+            "18": "Developments of the spatially resolved SPV technique could help in understanding photocatalysis operated under in operando conditions."
+          }
+        },
+        "viewpoints": [
+          "Despite significant advancements, ferroelectrics have a larger electric field for charge separation compared to other strategies mentioned."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "This suggests that the inherent driving force for charge separation within the bulk phase of ferroelectric materials is not an impediment to achieving high photocatalytic activity.",
+        "references": {},
+        "viewpoints": [
+          "The inherent driving force for charge separation within the bulk phase of ferroelectric materials is not an impediment to achieving high photocatalytic activity."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "This raises an important question: what are the key factors limiting the transfer of photogenerated charges to surface reaction sites?",
+        "references": {},
+        "viewpoints": [
+          "There is a question about what key factors are limiting the transfer of photogenerated charges to surface reaction sites."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Understanding this challenge is essential for unlocking the full potential of ferroelectric materials to achieve significantly enhanced photocatalytic performance.",
+        "references": {},
+        "viewpoints": [
+          "Understanding the challenge of transferring photogenerated charges to surface reaction sites is essential for unlocking the full potential of ferroelectric materials.",
+          "Understanding this challenge is essential to achieving significantly enhanced photocatalytic performance in ferroelectric materials."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "In this work, a profound mechanistic study was carried out to investigate the role of defective structures on the efficiency of photogenerated electrons from the positive surface of PTO in the overall water-splitting reaction.",
+        "references": {},
+        "viewpoints": [
+          "A profound mechanistic study was carried out to investigate the role of defective structures on the efficiency of photogenerated electrons.",
+          "The study focused on the efficiency of photogenerated electrons from the positive surface of PTO in the overall water-splitting reaction."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "Our study shows that the main obstacle for efficient photocatalytic water splitting by PTO is the existence of Ti defects at the positive polarization facets that inhibit efficient electron transfer for hydrogen production.",
+        "references": {},
+        "viewpoints": [
+          "The main obstacle for efficient photocatalytic water splitting by PTO is the existence of Ti defects at the positive polarization facets.",
+          "Ti defects inhibit efficient electron transfer for hydrogen production during photocatalytic water splitting by PTO."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "By eliminating abundant Ti defective sites on the positive surface of PTO through the growth of STO nanolayers, AQE@365 nm of the overall water splitting was elevated by 400 times due to the construction of a highly efficient electron transfer route.",
+        "references": {},
+        "viewpoints": [
+          "Eliminating abundant Ti defective sites on the positive surface of PTO through the growth of STO nanolayers elevates AQE@365 nm of the overall water splitting by 400 times.",
+          "The construction of a highly efficient electron transfer route leads to a 400 times increase in AQE@365 nm of the overall water splitting."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Precise control of surface defects is a potent strategy for improving ferroelectric photocatalyst performance in water splitting.",
+        "references": {},
+        "viewpoints": [
+          "Precise control of surface defects is a potent strategy for improving ferroelectric photocatalyst performance in water splitting."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56359-y_with_abstracts",
+    "base_id": "s41467-025-56359-y",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Physical sciences/s41467-025-56359-y_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Physical sciences",
+    "original_category": "Physical sciences"
+  }
+}

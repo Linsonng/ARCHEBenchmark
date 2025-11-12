@@ -1,0 +1,401 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Recombinant adeno-associated viral vectors (rAAV) are a leading platform for clinical DNA delivery. This vector system is derived from a human parvovirus and has many inherent features that make it attractive for human gene therapy applications [1] . It also has some inherent limitations, the major one of which is the small genetic payload. The unenveloped 25 nm capsid can package no more than 5 kb of single-stranded DNA (ssDNA) into its small lumen [2] , [3] , imposing a size limit to the coding and regulatory elements that can be included in the transgene cassette. For gene replacement therapies, current strategies employ cDNA versions of the gene of interest, with expression driven by a short, strong promoter such as CMV [4] . While this accommodates many therapeutically relevant gene sizes, it excludes other larger genes, such as dystrophin or the most accurate Cas9 versions and other base editors. Moreover, CMV and similar promoters are ubiquitously expressed at very high levels, leading to off-target expression in non-therapeutically relevant tissues, and potentially toxic levels of transgene expression. This can lead to immune responses and other failures of the therapy. A larger payload size is therefore highly desirable for expressing large proteins and moreover for enabling fine-tuned spatiotemporal control over expression and levels by inclusion of more diverse, efficient regulatory sequences. The wild-type (wt) AAV virus and the recombinant AAV vector have the same overall structure, consisting only of the 60mer icosahedral capsid with one packaged ssDNA vector genome (VG). Viral proteins are required during production for replication and packaging, but no viral enzymes are packaged within the virion [5] . VG architecture requires flanking the desired delivery DNA with the viral inverted terminal repeat (ITR) sequences at both ends [6] . The ITR contains sequence elements that are required during viral replication and also direct packaging into the preformed capsids for vector production [7] . In the transduction process (Fig. 1A ), the capsid traffics the VG to the host/target cell nucleus, where the capsid is shed (termed uncoating) [8] , [9] . The ssDNA VG is converted to dsDNA through unclear mechanisms which enables transgene expression. Individual VGs can also circularize through intramolecular ITR-ITR joining and concatenate through intermolecular ITR-ITR joining [10] . In its recombinant form, where a capsid of choice is packaged with an ITR-flanked transgene, rAAV VGs cannot replicate; but instead multiple VGs enter the nucleus and can concatenate into large episomal species [11] . The absence of delivered enzymes implies that the post-uncoating nuclear steps of rAAV transduction are orchestrated by host cellular factors. Decades of observation have articulated the nuclear steps of transduction—uncoating, conversion to dsDNA, concatenation, expression—yet they remain observations, with little mechanistic detail and knowledge of facilitating host factors [12] , [13] . Fig. 1: Dual Vectors are inefficient. A Schematic of recombinant adeno-associated viral (rAAV) vector genome (VG) processing. Single-stranded DNA VGs are converted to double-stranded (ds)DNA and VGs circularize and concatenate by inverted terminal repeat (ITR)-ITR joining, through unclear mechanisms. VGs associate with histones, but when this occurs during these processes is unknown. B The dual vector approach can double payload size by exploiting the natural concatenation process. A large gene is split into separate Left (L) and Right (R) VGs; inclusion of a splice donor (SD)/acceptor (SA) excludes the ITR junction from the final transcript. C Reporter constructs to assay split transgene reconstitution. LacZ is split between L and R VGs in a trans-splicing (TS) pair that requires ITR-ITR concatenation for expression, or a Hybrid (HB) trans-splicing plus Alkaline Phosphatase (AP) partial sequence previously demonstrated to increase split transgene reconstitution efficiency. An unsplit LacZ VG is used as a control. CMV = cytomegalovirus. BSD = Blasticidin resistance. pA = poly A signal. F2A, P2A, T2A = 2A self-cleaving peptides. D LacZ Activated Fluorescence Assay (LAFA) schematic: cultured cells are transduced with equimolar doses of L and R vectors. After 48 h, split transgene reconstitution is assayed by Beta-galactosidase (LacZ) activity cleaving 4-Methylumbelliferyl-beta-D-galactopyranoside (MUG), a fluorogenic beta galactose analog. E U2-OS cells were treated with 1e4 VG/cell of the split pairs or unsplit LacZ diagrammed in ( C ). LAFA was performed at 48 hours post transduction and quantified by flow cytometry: L + R pairs (magenta, purple), unsplit vector (blue, green), or empty capsid (black) negative control are plotted as a histogram. All capsids and ITRs are AAV2. Full size image The absence of viral enzymes in the rAAV particle implies that the processes of VG circularization and concatenation are orchestrated by host cellular factors. ITR-ITR joining is analogous to host DNA repair mechanisms, and dsDNA VGs could conceivably resemble a chromosomal break. The host cell has many ways of repairing DNA damage, including two main pathways to repair double-strand breaks (DSB): the high-fidelity but restricted activity pathway called Homologous Recombination (HR) or Homology Directed Repair (HDR), and the constitutively active but error-prone pathway of Non-Homologous End Joining (NHEJ) [14] . The MRE11/RAD50/NBS1 (MRN) complex, which recognizes free DNA ends to facilitate repair upstream of HDR versus NHEJ pathway choice, recognizes ITRs but inhibits concatenation [15] , [16] . The NHEJ pathway has been suggested to play a role in concatenation since depletion or inhibition of the NHEJ factor DNA-PKcs reduces VG concatenation [17] , [18] , [19] , [20] , [21] . However, the effect of HDR pathway on concatenation has not been directly examined. The propensity of VGs to concatenate can be exploited to increase the final genetic payload size [22] . In this “dual vector” approach (Fig. 1A, B ), a large transgene cassette is split into two halves, packaged into separate capsids, and co-delivered to target cells. Inclusion of a splice donor in the “Left” half VG (L) and a splice acceptor in the “Right” half VG (R) allows the ITR junction to be spliced out during RNA processing of transcription, and the large gene is subsequently reconstituted in the transcript. This technique was first developed in the early 2000s by multiple groups independently [23] , [24] , [25] . To be effective it requires correct, directional, and stoichiometric concatenation, followed by correct expression. By nature of the sequence, any ITR can in theory join any ITR, leading to many permutations that do not all lead to correct split transgene reconstitution. The approach also currently relies on very high vector doses. To increase the chances of L and R genomes joining in the correct orientation, a short fragment of the Alkaline Phosphatase (AP) gene serendipitously found to be “highly recombinogenic” in the dual vector context [26] can be added between the splice signal and the ITR [27] . It is presumed that the AP fragment promotes annealing of + and – sense VGs which then become a reconstituted large gene through HR. However, HR has never been directly tested as the mechanism of concatenation. Indeed, AP inclusion significantly increases efficiency and is now commonly used in dual vectors, but like general mechanisms of concatenation, little is known about the mechanisms underpinning the AP phenomenon. Here, we aim to improve dual vector transduction by an alternative approach that focuses on the host cell. We first identify cellular pathways inhibitory to split transgene reconstitution by a genome-wide screen. We provide evidence for early chromatinization of VGs, and epigenetic recognition as a double-strand break. Surprisingly, blocking HR increases both concatenation of and expression from rAAV VGs, which dramatically increases dual vector transduction efficiencies. Our findings suggest that HR is the “first responder” to the DSB-flagged VGs, but that NHEJ is a more efficient mechanism for VG concatenation. While the majority of efforts to improve rAAV gene therapies have focused on modifying the vector and dose, our findings emphasize the importance of understanding host responses in the target cell. Our results highlight the potential for pharmacological approaches to enhance efficiency and increase deliverable transgene size in rAAV gene therapies.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Recombinant adeno-associated viral vectors (rAAV) are a leading platform for clinical DNA delivery.",
+        "references": {},
+        "viewpoints": [
+          "Recombinant adeno-associated viral vectors (rAAV) are a leading platform for clinical DNA delivery."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "This vector system is derived from a human parvovirus and has many inherent features that make it attractive for human gene therapy applications.",
+        "references": {},
+        "viewpoints": [
+          "The recombinant adeno-associated viral vector system is derived from a human parvovirus.",
+          "The recombinant adeno-associated viral vector system has many inherent features that make it attractive for human gene therapy applications."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "It also has some inherent limitations, the major one of which is the small genetic payload.",
+        "references": {},
+        "viewpoints": [
+          "The recombinant adeno-associated viral vector system has some inherent limitations.",
+          "The major limitation of the recombinant adeno-associated viral vector system is the small genetic payload."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "The unenveloped 25 nm capsid can package no more than 5 kb of single-stranded DNA (ssDNA) into its small lumen, imposing a size limit to the coding and regulatory elements that can be included in the transgene cassette.",
+        "references": {},
+        "viewpoints": [
+          "The unenveloped 25 nm capsid of the recombinant adeno-associated viral vector can package no more than 5 kb of single-stranded DNA (ssDNA) into its small lumen.",
+          "The 5 kb limit of ssDNA imposes a size limit on the coding and regulatory elements that can be included in the transgene cassette of the recombinant adeno-associated viral vector."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "For gene replacement therapies, current strategies employ cDNA versions of the gene of interest, with expression driven by a short, strong promoter such as CMV.",
+        "references": {},
+        "viewpoints": [
+          "For gene replacement therapies, current strategies employ cDNA versions of the gene of interest.",
+          "For gene replacement therapies, expression is driven by a short, strong promoter such as CMV."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "While this accommodates many therapeutically relevant gene sizes, it excludes other larger genes, such as dystrophin or the most accurate Cas9 versions and other base editors.",
+        "references": {},
+        "viewpoints": [
+          "The current strategy of using cDNA and short, strong promoters accommodates many therapeutically relevant gene sizes.",
+          "The current strategy excludes larger genes such as dystrophin or the most accurate Cas9 versions and other base editors."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Moreover, CMV and similar promoters are ubiquitously expressed at very high levels, leading to off-target expression in non-therapeutically relevant tissues, and potentially toxic levels of transgene expression.",
+        "references": {},
+        "viewpoints": [
+          "CMV and similar promoters are ubiquitously expressed at very high levels.",
+          "The ubiquitous expression of CMV and similar promoters leads to off-target expression in non-therapeutically relevant tissues.",
+          "The ubiquitous expression of CMV and similar promoters leads to potentially toxic levels of transgene expression."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "This can lead to immune responses and other failures of the therapy.",
+        "references": {},
+        "viewpoints": [
+          "Off-target and potentially toxic levels of transgene expression can lead to immune responses and other failures of the therapy."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "A larger payload size is therefore highly desirable for expressing large proteins and moreover for enabling fine-tuned spatiotemporal control over expression and levels by inclusion of more diverse, efficient regulatory sequences.",
+        "references": {},
+        "viewpoints": [
+          "A larger payload size is highly desirable for expressing large proteins.",
+          "A larger payload size is highly desirable for enabling fine-tuned spatiotemporal control over expression and levels by inclusion of more diverse, efficient regulatory sequences."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "The wild-type (wt) AAV virus and the recombinant AAV vector have the same overall structure, consisting only of the 60mer icosahedral capsid with one packaged ssDNA vector genome (VG).",
+        "references": {},
+        "viewpoints": [
+          "The wild-type AAV virus has the same overall structure as the recombinant AAV vector.",
+          "The overall structure of the wild-type AAV virus and the recombinant AAV vector consists only of the 60mer icosahedral capsid with one packaged ssDNA vector genome (VG)."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Viral proteins are required during production for replication and packaging, but no viral enzymes are packaged within the virion.",
+        "references": {},
+        "viewpoints": [
+          "Viral proteins are required during production for replication and packaging of the recombinant AAV vector.",
+          "No viral enzymes are packaged within the virion of the recombinant AAV vector."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "VG architecture requires flanking the desired delivery DNA with the viral inverted terminal repeat (ITR) sequences at both ends.",
+        "references": {},
+        "viewpoints": [
+          "VG architecture requires flanking the desired delivery DNA with the viral inverted terminal repeat (ITR) sequences at both ends."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "The ITR contains sequence elements that are required during viral replication and also direct packaging into the preformed capsids for vector production.",
+        "references": {},
+        "viewpoints": [
+          "The ITR contains sequence elements that are required during viral replication.",
+          "The ITR directs packaging into the preformed capsids for vector production."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "In the transduction process, the capsid traffics the VG to the host/target cell nucleus, where the capsid is shed (termed uncoating).",
+        "references": {},
+        "viewpoints": [
+          "In the transduction process, the capsid traffics the VG to the host/target cell nucleus.",
+          "In the transduction process, the capsid is shed in the host/target cell nucleus (termed uncoating)."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "The ssDNA VG is converted to dsDNA through unclear mechanisms which enables transgene expression.",
+        "references": {},
+        "viewpoints": [
+          "The ssDNA VG is converted to dsDNA through unclear mechanisms.",
+          "Conversion of ssDNA VG to dsDNA enables transgene expression."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Individual VGs can also circularize through intramolecular ITR-ITR joining and concatenate through intermolecular ITR-ITR joining.",
+        "references": {},
+        "viewpoints": [
+          "Individual VGs can circularize through intramolecular ITR-ITR joining.",
+          "Individual VGs can concatenate through intermolecular ITR-ITR joining."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "In its recombinant form, where a capsid of choice is packaged with an ITR-flanked transgene, rAAV VGs cannot replicate; but instead multiple VGs enter the nucleus and can concatenate into large episomal species.",
+        "references": {},
+        "viewpoints": [
+          "In its recombinant form, where a capsid of choice is packaged with an ITR-flanked transgene, rAAV VGs cannot replicate.",
+          "In its recombinant form, multiple VG enters the nucleus.",
+          "In its recombinant form, multiple VG can concatenate into large episomal species."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "The absence of delivered enzymes implies that the post-uncoating nuclear steps of rAAV transduction are orchestrated by host cellular factors.",
+        "references": {},
+        "viewpoints": [
+          "The absence of delivered enzymes implies that the post-uncoating nuclear steps of rAAV transduction are orchestrated by host cellular factors."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "Decades of observation have articulated the nuclear steps of transduction—uncoating, conversion to dsDNA, concatenation, expression—yet they remain observations, with little mechanistic detail and knowledge of facilitating host factors.",
+        "references": {},
+        "viewpoints": [
+          "Decades of observation have articulated the nuclear steps of transduction: uncoating, conversion to dsDNA, concatenation, and expression.",
+          "The nuclear steps of transduction remain observations with little mechanistic detail and knowledge of facilitating host factors."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "The absence of viral enzymes in the rAAV particle implies that the processes of VG circularization and concatenation are orchestrated by host cellular factors.",
+        "references": {},
+        "viewpoints": [
+          "The absence of viral enzymes in the rAAV particle implies that the processes of VG circularization and concatenation are orchestrated by host cellular factors."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "ITR-ITR joining is analogous to host DNA repair mechanisms, and dsDNA VGs could conceivably resemble a chromosomal break.",
+        "references": {},
+        "viewpoints": [
+          "ITR-ITR joining is analogous to host DNA repair mechanisms.",
+          "dsDNA VGs could conceivably resemble a chromosomal break."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "The host cell has many ways of repairing DNA damage, including two main pathways to repair double-strand breaks (DSB): the high-fidelity but restricted activity pathway called Homologous Recombination (HR) or Homology Directed Repair (HDR), and the constitutively active but error-prone pathway of Non-Homologous End Joining (NHEJ).",
+        "references": {},
+        "viewpoints": [
+          "The host cell has many ways of repairing DNA damage.",
+          "Two main pathways exist to repair double-strand breaks: Homologous Recombination (HR) or Homology Directed Repair (HDR), which is high-fidelity but restricted in activity.",
+          "Non-Homologous End Joining (NHEJ), which is constitutively active but error-prone."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "The MRE11/RAD50/NBS1 (MRN) complex, which recognizes free DNA ends to facilitate repair upstream of HDR versus NHEJ pathway choice, recognizes ITRs but inhibits concatenation.",
+        "references": {},
+        "viewpoints": [
+          "The MRE11/RAD50/NBS1 (MRN) complex recognizes free DNA ends to facilitate repair upstream of HDR versus NHEJ pathway choice.",
+          "The MRE11/RAD50/NBS1 (MRN) complex recognizes ITRs.",
+          "The MRE11/RAD50/NBS1 (MRN) complex inhibits concatenation."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "The NHEJ pathway has been suggested to play a role in concatenation since depletion or inhibition of the NHEJ factor DNA-PKcs reduces VG concatenation.",
+        "references": {},
+        "viewpoints": [
+          "The NHEJ pathway has been suggested to play a role in concatenation.",
+          "Depletion or inhibition of the NHEJ factor DNA-PKcs reduces VG concatenation."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "However, the effect of HDR pathway on concatenation has not been directly examined.",
+        "references": {},
+        "viewpoints": [
+          "The effect of HDR pathway on concatenation has not been directly examined."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "The propensity of VGs to concatenate can be exploited to increase the final genetic payload size.",
+        "references": {},
+        "viewpoints": [
+          "The propensity of VGs to concatenate can be exploited to increase the final genetic payload size."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "In this “dual vector” approach, a large transgene cassette is split into two halves, packaged into separate capsids, and co-delivered to target cells.",
+        "references": {},
+        "viewpoints": [
+          "In the “dual vector” approach, a large transgene cassette is split into two halves.",
+          "In the “dual vector” approach, the two halves are packaged into separate capsids.",
+          "In the “dual vector” approach, the separate capsids are co-delivered to target cells."
+        ]
+      },
+      {
+        "idx": 28,
+        "sentence": "Inclusion of a splice donor in the “Left” half VG and a splice acceptor in the “Right” half VG allows the ITR junction to be spliced out during RNA processing of transcription, and the large gene is subsequently reconstituted in the transcript.",
+        "references": {},
+        "viewpoints": [
+          "Inclusion of a splice donor in the “Left” half VG allows the ITR junction to be spliced out during RNA processing of transcription.",
+          "Inclusion of a splice acceptor in the “Right” half VG allows the ITR junction to be spliced out during RNA processing of transcription.",
+          "The large gene is subsequently reconstituted in the transcript after splicing out the ITR junction."
+        ]
+      },
+      {
+        "idx": 29,
+        "sentence": "This technique was first developed in the early 2000s by multiple groups independently.",
+        "references": {},
+        "viewpoints": [
+          "The dual vector technique was first developed in the early 2000s.",
+          "Multiple groups developed the dual vector technique independently."
+        ]
+      },
+      {
+        "idx": 30,
+        "sentence": "To be effective it requires correct, directional, and stoichiometric concatenation, followed by correct expression.",
+        "references": {},
+        "viewpoints": [
+          "For the dual vector technique to be effective, it requires correct, directional, and stoichiometric concatenation.",
+          "For the dual vector technique to be effective, it requires correct expression following concatenation."
+        ]
+      },
+      {
+        "idx": 31,
+        "sentence": "By nature of the sequence, any ITR can in theory join any ITR, leading to many permutations that do not all lead to correct split transgene reconstitution.",
+        "references": {},
+        "viewpoints": [
+          "By nature of the sequence, any ITR can join any ITR.",
+          "Many permutations of ITR-ITR joining do not lead to correct split transgene reconstitution."
+        ]
+      },
+      {
+        "idx": 32,
+        "sentence": "The approach also currently relies on very high vector doses.",
+        "references": {},
+        "viewpoints": [
+          "The dual vector approach currently relies on very high vector doses."
+        ]
+      },
+      {
+        "idx": 33,
+        "sentence": "To increase the chances of L and R genomes joining in the correct orientation, a short fragment of the Alkaline Phosphatase (AP) gene serendipitously found to be “highly recombinogenic” in the dual vector context can be added between the splice signal and the ITR.",
+        "references": {},
+        "viewpoints": [
+          "To increase the chances of L and R genomes joining in the correct orientation in the dual vector context, a short fragment of the Alkaline Phosphatase (AP) gene can be added between the splice signal and the ITR.",
+          "The short fragment of the Alkaline Phosphatase (AP) gene is serendipitously found to be “highly recombinogenic” in the dual vector context."
+        ]
+      },
+      {
+        "idx": 34,
+        "sentence": "It is presumed that the AP fragment promotes annealing of + and – sense VGs which then become a reconstituted large gene through HR.",
+        "references": {},
+        "viewpoints": [
+          "It is presumed that the AP fragment promotes annealing of + and – sense VGs.",
+          "The annealed + and – sense VGs become a reconstituted large gene through HR."
+        ]
+      },
+      {
+        "idx": 35,
+        "sentence": "However, HR has never been directly tested as the mechanism of concatenation.",
+        "references": {},
+        "viewpoints": [
+          "HR has never been directly tested as the mechanism of concatenation."
+        ]
+      },
+      {
+        "idx": 36,
+        "sentence": "Indeed, AP inclusion significantly increases efficiency and is now commonly used in dual vectors, but like general mechanisms of concatenation, little is known about the mechanisms underpinning the AP phenomenon.",
+        "references": {},
+        "viewpoints": [
+          "AP inclusion significantly increases efficiency in dual vectors.",
+          "AP inclusion is now commonly used in dual vectors.",
+          "Little is known about the mechanisms underpinning the AP phenomenon."
+        ]
+      },
+      {
+        "idx": 37,
+        "sentence": "Here, we aim to improve dual vector transduction by an alternative approach that focuses on the host cell.",
+        "references": {},
+        "viewpoints": [
+          "The aim is to improve dual vector transduction by an alternative approach that focuses on the host cell."
+        ]
+      },
+      {
+        "idx": 38,
+        "sentence": "We first identify cellular pathways inhibitory to split transgene reconstitution by a genome-wide screen.",
+        "references": {},
+        "viewpoints": [
+          "Cellular pathways inhibitory to split transgene reconstitution are identified by a genome-wide screen."
+        ]
+      },
+      {
+        "idx": 39,
+        "sentence": "We provide evidence for early chromatinization of VGs, and epigenetic recognition as a double-strand break.",
+        "references": {},
+        "viewpoints": [
+          "Evidence for early chromatinization of VGs is provided.",
+          "Evidence for epigenetic recognition of VGs as a double-strand break is provided."
+        ]
+      },
+      {
+        "idx": 40,
+        "sentence": "Surprisingly, blocking HR increases both concatenation of and expression from rAAV VGs, which dramatically increases dual vector transduction efficiencies.",
+        "references": {},
+        "viewpoints": [
+          "Blocking HR increases concatenation of rAAV VGs.",
+          "Blocking HR increases expression from rAAV VGs.",
+          "Blocking HR dramatically increases dual vector transduction efficiencies."
+        ]
+      },
+      {
+        "idx": 41,
+        "sentence": "Our findings suggest that HR is the “first responder” to the DSB-flagged VGs, but that NHEJ is a more efficient mechanism for VG concatenation.",
+        "references": {},
+        "viewpoints": [
+          "HR is suggested to be the “first responder” to the DSB-flagged VGs.",
+          "NHEJ is suggested to be a more efficient mechanism for VG concatenation than HR."
+        ]
+      },
+      {
+        "idx": 42,
+        "sentence": "While the majority of efforts to improve rAAV gene therapies have focused on modifying the vector and dose, our findings emphasize the importance of understanding host responses in the target cell.",
+        "references": {},
+        "viewpoints": [
+          "The majority of efforts to improve rAAV gene therapies have focused on modifying the vector and dose.",
+          "The findings emphasize the importance of understanding host responses in the target cell."
+        ]
+      },
+      {
+        "idx": 43,
+        "sentence": "Our results highlight the potential for pharmacological approaches to enhance efficiency and increase deliverable transgene size in rAAV gene therapies.",
+        "references": {},
+        "viewpoints": [
+          "The results highlight the potential for pharmacological approaches to enhance efficiency in rAAV gene therapies.",
+          "The results highlight the potential for pharmacological approaches to increase deliverable transgene size in rAAV gene therapies."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56738-5_with_abstracts",
+    "base_id": "s41467-025-56738-5",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56738-5_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

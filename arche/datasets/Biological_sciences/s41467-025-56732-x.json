@@ -1,0 +1,766 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Pesticides are used globally to support agricultural production and protect human and animal health in both domestic and commercial situations [1] , [2] , [3] , [4] , [5] , [6] , [7] , [8] . At sufficient environmental concentrations, insecticide, fungicide and herbicide exposure can affect non-target organisms by disrupting their survival, growth, reproduction and behaviour (e.g. detection of stimuli), as well as effects on other metabolic and physiological processes (e.g. biomarkers of neural function or immunity, cellular respiration, photosynthesis) [9] . Some of the negative impacts of pesticides are known. For example, fungicides may decrease the biomass of arbuscular mycorrhizal fungi, affecting their symbioses with higher plants [10] ; herbicides may reduce plant pollen viability [11] and carbohydrate metabolism [12] ; insecticides (targeting pest herbivores) may cause long-term declines in non-target insect pollinators associated with mass-flowering crops [13] . Such impacts appear widespread across taxa, with individual studies reporting effects on microorganisms [14] , plants [15] , invertebrates [5] , [16] , [17] , amphibians [18] , birds [6] , [19] and mammals [20] . In addition to effects on individual species, the influence of pesticides can propagate across trophic levels, impacting ecosystem-scale species interactions that may lead to secondary effects [21] . Often due to practical constraints, pesticide regulatory risk assessments remain focused on a limited number of easily cultured model species, e.g. rats, zebrafish, Xenopus , Daphnia , chironomids, algae, honeybees, and/or earthworms. As such, they are unlikely to capture the variety of responses to pesticide exposure seen across the diversity of species and communities found in both managed and natural systems [13] . At the same time, there remains significant debate among the agricultural industry, governmental bodies and conservation organizations concerning the real-world hazards posed by pesticides. A major factor affecting the resolution of this issue is the lack of a cross-taxa synthesis of pesticide effects. Such an analysis is needed to support a robust evidence base for non-target effects that extend beyond scenario-specific case studies and model species. Previous meta-analyses of pesticide impacts on non-target species have either considered only particular taxonomic groups, such as fish [22] or bees [23] , or have considered specific habitats such as aquatic ecosystems [24] . To our knowledge, there has been no systematic and overarching synthesis of how different types of pesticides affect the diversity of multiple non-target eukaryotic and prokaryotic organisms across all trophic levels. Furthermore, current syntheses have not considered how the impacts of pesticides differ globally across climatic zones or for major mechanisms of exposure, such as those acting in aquatic or terrestrial environments. Without a unified synthesis applying common data capture and analytical standards, the global consequences of pesticide use across diverse ecosystems and taxa remain poorly understood. Such knowledge derived from a careful quantitative synthesis is vital to inform national and international policy goals to provide a framework for targeted mitigation to identify the role of pesticide use in biodiversity declines. Here, we address these limitations by integrating 20,212 estimates of pesticide effects reported from 1705 experimental studies across the globe. These studies collectively measured the effects of insecticides, fungicides and herbicides on animals (invertebrates and vertebrates), plants (dicotyledonous, monocotyledonous and spore-producing) and microorganisms (bacteria and fungi). The included studies encompass laboratory and field experiments from temperate and tropical climatic zones, both in aquatic and terrestrial systems (Fig. 1 and Supplementary Data 1 ). We classified the effects on multicellular animals (vertebrates and invertebrates), plants and microorganisms based on changes in growth, reproduction, and behaviour (animals only) as well as other relevant biomarkers (e.g. enzymatic activities, metabolic reaction and plant photosynthesis). For all meta-analyses, we explicitly accounted for phylogenetic effects for species where published phylogenies were available ( Supplementary Methods ). As well as considering the consequences of taxa-specific pesticides (e.g. effect of herbicides on plants), we also address potential pathways by which pesticides can affect non-target organisms. This includes impacts on taxonomic groups for which a particular class of pesticide was not developed to control, e.g. insecticides affecting fungi or plants. Further, we assess whether ‘new’ or ‘old’ pesticides, based on the rigorous European Union (EU) regulatory framework, differ in their effects. To do this, we applied meta-regression of log response ratios (lnRR) to test our hypotheses that: (i) pesticides (insecticides, fungicides and herbicides) suppress growth, reproduction, and behavioural traits; (ii) metabolic biomarkers of non-target organisms may be up- or down-regulated in response to pesticides, thus signalling a physiological perturbation; (iii) identified pesticide effects are consistent between taxonomic groups, experimental types, climatic zones, modes of exposure (terrestrial or aquatic), and broad pesticide classes (insecticides, fungicides or herbicides); and (iv) the effects also hold under realistic terrestrial and aquatic exposure scenarios. Fig. 1: Global distribution of study locations of pesticide impact on non-target organisms. Study locations across the globe are shown (world map in World Robinson projection). A literature search identified study locations for insecticide impact on animals (820 locations), plants (112 locations) and microorganisms (56 locations), for fungicide impact on animals (148 locations), plants (74 locations) and microorganisms (52 locations), and for herbicide impact on animals (286 locations), plants (161 locations) and microorganisms (69 locations), respectively, from a total of 1705 published articles from 1497 locations. Nineteen articles included more than one study location (range 2–5). Grey and non-English literature were not included in this meta-analysis. Map © ARCGIS Software. Source data are provided as a Source Data file. Full size image",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Pesticides are used globally to support agricultural production and protect human and animal health in both domestic and commercial situations [1] , [2] , [3] , [4] , [5] , [6] , [7] , [8] .",
+        "references": {
+          "1": {
+            "1": "Neonicotinoid seed dressings have caused concern world-wide.",
+            "2": "Large field experiments are used to assess the effects of neonicotinoid-treated crops on three bee species.",
+            "3": "The assessment involves three countries: Hungary, Germany, and the United Kingdom.",
+            "4": "Winter-sown oilseed rape was grown commercially with seed coatings containing neonicotinoids, clothianidin, or thiamethoxam.",
+            "5": "A control group of winter-sown oilseed rape was grown without any seed treatment.",
+            "6": "Negative effects on honey bees during crop flowering were found in Hungary and the United Kingdom.",
+            "7": "Positive effects on honey bees during crop flowering were found in Germany.",
+            "8": "In Hungary, negative effects on honey bees, associated with clothianidin, persisted over winter.",
+            "9": "Negative effects on honey bees in Hungary resulted in 24% declines in colony size in the following spring."
+          },
+          "2": {
+            "1": "Neonicotinoid pesticides can negatively affect bee colonies.",
+            "2": "The behavioral mechanisms by which neonicotinoid pesticides impair colony growth remain unclear.",
+            "3": "The study investigates imidacloprid's effects on bumblebee worker behavior within the nest.",
+            "4": "An automated, robotic platform is used for continuous, multicolony monitoring of uniquely identified bumblebee workers.",
+            "5": "Exposure to field-realistic levels of imidacloprid impairs nursing in bumblebees.",
+            "6": "Exposure to field-realistic levels of imidacloprid alters social dynamics within bumblebee nests.",
+            "7": "Exposure to field-realistic levels of imidacloprid alters spatial dynamics within bumblebee nests.",
+            "8": "The effects of imidacloprid exposure on bumblebees vary substantially with the time of day.",
+            "9": "Imidacloprid impairs colony thermoregulation in the field.",
+            "10": "Imidacloprid impairs the construction of an insulating wax canopy in bee colonies.",
+            "11": "Neonicotinoids induce widespread disruption of within-nest worker behavior in bee colonies.",
+            "12": "The disruption of within-nest worker behavior by neonicotinoids may contribute to impaired growth in bee colonies.",
+            "13": "Automated techniques have potential for characterizing the multifaceted, dynamic impacts of stressors on behavior in bee colonies."
+          },
+          "3": {
+            "1": "Recent case studies have shown substantial declines of insect abundances.",
+            "2": "These declines in insect abundances have raised alarm.",
+            "3": "It remains unclear how widespread the patterns of insect abundance declines are.",
+            "4": "Data were compiled from 166 long-term surveys of insect assemblages.",
+            "5": "The surveys were conducted across 1676 sites.",
+            "6": "The purpose of compiling the data was to investigate trends in insect abundances over time.",
+            "7": "There was considerable variation in trends of insect abundances, even among adjacent sites.",
+            "8": "There was an average decline of terrestrial insect abundance by ~9% per decade.",
+            "9": "There was an increase of freshwater insect abundance by ~11% per decade.",
+            "10": "The decline of terrestrial insect abundance and the increase of freshwater insect abundance were largely driven by strong trends in North America and some European regions.",
+            "11": "There were some associations between insect abundance trends and potential drivers, such as land-use drivers.",
+            "12": "Insect abundance trends in protected areas tended to be weaker.",
+            "13": "The findings provide a more nuanced view of spatiotemporal patterns of insect abundance trends.",
+            "14": "The view provided by the findings is more nuanced than previously suggested views of insect abundance trends."
+          },
+          "4": {},
+          "5": {
+            "1": "Insects are facing a multitude of anthropogenic stressors.",
+            "2": "The recent decline in insect biodiversity is threatening ecosystems across the globe.",
+            "3": "The recent decline in insect biodiversity is threatening economies across the globe.",
+            "4": "The study investigated the impact of glyphosate on bumblebees.",
+            "5": "Glyphosate is the most commonly used herbicide worldwide.",
+            "6": "Bumblebee colonies maintain their brood at high temperatures via active thermogenesis.",
+            "7": "Maintaining brood at high temperatures is a prerequisite for bumblebee colony growth.",
+            "8": "Maintaining brood at high temperatures is a prerequisite for bumblebee colony reproduction.",
+            "9": "The study used a within-colony comparative approach to examine the effects of long-term glyphosate exposure on individual thermoregulation.",
+            "10": "The study used a within-colony comparative approach to examine the effects of long-term glyphosate exposure on collective thermoregulation.",
+            "11": "Effects of glyphosate exposure are weak at the level of individual bumblebees.",
+            "12": "Glyphosate exposure decreases the collective ability to maintain necessary high brood temperatures by more than 25% during periods of resource limitation.",
+            "13": "Glyphosate exposure carries hidden costs for pollinators in heavily stressed ecosystems.",
+            "14": "The hidden costs of glyphosate exposure for pollinators have so far been largely overlooked."
+          },
+          "6": {
+            "1": "Neonicotinoid insecticides have adverse effects on non-target invertebrate species.",
+            "2": "Invertebrates constitute a substantial part of the diet of many bird species during the breeding season.",
+            "3": "Invertebrates are indispensable for raising offspring of many bird species.",
+            "4": "The hypothesis investigated was that imidacloprid has a negative impact on insectivorous bird populations.",
+            "5": "Imidacloprid is the most widely used neonicotinoid insecticide.",
+            "6": "In the Netherlands, local bird population trends were significantly more negative in areas with higher surface-water concentrations of imidacloprid.",
+            "7": "At imidacloprid concentrations of more than 20 nanograms per litre, bird populations in the Netherlands tended to decline by 3.5 percent on average annually.",
+            "8": "The spatial pattern of bird population decline in the Netherlands appeared only after the introduction of imidacloprid.",
+            "9": "Imidacloprid was introduced to the Netherlands in the mid-1990s.",
+            "10": "The recent negative relationship between imidacloprid concentrations and bird population trends remains after correcting for spatial differences in land-use changes.",
+            "11": "Land-use changes are known to affect bird populations in farmland.",
+            "12": "The impact of neonicotinoids on the natural environment is even more substantial than has recently been reported.",
+            "13": "The impact of neonicotinoids on the natural environment is reminiscent of the effects of persistent insecticides in the past.",
+            "14": "Future legislation should consider the potential cascading effects of neonicotinoids on ecosystems."
+          },
+          "7": {
+            "1": "Invertebrate declines are widespread in terrestrial ecosystems.",
+            "2": "Pesticide use is often cited as a causal factor for invertebrate declines in terrestrial ecosystems.",
+            "3": "Aquatic systems are threatened by the high toxicity of neonicotinoid insecticides.",
+            "4": "Aquatic systems are threatened by the persistence of neonicotinoid insecticides.",
+            "5": "The effects of neonicotinoid insecticides cascade to higher trophic levels by altering food web structure.",
+            "6": "The effects of neonicotinoid insecticides cascade to higher trophic levels by altering food web dynamics.",
+            "7": "Higher-level consumers are affected by changes in food web structure and dynamics due to neonicotinoid insecticides.",
+            "8": "Data on zooplankton, water quality, and annual fishery yields of eel and smelt were used to analyze the impact of neonicotinoids.",
+            "9": "Neonicotinoid application to watersheds since 1993 coincided with an 83% decrease in average zooplankton biomass in spring.",
+            "10": "The 83% decrease in average zooplankton biomass in spring caused the smelt harvest to collapse from 240 to 22 tons in Lake Shinji, Shimane Prefecture, Japan.",
+            "11": "The disruption in aquatic systems due to neonicotinoid insecticides likely occurs elsewhere.",
+            "12": "Neonicotinoids are currently the most widely used class of insecticides globally."
+          },
+          "8": {
+            "1": "During the past 50 years, the human population has more than doubled.",
+            "2": "During the past 50 years, global agricultural production has risen in a manner similar to the growth of the human population.",
+            "3": "The productive arable area has increased by just 10% during the past 50 years.",
+            "4": "The increased use of pesticides has been a consequence of the demands of human population growth.",
+            "5": "The impact of the increased use of pesticides has reached global significance.",
+            "6": "We often know a pesticide's mode of action in the target species.",
+            "7": "We largely do not understand the full impact of pesticides' unintended side effects on wildlife.",
+            "8": "The lack of understanding about pesticides' unintended side effects is particularly significant at higher levels of biological organization, such as populations, communities, and ecosystems.",
+            "9": "We are currently experiencing regional and global species declines.",
+            "10": "We are challenged with the task of causally linking knowledge about the molecular actions of pesticides to how they might interfere with biological processes.",
+            "11": "Developing reliable predictions about the consequences of pesticide use and misuse is necessary in a rapidly changing world."
+          }
+        },
+        "viewpoints": [
+          "Pesticides are used globally to support agricultural production.",
+          "Pesticides are used globally to protect human health in both domestic and commercial situations.",
+          "Pesticides are used globally to protect animal health in both domestic and commercial situations."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "At sufficient environmental concentrations, insecticide, fungicide and herbicide exposure can affect non-target organisms by disrupting their survival, growth, reproduction and behaviour (e.g. detection of stimuli), as well as effects on other metabolic and physiological processes (e.g. biomarkers of neural function or immunity, cellular respiration, photosynthesis) [9] .",
+        "references": {
+          "9": []
+        },
+        "viewpoints": [
+          "Insecticide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their survival.",
+          "Insecticide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their growth.",
+          "Insecticide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their reproduction.",
+          "Insecticide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their behaviour.",
+          "Insecticide exposure at sufficient environmental concentrations can affect non-target organisms by impacting metabolic and physiological processes.",
+          "Fungicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their survival.",
+          "Fungicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their growth.",
+          "Fungicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their reproduction.",
+          "Fungicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their behaviour.",
+          "Fungicide exposure at sufficient environmental concentrations can affect non-target organisms by impacting metabolic and physiological processes.",
+          "Herbicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their survival.",
+          "Herbicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their growth.",
+          "Herbicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their reproduction.",
+          "Herbicide exposure at sufficient environmental concentrations can affect non-target organisms by disrupting their behaviour.",
+          "Herbicide exposure at sufficient environmental concentrations can affect non-target organisms by impacting metabolic and physiological processes."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "Some of the negative impacts of pesticides are known.",
+        "references": {},
+        "viewpoints": [
+          "Some negative impacts of pesticides are known."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "For example, fungicides may decrease the biomass of arbuscular mycorrhizal fungi, affecting their symbioses with higher plants [10] ; herbicides may reduce plant pollen viability [11] and carbohydrate metabolism [12] ; insecticides (targeting pest herbivores) may cause long-term declines in non-target insect pollinators associated with mass-flowering crops [13] .",
+        "references": {
+          "10": {
+            "1": "There is growing evidence supporting the application of biocontrol organisms to reduce the incidence of plant pathogens.",
+            "2": "Biocontrol organisms include examples such as Pseudomonas and Bacillus species, and arbuscular mycorrhizal fungi.",
+            "3": "Applying biocontrol organisms is considered feasible within an integrated control strategy for managing plant pathogens.",
+            "4": "The utilization of biocontrol microorganisms, specifically arbuscular mycorrhizal fungi, may be threatened by the application of fungicides.",
+            "5": "Fungicides are widely-used measures to control the plant pathogen Rhizoctonia solani.",
+            "6": "Fungicides are used to control Rhizoctonia solani in various crops, including potato.",
+            "7": "It is important to determine the impact of fungicides on arbuscular mycorrhizal fungi before applying fungicides.",
+            "8": "The study investigated the impact of azoxystrobin, flutolanil, and pencycuron on the growth and development of arbuscular mycorrhizal fungi Rhizophagus irregularis MUCL 41833.",
+            "9": "Azoxystrobin is a systemic broad-spectrum fungicide.",
+            "10": "Flutolanil is a systemic fungicide specific to Basidiomycota.",
+            "11": "Pencycuron is a contact fungicide specific to Rhizoctonia.",
+            "12": "The study used formulations Amistar for azoxystrobin, Monarch for flutolanil, and Monceren for pencycuron.",
+            "13": "Effects were investigated under in vitro controlled conditions.",
+            "14": "The doses used in the study were those typically applied to control Rhizoctonia solani.",
+            "15": "The growth and development parameters studied included spore germination, root colonization, extraradical mycelium development, and spore production.",
+            "16": "Azoxystrobin and its formulation Amistar did not affect spore germination of Rhizophagus irregularis at threshold values for Rhizoctonia solani control.",
+            "17": "Azoxystrobin and its formulation Amistar did not affect potato root colonization by Rhizophagus irregularis at threshold values for Rhizoctonia solani control.",
+            "18": "The development of extra-radical mycelium of Rhizophagus irregularis was reduced at 10 times the threshold value of azoxystrobin.",
+            "19": "Spore production of Rhizophagus irregularis was reduced at 10 times the threshold value of azoxystrobin.",
+            "20": "Flutolanil and its formulation Monarch did not affect spore germination of Rhizophagus irregularis at threshold value.",
+            "21": "Flutolanil and its formulation Monarch did not affect extra-radical development of Rhizophagus irregularis at threshold value.",
+            "22": "Flutolanil and its formulation Monarch decreased root colonization of Rhizophagus irregularis at threshold value.",
+            "23": "Flutolanil and its formulation Monarch decreased arbuscule formation of Rhizophagus irregularis at threshold value.",
+            "24": "Pencycuron and its formulation Monceren did not affect spore germination of Rhizophagus irregularis at threshold value.",
+            "25": "Pencycuron and its formulation Monceren did not affect intraradical development of Rhizophagus irregularis at threshold value.",
+            "26": "Pencycuron and its formulation Monceren did not affect extraradical development of Rhizophagus irregularis at threshold value.",
+            "27": "Azoxystrobin does not affect arbuscular mycorrhizal fungi at threshold concentrations to control Rhizoctonia solani in vitro.",
+            "28": "Pencycuron does not affect arbuscular mycorrhizal fungi at threshold concentrations to control Rhizoctonia solani in vitro.",
+            "29": "Flutolanil impacts the intraradical phase of arbuscular mycorrhizal fungi at threshold concentrations to control Rhizoctonia solani in vitro.",
+            "30": "Azoxystrobin, pencycuron, and Rhizophagus irregularis have the potential to be used in parallel against Rhizoctonia disease in potato.",
+            "31": "Flutolanil may not be suitable to use in parallel with Rhizophagus irregularis against Rhizoctonia disease in potato due to its impact on arbuscular mycorrhizal fungi."
+          },
+          "11": {
+            "1": "Experiments were conducted in the North Carolina State University Phytotron greenhouse in 2002 to determine the effect of glyphosate on pollen viability and seed set in glyphosate-resistant corn.",
+            "2": "Experiments were conducted in field locations in Clayton, Rocky Mount, and Lewiston-Woodville, NC in 2002 to determine the effect of glyphosate on pollen viability and seed set in glyphosate-resistant corn.",
+            "3": "Varieties representing the commercial glyphosate-resistant corn event GA21 were used in phytotron and field studies.",
+            "4": "Varieties representing the commercial glyphosate-resistant corn event NK603 were used in phytotron and field studies.",
+            "5": "All glyphosate treatments were applied at a rate of 1.12 kg ai ha⁻¹.",
+            "6": "All glyphosate treatments were applied at various growth stages.",
+            "7": "Pollen viability was reduced in phytotron studies with glyphosate treatments applied at the V6 stage or later, regardless of hybrid.",
+            "8": "Pollen viability was reduced in field studies with glyphosate treatments applied at the V6 stage or later, regardless of hybrid.",
+            "9": "Scanning electron microscopy of pollen from affected treatments showed distinct morphological alterations.",
+            "10": "The morphological alterations observed in pollen correlated with reduced pollen viability as determined by Alexander stain.",
+            "11": "Transmission electron microscopy showed pollen anatomy alterations including large vacuoles with glyphosate treatments.",
+            "12": "Transmission electron microscopy showed lower starch accumulation in pollen with glyphosate treatments.",
+            "13": "Pollen viability was reduced in glyphosate treatments after V6.",
+            "14": "Pollen production was reduced in glyphosate treatments after V6.",
+            "15": "No effect on kernel set was found among any of the reciprocal crosses in the phytotron or field studies with glyphosate treatments after V6.",
+            "16": "No effect on yield was found among any of the reciprocal crosses in the phytotron or field studies with glyphosate treatments after V6.",
+            "17": "There were no yield differences among any of the hand self-pollinated crosses involving nontreated males and nontreated females.",
+            "18": "Enzyme-linked immunosorbent assay was used to examine CP4-5-enolpyruvlshikimate-3-phosphate synthase expression in DKC 64-10RR (NK603) at anthesis.",
+            "19": "The highest expression of CP4-5-enolpyruvlshikimate-3-phosphate synthase was found in pollen in DKC 64-10RR (NK603) at anthesis.",
+            "20": "CP4-5-enolpyruvlshikimate-3-phosphate synthase expression was progressively less in brace roots, ear leaf, anthers, roots, ovaries, silks, stem, flag leaf, and husk in DKC 64-10RR (NK603) at anthesis."
+          },
+          "12": {
+            "1": "Most areas in the Champagne vineyard treated in early 2000 with the newly approved herbicide flazasulfuron had vines with altered growth.",
+            "2": "Most areas in the Champagne vineyard treated in early 2000 with the newly approved herbicide flazasulfuron had vines with yellow leaves throughout the growing season.",
+            "3": "The study aimed to clarify the physiological perturbations caused on the non-target grapevine by flazasulfuron.",
+            "4": "The study aimed to clarify the potential consequences of the physiological perturbations caused by flazasulfuron on grapevines.",
+            "5": "C nutrition of grape plants grown in vineyards treated with flazasulfuron in 2000 was characterized during the following season.",
+            "6": "C nutrition of grape plants grown in vineyards not treated with flazasulfuron in 2000 was characterized during the following season.",
+            "7": "Vines from areas treated with flazasulfuron exhibited yellow leaves.",
+            "8": "Vines from areas treated with flazasulfuron exhibited altered photosynthetic activity.",
+            "9": "Declines in leaf gas exchanges by 85% characterized the altered photosynthetic activity in vines from treated areas.",
+            "10": "Declines in photosynthetic pigment concentrations by 88% characterized the altered photosynthetic activity in vines from treated areas.",
+            "11": "Disorganization of the leaf plastids in vines from treated areas was marked.",
+            "12": "The herbicide flazasulfuron caused a 74% decrease in leaf starch levels.",
+            "13": "The herbicide flazasulfuron caused a 90% decrease in soluble carbohydrate levels in leaves.",
+            "14": "Some vines re-greened after bloom.",
+            "15": "After re-greening, some vines exhibited similar carbohydrate physiology to those grown in a non-treated area.",
+            "16": "Recovery of CO(2) fixation rates was found in re-greening leaves.",
+            "17": "Recovery of plastid ultra-structure was found in re-greening leaves.",
+            "18": "Recovery of pigment concentrations was found in re-greening leaves.",
+            "19": "Recovery of carbohydrate levels was found in re-greening leaves.",
+            "20": "The results of the study showed that flazasulfuron may be phytotoxic for grapevine.",
+            "21": "This finding contrasts with the previously available information in the literature.",
+            "22": "The phytotoxicity of flazasulfuron was overcome the following year.",
+            "23": "Vines have the potential to recover from flazasulfuron herbicide stress after one season."
+          },
+          "13": {
+            "1": "Wild bee declines have been partially attributed to neonicotinoid insecticides.",
+            "2": "Short-term laboratory studies on commercially bred bee species, including honeybees and bumblebees, have identified sub-lethal effects of neonicotinoid insecticides.",
+            "3": "There is no strong evidence linking neonicotinoid insecticides to losses of the majority of wild bee species.",
+            "4": "18 years of UK national wild bee distribution data for 62 species are related to the amounts of neonicotinoid use in oilseed rape.",
+            "5": "A multi-species dynamic Bayesian occupancy analysis was used to study the impact of neonicotinoid seed treatment use on oilseed rape.",
+            "6": "Evidence of increased population extinction rates in wild bees was found in response to neonicotinoid seed treatment use on oilseed rape.",
+            "7": "Species foraging on oilseed rape benefit from the cover provided by this crop.",
+            "8": "Species foraging on oilseed rape were, on average, three times more negatively affected by exposure to neonicotinoids than species that forage on non-crop plants.",
+            "9": "Sub-lethal effects of neonicotinoids could scale up to cause losses of bee biodiversity.",
+            "10": "Restrictions on neonicotinoid use may reduce population declines in wild bees."
+          }
+        },
+        "viewpoints": [
+          "Fungicides may decrease the biomass of arbuscular mycorrhizal fungi.",
+          "Decreasing the biomass of arbuscular mycorrhizal fungi affects their symbioses with higher plants.",
+          "Herbicides may reduce plant pollen viability.",
+          "Herbicides may reduce carbohydrate metabolism in plants.",
+          "Insecticides targeting pest herbivores may cause long-term declines in non-target insect pollinators.",
+          "Long-term declines in non-target insect pollinators are associated with mass-flowering crops."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Such impacts appear widespread across taxa, with individual studies reporting effects on microorganisms [14] , plants [15] , invertebrates [5] , [16] , [17] , amphibians [18] , birds [6] , [19] and mammals [20] .",
+        "references": {
+          "14": [],
+          "15": {
+            "1": "The continuous growth in global population since the beginning of the 20th century results in the necessity of food and energy provision.",
+            "2": "The necessity of food and energy provision favors the intensive use of agricultural products such as pesticides.",
+            "3": "Pesticides are important to prevent losses in conventional chemically based agriculture.",
+            "4": "Pesticides frequently present side effects that go against agricultural production.",
+            "5": "The use of pesticides causes direct effects on soil organisms.",
+            "6": "The use of pesticides causes indirect effects on soil organisms.",
+            "7": "The direct and indirect effects of pesticides on soil organisms unbalance essential soil processes.",
+            "8": "Essential soil processes include primary production, organic matter decomposition, and nutrient cycling.",
+            "9": "Under tropical conditions, very little is known regarding the effects of pesticides on terrestrial organisms.",
+            "10": "The aim of the present study was to assess the ecotoxicological effects of the herbicide DMA® 806 BR with the active ingredient 2,4-D.",
+            "11": "The aim of the present study was to assess the ecotoxicological effects of the insecticide Regent® 800 WG with the active ingredient fipronil.",
+            "12": "The herbicide and insecticide were tested on terrestrial plant species, the dicot Raphanus sativus var. acanthioformis and the monocot Allium cepa.",
+            "13": "The herbicide and insecticide were tested on soil invertebrates, the collembolan Folsomia candida and the enchytraeid Enchytraeus crypticus.",
+            "14": "The study used natural soils (NS) and artificial soils (TAS) to assess the ecotoxicological effects.",
+            "15": "For both herbicide DMA® 806 BR and insecticide Regent® 800 WG, negative effects on non-target species were observed.",
+            "16": "Negative effects were observed at concentrations lower than the doses recommended to prevent pests in sugarcane fields.",
+            "17": "For both natural and artificial soils, the dicot species Raphanus sativus var. acanthioformis was the most affected by the herbicide DMA® 806 BR.",
+            "18": "The order of sensitivity to the herbicide in both soils was R. sativus > A. cepa > F. candida > E. crypticus.",
+            "19": "For both natural and artificial soils, the collembolan species Folsomia candida was the most affected by the insecticide Regent® 800 WG.",
+            "20": "The order of sensitivity to the insecticide in both soils was F. candida > E. crypticus = R. sativus = A. cepa.",
+            "21": "The order of the organisms' sensitivity to both pesticides was the same in both natural and artificial soils.",
+            "22": "The extent of the effects of the pesticides on organisms was soil dependent.",
+            "23": "Ecologically relevant concentrations of fipronil and 2,4-D were tested.",
+            "24": "Fipronil and 2,4-D have severe effects on non-target organisms.",
+            "25": "The use of fipronil and 2,4-D under recommended conditions may pose a risk to the terrestrial environment."
+          },
+          "5": {
+            "1": "Insects are facing a multitude of anthropogenic stressors.",
+            "2": "The recent decline in insect biodiversity is threatening ecosystems across the globe.",
+            "3": "The recent decline in insect biodiversity is threatening economies across the globe.",
+            "4": "The study investigated the impact of glyphosate on bumblebees.",
+            "5": "Glyphosate is the most commonly used herbicide worldwide.",
+            "6": "Bumblebee colonies maintain their brood at high temperatures via active thermogenesis.",
+            "7": "Maintaining brood at high temperatures is a prerequisite for bumblebee colony growth.",
+            "8": "Maintaining brood at high temperatures is a prerequisite for bumblebee colony reproduction.",
+            "9": "The study used a within-colony comparative approach to examine the effects of long-term glyphosate exposure on individual thermoregulation.",
+            "10": "The study used a within-colony comparative approach to examine the effects of long-term glyphosate exposure on collective thermoregulation.",
+            "11": "Effects of glyphosate exposure are weak at the level of individual bumblebees.",
+            "12": "Glyphosate exposure decreases the collective ability to maintain necessary high brood temperatures by more than 25% during periods of resource limitation.",
+            "13": "Glyphosate exposure carries hidden costs for pollinators in heavily stressed ecosystems.",
+            "14": "The hidden costs of glyphosate exposure for pollinators have so far been largely overlooked."
+          },
+          "16": {
+            "1": "There is recent concern over global pollinator declines.",
+            "2": "Considerable research has been conducted on the effects of pesticides on bees due to concern over global pollinator declines.",
+            "3": "Pesticides are typically not encountered at lethal levels by bees in the field.",
+            "4": "There is growing evidence that exposure to field-realistic levels of pesticides can have sublethal effects on bees.",
+            "5": "Sublethal effects on bees from pesticide exposure include changes in foraging behaviour.",
+            "6": "Sublethal effects on bees from pesticide exposure include changes in homing ability.",
+            "7": "Sublethal effects on bees from pesticide exposure include changes in reproductive success.",
+            "8": "Bees are essential for the pollination of a wide variety of crops.",
+            "9": "Bees are essential for the pollination of the majority of wild flowering plants.",
+            "10": "Research on pesticide effects has been limited to direct effects on bees before this study.",
+            "11": "Research on pesticide effects on pollination services provided by bees has been limited until now.",
+            "12": "This is the first evidence that pesticide exposure can reduce the pollination services bumblebees deliver to apples.",
+            "13": "Apples are a crop of global economic importance.",
+            "14": "Bumblebee colonies exposed to a neonicotinoid pesticide provided lower visitation rates to apple trees.",
+            "15": "Bumblebee colonies exposed to a neonicotinoid pesticide collected pollen less often.",
+            "16": "Pesticide-exposed colonies produced apples containing fewer seeds.",
+            "17": "Fewer seeds in apples demonstrate a reduced delivery of pollination services by bumblebee colonies.",
+            "18": "Reduced pollination service delivery is not due to pesticide-induced changes in individual bee behaviour.",
+            "19": "Reduced pollination service delivery is most likely due to effects at the colony level.",
+            "20": "Pesticide exposure can impair the ability of bees to provide pollination services.",
+            "21": "Impairment of pollination services by bees has important implications for the sustained delivery of stable crop yields.",
+            "22": "Impairment of pollination services by bees has important implications for the functioning of natural ecosystems."
+          },
+          "17": {
+            "1": "Experiments linking neonicotinoids and declining bee health have been criticized.",
+            "2": "The criticism of these experiments is that they do not simulate realistic exposure to neonicotinoids.",
+            "3": "The duration and magnitude of neonicotinoid exposure in Canada's corn-growing regions were quantified.",
+            "4": "The data from neonicotinoid exposure quantification were used to design realistic experiments to investigate the effect of neonicotinoids on honey bees.",
+            "5": "Colonies near corn were naturally exposed to neonicotinoids for up to 4 months.",
+            "6": "The exposure duration of up to 4 months covered the majority of the honey bee's active season.",
+            "7": "Realistic experiments showed that neonicotinoids increased worker bee mortality.",
+            "8": "Realistic experiments showed that neonicotinoids were associated with declines in social immunity over time.",
+            "9": "Realistic experiments showed that neonicotinoids were associated with increased queenlessness over time.",
+            "10": "The acute toxicity of neonicotinoids to honey bees doubles in the presence of a commonly encountered fungicide.",
+            "11": "Field-realistic exposure to neonicotinoids can reduce honey bee health in corn-growing regions."
+          },
+          "18": {
+            "1": "The input of agrochemicals has contributed to alteration of community composition in managed natural systems.",
+            "2": "The input of agrochemicals has contributed to alteration of community composition in associated natural systems.",
+            "3": "The input of agrochemicals has contributed to alteration of amphibian biodiversity.",
+            "4": "Pesticides negatively affect many amphibian species.",
+            "5": "Fertilizers negatively affect many amphibian species.",
+            "6": "Pesticides can cause mortality in amphibian species.",
+            "7": "Fertilizers can cause mortality in amphibian species.",
+            "8": "Pesticides can cause sublethal effects in amphibian species such as reduced growth and increased susceptibility to disease.",
+            "9": "Fertilizers can cause sublethal effects in amphibian species such as reduced growth and increased susceptibility to disease.",
+            "10": "The effect of pesticides varies among amphibian species.",
+            "11": "The effect of fertilizers varies among amphibian species.",
+            "12": "Meta-analytic techniques were used to quantify the lethal effects of pesticides on amphibians.",
+            "13": "Meta-analytic techniques were used to quantify the lethal effects of fertilizers on amphibians.",
+            "14": "Meta-analytic techniques were used to quantify the sublethal effects of pesticides on amphibians.",
+            "15": "Meta-analytic techniques were used to quantify the sublethal effects of fertilizers on amphibians.",
+            "16": "The purpose of using meta-analytic techniques was to review the published work to date.",
+            "17": "The purpose of using meta-analytic techniques was to produce generalized conclusions.",
+            "18": "Pesticides had a negative effect on the survival of amphibians with a value of -0.9027.",
+            "19": "Fertilizers had a negative effect on the survival of amphibians with a value of -0.9027.",
+            "20": "Pesticides had a negative effect on the growth of amphibians with a value of -0.0737.",
+            "21": "Fertilizers had a negative effect on the growth of amphibians with a value of -0.0737.",
+            "22": "These effects were observed across all reported amphibian species.",
+            "23": "Inorganic fertilizers negatively affected amphibian survival.",
+            "24": "Organophosphates negatively affected amphibian survival.",
+            "25": "Chloropyridinyl negatively affected amphibian survival.",
+            "26": "Phosphonoglycines negatively affected amphibian survival.",
+            "27": "Carbamates negatively affected amphibian survival.",
+            "28": "Triazines negatively affected amphibian survival.",
+            "29": "Organophosphates negatively affected amphibian growth.",
+            "30": "Phosphonoglycines negatively affected amphibian growth.",
+            "31": "Pesticides are an important stressor for amphibians in agriculturally dominated systems.",
+            "32": "Fertilizers are an important stressor for amphibians in agriculturally dominated systems.",
+            "33": "Certain chemical classes are more likely to harm amphibians than others.",
+            "34": "Best management practices in agroecosystems should incorporate amphibian species-specific response to agrochemicals.",
+            "35": "Best management practices in agroecosystems should incorporate life stage dependent susceptibility to agrochemicals.",
+            "36": "The purpose of incorporating species-specific responses and life stage susceptibility is to best conserve amphibian biodiversity in agroecosystems."
+          },
+          "6": {
+            "1": "Neonicotinoid insecticides have adverse effects on non-target invertebrate species.",
+            "2": "Invertebrates constitute a substantial part of the diet of many bird species during the breeding season.",
+            "3": "Invertebrates are indispensable for raising offspring of many bird species.",
+            "4": "The hypothesis investigated was that imidacloprid has a negative impact on insectivorous bird populations.",
+            "5": "Imidacloprid is the most widely used neonicotinoid insecticide.",
+            "6": "In the Netherlands, local bird population trends were significantly more negative in areas with higher surface-water concentrations of imidacloprid.",
+            "7": "At imidacloprid concentrations of more than 20 nanograms per litre, bird populations in the Netherlands tended to decline by 3.5 percent on average annually.",
+            "8": "The spatial pattern of bird population decline in the Netherlands appeared only after the introduction of imidacloprid.",
+            "9": "Imidacloprid was introduced to the Netherlands in the mid-1990s.",
+            "10": "The recent negative relationship between imidacloprid concentrations and bird population trends remains after correcting for spatial differences in land-use changes.",
+            "11": "Land-use changes are known to affect bird populations in farmland.",
+            "12": "The impact of neonicotinoids on the natural environment is even more substantial than has recently been reported.",
+            "13": "The impact of neonicotinoids on the natural environment is reminiscent of the effects of persistent insecticides in the past.",
+            "14": "Future legislation should consider the potential cascading effects of neonicotinoids on ecosystems."
+          },
+          "19": {
+            "1": "Neonicotinoids are neurotoxic insecticides.",
+            "2": "Neonicotinoids are widely used as seed treatments.",
+            "3": "Little is known about the effects of neonicotinoids on migrating birds that forage in agricultural areas.",
+            "4": "The migratory movements of imidacloprid-exposed songbirds were tracked at a landscape scale.",
+            "5": "A combination of experimental dosing and automated radio telemetry was used to track the migratory movements of imidacloprid-exposed songbirds.",
+            "6": "White-crowned sparrows ingested field-realistic quantities of imidacloprid.",
+            "7": "Field-realistic quantities of imidacloprid are 1.2 or 3.9 milligrams per kilogram body mass."
+          },
+          "20": {
+            "1": "The use of pesticides to reduce mosquito vector populations is a cornerstone of global malaria control efforts.",
+            "2": "The biological impact of most pesticides on human populations is not known.",
+            "3": "The biological impact of most pesticides on pregnant women is not known.",
+            "4": "The biological impact of most pesticides on infants is not known.",
+            "5": "Some pesticides have been shown to perturb the human immune system.",
+            "6": "Carbamates have been shown to perturb the human immune system.",
+            "7": "The systemic absorption of bendiocarb, a commonly used carbamate pesticide, is measured following household spraying.",
+            "8": "The immunologic effects of bendiocarb, a commonly used carbamate pesticide, are measured following household spraying.",
+            "9": "The measurement is conducted in a cohort of pregnant Ugandan women and their infants.",
+            "10": "Bendiocarb is present at high levels in maternal plasma of individuals exposed during pregnancy.",
+            "11": "Bendiocarb is present at high levels in umbilical cord plasma of individuals exposed during pregnancy.",
+            "12": "Bendiocarb is present at high levels in infant plasma of individuals exposed during pregnancy.",
+            "13": "Bendiocarb is systemically absorbed by individuals exposed during pregnancy.",
+            "14": "Bendiocarb is trans-placentally transferred to the fetus.",
+            "15": "Bendiocarb exposure is associated with numerous changes in fetal immune cell homeostasis.",
+            "16": "Bendiocarb exposure is associated with numerous changes in fetal immune function.",
+            "17": "Bendiocarb exposure is associated with a dose-dependent decrease in regulatory CD4 T cells.",
+            "18": "Bendiocarb exposure is associated with increased cytokine production.",
+            "19": "Bendiocarb exposure is associated with inhibition of antigen-driven proliferation.",
+            "20": "Prenatal bendiocarb exposure is associated with higher post-vaccination measles titers at one year of age.",
+            "21": "The impact of prenatal bendiocarb exposure on functional immunity may persist for many months after birth.",
+            "22": "In utero bendiocarb exposure has multiple previously unrecognized biological effects on the fetal immune system."
+          }
+        },
+        "viewpoints": [
+          "Impacts of pesticide exposure appear widespread across taxa.",
+          "Individual studies report the effects of pesticides on microorganisms.",
+          "Individual studies report the effects of pesticides on plants.",
+          "Individual studies report the effects of pesticides on invertebrates.",
+          "Individual studies report the effects of pesticides on amphibians.",
+          "Individual studies report the effects of pesticides on birds.",
+          "Individual studies report the effects of pesticides on mammals."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "In addition to effects on individual species, the influence of pesticides can propagate across trophic levels, impacting ecosystem-scale species interactions that may lead to secondary effects [21] .",
+        "references": {
+          "21": {
+            "1": "Older classes of insecticides contributed to biodiversity loss during the Green Revolution.",
+            "2": "Older classes of insecticides decreased insect populations during the Green Revolution.",
+            "3": "Older classes of insecticides bioaccumulated across food webs during the Green Revolution.",
+            "4": "The introduction of Integrated Pest Management (IPM) improved stewardship of insecticides.",
+            "5": "Integrated Pest Management (IPM) promised fewer non-target effects.",
+            "6": "Integrated Pest Management (IPM) adoption has waned in recent decades.",
+            "7": "The popularity of newer classes of insecticides, like the neonicotinoids, has surged in recent decades.",
+            "8": "Newer classes of insecticides, like the neonicotinoids, pose new and unique threats to insect populations.",
+            "9": "The review first addresses how older classes of insecticides can affect trophic interactions.",
+            "10": "The review considers the influence of neonicotinoids on food webs.",
+            "11": "The review considers the role neonicotinoids may be playing in insect declines.",
+            "12": "The review concludes by discussing challenges posed by current use patterns of neonicotinoids.",
+            "13": "The review concludes by discussing how the risk of neonicotinoids can be addressed."
+          }
+        },
+        "viewpoints": [
+          "The influence of pesticides can propagate across trophic levels.",
+          "The influence of pesticides can impact ecosystem-scale species interactions.",
+          "Impacts on ecosystem-scale species interactions may lead to secondary effects."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Often due to practical constraints, pesticide regulatory risk assessments remain focused on a limited number of easily cultured model species, e.g. rats, zebrafish, Xenopus , Daphnia , chironomids, algae, honeybees, and/or earthworms.",
+        "references": {},
+        "viewpoints": [
+          "Pesticide regulatory risk assessments often remain focused on a limited number of easily cultured model species.",
+          "Easily cultured model species used in pesticide regulatory risk assessments include rats, zebrafish, Xenopus, Daphnia, chironomids, algae, honeybees, and earthworms."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "As such, they are unlikely to capture the variety of responses to pesticide exposure seen across the diversity of species and communities found in both managed and natural systems [13] .",
+        "references": {
+          "13": {
+            "1": "Wild bee declines have been partially attributed to neonicotinoid insecticides.",
+            "2": "Short-term laboratory studies on commercially bred bee species, including honeybees and bumblebees, have identified sub-lethal effects of neonicotinoid insecticides.",
+            "3": "There is no strong evidence linking neonicotinoid insecticides to losses of the majority of wild bee species.",
+            "4": "18 years of UK national wild bee distribution data for 62 species are related to the amounts of neonicotinoid use in oilseed rape.",
+            "5": "A multi-species dynamic Bayesian occupancy analysis was used to study the impact of neonicotinoid seed treatment use on oilseed rape.",
+            "6": "Evidence of increased population extinction rates in wild bees was found in response to neonicotinoid seed treatment use on oilseed rape.",
+            "7": "Species foraging on oilseed rape benefit from the cover provided by this crop.",
+            "8": "Species foraging on oilseed rape were, on average, three times more negatively affected by exposure to neonicotinoids than species that forage on non-crop plants.",
+            "9": "Sub-lethal effects of neonicotinoids could scale up to cause losses of bee biodiversity.",
+            "10": "Restrictions on neonicotinoid use may reduce population declines in wild bees."
+          }
+        },
+        "viewpoints": [
+          "Pesticide regulatory risk assessments are unlikely to capture the variety of responses to pesticide exposure.",
+          "There is a variety of responses to pesticide exposure seen across the diversity of species and communities in managed systems.",
+          "There is a variety of responses to pesticide exposure seen across the diversity of species and communities in natural systems."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "At the same time, there remains significant debate among the agricultural industry, governmental bodies and conservation organizations concerning the real-world hazards posed by pesticides.",
+        "references": {},
+        "viewpoints": [
+          "There remains significant debate among the agricultural industry concerning the real-world hazards posed by pesticides.",
+          "There remains significant debate among governmental bodies concerning the real-world hazards posed by pesticides.",
+          "There remains significant debate among conservation organizations concerning the real-world hazards posed by pesticides."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "A major factor affecting the resolution of this issue is the lack of a cross-taxa synthesis of pesticide effects.",
+        "references": {},
+        "viewpoints": [
+          "A major factor affecting the resolution of the debate on real-world hazards posed by pesticides is the lack of a cross-taxa synthesis of pesticide effects."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "Such an analysis is needed to support a robust evidence base for non-target effects that extend beyond scenario-specific case studies and model species.",
+        "references": {},
+        "viewpoints": [
+          "An analysis is needed to support a robust evidence base for non-target effects of pesticides.",
+          "A robust evidence base for non-target effects of pesticides should extend beyond scenario-specific case studies.",
+          "A robust evidence base for non-target effects of pesticides should extend beyond model species."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Previous meta-analyses of pesticide impacts on non-target species have either considered only particular taxonomic groups, such as fish [22] or bees [23] , or have considered specific habitats such as aquatic ecosystems [24] .",
+        "references": {
+          "22": {
+            "1": "Fish cholinesterases (ChEs), such as acetylcholinesterase (AChE) and butyrylcholinesterase (BChE), are sensitive to a variety of toxicants.",
+            "2": "Fish cholinesterases (ChEs), such as acetylcholinesterase (AChE) and butyrylcholinesterase (BChE), are common biomarkers of environmental contamination.",
+            "3": "The study conducted a systematic review and meta-analyses to understand pesticide effects on fish cholinesterases (ChEs) mean activity and variability.",
+            "4": "The study aimed to verify if brain and muscle cholinesterases (ChEs) responded differently to pesticide exposure.",
+            "5": "The study aimed to verify how fish size and life stage (i.e., juvenile and adult) influence cholinesterases (ChEs) variability and mean activity.",
+            "6": "The study aimed to verify what type of pesticides (i.e., herbicide, insecticide, and fungicide) has the strongest effect on cholinesterases (ChEs).",
+            "7": "The study aimed to verify if analytical-grade compounds differ from commercial formulations in their effects on cholinesterases (ChEs).",
+            "8": "The study aimed to verify if increasing concentrations combined with prolonged exposure leads to stronger cholinesterases (ChEs) inhibition.",
+            "9": "The study aimed to verify how each class of pesticide affects cholinesterases (ChEs).",
+            "10": "The study validated the reliability of cholinesterases (ChEs) as biomarkers.",
+            "11": "The study identified factors influencing the response of cholinesterases (ChEs).",
+            "12": "Butyrylcholinesterase (BChE) response was more variable than acetylcholinesterase (AChE) response regardless of tissue.",
+            "13": "No difference between the average activity of butyrylcholinesterase (BChE) and acetylcholinesterase (AChE) was detected.",
+            "14": "The size of juvenile fish is an important factor affecting cholinesterases (ChEs) mean activity and variability.",
+            "15": "Pesticide had no significant effect on adult fish cholinesterases (ChEs).",
+            "16": "Insecticides were stronger inhibitors of cholinesterases (ChEs) compared to herbicides.",
+            "17": "Insecticides were stronger inhibitors of cholinesterases (ChEs) compared to fungicides.",
+            "18": "Analytical-grade compounds decreased cholinesterases (ChEs) mean activity to a higher degree than commercial formulations.",
+            "19": "The combined effect of concentration and time on cholinesterases (ChEs) was only significant for fungicides.",
+            "20": "The combined effect of concentration and time on cholinesterases (ChEs) was only significant for insecticides.",
+            "21": "Organophosphorus insecticides had the strongest effect on cholinesterases (ChEs) among pesticide classes.",
+            "22": "Carbamates had a strong effect on cholinesterases (ChEs) after organophosphorus insecticides.",
+            "23": "Organochlorines had a strong effect on cholinesterases (ChEs) after carbamates.",
+            "24": "Pyrethroids had a strong effect on cholinesterases (ChEs) after organochlorines.",
+            "25": "Organophosphorus herbicides significantly decreased cholinesterases (ChEs) mean activity.",
+            "26": "Oxazolidinones significantly decreased cholinesterases (ChEs) mean activity.",
+            "27": "The effects of organophosphorus herbicides on cholinesterases (ChEs) were similar to those of pyrethroids and organochlorines.",
+            "28": "The effects of oxazolidinones on cholinesterases (ChEs) were similar to those of pyrethroids and organochlorines.",
+            "29": "The study identified a research gap of a small number of studies on fungicides.",
+            "30": "The study identified a research gap of a small number of studies on neonicotinoids.",
+            "31": "The study identified a research gap of a small number of studies on other relevant pesticides.",
+            "32": "The findings suggest future research directions.",
+            "33": "The suggested future research directions might help researchers identify robust cause-effect relationships between fish cholinesterases (ChEs) and pesticides."
+          },
+          "23": {
+            "1": "Most insecticides function as insect neurotoxins.",
+            "2": "Sublethal doses of insect neurotoxins are affecting the learning and memory of wild bee colonies.",
+            "3": "Sublethal doses of insect neurotoxins are affecting the learning and memory of managed bee colonies.",
+            "4": "The effects of sublethal doses of insect neurotoxins exacerbate the negative effects of pesticide exposure.",
+            "5": "Exposure to sublethal doses of insect neurotoxins reduces individual foraging efficiency in bees.",
+            "6": "Variation in methodologies across studies prevents quantitative evaluation of the impacts of insect neurotoxins on bees.",
+            "7": "Variation in interpretation of results across studies prevents quantitative evaluation of the impacts of insect neurotoxins on bees.",
+            "8": "Quantitative evaluation of the impacts of insect neurotoxins on bees is needed to make recommendations for policy change.",
+            "9": "It is unclear whether robust effects of neurotoxins occur under acute exposure regimes.",
+            "10": "Acute exposure regimes are often argued to be more field-realistic than chronic regimes.",
+            "11": "Many studies are based on chronic exposure regimes.",
+            "12": "It is unclear whether robust effects occur for field-realistic dosages of pesticides.",
+            "13": "It is unclear whether robust effects occur for pesticides other than neonicotinoids.",
+            "14": "A meta-analysis is used to examine the impact of pesticides on bee performance in proboscis extension-based learning assays.",
+            "15": "Proboscis extension-based learning assays are the paradigm most commonly used to assess learning and memory in bees.",
+            "16": "The study synthesizes 104 estimated effect sizes related to learning across a diverse range of studies.",
+            "17": "The study synthesizes 167 estimated effect sizes related to memory across a diverse range of studies.",
+            "18": "Significant negative effects of pesticides on learning and memory were detected at field realistic dosages.",
+            "19": "Significant negative effects of pesticides on learning and memory were detected under both chronic and acute application.",
+            "20": "Significant negative effects of pesticides on learning and memory were detected for both neonicotinoid and non-neonicotinoid pesticide groups.",
+            "21": "Key gaps in the literature include a critical lack of studies on non-neonicotinoid pesticides."
+          },
+          "24": {
+            "1": "The present study considers using ecotoxicity data for risk assessment with species sensitivity distributions (SSDs) of chemical pollution in surface water.",
+            "2": "Species sensitivity distributions (SSDs) are used to quantify the likelihood that critical effect levels of chemical pollution in surface water are exceeded.",
+            "3": "The use of species sensitivity distributions (SSDs) to assess chemical pollution fits the European Water Framework Directive.",
+            "4": "The European Water Framework Directive suggests using models to assess the likelihood that chemicals affect water quality for management prioritization.",
+            "5": "Species sensitivity distributions (SSDs) were derived based on chronic ecotoxicity test data for 12,386 compounds.",
+            "6": "Species sensitivity distributions (SSDs) were derived based on acute ecotoxicity test data for 12,386 compounds.",
+            "7": "Log-normal species sensitivity distributions (SSDs) are characterized by the median of log-transformed ecotoxicity data.",
+            "8": "Log-normal species sensitivity distributions (SSDs) are characterized by the standard deviation of log-transformed ecotoxicity data.",
+            "9": "Log-normal species sensitivity distributions (SSDs) are characterized by a quality score.",
+            "10": "A case study illustrates the utility of species sensitivity distributions (SSDs) for water quality assessment.",
+            "11": "A case study illustrates the utility of species sensitivity distributions (SSDs) for management prioritization.",
+            "12": "Chronic mixture toxic pressure of mixture exposures was quantified for over 22,000 water bodies in Europe.",
+            "13": "Acute mixture toxic pressure of mixture exposures was quantified for over 22,000 water bodies in Europe.",
+            "14": "Quantification involved 1,760 chemicals for which both exposure and hazard data were available.",
+            "15": "The results show the likelihood that mixture exposures exceed a negligible effect level.",
+            "16": "The results show the likelihood that mixture exposures increase species loss.",
+            "17": "The species sensitivity distributions (SSDs) in the present study represent a versatile approach to prevent chemical pollution problems.",
+            "18": "The species sensitivity distributions (SSDs) in the present study represent a comprehensive approach to assess chemical pollution problems.",
+            "19": "The species sensitivity distributions (SSDs) in the present study represent an approach to manage chemical pollution problems."
+          }
+        },
+        "viewpoints": [
+          "Previous meta-analyses of pesticide impacts on non-target species have considered only particular taxonomic groups, such as fish.",
+          "Previous meta-analyses of pesticide impacts on non-target species have considered only particular taxonomic groups, such as bees.",
+          "Previous meta-analyses of pesticide impacts on non-target species have considered specific habitats, such as aquatic ecosystems."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "To our knowledge, there has been no systematic and overarching synthesis of how different types of pesticides affect the diversity of multiple non-target eukaryotic and prokaryotic organisms across all trophic levels.",
+        "references": {},
+        "viewpoints": [
+          "There has been no systematic and overarching synthesis of how different types of pesticides affect the diversity of multiple non-target eukaryotic organisms across all trophic levels.",
+          "There has been no systematic and overarching synthesis of how different types of pesticides affect the diversity of multiple non-target prokaryotic organisms across all trophic levels."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "Furthermore, current syntheses have not considered how the impacts of pesticides differ globally across climatic zones or for major mechanisms of exposure, such as those acting in aquatic or terrestrial environments.",
+        "references": {},
+        "viewpoints": [
+          "Current syntheses have not considered how the impacts of pesticides differ globally across climatic zones.",
+          "Current syntheses have not considered how the impacts of pesticides differ for major mechanisms of exposure in aquatic environments.",
+          "Current syntheses have not considered how the impacts of pesticides differ for major mechanisms of exposure in terrestrial environments."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Without a unified synthesis applying common data capture and analytical standards, the global consequences of pesticide use across diverse ecosystems and taxa remain poorly understood.",
+        "references": {},
+        "viewpoints": [
+          "The global consequences of pesticide use across diverse ecosystems remain poorly understood without a unified synthesis applying common data capture and analytical standards.",
+          "The global consequences of pesticide use across diverse taxa remain poorly understood without a unified synthesis applying common data capture and analytical standards."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Such knowledge derived from a careful quantitative synthesis is vital to inform national and international policy goals to provide a framework for targeted mitigation to identify the role of pesticide use in biodiversity declines.",
+        "references": {},
+        "viewpoints": [
+          "Knowledge derived from a careful quantitative synthesis is vital to inform national policy goals.",
+          "Knowledge derived from a careful quantitative synthesis is vital to inform international policy goals.",
+          "A careful quantitative synthesis can provide a framework for targeted mitigation.",
+          "A framework for targeted mitigation can identify the role of pesticide use in biodiversity declines."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Here, we address these limitations by integrating 20,212 estimates of pesticide effects reported from 1705 experimental studies across the globe.",
+        "references": {},
+        "viewpoints": [
+          "The study addresses limitations in understanding pesticide effects by integrating 20,212 estimates of pesticide effects.",
+          "The study integrates estimates reported from 1705 experimental studies across the globe."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "These studies collectively measured the effects of insecticides, fungicides and herbicides on animals (invertebrates and vertebrates), plants (dicotyledonous, monocotyledonous and spore-producing) and microorganisms (bacteria and fungi).",
+        "references": {},
+        "viewpoints": [
+          "The studies collectively measured the effects of insecticides on animals, plants, and microorganisms.",
+          "The studies collectively measured the effects of fungicides on animals, plants, and microorganisms.",
+          "The studies collectively measured the effects of herbicides on animals, plants, and microorganisms.",
+          "The studies measured the effects of pesticides on invertebrates and vertebrates.",
+          "The studies measured the effects of pesticides on dicotyledonous, monocotyledonous, and spore-producing plants.",
+          "The studies measured the effects of pesticides on bacteria and fungi."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "The included studies encompass laboratory and field experiments from temperate and tropical climatic zones, both in aquatic and terrestrial systems (Fig. 1 and Supplementary Data 1 ).",
+        "references": {},
+        "viewpoints": [
+          "The included studies encompass laboratory experiments from temperate climatic zones.",
+          "The included studies encompass laboratory experiments from tropical climatic zones.",
+          "The included studies encompass field experiments from temperate climatic zones.",
+          "The included studies encompass field experiments from tropical climatic zones.",
+          "The included studies encompass experiments in aquatic systems.",
+          "The included studies encompass experiments in terrestrial systems."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "We classified the effects on multicellular animals (vertebrates and invertebrates), plants and microorganisms based on changes in growth, reproduction, and behaviour (animals only) as well as other relevant biomarkers (e.g. enzymatic activities, metabolic reaction and plant photosynthesis).",
+        "references": {},
+        "viewpoints": [
+          "The effects on multicellular animals were classified based on changes in growth, reproduction, and behaviour.",
+          "The effects on plants were classified based on changes in growth and reproduction.",
+          "The effects on microorganisms were classified based on changes in growth and reproduction.",
+          "The classification of effects included other relevant biomarkers like enzymatic activities.",
+          "The classification of effects included other relevant biomarkers like metabolic reaction.",
+          "The classification of effects included other relevant biomarkers like plant photosynthesis."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "For all meta-analyses, we explicitly accounted for phylogenetic effects for species where published phylogenies were available ( Supplementary Methods ).",
+        "references": {},
+        "viewpoints": [
+          "For all meta-analyses, phylogenetic effects were explicitly accounted for species where published phylogenies were available."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "As well as considering the consequences of taxa-specific pesticides (e.g. effect of herbicides on plants), we also address potential pathways by which pesticides can affect non-target organisms.",
+        "references": {},
+        "viewpoints": [
+          "The study considers the consequences of taxa-specific pesticides like herbicides affecting plants.",
+          "The study addresses potential pathways by which pesticides can affect non-target organisms."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "This includes impacts on taxonomic groups for which a particular class of pesticide was not developed to control, e.g. insecticides affecting fungi or plants.",
+        "references": {},
+        "viewpoints": [
+          "Impacts on taxonomic groups are considered for which a particular class of pesticide was not developed to control.",
+          "Insecticides affecting fungi are considered impacts on taxonomic groups pesticides were not developed to control.",
+          "Insecticides affecting plants are considered impacts on taxonomic groups pesticides were not developed to control."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "Further, we assess whether ‘new’ or ‘old’ pesticides, based on the rigorous European Union (EU) regulatory framework, differ in their effects.",
+        "references": {},
+        "viewpoints": [
+          "The study assesses whether ‘new’ pesticides differ in their effects based on the EU regulatory framework.",
+          "The study assesses whether ‘old’ pesticides differ in their effects based on the EU regulatory framework."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "To do this, we applied meta-regression of log response ratios (lnRR) to test our hypotheses that: (i) pesticides (insecticides, fungicides and herbicides) suppress growth, reproduction, and behavioural traits; (ii) metabolic biomarkers of non-target organisms may be up- or down-regulated in response to pesticides, thus signalling a physiological perturbation; (iii) identified pesticide effects are consistent between taxonomic groups, experimental types, climatic zones, modes of exposure (terrestrial or aquatic), and broad pesticide classes (insecticides, fungicides or herbicides); and (iv) the effects also hold under realistic terrestrial and aquatic exposure scenarios.",
+        "references": {},
+        "viewpoints": [
+          "A meta-regression of log response ratios (lnRR) was applied to test hypotheses.",
+          "Hypothesis (i): Pesticides such as insecticides, fungicides, and herbicides suppress growth, reproduction, and behavioural traits.",
+          "Hypothesis (ii): Metabolic biomarkers of non-target organisms may be up- or down-regulated in response to pesticides, signalling a physiological perturbation.",
+          "Hypothesis (iii): Identified pesticide effects are consistent between taxonomic groups.",
+          "Hypothesis (iii): Identified pesticide effects are consistent between experimental types.",
+          "Hypothesis (iii): Identified pesticide effects are consistent between climatic zones.",
+          "Hypothesis (iii): Identified pesticide effects are consistent between modes of exposure.",
+          "Hypothesis (iii): Identified pesticide effects are consistent between broad pesticide classes.",
+          "Hypothesis (iv): The effects also hold under realistic terrestrial and aquatic exposure scenarios."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56732-x_with_abstracts",
+    "base_id": "s41467-025-56732-x",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56732-x_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}

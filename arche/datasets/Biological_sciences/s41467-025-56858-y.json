@@ -1,0 +1,853 @@
+{
+  "introduction": {
+    "section": "introduction",
+    "content": "Adoptive cellular transfer (ACT) has emerged as a promising therapeutic approach in oncology, enabling the precise targeting and elimination of cancer cells. However, the efficacy of ACT in solid tumors is often compromised by impaired CD8 + T cell functions, inadequate activation, and limited lifespan of tumor-reactive T cells [1] , [2] , [3] . The TCR-CD3 complex mediates the recognition of tumor antigens, initiating downstream signaling essential for a robust immune response. Yet, the immunosuppressive tumor microenvironment can inhibit CD8 + T cell activation and cytotoxicity, facilitating tumor immune evasion [4] , [5] , [6] . Unlike the immune checkpoint inhibitors, ACT relies on the ex vivo activation and expansion of T cells, including chimeric antigen receptor (CAR) T cells. Accumulating evidence indicates that this phase can influence the therapeutic efficacy of tumor-specific CD8 + T cells against cancer [7] , [8] , [9] . Hence, optimizing culture conditions and elucidating the underlying mechanisms are critical for broadening the clinical utility of ACT immunotherapy. T cell activation, proliferation, and differentiation into effector and memory T cells are orchestrated by a combination of extrinsic and intrinsic signaling cascades, essential for combating malignancies and establishing durable protection [10] , [11] . Following T cell receptor (TCR) engagement, antigen recognition is reinforced by the formation of TCR clusters at the cell membrane [12] , [13] . This leads to the establishment of an immune synapse, which activates a series of transcription factors (TF), including early growth response 1 (EGR1), nuclear factor of activated T cells (NFAT), and activator protein 1 (AP-1), driving the transcription of genes crucial for T cell effector function [14] , [15] . These TFs also regulate chromatin accessibility, thereby shaping T cell function and fate determination [16] , [17] . Identifying the molecular regulators that modulate TF activity and guide T cell specification is crucial for enhancing T cell-mediated antitumor responses. Among these TFs, EGR1 plays a pivotal role in CD8 + T cell responses. EGR1 is rapidly induced in T cells upon antigen receptor cross-linking or TCR stimulation, serving as a key mediator linking early TCR signaling to downstream gene expression [14] , [18] . Studies have demonstrated the importance of EGR1 in various T cell processes, including thymic development and the regulation of key cytokines such as IL-2 and TNF, as well as its crucial role in the clonal expansion of virus-specific CD8 + T cells in a lymphocytic choriomeningitis virus (LCMV) model [19] , [20] , [21] . Utilizing piezoelectric membrane materials, we demonstrate the role of electrical stimulation in accelerating bone regeneration and combating bacteria [22] , [23] . Building on this work, our study reveals that treatment with a charged substrate enhances EGR1 expression and increases chromatin accessibility at EGR1 binding sites in CD8 + T cells, driving proliferation and polarization. Importantly, we find that EGR1 activation is antigen-dependent, underscoring its role in shaping CD8 + T cell responses under different immune contexts. In most clinical settings, autologous CD8 + T cells are genetically modified to express transgenic antigen receptors, followed by a brief period of in vitro activation and expansion before being reinfused into the patient. Efforts to improve T cell functionality typically focus on biological or chemical interventions [24] , [25] , [26] , [27] . While biochemical factors influencing T cell regulation have been extensively studied, the role of biophysical cues, such as shear stress, solid stress, and matrix stiffness, is increasingly recognized as critical in CD8 + T cell activation [8] , [28] , [29] , [30] , [31] . These physical characteristics can independently or synergistically impact the tumor microenvironment and the efficacy of CAR-T cells. Moreover, membrane potential (MP) depolarization in T cells within tumor microenvironments or inflamed tissues has been shown to affect receptor mobility, while characteristic oscillations at immunological synapses and electrostatic interactions in TCR signaling regulation have been observed [32] , [33] , [34] , [35] , [36] . However, the mechanisms by which electrical signals are converted into biochemical signaling within T cells and whether external electrical stimulation can be used to modulate T cell activity in cancer therapy, remain elusive. In this study, we demonstrate that external electrical stimulation during ex vivo culture refines CD8 + T cell differentiation, enhancing the efficacy of ACT or CAR-T therapy in vivo. By augmenting TCR signaling transduction, electrical stimulation reduces the polarization of virtual memory T cells and promotes the expansion of CD8 + T cells with higher proliferative potential, key factors in the antitumor effects of ACT. Our findings highlight the critical role of extracellular electrical stimuli in shaping CD8 + T cell fate, providing a foundational strategy for harnessing proliferative potential T cells in cancer therapy.",
+    "sentences": [
+      {
+        "idx": 1,
+        "sentence": "Adoptive cellular transfer (ACT) has emerged as a promising therapeutic approach in oncology, enabling the precise targeting and elimination of cancer cells.",
+        "references": {},
+        "viewpoints": [
+          "Adoptive cellular transfer (ACT) is a promising therapeutic approach in oncology.",
+          "Adoptive cellular transfer (ACT) enables the precise targeting and elimination of cancer cells."
+        ]
+      },
+      {
+        "idx": 2,
+        "sentence": "However, the efficacy of ACT in solid tumors is often compromised by impaired CD8 + T cell functions, inadequate activation, and limited lifespan of tumor-reactive T cells [1] , [2] , [3].",
+        "references": {
+          "1": {
+            "1": "T cells are engineered to express chimeric antigen receptors (CARs) specific for tumour antigens.",
+            "2": "The engineering of T cells to express CARs specific for tumour antigens has led to high complete response rates in patients with haematologic malignancies.",
+            "3": "Despite the early success of CAR-T cells, major challenges to their broad application as cancer therapies remain.",
+            "4": "Treatment-associated toxicities are a major challenge to the broad application of CAR-T cells as cancer therapies.",
+            "5": "Cancer relapse with antigen-negative tumours is a major challenge to the broad application of CAR-T cells as cancer therapies.",
+            "6": "Targeting solid tumours with CAR-T cells poses additional obstacles.",
+            "7": "The paucity of tumour-specific antigens is an obstacle to targeting solid tumours with CAR-T cells.",
+            "8": "The immunosuppressive effects of the tumour microenvironment are an obstacle to targeting solid tumours with CAR-T cells.",
+            "9": "T cells can be programmed with genetic modules to overcome the challenges to the broad application of CAR-T cells as cancer therapies.",
+            "10": "Programming T cells with genetic modules increases their therapeutic potency.",
+            "11": "Programming T cells with genetic modules increases their specificity.",
+            "12": "The Review Article surveys major advances in the engineering of next-generation CAR-T therapies for haematologic cancers.",
+            "13": "The Review Article surveys major advances in the engineering of next-generation CAR-T therapies for solid cancers.",
+            "14": "The Review Article places particular emphasis on strategies for the control of CAR specificity and activity.",
+            "15": "The Review Article places particular emphasis on approaches for improving CAR-T-cell persistence.",
+            "16": "The Review Article places particular emphasis on approaches for overcoming immunosuppression.",
+            "17": "The Review Article lays out a roadmap for the development of off-the-shelf CAR-T cells."
+          },
+          "2": [],
+          "3": {
+            "1": "CAR-T cell therapy has significantly improved the life expectancy for patients with refractory B cell lymphoma.",
+            "2": "CAR-T cell therapy has significantly improved the life expectancy for patients with relapse B cell lymphoma.",
+            "3": "The primary response rate of CAR-T cell therapy for B-ALL is promising.",
+            "4": "The high incidence of early relapse in B-ALL has caused modest long-term survival with CAR-T cell therapy alone.",
+            "5": "A main challenge in CAR-T cell therapy is the limited persistence of CAR-T cells.",
+            "6": "Many studies have focused on modifying the CAR structure to optimize the clinical effects of CAR-T cells.",
+            "7": "Many studies have focused on regulating CAR-T cell differentiation to optimize the clinical effects of CAR-T cells.",
+            "8": "The review focuses on CAR-T cell persistence.",
+            "9": "The review summarizes the latest progress and strategies adopted during the in vitro culture stage to optimize CAR-T immunotherapy by improving long-term persistence.",
+            "10": "Choosing a suitable cell source may improve the survival of patients with hematologic malignancies by reducing the probability of recurrence after CAR-T cell infusion.",
+            "11": "Improving culture conditions may improve the survival of patients with hematologic malignancies by reducing the probability of recurrence after CAR-T cell infusion.",
+            "12": "Combining CAR-T cells with conventional drugs may improve the survival of patients with hematologic malignancies by reducing the probability of recurrence after CAR-T cell infusion.",
+            "13": "Applying genetic manipulations may improve the survival of patients with hematologic malignancies by reducing the probability of recurrence after CAR-T cell infusion.",
+            "14": "These strategies may provide clues for the development of solid tumor CAR-T cell therapy."
+          }
+        },
+        "viewpoints": [
+          "The efficacy of ACT in solid tumors is often compromised by impaired CD8 + T cell functions.",
+          "The efficacy of ACT in solid tumors is often compromised by inadequate activation of tumor-reactive T cells.",
+          "The efficacy of ACT in solid tumors is often compromised by the limited lifespan of tumor-reactive T cells."
+        ]
+      },
+      {
+        "idx": 3,
+        "sentence": "The TCR-CD3 complex mediates the recognition of tumor antigens, initiating downstream signaling essential for a robust immune response.",
+        "references": {},
+        "viewpoints": [
+          "The TCR-CD3 complex mediates the recognition of tumor antigens.",
+          "The TCR-CD3 complex initiates downstream signaling essential for a robust immune response."
+        ]
+      },
+      {
+        "idx": 4,
+        "sentence": "Yet, the immunosuppressive tumor microenvironment can inhibit CD8 + T cell activation and cytotoxicity, facilitating tumor immune evasion [4] , [5] , [6].",
+        "references": {
+          "4": {},
+          "5": {
+            "1": "Chimeric antigen receptor (CAR)-T cell therapy has achieved successful outcomes against hematological malignancies.",
+            "2": "Chimeric antigen receptor (CAR)-T cell therapy has provided a new impetus for treating solid tumors.",
+            "3": "The efficacy of CAR-T cells for treating solid tumors remains unsatisfactory.",
+            "4": "The tumor microenvironment plays an important role in interfering with the effector function of immune cells.",
+            "5": "The tumor microenvironment plays an important role in inhibiting the effector function of immune cells.",
+            "6": "Upregulated inhibitory checkpoint receptors are major immunosuppressive mechanisms in the tumor microenvironment.",
+            "7": "Soluble suppressive cytokines are major immunosuppressive mechanisms in the tumor microenvironment.",
+            "8": "Altered chemokine expression profiles are major immunosuppressive mechanisms in the tumor microenvironment.",
+            "9": "Aberrant vasculature is a major immunosuppressive mechanism in the tumor microenvironment.",
+            "10": "Complicated stromal composition is a major immunosuppressive mechanism in the tumor microenvironment.",
+            "11": "Hypoxia is a major immunosuppressive mechanism in the tumor microenvironment.",
+            "12": "Abnormal tumor metabolism is a major immunosuppressive mechanism in the tumor microenvironment.",
+            "13": "The review summarizes the inhibitory factors that affect the function of CAR-T cells in the tumor microenvironment.",
+            "14": "The review discusses approaches to improve CAR-T cell efficacy for solid tumor treatment by targeting the inhibitory barriers in the tumor microenvironment."
+          },
+          "6": {
+            "1": "Adoptive cell therapy with antigen-specific T cells has shown remarkable clinical success.",
+            "2": "Approaches to safely augment T cell function in solid tumors remain of great interest.",
+            "3": "Approaches to effectively augment T cell function in solid tumors remain of great interest.",
+            "4": "A strategy is described to 'backpack' large quantities of supporting protein drugs on T cells.",
+            "5": "Protein nanogels are used to 'backpack' large quantities of supporting protein drugs on T cells.",
+            "6": "Protein nanogels selectively release supporting protein drugs in response to T cell receptor activation.",
+            "7": "Cell surface-conjugated protein nanogels were designed to respond to an increase in T cell surface reduction potential after antigen recognition.",
+            "8": "Cell surface-conjugated protein nanogels limit drug release to sites of antigen encounter.",
+            "9": "The tumor microenvironment is a site of antigen encounter where cell surface-conjugated protein nanogels limit drug release.",
+            "10": "Protein nanogels that carried an interleukin-15 super-agonist complex were used.",
+            "11": "Relative to systemic administration of free cytokines, protein nanogel delivery selectively expanded T cells 16-fold in tumors.",
+            "12": "Protein nanogel delivery allowed at least eightfold higher doses of cytokine to be administered without toxicity relative to systemic administration of free cytokines.",
+            "13": "The improved therapeutic window enabled substantially increased tumor clearance by mouse T cell therapy in vivo.",
+            "14": "The improved therapeutic window enabled substantially increased tumor clearance by human chimeric antigen receptor (CAR)-T cell therapy in vivo."
+          }
+        },
+        "viewpoints": [
+          "The immunosuppressive tumor microenvironment can inhibit CD8 + T cell activation.",
+          "The immunosuppressive tumor microenvironment can inhibit CD8 + T cell cytotoxicity.",
+          "The immunosuppressive tumor microenvironment facilitates tumor immune evasion."
+        ]
+      },
+      {
+        "idx": 5,
+        "sentence": "Unlike the immune checkpoint inhibitors, ACT relies on the ex vivo activation and expansion of T cells, including chimeric antigen receptor (CAR) T cells.",
+        "references": {},
+        "viewpoints": [
+          "ACT relies on the ex vivo activation and expansion of T cells.",
+          "ACT includes the ex vivo activation and expansion of chimeric antigen receptor (CAR) T cells."
+        ]
+      },
+      {
+        "idx": 6,
+        "sentence": "Accumulating evidence indicates that this phase can influence the therapeutic efficacy of tumor-specific CD8 + T cells against cancer [7] , [8] , [9].",
+        "references": {
+          "7": {
+            "1": "The field of chimeric antigen receptor (CAR) modified T cell therapy has rapidly expanded in the past few decades.",
+            "2": "There are six CAR T cell products that have been approved by the FDA.",
+            "3": "KYMRIAH (tisagenlecleucel) is a CD19 CAR T cell product approved by the FDA.",
+            "4": "YESCARTA (axicabtagene ciloleucel) is a CD19 CAR T cell product approved by the FDA.",
+            "5": "TECARTUS (brexucabtagene autoleucel) is a CD19 CAR T cell product approved by the FDA.",
+            "6": "BREYANZI (lisocabtagene maraleucel) is a CD19 CAR T cell product approved by the FDA.",
+            "7": "ABECMA (idecabtagene vicleucel) is a BCMA CAR T cell product approved by the FDA.",
+            "8": "CARVYKTI (ciltacabtagene autoleucel) is a BCMA CAR T cell product approved by the FDA.",
+            "9": "CAR T cell therapy has become one of the most promising treatment options to combat cancers due to its clinical success.",
+            "10": "Current research efforts focus on further potentiating the efficacy of CAR T cell therapy in non-responding patients.",
+            "11": "Current research efforts focus on further potentiating the efficacy of CAR T cell therapy in solid tumor settings.",
+            "12": "Recent evidence suggests that, apart from developing next-generation CAR T cells with additional genetic modifications, further steps are needed to potentiate CAR T cell therapy."
+          },
+          "8": {
+            "1": "The efficacy of adoptive T-cell therapies depends largely on generating T-cell populations with rapid effector function.",
+            "2": "The efficacy of adoptive T-cell therapies depends largely on generating T-cell populations with long-term protective immunity.",
+            "3": "The phenotypes of T cells are inherently linked to their localization in tissues.",
+            "4": "The functions of T cells are inherently linked to their localization in tissues.",
+            "5": "It is becoming clearer that T-cell phenotypes and functions are linked to tissue localization.",
+            "6": "Functionally distinct T-cell populations can be generated from T cells that received the same stimulation.",
+            "7": "Altering the viscoelasticity of the surrounding extracellular matrix allows for the generation of functionally distinct T-cell populations from identically stimulated T cells.",
+            "8": "A model ECM based on norbornene-modified collagen type I allows adjustment of viscoelasticity independently of bulk stiffness.",
+            "9": "The adjustment of ECM viscoelasticity is achieved by varying the degree of covalent crosslinking via a bioorthogonal click reaction with tetrazine moieties.",
+            "10": "ECM viscoelasticity regulates T-cell phenotype via the activator-protein-1 signalling pathway.",
+            "11": "ECM viscoelasticity regulates T-cell function via the activator-protein-1 signalling pathway.",
+            "12": "The activator-protein-1 signalling pathway is a critical regulator of T-cell activation and fate.",
+            "13": "The observations are consistent with tissue-dependent gene-expression profiles of T cells from mechanically distinct tissues.",
+            "14": "The observed tissue-dependent gene-expression profiles are from T cells isolated from patients with cancer or fibrosis.",
+            "15": "Matrix viscoelasticity could be leveraged when generating T-cell products for therapeutic applications."
+          },
+          "9": {
+            "1": "CAR T-cell product quality is a major determinant of in vivo expansion.",
+            "2": "CAR T-cell stemness (Tstem) is a major determinant of in vivo expansion.",
+            "3": "CAR T-cell product quality is a major determinant of efficacy.",
+            "4": "CAR T-cell stemness (Tstem) is a major determinant of efficacy.",
+            "5": "CAR T-cell product quality is a major determinant of clinical response.",
+            "6": "CAR T-cell stemness (Tstem) is a major determinant of clinical response.",
+            "7": "Prolonged ex vivo culturing depletes Tstem.",
+            "8": "The depletion of Tstem affects clinical outcome.",
+            "9": "YTB323 is a novel autologous CD19-directed CAR T-cell therapy.",
+            "10": "YTB323 expresses the same validated CAR as tisagenlecleucel.",
+            "11": "YTB323 is manufactured using a next-generation platform.",
+            "12": "YTB323 is manufactured in less than 2 days.",
+            "13": "The preclinical development of YTB323 in adults with relapsed/refractory diffuse large B-cell lymphoma (r/r DLBCL) is reported.",
+            "14": "The preliminary clinical data of YTB323 in adults with relapsed/refractory diffuse large B-cell lymphoma (r/r DLBCL) is reported.",
+            "15": "In preclinical mouse models, YTB323 exhibited enhanced in vivo expansion at lower doses than traditionally manufactured CAR T cells.",
+            "16": "In preclinical mouse models, YTB323 exhibited enhanced antitumor activity at lower doses than traditionally manufactured CAR T cells.",
+            "17": "Clinically, YTB323 showed promising overall safety at doses 25-fold lower than tisagenlecleucel.",
+            "18": "YTB323 exhibited cytokine release syndrome at any grade in 35% of cases.",
+            "19": "YTB323 exhibited cytokine release syndrome at grade ≥3 in 6% of cases.",
+            "20": "YTB323 exhibited neurotoxicity at any grade in 25% of cases.",
+            "21": "YTB323 exhibited neurotoxicity at grade ≥3 in 6% of cases.",
+            "22": "YTB323 exhibited an overall response rate of 75% for DL1.",
+            "23": "YTB323 exhibited an overall response rate of 80% for DL2.",
+            "24": "YTB323 exhibited comparable CAR T-cell expansion.",
+            "25": "YTB323 exhibited preservation of T-cell phenotype.",
+            "26": "Current data support the continued development of YTB323 for relapsed/refractory diffuse large B-cell lymphoma (r/r DLBCL).",
+            "27": "Traditional CAR T-cell manufacturing requires extended ex vivo cell culture.",
+            "28": "Extended ex vivo cell culture reduces naive and stem cell memory T-cell populations.",
+            "29": "Extended ex vivo cell culture diminishes antitumor activity.",
+            "30": "YTB323 expresses the same validated CAR as tisagenlecleucel.",
+            "31": "YTB323 can be manufactured in less than 2 days.",
+            "32": "YTB323 retains T-cell stemness.",
+            "33": "YTB323 enhances clinical activity at a 25-fold lower dose."
+          }
+        },
+        "viewpoints": [
+          "Accumulating evidence indicates that the ex vivo activation and expansion phase can influence the therapeutic efficacy of tumor-specific CD8 + T cells against cancer."
+        ]
+      },
+      {
+        "idx": 7,
+        "sentence": "Hence, optimizing culture conditions and elucidating the underlying mechanisms are critical for broadening the clinical utility of ACT immunotherapy.",
+        "references": {},
+        "viewpoints": [
+          "Optimizing culture conditions is critical for broadening the clinical utility of ACT immunotherapy.",
+          "Elucidating the underlying mechanisms is critical for broadening the clinical utility of ACT immunotherapy."
+        ]
+      },
+      {
+        "idx": 8,
+        "sentence": "T cell activation, proliferation, and differentiation into effector and memory T cells are orchestrated by a combination of extrinsic and intrinsic signaling cascades, essential for combating malignancies and establishing durable protection [10] , [11].",
+        "references": {
+          "10": {
+            "1": "Cancer immunotherapy is an increasingly successful strategy.",
+            "2": "Cancer immunotherapy is used for the treatment of patients with advanced cancers.",
+            "3": "Cancer immunotherapy is used for the treatment of patients with conventional therapy-resistant cancers.",
+            "4": "T cells are key mediators of tumor destruction.",
+            "5": "The specificity of T cells for tumor-expressed antigens is of paramount importance.",
+            "6": "T cell qualities such as durability, longevity, and functionality are important in determining the efficacy of immunotherapy.",
+            "7": "Cellular energetic pathways utilized by T cells regulate the specificity of T cells for tumor-expressed antigens.",
+            "8": "Cellular energetic pathways utilized by T cells regulate the durability of T cells.",
+            "9": "Cellular energetic pathways utilized by T cells regulate the longevity of T cells.",
+            "10": "Cellular energetic pathways utilized by T cells regulate the functionality of T cells.",
+            "11": "Metabolic activity regulates cellular signaling pathways.",
+            "12": "Metabolic activity is regulated by cellular signaling pathways.",
+            "13": "Metabolic activity regulates epigenetics.",
+            "14": "Metabolic activity is regulated by epigenetics.",
+            "15": "Metabolic activity profoundly influences the trajectories of T cell differentiation.",
+            "16": "Metabolic activity profoundly influences the fate of T cells.",
+            "17": "The Review discusses how cell metabolism influences T cell anti-tumor activity.",
+            "18": "The Review discusses the metabolic qualities of highly-functional T cells.",
+            "19": "The Review discusses strategies to modulate metabolism to improve the immune response to tumors."
+          },
+          "11": {
+            "1": "Immune cells are being engineered to recognize disease states.",
+            "2": "Immune cells are being engineered to respond to disease states.",
+            "3": "Engineered immune cells act as a \"living drug\" when transferred into patients.",
+            "4": "Therapies based on engineered immune cells are now a clinical reality.",
+            "5": "Multiple engineered T cell therapies have been approved for treatment of hematologic malignancies.",
+            "6": "Ongoing preclinical studies are testing diverse strategies to modify the fate and function of immune cells.",
+            "7": "Ongoing clinical studies are testing diverse strategies to modify the fate and function of immune cells.",
+            "8": "Diverse strategies are being tested for applications in cancer.",
+            "9": "Diverse strategies are being tested for applications in infectious disease.",
+            "10": "Diverse strategies are being tested for applications beyond cancer and infectious disease.",
+            "11": "Current progress in treating human disease with immune cell therapeutics is discussed.",
+            "12": "Emerging strategies for immune cell engineering are discussed.",
+            "13": "Challenges facing the field of immune cell therapeutics are discussed.",
+            "14": "Particular emphasis is placed on the treatment of cancer in the discussion of immune cell therapeutics progress and challenges.",
+            "15": "Most effort in immune cell therapeutics has been applied to the treatment of cancer to date."
+          }
+        },
+        "viewpoints": [
+          "T cell activation is orchestrated by a combination of extrinsic and intrinsic signaling cascades.",
+          "T cell proliferation is orchestrated by a combination of extrinsic and intrinsic signaling cascades.",
+          "T cell differentiation into effector T cells is orchestrated by a combination of extrinsic and intrinsic signaling cascades.",
+          "T cell differentiation into memory T cells is orchestrated by a combination of extrinsic and intrinsic signaling cascades.",
+          "Extrinsic and intrinsic signaling cascades are essential for combating malignancies.",
+          "Extrinsic and intrinsic signaling cascades are essential for establishing durable protection."
+        ]
+      },
+      {
+        "idx": 9,
+        "sentence": "Following T cell receptor (TCR) engagement, antigen recognition is reinforced by the formation of TCR clusters at the cell membrane [12] , [13].",
+        "references": {
+          "12": {
+            "1": "The exchange of signals between epithelial and neuronal cells is contact-dependent.",
+            "2": "The exchange of signals between epithelial and neuronal cells results from close membrane-membrane appositions.",
+            "3": "Close membrane-membrane appositions between epithelial and neuronal cells are stabilized for years.",
+            "4": "Close membrane-membrane appositions between epithelial and neuronal cells are stabilized by polarized adhesion.",
+            "5": "Close membrane-membrane appositions between epithelial and neuronal cells are stabilized by cytoskeletal assemblies.",
+            "6": "Close membrane-membrane appositions between epithelial and neuronal cells are stabilized by extracellular scaffold proteins.",
+            "7": "Interactions between immune cells such as T lymphocytes and antigen-presenting cells (APCs) differ from those between epithelial and neuronal cells.",
+            "8": "Interactions between T lymphocytes and APCs lack scaffold proteins.",
+            "9": "The lack of scaffold proteins contributes to structurally diverse interaction modes between T lymphocytes and APCs.",
+            "10": "The lack of scaffold proteins contributes to short-lived interaction modes between T lymphocytes and APCs.",
+            "11": "Structurally diverse interaction modes between T lymphocytes and APCs last from minutes to hours.",
+            "12": "Short-lived interaction modes between T lymphocytes and APCs last from minutes to hours.",
+            "13": "Signals exchanged between T cells and APCs are generated in a specific contact region.",
+            "14": "The contact region where signals between T cells and APCs are generated is termed the \"immunological synapse\".",
+            "15": "The immunological synapse coordinates cytoskeletal dynamics with the T-cell receptor (TCR).",
+            "16": "The immunological synapse coordinates the engagement of accessory receptors.",
+            "17": "The immunological synapse coordinates membrane-proximal signaling.",
+            "18": "Recent data provide insights into the different physical interaction modes between T cells and APCs.",
+            "19": "Recent data provide insights into the different molecular interaction modes between T cells and APCs.",
+            "20": "The interaction modes between T cells and APCs have varying dynamics.",
+            "21": "The interaction modes between T cells and APCs have transition stages.",
+            "22": "The interaction modes between T cells and APCs affect signaling.",
+            "23": "The interaction modes between T cells and APCs affect activation.",
+            "24": "The interaction modes between T cells and APCs affect T-cell effector function."
+          },
+          "13": {
+            "1": "The CD2-CD58 recognition system promotes adhesion in human T cells.",
+            "2": "The CD2-CD58 recognition system promotes signaling in human T cells.",
+            "3": "The CD2-CD58 recognition system counters exhaustion in human T cells.",
+            "4": "CD2 localized to the outer edge of the mature immunological synapse.",
+            "5": "CD2 localization occurs with cellular or artificial antigen-presenting cells (APC).",
+            "6": "The pattern of CD2 localization is referred to as a 'CD2 corolla'.",
+            "7": "The CD2 corolla captured engaged CD28 co-stimulators.",
+            "8": "The CD2 corolla captured engaged ICOS co-stimulators.",
+            "9": "The CD2 corolla captured engaged CD226 co-stimulators.",
+            "10": "The CD2 corolla captured engaged SLAM-F1 co-stimulators.",
+            "11": "The CD2 corolla amplified active phosphorylated Src-family kinases (pSFK) over T cell receptor (TCR) alone.",
+            "12": "The CD2 corolla amplified LAT over T cell receptor (TCR) alone.",
+            "13": "The CD2 corolla amplified PLC-γ over T cell receptor (TCR) alone.",
+            "14": "CD2-CD58 interactions in the CD2 corolla boosted signaling by 77% compared to central CD2-CD58 interactions.",
+            "15": "Engaged PD-1 invaded the CD2 corolla.",
+            "16": "Engaged PD-1 buffered CD2-mediated amplification of TCR signaling.",
+            "17": "CD2 numbers controlled the formation of the CD2 corolla.",
+            "18": "Motifs in the cytoplasmic tail of CD2 controlled the formation of the CD2 corolla."
+          }
+        },
+        "viewpoints": [
+          "Following T cell receptor (TCR) engagement, antigen recognition is reinforced by the formation of TCR clusters at the cell membrane."
+        ]
+      },
+      {
+        "idx": 10,
+        "sentence": "This leads to the establishment of an immune synapse, which activates a series of transcription factors (TF), including early growth response 1 (EGR1), nuclear factor of activated T cells (NFAT), and activator protein 1 (AP-1), driving the transcription of genes crucial for T cell effector function [14] , [15].",
+        "references": {
+          "14": {
+            "1": "Cancer cells hinder immune surveillance.",
+            "2": "Cancer cells inhibit T cell effector function.",
+            "3": "Understanding the mechanism of T cell dysfunction is central to cancer immunotherapy.",
+            "4": "Dual specificity phosphatase 2 (DUSP2), also known as phosphatase of activated cells 1 (PAC1), acts as an immune checkpoint in T cell antitumor immunity.",
+            "5": "PAC1 is selectively upregulated in exhausted tumor-infiltrating lymphocytes.",
+            "6": "PAC1 is associated with poor prognosis of patients with cancer."
+          },
+          "15": {}
+        },
+        "viewpoints": [
+          "The formation of TCR clusters at the cell membrane leads to the establishment of an immune synapse.",
+          "The immune synapse activates a series of transcription factors.",
+          "The transcription factors include early growth response 1 (EGR1), nuclear factor of activated T cells (NFAT), and activator protein 1 (AP-1).",
+          "The transcription factors drive the transcription of genes crucial for T cell effector function."
+        ]
+      },
+      {
+        "idx": 11,
+        "sentence": "These TFs also regulate chromatin accessibility, thereby shaping T cell function and fate determination [16] , [17].",
+        "references": {
+          "16": {
+            "1": "T cell exhaustion limits antitumor immunity.",
+            "2": "The molecular determinants of T cell exhaustion remain poorly understood.",
+            "3": "A chronic stimulation assay was used to perform genome-wide CRISPR-Cas9 screens to systematically discover regulators of T cell exhaustion.",
+            "4": "The genome-wide CRISPR-Cas9 screens identified an enrichment of epigenetic factors as regulators of T cell exhaustion.",
+            "5": "In vivo CRISPR screens were performed in murine and human tumor models.",
+            "6": "Perturbation of the INO80 chromatin remodeling complex improved T cell persistence in tumors.",
+            "7": "Perturbation of the BAF chromatin remodeling complex improved T cell persistence in tumors.",
+            "8": "In vivo Perturb-seq revealed distinct transcriptional roles for the INO80 and BAF chromatin remodeling complexes.",
+            "9": "Depletion of canonical BAF complex members, including Arid1a, resulted in the maintenance of an effector program in tumor-infiltrating T cells.",
+            "10": "Depletion of canonical BAF complex members, including Arid1a, resulted in the downregulation of exhaustion-related genes in tumor-infiltrating T cells.",
+            "11": "Arid1a depletion limited the acquisition of exhaustion-associated chromatin accessibility.",
+            "12": "Arid1a depletion led to improved antitumor immunity.",
+            "13": "An atlas of the genetic regulators of T cell exhaustion was provided.",
+            "14": "The modulation of epigenetic state can improve T cell responses in cancer immunotherapy."
+          },
+          "17": {
+            "1": "Activation of T cells requires organized opening and closing of chromatin.",
+            "2": "Activation of T cells requires timely opening and closing of chromatin.",
+            "3": "AP-1 is identified as the transcription factor that directs most chromatin remodeling during T cell activation.",
+            "4": "Chromatin accessibility profiling showed quick opening of closed chromatin in naive T cells within 5 hours of activation.",
+            "5": "Newly opened chromatin regions were strongly enriched for the AP-1 motif.",
+            "6": "ChIP-seq demonstrated AP-1 binding at more than 70% of the newly opened chromatin regions.",
+            "7": "Broad inhibition of AP-1 activity prevented chromatin opening at AP-1 sites.",
+            "8": "Broad inhibition of AP-1 activity reduced the expression of genes nearby AP-1 sites.",
+            "9": "Induction of anergy in the absence of co-stimulation during activation was associated with reduced induction of AP-1.",
+            "10": "Induction of anergy in the absence of co-stimulation during activation was associated with a failure of proper chromatin remodeling.",
+            "11": "There is a substantial overlap of AP-1-dependent elements with risk loci for multiple immune diseases.",
+            "12": "AP-1-dependent elements overlap with risk loci for multiple sclerosis.",
+            "13": "AP-1-dependent elements overlap with risk loci for inflammatory bowel disease.",
+            "14": "AP-1-dependent elements overlap with risk loci for allergic disease.",
+            "15": "AP-1 is defined as the key link between T cell activation and chromatin remodeling."
+          }
+        },
+        "viewpoints": [
+          "The transcription factors regulate chromatin accessibility.",
+          "Regulating chromatin accessibility shapes T cell function.",
+          "Regulating chromatin accessibility shapes fate determination of T cells."
+        ]
+      },
+      {
+        "idx": 12,
+        "sentence": "Identifying the molecular regulators that modulate TF activity and guide T cell specification is crucial for enhancing T cell-mediated antitumor responses.",
+        "references": {},
+        "viewpoints": [
+          "Identifying the molecular regulators that modulate transcription factor activity is crucial for enhancing T cell-mediated antitumor responses.",
+          "Identifying the molecular regulators that guide T cell specification is crucial for enhancing T cell-mediated antitumor responses."
+        ]
+      },
+      {
+        "idx": 13,
+        "sentence": "Among these TFs, EGR1 plays a pivotal role in CD8 + T cell responses.",
+        "references": {},
+        "viewpoints": [
+          "EGR1 plays a pivotal role in CD8 + T cell responses."
+        ]
+      },
+      {
+        "idx": 14,
+        "sentence": "EGR1 is rapidly induced in T cells upon antigen receptor cross-linking or TCR stimulation, serving as a key mediator linking early TCR signaling to downstream gene expression [14] , [18].",
+        "references": {
+          "14": {
+            "1": "Cancer cells hinder immune surveillance.",
+            "2": "Cancer cells inhibit T cell effector function.",
+            "3": "Understanding the mechanism of T cell dysfunction is central to cancer immunotherapy.",
+            "4": "Dual specificity phosphatase 2 (DUSP2), also known as phosphatase of activated cells 1 (PAC1), acts as an immune checkpoint in T cell antitumor immunity.",
+            "5": "PAC1 is selectively upregulated in exhausted tumor-infiltrating lymphocytes.",
+            "6": "PAC1 is associated with poor prognosis of patients with cancer."
+          },
+          "18": {
+            "1": "Partial agonist TCR signals lead to the positive selection of thymocytes.",
+            "2": "Partial agonist TCR signals lead to the survival of naive T cells.",
+            "3": "Partial agonist TCR signals lead to homeostatic proliferation.",
+            "4": "The study aims to understand the molecular basis of the effects of partial agonist TCR signals.",
+            "5": "The study determines how agonist and partial agonist ligands differ in their action to induce changes in gene expression.",
+            "6": "The early growth response gene 1 (Egr1) promoter is activated by agonist ligands.",
+            "7": "The early growth response gene 1 (Egr1) promoter is activated by partial agonist ligands.",
+            "8": "The partial agonist ligand induces 10-fold lower promoter activity in the Egr1 promoter compared to the agonist ligand.",
+            "9": "Agonist ligands require all six serum response elements in the Egr1 promoter to reach maximum induction.",
+            "10": "Partial agonist ligands require all six serum response elements in the Egr1 promoter to reach maximum induction.",
+            "11": "Slightly fewer cells respond to the partial agonist compared to the agonist.",
+            "12": "All cells that respond to the partial agonist have reduced activity compared to cells that respond to the agonist.",
+            "13": "The factors binding to the serum response elements of the Egr1 promoter form a ternary complex (TC).",
+            "14": "The ternary complex consists of serum response factor and either Elk-1 or serum response factor accessory protein-1a.",
+            "15": "The formation of a stable ternary complex is dependent on extracellular signal-related kinase activation.",
+            "16": "Inducible promoter activity is dependent on extracellular signal-related kinase activation.",
+            "17": "The ternary complex is induced well by partial agonist ligands.",
+            "18": "The ternary complex induced by partial agonist ligands is not sustained.",
+            "19": "Agonist stimulation induces longer-lived ternary complexes.",
+            "20": "Both agonist and partial agonist ligands can induce formation of multiple ternary complexes on the Egr1 promoter.",
+            "21": "The ability of the agonist ligand to maintain these complexes for an extended time results in the increased potency of the agonist."
+          }
+        },
+        "viewpoints": [
+          "EGR1 is rapidly induced in T cells upon antigen receptor cross-linking.",
+          "EGR1 is rapidly induced in T cells upon TCR stimulation.",
+          "EGR1 serves as a key mediator linking early TCR signaling to downstream gene expression."
+        ]
+      },
+      {
+        "idx": 15,
+        "sentence": "Studies have demonstrated the importance of EGR1 in various T cell processes, including thymic development and the regulation of key cytokines such as IL-2 and TNF, as well as its crucial role in the clonal expansion of virus-specific CD8 + T cells in a lymphocytic choriomeningitis virus (LCMV) model [19] , [20] , [21].",
+        "references": {
+          "19": {
+            "1": "The early growth response (Egr)-1 contains a zinc finger motif.",
+            "2": "The early growth response (Egr)-1 is a transcription factor.",
+            "3": "The early growth response (Egr)-1 belongs to the immediate-early genes.",
+            "4": "Egr-1 is expressed in CD4/CD8 double negative (DN) immature thymocytes.",
+            "5": "Egr-1 expression in CD4/CD8 double negative (DN) immature thymocytes suggests involvement in early thymocyte development.",
+            "6": "Transgenic mice overexpressing Egr-1 in a recombinase-activating gene-deficient background have thymocytes bypass the block at the CD25+CD44- DN stage.",
+            "7": "Thymocytes in these mice matured to the immature CD8 single-positive (ISP) cell stage.",
+            "8": "Thymocytes in these mice did not mature further to the CD4/CD8 double-positive (DP) cell stage.",
+            "9": "Irradiation of these mice allows thymocytes to develop to the DP stage.",
+            "10": "Irradiation may induce transcription of additional genes required for thymocyte development from the ISP to the DP stage.",
+            "11": "There are two distinct steps during early thymocyte development from the CD25+CD44- DN to the DP stage.",
+            "12": "The first step in early thymocyte development, from the CD25+CD44- DN to the ISP stage, can be entirely promoted by overexpression of Egr-1."
+          },
+          "20": [],
+          "21": {
+            "1": "Previous in vitro work has implicated a role for transcriptional factor early growth response gene 1 (EGR1) in regulating immune responses.",
+            "2": "The in vivo role of EGR1 in orchestrating T cell responses has not been studied.",
+            "3": "The importance of EGR1 in T cell immunity was investigated by comparing Ag-specific CD8 T cell responses between wild-type mice and EGR1-deficient mice following acute infection with lymphocytic choriomeningitis virus.",
+            "4": "The expansion of LCMV-specific CD8 T cells was substantially reduced in EGR1-deficient mice compared to wild-type mice.",
+            "5": "The reduced numbers of LCMV-specific CD8 T cells in EGR1-deficient mice were not due to an intrinsic T cell defect.",
+            "6": "Purified EGR1-deficient T cells exhibited normal proliferative response to anti-CD3 stimulation in vitro.",
+            "7": "Purified EGR1-deficient T cells underwent normal activation and expansion in response to LCMV upon adoptive transfer into T cell-deficient mice.",
+            "8": "Adoptive transfer of CD8 T cells bearing a transgenic TCR into EGR1-deficient mice showed that EGR1 deficiency in non-CD8 T cells impaired CD8 T cell expansion in vivo following LCMV infection.",
+            "9": "Bone marrow-derived dendritic cells from EGR1-deficient mice did not exhibit detectable impairment to prime Ag-specific CD8 T cell responses in vivo.",
+            "10": "In LCMV-infected mice, EGR1 deficiency selectively impaired the maturation of CD8alpha-positive plasmacytoid dendritic cells.",
+            "11": "The findings suggest that EGR1 might promote the expansion of CD8 T cells during an acute viral infection.",
+            "12": "EGR1 might promote the expansion of CD8 T cells by modulating the cues in the lymphoid microenvironment."
+          }
+        },
+        "viewpoints": [
+          "EGR1 is important in thymic development of T cells.",
+          "EGR1 is important in regulation of key cytokines such as IL-2 and TNF in T cells.",
+          "EGR1 plays a crucial role in the clonal expansion of virus-specific CD8 + T cells in a lymphocytic choriomeningitis virus (LCMV) model."
+        ]
+      },
+      {
+        "idx": 16,
+        "sentence": "Utilizing piezoelectric membrane materials, we demonstrate the role of electrical stimulation in accelerating bone regeneration and combating bacteria [22] , [23].",
+        "references": {
+          "22": {
+            "1": "Physiological electric potential plays an indispensable role in maintaining bone volume.",
+            "2": "Physiological electric potential is essential for maintaining bone quality.",
+            "3": "Implanted biomaterials that simulate structural, morphological, mechanical, and chemical properties of natural tissue or organ have been introduced in bone regeneration.",
+            "4": "The concept of restoring physiological electric microenvironment is ignored in the design of biomaterials for bone regeneration.",
+            "5": "A flexible nanocomposite membrane mimicking the endogenous electric potential is fabricated.",
+            "6": "The purpose of fabricating the flexible nanocomposite membrane is to explore its efficiency in bone defect repair.",
+            "7": "BaTiO3 nanoparticles (BTO NPs) are coated with polydopamine.",
+            "8": "The composite membranes are fabricated with a homogeneous distribution of Dopa@BTO NPs.",
+            "9": "The composite membranes have a poly(vinylidene fluoridetrifluoroethylene) (P(VDF-TrFE)) matrix.",
+            "10": "The surface potential of the nanocomposite membranes can be tuned up to -76.8 mV.",
+            "11": "Tuning of surface potential to -76.8 mV is achieved by optimizing the composition ratio and corona poling treatment.",
+            "12": "A surface potential of -76.8 mV conforms to the level of endogenous biopotential.",
+            "13": "The surface potential of polarized nanocomposite membranes exhibits dramatic stability.",
+            "14": "More than half of the original surface potential of polarized nanocomposite membranes remains up to 12 weeks in the condition of bone defect.",
+            "15": "In vitro, the membranes encourage activity of bone marrow mesenchymal stem cells (BM-MSCs).",
+            "16": "In vitro, the membranes promote osteogenic differentiation.",
+            "17": "In vivo, the membranes sustainably maintain the electric microenvironment.",
+            "18": "Maintaining the electric microenvironment contributes to rapid bone regeneration in vivo.",
+            "19": "Maintaining the electric microenvironment leads to complete mature bone-structure formation in vivo.",
+            "20": "Physiological electric potential repair should be paid sufficient attention in biomaterials design.",
+            "21": "The concept of physiological electric potential repair might provide an innovative strategy for bone regenerative therapies.",
+            "22": "The concept of physiological electric potential repair might provide a well-suited strategy for bone regenerative therapies."
+          },
+          "23": []
+        },
+        "viewpoints": [
+          "Electrical stimulation utilizing piezoelectric membrane materials accelerates bone regeneration.",
+          "Electrical stimulation utilizing piezoelectric membrane materials combats bacteria."
+        ]
+      },
+      {
+        "idx": 17,
+        "sentence": "Building on this work, our study reveals that treatment with a charged substrate enhances EGR1 expression and increases chromatin accessibility at EGR1 binding sites in CD8 + T cells, driving proliferation and polarization.",
+        "references": {},
+        "viewpoints": [
+          "Treatment with a charged substrate enhances EGR1 expression in CD8 + T cells.",
+          "Treatment with a charged substrate increases chromatin accessibility at EGR1 binding sites in CD8 + T cells.",
+          "Enhancing EGR1 expression in CD8 + T cells drives proliferation.",
+          "Increasing chromatin accessibility at EGR1 binding sites in CD8 + T cells drives proliferation.",
+          "Treatment with a charged substrate drives polarization in CD8 + T cells."
+        ]
+      },
+      {
+        "idx": 18,
+        "sentence": "Importantly, we find that EGR1 activation is antigen-dependent, underscoring its role in shaping CD8 + T cell responses under different immune contexts.",
+        "references": {},
+        "viewpoints": [
+          "EGR1 activation is antigen-dependent.",
+          "EGR1 activation shapes CD8 + T cell responses under different immune contexts."
+        ]
+      },
+      {
+        "idx": 19,
+        "sentence": "In most clinical settings, autologous CD8 + T cells are genetically modified to express transgenic antigen receptors, followed by a brief period of in vitro activation and expansion before being reinfused into the patient.",
+        "references": {},
+        "viewpoints": [
+          "In most clinical settings, autologous CD8 + T cells are genetically modified to express transgenic antigen receptors.",
+          "Autologous CD8 + T cells undergo a brief period of in vitro activation and expansion before being reinfused into the patient."
+        ]
+      },
+      {
+        "idx": 20,
+        "sentence": "Efforts to improve T cell functionality typically focus on biological or chemical interventions [24] , [25] , [26] , [27].",
+        "references": {
+          "24": {
+            "1": "Chimeric antigen receptor T cell therapy has demonstrated efficacy against leukemia.",
+            "2": "The therapeutic approach of chimeric antigen receptor T cell therapy is hampered by severe cytokine release syndrome.",
+            "3": "Severe cytokine release syndrome is a major impediment to the widespread application of chimeric antigen receptor T cell therapy in the clinic.",
+            "4": "The safety of chimeric antigen receptor T cell therapy can be improved by engineering a rapid and reversible \"off\" or \"on\" safety switch for CAR-T cells.",
+            "5": "Cutting-edge investigations are combining the advantages of genetic engineering and chemical technology.",
+            "6": "The combination of genetic engineering and chemical technology has led to the invention of small-molecule-based safety switches for CAR-T cells.",
+            "7": "Small molecules such as FITC are being investigated to design small-molecule-based safety switches for CAR-T cells.",
+            "8": "Small molecules such as folate are being investigated to design small-molecule-based safety switches for CAR-T cells.",
+            "9": "Small molecules such as rimiducid are being investigated to design small-molecule-based safety switches for CAR-T cells.",
+            "10": "Small molecules such as rapamycin are being investigated to design small-molecule-based safety switches for CAR-T cells.",
+            "11": "Small molecules such as proteolysis-targeting chimera (PROTAC) compounds are being investigated to design small-molecule-based safety switches for CAR-T cells.",
+            "12": "Small molecules such as dasatinib are being investigated to design small-molecule-based safety switches for CAR-T cells.",
+            "13": "Optimized CAR-T cells may have enhanced therapeutic efficiency.",
+            "14": "Optimized CAR-T cells may have fewer adverse effects.",
+            "15": "The section summarizes current novel small-molecule-based safety switches for CAR-T cells.",
+            "16": "The section classifies current novel small-molecule-based safety switches for CAR-T cells.",
+            "17": "The small-molecule-based safety switches aim to provide pharmacological control over the activities associated with CAR-T cell-based cancer immunotherapies.",
+            "18": "The small-molecule-based safety switches aim to provide pharmacological control over the toxicities associated with CAR-T cell-based cancer immunotherapies."
+          },
+          "25": {
+            "1": "T cell immunoglobulin and mucin-containing molecule 3 (Tim-3) is expressed in dysfunctional and exhausted T cells.",
+            "2": "T cell immunoglobulin and mucin-containing molecule 3 (Tim-3) has been widely acknowledged as a promising immune checkpoint target for tumor immunotherapy.",
+            "3": "A strategy combining virtual and functional screening was used in the study.",
+            "4": "A compound named ML-T7 was identified using this strategy.",
+            "5": "ML-T7 targets the FG-CC' cleft of Tim-3.",
+            "6": "The FG-CC' cleft of Tim-3 is a highly conserved binding site of phosphatidylserine (PtdSer) and carcinoembryonic antigen-related cell adhesion molecule 1 (CEACAM1).",
+            "7": "ML-T7 enhanced the survival of primary CD8 cells.",
+            "8": "ML-T7 enhanced the antitumor activity of primary CD8 cells."
+          },
+          "26": {
+            "1": "Adoptive transfer of antigen-specific T cells is a major advance in cancer immunotherapy.",
+            "2": "Adoptive transfer of antigen-specific T cells results in robust clinical outcomes in some patients."
+          },
+          "27": []
+        },
+        "viewpoints": [
+          "Efforts to improve T cell functionality typically focus on biological interventions.",
+          "Efforts to improve T cell functionality typically focus on chemical interventions."
+        ]
+      },
+      {
+        "idx": 21,
+        "sentence": "While biochemical factors influencing T cell regulation have been extensively studied, the role of biophysical cues, such as shear stress, solid stress, and matrix stiffness, is increasingly recognized as critical in CD8 + T cell activation [8] , [28] , [29] , [30] , [31].",
+        "references": {
+          "8": {
+            "1": "The efficacy of adoptive T-cell therapies depends largely on generating T-cell populations with rapid effector function.",
+            "2": "The efficacy of adoptive T-cell therapies depends largely on generating T-cell populations with long-term protective immunity.",
+            "3": "The phenotypes of T cells are inherently linked to their localization in tissues.",
+            "4": "The functions of T cells are inherently linked to their localization in tissues.",
+            "5": "It is becoming clearer that T-cell phenotypes and functions are linked to tissue localization.",
+            "6": "Functionally distinct T-cell populations can be generated from T cells that received the same stimulation.",
+            "7": "Altering the viscoelasticity of the surrounding extracellular matrix allows for the generation of functionally distinct T-cell populations from identically stimulated T cells.",
+            "8": "A model ECM based on norbornene-modified collagen type I allows adjustment of viscoelasticity independently of bulk stiffness.",
+            "9": "The adjustment of ECM viscoelasticity is achieved by varying the degree of covalent crosslinking via a bioorthogonal click reaction with tetrazine moieties.",
+            "10": "ECM viscoelasticity regulates T-cell phenotype via the activator-protein-1 signalling pathway.",
+            "11": "ECM viscoelasticity regulates T-cell function via the activator-protein-1 signalling pathway.",
+            "12": "The activator-protein-1 signalling pathway is a critical regulator of T-cell activation and fate.",
+            "13": "The observations are consistent with tissue-dependent gene-expression profiles of T cells from mechanically distinct tissues.",
+            "14": "The observed tissue-dependent gene-expression profiles are from T cells isolated from patients with cancer or fibrosis.",
+            "15": "Matrix viscoelasticity could be leveraged when generating T-cell products for therapeutic applications."
+          },
+          "28": {
+            "1": "T cell activation is a mechanical process.",
+            "2": "T cell activation is a biochemical process.",
+            "3": "A cone-and-plate viscometer system was used to treat Jurkat T cells with fluid shear stress (FSS) to enhance T cell activation through mechanical means.",
+            "4": "A cone-and-plate viscometer system was used to treat primary human T cells with fluid shear stress (FSS) to enhance T cell activation through mechanical means.",
+            "5": "Treatment of T cells with fluid shear stress (FSS) and soluble and bead-bound CD3/CD28 antibodies increased activation of zeta-chain-associated protein kinase-70 (ZAP70).",
+            "6": "Treatment of T cells with fluid shear stress (FSS) and soluble and bead-bound CD3/CD28 antibodies increased activation of nuclear factor of activated T cells (NFAT).",
+            "7": "Treatment of T cells with fluid shear stress (FSS) and soluble and bead-bound CD3/CD28 antibodies increased activation of nuclear factor kappa B (NF-κB).",
+            "8": "Treatment of T cells with fluid shear stress (FSS) and soluble and bead-bound CD3/CD28 antibodies increased activation of activator protein 1 (AP-1).",
+            "9": "Treatment of T cells with fluid shear stress (FSS) enhanced the expression of tumor necrosis factor alpha (TNF-α).",
+            "10": "Treatment of T cells with fluid shear stress (FSS) enhanced the expression of interleukin 2 (IL-2).",
+            "11": "Treatment of T cells with fluid shear stress (FSS) enhanced the expression of interferon gamma (IFN-γ).",
+            "12": "Expression of the cytokines TNF-α, IL-2, and IFN-γ is necessary for sustained T cell activation.",
+            "13": "Expression of the cytokines TNF-α, IL-2, and IFN-γ is necessary for sustained T cell function.",
+            "14": "Enhanced activation of T cells by fluid shear stress (FSS) was calcium dependent.",
+            "15": "Calcium signaling was controlled by the mechanosensitive ion channel Piezo1.",
+            "16": "GsMTx-4 reduced ZAP70 phosphorylation by fluid shear stress (FSS).",
+            "17": "Piezo1 knockout reduced ZAP70 phosphorylation by fluid shear stress (FSS).",
+            "18": "There is an intriguing new dynamic to T cell activation revealed by the study.",
+            "19": "The circulatory system consists of different magnitudes of fluid shear stress (FSS).",
+            "20": "The circulatory system could have a proinflammatory role in T cell function due to different magnitudes of fluid shear stress (FSS).",
+            "21": "There is a potential pathophysiological relationship between T cell activation and fluid shear stress (FSS).",
+            "22": "Hypertension is a disease characterized by abnormal blood flow.",
+            "23": "Hypertension is correlated with multiple autoimmune diseases."
+          },
+          "29": {
+            "1": "T cell therapies require the removal of T cells.",
+            "2": "T cell therapies require the culture of T cells ex vivo.",
+            "3": "T cell therapies require the expansion of T cells several thousand-fold.",
+            "4": "T cells often lose the phenotype necessary for mediating effective therapeutic responses.",
+            "5": "T cells often lose cytotoxic functionality necessary for mediating effective therapeutic responses.",
+            "6": "The extracellular matrix (ECM) has been used to preserve cell phenotype.",
+            "7": "The extracellular matrix (ECM) has been used to augment cell phenotype.",
+            "8": "The extracellular matrix (ECM) has not been applied to cellular immunotherapies.",
+            "9": "A hyaluronic acid (HA)-based hydrogel is engineered to present the two stimulatory signals required for T-cell activation.",
+            "10": "The engineered hydrogel is termed an artificial T-cell stimulating matrix (aTM).",
+            "11": "Biophysical properties of the aTM potentiate T cell signaling.",
+            "12": "Biophysical properties of the aTM skew the phenotype of murine T cells.",
+            "13": "Biophysical properties of the aTM skew the phenotype of human T cells.",
+            "14": "Stimulatory ligand density is a biophysical property of the aTM.",
+            "15": "Stiffness is a biophysical property of the aTM.",
+            "16": "ECM proteins are a biophysical property of the aTM.",
+            "17": "The combination of the ECM environment and mechanically sensitive TCR signaling from the aTM results in rapid expansion of rare, antigen-specific CD8+ T cells.",
+            "18": "The combination of the ECM environment and mechanically sensitive TCR signaling from the aTM results in robust expansion of rare, antigen-specific CD8+ T cells.",
+            "19": "Adoptive transfer of tumor-specific cells significantly suppresses tumor growth compared with T cells stimulated by traditional methods.",
+            "20": "Adoptive transfer of tumor-specific cells improves animal survival compared with T cells stimulated by traditional methods.",
+            "21": "The environment influences the cellular therapeutic product.",
+            "22": "Demonstrating the environment influences the cellular therapeutic product delineates the importance of the ECM.",
+            "23": "Demonstrating the environment influences the cellular therapeutic product provides a case study of how to engineer ECM-mimetic materials for therapeutic immune stimulation in the future."
+          },
+          "30": {
+            "1": "T cells play a critical role in the adaptive immune response of the body.",
+            "2": "The adaptive immune response of the body is important against intracellular pathogens.",
+            "3": "The adaptive immune response of the body is important against cancer."
+          },
+          "31": {
+            "1": "Adoptive immunotherapy using cultured T cells is promising for the treatment of cancer.",
+            "2": "Adoptive immunotherapy using cultured T cells is promising for the treatment of infectious disease.",
+            "3": "Ligands immobilized on surfaces fabricated from hard materials such as polystyrene plastic are commonly used for T cell culture.",
+            "4": "The mechanical properties of a culture surface can influence the adhesion of stem cells.",
+            "5": "The mechanical properties of a culture surface can influence the proliferation of stem cells.",
+            "6": "The mechanical properties of a culture surface can influence the differentiation of stem cells.",
+            "7": "The mechanical properties of a culture surface can influence the adhesion of fibroblasts.",
+            "8": "The mechanical properties of a culture surface can influence the proliferation of fibroblasts.",
+            "9": "The mechanical properties of a culture surface can influence the differentiation of fibroblasts.",
+            "10": "The impact of culture substrate stiffness on the ex vivo activation of human T cells was explored.",
+            "11": "The impact of culture substrate stiffness on the ex vivo expansion of human T cells was explored.",
+            "12": "A simple system for the stimulation of the TCR/CD3 complex using substrates with variable rigidity manufactured from poly(dimethylsiloxane) is described.",
+            "13": "A simple system for the stimulation of the CD28 receptor using substrates with variable rigidity manufactured from poly(dimethylsiloxane) is described.",
+            "14": "Poly(dimethylsiloxane) is a biocompatible silicone elastomer used to manufacture substrates with variable rigidity.",
+            "15": "Softer substrates (Young's Modulus [E] < 100 kPa) stimulate an average 4-fold greater IL-2 production of human CD4(+) T cells compared with stiffer substrates (E > 2 MPa).",
+            "16": "Softer substrates (Young's Modulus [E] < 100 kPa) stimulate an average 4-fold greater IL-2 production of human CD8(+) T cells compared with stiffer substrates (E > 2 MPa).",
+            "17": "Softer substrates (Young's Modulus [E] < 100 kPa) stimulate an average 4-fold greater ex vivo proliferation of human CD4(+) T cells compared with stiffer substrates (E > 2 MPa).",
+            "18": "Softer substrates (Young's Modulus [E] < 100 kPa) stimulate an average 4-fold greater ex vivo proliferation of human CD8(+) T cells compared with stiffer substrates (E > 2 MPa).",
+            "19": "Mixed peripheral blood T cells cultured on the stiffer substrates demonstrate a trend toward a greater proportion of CD62L(neg), effector-differentiated CD4(+) T cells.",
+            "20": "Mixed peripheral blood T cells cultured on the stiffer substrates demonstrate a trend toward a greater proportion of CD62L(neg), effector-differentiated CD8(+) T cells.",
+            "21": "The trend toward a greater proportion of CD62L(neg), effector-differentiated CD4(+) and CD8(+) T cells cultured on the stiffer substrates is nonsignificant.",
+            "22": "Naive CD4(+) T cells expanded on softer substrates yield an average 3-fold greater proportion of IFN-γ-producing Th1-like cells.",
+            "23": "The rigidity of the substrate used to immobilize T cell stimulatory ligands is an important parameter influencing T cell activation.",
+            "24": "The rigidity of the substrate used to immobilize T cell stimulatory ligands is an important parameter influencing T cell proliferation.",
+            "25": "The rigidity of the substrate used to immobilize T cell stimulatory ligands is an important parameter influencing T helper cell differentiation.",
+            "26": "The influence of the substrate rigidity on T cell activation, proliferation, and Th differentiation was previously unrecognized.",
+            "27": "Substrate rigidity should be a consideration in the development of T cell culture systems.",
+            "28": "Substrate rigidity should be considered when interpreting results of T cell activation based on solid-phase immobilization of TCR/CD3 and CD28 ligands."
+          }
+        },
+        "viewpoints": [
+          "Biochemical factors influencing T cell regulation have been extensively studied.",
+          "The role of biophysical cues, such as shear stress, solid stress, and matrix stiffness, is increasingly recognized as critical in CD8 + T cell activation."
+        ]
+      },
+      {
+        "idx": 22,
+        "sentence": "These physical characteristics can independently or synergistically impact the tumor microenvironment and the efficacy of CAR-T cells.",
+        "references": {},
+        "viewpoints": [
+          "Physical characteristics can independently impact the tumor microenvironment.",
+          "Physical characteristics can synergistically impact the tumor microenvironment.",
+          "Physical characteristics can independently impact the efficacy of CAR-T cells.",
+          "Physical characteristics can synergistically impact the efficacy of CAR-T cells."
+        ]
+      },
+      {
+        "idx": 23,
+        "sentence": "Moreover, membrane potential (MP) depolarization in T cells within tumor microenvironments or inflamed tissues has been shown to affect receptor mobility, while characteristic oscillations at immunological synapses and electrostatic interactions in TCR signaling regulation have been observed [32] , [33] , [34] , [35] , [36].",
+        "references": {
+          "32": {
+            "1": "The conformation of transmembrane proteins with uneven charge distributions in or near their transmembrane regions might be influenced by the high electric field across the plasma membrane.",
+            "2": "The behavior of transmembrane proteins with uneven charge distributions in or near their transmembrane regions might be influenced by the high electric field across the plasma membrane.",
+            "3": "Membrane depolarization of T cells occurs in the tumor microenvironment.",
+            "4": "Membrane depolarization of T cells occurs in inflamed tissues.",
+            "5": "Membrane depolarization of T cells in the tumor microenvironment and in inflamed tissues occurs because of K."
+          },
+          "33": {
+            "1": "Tonic signaling of chimeric antigen receptor (CAR) refers to the spontaneous CAR activation in the absence of tumor antigen stimulation.",
+            "2": "Tonic signaling is considered to be a pivotal event controlling CAR-T efficacy.",
+            "3": "The molecular mechanism underlying spontaneous CAR signals remains elusive.",
+            "4": "Positively charged patches (PCPs) on the surface of the CAR antigen-binding domain mediate CAR clustering.",
+            "5": "PCP-mediated CAR clustering results in CAR tonic signaling.",
+            "6": "GD2.CAR and CSPG4.CAR are examples of CARs with high tonic signaling.",
+            "7": "Reducing PCPs on CARs with high tonic signaling minimizes spontaneous CAR activation.",
+            "8": "Boosting ionic strength in the culture medium during ex vivo CAR-T cell expansion minimizes spontaneous CAR activation.",
+            "9": "Reducing PCPs on CARs alleviates CAR-T cell exhaustion.",
+            "10": "Boosting ionic strength in the culture medium during ex vivo CAR-T cell expansion alleviates CAR-T cell exhaustion.",
+            "11": "CD19.CAR is an example of a CAR with weak tonic signaling.",
+            "12": "Introducing PCPs into CARs with weak tonic signaling results in improved in vivo persistence.",
+            "13": "Introducing PCPs into CARs with weak tonic signaling results in superior antitumor function.",
+            "14": "CAR tonic signaling is induced by PCP-mediated CAR clustering.",
+            "15": "CAR tonic signaling is maintained by PCP-mediated CAR clustering.",
+            "16": "The mutations generated to alter the PCPs maintain the antigen-binding affinity of the CAR.",
+            "17": "The mutations generated to alter the PCPs maintain the specificity of the CAR.",
+            "18": "Rational tuning of PCPs can optimize tonic signaling of CAR-T cells.",
+            "19": "Rational tuning of PCPs can optimize in vivo fitness of CAR-T cells.",
+            "20": "The rational tuning of PCPs is suggested as a promising design strategy for the next-generation CAR."
+          },
+          "34": {
+            "1": "T cell activation involves a cascade of TCR-mediated signals.",
+            "2": "The TCR-mediated signals are regulated by three distinct intracellular signaling motifs.",
+            "3": "The intracellular signaling motifs are located within the cytoplasmic tails of the CD3 chains.",
+            "4": "All the CD3 subunits possess at least one ITAM.",
+            "5": "The CD3 ε subunit contains a proline-rich sequence.",
+            "6": "The CD3 ε subunit contains a basic-rich stretch (BRS).",
+            "7": "The CD3 ε BRS complexes selected phosphoinositides.",
+            "8": "Interactions between CD3 ε BRS and phosphoinositides are required for normal cell surface expression of the TCR.",
+            "9": "The cytoplasmic domain of CD3 ζ contains several clusters of arginine residues.",
+            "10": "The cytoplasmic domain of CD3 ζ contains several clusters of lysine residues.",
+            "11": "The basic amino acids enable CD3 ζ to complex the phosphoinositides PtdIns(3)P, PtdIns(4)P, PtdIns(5)P, PtdIns(3,5)P(2), and PtdIns(3,4,5)P(3).",
+            "12": "The complexing of phosphoinositides by CD3 ζ occurs with high affinity.",
+            "13": "Early TCR signaling pathways were unaffected by the targeted loss of the phosphoinositide-binding functions of CD3 ζ.",
+            "14": "The elimination of the phosphoinositide-binding function of CD3 ζ significantly impaired the ability of CD3 ζ to accumulate stably at the immunological synapse.",
+            "15": "The impairment occurs during T cell-APC interactions.",
+            "16": "Without its phosphoinositide-binding functions, CD3 ζ was concentrated in intracellular structures.",
+            "17": "The concentration in intracellular structures occurs after T cell activation.",
+            "18": "The findings demonstrate a novel functional role for CD3 ζ BRS-phosphoinositide interactions.",
+            "19": "The novel functional role of CD3 ζ BRS-phosphoinositide interactions is in supporting T cell activation."
+          },
+          "35": {
+            "1": "Chimeric antigen receptor (CAR)-T cell therapy offers a promising approach for cancer treatment.",
+            "2": "CAR is a synthetic immune receptor.",
+            "3": "CAR recognizes tumor antigen.",
+            "4": "CAR activates T cells through multiple signaling pathways.",
+            "5": "The current CAR design is not as robust as the T cell receptor (TCR).",
+            "6": "T cell receptor (TCR) is a natural antigen receptor.",
+            "7": "T cell receptor (TCR) has high sensitivity.",
+            "8": "T cell receptor (TCR) has high efficiency.",
+            "9": "TCR signaling relies on specific molecular interactions.",
+            "10": "Electrostatic force is the major force of molecular interactions.",
+            "11": "Electrostatic force plays critical roles in TCR signaling.",
+            "12": "Understanding electrostatic charge regulation of TCR signaling events will facilitate the development of next-generation T cell therapies.",
+            "13": "Understanding electrostatic charge regulation of CAR signaling events will facilitate the development of next-generation T cell therapies.",
+            "14": "This review summarizes recent findings on the roles of electrostatic interactions in natural immune receptor signaling.",
+            "15": "This review summarizes recent findings on the roles of electrostatic interactions in synthetic immune receptor signaling.",
+            "16": "The review summarizes findings specifically in CAR clustering.",
+            "17": "The review summarizes findings specifically in effector molecule recruitments.",
+            "18": "The review highlights potential strategies for engineering CAR-T cell therapy by leveraging charge-based interactions."
+          },
+          "36": {
+            "1": "Many immune system receptors signal through cytoplasmic tyrosine-based motifs (ITAMs).",
+            "2": "The mechanism by which receptor ligation results in ITAM phosphorylation is currently unknown.",
+            "3": "Live-cell imaging studies showed a close interaction of the CD3epsilon cytoplasmic domain of the T cell receptor (TCR) with the plasma membrane.",
+            "4": "The close interaction of the CD3epsilon cytoplasmic domain with the plasma membrane was observed through fluorescence resonance energy transfer between a C-terminal fluorescent protein and a membrane fluorophore.",
+            "5": "Electrostatic interactions between basic CD3epsilon residues and acidic phospholipids enriched in the inner leaflet of the plasma membrane were required for the binding of the CD3epsilon cytoplasmic domain to the plasma membrane.",
+            "6": "The nuclear magnetic resonance structure of the lipid-bound state of the CD3epsilon cytoplasmic domain revealed deep insertion of the two key tyrosines into the hydrophobic core of the lipid bilayer.",
+            "7": "Receptor ligation needs to result in the unbinding of the CD3epsilon ITAM from the membrane.",
+            "8": "The unbinding of the CD3epsilon ITAM from the membrane renders the tyrosines accessible to Src kinases.",
+            "9": "Sequestration of key tyrosines into the lipid bilayer is a previously unrecognized mechanism for control of receptor activation."
+          }
+        },
+        "viewpoints": [
+          "Membrane potential (MP) depolarization in T cells within tumor microenvironments affects receptor mobility.",
+          "Membrane potential (MP) depolarization in T cells within inflamed tissues affects receptor mobility.",
+          "Characteristic oscillations at immunological synapses have been observed.",
+          "Electrostatic interactions in TCR signaling regulation have been observed."
+        ]
+      },
+      {
+        "idx": 24,
+        "sentence": "However, the mechanisms by which electrical signals are converted into biochemical signaling within T cells and whether external electrical stimulation can be used to modulate T cell activity in cancer therapy, remain elusive.",
+        "references": {},
+        "viewpoints": [
+          "The mechanisms by which electrical signals are converted into biochemical signaling within T cells remain elusive.",
+          "It remains unclear whether external electrical stimulation can be used to modulate T cell activity in cancer therapy."
+        ]
+      },
+      {
+        "idx": 25,
+        "sentence": "In this study, we demonstrate that external electrical stimulation during ex vivo culture refines CD8 + T cell differentiation, enhancing the efficacy of ACT or CAR-T therapy in vivo.",
+        "references": {},
+        "viewpoints": [
+          "External electrical stimulation during ex vivo culture refines CD8 + T cell differentiation.",
+          "External electrical stimulation during ex vivo culture enhances the efficacy of ACT or CAR-T therapy in vivo."
+        ]
+      },
+      {
+        "idx": 26,
+        "sentence": "By augmenting TCR signaling transduction, electrical stimulation reduces the polarization of virtual memory T cells and promotes the expansion of CD8 + T cells with higher proliferative potential, key factors in the antitumor effects of ACT.",
+        "references": {},
+        "viewpoints": [
+          "Augmenting TCR signaling transduction reduces the polarization of virtual memory T cells.",
+          "Electrical stimulation promotes the expansion of CD8 + T cells with higher proliferative potential.",
+          "Augmenting TCR signaling transduction and promoting the expansion of CD8 + T cells with higher proliferative potential are key factors in the antitumor effects of ACT."
+        ]
+      },
+      {
+        "idx": 27,
+        "sentence": "Our findings highlight the critical role of extracellular electrical stimuli in shaping CD8 + T cell fate, providing a foundational strategy for harnessing proliferative potential T cells in cancer therapy.",
+        "references": {},
+        "viewpoints": [
+          "Extracellular electrical stimuli play a critical role in shaping CD8 + T cell fate.",
+          "Extracellular electrical stimuli provide a foundational strategy for harnessing proliferative potential T cells in cancer therapy."
+        ]
+      }
+    ]
+  },
+  "file_info": {
+    "unique_id": "s41467-025-56858-y_with_abstracts",
+    "base_id": "s41467-025-56858-y",
+    "original_file": "/Users/lipengze/projects/a_MMSci-main/mmsci-data/rawdata-newest50-by-category/NC_with_abstract/Biological sciences/s41467-025-56858-y_with_abstracts.json",
+    "title": "",
+    "published_time": "",
+    "assigned_category": "Biological sciences",
+    "original_category": "Biological sciences"
+  }
+}
