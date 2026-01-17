@@ -1,6 +1,6 @@
 # ARCHE: Latent Reasoning Chain Extraction
 
-[![Paper](https://img.shields.io/badge/Paper-AAAI%202026-blue)](https://aaai.org)
+[![Paper](https://img.shields.io/badge/Paper-AAAI%202026-blue)](https://arxiv.org/abs/2511.12485)
 [![License](https://img.shields.io/badge/License-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 > *"All valid reasoning is either deductive, inductive, or hypothetic; or else it combines two or more of these characters."*
